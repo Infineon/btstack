@@ -16,4 +16,5 @@ Protocols supported include (but not limited to)
  - RFCOMM/SPP
 Please note that some of these features depend on the BT controller as well.
 
-Refer to the docs folder for API reference manual.	
+Refer to the [API reference manual](https://cypresssemiconductorco.github.io/btstack/api_reference_manual/html/index.html)
+
