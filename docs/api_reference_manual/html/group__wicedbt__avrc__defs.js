@@ -1,0 +1,28 @@
+var group__wicedbt__avrc__defs =
+[
+    [ "AVRC_SUCCESS", "group__wicedbt__avrc__defs.html#gad5a56f77558eae22c03166bee0337408", null ],
+    [ "AVRC_NO_RESOURCES", "group__wicedbt__avrc__defs.html#ga1dc014b54cf38ef230c3ab6b972be740", null ],
+    [ "AVRC_BAD_HANDLE", "group__wicedbt__avrc__defs.html#gaa50a9ea2e272ab8c89ecebc00698bf29", null ],
+    [ "AVRC_PID_IN_USE", "group__wicedbt__avrc__defs.html#ga76bfd2a1b28236ec7013b5c2c6939df3", null ],
+    [ "AVRC_NOT_OPEN", "group__wicedbt__avrc__defs.html#gad8aead2e5ba189db0234cf1edc048b2c", null ],
+    [ "AVRC_MSG_TOO_BIG", "group__wicedbt__avrc__defs.html#gaabf96a9e03920be198dffef861630bc7", null ],
+    [ "AVRC_FAIL", "group__wicedbt__avrc__defs.html#gac12aaef8b486a032a8e887547b2e3fba", null ],
+    [ "AVRC_BAD_PARAM", "group__wicedbt__avrc__defs.html#gaebd9ecb5ce51f297cc98d68afcfef161", null ],
+    [ "AVRC_BUSY", "group__wicedbt__avrc__defs.html#gae77bbfc23547a76d79180a2fb6006262", null ],
+    [ "AVRC_CT_TARGET", "group__wicedbt__avrc__defs.html#ga3bfeb9c93cb2691b2d3acab3a9ef879a", null ],
+    [ "AVRC_CT_CONTROL", "group__wicedbt__avrc__defs.html#ga4682fa2aac6c54bcc71e9d771e3a15aa", null ],
+    [ "AVRC_CT_PASSIVE", "group__wicedbt__avrc__defs.html#ga85cbf631ef22b6009773cd8088efc157", null ],
+    [ "AVRC_CONN_INITIATOR", "group__wicedbt__avrc__defs.html#gaf66a38ee187ad664e4f515aff32e4c83", null ],
+    [ "AVRC_CONN_ACCEPTOR", "group__wicedbt__avrc__defs.html#ga9a117ee379792d912aab535fcd8e9453", null ],
+    [ "AVRC_OPEN_IND_EVT", "group__wicedbt__avrc__defs.html#gaf1a71dcd1149a9e096718124237be86f", null ],
+    [ "AVRC_CLOSE_IND_EVT", "group__wicedbt__avrc__defs.html#ga612f35e5421d17b942b011ea3a20bd1c", null ],
+    [ "AVRC_CONG_IND_EVT", "group__wicedbt__avrc__defs.html#ga3590b217cbc977e4e5f46d7c1a036c6a", null ],
+    [ "AVRC_UNCONG_IND_EVT", "group__wicedbt__avrc__defs.html#ga17f381ae1c9ac077f3aac4581d8d1c03", null ],
+    [ "AVRC_BROWSE_OPEN_IND_EVT", "group__wicedbt__avrc__defs.html#ga4ee3a4b0002b630f9399c00d0e850f7a", null ],
+    [ "AVRC_BROWSE_CLOSE_IND_EVT", "group__wicedbt__avrc__defs.html#ga49723a5227a4ef04f3123557df411099", null ],
+    [ "AVRC_BROWSE_CONG_IND_EVT", "group__wicedbt__avrc__defs.html#gaf8e3d5e8a2efbb0f55d388e7d4376a6d", null ],
+    [ "AVRC_BROWSE_UNCONG_IND_EVT", "group__wicedbt__avrc__defs.html#gab45c191c699b9442a198b966f8834d61", null ],
+    [ "AVRC_CMD_TIMEOUT_EVT", "group__wicedbt__avrc__defs.html#ga860816f59542d81318ebdca7a5d12b44", null ],
+    [ "wiced_bt_avrc_msg_cback_t", "group__wicedbt__avrc__defs.html#gafffa9aab77176e67b2a697ff1bc1baba", null ],
+    [ "wiced_bt_avrc_xmitted_cback_t", "group__wicedbt__avrc__defs.html#ga3f31b9947d60da1528813f59afb4762c", null ]
+];

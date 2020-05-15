@@ -1,0 +1,26 @@
+var group__l2cap__data__types =
+[
+    [ "L2CAP_BLE_CONN_MIN_OFFSET", "group__l2cap__data__types.html#gaab983f0794fe13006d98d29538aa1307", null ],
+    [ "L2CAP_DEFAULT_BLE_CB_POOL_ID", "group__l2cap__data__types.html#ga6d778e008613bbc073549e6cb1ce8e47", null ],
+    [ "L2CAP_BLE_COC_SDU_OFFSET", "group__l2cap__data__types.html#ga2dbbfb547c0c6bdf80988cb14f716982", null ],
+    [ "L2CAP_BROADCAST_MIN_OFFSET", "group__l2cap__data__types.html#ga21a82bdfd45b292cf3421c064ca7874d", null ],
+    [ "L2CAP_PING_RESULT_OK", "group__l2cap__data__types.html#ga9e5612c1b7888cb1a969861fdb7faf0b", null ],
+    [ "L2CAP_PING_RESULT_NO_LINK", "group__l2cap__data__types.html#ga4e8e4a2973a1f1a2e7220b4a95d1efda", null ],
+    [ "L2CAP_PING_RESULT_NO_RESPONSE", "group__l2cap__data__types.html#gab412c5740493977b7aeca5816120519f", null ],
+    [ "L2CAP_DATAWRITE_FAILED", "group__l2cap__data__types.html#ga15f1fc2aed25d306166cca74bf8608f8", null ],
+    [ "L2CAP_PRIORITY_NORMAL", "group__l2cap__data__types.html#ga9c3380c72b9ed68837e360435744eab3", null ],
+    [ "L2CAP_DIRECTION_IGNORE", "group__l2cap__data__types.html#gac7a3b394ac54946914f2287f4f3bc38f", null ],
+    [ "L2CAP_DIRECTION_DATA_SOURCE", "group__l2cap__data__types.html#ga231caf03d9b763494440d7f9efbbc493", null ],
+    [ "L2CAP_DIRECTION_DATA_SINK", "group__l2cap__data__types.html#ga9a92c8eac5d4f355e1c23a4e50b3263f", null ],
+    [ "L2CAP_CHNL_PRIORITY_HIGH", "group__l2cap__data__types.html#ga73086018293c0ddf6a844dde6a1a0938", null ],
+    [ "L2CAP_CHNL_DATA_RATE_HIGH", "group__l2cap__data__types.html#gac06ed7eaf7673ef0f0db83b51e298bf0", null ],
+    [ "L2CAP_FLUSHABLE_MASK", "group__l2cap__data__types.html#gabe8a54b9dce954e44f79274c050d4d96", null ],
+    [ "L2CAP_FLUSH_CHANNELS_ALL", "group__l2cap__data__types.html#gadd0b467a62dacef2efdca88ded777ba8", null ],
+    [ "L2CAP_ROLE_SLAVE", "group__l2cap__data__types.html#gae552fb2592a3026e38d98e92cd8fec10", null ],
+    [ "L2CAP_ROLE_ALLOW_SWITCH", "group__l2cap__data__types.html#gaabfdc8c8aaca18681f322353b098a611", null ],
+    [ "L2CAP_ROLE_DISALLOW_SWITCH", "group__l2cap__data__types.html#ga5f0bc551ede392bc1d6fe42361d94c84", null ],
+    [ "L2CAP_ROLE_SCATTERNET_ALLOWED", "group__l2cap__data__types.html#ga48e2f51a7931eeba4e4d5dff16b00a00", null ],
+    [ "L2CAP_FCR_CHAN_OPT_BASIC", "group__l2cap__data__types.html#ga09573a4b41ed7cbefaf7fa14869a4079", null ],
+    [ "L2C_INVALID_PSM", "group__l2cap__data__types.html#ga526c4ea340fa1eadc1301b3080b6bb41", null ],
+    [ "MINIMIUM_DYNAMIC_LE_PSM", "group__l2cap__data__types.html#ga09d2c46b10a813c41302e5389e314bbe", null ]
+];
