@@ -67,7 +67,7 @@ extern "C" {
 #define WICED_BT_CFG_DEFAULT_RANDOM_ADDRESS_CHANGE_TIMEOUT          900        /*< default refreshment timing interval 900secs */
 #define WICED_BT_CFG_DEFAULT_RANDOM_ADDRESS_NEVER_CHANGE            0          /*< value for disabling random address refresh */
 
-#define WICED_BT_CFG_DEFAULT_STACK_SCRATCH_SIZE                     (4*1024)    /**< Default size of stack transient memory */
+#define WICED_BT_CFG_DEFAULT_STACK_SCRATCH_SIZE                     (2*1024)    /**< Default size of stack transient memory */
 
 /*****************************************************************************
  * Wiced_bt core stack configuration
@@ -154,6 +154,9 @@ typedef struct
     uint8_t                             server_max_links;               /**< Server config: maximum number of remote clients connections allowed by the local */
     uint16_t                            max_attr_len;                   /**< Maximum attribute length; gki_cfg must have a corresponding buffer pool that can hold this length */
     uint16_t                            max_mtu_size;                   /**< Maximum MTU size for GATT connections, should be between 23 and (max_attr_len + 5) */
+    uint8_t                             max_db_service_modules;         /**< Maximum number of service modules in the DB*/
+    uint8_t                             max_gatt_bearers;               /**< Maximum number of allowed gatt bearers */
+    uint8_t                             use_gatt_over_br_edr;           /**< set to 1 to enable gatt over br edr */
 } wiced_bt_cfg_gatt_settings_t;
 
 /** Settings for application managed L2CAP protocols (optional) */
@@ -202,6 +205,10 @@ typedef struct
     uint8_t                             max_ports;                      /**< Maximum number of simultaneous RFCOMM ports */
 } wiced_bt_cfg_rfcomm_t;
 
+typedef struct
+{
+    uint8_t                              max_links;                     /**< Maximum number of hid servers connected */
+}wiced_bt_cfg_hidd_t;
 
 /** Bluetooth stack configuration */
 typedef struct wiced_bt_cfg_settings_t_
@@ -209,7 +216,7 @@ typedef struct wiced_bt_cfg_settings_t_
     uint8_t                             *device_name;                   /**< Local device name (NULL terminated) */
     wiced_bt_dev_class_t                device_class;                   /**< Local device class */
     uint8_t                             security_requirement_mask;      /**< Security requirements mask (BTM_SEC_NONE, or combination of BTM_SEC_IN_AUTHENTICATE, BTM_SEC_OUT_AUTHENTICATE, BTM_SEC_ENCRYPT (see #wiced_bt_sec_level_e)) */
-    uint8_t                             max_simultaneous_links;         /**< Maximum number simultaneous links to different devices */
+    uint8_t                             max_simultaneous_links;         /**< Maximum number simultaneous links to different devices #redundant*/
 
     /* Scan and advertisement configuration */
     wiced_bt_cfg_br_edr_scan_settings_t br_edr_scan_cfg;                /**< BR/EDR scan settings */
@@ -231,6 +238,8 @@ typedef struct wiced_bt_cfg_settings_t_
     /* Audio/Video Remote Control configuration */
     wiced_bt_cfg_avrc_t                 avrc_cfg;                       /**< Audio/Video Remote Control configuration */
 
+    wiced_bt_cfg_hidd_t                 hidd_cfg;                       /**< Hidd configuration */
+
     /* LE Address Resolution DB size  */
     uint8_t                             addr_resolution_db_size;        /**< LE Address Resolution DB settings - effective only for pre 4.2 controller*/
 
@@ -244,11 +253,20 @@ typedef struct wiced_bt_cfg_settings_t_
     /* default BLE power level */
     int8_t                              default_ble_power_level;        /**< Default LE power level, Refer lm_TxPwrTable table for the power range */
 
-    uint8_t                             max_gatt_bearers;               /**< Maximum number of allowed gatt bearers */
-    uint8_t                             use_gatt_over_br_edr;           /**< set to 1 to enable gatt over br edr */
-    uint8_t                             num_vse_callbacks;              /**< set to 1 to enable gatt over br edr */
-
+    uint8_t                             num_vse_callbacks;              /**< set to num of vendor specific callbacks to handle, typically 0 */
 } wiced_bt_cfg_settings_t;
+
+/**
+ * Function         wiced_bt_stack_get_dynamic_memory_size_for_config
+ *
+ *                  Returns the expected dynamic memory size required for the stack based on the p_bt_cfg_settings
+ *
+ * @param[in] p_bt_cfg_settings         : Bluetooth stack configuration
+ *
+ * @return    dynamic memory size requirements of the stack
+ */
+int32_t wiced_bt_stack_get_dynamic_memory_size_for_config(const wiced_bt_cfg_settings_t* p_bt_cfg_settings);
+
 
 #ifdef __cplusplus
 } /* extern "C" */

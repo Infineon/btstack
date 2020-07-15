@@ -1,5 +1,6 @@
 var group__l2cap__api__functions =
 [
+    [ "wiced_bt_l2cap_register_fixed_channel", "group__l2cap__api__functions.html#gae9a06f8b983a720ef8f052bbaa823ad6", null ],
     [ "wiced_bt_l2cap_connect_fixed_chnl", "group__l2cap__api__functions.html#ga5e4dfa21d7a26fe3bd9b41ba82adf3f2", null ],
     [ "wiced_bt_l2cap_send_fixed_chnl_data", "group__l2cap__api__functions.html#gaaac3977d50dff78f8cf766a5921c784a", null ],
     [ "wiced_bt_l2cap_remove_fixed_chnl", "group__l2cap__api__functions.html#gafbddfd71d35ac472aa4116d9291a09e1", null ],

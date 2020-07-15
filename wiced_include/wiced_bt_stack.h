@@ -57,7 +57,6 @@ extern "C" {
  *
  * @param[in] p_bt_management_cback     : Callback for receiving Bluetooth management events
  * @param[in] p_bt_cfg_settings         : Bluetooth stack configuration
- * @param[in] wiced_bt_cfg_buf_pools    : Buffer pool configuration
  *
  * @return    WICED_BT_SUCCESS : on success;
  *            WICED_BT_FAILED : if an error occurred
@@ -75,6 +74,7 @@ wiced_result_t wiced_bt_stack_init(wiced_bt_management_cback_t *p_bt_management_
  *            WICED_BT_ERROR   : if an error occurred
  */
 wiced_result_t wiced_bt_stack_deinit( void );
+
 
 /**@} wicedbt_Framework */
 

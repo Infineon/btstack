@@ -116,8 +116,9 @@
 #define GATT_UUID_LN_FEATURE            0x2A6A
 #define GATT_UUID_LN_CONTROL_POINT      0x2A6B
 
-/* GATT Robust caching */
-#define GATT_UUID_GATT_DATABASE_HASH	0x2B2A
+#define GATT_UUID_CLIENT_SUPPORTED_FEATURES 0x2B29   /* Client supported features */
+#define GATT_UUID_GATT_DATABASE_HASH	    0x2B2A   /* GATT Robust caching */
+#define GATT_UUID_SERVER_SUPPORTED_FEATURES 0x2B3A   /* Server supported features */
 
 /* HTTP Proxy Service */
 #define GATT_UUID_HPS_URI               0x7F11
@@ -132,9 +133,6 @@
 #define GATT_UUID_SCAN_INT_WINDOW       0x2A4F
 #define GATT_UUID_SCAN_REFRESH          0x2A31
 
-/* Server supported features */
-#define GATT_UUID_SERVER_SUPPORTED_FEATURES 0x2B3A
-#define GATT_UUID_CLIENT_SUPPORTED_FEATURES 0x2B29
 
 /* GATT appearance definitions */
 enum gatt_appearance_e

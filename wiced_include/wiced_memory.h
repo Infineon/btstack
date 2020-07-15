@@ -44,9 +44,9 @@ typedef struct wiced_bt_heap_statistics_s
 {
     uint16_t    heap_size;                   /**< heap size */
 
-    uint16_t    max_single_allocation;       /**< max individual allocation size */
-    uint16_t    max_heap_size_used;          /**< max heap size ever used */
-    uint16_t    allocation_failure_count;    /**< count of times alloc failed */
+    uint16_t    max_single_allocation;       /**< max individual size allocated from the heap till now */
+    uint16_t    max_heap_size_used;          /**< high watermark/peak heap size used. if this size is > 80% then we are running close to edge */
+    uint16_t    allocation_failure_count;    /**< number of times allocation failed */
 
     uint16_t    current_num_allocations;     /**< number of fragments currently allocated */
     uint16_t    current_size_allocated;      /**< total size of current allocations */
@@ -92,28 +92,55 @@ uint32_t wiced_memory_get_free_bytes( void );
 *                  pools initialized with calls to wiced_bt_create_pool and allocated using 
 *                  wiced_bt_get_buffer_from_pool. 
 *
-* @param[in]       Pointer to area to use for the heap. If NULL, WICED will allocate the area.
-* @param[in]       Size the area passed in. If no area passed in, this is the size of the heap desired.
-* @param[in]       Pointers to lock functions to use during heap manipulation. If NULL, then
+* @param[in]       name : Friendly name of the heap
+* @param[in]       p_area : Pointer to area to use for the heap. If NULL, WICED will allocate the area.
+* @param[in]       size : Size the area passed in. If no area passed in, this is the size of the heap desired.
+* @param[in]       p_lock : Pointers to lock functions to use during heap manipulation. If NULL, then
 *                  it is assumed that the application handles disabling of preemption.
-* @param[in]       Flag as to whether the heap will be the default heap.
+* @param[in]       b_make_default: Flag as to whether the heap will be the default heap.
 * 
 * @return          wiced_bt_heap_t * - pointer to heap, or NULL if the heap creation failed.
 */
-wiced_bt_heap_t *wiced_bt_create_heap (const char * heap_name, void *p_area, int size, wiced_bt_lock_t *p_lock, wiced_bool_t b_make_default);
+wiced_bt_heap_t *wiced_bt_create_heap (const char * name, void *p_area, int size, wiced_bt_lock_t *p_lock, wiced_bool_t b_make_default);
+
+/**
+* Function         wiced_bt_delete_heap
+*
+*                  Deletes the heap created with #wiced_bt_create_heap. The heap area is freed back to the platform in 
+*                  case the wiced_bt_create_heap was called with p_area set to NULL.
+*
+* @param[in]       p_heap : Heap created with #wiced_bt_create_heap
+*
+* @return          void
+*/
+void wiced_bt_delete_heap(wiced_bt_heap_t* p_heap);
 
 /**
  * Function         wiced_bt_create_pool
  *
  *                  Creates a buffer pool for application usage.
  *
- * @param[in]       buffer_size           :size of the buffers in the pool
- *
-  * @param[in]       buffer_cnt           :number of buffers in the pool
+ * @param[in]       name : Friendly name of the heap
+ * @param[in]       buffer_size: Size of the buffers in the pool
+ * @param[in]       buffer_cnt : Number of buffers in the pool
+ * @param[in]       p_lock : Pointers to lock functions to use during heap manipulation. If NULL, then
+ *                  it is assumed that the application handles disabling of preemption.
  *
  * @return         pointer to the created pool on success, or NULL on failure
  */
-wiced_bt_pool_t* wiced_bt_create_pool(const char* heap_name, uint32_t buffer_size, uint32_t buffer_cnt, wiced_bt_lock_t* p_lock);
+wiced_bt_pool_t* wiced_bt_create_pool(const char* name, uint32_t buffer_size, uint32_t buffer_cnt, wiced_bt_lock_t* p_lock);
+
+/**
+ * Function         wiced_bt_delete_pool
+ *
+ *                  Deletes a buffer pool created using #wiced_bt_create_pool
+ *
+ * @param[in]       p_pool : pointer of type #wiced_bt_pool_t returned through a call to #wiced_bt_create_pool
+ *
+ * @return         void
+ */
+void wiced_bt_delete_pool(wiced_bt_pool_t* p_pool);
+
 
 /**
  * Function         wiced_bt_get_buffer_from_pool

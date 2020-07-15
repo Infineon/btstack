@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wiced_20result_2517',['WICED result',['../group___result.html',1,'']]]
+  ['wiced_20result',['WICED result',['../group___result.html',1,'']]]
 ];

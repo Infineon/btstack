@@ -957,7 +957,7 @@ wiced_bool_t wiced_bt_notify_multi_advertisement_packet_transmissions( uint8_t a
 *               WICED_BT_SUCCESS if command started
 *
 *******************************************************************************/
-wiced_bt_dev_status_t wiced_bt_ble_set_privacy_mode(wiced_bt_device_address_t remote_bda, wiced_bt_ble_privacy_mode_t privacy_mode);
+wiced_bt_dev_status_t wiced_bt_ble_set_privacy_mode(wiced_bt_device_address_t remote_bda, wiced_bt_ble_address_type_t rem_bda_type, wiced_bt_ble_privacy_mode_t privacy_mode);
 /**@} btm_ble_api_functions */
 
 #ifdef __cplusplus

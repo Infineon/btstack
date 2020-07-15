@@ -1,13 +1,9 @@
 var modules =
 [
-    [ "Audio/Video Distribution (AVDTP)", "group__wicedbt__avdt.html", "group__wicedbt__avdt" ],
+    [ "Audio/Video Distribution (AVDT)", "group__wicedbt__avdt.html", "group__wicedbt__avdt" ],
     [ "Audio/Video Remote Control (AVRC)", "group__wicedbt__avrc.html", "group__wicedbt__avrc" ],
-    [ "BLE (Bluetooth Low Energy)", "group__btm__ble__api__functions.html", "group__btm__ble__api__functions" ],
-    [ "HID Host Role (HIDH) over BLE", "group__wiced__bt__ble__hidh__api__functions.html", "group__wiced__bt__ble__hidh__api__functions" ],
-    [ "HID Host over BLE Audio", "group__wiced__bt__ble__hidh__audio__api__functions.html", "group__wiced__bt__ble__hidh__audio__api__functions" ],
     [ "Bluetooth Stack Configuration", "group__wwiced__bt__cfg.html", "group__wwiced__bt__cfg" ],
     [ "Device Management", "group__wicedbt___device_management.html", "group__wicedbt___device_management" ],
-    [ "Security", "group__btm__sec__api__functions.html", "group__btm__sec__api__functions" ],
     [ "Generic Attribute (GATT)", "group__wicedbt__gatt.html", "group__wicedbt__gatt" ],
     [ "HID Device Role (HIDD) over BR/EDR", "group__hidd__api__functions.html", "group__hidd__api__functions" ],
     [ "HID Device Role (HIDD) over BLE", "group__hidd__le__api__functions.html", "group__hidd__le__api__functions" ],

@@ -86,7 +86,6 @@ typedef uint8_t wiced_bt_gatt_status_t;     /**< GATT status (see #wiced_bt_gatt
 #define  GATT_RSP_READ_BY_GRP_TYPE       0x11       /**< Read By Group Type Response */
 #define  GATT_REQ_WRITE                  0x12       /**< Write Request */
 #define  GATT_RSP_WRITE                  0x13       /**< Write Request */
-#define  GATT_CMD_WRITE                  0x52       /**< Write Command */
 #define  GATT_REQ_PREPARE_WRITE          0x16       /**< Prepare Write Request */
 #define  GATT_RSP_PREPARE_WRITE          0x17       /**< Prepare Write Response */
 #define  GATT_REQ_EXEC_WRITE             0x18       /**< Execute Write Request */
@@ -94,13 +93,12 @@ typedef uint8_t wiced_bt_gatt_status_t;     /**< GATT status (see #wiced_bt_gatt
 #define  GATT_HANDLE_VALUE_NOTIF         0x1B       /**< Handle Value Notification */
 #define  GATT_HANDLE_VALUE_IND           0x1D       /**< Handle Value Indication */
 #define  GATT_HANDLE_VALUE_CONF          0x1E       /**< Handle Value Confirmation */
-/* Todo opcode might be chnaged based on update from spec*/
 #define  GATT_REQ_READ_MULTI_VAR_LENGTH  0x20       /**< Read Multiple Variable Length Request */
 #define  GATT_RSP_READ_MULTI_VAR_LENGTH  0x21       /**< Read Multiple Variable Length Response */
-/* Todo opcode might be chnaged based on update from spec*/
 #define  GATT_HANDLE_VALUE_MULTI_NOTIF   0x23       /**< Handle Value Multiple Notifications */
 
 #define  GATT_OP_CODE_MAX                (GATT_HANDLE_VALUE_MULTI_NOTIF + 1) /**<  Maximum opcode value */
+#define  GATT_CMD_WRITE                  0x52       /**< Write Command */
 #define  GATT_SIGN_CMD_WRITE             0xD2       /**< changed in V4.0 1101-0010 (signed write)  see write cmd above*/
 
 /**  GATT Disconnection reason */
@@ -230,14 +228,22 @@ typedef struct
     uint8_t       *p_val;     /**< Value pointer */
 } wiced_bt_gatt_write_t;
 
+/** Attribute validate read request */
+typedef struct
+{
+    uint16_t      handle;     /**< Handle of attribute to write */
+} wiced_bt_gatt_validate_read_t;
+
+
 /** Attribute information for GATT attribute requests */
 typedef union
 {
-    wiced_bt_gatt_read_t            read_req;                       /**< Parameters for GATTS_REQ_TYPE_READ */
-    wiced_bt_gatt_write_t           write_req;                      /**< Parameters for GATTS_REQ_TYPE_WRITE */
-    uint16_t                        handle;                         /**< Parameters for GATTS_REQ_TYPE_CONF */
-    uint16_t                        mtu;                            /**< Parameters for GATTS_REQ_TYPE_MTU */
-    wiced_bt_gatt_exec_flag_t       exec_write;                     /**< Parameters for GATTS_REQ_TYPE_WRITE_EXEC */
+    wiced_bt_gatt_read_t            read_req;            /**< Parameters for GATTS_REQ_TYPE_READ */
+    wiced_bt_gatt_write_t           write_req;           /**< Parameters for GATTS_REQ_TYPE_WRITE */
+    uint16_t                        handle;              /**< Parameters for GATTS_REQ_TYPE_CONF */
+    uint16_t                        mtu;                 /**< Parameters for GATTS_REQ_TYPE_MTU */
+    wiced_bt_gatt_exec_flag_t       exec_write;          /**< Parameters for GATTS_REQ_TYPE_WRITE_EXEC */
+    wiced_bt_gatt_validate_read_t   validate_read_req;   /**< Parameters for validating read for multi-handle read requests */
 } wiced_bt_gatt_request_data_t;
 
 /** GATT Attribute Request Type */
@@ -249,6 +255,7 @@ enum wiced_bt_gatt_request_type_e
     GATTS_REQ_TYPE_WRITE_EXEC,      /**< Execute write request */
     GATTS_REQ_TYPE_MTU,             /**< MTU exchange information */
     GATTS_REQ_TYPE_CONF,            /**< Value confirmation */
+    GATTS_REQ_TYPE_VALIDATE_READ    /**< Validate attribute read request */
 };
 typedef uint8_t wiced_bt_gatt_request_type_t;   /**< GATT Attribute Request Type (see #wiced_bt_gatt_request_type_e) */
 
@@ -388,6 +395,15 @@ enum wiced_bt_gatt_optype_e
 /*  GATT Client Operation Codes */
 typedef uint8_t wiced_bt_gatt_optype_t; /**< GATT operation type (see #wiced_bt_gatt_optype_e) */
 
+enum wiced_bt_gatt_caching_status_e
+{
+    GATT_PEER_CLIENT_CACHE_CHANGE_AWARE   = 0,     /**< Peer client is cache aware   */
+    GATT_PEER_CLIENT_CACHE_CHANGE_UNAWARE = 1,     /**< Peer client is cache unaware */
+    GATT_PEER_CLIENT_CACHE_READY_TO_BE_AWARE = 2   /**< Peer client is reading the database hash */
+};
+
+typedef uint8_t wiced_bt_gatt_caching_status_t; /**< GATT peer caching status */
+
 /** characteristic declaration */
 typedef struct
 {
@@ -442,7 +458,6 @@ typedef union
 
 typedef uint16_t wiced_bt_gatt_appearance_t;     /**< GATT appearance (see #gatt_appearance_e) */
 
-typedef uint8_t wiced_gatt_db_hash_t[16];
 
 /*****************************************************************************
  *  GATT Database Defintions
@@ -471,6 +486,10 @@ typedef uint8_t wiced_gatt_db_hash_t[16];
 #define GATTDB_CHAR_PROP_INDICATE                   (0x1 << 5)
 #define GATTDB_CHAR_PROP_AUTHD_WRITES               (0x1 << 6)
 #define GATTDB_CHAR_PROP_EXTENDED                   (0x1 << 7)
+
+/*  GATT Characteristic Extended Properties */
+#define GATTDB_CHAR_EXTENDED_PROP_RELIABLE             (0x1 << 0)
+#define GATTDB_CHAR_EXTENDED_PROP_WRITABLE_AUXILIARIES (0x1 << 1)
 
 /* Conversion macros */
 #define BIT16_TO_8( val ) \
@@ -641,6 +660,15 @@ typedef uint8_t wiced_gatt_db_hash_t[16];
     (uint8_t)(GATTDB_UUID128_SIZE), \
     uuid
 
+#define CHAR_DESCRIPTOR_EXTENDED_PROPERTIES(handle, ext_properties)\
+    BIT16_TO_8((uint16_t)(handle)), \
+    (uint8_t)(GATTDB_PERM_READABLE), \
+    (uint8_t)(GATTDB_UUID16_SIZE + 1), \
+    BIT16_TO_8(GATT_UUID_CHAR_EXT_PROP),\
+    (uint8_t)(ext_properties)
+    
+    
+
 typedef uint16_t wiced_bt_eatt_lcid_list[EATT_CHANNELS_PER_TRANSACTION];
 typedef uint16_t wiced_bt_gatt_eatt_conn_id_list[EATT_CHANNELS_PER_TRANSACTION];
 typedef tDRB * wiced_bt_eatt_drbs[EATT_CHANNELS_PER_TRANSACTION];
@@ -709,6 +737,12 @@ typedef struct
     wiced_bool_t                            congested;          /**< congestion state */
 } wiced_bt_gatt_congestion_event_t;
 
+typedef struct
+{
+    wiced_bt_device_address_t bdaddr;
+    wiced_bt_gatt_caching_status_t status;
+}wiced_bt_gatt_caching_status_event_t;
+
 /** Stuctures for GATT event notifications */
 typedef union
 {
@@ -718,6 +752,7 @@ typedef union
     wiced_bt_gatt_connection_status_t       connection_status;  /**< Data for GATT_CONNECTION_STATUS_EVT */
     wiced_bt_gatt_attribute_request_t       attribute_request;  /**< Data for GATT_ATTRIBUTE_REQUEST_EVT */
     wiced_bt_gatt_congestion_event_t        congestion;         /**< Data for GATT_CONGESTION_EVT */
+    wiced_bt_gatt_caching_status_event_t    caching_status;     /**< Data for GATT_CACHING_STATUS_UPDATE_EVT */
 } wiced_bt_gatt_event_data_t;
 
 /**
@@ -852,12 +887,12 @@ void wiced_bt_gatt_update_peer_robust_caching_support_status(uint16_t conn_id, u
 ** Description      This function gets peer's caching state.
 **
 ** Parameter        conn_id: connection identifier.
-**                  caching_status: CHANGE_AWARE/CHANGE_UNAWARE.
+**                  caching_status: GATT_PEER_CLIENT_CACHE_CHANGE_AWARE/GATT_PEER_CLIENT_CACHE_CHANGE_UNAWARE
 **
 ** Returns          None
 **
 *******************************************************************************/
-void wiced_bt_gatt_get_peer_caching_status(uint16_t conn_id, uint32_t* status);
+void wiced_bt_gatt_get_peer_caching_status(uint16_t conn_id, wiced_bt_gatt_caching_status_t* caching_status);
 
 /*******************************************************************************
 **
@@ -871,7 +906,7 @@ void wiced_bt_gatt_get_peer_caching_status(uint16_t conn_id, uint32_t* status);
 ** Returns          None
 **
 *******************************************************************************/
-void wiced_bt_gatt_set_peer_caching_status(uint16_t conn_id, uint32_t status);
+void wiced_bt_gatt_set_peer_caching_status(uint16_t conn_id, wiced_bt_gatt_caching_status_t status);
 
 /**
  * Function     wiced_bt_gatt_db_init
@@ -880,11 +915,45 @@ void wiced_bt_gatt_set_peer_caching_status(uint16_t conn_id, uint32_t status);
  *
  * @param[in]   p_gatt_db       : First element in GATT database array
  * @param[in]   gatt_db_size    : Size (in bytes) of GATT database
+ * @param[out]  hash            : The calculated database hash value. The hash pointer passed to this function can be NULL incase the 
+ *                                application does not support dynamic databases and does not support database caching
  *
  * @return @link wiced_bt_gatt_status_e wiced_bt_gatt_status_t @endlink
  *
  */
-wiced_bt_gatt_status_t wiced_bt_gatt_db_init (const uint8_t *p_gatt_db, uint16_t gatt_db_size, uint8_t* hash);
+wiced_bt_gatt_status_t wiced_bt_gatt_db_init (const uint8_t *p_gatt_db, uint16_t gatt_db_size, wiced_bt_db_hash_t hash);
+
+/**
+ * Function     wiced_bt_gatt_add_services_to_db
+ *
+ *              Add a service module to the database.
+ *              Service modules define the complete service handles
+ *              The handle range in the service modules have to be distinct, i.e, cannot overlap with any of the existing service modules
+ *              in the database
+ *
+ * @param[in]   p_gatt_db       : First element in GATT database array
+ * @param[in]   gatt_db_size    : Size (in bytes) of GATT database
+ * @param[out]  hash            : The calculated database hash value. The hash pointer passed to this function can be NULL incase the
+ *                                application does not support dynamic databases and does not support database caching
+ *
+ * @return @link wiced_bt_gatt_status_e wiced_bt_gatt_status_t @endlink
+ *
+ */
+wiced_bt_gatt_status_t wiced_bt_gatt_add_services_to_db(const uint8_t* p_gatt_db, uint16_t gatt_db_size, wiced_bt_db_hash_t hash);
+
+/**
+ * Function     wiced_bt_gatt_remove_services_from_db
+ *
+ *              Remove the service module from the database.
+ *
+ * @param[in]   p_gatt_db       : First element in GATT database array
+ * @param[out]  hash            : The calculated database hash value. The hash pointer passed to this function can be NULL incase the
+ *                                application does not support dynamic databases and does not support database caching
+ *
+ * @return @link wiced_bt_gatt_status_e wiced_bt_gatt_status_t @endlink
+ *
+ */
+wiced_bt_gatt_status_t wiced_bt_gatt_db_remove_services_from_db(const uint8_t* p_gatt_db, wiced_bt_db_hash_t hash);
 
 /**
  *
@@ -1329,6 +1398,23 @@ wiced_result_t wiced_bt_gatt_eatt_reconfigure(wiced_bt_gatt_eatt_conn_id_list co
  */
 wiced_bt_gatt_status_t wiced_bt_gatt_get_device_address(uint16_t conn_id, wiced_bt_device_address_t* p_bdaddr);
 
+/**
+* Function         wiced_bt_gatt_send_tester_raw_bytes
+*
+* Description      This function sends raw packet
+*
+* Parameter        conn_id: connection identifier.
+*                  s_handle: start handle of the command to be sent.
+*                  e_handle: end handle of the command to be sent.
+*                  opertion: operation to be performed
+*                  opcode  : opcode of the operation to be performed
+*                  op_types: type of the operation
+*                  data_len: length of the packet to be sent
+*                  p_data  : packet to be sent
+*
+* Returns          GATT_SUCCESS if sucessfully sent or queued; GATT_REQ_NOT_SUPPORTED if not conformance test is enabled, error code otherwise.
+*/
+wiced_bt_gatt_status_t wiced_bt_gatt_send_tester_raw_bytes(uint16_t conn_id, uint16_t s_handle, uint16_t e_handle, uint8_t operation, uint8_t opcode, uint8_t op_types, uint8_t data_len, uint8_t* p_data);
 /**@} gattdb_api_functions*/
 /**@} wicedbt_gatt */
 

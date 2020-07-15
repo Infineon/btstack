@@ -1,5 +1,6 @@
 var group__rfcomm__api__functions =
 [
+    [ "wiced_bt_rfcomm_create_connection", "group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15", null ],
     [ "wiced_bt_rfcomm_remove_connection", "group__rfcomm__api__functions.html#gae609bc27a6207cea08e5017ffb2940b5", null ],
     [ "wiced_bt_rfcomm_set_event_callback", "group__rfcomm__api__functions.html#gabbe544a7a6843471ef384c6dafc976aa", null ],
     [ "wiced_bt_rfcomm_set_event_mask", "group__rfcomm__api__functions.html#gad4241f1a332dbd4d03bbc8ce75cfa839", null ],

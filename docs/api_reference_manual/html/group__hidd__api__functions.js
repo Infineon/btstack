@@ -1,5 +1,6 @@
 var group__hidd__api__functions =
 [
+    [ "wiced_bt_hidd_register", "group__hidd__api__functions.html#ga0c53727230b715ab5c46d2ca746e3faa", null ],
     [ "wiced_bt_hidd_deregister", "group__hidd__api__functions.html#ga5c94f1b4148e280ef468aa0416f37856", null ],
     [ "wiced_bt_hidd_connect", "group__hidd__api__functions.html#ga70a04efe90cd77c0674b0ccd4e63fc0f", null ],
     [ "wiced_bt_hidd_disconnect", "group__hidd__api__functions.html#gaba93d54acfe397e2ddfde34f297df865", null ],

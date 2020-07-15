@@ -1398,7 +1398,7 @@
 #define HCI_MWS_NUM_TRANSPS_SUPPORTED                   10  /* used for HCI_GET_MWS_TRANS_LAYER_CFG */
 #define HCI_MWS_NUM_BAUD_RATES_ON_ONE_TRANSP_SUPPORTED  20  /* used for HCI_GET_MWS_TRANS_LAYER_CFG */
 
-/** Define the extended flow specification fields used by AMP */
+/* Define the extended flow specification fields used by AMP */
 typedef struct
 {
     uint8_t       id;

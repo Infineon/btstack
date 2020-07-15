@@ -11,5 +11,6 @@ var group__gattdb__api__functions =
     [ "wiced_bt_gatt_eatt_connect", "group__gattdb__api__functions.html#ga7350d101468cdfdfcc53e8e2970fddc7", null ],
     [ "wiced_bt_gatt_eatt_connect_response", "group__gattdb__api__functions.html#ga085bfe9e5516f2029ba398cfd37b97f9", null ],
     [ "wiced_bt_gatt_eatt_reconfigure", "group__gattdb__api__functions.html#gaa7182fd762456398d7421fe621706621", null ],
-    [ "wiced_bt_gatt_get_device_address", "group__gattdb__api__functions.html#ga0b2a1699f347b8290200fd9869ec5e1e", null ]
+    [ "wiced_bt_gatt_get_device_address", "group__gattdb__api__functions.html#ga0b2a1699f347b8290200fd9869ec5e1e", null ],
+    [ "wiced_bt_gatt_send_tester_raw_bytes", "group__gattdb__api__functions.html#ga933a9fa68c7533bc14d1bed212f67db2", null ]
 ];

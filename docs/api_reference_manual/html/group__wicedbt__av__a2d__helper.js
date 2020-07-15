@@ -1,5 +1,19 @@
 var group__wicedbt__av__a2d__helper =
 [
+    [ "wiced_bt_a2d_sdp_db_params_t", "structwiced__bt__a2d__sdp__db__params__t.html", [
+      [ "db_len", "structwiced__bt__a2d__sdp__db__params__t.html#a20a6152b6e7c8c6e065e70d3acb04c15", null ],
+      [ "num_attr", "structwiced__bt__a2d__sdp__db__params__t.html#a24cc271eaf6597d0286c3d85b5d09a87", null ],
+      [ "p_db", "structwiced__bt__a2d__sdp__db__params__t.html#a290aa6588ac81ff8223279ff85800f0e", null ],
+      [ "p_attrs", "structwiced__bt__a2d__sdp__db__params__t.html#ae46eb781dc4dfc4b5307115fe60c8b3f", null ]
+    ] ],
+    [ "wiced_bt_a2d_service_t", "structwiced__bt__a2d__service__t.html", [
+      [ "service_len", "structwiced__bt__a2d__service__t.html#a765dcedfbd70351e2d5aba650e42d4db", null ],
+      [ "provider_len", "structwiced__bt__a2d__service__t.html#a4b24cadd1749e0427a9d8b4c69d90fb3", null ],
+      [ "p_service_name", "structwiced__bt__a2d__service__t.html#a273e6c7a91d43b9f34eee17fa27b9785", null ],
+      [ "p_provider_name", "structwiced__bt__a2d__service__t.html#a32e8d72ce22f98599de051fbfeab57dd", null ],
+      [ "features", "structwiced__bt__a2d__service__t.html#a6ae2817c32d73d7d9a96ec594948814b", null ],
+      [ "avdt_version", "structwiced__bt__a2d__service__t.html#a6d7256499309c1c2b633080654d94737", null ]
+    ] ],
     [ "A2D_SUCCESS", "group__wicedbt__av__a2d__helper.html#ga235b873e3a932294d4cc304eee0a6507", null ],
     [ "A2D_FAIL", "group__wicedbt__av__a2d__helper.html#gaef35e6f44545251f6d51491ee5c6c65b", null ],
     [ "A2D_BUSY", "group__wicedbt__av__a2d__helper.html#gabf393fe616585a9ae694a5e89b8c5d76", null ],

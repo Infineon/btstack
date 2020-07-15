@@ -796,16 +796,15 @@ typedef struct wiced_bt_device_sec_keys_s
     /* LE Keys */
     wiced_bt_dev_le_key_type_t        le_keys_available_mask; /**<  Mask of available BLE keys */
     wiced_bt_ble_address_type_t       ble_addr_type;          /**<  LE device type: public or random address */
-    wiced_bt_ble_address_type_t       identity_addr_type;     /**<  Identity address type */
-    wiced_bt_device_address_t         identity_addr;          /**<  Identity address */
     wiced_bt_ble_keys_t               le_keys;                /**<  LE keys */
 } wiced_bt_device_sec_keys_t;
 
 /** Paired device link key notification (used by BTM_PAIRED_DEVICE_LINK_KEYS_UPDATE_EVT notication) */
 typedef struct wiced_bt_device_link_keys_s
 {
-    wiced_bt_device_address_t   bd_addr;                                    /**< [in] BD Address of remote */
+    wiced_bt_device_address_t   bd_addr;         /**< [in] BD Address of remote */
     wiced_bt_device_sec_keys_t  key_data;        /**< [in/out] Key data */
+    wiced_bt_device_address_t   conn_addr;       /**< [in] BD Address remote used to originate connection */
 } wiced_bt_device_link_keys_t;
 
 /** BR/EDR packet types detail statistics */
@@ -1762,19 +1761,6 @@ wiced_result_t wiced_bt_dev_switch_role( wiced_bt_device_address_t remote_bd_add
  *
  */
 wiced_bool_t wiced_bt_dev_get_security_state(wiced_bt_device_address_t bd_addr, uint8_t *p_sec_flags);
-
-/**
- * Function         wiced_bt_get_identity_address
- *
- *                  return identity address of the given device
- *
- * @param[in]       bd_addr         : peer address
- * @param[out]      identity_address  : identity address for given bd_addr
- *
- * @return          TRUE if successful
- *
- */
-wiced_bool_t wiced_bt_get_identity_address(wiced_bt_device_address_t bd_addr, wiced_bt_device_address_t identity_address);
 
 /**
  * Function         wiced_bt_set_tx_power

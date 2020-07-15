@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['edr_5fpacket_5ftypes_5fs_1318',['edr_packet_types_s',['../structwiced__bt__br__edr__pkt__type__stats__s_1_1edr__packet__types__s.html',1,'wiced_bt_br_edr_pkt_type_stats_s']]]
+  ['tdrb',['tDRB',['../structt_d_r_b.html',1,'']]],
+  ['thci_5fext_5fflow_5fspec',['tHCI_EXT_FLOW_SPEC',['../structt_h_c_i___e_x_t___f_l_o_w___s_p_e_c.html',1,'']]]
 ];

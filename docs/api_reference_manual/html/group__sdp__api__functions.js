@@ -1,5 +1,6 @@
 var group__sdp__api__functions =
 [
+    [ "wiced_bt_sdp_db_init", "group__sdp__api__functions.html#ga747759ade8e5f409f6474bc739b5a0c8", null ],
     [ "wiced_bt_sdp_init_discovery_db", "group__sdp__api__functions.html#gade46d3c05e78c3a80fa4c4ec914ca1b9", null ],
     [ "wiced_bt_sdp_cancel_service_search", "group__sdp__api__functions.html#ga38a40844fb093f62e15b575fc2ee9d79", null ],
     [ "wiced_bt_sdp_service_search_request", "group__sdp__api__functions.html#ga094936fae3882434d5904be599843e54", null ],

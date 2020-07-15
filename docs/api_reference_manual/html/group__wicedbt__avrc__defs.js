@@ -1,5 +1,17 @@
 var group__wicedbt__avrc__defs =
 [
+    [ "wiced_bt_avrc_conn_cb_t", "structwiced__bt__avrc__conn__cb__t.html", [
+      [ "p_ctrl_cback", "structwiced__bt__avrc__conn__cb__t.html#aed951a16aa3c95a11c19259ef6eef5e7", null ],
+      [ "p_msg_cback", "structwiced__bt__avrc__conn__cb__t.html#a996ff4b97416b306cdf8309821f63e01", null ],
+      [ "p_xmitted_cback", "structwiced__bt__avrc__conn__cb__t.html#a849f2cb72747c2223970624deb703168", null ],
+      [ "company_id", "structwiced__bt__avrc__conn__cb__t.html#a7391f429effae1aa3c94d912e7e879b9", null ],
+      [ "connection_role", "structwiced__bt__avrc__conn__cb__t.html#ac7c94f23894a317a5f85003c8dd7665a", null ],
+      [ "control", "structwiced__bt__avrc__conn__cb__t.html#a653395d33ec88ad1c5a3573746ea139d", null ],
+      [ "avrc_seg_buf_len", "structwiced__bt__avrc__conn__cb__t.html#a2a2db7e712dcca85954acc6073996dd6", null ],
+      [ "p_avrc_buff", "structwiced__bt__avrc__conn__cb__t.html#a8e37c743ae6384580620dc1a4ad1a145", null ],
+      [ "avct_seg_buf_len", "structwiced__bt__avrc__conn__cb__t.html#a467459a192ab1c5070780d068d7c2b3e", null ],
+      [ "p_avct_buff", "structwiced__bt__avrc__conn__cb__t.html#aa603052444815f6a912658e9fe4dd4ff", null ]
+    ] ],
     [ "AVRC_SUCCESS", "group__wicedbt__avrc__defs.html#gad5a56f77558eae22c03166bee0337408", null ],
     [ "AVRC_NO_RESOURCES", "group__wicedbt__avrc__defs.html#ga1dc014b54cf38ef230c3ab6b972be740", null ],
     [ "AVRC_BAD_HANDLE", "group__wicedbt__avrc__defs.html#gaa50a9ea2e272ab8c89ecebc00698bf29", null ],
@@ -23,6 +35,7 @@ var group__wicedbt__avrc__defs =
     [ "AVRC_BROWSE_CONG_IND_EVT", "group__wicedbt__avrc__defs.html#gaf8e3d5e8a2efbb0f55d388e7d4376a6d", null ],
     [ "AVRC_BROWSE_UNCONG_IND_EVT", "group__wicedbt__avrc__defs.html#gab45c191c699b9442a198b966f8834d61", null ],
     [ "AVRC_CMD_TIMEOUT_EVT", "group__wicedbt__avrc__defs.html#ga860816f59542d81318ebdca7a5d12b44", null ],
+    [ "wiced_bt_avrc_ctrl_cback_t", "group__wicedbt__avrc__defs.html#ga7011e88a728bc58122eeb2cdb917290a", null ],
     [ "wiced_bt_avrc_msg_cback_t", "group__wicedbt__avrc__defs.html#gafffa9aab77176e67b2a697ff1bc1baba", null ],
     [ "wiced_bt_avrc_xmitted_cback_t", "group__wicedbt__avrc__defs.html#ga3f31b9947d60da1528813f59afb4762c", null ]
 ];

@@ -78,6 +78,9 @@ typedef uint8_t         wiced_bt_dev_class_t[DEV_CLASS_LEN];    /**< Device clas
 #define BT_DB_HASH_LEN 16
 typedef uint8_t wiced_bt_db_hash_t[BT_DB_HASH_LEN];
 
+#define WICED_BT_GATT_CLIENT_SUPPORTED_FEATURE_OCTET_LEN 1
+typedef uint8_t wiced_bt_gatt_db_client_supported_feature_t[WICED_BT_GATT_CLIENT_SUPPORTED_FEATURE_OCTET_LEN];
+
 /** UUID Type */
 typedef struct
 {
@@ -293,6 +296,23 @@ extern uint8_t *BTU_copyStreamToBda(uint8_t *pBDA, uint8_t *pStream);
 #ifndef MAX
 #define MAX( a, b )                                             ( ( (a) > (b) ) ? (a) : (b) )
 #endif
+
+#if defined(_WIN32) || defined(_WIN64)
+    #define WICED_DECLARE_ALIGNED4(datatype, var) __declspec(align(4)) datatype var
+#elif defined(__ICCARM__)
+    #define WICED_DECLARE_ALIGNED4(datatype, var) _Pragma("data_alignment=4") datatype var
+#else
+    #define WICED_DECLARE_ALIGNED4(datatype, var) datatype var __attribute__((aligned(4)))
+#endif
+
+typedef enum {
+    WICED_BT_TRACE_DEBUG, 
+    WICED_BT_TRACE_ERROR,
+    WICED_BT_TRACE_WARN,
+    WICED_BT_TRACE_API,
+    WICED_BT_TRACE_EVENT,
+}wiced_bt_trace_type_t;
+
 
 #ifdef __cplusplus
 }

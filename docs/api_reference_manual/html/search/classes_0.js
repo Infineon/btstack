@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5fwiced_5ftimer_5fext_5ft_1316',['_wiced_timer_ext_t',['../struct__wiced__timer__ext__t.html',1,'']]]
+  ['br_5fpacket_5ftypes_5fs',['br_packet_types_s',['../structwiced__bt__br__edr__pkt__type__stats_1_1br__packet__types__s.html',1,'wiced_bt_br_edr_pkt_type_stats']]]
 ];

@@ -1,5 +1,32 @@
 var group__l2cap__data__types =
 [
+    [ "wiced_bt_l2cap_fcr_options_t", "structwiced__bt__l2cap__fcr__options__t.html", [
+      [ "mode", "structwiced__bt__l2cap__fcr__options__t.html#afe0306ffb830b08231439dfbdbae604f", null ],
+      [ "tx_window_size", "structwiced__bt__l2cap__fcr__options__t.html#adf212aeb4309ab5a175db0c10e14b34e", null ],
+      [ "max_transmit", "structwiced__bt__l2cap__fcr__options__t.html#afe2018f3e77aac76d74b934b9a003a81", null ],
+      [ "rtrans_timeout_ms", "structwiced__bt__l2cap__fcr__options__t.html#a2bf326f2715649a9bad849bb3071f675", null ],
+      [ "monitor_timeout_ms", "structwiced__bt__l2cap__fcr__options__t.html#a156d53134028dc6c86b6c512eef57826", null ],
+      [ "max_pdu_size", "structwiced__bt__l2cap__fcr__options__t.html#a94516b043cf3568b266d8f5158fe802e", null ]
+    ] ],
+    [ "wiced_bt_l2cap_cfg_information_t", "structwiced__bt__l2cap__cfg__information__t.html", [
+      [ "result", "structwiced__bt__l2cap__cfg__information__t.html#a14d7acfffa5a30489df9946b721fdbf4", null ],
+      [ "mtu_present", "structwiced__bt__l2cap__cfg__information__t.html#a02c533f5b961c30e86f47c82ddeb0afb", null ],
+      [ "mtu", "structwiced__bt__l2cap__cfg__information__t.html#aa1fa6092e613837e80ab278a956647c7", null ],
+      [ "qos_present", "structwiced__bt__l2cap__cfg__information__t.html#a1d2c893de731a828f45f761ebcd549db", null ],
+      [ "qos", "structwiced__bt__l2cap__cfg__information__t.html#a4908ef593e7ee9a7c0f12c1fdb5c9e73", null ],
+      [ "flush_timeout_present", "structwiced__bt__l2cap__cfg__information__t.html#a02fac97e495a16dedb41d26b58822389", null ],
+      [ "flush_timeout", "structwiced__bt__l2cap__cfg__information__t.html#a1d7849e9c6ddf49a2fb4992a5e686e5e", null ],
+      [ "fcr_present", "structwiced__bt__l2cap__cfg__information__t.html#a8944919f00473bd84f6e8a5897a7dd26", null ],
+      [ "fcr", "structwiced__bt__l2cap__cfg__information__t.html#afd9f7f32ecd27114d03ab7d2b1e04b28", null ],
+      [ "fcs_present", "structwiced__bt__l2cap__cfg__information__t.html#a37121d4e493efff8598eda6eba463bf1", null ],
+      [ "fcs", "structwiced__bt__l2cap__cfg__information__t.html#a6c24d4a8a3e14d9442a4f4950f6f0b74", null ],
+      [ "flags", "structwiced__bt__l2cap__cfg__information__t.html#af744cf7eea18a1e0faf24bb95ec8c3cd", null ]
+    ] ],
+    [ "wiced_bt_l2cap_ertm_information_t", "structwiced__bt__l2cap__ertm__information__t.html", [
+      [ "preferred_mode", "structwiced__bt__l2cap__ertm__information__t.html#a313a3b25f88c12e08021d58b06543ad4", null ],
+      [ "allowed_modes", "structwiced__bt__l2cap__ertm__information__t.html#a40e51b20992772dc05219dfa381fc088", null ]
+    ] ],
+    [ "L2CAP_MINIMUM_OFFSET", "group__l2cap__data__types.html#ga393b58267d11d569c394b326b3350412", null ],
     [ "L2CAP_BLE_CONN_MIN_OFFSET", "group__l2cap__data__types.html#gaab983f0794fe13006d98d29538aa1307", null ],
     [ "L2CAP_DEFAULT_BLE_CB_POOL_ID", "group__l2cap__data__types.html#ga6d778e008613bbc073549e6cb1ce8e47", null ],
     [ "L2CAP_BLE_COC_SDU_OFFSET", "group__l2cap__data__types.html#ga2dbbfb547c0c6bdf80988cb14f716982", null ],
