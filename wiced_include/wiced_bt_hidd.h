@@ -45,7 +45,7 @@ enum wiced_bt_hidd_status_e
 typedef uint8_t wiced_bt_hidd_status_t;         /**< HIDD status codes (see #wiced_bt_hidd_status_e) */
 
 
-/* Define the HID transaction types */
+/** Define the HID transaction types (see Table 3.1 Bluetooth HID Protocol Message type in the spec)*/
 #define HID_TRANS_HANDSHAKE     (0)
 #define HID_TRANS_CONTROL       (1)
 #define HID_TRANS_GET_REPORT    (4)
@@ -64,48 +64,45 @@ typedef uint8_t wiced_bt_hidd_status_t;         /**< HIDD status codes (see #wic
 #endif
 #define HID_HDR_LEN (1)
 
-/* Parameters for Handshake */
-#define HID_PAR_HANDSHAKE_RSP_SUCCESS               (0)
-#define HID_PAR_HANDSHAKE_RSP_NOT_READY             (1)
-#define HID_PAR_HANDSHAKE_RSP_ERR_INVALID_REP_ID    (2)
-#define HID_PAR_HANDSHAKE_RSP_ERR_UNSUPPORTED_REQ   (3)
-#define HID_PAR_HANDSHAKE_RSP_ERR_INVALID_PARAM     (4)
-#define HID_PAR_HANDSHAKE_RSP_ERR_UNKNOWN           (14)
-#define HID_PAR_HANDSHAKE_RSP_ERR_FATAL             (15)
+/** Parameters for Handshake */
+#define HID_PAR_HANDSHAKE_RSP_SUCCESS               (0)     /**< Handshake successful */
+#define HID_PAR_HANDSHAKE_RSP_NOT_READY             (1)     /**< Device is busy to accept data */
+#define HID_PAR_HANDSHAKE_RSP_ERR_INVALID_REP_ID    (2)     /**< Invalid report ID transmitted */
+#define HID_PAR_HANDSHAKE_RSP_ERR_UNSUPPORTED_REQ   (3)     /**< The device does not support the request */
+#define HID_PAR_HANDSHAKE_RSP_ERR_INVALID_PARAM     (4)     /**< Parameter value is out of range or inappropriate for the request.*/
+#define HID_PAR_HANDSHAKE_RSP_ERR_UNKNOWN           (14)    /**< Device could not identify the error condition */
+#define HID_PAR_HANDSHAKE_RSP_ERR_FATAL             (15)    /**< Restart is essential to resume functionality */
 
 
-/* Parameters for Control */
-#define HID_PAR_CONTROL_NOP                         (0)
-#define HID_PAR_CONTROL_HARD_RESET                  (1)
-#define HID_PAR_CONTROL_SOFT_RESET                  (2)
-#define HID_PAR_CONTROL_SUSPEND                     (3)
-#define HID_PAR_CONTROL_EXIT_SUSPEND                (4)
-#define HID_PAR_CONTROL_VIRTUAL_CABLE_UNPLUG        (5)
+/** Parameters for Control */
+#define HID_PAR_CONTROL_NOP                         (0)    /**< No Operation */
+#define HID_PAR_CONTROL_HARD_RESET                  (1)    /**< Perform Hard Reset */
+#define HID_PAR_CONTROL_SOFT_RESET                  (2)    /**< Perform Soft Reset */
+#define HID_PAR_CONTROL_SUSPEND                     (3)    /**< Go to reduced power mode */
+#define HID_PAR_CONTROL_EXIT_SUSPEND                (4)    /**< Exit reduced power mode */
+#define HID_PAR_CONTROL_VIRTUAL_CABLE_UNPLUG        (5)    /**< Destroys or invalidate all bonding and Virtual Cable information */
 
 
-/* Different report types in get, set, data */
-#define HID_PAR_REP_TYPE_MASK                       (0x03)
-#define HID_PAR_REP_TYPE_OTHER                      (0x00)
-#define HID_PAR_REP_TYPE_INPUT                      (0x01)
-#define HID_PAR_REP_TYPE_OUTPUT                     (0x02)
-#define HID_PAR_REP_TYPE_FEATURE                    (0x03)
-
-/* Parameters for Get Report */
-
-/* Buffer size in two bytes after Report ID */
-#define HID_PAR_GET_REP_BUFSIZE_FOLLOWS             (0x08)
+/** Different report types in get, set, data */
+#define HID_PAR_REP_TYPE_MASK                       (0x03) /**< Mask used for report type */
+#define HID_PAR_REP_TYPE_OTHER                      (0x00) /**< Other report type */
+#define HID_PAR_REP_TYPE_INPUT                      (0x01) /**< Input report type */
+#define HID_PAR_REP_TYPE_OUTPUT                     (0x02) /**< Output report type */
+#define HID_PAR_REP_TYPE_FEATURE                    (0x03) /**< Feature report type */
 
 
-/* Parameters for Protocol Type */
-#define HID_PAR_PROTOCOL_MASK                       (0x01)
-#define HID_PAR_PROTOCOL_REPORT                     (0x01)
-#define HID_PAR_PROTOCOL_BOOT_MODE                  (0x00)
+/** Parameters for Get Report */
 
-#define HID_PAR_REP_TYPE_MASK                       (0x03)
+#define HID_PAR_GET_REP_BUFSIZE_FOLLOWS             (0x08) /** Buffer size in two bytes after Report ID */
 
-/* Descriptor types in the SDP record */
-#define HID_SDP_DESCRIPTOR_REPORT                   (0x22)
-#define HID_SDP_DESCRIPTOR_PHYSICAL                 (0x23)
+/** Parameters for Protocol Type */
+#define HID_PAR_PROTOCOL_MASK                       (0x01)  /**< Mask used for report type */
+#define HID_PAR_PROTOCOL_REPORT                     (0x01)  /**< Report protocol mode, default mode */
+#define HID_PAR_PROTOCOL_BOOT_MODE                  (0x00)  /**< Boot protocol mode */
+
+/** Descriptor types in the SDP record (see Table 5.6: Descriptor Type Codes) */
+#define HID_SDP_DESCRIPTOR_REPORT                   (0x22)  /**< Descriptor type report */
+#define HID_SDP_DESCRIPTOR_PHYSICAL                 (0x23)  /**< Descriptor type physical */
 
 
 /******************************************************
@@ -119,6 +116,7 @@ typedef struct
     wiced_bt_flow_spec_t    hci;        /**< HCI */
 } wiced_bt_hidd_qos_info_t;             /**< HIDD QOS info */
 
+/** HID-Device Response data */
 typedef struct wiced_bt_rep_data
 {
     uint8_t rep_type;                   /**< Report type */
@@ -150,13 +148,14 @@ enum wiced_bt_hidd_cback_event_e
 };
 typedef uint8_t wiced_bt_hidd_cback_event_t;   /**< HIDD events (see #wiced_bt_hidd_cback_event_e)*/
 
+/** HIDD state (see #wiced_bt_hidd_st_e) */
 enum wiced_bt_hidd_st_e
 {
     WICED_BT_HIDD_BUSY_CONN_ST,         /**< Busy state */
     WICED_BT_HIDD_IDLE_CONN_ST,         /**< Idle state */
     WICED_BT_HIDD_SUSP_CONN_ST          /**< Suspension state */
 };
-typedef uint8_t wiced_bt_hidd_st_t;     /**< HIDD state (see #wiced_bt_hidd_st_e) */
+typedef uint8_t wiced_bt_hidd_st_t;
 
 /** Incoming data */
 typedef struct
@@ -172,7 +171,7 @@ typedef union {
     wiced_bt_hidd_get_rep_data_t        get_rep;        /**< Get report data */
     uint8_t                             pm_err_code;    /**< Power mode error code */
     uint16_t                            pm_interval;    /**< Power mode interval */
-} wiced_bt_hidd_event_data_t;                           /**< HIDD callback data */
+} wiced_bt_hidd_event_data_t;
 
 /**
  * HIDD callback
@@ -188,13 +187,15 @@ typedef union {
 
 typedef void (wiced_bt_hidd_callback_t) (wiced_bt_hidd_cback_event_t  event, uint32_t data, wiced_bt_hidd_event_data_t *p_event_data );
 
+/** HIDD device registration information */
 typedef struct
 {
     wiced_bt_device_address_t   host_addr;      /**< Host bd address */
     wiced_bt_hidd_qos_info_t    *p_qos_info;    /**< Qos info */
     wiced_bt_hidd_callback_t    *p_app_cback;   /**< callback function */
-} wiced_bt_hidd_reg_info_t;                     /**< HIDD registration info */
+} wiced_bt_hidd_reg_info_t;
 
+/**< HIDD power mode */
 typedef struct wiced_bt_hidd_pwr_md
 {
     uint16_t            max;        /**< Max interval */
@@ -202,10 +203,11 @@ typedef struct wiced_bt_hidd_pwr_md
     uint16_t            attempt;    /**< Number of attempt */
     uint16_t            timeout;    /**< Timeout */
     uint8_t             mode;       /**< Power mode */
-} wiced_bt_hidd_pm_pwr_md_t;        /**< HIDD power mode */
+} wiced_bt_hidd_pm_pwr_md_t;
 
 
 /**
+ *  @cond DUAL_MODE
  *  @addtogroup  hidd_api_functions      HID Device Role (HIDD) over BR/EDR
  *  @ingroup     wiced_bt_hid
  *
@@ -283,7 +285,7 @@ wiced_bt_hidd_status_t wiced_bt_hidd_disconnect(void);
  *
  *  @return         status code (see #wiced_bt_hidd_status_t)
  */
-wiced_bt_hidd_status_t wiced_bt_hidd_hand_shake(uint8_t res_code);
+wiced_bt_hidd_status_t wiced_bt_hidd_hand_shake(UINT8 res_code);
 
 /**
  * Function         wiced_bt_hidd_virtual_unplug
@@ -312,22 +314,10 @@ wiced_bt_hidd_status_t wiced_bt_hidd_virtual_unplug(void);
 wiced_bt_hidd_status_t wiced_bt_hidd_send_data(wiced_bool_t control_ch, uint8_t rep_type,
                                                uint8_t *p_data, uint16_t data_len);
 
-/**
- * Function         wiced_bt_hidd_set_power_mgmt_params
- *
- *                  Changes power mgmt parameters.
- *
- *  @param[in]      conn_substate   : Connection substate
- *  @param[in]      pm_params       : Power management paramters
- *  @param[out]     None
- *
- *  @return         status code (see #wiced_bt_hidd_status_t)
- */
-wiced_bt_hidd_status_t wiced_bt_hidd_set_power_mgmt_params(uint8_t conn_substate,
-                                                           wiced_bt_hidd_pm_pwr_md_t pm_params);
-
 #ifdef __cplusplus
 }
 #endif
 
 /** @} wicedbt_hidd */
+/* @endcond*/
+

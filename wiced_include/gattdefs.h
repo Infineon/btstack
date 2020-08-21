@@ -134,7 +134,12 @@
 #define GATT_UUID_SCAN_REFRESH          0x2A31
 
 
-/* GATT appearance definitions */
+/**
+ * GATT appearance definitions
+ *
+ * @ingroup wicedbt_gatt
+ *
+ */
 enum gatt_appearance_e
 {
     APPEARANCE_GENERIC_PHONE                    = 64,

@@ -15,6 +15,7 @@
  *                   Enumerations
  ******************************************************/
 
+/** Service UUID per Bluetooth Assigned numbers */
 enum ble_uuid_service
 {
     UUID_SERVICE_GAP                                    = 0x1800,
@@ -58,6 +59,7 @@ enum ble_uuid_service
 };
 
 
+/** UUID per Bluetooth Assigned numbers */
 enum ble_uuid_attribute
 {
     UUID_ATTRIBUTE_PRIMARY_SERVICE                      = 0x2800,
@@ -67,6 +69,7 @@ enum ble_uuid_attribute
 };
 
 
+/** Descriptor UUID per Bluetooth Assigned numbers */
 enum ble_uuid_characteristic_descriptor
 {
     UUID_DESCRIPTOR_CHARACTERISTIC_EXTENDED_PROPERTIES  = 0x2900,
@@ -87,6 +90,7 @@ enum ble_uuid_characteristic_descriptor
 };
 
 
+/** Characteristic UUID per Bluetooth Assigned numbers */
 enum ble_uuid_characteristic
 {
     UUID_CHARACTERISTIC_DEVICE_NAME                                         = 0x2A00,

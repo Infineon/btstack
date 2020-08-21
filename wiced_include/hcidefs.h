@@ -385,6 +385,27 @@
 
 #define HCI_BLE_SET_PRIVACY_MODE            (0x004E | HCI_GRP_BLE_CMDS)
 
+#define HCI_BLE_READ_BUFFER_SIZE_V2         (0x0060 | HCI_GRP_BLE_CMDS)
+
+/* LE ISOC */
+#define HCI_BLE_ISOC_READ_TX_SYNC           (0x0061 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_SET_CIG_PARAM          (0x0062 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_SET_CIG_PARAM_TEST     (0x0063 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_CREATE_CIS             (0x0064 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_REMOVE_CIG             (0x0065 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_ACCEPT_CIS             (0x0066 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_REJECT_CIS             (0x0067 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_CREATE_BIG             (0x0068 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_CREATE_BIG_TEST        (0x0069 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_TERMINATE_BIG          (0x006A | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_TERMINATE_BIG          (0x006A | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_BIG_CREATE_SYNC        (0x006B | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_BIG_TERMINATE_SYNC     (0x006C | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_BIG_TERMINATE_SYNC     (0x006C | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_REQUEST_PEER_SCA       (0x006D | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_SETUP_DATA_PATH        (0x006E | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_ISOC_REMOVE_DATA_PATH       (0x006F | HCI_GRP_BLE_CMDS)
+
 
 
 /* LE supported states definition */
@@ -714,7 +735,13 @@
 #define HCI_BLE_ADV_SET_TERMINATED_EVT              0x12
 #define HCI_BLE_SCAN_REQ_RECEIVED_EVT               0x13
 #define HCI_BLE_CHANNEL_SELECTION_ALOGRITHEM_EVT    0x14
-
+#define HCI_BLE_ISOC_CIS_ESTABLISHED_EVT            0x19
+#define HCI_BLE_ISOC_CIS_REQUEST_EVT                0x1A
+#define HCI_BLE_ISOC_CREATE_BIG_EVT                 0x1B
+#define HCI_BLE_ISOC_TERMINATE_BIG_EVT              0x1C
+#define HCI_BLE_ISOC_BIG_SYNC_ESTABLISHED_EVT       0x1D
+#define HCI_BLE_ISOC_BIG_SYNC_LOST_EVT              0x1E
+#define HCI_BLE_ISOC_PEER_SCA_COMPLETE_EVT          0x1F
 
 /* ConnectionLess Broadcast events */
 #define HCI_SYNC_TRAIN_COMP_EVT             0x4F
@@ -940,12 +967,26 @@
     17     LE Extended Advertising Set Terminated Event
     18     LE Scan Request Received Event
     19     LE Channel Selection Algorithm Event
+    20     LE Connectionless IQ Report event
+    21     LE Connection IQ Report event
+    22     LE CTE Request Failed event
+    23     LE Periodic Advertising Sync Transfer Received event
+    24     LE CIS Established event
+    25     LE CIS Request event
+    26     LE Create BIG Complete event
+    27     LE Terminate BIG Complete event
+    28     LE BIG Sync Established event
+    29     LE BIG Sync Lost event
+    30     LE Request Peer SCA Complete event
+    31     LE Path Loss Threshold event
+    32     LE Transmit Power Reporting event
+    33     LE BIGInfo Advertising Report event
 */
 #if BTM_BLE_PRIVACY_SPT == TRUE
 /* BLE event mask */
-#define HCI_BLE_EVENT_MASK_DEF               "\x00\x00\x00\x00\x00\x0f\xff\xff"
+#define HCI_BLE_EVENT_MASK_DEF               "\x00\x00\x00\x00\x43\x0f\xff\xff"
 #else
-#define HCI_BLE_EVENT_MASK_DEF              "\x00\x00\x00\x00\x00\x0f\xff\x7f"
+#define HCI_BLE_EVENT_MASK_DEF               "\x00\x00\x00\x00\x43\x0f\xff\x7f"
 #endif
 /*
 ** Definitions for packet type masks (BT1.2 and BT2.0 definitions)
@@ -1398,15 +1439,15 @@
 #define HCI_MWS_NUM_TRANSPS_SUPPORTED                   10  /* used for HCI_GET_MWS_TRANS_LAYER_CFG */
 #define HCI_MWS_NUM_BAUD_RATES_ON_ONE_TRANSP_SUPPORTED  20  /* used for HCI_GET_MWS_TRANS_LAYER_CFG */
 
-/* Define the extended flow specification fields used by AMP */
+/** Define the extended flow specification fields used by AMP */
 typedef struct
 {
-    uint8_t       id;
-    uint8_t       stype;
-    uint16_t      max_sdu_size;
-    uint32_t      sdu_inter_time;
-    uint32_t      access_latency;
-    uint32_t      flush_timeout;
+    uint8_t       id;               /**< Unique Identifier */
+    uint8_t       stype;            /**< Service Type */
+    uint16_t      max_sdu_size;     /**< Maximum SDU size */
+    uint32_t      sdu_inter_time;   /**< SDU Inter-arrival Time */
+    uint32_t      access_latency;   /**< Access Latency (in microseconds) */
+    uint32_t      flush_timeout;    /**< Flush Timeout (in microseconds) */
 } tHCI_EXT_FLOW_SPEC;
 
 

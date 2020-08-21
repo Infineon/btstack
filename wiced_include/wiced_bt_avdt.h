@@ -12,31 +12,45 @@
 
 #include "wiced_result.h"
 #include "wiced_bt_types.h"
-/** 
- * @defgroup  wicedbt_avdt        Audio/Video Distribution (AVDT)
- */
+
 /**
- * @addtogroup wicedbt_avdt_datatypes Data Types and Macros
- * @ingroup wicedbt_avdt
+ * @cond DUAL_MODE
+ * @defgroup  wicedbt_avdt        Audio/Video Distribution Transport (AVDT)
  *
+ * This section describes the API's of Audio/Video Distribution Transport protocol.
+ * @addtogroup wicedbt_avdt Audio/Video Distribution Transport (AVDT)
+ * @ingroup wicedbt
  * @{
  */
 
 /*****************************************************************************
 **  Constants
 *****************************************************************************/
-#define AVDT_VERSION_1_0            0x0100
-#define AVDT_VERSION_1_2            0x0102
-#define AVDT_VERSION_1_3            0x0103
+/**
+ * @anchor AVDT_PROTOCOL_VERSION
+ * @name AVDT protocol versions.
+ * @{
+ *
+ * Avdt protocol versions. */
+#define AVDT_VERSION_1_0            0x0100 /**< AVDT Version 1.0 */
+#define AVDT_VERSION_1_2            0x0102 /**< AVDT Version 1.2 */
+#define AVDT_VERSION_1_3            0x0103 /**< AVDT Version 1.3 */
+/** @} AVDT_PROTOCOL_VERSION*/
 
-
+/**
+ * @anchor AVDT_PROTOCOL_STACK_VERSION
+ * @name stack supported AVDT protocol versions.
+ * @{
+ *
+ * Avdt protocol version supported by stack. */
 #ifndef AVDT_VERSION
-#define AVDT_VERSION                AVDT_VERSION_1_3
+#define AVDT_VERSION                AVDT_VERSION_1_3    /**< Avdt protocol version supported by stack*/
 #endif
+/** @} AVDT_PROTOCOL_STACK_VERSION*/
 
-/* AVDTP version when feature was added */
-#define AVDT_VERSION_DELAYREPORT    AVDT_VERSION_1_3        /** Delay Reporting */
-#define AVDT_VERSION_CP             AVDT_VERSION_1_2        /** Content Protection */
+/** AVDTP version when feature was added */
+#define AVDT_VERSION_DELAYREPORT    AVDT_VERSION_1_3        /**< Delay Reporting */
+#define AVDT_VERSION_CP             AVDT_VERSION_1_2        /**< Content Protection */
 
 /**
  * @anchor AVDT_RESULT
@@ -52,38 +66,38 @@
 #define AVDT_WRITE_FAIL             5       /**< Write failed */
 /** @} AVDT_RESULT */
 
-/* The index to access the codec type in codec_info[]. */
-#define AVDT_CODEC_TYPE_INDEX       2
+/** The index to access the codec type in codec_info[]. */
+#define AVDT_CODEC_TYPE_INDEX       2       /**< Index in codec_info[] */
 
-/* The size in bytes of a Adaptation Layer header. */
-#define AVDT_AL_HDR_SIZE            3
+/** The size in bytes of a Adaptation Layer header. */
+#define AVDT_AL_HDR_SIZE            3       /**< Adaptation layer header size*/
 
-/* The size in bytes of a media packet header. */
-#define AVDT_MEDIA_HDR_SIZE         12
+/** The size in bytes of a media packet header. */
+#define AVDT_MEDIA_HDR_SIZE         12      /**< Media packet header size */
 
-/* The size, in byte, of the SCMS Header */
-#define AVDT_MEDIA_CP_HDR_SIZE      1
+/** The size, in byte, of the SCMS Header */
+#define AVDT_MEDIA_CP_HDR_SIZE      1       /**< Media Content protection header size */
 
-/* AVDTP 7.5.3 Adaptation Layer Fragmentation
+/** AVDTP 7.5.3 Adaptation Layer Fragmentation
  * original length of the un-fragmented transport packet should be specified by
  * two bytes length field of Adaptation Layer Header  */
-#define AVDT_MAX_MEDIA_SIZE         (0xFFFF - AVDT_MEDIA_HDR_SIZE)
+#define AVDT_MAX_MEDIA_SIZE         (0xFFFF - AVDT_MEDIA_HDR_SIZE)  /**< AVDT maximum size of media packet*/
 
 /** The handle is used when reporting MULTI_AV specific events */
-#define AVDT_MULTI_AV_HANDLE        0xFF
+#define AVDT_MULTI_AV_HANDLE        0xFF    /**< AVDT Handle for MULTI_AV events*/
 
-/* The number of bytes needed by the protocol stack for the protocol headers
+/** The number of bytes needed by the protocol stack for the protocol headers
 ** of a media packet.  This is the size of the media packet header, the
 ** L2CAP packet header and HCI header.
 */
-#define AVDT_MEDIA_OFFSET           23
+#define AVDT_MEDIA_OFFSET           23  /**< Media packet header size including l2cap & HCI headers*/
 
-/* The marker bit is used by the application to mark significant events such
+/** The marker bit is used by the application to mark significant events such
 ** as frame boundaries in the data stream.  This constant is used to check or
 ** set the marker bit in the m_pt parameter of an wiced_bt_avdt_write_req()
 ** or AVDT_DATA_IND_EVT.
 */
-#define AVDT_MARKER_SET             0x80
+#define AVDT_MARKER_SET             0x80    /**< AVDT Market bit*/  
 
 /**
  * @anchor AVDT_SEP_TYPE
@@ -95,9 +109,9 @@
 #define AVDT_TSEP_SNK               1       /**< Sink */
 /** @} AVDT_SEP_TYPE */
 
-/* initiator/acceptor role for adaption */
-#define AVDT_INT                    0       /* initiator */
-#define AVDT_ACP                    1       /* acceptor */
+/** AVDT initiator/acceptor role for adaption */
+#define AVDT_INT                    0       /**< AVDT initiator */
+#define AVDT_ACP                    1       /**< AVDT acceptor */
 
 /**
  * @anchor AVDT_MEDIA
@@ -106,9 +120,9 @@
  *
  * Media types
  */
-#define AVDT_MEDIA_AUDIO            0       /* Audio SEP */
-#define AVDT_MEDIA_VIDEO            1       /* Video SEP */
-#define AVDT_MEDIA_MULTI            2       /* Multimedia SEP */
+#define AVDT_MEDIA_AUDIO            0       /**< Audio SEP */
+#define AVDT_MEDIA_VIDEO            1       /**< Video SEP */
+#define AVDT_MEDIA_MULTI            2       /**< Multimedia SEP */
 /** @} AVDT_MEDIA */
 
 /**
@@ -120,13 +134,13 @@
 #define AVDT_RTCP_PT_SR             200     /**< the packet type - SR (Sender Report) */
 #define AVDT_RTCP_PT_RR             201     /**< the packet type - RR (Receiver Report) */
 #define AVDT_RTCP_PT_SDES           202     /**< the packet type - SDES (Source Description) */
-typedef uint8_t AVDT_REPORT_TYPE;
+typedef uint8_t AVDT_REPORT_TYPE;           /**< AVDT report type */
 /** @} AVDT_REPORT_TYPE */
 
 
-#define AVDT_RTCP_SDES_CNAME        1       /* SDES item CNAME */
+#define AVDT_RTCP_SDES_CNAME        1       /**< SDES item CNAME */
 #ifndef AVDT_MAX_CNAME_SIZE
-#define AVDT_MAX_CNAME_SIZE         28
+#define AVDT_MAX_CNAME_SIZE         28      /**< Max AVDT command name length */
 #endif
 
 
@@ -281,16 +295,16 @@ typedef uint8_t AVDT_REPORT_TYPE;
 #define AVDT_DELAY_REPORT_CFM_EVT   21      /**< Delay report response received */
 /** @} AVDT_EVT */
 
-#define AVDT_MAX_EVT                (AVDT_DELAY_REPORT_CFM_EVT)
+#define AVDT_MAX_EVT                (AVDT_DELAY_REPORT_CFM_EVT) /**< Maximum processed event id */
 
-/* PSM for AVDT */
-#define AVDT_PSM                    0x0019
+/** PSM for AVDT */
+#define AVDT_PSM                    0x0019  /**< AVDT PSM value*/
 
-/* Codec Size */
-#define AVDT_CODEC_SIZE             14
+/** Codec Size */
+#define AVDT_CODEC_SIZE             14  /**< AVDT codec size*/
 
 /**/
-#define AVDT_PROTECT_SIZE           90
+#define AVDT_PROTECT_SIZE           90  /**< Max content protection info size */
 
 /**
  * @anchor AVDT_NSC
@@ -299,9 +313,9 @@ typedef uint8_t AVDT_REPORT_TYPE;
  *
  * Non-supported protocol command messages (used in wiced_bt_avdt_cs_t)
  */
-#define AVDT_NSC_SUSPEND            0x01    /* Suspend command not supported */
-#define AVDT_NSC_RECONFIG           0x02    /* Reconfigure command not supported */
-#define AVDT_NSC_SECURITY           0x04    /* Security command not supported */
+#define AVDT_NSC_SUSPEND            0x01    /**< Suspend command not supported */
+#define AVDT_NSC_RECONFIG           0x02    /**< Reconfigure command not supported */
+#define AVDT_NSC_SECURITY           0x04    /**< Security command not supported */
 /** @} AVDT_NSC */
 
 /*****************************************************************************
@@ -311,31 +325,30 @@ typedef uint8_t AVDT_REPORT_TYPE;
 /** AVDT sender report */
 typedef struct
 {
-    uint32_t  ntp_sec;        /* NTP time: seconds relative to 0h UTC on 1 January 1900 */
-    uint32_t  ntp_frac;       /* NTP time: the fractional part */
-    uint32_t  rtp_time;       /* timestamp in RTP header */
-    uint32_t  pkt_count;      /* sender's packet count: since starting transmission
-                               * up until the time this SR packet was generated. */
-    uint32_t  octet_count;    /* sender's octet count: same comment */
+    uint32_t  ntp_sec;        /**< NTP time: seconds relative to 0h UTC on 1 January 1900 */
+    uint32_t  ntp_frac;       /**< NTP time: the fractional part */
+    uint32_t  rtp_time;       /**< timestamp in RTP header */
+    uint32_t  pkt_count;      /**< sender's packet count: since starting transmission up until the time this SR packet was generated. */
+    uint32_t  octet_count;    /**< sender's octet count: same comment */
 } wiced_bt_avdt_sender_info_t;
 
 /** AVDT receiver report */
 typedef struct
 {
-    uint8_t   frag_lost;      /* fraction lost since last RR */
-    uint32_t  packet_lost;    /* cumulative number of packets lost since the beginning */
-    uint32_t  seq_num_rcvd;   /* extended highest sequence number received */
-    uint32_t  jitter;         /* interarrival jitter */
-    uint32_t  lsr;            /* last SR timestamp */
-    uint32_t  dlsr;           /* delay since last SR */
+    uint8_t   frag_lost;      /**< fraction lost since last RR */
+    uint32_t  packet_lost;    /**< cumulative number of packets lost since the beginning */
+    uint32_t  seq_num_rcvd;   /**< extended highest sequence number received */
+    uint32_t  jitter;         /**< interarrival jitter */
+    uint32_t  lsr;            /**< last SR timestamp */
+    uint32_t  dlsr;           /**< delay since last SR */
 } wiced_bt_avdt_report_blk_t;
 
 /** AVDT report */
 typedef union
 {
-    wiced_bt_avdt_sender_info_t     sr;
-    wiced_bt_avdt_report_blk_t      rr;
-    uint8_t                         cname[AVDT_MAX_CNAME_SIZE + 1];
+    wiced_bt_avdt_sender_info_t     sr;                               /**< sender information*/
+    wiced_bt_avdt_report_blk_t      rr;                               /**< report data*/
+    uint8_t                         cname[AVDT_MAX_CNAME_SIZE + 1];   /**< command name*/
 } wiced_bt_avdt_report_data_t;
 
 /** AVDT subsytem configuration */
@@ -353,7 +366,7 @@ typedef struct {
     uint8_t         seid;                           /**< Stream endpoint identifier */
     uint8_t         media_type;                     /**< Media type (see @ref AVDT_MEDIA "Media types") */
     uint8_t         tsep;                           /**< SEP type (see @ref AVDT_SEP_TYPE "Stream endpoint types") */
-    uint16_t        psc_mask;                       /* Protocol service capabilities mask */
+    uint16_t        psc_mask;                       /**< Protocol service capabilities mask */
 } wiced_bt_avdt_sep_info_t;
 
 /** Stream endpoint configuration */
@@ -451,13 +464,10 @@ typedef union {
 } wiced_bt_avdt_ctrl_t;
 
 /**
- * Function         wiced_bt_avdt_ctrl_cback_t
- *
- *                  AVDT control callback
- *
- * @note            This function passes control events
- *                  to the application.  This function is required for all registered stream
- *                  endpoints and for the AVDT_DiscoverReq() and AVDT_GetCapReq() functions.
+ * AVDT control callback
+ * This function passes control events
+ * to the application.  This function is required for all registered stream
+ * endpoints and for the AVDT_DiscoverReq() and AVDT_GetCapReq() functions.
  *
  * @param[in]       handle  : AVDT connection handle
  * @param[in]       bd_addr : Peer address
@@ -470,13 +480,10 @@ typedef void (wiced_bt_avdt_ctrl_cback_t)(uint8_t handle, wiced_bt_device_addres
                                           wiced_bt_avdt_ctrl_t *p_data);
 
 /**
- * Function         wiced_bt_avdt_data_cback_t
- *
- *                  AVDT data callback
- *
- * @note            It is executed when AVDTP has a media
- *                  packet ready for the application.  This function is required for SNK
- *                  endpoints and not applicable for SRC endpoints.
+ * AVDT data callback
+ * It is executed when AVDTP has a media
+ * packet ready for the application.  This function is required for SNK
+ * endpoints and not applicable for SRC endpoints.
  *
  *
  * @param[in]       handle      : AVDT connection handle
@@ -491,6 +498,19 @@ typedef void (wiced_bt_avdt_ctrl_cback_t)(uint8_t handle, wiced_bt_device_addres
 typedef void (wiced_bt_avdt_data_cback_t)(uint8_t handle, uint16_t seq, uint32_t time_stamp, uint8_t m_pt,
                                           uint8_t *p_rx_media, uint16_t media_len);
 
+/**
+ * AVDT get capability request
+ * It is executed to retrieve the AVDT stream 
+ * capabilities of remote device.
+ *
+ *
+ * @param[in]       bd_addr      : bluetooth address of remote device
+ * @param[in]       seid         : Stream end point id
+ * @param[in]       p_cfg        : Stream Configuration
+ * @param[in]       p_cback      : Callback function upon getCapabilityReq completion
+ *
+ * @return          Nothing
+ */
 typedef uint16_t (wiced_bt_avdt_getcap_req_t) (wiced_bt_device_address_t bd_addr, uint8_t seid, wiced_bt_avdt_cfg_t *p_cfg, wiced_bt_avdt_ctrl_cback_t *p_cback);
 
 /** This structure contains information required when a stream is created.
@@ -514,19 +534,10 @@ typedef struct {
 #define AVDT_DATA_OPT_NONE      0x00            /**< No option still add RTP header */
 #define AVDT_DATA_OPT_NO_RTP    (0x01 << 0)     /**< Skip adding RTP header */
 
-typedef uint8_t wiced_bt_avdt_data_opt_mask_t;
+
+typedef uint8_t wiced_bt_avdt_data_opt_mask_t;  /**< AVDT data opt mask*/
 /** @} AVDT_DATA_OPT */
 
-/** @} wicedbt_avdt_datatypes */
-
-/**
- * @addtogroup wicedbt_avdt_functions API Functions
- * @ingroup wicedbt_avdt
- *
- * APIs to enable the upper layers to stream audio/video data over Bluetooth
- *
- * @{
-*/
 
 #ifdef __cplusplus
 extern "C"
@@ -534,11 +545,9 @@ extern "C"
 #endif
 
 /**
- * Function         wiced_bt_avdt_register
- *
- *                  Initialize AVDTP subsystem and register callback for
- *                  event notification. This function must be called prior
- *                  to calling other AVDT APIs.
+ * Initialize AVDTP subsystem and register callback for
+ * event notification. This function must be called prior
+ * to calling other AVDT APIs.
  *
  * @param[in]       p_reg     : AVDT registration parameters
  * @param[in]       p_cback   : Callback for AVDT event notification
@@ -550,29 +559,20 @@ extern "C"
 uint16_t wiced_bt_avdt_register(wiced_bt_avdt_reg_t *p_reg, wiced_bt_avdt_ctrl_cback_t *p_cback);
 
 /**
+ * Called to deregister use AVDTP protocol.
+ * Before this function can be called, all streams must be
+ * removed with wiced_bt_avdt_remove_stream().
  *
- * Function         wiced_bt_avdt_deregister
- *
- *                  Called to deregister use AVDTP protocol.
- *                  Before this function can be called, all streams must be
- *                  removed with wiced_bt_avdt_remove_stream().
- *
- * @param[in]       None
- *
- * @return          None
  *
  */
 void wiced_bt_avdt_deregister(void);
 
 /**
- *
- * Function         wiced_bt_avdt_create_stream
- *
- *                  Create a stream endpoint.  After a stream endpoint is
- *                  created an application can initiate a connection between
- *                  this endpoint and an endpoint on a peer device.  In
- *                  addition, a peer device can discover, get the capabilities,
- *                  and connect to this endpoint.
+ * Create a stream endpoint.  After a stream endpoint is
+ * created an application can initiate a connection between
+ * this endpoint and an endpoint on a peer device.  In
+ * addition, a peer device can discover, get the capabilities,
+ * and connect to this endpoint.
  *
  * @param[out]      p_handle    : Connection handle (valid if AVRC_SUCCESS is returned)
  * @param[in]       p_cs        : Stream configuration
@@ -584,14 +584,11 @@ void wiced_bt_avdt_deregister(void);
 uint16_t wiced_bt_avdt_create_stream(uint8_t *p_handle, wiced_bt_avdt_cs_t *p_cs);
 
 /**
- *
- * Function         wiced_bt_avdt_remove_stream
- *
- *                  Remove a stream endpoint.  This function is called when
- *                  the application is no longer using a stream endpoint.
- *                  If this function is called when the endpoint is connected
- *                  the connection is closed and then the stream endpoint
- *                  is removed.
+ * Remove a stream endpoint.  This function is called when
+ * the application is no longer using a stream endpoint.
+ * If this function is called when the endpoint is connected
+ * the connection is closed and then the stream endpoint
+ * is removed.
  *
  *
  * @param[in]       handle      : Connection handle
@@ -603,13 +600,9 @@ uint16_t wiced_bt_avdt_create_stream(uint8_t *p_handle, wiced_bt_avdt_cs_t *p_cs
 uint16_t wiced_bt_avdt_remove_stream(uint8_t handle);
 
 /**
- *
- * Function         wiced_bt_avdt_update_stream
- *
- *                  Change all the sink SEPs to available or unavailable
- *
- * @note            This function can only be called if there is no active
- *                  stream connection to the stream type to be updated
+ * Change all the sink SEPs to available or unavailable
+ * This function can only be called if there is no active
+ * stream connection to the stream type to be updated
  *
  * @param[in]       sep_type    : (see @ref AVDT_SEP_TYPE "AVDT sep type")
  * @param[in]       available   : If true set all SEPs to available,
@@ -623,27 +616,24 @@ uint16_t wiced_bt_avdt_update_stream(uint8_t sep_type, wiced_bool_t available);
 
 
 /**
+ * This function initiates a connection to the AVDTP service
+ * on the peer device, if not already present, and discovers
+ * the stream endpoints on the peer device.  (Please note
+ * that AVDTP discovery is unrelated to SDP discovery).
+ * This function can be called at any time regardless of whether
+ * there is an AVDTP connection to the peer device.
  *
- * Function         wiced_bt_avdt_discover_req
+ * When discovery is complete, an AVDT_DISCOVER_CFM_EVT
+ * is sent to the application via its callback function.
+ * The application must not call wiced_bt_avdt_get_cap_req() or
+ * wiced_bt_avdt_discover_req() again to the same device until
+ * discovery is complete.
  *
- *                  This function initiates a connection to the AVDTP service
- *                  on the peer device, if not already present, and discovers
- *                  the stream endpoints on the peer device.  (Please note
- *                  that AVDTP discovery is unrelated to SDP discovery).
- *                  This function can be called at any time regardless of whether
- *                  there is an AVDTP connection to the peer device.
- *
- *                  When discovery is complete, an AVDT_DISCOVER_CFM_EVT
- *                  is sent to the application via its callback function.
- *                  The application must not call wiced_bt_avdt_get_cap_req() or
- *                  wiced_bt_avdt_discover_req() again to the same device until
- *                  discovery is complete.
- *
- *                  The memory addressed by sep_info is allocated by the
- *                  application.  This memory is written to by AVDTP as part
- *                  of the discovery procedure.  This memory must remain
- *                  accessible until the application receives the
- *                  AVDT_DISCOVER_CFM_EVT.
+ * The memory addressed by sep_info is allocated by the
+ * application.  This memory is written to by AVDTP as part
+ * of the discovery procedure.  This memory must remain
+ * accessible until the application receives the
+ * AVDT_DISCOVER_CFM_EVT.
  *
  * @param[in]       bd_addr     : Peer bd_addr
  * @param[in]       p_cback     : Callback for discovery results
@@ -661,25 +651,22 @@ uint16_t wiced_bt_avdt_discover_req(wiced_bt_device_address_t bd_addr, wiced_bt_
 
 
 /**
+ * This function initiates a connection to the AVDTP service
+ * on the peer device, if not already present, and gets the
+ * capabilities of a stream endpoint on the peer device.
+ * This function can be called at any time regardless of
+ * whether there is an AVDTP connection to the peer device.
  *
- * Function         wiced_bt_avdt_get_cap_req
+ * When the procedure is complete, an AVDT_GETCAP_CFM_EVT is
+ * sent to the application via its callback function.  The
+ * application must not call wiced_bt_avdt_get_cap_req() or
+ * wiced_bt_avdt_discover_req() again until the procedure is complete.
  *
- *                  This function initiates a connection to the AVDTP service
- *                  on the peer device, if not already present, and gets the
- *                  capabilities of a stream endpoint on the peer device.
- *                  This function can be called at any time regardless of
- *                  whether there is an AVDTP connection to the peer device.
- *
- *                  When the procedure is complete, an AVDT_GETCAP_CFM_EVT is
- *                  sent to the application via its callback function.  The
- *                  application must not call wiced_bt_avdt_get_cap_req() or
- *                  wiced_bt_avdt_discover_req() again until the procedure is complete.
- *
- *                  The memory pointed to by p_cfg is allocated by the
- *                  application.  This memory is written to by AVDTP as part
- *                  of the get capabilities procedure.  This memory must
- *                  remain accessible until the application receives
- *                  the AVDT_GETCAP_CFM_EVT.
+ * The memory pointed to by p_cfg is allocated by the
+ * application.  This memory is written to by AVDTP as part
+ * of the get capabilities procedure.  This memory must
+ * remain accessible until the application receives
+ * the AVDT_GETCAP_CFM_EVT.
  *
  * @param[in]       bd_addr     : Peer bd_addr
  * @param[in]       seid        : Stream end point ID (From wiced_bt_avdt_discover_req)
@@ -695,25 +682,22 @@ uint16_t wiced_bt_avdt_get_cap_req(wiced_bt_device_address_t bd_addr, uint8_t se
                                    wiced_bt_avdt_ctrl_cback_t *p_cback);
 
 /**
+ * This function initiates a connection to the AVDTP service
+ * on the peer device, if not already present, and gets the
+ * capabilities of a stream endpoint on the peer device.
+ * This function can be called at any time regardless of
+ * whether there is an AVDTP connection to the peer device.
  *
- * Function         wiced_bt_avdt_get_all_cap_req
+ * When the procedure is complete, an AVDT_GETCAP_CFM_EVT is
+ * sent to the application via its callback function.  The
+ * application must not call wiced_bt_avdt_get_cap_req() or
+ * wiced_bt_avdt_discover_req() again until the procedure is complete.
  *
- *                  This function initiates a connection to the AVDTP service
- *                  on the peer device, if not already present, and gets the
- *                  capabilities of a stream endpoint on the peer device.
- *                  This function can be called at any time regardless of
- *                  whether there is an AVDTP connection to the peer device.
- *
- *                  When the procedure is complete, an AVDT_GETCAP_CFM_EVT is
- *                  sent to the application via its callback function.  The
- *                  application must not call wiced_bt_avdt_get_cap_req() or
- *                  wiced_bt_avdt_discover_req() again until the procedure is complete.
- *
- *                  The memory pointed to by p_cfg is allocated by the
- *                  application.  This memory is written to by AVDTP as part
- *                  of the get capabilities procedure.  This memory must
- *                  remain accessible until the application receives
- *                  the AVDT_GETCAP_CFM_EVT.
+ * The memory pointed to by p_cfg is allocated by the
+ * application.  This memory is written to by AVDTP as part
+ * of the get capabilities procedure.  This memory must
+ * remain accessible until the application receives
+ * the AVDT_GETCAP_CFM_EVT.
  *
  * @param[in]       bd_addr     : Peer bd_addr
  * @param[in]       seid        : Stream end point ID (From wiced_bt_avdt_discover_req)
@@ -729,12 +713,9 @@ uint16_t wiced_bt_avdt_get_all_cap_req(wiced_bt_device_address_t bd_addr, uint8_
                                        wiced_bt_avdt_ctrl_cback_t *p_cback);
 
 /**
- *
- * Function         wiced_bt_avdt_delay_report
- *
- *                  This functions sends a Delay Report to the peer device
- *                  that is associated with a particular SEID.
- *                  This function is called by SNK device.
+ * This functions sends a Delay Report to the peer device
+ * that is associated with a particular SEID.
+ * This function is called by SNK device.
  *
  * @param[in]       handle      : AVDT connection handle
  * @param[in]       seid        : Stream end point ID
@@ -747,14 +728,11 @@ uint16_t wiced_bt_avdt_get_all_cap_req(wiced_bt_device_address_t bd_addr, uint8_
 uint16_t wiced_bt_avdt_delay_report(uint8_t handle, uint8_t seid, uint16_t delay);
 
 /**
- *
- * Function         wiced_bt_avdt_open_req
- *
- *                  This function initiates a connection to the AVDTP service
- *                  on the peer device, if not already present, and connects
- *                  to a stream endpoint on a peer device.  When the connection
- *                  is completed, an AVDT_OPEN_CFM_EVT is sent to the
- *                  application via the control callback function for this handle.
+ * This function initiates a connection to the AVDTP service
+ * on the peer device, if not already present, and connects
+ * to a stream endpoint on a peer device.  When the connection
+ * is completed, an AVDT_OPEN_CFM_EVT is sent to the
+ * application via the control callback function for this handle.
  *
  * @param[in]       handle      : AVDT connection handle
  * @param[in]       bd_addr     : Peer bd_addr
@@ -771,12 +749,9 @@ uint16_t wiced_bt_avdt_open_req(uint8_t handle, wiced_bt_device_address_t bd_add
 
 
 /**
- *
- * Function         wiced_bt_avdt_config_rsp
- *
- *                  Respond to a configure request from the peer device.  This
- *                  function must be called if the application receives an
- *                  AVDT_CONFIG_IND_EVT through its control callback.
+ * Respond to a configure request from the peer device.  This
+ * function must be called if the application receives an
+ * AVDT_CONFIG_IND_EVT through its control callback.
  *
  *
  * @param[in]       handle      : AVDT connection handle
@@ -792,11 +767,8 @@ uint16_t wiced_bt_avdt_config_rsp(uint8_t handle, uint8_t label, uint8_t error_c
                                   uint8_t category);
 
 /**
- *
- * Function         wiced_bt_avdt_security_set_scms
- *
- *                  Set the SCMS Content Protection. This function must be called
- *                  when the peer device is connected.
+ * Set the SCMS Content Protection. This function must be called
+ * when the peer device is connected.
  *
  * @param[in]       handle      : AVDT connection handle
  * @param[in]       enable      : If true enable content protection, flase disable
@@ -810,14 +782,11 @@ uint16_t wiced_bt_avdt_security_set_scms(uint8_t handle, wiced_bool_t enable,
                                          uint8_t scms_hdr);
 
 /**
- *
- * Function         wiced_bt_avdt_start_req
- *
- *                  Start one or more stream endpoints.  This initiates the
- *                  transfer of media packets for the streams.  All stream
- *                  endpoints must previously be opened.  When the streams
- *                  are started, an AVDT_START_CFM_EVT is sent to the
- *                  application via the control callback function for each stream.
+ * Start one or more stream endpoints.  This initiates the
+ * transfer of media packets for the streams.  All stream
+ * endpoints must previously be opened.  When the streams
+ * are started, an AVDT_START_CFM_EVT is sent to the
+ * application via the control callback function for each stream.
  *
  *
  * @param[in]       p_handles   : Pointer to the AVDT connection handles, each byte
@@ -831,13 +800,10 @@ uint16_t wiced_bt_avdt_security_set_scms(uint8_t handle, wiced_bool_t enable,
 uint16_t wiced_bt_avdt_start_req(uint8_t *p_handles, uint8_t num_handles);
 
 /**
- *
- * Function         wiced_bt_avdt_start_resp
- *
- *                  Sends A2DP start response .  This initiates the transfer of media
- *                  packets for the streams.  All stream endpoints must previously
- *                  be opened.This function must be called  if the application
- *                  receives an AVDT_START_IND_EVT through its control callback.
+ * Sends A2DP start response .  This initiates the transfer of media
+ * packets for the streams.  All stream endpoints must previously
+ * be opened.This function must be called  if the application
+ * receives an AVDT_START_IND_EVT through its control callback.
  *
  *
  * @param[in]       handle   : AVDT connection handle
@@ -851,15 +817,12 @@ uint16_t wiced_bt_avdt_start_req(uint8_t *p_handles, uint8_t num_handles);
 uint16_t wiced_bt_avdt_start_resp( uint8_t handle, uint8_t label, uint8_t status );
 
 /**
- *
- * Function         wiced_bt_avdt_suspend_req
- *
- *                  Suspend one or more stream endpoints. This suspends the
- *                  transfer of media packets for the streams.  All stream
- *                  endpoints must previously be open and started.  When the
- *                  streams are suspended, an AVDT_SUSPEND_CFM_EVT is sent to
- *                  the application via the control callback function for
- *                  each stream.
+ * Suspend one or more stream endpoints. This suspends the
+ * transfer of media packets for the streams.  All stream
+ * endpoints must previously be open and started.  When the
+ * streams are suspended, an AVDT_SUSPEND_CFM_EVT is sent to
+ * the application via the control callback function for
+ * each stream.
  *
  *
  * @param[in]       p_handles   : Pointer to the AVDT connection handles, each byte
@@ -873,14 +836,11 @@ uint16_t wiced_bt_avdt_start_resp( uint8_t handle, uint8_t label, uint8_t status
 uint16_t wiced_bt_avdt_suspend_req(uint8_t *p_handles, uint8_t num_handles);
 
 /**
- *
- * Function         wiced_bt_avdt_close_req
- *
  * Description      Close a stream endpoint.  This stops the transfer of media
- *                  packets and closes the transport channel associated with
- *                  this stream endpoint.  When the stream is closed, an
- *                  AVDT_CLOSE_CFM_EVT is sent to the application via the
- *                  control callback function for this handle.
+ * packets and closes the transport channel associated with
+ * this stream endpoint.  When the stream is closed, an
+ * AVDT_CLOSE_CFM_EVT is sent to the application via the
+ * control callback function for this handle.
  *
  *
  * @param[in]       handle   : AVDT connection handle
@@ -892,16 +852,13 @@ uint16_t wiced_bt_avdt_suspend_req(uint8_t *p_handles, uint8_t num_handles);
 uint16_t wiced_bt_avdt_close_req(uint8_t handle);
 
 /**
- *
- * Function         wiced_bt_avdt_reconfig_req
- *
- *                  Reconfigure a stream endpoint.  This allows the application
- *                  to change the codec or content protection capabilities of
- *                  a stream endpoint after it has been opened.  This function
- *                  can only be called if the stream is opened but not started
- *                  or if the stream has been suspended.  When the procedure
- *                  is completed, an AVDT_RECONFIG_CFM_EVT is sent to the
- *                  application via the control callback function for this handle.
+ * Reconfigure a stream endpoint.  This allows the application
+ * to change the codec or content protection capabilities of
+ * a stream endpoint after it has been opened.  This function
+ * can only be called if the stream is opened but not started
+ * or if the stream has been suspended.  When the procedure
+ * is completed, an AVDT_RECONFIG_CFM_EVT is sent to the
+ * application via the control callback function for this handle.
  *
  *
  * @param[in]       handle   : AVDT connection handle
@@ -914,12 +871,9 @@ uint16_t wiced_bt_avdt_close_req(uint8_t handle);
 uint16_t wiced_bt_avdt_reconfig_req(uint8_t handle, wiced_bt_avdt_cfg_t *p_cfg);
 
 /**
- *
- * Function         wiced_bt_avdt_reconfig_rsp
- *
- *                  Respond to a reconfigure request from the peer device.
- *                  This function must be called if the application receives
- *                  an AVDT_RECONFIG_IND_EVT through its control callback.
+ * Respond to a reconfigure request from the peer device.
+ * This function must be called if the application receives
+ * an AVDT_RECONFIG_IND_EVT through its control callback.
  *
  *
  * @param[in]       handle      : AVDT connection handle
@@ -935,14 +889,11 @@ uint16_t wiced_bt_avdt_reconfig_rsp(uint8_t handle, uint8_t label, uint8_t error
                                     uint8_t category);
 
 /**
- *
- * Function         wiced_bt_avdt_security_req
- *
- *                  Send a security request to the peer device.  When the
- *                  security procedure is completed, an AVDT_SECURITY_CFM_EVT
- *                  is sent to the application via the control callback function
- *                  for this handle.  (Please note that AVDTP security procedures
- *                  are unrelated to Bluetooth link level security.)
+ * Send a security request to the peer device.  When the
+ * security procedure is completed, an AVDT_SECURITY_CFM_EVT
+ * is sent to the application via the control callback function
+ * for this handle.  (Please note that AVDTP security procedures
+ * are unrelated to Bluetooth link level security.)
  *
  *
  * @param[in]       handle      : AVDT connection handle
@@ -956,14 +907,11 @@ uint16_t wiced_bt_avdt_reconfig_rsp(uint8_t handle, uint8_t label, uint8_t error
 uint16_t wiced_bt_avdt_security_req(uint8_t handle, uint8_t *p_data, uint16_t len);
 
 /**
- *
- * Function         wiced_bt_avdt_security_rsp
- *
- *                  Respond to a security request from the peer device.
- *                  This function must be called if the application receives
- *                  an AVDT_SECURITY_IND_EVT through its control callback.
- *                  (Please note that AVDTP security procedures are unrelated
- *                  to Bluetooth link level security.)
+ * Respond to a security request from the peer device.
+ * This function must be called if the application receives
+ * an AVDT_SECURITY_IND_EVT through its control callback.
+ * (Please note that AVDTP security procedures are unrelated
+ * to Bluetooth link level security.)
  *
  *
  * @param[in]       handle      : AVDT connection handle
@@ -981,23 +929,20 @@ uint16_t wiced_bt_avdt_security_rsp(uint8_t handle, uint8_t label, uint8_t error
 
 
 /**
+ * Send a media packet to the peer device.  The stream must
+ * be started before this function is called.  Also, this
+ * function can only be called if the stream is a SRC.
  *
- * Function         wiced_bt_avdt_write_req
- *
- *                  Send a media packet to the peer device.  The stream must
- *                  be started before this function is called.  Also, this
- *                  function can only be called if the stream is a SRC.
- *
- *                  When AVDTP has sent the media packet, an AVDT_WRITE_CFM_EVT is
- *                  sent to the application via the control callback.
- *                  The application can decide whether to wait for the AVDT_WRITE_CFM_EVT,
- *                  before making the next wiced_bt_avdt_write_req() call.
- *                  The application may make its first call to wiced_bt_avdt_write_req()
- *                  after it receives an AVDT_START_CFM_EVT or AVDT_START_IND_EVT.
+ * When AVDTP has sent the media packet, an AVDT_WRITE_CFM_EVT is
+ * sent to the application via the control callback.
+ * The application can decide whether to wait for the AVDT_WRITE_CFM_EVT,
+ * before making the next wiced_bt_avdt_write_req() call.
+ * The application may make its first call to wiced_bt_avdt_write_req()
+ * after it receives an AVDT_START_CFM_EVT or AVDT_START_IND_EVT.
  *
  *
- *                  The opt parameter allows passing specific options like:
- *                  - NO_RTP : do not add the RTP header to buffer
+ * The opt parameter allows passing specific options like:
+ * - NO_RTP : do not add the RTP header to buffer
  *
  * @param[in]       handle      : AVDT connection handle
  * @param[in]       p_media_buf : Pointer to the media buffer to write
@@ -1014,16 +959,13 @@ uint16_t wiced_bt_avdt_write_req(uint8_t handle, uint8_t *p_media_buf, uint16_t 
                                  uint32_t time_stamp, uint8_t m_pt, wiced_bt_avdt_data_opt_mask_t opt);
 
 /**
- *
- * Function         wiced_bt_avdt_connect_req
- *
- *                  This function initiates an AVDTP signaling connection
- *                  to the peer device.  When the connection is completed, an
- *                  AVDT_CONNECT_IND_EVT is sent to the application via its
- *                  control callback function.  If the connection attempt fails
- *                  an AVDT_DISCONNECT_IND_EVT is sent.  The security mask
- *                  parameter overrides the outgoing security mask set in
- *                  wiced_bt_avdt_register().
+ * This function initiates an AVDTP signaling connection
+ * to the peer device.  When the connection is completed, an
+ * AVDT_CONNECT_IND_EVT is sent to the application via its
+ * control callback function.  If the connection attempt fails
+ * an AVDT_DISCONNECT_IND_EVT is sent.  The security mask
+ * parameter overrides the outgoing security mask set in
+ * wiced_bt_avdt_register().
  *
  * @param[in]       bd_addr     : Peer bd_addr
  * @param[in]       sec_mask    : Security requirement
@@ -1038,13 +980,10 @@ uint16_t wiced_bt_avdt_connect_req(wiced_bt_device_address_t bd_addr, uint8_t se
                                    wiced_bt_avdt_ctrl_cback_t *p_cback);
 
 /**
- *
- * Function         wiced_bt_avdt_disconnect_req
- *
- *                  This function disconnect an AVDTP signaling connection
- *                  to the peer device.  When disconnected an
- *                  AVDT_DISCONNECT_IND_EVT is sent to the application via its
- *                  control callback function.
+ * This function disconnect an AVDTP signaling connection
+ * to the peer device.  When disconnected an
+ * AVDT_DISCONNECT_IND_EVT is sent to the application via its
+ * control callback function.
  *
  * @param[in]       bd_addr     : Peer bd_addr
  * @param[in]       p_cback     : Callback for event notifications
@@ -1058,10 +997,7 @@ uint16_t wiced_bt_avdt_disconnect_req(wiced_bt_device_address_t bd_addr,
                                       wiced_bt_avdt_ctrl_cback_t *p_cback);
 
 /**
- *
- * Function         wiced_bt_avdt_get_l2cap_channel
- *
- *                  Get the L2CAP CID used by the handle.
+ * Get the L2CAP CID used by the handle.
  *
  * @param[in]       handle  : AVDT connection handle
  *
@@ -1070,10 +1006,7 @@ uint16_t wiced_bt_avdt_disconnect_req(wiced_bt_device_address_t bd_addr,
 uint16_t wiced_bt_avdt_get_l2cap_channel(uint8_t handle);
 
 /**
- *
- * Function         wiced_bt_avdt_get_signal_channel
- *
- *                  Get the L2CAP CID used by the signal channel of the given handle.
+ * Get the L2CAP CID used by the signal channel of the given handle.
  *
  * @param[in]       handle  : AVDT connection handle
  * @param[in]       bd_addr : Peer bd_addr
@@ -1085,18 +1018,16 @@ uint16_t wiced_bt_avdt_get_l2cap_channel(uint8_t handle);
 uint16_t wiced_bt_avdt_get_signal_channel(uint8_t handle, wiced_bt_device_address_t bd_addr);
 
 /**
- * Function         wiced_bt_avdt_set_media_buf
+ * Assigns buffer for media packets or forbids using of assigned
+ * buffer if argument p_buf is NULL. This function can only
+ * be called if the stream is a SNK.
  *
- * Description      Assigns buffer for media packets or forbids using of assigned
- *                  buffer if argument p_buf is NULL. This function can only
- *                  be called if the stream is a SNK.
- *
- *                  AVDTP uses this buffer to reassemble fragmented media packets.
- *                  When AVDTP receives a complete media packet, it calls the
- *                  p_media_cback assigned by wiced_bt_avdt_create_stream().
- *                  This function can be called during callback to assign a
- *                  different buffer for next media packet or can leave the current
- *                  buffer for next packet.
+ * AVDTP uses this buffer to reassemble fragmented media packets.
+ * When AVDTP receives a complete media packet, it calls the
+ * p_media_cback assigned by wiced_bt_avdt_create_stream().
+ * This function can be called during callback to assign a
+ * different buffer for next media packet or can leave the current
+ * buffer for next packet.
  *
  * @param[in]       handle      : AVDT connection handle
  * @param[in]       p_buf       : Pointer to the medie buffer
@@ -1109,9 +1040,7 @@ uint16_t wiced_bt_avdt_get_signal_channel(uint8_t handle, wiced_bt_device_addres
 uint16_t wiced_bt_avdt_set_media_buf(uint8_t handle, uint8_t *p_buf, uint32_t buf_len);
 
 /**
- * Function         wiced_bt_avdt_send_report
- *
- *                  Sends report packet
+ * Sends report packet
  *
  * @param[in]       handle      : AVDT connection handle
  * @param[in]       type        : Report type (see @ref AVDT_REPORT_TYPE "AVDT report types")
@@ -1127,4 +1056,7 @@ uint16_t wiced_bt_avdt_send_report(uint8_t handle, AVDT_REPORT_TYPE type,
 }
 #endif
 
-/** @} wicedbt_avdt_functions */
+/**
+ * @} wicedbt_avdt
+ */
+ /* @endcond*/

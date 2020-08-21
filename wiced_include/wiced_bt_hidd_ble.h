@@ -7,6 +7,18 @@
  * Human Interface Device Profile (HID) Device over BLE
  *
  */
+ /**
+  *  @addtogroup  hidd_le_api_functions      HID Device Role (HIDD) over BLE
+  *  @ingroup     wiced_bt_hid
+  *
+  * This component  maps features from the USB Human Interface Definition onto Bluetooth low energy
+  * GATT characteristics and descriptors.
+  *
+  * HIDD role defines a set of procedure that can be used by an application like to implement a HID
+  * device level functionality over BLE transport.
+  *
+  *  @{
+  */
 #pragma once
 
 #include "wiced_bt_dev.h"
@@ -17,7 +29,7 @@
  *              Constants
  ******************************************************/
 
-/* HID-LE-Device Callback Events */
+/** HID-LE-Device Callback Event Values */
 enum wiced_bt_hidd_ble_cback_event_e
 {
     WICED_BT_HIDD_BLE_DEV_EVT_OPEN,        /**< Connected to host with Interrupt and Control  Data = 1 if Virtual Cable
@@ -31,12 +43,13 @@ enum wiced_bt_hidd_ble_cback_event_e
     WICED_BT_HIDD_BLE_DEV_EVT_SET_PROTO,   /**< Host sent SET_PROTOCOL              Data=1 for Report, 0 for Boot */
     WICED_BT_HIDD_BLE_DEV_EVT_DATA         /**< General event data */
 };
+
 typedef uint8_t wiced_bt_hidd_ble_cback_event_t;   /**< HIDD BLE callback events */
 
-/* GATT  application error code for HID profile */
+/** GATT  application error code for HID profile */
 #define HIDD_LE_RPT_NOT_SUPT    0x8F    /**< Report not supported */
 
-/* HIDD type */
+/** HIDD type */
 #define HIDD_LE_KB_TYPE         0x01    /**< bit 0 */
 #define HIDD_LE_MICE_TYPE       0x02    /**< bit 1 */
 #define HIDD_LE_OTHER_TYPE      0x80    /**< bit 7 */
@@ -46,7 +59,7 @@ typedef uint8_t wiced_bt_hidd_ble_dev_t;    /**< HIDD BLE device types */
 #define HIDD_LE_PROTO_MODE_BOOT       0x01  /**< Boot protocol */
 typedef uint8_t wiced_bt_hidd_ble_proto_t;  /**< HIDD BLE protocol types */
 
-/* LE HIDD report type */
+/** LE HIDD report type */
 #define HID_LE_RPT_TYPE_INPUT       0x01    /**< Input reports */
 #define HID_LE_RPT_TYPE_OUTPUT      0x02    /**< Output reports */
 #define HID_LE_RPT_TYPE_FEATURE     0x03    /**< Feature reports */
@@ -60,20 +73,21 @@ typedef uint8_t   wiced_bt_hidd_ble_rpt_t;  /**< HIDD BLE report types */
 /******************************************************
  *              Type Definitions
  ******************************************************/
+ /** HIDD BLE status codes */
 enum wiced_bt_hidd_ble_status
 {
     WICED_BT_HIDD_BLE_SUCCESS,                      /**< Success */
     WICED_BT_HIDD_BLE_ERR_NOT_REGISTERED,           /**< Not registered */
-    WICED_BT_HIDD_BLE_ERR_ALREADY_REGISTERED,       /**< Alreadu registered */
+    WICED_BT_HIDD_BLE_ERR_ALREADY_REGISTERED,       /**< Already registered */
     WICED_BT_HIDD_BLE_ERR_NO_RESOURCES,             /**< No resources */
-    WICED_BT_HIDD_BLE_ERR_NO_CONNECTION,            /**< Not connection */
+    WICED_BT_HIDD_BLE_ERR_NO_CONNECTION,            /**< No connection */
     WICED_BT_HIDD_BLE_ERR_INVALID_PARAM,            /**< Invalid parameter */
     WICED_BT_HIDD_BLE_ERR_UNSUPPORTED,              /**< Not supported */
     WICED_BT_HIDD_BLE_ERR_UNKNOWN_COMMAND,          /**< Unknown command */
     WICED_BT_HIDD_BLE_ERR_CONGESTED,                /**< Congested */
     WICED_BT_HIDD_BLE_ERR_CONN_IN_PROCESS,          /**< Connection in process */
     WICED_BT_HIDD_BLE_ERR_ALREADY_CONN,             /**< Already connected */
-    WICED_BT_HIDD_BLE_ERR_DISCONNECTING,            /**< Disconnecting is process */
+    WICED_BT_HIDD_BLE_ERR_DISCONNECTING,            /**< Disconnecting in process */
     WICED_BT_HIDD_BLE_ERR_SET_CONNABLE_FAIL,        /**< Set connectable failiure */
     /* Device specific error codes */
     WICED_BT_HIDD_BLE_ERR_HOST_UNKNOWN,             /**< Host unknown */
@@ -84,9 +98,11 @@ enum wiced_bt_hidd_ble_status
 
     WICED_BT_HIDD_BLE_ERR_INVALID = 0xFF            /**< Invalid */
 };
-typedef uint8_t wiced_bt_hidd_ble_status_t;         /**< HIDD BLE status codes */
 
-/* report reference descriptor value */
+/** HIDD BLE status codes */
+typedef uint8_t wiced_bt_hidd_ble_status_t;
+
+/** report reference descriptor value */
 typedef struct
 {
     uint8_t                 rpt_id;     /**< Report ID */
@@ -107,13 +123,14 @@ typedef struct
 #define HIDD_LE_REMOTE_WAKE   0x01          /**< Remote wake */
 #define HIDD_LE_NORMAL_CONN   0x02          /**< Normally connectable */
 
+/** HIDD BLE description info */
 typedef struct
 {
     uint16_t    dl_len;                     /**< Description length */
     uint8_t     *dsc_list;                  /**< Pointer to the description */
-} wiced_bt_hidd_ble_dscp_info_t;            /**< HIDD BLE description info */
+} wiced_bt_hidd_ble_dscp_info_t;
 
-/* LE HIDD report map info */
+/** LE HIDD report map info */
 typedef struct
 {
     uint16_t                        bcdHID;         /**< HID info in BCD format */
@@ -122,29 +139,29 @@ typedef struct
     wiced_bt_hidd_ble_dscp_info_t   rpt_map;        /**< Report map */
 } wiced_bt_hidd_ble_rpt_map_info_t;                 /**< HIDD BLE report map info */
 
-#define HIDD_REPT_ID_BOOT_KB        1
-#define HIDD_REPT_ID_BOOT_MOUSE     2
+#define HIDD_REPT_ID_BOOT_KB        1   /**< Bluetooth HID Boot Report Keyboard */
+#define HIDD_REPT_ID_BOOT_MOUSE     2   /**< Bluetooth HID Boot Report Mouse */
 
-/* LE HIDD report data */
+/** LE HIDD report data */
 typedef struct
 {
     uint8_t                 rpt_id;     /**< report ID */
 } wiced_bt_hidd_ble_rpt_data_t;         /**< HIDD BLE report data */
 
-/* LE HIDD get report data */
+/** LE HIDD get report data */
 typedef struct
 {
     uint8_t rep_type;               /**< HIDD BLE report type */
     uint8_t rep_id;                 /**< HIDD BLE report ID */
 } wiced_bt_hidd_ble_get_rpt_data_t; /**< HIDD BLE get report data */
 
-/* LE HIDD cback data */
+/** HIDD BLE callback data */
 typedef union
 {
     wiced_bt_device_address_t           host_bdaddr;    /**< Host BD-ADDR */
     wiced_bt_hidd_ble_get_rpt_data_t    get_rpt;        /**< Get report */
     wiced_bt_hidd_ble_rpt_data_t        *p_buffer;      /**< General report data */
-} wiced_bt_hidd_ble_cback_data_t;                       /**< HIDD BLE callback data */
+} wiced_bt_hidd_ble_cback_data_t;
 
 /**
  * HIDD LE callback
@@ -160,27 +177,13 @@ typedef union
 typedef void (wiced_bt_hidd_ble_cback_t) (uint8_t  event,
                                           uint32_t data,
                                           wiced_bt_hidd_ble_cback_data_t *p_data );
-/* HIDD LE registration info */
+/** HIDD LE registration info */
 typedef struct
 {
     wiced_bt_device_address_t       host_addr;      /**< Host BD-ADDR */
     wiced_bt_hidd_ble_dev_info_t    dev_info;       /**< Device info */
     wiced_bt_hidd_ble_cback_t       *app_cback;     /**< Callback function */
 } wiced_bt_hidd_ble_reg_info_t;                     /**< HIDD BLE registration info */
-
-
-/**
- *  @addtogroup  hidd_le_api_functions      HID Device Role (HIDD) over BLE
- *  @ingroup     wiced_bt_hid
- *
- * This component  maps features from the USB Human Interface Definition onto Bluetooth low energy
- * GATT characteristics and descriptors.
- *
- * HIDD role defines a set of procedure that can be used by an application like to implement a HID
- * device level functionality over BLE transport.
- *
- *  @{
- */
 
 /******************************************************
  *              Function Declarations
@@ -191,78 +194,50 @@ extern "C"
 #endif
 
 /**
- * Function         wiced_bt_hidd_ble_init
- *
- *                  Initialize HIDD LE control block and trace variable.
- *
- *  @param[in]      None
- *  @param[out]     None
- *
- *  @return         None
+ * Initialize HIDD LE control block and trace variable.
  */
 void wiced_bt_hidd_ble_init (void);
 
 /**
- * Function         wiced_bt_hidd_ble_register
- *
- *                  This function must be called at startup to register info related
- *                  to HIDD over LE.
+ * This function must be called at startup to register info related
+ * to HIDD over LE.
  *
  *
  *  @param[in]      p_reg_info  : SCO index to remove
- *  @param[out]     None
  *
  *  @return         status code (see #wiced_bt_hidd_ble_status_t)
  */
 wiced_bt_hidd_ble_status_t wiced_bt_hidd_ble_register(wiced_bt_hidd_ble_reg_info_t *p_reg_info);
 
 /**
- * Function         wiced_bt_hidd_ble_deregister
- *
- *                  Disable HIDD service.
- *
- *  @param[in]      None
- *  @param[out]     None
+ * Disable HIDD service.
  *
  *  @return         status code (see #wiced_bt_hidd_ble_status_t)
  */
 wiced_bt_hidd_ble_status_t wiced_bt_hidd_ble_deregister(void);
 
 /**
- * Function         wiced_bt_hidd_ble_connect
- *
- *                  Initiates a connection to the host.
- *
- *  @param[in]      None
- *  @param[out]     None
+ * Initiates a connection to the host.
  *
  *  @return         status code (see #wiced_bt_hidd_ble_status_t)
  */
 wiced_bt_hidd_ble_status_t wiced_bt_hidd_ble_connect(void);
 
 /**
- * Function         wiced_bt_hidd_ble_disconnect
- *
- *                  Disconnects from the host.
- *
- *  @param[in]      None
- *  @param[out]     None
+ * Disconnects from the host.
  *
  *  @return         status code (see #wiced_bt_hidd_ble_status_t)
  */
 wiced_bt_hidd_ble_status_t wiced_bt_hidd_ble_disconnect(void);
 
 /**
- * Function         wiced_bt_hidd_ble_send_report
- *
- *                  Sends report data to the host.
+ * Sends report data to the host.
  *
  *  @param[in]      rep_type    : Report type
- *  @param[in]      rep_id      : Report ID
+ *  @param[in]      rept_id      : Report ID
  *  @param[in]      len         : Length of the data
  *  @param[in]      offset      : Offset of the data
  *  @param[in]      p_rpt       : Pointer to the report data
- *  @param[out]     None
  *
  *  @return         status code (see #wiced_bt_hidd_ble_status_t)
  */
@@ -270,38 +245,29 @@ wiced_bt_hidd_ble_status_t wiced_bt_hidd_ble_send_report(uint8_t rep_type, uint8
                                                          uint16_t len, uint16_t offset, uint8_t *p_rpt);
 
 /**
- * Function         wiced_bt_hidd_ble_hand_shake
- *
- *                  Acks a set report request
+ * Acks a set report request
  *
  *  @param[in]      status code (see #wiced_bt_hidd_ble_status_t)
- *  @param[out]     None
  *
  *  @return         status code (see #wiced_bt_hidd_ble_status_t)
  */
 wiced_bt_hidd_ble_status_t wiced_bt_hidd_ble_hand_shake(wiced_bt_hidd_ble_status_t status);
 
 /**
- * Function         wiced_bt_hidd_ble_rsp_get_protocol
- *
- *                  Responds to a get protocol mode request
+ * Responds to a get protocol mode request
  *
  *  @param[in]      cur_mode    : Current protocol
- *  @param[out]     None
  *
  *  @return         status code (see #wiced_bt_hidd_ble_status_t)
  */
 wiced_bt_hidd_ble_status_t wiced_bt_hidd_ble_rsp_get_protocol(wiced_bt_hidd_ble_proto_t cur_mode);
 
 /**
- * Function         wiced_bt_hidd_ble_set_rsp_map_info
- *
- *                  This function shall be called at startup to configure the
- *                  device HID information and report map
+ * This function shall be called at startup to configure the
+ * device HID information and report map
  *
  *
  *  @param[in]      p_dev_info  : Device map info
- *  @param[out]     None
  *
  *  @return     status code (see #wiced_bt_hidd_ble_status_t)
  */

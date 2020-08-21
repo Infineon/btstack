@@ -12,21 +12,22 @@
 #include "wiced_bt_sdp.h"
 #include "wiced_bt_avrc_defs.h"
 
-/**
- * @defgroup  wicedbt_avrc        Audio/Video Remote Control (AVRC)
- *
- * This section describes the API's to use Audio/Video Remote Control Profile.
- * The AVRC profile defines the procedures required to control audio/video functions
- * of Bluetooth devices.
- *
-*/
+
 
 /**
- * @addtogroup  wicedbt_avrc_defs         AVRC data types and macros
- * @ingroup     wicedbt_avrc
+ * @cond DUAL_MODE
+ * @defgroup  wicedbt_avrc        Audio/Video Remote Control (AVRC)
+ *
+ * This section describes the API's to use Audio/Video Remote Control Profile commands
+ * which use underlying AVCT protocol.
+ *
+ * @addtogroup  wicedbt_avrc    Audio/Video Remote Control (AVRC)
+ *
+ * @ingroup     wicedbt
  *
  * @{
 */
+
 /*****************************************************************************
 **  constants
 *****************************************************************************/
@@ -110,26 +111,26 @@
 
 /** @} AVRC_EVT */
 
-/* Supported categories */
-#define AVRC_SUPF_CT_CAT1               0x0001      /* Category 1 */
-#define AVRC_SUPF_CT_CAT2               0x0002      /* Category 2 */
-#define AVRC_SUPF_CT_CAT3               0x0004      /* Category 3 */
-#define AVRC_SUPF_CT_CAT4               0x0008      /* Category 4 */
-#define AVRC_SUPF_CT_BROWSE             0x0040      /* Browsing */
+/** Supported categories */
+#define AVRC_SUPF_CT_CAT1               0x0001      /**< Category 1 */
+#define AVRC_SUPF_CT_CAT2               0x0002      /**< Category 2 */
+#define AVRC_SUPF_CT_CAT3               0x0004      /**< Category 3 */
+#define AVRC_SUPF_CT_CAT4               0x0008      /**< Category 4 */
+#define AVRC_SUPF_CT_BROWSE             0x0040      /**< Browsing */
 
-#define AVRC_SUPF_TG_CAT1               0x0001      /* Category 1 */
-#define AVRC_SUPF_TG_CAT2               0x0002      /* Category 2 */
-#define AVRC_SUPF_TG_CAT3               0x0004      /* Category 3 */
-#define AVRC_SUPF_TG_CAT4               0x0008      /* Category 4 */
-#define AVRC_SUPF_TG_APP_SETTINGS       0x0010      /* Player Application Settings */
-#define AVRC_SUPF_TG_GROUP_NAVI         0x0020      /* Group Navigation */
-#define AVRC_SUPF_TG_BROWSE             0x0040      /* Browsing */
-#define AVRC_SUPF_TG_MULTI_PLAYER       0x0080      /* Muliple Media Player */
+#define AVRC_SUPF_TG_CAT1               0x0001      /**< Category 1 */
+#define AVRC_SUPF_TG_CAT2               0x0002      /**< Category 2 */
+#define AVRC_SUPF_TG_CAT3               0x0004      /**< Category 3 */
+#define AVRC_SUPF_TG_CAT4               0x0008      /**< Category 4 */
+#define AVRC_SUPF_TG_APP_SETTINGS       0x0010      /**< Player Application Settings */
+#define AVRC_SUPF_TG_GROUP_NAVI         0x0020      /**< Group Navigation */
+#define AVRC_SUPF_TG_BROWSE             0x0040      /**< Browsing */
+#define AVRC_SUPF_TG_MULTI_PLAYER       0x0080      /**< Muliple Media Player */
 
-#define AVRC_META_SUCCESS               AVRC_SUCCESS
-#define AVRC_META_FAIL                  AVRC_FAIL
-#define AVRC_METADATA_CMD               0x0000
-#define AVRC_METADATA_RESP              0x0001
+#define AVRC_META_SUCCESS               AVRC_SUCCESS    /**< AVRC success */
+ #define AVRC_META_FAIL                  AVRC_FAIL      /**< AVRC fail */
+#define AVRC_METADATA_CMD               0x0000          /**< AVRC metadata command */
+#define AVRC_METADATA_RESP              0x0001          /**< AVRC metadata response */
 
 
 /*****************************************************************************
@@ -137,10 +138,7 @@
 *****************************************************************************/
 
 /**
- *
- * Function         wiced_bt_avrc_ctrl_cback_t
- *
- *                  AVRC control callback function.
+ * AVRC control callback function.
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       event       : AVRC event (see @ref AVRC_EVT "AVRC events")
@@ -154,13 +152,10 @@ typedef void (wiced_bt_avrc_ctrl_cback_t) (uint8_t handle, uint8_t event, uint16
 
 
 /**
- *
- * Function         wiced_bt_avrc_msg_cback_t
- *
- *                  AVRC message callback function.  It is executed when AVCTP has
- *                  a message packet ready for the application.  The implementation of this
- *                  callback function must copy the wiced_bt_avrc_msg_t structure passed to it as it
- *                  is not guaranteed to remain after the callback function exits.
+ * AVRC message callback function.  It is executed when AVCTP has
+ * a message packet ready for the application.  The implementation of this
+ * callback function must copy the wiced_bt_avrc_msg_t structure passed to it as it
+ * is not guaranteed to remain after the callback function exits.
  *
  * @param[in]       handle  : Connection handle
  * @param[in]       label   : Message label
@@ -173,11 +168,8 @@ typedef void (wiced_bt_avrc_msg_cback_t) (uint8_t handle, uint8_t label, uint8_t
              wiced_bt_avrc_msg_t *p_msg);
 
 /**
-*
-* Function         wiced_bt_avrc_xmitted_cback_t
-*
-*                  AVRC message transmitted callback function.  It is executed when AVCTP has
-*                  sent a message packet with application payload.
+* AVRC message transmitted callback function.  It is executed when AVCTP has
+* sent a message packet with application payload.
 *
 * @param[in]       handle  : Connection handle
 * @param[in]       label   : Message label
@@ -193,28 +185,21 @@ typedef struct
 {
     wiced_bt_avrc_ctrl_cback_t      *p_ctrl_cback;      /**< AVRC connection control callback */
     wiced_bt_avrc_msg_cback_t       *p_msg_cback;       /**< AVRC message callback */
-    wiced_bt_avrc_xmitted_cback_t   *p_xmitted_cback;   /* pointer to application transmit complete callback */
+    wiced_bt_avrc_xmitted_cback_t   *p_xmitted_cback;   /**< pointer to application transmit complete callback */
     uint32_t                        company_id;         /**< Company ID  (see @ref AVRC_COMPANY_ID "Company IDs") */
     uint8_t                         connection_role;    /**< Connection role: AVRC_CONN_INT (initiator) or AVRC_CONN_ACP (acceptor) (see @ref AVRC_CONN_ROLE "AVRC connection roles") */
     uint8_t                         control;            /**< Control role: AVRC_CT_TARGET (target) or AVRC_CT_CONTROL (controller) (see @ref AVRC_CT_ROLE "AVRC control roles")*/
-    uint16_t                        avrc_seg_buf_len;   /* Maximum length of assembled AVRC data */
-    uint8_t                         *p_avrc_buff;       /* Pointer to AVRC assembly buffer */
-    uint16_t                        avct_seg_buf_len;   /* Maximum length of AVCT assembled data */
-    uint8_t                         *p_avct_buff;       /* Pointer to AVCT assembly buffer */
+    uint16_t                        avrc_seg_buf_len;   /**< Maximum length of assembled AVRC data */
+    uint8_t                         *p_avrc_buff;       /**< Pointer to AVRC assembly buffer */
+    uint16_t                        avct_seg_buf_len;   /**< Maximum length of AVCT assembled data */
+    uint8_t                         *p_avct_buff;       /**< Pointer to AVCT assembly buffer */
 } wiced_bt_avrc_conn_cb_t;
 
-/** @} wicedbt_avrc_defs         */
 
 
 
-/**
- * @addtogroup  wicedbt_avrc_functions        AVRCP APIs
- * @ingroup     wicedbt_avrc
- *
- * This section contains the API's that are common for both target and controller functionality
- *
- * @{
-*/
+
+
 
 #ifdef __cplusplus
 extern "C"
@@ -222,13 +207,9 @@ extern "C"
 #endif
 
 /**
-*
-*  Function         wiced_bt_avrc_register
-*
-*                   This function initializes AVRCP and prepares the protocol stack for its use.
-*
-*                   This function must be called once by the system or platform using AVRCP
-*                      before the other functions of the API an be used
+* This function initializes AVRCP and prepares the protocol stack for its use.
+* This function must be called once by the system or platform using AVRCP
+* before the other functions of the API an be used
 *
 *  @param[in]      mtu       : Control Channel MTU (Min Value = 48, default value = L2CAP MTU)
 *  @param[in]      mtu_br    : Browsing Channel MTU (Min Value = 335, default value = L2CAP MTU)
@@ -239,18 +220,12 @@ extern "C"
 void wiced_bt_avrc_register(uint16_t mtu, uint16_t mtu_br, uint8_t sec_mask);
 
 /**
- *
- * Function         wiced_bt_avrc_open
- *
- *                  Open AVRC connection (as intiator or acceptor); register notification callbacks.
- *
- *                  The connection role may be AVRC controller or target.
- *
- *                  The connection remains available to the application until
- *                  wiced_bt_avrc_close() is called.
- *
- *                  On receiving AVRC_CLOSE_IND_EVT, acceptor connections remain in
- *                  acceptor mode (no need to re-open the connection)
+ * Open AVRC connection (as intiator or acceptor); register notification callbacks.
+ * The connection role may be AVRC controller or target.
+ * The connection remains available to the application until
+ * wiced_bt_avrc_close() is called.
+ * On receiving AVRC_CLOSE_IND_EVT, acceptor connections remain in
+ * acceptor mode (no need to re-open the connection)
  *
  * @param[out]      p_handle    : Connection handle (valid if AVRC_SUCCESS is returned)
  * @param[in]       p_ccb       : AVRC connection control block (callbacks and role configuration)
@@ -262,10 +237,7 @@ uint16_t wiced_bt_avrc_open(uint8_t *p_handle, wiced_bt_avrc_conn_cb_t *p_ccb,
                             wiced_bt_device_address_t peer_addr);
 
 /**
- *
- * Function         wiced_bt_avrc_close
- *
- *                  Close AVRCP connection
+ * Close AVRCP connection
  *
  * @param[in]       handle      : Handle of connection to close
  *
@@ -275,10 +247,7 @@ uint16_t wiced_bt_avrc_open(uint8_t *p_handle, wiced_bt_avrc_conn_cb_t *p_ccb,
 uint16_t wiced_bt_avrc_close(uint8_t handle);
 
 /**
- *
- * Function         wiced_bt_avrc_open_browse
- *
- *                  Open AVRCP browsing connection, either as initiator or acceptor.
+ * Open AVRCP browsing connection, either as initiator or acceptor.
  *
  * @param[in]       handle      : Connection handle (obtained from wiced_bt_avrc_open)
  * @param[in]       conn_role   : Initiator or acceptor of the connection
@@ -290,10 +259,7 @@ uint16_t wiced_bt_avrc_close(uint8_t handle);
 uint16_t wiced_bt_avrc_open_browse(uint8_t handle, uint8_t conn_role);
 
 /**
- *
- * Function         wiced_bt_avrc_close_browse
- *
- *                  Close AVRCP browsing connection
+ * Close AVRCP browsing connection
  *
  * @param[in]       handle      : Connection handle
  *
@@ -303,15 +269,12 @@ uint16_t wiced_bt_avrc_open_browse(uint8_t handle, uint8_t conn_role);
 uint16_t wiced_bt_avrc_close_browse(uint8_t handle);
 
 /**
- *
- * Function         wiced_bt_avrc_msg_req
- *
- *                  Send an AVRC message
+ * Send an AVRC message
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Transaction label
  * @param[in]       ctype       : Message type (see @ref AVRC_CTYPE "AVRC message types")
- * @param[in]       p_pkt       : Pointer to the buffer holding the AVRC message
+ * @param[in]       p_cmdbuf       : Pointer to the buffer holding the AVRC message
  *
  * @return          Result code (see @ref AVRC_RESULT "AVRC result codes")
  *
@@ -319,13 +282,10 @@ uint16_t wiced_bt_avrc_close_browse(uint8_t handle);
 uint16_t wiced_bt_avrc_msg_req (uint8_t handle, uint8_t label, uint8_t ctype, wiced_bt_avrc_xmit_buf_t *p_cmdbuf);
 
 /**
- *
- * Function         wiced_bt_avrc_unit_cmd
- *
- *                  Send a UNIT INFO command to the peer device. This
- *                  function can only be called for controller role connections.
- *                  Any response message from the peer is passed back through
- *                  the wiced_bt_avrc_msg_cback_t callback function.
+ * Send a UNIT INFO command to the peer device. This
+ * function can only be called for controller role connections.
+ * Any response message from the peer is passed back through
+ * the wiced_bt_avrc_msg_cback_t callback function.
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Transaction label
@@ -336,13 +296,10 @@ uint16_t wiced_bt_avrc_msg_req (uint8_t handle, uint8_t label, uint8_t ctype, wi
 uint16_t wiced_bt_avrc_unit_cmd(uint8_t handle, uint8_t label);
 
 /**
- *
- * Function         wiced_bt_avrc_sub_cmd
- *
- *                  Send a SUBUNIT INFO command to the peer device.  This
- *                  function can only be called for controller role connections.
- *                  Any response message from the peer is passed back through
- *                  the wiced_bt_avrc_msg_cback_t callback function.
+ * Send a SUBUNIT INFO command to the peer device.  This
+ * function can only be called for controller role connections.
+ * Any response message from the peer is passed back through
+ * the wiced_bt_avrc_msg_cback_t callback function.
  *
  *
  * @param[in]       handle      : Connection handle
@@ -357,13 +314,10 @@ uint16_t wiced_bt_avrc_sub_cmd(uint8_t handle, uint8_t label, uint8_t page);
 
 
 /**
- *
- * Function         wiced_bt_avrc_pass_cmd
- *
- *                  Send a PASS THROUGH command to the peer device.  This
- *                  function can only be called for controller role connections.
- *                  Any response message from the peer is passed back through
- *                  the wiced_bt_avrc_msg_cback_t callback function.
+ * Send a PASS THROUGH command to the peer device.  This
+ * function can only be called for controller role connections.
+ * Any response message from the peer is passed back through
+ * the wiced_bt_avrc_msg_cback_t callback function.
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Transaction label
@@ -375,14 +329,11 @@ uint16_t wiced_bt_avrc_sub_cmd(uint8_t handle, uint8_t label, uint8_t page);
 uint16_t wiced_bt_avrc_pass_cmd(uint8_t handle, uint8_t label, wiced_bt_avrc_msg_pass_t *p_msg);
 
 /**
- *
- * Function         wiced_bt_avrc_pass_rsp
- *
- *                  Send a PASS THROUGH response to the peer device.  This
- *                  function can only be called for target role connections.
- *                  This function must be called when a PASS THROUGH command
+ * Send a PASS THROUGH response to the peer device.  This
+ * function can only be called for target role connections.
+ * This function must be called when a PASS THROUGH command
  *                  message is received from the peer through the
- *                  wiced_bt_avrc_msg_cback_t callback function.
+ * wiced_bt_avrc_msg_cback_t callback function.
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Transaction label
@@ -395,13 +346,10 @@ uint16_t wiced_bt_avrc_pass_rsp(uint8_t handle, uint8_t label, wiced_bt_avrc_msg
 
 
 /**
- *
- * Function         wiced_bt_avrc_vendor_cmd
- *
- *                  Send a VENDOR DEPENDENT command to the peer device.  This
- *                  function can only be called for controller role connections.
- *                  Any response message from the peer is passed back through
- *                  the wiced_bt_avrc_msg_cback_t callback function.
+ * Send a VENDOR DEPENDENT command to the peer device.  This
+ * function can only be called for controller role connections.
+ * Any response message from the peer is passed back through
+ * the wiced_bt_avrc_msg_cback_t callback function.
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Transaction label
@@ -414,14 +362,11 @@ uint16_t wiced_bt_avrc_vendor_cmd(uint8_t handle, uint8_t  label, wiced_bt_avrc_
 
 
 /**
- *
- * Function         wiced_bt_avrc_vendor_rsp
- *
- *                  Send a VENDOR DEPENDENT response to the peer device.  This
- *                  function can only be called for target role connections.
- *                  This function must be called when a VENDOR DEPENDENT
- *                  command message is received from the peer through the
- *                  wiced_bt_avrc_msg_cback_t callback function.
+ * Send a VENDOR DEPENDENT response to the peer device.  This
+ * function can only be called for target role connections.
+ * This function must be called when a VENDOR DEPENDENT
+ * command message is received from the peer through the
+ * wiced_bt_avrc_msg_cback_t callback function.
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Transaction label
@@ -433,12 +378,9 @@ uint16_t wiced_bt_avrc_vendor_cmd(uint8_t handle, uint8_t  label, wiced_bt_avrc_
 uint16_t wiced_bt_avrc_vendor_rsp(uint8_t handle, uint8_t  label, wiced_bt_avrc_msg_vendor_t *p_msg);
 
 
-/*
- *
- * Function         wiced_bt_avrc_set_trace_level
- *
- *                  Sets the trace level for AVRC. If 0xff is passed, the
- *                  current trace level is returned.
+/**
+ * Sets the trace level for AVRC. If 0xff is passed, the
+ * current trace level is returned.
  *
  * @param[in]       new_level   : New trace level
  *
@@ -449,10 +391,7 @@ uint16_t wiced_bt_avrc_vendor_rsp(uint8_t handle, uint8_t  label, wiced_bt_avrc_
 uint8_t wiced_bt_avrc_set_trace_level (uint8_t new_level);
 
 /**
- *
- * Function         wiced_bt_avrc_parse_command
- *
- *                  Parse incoming AVRCP command message.
+ * Parse incoming AVRCP command message.
  *
  * @param[out]      p_result    : Pointer to the parsed command
  * @param[in]       p_msg       : Pointer to the message to parse
@@ -467,10 +406,7 @@ uint8_t wiced_bt_avrc_set_trace_level (uint8_t new_level);
 wiced_bt_avrc_sts_t wiced_bt_avrc_parse_command (wiced_bt_avrc_msg_t *p_msg, wiced_bt_avrc_command_t *p_result, uint8_t *p_buf, uint16_t buf_len);
 
 /**
- *
- * Function         wiced_bt_avrc_parse_response
- *
- *                  Parse incoming AVRCP response message.
+ * Parse incoming AVRCP response message.
  *
  * @param[out]      p_result    : Pointer to the parsed response
  * @param[in]       p_msg       : Pointer to the message to parse
@@ -485,10 +421,7 @@ wiced_bt_avrc_sts_t wiced_bt_avrc_parse_command (wiced_bt_avrc_msg_t *p_msg, wic
 wiced_bt_avrc_sts_t wiced_bt_avrc_parse_response (wiced_bt_avrc_msg_t *p_msg, wiced_bt_avrc_response_t *p_result, uint8_t *p_buf, uint16_t buf_len);
 
 /**
- *
- * Function         wiced_bt_avrc_bld_command
- *
- *                  Build AVRCP command
+ * Build AVRCP command
  *
  * @param[in]       p_cmd       : Pointer to the structure to build the command from
  * @param[in]       p_xmit_buf  : Pointer to the buffer to build the command into
@@ -501,13 +434,11 @@ wiced_bt_avrc_sts_t wiced_bt_avrc_parse_response (wiced_bt_avrc_msg_t *p_msg, wi
 wiced_bt_avrc_sts_t wiced_bt_avrc_bld_command( wiced_bt_avrc_command_t *p_cmd, wiced_bt_avrc_xmit_buf_t *p_xmit_buf);
 
 /**
- * Function         wiced_bt_avrc_bld_response
- *
- *                  Build AVRCP response
+ * Build AVRCP response
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       p_rsp       : Pointer to the structure to build the response from
- * @param[in]       p_xmit_buf  : Pointer to the buffer to build the response into
+ * @param[in]       p_rspbuf    : Pointer to the buffer to build the response into
  *
  *
  * @return          Status code (see @ref AVRC_STS "AVRC status codes")
@@ -517,11 +448,8 @@ wiced_bt_avrc_sts_t wiced_bt_avrc_bld_command( wiced_bt_avrc_command_t *p_cmd, w
  */
 wiced_bt_avrc_sts_t wiced_bt_avrc_bld_response( uint8_t handle, wiced_bt_avrc_response_t *p_rsp, wiced_bt_avrc_xmit_buf_t *p_rspbuf);
 
-/*
- *
- * Function         wiced_bt_avrc_is_valid_avc_type
- *
- *                  Check if correct AVRC message type is specified
+/**
+ * Check if correct AVRC message type is specified
  *
  * @param[in]       pdu_id      : PDU ID
  * @param[in]       ctype       : avrc message type (see @ref AVRC_CTYPE "AVRC message types")
@@ -532,11 +460,8 @@ wiced_bt_avrc_sts_t wiced_bt_avrc_bld_response( uint8_t handle, wiced_bt_avrc_re
  */
 wiced_bool_t wiced_bt_avrc_is_valid_avc_type(uint8_t pdu_id, uint8_t ctype);
 
-/*
- *
- * Function         wiced_bt_avrc_is_valid_player_attr
- *
- *                  Check if the given attrib value is a valid one
+/**
+ * Check if the given attrib value is a valid one
  *
  * @param[in]       attr      : Player attribute ID
  *
@@ -545,28 +470,31 @@ wiced_bool_t wiced_bt_avrc_is_valid_avc_type(uint8_t pdu_id, uint8_t ctype);
  */
 wiced_bool_t wiced_bt_avrc_is_valid_player_attr(uint8_t attr);
 
-/*
+/**
  *
- * Function         wiced_bt_avrc_get_ctrl_mtu
+ * This function gets the control MTU
  *
  * Returns          returns AVRC Control MTU
  *
  */
 uint16_t wiced_bt_avrc_get_ctrl_mtu(void);
 
-/*
+/**
  *
- * Function         wiced_bt_avrc_get_ctrl_mtu
+ * This function gets the data MTU
  *
  * Returns          returns AVRC DATA MTU
  *
  */
 uint16_t wiced_bt_avrc_get_data_mtu(void);
 
+/**@} wicedbt */
+/* @endcond*/
+
 #ifdef __cplusplus
 }
 #endif
 
-/** @} wicedbt_avrc_functions */
+
 
 

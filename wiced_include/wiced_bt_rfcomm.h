@@ -7,6 +7,18 @@
  * Bluetooth RFCOMM Application Programming Interface
  *
  */
+ /**
+  * @cond DUAL_MODE
+  * @addtogroup  rfcomm_api_functions       RFCOMM
+  *
+  * The RFCOMM protocol provides emulation of serial ports over the L2CAP protocol. The protocol is
+  * based on the ETSI standard GSM 7.1.0. RFCOMM is a simple transport protocol, with additional
+  * provisions for emulating the nine circuits of RS-232 (ITU-T V.24) serial ports. The RFCOMM protocol
+  * supports up to 60 simultaneous connections between two Bluetooth devices. The number of connections
+  * that may be used simultaneously in a Bluetooth device is implementation-specific.
+  *
+  *  @{
+  */
 #pragma once
 
 #include "wiced_bt_dev.h"
@@ -15,7 +27,7 @@
  *        Constants and Type definitions
  ******************************************************/
 
-/** RFCOMM Port Event Masks */
+/**RFCOMM Port Event Masks*/
 typedef enum wiced_bt_rfcomm_port_event_e
 {
     PORT_EV_NONE            = 0x00000000,         /**< No event */
@@ -38,6 +50,7 @@ typedef enum wiced_bt_rfcomm_port_event_e
     PORT_EV_FCS             = 0x00020000,         /**< data flow enable status true = enabled */
 } wiced_bt_rfcomm_port_event_t;
 
+/** RFCOMM Port Mask to enable all */
 #define PORT_MASK_ALL             (PORT_EV_RXCHAR | PORT_EV_TXEMPTY | PORT_EV_CTS | \
                                    PORT_EV_DSR | PORT_EV_RLSD | PORT_EV_BREAK | \
                                    PORT_EV_ERR | PORT_EV_RING | PORT_EV_CONNECT_ERR | \
@@ -45,9 +58,7 @@ typedef enum wiced_bt_rfcomm_port_event_e
                                    PORT_EV_RXFLAG | PORT_EV_OVERRUN | \
                                    PORT_EV_FC | PORT_EV_FCS | PORT_EV_CONNECTED)
 
-
-
-/** RFCOMM Result Codes */
+/** RFCOMM Result Codes*/
 enum wiced_bt_rfcomm_result_e
 {
     WICED_BT_RFCOMM_SUCCESS,                                        /**< Success */
@@ -63,17 +74,16 @@ enum wiced_bt_rfcomm_result_e
     WICED_BT_RFCOMM_NOT_OPENED,                                     /**< Not Opened */
     WICED_BT_RFCOMM_LINE_ERR,                                       /**< Line Error */
     WICED_BT_RFCOMM_START_FAILED,                                   /**< Start Failed */
-    WICED_BT_RFCOMM_PAR_NEG_FAILED,
-    WICED_BT_RFCOMM_RFCOMM_NEG_FAILED,
-    WICED_BT_RFCOMM_SEC_FAILED,
+    WICED_BT_RFCOMM_PAR_NEG_FAILED,                                 /**< DLC parameter negotiation failed */
+    WICED_BT_RFCOMM_RFCOMM_NEG_FAILED,                              /**< Remote port negotiation failed*/
     WICED_BT_RFCOMM_PEER_CONNECTION_FAILED,                         /**< Peer Connection Failed */
     WICED_BT_RFCOMM_PEER_FAILED,                                    /**< Peer Failed */
     WICED_BT_RFCOMM_PEER_TIMEOUT,                                   /**< Peer Timeout */
     WICED_BT_RFCOMM_CLOSED,                                         /**< Closed */
-    WICED_BT_RFCOMM_TX_FULL,
+    WICED_BT_RFCOMM_TX_FULL,                                        /**< No space to transmit the packet*/
     WICED_BT_RFCOMM_LOCAL_CLOSED,                                   /**< Local Closed */
     WICED_BT_RFCOMM_LOCAL_TIMEOUT,                                  /**< Local Timeout */
-    WICED_BT_RFCOMM_TX_QUEUE_DISABLED,
+    WICED_BT_RFCOMM_TX_QUEUE_DISABLED,                              /**< Transmit queue disabled */
     WICED_BT_RFCOMM_PAGE_TIMEOUT,                                   /**< Page Timeout */
     WICED_BT_RFCOMM_INVALID_SCN                                     /**< Invalid SCN */
 };
@@ -98,14 +108,14 @@ typedef uint8_t wiced_bt_rfcomm_signal_t;   /**< RFCOMM Signals (see #wiced_bt_r
  *  Port management callback
  *
  *  @param  code                : Result code
- *  @param  port_handle         : Port handle from @link wiced_bt_rfcomm_create_connection wiced_bt_rfcomm_create_connection @endlink.
+ *  @param  port_handle         : Port handle from @link wiced_bt_rfcomm_create_connection @endlink.
  */
 typedef void (wiced_bt_port_mgmt_cback_t) (wiced_bt_rfcomm_result_t code, uint16_t port_handle);
 
 /**
  *  Port event callback
  *
- *  @param  event               : A 32-bit event code that contains a bit-mask of one  or more events the caller would like to register.
+ *  @param  event               : A 32-bit event code that contains a bit-mask of one or more events the caller would like to register.(see #wiced_bt_rfcomm_port_event_t) 
  *  @param  port_handle         : Port handle from @link wiced_bt_rfcomm_create_connection wiced_bt_rfcomm_create_connection @endlink.
  */
 typedef void (wiced_bt_port_event_cback_t) (wiced_bt_rfcomm_port_event_t event, uint16_t port_handle);
@@ -118,18 +128,6 @@ typedef void (wiced_bt_port_event_cback_t) (wiced_bt_rfcomm_port_event_t event, 
 */
 typedef void (wiced_bt_port_tx_cback_t)(uint16_t port_handle, void *p_data);
 
-/**
- *  @addtogroup  rfcomm_api_functions       RFCOMM
- *
- *  RFCOMM Functions
- * The RFCOMM protocol provides emulation of serial ports over the L2CAP protocol. The protocol is
- * based on the ETSI standard GSM 7.1.0. RFCOMM is a simple transport protocol, with additional
- * provisions for emulating the nine circuits of RS-232 (ITU-T V.24) serial ports. The RFCOMM protocol
- * supports up to 60 simultaneous connections between two Bluetooth devices. The number of connections
- * that may be used simultaneously in a Bluetooth device is implementation-specific.
- *
- *  @{
- */
 /******************************************************
  *               Function Declarations
  ******************************************************/
@@ -160,15 +158,15 @@ extern "C"
  *  @param[in]  mtu             : The maximum number of bytes transferred per frame
  *                                If 0, a default size of L2CAP_MAX_RX_MTU minus
  *                                5 bytes is used
- *  @param[in]  bd_addr         : BD_ADDR of the peer (if client), NULL if server
+ *  @param[in]  bd_addr         : BD_ADDR of the peer (if client), NULL if server (see #wiced_bt_device_address_t) 
  *  @param[in]  p_mgmt_cb       : Pointer to callback function to receive connection
- *                                up/down events
+ *                                up/down events (see #wiced_bt_port_mgmt_cback_t)
  *  @param[out]  p_handle       : A pointer to the handle set by RFCOMM to be used in
  *                                consecutive calls for this connection
  *
- *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful
- *              <b> WICED_BT_RFCOMM_ALREADY_OPENED </b> : If the client tries to establish a connection to the same BD_ADDR
- *              <b> WICED_BT_RFCOMM_NO_RESOURCES </b>   : If there is not enough memory to allocate a control block structure
+ *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful\n
+ *              <b> WICED_BT_RFCOMM_ALREADY_OPENED </b> : If the client tries to establish a connection to the same BD_ADDR\n
+ *              <b> WICED_BT_RFCOMM_NO_RESOURCES </b>   : If there is not enough memory to allocate a control block structure\n
  */
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_create_connection (uint16_t uuid, uint8_t scn,
                                             wiced_bool_t is_server, uint16_t mtu,
@@ -180,29 +178,30 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_create_connection (uint16_t uuid, uint8
  *  Close the specified connection.
  *
  *  @param[in]  handle              : The connection handle returned by
- *                                    @link wiced_bt_rfcomm_create_connection wiced_bt_rfcomm_create_connection @endlink.
+ *                                    @link wiced_bt_rfcomm_create_connection @endlink.
  *  @param[in]  remove_server       : (for server only) If TRUE, then also remove server; otherwise server remains enabled
  *                                    after connection is closed.
  *
- *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful
- *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range
- *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened
+ *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful \n
+ *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range \n
+ *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened \n
  */
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_remove_connection (uint16_t handle, wiced_bool_t remove_server);
-
 
 /**
  *  Set event callback the specified connection.
  *
  *  @param[in]  port_handle         : A 16-bit unsigned integer returned by
- *                                    @link wiced_bt_rfcomm_create_connection wiced_bt_rfcomm_create_connection @endlink
- *  @param[in]  p_port_cb           : Address of the callback functions which should
+ *                                    @link wiced_bt_rfcomm_create_connection @endlink
+ *  @param[in]  p_port_cb           : Address of the callback function which should
  *                                    be called from the RFCOMM when an event
- *                                    specified in the mask occurs, or on TX complete
+ *                                    specified in the mask occurs. (see #wiced_bt_port_event_cback_t)
+ *  @param[in]  p_tx_cmpl_cb        : Address of the callback function which should
+ *                                    be called from the RFCOMM when TX complete (see #wiced_bt_port_tx_cback_t)
  *
- *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful
- *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range
- *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened
+ *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful\n
+ *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range\n
+ *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened\n
  */
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_set_event_callback (uint16_t port_handle, wiced_bt_port_event_cback_t *p_port_cb,
                                                              wiced_bt_port_tx_cback_t *p_tx_cmpl_cb);
@@ -212,11 +211,11 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_set_event_callback (uint16_t port_handl
  *
  *  @param[in]  port_handle         : A 16-bit unsigned integer returned by
  *                                    @link wiced_bt_rfcomm_create_connection wiced_bt_rfcomm_create_connection @endlink
- *  @param[in]  mask                : Event mask
+ *  @param[in]  mask                : Event mask (see #wiced_bt_rfcomm_port_event_t)
  *
- *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful
- *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range
- *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened
+ *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful\n
+ *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range\n
+ *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened\n
  */
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_set_event_mask (uint16_t port_handle, wiced_bt_rfcomm_port_event_t mask);
 
@@ -227,9 +226,9 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_set_event_mask (uint16_t port_handle, w
  *                                    @link wiced_bt_rfcomm_create_connection wiced_bt_rfcomm_create_connection @endlink
  *  @param[in]  signal              : Signal to send (see #wiced_bt_rfcomm_signal_e)
  *
- *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful
- *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range
- *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened
+ *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful\n
+ *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range\n
+ *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened\n
  */
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_control (uint16_t handle, uint8_t signal);
 
@@ -243,9 +242,9 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_control (uint16_t handle, uint8_t signa
  *                                    TRUE  Enable data flow
  *                                    FALSE Disable data flow
  *
- *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful
- *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range
- *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened
+ *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful\n
+ *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range\n
+ *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened\n
  */
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_flow_control (uint16_t handle, wiced_bool_t enable);
 
@@ -257,9 +256,9 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_flow_control (uint16_t handle, wiced_bo
 *  @param[in]  p_mem               : Pointer to the fifo area
 *  @param[in]  size                : Size of the fifo area
 *
-*  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful
-*              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range
-*              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened
+*  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful\n
+*              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range\n
+*              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened\n
 */
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_set_rx_fifo (uint16_t handle, char *p_mem, uint16_t size);
 
@@ -272,9 +271,9 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_set_rx_fifo (uint16_t handle, char *p_m
 *  @param[in]  max_len             : Maximum Byte count to read
 *  @param[out] p_len               : Bytes actually read
 *
-*  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful
-*              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range
-*              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened
+*  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful\n
+*              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range\n
+*              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened\n
 */
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_read_data(uint16_t handle, char *p_data, uint16_t max_len, uint16_t *p_len);
 
@@ -286,9 +285,9 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_read_data(uint16_t handle, char *p_data
  *  @param[in]  p_data              : Data to write
  *  @param[in]  max_len             : Byte count to write
  *
- *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful
- *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range
- *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened
+ *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful\n
+ *              <b> WICED_BT_RFCOMM_BAD_HANDLE </b>     : If the handle is out of range\n
+ *              <b> WICED_BT_RFCOMM_NOT_OPENED </b>     : If the connection is not opened\n
  */
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_write_data (uint16_t handle, char *p_data, uint16_t max_len );
 
@@ -297,11 +296,11 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_write_data (uint16_t handle, char *p_da
  *
  *  @param[in]  handle              : The connection handle returned by
  *                                    @link wiced_bt_rfcomm_create_connection wiced_bt_rfcomm_create_connection @endlink
- *  @param[out]  bd_addr            : Peer BD Address
+ *  @param[out]  bd_addr            : Peer BD Address (see #wiced_bt_device_address_t)
  *  @param[out]  p_lcid             : L2CAP's LCID
  *
- *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful
- *              <b> WICED_BT_RFCOMM_LINE_ERR </b>       : If connection is not up and running
+ *  @return     <b> WICED_BT_RFCOMM_SUCCESS </b>        : If successful\n
+ *              <b> WICED_BT_RFCOMM_LINE_ERR </b>       : If connection is not up and running\n
  */
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_check_connection (uint16_t handle, wiced_bt_device_address_t bd_addr, uint16_t *p_lcid);
 
@@ -310,4 +309,6 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_check_connection (uint16_t handle, wice
 }
 #endif
 
-/**@} */
+/**@}rfcomm_api_functions */
+/**  @endcond */
+

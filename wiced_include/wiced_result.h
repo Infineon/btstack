@@ -23,7 +23,6 @@ extern "C" {
 #define RESULT_ENUM( prefix, name, value )  prefix ## name = (value)
 #endif /* ifndef RESULT_ENUM */
 
-/*************************************************************************/
 /**
  *  @addtogroup  WICED Result list       WICED result list
  *  @ingroup     gentypes
@@ -36,44 +35,44 @@ extern "C" {
 
 /** WICED result list */
 #define WICED_RESULT_LIST( prefix ) \
-    RESULT_ENUM( prefix, SUCCESS,                       0x00 ),   /**< Success */                        \
-    RESULT_ENUM( prefix, DELETED                       ,0x01 ),   \
-    RESULT_ENUM( prefix, NO_MEMORY                     ,0x10 ),   \
-    RESULT_ENUM( prefix, POOL_ERROR                    ,0x02 ),   \
-    RESULT_ENUM( prefix, PTR_ERROR                     ,0x03 ),   \
-    RESULT_ENUM( prefix, WAIT_ERROR                    ,0x04 ),   \
-    RESULT_ENUM( prefix, SIZE_ERROR                    ,0x05 ),   \
-    RESULT_ENUM( prefix, GROUP_ERROR                   ,0x06 ),   \
-    RESULT_ENUM( prefix, NO_EVENTS                     ,0x07 ),   \
-    RESULT_ENUM( prefix, OPTION_ERROR                  ,0x08 ),   \
-    RESULT_ENUM( prefix, QUEUE_ERROR                   ,0x09 ),   \
-    RESULT_ENUM( prefix, QUEUE_EMPTY                   ,0x0A ),   \
-    RESULT_ENUM( prefix, QUEUE_FULL                    ,0x0B ),   \
-    RESULT_ENUM( prefix, SEMAPHORE_ERROR               ,0x0C ),   \
-    RESULT_ENUM( prefix, NO_INSTANCE                   ,0x0D ),   \
-    RESULT_ENUM( prefix, THREAD_ERROR                  ,0x0E ),   \
-    RESULT_ENUM( prefix, PRIORITY_ERROR                ,0x0F ),   \
-    RESULT_ENUM( prefix, START_ERROR                   ,0x10 ),   \
-    RESULT_ENUM( prefix, DELETE_ERROR                  ,0x11 ),   \
-    RESULT_ENUM( prefix, RESUME_ERROR                  ,0x12 ),   \
-    RESULT_ENUM( prefix, CALLER_ERROR                  ,0x13 ),   \
-    RESULT_ENUM( prefix, SUSPEND_ERROR                 ,0x14 ),   \
-    RESULT_ENUM( prefix, TIMER_ERROR                   ,0x15 ),   \
-    RESULT_ENUM( prefix, TICK_ERROR                    ,0x16 ),   \
-    RESULT_ENUM( prefix, ACTIVATE_ERROR                ,0x17 ),   \
-    RESULT_ENUM( prefix, THRESH_ERROR                  ,0x18 ),   \
-    RESULT_ENUM( prefix, SUSPEND_LIFTED                ,0x19 ),   \
-    RESULT_ENUM( prefix, WAIT_ABORTED                  ,0x1A ),   \
-    RESULT_ENUM( prefix, WAIT_ABORT_ERROR              ,0x1B ),   \
-    RESULT_ENUM( prefix, MUTEX_ERROR                   ,0x1C ),   \
-    RESULT_ENUM( prefix, NOT_AVAILABLE                 ,0x1D ),   \
-    RESULT_ENUM( prefix, NOT_OWNED                     ,0x1E ),   \
-    RESULT_ENUM( prefix, INHERIT_ERROR                 ,0x1F ),   \
-    RESULT_ENUM( prefix, NOT_DONE                      ,0x20 ),   \
-    RESULT_ENUM( prefix, CEILING_EXCEEDED              ,0x21 ),   \
-    RESULT_ENUM( prefix, INVALID_CEILING               ,0x22 ),   \
-    RESULT_ENUM( prefix, STA_JOIN_FAILED               ,0x23),   /**< Join failed */\
-    RESULT_ENUM( prefix, SLEEP_ERROR                   ,0x24),   \
+    RESULT_ENUM( prefix, SUCCESS,                       0x00 ),   /**< Success */                       \
+    RESULT_ENUM( prefix, DELETED                       ,0x01 ),   /**< Deleted */                       \
+    RESULT_ENUM( prefix, NO_MEMORY                     ,0x10 ),   /**< No Memory */                     \
+    RESULT_ENUM( prefix, POOL_ERROR                    ,0x02 ),   /**< Pool Error */                    \
+    RESULT_ENUM( prefix, PTR_ERROR                     ,0x03 ),   /**< Pointer Error */                 \
+    RESULT_ENUM( prefix, WAIT_ERROR                    ,0x04 ),   /**< Wait Error */                    \
+    RESULT_ENUM( prefix, SIZE_ERROR                    ,0x05 ),   /**< Size Error */                    \
+    RESULT_ENUM( prefix, GROUP_ERROR                   ,0x06 ),   /**< Group Error */                   \
+    RESULT_ENUM( prefix, NO_EVENTS                     ,0x07 ),   /**< No Event */                      \
+    RESULT_ENUM( prefix, OPTION_ERROR                  ,0x08 ),   /**< Option Error */                  \
+    RESULT_ENUM( prefix, QUEUE_ERROR                   ,0x09 ),   /**< Queue Error */                   \
+    RESULT_ENUM( prefix, QUEUE_EMPTY                   ,0x0A ),   /**< Queue Empty */                   \
+    RESULT_ENUM( prefix, QUEUE_FULL                    ,0x0B ),   /**< Queue Full */                    \
+    RESULT_ENUM( prefix, SEMAPHORE_ERROR               ,0x0C ),   /**< Semaphore Error */               \
+    RESULT_ENUM( prefix, NO_INSTANCE                   ,0x0D ),   /**< No Instance */                   \
+    RESULT_ENUM( prefix, THREAD_ERROR                  ,0x0E ),   /**< Thread Error */                  \
+    RESULT_ENUM( prefix, PRIORITY_ERROR                ,0x0F ),   /**< Priority Error */                \
+    RESULT_ENUM( prefix, START_ERROR                   ,0x10 ),   /**< Start Error */                   \
+    RESULT_ENUM( prefix, DELETE_ERROR                  ,0x11 ),   /**< Delete Error */                  \
+    RESULT_ENUM( prefix, RESUME_ERROR                  ,0x12 ),   /**< Resume Error */                  \
+    RESULT_ENUM( prefix, CALLER_ERROR                  ,0x13 ),   /**< Caller Error */                  \
+    RESULT_ENUM( prefix, SUSPEND_ERROR                 ,0x14 ),   /**< Suspend Error */                 \
+    RESULT_ENUM( prefix, TIMER_ERROR                   ,0x15 ),   /**< Timer Error */                   \
+    RESULT_ENUM( prefix, TICK_ERROR                    ,0x16 ),   /**< Tick Error */                    \
+    RESULT_ENUM( prefix, ACTIVATE_ERROR                ,0x17 ),   /**< Activate Error */                \
+    RESULT_ENUM( prefix, THRESH_ERROR                  ,0x18 ),   /**< Thresh Error */                  \
+    RESULT_ENUM( prefix, SUSPEND_LIFTED                ,0x19 ),   /**< Suspend Lifted */                \
+    RESULT_ENUM( prefix, WAIT_ABORTED                  ,0x1A ),   /**< Wait Aborted */                  \
+    RESULT_ENUM( prefix, WAIT_ABORT_ERROR              ,0x1B ),   /**< Wait Abort Error */              \
+    RESULT_ENUM( prefix, MUTEX_ERROR                   ,0x1C ),   /**< Mutex Error */                   \
+    RESULT_ENUM( prefix, NOT_AVAILABLE                 ,0x1D ),   /**< Not Avilable */                  \
+    RESULT_ENUM( prefix, NOT_OWNED                     ,0x1E ),   /**< Not Owned */                     \
+    RESULT_ENUM( prefix, INHERIT_ERROR                 ,0x1F ),   /**< Inherit Error */                 \
+    RESULT_ENUM( prefix, NOT_DONE                      ,0x20 ),   /**< Not Done */                      \
+    RESULT_ENUM( prefix, CEILING_EXCEEDED              ,0x21 ),   /**< Ceiling Exceeded */              \
+    RESULT_ENUM( prefix, INVALID_CEILING               ,0x22 ),   /**< Invalid Ceiling */               \
+    RESULT_ENUM( prefix, STA_JOIN_FAILED               ,0x23),   /**< Join failed */                    \
+    RESULT_ENUM( prefix, SLEEP_ERROR                   ,0x24),   /**< Sleep Error */                    \
     RESULT_ENUM( prefix, PENDING,                       0x25),   /**< Pending */                        \
     RESULT_ENUM( prefix, TIMEOUT,                       0x26),   /**< Timeout */                        \
     RESULT_ENUM( prefix, PARTIAL_RESULTS,               0x27),   /**< Partial results */                \
@@ -103,11 +102,12 @@ extern "C" {
     RESULT_ENUM( prefix, CORRUPT_PACKET_BUFFER,         0x3F),   /**< Packet buffer is corrupted */     \
     RESULT_ENUM( prefix, UNKNOWN_NETWORK_STACK_ERROR,   0x40),   /**< Unknown network stack error */    \
     RESULT_ENUM( prefix, NO_STORED_AP_IN_DCT,           0x41),   /**< DCT contains no AP credentials */ \
-    RESULT_ENUM( prefix, ALREADY_INITIALIZED,           0x42),   /**< Already initialized*/ \
-    RESULT_ENUM( prefix, FEATURE_NOT_ENABLED           ,0xFF ),   \
+    RESULT_ENUM( prefix, ALREADY_INITIALIZED,           0x42),   /**< Already initialized*/             \
+    RESULT_ENUM( prefix, FEATURE_NOT_ENABLED           ,0xFF ),  /**< Feature not enabled */
 
 /**@}  WICED result list */
 
+/** File result list */
 #define FILESYSTEM_RESULT_LIST( prefix ) \
         RESULT_ENUM( prefix, SUCCESS,                   10000 ),   /**< Success */               \
         RESULT_ENUM( prefix, PENDING,                   10001 ),   /**< Pending */               \
@@ -129,26 +129,26 @@ extern "C" {
         RESULT_ENUM( prefix, BLOCK_SIZE_BAD,            10017 ),   /**< Block size is invalid - not a multiple or sub-multiple of DEFAULT_SECTOR_SIZE */
 
 /******************************************************
- * @endcond    Enumerations
+ * @endcond
  ******************************************************/
 
-/*************************************************************************/
 /**
+ *  Common Bluetooth definitions
  *  @defgroup gentypes   Common Bluetooth definitions
  *  @addtogroup  Result       WICED result
  *  @ingroup     gentypes
  *
- *  <b> Result types </b> @b. See wiced_result.h 
+ *  <b> Result types </b> See wiced_result.h 
  *
  *  @{
  */
-/*************************************************************************/
+
 /** WICED result */
 typedef enum
 {
-    WICED_RESULT_LIST(WICED_)                 /**< Generic Error */
-    BT_RESULT_LIST      (  WICED_BT_       )  /**< BT specific Error. Range: 8000 - 8999 */
-    FILESYSTEM_RESULT_LIST( WICED_FILESYSTEM_ )      /* 10000 - 10999 */
+    WICED_RESULT_LIST ( WICED_ )                 /**< Generic Error */
+    BT_RESULT_LIST      (  WICED_BT_       )     /**< BT specific Error. Range: 8000 - 8999 */
+    FILESYSTEM_RESULT_LIST( WICED_FILESYSTEM_ )  /**< 10000 - 10999 */
 } wiced_result_t;
 
 /**@}  WICED Result */

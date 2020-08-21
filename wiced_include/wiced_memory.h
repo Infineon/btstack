@@ -7,7 +7,8 @@
  *  \addtogroup wiced_mem Memory Management
  *
  *  @{
- * Wiced Memory Management Interface
+ * Helper APIs to create heaps and pools and allocate/free buffers from those pools or heaps.
+ * When a heap or a pool is created, this utility allocates required chunk of memory from the system and manages it for the creator.
  */
 
 #pragma once
@@ -15,18 +16,22 @@
 #include "wiced_data_types.h"
 #include "wiced_result.h"
 
-#ifndef WICED_MEMORY_DEBUG_LEVEL
-#define  WICED_MEMORY_DEBUG_LEVEL 0
+#ifndef WICED_MEMORY_DEBUG_ENABLE
+/** Debug Memory Level*/
+#define  WICED_MEMORY_DEBUG_ENABLE FALSE
 #endif
 
 /* WICED does not care about the structure of the contents of a WICED buffer */
+/** WICED BT Buffer */
 typedef void wiced_bt_buffer_t;
 
 /* Application does not know or care about structure used to manage buffer pools or heaps */
+/** WICED BT Pool */
 typedef struct t_wiced_bt_pool wiced_bt_pool_t;
+/** WICED BT Heap */
 typedef struct t_wiced_bt_heap wiced_bt_heap_t;
 
-/* If an application wants to get a buffer from the default heap, he can use this. */
+/** If an application wants to get a buffer from the default heap, he can use this. */
 #define WICED_DEFAULT_HEAP      ((wiced_bt_heap_t *)NULL)
 
 /** wiced bt buffer pool statistics */
@@ -57,14 +62,13 @@ typedef struct wiced_bt_heap_statistics_s
 }wiced_bt_heap_statistics_t;
 
 
-/* This queue is a general purpose buffer queue, for application use.
-*/
+/** This queue is a general purpose buffer queue, for application use.*/
 typedef struct
 {
-    wiced_bt_buffer_t   *p_first;
-    wiced_bt_buffer_t   *p_last;
-    uint32_t             count;
-    wiced_bt_lock_t      lock;
+    wiced_bt_buffer_t   *p_first;       /**< Pointer to first buffer */
+    wiced_bt_buffer_t   *p_last;        /**< Pointer to Last buffer */
+    uint32_t             count;         /**< Number of buffer in queue */
+    wiced_bt_lock_t      lock;          /**< Lock provided by appliction */
 } wiced_bt_buffer_q_t;
 
 /******************************************************
@@ -75,22 +79,18 @@ extern "C" {
 #endif
 
 /**
- * Function         wiced_memory_get_free_bytes
- *
- *                  Returns the number of free bytes of RAM left
+ * Returns the number of free bytes of RAM left
  *
  * @return          the number of free bytes of RAM left
  */
 uint32_t wiced_memory_get_free_bytes( void );
 
 /**
-* Function         wiced_bt_create_heap
-*
-*                  Initializes dynamic memory area. Application reserves an area for dynamic
-*                  variable memory allocations with this call. Application can now allocate 
-*                  variable sized buffers as against fixed sized buffer allocations from the 
-*                  pools initialized with calls to wiced_bt_create_pool and allocated using 
-*                  wiced_bt_get_buffer_from_pool. 
+* Initializes dynamic memory area. Application reserves an area for dynamic
+* variable memory allocations with this call. Application can now allocate 
+* variable sized buffers as against fixed sized buffer allocations from the 
+* pools initialized with calls to wiced_bt_create_pool and allocated using 
+* wiced_bt_get_buffer_from_pool. 
 *
 * @param[in]       name : Friendly name of the heap
 * @param[in]       p_area : Pointer to area to use for the heap. If NULL, WICED will allocate the area.
@@ -104,10 +104,8 @@ uint32_t wiced_memory_get_free_bytes( void );
 wiced_bt_heap_t *wiced_bt_create_heap (const char * name, void *p_area, int size, wiced_bt_lock_t *p_lock, wiced_bool_t b_make_default);
 
 /**
-* Function         wiced_bt_delete_heap
-*
-*                  Deletes the heap created with #wiced_bt_create_heap. The heap area is freed back to the platform in 
-*                  case the wiced_bt_create_heap was called with p_area set to NULL.
+* Deletes the heap created with #wiced_bt_create_heap. The heap area is freed back to the platform in 
+* case the wiced_bt_create_heap was called with p_area set to NULL.
 *
 * @param[in]       p_heap : Heap created with #wiced_bt_create_heap
 *
@@ -116,9 +114,7 @@ wiced_bt_heap_t *wiced_bt_create_heap (const char * name, void *p_area, int size
 void wiced_bt_delete_heap(wiced_bt_heap_t* p_heap);
 
 /**
- * Function         wiced_bt_create_pool
- *
- *                  Creates a buffer pool for application usage.
+ * Creates a buffer pool for application usage.
  *
  * @param[in]       name : Friendly name of the heap
  * @param[in]       buffer_size: Size of the buffers in the pool
@@ -131,9 +127,7 @@ void wiced_bt_delete_heap(wiced_bt_heap_t* p_heap);
 wiced_bt_pool_t* wiced_bt_create_pool(const char* name, uint32_t buffer_size, uint32_t buffer_cnt, wiced_bt_lock_t* p_lock);
 
 /**
- * Function         wiced_bt_delete_pool
- *
- *                  Deletes a buffer pool created using #wiced_bt_create_pool
+ * Deletes a buffer pool created using #wiced_bt_create_pool
  *
  * @param[in]       p_pool : pointer of type #wiced_bt_pool_t returned through a call to #wiced_bt_create_pool
  *
@@ -142,48 +136,56 @@ wiced_bt_pool_t* wiced_bt_create_pool(const char* name, uint32_t buffer_size, ui
 void wiced_bt_delete_pool(wiced_bt_pool_t* p_pool);
 
 
-/**
- * Function         wiced_bt_get_buffer_from_pool
- *
- *                  Allocates a buffer from the requested pool.
- *
- * @param[in]       p_pool  : pointer to pool from which to get the buffer
- *
- * @return         the pointer to the buffer NULL on failure
- */
-#if defined (WICED_MEMORY_DEBUG_LEVEL) && (WICED_MEMORY_DEBUG_LEVEL > 0)
+#if defined (WICED_MEMORY_DEBUG_ENABLE ) && (WICED_MEMORY_DEBUG_ENABLE == TRUE)
+/** Get buffer from requested pool */
 wiced_bt_buffer_t* wiced_bt_get_buffer_from_pool_trace(wiced_bt_pool_t* p_pool, const char* function, int line);
+/** Get buffer from requested pool refer #wiced_bt_get_buffer_from_pool_trace */
 #define wiced_bt_get_buffer_from_pool(pool) wiced_bt_get_buffer_from_pool_trace((pool), __FUNCTION__, __LINE__)
 #else
+/** Get buffer from requested pool */
 wiced_bt_buffer_t* wiced_bt_get_buffer_from_pool_no_trace(wiced_bt_pool_t* p_pool);
+/**
+ * Allocates a buffer from the requested pool.
+ *
+ * @param[in]       pool  : pointer to pool from which to get the buffer
+ *
+ * @return         the pointer to the buffer or NULL on failure
+ */
 #define wiced_bt_get_buffer_from_pool(pool) wiced_bt_get_buffer_from_pool_no_trace((pool))
 #endif
 
-/**
-* Function         wiced_bt_get_buffer_from_heap
-*
-*                  Allocates a buffer from the requested heap. 
-*
-* @param[in]       p_heap  : pointer to heap from which to get the buffer or WICED_DEFAULT_HEAP
-* @param[in]       size of the buffer to allocate.
-*
-* @return         the pointer to the buffer NULL on failure
-*/
-#if defined (WICED_MEMORY_DEBUG_LEVEL) && (WICED_MEMORY_DEBUG_LEVEL > 0)
+#if defined (WICED_MEMORY_DEBUG_ENABLE ) && (WICED_MEMORY_DEBUG_ENABLE == TRUE)
+/** Get buffer from requested heap */
 wiced_bt_buffer_t* wiced_bt_get_buffer_from_heap_trace(wiced_bt_heap_t* p_heap, uint32_t size, const char* function, int line);
+/** Get buffer from requested heap */
 #define wiced_bt_get_buffer_from_heap(heap, size) wiced_bt_get_buffer_from_heap_trace((heap), (size), __FUNCTION__, __LINE__)
 #else
+/** Get buffer from requested heap */
 wiced_bt_buffer_t* wiced_bt_get_buffer_from_heap_no_trace(wiced_bt_heap_t* p_heap, uint32_t size);
+/**
+ * Allocates a buffer from the requested heap.
+ *
+ * @param[in]       heap  : pointer to heap from which to get the buffer
+ * @param[in]       size  : size to be allocated
+ *
+ * @return         the pointer to the buffer or NULL on failure
+ */
 #define wiced_bt_get_buffer_from_heap(heap, size) wiced_bt_get_buffer_from_heap_no_trace((heap), (size))
 #endif
+
+/**
+ * Allocates a buffer from the <b> DEFAULT heap </b>.
+ *
+ * @param[in]       size  : size to be allocated
+ *
+ * @return         the pointer to the buffer or NULL on failure
+ */
 
 #define wiced_bt_get_buffer(size) wiced_bt_get_buffer_from_heap(WICED_DEFAULT_HEAP, (size))
 
 
 /**
- * Function         wiced_bt_get_pool_free_count
- *
- *                  To get the number of buffers available in the pool
+ * To get the number of buffers available in the pool
  *
  * @param[in]       p_pool           : pool pointer
  *
@@ -192,9 +194,7 @@ wiced_bt_buffer_t* wiced_bt_get_buffer_from_heap_no_trace(wiced_bt_heap_t* p_hea
 uint32_t wiced_bt_get_pool_free_count (wiced_bt_pool_t* p_pool);
 
 /**
-* Function         wiced_bt_get_largest_heap_buffer
-*
-*                  To get the size of the largest buffer available in the heap
+* To get the size of the largest buffer available in the heap
 *
 * @param[in]       p_heap           : heap pointer
 *
@@ -202,28 +202,27 @@ uint32_t wiced_bt_get_pool_free_count (wiced_bt_pool_t* p_pool);
 */
 uint32_t wiced_bt_get_largest_heap_buffer (wiced_bt_heap_t* p_heap);
 
+#if defined (WICED_MEMORY_DEBUG_ENABLE) && (WICED_MEMORY_DEBUG_ENABLE == TRUE)
+/** Free Buffer */
+void wiced_bt_free_buffer_trace(wiced_bt_buffer_t* p_buf, const char* function, int line);
+/** Free Buffer */
+#define wiced_bt_free_buffer(free_buf)  wiced_bt_free_buffer_trace((free_buf), __FUNCTION__, __LINE__)
+#else
+/** Free Buffer */
+void wiced_bt_free_buffer_no_trace(wiced_bt_buffer_t* p_buf);
 /**
- * Function         wiced_bt_free_buffer
+ * Frees a buffer back to the pool or heap it came from
  *
- *                  Frees a buffer back to the pool or heap it came from
- *
- * @param[in]       p_buf : pointer to the start of the (pool/heap) buffer to be freed
+ * @param[in]       free_buf : pointer to the start of the (pool/heap) buffer to be freed
  *
  * @return         None
  */
-#if defined (WICED_MEMORY_DEBUG_LEVEL) && (WICED_MEMORY_DEBUG_LEVEL > 0)
-void wiced_bt_free_buffer_trace(wiced_bt_buffer_t* p_buf, const char* function, int line);
-#define wiced_bt_free_buffer(free_buf)  wiced_bt_free_buffer_trace((free_buf), __FUNCTION__, __LINE__)
-#else
-void wiced_bt_free_buffer_no_trace(wiced_bt_buffer_t* p_buf);
 #define wiced_bt_free_buffer(free_buf)  wiced_bt_free_buffer_no_trace(free_buf)
 #endif
 
 
 /**
- * Function         wiced_bt_get_buffer_size
- *
- *                  Gets the buffer size
+ * Gets the buffer size
  *
  * @param[in]       p_buf           : pointer to the start of the buffer
  *
@@ -232,130 +231,106 @@ void wiced_bt_free_buffer_no_trace(wiced_bt_buffer_t* p_buf);
 uint32_t wiced_bt_get_buffer_size (wiced_bt_buffer_t *p_buf);
 
 /**
-** Function         wiced_bt_init_q
-**
-** Description      Called by an application to initialize a WICED buffer queue.
-**
-**                  Pointers to lock and unlock functions may be NULL if application
-**                  has handled preemption outside of the queue management code.
-**
-** Returns          void
-**/
+ * Called by an application to initialize a WICED buffer queue.
+ * Pointers to lock and unlock functions may be NULL if application
+ * has handled preemption outside of the queue management code.
+ *
+ * @return          void
+ */
 void wiced_bt_init_q (wiced_bt_buffer_q_t* p_q, wiced_bt_lock_t * p_lock);
 
 /**
-** Function         wiced_bt_enqueue
-**
-** Description      Enqueue a buffer at the tail of the queue
-**
-** Parameters:      p_q  -  (input) pointer to a queue.
-**                  p_buf - (input) address of the buffer to enqueue
-**
-** Returns          void
-**/
-
+ * Enqueue a buffer at the tail of the queue
+ *
+ * @param[in]       p_q   : pointer to a queue.
+ * @param[in]       p_buf : address of the buffer to enqueue
+ *
+ * @return          void
+ */
 void wiced_bt_enqueue (wiced_bt_buffer_q_t *p_q, wiced_bt_buffer_t *p_buf);
 
 /**
-** Function         wiced_bt_enqueue_head
-**
-** Description      Enqueue a buffer at the head of the queue
-**
-** Parameters:      p_q  -  (input) pointer to a queue.
-**                  p_buf - (input) address of the buffer to enqueue
-**
-** Returns          void
-**/
+ * Enqueue a buffer at the head of the queue
+ *
+ * @param[in]       p_q   : pointer to a queue.
+ * @param[in]       p_buf : address of the buffer to enqueue
+ *
+ * @return          void
+ */
 void wiced_bt_enqueue_head (wiced_bt_buffer_q_t *p_q, wiced_bt_buffer_t *p_buf);
 
 /**
-** Function         wiced_bt_dequeue
-**
-** Description      Dequeues a buffer from the head of a queue
-**
-** Parameters:      p_q  - (input) pointer to a queue.
-**
-** Returns          NULL if queue is empty, else buffer
-**/
+ * Dequeues a buffer from the head of a queue
+ *
+ * @param[in]       p_q  : pointer to a queue.
+ *
+ * @return          NULL if queue is empty, else buffer
+ */
 wiced_bt_buffer_t *wiced_bt_dequeue (wiced_bt_buffer_q_t *p_q);
 
 /**
-** Function         wiced_bt_remove_from_queue
-**
-** Description      Dequeue a buffer from the middle of the queue
-**
-** Parameters:      p_q  - (input) pointer to a queue.
-**                  p_buf - (input) address of the buffer to enqueue
-**
-** Returns          NULL if queue is empty, else buffer
-**/
+ * Dequeue a buffer from the middle of the queue
+ *
+ * @param[in]       p_q   : pointer to a queue.
+ * @param[in]       p_buf : address of the buffer to dequeue
+ *
+ * @return          NULL if queue is empty, else buffer
+ */
 wiced_bt_buffer_t *wiced_bt_remove_from_queue (wiced_bt_buffer_q_t *p_q, wiced_bt_buffer_t *p_buf);
 
 /**
-** Function         wiced_bt_getfirst
-**
-** Description      Return a pointer to the first buffer in a queue
-**
-** Parameters:      p_q  - (input) pointer to a queue.
-**
-** Returns          NULL if queue is empty, else buffer address
-**/
+ * Return a pointer to the first buffer in a queue
+ *
+ * @param[in]       p_q : pointer to a queue.
+ *
+ * @return          NULL if queue is empty, else buffer address
+ */
 wiced_bt_buffer_t *wiced_bt_getfirst (wiced_bt_buffer_q_t *p_q);
 
 /**
-** Function         wiced_bt_getlast
-**
-** Description      Return a pointer to the last buffer in a queue
-**
-** Parameters:      p_q  - (input) pointer to a queue.
-**
-** Returns          NULL if queue is empty, else buffer address
-**/
+ * Return a pointer to the last buffer in a queue
+ *
+ * @param[in]       p_q  : pointer to a queue.
+ *
+ * @return          NULL if queue is empty, else buffer address
+ */
 wiced_bt_buffer_t *wiced_bt_getlast (wiced_bt_buffer_q_t *p_q);
 
 /**
-** Function         wiced_bt_getnext
-**
-** Description      Return a pointer to the next buffer in a queue
-**
-** Parameters:      p_buf  - (input) pointer to the buffer to find the next one from.
-**
-** Returns          NULL if no more buffers in the queue, else next buffer address
-**/
+ * Return a pointer to the next buffer in a queue
+ *
+ * @param[in]       p_buf  : pointer to the buffer to find the next one from.
+ *
+ * @return          NULL if no more buffers in the queue, else next buffer address
+ */
 wiced_bt_buffer_t *wiced_bt_getnext (wiced_bt_buffer_t *p_buf);
 
 /**
-** Function         wiced_bt_queue_is_empty
-**
-** Description      Check the status of a queue.
-**
-** Parameters:      p_q  - (input) pointer to a queue.
-**
-** Returns          TRUE if queue is empty, else FALSE
-**/
+ * Check the status of a queue.
+ *
+ * @param[in]       p_q  : pointer to a queue.
+ *
+ * @return          TRUE if queue is empty, else FALSE
+ */
 uint32_t wiced_bt_queue_is_empty (wiced_bt_buffer_q_t *p_q);
 
 /**
-** Function         wiced_bt_get_heap_statistics
-**
-** Description      Get/Print the heap stats
-**
-** Parameters:      p_heap - heap pointer (output of @wiced_bt_create_heap)
-**                  p_stats - pointer to receive the heap statistics
-**
-** Returns          TRUE in case of valid stats returned in p_stats
-**/
+ * Get/Print the heap stats
+ *
+ * @param[in]       p_heap  : heap pointer (output of #wiced_bt_create_heap)
+ * @param[out]      p_stats : pointer to receive the heap statistics
+ *
+ * @return          TRUE in case of valid stats returned in p_stats
+ */
 wiced_bool_t wiced_bt_get_heap_statistics(void* p_heap, wiced_bt_heap_statistics_t* p_stats);
 
 /**
-** Function         wiced_set_exception_callback
-**
-** Description      Set the exception callback
-**
-** Parameters:      pf_handler - Exception callback function
-**
-** Returns          void
-**/
+ * Set the exception callback
+ *
+ * @param[in]       pf_handler : Exception callback function
+ *
+ * @return          void
+ */
 void wiced_set_exception_callback(pf_wiced_exception pf_handler);
 
 #ifdef __cplusplus

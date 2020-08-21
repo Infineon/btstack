@@ -6,22 +6,32 @@
  * Runtime Bluetooth configuration parameters
  *
  */
+ /**
+ * @addtogroup  wiced_bt_platform_group Bluetooth Stack Platform Interface
+ *
+ * Interface between Stack and platform.
+ *
+ * @{
+ */
+ 
 #pragma once
 
 #include <stdarg.h>
 #include "wiced_bt_types.h"
+#include "wiced_data_types.h"
 #include "wiced_bt_dev.h"
 #include "wiced_bt_cfg.h"
 
+/** Wiced BT Stack Platform */
 typedef struct
 {
     /**
-     * Exception callback : @pf_wiced_exception
+     * Exception callback
      */
     pf_wiced_exception pf_exception;
 
     /**
-     * Platform memory allocation function
+     * Platform function to allocate memory
      *
      * Called by stack code to allocate memory from the OS/Platform. 
      * Implementing function is expected to return memory allocated from 
@@ -31,13 +41,14 @@ typedef struct
      *
      * @return : Pointer to allocated memory
      */
-    void* (*pf_os_malloc)(uint32_t size);
+    void * (*pf_os_malloc)(uint32_t size);
+
     /**
      * Platform memory free
      *
      * Called by stack code to free memory back to the OS/Platform.
      * Implementing function is expected to free the memory allocated 
-     * using @pf_os_malloc call from the OS/Platform
+     * using pf_os_malloc (refer #pf_os_malloc ) call from the OS/Platform
      *
      * @param[in] p_mem    : Ptr to memory to be freed
      *
@@ -67,6 +78,7 @@ typedef struct
      */
     void   (*pf_set_next_timeout)(uint64_t  abs_tick_count);
 
+    /** Stack lock */
     wiced_bt_lock_t stack_lock;
 
     /**
@@ -150,37 +162,34 @@ typedef struct
      */
     void (*pf_debug_trace)(char *p_trace_buf, int trace_buf_len, wiced_bt_trace_type_t trace_type);
 
+    /** trace_buffer_len : Trace buffer len */
+    int   trace_buffer_len;
     /**
-     * trace_buffer_len : Trace buffer len
      * trace_buffer     : Pointer to the trace buffer
      * Applications can set this to NULL to disable traces
      */
-    int   trace_buffer_len;
     char* trace_buffer;
 
 
-    /* Used for additional controller initialization by the porting layer to be performed
+    /** 
+     * Used for additional controller initialization by the porting layer to be performed
      * after the HCI reset. Can be set to NULL if no additional initialization required
      */
     void (*pf_patch_download)(void);
 } wiced_bt_stack_platform_t;
 
 /**
- * Function         wiced_bt_stack_platform_initialize
+ * Initialize the platform interfaces, by providing porting functions specific to 
+ * the underlying platform.
  *
- *                  Initialize the platform interfaces, by providing porting functions specific to 
- *                  the underlying platform.
- *
- * @return    WICED_BT_SUCCESS : on success;
- *            WICED_BT_ERROR   : if an error occurred
+ * @return   <b> WICED_BT_SUCCESS </b> : on success; \n
+ *           <b> WICED_BT_ERROR  </b>  : if an error occurred
  */
 extern wiced_result_t wiced_bt_stack_platform_initialize(wiced_bt_stack_platform_t * platform_interfaces);
 
 /**
- * Function         wiced_bt_process_acl_data
- *
- *                  Called by the porting layer to process the incoming ACL data received from the 
- *                  remote bluetooth device
+ * Called by the porting layer to process the incoming ACL data received from the 
+ * remote bluetooth device
  *
  * @param[in] pData  : Pointer to the ACL data to be processed
  * @param[in] length : Length of the ACL data buffer
@@ -190,10 +199,9 @@ extern wiced_result_t wiced_bt_stack_platform_initialize(wiced_bt_stack_platform
 extern void wiced_bt_process_acl_data(uint8_t* pData, uint32_t length);
 
 /**
- * Function         wiced_bt_process_hci_events
+ * Called by the porting layer to process the incoming HCI events from the local
+ * bluetooth controller
  *
- *                  Called by the porting layer to process the incoming HCI events from the local
- *                  bluetooth controller
  * @param[in] pData  : Pointer to the HCI Events to be processed
  * @param[in] length : Length of the event buffer
  * @return    void
@@ -201,9 +209,7 @@ extern void wiced_bt_process_acl_data(uint8_t* pData, uint32_t length);
 extern void wiced_bt_process_hci_events(uint8_t* pData, uint32_t length);
 
 /**
- * Function         wiced_bt_process_timer
- *
- *                  Called by the porting layer on expiry of the timer to process pending timers
+ * Called by the porting layer on expiry of the timer to process pending timers
  *
  * @return    void
  */
@@ -211,58 +217,69 @@ extern void wiced_bt_process_timer(void);
 
 
 /**
- * Function         wiced_bt_continue_reset
- *
- *                  Called by the porting layer to complete/continue the reset process
- *                  Typically called after downloading firmware patches to the controller
+ * Called by the lower layer transport driver to restart sending ACL data to the controller
+ * Note: Porting layer API. 
+ *     This API is expected to be invoked by the lower layer transport driver, to restart 
+ *     transfers from the stack to the controller. 
+ *     The lower tx layer is expected to have space for atleast one complete ACL buffer
+ *     Typically used in cases where the lower Tx has lesser number of buffers than allowed by controller
+ */
+extern void wiced_bt_stack_indicate_lower_tx_complete(void);
+
+/**
+ * Called by the porting layer to complete/continue the reset process
+ * Typically called after downloading firmware patches to the controller
  *
  * @return    void
  */
 extern void wiced_bt_continue_reset(void);
 
-/*******************************************************************************
-*
-* Function         wiced_bt_set_stack_config
-*
-*                  Set the stack config. Invoked by the porting layer 
+/**
+* Set the stack config. Invoked by the porting layer 
 *
 * @param[in] p_bt_new_cfg_settings : Stack configuration settings
 *
-* @return    Dynamic memory size requirements of the stack for the configuration
+* @return   0 if there is any error in the configuration otherwise the dynamic
+*           memory size requirements of the stack for the configuration.
+*            
 *
-*******************************************************************************/
+*/
 extern uint32_t wiced_bt_set_stack_config(const wiced_bt_cfg_settings_t* p_bt_new_cfg_settings);
 
-/*
+/**
 * Function prototype for the post Stack Init Callback.
 */
 typedef void (*wiced_bt_internal_post_stack_init_cb)(void);
 
 
-/*
+/**
 * Function prototype for the HCI event monitor function that the application may suppply.
 * The application MUST return TRUE if the it handled the event and does not want the stack to
 * process the event. If the application returns FALSE, the stack will process the event.
 */
 typedef wiced_bool_t (*wiced_bt_internal_stack_evt_handler_cb)(uint8_t* p_event);
 
-/*******************************************************************************
+/**
+* Internal stack init 
 *
-* Function   wiced_bt_stack_init_internal
-*
-*            Internal stack init 
-*              
 * @param[in] mgmt_cback : Application BT Management callback
 * @param[in] post_stack_cb : Internal post stack init callback
 * @param[in] evt_handler_cb : Internal stack event handler
 *
 * @return    Dynamic memory size requirements of the stack for the configuration
 *
-*******************************************************************************/
+*/
 void wiced_bt_stack_init_internal(wiced_bt_management_cback_t mgmt_cback,
     wiced_bt_internal_post_stack_init_cb post_stack_cb,
     wiced_bt_internal_stack_evt_handler_cb evt_handler_cb);
 
-
+/**
+ * This function blocks until all de-initialisation procedures are complete.
+ * It is recommended that the application disconnect any outstanding connections prior to invoking this function.
+ *
+ * @return    None
+ */
+void wiced_bt_stack_shutdown(void);
+/**@} wiced_bt_platform_group */
 
 

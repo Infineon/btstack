@@ -17,9 +17,11 @@ extern "C" {
  ******************************************************/
 
 #ifndef RESULT_ENUM
+/** Result Enum*/
 #define RESULT_ENUM( prefix, name, value )  prefix ## name = (value)
 #endif /* ifndef RESULT_ENUM */
 
+/* BT Result List*/
 #define BT_RESULT_LIST( prefix ) \
         RESULT_ENUM( prefix, SUCCESS,                      0 ),   /**< Success */                                               \
         RESULT_ENUM( prefix, PARTIAL_RESULTS,              3 ),   /**< Partial results */                                       \
@@ -80,7 +82,7 @@ extern "C" {
  ******************************************************/
 
 /** @cond !ADDTHIS*/
-#define WICED_BT_ADDRESS_BYTE_SIZE 6
+#define WICED_BT_ADDRESS_BYTE_SIZE 6    /**< BT Address size */
 /** @endcond */
 
 /******************************************************

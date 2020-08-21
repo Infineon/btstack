@@ -11,8 +11,10 @@
 #include "wiced_bt_sdp.h"
 
 /**
+ * @cond DUAL_MODE
  * @addtogroup  wicedbt_av_a2d_helper      Helper Functions
  * @ingroup     wicedbt_avdt
+ * This section describes the API's to find A2DP service and APIs to parse/encode Codec Specific Information Elements for SBC Codec, MPEG-1,2 Audio Codec or MPEG-2,4 AAC Codec.
  *
  * @{
  */
@@ -20,30 +22,50 @@
 **  constants
 *****************************************************************************/
 
-/* Profile supported features */
-#define A2D_SUPF_PLAYER     0x0001
-#define A2D_SUPF_MIC        0x0002
-#define A2D_SUPF_TUNER      0x0004
-#define A2D_SUPF_MIXER      0x0008
+/**
+ * @anchor A2D_SUPF_SOURCE
+ * @name (Source) Profile supported features.
+ * @{
+ */
+#define A2D_SUPF_PLAYER     0x0001      /**< Player */
+#define A2D_SUPF_MIC        0x0002      /**< MIC    */
+#define A2D_SUPF_TUNER      0x0004      /**< Tuner  */
+#define A2D_SUPF_MIXER      0x0008      /**< Mixer  */
+/** @} A2D_SUPF_SOURCE */
 
-#define A2D_SUPF_HEADPHONE  0x0001
-#define A2D_SUPF_SPEAKER    0x0002
-#define A2D_SUPF_RECORDER   0x0004
-#define A2D_SUPF_AMP        0x0008
+/**
+ * @anchor A2D_SUPF_SINK
+ * @name (Sink) Profile supported features.
+ * @{
+ */
+#define A2D_SUPF_HEADPHONE  0x0001      /**< Headphone  */
+#define A2D_SUPF_SPEAKER    0x0002      /**< Speaker    */
+#define A2D_SUPF_RECORDER   0x0004      /**< Recorder   */
+#define A2D_SUPF_AMP        0x0008      /**< Amplifier  */
+/** @} A2D_SUPF_SINK */
 
-/* AV Media Types */
-#define A2D_MEDIA_TYPE_AUDIO    0x00    /* audio media type + RFA */
-#define A2D_MEDIA_TYPE_VIDEO    0x10    /* video media type + RFA */
-#define A2D_MEDIA_TYPE_MULTI    0x20    /* multimedia media type + RFA */
+/**
+ * @anchor A2D_MEDIA_TYPE
+ * @name AV Media Types.
+ * @{
+ */
+#define A2D_MEDIA_TYPE_AUDIO    0x00    /**< audio media type + RFA */
+#define A2D_MEDIA_TYPE_VIDEO    0x10    /**< video media type + RFA */
+#define A2D_MEDIA_TYPE_MULTI    0x20    /**< multimedia media type + RFA */
+/** @} A2D_MEDIA_TYPE */
 
-/* AV Media Codec Type (Audio Codec ID) */
-#define A2D_MEDIA_CT_SBC        0x00    /* SBC media codec type */
-#define A2D_MEDIA_CT_M12        0x01    /* MPEG-1, 2 Audio media codec type */
-#define A2D_MEDIA_CT_M24        0x02    /* MPEG-2, 4 AAC media codec type */
-#define A2D_MEDIA_CT_ATRAC      0x04    /* ATRAC family media codec type */
-#define A2D_MEDIA_CT_VEND       0xFF    /* Vendor specific */
-#define A2D_MEDIA_CT_APTX       A2D_MEDIA_CT_VEND    /* APTX media codec type */
-
+/**
+ * @anchor A2D_MEDIA_CT
+ * @name AV Media Codec Type (Audio Codec ID).
+ * @{
+ */
+#define A2D_MEDIA_CT_SBC        0x00    /**< SBC media codec type */
+#define A2D_MEDIA_CT_M12        0x01    /**< MPEG-1, 2 Audio media codec type */
+#define A2D_MEDIA_CT_M24        0x02    /**< MPEG-2, 4 AAC media codec type */
+#define A2D_MEDIA_CT_ATRAC      0x04    /**< ATRAC family media codec type */
+#define A2D_MEDIA_CT_VEND       0xFF    /**< Vendor specific */
+#define A2D_MEDIA_CT_APTX       A2D_MEDIA_CT_VEND    /**< APTX media codec type */
+/** @} A2D_MEDIA_CT */
 
 /**
  * @anchor A2D_STATUS
@@ -85,14 +107,22 @@
 #define A2D_BAD_CP_TYPE       0xE0  /**< The requested CP Type is not supported. */
 #define A2D_BAD_CP_FORMAT     0xE1  /**< The format of Content Protection Service Capability/Content Protection Scheme Dependent Data is not correct. */
 
-typedef uint8_t wiced_bt_a2d_status_t;
+typedef uint8_t wiced_bt_a2d_status_t; /**< A2DP status codes */
 
 /** @} A2D_STATUS */
 
-/* the return values from wiced_bt_a2d_bits_set() */
-#define A2D_SET_ONE_BIT         1   /* one and only one bit is set */
-#define A2D_SET_ZERO_BIT        0   /* all bits clear */
-#define A2D_SET_MULTL_BIT       2   /* multiple bits are set */
+/*  */
+/**
+ * @anchor A2D_SET_BIT
+ * @name A2D set bits.
+ * @note Return values from wiced_bt_a2d_bits_set()
+ * @{
+ */
+
+#define A2D_SET_ONE_BIT         1   /**< one and only one bit is set */
+#define A2D_SET_ZERO_BIT        0   /**< all bits clear */
+#define A2D_SET_MULTL_BIT       2   /**< multiple bits are set */
+/** @} A2D_SET_BIT */
 
 /*****************************************************************************
 **  type definitions
@@ -129,59 +159,32 @@ typedef struct
  * @param p_service            : Contains result of SDP discovery process
  *
  * @return Status of event handling
+ * @note This is the callback to notify the result of the SDP discovery process
 */
-
-/**< This is the callback to notify the result of the SDP discovery process. */
 typedef void (wiced_bt_a2d_find_cback)(wiced_bool_t found, wiced_bt_a2d_service_t* p_service);
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-/*
- *
- * Function         wiced_bt_a2d_set_trace_level
- *
- *                  Sets the trace level for A2D. If 0xff is passed, the
- *                  current trace level is returned.
- *
- * @param[in]       new_level:  The level to set the A2D tracing to:
- *                              0xff-returns the current setting.
- *                              0-turns off tracing.
- *                              >= 1-Errors.
- *                              >= 2-Warnings.
- *                              >= 3-APIs.
- *                              >= 4-Events.
- *                              >= 5-Debug.
- *
- * @return          The new trace level or current trace level if
- *                  the input parameter is 0xff.
- *
- */
-uint8_t wiced_bt_a2d_set_trace_level (uint8_t new_level);
+
 
 /**
- * Function         wiced_bt_a2d_bits_set
  *
- *                  Check the number of bits set in a given mask (used to parse stream configuration masks)
+ * Check the number of bits set in a given mask (used to parse stream configuration masks)
  *
  * @param[in]       mask :  mask to check
  *
- * @return          A2D_SET_ONE_BIT, if one and only one bit is set
- *                  A2D_SET_ZERO_BIT, if all bits clear
- *                  A2D_SET_MULTL_BIT, if multiple bits are set
+ * @return          \ref A2D_SET_BIT \n
  */
 uint8_t wiced_bt_a2d_bits_set(uint8_t mask);
 
 /**
- * Function     wiced_bt_a2d_find_service
- *
- *              Performs Service Discovery and fetches SRC/SINK SDP Record Info.
- *              Information is returned for the first service record found on the
- *              server that matches the service UUID.There can only be one outstanding
- *              call to wiced_bt_a2d_find_service() at a time; the application must wait
- *              for the callback before it makes another call to the function.
- *
+ * Performs Service Discovery and fetches SRC/SINK SDP Record Info.
+ * Information is returned for the first service record found on the
+ * server that matches the service UUID.There can only be one outstanding
+ * call to wiced_bt_a2d_find_service() at a time; the application must wait
+ * for the callback before it makes another call to the function.
  *
  * @param[in]   service_uuid   : Indicates SRC or SNK.
  * @param[in]   bd_addr        : BD address of the peer device.
@@ -197,4 +200,5 @@ wiced_bt_a2d_status_t wiced_bt_a2d_find_service( uint16_t service_uuid, wiced_bt
 }
 #endif
 
-/** @} wicedbt_av_a2d_helper     */
+/** @} wicedbt_av_a2d_helper */
+/* @endcond */
