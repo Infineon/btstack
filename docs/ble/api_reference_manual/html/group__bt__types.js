@@ -1,11 +1,11 @@
 var group__bt__types =
 [
     [ "wiced_bt_uuid_t", "structwiced__bt__uuid__t.html", [
-      [ "len", "structwiced__bt__uuid__t.html#a9da11435df94cf0b81fc5e08af61849f", null ],
+      [ "len", "structwiced__bt__uuid__t.html#a1552a6f9f8d8ec3d0fbb5bed78a1cdd7", null ],
       [ "uuid16", "structwiced__bt__uuid__t.html#aeecb37fde2935fb7e2900da67a380be7", null ],
       [ "uuid32", "structwiced__bt__uuid__t.html#a4ab339dc4a43df2dc88f2acd787e7493", null ],
       [ "uuid128", "structwiced__bt__uuid__t.html#a0043e23b06269285293d4cab5555ca0f", null ],
-      [ "uu", "structwiced__bt__uuid__t.html#ad38fa979a430a5a40d5baa82b504a276", null ]
+      [ "uu", "structwiced__bt__uuid__t.html#ab29ee74b7d4b1b3bd5967d7c0a6c86d1", null ]
     ] ],
     [ "wiced_bt_flow_spec_t", "structwiced__bt__flow__spec__t.html", [
       [ "qos_flags", "structwiced__bt__flow__spec__t.html#afe795b08b556ade0405dc3ed8f9a53ab", null ],
@@ -148,13 +148,14 @@ var group__bt__types =
     [ "MIN", "group__bt__types.html#ga3acffbd305ee72dcd4593c0d8af64a4f", null ],
     [ "MAX", "group__bt__types.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f", null ],
     [ "WICED_DECLARE_ALIGNED4", "group__bt__types.html#ga69123432b2048680cf0996b9ff94e407", null ],
+    [ "ALIGN_SIZE", "group__bt__types.html#ga3abfc7eabf712a2627b5a5d6e9a7e24b", null ],
     [ "wiced_bt_device_address_t", "group__bt__types.html#gacf9a377aceca799be625c0dfe554902e", null ],
     [ "BD_ADDR_PTR", "group__bt__types.html#ga6ec901f500ca7516eb976ef46155627d", null ],
     [ "wiced_bt_remote_name_t", "group__bt__types.html#ga2f6808a023ce2f63ce06745c5ca8ed0f", null ],
     [ "wiced_bt_device_address_ptr_t", "group__bt__types.html#gaf2107358511d590ad4bc0f61a837978c", null ],
     [ "wiced_bt_dev_class_t", "group__bt__types.html#ga7f67c2d3420bda8e18183f3ac932521d", null ],
     [ "wiced_bt_db_hash_t", "group__bt__types.html#ga6b2f6680ad9b818353df2c23bcd96546", null ],
-    [ "wiced_bt_gatt_db_client_supported_feature_t", "group__bt__types.html#gad0b40f2536abeba61e4d4c425c10d99a", null ],
+    [ "wiced_bt_gatt_client_supported_features_t", "group__bt__types.html#ga0337d18c240c1a190f5cf7dfb41f529e", null ],
     [ "BT_OCTET8", "group__bt__types.html#ga0e431488061406df282f0bf6d1c983a7", null ],
     [ "BT_OCTET16", "group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8", null ],
     [ "BT_OCTET32", "group__bt__types.html#gaba2488b09b25fdc24ea75828d1dbf73d", null ],

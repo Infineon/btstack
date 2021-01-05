@@ -21,8 +21,12 @@
  *  @{
  */
 
+#ifndef WICED_FALSE
 #define WICED_FALSE 0   /**< Wiced false */
+#endif // !WICED_FALSE
+#ifndef WICED_TRUE
 #define WICED_TRUE  1   /**< Wiced true */
+#endif // !WICED_TRUE
 
 #ifndef FALSE
 #define FALSE 0         /**< false */

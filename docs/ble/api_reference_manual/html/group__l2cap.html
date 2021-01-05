@@ -275,6 +275,10 @@ L2CAP ECRB Result Code</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#gac1fe86af36b248ddaaebee96a4053ca0">L2CAP_ECRB_UNACCEPTABLE_PARAMS</a>&#160;&#160;&#160;0x000B</td></tr>
 <tr class="memdesc:gac1fe86af36b248ddaaebee96a4053ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unacceptable Params. <br /></td></tr>
 <tr class="separator:gac1fe86af36b248ddaaebee96a4053ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac18b47478bce4cef1fce57df3a198da7"><td class="memItemLeft" align="right" valign="top"><a id="gac18b47478bce4cef1fce57df3a198da7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#gac18b47478bce4cef1fce57df3a198da7">L2CAP_ECRB_INVALID_PARAMS</a>&#160;&#160;&#160;0x000C</td></tr>
+<tr class="memdesc:gac18b47478bce4cef1fce57df3a198da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid Params. <br /></td></tr>
+<tr class="separator:gac18b47478bce4cef1fce57df3a198da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2ef3784eac4b9b25b4964010bd5e5c29"><td class="memItemLeft" align="right" valign="top"><a id="ga2ef3784eac4b9b25b4964010bd5e5c29"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga2ef3784eac4b9b25b4964010bd5e5c29">L2CAP_ECRB_RECONFIG_SUCCESSFUL</a>&#160;&#160;&#160;0x0000</td></tr>
 <tr class="memdesc:ga2ef3784eac4b9b25b4964010bd5e5c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconfiguration Successful. <br /></td></tr>
@@ -422,9 +426,9 @@ L2CAP LE PSM</h2></td></tr>
 <tr class="memitem:gae9a06f8b983a720ef8f052bbaa823ad6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#gae9a06f8b983a720ef8f052bbaa823ad6">wiced_bt_l2cap_register_fixed_channel</a> (uint16_t fixed_cid, <a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html">wiced_bt_l2cap_fixed_chnl_reg_t</a> *p_freg)</td></tr>
 <tr class="memdesc:gae9a06f8b983a720ef8f052bbaa823ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a fixed channel.  <a href="#gae9a06f8b983a720ef8f052bbaa823ad6">More...</a><br /></td></tr>
 <tr class="separator:gae9a06f8b983a720ef8f052bbaa823ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e4dfa21d7a26fe3bd9b41ba82adf3f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga5e4dfa21d7a26fe3bd9b41ba82adf3f2">wiced_bt_l2cap_connect_fixed_chnl</a> (uint16_t fixed_cid, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr)</td></tr>
-<tr class="memdesc:ga5e4dfa21d7a26fe3bd9b41ba82adf3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect an fixed signalling channel to a remote device.  <a href="#ga5e4dfa21d7a26fe3bd9b41ba82adf3f2">More...</a><br /></td></tr>
-<tr class="separator:ga5e4dfa21d7a26fe3bd9b41ba82adf3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga306455f38d2becd14fdaa0c2298aa511"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga306455f38d2becd14fdaa0c2298aa511">wiced_bt_l2cap_connect_fixed_chnl</a> (uint16_t fixed_cid, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> ble_addr_type)</td></tr>
+<tr class="memdesc:ga306455f38d2becd14fdaa0c2298aa511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect an fixed signalling channel to a remote device.  <a href="#ga306455f38d2becd14fdaa0c2298aa511">More...</a><br /></td></tr>
+<tr class="separator:ga306455f38d2becd14fdaa0c2298aa511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaac3977d50dff78f8cf766a5921c784a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#gaaac3977d50dff78f8cf766a5921c784a">wiced_bt_l2cap_send_fixed_chnl_data</a> (uint16_t fixed_cid, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> rem_bda, uint8_t *p_data, uint16_t data_len)</td></tr>
 <tr class="memdesc:gaaac3977d50dff78f8cf766a5921c784a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data on a fixed signalling channel.  <a href="#gaaac3977d50dff78f8cf766a5921c784a">More...</a><br /></td></tr>
 <tr class="separator:gaaac3977d50dff78f8cf766a5921c784a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -477,7 +481,7 @@ L2CAP LE PSM</h2></td></tr>
 <tr class="memdesc:gacfa5536d207a4b9bb796e31ad37b09b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update BLE connection parameters.  <a href="#gacfa5536d207a4b9bb796e31ad37b09b6">More...</a><br /></td></tr>
 <tr class="separator:gacfa5536d207a4b9bb796e31ad37b09b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84c66f4df107063ddb0adc482b5491ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga84c66f4df107063ddb0adc482b5491ae">wiced_bt_l2cap_enable_update_ble_conn_params</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> rem_bda, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> enable)</td></tr>
-<tr class="memdesc:ga84c66f4df107063ddb0adc482b5491ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update BLE connection parameters.  <a href="#ga84c66f4df107063ddb0adc482b5491ae">More...</a><br /></td></tr>
+<tr class="memdesc:ga84c66f4df107063ddb0adc482b5491ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable updating BLE connection params based on the request from the peer.  <a href="#ga84c66f4df107063ddb0adc482b5491ae">More...</a><br /></td></tr>
 <tr class="separator:ga84c66f4df107063ddb0adc482b5491ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9b246f3663cee7a53e788c47172413d9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga9b246f3663cee7a53e788c47172413d9">wiced_bt_l2cap_get_ble_conn_role</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr)</td></tr>
 <tr class="memdesc:ga9b246f3663cee7a53e788c47172413d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the connection role.  <a href="#ga9b246f3663cee7a53e788c47172413d9">More...</a><br /></td></tr>
@@ -855,8 +859,8 @@ L2CAP LE PSM</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5e4dfa21d7a26fe3bd9b41ba82adf3f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e4dfa21d7a26fe3bd9b41ba82adf3f2">&#9670;&nbsp;</a></span>wiced_bt_l2cap_connect_fixed_chnl()</h2>
+<a id="ga306455f38d2becd14fdaa0c2298aa511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga306455f38d2becd14fdaa0c2298aa511">&#9670;&nbsp;</a></span>wiced_bt_l2cap_connect_fixed_chnl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -871,7 +875,13 @@ L2CAP LE PSM</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>bd_addr</em>&#160;</td>
+          <td class="paramname"><em>bd_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a>&#160;</td>
+          <td class="paramname"><em>ble_addr_type</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -885,7 +895,8 @@ L2CAP LE PSM</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed CID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: BD Address of remote</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: BD Address of remote </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ble_addr_type</td><td>: Address type</td></tr>
   </table>
   </dd>
 </dl>
@@ -1552,10 +1563,10 @@ L2CAP LE PSM</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rem_bdRa</td><td>: Remote BD Address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">min_int</td><td>: Min interval </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">max_int</td><td>: Max interval </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">min_int</td><td>: Min interval, measured in units of 1.25 ms </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_int</td><td>: Max interval, measured in units of 1.25 ms </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">latency</td><td>: Latency value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>: Timeout value</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>: Timeout value, measured in units of 10 ms</td></tr>
   </table>
   </dd>
 </dl>
@@ -1589,11 +1600,11 @@ L2CAP LE PSM</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update BLE connection parameters. </p>
+<p>Enable or disable updating BLE connection params based on the request from the peer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rem_bda</td><td>Remote Bd Address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Enable Flag</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>TRUE to enable,FALSE to disable.</td></tr>
   </table>
   </dd>
 </dl>

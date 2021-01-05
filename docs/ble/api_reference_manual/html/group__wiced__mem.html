@@ -213,6 +213,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:ga3a53857937701bb4c7c1128ed3de8f8a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#ga3a53857937701bb4c7c1128ed3de8f8a">wiced_bt_queue_is_empty</a> (<a class="el" href="structwiced__bt__buffer__q__t.html">wiced_bt_buffer_q_t</a> *p_q)</td></tr>
 <tr class="memdesc:ga3a53857937701bb4c7c1128ed3de8f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the status of a queue.  <a href="#ga3a53857937701bb4c7c1128ed3de8f8a">More...</a><br /></td></tr>
 <tr class="separator:ga3a53857937701bb4c7c1128ed3de8f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4490eaf46263868144322240d5553285"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#ga4490eaf46263868144322240d5553285">wiced_bt_queue_get_count</a> (<a class="el" href="structwiced__bt__buffer__q__t.html">wiced_bt_buffer_q_t</a> *p_q)</td></tr>
+<tr class="memdesc:ga4490eaf46263868144322240d5553285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of items in the queue.  <a href="#ga4490eaf46263868144322240d5553285">More...</a><br /></td></tr>
+<tr class="separator:ga4490eaf46263868144322240d5553285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga781d441cbf87a58a121c92fb9132d9b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#ga781d441cbf87a58a121c92fb9132d9b1">wiced_bt_get_heap_statistics</a> (void *p_heap, <a class="el" href="structwiced__bt__heap__statistics__t.html">wiced_bt_heap_statistics_t</a> *p_stats)</td></tr>
 <tr class="memdesc:ga781d441cbf87a58a121c92fb9132d9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Print the heap stats.  <a href="#ga781d441cbf87a58a121c92fb9132d9b1">More...</a><br /></td></tr>
 <tr class="separator:ga781d441cbf87a58a121c92fb9132d9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -904,6 +907,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if queue is empty, else FALSE </dd></dl>
+
+</div>
+</div>
+<a id="ga4490eaf46263868144322240d5553285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4490eaf46263868144322240d5553285">&#9670;&nbsp;</a></span>wiced_bt_queue_get_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t wiced_bt_queue_get_count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__buffer__q__t.html">wiced_bt_buffer_q_t</a> *&#160;</td>
+          <td class="paramname"><em>p_q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of items in the queue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_q</td><td>: pointer to a queue.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of items in the queue </dd></dl>
 
 </div>
 </div>

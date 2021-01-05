@@ -385,6 +385,12 @@
 
 #define HCI_BLE_SET_PRIVACY_MODE            (0x004E | HCI_GRP_BLE_CMDS)
 
+#define HCI_BLE_SET_PERIODIC_ADV_RCV_ENABLE             (0x0059 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_PERIODIC_SYNC_XFER                      (0x005A | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_PERIODIC_SET_INFO_XFER                  (0x005B | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_SET_PERIODIC_SYNC_XFER_PARAMS           (0x005C | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_SET_DETAULT_PERIODIC_SYNC_XFER_PARAMS   (0x005D | HCI_GRP_BLE_CMDS)
+
 #define HCI_BLE_READ_BUFFER_SIZE_V2         (0x0060 | HCI_GRP_BLE_CMDS)
 
 /* LE ISOC */
@@ -405,7 +411,7 @@
 #define HCI_BLE_ISOC_REQUEST_PEER_SCA       (0x006D | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_ISOC_SETUP_DATA_PATH        (0x006E | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_ISOC_REMOVE_DATA_PATH       (0x006F | HCI_GRP_BLE_CMDS)
-
+#define HCI_BLE_SET_HOST_FEATURE            (0x0074 | HCI_GRP_BLE_CMDS)
 
 
 /* LE supported states definition */
@@ -1996,6 +2002,45 @@ typedef struct
 #define HCI_EXT_FEATURE_PING_MASK               0x02
 #define HCI_EXT_FEATURE_PING_OFF                1
 #define HCI_PING_SUPPORTED(x) ((x)[HCI_EXT_FEATURE_PING_OFF] & HCI_EXT_FEATURE_PING_MASK)
+
+/** LMP Feature Bit */
+#define HCI_LE_FEATURE_LE_ENCRYPTION_BIT_POS                0       /**< LE Encryption */
+#define HCI_LE_FEATURE_CONN_PARAM_REQ_BIT_POS               1       /**< Connection Parameters Request Procedure*/
+#define HCI_LE_FEATURE_EXT_REJ_IND_BIT_POS                  2       /**< Extended Reject Indication */
+#define HCI_LE_FEATURE_SLAVE_INIT_FEAT_EXC_BIT_POS          3       /**< Slave-initiated Features Exchange */
+#define HCI_LE_FEATURE_PING_BIT_POS                         4       /**< LE Ping */
+#define HCI_LE_FEATURE_DPLE_BIT_POS                         5       /**< LE Data Packet Length Extension */
+#define HCI_LE_FEATURE_ENHANCED_PRIVACY_BIT_POS             6       /**< LL Privacy */
+#define HCI_LE_FEATURE_EXT_SCAN_FILTER_POLICY_BIT_POS       7       /**< Extended Scanner Filter Policies */
+#define HCI_LE_FEATURE_2M_PHY_BIT_POS                       8       /**< LE 2M PHY */
+#define HCI_LE_FEATURE_TX_MODULATION_INDEX_BIT_POS          9       /**< Stable Modulation Index - Transmitter */
+#define HCI_LE_FEATURE_RX_MODULATION_INDEX_BIT_POS          10      /**< Stable Modulation Index - Receiver */
+#define HCI_LE_FEATURE_CODED_PHY_BIT_POS                    11      /**< LE Coded PHY */
+#define HCI_LE_FEATURE_EXTENDED_ADVERTISING_BIT_POS         12      /**< LE Extended Advertising */
+#define HCI_LE_FEATURE_PERIODIC_ADVERTISING_BIT_POS         13      /**< LE Periodic Advertising */
+#define HCI_LE_FEATURE_CHNL_SELECTION_ALGO2_BIT_POS         14      /**< Channel Selection Algorithm #2 */
+#define HCI_LE_FEATURE_POWER_CLASS1_BIT_POS                 15      /**< LE Power Class 1 */
+#define HCI_LE_FEATURE_MIN_USED_CHNL_PROC_BIT_POS           16      /**< Minimum Number of Used Channels Procedure */
+#define HCI_LE_FEATURE_CONN_CTE_REQ_BIT_POS                 17      /**< Connection CTE Request */
+#define HCI_LE_FEATURE_CONN_CTE_RSP_BIT_POS                 18      /**< Connection CTE Response */
+#define HCI_LE_FEATURE_CONN_LESS_CTE_TX_BIT_POS             19      /**< Connectionless CTE Transmitter */
+#define HCI_LE_FEATURE_CONN_LESS_CTE_RX_BIT_POS             20      /**< Connectionless CTE Receiver */
+#define HCI_LE_FEATURE_ANTENNA_SWITCH_AOD_BIT_POS           21      /**< Antenna Switching During CTE Transmission (AoD) */
+#define HCI_LE_FEATURE_ANTENNA_SWITCH_AOA_BIT_POS           22      /**< Antenna Switching During CTE Reception (AoA) */
+#define HCI_LE_FEATURE_RECV_CONST_TONE_EXT_BIT_POS          23      /**< Receiving Constant Tone Extensions */
+#define HCI_LE_FEATURE_PERIODIC_ADV_SYNC_TX_BIT_POS         24      /**< Periodic Advertising Sync Transfer -Sender */
+#define HCI_LE_FEATURE_PERIODIC_ADV_SYNC_RX_BIT_POS         25      /**< Periodic Advertising Sync Transfer -Recipient */
+#define HCI_LE_FEATURE_SLEEP_CLK_ACCURACY_UPDATE_BIT_POS    26      /**< Sleep Clock Accuracy Updates */
+#define HCI_LE_FEATURE_RMT_PUB_KEY_VALIDATE_BIT_POS         27      /**< Remote Public Key Validation */
+#define HCI_LE_FEATURE_CIS_MASTER_BIT_POS                   28      /**< Connected Isochronous Stream –Master */
+#define HCI_LE_FEATURE_CIS_SLAVE_BIT_POS                    29      /**< Connected Isochronous Stream –Slave */
+#define HCI_LE_FEATURE_ISOC_BROADCASTER_BIT_POS             30      /**< Isochronous Broadcaster */
+#define HCI_LE_FEATURE_SYNC_RX_BIT_POS                      31      /**< Synchronized Receiver */
+#define HCI_LE_FEATURE_ISOC_CHNL_BIT_POS                    32      /**< Isochronous Channels (Host Support) */
+#define HCI_LE_FEATURE_POWER_CTRL_REQ_BIT_POS               33      /**< LE Power Control Request */
+#define HCI_LE_FEATURE_POWER_CHANGE_IND_BIT_POS             34      /**< LE Power Change Indication */
+#define HCI_LE_FEATURE_PATH_LOSS_MONITO_BIT_POS             35      /**< LE Path Loss Monitoring */
+#define HCI_LE_FEATURE_MAX_BIT_POS                          HCI_LE_FEATURE_PATH_LOSS_MONITO_BIT_POS       /**< Max Possible Value */
 
 /*
 **   LE features encoding - page 0

@@ -253,7 +253,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae609bc27a6207cea08e5017ffb2940b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the specified connection.  <a href="#gae609bc27a6207cea08e5017ffb2940b5">More...</a><br /></td></tr>
 <tr class="separator:gae609bc27a6207cea08e5017ffb2940b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabbe544a7a6843471ef384c6dafc976aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gabbe544a7a6843471ef384c6dafc976aa">wiced_bt_rfcomm_set_event_callback</a> (uint16_t port_handle, <a class="el" href="group__rfcomm__api__functions.html#gaca604941c538633cc92ad5a5361dab96">wiced_bt_port_event_cback_t</a> *p_port_cb, <a class="el" href="group__rfcomm__api__functions.html#gad9593eadcb99b8ff4f6b7e7f8a5825f8">wiced_bt_port_tx_cback_t</a> *p_tx_cmpl_cb)</td></tr>
-<tr class="memdesc:gabbe544a7a6843471ef384c6dafc976aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set event callback the specified connection.  <a href="#gabbe544a7a6843471ef384c6dafc976aa">More...</a><br /></td></tr>
+<tr class="memdesc:gabbe544a7a6843471ef384c6dafc976aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set event callback the specified connection(neither of the callback can be NULL).  <a href="#gabbe544a7a6843471ef384c6dafc976aa">More...</a><br /></td></tr>
 <tr class="separator:gabbe544a7a6843471ef384c6dafc976aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad4241f1a332dbd4d03bbc8ce75cfa839"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gad4241f1a332dbd4d03bbc8ce75cfa839">wiced_bt_rfcomm_set_event_mask</a> (uint16_t port_handle, <a class="el" href="group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6">wiced_bt_rfcomm_port_event_t</a> mask)</td></tr>
 <tr class="memdesc:gad4241f1a332dbd4d03bbc8ce75cfa839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set events for which to be notified.  <a href="#gad4241f1a332dbd4d03bbc8ce75cfa839">More...</a><br /></td></tr>
@@ -685,7 +685,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set event callback the specified connection. </p>
+<p>Set event callback the specified connection(neither of the callback can be NULL). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">port_handle</td><td>: A 16-bit unsigned integer returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection</a> </td></tr>

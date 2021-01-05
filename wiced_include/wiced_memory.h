@@ -87,10 +87,10 @@ uint32_t wiced_memory_get_free_bytes( void );
 
 /**
 * Initializes dynamic memory area. Application reserves an area for dynamic
-* variable memory allocations with this call. Application can now allocate 
-* variable sized buffers as against fixed sized buffer allocations from the 
-* pools initialized with calls to wiced_bt_create_pool and allocated using 
-* wiced_bt_get_buffer_from_pool. 
+* variable memory allocations with this call. Application can now allocate
+* variable sized buffers as against fixed sized buffer allocations from the
+* pools initialized with calls to wiced_bt_create_pool and allocated using
+* wiced_bt_get_buffer_from_pool.
 *
 * @param[in]       name : Friendly name of the heap
 * @param[in]       p_area : Pointer to area to use for the heap. If NULL, WICED will allocate the area.
@@ -98,13 +98,13 @@ uint32_t wiced_memory_get_free_bytes( void );
 * @param[in]       p_lock : Pointers to lock functions to use during heap manipulation. If NULL, then
 *                  it is assumed that the application handles disabling of preemption.
 * @param[in]       b_make_default: Flag as to whether the heap will be the default heap.
-* 
+*
 * @return          wiced_bt_heap_t * - pointer to heap, or NULL if the heap creation failed.
 */
 wiced_bt_heap_t *wiced_bt_create_heap (const char * name, void *p_area, int size, wiced_bt_lock_t *p_lock, wiced_bool_t b_make_default);
 
 /**
-* Deletes the heap created with #wiced_bt_create_heap. The heap area is freed back to the platform in 
+* Deletes the heap created with #wiced_bt_create_heap. The heap area is freed back to the platform in
 * case the wiced_bt_create_heap was called with p_area set to NULL.
 *
 * @param[in]       p_heap : Heap created with #wiced_bt_create_heap
@@ -313,6 +313,16 @@ wiced_bt_buffer_t *wiced_bt_getnext (wiced_bt_buffer_t *p_buf);
  * @return          TRUE if queue is empty, else FALSE
  */
 uint32_t wiced_bt_queue_is_empty (wiced_bt_buffer_q_t *p_q);
+
+/**
+ * Get the number of items in the queue.
+ *
+ * @param[in]       p_q  : pointer to a queue.
+ *
+ * @return          number of items in the queue
+ */
+uint32_t wiced_bt_queue_get_count(wiced_bt_buffer_q_t* p_q);
+
 
 /**
  * Get/Print the heap stats

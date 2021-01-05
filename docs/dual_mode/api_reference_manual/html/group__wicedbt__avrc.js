@@ -116,7 +116,7 @@ var group__wicedbt__avrc =
       [ "player", "structwiced__bt__avrc__item__t.html#a1d3cc81f53287410b2dee01581e2d458", null ],
       [ "folder", "structwiced__bt__avrc__item__t.html#a5d5c4fb4665eefdb13556337ef9189f0", null ],
       [ "media", "structwiced__bt__avrc__item__t.html#abb7cd5780f4cb646f3494ede3d473392", null ],
-      [ "u", "structwiced__bt__avrc__item__t.html#a9faf1e8f218c7af5c89115ef1d27f240", null ]
+      [ "u", "structwiced__bt__avrc__item__t.html#adb15b90520822c6d69c0ab9fe73ae55b", null ]
     ] ],
     [ "wiced_bt_avrc_get_caps_cmd_t", "structwiced__bt__avrc__get__caps__cmd__t.html", [
       [ "pdu", "structwiced__bt__avrc__get__caps__cmd__t.html#a96ccc3f5ab2c3d6f9428601becac8e0c", null ],

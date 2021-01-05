@@ -13,14 +13,14 @@
  *
  * @{
  */
- 
+
 #pragma once
 
 #include <stdarg.h>
 #include "wiced_bt_types.h"
 #include "wiced_data_types.h"
-#include "wiced_bt_dev.h"
 #include "wiced_bt_cfg.h"
+#include "wiced_bt_dev.h"
 
 /** Wiced BT Stack Platform */
 typedef struct
@@ -33,8 +33,8 @@ typedef struct
     /**
      * Platform function to allocate memory
      *
-     * Called by stack code to allocate memory from the OS/Platform. 
-     * Implementing function is expected to return memory allocated from 
+     * Called by stack code to allocate memory from the OS/Platform.
+     * Implementing function is expected to return memory allocated from
      * the OS/Platform
      *
      * @param[in] size    : Size of memory to be allocated
@@ -47,7 +47,7 @@ typedef struct
      * Platform memory free
      *
      * Called by stack code to free memory back to the OS/Platform.
-     * Implementing function is expected to free the memory allocated 
+     * Implementing function is expected to free the memory allocated
      * using pf_os_malloc (refer #pf_os_malloc ) call from the OS/Platform
      *
      * @param[in] p_mem    : Ptr to memory to be freed
@@ -70,7 +70,7 @@ typedef struct
     /**
      * Platform function to set the next timeout
      *
-     * Called by stack timer code set the next timeout 
+     * Called by stack timer code set the next timeout
      *
      * @param[in] abs_tick_count : 64 bit tick count instant at which the timeout has to occur
      *
@@ -97,7 +97,7 @@ typedef struct
     /**
      * Platform function to write ACL buffer to lower
      *
-     * Called by stack to send the buffer allocated using pf_get_acl_to_lower_buffer 
+     * Called by stack to send the buffer allocated using pf_get_acl_to_lower_buffer
      * after filling it with the data to send.
      *
      * @param[in] transport : Transport on which the buffer is to be sent
@@ -107,6 +107,20 @@ typedef struct
      * @return : wiced_result_t
      */
     wiced_result_t (*pf_write_acl_to_lower)(wiced_bt_transport_t transport, uint8_t* p_data, uint16_t len);
+
+    /**
+     * Platform function to write ISO buffer to lower
+     *
+     * Called by stack to send the buffer allocated using pf_get_acl_to_lower_buffer
+     * after filling it with the data to send.
+     *
+     * @param[in] transport : Transport on which the buffer is to be sent
+     * @param[in] p_data    : Pointer received using pf_get_acl_to_lower_buffer
+     * @param[in] len       : Length of data at p_data
+     *
+     * @return : wiced_result_t
+     */
+    wiced_result_t (*pf_write_iso_to_lower)(wiced_bt_transport_t transport, uint8_t* p_data, uint16_t len);
 
     /**
      * Platform function to write CMD buffer to lower
@@ -120,27 +134,38 @@ typedef struct
      */
     wiced_result_t (*pf_write_cmd_to_lower)(uint8_t * p_cmd, uint16_t cmd_len);
 
+     /**
+     * Platform function to get SCO buffer to send to lower
+     *
+     * Called by stack to get a SCO buffer to fill in the data to be sent to HCI
+     * of 'size'
+     *
+     * @param[in] size      : Size of the buffer
+     *
+     * @return : Pointer to buffer which will be filled with data
+     */
+    uint8_t       *(*pf_get_sco_to_lower_buffer)(uint32_t size);
+
     /**
      * Platform function to write SCO buffer to lower
      *
      * Called to send SCO CMD buffer to lower
      *
-     * @param[in] handle   : HCI SCO handle
-     * @param[in] p_data   : Pointer to SCO data
+     * @param[in] p_sco_data   : Pointer to SCO data
      * @param[in] len      : Length of data at p_data
      *
      * @return : wiced_result_t
      */
-    wiced_result_t (*pf_write_sco_to_lower)(uint16_t handle, uint8_t* p_data, uint8_t len);
+    wiced_result_t (*pf_write_sco_to_lower)(uint8_t* p_sco_data, uint8_t len);
 
     /**
      * Callback function to trace HCI messages
      *
-     * Called by stack to allow application to trace the HCI messages. 
+     * Called by stack to allow application to trace the HCI messages.
      * Application/Porting code is expected to treat received data as read only, and make a
      * copy of the data to reference it outside of the callback
-     * 
-     * @param[in] type   : HCI event data type 
+     *
+     * @param[in] type   : HCI event data type
      * @param[in] len    : Length of data at p_data
      * @param[in] p_data : Pointer to data
      *
@@ -150,7 +175,7 @@ typedef struct
 
     /**
      * Callback function to dump out trace messages
-     * This interface function can be NULL if no debug tracing is supported 
+     * This interface function can be NULL if no debug tracing is supported
      *
      * Called by stack to allow application to write debug trace messages
      *
@@ -171,7 +196,7 @@ typedef struct
     char* trace_buffer;
 
 
-    /** 
+    /**
      * Used for additional controller initialization by the porting layer to be performed
      * after the HCI reset. Can be set to NULL if no additional initialization required
      */
@@ -179,7 +204,7 @@ typedef struct
 } wiced_bt_stack_platform_t;
 
 /**
- * Initialize the platform interfaces, by providing porting functions specific to 
+ * Initialize the platform interfaces, by providing porting functions specific to
  * the underlying platform.
  *
  * @return   <b> WICED_BT_SUCCESS </b> : on success; \n
@@ -188,13 +213,23 @@ typedef struct
 extern wiced_result_t wiced_bt_stack_platform_initialize(wiced_bt_stack_platform_t * platform_interfaces);
 
 /**
- * Called by the porting layer to process the incoming ACL data received from the 
+ * DeInitialize the platform interfaces and free the memory allocated by #wiced_bt_stack_platform_initialize API
+ *
+ * @return   <b> WICED_BT_SUCCESS </b> : on success; \n
+ *           <b> WICED_BT_ERROR  </b>  : if an error occurred
+ *
+ * @note : After calling this API, DON'T call any BT API without calling #wiced_bt_stack_platform_initialize again.
+ */
+extern wiced_result_t wiced_bt_stack_platform_deinit(void);
+
+/**
+ * Called by the porting layer to process the incoming ACL data received from the
  * remote bluetooth device
  *
  * @param[in] pData  : Pointer to the ACL data to be processed
  * @param[in] length : Length of the ACL data buffer
  *
- * @return    void 
+ * @return    void
  */
 extern void wiced_bt_process_acl_data(uint8_t* pData, uint32_t length);
 
@@ -209,6 +244,27 @@ extern void wiced_bt_process_acl_data(uint8_t* pData, uint32_t length);
 extern void wiced_bt_process_hci_events(uint8_t* pData, uint32_t length);
 
 /**
+ * Called by the porting layer to process the incoming  SCO data received from the
+ * remote bluetooth device
+ *
+ * @param[in] pData  : Pointer to the SCO data to be processed
+  * @param[in] length : Length of the SCO data buffer
+ * @return    void
+ */
+
+extern void wiced_bt_process_sco_data(uint8_t *pData, uint32_t length);
+
+/**
+ * Called by the porting layer to process the incoming  ISOC data received from the
+ * remote bluetooth device
+ *
+ * @param[in] pData  : Pointer to the ISOC data to be processed
+ * @param[in] length : Length of the ISOC data buffer
+ * @return    void
+ */
+ void wiced_bt_process_isoc_data(uint8_t *pData, uint32_t length);
+
+/**
  * Called by the porting layer on expiry of the timer to process pending timers
  *
  * @return    void
@@ -218,9 +274,9 @@ extern void wiced_bt_process_timer(void);
 
 /**
  * Called by the lower layer transport driver to restart sending ACL data to the controller
- * Note: Porting layer API. 
- *     This API is expected to be invoked by the lower layer transport driver, to restart 
- *     transfers from the stack to the controller. 
+ * Note: Porting layer API.
+ *     This API is expected to be invoked by the lower layer transport driver, to restart
+ *     transfers from the stack to the controller.
  *     The lower tx layer is expected to have space for atleast one complete ACL buffer
  *     Typically used in cases where the lower Tx has lesser number of buffers than allowed by controller
  */
@@ -235,13 +291,13 @@ extern void wiced_bt_stack_indicate_lower_tx_complete(void);
 extern void wiced_bt_continue_reset(void);
 
 /**
-* Set the stack config. Invoked by the porting layer 
+* Set the stack config. Invoked by the porting layer
 *
 * @param[in] p_bt_new_cfg_settings : Stack configuration settings
 *
 * @return   0 if there is any error in the configuration otherwise the dynamic
 *           memory size requirements of the stack for the configuration.
-*            
+*
 *
 */
 extern uint32_t wiced_bt_set_stack_config(const wiced_bt_cfg_settings_t* p_bt_new_cfg_settings);
@@ -260,7 +316,7 @@ typedef void (*wiced_bt_internal_post_stack_init_cb)(void);
 typedef wiced_bool_t (*wiced_bt_internal_stack_evt_handler_cb)(uint8_t* p_event);
 
 /**
-* Internal stack init 
+* Internal stack init
 *
 * @param[in] mgmt_cback : Application BT Management callback
 * @param[in] post_stack_cb : Internal post stack init callback

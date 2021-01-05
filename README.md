@@ -24,4 +24,4 @@ For BLE APIs, refer to the [BLE API reference manual](https://cypresssemiconduct
 
 For BLE and BR/EDR APIs, refer to the [DUAL MODE API reference manual](https://cypresssemiconductorco.github.io/btstack/dual_mode/api_reference_manual/html/index.html).
 
-[Release Notes](https://github.com/cypresssemiconductorco/btstack/releases/tag/release-v1.5.0)
+[Release Notes](https://github.com/cypresssemiconductorco/btstack/releases/tag/release-v2.0.0)

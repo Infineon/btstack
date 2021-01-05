@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['u',['u',['../structwiced__bt__avrc__item__t.html#a9faf1e8f218c7af5c89115ef1d27f240',1,'wiced_bt_avrc_item_t']]],
+  ['u',['u',['../structwiced__bt__avrc__item__t.html#adb15b90520822c6d69c0ab9fe73ae55b',1,'wiced_bt_avrc_item_t']]],
   ['u16',['u16',['../structwiced__bt__sdp__discovery__attribute__value__t.html#a4d57e1798e153600454a77872401f3d0',1,'wiced_bt_sdp_discovery_attribute_value_t']]],
   ['u32',['u32',['../structwiced__bt__sdp__discovery__attribute__value__t.html#a4539a63e674db9a7f8679e96899c8ff6',1,'wiced_bt_sdp_discovery_attribute_value_t']]],
   ['u8',['u8',['../structwiced__bt__sdp__discovery__attribute__value__t.html#ace0e0a04c815d89277cccf143c01b77c',1,'wiced_bt_sdp_discovery_attribute_value_t']]],
@@ -39,7 +39,7 @@ var searchData=
   ['user_5fkeypress_5fnotification',['user_keypress_notification',['../unionwiced__bt__management__evt__data__t.html#aef3757148e0dd747f04536edb14f4393',1,'wiced_bt_management_evt_data_t']]],
   ['user_5fpasskey_5fnotification',['user_passkey_notification',['../unionwiced__bt__management__evt__data__t.html#a646a994016c6bd883c38bfc4d0255c5c',1,'wiced_bt_management_evt_data_t']]],
   ['user_5fpasskey_5frequest',['user_passkey_request',['../unionwiced__bt__management__evt__data__t.html#ad32e1bb725d6bec1790a87a1a4a37dc2',1,'wiced_bt_management_evt_data_t']]],
-  ['uu',['uu',['../structwiced__bt__uuid__t.html#a5999e4b4804f49742597c14259e20bf3',1,'wiced_bt_uuid_t']]],
+  ['uu',['uu',['../structwiced__bt__uuid__t.html#addf9694f73b148c19e8a9c79c37fbc70',1,'wiced_bt_uuid_t']]],
   ['uuid',['uuid',['../structwiced__bt__gatt__discovery__param__t.html#a1e809f54c45013015923265dda5454d8',1,'wiced_bt_gatt_discovery_param_t::uuid()'],['../structwiced__bt__gatt__read__by__type__t.html#a8970a242353fecca06a02cf3dc2b4828',1,'wiced_bt_gatt_read_by_type_t::uuid()']]],
   ['uuid128',['uuid128',['../structwiced__bt__uuid__t.html#a0043e23b06269285293d4cab5555ca0f',1,'wiced_bt_uuid_t']]],
   ['uuid16',['uuid16',['../structwiced__bt__uuid__t.html#aeecb37fde2935fb7e2900da67a380be7',1,'wiced_bt_uuid_t']]],

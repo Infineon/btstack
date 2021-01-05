@@ -97,13 +97,14 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>The application thread typically starts the bluetooth stack with a call to <a class="el" href="group__wiced__bt__cfg.html#gabac5a1c3126b145f079c6797790844af" title="Initialize the Bluetooth controller and stack; register callback for Bluetooth event notification.">wiced_bt_stack_init</a>.</li>
 <li>The application then waits for the BTM_ENABLED event received through the registered callback</li>
 <li>Further interaction with the stack may be done in the same thread context in case of single threaded or in an application thread.</li>
+<li>The BTSTACK library is thread-safe and can be operated in multi-threaded environments.</li>
 </ul>
 <h2>Configuration Settings</h2>
 <ul>
 <li>An application provides stack configuration parameters via <a class="el" href="structwiced__bt__cfg__settings__t.html" title="Bluetooth stack configuration.">wiced_bt_cfg_settings_t</a> configuration structure. These are typically non-changing during the lifetime of the application. These include among others<ul>
 <li>The max number of links the application is expected to setup across both physical layers (LE and BR/EDR) and logical layers (GATT, L2CAP, other protocols and profiles)</li>
 <li>The protocol/profile specific configurable settings.</li>
-<li>For a full set of the configurable settings please refere to <a href="https://cypresssemiconductorco.github.io/btstack/api_reference_manual/html/modules.html">API reference</a></li>
+<li>For a full set of the configurable settings please refere to <a class="el" href="structwiced__bt__cfg__settings__t.html" title="Bluetooth stack configuration.">wiced_bt_cfg_settings_t</a>.</li>
 </ul>
 </li>
 </ul>

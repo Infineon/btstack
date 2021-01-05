@@ -14,7 +14,6 @@
  * @cond DUAL_MODE
  * @addtogroup  wicedbt_av_a2d_helper      Helper Functions
  * @ingroup     wicedbt_avdt
- * This section describes the API's to find A2DP service and APIs to parse/encode Codec Specific Information Elements for SBC Codec, MPEG-1,2 Audio Codec or MPEG-2,4 AAC Codec.
  *
  * @{
  */
@@ -201,4 +200,5 @@ wiced_bt_a2d_status_t wiced_bt_a2d_find_service( uint16_t service_uuid, wiced_bt
 #endif
 
 /** @} wicedbt_av_a2d_helper */
-/* @endcond */
+/** @endcond */
+

@@ -189,7 +189,7 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_create_connection (uint16_t uuid, uint8
 wiced_bt_rfcomm_result_t wiced_bt_rfcomm_remove_connection (uint16_t handle, wiced_bool_t remove_server);
 
 /**
- *  Set event callback the specified connection.
+ *  Set event callback the specified connection(neither of the callback can be NULL).
  *
  *  @param[in]  port_handle         : A 16-bit unsigned integer returned by
  *                                    @link wiced_bt_rfcomm_create_connection @endlink

@@ -502,12 +502,13 @@ wiced_bool_t  wiced_bt_l2cap_register_fixed_channel (uint16_t fixed_cid, wiced_b
 /**
  *  @brief          Connect an fixed signalling channel to a remote device.
  *
- *  @param[in]      fixed_cid   : Fixed CID
- *  @param[in]      bd_addr     : BD Address of remote
- *
+ *  @param[in]      fixed_cid     : Fixed CID
+ *  @param[in]      bd_addr       : BD Address of remote
+ *  @param[in]      ble_addr_type : Address type
+
  *  @return         TRUE if connection started
  */
-wiced_bool_t wiced_bt_l2cap_connect_fixed_chnl (uint16_t fixed_cid, wiced_bt_device_address_t bd_addr);
+wiced_bool_t wiced_bt_l2cap_connect_fixed_chnl (uint16_t fixed_cid, wiced_bt_device_address_t bd_addr, wiced_bt_ble_address_type_t ble_addr_type);
 
 
 /**
@@ -935,10 +936,10 @@ wiced_bool_t wiced_bt_l2cap_cancel_ble_connect_req (wiced_bt_device_address_t re
  *  @brief          Update BLE connection parameters.
  *
  *  @param[in]      rem_bdRa    : Remote BD Address
- *  @param[in]      min_int     : Min interval
- *  @param[in]      max_int     : Max interval
+ *  @param[in]      min_int     : Min interval, measured in units of 1.25 ms
+ *  @param[in]      max_int     : Max interval, measured in units of 1.25 ms
  *  @param[in]      latency     : Latency value
- *  @param[in]      timeout     : Timeout value
+ *  @param[in]      timeout     : Timeout value, measured in units of 10 ms
  *
  *  @return:        TRUE if update started
  */
@@ -946,10 +947,10 @@ wiced_bool_t wiced_bt_l2cap_update_ble_conn_params (wiced_bt_device_address_t re
 
 
 /**
- *  @brief          Update BLE connection parameters.
+ *  @brief          Enable or disable updating BLE connection params based on the request from the peer.
  *
  *  @param[in]      rem_bda: Remote Bd Address
- *  @param[in]      enable: Enable Flag
+ *  @param[in]      enable: TRUE to enable,FALSE to disable.
  *
  *  @return:        TRUE if update started
  *

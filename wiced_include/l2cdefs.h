@@ -414,6 +414,7 @@
 #define     L2CAP_ECRB_INVALID_SOURCE_CID       0x0009      /**< Invalid Source CID */
 #define     L2CAP_ECRB_SOURCE_CID_IN_USE        0x000A      /**< Source CID in Used */
 #define     L2CAP_ECRB_UNACCEPTABLE_PARAMS      0x000B      /**< Unacceptable Params */
+#define     L2CAP_ECRB_INVALID_PARAMS           0x000C      /**< Invalid Params */
 
 #define     L2CAP_ECRB_RECONFIG_SUCCESSFUL      0x0000      /**< Reconfiguration Successful */
 #define     L2CAP_ECRB_RECONFIG_FAIL_BAD_MTU    0x0001      /**< Reconfiguration fail : Bad MTU */

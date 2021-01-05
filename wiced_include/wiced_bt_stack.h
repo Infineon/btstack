@@ -19,6 +19,7 @@
 
 #pragma once
 #include "wiced_bt_cfg.h"
+#include "wiced_bt_dev.h"
 
 /******************************************************
  *               Function Declarations

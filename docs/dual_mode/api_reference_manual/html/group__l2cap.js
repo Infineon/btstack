@@ -87,6 +87,7 @@ var group__l2cap =
     [ "L2CAP_ECRB_INVALID_SOURCE_CID", "group__l2cap.html#ga01180b0d2e23d47b033af19d0034b06f", null ],
     [ "L2CAP_ECRB_SOURCE_CID_IN_USE", "group__l2cap.html#ga0b57d0246d984b871f67e663af9209cf", null ],
     [ "L2CAP_ECRB_UNACCEPTABLE_PARAMS", "group__l2cap.html#gac1fe86af36b248ddaaebee96a4053ca0", null ],
+    [ "L2CAP_ECRB_INVALID_PARAMS", "group__l2cap.html#gac18b47478bce4cef1fce57df3a198da7", null ],
     [ "L2CAP_ECRB_RECONFIG_SUCCESSFUL", "group__l2cap.html#ga2ef3784eac4b9b25b4964010bd5e5c29", null ],
     [ "L2CAP_ECRB_RECONFIG_FAIL_BAD_MTU", "group__l2cap.html#ga2e96991c53e2b3c1830138fbe02d3512", null ],
     [ "L2CAP_ECRB_RECONFIG_FAIL_BAD_MPS", "group__l2cap.html#ga4f2a432ec602ca7af8983863cba07a34", null ],

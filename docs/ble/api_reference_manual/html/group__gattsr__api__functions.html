@@ -97,14 +97,14 @@ $(document).ready(function(){initNavTree('group__gattsr__api__functions.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9c1293b04258393f7e8e5201ca215c21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#gaf2fed4c3092ffd14ce4f213a60c02fe4">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga9c1293b04258393f7e8e5201ca215c21">wiced_bt_gatt_send_indication</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_val)</td></tr>
+<tr class="memitem:ga9c1293b04258393f7e8e5201ca215c21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga9c1293b04258393f7e8e5201ca215c21">wiced_bt_gatt_send_indication</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_val)</td></tr>
 <tr class="memdesc:ga9c1293b04258393f7e8e5201ca215c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send an indication to the client for the specified handle.  <a href="#ga9c1293b04258393f7e8e5201ca215c21">More...</a><br /></td></tr>
 <tr class="separator:ga9c1293b04258393f7e8e5201ca215c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe6e79a8df2dd04b926d2316b79fdc42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#gaf2fed4c3092ffd14ce4f213a60c02fe4">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gabe6e79a8df2dd04b926d2316b79fdc42">wiced_bt_gatt_send_notification</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_val)</td></tr>
+<tr class="memitem:gabe6e79a8df2dd04b926d2316b79fdc42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gabe6e79a8df2dd04b926d2316b79fdc42">wiced_bt_gatt_send_notification</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_val)</td></tr>
 <tr class="memdesc:gabe6e79a8df2dd04b926d2316b79fdc42"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a notification to the client for the specified handle.  <a href="#gabe6e79a8df2dd04b926d2316b79fdc42">More...</a><br /></td></tr>
 <tr class="separator:gabe6e79a8df2dd04b926d2316b79fdc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa5719e4476aba741dd921b14ccae916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#gaf2fed4c3092ffd14ce4f213a60c02fe4">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gaaa5719e4476aba741dd921b14ccae916">wiced_bt_gatt_send_multiple_notifications</a> (uint16_t conn_id, uint32_t num_notifications, <a class="el" href="structwiced__bt__gatt__handle__length__value__t.html">wiced_bt_gatt_handle_length_value_t</a> *p_notifications)</td></tr>
-<tr class="memdesc:gaaa5719e4476aba741dd921b14ccae916"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a multiple variable length notifications to a client.  <a href="#gaaa5719e4476aba741dd921b14ccae916">More...</a><br /></td></tr>
+<tr class="memitem:gaaa5719e4476aba741dd921b14ccae916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gaaa5719e4476aba741dd921b14ccae916">wiced_bt_gatt_send_multiple_notifications</a> (uint16_t conn_id, uint32_t num_notifications, <a class="el" href="structwiced__bt__gatt__handle__length__value__t.html">wiced_bt_gatt_handle_length_value_t</a> *p_notifications)</td></tr>
+<tr class="memdesc:gaaa5719e4476aba741dd921b14ccae916"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a multiple variable length notifications to a profile.  <a href="#gaaa5719e4476aba741dd921b14ccae916">More...</a><br /></td></tr>
 <tr class="separator:gaaa5719e4476aba741dd921b14ccae916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -115,7 +115,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#gaf2fed4c3092ffd14ce4f213a60c02fe4">wiced_bt_gatt_status_t</a> wiced_bt_gatt_send_indication </td>
+          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a> wiced_bt_gatt_send_indication </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em>, </td>
@@ -167,7 +167,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#gaf2fed4c3092ffd14ce4f213a60c02fe4">wiced_bt_gatt_status_t</a> wiced_bt_gatt_send_notification </td>
+          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a> wiced_bt_gatt_send_notification </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em>, </td>
@@ -219,7 +219,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#gaf2fed4c3092ffd14ce4f213a60c02fe4">wiced_bt_gatt_status_t</a> wiced_bt_gatt_send_multiple_notifications </td>
+          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a> wiced_bt_gatt_send_multiple_notifications </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em>, </td>
@@ -244,7 +244,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This API will send a multiple variable length notifications to a client. </p>
+<p>This API will send a multiple variable length notifications to a profile. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: connection identifier. </td></tr>

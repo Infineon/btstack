@@ -52,6 +52,7 @@ var group__wiced__mem =
     [ "wiced_bt_getlast", "group__wiced__mem.html#ga0250fcacf935ca7fb2f0c802bc498316", null ],
     [ "wiced_bt_getnext", "group__wiced__mem.html#ga88ac7077880864d79dbc134e460a814c", null ],
     [ "wiced_bt_queue_is_empty", "group__wiced__mem.html#ga3a53857937701bb4c7c1128ed3de8f8a", null ],
+    [ "wiced_bt_queue_get_count", "group__wiced__mem.html#ga4490eaf46263868144322240d5553285", null ],
     [ "wiced_bt_get_heap_statistics", "group__wiced__mem.html#ga781d441cbf87a58a121c92fb9132d9b1", null ],
     [ "wiced_set_exception_callback", "group__wiced__mem.html#ga9a5e60280610d3027effc84ee35654b6", null ]
 ];

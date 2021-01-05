@@ -209,6 +209,7 @@ typedef struct wiced_bt_hidd_pwr_md
 /**
  *  @cond DUAL_MODE
  *  @addtogroup  hidd_api_functions      HID Device Role (HIDD) over BR/EDR
+ *  @endcond
  *  @ingroup     wiced_bt_hid
  *
  * HIDD Functions

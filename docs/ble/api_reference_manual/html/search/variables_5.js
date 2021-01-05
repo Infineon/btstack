@@ -8,8 +8,12 @@ var searchData=
   ['ediv',['ediv',['../structwiced__bt__ble__keys__t.html#a511938917c8b06f459669f3ce40e66fb',1,'wiced_bt_ble_keys_t']]],
   ['edr_5fpacket_5ftypes',['edr_packet_types',['../unionwiced__bt__br__edr__pkt__type__stats.html#a5590a0e76945e468699f79dc191d6507',1,'wiced_bt_br_edr_pkt_type_stats']]],
   ['enabled',['enabled',['../unionwiced__bt__management__evt__data__t.html#afd3bb47a6fa2ecf1a7e5d2d56cec5d13',1,'wiced_bt_management_evt_data_t']]],
+  ['enc_5fphy_5fscan_5fint',['enc_phy_scan_int',['../structwiced__bt__ble__ext__scan__config__t.html#ad609560beadb4e58d7b175872e8b5c6e',1,'wiced_bt_ble_ext_scan_config_t']]],
+  ['enc_5fphy_5fscan_5ftype',['enc_phy_scan_type',['../structwiced__bt__ble__ext__scan__config__t.html#a42da4634f7b415fb7a6255212731f2e2',1,'wiced_bt_ble_ext_scan_config_t']]],
+  ['enc_5fphy_5fscan_5fwin',['enc_phy_scan_win',['../structwiced__bt__ble__ext__scan__config__t.html#a941803bfaac1371cc8adf42af7a645c4',1,'wiced_bt_ble_ext_scan_config_t']]],
   ['encryption_5fstatus',['encryption_status',['../unionwiced__bt__management__evt__data__t.html#a9d21953e55a1a582f0ff357a625b5797',1,'wiced_bt_management_evt_data_t']]],
   ['er',['er',['../structwiced__bt__local__identity__keys__t.html#ac6e3ff909692540005f590411e7d14dc',1,'wiced_bt_local_identity_keys_t']]],
+  ['event_5ftype',['event_type',['../structwiced__bt__ble__ext__adv__report__t.html#ace6aae799d872a84a20b4e2b1e151fdf',1,'wiced_bt_ble_ext_adv_report_t']]],
   ['exec_5fwrite',['exec_write',['../unionwiced__bt__gatt__request__data__t.html#aedd416b3fb9a6cf24ec0ac5321457b7d',1,'wiced_bt_gatt_request_data_t']]],
   ['extended_5foob_5fdata',['extended_oob_data',['../structwiced__bt__dev__remote__oob__t.html#a0bb9c2b95c932fa85c2380f3474a5cc1',1,'wiced_bt_dev_remote_oob_t']]]
 ];

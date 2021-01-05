@@ -60,6 +60,7 @@
 #define HCI_CONTROL_GROUP_SCRIPT                              0x25
 #define HCI_CONTROL_GROUP_OTP                                 0x26
 #define HCI_CONTROL_GROUP_MISC                                0xFF
+#define HCI_CONTROL_GROUP_HCI_AUDIO                           0x29
 
 #define HCI_CONTROL_GROUP(x) ((((x) >> 8)) & 0xff)
 
@@ -497,6 +498,16 @@
 
 #define HCI_CONTROL_MESH_COMMAND_CONFIG_MODEL_ADD                           ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xb0 )  /* Add Vendor Model */
 
+#define HCI_CONTROL_MESH_COMMAND_TRACE_CORE_SET                             ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xb1 )  /* Set Level for Core Traces */
+#define HCI_CONTROL_MESH_COMMAND_TRACE_MODELS_SET                           ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xb2 )  /* Set Level for Models Traces */
+#define HCI_CONTROL_MESH_COMMAND_RSSI_TEST_START                            ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xb3 )  /* Start RSSI test */
+#define HCI_CONTROL_MESH_COMMAND_SET_ADV_TX_POWER                           ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xb4 )  /* Set Mesh Core ADV Tx Power */
+
+#define HCI_CONTROL_MESH_COMMAND_FW_DISTRIBUTION_UPLOAD_START               ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xc0 )  /* Prepare Distribution Client for FW Upload */
+#define HCI_CONTROL_MESH_COMMAND_FW_DISTRIBUTION_UPLOAD_DATA                ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xc1 )  /* FW Upload next data chunk */
+#define HCI_CONTROL_MESH_COMMAND_FW_DISTRIBUTION_UPLOAD_FINISH              ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xc2 )  /* FW Upload completed */
+#define HCI_CONTROL_MESH_COMMAND_FW_DISTRIBUTION_UPLOAD_GET_STATUS          ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xc3 )  /* Get current status and phase */
+
 #define HCI_CONTROL_MESH_COMMAND_SET_LOCAL_DEVICE                           ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xe0 )  /* Set Local Device. Application can set it once to make provisioner client. */
 #define HCI_CONTROL_MESH_COMMAND_SET_DEVICE_KEY                             ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xe1 )  /* Setup device key.  Application can set it once and then send multiple configuration commands. */
 #define HCI_CONTROL_MESH_COMMAND_CORE_LOW_POWER_SEND_FRIEND_CLEAR           ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xe2 )  /* Terminate friendship with a Friend by sending a Friend Clear */
@@ -520,6 +531,9 @@
 #define HCI_CONTROL_MESH_COMMAND_SEND_PROXY_DATA                            ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xf2 )  /* Mesh Application can send proxy data from MCU */
 #define HCI_CONTROL_MESH_COMMAND_SET_MODEL_LEVEL_ACCESS                     ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xf3 )  /* Mesh Application processes raw data access layer data */
 #define HCI_CONTROL_MESH_COMMAND_RAW_MODEL_DATA                             ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xf4 )  /* Raw model data to be passed to access layer */
+#define HCI_CONTROL_MESH_COMMAND_BECOME_PROVISIONER                         ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xf5 )  /* Raw model data to be passed to access layer */
+#define HCI_CONTROL_MESH_COMMAND_CONNECT_ALL                                ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xf6 )  /* Raw model data to be passed to access layer */
+#define HCI_CONTROL_MESH_COMMAND_START_ADVERTISING                          ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xf7 )  /* Raw model data to be passed to access layer */
 #define HCI_CONTROL_MESH_COMMAND_VENDOR_DATA                                ( ( HCI_CONTROL_GROUP_MESH << 8 ) | 0xff )  /* Vendor model data */
 
 /* Battery Client Profile commands */
@@ -581,6 +595,14 @@
 #define HCI_CONTROL_HF_EVENT_AUDIO_CLOSE                    ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x05 )    /* Audio connection closed */
 #define HCI_CONTROL_HF_EVENT_AUDIO_CONN_REQ                 ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x06 )    /* Audio connection request event */
 #define HCI_CONTROL_HF_EVENT_PROFILE_TYPE                   ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x07 )    /* To check the Profile Selected HSP/HFP */
+#define HCI_CONTROL_HF_EVENT_CALL_SETUP_STATUS              ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x08 )    /* To check the call status */
+#define HCI_CONTROL_HF_EVENT_INBAND_RING_STATUS             ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x09 )    /* To check the inband ringtone is audible */
+#define HCI_CONTROL_HF_EVENT_VOLUME_CHANGE                  ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x0A )    /* volume change event */
+#define HCI_CONTROL_HF_EVENT_VOLUME_UP                      ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x0B )    /* volume change event */
+#define HCI_CONTROL_HF_EVENT_VOLUME_DOWN                    ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x0C )    /* volume change event */
+#define HCI_CONTROL_HF_EVENT_CALL_ALERT                     ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x0D )    /* call alert event */
+#define HCI_CONTROL_HF_EVENT_VOICE_RECOG_EVENT              ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x0E )    /* voice recognition status event */
+
 
 /* Sub-commands AT events defined with AT Commands */
 #define HCI_CONTROL_HF_AT_EVENT_BASE                        ( ( HCI_CONTROL_GROUP_HF << 8 ) | 0x20 )
@@ -790,6 +812,7 @@
 #define HCI_CONTROL_AUDIO_SINK_EVENT_CODEC_CONFIGURED       ( ( HCI_CONTROL_GROUP_AUDIO_SINK << 8 ) | 0x08 )    /* Peer codec configured event*/
 #define HCI_CONTROL_AUDIO_SINK_EVENT_START_IND              ( ( HCI_CONTROL_GROUP_AUDIO_SINK << 8 ) | 0x09 )    /* A2DP Start indication event, received A2DP Start request */
 #define HCI_CONTROL_AUDIO_SINK_EVENT_AUDIO_DATA             ( ( HCI_CONTROL_GROUP_AUDIO_SINK << 8 ) | 0x0a )    /* Received audio data. Encoded for AAC, decoded for SBC. */
+#define HCI_CONTROL_AUDIO_SINK_EVENT_SUSPEND                ( ( HCI_CONTROL_GROUP_AUDIO_SINK << 8 ) | 0x0b )    /* A2DP event suspend received  */
 
 /* PBAP Client events */
 #define HCI_CONTROL_PBC_EVENT_CONNECTED                     ( ( HCI_CONTROL_GROUP_PBC << 8 ) | 0x01 )      /* PBC Connected */
@@ -1088,5 +1111,6 @@
 #define HCI_CONTROL_SCRIPT_EVENT_CALLBACK                   ( ( HCI_CONTROL_GROUP_SCRIPT << 8 ) | 0x03 )   /* Async script callback */
 #define HCI_CONTROL_SCRIPT_TRACE                            ( ( HCI_CONTROL_GROUP_SCRIPT << 8 ) | 0xF0 )   /* Trace message (low nibble has type) */
 
+#define HCI_CONTROL_HCI_AUDIO_COMMAND_BUTTON                ( ( HCI_CONTROL_GROUP_HCI_AUDIO << 8 ) | 0x30 ) /* Button event */
 #endif /* HCI_CONTROL_API.H_ */
 

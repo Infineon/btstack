@@ -107,8 +107,6 @@ typedef struct
     uint8_t   min_bitpool;    /**< Minimum bitpool */
 } wiced_bt_a2d_sbc_cie_t;
 
-
-
 #ifdef __cplusplus
 extern "C"
 {

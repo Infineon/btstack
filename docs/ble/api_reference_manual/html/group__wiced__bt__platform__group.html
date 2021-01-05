@@ -118,12 +118,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ga91ec048a4f0938e38123ccd86b267b49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga91ec048a4f0938e38123ccd86b267b49">wiced_bt_stack_platform_initialize</a> (<a class="el" href="structwiced__bt__stack__platform__t.html">wiced_bt_stack_platform_t</a> *platform_interfaces)</td></tr>
 <tr class="memdesc:ga91ec048a4f0938e38123ccd86b267b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the platform interfaces, by providing porting functions specific to the underlying platform.  <a href="#ga91ec048a4f0938e38123ccd86b267b49">More...</a><br /></td></tr>
 <tr class="separator:ga91ec048a4f0938e38123ccd86b267b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga730fd4fa5ec00d5d786274807315cc75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga730fd4fa5ec00d5d786274807315cc75">wiced_bt_stack_platform_deinit</a> (void)</td></tr>
+<tr class="memdesc:ga730fd4fa5ec00d5d786274807315cc75"><td class="mdescLeft">&#160;</td><td class="mdescRight">DeInitialize the platform interfaces and free the memory allocated by <a class="el" href="group__wiced__bt__platform__group.html#ga91ec048a4f0938e38123ccd86b267b49" title="Initialize the platform interfaces, by providing porting functions specific to the underlying platfor...">wiced_bt_stack_platform_initialize</a> API.  <a href="#ga730fd4fa5ec00d5d786274807315cc75">More...</a><br /></td></tr>
+<tr class="separator:ga730fd4fa5ec00d5d786274807315cc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98a0933baa000767bc3ad60d0a7890e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga98a0933baa000767bc3ad60d0a7890e3">wiced_bt_process_acl_data</a> (uint8_t *pData, uint32_t length)</td></tr>
 <tr class="memdesc:ga98a0933baa000767bc3ad60d0a7890e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer to process the incoming ACL data received from the remote bluetooth device.  <a href="#ga98a0933baa000767bc3ad60d0a7890e3">More...</a><br /></td></tr>
 <tr class="separator:ga98a0933baa000767bc3ad60d0a7890e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4e569527f83bc2d6f443ef3ae0f83ece"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga4e569527f83bc2d6f443ef3ae0f83ece">wiced_bt_process_hci_events</a> (uint8_t *pData, uint32_t length)</td></tr>
 <tr class="memdesc:ga4e569527f83bc2d6f443ef3ae0f83ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer to process the incoming HCI events from the local bluetooth controller.  <a href="#ga4e569527f83bc2d6f443ef3ae0f83ece">More...</a><br /></td></tr>
 <tr class="separator:ga4e569527f83bc2d6f443ef3ae0f83ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e08857799934c4e9eb3108e16cc95e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga3e08857799934c4e9eb3108e16cc95e1">wiced_bt_process_sco_data</a> (uint8_t *pData, uint32_t length)</td></tr>
+<tr class="memdesc:ga3e08857799934c4e9eb3108e16cc95e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer to process the incoming SCO data received from the remote bluetooth device.  <a href="#ga3e08857799934c4e9eb3108e16cc95e1">More...</a><br /></td></tr>
+<tr class="separator:ga3e08857799934c4e9eb3108e16cc95e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9655dc8f977b3d51d80c07d69c17352c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga9655dc8f977b3d51d80c07d69c17352c">wiced_bt_process_isoc_data</a> (uint8_t *pData, uint32_t length)</td></tr>
+<tr class="memdesc:ga9655dc8f977b3d51d80c07d69c17352c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer to process the incoming ISOC data received from the remote bluetooth device.  <a href="#ga9655dc8f977b3d51d80c07d69c17352c">More...</a><br /></td></tr>
+<tr class="separator:ga9655dc8f977b3d51d80c07d69c17352c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad0cd082b2d2e5c54b077d3e7aafcbc48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#gad0cd082b2d2e5c54b077d3e7aafcbc48">wiced_bt_process_timer</a> (void)</td></tr>
 <tr class="memdesc:gad0cd082b2d2e5c54b077d3e7aafcbc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer on expiry of the timer to process pending timers.  <a href="#gad0cd082b2d2e5c54b077d3e7aafcbc48">More...</a><br /></td></tr>
 <tr class="separator:gad0cd082b2d2e5c54b077d3e7aafcbc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +190,29 @@ Functions</h2></td></tr>
 <p>Initialize the platform interfaces, by providing porting functions specific to the underlying platform. </p>
 <dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_SUCCESS </b> : on success; <br />
  <b> WICED_BT_ERROR </b> : if an error occurred </dd></dl>
+
+</div>
+</div>
+<a id="ga730fd4fa5ec00d5d786274807315cc75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga730fd4fa5ec00d5d786274807315cc75">&#9670;&nbsp;</a></span>wiced_bt_stack_platform_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_stack_platform_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DeInitialize the platform interfaces and free the memory allocated by <a class="el" href="group__wiced__bt__platform__group.html#ga91ec048a4f0938e38123ccd86b267b49" title="Initialize the platform interfaces, by providing porting functions specific to the underlying platfor...">wiced_bt_stack_platform_initialize</a> API. </p>
+<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_SUCCESS </b> : on success; <br />
+ <b> WICED_BT_ERROR </b> : if an error occurred</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>: After calling this API, DON'T call any BT API without calling <a class="el" href="group__wiced__bt__platform__group.html#ga91ec048a4f0938e38123ccd86b267b49" title="Initialize the platform interfaces, by providing porting functions specific to the underlying platfor...">wiced_bt_stack_platform_initialize</a> again. </dd></dl>
 
 </div>
 </div>
@@ -253,6 +285,82 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pData</td><td>: Pointer to the HCI Events to be processed </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>: Length of the event buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ga3e08857799934c4e9eb3108e16cc95e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e08857799934c4e9eb3108e16cc95e1">&#9670;&nbsp;</a></span>wiced_bt_process_sco_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_process_sco_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called by the porting layer to process the incoming SCO data received from the remote bluetooth device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pData</td><td>: Pointer to the SCO data to be processed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>: Length of the SCO data buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ga9655dc8f977b3d51d80c07d69c17352c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9655dc8f977b3d51d80c07d69c17352c">&#9670;&nbsp;</a></span>wiced_bt_process_isoc_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_process_isoc_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called by the porting layer to process the incoming ISOC data received from the remote bluetooth device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pData</td><td>: Pointer to the ISOC data to be processed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>: Length of the ISOC data buffer </td></tr>
   </table>
   </dd>
 </dl>

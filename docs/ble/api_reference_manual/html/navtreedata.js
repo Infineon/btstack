@@ -32,12 +32,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "group___result.html",
-"group__l2cap.html",
-"group__wicedbt___device_management.html#ga70542f339840a3828aa2559f044f6621",
-"group__wicedbt___device_management.html#gga8b68ab04e941d86c922eabbcd4be2322aca82ee6211ba91d3e56a7fc062beba0e",
-"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3aa7f37ff5bedf1d351f58794a0b8f31a8",
-"structwiced__bt__dev__ble__pairing__info__t.html",
-"structwiced__bt__l2cap__appl__information__t.html#af8eec85bfbb24229e275538175cdbc3b"
+"group__gattdb__api__functions.html#gab67ee0bb9c35b004296031b7edb0209d",
+"group__wicedbt___device_management.html#ga2bdd613b7804ef9942e691f74d9e8b6f",
+"group__wicedbt___device_management.html#gga4f8d298fc8c52ee7b5c7153a4d73ac80a817948d93c8c8a8c351948388a2105ec",
+"group__wicedbt__gatt.html#gab4db05c6335a9692cfc1ff226f5122e4",
+"structwiced__bt__ble__ext__adv__report__t.html#a07d7016a62b02be5a4797a884825b618",
+"structwiced__bt__dev__local__addr__ext__t.html",
+"structwiced__bt__l2cap__fcr__options__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

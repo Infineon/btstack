@@ -9,7 +9,6 @@
  */
 #pragma once
 
-#include "wiced.h"
 
 /**
  * @cond DUAL_MODE
@@ -23,6 +22,10 @@
 /******************************************************
  *              Constants
  ******************************************************/
+#define WICED_BT_SCO_CONNECTION_ACCEPT              0x00
+#define WICED_BT_SCO_CONNECTION_REJECT_RESOURCES    0x0D
+#define WICED_BT_SCO_CONNECTION_REJECT_SECURITY     0x0E
+#define WICED_BT_SCO_CONNECTION_REJECT_DEVICE       0x0F
 
 #ifndef WICED_SCO_PKT_TYPES_MASK
 #define WICED_INVALID_SCO_INDEX           0xFFFF    /**< Default SCO index */
@@ -40,9 +43,8 @@
 /** SCO route path */
 typedef enum
 {
-    WICED_BT_SCO_OVER_PCM = 0,    /**< [DEFAULT] PCM data config for routing over I2S/PCM interface */
-    WICED_BT_SCO_OVER_APP_CB,     /**< PCM data config for routing over APP */
-    WICED_BT_SCO_OVER_HCI         /**< SCO over HCI to Wiced stack in the host */
+     WICED_BT_SCO_OVER_HCI,         /**< SCO over HCI to Wiced stack in the host */
+     WICED_BT_SCO_OVER_PCM    /**< Not supported yet. PCM data config for routing over I2S/PCM interface */
 }wiced_bt_sco_route_path_t;
 
 /******************************************************
@@ -50,9 +52,9 @@ typedef enum
  ******************************************************/
 #define  WICED_BT_SCO_DATA_CB_GET_LENGTH(ltch_len)   ((ltch_len>>8)&0xff)	/**< SCO data callback length */
 
-
 /** Call back function for pcm data transfer, ltch_len = (length)<<8|(sco_channel) */
-typedef void (wiced_bt_sco_data_cb_t) (uint32_t ltch_len, uint8_t *p_data);
+typedef void (wiced_bt_sco_data_cb_t) (uint16_t sco_channel, uint16_t length, uint8_t *p_data);
+
 
 /** Subset for the enhanced setup/accept synchronous connection paramters
  * See BT 4.1 or later HCI spec for details */
@@ -67,7 +69,7 @@ typedef struct
 /** SCO path config */
 typedef struct
 {
-    wiced_bt_sco_route_path_t    path;           /**< sco routing path  0:pcm/i2s; 1: app*/
+    wiced_bt_sco_route_path_t    path;           /**< sco routing path see #wiced_bt_sco_route_path_t*/
     wiced_bt_sco_data_cb_t       *p_sco_data_cb; /**< If not NULL and route is APP_CB, callback function called for incoming pcm data */
 }wiced_bt_voice_path_setup_t;
 
@@ -105,6 +107,7 @@ wiced_bt_dev_status_t wiced_bt_sco_create_as_initiator (wiced_bt_device_address_
  *
  *Creates a synchronous connection oriented connection as acceptor.
  *
+ *  @param[in]  remote_bda              :  remote device bd_addr
  *  @param[out] p_sco_index             : SCO index returned
  *
  *  @return     <b> WICED_BT_UNKNOWN_ADDR </b>      : Create connection failed, ACL connection is not up or
@@ -117,7 +120,11 @@ wiced_bt_dev_status_t wiced_bt_sco_create_as_initiator (wiced_bt_device_address_
  *                                                    reached
  *              <b> WICED_BT_PENDING </b>            : Create connection successfully, "p_sco_index" is returned
  */
-wiced_bt_dev_status_t wiced_bt_sco_create_as_acceptor (uint16_t *p_sco_index);
+wiced_bt_dev_status_t wiced_bt_sco_create_as_acceptor_ex (wiced_bt_device_address_t remote_bda, uint16_t *p_sco_index);
+
+/* defined this macro for backward compatiblity */
+#define wiced_bt_sco_create_as_acceptor(p_sco_idx)  wiced_bt_sco_create_as_acceptor_ex(NULL,  p_sco_index)
+
 
 /**
  *
@@ -165,6 +172,26 @@ void wiced_bt_sco_accept_connection (uint16_t sco_index, uint8_t hci_status,
  *              WICED_BT_BUSY       : Command not sent. Waiting for command complete event for prior command.
  */
 wiced_bt_dev_status_t wiced_bt_sco_setup_voice_path(wiced_bt_voice_path_setup_t *pData);
+
+
+/**
+ *
+ *The wiced_sco_lib.a was required to include before we link this function.
+ *This function write SCO data to a specified instance
+ *
+ *  @param[in]  sco_inx             : sco connection instance
+ *  @param[in]  p_data              : Pointer to  data
+ *  @param[in]  len                 : Length of data at p_data
+ *
+ * @return
+ *              WICED_BT_SUCCESS            : data write is successful.
+ *              WICED_BT_ERROR              : generic error
+ *              WICED_BT_UNKNOWN_ADDR       : unknown SCO connection instance.
+ */
+
+wiced_bt_dev_status_t wiced_bt_sco_write_buffer (uint16_t sco_inx, uint8_t *p_data, uint8_t len);
+
+
 
 /**
  *

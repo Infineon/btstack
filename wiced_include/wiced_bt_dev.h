@@ -80,6 +80,17 @@ typedef struct
     uint8_t     *p_param_buf;               /**< Return parameter buffer (Contains Command Specific data) */
 } wiced_bt_dev_vendor_specific_command_complete_params_t;
 
+/** Structure for local address extendend API
+ @note #wiced_bt_dev_read_local_addr_ext API function sets private_addr_type and private_addr only if BLE privacy is set to true */
+typedef struct
+{
+    wiced_bool_t                    is_static_rand_addr_used;   /**< True if static random address is used */
+    wiced_bool_t                    is_privacy_enabled;         /**< True BLE Privacy is enabled */
+    wiced_bt_ble_address_type_t     private_addr_type;          /**< Private address type*/
+    wiced_bt_device_address_t       private_addr;               /**< Private address */
+    wiced_bt_device_address_t       local_addr;                 /**< Local Bluetooth Address */
+} wiced_bt_dev_local_addr_ext_t;
+
 /** @cond DUAL_MODE */
 
 /** Default Discovery Window (in 0.625 msec intervals) */
@@ -244,7 +255,7 @@ typedef struct
  *  SECURITY MANAGEMENT
  *****************************************************************************/
 
-/** Security Service Levels [bit mask]. 
+/** Security Service Levels [bit mask].
   * @note  Encryption should not be used without authentication. */
 enum wiced_bt_sec_level_e
 {
@@ -274,7 +285,7 @@ enum wiced_bt_sec_flags_e
 
 /** Security key data length (used by wiced_bt_device_link_keys_t structure) */
 #ifndef BTM_SECURITY_KEY_DATA_LEN
-#define BTM_SECURITY_KEY_DATA_LEN       132     
+#define BTM_SECURITY_KEY_DATA_LEN       132
 #endif
 
 /** Local security key data length (used by wiced_bt_local_identity_keys_t structure) */
@@ -392,8 +403,8 @@ typedef struct
 /** Data for wiced_bt_smp_sc_oob_reply */
 typedef struct
 {
-    wiced_bt_smp_sc_local_oob_t     local_oob_data;     /**< Local oob data details */
-    wiced_bt_smp_sc_peer_oob_data_t peer_oob_data;      /**< Peer oob data details */
+    wiced_bt_smp_sc_local_oob_t     local_oob_data;     /**< My OOB  sent to peer out of band */
+    wiced_bt_smp_sc_peer_oob_data_t peer_oob_data;      /**< Peer OOB received out of band */
 }wiced_bt_smp_sc_oob_data_t;
 
 /** SCO link type */
@@ -717,7 +728,7 @@ enum wiced_bt_management_evt_e {
     BTM_PASSKEY_REQUEST_EVT,                        /**< received USER_PASSKEY_REQUEST event @cond DUAL_MODE (respond using #wiced_bt_dev_pass_key_req_reply). Event data: #wiced_bt_dev_user_key_req_t @endcond
                                                      @note  BR/EDR Only */
     BTM_KEYPRESS_NOTIFICATION_EVT,                  /**< received KEYPRESS_NOTIFY event. Event data: #wiced_bt_dev_user_keypress_t */
-    BTM_PAIRING_IO_CAPABILITIES_BR_EDR_REQUEST_EVT, /**< Requesting IO capabilities for BR/EDR pairing. Event data: #wiced_bt_dev_bredr_io_caps_req_t 
+    BTM_PAIRING_IO_CAPABILITIES_BR_EDR_REQUEST_EVT, /**< Requesting IO capabilities for BR/EDR pairing. Event data: #wiced_bt_dev_bredr_io_caps_req_t
                                                         @note  BR/EDR Only */
     BTM_PAIRING_IO_CAPABILITIES_BR_EDR_RESPONSE_EVT,/**< Received IO capabilities response for BR/EDR pairing. Event data: @cond DUAL_MODE #wiced_bt_dev_bredr_io_caps_rsp_t @endcond
                                                         @note  BR/EDR Only*/
@@ -728,10 +739,10 @@ enum wiced_bt_management_evt_e {
     BTM_SECURITY_FAILED_EVT,                        /**< Security procedure/authentication failed. Event data: #wiced_bt_dev_security_failed_t */
     BTM_SECURITY_ABORTED_EVT,                       /**< Security procedure aborted locally, or unexpected link drop. Event data: #wiced_bt_dev_name_and_class_t */
 
-    BTM_READ_LOCAL_OOB_DATA_COMPLETE_EVT,           /**< Result of reading local OOB data @cond DUAL_MODE (#wiced_bt_dev_read_local_oob_data). Event data: #wiced_bt_dev_local_oob_t @endcond 
+    BTM_READ_LOCAL_OOB_DATA_COMPLETE_EVT,           /**< Result of reading local OOB data @cond DUAL_MODE (#wiced_bt_dev_read_local_oob_data). Event data: #wiced_bt_dev_local_oob_t @endcond
                                                         @note  BR/EDR Only */
 
-    BTM_REMOTE_OOB_DATA_REQUEST_EVT,                /**< OOB data from remote device @cond DUAL_MODE (respond using #wiced_bt_dev_remote_oob_data_reply). Event data: #wiced_bt_dev_remote_oob_t @endcond 
+    BTM_REMOTE_OOB_DATA_REQUEST_EVT,                /**< OOB data from remote device @cond DUAL_MODE (respond using #wiced_bt_dev_remote_oob_data_reply). Event data: #wiced_bt_dev_remote_oob_t @endcond
                                                         @note  BR/EDR Only */
 
     BTM_PAIRED_DEVICE_LINK_KEYS_UPDATE_EVT,         /**< Updated remote device link keys (store device_link_keys to  NV memory). This is the place to
@@ -746,7 +757,7 @@ verify that the correct link key has been generated. Event data: #wiced_bt_devic
 
     /* BLE Secure Connection events */
     BTM_SMP_REMOTE_OOB_DATA_REQUEST_EVT,            /**< SMP remote oob data request. Reply using wiced_bt_smp_oob_data_reply. Event data: #wiced_bt_smp_remote_oob_req_t  */
-    BTM_SMP_SC_REMOTE_OOB_DATA_REQUEST_EVT,         /**< LE secure connection remote oob data request. Reply using wiced_bt_smp_sc_oob_reply. Event data: #wiced_bt_smp_sc_remote_oob_req_t 
+    BTM_SMP_SC_REMOTE_OOB_DATA_REQUEST_EVT,         /**< LE secure connection remote oob data request. Reply using wiced_bt_smp_sc_oob_reply. Event data: #wiced_bt_smp_sc_remote_oob_req_t
                                                         @note  BR/EDR Only */
     BTM_SMP_SC_LOCAL_OOB_DATA_NOTIFICATION_EVT,     /**< LE secure connection local OOB data (wiced_bt_smp_create_local_sc_oob_data). Event data: #wiced_bt_smp_sc_local_oob_t */
 
@@ -970,6 +981,19 @@ enum wiced_bt_dev_link_quality_stats_param_e
 };
 typedef uint8_t wiced_bt_link_quality_stats_param_t;   /**< Link Quality Statistic Action (see #wiced_bt_dev_link_quality_stats_param_e) */
 
+/**
+ * .Enumeration of known link policy settings value assignments of the \ref wiced_bt_link_policy_settings_t
+ */
+enum  wiced_bt_link_policy_settings_values_e
+{
+    WICED_ENABLE_MASTER_SLAVE_SWITCH  = 0x01, /**< Enable Role Switch */
+    WICED_ENABLE_HOLD_MODE            = 0x02, /**< Enable Hold mode */
+    WICED_ENABLE_SNIFF_MODE           = 0x04  /**<Enable Sniff mode */
+};
+
+/**< Link Policy Settings type (see #wiced_bt_link_policy_settings_values_e) */
+typedef uint16_t wiced_bt_link_policy_settings_t[1];
+
 /** advertisement type (used when calling wiced_bt_start_advertisements) */
 #ifndef BTM_BLE_ADVERT_MODE
 #define BTM_BLE_ADVERT_MODE
@@ -1016,10 +1040,12 @@ typedef enum
     HCI_TRACE_EVENT, /**< HCI event data from controller to the host */
     HCI_TRACE_COMMAND, /**< HCI command data from host to controller */
     HCI_TRACE_INCOMING_ACL_DATA,/**< HCI incoming acl data */
-    HCI_TRACE_OUTGOING_ACL_DATA/**< HCI outgoing acl data */
+    HCI_TRACE_OUTGOING_ACL_DATA,/**< HCI outgoing acl data */
+    HCI_TRACE_INCOMING_ISO_DATA,/**< HCI incoming ISO data */
+    HCI_TRACE_OUTGOING_ISO_DATA,/**< HCI outgoing ISO data */
+    HCI_TRACE_INCOMING_SCO_DATA,/**< HCI incoming sco data */
+    HCI_TRACE_OUTGOING_SCO_DATA /**< HCI outgoing sco data */
 }wiced_bt_hci_trace_type_t;
-
-
 
 /** Structure definitions for Bluetooth Management (wiced_bt_management_cback_t) event notifications */
 typedef union
@@ -1180,9 +1206,9 @@ typedef void (wiced_bt_hci_trace_cback_t)(wiced_bt_hci_trace_type_t type, uint16
 /****************************************************************************/
 /**
  * @cond DUAL_MODE
- * BR/EDR (Bluetooth Basic Rate / Enhanced Data Rate) Functions. 
+ * BR/EDR (Bluetooth Basic Rate / Enhanced Data Rate) Functions.
  * This module provids different set of BR/EDR API for discovery, inquiry
- * ACL & SCO Connection, Data transfer, BR/EDR Security etc. 
+ * ACL & SCO Connection, Data transfer, BR/EDR Security etc.
 
  *
  * @addtogroup  wicedbt_bredr    BR/EDR (Bluetooth Basic Rate / Enhanced Data Rate)
@@ -1215,7 +1241,7 @@ typedef void (wiced_bt_hci_trace_cback_t)(wiced_bt_hci_trace_type_t type, uint16
  * <b> WICED_BT_BUSY </b>           : if already in progress \n
  * <b> WICED_BT_ILLEGAL_VALUE </b>  : if parameter(s) are out of range \n
  * <b> WICED_BT_NO_RESOURCES </b>   : if could not allocate resources to start the command \n
- * <b> WICED_BT_WRONG_MODE </b>     : if the device is not up 
+ * <b> WICED_BT_WRONG_MODE </b>     : if the device is not up
  */
 wiced_result_t  wiced_bt_start_inquiry (wiced_bt_dev_inq_parms_t *p_inqparms, wiced_bt_inquiry_result_cback_t *p_inquiry_result_cback);
 
@@ -1240,6 +1266,16 @@ wiced_result_t wiced_bt_cancel_inquiry(void);
  *
  */
 void wiced_bt_dev_read_local_addr (wiced_bt_device_address_t bd_addr);
+
+/**
+ * Read the extended local device address information
+ *
+ * @param[out]      data        : data pointer in which stack will populate the address information.(refer #wiced_bt_dev_local_addr_ext_t )
+ *
+ * @return          void
+ *
+ */
+void wiced_bt_dev_read_local_addr_ext(wiced_bt_dev_local_addr_ext_t *data);
 
 
 /**
@@ -1462,6 +1498,17 @@ wiced_bt_dev_status_t wiced_bt_dev_set_afh_channel_classification(const wiced_bt
 wiced_result_t  wiced_bt_dev_get_remote_name (wiced_bt_device_address_t bd_addr, wiced_bt_remote_name_cback_t *p_remote_name_result_cback);
 
 /**
+ * This function is called to set the Link Policy for remote device
+ *
+ * @param[in]       remote_bda      : remote device's address
+ * @param[in]       settings        : the policy setting value(from #wiced_bt_link_policy_settings_values_e)
+ *
+ * @return          wiced_result_t
+*/
+wiced_result_t wiced_bt_dev_set_link_policy(wiced_bt_device_address_t remote_bda,
+        wiced_bt_link_policy_settings_t settings);
+
+/**
 *
 * Application can invoke this function to enable the coex functionality
 *
@@ -1545,7 +1592,7 @@ wiced_result_t wiced_bt_dev_setAclPacketTypes(wiced_bt_device_address_t remote_b
 */
 
 /**
- * 
+ *
  * This module provided various Bluetooth BR/EDR security functionality such as authorisation, authentication and encryption.
  *
  * @addtogroup  br_edr_sec_api_functions        BR/EDR Security Function
@@ -1669,7 +1716,6 @@ wiced_bool_t wiced_bt_smp_create_local_sc_oob_data (wiced_bt_device_address_t bd
  *
  * @param[in]       p_oob_data  : oob data
  *
- * @note            BR/EDR Only
  */
 void wiced_bt_smp_sc_oob_reply (wiced_bt_smp_sc_oob_data_t *p_oob_data);
 
@@ -1746,8 +1792,7 @@ void wiced_bt_dev_register_hci_trace( wiced_bt_hci_trace_cback_t* p_cback );
  *                 Address      | 0  | 1  | 2  | 3  | 4  | 5  |
  *                 For above example it will set AB:CD:EF:01:23:45 bd address
  */
-void wiced_bt_set_local_bdaddr( wiced_bt_device_address_t  bd_addr , wiced_bt_ble_address_type_t addr_type);
-
+wiced_result_t wiced_bt_set_local_bdaddr( wiced_bt_device_address_t  bd_addr , wiced_bt_ble_address_type_t addr_type);
 
 /**
  *
@@ -1802,6 +1847,7 @@ wiced_result_t wiced_bt_dev_read_tx_power (wiced_bt_device_address_t remote_bda,
 *
 * @param[in]       allow_pairing        : (TRUE or FALSE) whether or not the device allows pairing.
 * @param[in]       connect_only_paired   : (TRUE or FALSE) whether or not to only allow paired devices to connect.
+*                                         <b> Applicable only for BR/EDR </b>
 *
 * @return          void
 *
@@ -1992,10 +2038,10 @@ wiced_result_t wiced_bt_dev_get_bonded_devices(wiced_bt_dev_bonded_device_info_t
 /**
  *
  * remove bonding with remote device with assigned bd_addr
- * Note: This API cannot be used while being connected to the remote bd_addr 
+ * Note: This API cannot be used while being connected to the remote bd_addr
  *
  * @param[in]      bd_addr :   bd_addr of remote device to be removed from bonding list
- * 
+ *
  *
  * @return          wiced_result_t
  *

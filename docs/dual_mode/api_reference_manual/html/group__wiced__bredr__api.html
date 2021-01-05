@@ -106,6 +106,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab6a09117d2fa6f4b31d8bfb9aa4d382c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#gab6a09117d2fa6f4b31d8bfb9aa4d382c">wiced_bt_dev_read_local_addr</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr)</td></tr>
 <tr class="memdesc:gab6a09117d2fa6f4b31d8bfb9aa4d382c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the local device address.  <a href="#gab6a09117d2fa6f4b31d8bfb9aa4d382c">More...</a><br /></td></tr>
 <tr class="separator:gab6a09117d2fa6f4b31d8bfb9aa4d382c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga833d7b0635297f1c74580b33e198ca41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#ga833d7b0635297f1c74580b33e198ca41">wiced_bt_dev_read_local_addr_ext</a> (<a class="el" href="structwiced__bt__dev__local__addr__ext__t.html">wiced_bt_dev_local_addr_ext_t</a> *data)</td></tr>
+<tr class="memdesc:ga833d7b0635297f1c74580b33e198ca41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the extended local device address information.  <a href="#ga833d7b0635297f1c74580b33e198ca41">More...</a><br /></td></tr>
+<tr class="separator:ga833d7b0635297f1c74580b33e198ca41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab8ab36f338fdadd7405f28fe6d03d7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#gaab8ab36f338fdadd7405f28fe6d03d7c">wiced_bt_dev_set_advanced_connection_params</a> (<a class="el" href="structwiced__bt__dev__inquiry__scan__result__t.html">wiced_bt_dev_inquiry_scan_result_t</a> *p_inquiry_scan_result)</td></tr>
 <tr class="memdesc:gaab8ab36f338fdadd7405f28fe6d03d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set advanced connection parameters for subsequent BR/EDR connections (remote clock offset, page scan mode, and other information obtained during inquiry)  <a href="#gaab8ab36f338fdadd7405f28fe6d03d7c">More...</a><br /></td></tr>
 <tr class="separator:gaab8ab36f338fdadd7405f28fe6d03d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +148,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga65bc31725b27be92d23b71707c4d309c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#ga65bc31725b27be92d23b71707c4d309c">wiced_bt_dev_get_remote_name</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__wicedbt___device_management.html#ga1102d990364545df00ee778c4418729d">wiced_bt_remote_name_cback_t</a> *p_remote_name_result_cback)</td></tr>
 <tr class="memdesc:ga65bc31725b27be92d23b71707c4d309c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get BT Friendly name from remote device.  <a href="#ga65bc31725b27be92d23b71707c4d309c">More...</a><br /></td></tr>
 <tr class="separator:ga65bc31725b27be92d23b71707c4d309c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa20b1e8c312d27e8ea2824f68ccb374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#gafa20b1e8c312d27e8ea2824f68ccb374">wiced_bt_dev_set_link_policy</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> remote_bda, wiced_bt_link_policy_settings_t settings)</td></tr>
+<tr class="memdesc:gafa20b1e8c312d27e8ea2824f68ccb374"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called to set the Link Policy for remote device.  <a href="#gafa20b1e8c312d27e8ea2824f68ccb374">More...</a><br /></td></tr>
+<tr class="separator:gafa20b1e8c312d27e8ea2824f68ccb374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa34891858f4af31cf59a8e9d34228ac1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#gaa34891858f4af31cf59a8e9d34228ac1">wiced_bt_coex_enable</a> (uint32_t seci_baud_rate)</td></tr>
 <tr class="memdesc:gaa34891858f4af31cf59a8e9d34228ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application can invoke this function to enable the coex functionality.  <a href="#gaa34891858f4af31cf59a8e9d34228ac1">More...</a><br /></td></tr>
 <tr class="separator:gaa34891858f4af31cf59a8e9d34228ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,6 +255,33 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">bd_addr</td><td>: Local bd address</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ga833d7b0635297f1c74580b33e198ca41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga833d7b0635297f1c74580b33e198ca41">&#9670;&nbsp;</a></span>wiced_bt_dev_read_local_addr_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_dev_read_local_addr_ext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__dev__local__addr__ext__t.html">wiced_bt_dev_local_addr_ext_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the extended local device address information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>: data pointer in which stack will populate the address information.(refer <a class="el" href="structwiced__bt__dev__local__addr__ext__t.html" title="Structure for local address extendend API.">wiced_bt_dev_local_addr_ext_t</a> )</td></tr>
   </table>
   </dd>
 </dl>
@@ -812,6 +845,44 @@ Functions</h2></td></tr>
 <b> WICED_BT_ILLEGAL_VALUE </b>: if parameter(s) are out of range <br />
 <b> WICED_BT_NO_RESOURCES </b> : if could not allocate resources to start the command <br />
 <b> WICED_BT_WRONG_MODE </b> : if the device is not up. </p>
+
+</div>
+</div>
+<a id="gafa20b1e8c312d27e8ea2824f68ccb374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa20b1e8c312d27e8ea2824f68ccb374">&#9670;&nbsp;</a></span>wiced_bt_dev_set_link_policy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_dev_set_link_policy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>remote_bda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wiced_bt_link_policy_settings_t&#160;</td>
+          <td class="paramname"><em>settings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function is called to set the Link Policy for remote device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>: remote device's address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>: the policy setting value(from <a class="el" href="group__wicedbt___device_management.html#ga5ac33b180c10d23690c1bf22363f0e56" title=".Enumeration of known link policy settings value assignments of the wiced_bt_link_policy_settings_t">wiced_bt_link_policy_settings_values_e</a>)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>wiced_result_t </dd></dl>
 
 </div>
 </div>

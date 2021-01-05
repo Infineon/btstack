@@ -129,6 +129,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__dev__vendor__specific__command__complete__params__t.html">wiced_bt_dev_vendor_specific_command_complete_params_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure returned with Vendor Specific Command complete callback.  <a href="structwiced__bt__dev__vendor__specific__command__complete__params__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__dev__local__addr__ext__t.html">wiced_bt_dev_local_addr_ext_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for local address extendend API.  <a href="structwiced__bt__dev__local__addr__ext__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__dev__cod__cond__t.html">wiced_bt_dev_cod_cond_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class of Device inquiry filter.  <a href="structwiced__bt__dev__cod__cond__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,6 +499,9 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gaf35adc1f29b46b8468a387c8023fd1f9">wiced_bt_link_quality_stats_param_t</a></td></tr>
 <tr class="memdesc:gaf35adc1f29b46b8468a387c8023fd1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link Quality Statistic Action (see <a class="el" href="group__wicedbt___device_management.html#gad3ae6f503bc223e42c68e23a701af1e2" title="Link Quality statistics action type.">wiced_bt_dev_link_quality_stats_param_e</a>) <br /></td></tr>
 <tr class="separator:gaf35adc1f29b46b8468a387c8023fd1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c5b67d556561dcab638afff83ac0d03"><td class="memItemLeft" align="right" valign="top"><a id="ga0c5b67d556561dcab638afff83ac0d03"></a>
+typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_link_policy_settings_t</b>[1]</td></tr>
+<tr class="separator:ga0c5b67d556561dcab638afff83ac0d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad1d90fe02e687ba52b02f970cb0ad3d3"><td class="memItemLeft" align="right" valign="top"><a id="gad1d90fe02e687ba52b02f970cb0ad3d3"></a>
 typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gad1d90fe02e687ba52b02f970cb0ad3d3">wiced_bt_ble_advert_mode_t</a></td></tr>
 <tr class="memdesc:gad1d90fe02e687ba52b02f970cb0ad3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advertisement type (see <a class="el" href="group__wicedbt___device_management.html#ga1942781c78be25d498d93745db416f08" title="advertisement type (used when calling wiced_bt_start_advertisements)">wiced_bt_ble_advert_mode_e</a>) <br /></td></tr>
@@ -571,64 +577,64 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gaf5328800ab7d3bcbd90775901a052b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inquiry Filter Condition types (see <a class="el" href="structwiced__bt__dev__inq__parms__t.html" title="Inquiry Parameters.">wiced_bt_dev_inq_parms_t</a>)  <a href="group__wicedbt___device_management.html#gaf5328800ab7d3bcbd90775901a052b86">More...</a><br /></td></tr>
 <tr class="separator:gaf5328800ab7d3bcbd90775901a052b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf764cbdea00d65edcd07bb9953ad2b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7ad4349d945b3245a129419012433bad7d">BTM_EIR_UUID_SERVCLASS_SERIAL_PORT</a>, 
+<tr class="memitem:gaaf105ae5beaca1dee30ae54530691fce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcead4349d945b3245a129419012433bad7d">BTM_EIR_UUID_SERVCLASS_SERIAL_PORT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a97cdfbfedb9320af72f56d21b5730536">BTM_EIR_UUID_SERVCLASS_DIALUP_NETWORKING</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea97cdfbfedb9320af72f56d21b5730536">BTM_EIR_UUID_SERVCLASS_DIALUP_NETWORKING</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a32c74a173f55fcae993e2a759e274d9f">BTM_EIR_UUID_SERVCLASS_IRMC_SYNC</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea32c74a173f55fcae993e2a759e274d9f">BTM_EIR_UUID_SERVCLASS_IRMC_SYNC</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7ae23f277d5d823c7ed5b9ce50f2b75d7f">BTM_EIR_UUID_SERVCLASS_OBEX_OBJECT_PUSH</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fceae23f277d5d823c7ed5b9ce50f2b75d7f">BTM_EIR_UUID_SERVCLASS_OBEX_OBJECT_PUSH</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a416e20059273fe844067df7aad4a9955">BTM_EIR_UUID_SERVCLASS_OBEX_FILE_TRANSFER</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea416e20059273fe844067df7aad4a9955">BTM_EIR_UUID_SERVCLASS_OBEX_FILE_TRANSFER</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7aeb9e797e875191f3ec64968a8fce9675">BTM_EIR_UUID_SERVCLASS_IRMC_SYNC_COMMAND</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fceaeb9e797e875191f3ec64968a8fce9675">BTM_EIR_UUID_SERVCLASS_IRMC_SYNC_COMMAND</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a55f09cc5794a12ece872c50eca6a9c10">BTM_EIR_UUID_SERVCLASS_HEADSET</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea55f09cc5794a12ece872c50eca6a9c10">BTM_EIR_UUID_SERVCLASS_HEADSET</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7ab8444232c8545ae7dc1b3b9334c0c1ef">BTM_EIR_UUID_SERVCLASS_AUDIO_SOURCE</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fceab8444232c8545ae7dc1b3b9334c0c1ef">BTM_EIR_UUID_SERVCLASS_AUDIO_SOURCE</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a940fad4b8dbb45d21c4f94b0c19257bd">BTM_EIR_UUID_SERVCLASS_AUDIO_SINK</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea940fad4b8dbb45d21c4f94b0c19257bd">BTM_EIR_UUID_SERVCLASS_AUDIO_SINK</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7af0a126788f101a830b3489291db38401">BTM_EIR_UUID_SERVCLASS_AV_REM_CTRL_TARGET</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fceaf0a126788f101a830b3489291db38401">BTM_EIR_UUID_SERVCLASS_AV_REM_CTRL_TARGET</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7acd4e8e3d63e1d455584fc29f38b9953e">BTM_EIR_UUID_SERVCLASS_AV_REMOTE_CONTROL</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fceacd4e8e3d63e1d455584fc29f38b9953e">BTM_EIR_UUID_SERVCLASS_AV_REMOTE_CONTROL</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a973e50c84c74bcd76559b3b9609e3224">BTM_EIR_UUID_SERVCLASS_HEADSET_AUDIO_GATEWAY</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea973e50c84c74bcd76559b3b9609e3224">BTM_EIR_UUID_SERVCLASS_HEADSET_AUDIO_GATEWAY</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a8429a4ed50ce9a09ccd450c53c869f2e">BTM_EIR_UUID_SERVCLASS_DIRECT_PRINTING</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea8429a4ed50ce9a09ccd450c53c869f2e">BTM_EIR_UUID_SERVCLASS_DIRECT_PRINTING</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a11c1034576c1206581dcab078e444e61">BTM_EIR_UUID_SERVCLASS_HF_HANDSFREE</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea11c1034576c1206581dcab078e444e61">BTM_EIR_UUID_SERVCLASS_HF_HANDSFREE</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7af8013951f00c6415f6a1da1c068d23e4">BTM_EIR_UUID_SERVCLASS_AG_HANDSFREE</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fceaf8013951f00c6415f6a1da1c068d23e4">BTM_EIR_UUID_SERVCLASS_AG_HANDSFREE</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a5700116ead84ad022597ddfccafa01a3">BTM_EIR_UUID_SERVCLASS_HUMAN_INTERFACE</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea5700116ead84ad022597ddfccafa01a3">BTM_EIR_UUID_SERVCLASS_HUMAN_INTERFACE</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a87ebd0118bbee3af9e1cf298dd5c7d71">BTM_EIR_UUID_SERVCLASS_SAP</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea87ebd0118bbee3af9e1cf298dd5c7d71">BTM_EIR_UUID_SERVCLASS_SAP</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7afa7da2a3d03c1a84bb1abcc3720d6308">BTM_EIR_UUID_SERVCLASS_PBAP_PCE</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fceafa7da2a3d03c1a84bb1abcc3720d6308">BTM_EIR_UUID_SERVCLASS_PBAP_PCE</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a573fb0eae64fbe9fdb6e00d281cd308b">BTM_EIR_UUID_SERVCLASS_PBAP_PSE</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea573fb0eae64fbe9fdb6e00d281cd308b">BTM_EIR_UUID_SERVCLASS_PBAP_PSE</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7abc49f57bc65fcf3e6234d8cda4f81011">BTM_EIR_UUID_SERVCLASS_PHONE_ACCESS</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fceabc49f57bc65fcf3e6234d8cda4f81011">BTM_EIR_UUID_SERVCLASS_PHONE_ACCESS</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a65bfea607e3e7bc685690fd1da63d1ee">BTM_EIR_UUID_SERVCLASS_HEADSET_HS</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea65bfea607e3e7bc685690fd1da63d1ee">BTM_EIR_UUID_SERVCLASS_HEADSET_HS</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a1836194236278122478a67eb221fdfcb">BTM_EIR_UUID_SERVCLASS_PNP_INFORMATION</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea1836194236278122478a67eb221fdfcb">BTM_EIR_UUID_SERVCLASS_PNP_INFORMATION</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a1719d2c7eb12405b5fcf2bb266a1ab2e">BTM_EIR_UUID_SERVCLASS_MESSAGE_ACCESS</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea1719d2c7eb12405b5fcf2bb266a1ab2e">BTM_EIR_UUID_SERVCLASS_MESSAGE_ACCESS</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a4b42112907efb48e35535ae6e1cd4aaa">BTM_EIR_UUID_SERVCLASS_MESSAGE_NOTIFICATION</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea4b42112907efb48e35535ae6e1cd4aaa">BTM_EIR_UUID_SERVCLASS_MESSAGE_NOTIFICATION</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a095dae40f77233162859ad3fa16b22ba">BTM_EIR_UUID_SERVCLASS_HDP_SOURCE</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea095dae40f77233162859ad3fa16b22ba">BTM_EIR_UUID_SERVCLASS_HDP_SOURCE</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a8f314d97e135e0a51317c58428d0a581">BTM_EIR_UUID_SERVCLASS_HDP_SINK</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea8f314d97e135e0a51317c58428d0a581">BTM_EIR_UUID_SERVCLASS_HDP_SINK</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a98e55b0924c25493b462eb5924d28729">BTM_EIR_MAX_SERVICES</a>
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaaf105ae5beaca1dee30ae54530691fcea98e55b0924c25493b462eb5924d28729">BTM_EIR_MAX_SERVICES</a>
 <br />
  }</td></tr>
-<tr class="memdesc:gadf764cbdea00d65edcd07bb9953ad2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">BTM service definitions (used for storing EIR data to bit mask refer eir_uuid_mask in <a class="el" href="structwiced__bt__dev__inquiry__scan__result__t.html" title="Inquiry Results.">wiced_bt_dev_inquiry_scan_result_t</a>)  <a href="group__wicedbt___device_management.html#gadf764cbdea00d65edcd07bb9953ad2b7">More...</a><br /></td></tr>
-<tr class="separator:gadf764cbdea00d65edcd07bb9953ad2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:gaaf105ae5beaca1dee30ae54530691fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">BTM service definitions (used for storing EIR data to bit mask refer eir_uuid_mask in <a class="el" href="structwiced__bt__dev__inquiry__scan__result__t.html" title="Inquiry Results.">wiced_bt_dev_inquiry_scan_result_t</a>)  <a href="group__wicedbt___device_management.html#gaaf105ae5beaca1dee30ae54530691fce">More...</a><br /></td></tr>
+<tr class="separator:gaaf105ae5beaca1dee30ae54530691fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc9b4dbc8e43ce6442971e2804d1aca5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gabc9b4dbc8e43ce6442971e2804d1aca5">wiced_bt_sec_level_e</a> { <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabc9b4dbc8e43ce6442971e2804d1aca5a0e9685e4326c3ad4af03a17f1a063f73">BTM_SEC_NONE</a> = 0x0000, 
 <br />
@@ -959,6 +965,16 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gad3ae6f503bc223e42c68e23a701af1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link Quality statistics action type.  <a href="group__wicedbt___device_management.html#gad3ae6f503bc223e42c68e23a701af1e2">More...</a><br /></td></tr>
 <tr class="separator:gad3ae6f503bc223e42c68e23a701af1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ac33b180c10d23690c1bf22363f0e56"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga5ac33b180c10d23690c1bf22363f0e56">wiced_bt_link_policy_settings_values_e</a> { <br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga5ac33b180c10d23690c1bf22363f0e56ac075635990b3eacb973b38e77f49f323">WICED_ENABLE_MASTER_SLAVE_SWITCH</a> = 0x01, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga5ac33b180c10d23690c1bf22363f0e56a95e2734d3f358a0e424cc756dc043553">WICED_ENABLE_HOLD_MODE</a> = 0x02, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga5ac33b180c10d23690c1bf22363f0e56a848cbf49ea19e57a20dd6caad4dd04f4">WICED_ENABLE_SNIFF_MODE</a> = 0x04
+<br />
+ }</td></tr>
+<tr class="memdesc:ga5ac33b180c10d23690c1bf22363f0e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">.Enumeration of known link policy settings value assignments of the wiced_bt_link_policy_settings_t  <a href="group__wicedbt___device_management.html#ga5ac33b180c10d23690c1bf22363f0e56">More...</a><br /></td></tr>
+<tr class="separator:ga5ac33b180c10d23690c1bf22363f0e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1942781c78be25d498d93745db416f08"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga1942781c78be25d498d93745db416f08">wiced_bt_ble_advert_mode_e</a> { <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga1942781c78be25d498d93745db416f08ab5138f1861c392d29bffce3fd415bfe2">BTM_BLE_ADVERT_OFF</a>, 
 <br />
@@ -998,7 +1014,15 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325a5a9e9d392ad933c7a1892d4cf2060e3b">HCI_TRACE_INCOMING_ACL_DATA</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325a9d17dfd997e959ada7cc24536962585e">HCI_TRACE_OUTGOING_ACL_DATA</a>
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325a9d17dfd997e959ada7cc24536962585e">HCI_TRACE_OUTGOING_ACL_DATA</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325aaaaf027672e988fe5312fe012a65abe6">HCI_TRACE_INCOMING_ISO_DATA</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325a21f88d5494c31542fa2b2be2900494fb">HCI_TRACE_OUTGOING_ISO_DATA</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325ad827fa21b9e5f3ccdecf458cea4bc28b">HCI_TRACE_INCOMING_SCO_DATA</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325ad19f09febc4f10b2928d87607fb83e8e">HCI_TRACE_OUTGOING_SCO_DATA</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gaa76569d7be1ed9ff5262e81b3b651325"><td class="mdescLeft">&#160;</td><td class="mdescRight">HCI trace types.  <a href="group__wicedbt___device_management.html#gaa76569d7be1ed9ff5262e81b3b651325">More...</a><br /></td></tr>
@@ -1340,8 +1364,8 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 
 </div>
 </div>
-<a id="gadf764cbdea00d65edcd07bb9953ad2b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadf764cbdea00d65edcd07bb9953ad2b7">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="gaaf105ae5beaca1dee30ae54530691fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf105ae5beaca1dee30ae54530691fce">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1354,59 +1378,59 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 
 <p>BTM service definitions (used for storing EIR data to bit mask refer eir_uuid_mask in <a class="el" href="structwiced__bt__dev__inquiry__scan__result__t.html" title="Inquiry Results.">wiced_bt_dev_inquiry_scan_result_t</a>) </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7ad4349d945b3245a129419012433bad7d"></a>BTM_EIR_UUID_SERVCLASS_SERIAL_PORT&#160;</td><td class="fielddoc"><p>Serial Port Service Index. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcead4349d945b3245a129419012433bad7d"></a>BTM_EIR_UUID_SERVCLASS_SERIAL_PORT&#160;</td><td class="fielddoc"><p>Serial Port Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a97cdfbfedb9320af72f56d21b5730536"></a>BTM_EIR_UUID_SERVCLASS_DIALUP_NETWORKING&#160;</td><td class="fielddoc"><p>Dialup Networking Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea97cdfbfedb9320af72f56d21b5730536"></a>BTM_EIR_UUID_SERVCLASS_DIALUP_NETWORKING&#160;</td><td class="fielddoc"><p>Dialup Networking Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a32c74a173f55fcae993e2a759e274d9f"></a>BTM_EIR_UUID_SERVCLASS_IRMC_SYNC&#160;</td><td class="fielddoc"><p>IRMC SYNC Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea32c74a173f55fcae993e2a759e274d9f"></a>BTM_EIR_UUID_SERVCLASS_IRMC_SYNC&#160;</td><td class="fielddoc"><p>IRMC SYNC Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7ae23f277d5d823c7ed5b9ce50f2b75d7f"></a>BTM_EIR_UUID_SERVCLASS_OBEX_OBJECT_PUSH&#160;</td><td class="fielddoc"><p>OBEX Object Push Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fceae23f277d5d823c7ed5b9ce50f2b75d7f"></a>BTM_EIR_UUID_SERVCLASS_OBEX_OBJECT_PUSH&#160;</td><td class="fielddoc"><p>OBEX Object Push Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a416e20059273fe844067df7aad4a9955"></a>BTM_EIR_UUID_SERVCLASS_OBEX_FILE_TRANSFER&#160;</td><td class="fielddoc"><p>OBEX File Transfer Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea416e20059273fe844067df7aad4a9955"></a>BTM_EIR_UUID_SERVCLASS_OBEX_FILE_TRANSFER&#160;</td><td class="fielddoc"><p>OBEX File Transfer Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7aeb9e797e875191f3ec64968a8fce9675"></a>BTM_EIR_UUID_SERVCLASS_IRMC_SYNC_COMMAND&#160;</td><td class="fielddoc"><p>IRMC SYNC Command Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fceaeb9e797e875191f3ec64968a8fce9675"></a>BTM_EIR_UUID_SERVCLASS_IRMC_SYNC_COMMAND&#160;</td><td class="fielddoc"><p>IRMC SYNC Command Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a55f09cc5794a12ece872c50eca6a9c10"></a>BTM_EIR_UUID_SERVCLASS_HEADSET&#160;</td><td class="fielddoc"><p>Headset Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea55f09cc5794a12ece872c50eca6a9c10"></a>BTM_EIR_UUID_SERVCLASS_HEADSET&#160;</td><td class="fielddoc"><p>Headset Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7ab8444232c8545ae7dc1b3b9334c0c1ef"></a>BTM_EIR_UUID_SERVCLASS_AUDIO_SOURCE&#160;</td><td class="fielddoc"><p>Audio Source Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fceab8444232c8545ae7dc1b3b9334c0c1ef"></a>BTM_EIR_UUID_SERVCLASS_AUDIO_SOURCE&#160;</td><td class="fielddoc"><p>Audio Source Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a940fad4b8dbb45d21c4f94b0c19257bd"></a>BTM_EIR_UUID_SERVCLASS_AUDIO_SINK&#160;</td><td class="fielddoc"><p>Audio Sink Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea940fad4b8dbb45d21c4f94b0c19257bd"></a>BTM_EIR_UUID_SERVCLASS_AUDIO_SINK&#160;</td><td class="fielddoc"><p>Audio Sink Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7af0a126788f101a830b3489291db38401"></a>BTM_EIR_UUID_SERVCLASS_AV_REM_CTRL_TARGET&#160;</td><td class="fielddoc"><p>AVRCP TG Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fceaf0a126788f101a830b3489291db38401"></a>BTM_EIR_UUID_SERVCLASS_AV_REM_CTRL_TARGET&#160;</td><td class="fielddoc"><p>AVRCP TG Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7acd4e8e3d63e1d455584fc29f38b9953e"></a>BTM_EIR_UUID_SERVCLASS_AV_REMOTE_CONTROL&#160;</td><td class="fielddoc"><p>AVRCP CT Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fceacd4e8e3d63e1d455584fc29f38b9953e"></a>BTM_EIR_UUID_SERVCLASS_AV_REMOTE_CONTROL&#160;</td><td class="fielddoc"><p>AVRCP CT Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a973e50c84c74bcd76559b3b9609e3224"></a>BTM_EIR_UUID_SERVCLASS_HEADSET_AUDIO_GATEWAY&#160;</td><td class="fielddoc"><p>Headset AG Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea973e50c84c74bcd76559b3b9609e3224"></a>BTM_EIR_UUID_SERVCLASS_HEADSET_AUDIO_GATEWAY&#160;</td><td class="fielddoc"><p>Headset AG Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a8429a4ed50ce9a09ccd450c53c869f2e"></a>BTM_EIR_UUID_SERVCLASS_DIRECT_PRINTING&#160;</td><td class="fielddoc"><p>Direct Printing Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea8429a4ed50ce9a09ccd450c53c869f2e"></a>BTM_EIR_UUID_SERVCLASS_DIRECT_PRINTING&#160;</td><td class="fielddoc"><p>Direct Printing Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a11c1034576c1206581dcab078e444e61"></a>BTM_EIR_UUID_SERVCLASS_HF_HANDSFREE&#160;</td><td class="fielddoc"><p>HF Handsfree Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea11c1034576c1206581dcab078e444e61"></a>BTM_EIR_UUID_SERVCLASS_HF_HANDSFREE&#160;</td><td class="fielddoc"><p>HF Handsfree Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7af8013951f00c6415f6a1da1c068d23e4"></a>BTM_EIR_UUID_SERVCLASS_AG_HANDSFREE&#160;</td><td class="fielddoc"><p>AG Handsfree Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fceaf8013951f00c6415f6a1da1c068d23e4"></a>BTM_EIR_UUID_SERVCLASS_AG_HANDSFREE&#160;</td><td class="fielddoc"><p>AG Handsfree Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a5700116ead84ad022597ddfccafa01a3"></a>BTM_EIR_UUID_SERVCLASS_HUMAN_INTERFACE&#160;</td><td class="fielddoc"><p>Human Interface Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea5700116ead84ad022597ddfccafa01a3"></a>BTM_EIR_UUID_SERVCLASS_HUMAN_INTERFACE&#160;</td><td class="fielddoc"><p>Human Interface Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a87ebd0118bbee3af9e1cf298dd5c7d71"></a>BTM_EIR_UUID_SERVCLASS_SAP&#160;</td><td class="fielddoc"><p>SAP Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea87ebd0118bbee3af9e1cf298dd5c7d71"></a>BTM_EIR_UUID_SERVCLASS_SAP&#160;</td><td class="fielddoc"><p>SAP Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7afa7da2a3d03c1a84bb1abcc3720d6308"></a>BTM_EIR_UUID_SERVCLASS_PBAP_PCE&#160;</td><td class="fielddoc"><p>PBAP PCE Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fceafa7da2a3d03c1a84bb1abcc3720d6308"></a>BTM_EIR_UUID_SERVCLASS_PBAP_PCE&#160;</td><td class="fielddoc"><p>PBAP PCE Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a573fb0eae64fbe9fdb6e00d281cd308b"></a>BTM_EIR_UUID_SERVCLASS_PBAP_PSE&#160;</td><td class="fielddoc"><p>PBAP PSE Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea573fb0eae64fbe9fdb6e00d281cd308b"></a>BTM_EIR_UUID_SERVCLASS_PBAP_PSE&#160;</td><td class="fielddoc"><p>PBAP PSE Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7abc49f57bc65fcf3e6234d8cda4f81011"></a>BTM_EIR_UUID_SERVCLASS_PHONE_ACCESS&#160;</td><td class="fielddoc"><p>Phone Access Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fceabc49f57bc65fcf3e6234d8cda4f81011"></a>BTM_EIR_UUID_SERVCLASS_PHONE_ACCESS&#160;</td><td class="fielddoc"><p>Phone Access Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a65bfea607e3e7bc685690fd1da63d1ee"></a>BTM_EIR_UUID_SERVCLASS_HEADSET_HS&#160;</td><td class="fielddoc"><p>Headset HS Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea65bfea607e3e7bc685690fd1da63d1ee"></a>BTM_EIR_UUID_SERVCLASS_HEADSET_HS&#160;</td><td class="fielddoc"><p>Headset HS Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a1836194236278122478a67eb221fdfcb"></a>BTM_EIR_UUID_SERVCLASS_PNP_INFORMATION&#160;</td><td class="fielddoc"><p>PNP Information Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea1836194236278122478a67eb221fdfcb"></a>BTM_EIR_UUID_SERVCLASS_PNP_INFORMATION&#160;</td><td class="fielddoc"><p>PNP Information Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a1719d2c7eb12405b5fcf2bb266a1ab2e"></a>BTM_EIR_UUID_SERVCLASS_MESSAGE_ACCESS&#160;</td><td class="fielddoc"><p>Message Access Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea1719d2c7eb12405b5fcf2bb266a1ab2e"></a>BTM_EIR_UUID_SERVCLASS_MESSAGE_ACCESS&#160;</td><td class="fielddoc"><p>Message Access Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a4b42112907efb48e35535ae6e1cd4aaa"></a>BTM_EIR_UUID_SERVCLASS_MESSAGE_NOTIFICATION&#160;</td><td class="fielddoc"><p>Message Notification Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea4b42112907efb48e35535ae6e1cd4aaa"></a>BTM_EIR_UUID_SERVCLASS_MESSAGE_NOTIFICATION&#160;</td><td class="fielddoc"><p>Message Notification Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a095dae40f77233162859ad3fa16b22ba"></a>BTM_EIR_UUID_SERVCLASS_HDP_SOURCE&#160;</td><td class="fielddoc"><p>HDP Source Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea095dae40f77233162859ad3fa16b22ba"></a>BTM_EIR_UUID_SERVCLASS_HDP_SOURCE&#160;</td><td class="fielddoc"><p>HDP Source Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a8f314d97e135e0a51317c58428d0a581"></a>BTM_EIR_UUID_SERVCLASS_HDP_SINK&#160;</td><td class="fielddoc"><p>HDP Sink Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea8f314d97e135e0a51317c58428d0a581"></a>BTM_EIR_UUID_SERVCLASS_HDP_SINK&#160;</td><td class="fielddoc"><p>HDP Sink Service Index. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggadf764cbdea00d65edcd07bb9953ad2b7a98e55b0924c25493b462eb5924d28729"></a>BTM_EIR_MAX_SERVICES&#160;</td><td class="fielddoc"><p>Max Service Index. </p>
+<tr><td class="fieldname"><a id="ggaaf105ae5beaca1dee30ae54530691fcea98e55b0924c25493b462eb5924d28729"></a>BTM_EIR_MAX_SERVICES&#160;</td><td class="fielddoc"><p>Max Service Index. </p>
 </td></tr>
 </table>
 
@@ -1913,12 +1937,10 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 <p>Event data: <a class="el" href="structwiced__bt__dev__name__and__class__t.html" title="Remote device information (used by BTM_PIN_REQUEST_EVT, BTM_SECURITY_ABORTED_EVT)">wiced_bt_dev_name_and_class_t</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65ae3453acd1e9a4c6b87ecb92186dcdb43"></a>BTM_READ_LOCAL_OOB_DATA_COMPLETE_EVT&#160;</td><td class="fielddoc"><p>Result of reading local OOB data <a class="el" href="group__br__edr__sec__api__functions.html#gab58690ef6801533d17516e4a4a2ce457" title="Read the local OOB data from controller (for sending to peer device over oob message).">wiced_bt_dev_read_local_oob_data</a>). </p>
-<p>Event data: <a class="el" href="structwiced__bt__dev__local__oob__t.html" title="Local OOB data BTM_READ_LOCAL_OOB_DATA_COMPLETE_EVT.">wiced_bt_dev_local_oob_t</a></p>
-<dl class="section note"><dt>Note</dt><dd>BR/EDR Only </dd></dl>
+<p>Event data: <a class="el" href="structwiced__bt__dev__local__oob__t.html" title="Local OOB data BTM_READ_LOCAL_OOB_DATA_COMPLETE_EVT.">wiced_bt_dev_local_oob_t</a> </p><dl class="section note"><dt>Note</dt><dd>BR/EDR Only </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65acf3aca6c8fd4e53a7659df498546a103"></a>BTM_REMOTE_OOB_DATA_REQUEST_EVT&#160;</td><td class="fielddoc"><p>OOB data from remote device <a class="el" href="group__br__edr__sec__api__functions.html#ga044c342a9dae8be624d64761d0016001" title="Provide the remote OOB extended data for Simple Pairing in response to BTM_REMOTE_OOB_DATA_REQUEST_EV...">wiced_bt_dev_remote_oob_data_reply</a>). </p>
-<p>Event data: <a class="el" href="structwiced__bt__dev__remote__oob__t.html" title="BTM_REMOTE_OOB_DATA_REQUEST_EVT.">wiced_bt_dev_remote_oob_t</a></p>
-<dl class="section note"><dt>Note</dt><dd>BR/EDR Only </dd></dl>
+<p>Event data: <a class="el" href="structwiced__bt__dev__remote__oob__t.html" title="BTM_REMOTE_OOB_DATA_REQUEST_EVT.">wiced_bt_dev_remote_oob_t</a> </p><dl class="section note"><dt>Note</dt><dd>BR/EDR Only </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a82fac714cbb4652d374bfaf8c71e6e9c"></a>BTM_PAIRED_DEVICE_LINK_KEYS_UPDATE_EVT&#160;</td><td class="fielddoc"><p>Updated remote device link keys (store device_link_keys to NV memory). </p>
 <p>This is the place to verify that the correct link key has been generated. Event data: <a class="el" href="structwiced__bt__device__link__keys__t.html" title="Paired device link key notification (used by BTM_PAIRED_DEVICE_LINK_KEYS_UPDATE_EVT notication)">wiced_bt_device_link_keys_t</a> </p>
@@ -1993,6 +2015,30 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 <tr><td class="fieldname"><a id="ggad3ae6f503bc223e42c68e23a701af1e2a27979cdaa41b12c4e98e4ef0e799f038"></a>WICED_READ_LINK_QUALITY_STATS&#160;</td><td class="fielddoc"><p>read link quality stats </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggad3ae6f503bc223e42c68e23a701af1e2af3987d2d1514c0624627486fa0df50b8"></a>WICED_READ_THEN_CLEAR_LINK_QUALITY_STATS&#160;</td><td class="fielddoc"><p>read then clear link quality stats </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga5ac33b180c10d23690c1bf22363f0e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ac33b180c10d23690c1bf22363f0e56">&#9670;&nbsp;</a></span>wiced_bt_link_policy_settings_values_e</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__wicedbt___device_management.html#ga5ac33b180c10d23690c1bf22363f0e56">wiced_bt_link_policy_settings_values_e</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>.Enumeration of known link policy settings value assignments of the wiced_bt_link_policy_settings_t </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5ac33b180c10d23690c1bf22363f0e56ac075635990b3eacb973b38e77f49f323"></a>WICED_ENABLE_MASTER_SLAVE_SWITCH&#160;</td><td class="fielddoc"><p>Enable Role Switch. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ac33b180c10d23690c1bf22363f0e56a95e2734d3f358a0e424cc756dc043553"></a>WICED_ENABLE_HOLD_MODE&#160;</td><td class="fielddoc"><p>Enable Hold mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ac33b180c10d23690c1bf22363f0e56a848cbf49ea19e57a20dd6caad4dd04f4"></a>WICED_ENABLE_SNIFF_MODE&#160;</td><td class="fielddoc"><p>Enable Sniff mode. </p>
 </td></tr>
 </table>
 
@@ -2079,6 +2125,14 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 <tr><td class="fieldname"><a id="ggaa76569d7be1ed9ff5262e81b3b651325a5a9e9d392ad933c7a1892d4cf2060e3b"></a>HCI_TRACE_INCOMING_ACL_DATA&#160;</td><td class="fielddoc"><p>HCI incoming acl data. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa76569d7be1ed9ff5262e81b3b651325a9d17dfd997e959ada7cc24536962585e"></a>HCI_TRACE_OUTGOING_ACL_DATA&#160;</td><td class="fielddoc"><p>HCI outgoing acl data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa76569d7be1ed9ff5262e81b3b651325aaaaf027672e988fe5312fe012a65abe6"></a>HCI_TRACE_INCOMING_ISO_DATA&#160;</td><td class="fielddoc"><p>HCI incoming ISO data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa76569d7be1ed9ff5262e81b3b651325a21f88d5494c31542fa2b2be2900494fb"></a>HCI_TRACE_OUTGOING_ISO_DATA&#160;</td><td class="fielddoc"><p>HCI outgoing ISO data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa76569d7be1ed9ff5262e81b3b651325ad827fa21b9e5f3ccdecf458cea4bc28b"></a>HCI_TRACE_INCOMING_SCO_DATA&#160;</td><td class="fielddoc"><p>HCI incoming sco data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa76569d7be1ed9ff5262e81b3b651325ad19f09febc4f10b2928d87607fb83e8e"></a>HCI_TRACE_OUTGOING_SCO_DATA&#160;</td><td class="fielddoc"><p>HCI outgoing sco data. </p>
 </td></tr>
 </table>
 

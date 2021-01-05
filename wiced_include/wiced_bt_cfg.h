@@ -10,9 +10,7 @@
 
 #include "wiced_data_types.h"
 #include "wiced_bt_types.h"
-#include "wiced_bt_dev.h"
-#include "wiced_bt_ble.h"
-#include "wiced_bt_gatt.h"
+#include "gattdefs.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -21,7 +19,7 @@ extern "C" {
 /**
  * @addtogroup  wiced_bt_cfg Bluetooth Stack Initialize & Configuration
  *
- * 
+ *
  * This section describes API and Data structures required to initialize and configure the BT-Stack.
  *
  * @{
@@ -51,8 +49,8 @@ extern "C" {
 #define WICED_BT_CFG_DEFAULT_HIGH_DUTY_CONN_SCAN_WINDOW             48          /**< High duty cycle connection scan window (in slots (1 slot = 0.625 ms)) */
 #define WICED_BT_CFG_DEFAULT_LOW_DUTY_CONN_SCAN_INTERVAL            2048        /**< Low duty cycle connection scan interval (in slots (1 slot = 0.625 ms)) */
 #define WICED_BT_CFG_DEFAULT_LOW_DUTY_CONN_SCAN_WINDOW              18          /**< Low duty cycle connection scan window (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_CONN_MIN_INTERVAL                      24          /**< Minimum connection event interval ( in 1.25 msec) */
-#define WICED_BT_CFG_DEFAULT_CONN_MAX_INTERVAL                      40          /**< Maximum connection event interval ( in 1.25 msec) */
+#define WICED_BT_CFG_DEFAULT_CONN_MIN_INTERVAL                      80          /**< Minimum connection event interval ( in 1.25 msec) */
+#define WICED_BT_CFG_DEFAULT_CONN_MAX_INTERVAL                      80          /**< Maximum connection event interval ( in 1.25 msec) */
 #define WICED_BT_CFG_DEFAULT_CONN_LATENCY                           0           /**< Connection latency (in number of LL connection events) */
 #define WICED_BT_CFG_DEFAULT_CONN_SUPERVISION_TIMEOUT               700         /**< Connection link supervsion timeout (in 10 msec) */
 
@@ -79,6 +77,8 @@ extern "C" {
 #define WICED_BT_CFG_DEFAULT_RANDOM_ADDRESS_NEVER_CHANGE            0          /**< value for disabling random address refresh */
 
 #define WICED_BT_CFG_DEFAULT_STACK_SCRATCH_SIZE                     (2*1024)    /**< Default size of stack transient memory */
+
+#define WICED_BT_CFG_DEFAULT_MAX_APP_DTCB_COUNT                     10          /**< Default count of maximum allowed appp DTCB */
 /** @} WICED_DEFAULT_CFG_VALUES */
 
 /*****************************************************************************
@@ -96,6 +96,15 @@ typedef struct
     uint16_t                            page_scan_interval;             /**< Page scan interval (in slots (1 slot = 0.625 ms)) (default: #WICED_BT_CFG_DEFAULT_PAGE_SCAN_INTERVAL) */
     uint16_t                            page_scan_window;               /**< Page scan window (in slots (1 slot = 0.625 ms)) (default: #WICED_BT_CFG_DEFAULT_PAGE_SCAN_WINDOW) */
 } wiced_bt_cfg_br_edr_scan_settings_t;
+
+/** Scan modes */
+enum wiced_bt_ble_scan_mode_e
+{
+    BTM_BLE_SCAN_MODE_PASSIVE = 0,  /**< Passive scan mode */
+    BTM_BLE_SCAN_MODE_ACTIVE = 1,   /**< Active scan mode */
+    BTM_BLE_SCAN_MODE_NONE = 0xff   /**< None */
+};
+typedef uint8_t wiced_bt_ble_scan_mode_t;   /**< scan mode (see #wiced_bt_ble_scan_mode_e) */
 
 /** LE Scan settings */
 typedef struct
@@ -127,6 +136,15 @@ typedef struct
     uint16_t                            conn_supervision_timeout;           /**< Connection link supervision timeout (in 10 msec) (default: #WICED_BT_CFG_DEFAULT_CONN_SUPERVISION_TIMEOUT) */
 } wiced_bt_cfg_ble_scan_settings_t;
 
+/** advertising channel map */
+enum wiced_bt_ble_advert_chnl_map_e
+{
+    BTM_BLE_ADVERT_CHNL_37 = (0x01 << 0),  /**< ADV channel */
+    BTM_BLE_ADVERT_CHNL_38 = (0x01 << 1),  /**< ADV channel */
+    BTM_BLE_ADVERT_CHNL_39 = (0x01 << 2)   /**< ADV channel */
+};
+typedef uint8_t wiced_bt_ble_advert_chnl_map_t;  /**< BLE advertisement channel map (see #wiced_bt_ble_advert_chnl_map_e) */
+
 /** Advertising settings */
 typedef struct
 {
@@ -157,6 +175,8 @@ typedef struct
 
 } wiced_bt_cfg_ble_advert_settings_t;
 
+typedef uint16_t wiced_bt_gatt_appearance_t;     /**< GATT appearance (see gatt_appearance_e in gattdefs.h) */
+
 /** GATT settings */
 typedef struct
 {
@@ -186,7 +206,9 @@ typedef struct
     /* LE L2cap fixed channel configuration */
     uint8_t                             max_le_l2cap_fixed_channels;    /**< Maximum number of application managed fixed channels supported (in addition to mandatory channels 4, 5 and 6). > */
 
-    /* L2CAP Max Rx MTU for any protocol or profile. MUST at least GATT max_mtu_size  */
+    /* L2CAP Max Rx MTU for any protocol or profile. MUST at least GATT max_mtu_size
+     * Should be a minimum of 70
+     */
     uint16_t                            max_rx_mtu;                     /**< Maximum RX MTU allowed */
 
                                                                         /* L2CAP ERTM configuration */
@@ -227,6 +249,8 @@ typedef struct
 {
     uint8_t                             max_cis_conn;                   /**< Max Number of CIS connections */
     uint8_t                             max_cig_count;                  /**< Max Number of CIG connections */
+    uint16_t                            max_sdu_size;
+    uint8_t                             max_buffers_per_cis;
 }wiced_bt_cfg_isoc_t;
 
 /** Bluetooth stack configuration */
@@ -263,7 +287,7 @@ typedef struct wiced_bt_cfg_settings_t_
     uint8_t                             addr_resolution_db_size;        /**< LE Address Resolution DB settings - effective only for pre 4.2 controller*/
 
     /* Interval of  random address refreshing */
-    uint16_t                            rpa_refresh_timeout;            /**< Interval of  random address refreshing - secs */
+    uint16_t                            rpa_refresh_timeout;            /**< Interval of  random address refreshing - secs  @note BLE Privacy is disabled if the value is 0. */
 
     uint16_t                            stack_scratch_size;             /**< Memory area reserved for the stack transient memory requirements (default: WICED_BT_CFG_DEFAULT_STACK_SCRATCH_SIZE) */
 
@@ -274,6 +298,7 @@ typedef struct wiced_bt_cfg_settings_t_
 
     uint8_t                             num_vse_callbacks;              /**< set to num of vendor specific callbacks to handle, typically 0 */
     wiced_bt_cfg_isoc_t                 isoc_cfg;                       /**< Ischoronous Connection configuration */
+    uint8_t                             max_num_app_dtcb;               /**< Max number of APP DTCB */
 } wiced_bt_cfg_settings_t;
 
 /**

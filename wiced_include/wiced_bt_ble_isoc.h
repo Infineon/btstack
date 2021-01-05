@@ -56,24 +56,24 @@ typedef uint8_t wiced_bt_ble_isoc_framing_t; /**< ISOC Framing types (see #wiced
 /** ISOC LE PHY */
 enum wiced_bt_ble_isoc_phy_e
 {
-    WICED_BLE_ISOC_LE_1M_PHY = 0,
-    WICED_BLE_ISOC_LE_2M_PHY = 1,
-    WICED_BLE_ISOC_LE_CODED  = 2,
+    WICED_BLE_ISOC_LE_1M_PHY = 1,
+    WICED_BLE_ISOC_LE_2M_PHY = 2,
+    WICED_BLE_ISOC_LE_CODED  = 4,
 };
 typedef uint8_t wiced_bt_ble_isoc_phy_t; /**< ISOC LE PHY (see #wiced_bt_ble_isoc_phy_e) */
 
 /** ISOC Events */
 enum wiced_bt_ble_isoc_event_e
 {
-    WICED_BLE_ISOC_CIG_CMD_RSP,             /**< CIG Command Response */
-    WICED_BLE_ISOC_CIS_REQUEST,             /**< CIS connection Requested */
-    WICED_BLE_ISOC_CIS_ESTABLISHED,         /**< CIS connection established */
-    WICED_BLE_ISOC_SLAVE_CLOCK_ACCURACY,    /**< Slave Clock Accuracy */
-    WICED_BLE_ISOC_CIS_DISCONNECTED,        /**< CIS disconnected */
-    WICED_BLE_ISOC_BIG_CREATED,             /**< BIG Connected */
-    WICED_BLE_ISOC_BIG_SYNC_ESTABLISHED,    /**< BIG Sync Established */
-    WICED_BLE_ISOC_BIG_TERMINATED,          /**< BIG Terminated */
-    WICED_BLE_ISOC_BIG_SYNC_LOST            /**< BIG Sync Lost */
+    WICED_BLE_ISOC_SET_CIG_CMD_COMPLETE, /**< CIG Command Response */
+    WICED_BLE_ISOC_CIS_REQUEST,          /**< CIS connection Requested */
+    WICED_BLE_ISOC_CIS_ESTABLISHED,      /**< CIS connection established */
+    WICED_BLE_ISOC_SLAVE_CLOCK_ACCURACY, /**< Slave Clock Accuracy */
+    WICED_BLE_ISOC_CIS_DISCONNECTED,     /**< CIS disconnected */
+    WICED_BLE_ISOC_BIG_CREATED,          /**< BIG Connected */
+    WICED_BLE_ISOC_BIG_SYNC_ESTABLISHED, /**< BIG Sync Established */
+    WICED_BLE_ISOC_BIG_TERMINATED,       /**< BIG Terminated */
+    WICED_BLE_ISOC_BIG_SYNC_LOST         /**< BIG Sync Lost */
 };
 typedef uint8_t wiced_bt_ble_isoc_event_t; /**< ISOC Events (see #wiced_bt_ble_isoc_event_e) */
 
@@ -119,8 +119,8 @@ typedef struct
     uint8_t        status;                       /**< CIG Establishment Status */
     uint8_t        cig_id;                       /**< CIG ID */
     uint8_t        cis_count;                    /**< CIS Count */
-    uint8_t        *cis_id_list;                 /**< CIS ID List */ 
-    uint16_t       *cis_connection_handle_list;  /**< CIS Connection Handle List */ 
+    uint8_t        *cis_id_list;                 /**< CIS ID List */
+    uint16_t       *cis_connection_handle_list;  /**< CIS Connection Handle List */
 }wiced_ble_isoc_cig_status_data_t;
 
 /** ISOC Peer Slave Clock Accuracy data */
@@ -142,12 +142,12 @@ typedef union
 }wiced_bt_ble_isoc_event_data_t;
 
 /** ISOC CIS Configuration */
-typedef struct 
+typedef struct
 {
     uint8_t                     cis_id;           /**< CIS Id : ZERO if not created*/
-    uint16_t                    max_sdu_m_to_s;   /**< Maximum size, in bytes, of an SDU from the master’s Host 
+    uint16_t                    max_sdu_m_to_s;   /**< Maximum size, in bytes, of an SDU from the master’s Host
                                                        Valid Range 0x000 to 0xFFF*/
-    uint16_t                    max_sdu_s_to_m;   /**< Maximum size, in octets, of an SDU from the slave’s Host 
+    uint16_t                    max_sdu_s_to_m;   /**< Maximum size, in octets, of an SDU from the slave’s Host
                                                        Valid Range 0x000 to 0xFFF*/
     wiced_bt_ble_isoc_phy_t     phy_m_to_s;       /**< The transmitter PHY of packets from the master */
     wiced_bt_ble_isoc_phy_t     phy_s_to_m;       /**< The transmitter PHY of packets from the slave */
@@ -162,14 +162,57 @@ typedef struct
     uint32_t                    sdu_interval_m_to_s;        /**< Time interval in microseconds between the start of consecutive SDUs from the master’s Host for all the CISes in the CIG */
     uint32_t                    sdu_interval_s_to_m;        /**< Time interval in microseconds between the start of consecutive SDUs from the slave’s Host for all the CISes in the CIG. */
     uint8_t                     slave_clock_accuracy;       /**< Slave Clock Accuracy */
-    uint32_t                    max_trans_latency_m_to_s;   /**< Maximum time, in microseconds, for an SDU to be transported from the master Controller to slave Controller */
-    uint32_t                    max_trans_latency_s_to_m;   /**< Maximum time, in microseconds, for an SDU to be transported from the slave Controller to master Controller */
+    uint16_t                    max_trans_latency_m_to_s;   /**< Maximum time, in microseconds, for an SDU to be transported from the master Controller to slave Controller */
+    uint16_t                    max_trans_latency_s_to_m;   /**< Maximum time, in microseconds, for an SDU to be transported from the slave Controller to master Controller */
     wiced_bt_ble_isoc_packing_t packing;                    /**< Packing method  */
     wiced_bt_ble_isoc_framing_t framing;                    /**< Framing parameter */
-    uint8_t                     cis_count;                  /**< Total number of CISes in the CIG being added or modified 
+    uint8_t                     cis_count;                  /**< Total number of CISes in the CIG being added or modified
                                                                   Valid Range 0x00 to 0x10 */
     wiced_bt_ble_cis_config_t   *cis_config_list;           /**< CIS configurations */
 }wiced_bt_ble_cig_param_t;
+
+typedef struct
+{
+    uint8_t cis_id;                     /**< CIS Id : ZERO if not created*/
+    uint8_t nse;                        /**< Maximum number of subevents in each CIS event */
+    uint16_t max_sdu_m_to_s;            /**< Maximum size, in bytes, of an SDU from the master’s Host Valid Range 0x000 to 0xFFF*/
+    uint16_t max_sdu_s_to_m;            /**< Maximum size, in octets, of an SDU from the slave’s Host Valid Range 0x000 to 0xFFF*/
+    uint16_t max_pdu_m_to_s;            /**< Maximum size, in bytes, of an SDU from the master’s Host Valid Range 0x000 to 0xFFF*/
+    uint16_t max_pdu_s_to_m;            /**< Maximum size, in octets, of an SDU from the slave’s Host Valid Range 0x000 to 0xFFF*/
+    wiced_bt_ble_isoc_phy_t phy_m_to_s; /**< The transmitter PHY of packets from the master */
+    wiced_bt_ble_isoc_phy_t phy_s_to_m; /**< The transmitter PHY of packets from the slave */
+    uint8_t bn_m_to_s;                  /**< Maximum number of times every CIS Data PDU should be retransmitted from the master to slave */
+    uint8_t bn_s_to_m;                  /**< Maximum number of times every CIS Data PDU should be retransmitted from the slave to master */
+} wiced_bt_ble_cis_config_test_t;
+
+typedef struct
+{
+    uint8_t cig_id;               /**< CIG ID if known */
+    uint32_t sdu_interval_m_to_s; /**< Time interval in microseconds between the start of consecutive SDUs from the master’s Host for all the CISes in the CIG */
+    uint32_t sdu_interval_s_to_m; /**< Time interval in microseconds between the start of consecutive SDUs from the slave’s Host for all the CISes in the CIG. */
+    uint8_t ft_m_to_s;            /**< The flush timeout in multiples of ISO_Interval for each payload sent from the master to slave. */
+    uint8_t ft_s_to_m;            /**< The flush timeout in multiples of ISO_Interval for each payload sent from the slave to master. */
+    uint16_t iso_interval;        /**< Time between consecutive CIS anchor points */
+    uint8_t slave_clock_accuracy;               /**< Slave Clock Accuracy */
+    wiced_bt_ble_isoc_packing_t packing;        /**< Packing method  */
+    wiced_bt_ble_isoc_framing_t framing;        /**< Framing parameter */
+    uint8_t cis_count;                          /**< Total number of CISes in the CIG being added or modified Valid Range 0x00 to 0x10 */
+    wiced_bt_ble_cis_config_test_t *cis_config_list; /**< CIS configurations */
+} wiced_bt_ble_cig_param_test_t;
+
+typedef struct
+{
+    uint8_t cis_count;
+    uint16_t *cis_handle_list;
+    uint16_t *acl_handle_list;
+} wiced_bt_ble_isoc_create_cis_param_t;
+
+typedef struct
+{
+    wiced_bt_ble_cig_param_t *p_cig_param;
+    wiced_bt_ble_cig_param_test_t *p_cig_param_test;
+    wiced_bt_ble_isoc_create_cis_param_t *p_cis_param;
+} wiced_bt_ble_isoc_params_t;
 
 /******************************************************
  *               Function Declarations
@@ -232,11 +275,24 @@ wiced_result_t wiced_ble_isoc_set_cig_param(wiced_bt_ble_cig_param_t *cig_params
 
 /**
  *
+ * Function         wiced_ble_isoc_set_cig_param_test
+ *
+ *                  Set CIG(Connected Isochronous Group) parameter
+ *
+ * @param[in]       cig_params  : CIG parameter
+ *
+ * @return      status
+ *
+ */
+wiced_result_t wiced_ble_isoc_set_cig_param_test(wiced_bt_ble_cig_param_test_t *cig_params);
+
+/**
+ *
  * Function         wiced_ble_isoc_create_cis
  *
  *                  This API is invoked to create one or more CIS channels
  *
- * @param[in]       cis_count        : Number of elements in CIS handle list and ACL handle list. 
+ * @param[in]       cis_count        : Number of elements in CIS handle list and ACL handle list.
  *                                     These lists must be of the same length
  * @param[in]       cis_handle_list  : List of connection handles of the cis to be established
  * @param[in]       acl_handle_list  : ACL connection handle associated with the cis handles.
@@ -246,7 +302,7 @@ wiced_result_t wiced_ble_isoc_set_cig_param(wiced_bt_ble_cig_param_t *cig_params
  *
  *  Note : Once CIS is establish WICED_BLE_ISOC_CIS_ESTABLISHED event will be received in registered application callback.
  */
-wiced_result_t wiced_ble_isoc_create_cis(uint8_t cis_count, uint16_t *cis_handle_list, uint16_t *acl_handle_list);
+wiced_result_t wiced_ble_isoc_create_cis(wiced_bt_ble_isoc_create_cis_param_t *create_cis_param);
 
 /**
  *
@@ -255,12 +311,13 @@ wiced_result_t wiced_ble_isoc_create_cis(uint8_t cis_count, uint16_t *cis_handle
  *                  Create CIS (Connected Isochronous Stream) connection
  *
  * @param[in]       peer_bda        : Peer Bluetooth Address
+ * @param[in]       cis_handle      : CIS handle
  *
  * @return      status
  *
  *  Note : Once CIS is establish WICED_BLE_ISOC_CIS_ESTABLISHED event will be received in registered application callback.
  */
-wiced_result_t wiced_ble_isoc_create_cis_by_bda(wiced_bt_device_address_t peer_bda);
+wiced_result_t wiced_ble_isoc_create_cis_by_bda(wiced_bt_device_address_t peer_bda, uint16_t cis_handle);
 
 /**
  *
@@ -329,9 +386,25 @@ wiced_result_t wiced_ble_isoc_request_peer_sca(wiced_bt_device_address_t peer_bd
  * @param[in]       cig_id  : CIG ID
  *
  * @return      status
- *
  */
 wiced_result_t wiced_ble_isoc_remove_cig(uint8_t cig_id);
+
+/**
+ * wiced_ble_isoc_get_psn_by_cis_handle
+ *
+ * @param[in]       handle  : CIS handle
+ * @return      packet sequence number
+ */
+uint16_t wiced_ble_isoc_get_psn_by_cis_handle(uint16_t handle);
+
+/**
+ * wiced_ble_find_cis_by_cis_handle
+ *
+ * @param[in]       handle  : CIS handle
+ * @return     TRUE if CIS exists
+ */
+wiced_bool_t wiced_ble_find_cis_by_cis_handle(uint16_t handle);
+
 /**@} wicedbt_isoc_functions */
 
 #ifdef __cplusplus

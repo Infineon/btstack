@@ -93,7 +93,7 @@ typedef uint8_t wiced_bt_db_hash_t[BT_DB_HASH_LEN]; /**< BLE database hash */
 
 #define WICED_BT_GATT_CLIENT_SUPPORTED_FEATURE_OCTET_LEN 1  /**< GATT Client Supported feature length */
 /** GATT Client Support features */
-typedef uint8_t wiced_bt_gatt_db_client_supported_feature_t[WICED_BT_GATT_CLIENT_SUPPORTED_FEATURE_OCTET_LEN];
+typedef uint8_t wiced_bt_gatt_client_supported_features_t[WICED_BT_GATT_CLIENT_SUPPORTED_FEATURE_OCTET_LEN];
 
 /** UUID Type */
 typedef struct
@@ -102,7 +102,7 @@ typedef struct
 #define LEN_UUID_32     4   /**< 4 Byte UUID */
 #define LEN_UUID_128    16  /**< 16 Byte UUID */
 
-    uint16_t        len;     /**< UUID length */
+    uint8_t        len;     /**< UUID length */
 
     /** UUID Data */
     union
@@ -232,7 +232,9 @@ typedef struct
 /** Covert Device class to Stream array */
 #define DEVCLASS_TO_STREAM(p, a) {register int ijk; for (ijk = 0; ijk < DEV_CLASS_LEN;ijk++) *(p)++ = (uint8_t) a[DEV_CLASS_LEN - 1 - ijk];}
 /** Covert array to Stream array */
-#define ARRAY_TO_STREAM(p, a, len) {register int ijk; for (ijk = 0; ijk < len;        ijk++) *(p)++ = (uint8_t) a[ijk];}
+#ifndef ARRAY_TO_STREAM
+#define ARRAY_TO_STREAM(p, a, len) {register int ijk; for (ijk = 0; ijk < len;        ijk++) *(p)++ = (uint8_t) ((uint8_t *)a)[ijk];}
+#endif
 /** Reverse Array */
 #define REVERSE_ARRAY_TO_STREAM(p, a, len)  {register int ijk; for (ijk = 0; ijk < len; ijk++) *(p)++ = (uint8_t) a[len - 1 - ijk];}
 /** Convert byte stream to UINT24 */
@@ -384,6 +386,9 @@ extern uint8_t *BTU_copyStreamToBda(uint8_t *pBDA, uint8_t *pStream);
 /** Declare 4 byte align for GCC */
     #define WICED_DECLARE_ALIGNED4(datatype, var) datatype var __attribute__((aligned(4)))
 #endif
+
+/** get aligned size */
+#define ALIGN_SIZE(value,align_to) (((value) + (align_to) - 1) & ~((align_to) - 1))
 
 /** Wiced BT Trace Type */
 typedef enum {

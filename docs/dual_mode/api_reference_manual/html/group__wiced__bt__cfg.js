@@ -85,7 +85,9 @@ var group__wiced__bt__cfg =
     ] ],
     [ "wiced_bt_cfg_isoc_t", "structwiced__bt__cfg__isoc__t.html", [
       [ "max_cis_conn", "structwiced__bt__cfg__isoc__t.html#acc30abbd7e74e50fe8bde4a01a825177", null ],
-      [ "max_cig_count", "structwiced__bt__cfg__isoc__t.html#aa8c67e25a3fdb6a63bbf79989f03d527", null ]
+      [ "max_cig_count", "structwiced__bt__cfg__isoc__t.html#aa8c67e25a3fdb6a63bbf79989f03d527", null ],
+      [ "max_sdu_size", "structwiced__bt__cfg__isoc__t.html#a61dd17b5ad5735589ea54933f3a08491", null ],
+      [ "max_buffers_per_cis", "structwiced__bt__cfg__isoc__t.html#ab0328f82bcf4260c0e6b49b941abb5f1", null ]
     ] ],
     [ "wiced_bt_cfg_settings_t", "structwiced__bt__cfg__settings__t.html", [
       [ "device_name", "structwiced__bt__cfg__settings__t.html#acaf92b2fa126e8223877f3e1b49fe1df", null ],
@@ -107,7 +109,8 @@ var group__wiced__bt__cfg =
       [ "ble_white_list_size", "structwiced__bt__cfg__settings__t.html#a9f8e17bd1a8f6087f0ea19c1fc70df6a", null ],
       [ "default_ble_power_level", "structwiced__bt__cfg__settings__t.html#a9460835e8f42096d91e9f228bc1fb9c1", null ],
       [ "num_vse_callbacks", "structwiced__bt__cfg__settings__t.html#a34146a42d70fcc97a591d87d68b9097c", null ],
-      [ "isoc_cfg", "structwiced__bt__cfg__settings__t.html#a8081808c7b8cc2fe70596627c175f246", null ]
+      [ "isoc_cfg", "structwiced__bt__cfg__settings__t.html#a8081808c7b8cc2fe70596627c175f246", null ],
+      [ "max_num_app_dtcb", "structwiced__bt__cfg__settings__t.html#aa935523997302df019606e067670f92d", null ]
     ] ],
     [ "WICED_BT_CFG_DEFAULT_INQUIRY_SCAN_INTERVAL", "group__wiced__bt__cfg.html#ga8cf23a9fa2038a04b4f83b41b2f55417", null ],
     [ "WICED_BT_CFG_DEFAULT_INQUIRY_SCAN_WINDOW", "group__wiced__bt__cfg.html#ga20f05036891aa81dce002024987bf961", null ],
@@ -140,6 +143,20 @@ var group__wiced__bt__cfg =
     [ "WICED_BT_CFG_DEFAULT_RANDOM_ADDRESS_CHANGE_TIMEOUT", "group__wiced__bt__cfg.html#ga21a32d17d2059b14fd51ee79fddeb378", null ],
     [ "WICED_BT_CFG_DEFAULT_RANDOM_ADDRESS_NEVER_CHANGE", "group__wiced__bt__cfg.html#gaea1fbfd9165ebb7730bccec15d8a1226", null ],
     [ "WICED_BT_CFG_DEFAULT_STACK_SCRATCH_SIZE", "group__wiced__bt__cfg.html#ga834645db77338948d47ac3faf71c2081", null ],
+    [ "WICED_BT_CFG_DEFAULT_MAX_APP_DTCB_COUNT", "group__wiced__bt__cfg.html#ga32376fe8874fbc193c81460433e3053b", null ],
+    [ "wiced_bt_ble_scan_mode_t", "group__wiced__bt__cfg.html#ga9d259affd5bd1fad387ba32682faf346", null ],
+    [ "wiced_bt_ble_advert_chnl_map_t", "group__wiced__bt__cfg.html#ga9d58795bb527ae681bfa8135cc4b67e3", null ],
+    [ "wiced_bt_gatt_appearance_t", "group__wiced__bt__cfg.html#ga7a06e57f611b61b8ffdb245b23638b38", null ],
+    [ "wiced_bt_ble_scan_mode_e", "group__wiced__bt__cfg.html#ga363c245dbaa273d5d2a3df18f7f24c64", [
+      [ "BTM_BLE_SCAN_MODE_PASSIVE", "group__wiced__bt__cfg.html#gga363c245dbaa273d5d2a3df18f7f24c64a0283e0cf20a227a00c28896416382fb3", null ],
+      [ "BTM_BLE_SCAN_MODE_ACTIVE", "group__wiced__bt__cfg.html#gga363c245dbaa273d5d2a3df18f7f24c64a11e13ff43acd03c0ef9d869e17b6bf86", null ],
+      [ "BTM_BLE_SCAN_MODE_NONE", "group__wiced__bt__cfg.html#gga363c245dbaa273d5d2a3df18f7f24c64a985d759e30d319e92097e77dacc7d4fb", null ]
+    ] ],
+    [ "wiced_bt_ble_advert_chnl_map_e", "group__wiced__bt__cfg.html#ga59d79284e51421afdfc5e9c472adb49b", [
+      [ "BTM_BLE_ADVERT_CHNL_37", "group__wiced__bt__cfg.html#gga59d79284e51421afdfc5e9c472adb49baf0b671f9a97f2bc6b7f29c2ddf923241", null ],
+      [ "BTM_BLE_ADVERT_CHNL_38", "group__wiced__bt__cfg.html#gga59d79284e51421afdfc5e9c472adb49ba1dbf5bed2da5097c1336d2ace2613d82", null ],
+      [ "BTM_BLE_ADVERT_CHNL_39", "group__wiced__bt__cfg.html#gga59d79284e51421afdfc5e9c472adb49ba10bc047ce18009fdbfa65af43646757e", null ]
+    ] ],
     [ "wiced_bt_stack_get_dynamic_memory_size_for_config", "group__wiced__bt__cfg.html#gabdaddf0ee44203cafd1d65953768eef1", null ],
     [ "wiced_bt_stack_init", "group__wiced__bt__cfg.html#gabac5a1c3126b145f079c6797790844af", null ],
     [ "wiced_bt_stack_deinit", "group__wiced__bt__cfg.html#gaa7ee2ece60f1e4d174e85167c85377c7", null ]

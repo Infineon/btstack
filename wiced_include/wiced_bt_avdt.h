@@ -1060,3 +1060,4 @@ uint16_t wiced_bt_avdt_send_report(uint8_t handle, AVDT_REPORT_TYPE type,
  * @} wicedbt_avdt
  */
  /* @endcond*/
+
