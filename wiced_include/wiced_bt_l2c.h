@@ -102,7 +102,7 @@ typedef struct
     uint8_t  max_transmit;         /**< Maximum number of trasmission attempts */
     uint16_t rtrans_timeout_ms;    /**< Retransmission timeout (msecs) */
     uint16_t monitor_timeout_ms;   /**< Monitor timeout (msecs) */
-    uint16_t max_pdu_size;         /**< Maximum PDU payload size */
+    uint16_t max_rx_pdu_size;         /**< Maximum PDU payload size */
 } wiced_bt_l2cap_fcr_options_t;
 
 /** Define a structure to hold the configuration parameters. Since the
@@ -190,8 +190,8 @@ typedef uint16_t wiced_bt_l2cap_ch_cfg_bits_t;
  * @note \ref L2CAP_ROLE_SCATTERNET_ALLOWED bit is used to prevent l2CAP to Automatically perform role switch (for both Incoming and
  * outgoing) ACL connections.
  */
-#define L2CAP_ROLE_SLAVE                HCI_ROLE_SLAVE    /**< L2CAP Slave role */
-#define L2CAP_ROLE_MASTER               HCI_ROLE_MASTER   /**< L2CAP Master role */
+#define L2CAP_ROLE_PERIPHERAL           HCI_ROLE_PERIPHERAL /**< L2CAP Peripheral role */
+#define L2CAP_ROLE_CENTRAL              HCI_ROLE_CENTRAL    /**< L2CAP Central role */
 #define L2CAP_ROLE_ALLOW_SWITCH         0x80              /**< set this bit to allow switch at create conn */
 #define L2CAP_ROLE_DISALLOW_SWITCH      0x40              /**< set this bit to disallow switch at create conn */
 #define L2CAP_ROLE_CHECK_SWITCH         0xC0              /**< To check the switch to allow or disallow */
@@ -293,7 +293,7 @@ typedef void (wiced_bt_l2cap_connected_cback_t) (wiced_bt_device_address_t bd_ad
  *
  *  @return void
 */
-typedef void (wiced_bt_l2cap_disconnect_indication_cback_t) (uint16_t local_cid, wiced_bool_t ack);
+typedef void (wiced_bt_l2cap_disconnect_indication_cback_t) (uint16_t local_cid, uint16_t reason, wiced_bool_t ack);
 
 /**
  *  @brief  Disconnect confirm callback prototype.
@@ -350,15 +350,18 @@ typedef struct
     wiced_bt_l2cap_tx_complete_cback_t           *tx_complete_cback;            /**< BR/EDR transmit complete event */
 
     uint16_t                        mtu;                    /**< Maximum transmission unit size */
-    wiced_bool_t                    qos_present;            /**< QoS configuration present */
+
+    uint8_t security_required    ;  /**< Security requirement */
+    uint8_t qos_present          ;  /**< QoS configuration present */
+    uint8_t flush_timeout_present;  /**< TRUE if flush option present */
+    uint8_t fcs_present          ;  /**< TRUE if Frame check sequence option present */
+    uint8_t is_ob_only           ;  /**< Set to TRUE if registration is for outbound only to a dynamic PSM */
+
     wiced_bt_flow_spec_t            qos;                    /**< QoS configuration */
-    wiced_bool_t                    flush_timeout_present;  /**< TRUE if flush option present */
     uint16_t                        flush_timeout;          /**< Flush timeout value (1 msec increments) */
     uint8_t                         fcr_allowed_modes;      /**< Set to 0 or L2CAP_FCR_CHAN_OPT_BASIC for no FCR */
     wiced_bt_l2cap_fcr_options_t    fcr;                    /**< Enhanced flow control and retransmission parameters */
-    wiced_bool_t                    fcs_present;            /**< TRUE if Frame check sequence option present */
     uint8_t                         fcs;                    /**< '0' if desire is to bypass FCS, otherwise '1' */
-    wiced_bool_t                    is_ob_only;             /**< Set to TRUE if registration is for outbound only to a dynamic PSM */
 } wiced_bt_l2cap_appl_information_t;
 
 /*
@@ -457,14 +460,11 @@ typedef struct
 */
 typedef struct
 {
-    uint16_t                                        channel_id;               /**< Fixed channel ID */
-    uint8_t                                         in_use;                   /**< TRUE if channel is in use */
-    wiced_bt_l2cap_fixed_chnl_cback_t               *fixed_conn_cback;        /**< Connected callback */
-    wiced_bt_l2cap_fixed_data_cback_t               *fixed_data_cback;        /**< Data received callback */
-
-    uint16_t                                        default_idle_timeout;     /**< default idle timeout */
-    wiced_bt_l2cap_tx_complete_cback_t              *fixed_tx_complete_cback; /**< TX complete callback */
-    void                                            *context;                 /**< Upper layer context */
+    uint16_t                            channel_id;               /**< Fixed channel ID */
+    uint16_t                            default_idle_timeout;     /**< default idle timeout */
+    wiced_bt_l2cap_fixed_chnl_cback_t   *fixed_conn_cback;        /**< Connected callback */
+    wiced_bt_l2cap_fixed_data_cback_t   *fixed_data_cback;        /**< Data received callback */
+    wiced_bt_l2cap_tx_complete_cback_t  *fixed_tx_complete_cback; /**< TX complete callback */
 } wiced_bt_l2cap_fixed_chnl_reg_t;
 
 #ifdef __cplusplus
@@ -553,7 +553,7 @@ wiced_bool_t wiced_bt_l2cap_remove_fixed_chnl (uint16_t fixed_cid, wiced_bt_devi
  *  @param[in]      rem_bda         : Remote BD address
  *  @param[in]      fixed_cid       : Fixed CID
  *  @param[in]      idle_timeout    : Idle timeout
- * 
+ *
  *  @return         TRUE if command succeeded, FALSE if failed
  */
 wiced_bool_t wiced_bt_l2cap_set_fixed_channel_timeout (wiced_bt_device_address_t rem_bda, uint16_t fixed_cid, uint16_t idle_timeout);
@@ -790,7 +790,7 @@ wiced_bool_t wiced_bt_l2cap_register_ertm_drb (uint16_t lcid, tDRB *p_drb, uint1
  *              If the new role is L2CAP_ROLE_DISALLOW_SWITCH, do not allow switch on
  *              HciCreateConnection.
  *
- *              If the new role is a valid role (HCI_ROLE_MASTER or HCI_ROLE_SLAVE),
+ *              If the new role is a valid role (HCI_ROLE_CENTRAL or HCI_ROLE_PERIPHERAL),
  *              the desire role is set to the new value. Otherwise, it is not changed.
  *
  *  @param[in]  new_role    : New role value. Refer \ref L2CAP_ROLE "L2CAP role"
@@ -963,7 +963,7 @@ wiced_bool_t wiced_bt_l2cap_enable_update_ble_conn_params (wiced_bt_device_addre
  *
  *  @param[in]      bd_addr: BD Address
  *
- *  @return         link role.( 0 => HCI_ROLE_MASTER and 1 => HCI_ROLE_SLAVE)
+ *  @return         link role.( 0 => HCI_ROLE_CENTRAL and 1 => HCI_ROLE_PERIPHERAL)
  */
 uint8_t wiced_bt_l2cap_get_ble_conn_role (wiced_bt_device_address_t bd_addr);
 

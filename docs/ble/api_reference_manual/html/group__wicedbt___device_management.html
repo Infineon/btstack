@@ -110,8 +110,8 @@ API Reference</h2></td></tr>
 <tr class="memitem:group__btm__ble__adv__scan__functions"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__adv__scan__functions.html">Advertisement &amp; Scan</a></td></tr>
 <tr class="memdesc:group__btm__ble__adv__scan__functions"><td class="mdescLeft">&#160;</td><td class="mdescRight">This section provides functions for BLE advertisement and BLE scan operations. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__btm__ble__conn__whitelist__functions"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__whitelist__functions.html">Connection and Whitelist</a></td></tr>
-<tr class="memdesc:group__btm__ble__conn__whitelist__functions"><td class="mdescLeft">&#160;</td><td class="mdescRight">This section provides functions for BLE connection related and whitelist operations. <br /></td></tr>
+<tr class="memitem:group__btm__ble__conn__filter__accept__list__functions"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html">Connection and Filter Accept List</a></td></tr>
+<tr class="memdesc:group__btm__ble__conn__filter__accept__list__functions"><td class="mdescLeft">&#160;</td><td class="mdescRight">This section provides functions for BLE connection related and Filter Accept List operations. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__btm__ble__phy__functions"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__phy__functions.html">Phy</a></td></tr>
 <tr class="memdesc:group__btm__ble__phy__functions"><td class="mdescLeft">&#160;</td><td class="mdescRight">This section provides functionality to read and update PHY. <br /></td></tr>
@@ -139,6 +139,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__conn__params__t.html">wiced_bt_ble_conn_params_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE connection parameteres.  <a href="structwiced__bt__ble__conn__params__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__pref__conn__params__t.html">wiced_bt_ble_pref_conn_params_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE preferred connection parameters.  <a href="structwiced__bt__ble__pref__conn__params__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__multi__adv__params__t.html">wiced_bt_ble_multi_adv_params_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE Multi advertising parameter.  <a href="structwiced__bt__ble__multi__adv__params__t.html#details">More...</a><br /></td></tr>
@@ -182,9 +185,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__dev__vendor__specific__command__complete__params__t.html">wiced_bt_dev_vendor_specific_command_complete_params_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure returned with Vendor Specific Command complete callback.  <a href="structwiced__bt__dev__vendor__specific__command__complete__params__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__dev__local__addr__ext__t.html">wiced_bt_dev_local_addr_ext_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for local address extendend API.  <a href="structwiced__bt__dev__local__addr__ext__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__public__key__t.html">wiced_bt_public_key_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public key.  <a href="structwiced__bt__public__key__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,9 +223,6 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__dev__security__request__t.html">wiced_bt_dev_security_request_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Security request (BTM_SECURITY_REQUEST_EVT event data type)  <a href="structwiced__bt__dev__security__request__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__dev__bonded__device__info__t.html">wiced_bt_dev_bonded_device_info_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">bonding device information from wiced_bt_dev_get_bonded_devices  <a href="structwiced__bt__dev__bonded__device__info__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__local__id__keys.html">wiced_bt_local_id_keys</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE keys.  <a href="structwiced__bt__local__id__keys.html#details">More...</a><br /></td></tr>
@@ -315,7 +312,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga502320b4a85ebeee1cd6d37d6b6d1048"><td class="mdescLeft">&#160;</td><td class="mdescRight">default advertising channel map <br /></td></tr>
 <tr class="separator:ga502320b4a85ebeee1cd6d37d6b6d1048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga04092369c221d51efca136b1e5fcaa54"><td class="memItemLeft" align="right" valign="top"><a id="ga04092369c221d51efca136b1e5fcaa54"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga04092369c221d51efca136b1e5fcaa54">BTM_BLE_ADVERT_FILTER_DEFAULT</a>&#160;&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249a68507601a1554b3a54ded1243b23dab4">BTM_BLE_ADVERT_FILTER_ALL_CONNECTION_REQ_ALL_SCAN_REQ</a></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga04092369c221d51efca136b1e5fcaa54">BTM_BLE_ADVERT_FILTER_DEFAULT</a>&#160;&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249add3f372f36bceae2e1ed91477cc3ab26">BTM_BLE_ADV_POLICY_ACCEPT_CONN_AND_SCAN</a></td></tr>
 <tr class="memdesc:ga04092369c221d51efca136b1e5fcaa54"><td class="mdescLeft">&#160;</td><td class="mdescRight">default advertising filter policy <br /></td></tr>
 <tr class="separator:ga04092369c221d51efca136b1e5fcaa54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga895ddc113bdc88d9936c727e28094d38"><td class="memItemLeft" align="right" valign="top"><a id="ga895ddc113bdc88d9936c727e28094d38"></a>
@@ -400,12 +397,12 @@ Macros</h2></td></tr>
 <tr class="separator:gad810fbb1805c0f676bcc135c09adaa52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaea1a6b8149b4944c13b9dc9817a087f5"><td class="memItemLeft" align="right" valign="top"><a id="gaea1a6b8149b4944c13b9dc9817a087f5"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gaea1a6b8149b4944c13b9dc9817a087f5">BTM_BLE_CONN_INTERVAL_MAX_DEF</a>&#160;&#160;&#160;40</td></tr>
-<tr class="memdesc:gaea1a6b8149b4944c13b9dc9817a087f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">default connectino interval max recommended max: 50 ms = 56 * 1.25 <br /></td></tr>
+<tr class="memdesc:gaea1a6b8149b4944c13b9dc9817a087f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">default connection interval max recommended max: 50 ms = 56 * 1.25 <br /></td></tr>
 <tr class="separator:gaea1a6b8149b4944c13b9dc9817a087f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e78f5f942bdf12b4bbfcc26dbde2c45"><td class="memItemLeft" align="right" valign="top"><a id="ga6e78f5f942bdf12b4bbfcc26dbde2c45"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga6e78f5f942bdf12b4bbfcc26dbde2c45">BTM_BLE_CONN_SLAVE_LATENCY_DEF</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga6e78f5f942bdf12b4bbfcc26dbde2c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">default slave latency <br /></td></tr>
-<tr class="separator:ga6e78f5f942bdf12b4bbfcc26dbde2c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01724e6a7493c8ea5fd268cf9a3e5de1"><td class="memItemLeft" align="right" valign="top"><a id="ga01724e6a7493c8ea5fd268cf9a3e5de1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga01724e6a7493c8ea5fd268cf9a3e5de1">BTM_BLE_CONN_PERIPHERAL_LATENCY_DEF</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ga01724e6a7493c8ea5fd268cf9a3e5de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">default Peripheral latency <br /></td></tr>
+<tr class="separator:ga01724e6a7493c8ea5fd268cf9a3e5de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga795beb1024b87fe34c272e7d20311c1e"><td class="memItemLeft" align="right" valign="top"><a id="ga795beb1024b87fe34c272e7d20311c1e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga795beb1024b87fe34c272e7d20311c1e">BTM_BLE_CONN_TIMEOUT_DEF</a>&#160;&#160;&#160;2000</td></tr>
 <tr class="memdesc:ga795beb1024b87fe34c272e7d20311c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">default supervision timeout <br /></td></tr>
@@ -414,10 +411,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga649e36b7823dc944550a5a2341d27878">BTM_BLE_AUTH_SIGNATURE_SIZE</a>&#160;&#160;&#160;12</td></tr>
 <tr class="memdesc:ga649e36b7823dc944550a5a2341d27878"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE Signature BLE data signature length 8 Bytes + 4 bytes counter. <br /></td></tr>
 <tr class="separator:ga649e36b7823dc944550a5a2341d27878"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9a622a65b544c811f806eac51dcb58c9"><td class="memItemLeft" align="right" valign="top"><a id="ga9a622a65b544c811f806eac51dcb58c9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga9a622a65b544c811f806eac51dcb58c9">BTM_BLE_POLICY_BLACK_ALL</a>&#160;&#160;&#160;0x00</td></tr>
-<tr class="memdesc:ga9a622a65b544c811f806eac51dcb58c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">relevant to both <br /></td></tr>
-<tr class="separator:ga9a622a65b544c811f806eac51dcb58c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3661370533c7a2b08cc95626084bb5a"><td class="memItemLeft" align="right" valign="top"><a id="gaa3661370533c7a2b08cc95626084bb5a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gaa3661370533c7a2b08cc95626084bb5a">BTM_BLE_POLICY_REJECT_ALL</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memdesc:gaa3661370533c7a2b08cc95626084bb5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">relevant to both <br /></td></tr>
+<tr class="separator:gaa3661370533c7a2b08cc95626084bb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad2ec34d67a059441e4d6c5410346d47f"><td class="memItemLeft" align="right" valign="top"><a id="gad2ec34d67a059441e4d6c5410346d47f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gad2ec34d67a059441e4d6c5410346d47f">BTM_BLE_POLICY_ALLOW_SCAN</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="memdesc:gad2ec34d67a059441e4d6c5410346d47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">relevant to advertiser <br /></td></tr>
@@ -426,10 +423,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga74afed208bbe3506c1f0f0e668c4050b">BTM_BLE_POLICY_ALLOW_CONN</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="memdesc:ga74afed208bbe3506c1f0f0e668c4050b"><td class="mdescLeft">&#160;</td><td class="mdescRight">relevant to advertiser <br /></td></tr>
 <tr class="separator:ga74afed208bbe3506c1f0f0e668c4050b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac074b90e2c284eced630e3414a700565"><td class="memItemLeft" align="right" valign="top"><a id="gac074b90e2c284eced630e3414a700565"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gac074b90e2c284eced630e3414a700565">BTM_BLE_POLICY_WHITE_ALL</a>&#160;&#160;&#160;0x03</td></tr>
-<tr class="memdesc:gac074b90e2c284eced630e3414a700565"><td class="mdescLeft">&#160;</td><td class="mdescRight">relevant to both <br /></td></tr>
-<tr class="separator:gac074b90e2c284eced630e3414a700565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23acf9340b586b9538a64acace85c2b0"><td class="memItemLeft" align="right" valign="top"><a id="ga23acf9340b586b9538a64acace85c2b0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga23acf9340b586b9538a64acace85c2b0">BTM_BLE_POLICY_ALLOW_ALL</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memdesc:ga23acf9340b586b9538a64acace85c2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">relevant to both <br /></td></tr>
+<tr class="separator:ga23acf9340b586b9538a64acace85c2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab20d056f3428f5778449830c448fb342"><td class="memItemLeft" align="right" valign="top"><a id="gab20d056f3428f5778449830c448fb342"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gab20d056f3428f5778449830c448fb342">BTM_BLE_LIMITED_DISCOVERABLE_FLAG</a>&#160;&#160;&#160;(0x01 &lt;&lt; 0)</td></tr>
 <tr class="memdesc:gab20d056f3428f5778449830c448fb342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limited Discoverable. <br /></td></tr>
@@ -496,8 +493,9 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gadfbb097c8f045e5e5b0c510940d64e43">WICED_BT_BLE_MAX_EXT_ADV_DATA_LEN</a>&#160;&#160;&#160;251</td></tr>
 <tr class="memdesc:gadfbb097c8f045e5e5b0c510940d64e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADV extension structures. <br /></td></tr>
 <tr class="separator:gadfbb097c8f045e5e5b0c510940d64e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39344ff6f4ed0d22868221bc848e15d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga39344ff6f4ed0d22868221bc848e15d9">IS_CONNECTABLE_ADV_REPORT</a>(x)&#160;&#160;&#160;(x &amp; (1 &lt;&lt; 0))</td></tr>
-<tr class="memdesc:ga39344ff6f4ed0d22868221bc848e15d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit mask to identify the type of the adv received in extended adv report.  <a href="#ga39344ff6f4ed0d22868221bc848e15d9">More...</a><br /></td></tr>
+<tr class="memitem:ga39344ff6f4ed0d22868221bc848e15d9"><td class="memItemLeft" align="right" valign="top"><a id="ga39344ff6f4ed0d22868221bc848e15d9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga39344ff6f4ed0d22868221bc848e15d9">IS_CONNECTABLE_ADV_REPORT</a>(x)&#160;&#160;&#160;(x &amp; (1 &lt;&lt; 0))</td></tr>
+<tr class="memdesc:ga39344ff6f4ed0d22868221bc848e15d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">adv is connectable <br /></td></tr>
 <tr class="separator:ga39344ff6f4ed0d22868221bc848e15d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ff2fec9720644ff4d9a30df03e441be"><td class="memItemLeft" align="right" valign="top"><a id="ga1ff2fec9720644ff4d9a30df03e441be"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga1ff2fec9720644ff4d9a30df03e441be">IS_SCANNABLE_ADV_REPORT</a>(x)&#160;&#160;&#160;(x &amp; (1 &lt;&lt; 1))</td></tr>
@@ -694,37 +692,45 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <tr class="memdesc:gac6d6963aef40793449cbd2ead59fe54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SID value. <br /></td></tr>
 <tr class="separator:gac6d6963aef40793449cbd2ead59fe54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8fe6a2ef683e967c63ee9fba1a1d19f8"><td class="memItemLeft" align="right" valign="top"><a id="ga8fe6a2ef683e967c63ee9fba1a1d19f8"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_ble_ext_adv_scan_req_notification_setting_t</b></td></tr>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga8fe6a2ef683e967c63ee9fba1a1d19f8">wiced_bt_ble_ext_adv_scan_req_notification_setting_t</a></td></tr>
+<tr class="memdesc:ga8fe6a2ef683e967c63ee9fba1a1d19f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable notification value (see <a class="el" href="group__wicedbt___device_management.html#gafc7d04e4f50a18a0d391769cb3173bc5" title="Value to configure to receive scan request recived notification.">wiced_bt_ble_ext_adv_scan_req_notification_setting_e</a>) <br /></td></tr>
 <tr class="separator:ga8fe6a2ef683e967c63ee9fba1a1d19f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2747cacb9e180fd5f67751755a76fd73"><td class="memItemLeft" align="right" valign="top"><a id="ga2747cacb9e180fd5f67751755a76fd73"></a>
-typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_ble_periodic_adv_prop_t</b></td></tr>
+typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga2747cacb9e180fd5f67751755a76fd73">wiced_bt_ble_periodic_adv_prop_t</a></td></tr>
+<tr class="memdesc:ga2747cacb9e180fd5f67751755a76fd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodic adv property (see <a class="el" href="group__wicedbt___device_management.html#ga49f4cafbe857432f82a3469d0bd7a190" title="Periodic adv property.">wiced_bt_ble_periodic_adv_prop_e</a>) <br /></td></tr>
 <tr class="separator:ga2747cacb9e180fd5f67751755a76fd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga873f6d031154b1a214cb56b873991983"><td class="memItemLeft" align="right" valign="top"><a id="ga873f6d031154b1a214cb56b873991983"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_ble_ext_scan_filter_duplicate_t</b></td></tr>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga873f6d031154b1a214cb56b873991983">wiced_bt_ble_ext_scan_filter_duplicate_t</a></td></tr>
+<tr class="memdesc:ga873f6d031154b1a214cb56b873991983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended scan duplicate filter policy (see <a class="el" href="group__wicedbt___device_management.html#ga741cf5a4faaa7f62fc0314304b4fcbf0" title="Extended scan duplicate filter policy.">wiced_bt_ble_ext_scan_filter_duplicate_e</a>) <br /></td></tr>
 <tr class="separator:ga873f6d031154b1a214cb56b873991983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0ef601e684add601e7fe71fb4a6cfb0"><td class="memItemLeft" align="right" valign="top"><a id="gaf0ef601e684add601e7fe71fb4a6cfb0"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_ble_ext_filter_policy_t</b></td></tr>
+<tr class="memitem:gaf0ef601e684add601e7fe71fb4a6cfb0"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gaf0ef601e684add601e7fe71fb4a6cfb0">wiced_bt_ble_ext_filter_policy_t</a></td></tr>
+<tr class="memdesc:gaf0ef601e684add601e7fe71fb4a6cfb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter policy used.  <a href="#gaf0ef601e684add601e7fe71fb4a6cfb0">More...</a><br /></td></tr>
 <tr class="separator:gaf0ef601e684add601e7fe71fb4a6cfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ca488f9e3a161d2d37dccb4f5992c7e"><td class="memItemLeft" align="right" valign="top"><a id="ga9ca488f9e3a161d2d37dccb4f5992c7e"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_ble_adv_sync_options_t</b></td></tr>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga9ca488f9e3a161d2d37dccb4f5992c7e">wiced_bt_ble_adv_sync_options_t</a></td></tr>
+<tr class="memdesc:ga9ca488f9e3a161d2d37dccb4f5992c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options used in create periodic sync to periodic adv command (see <a class="el" href="group__wicedbt___device_management.html#ga5f6ce070f4dc0efbf5a1ad4aeb54dc26" title="Options used in create periodic sync to periodic adv command.">wiced_bt_ble_adv_sync_options_e</a>) <br /></td></tr>
 <tr class="separator:ga9ca488f9e3a161d2d37dccb4f5992c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga70c1c3632c806556629a4009d009ed8d"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga70c1c3632c806556629a4009d009ed8d">wiced_bt_ble_periodic_adv_sync_handle_t</a></td></tr>
 <tr class="memdesc:ga70c1c3632c806556629a4009d009ed8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync_Handle to be used to identify the periodic advertiser.  <a href="#ga70c1c3632c806556629a4009d009ed8d">More...</a><br /></td></tr>
 <tr class="separator:ga70c1c3632c806556629a4009d009ed8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeef30254c858058c82419185b0ddfb19"><td class="memItemLeft" align="right" valign="top"><a id="gaeef30254c858058c82419185b0ddfb19"></a>
-typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_ble_adv_report_event_mask_t</b></td></tr>
+<tr class="memitem:gaeef30254c858058c82419185b0ddfb19"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gaeef30254c858058c82419185b0ddfb19">wiced_bt_ble_adv_report_event_mask_t</a></td></tr>
+<tr class="memdesc:gaeef30254c858058c82419185b0ddfb19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit mask to identify the type of the adv received in extended adv report.  <a href="#gaeef30254c858058c82419185b0ddfb19">More...</a><br /></td></tr>
 <tr class="separator:gaeef30254c858058c82419185b0ddfb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae39922d547c599431fbcf3ce82b9f905"><td class="memItemLeft" align="right" valign="top"><a id="gae39922d547c599431fbcf3ce82b9f905"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_ble_ext_adv_report_count_t</b></td></tr>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gae39922d547c599431fbcf3ce82b9f905">wiced_bt_ble_ext_adv_report_count_t</a></td></tr>
+<tr class="memdesc:gae39922d547c599431fbcf3ce82b9f905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Min and Max reports (see <a class="el" href="group__wicedbt___device_management.html#ga8739336a6d1ebba1faaf824bc5c1024d" title="Min and Max possible number of reports in LE extended adv report event.">wiced_bt_ble_ext_adv_report_count_e</a>) <br /></td></tr>
 <tr class="separator:gae39922d547c599431fbcf3ce82b9f905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga88764a9b8a101e7f363460d84853b47f"><td class="memItemLeft" align="right" valign="top"><a id="ga88764a9b8a101e7f363460d84853b47f"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_ble_advertiser_clock_accuracy_t</b></td></tr>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga88764a9b8a101e7f363460d84853b47f">wiced_bt_ble_advertiser_clock_accuracy_t</a></td></tr>
+<tr class="memdesc:ga88764a9b8a101e7f363460d84853b47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advertiser clock accuracy (see <a class="el" href="group__wicedbt___device_management.html#gaf2e1006de89f6bef42119a1aead05e6e" title="Advertiser clock accuracy.">wiced_bt_ble_advertiser_clock_accuracy_e</a>) <br /></td></tr>
 <tr class="separator:ga88764a9b8a101e7f363460d84853b47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae7ecaff2127566c228e878f4377f0fc"><td class="memItemLeft" align="right" valign="top"><a id="gaae7ecaff2127566c228e878f4377f0fc"></a>
-typedef <a class="el" href="group__wicedbt___device_management.html#ga70c1c3632c806556629a4009d009ed8d">wiced_bt_ble_periodic_adv_sync_handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_ble_connection_handle_t</b></td></tr>
+typedef <a class="el" href="group__wicedbt___device_management.html#ga70c1c3632c806556629a4009d009ed8d">wiced_bt_ble_periodic_adv_sync_handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gaae7ecaff2127566c228e878f4377f0fc">wiced_bt_ble_connection_handle_t</a></td></tr>
+<tr class="memdesc:gaae7ecaff2127566c228e878f4377f0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">sync handle and connection handle are same range <br /></td></tr>
 <tr class="separator:gaae7ecaff2127566c228e878f4377f0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad95b6f7034311b47b240b8a711001988"><td class="memItemLeft" align="right" valign="top"><a id="gad95b6f7034311b47b240b8a711001988"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_ble_channel_sel_algo_t</b></td></tr>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gad95b6f7034311b47b240b8a711001988">wiced_bt_ble_channel_sel_algo_t</a></td></tr>
+<tr class="memdesc:gad95b6f7034311b47b240b8a711001988"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE channel algorithm selection (see <a class="el" href="group__wicedbt___device_management.html#gacd4a1a8913528880bad341a4f46f92af" title="BLE channel selection algorithms.">wiced_bt_ble_channel_sel_algo_e</a>) <br /></td></tr>
 <tr class="separator:gad95b6f7034311b47b240b8a711001988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab1999e94016bb12b71aa6cee0695f356"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gab1999e94016bb12b71aa6cee0695f356">wiced_bt_ble_adv_ext_event_cb_fp_t</a>) (<a class="el" href="group__wicedbt___device_management.html#ga748b7c8c9f7711162f8def9f5408a794">wiced_bt_ble_adv_ext_event_t</a> event, <a class="el" href="unionwiced__bt__ble__adv__ext__event__data__t.html">wiced_bt_ble_adv_ext_event_data_t</a> *p_data)</td></tr>
 <tr class="memdesc:gab1999e94016bb12b71aa6cee0695f356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback wiced_bt_ble_adv_ext_event_cb_fp_t.  <a href="#gab1999e94016bb12b71aa6cee0695f356">More...</a><br /></td></tr>
@@ -782,7 +788,8 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <tr class="memdesc:gaf35adc1f29b46b8468a387c8023fd1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link Quality Statistic Action (see <a class="el" href="group__wicedbt___device_management.html#gad3ae6f503bc223e42c68e23a701af1e2" title="Link Quality statistics action type.">wiced_bt_dev_link_quality_stats_param_e</a>) <br /></td></tr>
 <tr class="separator:gaf35adc1f29b46b8468a387c8023fd1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c5b67d556561dcab638afff83ac0d03"><td class="memItemLeft" align="right" valign="top"><a id="ga0c5b67d556561dcab638afff83ac0d03"></a>
-typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_link_policy_settings_t</b>[1]</td></tr>
+typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga0c5b67d556561dcab638afff83ac0d03">wiced_bt_link_policy_settings_t</a>[1]</td></tr>
+<tr class="memdesc:ga0c5b67d556561dcab638afff83ac0d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link Policy Settings type (see <a class="el" href="group__wicedbt___device_management.html#ga5ac33b180c10d23690c1bf22363f0e56" title=".Enumeration of known link policy settings value assignments of the wiced_bt_link_policy_settings_t">wiced_bt_link_policy_settings_values_e</a>) <br /></td></tr>
 <tr class="separator:ga0c5b67d556561dcab638afff83ac0d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad1d90fe02e687ba52b02f970cb0ad3d3"><td class="memItemLeft" align="right" valign="top"><a id="gad1d90fe02e687ba52b02f970cb0ad3d3"></a>
 typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gad1d90fe02e687ba52b02f970cb0ad3d3">wiced_bt_ble_advert_mode_t</a></td></tr>
@@ -820,29 +827,29 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gab38fa8e6fee21aa2f6f1aa9dd1194516"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gab38fa8e6fee21aa2f6f1aa9dd1194516">wiced_bt_ble_scanner_filter_policy_e</a> { <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516aab484a0e2506ee020d4ffe5a7461f1b9">BTM_BLE_SCANNER_FILTER_ALL_ADV_RSP</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516abb80bf34eb7dbc5843e3a063fa13ce95">BTM_BLE_SCAN_POLICY_ACCEPT_ADV_RSP</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516a946802bef47260c652bebe6dda5ef6c2">BTM_BLE_SCANNER_FILTER_WHITELIST_ADV_RSP</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516aaaa07f1c9e02a01a404735aa7e3dc323">BTM_BLE_SCAN_POLICY_FILTER_ADV_RSP</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516a0b539d34476da7ae11693e54ba6a40ce">BTM_BLE_SCANNER_FILTER_ALL_RPA_DIR_ADV_RSP</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516aa037daa4cbd1e13dd3c02a1681409eeb">BTM_BLE_SCAN_POLICY_ACCEPT_RPA_DIR_ADV_RSP</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516ad512719a9b467797d7630c19155d4725">BTM_BLE_SCANNER_FILTER_WHITELIST_RPA_DIR_ADV_RSP</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516a88f79a07e8743245b76157d562c83b2e">BTM_BLE_SCAN_POLICY_FILTER_RPA_DIR_ADV_RSP</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516aa660f771d11a4eceaa0f3cffa205f41d">BTM_BLE_SCANNER_FILTER_MAX</a>
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516a8b463656cec6650f9bc20272a6cd64f9">BTM_BLE_SCAN_POLICY_MAX</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gab38fa8e6fee21aa2f6f1aa9dd1194516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scanner filter policy.  <a href="group__wicedbt___device_management.html#gab38fa8e6fee21aa2f6f1aa9dd1194516">More...</a><br /></td></tr>
 <tr class="separator:gab38fa8e6fee21aa2f6f1aa9dd1194516"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae169c3a016dc0a8d0df604dda69c3249"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gae169c3a016dc0a8d0df604dda69c3249">wiced_bt_ble_advert_filter_policy_e</a> { <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249a68507601a1554b3a54ded1243b23dab4">BTM_BLE_ADVERT_FILTER_ALL_CONNECTION_REQ_ALL_SCAN_REQ</a> = 0x00, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249add3f372f36bceae2e1ed91477cc3ab26">BTM_BLE_ADV_POLICY_ACCEPT_CONN_AND_SCAN</a> = 0x00, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249ac8b8938ce2d7791caa7fa8723d190362">BTM_BLE_ADVERT_FILTER_ALL_CONNECTION_REQ_WHITELIST_SCAN_REQ</a> = 0x01, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249ac0e52ecefb1c278fb1f3593372f7d856">BTM_BLE_ADV_POLICY_ACCEPT_CONN_FILTER_SCAN</a> = 0x01, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249aa0cbe7b66090ec34a34b61ff24546ba8">BTM_BLE_ADVERT_FILTER_WHITELIST_CONNECTION_REQ_ALL_SCAN_REQ</a> = 0x02, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249a578c2b2899548a93be78affbc103381c">BTM_BLE_ADV_POLICY_FILTER_CONN_ACCEPT_SCAN</a> = 0x02, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249a33abfc543d1750b61aff6eb8b56791ff">BTM_BLE_ADVERT_FILTER_WHITELIST_CONNECTION_REQ_WHITELIST_SCAN_REQ</a> = 0x03, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249a76163ce8b16f5e4701377735e4cff1b0">BTM_BLE_ADV_POLICY_FILTER_CONN_FILTER_SCAN</a> = 0x03, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249a15a8d12eff1e96788c47f0b3d6b20388">BTM_BLE_ADVERT_FILTER_MAX</a>
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggae169c3a016dc0a8d0df604dda69c3249ad01f7e7b0262b9a10cb378e649696dce">BTM_BLE_ADV_POLICY_MAX</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gae169c3a016dc0a8d0df604dda69c3249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advertising filter policy.  <a href="group__wicedbt___device_management.html#gae169c3a016dc0a8d0df604dda69c3249">More...</a><br /></td></tr>
@@ -1014,13 +1021,13 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:ga209665fd7342f0f47610c5fec55910c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Privacy mode refer Spec version 5.0 Vol 3 Part C Section 10.7 privacy feature.  <a href="group__wicedbt___device_management.html#ga209665fd7342f0f47610c5fec55910c1">More...</a><br /></td></tr>
 <tr class="separator:ga209665fd7342f0f47610c5fec55910c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ec420c6d0f772c040c47950fe990751"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga1ec420c6d0f772c040c47950fe990751">wiced_bt_ble_multi_advert_filtering_policy_e</a> { <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga1ec420c6d0f772c040c47950fe990751a93eaa4b0e79802c53cbda56ae22dbaee">MULTI_ADVERT_FILTER_POLICY_WHITE_LIST_NOT_USED</a> = 0x00, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga1ec420c6d0f772c040c47950fe990751ad9d0f6c722ecc7071ca229ab568d494f">MULTI_ADVERT_FILTER_POLICY_NOT_USED</a> = 0x00, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga1ec420c6d0f772c040c47950fe990751a387f4724f47aa445ecbbf84783ab7556">MULTI_ADVERT_WHITE_LIST_POLICY_ADV_ALLOW_UNKNOWN_CONNECTION</a> = 0x01, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga1ec420c6d0f772c040c47950fe990751aa66c04b6565a72295e577d082ca0cc50">MULTI_ADVERT_FILTER_POLICY_ADV_ALLOW_UNKNOWN_CONNECTION</a> = 0x01, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga1ec420c6d0f772c040c47950fe990751a9c0d539ec6bfdb4a5208752b15f59650">MULTI_ADVERT_WHITE_LIST_POLICY_ADV_ALLOW_UNKNOWN_SCANNING</a> = 0x02, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga1ec420c6d0f772c040c47950fe990751ae0ebb545ed219d89fd2f32bb3876324a">MULTI_ADVERT_FILTER_POLICY_ADV_ALLOW_UNKNOWN_SCANNING</a> = 0x02, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga1ec420c6d0f772c040c47950fe990751a4786a015f299b907649c1dc212c74ebf">MULTI_ADVERT_FILTER_POLICY_WHITE_LIST_USED_FOR_ALL</a> = 0x03
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga1ec420c6d0f772c040c47950fe990751a92e6cef2d690b23cd4b44fbe2d7dc467">MULTI_ADVERT_FILTER_POLICY_USE_FOR_ALL</a> = 0x03
 <br />
  }</td></tr>
 <tr class="memdesc:ga1ec420c6d0f772c040c47950fe990751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multi-advertisement Filtering policy.  <a href="group__wicedbt___device_management.html#ga1ec420c6d0f772c040c47950fe990751">More...</a><br /></td></tr>
@@ -1081,61 +1088,61 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga61dadd085c1777f559549e05962b2c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Advertising set identifier(SID) is used to uniquely identify adv sets from advertiser.  <a href="group__wicedbt___device_management.html#ga61dadd085c1777f559549e05962b2c9e">More...</a><br /></td></tr>
 <tr class="separator:ga61dadd085c1777f559549e05962b2c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga726ca809ffd3d67ab4b8476646f26635"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga726ca809ffd3d67ab4b8476646f26635ada7dca465da270c477d740ae59265183">WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_DISABLE</a> = 0x00, 
+<tr class="memitem:gafc7d04e4f50a18a0d391769cb3173bc5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gafc7d04e4f50a18a0d391769cb3173bc5">wiced_bt_ble_ext_adv_scan_req_notification_setting_e</a> { <br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggafc7d04e4f50a18a0d391769cb3173bc5ada7dca465da270c477d740ae59265183">WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_DISABLE</a> = 0x00, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga726ca809ffd3d67ab4b8476646f26635abe7d8a512840890085fd2eb482392e4e">WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_ENABLE</a> = 0x01
-<br />
- }</td></tr>
-<tr class="memdesc:ga726ca809ffd3d67ab4b8476646f26635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to configure to receive scan request recived notification.  <a href="group__wicedbt___device_management.html#ga726ca809ffd3d67ab4b8476646f26635">More...</a><br /></td></tr>
-<tr class="separator:ga726ca809ffd3d67ab4b8476646f26635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0411cd49bb5b71852cecd93bcbf0ca2d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__wicedbt___device_management.html#gga0411cd49bb5b71852cecd93bcbf0ca2da959ba8f14842fcc73747276affc37e9d">WICED_BT_BLE_PERIODIC_ADV_PROPERTY_INCLUDE_TX_POWER</a> = (1 &lt;&lt; 6)
- }</td></tr>
-<tr class="memdesc:ga0411cd49bb5b71852cecd93bcbf0ca2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodic adv property.  <a href="group__wicedbt___device_management.html#ga0411cd49bb5b71852cecd93bcbf0ca2d">More...</a><br /></td></tr>
-<tr class="separator:ga0411cd49bb5b71852cecd93bcbf0ca2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabed82baf7f470b522273a3e37c24c600"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabed82baf7f470b522273a3e37c24c600a8840450520c2717fbb3a8592750e4cb8">WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_DISABLE</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabed82baf7f470b522273a3e37c24c600aa995c11b1f81d0164bd20c094ec21c07">WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabed82baf7f470b522273a3e37c24c600a8cdb48a739deef9f3ab4622189fb6283">WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE_RESET_ON_SCAN_PERIOD</a>
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggafc7d04e4f50a18a0d391769cb3173bc5abe7d8a512840890085fd2eb482392e4e">WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_ENABLE</a> = 0x01
 <br />
  }</td></tr>
-<tr class="memdesc:gabed82baf7f470b522273a3e37c24c600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended scan duplicate filter policy.  <a href="group__wicedbt___device_management.html#gabed82baf7f470b522273a3e37c24c600">More...</a><br /></td></tr>
-<tr class="separator:gabed82baf7f470b522273a3e37c24c600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab04a0655cd1e3bcac5e8f48c18df1a57"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a68dae72256fc4c072a9da77b4397d396">WICED_BT_BLE_IGNORE_WHITE_LIST</a> = 0, 
+<tr class="memdesc:gafc7d04e4f50a18a0d391769cb3173bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to configure to receive scan request recived notification.  <a href="group__wicedbt___device_management.html#gafc7d04e4f50a18a0d391769cb3173bc5">More...</a><br /></td></tr>
+<tr class="separator:gafc7d04e4f50a18a0d391769cb3173bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49f4cafbe857432f82a3469d0bd7a190"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga49f4cafbe857432f82a3469d0bd7a190">wiced_bt_ble_periodic_adv_prop_e</a> { <a class="el" href="group__wicedbt___device_management.html#gga49f4cafbe857432f82a3469d0bd7a190a959ba8f14842fcc73747276affc37e9d">WICED_BT_BLE_PERIODIC_ADV_PROPERTY_INCLUDE_TX_POWER</a> = (1 &lt;&lt; 6)
+ }</td></tr>
+<tr class="memdesc:ga49f4cafbe857432f82a3469d0bd7a190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodic adv property.  <a href="group__wicedbt___device_management.html#ga49f4cafbe857432f82a3469d0bd7a190">More...</a><br /></td></tr>
+<tr class="separator:ga49f4cafbe857432f82a3469d0bd7a190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga741cf5a4faaa7f62fc0314304b4fcbf0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga741cf5a4faaa7f62fc0314304b4fcbf0">wiced_bt_ble_ext_scan_filter_duplicate_e</a> { <br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga741cf5a4faaa7f62fc0314304b4fcbf0a8840450520c2717fbb3a8592750e4cb8">WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_DISABLE</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a4d7fa0c13b8cbc1be7f39f062cb6275b">WICED_BT_BLE_CONNECT_TO_WHITE_LIST_DEVICES</a> = 1
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga741cf5a4faaa7f62fc0314304b4fcbf0aa995c11b1f81d0164bd20c094ec21c07">WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga741cf5a4faaa7f62fc0314304b4fcbf0a8cdb48a739deef9f3ab4622189fb6283">WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE_RESET_ON_SCAN_PERIOD</a>
 <br />
  }</td></tr>
-<tr class="memdesc:gab04a0655cd1e3bcac5e8f48c18df1a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter policy used in extended create connection command.  <a href="group__wicedbt___device_management.html#gab04a0655cd1e3bcac5e8f48c18df1a57">More...</a><br /></td></tr>
-<tr class="separator:gab04a0655cd1e3bcac5e8f48c18df1a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga385c44f6fb256e5716a2302a5b940388"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga385c44f6fb256e5716a2302a5b940388a65301d81e398ef6d8eab8cf8492b89c3">WICED_BT_BLE_IGNORE_SYNC_TO_PERIODIC_ADV_LIST</a> = 0, 
+<tr class="memdesc:ga741cf5a4faaa7f62fc0314304b4fcbf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended scan duplicate filter policy.  <a href="group__wicedbt___device_management.html#ga741cf5a4faaa7f62fc0314304b4fcbf0">More...</a><br /></td></tr>
+<tr class="separator:ga741cf5a4faaa7f62fc0314304b4fcbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabcf469159bec2fd7d1f1d6b5a76cda51"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gabcf469159bec2fd7d1f1d6b5a76cda51">wiced_bt_ble_ext_filter_policy_e</a> { <br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabcf469159bec2fd7d1f1d6b5a76cda51a06234ca144f35338f6bc4120362b5001">WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga385c44f6fb256e5716a2302a5b940388ab7cf10c331eb70f50a12a15cda4ef35b">WICED_BT_BLE_SYNC_TO_PERIODIC_ADV_LIST</a> = 1
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabcf469159bec2fd7d1f1d6b5a76cda51a3125d3696ae08c0771f9d4de26679179">WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS</a> = 1
 <br />
  }</td></tr>
-<tr class="memdesc:ga385c44f6fb256e5716a2302a5b940388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options used in create periodic sync to periodic adv command.  <a href="group__wicedbt___device_management.html#ga385c44f6fb256e5716a2302a5b940388">More...</a><br /></td></tr>
-<tr class="separator:ga385c44f6fb256e5716a2302a5b940388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc5c98fcc1211af2b80116dd6e0a035d"><td class="memItemLeft" align="right" valign="top"><a id="gabc5c98fcc1211af2b80116dd6e0a035d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+<tr class="memdesc:gabcf469159bec2fd7d1f1d6b5a76cda51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter policy used in extended create connection command.  <a href="group__wicedbt___device_management.html#gabcf469159bec2fd7d1f1d6b5a76cda51">More...</a><br /></td></tr>
+<tr class="separator:gabcf469159bec2fd7d1f1d6b5a76cda51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f6ce070f4dc0efbf5a1ad4aeb54dc26"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga5f6ce070f4dc0efbf5a1ad4aeb54dc26">wiced_bt_ble_adv_sync_options_e</a> { <br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga5f6ce070f4dc0efbf5a1ad4aeb54dc26a65301d81e398ef6d8eab8cf8492b89c3">WICED_BT_BLE_IGNORE_SYNC_TO_PERIODIC_ADV_LIST</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga5f6ce070f4dc0efbf5a1ad4aeb54dc26ab7cf10c331eb70f50a12a15cda4ef35b">WICED_BT_BLE_SYNC_TO_PERIODIC_ADV_LIST</a> = 1
+<br />
+ }</td></tr>
+<tr class="memdesc:ga5f6ce070f4dc0efbf5a1ad4aeb54dc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options used in create periodic sync to periodic adv command.  <a href="group__wicedbt___device_management.html#ga5f6ce070f4dc0efbf5a1ad4aeb54dc26">More...</a><br /></td></tr>
+<tr class="separator:ga5f6ce070f4dc0efbf5a1ad4aeb54dc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga726ca809ffd3d67ab4b8476646f26635"><td class="memItemLeft" align="right" valign="top"><a id="ga726ca809ffd3d67ab4b8476646f26635"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>PERIODIC_SYNC_HANDLE_MIN</b> = 0, 
 <br />
 &#160;&#160;<b>PERIODIC_SYNC_HANDLE_MAX</b> = 0x0EFF
 <br />
  }</td></tr>
-<tr class="memdesc:gabc5c98fcc1211af2b80116dd6e0a035d"><td class="mdescLeft">&#160;</td><td class="mdescRight">When controller receives succesfully periodic adv event based on create sync to periodic advertiser command, sync handle get generated by controller and reported in periodic sync established event scanner uniquely identifies periodic adv data from adv reports using this handle and advertismenet set id(SID) <br /></td></tr>
-<tr class="separator:gabc5c98fcc1211af2b80116dd6e0a035d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac36f475ca5b446f4fde4c9b90bec77c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggac36f475ca5b446f4fde4c9b90bec77c8a2e150f9aebb639d8b399e3063d3db808">ADV_REP_EVT_COUNT_MIN</a> = 1, 
+<tr class="memdesc:ga726ca809ffd3d67ab4b8476646f26635"><td class="mdescLeft">&#160;</td><td class="mdescRight">When controller receives succesfully periodic adv event based on create sync to periodic advertiser command, sync handle get generated by controller and reported in periodic sync established event scanner uniquely identifies periodic adv data from adv reports using this handle and advertismenet set id(SID) <br /></td></tr>
+<tr class="separator:ga726ca809ffd3d67ab4b8476646f26635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8739336a6d1ebba1faaf824bc5c1024d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga8739336a6d1ebba1faaf824bc5c1024d">wiced_bt_ble_ext_adv_report_count_e</a> { <br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga8739336a6d1ebba1faaf824bc5c1024da2e150f9aebb639d8b399e3063d3db808">ADV_REP_EVT_COUNT_MIN</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggac36f475ca5b446f4fde4c9b90bec77c8a7e93b8fb79eb54fffb0ef7aae25a3bbc">ADV_REP_EVT_COUNT_MAX</a> = 10
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga8739336a6d1ebba1faaf824bc5c1024da7e93b8fb79eb54fffb0ef7aae25a3bbc">ADV_REP_EVT_COUNT_MAX</a> = 10
 <br />
  }</td></tr>
-<tr class="memdesc:gac36f475ca5b446f4fde4c9b90bec77c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Min and Max possible number of reports in LE extended adv report event.  <a href="group__wicedbt___device_management.html#gac36f475ca5b446f4fde4c9b90bec77c8">More...</a><br /></td></tr>
-<tr class="separator:gac36f475ca5b446f4fde4c9b90bec77c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05589fbab0657f08285ebdfe93f5ec9e"><td class="memItemLeft" align="right" valign="top"><a id="ga05589fbab0657f08285ebdfe93f5ec9e"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+<tr class="memdesc:ga8739336a6d1ebba1faaf824bc5c1024d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Min and Max possible number of reports in LE extended adv report event.  <a href="group__wicedbt___device_management.html#ga8739336a6d1ebba1faaf824bc5c1024d">More...</a><br /></td></tr>
+<tr class="separator:ga8739336a6d1ebba1faaf824bc5c1024d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2e1006de89f6bef42119a1aead05e6e"><td class="memItemLeft" align="right" valign="top"><a id="gaf2e1006de89f6bef42119a1aead05e6e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gaf2e1006de89f6bef42119a1aead05e6e">wiced_bt_ble_advertiser_clock_accuracy_e</a> { <br />
 &#160;&#160;<b>ADVERTISER_CLK_ACCURACY_500PPM</b>, 
 <br />
 &#160;&#160;<b>ADVERTISER_CLK_ACCURACY_250PPM</b>, 
@@ -1153,16 +1160,16 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>ADVERTISER_CLK_ACCURACY_20PPM</b>
 <br />
  }</td></tr>
-<tr class="memdesc:ga05589fbab0657f08285ebdfe93f5ec9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advertiser clock accuracy. <br /></td></tr>
-<tr class="separator:ga05589fbab0657f08285ebdfe93f5ec9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16af7b253440dadd46a80a4b9fddba4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga16af7b253440dadd46a80a4b9fddba4daf29644acab31ee07ad38f9cbcf6cf5b8">LE_CHANNEL_SEL_ALGO_1_USED</a>, 
+<tr class="memdesc:gaf2e1006de89f6bef42119a1aead05e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advertiser clock accuracy. <br /></td></tr>
+<tr class="separator:gaf2e1006de89f6bef42119a1aead05e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd4a1a8913528880bad341a4f46f92af"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gacd4a1a8913528880bad341a4f46f92af">wiced_bt_ble_channel_sel_algo_e</a> { <br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggacd4a1a8913528880bad341a4f46f92afaf29644acab31ee07ad38f9cbcf6cf5b8">LE_CHANNEL_SEL_ALGO_1_USED</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga16af7b253440dadd46a80a4b9fddba4da421a8eaeaed16ffeda1a714512320476">LE_CHANNEL_SEL_ALGO_2_USED</a>
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggacd4a1a8913528880bad341a4f46f92afa421a8eaeaed16ffeda1a714512320476">LE_CHANNEL_SEL_ALGO_2_USED</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ga16af7b253440dadd46a80a4b9fddba4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE channel selection algorithms.  <a href="group__wicedbt___device_management.html#ga16af7b253440dadd46a80a4b9fddba4d">More...</a><br /></td></tr>
-<tr class="separator:ga16af7b253440dadd46a80a4b9fddba4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:gacd4a1a8913528880bad341a4f46f92af"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE channel selection algorithms.  <a href="group__wicedbt___device_management.html#gacd4a1a8913528880bad341a4f46f92af">More...</a><br /></td></tr>
+<tr class="separator:gacd4a1a8913528880bad341a4f46f92af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga748b7c8c9f7711162f8def9f5408a794"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga748b7c8c9f7711162f8def9f5408a794">wiced_bt_ble_adv_ext_event_t</a> { <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga748b7c8c9f7711162f8def9f5408a794ab8dd03d44ff23c4e1cea889088b9c057">WICED_BT_BLE_PERIODIC_ADV_SYNC_ESTABLISHED_EVENT</a>, 
 <br />
@@ -1177,27 +1184,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga748b7c8c9f7711162f8def9f5408a794a5d7b21cd7c34e47c01ff033d73d7a26d">WICED_BT_BLE_CHANNEL_SEL_ALGO_EVENT</a>
 <br />
  }</td></tr>
+<tr class="memdesc:ga748b7c8c9f7711162f8def9f5408a794"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADV extension events to the application.  <a href="group__wicedbt___device_management.html#ga748b7c8c9f7711162f8def9f5408a794">More...</a><br /></td></tr>
 <tr class="separator:ga748b7c8c9f7711162f8def9f5408a794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc9b4dbc8e43ce6442971e2804d1aca5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gabc9b4dbc8e43ce6442971e2804d1aca5">wiced_bt_sec_level_e</a> { <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabc9b4dbc8e43ce6442971e2804d1aca5a0e9685e4326c3ad4af03a17f1a063f73">BTM_SEC_NONE</a> = 0x0000, 
-<br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabc9b4dbc8e43ce6442971e2804d1aca5a0dc906b1a99ae1cf62157b52008343a8">BTM_SEC_IN_AUTHENTICATE</a> = 0x0002, 
-<br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabc9b4dbc8e43ce6442971e2804d1aca5ad097914c106f7207ac324cdd0bbbe55c">BTM_SEC_IN_ENCRYPT</a> = 0x0004, 
-<br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabc9b4dbc8e43ce6442971e2804d1aca5a9bae9e6788bf546a5a0f21c7fc331673">BTM_SEC_OUT_AUTHENTICATE</a> = 0x0010, 
-<br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabc9b4dbc8e43ce6442971e2804d1aca5a93ac194e677a1705bff0d07bcc9884c7">BTM_SEC_OUT_ENCRYPT</a> = 0x0020, 
-<br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabc9b4dbc8e43ce6442971e2804d1aca5afca6a03c2e2e6b572e147e5b4755891d">BTM_SEC_ENCRYPT</a> = 0x0024, 
-<br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabc9b4dbc8e43ce6442971e2804d1aca5aa05b44cfeb4ed0381f9461156bb6f063">BTM_SEC_BR_MODE4_LEVEL4</a> = 0x0040, 
-<br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggabc9b4dbc8e43ce6442971e2804d1aca5af8233aedd42e13414803c0eec4f1042d">BTM_SEC_SC_ONLY</a> = 0x0080
-<br />
- }</td></tr>
-<tr class="memdesc:gabc9b4dbc8e43ce6442971e2804d1aca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Security Service Levels [bit mask].  <a href="group__wicedbt___device_management.html#gabc9b4dbc8e43ce6442971e2804d1aca5">More...</a><br /></td></tr>
-<tr class="separator:gabc9b4dbc8e43ce6442971e2804d1aca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga81db582b115f4586be18f142d054b0ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga81db582b115f4586be18f142d054b0ac">wiced_bt_sec_flags_e</a> { <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga81db582b115f4586be18f142d054b0aca7d745a07a203cb4d2102a2c622e046d5">BTM_SEC_LINK_ENCRYPTED</a> = 0x01, 
 <br />
@@ -1249,13 +1237,17 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaef5791fdc8d52268ee25d1edfec15f90a083a1dd9851951ff826c35e85230b16c">BTM_LE_AUTH_REQ_SC</a> = 0x08, 
 <br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaef5791fdc8d52268ee25d1edfec15f90a45358c7eaffaa02a2e796e894e89b234">BTM_LE_AUTH_REQ_KP</a> = 0x10, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaef5791fdc8d52268ee25d1edfec15f90a96dcdc9d88c9bd8f4307e73d4635dee5">BTM_LE_AUTH_REQ_H7</a> = 0x20, 
+<br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaef5791fdc8d52268ee25d1edfec15f90a72c20682eb3690009366d6ff8062d240">BTM_LE_AUTH_REQ_SC_BOND</a> = (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_BOND), 
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaef5791fdc8d52268ee25d1edfec15f90a3ed70042466957960a0abf1d5b32fe9d">BTM_LE_AUTH_REQ_SC_MITM</a> = (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_MITM), 
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaef5791fdc8d52268ee25d1edfec15f90acf430fa8529ec72cdf3721510874fb0f">BTM_LE_AUTH_REQ_SC_MITM_BOND</a> = (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_MITM|BTM_LE_AUTH_REQ_BOND), 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaef5791fdc8d52268ee25d1edfec15f90acbe092bed716696b83987043d4b2b076">BTM_LE_AUTH_REQ_MASK</a> = 0x1D
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#ggaef5791fdc8d52268ee25d1edfec15f90acbe092bed716696b83987043d4b2b076">BTM_LE_AUTH_REQ_MASK</a> = 0x3D
 <br />
  }</td></tr>
 <tr class="memdesc:gaef5791fdc8d52268ee25d1edfec15f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE Authentication requirement.  <a href="group__wicedbt___device_management.html#gaef5791fdc8d52268ee25d1edfec15f90">More...</a><br /></td></tr>
@@ -1495,14 +1487,14 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:gad3ae6f503bc223e42c68e23a701af1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link Quality statistics action type.  <a href="group__wicedbt___device_management.html#gad3ae6f503bc223e42c68e23a701af1e2">More...</a><br /></td></tr>
 <tr class="separator:gad3ae6f503bc223e42c68e23a701af1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5ac33b180c10d23690c1bf22363f0e56"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga5ac33b180c10d23690c1bf22363f0e56">wiced_bt_link_policy_settings_values_e</a> { <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga5ac33b180c10d23690c1bf22363f0e56ac075635990b3eacb973b38e77f49f323">WICED_ENABLE_MASTER_SLAVE_SWITCH</a> = 0x01, 
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga5ac33b180c10d23690c1bf22363f0e56adeee9c5543ed8ebfe0d808daf00d40ae">WICED_ENABLE_ROLE_SWITCH</a> = 0x01, 
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga5ac33b180c10d23690c1bf22363f0e56a95e2734d3f358a0e424cc756dc043553">WICED_ENABLE_HOLD_MODE</a> = 0x02, 
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga5ac33b180c10d23690c1bf22363f0e56a848cbf49ea19e57a20dd6caad4dd04f4">WICED_ENABLE_SNIFF_MODE</a> = 0x04
 <br />
  }</td></tr>
-<tr class="memdesc:ga5ac33b180c10d23690c1bf22363f0e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">.Enumeration of known link policy settings value assignments of the wiced_bt_link_policy_settings_t  <a href="group__wicedbt___device_management.html#ga5ac33b180c10d23690c1bf22363f0e56">More...</a><br /></td></tr>
+<tr class="memdesc:ga5ac33b180c10d23690c1bf22363f0e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">.Enumeration of known link policy settings value assignments of the <a class="el" href="group__wicedbt___device_management.html#ga0c5b67d556561dcab638afff83ac0d03">wiced_bt_link_policy_settings_t</a>  <a href="group__wicedbt___device_management.html#ga5ac33b180c10d23690c1bf22363f0e56">More...</a><br /></td></tr>
 <tr class="separator:ga5ac33b180c10d23690c1bf22363f0e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1942781c78be25d498d93745db416f08"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga1942781c78be25d498d93745db416f08">wiced_bt_ble_advert_mode_e</a> { <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga1942781c78be25d498d93745db416f08ab5138f1861c392d29bffce3fd415bfe2">BTM_BLE_ADVERT_OFF</a>, 
@@ -1587,27 +1579,6 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Simultaneous LE and BR/EDR to Same Device Capable (Host). </p>
-
-</div>
-</div>
-<a id="ga39344ff6f4ed0d22868221bc848e15d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga39344ff6f4ed0d22868221bc848e15d9">&#9670;&nbsp;</a></span>IS_CONNECTABLE_ADV_REPORT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IS_CONNECTABLE_ADV_REPORT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;(x &amp; (1 &lt;&lt; 0))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Bit mask to identify the type of the adv received in extended adv report. </p>
-<p>(see <a class="el" href="structwiced__bt__ble__ext__adv__report__t.html" title="Extended advertisement report data format.">wiced_bt_ble_ext_adv_report_t</a>) event_type filed adv is connectable </p>
 
 </div>
 </div>
@@ -1727,7 +1698,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Callback wiced_bt_ble_selective_conn_cback_t. </p>
-<p>Selective connection callback (registered with <a class="el" href="group__btm__ble__conn__whitelist__functions.html#gafd00c59332fb49892049d915769a2f5f" title="Set BLE background connection procedure type.">wiced_bt_ble_set_background_connection_type</a>)</p>
+<p>Selective connection callback (registered with <a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#gafd00c59332fb49892049d915769a2f5f" title="Set BLE background connection procedure type.">wiced_bt_ble_set_background_connection_type</a>)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">remote_bda</td><td>: remote device </td></tr>
@@ -1788,6 +1759,23 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="gaf0ef601e684add601e7fe71fb4a6cfb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0ef601e684add601e7fe71fb4a6cfb0">&#9670;&nbsp;</a></span>wiced_bt_ble_ext_filter_policy_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint8_t <a class="el" href="group__wicedbt___device_management.html#gaf0ef601e684add601e7fe71fb4a6cfb0">wiced_bt_ble_ext_filter_policy_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Filter policy used. </p>
+<p>(see <a class="el" href="group__wicedbt___device_management.html#gabcf469159bec2fd7d1f1d6b5a76cda51" title="Filter policy used in extended create connection command.">wiced_bt_ble_ext_filter_policy_e</a>) </p>
+
+</div>
+</div>
 <a id="ga70c1c3632c806556629a4009d009ed8d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga70c1c3632c806556629a4009d009ed8d">&#9670;&nbsp;</a></span>wiced_bt_ble_periodic_adv_sync_handle_t</h2>
 
@@ -1802,6 +1790,23 @@ Enumerations</h2></td></tr>
 
 <p>Sync_Handle to be used to identify the periodic advertiser. </p>
 <p>Range: 0x0000-0x0EFF </p>
+
+</div>
+</div>
+<a id="gaeef30254c858058c82419185b0ddfb19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeef30254c858058c82419185b0ddfb19">&#9670;&nbsp;</a></span>wiced_bt_ble_adv_report_event_mask_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint16_t <a class="el" href="group__wicedbt___device_management.html#gaeef30254c858058c82419185b0ddfb19">wiced_bt_ble_adv_report_event_mask_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bit mask to identify the type of the adv received in extended adv report. </p>
+<p>(see <a class="el" href="structwiced__bt__ble__ext__adv__report__t.html" title="Extended advertisement report data format.">wiced_bt_ble_ext_adv_report_t</a>) event_type filed </p>
 
 </div>
 </div>
@@ -1821,7 +1826,7 @@ Enumerations</h2></td></tr>
 <p>Adv extension command status, command complete event and LE adv extension meta event callback</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>: Event type (see <a class="el" href="group__wicedbt___device_management.html#ga748b7c8c9f7711162f8def9f5408a794">wiced_bt_ble_adv_ext_event_t</a>) </td></tr>
+    <tr><td class="paramname">event</td><td>: Event type (see <a class="el" href="group__wicedbt___device_management.html#ga748b7c8c9f7711162f8def9f5408a794" title="ADV extension events to the application.">wiced_bt_ble_adv_ext_event_t</a>) </td></tr>
     <tr><td class="paramname">p_data</td><td>: Event data (see <a class="el" href="unionwiced__bt__ble__adv__ext__event__data__t.html" title="union of events data">wiced_bt_ble_adv_ext_event_data_t</a>)</td></tr>
   </table>
   </dd>
@@ -2047,15 +2052,15 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 
 <p>Scanner filter policy. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab38fa8e6fee21aa2f6f1aa9dd1194516aab484a0e2506ee020d4ffe5a7461f1b9"></a>BTM_BLE_SCANNER_FILTER_ALL_ADV_RSP&#160;</td><td class="fielddoc"><p>accept adv packet from all, directed adv pkt not directed to local device is ignored </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab38fa8e6fee21aa2f6f1aa9dd1194516abb80bf34eb7dbc5843e3a063fa13ce95"></a>BTM_BLE_SCAN_POLICY_ACCEPT_ADV_RSP&#160;</td><td class="fielddoc"><p>accept adv packet from all, directed adv pkt not directed to local device is ignored </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab38fa8e6fee21aa2f6f1aa9dd1194516a946802bef47260c652bebe6dda5ef6c2"></a>BTM_BLE_SCANNER_FILTER_WHITELIST_ADV_RSP&#160;</td><td class="fielddoc"><p>accept adv packet from device in white list, directed adv packet not directed to local device is ignored </p>
+<tr><td class="fieldname"><a id="ggab38fa8e6fee21aa2f6f1aa9dd1194516aaaa07f1c9e02a01a404735aa7e3dc323"></a>BTM_BLE_SCAN_POLICY_FILTER_ADV_RSP&#160;</td><td class="fielddoc"><p>accept adv packet from device in filter Accept List, directed adv packet not directed to local device is ignored </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab38fa8e6fee21aa2f6f1aa9dd1194516a0b539d34476da7ae11693e54ba6a40ce"></a>BTM_BLE_SCANNER_FILTER_ALL_RPA_DIR_ADV_RSP&#160;</td><td class="fielddoc"><p>accept adv packet from all, directed adv pkt not directed to local device is ignored except direct adv with RPA </p>
+<tr><td class="fieldname"><a id="ggab38fa8e6fee21aa2f6f1aa9dd1194516aa037daa4cbd1e13dd3c02a1681409eeb"></a>BTM_BLE_SCAN_POLICY_ACCEPT_RPA_DIR_ADV_RSP&#160;</td><td class="fielddoc"><p>accept adv packet from all, directed adv pkt not directed to local device is ignored except direct adv with RPA </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab38fa8e6fee21aa2f6f1aa9dd1194516ad512719a9b467797d7630c19155d4725"></a>BTM_BLE_SCANNER_FILTER_WHITELIST_RPA_DIR_ADV_RSP&#160;</td><td class="fielddoc"><p>accept adv packet from device in white list, directed adv pkt not directed to me is ignored except direct adv with RPA </p>
+<tr><td class="fieldname"><a id="ggab38fa8e6fee21aa2f6f1aa9dd1194516a88f79a07e8743245b76157d562c83b2e"></a>BTM_BLE_SCAN_POLICY_FILTER_RPA_DIR_ADV_RSP&#160;</td><td class="fielddoc"><p>accept adv packet from device in filter Accept List, directed adv pkt not directed to me is ignored except direct adv with RPA </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab38fa8e6fee21aa2f6f1aa9dd1194516aa660f771d11a4eceaa0f3cffa205f41d"></a>BTM_BLE_SCANNER_FILTER_MAX&#160;</td><td class="fielddoc"><p>Max Scan filter policy value. </p>
+<tr><td class="fieldname"><a id="ggab38fa8e6fee21aa2f6f1aa9dd1194516a8b463656cec6650f9bc20272a6cd64f9"></a>BTM_BLE_SCAN_POLICY_MAX&#160;</td><td class="fielddoc"><p>Max Scan filter policy value. </p>
 </td></tr>
 </table>
 
@@ -2075,15 +2080,15 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 
 <p>Advertising filter policy. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae169c3a016dc0a8d0df604dda69c3249a68507601a1554b3a54ded1243b23dab4"></a>BTM_BLE_ADVERT_FILTER_ALL_CONNECTION_REQ_ALL_SCAN_REQ&#160;</td><td class="fielddoc"><p>Process scan and connection requests from all devices (i.e., the White List is not in use) (default) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae169c3a016dc0a8d0df604dda69c3249add3f372f36bceae2e1ed91477cc3ab26"></a>BTM_BLE_ADV_POLICY_ACCEPT_CONN_AND_SCAN&#160;</td><td class="fielddoc"><p>Process scan and connection requests from all devices (i.e., the Filter Accept List is not in use) (default) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae169c3a016dc0a8d0df604dda69c3249ac8b8938ce2d7791caa7fa8723d190362"></a>BTM_BLE_ADVERT_FILTER_ALL_CONNECTION_REQ_WHITELIST_SCAN_REQ&#160;</td><td class="fielddoc"><p>Process connection requests from all devices and only scan requests from devices that are in the White List. </p>
+<tr><td class="fieldname"><a id="ggae169c3a016dc0a8d0df604dda69c3249ac0e52ecefb1c278fb1f3593372f7d856"></a>BTM_BLE_ADV_POLICY_ACCEPT_CONN_FILTER_SCAN&#160;</td><td class="fielddoc"><p>Process connection requests from all devices and only scan requests from devices that are in the Filter Accept List. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae169c3a016dc0a8d0df604dda69c3249aa0cbe7b66090ec34a34b61ff24546ba8"></a>BTM_BLE_ADVERT_FILTER_WHITELIST_CONNECTION_REQ_ALL_SCAN_REQ&#160;</td><td class="fielddoc"><p>Process scan requests from all devices and only connection requests from devices that are in the White List. </p>
+<tr><td class="fieldname"><a id="ggae169c3a016dc0a8d0df604dda69c3249a578c2b2899548a93be78affbc103381c"></a>BTM_BLE_ADV_POLICY_FILTER_CONN_ACCEPT_SCAN&#160;</td><td class="fielddoc"><p>Process scan requests from all devices and only connection requests from devices that are in the Filter Accept List. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae169c3a016dc0a8d0df604dda69c3249a33abfc543d1750b61aff6eb8b56791ff"></a>BTM_BLE_ADVERT_FILTER_WHITELIST_CONNECTION_REQ_WHITELIST_SCAN_REQ&#160;</td><td class="fielddoc"><p>Process scan and connection requests only from devices in the White List. </p>
+<tr><td class="fieldname"><a id="ggae169c3a016dc0a8d0df604dda69c3249a76163ce8b16f5e4701377735e4cff1b0"></a>BTM_BLE_ADV_POLICY_FILTER_CONN_FILTER_SCAN&#160;</td><td class="fielddoc"><p>Process scan and connection requests only from devices in the Filter Accept List. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae169c3a016dc0a8d0df604dda69c3249a15a8d12eff1e96788c47f0b3d6b20388"></a>BTM_BLE_ADVERT_FILTER_MAX&#160;</td><td class="fielddoc"><p>Max Adv filter value. </p>
+<tr><td class="fieldname"><a id="ggae169c3a016dc0a8d0df604dda69c3249ad01f7e7b0262b9a10cb378e649696dce"></a>BTM_BLE_ADV_POLICY_MAX&#160;</td><td class="fielddoc"><p>Max Adv filter value. </p>
 </td></tr>
 </table>
 
@@ -2133,7 +2138,7 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 </td></tr>
 <tr><td class="fieldname"><a id="gga4e721fb996eccc386b0311f022675eb2a891bc98d1062bdabf46731c0e9079f9f"></a>BTM_BLE_ADVERT_TYPE_SM_OOB_FLAG&#160;</td><td class="fielddoc"><p>Security manager Out-of-Band data. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4e721fb996eccc386b0311f022675eb2a9341faa0d5828913df02fa80afb0b8fd"></a>BTM_BLE_ADVERT_TYPE_INTERVAL_RANGE&#160;</td><td class="fielddoc"><p>Slave connection interval range. </p>
+<tr><td class="fieldname"><a id="gga4e721fb996eccc386b0311f022675eb2a9341faa0d5828913df02fa80afb0b8fd"></a>BTM_BLE_ADVERT_TYPE_INTERVAL_RANGE&#160;</td><td class="fielddoc"><p>Peripheral connection interval range. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4e721fb996eccc386b0311f022675eb2a40503229ff5a75fc2667c624a3afd486"></a>BTM_BLE_ADVERT_TYPE_SOLICITATION_SRV_UUID&#160;</td><td class="fielddoc"><p>List of solicitated services - 16 bit UUIDs. </p>
 </td></tr>
@@ -2381,13 +2386,13 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 
 <p>Multi-advertisement Filtering policy. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1ec420c6d0f772c040c47950fe990751a93eaa4b0e79802c53cbda56ae22dbaee"></a>MULTI_ADVERT_FILTER_POLICY_WHITE_LIST_NOT_USED&#160;</td><td class="fielddoc"><p>Multi adv filter white list not used. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1ec420c6d0f772c040c47950fe990751ad9d0f6c722ecc7071ca229ab568d494f"></a>MULTI_ADVERT_FILTER_POLICY_NOT_USED&#160;</td><td class="fielddoc"><p>Multi adv filter filter Accept List not used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1ec420c6d0f772c040c47950fe990751a387f4724f47aa445ecbbf84783ab7556"></a>MULTI_ADVERT_WHITE_LIST_POLICY_ADV_ALLOW_UNKNOWN_CONNECTION&#160;</td><td class="fielddoc"><p>Multi adv filter white list for scan request. </p>
+<tr><td class="fieldname"><a id="gga1ec420c6d0f772c040c47950fe990751aa66c04b6565a72295e577d082ca0cc50"></a>MULTI_ADVERT_FILTER_POLICY_ADV_ALLOW_UNKNOWN_CONNECTION&#160;</td><td class="fielddoc"><p>Multi adv filter filter Accept List for scan request. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1ec420c6d0f772c040c47950fe990751a9c0d539ec6bfdb4a5208752b15f59650"></a>MULTI_ADVERT_WHITE_LIST_POLICY_ADV_ALLOW_UNKNOWN_SCANNING&#160;</td><td class="fielddoc"><p>Multi adv filter white list for connection request. </p>
+<tr><td class="fieldname"><a id="gga1ec420c6d0f772c040c47950fe990751ae0ebb545ed219d89fd2f32bb3876324a"></a>MULTI_ADVERT_FILTER_POLICY_ADV_ALLOW_UNKNOWN_SCANNING&#160;</td><td class="fielddoc"><p>Multi adv filter filter Accept List for connection request. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1ec420c6d0f772c040c47950fe990751a4786a015f299b907649c1dc212c74ebf"></a>MULTI_ADVERT_FILTER_POLICY_WHITE_LIST_USED_FOR_ALL&#160;</td><td class="fielddoc"><p>Multi adv filter white list for all. </p>
+<tr><td class="fieldname"><a id="gga1ec420c6d0f772c040c47950fe990751a92e6cef2d690b23cd4b44fbe2d7dc467"></a>MULTI_ADVERT_FILTER_POLICY_USE_FOR_ALL&#160;</td><td class="fielddoc"><p>Multi adv filter filter Accept List for all. </p>
 </td></tr>
 </table>
 
@@ -2521,157 +2526,157 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 
 </div>
 </div>
-<a id="ga726ca809ffd3d67ab4b8476646f26635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga726ca809ffd3d67ab4b8476646f26635">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="gafc7d04e4f50a18a0d391769cb3173bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc7d04e4f50a18a0d391769cb3173bc5">&#9670;&nbsp;</a></span>wiced_bt_ble_ext_adv_scan_req_notification_setting_e</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__wicedbt___device_management.html#gafc7d04e4f50a18a0d391769cb3173bc5">wiced_bt_ble_ext_adv_scan_req_notification_setting_e</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Value to configure to receive scan request recived notification. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga726ca809ffd3d67ab4b8476646f26635ada7dca465da270c477d740ae59265183"></a>WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_DISABLE&#160;</td><td class="fielddoc"><p>Do not send Notification on scan request. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggafc7d04e4f50a18a0d391769cb3173bc5ada7dca465da270c477d740ae59265183"></a>WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_DISABLE&#160;</td><td class="fielddoc"><p>Do not send Notification on scan request. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga726ca809ffd3d67ab4b8476646f26635abe7d8a512840890085fd2eb482392e4e"></a>WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_ENABLE&#160;</td><td class="fielddoc"><p>Send Notification on scan request. </p>
+<tr><td class="fieldname"><a id="ggafc7d04e4f50a18a0d391769cb3173bc5abe7d8a512840890085fd2eb482392e4e"></a>WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_ENABLE&#160;</td><td class="fielddoc"><p>Send Notification on scan request. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="ga0411cd49bb5b71852cecd93bcbf0ca2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0411cd49bb5b71852cecd93bcbf0ca2d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga49f4cafbe857432f82a3469d0bd7a190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49f4cafbe857432f82a3469d0bd7a190">&#9670;&nbsp;</a></span>wiced_bt_ble_periodic_adv_prop_e</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__wicedbt___device_management.html#ga49f4cafbe857432f82a3469d0bd7a190">wiced_bt_ble_periodic_adv_prop_e</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Periodic adv property. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0411cd49bb5b71852cecd93bcbf0ca2da959ba8f14842fcc73747276affc37e9d"></a>WICED_BT_BLE_PERIODIC_ADV_PROPERTY_INCLUDE_TX_POWER&#160;</td><td class="fielddoc"><p>Speicify Tx power in periodic adv events. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga49f4cafbe857432f82a3469d0bd7a190a959ba8f14842fcc73747276affc37e9d"></a>WICED_BT_BLE_PERIODIC_ADV_PROPERTY_INCLUDE_TX_POWER&#160;</td><td class="fielddoc"><p>Speicify Tx power in periodic adv events. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="gabed82baf7f470b522273a3e37c24c600"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabed82baf7f470b522273a3e37c24c600">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga741cf5a4faaa7f62fc0314304b4fcbf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga741cf5a4faaa7f62fc0314304b4fcbf0">&#9670;&nbsp;</a></span>wiced_bt_ble_ext_scan_filter_duplicate_e</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__wicedbt___device_management.html#ga741cf5a4faaa7f62fc0314304b4fcbf0">wiced_bt_ble_ext_scan_filter_duplicate_e</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Extended scan duplicate filter policy. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabed82baf7f470b522273a3e37c24c600a8840450520c2717fbb3a8592750e4cb8"></a>WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_DISABLE&#160;</td><td class="fielddoc"><p>send all advertisements received from advertisers </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga741cf5a4faaa7f62fc0314304b4fcbf0a8840450520c2717fbb3a8592750e4cb8"></a>WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_DISABLE&#160;</td><td class="fielddoc"><p>send all advertisements received from advertisers </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggabed82baf7f470b522273a3e37c24c600aa995c11b1f81d0164bd20c094ec21c07"></a>WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE&#160;</td><td class="fielddoc"><p>duplicate advertisements should not be sent until scan disabled </p>
+<tr><td class="fieldname"><a id="gga741cf5a4faaa7f62fc0314304b4fcbf0aa995c11b1f81d0164bd20c094ec21c07"></a>WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE&#160;</td><td class="fielddoc"><p>duplicate advertisements should not be sent until scan disabled </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggabed82baf7f470b522273a3e37c24c600a8cdb48a739deef9f3ab4622189fb6283"></a>WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE_RESET_ON_SCAN_PERIOD&#160;</td><td class="fielddoc"><p>filter duplicate adv during single scan Duration (see #wiced_bt_ble_ext_scan_enable_t).Period should be non zero on using this option </p>
+<tr><td class="fieldname"><a id="gga741cf5a4faaa7f62fc0314304b4fcbf0a8cdb48a739deef9f3ab4622189fb6283"></a>WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE_RESET_ON_SCAN_PERIOD&#160;</td><td class="fielddoc"><p>filter duplicate adv during single scan Duration (see wiced_bt_ble_ext_scan_enable_t).Period should be non zero on using this option </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="gab04a0655cd1e3bcac5e8f48c18df1a57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab04a0655cd1e3bcac5e8f48c18df1a57">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="gabcf469159bec2fd7d1f1d6b5a76cda51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabcf469159bec2fd7d1f1d6b5a76cda51">&#9670;&nbsp;</a></span>wiced_bt_ble_ext_filter_policy_e</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__wicedbt___device_management.html#gabcf469159bec2fd7d1f1d6b5a76cda51">wiced_bt_ble_ext_filter_policy_e</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Filter policy used in extended create connection command. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab04a0655cd1e3bcac5e8f48c18df1a57a68dae72256fc4c072a9da77b4397d396"></a>WICED_BT_BLE_IGNORE_WHITE_LIST&#160;</td><td class="fielddoc"><p>White List is not used to determine which advertiser to connect to. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabcf469159bec2fd7d1f1d6b5a76cda51a06234ca144f35338f6bc4120362b5001"></a>WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS&#160;</td><td class="fielddoc"><p>Filter Accept List is not used to determine which advertiser to connect to. </p>
 <p>Peer_Address_Type and Peer_Address shall be used </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab04a0655cd1e3bcac5e8f48c18df1a57a4d7fa0c13b8cbc1be7f39f062cb6275b"></a>WICED_BT_BLE_CONNECT_TO_WHITE_LIST_DEVICES&#160;</td><td class="fielddoc"><p>White List is used to determine which advertiser to connect to. </p>
+<tr><td class="fieldname"><a id="ggabcf469159bec2fd7d1f1d6b5a76cda51a3125d3696ae08c0771f9d4de26679179"></a>WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS&#160;</td><td class="fielddoc"><p>Filter Accept List is used to determine which advertiser to connect to. </p>
 <p>Peer_Address_Type and Peer_Address shall be ignored. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="ga385c44f6fb256e5716a2302a5b940388"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga385c44f6fb256e5716a2302a5b940388">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga5f6ce070f4dc0efbf5a1ad4aeb54dc26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5f6ce070f4dc0efbf5a1ad4aeb54dc26">&#9670;&nbsp;</a></span>wiced_bt_ble_adv_sync_options_e</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__wicedbt___device_management.html#ga5f6ce070f4dc0efbf5a1ad4aeb54dc26">wiced_bt_ble_adv_sync_options_e</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Options used in create periodic sync to periodic adv command. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga385c44f6fb256e5716a2302a5b940388a65301d81e398ef6d8eab8cf8492b89c3"></a>WICED_BT_BLE_IGNORE_SYNC_TO_PERIODIC_ADV_LIST&#160;</td><td class="fielddoc"><p>Use the Advertising_SID, Advertising_Address_Type, and Advertising Address parameters specified in create sync command to determine which advertiser to listen to. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5f6ce070f4dc0efbf5a1ad4aeb54dc26a65301d81e398ef6d8eab8cf8492b89c3"></a>WICED_BT_BLE_IGNORE_SYNC_TO_PERIODIC_ADV_LIST&#160;</td><td class="fielddoc"><p>Use the Advertising_SID, Advertising_Address_Type, and Advertising Address parameters specified in create sync command to determine which advertiser to listen to. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga385c44f6fb256e5716a2302a5b940388ab7cf10c331eb70f50a12a15cda4ef35b"></a>WICED_BT_BLE_SYNC_TO_PERIODIC_ADV_LIST&#160;</td><td class="fielddoc"><p>Use the Periodic Advertiser List to determine which advertiser to listen to. </p>
+<tr><td class="fieldname"><a id="gga5f6ce070f4dc0efbf5a1ad4aeb54dc26ab7cf10c331eb70f50a12a15cda4ef35b"></a>WICED_BT_BLE_SYNC_TO_PERIODIC_ADV_LIST&#160;</td><td class="fielddoc"><p>Use the Periodic Advertiser List to determine which advertiser to listen to. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="gac36f475ca5b446f4fde4c9b90bec77c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac36f475ca5b446f4fde4c9b90bec77c8">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="ga8739336a6d1ebba1faaf824bc5c1024d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8739336a6d1ebba1faaf824bc5c1024d">&#9670;&nbsp;</a></span>wiced_bt_ble_ext_adv_report_count_e</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__wicedbt___device_management.html#ga8739336a6d1ebba1faaf824bc5c1024d">wiced_bt_ble_ext_adv_report_count_e</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Min and Max possible number of reports in LE extended adv report event. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac36f475ca5b446f4fde4c9b90bec77c8a2e150f9aebb639d8b399e3063d3db808"></a>ADV_REP_EVT_COUNT_MIN&#160;</td><td class="fielddoc"><p>min number of reports in LE extended adv report event </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8739336a6d1ebba1faaf824bc5c1024da2e150f9aebb639d8b399e3063d3db808"></a>ADV_REP_EVT_COUNT_MIN&#160;</td><td class="fielddoc"><p>min number of reports in LE extended adv report event </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac36f475ca5b446f4fde4c9b90bec77c8a7e93b8fb79eb54fffb0ef7aae25a3bbc"></a>ADV_REP_EVT_COUNT_MAX&#160;</td><td class="fielddoc"><p>max number of reports in LE extended adv report event </p>
+<tr><td class="fieldname"><a id="gga8739336a6d1ebba1faaf824bc5c1024da7e93b8fb79eb54fffb0ef7aae25a3bbc"></a>ADV_REP_EVT_COUNT_MAX&#160;</td><td class="fielddoc"><p>max number of reports in LE extended adv report event </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="ga16af7b253440dadd46a80a4b9fddba4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16af7b253440dadd46a80a4b9fddba4d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="gacd4a1a8913528880bad341a4f46f92af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd4a1a8913528880bad341a4f46f92af">&#9670;&nbsp;</a></span>wiced_bt_ble_channel_sel_algo_e</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group__wicedbt___device_management.html#gacd4a1a8913528880bad341a4f46f92af">wiced_bt_ble_channel_sel_algo_e</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>BLE channel selection algorithms. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga16af7b253440dadd46a80a4b9fddba4daf29644acab31ee07ad38f9cbcf6cf5b8"></a>LE_CHANNEL_SEL_ALGO_1_USED&#160;</td><td class="fielddoc"><p>LE channel selection algorithm#1 used. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggacd4a1a8913528880bad341a4f46f92afaf29644acab31ee07ad38f9cbcf6cf5b8"></a>LE_CHANNEL_SEL_ALGO_1_USED&#160;</td><td class="fielddoc"><p>LE channel selection algorithm#1 used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga16af7b253440dadd46a80a4b9fddba4da421a8eaeaed16ffeda1a714512320476"></a>LE_CHANNEL_SEL_ALGO_2_USED&#160;</td><td class="fielddoc"><p>LE channel selection algorithm#2 used. </p>
+<tr><td class="fieldname"><a id="ggacd4a1a8913528880bad341a4f46f92afa421a8eaeaed16ffeda1a714512320476"></a>LE_CHANNEL_SEL_ALGO_2_USED&#160;</td><td class="fielddoc"><p>LE channel selection algorithm#2 used. </p>
 </td></tr>
 </table>
 
@@ -2688,6 +2693,8 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>ADV extension events to the application. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga748b7c8c9f7711162f8def9f5408a794ab8dd03d44ff23c4e1cea889088b9c057"></a>WICED_BT_BLE_PERIODIC_ADV_SYNC_ESTABLISHED_EVENT&#160;</td><td class="fielddoc"><p>Sync established to periodic advertiser's periodic advertisement. </p>
 <p>Event Data : <a class="el" href="structwiced__bt__ble__periodic__adv__sync__established__event__data__t.html" title="Sync extablished to periodic advertiser event data format.">wiced_bt_ble_periodic_adv_sync_established_event_data_t</a> </p>
@@ -2706,42 +2713,6 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 </td></tr>
 <tr><td class="fieldname"><a id="gga748b7c8c9f7711162f8def9f5408a794a5d7b21cd7c34e47c01ff033d73d7a26d"></a>WICED_BT_BLE_CHANNEL_SEL_ALGO_EVENT&#160;</td><td class="fielddoc"><p>LE Channel selected algorithm event. </p>
 <p>Event Data: <a class="el" href="structwiced__bt__ble__channel__sel__algo__event__data__t.html" title="Channel selection algorithm event data format.">wiced_bt_ble_channel_sel_algo_event_data_t</a> </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="gabc9b4dbc8e43ce6442971e2804d1aca5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabc9b4dbc8e43ce6442971e2804d1aca5">&#9670;&nbsp;</a></span>wiced_bt_sec_level_e</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__wicedbt___device_management.html#gabc9b4dbc8e43ce6442971e2804d1aca5">wiced_bt_sec_level_e</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Security Service Levels [bit mask]. </p>
-<dl class="section note"><dt>Note</dt><dd>Encryption should not be used without authentication. </dd></dl>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabc9b4dbc8e43ce6442971e2804d1aca5a0e9685e4326c3ad4af03a17f1a063f73"></a>BTM_SEC_NONE&#160;</td><td class="fielddoc"><p>Nothing required. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggabc9b4dbc8e43ce6442971e2804d1aca5a0dc906b1a99ae1cf62157b52008343a8"></a>BTM_SEC_IN_AUTHENTICATE&#160;</td><td class="fielddoc"><p>Inbound call requires authentication. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggabc9b4dbc8e43ce6442971e2804d1aca5ad097914c106f7207ac324cdd0bbbe55c"></a>BTM_SEC_IN_ENCRYPT&#160;</td><td class="fielddoc"><p>Inbound call requires encryption. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggabc9b4dbc8e43ce6442971e2804d1aca5a9bae9e6788bf546a5a0f21c7fc331673"></a>BTM_SEC_OUT_AUTHENTICATE&#160;</td><td class="fielddoc"><p>Outbound call requires authentication. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggabc9b4dbc8e43ce6442971e2804d1aca5a93ac194e677a1705bff0d07bcc9884c7"></a>BTM_SEC_OUT_ENCRYPT&#160;</td><td class="fielddoc"><p>Outbound call requires encryption. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggabc9b4dbc8e43ce6442971e2804d1aca5afca6a03c2e2e6b572e147e5b4755891d"></a>BTM_SEC_ENCRYPT&#160;</td><td class="fielddoc"><p>Requires encryption (inbound and outbound) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggabc9b4dbc8e43ce6442971e2804d1aca5aa05b44cfeb4ed0381f9461156bb6f063"></a>BTM_SEC_BR_MODE4_LEVEL4&#160;</td><td class="fielddoc"><p>BR Mode 4 Level 4 (MITM and P-256 except for SDP and connectionless broadcast) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggabc9b4dbc8e43ce6442971e2804d1aca5af8233aedd42e13414803c0eec4f1042d"></a>BTM_SEC_SC_ONLY&#160;</td><td class="fielddoc"><p>Secure Connections Only Mode (P-256 based Secure Simple Pairing and Authentication) </p>
-<p>If this bit is set, will fail pairing if peer does not support SC </p>
 </td></tr>
 </table>
 
@@ -2859,6 +2830,10 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 </td></tr>
 <tr><td class="fieldname"><a id="ggaef5791fdc8d52268ee25d1edfec15f90a083a1dd9851951ff826c35e85230b16c"></a>BTM_LE_AUTH_REQ_SC&#160;</td><td class="fielddoc"><p>LE Secure Connection or legacy, no MITM, no Bonding. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaef5791fdc8d52268ee25d1edfec15f90a45358c7eaffaa02a2e796e894e89b234"></a>BTM_LE_AUTH_REQ_KP&#160;</td><td class="fielddoc"><p>Keypress supported Y/N. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaef5791fdc8d52268ee25d1edfec15f90a96dcdc9d88c9bd8f4307e73d4635dee5"></a>BTM_LE_AUTH_REQ_H7&#160;</td><td class="fielddoc"><p>Key derivation function H7 supported Y/N. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ggaef5791fdc8d52268ee25d1edfec15f90a72c20682eb3690009366d6ff8062d240"></a>BTM_LE_AUTH_REQ_SC_BOND&#160;</td><td class="fielddoc"><p>LE Secure Connection or legacy, no MITM, Bonding. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaef5791fdc8d52268ee25d1edfec15f90a3ed70042466957960a0abf1d5b32fe9d"></a>BTM_LE_AUTH_REQ_SC_MITM&#160;</td><td class="fielddoc"><p>LE Secure Connection or legacy, MITM, no Bonding. </p>
@@ -2947,9 +2922,9 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 </td></tr>
 <tr><td class="fieldname"><a id="gga28e206c3cbbf749ddb7a17850e4680dca9ef278d090d4aadee43924d6f45dc118"></a>BTM_LE_KEY_PLK&#160;</td><td class="fielddoc"><p>peer link key </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga28e206c3cbbf749ddb7a17850e4680dca2cdf73b5dc57183d58512c87b56b0de2"></a>BTM_LE_KEY_LENC&#160;</td><td class="fielddoc"><p>master role security information:div </p>
+<tr><td class="fieldname"><a id="gga28e206c3cbbf749ddb7a17850e4680dca2cdf73b5dc57183d58512c87b56b0de2"></a>BTM_LE_KEY_LENC&#160;</td><td class="fielddoc"><p>Central role security information:div. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga28e206c3cbbf749ddb7a17850e4680dca0845bba18d830dee7446f5ddef7e2810"></a>BTM_LE_KEY_LID&#160;</td><td class="fielddoc"><p>master device ID key </p>
+<tr><td class="fieldname"><a id="gga28e206c3cbbf749ddb7a17850e4680dca0845bba18d830dee7446f5ddef7e2810"></a>BTM_LE_KEY_LID&#160;</td><td class="fielddoc"><p>Central device ID key. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga28e206c3cbbf749ddb7a17850e4680dcaec6dff50095a0eb91b60ecd8332363ce"></a>BTM_LE_KEY_LCSRK&#160;</td><td class="fielddoc"><p>local CSRK has been deliver to peer </p>
 </td></tr>
@@ -3165,7 +3140,7 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
 <p>Event data: </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65af8f48bfceb6ce2d2b0f411c03e9aa249"></a>BTM_PAIRING_IO_CAPABILITIES_BLE_REQUEST_EVT&#160;</td><td class="fielddoc"><p>Requesting IO capabilities for BLE pairing. </p>
-<dl class="section note"><dt>Note</dt><dd>BR/EDR Only Slave can check peer io capabilities in event data before updating with local io capabilities. Event data: <a class="el" href="structwiced__bt__dev__ble__io__caps__req__t.html" title="BLE Pairing IO Capabilities (to be filled by application callback on BTM_PAIRING_IO_CAPABILITIES_BLE_...">wiced_bt_dev_ble_io_caps_req_t</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>BR/EDR Only Peripheral can check peer io capabilities in event data before updating with local io capabilities. Event data: <a class="el" href="structwiced__bt__dev__ble__io__caps__req__t.html" title="BLE Pairing IO Capabilities (to be filled by application callback on BTM_PAIRING_IO_CAPABILITIES_BLE_...">wiced_bt_dev_ble_io_caps_req_t</a> </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a7e861203d374f29d924eca282b7e257b"></a>BTM_PAIRING_COMPLETE_EVT&#160;</td><td class="fielddoc"><p>received SIMPLE_PAIRING_COMPLETE event. </p>
 <p>Event data: <a class="el" href="structwiced__bt__dev__pairing__cplt__t.html" title="Pairing complete notification (BTM_PAIRING_COMPLETE_EVT event data type)">wiced_bt_dev_pairing_cplt_t</a> </p>
@@ -3277,9 +3252,9 @@ HCI_ERR_CONN_FAILED_ESTABLISHMENT </b>connection status change callback </td></t
       </table>
 </div><div class="memdoc">
 
-<p>.Enumeration of known link policy settings value assignments of the wiced_bt_link_policy_settings_t </p>
+<p>.Enumeration of known link policy settings value assignments of the <a class="el" href="group__wicedbt___device_management.html#ga0c5b67d556561dcab638afff83ac0d03">wiced_bt_link_policy_settings_t</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5ac33b180c10d23690c1bf22363f0e56ac075635990b3eacb973b38e77f49f323"></a>WICED_ENABLE_MASTER_SLAVE_SWITCH&#160;</td><td class="fielddoc"><p>Enable Role Switch. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5ac33b180c10d23690c1bf22363f0e56adeee9c5543ed8ebfe0d808daf00d40ae"></a>WICED_ENABLE_ROLE_SWITCH&#160;</td><td class="fielddoc"><p>Enable Role Switch. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga5ac33b180c10d23690c1bf22363f0e56a95e2734d3f358a0e424cc756dc043553"></a>WICED_ENABLE_HOLD_MODE&#160;</td><td class="fielddoc"><p>Enable Hold mode. </p>
 </td></tr>

@@ -286,7 +286,7 @@ wiced_bt_hidd_status_t wiced_bt_hidd_disconnect(void);
  *
  *  @return         status code (see #wiced_bt_hidd_status_t)
  */
-wiced_bt_hidd_status_t wiced_bt_hidd_hand_shake(UINT8 res_code);
+wiced_bt_hidd_status_t wiced_bt_hidd_hand_shake(uint8_t res_code);
 
 /**
  * Function         wiced_bt_hidd_virtual_unplug

@@ -1,7 +1,7 @@
 var group__btm__ble__api__functions =
 [
     [ "Advertisement & Scan", "group__btm__ble__adv__scan__functions.html", "group__btm__ble__adv__scan__functions" ],
-    [ "Connection and Whitelist", "group__btm__ble__conn__whitelist__functions.html", "group__btm__ble__conn__whitelist__functions" ],
+    [ "Connection and Filter Accept List", "group__btm__ble__conn__filter__accept__list__functions.html", "group__btm__ble__conn__filter__accept__list__functions" ],
     [ "Phy", "group__btm__ble__phy__functions.html", "group__btm__ble__phy__functions" ],
     [ "MultiAdv", "group__btm__ble__multi__adv__functions.html", "group__btm__ble__multi__adv__functions" ],
     [ "BLE Security", "group__btm__ble__sec__api__functions.html", "group__btm__ble__sec__api__functions" ],
@@ -36,6 +36,12 @@ var group__btm__ble__api__functions =
       [ "conn_interval", "structwiced__bt__ble__conn__params__t.html#a545ef7b2495e29e8e4812629fb135c44", null ],
       [ "conn_latency", "structwiced__bt__ble__conn__params__t.html#a9cca6008241e70f7882704bc6d9deb65", null ],
       [ "supervision_timeout", "structwiced__bt__ble__conn__params__t.html#ab7c6cee604c76191bd70926d8b40562e", null ]
+    ] ],
+    [ "wiced_bt_ble_pref_conn_params_t", "structwiced__bt__ble__pref__conn__params__t.html", [
+      [ "conn_interval_min", "structwiced__bt__ble__pref__conn__params__t.html#aa44c68f25e83a976e17afb7a36e02994", null ],
+      [ "conn_interval_max", "structwiced__bt__ble__pref__conn__params__t.html#aa466a15e327576bc21b6c9d54cdbbf8d", null ],
+      [ "conn_latency", "structwiced__bt__ble__pref__conn__params__t.html#a19d2c544851df20ead4466ae86034a59", null ],
+      [ "conn_supervision_timeout", "structwiced__bt__ble__pref__conn__params__t.html#a7dde00723afa618605a08eabcca67d26", null ]
     ] ],
     [ "wiced_bt_ble_multi_adv_params_t", "structwiced__bt__ble__multi__adv__params__t.html", [
       [ "adv_int_min", "structwiced__bt__ble__multi__adv__params__t.html#a7f75e376dc2b3dfd530773829d9993be", null ],
@@ -155,13 +161,13 @@ var group__btm__ble__api__functions =
     [ "BTM_BLE_SCAN_SLOW_WINDOW_2", "group__btm__ble__api__functions.html#ga114676fa6cac1082f1754187fbef1cd5", null ],
     [ "BTM_BLE_CONN_INTERVAL_MIN_DEF", "group__btm__ble__api__functions.html#gad810fbb1805c0f676bcc135c09adaa52", null ],
     [ "BTM_BLE_CONN_INTERVAL_MAX_DEF", "group__btm__ble__api__functions.html#gaea1a6b8149b4944c13b9dc9817a087f5", null ],
-    [ "BTM_BLE_CONN_SLAVE_LATENCY_DEF", "group__btm__ble__api__functions.html#ga6e78f5f942bdf12b4bbfcc26dbde2c45", null ],
+    [ "BTM_BLE_CONN_PERIPHERAL_LATENCY_DEF", "group__btm__ble__api__functions.html#ga01724e6a7493c8ea5fd268cf9a3e5de1", null ],
     [ "BTM_BLE_CONN_TIMEOUT_DEF", "group__btm__ble__api__functions.html#ga795beb1024b87fe34c272e7d20311c1e", null ],
     [ "BTM_BLE_AUTH_SIGNATURE_SIZE", "group__btm__ble__api__functions.html#ga649e36b7823dc944550a5a2341d27878", null ],
-    [ "BTM_BLE_POLICY_BLACK_ALL", "group__btm__ble__api__functions.html#ga9a622a65b544c811f806eac51dcb58c9", null ],
+    [ "BTM_BLE_POLICY_REJECT_ALL", "group__btm__ble__api__functions.html#gaa3661370533c7a2b08cc95626084bb5a", null ],
     [ "BTM_BLE_POLICY_ALLOW_SCAN", "group__btm__ble__api__functions.html#gad2ec34d67a059441e4d6c5410346d47f", null ],
     [ "BTM_BLE_POLICY_ALLOW_CONN", "group__btm__ble__api__functions.html#ga74afed208bbe3506c1f0f0e668c4050b", null ],
-    [ "BTM_BLE_POLICY_WHITE_ALL", "group__btm__ble__api__functions.html#gac074b90e2c284eced630e3414a700565", null ],
+    [ "BTM_BLE_POLICY_ALLOW_ALL", "group__btm__ble__api__functions.html#ga23acf9340b586b9538a64acace85c2b0", null ],
     [ "BTM_BLE_LIMITED_DISCOVERABLE_FLAG", "group__btm__ble__api__functions.html#gab20d056f3428f5778449830c448fb342", null ],
     [ "BTM_BLE_GENERAL_DISCOVERABLE_FLAG", "group__btm__ble__api__functions.html#ga4f81edfc3b5c8c09a6763ad0ea208d5b", null ],
     [ "BTM_BLE_BREDR_NOT_SUPPORTED", "group__btm__ble__api__functions.html#ga87aaba1869076b5fa23c8d3c67924475", null ],
@@ -208,21 +214,31 @@ var group__btm__ble__api__functions =
     [ "wiced_bt_ble_ext_adv_event_property_t", "group__btm__ble__api__functions.html#gad545fd425e7c401a97568135f47e39da", null ],
     [ "wiced_bt_ble_ext_adv_handle_t", "group__btm__ble__api__functions.html#ga1b69dfae9d92d482515eb85f19864e72", null ],
     [ "wiced_bt_ble_ext_adv_sid_t", "group__btm__ble__api__functions.html#gac6d6963aef40793449cbd2ead59fe54b", null ],
+    [ "wiced_bt_ble_ext_adv_scan_req_notification_setting_t", "group__btm__ble__api__functions.html#ga8fe6a2ef683e967c63ee9fba1a1d19f8", null ],
+    [ "wiced_bt_ble_periodic_adv_prop_t", "group__btm__ble__api__functions.html#ga2747cacb9e180fd5f67751755a76fd73", null ],
+    [ "wiced_bt_ble_ext_scan_filter_duplicate_t", "group__btm__ble__api__functions.html#ga873f6d031154b1a214cb56b873991983", null ],
+    [ "wiced_bt_ble_ext_filter_policy_t", "group__btm__ble__api__functions.html#gaf0ef601e684add601e7fe71fb4a6cfb0", null ],
+    [ "wiced_bt_ble_adv_sync_options_t", "group__btm__ble__api__functions.html#ga9ca488f9e3a161d2d37dccb4f5992c7e", null ],
     [ "wiced_bt_ble_periodic_adv_sync_handle_t", "group__btm__ble__api__functions.html#ga70c1c3632c806556629a4009d009ed8d", null ],
+    [ "wiced_bt_ble_adv_report_event_mask_t", "group__btm__ble__api__functions.html#gaeef30254c858058c82419185b0ddfb19", null ],
+    [ "wiced_bt_ble_ext_adv_report_count_t", "group__btm__ble__api__functions.html#gae39922d547c599431fbcf3ce82b9f905", null ],
+    [ "wiced_bt_ble_advertiser_clock_accuracy_t", "group__btm__ble__api__functions.html#ga88764a9b8a101e7f363460d84853b47f", null ],
+    [ "wiced_bt_ble_connection_handle_t", "group__btm__ble__api__functions.html#gaae7ecaff2127566c228e878f4377f0fc", null ],
+    [ "wiced_bt_ble_channel_sel_algo_t", "group__btm__ble__api__functions.html#gad95b6f7034311b47b240b8a711001988", null ],
     [ "wiced_bt_ble_adv_ext_event_cb_fp_t", "group__btm__ble__api__functions.html#gab1999e94016bb12b71aa6cee0695f356", null ],
     [ "wiced_bt_ble_scanner_filter_policy_e", "group__btm__ble__api__functions.html#gab38fa8e6fee21aa2f6f1aa9dd1194516", [
-      [ "BTM_BLE_SCANNER_FILTER_ALL_ADV_RSP", "group__btm__ble__api__functions.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516aab484a0e2506ee020d4ffe5a7461f1b9", null ],
-      [ "BTM_BLE_SCANNER_FILTER_WHITELIST_ADV_RSP", "group__btm__ble__api__functions.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516a946802bef47260c652bebe6dda5ef6c2", null ],
-      [ "BTM_BLE_SCANNER_FILTER_ALL_RPA_DIR_ADV_RSP", "group__btm__ble__api__functions.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516a0b539d34476da7ae11693e54ba6a40ce", null ],
-      [ "BTM_BLE_SCANNER_FILTER_WHITELIST_RPA_DIR_ADV_RSP", "group__btm__ble__api__functions.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516ad512719a9b467797d7630c19155d4725", null ],
-      [ "BTM_BLE_SCANNER_FILTER_MAX", "group__btm__ble__api__functions.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516aa660f771d11a4eceaa0f3cffa205f41d", null ]
+      [ "BTM_BLE_SCAN_POLICY_ACCEPT_ADV_RSP", "group__btm__ble__api__functions.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516abb80bf34eb7dbc5843e3a063fa13ce95", null ],
+      [ "BTM_BLE_SCAN_POLICY_FILTER_ADV_RSP", "group__btm__ble__api__functions.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516aaaa07f1c9e02a01a404735aa7e3dc323", null ],
+      [ "BTM_BLE_SCAN_POLICY_ACCEPT_RPA_DIR_ADV_RSP", "group__btm__ble__api__functions.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516aa037daa4cbd1e13dd3c02a1681409eeb", null ],
+      [ "BTM_BLE_SCAN_POLICY_FILTER_RPA_DIR_ADV_RSP", "group__btm__ble__api__functions.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516a88f79a07e8743245b76157d562c83b2e", null ],
+      [ "BTM_BLE_SCAN_POLICY_MAX", "group__btm__ble__api__functions.html#ggab38fa8e6fee21aa2f6f1aa9dd1194516a8b463656cec6650f9bc20272a6cd64f9", null ]
     ] ],
     [ "wiced_bt_ble_advert_filter_policy_e", "group__btm__ble__api__functions.html#gae169c3a016dc0a8d0df604dda69c3249", [
-      [ "BTM_BLE_ADVERT_FILTER_ALL_CONNECTION_REQ_ALL_SCAN_REQ", "group__btm__ble__api__functions.html#ggae169c3a016dc0a8d0df604dda69c3249a68507601a1554b3a54ded1243b23dab4", null ],
-      [ "BTM_BLE_ADVERT_FILTER_ALL_CONNECTION_REQ_WHITELIST_SCAN_REQ", "group__btm__ble__api__functions.html#ggae169c3a016dc0a8d0df604dda69c3249ac8b8938ce2d7791caa7fa8723d190362", null ],
-      [ "BTM_BLE_ADVERT_FILTER_WHITELIST_CONNECTION_REQ_ALL_SCAN_REQ", "group__btm__ble__api__functions.html#ggae169c3a016dc0a8d0df604dda69c3249aa0cbe7b66090ec34a34b61ff24546ba8", null ],
-      [ "BTM_BLE_ADVERT_FILTER_WHITELIST_CONNECTION_REQ_WHITELIST_SCAN_REQ", "group__btm__ble__api__functions.html#ggae169c3a016dc0a8d0df604dda69c3249a33abfc543d1750b61aff6eb8b56791ff", null ],
-      [ "BTM_BLE_ADVERT_FILTER_MAX", "group__btm__ble__api__functions.html#ggae169c3a016dc0a8d0df604dda69c3249a15a8d12eff1e96788c47f0b3d6b20388", null ]
+      [ "BTM_BLE_ADV_POLICY_ACCEPT_CONN_AND_SCAN", "group__btm__ble__api__functions.html#ggae169c3a016dc0a8d0df604dda69c3249add3f372f36bceae2e1ed91477cc3ab26", null ],
+      [ "BTM_BLE_ADV_POLICY_ACCEPT_CONN_FILTER_SCAN", "group__btm__ble__api__functions.html#ggae169c3a016dc0a8d0df604dda69c3249ac0e52ecefb1c278fb1f3593372f7d856", null ],
+      [ "BTM_BLE_ADV_POLICY_FILTER_CONN_ACCEPT_SCAN", "group__btm__ble__api__functions.html#ggae169c3a016dc0a8d0df604dda69c3249a578c2b2899548a93be78affbc103381c", null ],
+      [ "BTM_BLE_ADV_POLICY_FILTER_CONN_FILTER_SCAN", "group__btm__ble__api__functions.html#ggae169c3a016dc0a8d0df604dda69c3249a76163ce8b16f5e4701377735e4cff1b0", null ],
+      [ "BTM_BLE_ADV_POLICY_MAX", "group__btm__ble__api__functions.html#ggae169c3a016dc0a8d0df604dda69c3249ad01f7e7b0262b9a10cb378e649696dce", null ]
     ] ],
     [ "wiced_bt_ble_advert_type_e", "group__btm__ble__api__functions.html#ga4e721fb996eccc386b0311f022675eb2", [
       [ "BTM_BLE_ADVERT_TYPE_FLAG", "group__btm__ble__api__functions.html#gga4e721fb996eccc386b0311f022675eb2a491857f3bcd066df873f69d706b18dd1", null ],
@@ -308,42 +324,57 @@ var group__btm__ble__api__functions =
       [ "BTM_BLE_PRIVACY_MODE_DEVICE", "group__btm__ble__api__functions.html#gga209665fd7342f0f47610c5fec55910c1a698c582d2a341f8c28091de030d8ec92", null ]
     ] ],
     [ "wiced_bt_ble_multi_advert_filtering_policy_e", "group__btm__ble__api__functions.html#ga1ec420c6d0f772c040c47950fe990751", [
-      [ "MULTI_ADVERT_FILTER_POLICY_WHITE_LIST_NOT_USED", "group__btm__ble__api__functions.html#gga1ec420c6d0f772c040c47950fe990751a93eaa4b0e79802c53cbda56ae22dbaee", null ],
-      [ "MULTI_ADVERT_WHITE_LIST_POLICY_ADV_ALLOW_UNKNOWN_CONNECTION", "group__btm__ble__api__functions.html#gga1ec420c6d0f772c040c47950fe990751a387f4724f47aa445ecbbf84783ab7556", null ],
-      [ "MULTI_ADVERT_WHITE_LIST_POLICY_ADV_ALLOW_UNKNOWN_SCANNING", "group__btm__ble__api__functions.html#gga1ec420c6d0f772c040c47950fe990751a9c0d539ec6bfdb4a5208752b15f59650", null ],
-      [ "MULTI_ADVERT_FILTER_POLICY_WHITE_LIST_USED_FOR_ALL", "group__btm__ble__api__functions.html#gga1ec420c6d0f772c040c47950fe990751a4786a015f299b907649c1dc212c74ebf", null ],
-      [ "WICED_BT_BLE_EXT_ADV_PHY_1M", "group__btm__ble__api__functions.html#gga99fb83031ce9923c84392b4e92f956b5a44358aa87ecb830d1790b67fa8fc068b", null ],
-      [ "WICED_BT_BLE_EXT_ADV_PHY_2M", "group__btm__ble__api__functions.html#gga99fb83031ce9923c84392b4e92f956b5a47f8efaf4ae6a93f9236aa9f0e75bcc0", null ],
-      [ "WICED_BT_BLE_EXT_ADV_PHY_LE_CODED", "group__btm__ble__api__functions.html#gga99fb83031ce9923c84392b4e92f956b5a7a6e046ef6bde0fe8e89016100f0481d", null ],
-      [ "WICED_BT_BLE_EXT_ADV_NUM_PHYS", "group__btm__ble__api__functions.html#gga99fb83031ce9923c84392b4e92f956b5a1cd156fb3c05bed54c53f3ea747e4b27", null ],
-      [ "WICED_BT_BLE_EXT_ADV_PHY_1M_BIT", "group__btm__ble__api__functions.html#ggabc6126af1d45847bc59afa0aa3216b04ae9365a486db7ae6fec199a4c8936b3d6", null ],
-      [ "WICED_BT_BLE_EXT_ADV_PHY_2M_BIT", "group__btm__ble__api__functions.html#ggabc6126af1d45847bc59afa0aa3216b04accb5f9fe20462d3071cf15e054f8243f", null ],
-      [ "WICED_BT_BLE_EXT_ADV_PHY_LE_CODED_BIT", "group__btm__ble__api__functions.html#ggabc6126af1d45847bc59afa0aa3216b04afa6bd0c1e6c26d994ffe7fd190d921f9", null ],
-      [ "WICED_BT_BLE_EXT_ADV_EVENT_CONNECTABLE_ADV", "group__btm__ble__api__functions.html#ggadc29c2ff13d900c2f185ee95427fb06ca99a7b95093e91d36fbbdcbe0ce7e5ce8", null ],
-      [ "WICED_BT_BLE_EXT_ADV_EVENT_SCANNABLE_ADV", "group__btm__ble__api__functions.html#ggadc29c2ff13d900c2f185ee95427fb06cac58f13d3591dd5b8a35ab51c7c99bc74", null ],
-      [ "WICED_BT_BLE_EXT_ADV_EVENT_DIRECTED_ADV", "group__btm__ble__api__functions.html#ggadc29c2ff13d900c2f185ee95427fb06ca71243b3b93597194194bc577eb736025", null ],
-      [ "WICED_BT_BLE_EXT_ADV_EVENT_HIGH_DUTY_DIRECTED_CONNECTABLE_ADV", "group__btm__ble__api__functions.html#ggadc29c2ff13d900c2f185ee95427fb06caafba0e0c23a13a9cf95cd5b3e133634b", null ],
-      [ "WICED_BT_BLE_EXT_ADV_EVENT_LEGACY_ADV", "group__btm__ble__api__functions.html#ggadc29c2ff13d900c2f185ee95427fb06caed54439d7b320f988b8cecf48a7f1d3b", null ],
-      [ "WICED_BT_BLE_EXT_ADV_EVENT_ANONYMOUS_ADV", "group__btm__ble__api__functions.html#ggadc29c2ff13d900c2f185ee95427fb06ca89a5aa6b1532d2e960a1b0c5371301f3", null ],
-      [ "WICED_BT_BLE_EXT_ADV_EVENT_INCLUDE_TX_POWER", "group__btm__ble__api__functions.html#ggadc29c2ff13d900c2f185ee95427fb06cab4e5f46cd2a421d0c8ea0822d1f908e3", null ],
-      [ "WICED_BT_BLE_EXT_ADV_HANDLE_MIN", "group__btm__ble__api__functions.html#gga61dadd085c1777f559549e05962b2c9ea71c5e23259ef91b289ddac2a2aa4d515", null ],
-      [ "WICED_BT_BLE_EXT_ADV_HANDLE_MAX", "group__btm__ble__api__functions.html#gga61dadd085c1777f559549e05962b2c9ea0d73714b4281ed26cb4640efd57e8b81", null ],
-      [ "WICED_BT_BLE_EXT_ADV_SID_MIN", "group__btm__ble__api__functions.html#gga726ca809ffd3d67ab4b8476646f26635ae6032901e9bad7cce9c9e09faffca1c2", null ],
-      [ "WICED_BT_BLE_EXT_ADV_SID_MAX", "group__btm__ble__api__functions.html#gga726ca809ffd3d67ab4b8476646f26635adb2ef456614f6095f73f8f61177f57ac", null ],
-      [ "WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_DISABLE", "group__btm__ble__api__functions.html#gga0411cd49bb5b71852cecd93bcbf0ca2dada7dca465da270c477d740ae59265183", null ],
-      [ "WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_ENABLE", "group__btm__ble__api__functions.html#gga0411cd49bb5b71852cecd93bcbf0ca2dabe7d8a512840890085fd2eb482392e4e", null ],
-      [ "WICED_BT_BLE_PERIODIC_ADV_PROPERTY_INCLUDE_TX_POWER", "group__btm__ble__api__functions.html#ggabed82baf7f470b522273a3e37c24c600a959ba8f14842fcc73747276affc37e9d", null ],
-      [ "WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_DISABLE", "group__btm__ble__api__functions.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a8840450520c2717fbb3a8592750e4cb8", null ],
-      [ "WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE", "group__btm__ble__api__functions.html#ggab04a0655cd1e3bcac5e8f48c18df1a57aa995c11b1f81d0164bd20c094ec21c07", null ],
-      [ "WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE_RESET_ON_SCAN_PERIOD", "group__btm__ble__api__functions.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a8cdb48a739deef9f3ab4622189fb6283", null ],
-      [ "WICED_BT_BLE_IGNORE_WHITE_LIST", "group__btm__ble__api__functions.html#gga385c44f6fb256e5716a2302a5b940388a68dae72256fc4c072a9da77b4397d396", null ],
-      [ "WICED_BT_BLE_CONNECT_TO_WHITE_LIST_DEVICES", "group__btm__ble__api__functions.html#gga385c44f6fb256e5716a2302a5b940388a4d7fa0c13b8cbc1be7f39f062cb6275b", null ],
-      [ "WICED_BT_BLE_IGNORE_SYNC_TO_PERIODIC_ADV_LIST", "group__btm__ble__api__functions.html#ggabc5c98fcc1211af2b80116dd6e0a035da65301d81e398ef6d8eab8cf8492b89c3", null ],
-      [ "WICED_BT_BLE_SYNC_TO_PERIODIC_ADV_LIST", "group__btm__ble__api__functions.html#ggabc5c98fcc1211af2b80116dd6e0a035dab7cf10c331eb70f50a12a15cda4ef35b", null ],
-      [ "ADV_REP_EVT_COUNT_MIN", "group__btm__ble__api__functions.html#gga05589fbab0657f08285ebdfe93f5ec9ea2e150f9aebb639d8b399e3063d3db808", null ],
-      [ "ADV_REP_EVT_COUNT_MAX", "group__btm__ble__api__functions.html#gga05589fbab0657f08285ebdfe93f5ec9ea7e93b8fb79eb54fffb0ef7aae25a3bbc", null ],
-      [ "LE_CHANNEL_SEL_ALGO_1_USED", "group__btm__ble__api__functions.html#ggaba01db17f4a2bfbc3db60dc172972a25af29644acab31ee07ad38f9cbcf6cf5b8", null ],
-      [ "LE_CHANNEL_SEL_ALGO_2_USED", "group__btm__ble__api__functions.html#ggaba01db17f4a2bfbc3db60dc172972a25a421a8eaeaed16ffeda1a714512320476", null ]
+      [ "MULTI_ADVERT_FILTER_POLICY_NOT_USED", "group__btm__ble__api__functions.html#gga1ec420c6d0f772c040c47950fe990751ad9d0f6c722ecc7071ca229ab568d494f", null ],
+      [ "MULTI_ADVERT_FILTER_POLICY_ADV_ALLOW_UNKNOWN_CONNECTION", "group__btm__ble__api__functions.html#gga1ec420c6d0f772c040c47950fe990751aa66c04b6565a72295e577d082ca0cc50", null ],
+      [ "MULTI_ADVERT_FILTER_POLICY_ADV_ALLOW_UNKNOWN_SCANNING", "group__btm__ble__api__functions.html#gga1ec420c6d0f772c040c47950fe990751ae0ebb545ed219d89fd2f32bb3876324a", null ],
+      [ "MULTI_ADVERT_FILTER_POLICY_USE_FOR_ALL", "group__btm__ble__api__functions.html#gga1ec420c6d0f772c040c47950fe990751a92e6cef2d690b23cd4b44fbe2d7dc467", null ],
+      [ "WICED_BT_BLE_EXT_ADV_PHY_1M", "group__btm__ble__api__functions.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a44358aa87ecb830d1790b67fa8fc068b", null ],
+      [ "WICED_BT_BLE_EXT_ADV_PHY_2M", "group__btm__ble__api__functions.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a47f8efaf4ae6a93f9236aa9f0e75bcc0", null ],
+      [ "WICED_BT_BLE_EXT_ADV_PHY_LE_CODED", "group__btm__ble__api__functions.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a7a6e046ef6bde0fe8e89016100f0481d", null ],
+      [ "WICED_BT_BLE_EXT_ADV_NUM_PHYS", "group__btm__ble__api__functions.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a1cd156fb3c05bed54c53f3ea747e4b27", null ],
+      [ "WICED_BT_BLE_EXT_ADV_PHY_1M_BIT", "group__btm__ble__api__functions.html#gga385c44f6fb256e5716a2302a5b940388ae9365a486db7ae6fec199a4c8936b3d6", null ],
+      [ "WICED_BT_BLE_EXT_ADV_PHY_2M_BIT", "group__btm__ble__api__functions.html#gga385c44f6fb256e5716a2302a5b940388accb5f9fe20462d3071cf15e054f8243f", null ],
+      [ "WICED_BT_BLE_EXT_ADV_PHY_LE_CODED_BIT", "group__btm__ble__api__functions.html#gga385c44f6fb256e5716a2302a5b940388afa6bd0c1e6c26d994ffe7fd190d921f9", null ],
+      [ "WICED_BT_BLE_EXT_ADV_EVENT_CONNECTABLE_ADV", "group__btm__ble__api__functions.html#ggabc5c98fcc1211af2b80116dd6e0a035da99a7b95093e91d36fbbdcbe0ce7e5ce8", null ],
+      [ "WICED_BT_BLE_EXT_ADV_EVENT_SCANNABLE_ADV", "group__btm__ble__api__functions.html#ggabc5c98fcc1211af2b80116dd6e0a035dac58f13d3591dd5b8a35ab51c7c99bc74", null ],
+      [ "WICED_BT_BLE_EXT_ADV_EVENT_DIRECTED_ADV", "group__btm__ble__api__functions.html#ggabc5c98fcc1211af2b80116dd6e0a035da71243b3b93597194194bc577eb736025", null ],
+      [ "WICED_BT_BLE_EXT_ADV_EVENT_HIGH_DUTY_DIRECTED_CONNECTABLE_ADV", "group__btm__ble__api__functions.html#ggabc5c98fcc1211af2b80116dd6e0a035daafba0e0c23a13a9cf95cd5b3e133634b", null ],
+      [ "WICED_BT_BLE_EXT_ADV_EVENT_LEGACY_ADV", "group__btm__ble__api__functions.html#ggabc5c98fcc1211af2b80116dd6e0a035daed54439d7b320f988b8cecf48a7f1d3b", null ],
+      [ "WICED_BT_BLE_EXT_ADV_EVENT_ANONYMOUS_ADV", "group__btm__ble__api__functions.html#ggabc5c98fcc1211af2b80116dd6e0a035da89a5aa6b1532d2e960a1b0c5371301f3", null ],
+      [ "WICED_BT_BLE_EXT_ADV_EVENT_INCLUDE_TX_POWER", "group__btm__ble__api__functions.html#ggabc5c98fcc1211af2b80116dd6e0a035dab4e5f46cd2a421d0c8ea0822d1f908e3", null ],
+      [ "WICED_BT_BLE_EXT_ADV_HANDLE_MIN", "group__btm__ble__api__functions.html#ggac36f475ca5b446f4fde4c9b90bec77c8a71c5e23259ef91b289ddac2a2aa4d515", null ],
+      [ "WICED_BT_BLE_EXT_ADV_HANDLE_MAX", "group__btm__ble__api__functions.html#ggac36f475ca5b446f4fde4c9b90bec77c8a0d73714b4281ed26cb4640efd57e8b81", null ],
+      [ "WICED_BT_BLE_EXT_ADV_SID_MIN", "group__btm__ble__api__functions.html#gga05589fbab0657f08285ebdfe93f5ec9eae6032901e9bad7cce9c9e09faffca1c2", null ],
+      [ "WICED_BT_BLE_EXT_ADV_SID_MAX", "group__btm__ble__api__functions.html#gga05589fbab0657f08285ebdfe93f5ec9eadb2ef456614f6095f73f8f61177f57ac", null ]
+    ] ],
+    [ "wiced_bt_ble_ext_adv_scan_req_notification_setting_e", "group__btm__ble__api__functions.html#gafc7d04e4f50a18a0d391769cb3173bc5", [
+      [ "WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_DISABLE", "group__btm__ble__api__functions.html#ggafc7d04e4f50a18a0d391769cb3173bc5ada7dca465da270c477d740ae59265183", null ],
+      [ "WICED_BT_BLE_EXT_ADV_SCAN_REQ_NOTIFY_ENABLE", "group__btm__ble__api__functions.html#ggafc7d04e4f50a18a0d391769cb3173bc5abe7d8a512840890085fd2eb482392e4e", null ]
+    ] ],
+    [ "wiced_bt_ble_periodic_adv_prop_e", "group__btm__ble__api__functions.html#ga49f4cafbe857432f82a3469d0bd7a190", [
+      [ "WICED_BT_BLE_PERIODIC_ADV_PROPERTY_INCLUDE_TX_POWER", "group__btm__ble__api__functions.html#gga49f4cafbe857432f82a3469d0bd7a190a959ba8f14842fcc73747276affc37e9d", null ]
+    ] ],
+    [ "wiced_bt_ble_ext_scan_filter_duplicate_e", "group__btm__ble__api__functions.html#ga741cf5a4faaa7f62fc0314304b4fcbf0", [
+      [ "WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_DISABLE", "group__btm__ble__api__functions.html#gga741cf5a4faaa7f62fc0314304b4fcbf0a8840450520c2717fbb3a8592750e4cb8", null ],
+      [ "WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE", "group__btm__ble__api__functions.html#gga741cf5a4faaa7f62fc0314304b4fcbf0aa995c11b1f81d0164bd20c094ec21c07", null ],
+      [ "WICED_BT_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE_RESET_ON_SCAN_PERIOD", "group__btm__ble__api__functions.html#gga741cf5a4faaa7f62fc0314304b4fcbf0a8cdb48a739deef9f3ab4622189fb6283", null ]
+    ] ],
+    [ "wiced_bt_ble_ext_filter_policy_e", "group__btm__ble__api__functions.html#gabcf469159bec2fd7d1f1d6b5a76cda51", [
+      [ "WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS", "group__btm__ble__api__functions.html#ggabcf469159bec2fd7d1f1d6b5a76cda51a06234ca144f35338f6bc4120362b5001", null ],
+      [ "WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS", "group__btm__ble__api__functions.html#ggabcf469159bec2fd7d1f1d6b5a76cda51a3125d3696ae08c0771f9d4de26679179", null ]
+    ] ],
+    [ "wiced_bt_ble_adv_sync_options_e", "group__btm__ble__api__functions.html#ga5f6ce070f4dc0efbf5a1ad4aeb54dc26", [
+      [ "WICED_BT_BLE_IGNORE_SYNC_TO_PERIODIC_ADV_LIST", "group__btm__ble__api__functions.html#gga5f6ce070f4dc0efbf5a1ad4aeb54dc26a65301d81e398ef6d8eab8cf8492b89c3", null ],
+      [ "WICED_BT_BLE_SYNC_TO_PERIODIC_ADV_LIST", "group__btm__ble__api__functions.html#gga5f6ce070f4dc0efbf5a1ad4aeb54dc26ab7cf10c331eb70f50a12a15cda4ef35b", null ]
+    ] ],
+    [ "wiced_bt_ble_ext_adv_report_count_e", "group__btm__ble__api__functions.html#ga8739336a6d1ebba1faaf824bc5c1024d", [
+      [ "ADV_REP_EVT_COUNT_MIN", "group__btm__ble__api__functions.html#gga8739336a6d1ebba1faaf824bc5c1024da2e150f9aebb639d8b399e3063d3db808", null ],
+      [ "ADV_REP_EVT_COUNT_MAX", "group__btm__ble__api__functions.html#gga8739336a6d1ebba1faaf824bc5c1024da7e93b8fb79eb54fffb0ef7aae25a3bbc", null ]
+    ] ],
+    [ "wiced_bt_ble_advertiser_clock_accuracy_e", "group__btm__ble__api__functions.html#gaf2e1006de89f6bef42119a1aead05e6e", null ],
+    [ "wiced_bt_ble_channel_sel_algo_e", "group__btm__ble__api__functions.html#gacd4a1a8913528880bad341a4f46f92af", [
+      [ "LE_CHANNEL_SEL_ALGO_1_USED", "group__btm__ble__api__functions.html#ggacd4a1a8913528880bad341a4f46f92afaf29644acab31ee07ad38f9cbcf6cf5b8", null ],
+      [ "LE_CHANNEL_SEL_ALGO_2_USED", "group__btm__ble__api__functions.html#ggacd4a1a8913528880bad341a4f46f92afa421a8eaeaed16ffeda1a714512320476", null ]
     ] ],
     [ "wiced_bt_ble_adv_ext_event_t", "group__btm__ble__api__functions.html#ga748b7c8c9f7711162f8def9f5408a794", [
       [ "WICED_BT_BLE_PERIODIC_ADV_SYNC_ESTABLISHED_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794ab8dd03d44ff23c4e1cea889088b9c057", null ],

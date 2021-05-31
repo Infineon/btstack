@@ -1,0 +1,2368 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Remapping from 2.0 to 3.0 APIs</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Source Sans Pro";
+	panose-1:2 11 5 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:ZapfDingbats;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Source Sans Pro Semibold";
+	panose-1:2 11 6 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+h1
+	{mso-style-name:"Heading 1\,Heading1";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:70.9pt;
+	text-indent:-70.9pt;
+	page-break-before:always;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+h2
+	{mso-style-name:"Heading 2\,Heading2";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:70.9pt;
+	text-indent:-70.9pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+h3
+	{mso-style-name:"Heading 3\,Heading3";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:70.9pt;
+	text-indent:-70.9pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+h4
+	{mso-style-name:"Heading 4\,Heading4";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:70.9pt;
+	text-indent:-70.9pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+h5
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:66.9pt;
+	text-indent:-59.8pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+h6
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:9.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-style:italic;}
+p.MsoIndex1, li.MsoIndex1, div.MsoIndex1
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:13.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoIndex2, li.MsoIndex2, div.MsoIndex2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:26.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoIndex3, li.MsoIndex3, div.MsoIndex3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:39.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoIndex4, li.MsoIndex4, div.MsoIndex4
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:52.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoIndex5, li.MsoIndex5, div.MsoIndex5
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:65.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoIndex6, li.MsoIndex6, div.MsoIndex6
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:78.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoIndex7, li.MsoIndex7, div.MsoIndex7
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:91.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoIndex8, li.MsoIndex8, div.MsoIndex8
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:104.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoIndex9, li.MsoIndex9, div.MsoIndex9
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:117.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-name:"TOC 1\,Heading1\.TOC";
+	mso-style-link:"TOC 1 Char\,Heading1\.TOC Char";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:28.35pt;
+	margin-bottom:.0001pt;
+	text-indent:-28.35pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-name:"TOC 2\,Heading2\.TOC";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:56.7pt;
+	margin-bottom:.0001pt;
+	text-indent:-56.7pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-name:"TOC 3\,Heading3\.TOC";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:70.9pt;
+	margin-bottom:.0001pt;
+	text-indent:-70.9pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-name:"TOC 4\,Heading4\.TOC";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:85.05pt;
+	margin-bottom:.0001pt;
+	text-indent:-85.05pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-name:"TOC 5\,Heading5\.TOC";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:28.35pt;
+	margin-bottom:.0001pt;
+	text-indent:-28.35pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-name:"TOC 6\,Heading_Preface\.TOC";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:78.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:91.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:104.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-name:"Footnote Text\,footnote";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:14.2pt;
+	text-indent:-14.2pt;
+	font-size:9.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoIndexHeading, li.MsoIndexHeading, div.MsoIndexHeading
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{mso-style-name:"Table of Figures\,List of Figures";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:53.85pt;
+	margin-bottom:.0001pt;
+	text-indent:-53.85pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoTofCxSpFirst, li.MsoTofCxSpFirst, div.MsoTofCxSpFirst
+	{mso-style-name:"Table of Figures\,List of FiguresCxSpFirst";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:53.85pt;
+	margin-bottom:.0001pt;
+	text-indent:-53.85pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoTofCxSpMiddle, li.MsoTofCxSpMiddle, div.MsoTofCxSpMiddle
+	{mso-style-name:"Table of Figures\,List of FiguresCxSpMiddle";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:53.85pt;
+	margin-bottom:.0001pt;
+	text-indent:-53.85pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoTofCxSpLast, li.MsoTofCxSpLast, div.MsoTofCxSpLast
+	{mso-style-name:"Table of Figures\,List of FiguresCxSpLast";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:53.85pt;
+	margin-bottom:.0001pt;
+	text-indent:-53.85pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+span.MsoLineNumber
+	{font-family:"Courier New";
+	color:#C00000;}
+span.MsoEndnoteReference
+	{vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoToa, li.MsoToa, div.MsoToa
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:13.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoMacroText, li.MsoMacroText, div.MsoMacroText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Courier New";}
+p.MsoToaHeading, li.MsoToaHeading, div.MsoToaHeading
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	font-size:16.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.MsoMessageHeader, li.MsoMessageHeader, div.MsoMessageHeader
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:56.7pt;
+	margin-bottom:.0001pt;
+	text-indent:-56.7pt;
+	background:#CCCCCC;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0in;
+	margin-bottom:.0001pt;
+	background:navy;
+	font-size:11.0pt;
+	font-family:"Tahoma",sans-serif;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria",serif;
+	color:#365F91;
+	font-weight:bold;}
+p.Body, li.Body, div.Body
+	{mso-style-name:Body;
+	mso-style-link:"Body Char";
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.AnchorLine, li.AnchorLine, div.AnchorLine
+	{mso-style-name:AnchorLine;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:1.0pt;
+	page-break-after:avoid;
+	font-size:3.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.AlphaContd, li.AlphaContd, div.AlphaContd
+	{mso-style-name:AlphaContd;
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:21.25pt;
+	text-indent:-21.25pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.FigureTitle, li.FigureTitle, div.FigureTitle
+	{mso-style-name:FigureTitle;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:.25in;
+	margin-left:70.9pt;
+	text-indent:-70.9pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.Reference, li.Reference, div.Reference
+	{mso-style-name:Reference;
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:28.35pt;
+	text-indent:-28.35pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+span.Superscript
+	{mso-style-name:Superscript;
+	position:relative;
+	top:-1.0pt;
+	vertical-align:super;}
+p.Note, li.Note, div.Note
+	{mso-style-name:Note;
+	margin-top:15.0pt;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:70.9pt;
+	text-indent:-70.9pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-style:italic;}
+p.NumberedContd, li.NumberedContd, div.NumberedContd
+	{mso-style-name:NumberedContd;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:15.6pt;
+	text-indent:-15.6pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.Bullet, li.Bullet, div.Bullet
+	{mso-style-name:Bullet;
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-indent:-14.2pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.TableHead, li.TableHead, div.TableHead
+	{mso-style-name:TableHead;
+	mso-style-link:"TableHead Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.TableHead-l, li.TableHead-l, div.TableHead-l
+	{mso-style-name:TableHead-l;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:-4.25pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.TableHead-c, li.TableHead-c, div.TableHead-c
+	{mso-style-name:TableHead-c;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	text-align:center;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.DashIndented, li.DashIndented, div.DashIndented
+	{mso-style-name:DashIndented;
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:28.4pt;
+	text-indent:-14.2pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.TableCell, li.TableCell, div.TableCell
+	{mso-style-name:TableCell;
+	margin-top:2.0pt;
+	margin-right:4.25pt;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.TableCell-l, li.TableCell-l, div.TableCell-l
+	{mso-style-name:TableCell-l;
+	margin-top:2.0pt;
+	margin-right:4.25pt;
+	margin-bottom:1.0pt;
+	margin-left:-4.25pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+span.Subscript
+	{mso-style-name:Subscript;
+	position:relative;
+	top:1.0pt;
+	vertical-align:sub;}
+span.Times-italic
+	{mso-style-name:Times-italic;
+	font-family:"Times New Roman",serif;
+	font-style:italic;}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-link:"Heading Char";
+	margin-top:13.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+span.Bold
+	{mso-style-name:Bold;
+	font-weight:bold;}
+p.TableCell-c, li.TableCell-c, div.TableCell-c
+	{mso-style-name:TableCell-c;
+	margin-top:2.0pt;
+	margin-right:4.25pt;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	text-align:center;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.TableTitle, li.TableTitle, div.TableTitle
+	{mso-style-name:TableTitle;
+	margin-top:13.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:70.9pt;
+	text-indent:-70.9pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+span.Underline
+	{mso-style-name:Underline;
+	text-decoration:underline;}
+p.NoteNumContd, li.NoteNumContd, div.NoteNumContd
+	{mso-style-name:NoteNumContd;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:21.3pt;
+	text-align:justify;
+	text-indent:-21.3pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-style:italic;}
+p.Headline1, li.Headline1, div.Headline1
+	{mso-style-name:Headline1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.Headline2, li.Headline2, div.Headline2
+	{mso-style-name:Headline2;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+span.Symbol
+	{mso-style-name:Symbol;
+	font-family:Symbol;}
+span.ZapfDingbats
+	{mso-style-name:ZapfDingbats;
+	font-family:ZapfDingbats;}
+span.Hypertext
+	{mso-style-name:Hypertext;
+	color:blue;
+	font-weight:bold;}
+span.Deleted
+	{mso-style-name:Deleted;
+	color:red;
+	text-decoration:line-through;
+	vertical-align:baseline;}
+span.Inserted
+	{mso-style-name:Inserted;
+	color:red;
+	text-decoration:underline none underline;
+	vertical-align:baseline;}
+span.CodeFragment
+	{mso-style-name:CodeFragment;
+	font-family:"Courier New";
+	vertical-align:baseline;}
+p.Attention, li.Attention, div.Attention
+	{mso-style-name:Attention;
+	margin-top:15.0pt;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:70.9pt;
+	text-indent:-70.9pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;
+	font-style:italic;}
+p.Code, li.Code, div.Code
+	{mso-style-name:Code;
+	margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Courier New";}
+p.HeadingPreface, li.HeadingPreface, div.HeadingPreface
+	{mso-style-name:Heading_Preface;
+	margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.HeadingPrefaceCxSpFirst, li.HeadingPrefaceCxSpFirst, div.HeadingPrefaceCxSpFirst
+	{mso-style-name:Heading_PrefaceCxSpFirst;
+	margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.HeadingPrefaceCxSpMiddle, li.HeadingPrefaceCxSpMiddle, div.HeadingPrefaceCxSpMiddle
+	{mso-style-name:Heading_PrefaceCxSpMiddle;
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.HeadingPrefaceCxSpLast, li.HeadingPrefaceCxSpLast, div.HeadingPrefaceCxSpLast
+	{mso-style-name:Heading_PrefaceCxSpLast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.TableCell-Indent, li.TableCell-Indent, div.TableCell-Indent
+	{mso-style-name:TableCell-Indent;
+	margin-top:2.0pt;
+	margin-right:4.25pt;
+	margin-bottom:1.0pt;
+	margin-left:25.5pt;
+	text-indent:-25.5pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.TableCellBold, li.TableCellBold, div.TableCellBold
+	{mso-style-name:TableCellBold;
+	margin-top:2.0pt;
+	margin-right:4.25pt;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.TableCellBold-l, li.TableCellBold-l, div.TableCellBold-l
+	{mso-style-name:TableCellBold-l;
+	margin-top:2.0pt;
+	margin-right:4.25pt;
+	margin-bottom:1.0pt;
+	margin-left:-4.25pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+p.headspacer, li.headspacer, div.headspacer
+	{mso-style-name:headspacer;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:1.0pt;
+	page-break-after:avoid;
+	font-size:3.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.CoverTitleContinued, li.CoverTitleContinued, div.CoverTitleContinued
+	{mso-style-name:CoverTitleContinued;
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:20.0pt;
+	margin-left:0in;
+	layout-grid-mode:char;
+	text-autospace:none;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	letter-spacing:1.0pt;
+	font-weight:bold;}
+p.RegName, li.RegName, div.RegName
+	{mso-style-name:RegName;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.RegShortcut, li.RegShortcut, div.RegShortcut
+	{mso-style-name:RegShortcut;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.RegIndex, li.RegIndex, div.RegIndex
+	{mso-style-name:RegIndex;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:10.0pt;
+	font-size:9.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.RegOverviewBit, li.RegOverviewBit, div.RegOverviewBit
+	{mso-style-name:RegOverviewBit;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:8.0pt;
+	font-size:9.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.RegAccess, li.RegAccess, div.RegAccess
+	{mso-style-name:RegAccess;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:8.0pt;
+	font-size:9.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.RegEmptyCell, li.RegEmptyCell, div.RegEmptyCell
+	{mso-style-name:RegEmptyCell;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:4.0pt;
+	font-size:3.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Cambria",serif;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.BodyChar
+	{mso-style-name:"Body Char";
+	mso-style-link:Body;}
+p.NoteIndented, li.NoteIndented, div.NoteIndented
+	{mso-style-name:NoteIndented;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:51.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-70.9pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-style:italic;}
+p.MessageTitle, li.MessageTitle, div.MessageTitle
+	{mso-style-name:MessageTitle;
+	margin-top:13.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:66.6pt;
+	text-indent:-66.6pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.ReqTitle, li.ReqTitle, div.ReqTitle
+	{mso-style-name:ReqTitle;
+	margin-top:13.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;
+	text-decoration:underline;}
+span.HeadingChar
+	{mso-style-name:"Heading Char";
+	mso-style-link:Heading;
+	font-weight:bold;}
+p.TableSubHeading, li.TableSubHeading, div.TableSubHeading
+	{mso-style-name:TableSubHeading;
+	margin-top:2.0pt;
+	margin-right:4.25pt;
+	margin-bottom:1.0pt;
+	margin-left:-4.25pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.LineNumber, li.LineNumber, div.LineNumber
+	{mso-style-name:LineNumber;
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:right;
+	line-height:10.0pt;
+	font-size:11.0pt;
+	font-family:"Courier New";
+	color:red;}
+p.HeadingTOC, li.HeadingTOC, div.HeadingTOC
+	{mso-style-name:Heading_TOC;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.HeadingTOCCxSpFirst, li.HeadingTOCCxSpFirst, div.HeadingTOCCxSpFirst
+	{mso-style-name:Heading_TOCCxSpFirst;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.HeadingTOCCxSpMiddle, li.HeadingTOCCxSpMiddle, div.HeadingTOCCxSpMiddle
+	{mso-style-name:Heading_TOCCxSpMiddle;
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.HeadingTOCCxSpLast, li.HeadingTOCCxSpLast, div.HeadingTOCCxSpLast
+	{mso-style-name:Heading_TOCCxSpLast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.RegTitle, li.RegTitle, div.RegTitle
+	{mso-style-name:RegTitle;
+	margin-top:13.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.AutoCorrect, li.AutoCorrect, div.AutoCorrect
+	{mso-style-name:AutoCorrect;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.CoverTitle, li.CoverTitle, div.CoverTitle
+	{mso-style-name:CoverTitle;
+	margin-top:1.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	font-size:22.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	letter-spacing:1.0pt;
+	font-weight:bold;}
+p.CoverData, li.CoverData, div.CoverData
+	{mso-style-name:CoverData;
+	mso-style-link:"CoverData Char";
+	margin-top:1.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.LegalText, li.LegalText, div.LegalText
+	{mso-style-name:LegalText;
+	margin-top:1.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:8.0pt;
+	page-break-after:avoid;
+	font-size:8.0pt;
+	font-family:"Source Sans Pro",sans-serif;}
+p.LegalHeading, li.LegalHeading, div.LegalHeading
+	{mso-style-name:LegalHeading;
+	mso-style-link:"LegalHeading Char";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:8.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.LineNumber1, li.LineNumber1, div.LineNumber1
+	{mso-style-name:LineNumber1;
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:right;
+	line-height:10.0pt;
+	font-size:11.0pt;
+	font-family:"Courier New";
+	color:red;}
+span.LegalHeadingChar
+	{mso-style-name:"LegalHeading Char";
+	mso-style-link:LegalHeading;
+	font-weight:bold;}
+p.Breadcrumb, li.Breadcrumb, div.Breadcrumb
+	{mso-style-name:Breadcrumb;
+	mso-style-link:"Breadcrumb Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+span.TableHeadChar
+	{mso-style-name:"TableHead Char";
+	mso-style-link:TableHead;
+	font-weight:bold;}
+p.CoverDocTop1, li.CoverDocTop1, div.CoverDocTop1
+	{mso-style-name:CoverDocTop1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:18.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.Confidentiality, li.Confidentiality, div.Confidentiality
+	{mso-style-name:Confidentiality;
+	mso-style-link:"Confidentiality Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro Semibold",sans-serif;
+	color:red;
+	letter-spacing:1.5pt;}
+span.BreadcrumbChar
+	{mso-style-name:"Breadcrumb Char";
+	mso-style-link:Breadcrumb;
+	font-weight:bold;}
+span.ConfidentialityChar
+	{mso-style-name:"Confidentiality Char";
+	mso-style-link:Confidentiality;
+	font-family:"Source Sans Pro Semibold",sans-serif;
+	color:red;
+	letter-spacing:1.5pt;
+	font-weight:normal;}
+p.CoverMetadata, li.CoverMetadata, div.CoverMetadata
+	{mso-style-name:CoverMetadata;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	layout-grid-mode:char;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Source Sans Pro Semibold",sans-serif;
+	letter-spacing:1.0pt;}
+p.InfineonStandard2, li.InfineonStandard2, div.InfineonStandard2
+	{mso-style-name:"Infineon Standard2";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:-4.25pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.CoverURL, li.CoverURL, div.CoverURL
+	{mso-style-name:CoverURL;
+	mso-style-link:"CoverURL Char";
+	margin-top:1.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	color:blue;
+	font-weight:bold;}
+span.CoverDataChar
+	{mso-style-name:"CoverData Char";
+	mso-style-link:CoverData;}
+span.CoverURLChar
+	{mso-style-name:"CoverURL Char";
+	mso-style-link:CoverURL;
+	color:blue;
+	font-weight:bold;}
+p.PageTitle, li.PageTitle, div.PageTitle
+	{mso-style-name:PageTitle;
+	margin-top:1.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	font-size:14.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.PageTitleContinued, li.PageTitleContinued, div.PageTitleContinued
+	{mso-style-name:PageTitleContinued;
+	margin-top:1.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+p.CoverConfidential, li.CoverConfidential, div.CoverConfidential
+	{mso-style-name:CoverConfidential;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro Semibold",sans-serif;
+	color:red;
+	letter-spacing:1.5pt;}
+p.LegalCover, li.LegalCover, div.LegalCover
+	{mso-style-name:LegalCover;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	color:red;}
+span.LegalCoverReadMe
+	{mso-style-name:LegalCoverReadMe;
+	font-family:"Source Sans Pro",sans-serif;
+	font-variant:normal !important;
+	color:red;
+	text-transform:none;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;
+	vertical-align:baseline;}
+span.TOC1Char
+	{mso-style-name:"TOC 1 Char\,Heading1\.TOC Char";
+	mso-style-link:"TOC 1\,Heading1\.TOC";
+	font-weight:bold;}
+p.CodeInCodeTable, li.CodeInCodeTable, div.CodeInCodeTable
+	{mso-style-name:CodeInCodeTable;
+	margin-top:1.0pt;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size:11.0pt;
+	font-family:Courier;}
+p.CodeInCodeTableCxSpFirst, li.CodeInCodeTableCxSpFirst, div.CodeInCodeTableCxSpFirst
+	{mso-style-name:CodeInCodeTableCxSpFirst;
+	margin-top:1.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	font-size:11.0pt;
+	font-family:Courier;}
+p.CodeInCodeTableCxSpMiddle, li.CodeInCodeTableCxSpMiddle, div.CodeInCodeTableCxSpMiddle
+	{mso-style-name:CodeInCodeTableCxSpMiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	font-size:11.0pt;
+	font-family:Courier;}
+p.CodeInCodeTableCxSpLast, li.CodeInCodeTableCxSpLast, div.CodeInCodeTableCxSpLast
+	{mso-style-name:CodeInCodeTableCxSpLast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size:11.0pt;
+	font-family:Courier;}
+p.CodeTableTitle, li.CodeTableTitle, div.CodeTableTitle
+	{mso-style-name:CodeTableTitle;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:85.05pt;
+	text-indent:-89.3pt;
+	font-size:11.0pt;
+	font-family:"Source Sans Pro",sans-serif;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+.MsoChpDefault
+	{font-family:"Source Sans Pro",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.35pt 842.0pt;
+	margin:78.0pt 42.5pt 49.65pt 42.55pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:595.35pt 842.0pt;
+	margin:85.05pt 42.5pt 49.65pt 42.55pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:595.35pt 842.0pt;
+	margin:85.05pt 42.5pt 49.65pt 42.55pt;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:595.35pt 842.0pt;
+	margin:97.65pt 42.5pt 42.55pt 42.55pt;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:595.35pt 842.0pt;
+	margin:-216.35pt 48.2pt 248.1pt 42.55pt;}
+div.WordSection5
+	{page:WordSection5;}
+@page WordSection6
+	{size:595.35pt 842.0pt;
+	margin:-216.3pt 48.2pt 304.75pt 42.55pt;}
+div.WordSection6
+	{page:WordSection6;}
+-->
+</style>
+<!--[if gte mso 14]>
+<style>
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+</style>
+<![endif]--><!--[if lt mso 14]>
+<style>
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-IN link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=CoverTitle><a name="_Toc385505508"></a><span
+lang=EN-US>Remapping from BTSTACK 2.0 to 3.0 APIs</span></p>
+
+<p class=CoverTitleContinued><span lang=EN-US>&nbsp;</span></p>
+
+<p class=HeadingPreface><a name="_Toc68884555"></a><a name="_Toc431980074"></a><a
+name="_Toc431889535"></a><a name="_Toc431374932"></a><a name="_Toc431284129"></a><a
+name="_Toc430947631"><span lang=EN-US>About this document</span></a></p>
+
+<p class=Heading><span lang=EN-US>Scope and purpose</span></p>
+
+<p class=Body><span lang=EN-US>This document lists the specific changes that
+must be made in applications written on version &lt; 3.0 to work on ver BTSTACK
+3.0</span></p>
+
+<p class=Body><span lang=EN-US>&nbsp;</span></p>
+
+<p class=AnchorLine><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:11.0pt;font-family:"Source Sans Pro",sans-serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection2>
+
+<p class=HeadingPreface><a name="_Toc430947633"></a><a name="_Toc68884556"></a><a
+name="_Toc431980075"></a><a name="_Toc431889536"><span lang=EN-US>Table of contents</span></a></p>
+
+<p class=MsoToc1><a
+href="#_Toc68884555"><span lang=EN-US>About this document</span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'> </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc68884556"><span lang=EN-US>Table of contents</span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc68884557"><span lang=EN-US>1</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;font-weight:normal;
+text-decoration:none'>....... </span><span lang=EN-US>Remapping configuration</span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884558"><span lang=EN-US>1.1</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>Security settings</span><span lang=EN-US style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884559"><span lang=EN-US>1.2</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>Scan settings</span><span lang=EN-US style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884560"><span lang=EN-US>1.3</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>Advert settings</span><span lang=EN-US style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884561"><span lang=EN-US>1.4</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>Bluetooth LE settings</span><span lang=EN-US style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884562"><span lang=EN-US>1.5</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>wiced_bt_cfg_l2cap_application_t wiced_app_cfg_l2cap</span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884563"><span lang=EN-US>1.6</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>wiced_bt_cfg_gatt_t wiced_app_cfg_gatt</span><span lang=EN-US
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884564"><span lang=EN-US>1.7</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>wiced_bt_cfg_rfcomm_t wiced_app_cfg_rfcomm</span><span lang=EN-US
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884565"><span lang=EN-US>1.8</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>wiced_bt_cfg_avdt_t wiced_app_cfg_avdt</span><span lang=EN-US
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884566"><span lang=EN-US>1.9</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>wiced_bt_cfg_avrc_t wiced_app_cfg_avrc</span><span lang=EN-US
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884567"><span lang=EN-US>1.10</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>............ </span><span
+lang=EN-US>wiced_bt_cfg_br_t</span><span lang=EN-US style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc68884568"><span lang=EN-US>2</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;font-weight:normal;
+text-decoration:none'>....... </span><span lang=EN-US>Remapping the GATT server</span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'> </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>4</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884569"><span lang=EN-US>2.1</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>Sending notifications, indications, multiple notifications</span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>6</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884570"><span lang=EN-US>2.2</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>Remapping the client</span><span lang=EN-US style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>7</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884571"><span lang=EN-US>2.3</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>Configure MTU</span><span lang=EN-US style='color:windowtext;
+display:none;text-decoration:none'>.. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>8</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884572"><span lang=EN-US>2.4</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>Send Read Req</span><span lang=EN-US style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>9</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884573"><span lang=EN-US>2.5</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>Send Write Req</span><span lang=EN-US style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>9</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc68884574"><span lang=EN-US>2.6</span><span
+style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>.............. </span><span
+lang=EN-US>Send Execute Write</span><span lang=EN-US style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>10</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc68884575"><span lang=EN-US>Revision history</span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>. </span><span
+lang=EN-US style='color:windowtext;display:none;text-decoration:none'>11</span></a></p>
+
+<p class=Body><span lang=EN-US>&nbsp;</span></p>
+
+<p class=AnchorLine><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:11.0pt;font-family:"Source Sans Pro",sans-serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection3>
+
+<h1><a name="_Toc68884557"><span lang=EN-US>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Remapping configuration</span></a></h1>
+
+<h2><a name="_Toc68884558"><span lang=EN-US>1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Security settings</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="42%" valign=top style='width:42.3%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>Old</span></p>
+  </td>
+  <td width="57%" valign=top style='width:57.7%;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>New</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="42%" valign=top style='width:42.3%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.security_requirement_mask;</span></span></p>
+  </td>
+  <td width="57%" valign=top style='width:57.7%;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.security_required; </span></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc68884559"><span lang=EN-US>1.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Scan settings</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="42%" valign=top style='width:42.3%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>Old</span></p>
+  </td>
+  <td width="57%" valign=top style='width:57.7%;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>New</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="42%" valign=top style='width:42.3%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.ble_scan_cfg;</span></span></p>
+  </td>
+  <td width="57%" valign=top style='width:57.7%;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_ble_scan_settings_t
+  wiced_app_ble_scan_settings;</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884560"><span lang=EN-US>1.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Advert settings</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="42%" valign=top style='width:42.3%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>Old</span></p>
+  </td>
+  <td width="57%" valign=top style='width:57.7%;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>New</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="42%" valign=top style='width:42.3%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.ble_advert_cfg;</span></span></p>
+  </td>
+  <td width="57%" valign=top style='width:57.7%;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_ble_advert_settings_t
+  wiced_app_ble_advert_settings;</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884561"><span lang=EN-US>1.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Bluetooth LE settings</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0
+ style='margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr style='page-break-inside:avoid'>
+  <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>Old</span></p>
+  </td>
+  <td valign=top style='border-top:solid windowtext 1.0pt;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>New</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.max_simultaneous_links;</span></span></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_ble_t.ble_max_simultaneous_links</span></span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings.l2cap_application.max_rx_mtu</span></span></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_ble_t.ble_max_rx_pdu_size</span></span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings.appearance</span></span></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_ble_t.appearance</span></span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings.rpa_refresh_timeout</span></span></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_ble_t.rpa_refresh_timeout</span></span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings.addr_resolution_db_size</span></span></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_ble_t.host_addr_resolution_db_size</span></span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>&nbsp;</span></span></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_ble_t.p_ble_scan_cfg =
+  &amp;wiced_app_ble_scan_settings</span></span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>&nbsp;</span></span></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_ble_t.p_ble_advert_cfg =
+  &amp;wiced_app_ble_advert_settings</span></span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings.default_ble_power_level;</span></span></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_ble_t.default_ble_power_level</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884562"><span lang=EN-US>1.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>wiced_bt_cfg_l2cap_application_t
+wiced_app_cfg_l2cap</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0
+ style='margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=336 valign=top style='width:251.95pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>Old</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.2pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>New</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=336 valign=top style='width:251.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.l2cap_application.max_psm&nbsp;
+  +</span></span></p>
+  <p><span class=CodeFragment><span lang=EN-US style='font-size:10.0pt'>wiced_bt_settings_t.l2cap_application.max_le_psm</span></span></p>
+  </td>
+  <td width=348 valign=top style='width:261.2pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_l2cap_application_t.max_app_l2cap_psms</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=336 valign=top style='width:251.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.l2cap_application.max_channels +
+  wiced_bt_settings_t.l2cap_application.max_le_channels</span></span></p>
+  </td>
+  <td width=348 valign=top style='width:261.2pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_l2cap_application_t.max_app_l2cap_channels</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=336 valign=top style='width:251.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.l2cap_application.max_le_l2cap_fixed_channels;</span></span></p>
+  </td>
+  <td width=348 valign=top style='width:261.2pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_l2cap_application_t.max_app_l2cap_le_fixed_channels</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=336 valign=top style='width:251.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.l2cap_application.max_ertm_chnls;</span></span></p>
+  </td>
+  <td width=348 valign=top style='width:261.2pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_l2cap_application_t.max_app_l2cap_br_edr_ertm_chnls</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=336 valign=top style='width:251.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.l2cap_application.max_ertm_tx_win;</span></span></p>
+  </td>
+  <td width=348 valign=top style='width:261.2pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_l2cap_application_t.max_app_l2cap_br_edr_ertm_tx_win</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884563"><span lang=EN-US>1.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>wiced_bt_cfg_gatt_t wiced_app_cfg_gatt</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0
+ style='margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=358 valign=top style='width:268.15pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>Old</span></p>
+  </td>
+  <td width=313 valign=top style='width:234.45pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>New</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=358 valign=top style='width:268.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.gatt_cfg.max_db_service_modules</span></span></p>
+  </td>
+  <td width=313 valign=top style='width:234.45pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_gatt_t.max_db_service_modules</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=358 valign=top style='width:268.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.gatt_cfg.max_gatt_bearers;</span></span></p>
+  </td>
+  <td width=313 valign=top style='width:234.45pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_gatt_t.max_eatt_bearers</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884564"><span lang=EN-US>1.7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>wiced_bt_cfg_rfcomm_t wiced_app_cfg_rfcomm</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0
+ style='margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=285 valign=top style='width:213.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>Old</span></p>
+  </td>
+  <td width=240 valign=top style='width:179.8pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>New</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=285 valign=top style='width:213.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.rfcomm_cfg.max_links</span></span></p>
+  </td>
+  <td width=240 valign=top style='width:179.8pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_rfcomm_t.max_links</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=285 valign=top style='width:213.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.rfcomm_cfg.max_ports</span></span></p>
+  </td>
+  <td width=240 valign=top style='width:179.8pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_rfcomm_t.max_ports</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884565"><span lang=EN-US>1.8<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>wiced_bt_cfg_avdt_t wiced_app_cfg_avdt</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0
+ style='margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=261 valign=top style='width:195.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>Old</span></p>
+  </td>
+  <td width=216 valign=top style='width:161.85pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>New</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=261 valign=top style='width:195.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.avdt_cfg.max_links</span></span></p>
+  </td>
+  <td width=216 valign=top style='width:161.85pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_avdt_t.max_links</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=261 valign=top style='width:195.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.avdt_cfg.max_seps</span></span></p>
+  </td>
+  <td width=216 valign=top style='width:161.85pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_avdt_t.max_seps</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884566"><span lang=EN-US>1.9<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>wiced_bt_cfg_avrc_t wiced_app_cfg_avrc</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0
+ style='margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=261 valign=top style='width:195.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>Old</span></p>
+  </td>
+  <td width=216 valign=top style='width:161.8pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>New</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=261 valign=top style='width:195.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.avrc_cfg.max_links</span></span></p>
+  </td>
+  <td width=216 valign=top style='width:161.8pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_avrc_t.max_links</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884567"><span lang=EN-US>1.10<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>wiced_bt_cfg_br_t</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0
+ style='margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=384 valign=top style='width:288.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>Old</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.1pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=TableHead><span lang=EN-US>New</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=384 valign=top style='width:288.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.max_simultaneous_links; // was a
+  shared setting in btstack2.0</span></span></p>
+  </td>
+  <td width=300 valign=top style='width:225.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_br_t.br_max_simultaneous_links</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=384 valign=top style='width:288.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.gatt_cfg.l2cap_application.max_rx_pdu;
+  // was a shared setting in btstack2.0</span></span></p>
+  </td>
+  <td width=300 valign=top style='width:225.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_br_t.br_max_rx_pdu_size</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=384 valign=top style='width:288.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.device_class</span></span></p>
+  </td>
+  <td width=300 valign=top style='width:225.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_br_t.device_class</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=384 valign=top style='width:288.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_settings_t.security_requirement_mask</span></span></p>
+  </td>
+  <td width=300 valign=top style='width:225.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_br_t.security_requirement_mask</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=384 valign=top style='width:288.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>&nbsp;</span></span></p>
+  </td>
+  <td width=300 valign=top style='width:225.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_br_t.rfcomm_cfg =
+  &amp;wiced_bt_cfg_rfcomm</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=384 valign=top style='width:288.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>&nbsp;</span></span></p>
+  </td>
+  <td width=300 valign=top style='width:225.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_br_t.avdt_cfg = &amp;wiced_bt_cfg_avdt</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=384 valign=top style='width:288.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>&nbsp;</span></span></p>
+  </td>
+  <td width=300 valign=top style='width:225.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><span class=CodeFragment><span lang=EN-US
+  style='font-size:10.0pt'>wiced_bt_cfg_br_t.avrc_cfg = &amp;wiced_bt_cfg_avrc</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:24.0pt'>&nbsp;</span></b></p>
+
+<h1><a name="_Toc68884568"><span lang=EN-US>2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Remapping the GATT server</span></a></h1>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Old server</span></b></p>
+  </td>
+  <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span lang=EN-US>New Server</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Pre BTSTACK 3.0 server app</span></b><span
+  lang=EN-US> </span></p>
+  <pre>switch(wiced_bt_gatt_attribute_request_t.request_type)</pre><pre>{</pre><pre>   case GATTS_REQ_TYPE_READ :</pre><pre>               // handle wiced_bt_gatt_read_t</pre><pre>        // Return the response in </pre><pre>        //     wiced_bt_gatt_read_t.p_val, wiced_bt_gatt_read_t.p_val_len</pre><pre>   break;</pre><pre>   case GATTS_REQ_TYPE_WRITE:</pre><pre>        // Called for GATT_REQ_WRITE, GATT_CMD_WRITE, GATT_CMD_SIGNED_WRITE</pre><pre>        // Application writes the data in wiced_bt_gatt_write_t.p_val of length</pre><pre>        // wiced_bt_gatt_write_t.val_len into the attribute handle and returns the </pre><pre>        // success or error code</pre><pre>   break;</pre><pre>   case GATTS_REQ_TYPE_WRITE_REQ:</pre><pre>        // Not used</pre><pre>   break;</pre><pre>   case GATTS_REQ_TYPE_PREP_WRITE:</pre><pre>        // Called for GATT_REQ_PREPARE_WRITE</pre><pre>        // Application queues up the data in wiced_bt_gatt_write_t.p_val of length</pre><pre>        // wiced_bt_gatt_write_t.val_len into the attribute handle and returns the </pre><pre>        // success or error code</pre><pre>   break;</pre><pre>   case GATTS_REQ_TYPE_WRITE_EXEC:</pre><pre>        // Called for GATT_REQ_EXEC_WRITE      </pre><pre>        // Application executes the queueud writes based on the flag in wiced_bt_gatt_request_data_t.exec_write</pre><pre>   break;</pre><pre>   case GATTS_REQ_TYPE_MTU:</pre><pre>        // Called to inform application regarding the received mtu in wiced_bt_gatt_request_data.mtu      </pre><pre>   break;</pre><pre>   case GATTS_REQ_TYPE_CONF:</pre><pre>        // Called to inform application regarding the received indication confirmation using </pre><pre>        // wiced_bt_gatt_request_data.handle</pre><pre>   break;</pre><pre>   case GATTS_REQ_TYPE_VALIDATE_READ:</pre><pre>        // Called to validate read operation on handle wiced_bt_gatt_request_data_t.handle</pre><pre>   break;</pre><pre>}</pre></td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Post BTSTACK 3.0 server app</span></b><span
+  lang=EN-US> </span></p>
+  <pre>switch(wiced_bt_gatt_attribute_request_t.opcode)</pre><pre>{</pre><pre>    case GATT_REQ_MTU:</pre><pre>        // Application calls wiced_bt_gatt_server_send_mtu_rsp </pre><pre>        // with the desired mtu. </pre><pre>    break;</pre><pre>    case GATT_REQ_READ:</pre><pre>    case GATT_REQ_READ_BLOB:</pre><pre>        // structure used wiced_bt_gatt_attribute_request_t.data.read_req</pre><pre>        // Application calls wiced_bt_gatt_server_send_read_by_rsp, with a pointer at a offset </pre><pre>        // to the value of the requested attribute handle.</pre><pre>        // Ideally application does not need to allocate memory for this rsp since as a server </pre><pre>        // typically the handle has a value which can be read as a binary array. </pre><pre>        // The context in this case may be set to NULL, to avoid freeing the memory in the </pre><pre>        // GATT_APP_BUFFER_TRANSMITTED_EVT</pre><pre>    break;</pre><pre>    case GATT_REQ_READ_BY_TYPE:</pre><pre>         // structure used wiced_bt_gatt_attribute_request_t.data.read_by_type</pre><pre>         // Application allocates a </pre><pre>         //   a) buffer of the size wiced_bt_gatt_attribute_request_t.len_requested</pre><pre>         //   b) Set the s_handle to wiced_bt_gatt_read_by_type_t.s_handle</pre><pre>         //   c) Use wiced_bt_gatt_find_by_type API to find the attr_handle for the </pre><pre>         //      wiced_bt_gatt_read_by_type_t.uuid which lies between s_handle and  </pre><pre>         //      wiced_bt_gatt_read_by_type_t.e_handle</pre><pre>         //    d) Call wiced_bt_gatt_put_read_by_type_rsp_in_stream to form the response</pre><pre>         //    e) Set s_handle = attr_handle + 1</pre><pre>         //    f) Repeat  (c) - (e) till the wiced_bt_gatt_put_read_by_type_rsp_in_stream returns 0.</pre><pre>         //    g) Send the response with wiced_bt_gatt_server_send_read_by_type_rsp with valid length in</pre><pre>         //       buffer else send an error response.</pre><pre>         //    h) To free the allocated buffer sent in the success case, you can set the context to the </pre><pre>         //        applicable free function, which are returned in the GATT_APP_BUFFER_TRANSMITTED_EVT</pre><pre>    break;</pre><pre>    case GATT_REQ_READ_MULTI:</pre><pre>    case GATT_REQ_READ_MULTI_VAR_LENGTH:</pre><pre>         // structure used wiced_bt_gatt_attribute_request_t.data.read_multiple_req</pre><pre>         // Application allocates a </pre><pre>         //   a) buffer of the size wiced_bt_gatt_attribute_request_t.len_requested</pre><pre>         //   b) Application loops through the handles received with wiced_bt_gatt_get_handle_from_stream</pre><pre>         //       for upto wiced_bt_gatt_read_multiple_req_t.num_handles</pre><pre>         //   c) for each handle, application gets the value of the handle and uses </pre><pre>         //      wiced_bt_gatt_put_read_multi_rsp_in_stream  to write response into allocated buffer</pre><pre>         //   d) Once done, use wiced_bt_gatt_server_send_read_multi_rsp</pre><pre>         //   e) To free the allocated buffer sent in the success case, you can set the context to the </pre><pre>         //        applicable free function, which are returned in the GATT_APP_BUFFER_TRANSMITTED_EVT</pre><pre>    break;</pre><pre>    case GATT_REQ_WRITE:</pre><pre>        // Application writes the data in wiced_bt_gatt_write_t.p_val of length</pre><pre>        // wiced_bt_gatt_write_t.val_len into the attribute handle and </pre><pre>        // calls the wiced_bt_gatt_server_send_write_rsp in case of success else sends an error rsp</pre><pre>    break;</pre><pre>    case GATT_CMD_WRITE:</pre><pre>    case GATT_CMD_SIGNED_WRITE:</pre><pre>        // Application writes the data in wiced_bt_gatt_write_t.p_val of length</pre><pre>        // wiced_bt_gatt_write_t.val_len into the attribute handle and     break;</pre><pre>    case GATT_REQ_PREPARE_WRITE:</pre><pre>        // Application queues up the data in wiced_bt_gatt_write_t.p_val of length</pre><pre>        // wiced_bt_gatt_write_t.val_len into the attribute handle and </pre><pre>        // calls the wiced_bt_gatt_server_send_prepare_write_rsp in case of success else sends an error rsp</pre><pre>        // Typically applications which support reliable writes are expected to have memory allocated for </pre><pre>        // queueing up writes upto the extent allowed for the specific handle. Hence it is advisable to</pre><pre>        // use the same memory for the response. Application may set the context to NULL to avoid a free </pre><pre>        // the buffer used in the response is returned using GATT_APP_BUFFER_TRANSMITTED_EVT</pre><pre>&nbsp;</pre><pre>    break;</pre><pre>    case GATT_REQ_EXECUTE_WRITE:</pre><pre>         // Application executes the queued writes based on the flag in </pre><pre>         // wiced_bt_gatt_request_params_t_t.data.exec_flag</pre><pre>         // Application sends a success using wiced_bt_gatt_server_send_execute_write_rsp or </pre><pre>         // a failure using wiced_bt_gatt_server_send_error_rsp with the handle_in_error and status code.</pre><pre>    break;</pre><pre>}</pre></td>
+ </tr>
+</table>
+
+<h2><a name="_Toc68884569"><span lang=EN-US>2.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Sending notifications, indications, multiple notifications</span></a></h2>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Sending indications</span></b><span
+  lang=EN-US> </span></p>
+  <pre>// Sending Indication. The stack allocates and copies the buffer p_val</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_send_indication (uint16_t conn_id, uint16_t attr_handle,</pre><pre> uint16_t val_len, uint8_t *p_val );                                         </pre></td>
+  <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Sending indications</span></b><span
+  lang=EN-US> </span></p>
+  <pre>// Sending Indication</pre><pre>// Application passes the p_app_buffer in memory with the p_app_context </pre><pre>// The buffer is returned to the app in the GATT_APP_BUFFER_TRANSMITTED_EVT</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_server_send_indication(uint16_t conn_id,</pre><pre> uint16_t attr_handle, uint16_t val_len, uint8_t *p_app_buffer,</pre><pre>    wiced_bt_gatt_app_context_t p_app_ctxt);</pre></td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Notifications, indications </span></b></p>
+  <pre>// Sending notification. The stack allocates and copies the buffer p_val</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_send_notification (uint16_t conn_id, uint16_t attr_handle,</pre><pre> uint16_t val_len, uint8_t *p_val );                                       </pre></td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Sending notifications</span></b><span
+  lang=EN-US> </span></p>
+  <pre>// Sending notification</pre><pre>// Application passes the p_app_buffer in memory with the p_app_context </pre><pre>// The buffer is returned to the app in the GATT_APP_BUFFER_TRANSMITTED_EVT</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_server_send_notification(uint16_t conn_id,</pre><pre> uint16_t attr_handle, uint16_t val_len, uint8_t *p_app_buffer,</pre><pre>    wiced_bt_gatt_app_context_t p_app_ctxt);</pre></td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Notifications, indications</span></b><span
+  lang=EN-US> </span></p>
+  <pre>// Sending multiple notifications. The stack allocates and copies the data from the p_notifications</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_send_multiple_notifications (uint16_t conn_id, </pre><pre>uint32_t num_notifications, wiced_bt_gatt_handle_length_value_t *p_notifications );   </pre></td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Sending multiple notifications</span></b><span
+  lang=EN-US> </span></p>
+  <pre>// Sending multiple notification</pre><pre>// The application allocates and forms the buffer with handle, length and data pairs.</pre><pre>// Application passes the p_app_buffer in memory with the p_app_context </pre><pre>// The buffer is returned to the app in the GATT_APP_BUFFER_TRANSMITTED_EVT</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_server_send_multi_notifications(uint16_t conn_id, </pre><pre>uint16_t app_buffer_len, uint8_t *p_app_buffer, wiced_bt_gatt_app_context_t p_app_ctxt);</pre></td>
+ </tr>
+</table>
+
+<h2><a name="_Toc68884570"><span lang=EN-US>2.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Remapping the client</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="50%" valign=top style='width:50.0%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Old client</span></b></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><b><span lang=EN-US>New client</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="50%" valign=top style='width:50.0%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=Body><b><span lang=EN-US>Events</span></b></p>
+  <p class=MsoNormal><b><span lang=EN-US>Handling Operation Complete events</span></b><span
+  lang=EN-US> </span></p>
+  <pre>switch(wiced_bt_gatt_operation_complete_t.op)</pre><pre>{</pre><pre> case GATTC_OPTYPE_READ:</pre><pre>    // Read complete for GATT_REQ_READ, GATT_REQ_READ_BLOB, GATT_REQ_READ_BY_TYPE, </pre><pre>    //   GATT_REQ_READ_MULTI, GATT_REQ_READ_MULTI_VAR_LEN</pre><pre>    // Event Data in wiced_bt_gatt_operation_complete_t.att_value</pre><pre>    // For GATT_REQ_READ_BY_TYPE &amp; GATT_REQ_READ_MULTI_VAR_LEN the event is received multiple times</pre><pre>    //  in the same context with wiced_bt_gatt_operation_complete_t.pending_events decrementing to 0.</pre><pre>    // </pre><pre>    // Application is expected to copy the incoming data to the specific handle</pre><pre> break;</pre><pre> case GATTC_OPTYPE_WRITE:</pre><pre>    // Write complete for GATT_REQ_WRITE, GATT_CMD_WRITE, GATT_CMD_SIGNED_WRITE, </pre><pre>    // and GATT_REQ_PREPRARE_WRITE initiated by the application</pre><pre>    //</pre><pre>    // Write Complete for GATT_REQ_WRITE and GATT_REQ_PREPRARE_WRITE is sent to the app after the </pre><pre>    //  stack receives a response from the remote server</pre><pre>    // Write complete for GATT_CMD_WRITE, GATT_CMD_SIGNED_WRITE is sent immediately on transmission of</pre><pre>    //  the command to the local controller.</pre><pre> break;</pre><pre> case GATTC_OPTYPE_EXE_WRITE:</pre><pre>    // Execute Write for execute write initiated from application</pre><pre> break;</pre><pre> case GATTC_OPTYPE_CONFIG:</pre><pre>    // Operation complete for wiced_bt_gatt_send_mtu. </pre><pre> break;</pre><pre> case GATTC_OPTYPE_NOTIFICATION:</pre><pre>    // Notification received from remote server, called for GATT_HANDLE_VALUE_NOTIF, GATT_HANDLE_VALUE_MULTI_NOTIF</pre><pre>    // </pre><pre>    // For GATT_HANDLE_VALUE_MULTI_NOTIF the event is received multiple times</pre><pre>    //  in the same context with wiced_bt_gatt_operation_complete_t.pending_events decrementing to 0.</pre><pre>    // </pre><pre> break;</pre><pre> case GATTC_OPTYPE_INDICATION:</pre><pre>    // Indication received from remote server</pre><pre> break;</pre><pre>}</pre></td>
+  <td width="50%" valign=top style='width:50.0%;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=Body><b><span lang=EN-US>Events</span></b></p>
+  <p class=MsoNormal><b><span lang=EN-US>Handling Operation Complete events</span></b><span
+  lang=EN-US> </span></p>
+  <pre>&nbsp;switch(wiced_bt_gatt_operation_complete_t.op)</pre><pre>{</pre><pre> case GATTC_OPTYPE_READ_HANDLE:</pre><pre> case GATTC_OPTYPE_READ_BY_TYPE:</pre><pre>    // Structure used: wiced_bt_gatt_operation_complete_rsp_t.att_value</pre><pre>        // Read complete for GATT_REQ_READ, GATT_REQ_READ_BLOB,</pre><pre>    // GATT_REQ_READ_BY_TYPE </pre><pre>    // </pre><pre>    // For GATT_REQ_READ_BY_TYPE &amp; GATT_REQ_READ_MULTI_VAR_LEN the event is received multiple times</pre><pre>    //  in the same context with wiced_bt_gatt_operation_complete_t.pending_events decrementing to 0.</pre><pre>    // </pre><pre>    // Application is expected to copy the incoming data to the specific handle</pre><pre> break;</pre><pre> case GATTC_OPTYPE_READ_MULTI:</pre><pre>        // Structure used: wiced_bt_gatt_operation_complete_rsp_t.multi_rsp;</pre><pre>    // Read complete for GATT_REQ_REQ_MULTI and GATT_REQ_READ_MULTI_VAR_LENGTH</pre><pre>    //</pre><pre>    // For GATT_REQ_READ_MULTI_VAR_LENGTH, the application invokes  </pre><pre>    // wiced_bt_gatt_get_multi_handle_data_from_stream multiple times to get all the </pre><pre>    // data in the response.</pre><pre> </pre><pre> break;</pre><pre> case GATTC_OPTYPE_WRITE_WITH_RSP:</pre><pre>    // Write complete for GATT_REQ_WRITE, GATT_REQ_PREPRARE_WRITE initiated by the application</pre><pre>    // </pre><pre>    // Write Complete for GATT_REQ_WRITE and GATT_REQ_PREPRARE_WRITE is sent to the app after the </pre><pre>    //  stack receives a response from the remote server</pre><pre> </pre><pre> break;</pre><pre> case GATTC_OPTYPE_WRITE_WITH_NO_RSP:</pre><pre>    // Write complete for GATT_CMD_WRITE, GATT_CMD_SIGNED_WRITE, </pre><pre>    // </pre><pre>    // Write complete for GATT_CMD_WRITE, GATT_CMD_SIGNED_WRITE is sent immediately on transmission of</pre><pre>    //  the command to the local controller.</pre><pre>break;</pre><pre> case GATTC_OPTYPE_EXECUTE_WRITE:</pre><pre>    // Execute Write for execute write initiated from application</pre><pre> break;</pre><pre> case GATTC_OPTYPE_CONFIG_MTU:</pre><pre>    // Operation complete for wiced_bt_gatt_client_configure_mtu. </pre><pre> break;</pre><pre> case GATTC_OPTYPE_NOTIFICATION:</pre><pre>    // Notification received from remote server, GATT_HANDLE_VALUE_NOTIF, GATT_HANDLE_VALUE_MULTI_NOTIF</pre><pre>    // </pre><pre>    // For GATT_HANDLE_VALUE_MULTI_NOTIF the event is received multiple times</pre><pre>    //  in the same context with wiced_bt_gatt_operation_complete_t.pending_events decrementing to 0.</pre><pre>    // </pre><pre> break;</pre><pre> case GATTC_OPTYPE_INDICATION:</pre><pre>    // Indication received from remote server</pre><pre> break;</pre><pre>}</pre></td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884571"><span lang=EN-US>2.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Configure MTU</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0 width="95%"
+ style='width:95.78%;margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=Body><b><span lang=EN-US>Send MTU Request </span></b></p>
+  <pre>// Send configure MTU</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_configure_mtu (uint16_t conn_id, uint16_t mtu); </pre></td>
+  <td valign=top style='border-top:solid windowtext 1.0pt;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=Body><b><span lang=EN-US>Send MTU Request </span></b></p>
+  <pre>// Sending Indication. The stack allocates and copies the buffer p_val</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_client_configure_mtu (uint16_t conn_id, uint16_t mtu); </pre></td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884572"><span lang=EN-US>2.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Send Read Req</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="43%" valign=top style='width:43.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=Body><b><span lang=EN-US>Send Read </span></b></p>
+  <pre>// Sending read.</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_send_read (uint16_t conn_id, wiced_bt_gatt_read_type_t type, </pre><pre>                                             wiced_bt_gatt_read_param_t *p_read);</pre><pre>&nbsp;</pre><pre>// To send GATT_REQ_READ,GATT_READ_BLOB set type = GATT_READ_BY_HANDLE,</pre><pre>// To send GATT_REQ_READ_BY_TYPE, set type = GATT_READ_BY_TYPE</pre><pre>// To send GATT_REQ_READ_MULTI, GATT_REQ_READ_MULTI_VAR_LEN, set type = GATT_READ_MULTIPLE</pre><pre>                                      </pre></td>
+  <td width="56%" valign=top style='width:56.84%;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=Body><b><span lang=EN-US>Send Read </span></b></p>
+  <pre>// Sending read by handle</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_client_send_read_handle(uint16_t conn_id, uint16_t handle, uint16_t offset, </pre><pre>    uint8_t * p_read_buf, uint16_t len, wiced_bt_gatt_auth_req_t auth_req);</pre><pre>&nbsp;</pre><pre>// Sending read by type</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_client_send_read_by_type(uint16_t conn_id, uint16_t s_handle, uint16_t e_handle, </pre><pre>    wiced_bt_uuid_t *p_uuid, uint8_t *p_read_buf, uint16_t len, wiced_bt_gatt_auth_req_t auth_req);</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_client_send_read_multiple(uint16_t conn_id,</pre><pre>    wiced_bt_gatt_opcode_t opcode,</pre><pre>    int num_handles, uint8_t *p_handle_stream, wiced_bt_gatt_auth_req_t auth_req);</pre></td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884573"><span lang=EN-US>2.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Send Write Req</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=Body><b><span lang=EN-US>Send MTU Request </span></b></p>
+  <pre>// Send Write The stack allocates and copies the buffer p_write-&gt;p_val</pre><pre>&nbsp;</pre><pre>// To send GATT_REQ_WRITE, set type = GATT_WRITE</pre><pre>// To send GATT_CMD_WRITE, set type = GATT_WRITE_NO_RSP</pre><pre>// To send GATT_SIGNED_WRITE, set type = GATT_WRITE_NO_RSP, and </pre><pre>//      p_write-&gt;auth = GATT_AUTH_REQ_SIGNED_NO_MITM or </pre><pre>//      p_write-&gt;auth = GATT_AUTH_REQ_SIGNED_MITM</pre><pre>// To send GATT_REQ_PREPARE_WRITE, set type = GATT_WRITE_PREPARE</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_send_write (uint16_t conn_id, wiced_bt_gatt_write_type_t type,</pre><pre>                                              wiced_bt_gatt_value_t *p_write);</pre><pre>                                      </pre></td>
+  <td valign=top style='border-top:solid windowtext 1.0pt;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=Body><b><span lang=EN-US>Send Write </span></b></p>
+  <pre>// Sending Write. The stack sends the buffer in p_app_write_buffer</pre><pre>// The buffer is returned to the application in the GATT_BUFFER_TRANSMITTED_EVT along with </pre><pre>// p_app_ctxt, to allow application to free the data.</pre><pre>&nbsp;</pre><pre>// @note: wiced_bt_gatt_value ==&gt; wiced_bt_gatt_write_hdr_t </pre><pre>&nbsp;</pre><pre>// To send GATT_REQ_WRITE, set opcode = GATT_REQ_WRITE</pre><pre>// To send GATT_CMD_WRITE, set opcode = GATT_CMD_WRITE</pre><pre>// To Send GATT_CMD_SIGNED_WRITE, set opcode = GATT_CMD_SIGNED_WRITE and</pre><pre>//      p_hdr-&gt;auth = GATT_AUTH_REQ_SIGNED_NO_MITM or </pre><pre>//      p_hdr-&gt;auth = GATT_AUTH_REQ_SIGNED_MITMp_hdr-&gt;auth = </pre><pre>// To send GATT_REQ_PREPARE_WRITE, set opcode = GATT_REQ_PREPARE_WRITE</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_client_send_write(uint16_t conn_id,</pre><pre>    wiced_bt_gatt_opcode_t opcode,</pre><pre>    wiced_bt_gatt_write_hdr_t *p_hdr, uint8_t *p_app_write_buffer,</pre><pre>    wiced_bt_gatt_app_context_t p_app_ctxt);                                     </pre></td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name="_Toc68884574"><span lang=EN-US>2.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Send Execute Write</span></a></h2>
+
+<table class=InfineonStandard border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+  padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Send Execute Write</span></b><span
+  lang=EN-US> </span></p>
+  <pre>// Send execute write</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_send_execute_write (uint16_t conn_id, wiced_bool_t is_execute);</pre><pre>                                    </pre></td>
+  <td valign=top style='border-top:solid windowtext 1.0pt;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 2.85pt 0in 4.25pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Send Execute Write</span></b><span
+  lang=EN-US> </span></p>
+  <pre>// Send execute write</pre><pre>&nbsp;</pre><pre>wiced_bt_gatt_status_t wiced_bt_gatt_client_send_execute_write (uint16_t conn_id, wiced_bool_t is_execute);</pre><pre>&nbsp;</pre><pre>                                    </pre></td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=Body><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:11.0pt;font-family:"Source Sans Pro",sans-serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection4><b><i><br clear=all style='page-break-before:always'>
+</i></b>
+
+<p class=Attention><span lang=EN-US>Attention:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>&nbsp;</span></p>
+
+<p class=HeadingPreface><a name="_Toc68884575"></a><a name="_Toc431980080"></a><a
+name="_Toc431889541"></a><a name="_Toc431374938"></a><a name="_Toc431284135"></a><a
+name="_Toc430947637"><span lang=EN-US>Revision history</span></a></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:4.25pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr>
+   <td width=99 valign=top style='width:74.25pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0in 0in 0in 4.25pt'>
+   <p class=TableHead-l style='margin-left:0in'><span lang=EN-US>Document
+   version</span></p>
+   </td>
+   <td width=128 valign=top style='width:95.85pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0in 0in 0in 4.25pt'>
+   <p class=TableHead><span lang=EN-US>Date of release</span></p>
+   </td>
+   <td width=454 valign=top style='width:340.2pt;border-top:solid windowtext 1.0pt;
+   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+   padding:0in 0in 0in 4.25pt'>
+   <p class=TableHead><span lang=EN-US>Description of changes</span></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td width=99 valign=top style='width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 4.25pt'>
+  <p class=TableCell-l style='margin-left:0in'><span lang=EN-US>1</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 4.25pt'>
+  <p class=TableCell><span
+  lang=EN-US>2021-04-30</span></p>
+  </td>
+  <td width=454 valign=top style='width:340.2pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 0in 0in 4.25pt'>
+  <p class=TableCell><span lang=EN-US>API Changes in BTSTACK3.0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 4.25pt'>
+  <p class=TableCell-l style='margin-left:0in'><span lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 4.25pt'>
+  <p class=TableCell><span lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=454 valign=top style='width:340.2pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 0in 0in 4.25pt'>
+  <p class=TableCell><span lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 4.25pt'>
+  <p class=TableCell-l style='margin-left:0in'><span lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=128 valign=top style='width:95.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 4.25pt'>
+  <p class=TableCell><span lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=454 valign=top style='width:340.2pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 0in 0in 4.25pt'>
+  <p class=TableCell><span lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<b><span lang=EN-US style='font-size:11.0pt;line-height:115%;font-family:"Source Sans Pro",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<div class=WordSection5>
+
+<p class=Body><span lang=EN-US> </span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:11.0pt;font-family:"Source Sans Pro",sans-serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection6>
+
+<p class=LegalHeading><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -93,22 +93,38 @@ $(document).ready(function(){initNavTree('structwiced__bt__avrc__cmd__t.html',''
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>Generic AVRC command. </p>
+<div class="textblock"><p>AVRC Command messages. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a87c989f6ce0780fe76163afed3337822"><td class="memItemLeft" align="right" valign="top"><a id="a87c989f6ce0780fe76163afed3337822"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__avrc__cmd__t.html#a87c989f6ce0780fe76163afed3337822">pdu</a></td></tr>
-<tr class="memdesc:a87c989f6ce0780fe76163afed3337822"><td class="mdescLeft">&#160;</td><td class="mdescRight">pdu id <br /></td></tr>
-<tr class="separator:a87c989f6ce0780fe76163afed3337822"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af491497035a5889a707ab66213cfd619"><td class="memItemLeft" align="right" valign="top"><a id="af491497035a5889a707ab66213cfd619"></a>
-<a class="el" href="group__wicedbt__avrc.html#ga05446fa1277163e92d7ffe155d72b072">wiced_bt_avrc_sts_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__avrc__cmd__t.html#af491497035a5889a707ab66213cfd619">status</a></td></tr>
-<tr class="memdesc:af491497035a5889a707ab66213cfd619"><td class="mdescLeft">&#160;</td><td class="mdescRight">status <br /></td></tr>
-<tr class="separator:af491497035a5889a707ab66213cfd619"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2175bfe972425c7fd3883c7acb4aba7b"><td class="memItemLeft" align="right" valign="top"><a id="a2175bfe972425c7fd3883c7acb4aba7b"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__avrc__cmd__t.html#a2175bfe972425c7fd3883c7acb4aba7b">opcode</a></td></tr>
-<tr class="memdesc:a2175bfe972425c7fd3883c7acb4aba7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Op Code (assigned by AVRC_BldCommand according to pdu) <br /></td></tr>
-<tr class="separator:a2175bfe972425c7fd3883c7acb4aba7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6da795f43a185df385807746a0025b1"><td class="memItemLeft" align="right" valign="top"><a id="ad6da795f43a185df385807746a0025b1"></a>
+<a class="el" href="structwiced__bt__avrc__hdr__t.html">wiced_bt_avrc_hdr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__avrc__cmd__t.html#ad6da795f43a185df385807746a0025b1">hdr</a></td></tr>
+<tr class="memdesc:ad6da795f43a185df385807746a0025b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">AVRC command header. <br /></td></tr>
+<tr class="separator:ad6da795f43a185df385807746a0025b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fb2280663d57a212dc8def95a1c872"><td class="memItemLeft" ><a id="a40fb2280663d57a212dc8def95a1c872"></a>
+union {</td></tr>
+<tr class="memitem:ab42b92c937a814093a2c0e14dfcec703"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__unit__info__cmd__t.html">wiced_bt_avrc_unit_info_cmd_t</a>&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__cmd__t.html#aec979973c4db98919d34f4551796c1a9">unit</a></td></tr>
+<tr class="memdesc:ab42b92c937a814093a2c0e14dfcec703"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit info command <br /></td></tr>
+<tr class="separator:ab42b92c937a814093a2c0e14dfcec703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c41a2151067076e58190b76d8bea825"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__sub__unit__info__cmd__t.html">wiced_bt_avrc_sub_unit_info_cmd_t</a>&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__cmd__t.html#acd56057f6b8022acec5a684e7a1da56f">sub_unit</a></td></tr>
+<tr class="memdesc:a9c41a2151067076e58190b76d8bea825"><td class="mdescLeft">&#160;</td><td class="mdescRight">subunit command <br /></td></tr>
+<tr class="separator:a9c41a2151067076e58190b76d8bea825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db5ffaf42f6fdc33c7233040e691ad0"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="unionwiced__bt__avrc__pass__thru__cmd__t.html">wiced_bt_avrc_pass_thru_cmd_t</a>&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__cmd__t.html#ab05dff975dea3fc414289b2f942025be">pass_thru</a></td></tr>
+<tr class="memdesc:a8db5ffaf42f6fdc33c7233040e691ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passthrough command. <br /></td></tr>
+<tr class="separator:a8db5ffaf42f6fdc33c7233040e691ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23d4b65b56058e1db1a3bb0570824af"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__metadata__cmd__t.html">wiced_bt_avrc_metadata_cmd_t</a>&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__cmd__t.html#a080f19ce24b97378dc7c2867f1ab74e1">metadata</a></td></tr>
+<tr class="memdesc:aa23d4b65b56058e1db1a3bb0570824af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata command. <br /></td></tr>
+<tr class="separator:aa23d4b65b56058e1db1a3bb0570824af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05dc66b63652705275f8e7669cb60eee"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__browse__cmd__t.html">wiced_bt_avrc_browse_cmd_t</a>&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__cmd__t.html#a68f70312280d436a18a290d96c6ea1e8">browse_cmd</a></td></tr>
+<tr class="memdesc:a05dc66b63652705275f8e7669cb60eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Browse command. <br /></td></tr>
+<tr class="separator:a05dc66b63652705275f8e7669cb60eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fb2280663d57a212dc8def95a1c872"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="separator:a40fb2280663d57a212dc8def95a1c872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

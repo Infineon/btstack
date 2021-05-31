@@ -17,29 +17,44 @@
 
 #include "wiced_result.h"
 
-/** Timer callback argument type */
-typedef void* wiced_timer_callback_arg_t;
+typedef void *wiced_timer_callback_arg_t;                   /**< Timer callback argument type */
+typedef wiced_timer_callback_arg_t WICED_TIMER_PARAM_TYPE;  /**< To avoid recompiling older apps */
 
 /**
  * Function prototype for the timer call back.
  * @param[in]    cb_params      :Timer callback function
  */
-typedef void ( wiced_timer_callback_ext_t )( wiced_timer_callback_arg_t cb_params );
+typedef void (wiced_timer_callback_t)(wiced_timer_callback_arg_t cb_params);
 
-/** Timer structure */
-typedef struct _wiced_timer_ext_t
+/** Timer structure.
+ * 
+ *  NOTE: this structure is used internally by the wiced stack. Applications MUST NOT
+ *        modify any of the elements of this structure.
+ *
+ *        Timer control block memory MUST be peristant from when the timer is initialized,
+ *        using wiced_init_timer(), till it is de-initialized, using wiced_deinit_timer().
+ */
+typedef struct _wiced_timer_t
 {
-    struct _wiced_timer_ext_t   *p_next;    /**< pointer to next timer entry */
+    struct _wiced_timer_t       *p_next;   /**< internal, next pointer to \ref wiced_timer_t */
+    wiced_timer_callback_t      *p_cback;  /**< internal, the callback function */
+    wiced_timer_callback_arg_t  cb_arg;    /**< internal, the callback argument */
+    uint32_t                    pi;        /**< internal, timer flags */
+    uint64_t                    tt;        /**< internal, timer timeout */
+} wiced_timer_t;
 
-    wiced_timer_callback_arg_t  cb_arg;     /**< argument to timer callback */
-    wiced_timer_callback_ext_t  *p_cback;   /**< timer callback function address */
-
-    uint32_t                    periodic_interval_ms;   /**< periodic interval in milliseconds */
-
-    uint64_t                    target_time;            /**< absolute target time */
-}wiced_timer_ext_t;
-
-#include "wiced_timer_legacy.h"
+/**
+ * Defines the wiced timer types. These timers are system tick driven and a
+ * systick is 1 millisecond.So the minimum timer resolution supported is
+ * 1 millisecond
+ */
+typedef enum
+{
+    WICED_MILLI_SECONDS_TIMER,
+    WICED_SECONDS_TIMER,
+    WICED_MILLI_SECONDS_PERIODIC_TIMER,
+    WICED_SECONDS_PERIODIC_TIMER,
+} wiced_timer_type_e;
 
 #ifdef __cplusplus
 extern "C"
@@ -52,45 +67,45 @@ extern "C"
  *@param[in]    p_timer_cb      :Timer callback function to be invoked on timer expiry
  *@param[in]    cb_arg          :Parameter to be passed to the timer callback function which
  *                                              gets invoked on timer expiry,if any
- *@param[in]    periodic_timer  :WICED_TRUE, if periodic, WICED_FALSE if non-periodic
+ *@param[in]    timer_type      :Shows if the timer is milliseconds or seconds, and if periodic or not
  *
  * @return   wiced_result_t
  */
-wiced_result_t wiced_init_timer_ext( wiced_timer_ext_t* p_timer, wiced_timer_callback_ext_t *p_timer_cb,
-                                 wiced_timer_callback_arg_t cb_arg, wiced_bool_t periodic_timer);
+wiced_result_t wiced_init_timer (wiced_timer_t* p_timer, wiced_timer_callback_t *p_timer_cb,
+                                 wiced_timer_callback_arg_t cb_arg, wiced_timer_type_e timer_type);
 
-/** Starts the timer
+/** Starts a timer
  *
  * @param[in]    p_timer                :Pointer to the timer structure
  * @param[in]    timeout_ms             :timeout in milliseconds
  *
  * @return       wiced_result_t
  */
-wiced_result_t wiced_start_timer_ext( wiced_timer_ext_t* p_timer,uint32_t timeout_ms );
+wiced_result_t wiced_start_timer (wiced_timer_t* p_timer,uint32_t timeout_ms);
 
-/** Stops the timer
+/** Stops a timer
  *
  * @param[in]    p_timer      :Pointer to the timer structure
  *
  * @return       wiced_result_t
  */
-wiced_result_t wiced_stop_timer_ext( wiced_timer_ext_t* p_timer );
+wiced_result_t wiced_stop_timer (wiced_timer_t *p_timer);
 
-/**  Checks if the timer is in use
+/**  Checks if a timer is in use
 *
 *@param[in]    p_timer                  :Pointer to the timer structure
 *
 * @return   TRUE if the timer is in use and FALSE if the timer is not in use
 */
-wiced_bool_t wiced_is_timer_in_use_ext(wiced_timer_ext_t* p_timer);
+wiced_bool_t wiced_is_timer_in_use (wiced_timer_t *p_timer);
 
-/** Deinitialize the timer instance and stops the timer if it is running
+/** Deinitialize a timer instance and stops the timer if it is running
  *
  * @param[in]    p_timer                :Pointer to the timer
  *
  * @return       wiced_result_t
  */
-wiced_result_t wiced_deinit_timer_ext(  wiced_timer_ext_t* p_timer );
+wiced_result_t wiced_deinit_timer (wiced_timer_t* p_timer);
 
 /** @} */
 #ifdef __cplusplus

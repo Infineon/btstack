@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['adv_5frep_5fevt_5fcount_5fmax',['ADV_REP_EVT_COUNT_MAX',['../group__btm__ble__api__functions.html#gga05589fbab0657f08285ebdfe93f5ec9ea7e93b8fb79eb54fffb0ef7aae25a3bbc',1,'wiced_bt_ble.h']]],
-  ['adv_5frep_5fevt_5fcount_5fmin',['ADV_REP_EVT_COUNT_MIN',['../group__btm__ble__api__functions.html#gga05589fbab0657f08285ebdfe93f5ec9ea2e150f9aebb639d8b399e3063d3db808',1,'wiced_bt_ble.h']]],
+  ['adv_5frep_5fevt_5fcount_5fmax',['ADV_REP_EVT_COUNT_MAX',['../group__btm__ble__api__functions.html#gga8739336a6d1ebba1faaf824bc5c1024da7e93b8fb79eb54fffb0ef7aae25a3bbc',1,'wiced_bt_ble.h']]],
+  ['adv_5frep_5fevt_5fcount_5fmin',['ADV_REP_EVT_COUNT_MIN',['../group__btm__ble__api__functions.html#gga8739336a6d1ebba1faaf824bc5c1024da2e150f9aebb639d8b399e3063d3db808',1,'wiced_bt_ble.h']]],
   ['appearance_5faccess_5fpoint',['APPEARANCE_ACCESS_POINT',['../group__wicedbt__gatt.html#gga244b6c64a958765582c0d6a2c1fdfed4adf260c38869592cdd11e0ef1cd891494',1,'gattdefs.h']]],
   ['appearance_5fcontrol_5fdevice_5fbutton',['APPEARANCE_CONTROL_DEVICE_BUTTON',['../group__wicedbt__gatt.html#gga244b6c64a958765582c0d6a2c1fdfed4a530b2160cd0fe4775c905d2c2a59c8d1',1,'gattdefs.h']]],
   ['appearance_5fcontrol_5fdevice_5fmulti_5fswitch',['APPEARANCE_CONTROL_DEVICE_MULTI_SWITCH',['../group__wicedbt__gatt.html#gga244b6c64a958765582c0d6a2c1fdfed4a4733ab1a379b5f0979355730bc334a39',1,'gattdefs.h']]],
@@ -49,5 +49,25 @@ var searchData=
   ['appearance_5fsensor_5frain',['APPEARANCE_SENSOR_RAIN',['../group__wicedbt__gatt.html#gga244b6c64a958765582c0d6a2c1fdfed4ae0e0b3b2026f88cd0b53cff302af16e7',1,'gattdefs.h']]],
   ['appearance_5fsensor_5fsmoke',['APPEARANCE_SENSOR_SMOKE',['../group__wicedbt__gatt.html#gga244b6c64a958765582c0d6a2c1fdfed4a83dbf744bafc726df2a8e1138f239dc8',1,'gattdefs.h']]],
   ['appearance_5fsensor_5ftemperature',['APPEARANCE_SENSOR_TEMPERATURE',['../group__wicedbt__gatt.html#gga244b6c64a958765582c0d6a2c1fdfed4a8a3a426aa664cb267c0650f913fc87ec',1,'gattdefs.h']]],
-  ['appearance_5fsensor_5fwind',['APPEARANCE_SENSOR_WIND',['../group__wicedbt__gatt.html#gga244b6c64a958765582c0d6a2c1fdfed4a04b721c6eae96e662edfef32f3af91b7',1,'gattdefs.h']]]
+  ['appearance_5fsensor_5fwind',['APPEARANCE_SENSOR_WIND',['../group__wicedbt__gatt.html#gga244b6c64a958765582c0d6a2c1fdfed4a04b721c6eae96e662edfef32f3af91b7',1,'gattdefs.h']]],
+  ['avrc_5fapp_5fbuffer_5ftx_5fevt',['AVRC_APP_BUFFER_TX_EVT',['../group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cabf454db5bdfd28b6a7a8f1d888389bb7',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fbrowse_5fcong_5find_5fevt',['AVRC_BROWSE_CONG_IND_EVT',['../group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cae5ade264e0d5a48dfe3708c2e58899f2',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fbrowse_5fopen_5find_5fevt',['AVRC_BROWSE_OPEN_IND_EVT',['../group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cab7ed614c0f6012e90d8db3b2a430e2ac',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fbrowse_5funcong_5find_5fevt',['AVRC_BROWSE_UNCONG_IND_EVT',['../group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cac8b9db2d97ac3c32d2455053aa4f6873',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fcmd_5fctrl',['AVRC_CMD_CTRL',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a43f13ec452222530435e55ef6f304a65',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fcmd_5fgen_5finq',['AVRC_CMD_GEN_INQ',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268acd1a1b75865492c2c1c99d993f84417f',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fcmd_5fnotif',['AVRC_CMD_NOTIF',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268ac0fcde9ce9d981d19c029852ed86b287',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fcmd_5fspec_5finq',['AVRC_CMD_SPEC_INQ',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a3313b3c236e578201db89feb8aefd371',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fcmd_5fstatus',['AVRC_CMD_STATUS',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a6931dc929083a706030df90df116c88e',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fcmd_5ftimeout_5fevt',['AVRC_CMD_TIMEOUT_EVT',['../group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3ca9d8d2cf7f45e9c72bb17e1bec88e97b8',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fcong_5find_5fevt',['AVRC_CONG_IND_EVT',['../group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3ca888a7b25531652a01570f775498daf00',1,'wiced_bt_avrc.h']]],
+  ['avrc_5fopen_5find_5fevt',['AVRC_OPEN_IND_EVT',['../group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cad847732c9765a0a7b9cb3fcc209dcd6f',1,'wiced_bt_avrc.h']]],
+  ['avrc_5frsp_5faccept',['AVRC_RSP_ACCEPT',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268af0c6e1cc31508b33a164d1d29bfd98c3',1,'wiced_bt_avrc.h']]],
+  ['avrc_5frsp_5fchanged',['AVRC_RSP_CHANGED',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a6eda05471be70016bcd8e2dc6624ba05',1,'wiced_bt_avrc.h']]],
+  ['avrc_5frsp_5fimpl_5fstbl',['AVRC_RSP_IMPL_STBL',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268acae1b82cf10eacee6c19c989aab66ea9',1,'wiced_bt_avrc.h']]],
+  ['avrc_5frsp_5fin_5ftrans',['AVRC_RSP_IN_TRANS',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a9001cca5ac03765fb5ce20d9edbaef3d',1,'wiced_bt_avrc.h']]],
+  ['avrc_5frsp_5finterim',['AVRC_RSP_INTERIM',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a75cd6472298f137e20a359a6c9c68fdc',1,'wiced_bt_avrc.h']]],
+  ['avrc_5frsp_5fnot_5fimpl',['AVRC_RSP_NOT_IMPL',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268ae0700b6a54a7c2f3e3211a127f7f9676',1,'wiced_bt_avrc.h']]],
+  ['avrc_5frsp_5frej',['AVRC_RSP_REJ',['../group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a066ebba66c5e8d2647db3eb04d3e269d',1,'wiced_bt_avrc.h']]],
+  ['avrc_5funcong_5find_5fevt',['AVRC_UNCONG_IND_EVT',['../group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3caebe358d85d13a7574d44d41a035e22a4',1,'wiced_bt_avrc.h']]]
 ];

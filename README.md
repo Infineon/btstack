@@ -20,8 +20,10 @@ Please note that some of these features depend on the BT controller as well.
 
 ## Additional Information
 
+[BTSTACK release notes](./RELEASE.md)
+
 For BLE APIs, refer to the [BLE API reference manual](https://cypresssemiconductorco.github.io/btstack/ble/api_reference_manual/html/index.html).
 
 For BLE and BR/EDR APIs, refer to the [DUAL MODE API reference manual](https://cypresssemiconductorco.github.io/btstack/dual_mode/api_reference_manual/html/index.html).
 
-[Release Notes](https://github.com/cypresssemiconductorco/btstack/releases/tag/release-v2.0.0)
+[Migration Guide](https://cypresssemiconductorco.github.io/btstack/BTSTACK_2.0_to_3.0_API_Migration_Guide.htm) to port applications witten for BTSTACK1.X and BTSTACK2.0 to BTSTACK3.0.

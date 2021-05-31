@@ -100,6 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6f76de78537f24e047f4b95c6fb91ff8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__utility.html#ga6f76de78537f24e047f4b95c6fb91ff8">wiced_bt_dev_register_hci_trace</a> (<a class="el" href="group__wicedbt___device_management.html#ga8b6fbcab797b63e5fa1b9eaa99a229c3">wiced_bt_hci_trace_cback_t</a> *p_cback)</td></tr>
 <tr class="memdesc:ga6f76de78537f24e047f4b95c6fb91ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register to get the hci traces.  <a href="#ga6f76de78537f24e047f4b95c6fb91ff8">More...</a><br /></td></tr>
 <tr class="separator:ga6f76de78537f24e047f4b95c6fb91ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac69677337b7352c0e3cc34d1af85ba01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__utility.html#gac69677337b7352c0e3cc34d1af85ba01">wiced_bt_dev_update_hci_trace_mode</a> (<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> enable)</td></tr>
+<tr class="memdesc:gac69677337b7352c0e3cc34d1af85ba01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the hci trace mode.  <a href="#gac69677337b7352c0e3cc34d1af85ba01">More...</a><br /></td></tr>
+<tr class="separator:gac69677337b7352c0e3cc34d1af85ba01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga48386d791ced8eaae6bd6cd8f7e3afc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2">wiced_bt_set_local_bdaddr</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> addr_type)</td></tr>
 <tr class="memdesc:ga48386d791ced8eaae6bd6cd8f7e3afc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Local Bluetooth Device Address.  <a href="#ga48386d791ced8eaae6bd6cd8f7e3afc2">More...</a><br /></td></tr>
 <tr class="separator:ga48386d791ced8eaae6bd6cd8f7e3afc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +156,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gac69677337b7352c0e3cc34d1af85ba01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac69677337b7352c0e3cc34d1af85ba01">&#9670;&nbsp;</a></span>wiced_bt_dev_update_hci_trace_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_dev_update_hci_trace_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the hci trace mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>: TRUE to enable HCI traces, FALSE to disable</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
 <a id="ga48386d791ced8eaae6bd6cd8f7e3afc2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga48386d791ced8eaae6bd6cd8f7e3afc2">&#9670;&nbsp;</a></span>wiced_bt_set_local_bdaddr()</h2>
 
@@ -180,17 +210,24 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set Local Bluetooth Device Address. </p>
-<p>If application passes BLE_ADDR_RANDOM as an address type, the stack will setup a static random address. For the static random address top two bits of the bd_addr should be set. The stack will enforce that.</p>
+<p>The application has to set a valid address (Static/Random) by calling this function.<br />
+If this function is not called, the default address is typically a controller assigned address(BT device part number), which is same for perticular device type.For example, all CYW43012 devcies will typically have the same default address.</p>
+<p>The application can set a static random address by setting the addr_type to <a class="el" href="group__bt__types.html#ga9e3dbc812e83ed3d950980bf5f09d332">BLE_ADDR_RANDOM</a>. For static random addresses the top two bits of the bd_addr are required to be set, the stack will override these bits if not set. The remaining 46 bits will be taken from the value provided for bd_addr, <br />
+which cannot be all 0's.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: device address to use </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr_type</td><td>: device address type , should be BLE_ADDR_RANDOM or BLE_ADDR_PUBLIC BLE_ADDR_RANDOM should be only for single BLE mode, not for BR-EDR or Dual Mode</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr_type</td><td>: device address type , should be BLE_ADDR_RANDOM or BLE_ADDR_PUBLIC <br />
+ BLE_ADDR_RANDOM should be only for single BLE mode, not for BR-EDR or Dual Mode.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>BD_Address must be in Big Endian format</dd></dl>
-<p>Example Data | AB | CD | EF | 01 | 23 | 45 | Address | 0 | 1 | 2 | 3 | 4 | 5 | For above example it will set AB:CD:EF:01:23:45 bd address </p>
+<dl class="section return"><dt>Returns</dt><dd>wiced_result_t</dd></dl>
+<p>WICED_BT_ILLEGAL_VALUE : if invalid device address specified <br />
+WICED_BT_NO_RESOURCES : if couldn't allocate memory to issue command <br />
+WICED_BT_SUCCESS : if local bdaddr is set successfully <br />
+ </p><dl class="section note"><dt>Note</dt><dd>BD_Address must be in Big Endian format</dd></dl>
+<p>Example: </p><pre>    Data         | AB | CD | EF | 01 | 23 | 45 | </pre> <pre>    Address      | 0  | 1  | 2  | 3  | 4  | 5  | </pre><p> For above example it will set AB:CD:EF:01:23:45 bd address </p>
 
 </div>
 </div>

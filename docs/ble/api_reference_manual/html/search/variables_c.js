@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['l2cap_5fapplication',['l2cap_application',['../structwiced__bt__cfg__settings__t.html#a0a73a6b571bbc3f4c720f9f0ea884cb4',1,'wiced_bt_cfg_settings_t']]],
-  ['latency',['latency',['../structwiced__bt__gatt__gap__ble__pref__param__t.html#a1838ffc54d2037a82457525fd2f418d9',1,'wiced_bt_gatt_gap_ble_pref_param_t::latency()'],['../structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f',1,'wiced_bt_flow_spec_t::latency()']]],
+  ['latency',['latency',['../structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f',1,'wiced_bt_flow_spec_t']]],
   ['lcids',['lcids',['../structwiced__bt__gatt__eatt__connection__indication__event__t.html#a33b5ec276aa01fc2e0328cd25aa138e0',1,'wiced_bt_gatt_eatt_connection_indication_event_t']]],
   ['lcsrk',['lcsrk',['../structwiced__bt__ble__keys__t.html#a686bc84601157a39331938b78d2d1668',1,'wiced_bt_ble_keys_t']]],
   ['le_5fconnect_5fconfirm_5fcback',['le_connect_confirm_cback',['../structwiced__bt__l2cap__le__appl__information__t.html#afe24ed45b7ef47ceb3ee2738d9b82166',1,'wiced_bt_l2cap_le_appl_information_t']]],
@@ -11,11 +10,10 @@ var searchData=
   ['le_5frelease_5fdrb_5fcb',['le_release_drb_cb',['../structwiced__bt__l2cap__le__appl__information__t.html#a061ad1d94e881cd659b8d31218c689ad',1,'wiced_bt_l2cap_le_appl_information_t']]],
   ['le_5fstats',['le_stats',['../structwiced__bt__lq__stats__result__t.html#a1b1a2bd9c043712209a6cf9f9d3cfb51',1,'wiced_bt_lq_stats_result_t']]],
   ['le_5ftx_5fcomplete_5fcback',['le_tx_complete_cback',['../structwiced__bt__l2cap__le__appl__information__t.html#af1d5d4af4f8f57c41b96bbb991491a87',1,'wiced_bt_l2cap_le_appl_information_t']]],
-  ['len',['len',['../structwiced__bt__ble__advert__elem__t.html#aaa6cf169af0de34e6be4b0be9d7057e2',1,'wiced_bt_ble_advert_elem_t::len()'],['../structwiced__bt__gatt__value__t.html#a12022487a52f9663a6ce849aeca9392e',1,'wiced_bt_gatt_value_t::len()'],['../structwiced__bt__gatt__data__t.html#a974e024a773a741e8a612740e01e9103',1,'wiced_bt_gatt_data_t::len()'],['../structwiced__gattdb__entry__t.html#a3946e61f2efaae0c1c69c6c17744e146',1,'wiced_gattdb_entry_t::len()'],['../structwiced__bt__uuid__t.html#a1552a6f9f8d8ec3d0fbb5bed78a1cdd7',1,'wiced_bt_uuid_t::len()']]],
-  ['length',['length',['../structwiced__bt__gatt__handle__length__value__t.html#a02db8e89a6ce8fcff4862c90eac995b7',1,'wiced_bt_gatt_handle_length_value_t']]],
+  ['len',['len',['../structwiced__bt__ble__advert__elem__t.html#aaa6cf169af0de34e6be4b0be9d7057e2',1,'wiced_bt_ble_advert_elem_t::len()'],['../structwiced__bt__gatt__write__hdr__t.html#aa826f858994d6ef50959dbcded42882b',1,'wiced_bt_gatt_write_hdr_t::len()'],['../structwiced__bt__gatt__data__t.html#a974e024a773a741e8a612740e01e9103',1,'wiced_bt_gatt_data_t::len()'],['../structwiced__gattdb__entry__t.html#a3946e61f2efaae0c1c69c6c17744e146',1,'wiced_gattdb_entry_t::len()'],['../structwiced__bt__uuid__t.html#a1552a6f9f8d8ec3d0fbb5bed78a1cdd7',1,'wiced_bt_uuid_t::len()']]],
+  ['len_5frequested',['len_requested',['../structwiced__bt__gatt__attribute__request__t.html#a000a15d3bf10d77167d9e240dc682b1e',1,'wiced_bt_gatt_attribute_request_t::len_requested()'],['../structwiced__bt__gatt__buffer__request__t.html#a1ae08fed7fc5a1ebf53f7abfb1746b52',1,'wiced_bt_gatt_buffer_request_t::len_requested()']]],
   ['link_5frole',['link_role',['../structwiced__bt__gatt__connection__status__t.html#a96aa0f1a395fd3e61d965bb57f3c3428',1,'wiced_bt_gatt_connection_status_t']]],
   ['lltk',['lltk',['../structwiced__bt__ble__keys__t.html#ac5f336ffbbc67c36833947ef0eeffda8',1,'wiced_bt_ble_keys_t']]],
-  ['local_5faddr',['local_addr',['../structwiced__bt__dev__local__addr__ext__t.html#aeb77b0a6e0d62f5166c458745b2d2ec5',1,'wiced_bt_dev_local_addr_ext_t']]],
   ['local_5fauthentication_5frequirements',['local_authentication_requirements',['../structwiced__bt__dev__user__cfm__req__t.html#aea358e91cc195dca962c9952acf6fb41',1,'wiced_bt_dev_user_cfm_req_t']]],
   ['local_5fcounter',['local_counter',['../structwiced__bt__ble__keys__t.html#ac920c81a237a75dceb059783801c2710',1,'wiced_bt_ble_keys_t']]],
   ['local_5fcsrk_5fsec_5flevel',['local_csrk_sec_level',['../structwiced__bt__ble__keys__t.html#ab4071e19db249166f494869b5b93a941',1,'wiced_bt_ble_keys_t']]],

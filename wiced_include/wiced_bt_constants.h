@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include "wiced_bt_version.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif

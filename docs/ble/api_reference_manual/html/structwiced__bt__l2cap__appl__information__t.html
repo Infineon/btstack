@@ -103,7 +103,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a2e00007ae56cb020366fbfd7dfe336ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">BR/EDR connected event. <br /></td></tr>
 <tr class="separator:a2e00007ae56cb020366fbfd7dfe336ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da9196c24ab6e6d225d94dc1ac795d4"><td class="memItemLeft" align="right" valign="top"><a id="a2da9196c24ab6e6d225d94dc1ac795d4"></a>
-<a class="el" href="group__l2cap.html#ga0e68b372edf738aa34033e23063ac21d">wiced_bt_l2cap_disconnect_indication_cback_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#a2da9196c24ab6e6d225d94dc1ac795d4">disconnect_indication_cback</a></td></tr>
+<a class="el" href="group__l2cap.html#ga8e06cc2cf38b4956b5bf6f521de8b3c7">wiced_bt_l2cap_disconnect_indication_cback_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#a2da9196c24ab6e6d225d94dc1ac795d4">disconnect_indication_cback</a></td></tr>
 <tr class="memdesc:a2da9196c24ab6e6d225d94dc1ac795d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">BR/EDR disconnect indication event. <br /></td></tr>
 <tr class="separator:a2da9196c24ab6e6d225d94dc1ac795d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bbfb619575069c2289c9e91b58b78c2"><td class="memItemLeft" align="right" valign="top"><a id="a3bbfb619575069c2289c9e91b58b78c2"></a>
@@ -122,18 +122,30 @@ Data Fields</h2></td></tr>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#a92697e17aa1667a6ecd613544ba2e777">mtu</a></td></tr>
 <tr class="memdesc:a92697e17aa1667a6ecd613544ba2e777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum transmission unit size. <br /></td></tr>
 <tr class="separator:a92697e17aa1667a6ecd613544ba2e777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff5fc7b42b6765c601b7928cf1491e8b"><td class="memItemLeft" align="right" valign="top"><a id="aff5fc7b42b6765c601b7928cf1491e8b"></a>
-<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#aff5fc7b42b6765c601b7928cf1491e8b">qos_present</a></td></tr>
-<tr class="memdesc:aff5fc7b42b6765c601b7928cf1491e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">QoS configuration present. <br /></td></tr>
-<tr class="separator:aff5fc7b42b6765c601b7928cf1491e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f46fe30b21b2b6477f543f00ba6448f"><td class="memItemLeft" align="right" valign="top"><a id="a3f46fe30b21b2b6477f543f00ba6448f"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#a3f46fe30b21b2b6477f543f00ba6448f">security_required</a></td></tr>
+<tr class="memdesc:a3f46fe30b21b2b6477f543f00ba6448f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Security requirement. <br /></td></tr>
+<tr class="separator:a3f46fe30b21b2b6477f543f00ba6448f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1bf7cfc279aba76b1af338febba8f99"><td class="memItemLeft" align="right" valign="top"><a id="af1bf7cfc279aba76b1af338febba8f99"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#af1bf7cfc279aba76b1af338febba8f99">qos_present</a></td></tr>
+<tr class="memdesc:af1bf7cfc279aba76b1af338febba8f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">QoS configuration present. <br /></td></tr>
+<tr class="separator:af1bf7cfc279aba76b1af338febba8f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116f61fdbf56574de545a18611e345bf"><td class="memItemLeft" align="right" valign="top"><a id="a116f61fdbf56574de545a18611e345bf"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#a116f61fdbf56574de545a18611e345bf">flush_timeout_present</a></td></tr>
+<tr class="memdesc:a116f61fdbf56574de545a18611e345bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRUE if flush option present. <br /></td></tr>
+<tr class="separator:a116f61fdbf56574de545a18611e345bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201f156f265c18d387a77ae949d4a60b"><td class="memItemLeft" align="right" valign="top"><a id="a201f156f265c18d387a77ae949d4a60b"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#a201f156f265c18d387a77ae949d4a60b">fcs_present</a></td></tr>
+<tr class="memdesc:a201f156f265c18d387a77ae949d4a60b"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRUE if Frame check sequence option present. <br /></td></tr>
+<tr class="separator:a201f156f265c18d387a77ae949d4a60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7694f9263de05fd026d4b2802d98fa0c"><td class="memItemLeft" align="right" valign="top"><a id="a7694f9263de05fd026d4b2802d98fa0c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#a7694f9263de05fd026d4b2802d98fa0c">is_ob_only</a></td></tr>
+<tr class="memdesc:a7694f9263de05fd026d4b2802d98fa0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to TRUE if registration is for outbound only to a dynamic PSM. <br /></td></tr>
+<tr class="separator:a7694f9263de05fd026d4b2802d98fa0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2c471279290449ff25b881a3be5c8ef"><td class="memItemLeft" align="right" valign="top"><a id="ab2c471279290449ff25b881a3be5c8ef"></a>
 <a class="el" href="structwiced__bt__flow__spec__t.html">wiced_bt_flow_spec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#ab2c471279290449ff25b881a3be5c8ef">qos</a></td></tr>
 <tr class="memdesc:ab2c471279290449ff25b881a3be5c8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">QoS configuration. <br /></td></tr>
 <tr class="separator:ab2c471279290449ff25b881a3be5c8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8eec85bfbb24229e275538175cdbc3b"><td class="memItemLeft" align="right" valign="top"><a id="af8eec85bfbb24229e275538175cdbc3b"></a>
-<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#af8eec85bfbb24229e275538175cdbc3b">flush_timeout_present</a></td></tr>
-<tr class="memdesc:af8eec85bfbb24229e275538175cdbc3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRUE if flush option present. <br /></td></tr>
-<tr class="separator:af8eec85bfbb24229e275538175cdbc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0767976a7feb6692e0973992c04bbbb"><td class="memItemLeft" align="right" valign="top"><a id="ac0767976a7feb6692e0973992c04bbbb"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#ac0767976a7feb6692e0973992c04bbbb">flush_timeout</a></td></tr>
 <tr class="memdesc:ac0767976a7feb6692e0973992c04bbbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush timeout value (1 msec increments) <br /></td></tr>
@@ -146,18 +158,10 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <a class="el" href="structwiced__bt__l2cap__fcr__options__t.html">wiced_bt_l2cap_fcr_options_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#ac96502487bcb1fc059e7aa3f3b63ce9a">fcr</a></td></tr>
 <tr class="memdesc:ac96502487bcb1fc059e7aa3f3b63ce9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enhanced flow control and retransmission parameters. <br /></td></tr>
 <tr class="separator:ac96502487bcb1fc059e7aa3f3b63ce9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3d0889f371bb0647f1906fda7d8f2ff"><td class="memItemLeft" align="right" valign="top"><a id="ae3d0889f371bb0647f1906fda7d8f2ff"></a>
-<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#ae3d0889f371bb0647f1906fda7d8f2ff">fcs_present</a></td></tr>
-<tr class="memdesc:ae3d0889f371bb0647f1906fda7d8f2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRUE if Frame check sequence option present. <br /></td></tr>
-<tr class="separator:ae3d0889f371bb0647f1906fda7d8f2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbbeaabe0401b4597f34b94362123962"><td class="memItemLeft" align="right" valign="top"><a id="afbbeaabe0401b4597f34b94362123962"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#afbbeaabe0401b4597f34b94362123962">fcs</a></td></tr>
 <tr class="memdesc:afbbeaabe0401b4597f34b94362123962"><td class="mdescLeft">&#160;</td><td class="mdescRight">'0' if desire is to bypass FCS, otherwise '1' <br /></td></tr>
 <tr class="separator:afbbeaabe0401b4597f34b94362123962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52de107c91dedd3c6faba2433a57026c"><td class="memItemLeft" align="right" valign="top"><a id="a52de107c91dedd3c6faba2433a57026c"></a>
-<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__appl__information__t.html#a52de107c91dedd3c6faba2433a57026c">is_ob_only</a></td></tr>
-<tr class="memdesc:a52de107c91dedd3c6faba2433a57026c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to TRUE if registration is for outbound only to a dynamic PSM. <br /></td></tr>
-<tr class="separator:a52de107c91dedd3c6faba2433a57026c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

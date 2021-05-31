@@ -217,7 +217,7 @@ void wiced_bt_free_buffer_no_trace(wiced_bt_buffer_t* p_buf);
  *
  * @return         None
  */
-#define wiced_bt_free_buffer(free_buf)  wiced_bt_free_buffer_no_trace(free_buf)
+#define wiced_bt_free_buffer  wiced_bt_free_buffer_no_trace
 #endif
 
 

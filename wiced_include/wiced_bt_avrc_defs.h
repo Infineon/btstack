@@ -41,6 +41,8 @@ extern "C"
 #define AVRC_REV_1_3        0x0103  /**< AVRC profile version 1.3*/
 #define AVRC_REV_1_4        0x0104  /**< AVRC profile version 1.4*/
 #define AVRC_REV_1_5        0x0105  /**< AVRC profile version 1.5*/
+#define AVRC_REV_1_6        0x0106  /**< AVRC profile version 1.6*/
+
 /** @} AVRC_PROFILE_VERSIONS */
 #define AVRC_PACKET_LEN             512 /**< AVRC packet length, you must support 512 byte RC packets */
 
@@ -51,43 +53,6 @@ extern "C"
 #define AVRC_SUB_TYPE_LEN           4   /**< AVRC subunit type length*/
 #define AVRC_UID_SIZE               8   /**< AVRC UID size*/
 #define AVRC_FEATURE_MASK_SIZE      16  /**< AVRC feature mask size*/
-
-/**
- * @anchor AVRC_CTYPE
- * @name AVRC message types
- * @{ */
-#define AVRC_CMD_CTRL       0   /**< Instruct a target to perform an operation */
-#define AVRC_CMD_STATUS     1   /**< Check a device�s current status */
-#define AVRC_CMD_SPEC_INQ   2   /**< Check whether a target supports a particular
-                                   control command; all operands are included */
-#define AVRC_CMD_NOTIF      3   /**< Used for receiving notification of a change in a device�s state */
-#define AVRC_CMD_GEN_INQ    4   /**< Check whether a target supports a particular
-                                   control command; operands are not included */
-
-/** response type codes */
-#define AVRC_RSP_NOT_IMPL   8   /**< The target does not implement the command specified
-                                   by the opcode and operand,
-                                   or doesn�t implement the specified subunit */
-#define AVRC_RSP_ACCEPT     9   /**< The target executed or is executing the command */
-#define AVRC_RSP_REJ        10  /**< The target implements the command specified by the
-                                   opcode but cannot respond because the current state
-                                   of the target doesn�t allow it */
-#define AVRC_RSP_IN_TRANS   11  /**< The target implements the status command but it is
-                                   in a state of transition; the status command may
-                                   be retried at a future time */
-#define AVRC_RSP_IMPL_STBL  12  /**< For specific inquiry or general inquiy commands,
-                                   the target implements the command; for status
-                                   commands, the target returns stable and includes
-                                   the status results */
-#define AVRC_RSP_CHANGED    13  /**< The response frame contains a notification that the
-                                   target device�s state has changed */
-#define AVRC_RSP_INTERIM    15  /**< For control commands, the target has accepted the
-                                   request but cannot return information within 100
-                                   milliseconds; for notify commands, the target accepted
-                                   the command, and will notify the controller of a change
-                                   of target state at a future time */
-/** @} AVRC_CTYPE */
-
 
 /**
  * @anchor AVRC_SUBUNIT_TYPE
@@ -434,6 +399,10 @@ typedef uint8_t wiced_bt_avrc_systemstate_t;    /**<AVRC systemstate*/
 /*****************************************************************************
 **  Advanced Control
 *****************************************************************************/
+#define AVRC_NUM_PLAYER_SUPPORTED   0x02
+#define AVRC_MAX_FOLDER_DEPTH       0x03
+
+
 #define AVRC_ITEM_PLAYER            0x01    /**< AVRC player item */
 #define AVRC_ITEM_FOLDER            0x02    /**< AVRC folder item */
 #define AVRC_ITEM_MEDIA             0x03    /**< AVRC media item */
@@ -834,6 +803,12 @@ typedef uint8_t wiced_bt_avrc_uid_t[AVRC_UID_SIZE]; /**<AVRC UID*/
 /*****************************************************************************
 **  data type definitions
 *****************************************************************************/
+#define AVRC_1_6_INCLUDED           TRUE /* TRUE to support the AVRCP 1.6 (GetTotalNumOfItems). */
+
+#define AVRC_METADATA_INCLUDED      TRUE    /**<Metadata feature included status*/
+#define AVRC_ADV_CTRL_INCLUDED      TRUE    /**<AVRC advanced control included status*/
+/* TRUE to support the browsing channel. */
+#define AVRC_BROWSE_INCLUDED    AVCT_BROWSE_INCLUDED
 
 /** AV/C message header */
 typedef struct
@@ -844,42 +819,6 @@ typedef struct
     uint8_t   opcode;                       /**< Opcode (passthrough, vendor, etc) */
 } wiced_bt_avrc_hdr_t;
 
-/** UNIT INFO message. */
-typedef struct
-{
-    wiced_bt_avrc_hdr_t hdr;                /**< Message header */
-    uint32_t            company_id;         /**< Company identifier */
-    uint8_t             unit_type;          /**< Unit type (see @ref AVRC_SUBUNIT_TYPE "AVRC subunit types") */
-    uint8_t             unit;               /**< This value is vendor dependent and typically zero */
-} wiced_bt_avrc_msg_unit_t;
-
-/** SUBUNIT INFO message. */
-typedef struct
-{
-    wiced_bt_avrc_hdr_t hdr;                /**< Message header */
-    uint8_t             subunit_type[AVRC_SUB_TYPE_LEN];    /**< Array of subunit types (see @ref AVRC_SUBUNIT_TYPE "AVRC subunit types") */
-    wiced_bool_t        panel;              /**< TRUE if the panel subunit type is in the subunit_type array, FALSE otherwise */
-    uint8_t             page;               /**< Specifies which part of the subunit type table is returned. For AVRCP it is typically zero. Value range is 0-7 */
-} wiced_bt_avrc_msg_sub_t;
-
-/** VENDOR DEPENDENT message. */
-typedef struct
-{
-    wiced_bt_avrc_hdr_t hdr;                /**< Message header */
-    uint32_t            company_id;         /**< Company identifier */
-    uint8_t             *p_vendor_data;     /**< Pointer to vendor dependent data */
-    uint16_t            vendor_len;         /**< Length in bytes of vendor dependent data */
-} wiced_bt_avrc_msg_vendor_t;
-
-/** PASS THROUGH message */
-typedef struct
-{
-    wiced_bt_avrc_hdr_t hdr;                /**< Message header (ctype, subunit_type, subunit_id unused) */
-    uint8_t             op_id;              /**< Operation ID */
-    uint8_t             state;              /**< Keypress state */
-    uint8_t             *p_pass_data;       /**< Pointer to data (valid only when the op_id is AVRC_ID_VENDOR) */
-    uint8_t             pass_len;           /**< Data length (valid only when the op_id is AVRC_ID_VENDOR) */
-} wiced_bt_avrc_msg_pass_t;
 
 /* Command/Response indicator. */
 #define AVCT_CMD                    0       /**< Command message */
@@ -888,25 +827,6 @@ typedef struct
 
 #define AVRC_CMD            AVCT_CMD        /**< Command message */
 #define AVRC_RSP            AVCT_RSP        /**< Response message */
-
-/** Browsing channel message */
-typedef struct
-{
-    wiced_bt_avrc_hdr_t hdr;                /**< Message header (ctype=AVRC_CMD or AVRC_RSP; subunit_type, subunit_id unused) */
-    uint8_t             *p_browse_data;     /**< Pointer to data */
-    uint16_t            browse_len;         /**< Data length */
-} wiced_bt_avrc_msg_browse_t;
-
-/** AVRC message (dependent on message opcode) */
-typedef union
-{
-    wiced_bt_avrc_hdr_t           hdr;      /**<  Message header */
-    wiced_bt_avrc_msg_unit_t      unit;     /**< UNIT INFO message (opcode AVRC_OP_UNIT_INFO) */
-    wiced_bt_avrc_msg_sub_t       sub;      /**< SUBUNIT INFO message (opcode AVRC_OP_SUB_INFO) */
-    wiced_bt_avrc_msg_vendor_t    vendor;   /**< VENDOR DEPENDENT message (opcode AVRC_OP_VENDOR) */
-    wiced_bt_avrc_msg_pass_t      pass;     /**< PASS THROUGH message (opcode AVRC_OP_PASS_THRU) */
-    wiced_bt_avrc_msg_browse_t    browse;   /**< Browsing channel message (opcode AVRC_OP_BROWSE) */
-} wiced_bt_avrc_msg_t;
 
 /** AVRC Transmit buffer - used to build and transmit application payload */
 typedef struct
@@ -959,10 +879,6 @@ typedef struct
 #define AVRC_MAX_CHARSET_SIZE       16  /**<max character set size*/
 #define AVRC_MAX_ELEM_ATTR_SIZE     8   /**<max element attribute size*/
 
-#define AVRC_METADATA_INCLUDED      TRUE    /**<Metadata feature included status*/
-#define AVRC_ADV_CTRL_INCLUDED      TRUE    /**<AVRC advanced control included status*/
-
-
 #define AVRC_DEFAULT_METADATA_SCRATCH_SZ     1024   /**<Default metadata scratch size*/
 #define AVRC_DEFAULT_METADATA_CMD_SIZE       512    /**<default metadata command size*/
 #define AVRC_DEFAULT_METADATA_RSP_SIZE       512    /**<default metadata response size*/
@@ -973,20 +889,6 @@ typedef struct
 /*****************************************************************************
 **  Metadata transfer Building/Parsing definitions
 *****************************************************************************/
-/**AVRCP full name used in building metadata packet*/
-typedef struct {
-    uint16_t              charset_id;   /**< character set id of metadata*/
-    uint16_t              str_len;      /**< metadata string length*/
-    uint8_t               *p_str;       /**< metadata string content*/
-} wiced_bt_avrc_full_name_t;
-
-/**AVRCP name used in building folder's fields in Browsing commands*/
-typedef struct {
-    uint16_t              str_len;      /**< folder name len*/
-    uint8_t               *p_str;       /**< folder name*/
-} wiced_bt_avrc_name_t;
-
-
 #ifndef AVRC_CAP_MAX_NUM_COMP_ID
 #define AVRC_CAP_MAX_NUM_COMP_ID    4 /**<maximum supported number of company ids*/
 #endif
@@ -1009,16 +911,383 @@ typedef struct
     uint8_t   attr_val; /**< Attribute value */
 } wiced_bt_avrc_app_setting_t;
 
-/**AVRCP Application settings field */
+typedef uint8_t wiced_bt_avrc_feature_mask_t[AVRC_FEATURE_MASK_SIZE];   /**< AVRCP feature mask*/
+
+/** PlayItem & AddToNowPlaying */
 typedef struct
 {
-    uint8_t   attr_id;      /**< Attribute id*/
-    uint16_t  charset_id;   /**< Character set id*/
-    uint8_t   str_len;      /**< Attribute string length*/
-    uint8_t   *p_str;       /**< Attribute string content*/
+    uint8_t                 scope;		/**< scope */
+    wiced_bt_avrc_uid_t     uid;		/**< Item's uid */
+    uint16_t                uid_counter;	/**< uid counter */
+} wiced_bt_avrc_metadata_play_cmd_t;
+
+
+/** notification event parameter for AddressedPlayer change */
+typedef struct
+{
+    uint16_t                player_id;      /**< player id*/
+    uint16_t                uid_counter;    /**< uid counter*/
+} wiced_bt_avrc_addr_player_param_t;
+
+#ifndef AVRC_MAX_APP_SETTINGS
+#define AVRC_MAX_APP_SETTINGS    8  /**<Maximum supported app settings*/
+#endif
+
+
+/**AVRCP name used in building metadata name and folder name  in browsing*/
+typedef struct {
+    uint16_t              str_len;	/**< metadata/folder string length */
+    uint8_t               *p_str;	/**< metadata/folder  string content */
+} wiced_bt_avrc_name_t;
+
+/**AVRCP full name used in building and receiving metadata packet*/
+typedef struct {
+    uint16_t              charset_id;	/**< character set id*/
+    wiced_bt_avrc_name_t  name;
+} wiced_bt_avrc_full_name_t;
+
+/**Unit info command message */
+typedef struct {
+    uint8_t unit_info[5];		/**< UNIT INFO message*/
+}wiced_bt_avrc_unit_info_cmd_t;
+
+/**Unit info response message */
+
+typedef struct {
+    uint8_t   byte;         /**< one byte value */
+    uint8_t   unit;         /**< This value is vendor dependent and typically zero */
+    uint8_t   unit_type;    /**< Unit type (see @ref AVRC_SUBUNIT_TYPE "AVRC subunit types") */
+    uint32_t  company_id;   /**< Company identifier */
+}wiced_bt_avrc_unit_info_rsp_t;
+
+/**Subunit info command */
+
+typedef struct {
+    uint8_t page;           /**< Specifies which part of the subunit type table is returned. For AVRCP it is typically zero. Value range is 0-7 */
+    uint8_t extension_code; /**< subunit info exetension code */
+    uint8_t data[4];        /**< sub unit info command value */
+}wiced_bt_avrc_sub_unit_info_cmd_t;
+
+/**Subunit info response */
+typedef struct {
+    uint8_t   extension_code;   /**< subunit info exetension code */
+    uint8_t   page;             /**< Specifies which part of the subunit type table is returned. For AVRCP it is typically zero. Value range is 0-7 */
+    uint8_t   max_subunit_id;   /**< max subunit id */
+    uint32_t  subunit_type;     /**< subunit type see @ref AVRC_SUBUNIT_TYPE "AVRC subunit types")  */
+    uint8_t   octets[3];        /**< subunit value */
+}wiced_bt_avrc_sub_unit_info_rsp_t;
+
+/**Passthrough response header */
+typedef struct {
+    uint8_t operation_id;           /**< Operation ID */
+    uint8_t state;                  /**< Keypress state */
+    uint8_t operation_field_len;    /**< data length  */
+}wiced_bt_avrc_pass_thru_hdr_t;
+
+/**Passthrough group navigation command */
+typedef struct {
+    uint32_t company_id;            /**< company identifier */
+    uint16_t vendor_operation_id;   /**<operation id */
+}wiced_bt_avrc_pass_thru_group_nav_cmd_t;
+
+/**Passthrough command */
+
+typedef union {
+    wiced_bt_avrc_pass_thru_hdr_t hdr;                  /**< passthrough command header */
+    wiced_bt_avrc_pass_thru_group_nav_cmd_t group_nav;  /* group navigation command*/
+}wiced_bt_avrc_pass_thru_cmd_t;
+
+/** GetCapability */
+typedef struct
+{
+    uint8_t     capability_id;  /**< Capability id */
+} wiced_bt_avrc_metadata_get_caps_cmd_t;
+
+/** ListPlayerAppValues */
+typedef struct
+{
+    uint8_t                 attr_id;    /**< attribute id */
+} wiced_bt_avrc_metadata_list_app_settings_values_cmd_t;
+
+/** GetCurAppValue */
+typedef struct
+{
+    uint8_t                 num_attr;   /**< number of attributes */  
+    uint8_t                 *p_vals;    /**< list of App attributes to retrieve*/
+} wiced_bt_avrc_metadata_get_cur_app_value_cmd_t;
+
+/** SetAppValue */
+typedef struct
+{
+    uint8_t                     num_val;    /**< number of attributes values */  
+    wiced_bt_avrc_app_setting_t *p_vals;    /**< list of App attributes values to set*/
+} wiced_bt_avrc_metadata_set_app_value_cmd_t;
+
+/** GetAppAttrTxt */
+typedef struct
+{
+    uint8_t                 num_attr;   /**< number of attributes */
+    uint8_t                 *p_attrs;   /**< list of App attributes text to retrieve*/
+} wiced_bt_avrc_metadata_get_app_attr_txt_cmd_t;
+
+/** GetAppValueTxt */
+typedef struct
+{
+    uint8_t                 attr_id;    /**< attribute id*/
+    uint8_t                 num_val;    /**< number of attributes values */  
+    uint8_t                 *p_vals;    /**< list of App attributes values to retrieve*/
+} wiced_bt_avrc_metadata_get_app_val_txt_cmd_t;
+
+/** InformCharset */
+typedef struct
+{
+    uint8_t                 num_id;         /**< number of charset ids */
+    uint16_t                *p_charsets;    /**< list of supported character set ids*/
+} wiced_bt_avrc_metadata_inform_charset_cmd_t;
+
+/** InformBatteryStatus */
+typedef struct
+{
+    uint8_t                 battery_status; /**< Battery status*/
+} wiced_bt_avrc_metadata_battery_status_cmd_t;
+
+/** GetElemAttrs */
+typedef struct
+{
+    uint32_t                identifier[2];                  /**< identifier to identify an element on TG */
+    uint8_t                 num_attr;	                    /**< number of attributes*/
+    uint32_t                attrs[AVRC_MAX_ELEM_ATTR_SIZE];	 /**< list of attributes*/
+} wiced_bt_avrc_metadata_get_elem_attrs_cmd_t;
+
+/** RegNotify */
+typedef struct
+{
+    uint8_t                 event_id;			/**< event id*/
+    uint32_t                playback_interval; /**< playback interval */
+} wiced_bt_avrc_metadata_reg_notif_cmd_t;
+
+/** Continue PDUs */
+typedef struct
+{
+    uint8_t                  pdu_id;
+} wiced_bt_avrc_metadata_continuation_pdu_cmd_t;
+
+/** GetFolderItems */
+typedef struct
+{
+    uint8_t                 scope;          /**< scope */
+    uint32_t                start_item;     /**< statrt item uid*/
+    uint32_t                end_item;       /**< end item uid */
+    uint8_t                 attr_count;     /**< attributes count */
+    uint32_t                *p_attr_list;   /**< attribute list to get*/
+} wiced_bt_avrc_browse_get_items_cmd_t;
+
+/** ChangePath */
+typedef struct
+{
+	 uint16_t				 uid_counter;	 /**< uid counter */
+	 uint8_t				 direction; 	 /**< direction for folder change */
+	 wiced_bt_avrc_uid_t	 folder_uid;	 /**< folder uid to switch */
+
+} wiced_bt_avrc_browse_chg_path_cmd_t;
+
+/** GetItemAttrs */
+typedef struct
+{
+    uint8_t                 scope; 			/**< scope */
+    wiced_bt_avrc_uid_t     uid;			/**< Item's uid */
+    uint16_t                uid_counter; 	/**< uid counter */
+    uint8_t                 attr_count;		/**< attributes count */
+    uint32_t                *p_attr_list;  	/**< list of attributes to get for the item */
+} wiced_bt_avrc_browse_get_item_attrs_cmd_t;
+
+/** Search */
+typedef struct
+{
+    wiced_bt_avrc_full_name_t   string;		/**< string to search for */
+} wiced_bt_avrc_browse_search_cmd_t;
+
+/** GetTotalNumOfItems */
+typedef struct
+{
+    uint8_t                 scope;		/**< scope */
+} wiced_bt_avrc_browse_get_num_of_items_cmd_t;
+
+
+/** Continue and Abort */
+typedef struct
+{
+    uint8_t                 target_pdu;		 /**< target pdu to continue/abort to receive */
+} wiced_bt_avrc_browse_next_cmd_t;
+
+
+/** metadata message header */
+typedef struct {
+    uint32_t company_id;	/**< Company identifier */
+    uint8_t pdu;			/**< pdu id */
+    uint8_t packet_type;	/**< message type */
+    uint16_t param_len;		/*data length */
+}wiced_bt_avrc_metadata_hdr_t;
+
+
+
+/** AVRC commands */
+typedef struct {
+    wiced_bt_avrc_metadata_hdr_t metadata_hdr;
+    union
+    {
+        wiced_bt_avrc_metadata_get_caps_cmd_t                   get_caps;               /**< GetCapability cmd       */
+        wiced_bt_avrc_metadata_list_app_settings_values_cmd_t   list_app_values;        /**< ListPlayerAppValues cmd */
+        wiced_bt_avrc_metadata_get_cur_app_value_cmd_t          get_cur_app_val;        /**< GetCurAppValue cmd      */
+        wiced_bt_avrc_metadata_set_app_value_cmd_t              set_app_val;            /**< SetAppValue cmd         */
+        wiced_bt_avrc_metadata_get_app_attr_txt_cmd_t           get_app_attr_txt;       /**< GetAppAttrTxt cmd       */
+        wiced_bt_avrc_metadata_get_app_val_txt_cmd_t            get_app_val_txt;        /**< GetAppValueTxt cmd      */
+        wiced_bt_avrc_metadata_inform_charset_cmd_t             inform_charset;         /**< InformCharset cmd       */
+        wiced_bt_avrc_metadata_battery_status_cmd_t             inform_battery_status;  /**< InformBatteryStatus cmd */
+        wiced_bt_avrc_metadata_get_elem_attrs_cmd_t             get_elem_attrs;         /**< GetElemAttrs cmd        */
+        wiced_bt_avrc_metadata_reg_notif_cmd_t                  reg_notif;              /**< RegNotify cmd           */
+        wiced_bt_avrc_metadata_continuation_pdu_cmd_t           continuation_pdu;       /**< Continuation PDU cmd    */
+        wiced_bt_avrc_metadata_continuation_pdu_cmd_t           abort_pdu;              /**< Continuation PDU cmd    */
+
+        uint16_t                                                 player_id;              /**< SetAddrPlayer cmd       */
+        uint8_t                                                  volume;                 /**< SetAbsVolume cmd        */
+        wiced_bt_avrc_metadata_play_cmd_t                        play_item;              /**< PlayItem & AddToNowPlaying */
+    }u;
+}wiced_bt_avrc_metadata_cmd_t;
+
+
+typedef struct {
+    uint8_t pdu;	/**< pdu id */
+    uint16_t param_len;	/**< data length */
+    union{
+        wiced_bt_avrc_browse_next_cmd_t                       continu;                /**< Continue             */
+        wiced_bt_avrc_browse_next_cmd_t                       abort;                  /**< Abort                */
+        uint16_t                                              player_id;              /**< SetBrowsedPlayer     */
+        wiced_bt_avrc_browse_get_items_cmd_t                  get_folder_items;       /**< GetFolderItems       */
+        wiced_bt_avrc_browse_chg_path_cmd_t                   chg_path;               /**< ChangePath           */
+        wiced_bt_avrc_browse_get_item_attrs_cmd_t             get_item_attrs;         /**< GetItemAttrs         */
+        wiced_bt_avrc_browse_search_cmd_t                     search;                 /**< Search               */
+        wiced_bt_avrc_browse_get_num_of_items_cmd_t           get_num_of_items;       /**< GetTotalNumOfItems   */
+    }browse_cmd;
+}wiced_bt_avrc_browse_cmd_t;
+
+
+/** GetCapability rsp*/
+typedef struct
+{
+    uint8_t                     capability_id;	/**< Capability id */
+    uint8_t                     count;			/**< count */
+    wiced_bt_avrc_caps_param_t  param;			/**< param */
+} wiced_bt_avrc_metadata_get_caps_rsp_t;
+
+/** ListPlayerAppAttr */
+typedef struct
+{
+    uint8_t                 num_attr;		/**< number of attributes */
+    uint8_t                 *p_attrs;		/**< list of attributes in response */
+} wiced_bt_avrc_metadata_list_app_attr_rsp_t;
+
+/** ListPlayerAppValues */
+typedef struct
+{
+    uint8_t                 num_val;		/**< number of Application values */
+    uint8_t                 *p_vals;		 /**< list of application values in response*/
+} wiced_bt_avrc_metadata_list_app_values_rsp_t;
+
+typedef struct
+{
+    uint8_t   attr_id;		/**< attribute id */
+    wiced_bt_avrc_full_name_t name;	/**<attribute name */
 } wiced_bt_avrc_app_setting_text_t;
 
-typedef uint8_t wiced_bt_avrc_feature_mask_t[AVRC_FEATURE_MASK_SIZE];   /**< AVRCP feature mask*/
+
+/** GetCurAppValue */
+typedef struct
+{
+    uint8_t 	num_val;	/**< number of current Application values */
+    uint8_t 	*p_vals;   /**< list of application values in response of type @ref  wiced_bt_avrc_app_setting_t */
+} wiced_bt_avrc_metadata_get_cur_app_value_rsp_t;
+
+
+/** GetAppAttrTxt */
+typedef struct
+{
+    uint8_t                             num_attr;	/**< number of attributes */
+    uint16_t                            length;		/**< length of the Application attribute list */
+    uint8_t                             *p_val_stream;	 /**< list of application values in response of type @ref  wiced_bt_avrc_app_setting_text_t */
+    
+} wiced_bt_avrc_metadata_get_app_attr_txt_rsp_t;
+
+typedef struct
+{
+    uint32_t                        attr_id;        /* Use AVRC_MEDIA_ATTR_ID_TITLE, AVRC_MEDIA_ATTR_ID_ARTIST, AVRC_MEDIA_ATTR_ID_ALBUM,
+                                                        AVRC_MEDIA_ATTR_ID_TRACK_NUM, AVRC_MEDIA_ATTR_ID_NUM_TRACKS,
+                                                        AVRC_MEDIA_ATTR_ID_GENRE, AVRC_MEDIA_ATTR_ID_PLAYING_TIME */
+    wiced_bt_avrc_full_name_t       name;           /* The attribute value, value length and character set id. */
+} wiced_bt_avrc_attr_entry_t;
+
+/** GetElemAttrs */
+typedef struct
+{
+    uint8_t                     num_attr;	/**< number of attributes */
+    uint8_t 					length;		/**< length of the attribute list */
+    uint8_t                     *p_attr_stream;   /**< list of application values in response of type @ref  wiced_bt_avrc_attr_entry_t */   
+} wiced_bt_avrc_get_attrs_t;
+
+typedef wiced_bt_avrc_get_attrs_t wiced_bt_avrc_metadata_get_element_attrs_rsp_t;
+
+/** GetPlayStatus */
+typedef struct
+{
+    uint32_t                song_len;       /**< track length */
+    uint32_t                song_pos;       /**< track playback position */
+    uint8_t                 play_status;    /**< playback status */
+
+} wiced_bt_avrc_metadata_get_play_status_rsp_t;
+
+
+/* Define the possible values of Battery Status PDU
+*/
+#define AVRC_BATTERY_STATUS_NORMAL              0x00
+#define AVRC_BATTERY_STATUS_WARNING             0x01
+#define AVRC_BATTERY_STATUS_CRITICAL            0x02
+#define AVRC_BATTERY_STATUS_EXTERNAL            0x03
+#define AVRC_BATTERY_STATUS_FULL_CHARGE         0x04
+
+/* Define the possible values of system status
+*/
+#define AVRC_SYSTEMSTATE_PWR_ON                 0x00
+#define AVRC_SYSTEMSTATE_PWR_OFF                0x01
+#define AVRC_SYSTEMSTATE_PWR_UNPLUGGED          0x02
+
+/** notification event parameter for Player Application setting change */
+typedef struct
+{
+    uint8_t         num_attr;	/**< number of attributes*/
+    uint8_t 		len;		/**< length of the list of attribute*/
+    uint8_t 		*p_attrs;	/**< list of the attribute*/
+} wiced_bt_avrc_player_app_param_t;
+
+/** AVRCP notification response */
+typedef union
+{
+    wiced_bt_avrc_playstate_t           play_status;    /**< play status*/
+    wiced_bt_avrc_uid_t                 track;          /**< track id*/
+    uint32_t                            play_pos;       /**< playback position*/
+    wiced_bt_avrc_battery_status_t      battery_status; /**< battery status*/
+    wiced_bt_avrc_systemstate_t         system_status;  /**< system status*/
+    wiced_bt_avrc_player_app_param_t    player_setting; /**< player application settings*/
+    wiced_bt_avrc_addr_player_param_t   addr_player;    /**< Addressed player properties*/
+    uint16_t                            uid_counter;    /**< uid counter*/
+    uint8_t                             volume;         /**< volume level*/
+} wiced_bt_avrc_notif_rsp_param_t;
+
+/** RegNotify response*/
+typedef struct
+{
+    uint8_t                event_id;            /**< event id which is registered*/
+    wiced_bt_avrc_notif_rsp_param_t   param;    /**< interim response parameters*/
+} wiced_bt_avrc_metadata_reg_notif_rsp_t;
 
 /** AVRCP player item */
 typedef struct
@@ -1043,15 +1312,6 @@ typedef struct
     wiced_bt_avrc_full_name_t       name;           /**< The folder name, name length and character set id. */
 } wiced_bt_avrc_item_folder_t;
 
-/** AVRCP metadata attribute item*/
-typedef struct
-{
-    uint32_t                        attr_id;        /**< Use AVRC_MEDIA_ATTR_ID_TITLE, AVRC_MEDIA_ATTR_ID_ARTIST, AVRC_MEDIA_ATTR_ID_ALBUM,
-                                                        AVRC_MEDIA_ATTR_ID_TRACK_NUM, AVRC_MEDIA_ATTR_ID_NUM_TRACKS,
-                                                        AVRC_MEDIA_ATTR_ID_GENRE, AVRC_MEDIA_ATTR_ID_PLAYING_TIME */
-    wiced_bt_avrc_full_name_t       name;           /**< The attribute value, value length and character set id. */
-} wiced_bt_avrc_attr_entry_t;
-
 /** media element */
 typedef struct
 {
@@ -1059,13 +1319,15 @@ typedef struct
     uint8_t                         type;           /**< Use AVRC_MEDIA_TYPE_AUDIO or AVRC_MEDIA_TYPE_VIDEO. */
     wiced_bt_avrc_full_name_t       name;           /**< The media name, name length and character set id. */
     uint8_t                         attr_count;     /**< The number of attributes in p_attr_list */
-    wiced_bt_avrc_attr_entry_t*     p_attr_list;    /**< Attribute entry list. */
+    uint8_t                         attr_list_len;
+    uint8_t                         *p_attr_list; 	/**< Attribute entry list of type @refwiced_bt_avrc_attr_entry_t */
 } wiced_bt_avrc_item_media_t;
 
 /** AVRCP Browsable item i.e. Player/Folder/Media items*/
 typedef struct
 {
     uint8_t                         item_type;      /**< AVRC_ITEM_PLAYER, AVRC_ITEM_FOLDER, or AVRC_ITEM_MEDIA */
+    uint8_t                         item_length;
     union
     {
         wiced_bt_avrc_item_player_t player;         /**< The properties of a media player item.*/
@@ -1074,483 +1336,110 @@ typedef struct
     }u;                                             /**< AVRC item player/folder/media */
 } wiced_bt_avrc_item_t;
 
-/** GetCapability */
-typedef struct
-{
-    uint8_t                 pdu;            /**< Pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 capability_id;  /**< Capability id */
-} wiced_bt_avrc_get_caps_cmd_t;
-
-/** ListPlayerAppValues */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status*/
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 attr_id;        /**< attribute id*/
-} wiced_bt_avrc_list_app_values_cmd_t;
-
-/** GetCurAppValue */
-typedef struct
-{
-    uint8_t                 pdu;                            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;                         /**< status*/
-    uint8_t                 opcode;                         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 num_attr;                       /**< number of attributes */
-    uint8_t                 attrs[AVRC_MAX_APP_ATTR_SIZE];  /**< list of App attributes to retrieve*/
-} wiced_bt_avrc_get_cur_app_value_cmd_t;
-
-/** SetAppValue */
-typedef struct
-{
-    uint8_t                     pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t         status;         /**< status */
-    uint8_t                     opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                     num_val;        /**< number of values to be set*/
-    wiced_bt_avrc_app_setting_t *p_vals;        /**< list of values */
-} wiced_bt_avrc_set_app_value_cmd_t;
-
-/** GetAppAttrTxt */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status*/
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 num_attr;       /**< number of attributes*/
-    uint8_t                 attrs[AVRC_MAX_APP_ATTR_SIZE];  /**< list of attributes*/
-} wiced_bt_avrc_get_app_attr_txt_cmd_t;
-
-/** GetAppValueTxt */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status*/
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 attr_id;        /**< attribute id*/
-    uint8_t                 num_val;        /**< number of values*/
-    uint8_t                 vals[AVRC_MAX_APP_ATTR_SIZE];   /**< list of values*/
-} wiced_bt_avrc_get_app_val_txt_cmd_t;
-
-/** InformCharset */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status*/
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 num_id;         /**< number of charsets*/
-    uint16_t                charsets[AVRC_MAX_CHARSET_SIZE];    /**< list of charsets*/
-} wiced_bt_avrc_inform_charset_cmd_t;
-
-/** InformBatteryStatus */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status*/
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 battery_status; /**< battery status*/
-} wiced_bt_avrc_battery_status_cmd_t;
-
-/** GetElemAttrs */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status*/
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 num_attr;       /**< number of attributes*/
-    uint32_t                attrs[AVRC_MAX_ELEM_ATTR_SIZE]; /**< list of attributes*/
-} wiced_bt_avrc_get_elem_attrs_cmd_t;
-
-/** RegNotify */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status*/
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 event_id;       /**< event id*/
-    uint32_t                param;          /**< parameters associated with event id*/
-} wiced_bt_avrc_reg_notif_cmd_t;
-
-/** SetAddrPlayer */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint16_t                player_id;      /**< player id to set as addressed player*/
-} wiced_bt_avrc_set_addr_player_cmd_t;
-
 /** SetBrowsedPlayer */
 typedef struct
 {
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint16_t                player_id;      /**< player idto set as browsable player*/
-} wiced_bt_avrc_set_br_player_cmd_t;
-
-/** SetAbsVolume */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 volume;         /**< volume level to set*/
-} wiced_bt_avrc_set_volume_cmd_t;
+    uint16_t                uid_counter;	/**< uid counter*/
+    uint32_t                num_items;		/**< number of items in root folder path of player */
+    uint16_t                charset_id;		/**< character set id*/
+    uint8_t                 folder_depth;	/**< folder depth*/
+    uint8_t                 length;			/**< length of the folder list of root path*/
+    uint8_t 				*p_folder_name; /*  folder list of root path of type @ref wiced_bt_avrc_name_t*/
+} wiced_bt_avrc_browse_set_br_player_rsp_t;
 
 /** GetFolderItems */
 typedef struct
 {
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 scope;          /**< scope */
-    uint32_t                start_item;     /**< statrt item uid*/
-    uint32_t                end_item;       /**< end item uid */
-    uint8_t                 attr_count;     /**< attributes count */
-    uint32_t                *p_attr_list;   /**< attribute list to get*/
-} wiced_bt_avrc_get_items_cmd_t;
+    uint16_t                uid_counter;	/**< uid counter*/
+    uint16_t                item_count;		/**< number of items in response*/
+    uint16_t                length;			/**< length of the item list in response */
+    uint8_t    				*item_list;  	/* item_list in response of type @ref wiced_bt_avrc_item_t*/
+} wiced_bt_avrc_browse_get_items_rsp_t;
 
 /** ChangePath */
 typedef struct
 {
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint16_t                uid_counter;    /**< uid counter */
-    uint8_t                 direction;      /**< direction for folder change */
-    wiced_bt_avrc_uid_t     folder_uid;     /**< folder uid to switch */
-} wiced_bt_avrc_chg_path_cmd_t;
+    uint32_t                num_items;	/**< number of items in new path */
+} wiced_bt_avrc_browse_chg_path_rsp_t;
 
-/** GetItemAttrs */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 scope;          /**< scope */
-    wiced_bt_avrc_uid_t     uid;            /**< Item's uid */
-    uint16_t                uid_counter;    /**< uid counter */
-    uint8_t                 attr_count;     /**< attribute count*/
-    uint32_t                *p_attr_list;   /**< list of attributes to get for the item */
-} wiced_bt_avrc_get_attrs_cmd_t;
-
-/** Search */
-typedef struct
-{
-    uint8_t                     pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t         status;         /**< status */
-    uint8_t                     opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    wiced_bt_avrc_full_name_t   string;         /**< string to search for */
-} wiced_bt_avrc_search_cmd_t;
-
-/** PlayItem */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 scope;          /**< scope */
-    wiced_bt_avrc_uid_t     uid;            /**< uid to play */
-    uint16_t                uid_counter;    /**< uid counter */
-} wiced_bt_avrc_play_item_cmd_t;
-
-/** AddToNowPlaying */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 scope;          /**< scope */
-    wiced_bt_avrc_uid_t     uid;            /**< uid of track to add to now playing list */
-    uint16_t                uid_counter;    /**< uid counter */
-} wiced_bt_avrc_add_to_play_cmd_t;
-
-/** GetTotalNumOfItems */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 scope;          /**< scope */
-} wiced_bt_avrc_get_num_of_items_cmd_t;
-
-/** Generic AVRC command */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-} wiced_bt_avrc_cmd_t;
-
-/** Continue and Abort */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (assigned by AVRC_BldCommand according to pdu) */
-    uint8_t                 target_pdu;     /**< target pdu to continue/abort to receive */
-} wiced_bt_avrc_next_cmd_t;
-
-/** AVRC commands */
-typedef union
-{
-    uint8_t                               pdu;                    /**< pdu id */
-    wiced_bt_avrc_cmd_t                   cmd;                    /**< avrc command */
-    wiced_bt_avrc_get_caps_cmd_t          get_caps;               /**< GetCapability */
-    wiced_bt_avrc_cmd_t                   list_app_attr;          /**< ListPlayerAppAttr */
-    wiced_bt_avrc_list_app_values_cmd_t   list_app_values;        /**< ListPlayerAppValues */
-    wiced_bt_avrc_get_cur_app_value_cmd_t get_cur_app_val;        /**< GetCurAppValue */
-    wiced_bt_avrc_set_app_value_cmd_t     set_app_val;            /**< SetAppValue */
-    wiced_bt_avrc_get_app_attr_txt_cmd_t  get_app_attr_txt;       /**< GetAppAttrTxt */
-    wiced_bt_avrc_get_app_val_txt_cmd_t   get_app_val_txt;        /**< GetAppValueTxt */
-    wiced_bt_avrc_inform_charset_cmd_t    inform_charset;         /**< InformCharset */
-    wiced_bt_avrc_battery_status_cmd_t    inform_battery_status;  /**< InformBatteryStatus */
-    wiced_bt_avrc_get_elem_attrs_cmd_t    get_elem_attrs;         /**< GetElemAttrs */
-    wiced_bt_avrc_cmd_t                   get_play_status;        /**< GetPlayStatus */
-    wiced_bt_avrc_reg_notif_cmd_t         reg_notif;              /**< RegNotify */
-    wiced_bt_avrc_next_cmd_t              continu;                /**< Continue */
-    wiced_bt_avrc_next_cmd_t              abort;                  /**< Abort */
-
-    wiced_bt_avrc_set_addr_player_cmd_t   addr_player;            /**< SetAddrPlayer */
-    wiced_bt_avrc_set_volume_cmd_t        volume;                 /**< SetAbsVolume */
-    wiced_bt_avrc_set_br_player_cmd_t     br_player;              /**< SetBrowsedPlayer */
-    wiced_bt_avrc_get_items_cmd_t         get_items;              /**< GetFolderItems */
-    wiced_bt_avrc_chg_path_cmd_t          chg_path;               /**< ChangePath */
-    wiced_bt_avrc_get_attrs_cmd_t         get_attrs;              /**< GetItemAttrs */
-    wiced_bt_avrc_search_cmd_t            search;                 /**< Search */
-    wiced_bt_avrc_play_item_cmd_t         play_item;              /**< PlayItem */
-    wiced_bt_avrc_add_to_play_cmd_t       add_to_play;            /**< AddToNowPlaying */
-    wiced_bt_avrc_get_num_of_items_cmd_t  get_num_of_items;       /**< GetTotalNumOfItems */
-} wiced_bt_avrc_command_t;
-
-/** GetCapability */
-typedef struct
-{
-    uint8_t                     pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t         status;         /**< status */
-    uint8_t                     opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint8_t                     capability_id;  /**< capability id */
-    uint8_t                     count;          /**< count */
-    wiced_bt_avrc_caps_param_t  param;          /**< param */
-} wiced_bt_avrc_get_caps_rsp_t;
-
-/** ListPlayerAppAttr */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint8_t                 num_attr;       /**< number of attributes */
-    uint8_t                 attrs[AVRC_MAX_APP_ATTR_SIZE]; /**< list of attributes in response */
-} wiced_bt_avrc_list_app_attr_rsp_t;
-
-/** ListPlayerAppValues */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint8_t                 num_val;        /**< number of Application values */
-    uint8_t                 vals[AVRC_MAX_APP_ATTR_SIZE];   /**< list of application values in response*/
-} wiced_bt_avrc_list_app_values_rsp_t;
-
-/** GetCurAppValue */
-typedef struct
-{
-    uint8_t                     pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t         status;         /**< status */
-    uint8_t                     opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint8_t                     num_val;        /**< number of application settings to get */
-    wiced_bt_avrc_app_setting_t *p_vals;        /**< list of application settings */
-} wiced_bt_avrc_get_cur_app_value_rsp_t;
-
-/** GetAppAttrTxt */
-typedef struct
-{
-    uint8_t                             pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t                 status;         /**< status */
-    uint8_t                             opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint8_t                             num_attr;       /**< number of attributes */
-    wiced_bt_avrc_app_setting_text_t    *p_attrs;       /**< list of attributes */
-} wiced_bt_avrc_get_app_attr_txt_rsp_t;
-
-/** GetElemAttrs */
-typedef struct
-{
-    uint8_t                     pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t         status;         /**< status */
-    uint8_t                     opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint8_t                     num_attr;       /**< number of attributes */
-    wiced_bt_avrc_attr_entry_t  *p_attrs;       /**< list of attributes to get */
-} wiced_bt_avrc_get_elem_attrs_rsp_t;
-
-/** GetPlayStatus */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint32_t                song_len;       /**< track length */
-    uint32_t                song_pos;       /**< track playback position */
-    uint8_t                 play_status;    /**< playback status */
-} wiced_bt_avrc_get_play_status_rsp_t;
-
-/** notification event parameter for AddressedPlayer change */
-typedef struct
-{
-    uint16_t                player_id;      /**< player id*/
-    uint16_t                uid_counter;    /**< uid counter*/
-} wiced_bt_avrc_addr_player_param_t;
-
-#ifndef AVRC_MAX_APP_SETTINGS
-#define AVRC_MAX_APP_SETTINGS    8  /**<Maximum supported app settings*/
-#endif
-
-/** notification event parameter for Player Application setting change */
-typedef struct
-{
-    uint8_t                 num_attr;                           /**< number of attributes*/
-    uint8_t                 attr_id[AVRC_MAX_APP_SETTINGS];     /**< list of attribute ids*/
-    uint8_t                 attr_value[AVRC_MAX_APP_SETTINGS];  /**< list of attribute values*/
-} wiced_bt_avrc_player_app_param_t;
-
-/** AVRCP notification response */
-typedef union
-{
-    wiced_bt_avrc_playstate_t           play_status;    /**< play status*/
-    wiced_bt_avrc_uid_t                 track;          /**< track id*/
-    uint32_t                            play_pos;       /**< playback position*/
-    wiced_bt_avrc_battery_status_t      battery_status; /**< battery status*/
-    wiced_bt_avrc_systemstate_t         system_status;  /**< system status*/
-    wiced_bt_avrc_player_app_param_t    player_setting; /**< player application settings*/
-    wiced_bt_avrc_addr_player_param_t   addr_player;    /**< Addressed player properties*/
-    uint16_t                            uid_counter;    /**< uid counter*/
-    uint8_t                             volume;         /**< volume level*/
-} wiced_bt_avrc_notif_rsp_param_t;
-
-/** RegNotify response*/
-typedef struct
-{
-    uint8_t                pdu;                 /**< pdu id*/
-    wiced_bt_avrc_sts_t    status;              /**< status*/
-    uint8_t                opcode;              /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint8_t                event_id;            /**< event id which is registered*/
-    wiced_bt_avrc_notif_rsp_param_t   param;    /**< interim response parameters*/
-} wiced_bt_avrc_reg_notif_rsp_t;
-
-/** SetAbsVolume */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint8_t                 volume;         /**< volume level set in remote device*/
-} wiced_bt_avrc_set_volume_rsp_t;
-
-/** SetBrowsedPlayer */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint16_t                uid_counter;    /**< uid counter*/
-    uint32_t                num_items;      /**< number of items in root folder path of player */
-    uint16_t                charset_id;     /**< character set id*/
-    uint8_t                 folder_depth;   /**< folder depth*/
-    wiced_bt_avrc_name_t    *p_folders;     /**< folder list of root path*/
-} wiced_bt_avrc_set_br_player_rsp_t;
-
-/** GetFolderItems */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status*/
-    uint8_t                 opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint16_t                uid_counter;    /**< uid counter*/
-    uint16_t                item_count;     /**< number of items in response*/
-    wiced_bt_avrc_item_t    *p_item_list;   /**< item list in response */
-} wiced_bt_avrc_get_items_rsp_t;
-
-/** ChangePath */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status*/
-    uint8_t                 opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint32_t                num_items;      /**< number of items in new path*/
-} wiced_bt_avrc_chg_path_rsp_t;
-
-/** GetItemAttrs */
-typedef struct
-{
-    uint8_t                     pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t         status;         /**< status*/
-    uint8_t                     opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint8_t                     attr_count;     /**< attribute count*/
-    wiced_bt_avrc_attr_entry_t  *p_attr_list;   /**< list of attributes in response*/
-} wiced_bt_avrc_get_attrs_rsp_t;
+typedef wiced_bt_avrc_get_attrs_t wiced_bt_avrc_browse_get_attrs_rsp_t;
 
 /** Get Total Number of Items */
 typedef struct
 {
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint16_t                uid_counter;    /**< uid counter*/
-    uint32_t                num_items;      /**< number of items to request*/
-} wiced_bt_avrc_get_num_of_items_rsp_t;
+    uint16_t                uid_counter;	/**< uid counter*/
+    uint32_t                num_items;		/**< number of items */
+} wiced_bt_avrc_browse_num_of_items_rsp_t;
 
-/** Search response*/
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id*/
-    wiced_bt_avrc_sts_t     status;         /**< status*/
-    uint8_t                 opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-    uint16_t                uid_counter;    /**< uid counter*/
-    uint32_t                num_items;      /**< number of items in search result */
-} wiced_bt_avrc_search_rsp_t;
+typedef  wiced_bt_avrc_browse_num_of_items_rsp_t wiced_bt_avrc_browse_search_rsp_t;
 
-/** Generic AVRC response */
-typedef struct
-{
-    uint8_t                 pdu;            /**< pdu id */
-    wiced_bt_avrc_sts_t     status;         /**< status */
-    uint8_t                 opcode;         /**< Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. invalid one to generate according to pdu) */
-} wiced_bt_avrc_rsp_t;
+/** AVRC Metadata response messages */
+typedef struct {
+    wiced_bt_avrc_metadata_hdr_t metadata_hdr;
+
+    union
+    {
+        wiced_bt_avrc_metadata_get_caps_rsp_t              get_caps;               /**< GetCapability */
+        wiced_bt_avrc_metadata_list_app_attr_rsp_t         list_app_attr;          /**< ListPlayerAppAttr */
+        wiced_bt_avrc_metadata_list_app_values_rsp_t       list_app_values;        /**< ListPlayerAppValues */
+        wiced_bt_avrc_metadata_get_cur_app_value_rsp_t     get_cur_app_val;        /**< GetCurAppValue */
+        wiced_bt_avrc_metadata_get_app_attr_txt_rsp_t      get_app_attr_txt;       /**< GetAppAttrTxt */
+        wiced_bt_avrc_metadata_get_app_attr_txt_rsp_t      get_app_val_txt;        /**< GetAppValueTxt */
+        wiced_bt_avrc_metadata_get_element_attrs_rsp_t     get_elem_attrs;         /**< GetElemAttrs */
+        wiced_bt_avrc_metadata_get_play_status_rsp_t       get_play_status;        /**< GetPlayStatus */
+        wiced_bt_avrc_metadata_reg_notif_rsp_t             reg_notif;              /**< RegNotify */
+        uint8_t                                            volume;                 /**< SetAbsoluteVolume */
+        uint8_t                                            status;                 /**< SetAddressedPlayer */
+        uint8_t                                            play_status;            /**< PlayItem, AddToNowPlaying */
+        uint8_t                                            rejected_rsp;           /**< error code for rejected response */
+
+    }u;
+}wiced_bt_avrc_metadata_rsp_t;
+
+/** AVRC Browse response messages */
+typedef struct {
+    uint8_t  pdu_id;        /**< pdu id */
+    uint16_t param_len;     /**< response data length */
+    uint8_t  status;        /**< status */
+    union
+    {
+        wiced_bt_avrc_browse_set_br_player_rsp_t         set_browse_player;      /**< SetBrowsedPlayer */
+        wiced_bt_avrc_browse_get_items_rsp_t             get_folder_items;       /**< GetFolderItems */
+        wiced_bt_avrc_browse_chg_path_rsp_t              chg_path;               /**< ChangePath */
+        wiced_bt_avrc_browse_get_attrs_rsp_t             get_attrs;              /**< GetItemAttrs */
+        wiced_bt_avrc_browse_num_of_items_rsp_t          get_num_of_items;       /**< GetTotalNumberOfItems */
+        wiced_bt_avrc_browse_search_rsp_t                search;                 /**< Search */
+        uint8_t                                          reject;
+    }u;
+} wiced_bt_avrc_browse_rsp_t;
+
+/** AVRC Command  messages */
+typedef struct {
+    wiced_bt_avrc_hdr_t hdr;                            /**< AVRC command header */
+    union {
+        wiced_bt_avrc_unit_info_cmd_t unit;             /**< unit info command */
+        wiced_bt_avrc_sub_unit_info_cmd_t sub_unit;     /**< subunit command */
+        wiced_bt_avrc_pass_thru_cmd_t pass_thru;        /**< Passthrough command */
+        wiced_bt_avrc_metadata_cmd_t metadata;          /**< Metadata command */
+        wiced_bt_avrc_browse_cmd_t browse_cmd;          /**< Browse command */
+    }type;
+}wiced_bt_avrc_cmd_t;
 
 /** AVRC response messages */
-typedef union
-{
-    uint8_t                                   pdu;                    /**< PDU */
-    wiced_bt_avrc_rsp_t                       rsp;                    /**< general response */
-    wiced_bt_avrc_get_caps_rsp_t              get_caps;               /**< GetCapability */
-    wiced_bt_avrc_list_app_attr_rsp_t         list_app_attr;          /**< ListPlayerAppAttr */
-    wiced_bt_avrc_list_app_values_rsp_t       list_app_values;        /**< ListPlayerAppValues */
-    wiced_bt_avrc_get_cur_app_value_rsp_t     get_cur_app_val;        /**< GetCurAppValue */
-    wiced_bt_avrc_rsp_t                       set_app_val;            /**< SetAppValue */
-    wiced_bt_avrc_get_app_attr_txt_rsp_t      get_app_attr_txt;       /**< GetAppAttrTxt */
-    wiced_bt_avrc_get_app_attr_txt_rsp_t      get_app_val_txt;        /**< GetAppValueTxt */
-    wiced_bt_avrc_rsp_t                       inform_charset;         /**< InformCharset */
-    wiced_bt_avrc_rsp_t                       inform_battery_status;  /**< InformBatteryStatus */
-    wiced_bt_avrc_get_elem_attrs_rsp_t        get_elem_attrs;         /**< GetElemAttrs */
-    wiced_bt_avrc_get_play_status_rsp_t       get_play_status;        /**< GetPlayStatus */
-    wiced_bt_avrc_reg_notif_rsp_t             reg_notif;              /**< RegNotify */
-    wiced_bt_avrc_rsp_t                       continu;                /**< Continue */
-    wiced_bt_avrc_rsp_t                       abort;                  /**< Abort */
+typedef struct {
+    wiced_bt_avrc_hdr_t hdr;                            /**< AVRC command header */
 
-    wiced_bt_avrc_rsp_t                       addr_player;            /**< SetAddrPlayer */
-    wiced_bt_avrc_set_volume_rsp_t            volume;                 /**< SetAbsVolume */
-    wiced_bt_avrc_set_br_player_rsp_t         br_player;              /**< SetBrowsedPlayer */
-    wiced_bt_avrc_get_items_rsp_t             get_items;              /**< GetFolderItems */
-    wiced_bt_avrc_chg_path_rsp_t              chg_path;               /**< ChangePath */
-    wiced_bt_avrc_get_attrs_rsp_t             get_attrs;              /**< GetItemAttrs */
-    wiced_bt_avrc_get_num_of_items_rsp_t      get_num_of_items;       /**< GetTotalNumberOfItems */
-    wiced_bt_avrc_search_rsp_t                search;                 /**< Search */
-    wiced_bt_avrc_rsp_t                       play_item;              /**< PlayItem */
-    wiced_bt_avrc_rsp_t                       add_to_play;            /**< AddToNowPlaying */
-} wiced_bt_avrc_response_t;
+    union {
+        wiced_bt_avrc_unit_info_rsp_t     unit;         /**< unit info response */
+        wiced_bt_avrc_sub_unit_info_rsp_t sub_unit;     /**< subunit response */
+        wiced_bt_avrc_pass_thru_hdr_t     pass;         /**< Passthrough response */
+        wiced_bt_avrc_metadata_rsp_t      metadata;     /**< vendor response */
+        wiced_bt_avrc_browse_rsp_t        browse_rsp;   /**< Browse response */
+    }type;
+
+}wiced_bt_avrc_rsp_t;
+
+
 /**@} wicedbt */
 /* @endcond*/
 

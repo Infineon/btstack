@@ -598,7 +598,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">uuid</td><td>: The Universal Unique Identifier (UUID) of the Class ID of the service being opened </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scn</td><td>: The Service Channel Number(SCN) as registered with the SDP (server) or obtained using SDP from the peer device (client) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">is_server</td><td>: TRUE if requesting application is a server </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mtu</td><td>: The maximum number of bytes transferred per frame If 0, a default size of L2CAP_MAX_RX_MTU minus 5 bytes is used </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mtu</td><td>: The maximum number of bytes transferred per frame If 0, a default size of L2CAP_MAX_BR_RX_MTU minus 5 bytes is used </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: BD_ADDR of the peer (if client), NULL if server (see <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e" title="Device address length.">wiced_bt_device_address_t</a>) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_mgmt_cb</td><td>: Pointer to callback function to receive connection up/down events (see <a class="el" href="group__rfcomm__api__functions.html#ga29e5339346921b8f38a528ff118498d0" title="Port management callback.">wiced_bt_port_mgmt_cback_t</a>) </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">p_handle</td><td>: A pointer to the handle set by RFCOMM to be used in consecutive calls for this connection</td></tr>

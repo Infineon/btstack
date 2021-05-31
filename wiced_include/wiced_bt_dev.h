@@ -80,6 +80,8 @@ typedef struct
     uint8_t     *p_param_buf;               /**< Return parameter buffer (Contains Command Specific data) */
 } wiced_bt_dev_vendor_specific_command_complete_params_t;
 
+/** @cond DUAL_MODE */
+
 /** Structure for local address extendend API
  @note #wiced_bt_dev_read_local_addr_ext API function sets private_addr_type and private_addr only if BLE privacy is set to true */
 typedef struct
@@ -90,8 +92,6 @@ typedef struct
     wiced_bt_device_address_t       private_addr;               /**< Private address */
     wiced_bt_device_address_t       local_addr;                 /**< Local Bluetooth Address */
 } wiced_bt_dev_local_addr_ext_t;
-
-/** @cond DUAL_MODE */
 
 /** Default Discovery Window (in 0.625 msec intervals) */
 #define BTM_DEFAULT_DISC_WINDOW     0x0012
@@ -246,7 +246,7 @@ typedef struct
 typedef struct
 {
     uint8_t                         status;             /**< Status of the operation. (Refer Spec 5.0 Vol 2 Part D Error Codes) */
-    uint8_t                         role;               /**< BTM_ROLE_MASTER or BTM_ROLE_SLAVE */
+    uint8_t                         role;               /**< BTM_ROLE_CENTRAL or BTM_ROLE_PERIPHERAL */
     wiced_bt_device_address_t       bd_addr;            /**< Remote BD address involved with the switch */
 } wiced_bt_dev_switch_role_result_t;
 /** @endcond */
@@ -254,21 +254,6 @@ typedef struct
 /*****************************************************************************
  *  SECURITY MANAGEMENT
  *****************************************************************************/
-
-/** Security Service Levels [bit mask].
-  * @note  Encryption should not be used without authentication. */
-enum wiced_bt_sec_level_e
-{
-    BTM_SEC_NONE                    = 0x0000,    /**< Nothing required */
-    BTM_SEC_IN_AUTHENTICATE         = 0x0002,    /**< Inbound call requires authentication */
-    BTM_SEC_IN_ENCRYPT              = 0x0004,    /**< Inbound call requires encryption */
-    BTM_SEC_OUT_AUTHENTICATE        = 0x0010,    /**< Outbound call requires authentication */
-    BTM_SEC_OUT_ENCRYPT             = 0x0020,    /**< Outbound call requires encryption */
-    BTM_SEC_ENCRYPT                 = 0x0024,    /**< Requires encryption (inbound and outbound) */
-    BTM_SEC_BR_MODE4_LEVEL4         = 0x0040,    /**< BR Mode 4 Level 4 (MITM and P-256 except for SDP and connectionless broadcast) */
-    BTM_SEC_SC_ONLY                 = 0x0080     /**< Secure Connections Only Mode (P-256 based Secure Simple Pairing and Authentication) */
-                                                 /**< If this bit is set, will fail pairing if peer does not support SC */
-};
 
 /** security flags for current BR/EDR link */
 enum wiced_bt_sec_flags_e
@@ -320,12 +305,14 @@ typedef uint8_t wiced_bt_dev_auth_req_t;                /**< BR/EDR authenticati
 enum wiced_bt_dev_le_auth_req_e {
     BTM_LE_AUTH_REQ_NO_BOND =       0x00,                                               /**< Not required - No Bond */
     BTM_LE_AUTH_REQ_BOND =          0x01,                                               /**< Required - General Bond */
-    BTM_LE_AUTH_REQ_MITM =          0x04,                                               /**< MITM required - Auth Y/N*/
+    BTM_LE_AUTH_REQ_MITM =          0x04,                                               /**< MITM required - Auth Y/N */
     BTM_LE_AUTH_REQ_SC =            0x08,                                               /**< LE Secure Connection or legacy, no MITM, no Bonding */
+    BTM_LE_AUTH_REQ_KP =            0x10,                                               /**< Keypress supported Y/N */
+    BTM_LE_AUTH_REQ_H7 =            0x20,                                               /**< Key derivation function H7 supported Y/N */
     BTM_LE_AUTH_REQ_SC_BOND =       (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_BOND),          /**< LE Secure Connection or legacy, no MITM, Bonding */
     BTM_LE_AUTH_REQ_SC_MITM =       (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_MITM),          /**< LE Secure Connection or legacy, MITM, no Bonding */
     BTM_LE_AUTH_REQ_SC_MITM_BOND =  (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_MITM|BTM_LE_AUTH_REQ_BOND),    /**< LE Secure Connection or legacy , MITM, Bonding */
-    BTM_LE_AUTH_REQ_MASK =          0x1D                                                /**< Auth Request Mask */
+    BTM_LE_AUTH_REQ_MASK =          0x3D                                                /**< Auth Request Mask */
 };
 typedef uint8_t wiced_bt_dev_le_auth_req_t;             /**< BLE authentication requirement (see #wiced_bt_dev_le_auth_req_e) */
 
@@ -553,8 +540,8 @@ enum wiced_bt_dev_le_key_type_e
     BTM_LE_KEY_PID =    (1 << 1),                       /**< identity key of the peer device */
     BTM_LE_KEY_PCSRK =  (1 << 2),                       /**< peer SRK */
     BTM_LE_KEY_PLK =    (1 << 3),                       /**< peer link key */
-    BTM_LE_KEY_LENC =   (1 << 4),                       /**< master role security information:div */
-    BTM_LE_KEY_LID =    (1 << 5),                       /**< master device ID key */
+    BTM_LE_KEY_LENC =   (1 << 4),                       /**< Central role security information:div */
+    BTM_LE_KEY_LID =    (1 << 5),                       /**< Central device ID key */
     BTM_LE_KEY_LCSRK =  (1 << 6),                       /**< local CSRK has been deliver to peer */
     BTM_LE_KEY_LLK =    (1 << 7),                       /**< Local link key */
 };
@@ -575,15 +562,6 @@ enum wiced_bt_ble_scan_type_e
 };
 #endif
 typedef uint8_t wiced_bt_ble_scan_type_t;   /**< scan type (see #wiced_bt_ble_scan_type_e) */
-
-
-/** bonding device information from wiced_bt_dev_get_bonded_devices */
-typedef struct
-{
-    wiced_bt_device_address_t     bd_addr;                 /**< peer address           */
-    wiced_bt_ble_address_type_t   addr_type;               /**< peer address type : BLE_ADDR_PUBLIC/BLE_ADDR_RANDOM */
-    wiced_bt_device_type_t        device_type;             /**< peer device type : BT_DEVICE_TYPE_BREDR/BT_DEVICE_TYPE_BLE/BT_DEVICE_TYPE_BREDR_BLE  */
-}wiced_bt_dev_bonded_device_info_t;
 
 
 /** SMP Pairing status codes */
@@ -732,7 +710,7 @@ enum wiced_bt_management_evt_e {
                                                         @note  BR/EDR Only */
     BTM_PAIRING_IO_CAPABILITIES_BR_EDR_RESPONSE_EVT,/**< Received IO capabilities response for BR/EDR pairing. Event data: @cond DUAL_MODE #wiced_bt_dev_bredr_io_caps_rsp_t @endcond
                                                         @note  BR/EDR Only*/
-    BTM_PAIRING_IO_CAPABILITIES_BLE_REQUEST_EVT,    /**< Requesting IO capabilities for BLE pairing. Slave can check peer io capabilities in event data before updating with local io capabilities. Event data: #wiced_bt_dev_ble_io_caps_req_t */
+    BTM_PAIRING_IO_CAPABILITIES_BLE_REQUEST_EVT,    /**< Requesting IO capabilities for BLE pairing. Peripheral can check peer io capabilities in event data before updating with local io capabilities. Event data: #wiced_bt_dev_ble_io_caps_req_t */
     BTM_PAIRING_COMPLETE_EVT,                       /**< received SIMPLE_PAIRING_COMPLETE event. Event data: #wiced_bt_dev_pairing_cplt_t */
     BTM_ENCRYPTION_STATUS_EVT,                      /**< Encryption status change. Event data: #wiced_bt_dev_encryption_status_t */
     BTM_SECURITY_REQUEST_EVT,                       /**< Security request (respond using #wiced_bt_ble_security_grant). Event data: #wiced_bt_dev_security_request_t */
@@ -864,7 +842,7 @@ typedef struct wiced_bt_ble_keys_s
     BT_OCTET16          lcsrk;          /**< local SRK peer device used to secured sign local data  */
 
     BT_OCTET8           rand;           /**< random vector for LTK generation */
-    uint16_t            ediv;           /**< LTK diversifier of this slave device */
+    uint16_t            ediv;           /**< LTK diversifier of this Peripheral device */
     uint16_t            div;            /**< local DIV  to generate local LTK=d1(ER,DIV,0) and CSRK=d1(ER,DIV,1)  */
     uint8_t             sec_level;      /**< local pairing security level */
     uint8_t             key_size;       /**< key size of the LTK delivered to peer device */
@@ -986,12 +964,12 @@ typedef uint8_t wiced_bt_link_quality_stats_param_t;   /**< Link Quality Statist
  */
 enum  wiced_bt_link_policy_settings_values_e
 {
-    WICED_ENABLE_MASTER_SLAVE_SWITCH  = 0x01, /**< Enable Role Switch */
-    WICED_ENABLE_HOLD_MODE            = 0x02, /**< Enable Hold mode */
-    WICED_ENABLE_SNIFF_MODE           = 0x04  /**<Enable Sniff mode */
+    WICED_ENABLE_ROLE_SWITCH  = 0x01,       /**< Enable Role Switch */
+    WICED_ENABLE_HOLD_MODE    = 0x02,       /**< Enable Hold mode */
+    WICED_ENABLE_SNIFF_MODE   = 0x04        /**<Enable Sniff mode */
 };
 
-/**< Link Policy Settings type (see #wiced_bt_link_policy_settings_values_e) */
+/** Link Policy Settings type (see #wiced_bt_link_policy_settings_values_e) */
 typedef uint16_t wiced_bt_link_policy_settings_t[1];
 
 /** advertisement type (used when calling wiced_bt_start_advertisements) */
@@ -1446,13 +1424,13 @@ wiced_result_t wiced_bt_dev_write_eir (uint8_t *p_buff, uint16_t len);
 
 /**
  *
- * This function is called to switch the role between master and
- * slave.  If role is already set it will do nothing. If the
+ * This function is called to switch the role between Central and
+ * Peripheral.  If role is already set it will do nothing. If the
  * command was initiated, the callback function is called upon
  * completion.
  *
  * @param[in]       remote_bd_addr      : BD address of remote device
- * @param[in]       new_role            : New role (BTM_ROLE_MASTER or BTM_ROLE_SLAVE)
+ * @param[in]       new_role            : New role (BTM_ROLE_CENTRAL or BTM_ROLE_PERIPHERAL)
  * @param[in]       p_cback             : Result callback (wiced_bt_dev_switch_role_result_t will be passed to the callback)
  *
  * @return      wiced_result_t
@@ -1776,21 +1754,44 @@ void wiced_bt_dev_register_hci_trace( wiced_bt_hci_trace_cback_t* p_cback );
 
 /**
  *
- * Set Local Bluetooth Device Address. If application passes BLE_ADDR_RANDOM as an address type,
- * the stack will setup a static random address.  For the static random address top two bits of the
- * bd_addr should be set.  The stack will enforce that.
+ * Update the hci trace mode
  *
- * @param[in]       bd_addr    : device address to use
- * @param[in]       addr_type  : device address type , should be BLE_ADDR_RANDOM or BLE_ADDR_PUBLIC
- *                                        BLE_ADDR_RANDOM should be only for single BLE mode, not for BR-EDR or Dual Mode
+ * @param[in]      enable    : TRUE to enable HCI traces, FALSE to disable
  *
  * @return          void
  *
+ */
+void wiced_bt_dev_update_hci_trace_mode(wiced_bool_t enable);
+
+/**
+ *
+ * Set Local Bluetooth Device Address.
+ * The application has to set a valid address (Static/Random) by calling this function.\n
+ * If this function is not called, the default address is typically a controller assigned address(BT device part number),
+ * which is same for perticular device type.For example, all CYW43012 devcies will
+ * typically have the same default address.
+ *
+ * The application can set a static random address by setting the addr_type to \ref BLE_ADDR_RANDOM.
+ * For static random addresses the top two bits of the bd_addr are required to be set,
+ * the stack will override these bits if not set. The remaining 46 bits will be taken from the value provided for bd_addr, \n
+ * which cannot be all 0's.
+ *
+ * @param[in]       bd_addr    : device address to use
+ * @param[in]       addr_type  : device address type , should be BLE_ADDR_RANDOM or BLE_ADDR_PUBLIC \n
+ *                               BLE_ADDR_RANDOM should be only for single BLE mode, not for BR-EDR or Dual Mode.
+ *
+ * @return          wiced_result_t
+ *
+ * WICED_BT_ILLEGAL_VALUE : if invalid device address specified \n
+ * WICED_BT_NO_RESOURCES  : if couldn't allocate memory to issue command \n
+ * WICED_BT_SUCCESS       : if local bdaddr is set successfully \n
+ *
  * @note            BD_Address must be in Big Endian format
  *
- * Example         Data         | AB | CD | EF | 01 | 23 | 45 |
- *                 Address      | 0  | 1  | 2  | 3  | 4  | 5  |
- *                 For above example it will set AB:CD:EF:01:23:45 bd address
+ * Example:
+ * <PRE>    Data         | AB | CD | EF | 01 | 23 | 45 | </PRE>
+ * <PRE>    Address      | 0  | 1  | 2  | 3  | 4  | 5  | </PRE>
+ *                       For above example it will set AB:CD:EF:01:23:45 bd address
  */
 wiced_result_t wiced_bt_set_local_bdaddr( wiced_bt_device_address_t  bd_addr , wiced_bt_ble_address_type_t addr_type);
 
@@ -1931,20 +1932,6 @@ wiced_result_t wiced_bt_dev_push_nvram_data(wiced_bt_device_link_keys_t *paired_
  * @{
  */
 
-
-/**
- *
- * Configure device to allow connections only with
- * secure connections supported devices
- *
- *  @note           API must be called only once after BTM_ENABLED_EVT event
- *                  received, before starting bluetooth activity
- *
- * @return          void
- */
-void wiced_bt_dev_configure_secure_connections_only_mode (void);
-
-
 /**
  *
  * Bond with peer device. If the connection is already up, but not secure, pairing is attempted.
@@ -2021,19 +2008,6 @@ void wiced_bt_dev_confirm_req_reply(wiced_result_t res, wiced_bt_device_address_
  *
  */
 void wiced_bt_dev_send_key_press_notif(wiced_bt_device_address_t bd_addr, wiced_bt_dev_passkey_entry_type_t type);
-
-
-/**
- *
- * get bonded device list
- *
- * @param[out]      p_paired_device_list    : array for getting bd address of bonded devices
- * @param[in]       p_num_devices           : list size of p_pared_device_list total number of bonded devices stored
- *
- * @return          wiced_result_t
- *
- */
-wiced_result_t wiced_bt_dev_get_bonded_devices(wiced_bt_dev_bonded_device_info_t *p_paired_device_list,uint16_t *p_num_devices);
 
 /**
  *

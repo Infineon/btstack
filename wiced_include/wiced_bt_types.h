@@ -15,7 +15,7 @@
 extern "C" {
 #endif
 
-/**
+ /**
  *  @addtogroup  bt_types  Wiced BT Types
  *  @ingroup     gentypes
  *
@@ -198,7 +198,6 @@ typedef struct
 
 #define EATT_CHANNELS_PER_TRANSACTION 5 /**< EATT Max Channel per TX */
 
-
 /********************************************************************************
 ** Macros to get and put bytes to and from a stream (Little Endian format).
 */
@@ -207,7 +206,7 @@ typedef struct
                                     *(p)++ = (uint8_t)((u128) >> 32); *(p)++ = (uint8_t)((u128) >> 40);*(p)++ = (uint8_t)((u128) >> 48); *(p)++ = (uint8_t)((u128) >> 56); \
                                     *(p)++ = (uint8_t)((u128) >> 64); *(p)++ = (uint8_t)((u128) >> 72);*(p)++ = (uint8_t)((u128) >> 80); *(p)++ = (uint8_t)((u128) >> 88); \
                                     *(p)++ = (uint8_t)((u128) >> 96); *(p)++ = (uint8_t)((u128) >> 104);*(p)++ = (uint8_t)((u128) >> 112); *(p)++ = (uint8_t)((u128) >> 120); }
-/** Covert UINT64 to Stream array */
+/** Covert uint64_t to Stream array */
 #define UINT64_TO_STREAM(p, u64) {*(p)++ = (uint8_t)(u64);       *(p)++ = (uint8_t)((u64) >> 8);*(p)++ = (uint8_t)((u64) >> 16); *(p)++ = (uint8_t)((u64) >> 24); \
                                     *(p)++ = (uint8_t)((u64) >> 32); *(p)++ = (uint8_t)((u64) >> 40);*(p)++ = (uint8_t)((u64) >> 48); *(p)++ = (uint8_t)((u64) >> 56);}
 /** Covert UINT48 to Stream array */
@@ -217,10 +216,10 @@ typedef struct
                                   *(p)++ = (uint8_t)((u40) >> 32);}
 /** Covert UINT24 to Stream array */
 #define UINT24_TO_STREAM(p, u24) {*(p)++ = (uint8_t)(u24); *(p)++ = (uint8_t)((u24) >> 8); *(p)++ = (uint8_t)((u24) >> 16);}
-/** Covert UINT8 to Stream array */
+/** Covert uint8_t to Stream array */
 #define UINT8_TO_STREAM(p, u8)   {*(p)++ = (uint8_t)(u8);}
-/** Covert INT8 to Stream array */
-#define INT8_TO_STREAM(p, u8)    {*(p)++ = (INT8)(u8);}
+/** Covert int8_t to Stream array */
+#define INT8_TO_STREAM(p, u8)    {*(p)++ = (int8_t)(u8);}
 /** Covert 32 bytes to Stream array */
 #define ARRAY32_TO_STREAM(p, a)  {register int ijk; for (ijk = 0; ijk < 32;           ijk++) *(p)++ = (uint8_t) a[31 - ijk];}
 /** Covert 16 bytes to Stream array */
@@ -256,31 +255,31 @@ typedef struct
 /** Reverse Stream to Array */
 #define REVERSE_STREAM_TO_ARRAY(a, p, len) {register int ijk; register uint8_t *_pa = (uint8_t *)a + len - 1; for (ijk = 0; ijk < len; ijk++) *_pa-- = *p++;}
 
-/** Convert byte stream to UINT8 */
+/** Convert byte stream to uint8_t */
 #define STREAM_TO_UINT8(u8, p)   {u8 = (uint8_t)(*(p)); (p) += 1;}
-/** Convert byte stream to INT8 */
-#define STREAM_TO_INT8(i8, p)   {i8 = (INT8)(*(p)); (p) += 1;}
+/** Convert byte stream to int8_t */
+#define STREAM_TO_INT8(i8, p)   {i8 = (int8_t)(*(p)); (p) += 1;}
 /** String copy */
 #define BCM_STRNCPY_S(x1,x2,x3,x4)  strncpy((x1),(x3),(x4))
 
 /* Based on the BT Controller ARM architecture, or possibly other hosts, we can optimize these macros. */
 #if ((defined STACK_INSIDE_BT_CTRLR) && (STACK_INSIDE_BT_CTRLR == TRUE)) || (defined OPTIMISE_FOR_LITTLE_ENDIAN)
-/** Covert UINT32 to Stream */
+/** Covert uint32_t to Stream */
 #define UINT32_TO_STREAM(p, u32) {*(uint32_t *)(p) = u32; (p) += 4;}
-/** Covert UINT16 to Stream */
+/** Covert uint16_t to Stream */
 #define UINT16_TO_STREAM(p, u16) {*(uint16_t *)(p) = u16; (p) += 2;}
-/** Covert Stream to UINT32 */
+/** Covert Stream to uint32_t */
 #define STREAM_TO_UINT32(u32, p) {u32 = *(uint32_t *)(p); (p) += 4;}
-/** Covert Stream to UINT16 */
+/** Covert Stream to uint16_t */
 #define STREAM_TO_UINT16(u16, p) {u16 = *(uint16_t *)(p); (p) += 2;}
 #else
-/** Covert UINT32 to Stream */
+/** Covert uint32_t to Stream */
 #define UINT32_TO_STREAM(p, u32) {*(p)++ = (uint8_t)(u32); *(p)++ = (uint8_t)((u32) >> 8); *(p)++ = (uint8_t)((u32) >> 16); *(p)++ = (uint8_t)((u32) >> 24);}
-/** Covert UINT16 to Stream */
+/** Covert uint16_t to Stream */
 #define UINT16_TO_STREAM(p, u16) {*(p)++ = (uint8_t)(u16); *(p)++ = (uint8_t)((u16) >> 8);}
-/** Covert Stream to UINT32 */
+/** Covert Stream to uint32_t */
 #define STREAM_TO_UINT32(u32, p) {u32 = (((uint32_t)(*(p))) + ((((uint32_t)(*((p) + 1)))) << 8) + ((((uint32_t)(*((p) + 2)))) << 16) + ((((uint32_t)(*((p) + 3)))) << 24)); (p) += 4;}
-/** Covert Stream to UINT16 */
+/** Covert Stream to uint16_t */
 #define STREAM_TO_UINT16(u16, p) {u16 = ((uint16_t)(*(p)) + (((uint16_t)(*((p) + 1))) << 8)); (p) += 2;}
 #endif
 /** Copy BDA to stream */
@@ -298,13 +297,13 @@ extern uint8_t *BTU_copyStreamToBda(uint8_t *pBDA, uint8_t *pStream);
 ** Macros to get and put bytes to and from a field (Little Endian format).
 ** These are the same as to stream, except the pointer is not incremented.
 */
-/** Covert UINT32 to Field*/
+/** Covert uint32_t to Field*/
 #define UINT32_TO_FIELD(p, u32) {*(uint8_t *)(p) = (uint8_t)(u32); *((uint8_t *)(p)+1) = (uint8_t)((u32) >> 8); *((uint8_t *)(p)+2) = (uint8_t)((u32) >> 16); *((uint8_t *)(p)+3) = (uint8_t)((u32) >> 24);}
 /** Covert UINT24 to Field*/
 #define UINT24_TO_FIELD(p, u24) {*(uint8_t *)(p) = (uint8_t)(u24); *((uint8_t *)(p)+1) = (uint8_t)((u24) >> 8); *((uint8_t *)(p)+2) = (uint8_t)((u24) >> 16);}
-/** Covert UINT16 to Field*/
+/** Covert uint16_t to Field*/
 #define UINT16_TO_FIELD(p, u16) {*(uint8_t *)(p) = (uint8_t)(u16); *((uint8_t *)(p)+1) = (uint8_t)((u16) >> 8);}
-/** Covert UINT8 to Field*/
+/** Covert uint8_t to Field*/
 #define UINT8_TO_FIELD(p, u8)   {*(uint8_t *)(p) = (uint8_t)(u8);}
 
 
@@ -316,31 +315,31 @@ extern uint8_t *BTU_copyStreamToBda(uint8_t *pBDA, uint8_t *pStream);
                                     *(p)++ = (uint8_t)((u128) >> 88); *(p)++ = (uint8_t)((u128) >> 80);*(p)++ = (uint8_t)((u128) >> 72); *(p)++ = (uint8_t)((u128) >> 64); \
                                     *(p)++ = (uint8_t)((u128) >> 56); *(p)++ = (uint8_t)((u128) >> 48);*(p)++ = (uint8_t)((u128) >> 40); *(p)++ = (uint8_t)((u128) >> 32); \
                                     *(p)++ = (uint8_t)((u128) >> 24); *(p)++ = (uint8_t)((u128) >> 16);*(p)++ = (uint8_t)((u128) >> 8); *(p)++ = (uint8_t)(u128); }
-/** Covert UINT64 to Stream */
+/** Covert uint64_t to Stream */
 #define UINT64_TO_BE_STREAM(p, u64) {*(p)++ = (uint8_t)((u64) >> 56); *(p)++ = (uint8_t)((u64) >> 48);*(p)++ = (uint8_t)((u64) >> 40); *(p)++ = (uint8_t)((u64) >> 32); \
                                      *(p)++ = (uint8_t)((u64) >> 24); *(p)++ = (uint8_t)((u64) >> 16);*(p)++ = (uint8_t)((u64) >> 8); *(p)++ = (uint8_t)(u64); }
-/** Covert UINT32 to Stream */
+/** Covert uint32_t to Stream */
 #define UINT32_TO_BE_STREAM(p, u32) {*(p)++ = (uint8_t)((u32) >> 24);  *(p)++ = (uint8_t)((u32) >> 16); *(p)++ = (uint8_t)((u32) >> 8); *(p)++ = (uint8_t)(u32); }
 /** Covert UINT24 to Stream */
 #define UINT24_TO_BE_STREAM(p, u24) {*(p)++ = (uint8_t)((u24) >> 16); *(p)++ = (uint8_t)((u24) >> 8); *(p)++ = (uint8_t)(u24);}
-/** Covert UINT16 to Stream */
+/** Covert uint16_t to Stream */
 #define UINT16_TO_BE_STREAM(p, u16) {*(p)++ = (uint8_t)((u16) >> 8); *(p)++ = (uint8_t)(u16);}
-/** Covert UINT8 to Stream */
+/** Covert uint8_t to Stream */
 #define UINT8_TO_BE_STREAM(p, u8)   {*(p)++ = (uint8_t)(u8);}
 /** Covert Array to Stream */
 #define ARRAY_TO_BE_STREAM(p, a, len) {register int ijk; for (ijk = 0; ijk < len; ijk++) *(p)++ = (uint8_t) a[ijk];}
 
-/** Stream to UINT8 */
+/** Stream to uint8_t */
 #define BE_STREAM_TO_UINT8(u8, p)   {u8 = (uint8_t)(*(p)); (p) += 1;}
-/** Stream to UINT16 */
+/** Stream to uint16_t */
 #define BE_STREAM_TO_UINT16(u16, p) {u16 = (uint16_t)(((uint16_t)(*(p)) << 8) + (uint16_t)(*((p) + 1))); (p) += 2;}
 /** Stream to UINT24 */
 #define BE_STREAM_TO_UINT24(u32, p) {u32 = (((uint32_t)(*((p) + 2))) + ((uint32_t)(*((p) + 1)) << 8) + ((uint32_t)(*(p)) << 16)); (p) += 3;}
-/** Stream to UINT32 */
+/** Stream to uint32_t */
 #define BE_STREAM_TO_UINT32(u32, p) {u32 = ((uint32_t)(*((p) + 3)) + ((uint32_t)(*((p) + 2)) << 8) + ((uint32_t)(*((p) + 1)) << 16) + ((uint32_t)(*(p)) << 24)); (p) += 4;}
-/** Stream to UINT64 */
+/** Stream to uint64_t */
 #define BE_STREAM_TO_UINT64(u64, p) {u64 = ((UINT64)(*((p) + 7)) + ((UINT64)(*((p) + 6)) << 8) + ((UINT64)(*((p) + 5)) << 16) + ((UINT64)(*((p) + 4)) << 24) + \
-                                           ((UINT64)(*((p) + 3)) << 32) + ((UINT64)(*((p) + 2)) << 40) + ((UINT64)(*((p) + 1)) << 48) + ((UINT64)(*(p)) << 56)); (p) += 8;}
+                                           ((uint64_t)(*((p) + 3)) << 32) + ((uint64_t)(*((p) + 2)) << 40) + ((uint64_t)(*((p) + 1)) << 48) + ((uint64_t)(*(p)) << 56)); (p) += 8;}
 /** Covert Array to Stream*/
 #define BE_STREAM_TO_ARRAY(p, a, len) {register int ijk; for (ijk = 0; ijk < len; ijk++) ((uint8_t *) a)[ijk] = *p++;}
 
@@ -349,13 +348,13 @@ extern uint8_t *BTU_copyStreamToBda(uint8_t *pBDA, uint8_t *pStream);
 ** Macros to get and put bytes to and from a field (Big Endian format).
 ** These are the same as to stream, except the pointer is not incremented.
 */
-/** UINT32 to Field */
+/** uint32_t to Field */
 #define UINT32_TO_BE_FIELD(p, u32) {*(uint8_t *)(p) = (uint8_t)((u32) >> 24);  *((uint8_t *)(p)+1) = (uint8_t)((u32) >> 16); *((uint8_t *)(p)+2) = (uint8_t)((u32) >> 8); *((uint8_t *)(p)+3) = (uint8_t)(u32); }
 /** UINT24 to Field */
 #define UINT24_TO_BE_FIELD(p, u24) {*(uint8_t *)(p) = (uint8_t)((u24) >> 16); *((uint8_t *)(p)+1) = (uint8_t)((u24) >> 8); *((uint8_t *)(p)+2) = (uint8_t)(u24);}
-/** UINT16 to Field */
+/** uint16_t to Field */
 #define UINT16_TO_BE_FIELD(p, u16) {*(uint8_t *)(p) = (uint8_t)((u16) >> 8); *((uint8_t *)(p)+1) = (uint8_t)(u16);}
-/** UINT8 to Field */
+/** uint8_t to Field */
 #define UINT8_TO_BE_FIELD(p, u8)   {*(uint8_t *)(p) = (uint8_t)(u8);}
 
 /* Macros to Print the BD_ADDRESS */

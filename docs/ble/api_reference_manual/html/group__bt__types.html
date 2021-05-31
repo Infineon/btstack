@@ -339,7 +339,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga491d180a0b74de948f9ae4dd4dcdd29f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT128 to Stream array.  <a href="#ga491d180a0b74de948f9ae4dd4dcdd29f">More...</a><br /></td></tr>
 <tr class="separator:ga491d180a0b74de948f9ae4dd4dcdd29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9d81be010945d34e4e62255d5713904a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga9d81be010945d34e4e62255d5713904a">UINT64_TO_STREAM</a>(p,  u64)</td></tr>
-<tr class="memdesc:ga9d81be010945d34e4e62255d5713904a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT64 to Stream array.  <a href="#ga9d81be010945d34e4e62255d5713904a">More...</a><br /></td></tr>
+<tr class="memdesc:ga9d81be010945d34e4e62255d5713904a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint64_t to Stream array.  <a href="#ga9d81be010945d34e4e62255d5713904a">More...</a><br /></td></tr>
 <tr class="separator:ga9d81be010945d34e4e62255d5713904a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf8eeaf767787bc7b74d6f66e610fb3ef"><td class="memItemLeft" align="right" valign="top"><a id="gaf8eeaf767787bc7b74d6f66e610fb3ef"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gaf8eeaf767787bc7b74d6f66e610fb3ef">UINT48_TO_STREAM</a>(p,  u48)&#160;&#160;&#160;{*(p)++ = (uint8_t)(u48); *(p)++ = (uint8_t)((u48) &gt;&gt; 8); *(p)++ = (uint8_t)((u48) &gt;&gt; 16); *(p)++ = (uint8_t)((u48) &gt;&gt; 24); *(p)++ = (uint8_t)((u48) &gt;&gt; 32); *(p)++ = (uint8_t)((u48) &gt;&gt; 40);}</td></tr>
@@ -354,11 +354,11 @@ Macros</h2></td></tr>
 <tr class="separator:gaa1919dd13a12a03812bf076ee95f05bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b582e9019da53ac89a0451116b4ef25"><td class="memItemLeft" align="right" valign="top"><a id="ga7b582e9019da53ac89a0451116b4ef25"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga7b582e9019da53ac89a0451116b4ef25">UINT8_TO_STREAM</a>(p,  u8)&#160;&#160;&#160;{*(p)++ = (uint8_t)(u8);}</td></tr>
-<tr class="memdesc:ga7b582e9019da53ac89a0451116b4ef25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT8 to Stream array. <br /></td></tr>
+<tr class="memdesc:ga7b582e9019da53ac89a0451116b4ef25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint8_t to Stream array. <br /></td></tr>
 <tr class="separator:ga7b582e9019da53ac89a0451116b4ef25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae408d18ec3d93b0ccd0e596cff64d0fc"><td class="memItemLeft" align="right" valign="top"><a id="gae408d18ec3d93b0ccd0e596cff64d0fc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gae408d18ec3d93b0ccd0e596cff64d0fc">INT8_TO_STREAM</a>(p,  u8)&#160;&#160;&#160;{*(p)++ = (INT8)(u8);}</td></tr>
-<tr class="memdesc:gae408d18ec3d93b0ccd0e596cff64d0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert INT8 to Stream array. <br /></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gae408d18ec3d93b0ccd0e596cff64d0fc">INT8_TO_STREAM</a>(p,  u8)&#160;&#160;&#160;{*(p)++ = (int8_t)(u8);}</td></tr>
+<tr class="memdesc:gae408d18ec3d93b0ccd0e596cff64d0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert int8_t to Stream array. <br /></td></tr>
 <tr class="separator:gae408d18ec3d93b0ccd0e596cff64d0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3c2eafe4108d0b5d6e8674fe114821e9"><td class="memItemLeft" align="right" valign="top"><a id="ga3c2eafe4108d0b5d6e8674fe114821e9"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga3c2eafe4108d0b5d6e8674fe114821e9">ARRAY32_TO_STREAM</a>(p,  a)&#160;&#160;&#160;{register int ijk; for (ijk = 0; ijk &lt; 32;           ijk++) *(p)++ = (uint8_t) a[31 - ijk];}</td></tr>
@@ -426,11 +426,11 @@ Macros</h2></td></tr>
 <tr class="separator:gaf1005f15e43e88fa739072e75597153a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7ced3b364a8d75505e79cc37969a2b0a"><td class="memItemLeft" align="right" valign="top"><a id="ga7ced3b364a8d75505e79cc37969a2b0a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga7ced3b364a8d75505e79cc37969a2b0a">STREAM_TO_UINT8</a>(u8,  p)&#160;&#160;&#160;{u8 = (uint8_t)(*(p)); (p) += 1;}</td></tr>
-<tr class="memdesc:ga7ced3b364a8d75505e79cc37969a2b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert byte stream to UINT8. <br /></td></tr>
+<tr class="memdesc:ga7ced3b364a8d75505e79cc37969a2b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert byte stream to uint8_t. <br /></td></tr>
 <tr class="separator:ga7ced3b364a8d75505e79cc37969a2b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga24f578d9e6c5f8c9cb0bbcad28e972c2"><td class="memItemLeft" align="right" valign="top"><a id="ga24f578d9e6c5f8c9cb0bbcad28e972c2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga24f578d9e6c5f8c9cb0bbcad28e972c2">STREAM_TO_INT8</a>(i8,  p)&#160;&#160;&#160;{i8 = (INT8)(*(p)); (p) += 1;}</td></tr>
-<tr class="memdesc:ga24f578d9e6c5f8c9cb0bbcad28e972c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert byte stream to INT8. <br /></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga24f578d9e6c5f8c9cb0bbcad28e972c2">STREAM_TO_INT8</a>(i8,  p)&#160;&#160;&#160;{i8 = (int8_t)(*(p)); (p) += 1;}</td></tr>
+<tr class="memdesc:ga24f578d9e6c5f8c9cb0bbcad28e972c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert byte stream to int8_t. <br /></td></tr>
 <tr class="separator:ga24f578d9e6c5f8c9cb0bbcad28e972c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf30b52d3b4a974d03927240cb6c8d0d7"><td class="memItemLeft" align="right" valign="top"><a id="gaf30b52d3b4a974d03927240cb6c8d0d7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gaf30b52d3b4a974d03927240cb6c8d0d7">BCM_STRNCPY_S</a>(x1,  x2,  x3,  x4)&#160;&#160;&#160;strncpy((x1),(x3),(x4))</td></tr>
@@ -438,19 +438,19 @@ Macros</h2></td></tr>
 <tr class="separator:gaf30b52d3b4a974d03927240cb6c8d0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9f9a22f0e0b7cc5b7ad46a7730fed88a"><td class="memItemLeft" align="right" valign="top"><a id="ga9f9a22f0e0b7cc5b7ad46a7730fed88a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga9f9a22f0e0b7cc5b7ad46a7730fed88a">UINT32_TO_STREAM</a>(p,  u32)&#160;&#160;&#160;{*(p)++ = (uint8_t)(u32); *(p)++ = (uint8_t)((u32) &gt;&gt; 8); *(p)++ = (uint8_t)((u32) &gt;&gt; 16); *(p)++ = (uint8_t)((u32) &gt;&gt; 24);}</td></tr>
-<tr class="memdesc:ga9f9a22f0e0b7cc5b7ad46a7730fed88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT32 to Stream. <br /></td></tr>
+<tr class="memdesc:ga9f9a22f0e0b7cc5b7ad46a7730fed88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint32_t to Stream. <br /></td></tr>
 <tr class="separator:ga9f9a22f0e0b7cc5b7ad46a7730fed88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ae550c3b54442a3f763c120f79a0793"><td class="memItemLeft" align="right" valign="top"><a id="ga8ae550c3b54442a3f763c120f79a0793"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga8ae550c3b54442a3f763c120f79a0793">UINT16_TO_STREAM</a>(p,  u16)&#160;&#160;&#160;{*(p)++ = (uint8_t)(u16); *(p)++ = (uint8_t)((u16) &gt;&gt; 8);}</td></tr>
-<tr class="memdesc:ga8ae550c3b54442a3f763c120f79a0793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT16 to Stream. <br /></td></tr>
+<tr class="memdesc:ga8ae550c3b54442a3f763c120f79a0793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint16_t to Stream. <br /></td></tr>
 <tr class="separator:ga8ae550c3b54442a3f763c120f79a0793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga23618bbae8e971ad8908e669dc67a651"><td class="memItemLeft" align="right" valign="top"><a id="ga23618bbae8e971ad8908e669dc67a651"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga23618bbae8e971ad8908e669dc67a651">STREAM_TO_UINT32</a>(u32,  p)&#160;&#160;&#160;{u32 = (((uint32_t)(*(p))) + ((((uint32_t)(*((p) + 1)))) &lt;&lt; 8) + ((((uint32_t)(*((p) + 2)))) &lt;&lt; 16) + ((((uint32_t)(*((p) + 3)))) &lt;&lt; 24)); (p) += 4;}</td></tr>
-<tr class="memdesc:ga23618bbae8e971ad8908e669dc67a651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert Stream to UINT32. <br /></td></tr>
+<tr class="memdesc:ga23618bbae8e971ad8908e669dc67a651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert Stream to uint32_t. <br /></td></tr>
 <tr class="separator:ga23618bbae8e971ad8908e669dc67a651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga670ed0fdcc98bb8602542d045fce12eb"><td class="memItemLeft" align="right" valign="top"><a id="ga670ed0fdcc98bb8602542d045fce12eb"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga670ed0fdcc98bb8602542d045fce12eb">STREAM_TO_UINT16</a>(u16,  p)&#160;&#160;&#160;{u16 = ((uint16_t)(*(p)) + (((uint16_t)(*((p) + 1))) &lt;&lt; 8)); (p) += 2;}</td></tr>
-<tr class="memdesc:ga670ed0fdcc98bb8602542d045fce12eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert Stream to UINT16. <br /></td></tr>
+<tr class="memdesc:ga670ed0fdcc98bb8602542d045fce12eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert Stream to uint16_t. <br /></td></tr>
 <tr class="separator:ga670ed0fdcc98bb8602542d045fce12eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga91ec9c9ea053d90efffcaa3db2674e93"><td class="memItemLeft" align="right" valign="top"><a id="ga91ec9c9ea053d90efffcaa3db2674e93"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga91ec9c9ea053d90efffcaa3db2674e93">BDADDR_TO_STREAM</a>(p,  a)&#160;&#160;&#160;{ p = <a class="el" href="group__bt__types.html#ga8c6e51c9a4a1d728812814dd1c0f87b8">BTU_copyBdaToStream</a>(p, (uint8_t *)(a)); }</td></tr>
@@ -462,7 +462,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga35346763e3ee5924c77efc44ea0e8742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1692c4716ada7880f01eea87cc24789b"><td class="memItemLeft" align="right" valign="top"><a id="ga1692c4716ada7880f01eea87cc24789b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga1692c4716ada7880f01eea87cc24789b">UINT32_TO_FIELD</a>(p,  u32)&#160;&#160;&#160;{*(uint8_t *)(p) = (uint8_t)(u32); *((uint8_t *)(p)+1) = (uint8_t)((u32) &gt;&gt; 8); *((uint8_t *)(p)+2) = (uint8_t)((u32) &gt;&gt; 16); *((uint8_t *)(p)+3) = (uint8_t)((u32) &gt;&gt; 24);}</td></tr>
-<tr class="memdesc:ga1692c4716ada7880f01eea87cc24789b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT32 to Field. <br /></td></tr>
+<tr class="memdesc:ga1692c4716ada7880f01eea87cc24789b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint32_t to Field. <br /></td></tr>
 <tr class="separator:ga1692c4716ada7880f01eea87cc24789b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga306776371385d555d3ad4da08dd291dd"><td class="memItemLeft" align="right" valign="top"><a id="ga306776371385d555d3ad4da08dd291dd"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga306776371385d555d3ad4da08dd291dd">UINT24_TO_FIELD</a>(p,  u24)&#160;&#160;&#160;{*(uint8_t *)(p) = (uint8_t)(u24); *((uint8_t *)(p)+1) = (uint8_t)((u24) &gt;&gt; 8); *((uint8_t *)(p)+2) = (uint8_t)((u24) &gt;&gt; 16);}</td></tr>
@@ -470,21 +470,21 @@ Macros</h2></td></tr>
 <tr class="separator:ga306776371385d555d3ad4da08dd291dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga88160d8900d68fe47dc5dffd74dcac43"><td class="memItemLeft" align="right" valign="top"><a id="ga88160d8900d68fe47dc5dffd74dcac43"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga88160d8900d68fe47dc5dffd74dcac43">UINT16_TO_FIELD</a>(p,  u16)&#160;&#160;&#160;{*(uint8_t *)(p) = (uint8_t)(u16); *((uint8_t *)(p)+1) = (uint8_t)((u16) &gt;&gt; 8);}</td></tr>
-<tr class="memdesc:ga88160d8900d68fe47dc5dffd74dcac43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT16 to Field. <br /></td></tr>
+<tr class="memdesc:ga88160d8900d68fe47dc5dffd74dcac43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint16_t to Field. <br /></td></tr>
 <tr class="separator:ga88160d8900d68fe47dc5dffd74dcac43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4834055be2a1acfd60b171e0bb0ef138"><td class="memItemLeft" align="right" valign="top"><a id="ga4834055be2a1acfd60b171e0bb0ef138"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga4834055be2a1acfd60b171e0bb0ef138">UINT8_TO_FIELD</a>(p,  u8)&#160;&#160;&#160;{*(uint8_t *)(p) = (uint8_t)(u8);}</td></tr>
-<tr class="memdesc:ga4834055be2a1acfd60b171e0bb0ef138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT8 to Field. <br /></td></tr>
+<tr class="memdesc:ga4834055be2a1acfd60b171e0bb0ef138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint8_t to Field. <br /></td></tr>
 <tr class="separator:ga4834055be2a1acfd60b171e0bb0ef138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa90d84042dc6969f73b4c95fb66df69d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gaa90d84042dc6969f73b4c95fb66df69d">UINT128_TO_BE_STREAM</a>(p,  u128)</td></tr>
 <tr class="memdesc:gaa90d84042dc6969f73b4c95fb66df69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT128 to Stream.  <a href="#gaa90d84042dc6969f73b4c95fb66df69d">More...</a><br /></td></tr>
 <tr class="separator:gaa90d84042dc6969f73b4c95fb66df69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7cd81d83607dee93425a400cdd206534"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga7cd81d83607dee93425a400cdd206534">UINT64_TO_BE_STREAM</a>(p,  u64)</td></tr>
-<tr class="memdesc:ga7cd81d83607dee93425a400cdd206534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT64 to Stream.  <a href="#ga7cd81d83607dee93425a400cdd206534">More...</a><br /></td></tr>
+<tr class="memdesc:ga7cd81d83607dee93425a400cdd206534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint64_t to Stream.  <a href="#ga7cd81d83607dee93425a400cdd206534">More...</a><br /></td></tr>
 <tr class="separator:ga7cd81d83607dee93425a400cdd206534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5ea4453c0e23535bcd1fa289ef1cf0d8"><td class="memItemLeft" align="right" valign="top"><a id="ga5ea4453c0e23535bcd1fa289ef1cf0d8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga5ea4453c0e23535bcd1fa289ef1cf0d8">UINT32_TO_BE_STREAM</a>(p,  u32)&#160;&#160;&#160;{*(p)++ = (uint8_t)((u32) &gt;&gt; 24);  *(p)++ = (uint8_t)((u32) &gt;&gt; 16); *(p)++ = (uint8_t)((u32) &gt;&gt; 8); *(p)++ = (uint8_t)(u32); }</td></tr>
-<tr class="memdesc:ga5ea4453c0e23535bcd1fa289ef1cf0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT32 to Stream. <br /></td></tr>
+<tr class="memdesc:ga5ea4453c0e23535bcd1fa289ef1cf0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint32_t to Stream. <br /></td></tr>
 <tr class="separator:ga5ea4453c0e23535bcd1fa289ef1cf0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1900995f495b52fb6c96e2d805e33d37"><td class="memItemLeft" align="right" valign="top"><a id="ga1900995f495b52fb6c96e2d805e33d37"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga1900995f495b52fb6c96e2d805e33d37">UINT24_TO_BE_STREAM</a>(p,  u24)&#160;&#160;&#160;{*(p)++ = (uint8_t)((u24) &gt;&gt; 16); *(p)++ = (uint8_t)((u24) &gt;&gt; 8); *(p)++ = (uint8_t)(u24);}</td></tr>
@@ -492,11 +492,11 @@ Macros</h2></td></tr>
 <tr class="separator:ga1900995f495b52fb6c96e2d805e33d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ca44a3f063dc0db414262e49fc399c9"><td class="memItemLeft" align="right" valign="top"><a id="ga3ca44a3f063dc0db414262e49fc399c9"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga3ca44a3f063dc0db414262e49fc399c9">UINT16_TO_BE_STREAM</a>(p,  u16)&#160;&#160;&#160;{*(p)++ = (uint8_t)((u16) &gt;&gt; 8); *(p)++ = (uint8_t)(u16);}</td></tr>
-<tr class="memdesc:ga3ca44a3f063dc0db414262e49fc399c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT16 to Stream. <br /></td></tr>
+<tr class="memdesc:ga3ca44a3f063dc0db414262e49fc399c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint16_t to Stream. <br /></td></tr>
 <tr class="separator:ga3ca44a3f063dc0db414262e49fc399c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9a0bd8799801f916a7a7e1c6753d3f11"><td class="memItemLeft" align="right" valign="top"><a id="ga9a0bd8799801f916a7a7e1c6753d3f11"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga9a0bd8799801f916a7a7e1c6753d3f11">UINT8_TO_BE_STREAM</a>(p,  u8)&#160;&#160;&#160;{*(p)++ = (uint8_t)(u8);}</td></tr>
-<tr class="memdesc:ga9a0bd8799801f916a7a7e1c6753d3f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert UINT8 to Stream. <br /></td></tr>
+<tr class="memdesc:ga9a0bd8799801f916a7a7e1c6753d3f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covert uint8_t to Stream. <br /></td></tr>
 <tr class="separator:ga9a0bd8799801f916a7a7e1c6753d3f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6a5d30d5dda193bb3fc675c4280a7f44"><td class="memItemLeft" align="right" valign="top"><a id="ga6a5d30d5dda193bb3fc675c4280a7f44"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga6a5d30d5dda193bb3fc675c4280a7f44">ARRAY_TO_BE_STREAM</a>(p,  a,  len)&#160;&#160;&#160;{register int ijk; for (ijk = 0; ijk &lt; len; ijk++) *(p)++ = (uint8_t) a[ijk];}</td></tr>
@@ -504,11 +504,11 @@ Macros</h2></td></tr>
 <tr class="separator:ga6a5d30d5dda193bb3fc675c4280a7f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4454b5f42ce3b497db9a1da9e7dab8e0"><td class="memItemLeft" align="right" valign="top"><a id="ga4454b5f42ce3b497db9a1da9e7dab8e0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga4454b5f42ce3b497db9a1da9e7dab8e0">BE_STREAM_TO_UINT8</a>(u8,  p)&#160;&#160;&#160;{u8 = (uint8_t)(*(p)); (p) += 1;}</td></tr>
-<tr class="memdesc:ga4454b5f42ce3b497db9a1da9e7dab8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream to UINT8. <br /></td></tr>
+<tr class="memdesc:ga4454b5f42ce3b497db9a1da9e7dab8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream to uint8_t. <br /></td></tr>
 <tr class="separator:ga4454b5f42ce3b497db9a1da9e7dab8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3a4b04c2fa2fc9e6da590021f768264d"><td class="memItemLeft" align="right" valign="top"><a id="ga3a4b04c2fa2fc9e6da590021f768264d"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga3a4b04c2fa2fc9e6da590021f768264d">BE_STREAM_TO_UINT16</a>(u16,  p)&#160;&#160;&#160;{u16 = (uint16_t)(((uint16_t)(*(p)) &lt;&lt; 8) + (uint16_t)(*((p) + 1))); (p) += 2;}</td></tr>
-<tr class="memdesc:ga3a4b04c2fa2fc9e6da590021f768264d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream to UINT16. <br /></td></tr>
+<tr class="memdesc:ga3a4b04c2fa2fc9e6da590021f768264d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream to uint16_t. <br /></td></tr>
 <tr class="separator:ga3a4b04c2fa2fc9e6da590021f768264d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab83edc21b55e5022a6bf992eda9b0e15"><td class="memItemLeft" align="right" valign="top"><a id="gab83edc21b55e5022a6bf992eda9b0e15"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gab83edc21b55e5022a6bf992eda9b0e15">BE_STREAM_TO_UINT24</a>(u32,  p)&#160;&#160;&#160;{u32 = (((uint32_t)(*((p) + 2))) + ((uint32_t)(*((p) + 1)) &lt;&lt; 8) + ((uint32_t)(*(p)) &lt;&lt; 16)); (p) += 3;}</td></tr>
@@ -516,10 +516,10 @@ Macros</h2></td></tr>
 <tr class="separator:gab83edc21b55e5022a6bf992eda9b0e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab62c86f752c1cd90b5e95760ec6ee6d2"><td class="memItemLeft" align="right" valign="top"><a id="gab62c86f752c1cd90b5e95760ec6ee6d2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gab62c86f752c1cd90b5e95760ec6ee6d2">BE_STREAM_TO_UINT32</a>(u32,  p)&#160;&#160;&#160;{u32 = ((uint32_t)(*((p) + 3)) + ((uint32_t)(*((p) + 2)) &lt;&lt; 8) + ((uint32_t)(*((p) + 1)) &lt;&lt; 16) + ((uint32_t)(*(p)) &lt;&lt; 24)); (p) += 4;}</td></tr>
-<tr class="memdesc:gab62c86f752c1cd90b5e95760ec6ee6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream to UINT32. <br /></td></tr>
+<tr class="memdesc:gab62c86f752c1cd90b5e95760ec6ee6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream to uint32_t. <br /></td></tr>
 <tr class="separator:gab62c86f752c1cd90b5e95760ec6ee6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4af9adb72d2ec435804009e3a42faf95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga4af9adb72d2ec435804009e3a42faf95">BE_STREAM_TO_UINT64</a>(u64,  p)</td></tr>
-<tr class="memdesc:ga4af9adb72d2ec435804009e3a42faf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream to UINT64.  <a href="#ga4af9adb72d2ec435804009e3a42faf95">More...</a><br /></td></tr>
+<tr class="memdesc:ga4af9adb72d2ec435804009e3a42faf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream to uint64_t.  <a href="#ga4af9adb72d2ec435804009e3a42faf95">More...</a><br /></td></tr>
 <tr class="separator:ga4af9adb72d2ec435804009e3a42faf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf3f1b6f6fb034587395bef5a390e8d9a"><td class="memItemLeft" align="right" valign="top"><a id="gaf3f1b6f6fb034587395bef5a390e8d9a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gaf3f1b6f6fb034587395bef5a390e8d9a">BE_STREAM_TO_ARRAY</a>(p,  a,  len)&#160;&#160;&#160;{register int ijk; for (ijk = 0; ijk &lt; len; ijk++) ((uint8_t *) a)[ijk] = *p++;}</td></tr>
@@ -527,7 +527,7 @@ Macros</h2></td></tr>
 <tr class="separator:gaf3f1b6f6fb034587395bef5a390e8d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga595ab5116e0add8d070b729c2a265093"><td class="memItemLeft" align="right" valign="top"><a id="ga595ab5116e0add8d070b729c2a265093"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga595ab5116e0add8d070b729c2a265093">UINT32_TO_BE_FIELD</a>(p,  u32)&#160;&#160;&#160;{*(uint8_t *)(p) = (uint8_t)((u32) &gt;&gt; 24);  *((uint8_t *)(p)+1) = (uint8_t)((u32) &gt;&gt; 16); *((uint8_t *)(p)+2) = (uint8_t)((u32) &gt;&gt; 8); *((uint8_t *)(p)+3) = (uint8_t)(u32); }</td></tr>
-<tr class="memdesc:ga595ab5116e0add8d070b729c2a265093"><td class="mdescLeft">&#160;</td><td class="mdescRight">UINT32 to Field. <br /></td></tr>
+<tr class="memdesc:ga595ab5116e0add8d070b729c2a265093"><td class="mdescLeft">&#160;</td><td class="mdescRight">uint32_t to Field <br /></td></tr>
 <tr class="separator:ga595ab5116e0add8d070b729c2a265093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c6c30ec9ffc3f96da053bb45923d09e"><td class="memItemLeft" align="right" valign="top"><a id="ga2c6c30ec9ffc3f96da053bb45923d09e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga2c6c30ec9ffc3f96da053bb45923d09e">UINT24_TO_BE_FIELD</a>(p,  u24)&#160;&#160;&#160;{*(uint8_t *)(p) = (uint8_t)((u24) &gt;&gt; 16); *((uint8_t *)(p)+1) = (uint8_t)((u24) &gt;&gt; 8); *((uint8_t *)(p)+2) = (uint8_t)(u24);}</td></tr>
@@ -535,11 +535,11 @@ Macros</h2></td></tr>
 <tr class="separator:ga2c6c30ec9ffc3f96da053bb45923d09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa1018eb08a799320612e706ca43a6e97"><td class="memItemLeft" align="right" valign="top"><a id="gaa1018eb08a799320612e706ca43a6e97"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gaa1018eb08a799320612e706ca43a6e97">UINT16_TO_BE_FIELD</a>(p,  u16)&#160;&#160;&#160;{*(uint8_t *)(p) = (uint8_t)((u16) &gt;&gt; 8); *((uint8_t *)(p)+1) = (uint8_t)(u16);}</td></tr>
-<tr class="memdesc:gaa1018eb08a799320612e706ca43a6e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">UINT16 to Field. <br /></td></tr>
+<tr class="memdesc:gaa1018eb08a799320612e706ca43a6e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">uint16_t to Field <br /></td></tr>
 <tr class="separator:gaa1018eb08a799320612e706ca43a6e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga102a82c8e8d4e2e144860ecf33d60dee"><td class="memItemLeft" align="right" valign="top"><a id="ga102a82c8e8d4e2e144860ecf33d60dee"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga102a82c8e8d4e2e144860ecf33d60dee">UINT8_TO_BE_FIELD</a>(p,  u8)&#160;&#160;&#160;{*(uint8_t *)(p) = (uint8_t)(u8);}</td></tr>
-<tr class="memdesc:ga102a82c8e8d4e2e144860ecf33d60dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">UINT8 to Field. <br /></td></tr>
+<tr class="memdesc:ga102a82c8e8d4e2e144860ecf33d60dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">uint8_t to Field <br /></td></tr>
 <tr class="separator:ga102a82c8e8d4e2e144860ecf33d60dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae76c082864c44002a8d4f508341ad361"><td class="memItemLeft" align="right" valign="top"><a id="gae76c082864c44002a8d4f508341ad361"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gae76c082864c44002a8d4f508341ad361">EXPAND_BDADDR</a>(bd)&#160;&#160;&#160;bd[0],bd[1],bd[2],bd[3],bd[4],bd[5]</td></tr>
@@ -781,7 +781,7 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{*(p)++ = (uint8_t)(u64);       *(p)++ = (uint8_t)((u64) &gt;&gt; 8);*(p)++ = (uint8_t)((u64) &gt;&gt; 16); *(p)++ = (uint8_t)((u64) &gt;&gt; 24); \</div><div class="line">                                    *(p)++ = (uint8_t)((u64) &gt;&gt; 32); *(p)++ = (uint8_t)((u64) &gt;&gt; 40);*(p)++ = (uint8_t)((u64) &gt;&gt; 48); *(p)++ = (uint8_t)((u64) &gt;&gt; 56);}</div></div><!-- fragment -->
-<p>Covert UINT64 to Stream array. </p>
+<p>Covert uint64_t to Stream array. </p>
 
 </div>
 </div>
@@ -871,7 +871,7 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{*(p)++ = (uint8_t)((u64) &gt;&gt; 56); *(p)++ = (uint8_t)((u64) &gt;&gt; 48);*(p)++ = (uint8_t)((u64) &gt;&gt; 40); *(p)++ = (uint8_t)((u64) &gt;&gt; 32); \</div><div class="line">                                     *(p)++ = (uint8_t)((u64) &gt;&gt; 24); *(p)++ = (uint8_t)((u64) &gt;&gt; 16);*(p)++ = (uint8_t)((u64) &gt;&gt; 8); *(p)++ = (uint8_t)(u64); }</div></div><!-- fragment -->
-<p>Covert UINT64 to Stream. </p>
+<p>Covert uint64_t to Stream. </p>
 
 </div>
 </div>
@@ -900,8 +900,8 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{u64 = ((UINT64)(*((p) + 7)) + ((UINT64)(*((p) + 6)) &lt;&lt; 8) + ((UINT64)(*((p) + 5)) &lt;&lt; 16) + ((UINT64)(*((p) + 4)) &lt;&lt; 24) + \</div><div class="line">                                           ((UINT64)(*((p) + 3)) &lt;&lt; 32) + ((UINT64)(*((p) + 2)) &lt;&lt; 40) + ((UINT64)(*((p) + 1)) &lt;&lt; 48) + ((UINT64)(*(p)) &lt;&lt; 56)); (p) += 8;}</div></div><!-- fragment -->
-<p>Stream to UINT64. </p>
+<b>Value:</b><div class="fragment"><div class="line">{u64 = ((UINT64)(*((p) + 7)) + ((UINT64)(*((p) + 6)) &lt;&lt; 8) + ((UINT64)(*((p) + 5)) &lt;&lt; 16) + ((UINT64)(*((p) + 4)) &lt;&lt; 24) + \</div><div class="line">                                           ((uint64_t)(*((p) + 3)) &lt;&lt; 32) + ((uint64_t)(*((p) + 2)) &lt;&lt; 40) + ((uint64_t)(*((p) + 1)) &lt;&lt; 48) + ((uint64_t)(*(p)) &lt;&lt; 56)); (p) += 8;}</div></div><!-- fragment -->
+<p>Stream to uint64_t. </p>
 
 </div>
 </div>

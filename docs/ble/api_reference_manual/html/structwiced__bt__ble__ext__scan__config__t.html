@@ -111,11 +111,12 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__scan__config__t.html#a941803bfaac1371cc8adf42af7a645c4">enc_phy_scan_win</a></td></tr>
 <tr class="memdesc:a941803bfaac1371cc8adf42af7a645c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">encoded phy scan window <br /></td></tr>
 <tr class="separator:a941803bfaac1371cc8adf42af7a645c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b3df3e340d415a8fa0a112896437efd"><td class="memItemLeft" align="right" valign="top"><a id="a4b3df3e340d415a8fa0a112896437efd"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b></td></tr>
+<tr class="memitem:a4b3df3e340d415a8fa0a112896437efd"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__scan__config__t.html#a4b3df3e340d415a8fa0a112896437efd">duration</a></td></tr>
+<tr class="memdesc:a4b3df3e340d415a8fa0a112896437efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the Duration and Period parameters are non-zero, the Controller shall scan for the duration of the Duration parameter within a scan period specified by the Period parameter.  <a href="#a4b3df3e340d415a8fa0a112896437efd">More...</a><br /></td></tr>
 <tr class="separator:a4b3df3e340d415a8fa0a112896437efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1af021a2bf4ae5528b054eb46c6727c9"><td class="memItemLeft" align="right" valign="top"><a id="a1af021a2bf4ae5528b054eb46c6727c9"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>period</b></td></tr>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__scan__config__t.html#a1af021a2bf4ae5528b054eb46c6727c9">period</a></td></tr>
+<tr class="memdesc:a1af021a2bf4ae5528b054eb46c6727c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scan period. <br /></td></tr>
 <tr class="separator:a1af021a2bf4ae5528b054eb46c6727c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
@@ -149,6 +150,23 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>period</b></td></
 
 <p>encoded phy scan type. </p>
 <p>(active or passive) </p>
+
+</div>
+</div>
+<a id="a4b3df3e340d415a8fa0a112896437efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b3df3e340d415a8fa0a112896437efd">&#9670;&nbsp;</a></span>duration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t wiced_bt_ble_ext_scan_config_t::duration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When the Duration and Period parameters are non-zero, the Controller shall scan for the duration of the Duration parameter within a scan period specified by the Period parameter. </p>
+<p>After the scan period has expired, a new scan period shall begin and scanning shall begin again for the duration specified. The scan periods continue until the Host disables scanning. Duration parameter cannot be greater than or equal to the Period parameter If the Duration parameter is zero or both the Duration parameter and Period parameter are non-zero controller continue scanning until host disable scanning with enable set to false Scan duration </p>
 
 </div>
 </div>

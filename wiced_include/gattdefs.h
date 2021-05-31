@@ -1,13 +1,11 @@
-/****************************************************************************/
-/*                                                                          */
-/*  Name:       gattdefs.h                                                  */
-/*                                                                          */
-/*  Function    this file contains internally used ATT definitions          */
-/*                                                                          */
-/*  Copyright (c) 2009-2013, Broadcom Corp., All Rights Reserved.           */
-/*  Broadcom Bluetooth Core. Proprietary and confidential.                  */
-/*                                                                          */
-/*****************************************************************************/
+/*
+ * $ Copyright Cypress Semiconductor $
+ */
+
+/** @file
+ *
+ *  WICED Generic Attribute (GATT) Application Programming Interface definitions
+ */
 
 #ifndef  _GATTDEFS_H
 #define  _GATTDEFS_H

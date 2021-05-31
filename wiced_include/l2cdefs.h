@@ -1,15 +1,11 @@
-/****************************************************************************
-**
-**  Name:       l2cdefs.h
-**
-**   Function:   This file contains L2CAP protocol definitions
-**
-**
-**
-**  Copyright (c) 1999-2014, Broadcom Corp., All Rights Reserved.
-**  Broadcom Bluetooth Core. Proprietary and confidential.
-**
-*****************************************************************************/
+/*
+ * $ Copyright Cypress Semiconductor $
+ */
+
+/** @file
+ *
+ *   This file contains L2CAP protocol definitions
+ */
 
 #ifndef L2CDEFS_H
 #define L2CDEFS_H
@@ -162,11 +158,17 @@
 #define L2CAP_BLE_SIGNALLING_CID        5           /**< BLE Signalling CID */
 #define L2CAP_SMP_CID                   6           /**< SMP CID */
 #define L2CAP_SMP_BR_CID                7           /**< SMP BR CID */
+
+#define L2CAP_FIRST_FIXED_CHNL          0x04        /**< First fixed channel */
+#define L2CAP_LAST_FIXED_CHNL           0x3E        /**< Last fixed channel */
+
+
 #define L2CAP_ASSIGNED_NUM_START        0x0020      /**< Channel Assigned Number Start */
 #define L2CAP_ASSIGNED_NUM_END          0x003E      /**< Channel Assigned Number End */
 #define L2CAP_AMP_TEST_CID              0x003F      /**< AMP Test CID */
 #define L2CAP_BASE_APPL_CID             0x0040      /**< Dynamic : Base CID */
 #define L2CAP_BLE_CONN_MAX_CID          0x007F      /**< Max BLE CID */
+
 /** @} L2CAP_PREDIFINED_CIDS */
 
 /**

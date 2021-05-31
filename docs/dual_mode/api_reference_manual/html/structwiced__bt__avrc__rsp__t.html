@@ -93,40 +93,39 @@ $(document).ready(function(){initNavTree('structwiced__bt__avrc__rsp__t.html',''
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>Generic AVRC response. </p>
+<div class="textblock"><p>AVRC response messages. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a1ecd2f0911829c5ddf5be135fdd8cc90"><td class="memItemLeft" align="right" valign="top"><a id="a1ecd2f0911829c5ddf5be135fdd8cc90"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__avrc__rsp__t.html#a1ecd2f0911829c5ddf5be135fdd8cc90">pdu</a></td></tr>
-<tr class="memdesc:a1ecd2f0911829c5ddf5be135fdd8cc90"><td class="mdescLeft">&#160;</td><td class="mdescRight">pdu id <br /></td></tr>
-<tr class="separator:a1ecd2f0911829c5ddf5be135fdd8cc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5ad7ff248134981b4c64050d55022db"><td class="memItemLeft" align="right" valign="top"><a id="ab5ad7ff248134981b4c64050d55022db"></a>
-<a class="el" href="group__wicedbt__avrc.html#ga05446fa1277163e92d7ffe155d72b072">wiced_bt_avrc_sts_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__avrc__rsp__t.html#ab5ad7ff248134981b4c64050d55022db">status</a></td></tr>
-<tr class="memdesc:ab5ad7ff248134981b4c64050d55022db"><td class="mdescLeft">&#160;</td><td class="mdescRight">status <br /></td></tr>
-<tr class="separator:ab5ad7ff248134981b4c64050d55022db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0449ec37cd4845f14857ae3c18699ec1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__avrc__rsp__t.html#a0449ec37cd4845f14857ae3c18699ec1">opcode</a></td></tr>
-<tr class="memdesc:a0449ec37cd4845f14857ae3c18699ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user.  <a href="#a0449ec37cd4845f14857ae3c18699ec1">More...</a><br /></td></tr>
-<tr class="separator:a0449ec37cd4845f14857ae3c18699ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a80f3d23ec2f5b51a7330927fd1fa93"><td class="memItemLeft" align="right" valign="top"><a id="a2a80f3d23ec2f5b51a7330927fd1fa93"></a>
+<a class="el" href="structwiced__bt__avrc__hdr__t.html">wiced_bt_avrc_hdr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__avrc__rsp__t.html#a2a80f3d23ec2f5b51a7330927fd1fa93">hdr</a></td></tr>
+<tr class="memdesc:a2a80f3d23ec2f5b51a7330927fd1fa93"><td class="mdescLeft">&#160;</td><td class="mdescRight">AVRC command header. <br /></td></tr>
+<tr class="separator:a2a80f3d23ec2f5b51a7330927fd1fa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb22edc482ad03c3645a38b4d6e99cc"><td class="memItemLeft" ><a id="a2cb22edc482ad03c3645a38b4d6e99cc"></a>
+union {</td></tr>
+<tr class="memitem:abf477ae29064788d78e75b3aa421c925"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__unit__info__rsp__t.html">wiced_bt_avrc_unit_info_rsp_t</a>&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__rsp__t.html#ac74b3337f23f36a88491413b197d697f">unit</a></td></tr>
+<tr class="memdesc:abf477ae29064788d78e75b3aa421c925"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit info response <br /></td></tr>
+<tr class="separator:abf477ae29064788d78e75b3aa421c925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc541d25cb2493abfe2b0e836875e0d"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__sub__unit__info__rsp__t.html">wiced_bt_avrc_sub_unit_info_rsp_t</a>&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__rsp__t.html#a5b2646405472c0c32034d777d96009e3">sub_unit</a></td></tr>
+<tr class="memdesc:a2cc541d25cb2493abfe2b0e836875e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">subunit response <br /></td></tr>
+<tr class="separator:a2cc541d25cb2493abfe2b0e836875e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a13782250ba84b84451ae26a1715f6"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__pass__thru__hdr__t.html">wiced_bt_avrc_pass_thru_hdr_t</a>&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__rsp__t.html#a4f821601b323621c3ef872f650731b64">pass</a></td></tr>
+<tr class="memdesc:a10a13782250ba84b84451ae26a1715f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passthrough response. <br /></td></tr>
+<tr class="separator:a10a13782250ba84b84451ae26a1715f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa271368cbd35a826a6bd46e3a92a9748"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__metadata__rsp__t.html">wiced_bt_avrc_metadata_rsp_t</a>&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__rsp__t.html#a996b5463697821b401b5f3c892a47b13">metadata</a></td></tr>
+<tr class="memdesc:aa271368cbd35a826a6bd46e3a92a9748"><td class="mdescLeft">&#160;</td><td class="mdescRight">vendor response <br /></td></tr>
+<tr class="separator:aa271368cbd35a826a6bd46e3a92a9748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bde28443dac45945490cb8e06151eee"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__browse__rsp__t.html">wiced_bt_avrc_browse_rsp_t</a>&#160;&#160;&#160;<a class="el" href="structwiced__bt__avrc__rsp__t.html#a3fa4eb4bbe33d12752da63b124f72aa6">browse_rsp</a></td></tr>
+<tr class="memdesc:a5bde28443dac45945490cb8e06151eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Browse response. <br /></td></tr>
+<tr class="separator:a5bde28443dac45945490cb8e06151eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb22edc482ad03c3645a38b4d6e99cc"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="separator:a2cb22edc482ad03c3645a38b4d6e99cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a0449ec37cd4845f14857ae3c18699ec1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0449ec37cd4845f14857ae3c18699ec1">&#9670;&nbsp;</a></span>opcode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t wiced_bt_avrc_rsp_t::opcode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Op Code (copied from avrc_cmd.opcode by AVRC_BldMetaDataRsp user. </p>
-<p>invalid one to generate according to pdu) </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

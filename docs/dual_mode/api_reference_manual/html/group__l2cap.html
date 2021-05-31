@@ -176,9 +176,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga8eb954ec0a272b02c6fc69bd07ea7602"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga8eb954ec0a272b02c6fc69bd07ea7602">wiced_bt_l2cap_connected_cback_t</a>(<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, uint16_t local_cid, uint16_t peer_mtu)</td></tr>
 <tr class="memdesc:ga8eb954ec0a272b02c6fc69bd07ea7602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection established callback prototype.  <a href="#ga8eb954ec0a272b02c6fc69bd07ea7602">More...</a><br /></td></tr>
 <tr class="separator:ga8eb954ec0a272b02c6fc69bd07ea7602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0e68b372edf738aa34033e23063ac21d"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga0e68b372edf738aa34033e23063ac21d">wiced_bt_l2cap_disconnect_indication_cback_t</a>(uint16_t local_cid, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> ack)</td></tr>
-<tr class="memdesc:ga0e68b372edf738aa34033e23063ac21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect indication callback prototype.  <a href="#ga0e68b372edf738aa34033e23063ac21d">More...</a><br /></td></tr>
-<tr class="separator:ga0e68b372edf738aa34033e23063ac21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e06cc2cf38b4956b5bf6f521de8b3c7"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga8e06cc2cf38b4956b5bf6f521de8b3c7">wiced_bt_l2cap_disconnect_indication_cback_t</a>(uint16_t local_cid, uint16_t reason, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> ack)</td></tr>
+<tr class="memdesc:ga8e06cc2cf38b4956b5bf6f521de8b3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect indication callback prototype.  <a href="#ga8e06cc2cf38b4956b5bf6f521de8b3c7">More...</a><br /></td></tr>
+<tr class="separator:ga8e06cc2cf38b4956b5bf6f521de8b3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0a296b1bb20b46ebc680a7bec99a740a"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga0a296b1bb20b46ebc680a7bec99a740a">wiced_bt_l2cap_disconnect_confirm_cback_t</a>(uint16_t local_cid, uint16_t result)</td></tr>
 <tr class="memdesc:ga0a296b1bb20b46ebc680a7bec99a740a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect confirm callback prototype.  <a href="#ga0a296b1bb20b46ebc680a7bec99a740a">More...</a><br /></td></tr>
 <tr class="separator:ga0a296b1bb20b46ebc680a7bec99a740a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -475,14 +475,14 @@ L2CAP role</h2></td></tr>
 <p>L2CAP role and new_role parameter used in a call <a class="el" href="group__l2cap__br__edr__api__functions.html#ga1be60582ea9b01e00b5441d8bfe2f279">wiced_bt_l2cap_set_desire_role()</a></p>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="group__l2cap.html#ga48e2f51a7931eeba4e4d5dff16b00a00">L2CAP_ROLE_SCATTERNET_ALLOWED</a> bit is used to prevent l2CAP to Automatically perform role switch (for both Incoming and outgoing) ACL connections. </dd></dl>
 </td></tr>
-<tr class="memitem:gae552fb2592a3026e38d98e92cd8fec10"><td class="memItemLeft" align="right" valign="top"><a id="gae552fb2592a3026e38d98e92cd8fec10"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#gae552fb2592a3026e38d98e92cd8fec10">L2CAP_ROLE_SLAVE</a>&#160;&#160;&#160;HCI_ROLE_SLAVE</td></tr>
-<tr class="memdesc:gae552fb2592a3026e38d98e92cd8fec10"><td class="mdescLeft">&#160;</td><td class="mdescRight">L2CAP Slave role. <br /></td></tr>
-<tr class="separator:gae552fb2592a3026e38d98e92cd8fec10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c7080e318877c40c17c7c94b60f06b1"><td class="memItemLeft" align="right" valign="top"><a id="ga3c7080e318877c40c17c7c94b60f06b1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga3c7080e318877c40c17c7c94b60f06b1">L2CAP_ROLE_MASTER</a>&#160;&#160;&#160;HCI_ROLE_MASTER</td></tr>
-<tr class="memdesc:ga3c7080e318877c40c17c7c94b60f06b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">L2CAP Master role. <br /></td></tr>
-<tr class="separator:ga3c7080e318877c40c17c7c94b60f06b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga972f5c4387bd41dcfaf6cd30bd3d4f5e"><td class="memItemLeft" align="right" valign="top"><a id="ga972f5c4387bd41dcfaf6cd30bd3d4f5e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga972f5c4387bd41dcfaf6cd30bd3d4f5e">L2CAP_ROLE_PERIPHERAL</a>&#160;&#160;&#160;HCI_ROLE_PERIPHERAL</td></tr>
+<tr class="memdesc:ga972f5c4387bd41dcfaf6cd30bd3d4f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">L2CAP Peripheral role. <br /></td></tr>
+<tr class="separator:ga972f5c4387bd41dcfaf6cd30bd3d4f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c9ea3880806b7c5f06a04c2e7d86227"><td class="memItemLeft" align="right" valign="top"><a id="ga1c9ea3880806b7c5f06a04c2e7d86227"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga1c9ea3880806b7c5f06a04c2e7d86227">L2CAP_ROLE_CENTRAL</a>&#160;&#160;&#160;HCI_ROLE_CENTRAL</td></tr>
+<tr class="memdesc:ga1c9ea3880806b7c5f06a04c2e7d86227"><td class="mdescLeft">&#160;</td><td class="mdescRight">L2CAP Central role. <br /></td></tr>
+<tr class="separator:ga1c9ea3880806b7c5f06a04c2e7d86227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaabfdc8c8aaca18681f322353b098a611"><td class="memItemLeft" align="right" valign="top"><a id="gaabfdc8c8aaca18681f322353b098a611"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#gaabfdc8c8aaca18681f322353b098a611">L2CAP_ROLE_ALLOW_SWITCH</a>&#160;&#160;&#160;0x80</td></tr>
 <tr class="memdesc:gaabfdc8c8aaca18681f322353b098a611"><td class="mdescLeft">&#160;</td><td class="mdescRight">set this bit to allow switch at create conn <br /></td></tr>
@@ -667,14 +667,14 @@ L2CAP LE PSM</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0e68b372edf738aa34033e23063ac21d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0e68b372edf738aa34033e23063ac21d">&#9670;&nbsp;</a></span>wiced_bt_l2cap_disconnect_indication_cback_t</h2>
+<a id="ga8e06cc2cf38b4956b5bf6f521de8b3c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e06cc2cf38b4956b5bf6f521de8b3c7">&#9670;&nbsp;</a></span>wiced_bt_l2cap_disconnect_indication_cback_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void() wiced_bt_l2cap_disconnect_indication_cback_t(uint16_t local_cid, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> ack)</td>
+          <td class="memname">typedef void() wiced_bt_l2cap_disconnect_indication_cback_t(uint16_t local_cid, uint16_t reason, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> ack)</td>
         </tr>
       </table>
 </div><div class="memdoc">

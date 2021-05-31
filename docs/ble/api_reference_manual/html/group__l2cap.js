@@ -6,7 +6,7 @@ var group__l2cap =
       [ "max_transmit", "structwiced__bt__l2cap__fcr__options__t.html#afe2018f3e77aac76d74b934b9a003a81", null ],
       [ "rtrans_timeout_ms", "structwiced__bt__l2cap__fcr__options__t.html#a2bf326f2715649a9bad849bb3071f675", null ],
       [ "monitor_timeout_ms", "structwiced__bt__l2cap__fcr__options__t.html#a156d53134028dc6c86b6c512eef57826", null ],
-      [ "max_pdu_size", "structwiced__bt__l2cap__fcr__options__t.html#a94516b043cf3568b266d8f5158fe802e", null ]
+      [ "max_rx_pdu_size", "structwiced__bt__l2cap__fcr__options__t.html#aacb8ba17080061b88e03504fc4ea5643", null ]
     ] ],
     [ "wiced_bt_l2cap_cfg_information_t", "structwiced__bt__l2cap__cfg__information__t.html", [
       [ "result", "structwiced__bt__l2cap__cfg__information__t.html#a14d7acfffa5a30489df9946b721fdbf4", null ],
@@ -29,15 +29,16 @@ var group__l2cap =
       [ "data_indication_cback", "structwiced__bt__l2cap__appl__information__t.html#aca561436a003734a64e4b1b2d3806d83", null ],
       [ "tx_complete_cback", "structwiced__bt__l2cap__appl__information__t.html#ac63cd89496eee5f981eec222303ac922", null ],
       [ "mtu", "structwiced__bt__l2cap__appl__information__t.html#a92697e17aa1667a6ecd613544ba2e777", null ],
-      [ "qos_present", "structwiced__bt__l2cap__appl__information__t.html#aff5fc7b42b6765c601b7928cf1491e8b", null ],
+      [ "security_required", "structwiced__bt__l2cap__appl__information__t.html#a3f46fe30b21b2b6477f543f00ba6448f", null ],
+      [ "qos_present", "structwiced__bt__l2cap__appl__information__t.html#af1bf7cfc279aba76b1af338febba8f99", null ],
+      [ "flush_timeout_present", "structwiced__bt__l2cap__appl__information__t.html#a116f61fdbf56574de545a18611e345bf", null ],
+      [ "fcs_present", "structwiced__bt__l2cap__appl__information__t.html#a201f156f265c18d387a77ae949d4a60b", null ],
+      [ "is_ob_only", "structwiced__bt__l2cap__appl__information__t.html#a7694f9263de05fd026d4b2802d98fa0c", null ],
       [ "qos", "structwiced__bt__l2cap__appl__information__t.html#ab2c471279290449ff25b881a3be5c8ef", null ],
-      [ "flush_timeout_present", "structwiced__bt__l2cap__appl__information__t.html#af8eec85bfbb24229e275538175cdbc3b", null ],
       [ "flush_timeout", "structwiced__bt__l2cap__appl__information__t.html#ac0767976a7feb6692e0973992c04bbbb", null ],
       [ "fcr_allowed_modes", "structwiced__bt__l2cap__appl__information__t.html#a81ba0bc1e4f501fd00c666c42fd1814e", null ],
       [ "fcr", "structwiced__bt__l2cap__appl__information__t.html#ac96502487bcb1fc059e7aa3f3b63ce9a", null ],
-      [ "fcs_present", "structwiced__bt__l2cap__appl__information__t.html#ae3d0889f371bb0647f1906fda7d8f2ff", null ],
-      [ "fcs", "structwiced__bt__l2cap__appl__information__t.html#afbbeaabe0401b4597f34b94362123962", null ],
-      [ "is_ob_only", "structwiced__bt__l2cap__appl__information__t.html#a52de107c91dedd3c6faba2433a57026c", null ]
+      [ "fcs", "structwiced__bt__l2cap__appl__information__t.html#afbbeaabe0401b4597f34b94362123962", null ]
     ] ],
     [ "wiced_bt_l2cap_le_appl_information_t", "structwiced__bt__l2cap__le__appl__information__t.html", [
       [ "le_connect_indication_cback", "structwiced__bt__l2cap__le__appl__information__t.html#a40cd1fd3b4662ee4ef0ec57f1567d2be", null ],
@@ -50,12 +51,10 @@ var group__l2cap =
     ] ],
     [ "wiced_bt_l2cap_fixed_chnl_reg_t", "structwiced__bt__l2cap__fixed__chnl__reg__t.html", [
       [ "channel_id", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#a7869b865e083528a9bb76f9ec4393cdf", null ],
-      [ "in_use", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#a2c99ae62a90bdcae806e62af640bf553", null ],
+      [ "default_idle_timeout", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#ad05e7fe3f98693f1ff4b4601fab804fe", null ],
       [ "fixed_conn_cback", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#a52b805007d9b827a848aa711308b1e1d", null ],
       [ "fixed_data_cback", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#aa8e1572e7a8103d7df41daa1e7f11a04", null ],
-      [ "default_idle_timeout", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#ad05e7fe3f98693f1ff4b4601fab804fe", null ],
-      [ "fixed_tx_complete_cback", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#a30bcfc2d596276f4cbc67317a6c574b5", null ],
-      [ "context", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#a61787d1e3ac2ba6bd08a30c3995fab2e", null ]
+      [ "fixed_tx_complete_cback", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#a30bcfc2d596276f4cbc67317a6c574b5", null ]
     ] ],
     [ "L2CAP_CONN_OK", "group__l2cap.html#ga1c3124459bc093d9ee974c024a08dd80", null ],
     [ "L2CAP_CONN_PENDING", "group__l2cap.html#gaf7a6a61438d32cd8a86aded6630fbd8e", null ],
@@ -115,7 +114,7 @@ var group__l2cap =
     [ "L2C_BLE_IS_VALID_PSM", "group__l2cap.html#gabd075c971c2d6c15bd2f51765053e1c4", null ],
     [ "wiced_bt_l2cap_ch_cfg_bits_t", "group__l2cap.html#ga6827dfd644f1172740f9e69c0df06bc9", null ],
     [ "wiced_bt_l2cap_connected_cback_t", "group__l2cap.html#ga8eb954ec0a272b02c6fc69bd07ea7602", null ],
-    [ "wiced_bt_l2cap_disconnect_indication_cback_t", "group__l2cap.html#ga0e68b372edf738aa34033e23063ac21d", null ],
+    [ "wiced_bt_l2cap_disconnect_indication_cback_t", "group__l2cap.html#ga8e06cc2cf38b4956b5bf6f521de8b3c7", null ],
     [ "wiced_bt_l2cap_disconnect_confirm_cback_t", "group__l2cap.html#ga0a296b1bb20b46ebc680a7bec99a740a", null ],
     [ "wiced_bt_l2cap_data_indication_cback_t", "group__l2cap.html#ga5f1ea722e6d857d614fbc68192fcad37", null ],
     [ "wiced_bt_l2cap_tx_complete_cback_t", "group__l2cap.html#ga202240560832cdbfbf208871afd29153", null ],

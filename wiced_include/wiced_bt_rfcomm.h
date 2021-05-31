@@ -156,7 +156,7 @@ extern "C"
  *                                the peer device (client)
  *  @param[in]  is_server       : TRUE if requesting application is a server
  *  @param[in]  mtu             : The maximum number of bytes transferred per frame
- *                                If 0, a default size of L2CAP_MAX_RX_MTU minus
+ *                                If 0, a default size of L2CAP_MAX_BR_RX_MTU minus
  *                                5 bytes is used
  *  @param[in]  bd_addr         : BD_ADDR of the peer (if client), NULL if server (see #wiced_bt_device_address_t) 
  *  @param[in]  p_mgmt_cb       : Pointer to callback function to receive connection

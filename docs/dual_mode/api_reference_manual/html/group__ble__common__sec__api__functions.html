@@ -97,9 +97,6 @@ $(document).ready(function(){initNavTree('group__ble__common__sec__api__function
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8263c58ec739238cab4fb9d603fbd488"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ble__common__sec__api__functions.html#ga8263c58ec739238cab4fb9d603fbd488">wiced_bt_dev_configure_secure_connections_only_mode</a> (void)</td></tr>
-<tr class="memdesc:ga8263c58ec739238cab4fb9d603fbd488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure device to allow connections only with secure connections supported devices.  <a href="#ga8263c58ec739238cab4fb9d603fbd488">More...</a><br /></td></tr>
-<tr class="separator:ga8263c58ec739238cab4fb9d603fbd488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2e41482216a1a152e3ecaf1c17d5e93f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ble__common__sec__api__functions.html#ga2e41482216a1a152e3ecaf1c17d5e93f">wiced_bt_dev_sec_bond</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> bd_addr_type, <a class="el" href="group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0">wiced_bt_transport_t</a> transport, uint8_t pin_len, uint8_t *p_pin)</td></tr>
 <tr class="memdesc:ga2e41482216a1a152e3ecaf1c17d5e93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bond with peer device.  <a href="#ga2e41482216a1a152e3ecaf1c17d5e93f">More...</a><br /></td></tr>
 <tr class="separator:ga2e41482216a1a152e3ecaf1c17d5e93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,9 +112,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gad12b350f7c723d95b5a0303beb1a8940"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ble__common__sec__api__functions.html#gad12b350f7c723d95b5a0303beb1a8940">wiced_bt_dev_send_key_press_notif</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__wicedbt___device_management.html#gaabcb922e3e8a7cc04cfdc28585849ce7">wiced_bt_dev_passkey_entry_type_t</a> type)</td></tr>
 <tr class="memdesc:gad12b350f7c723d95b5a0303beb1a8940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform remote device of keypress during pairing.  <a href="#gad12b350f7c723d95b5a0303beb1a8940">More...</a><br /></td></tr>
 <tr class="separator:gad12b350f7c723d95b5a0303beb1a8940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4bbf570f3c73cbfa33ee41d7d0c09a99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ble__common__sec__api__functions.html#ga4bbf570f3c73cbfa33ee41d7d0c09a99">wiced_bt_dev_get_bonded_devices</a> (<a class="el" href="structwiced__bt__dev__bonded__device__info__t.html">wiced_bt_dev_bonded_device_info_t</a> *p_paired_device_list, uint16_t *p_num_devices)</td></tr>
-<tr class="memdesc:ga4bbf570f3c73cbfa33ee41d7d0c09a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">get bonded device list  <a href="#ga4bbf570f3c73cbfa33ee41d7d0c09a99">More...</a><br /></td></tr>
-<tr class="separator:ga4bbf570f3c73cbfa33ee41d7d0c09a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga22ddaf5bbfe649631a40c80232cfdf8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ble__common__sec__api__functions.html#ga22ddaf5bbfe649631a40c80232cfdf8c">wiced_bt_dev_delete_bonded_device</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr)</td></tr>
 <tr class="memdesc:ga22ddaf5bbfe649631a40c80232cfdf8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove bonding with remote device with assigned bd_addr Note: This API cannot be used while being connected to the remote bd_addr  <a href="#ga22ddaf5bbfe649631a40c80232cfdf8c">More...</a><br /></td></tr>
 <tr class="separator:ga22ddaf5bbfe649631a40c80232cfdf8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,28 +120,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga6c925c9deb5746fc2844d111846e93ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga8263c58ec739238cab4fb9d603fbd488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8263c58ec739238cab4fb9d603fbd488">&#9670;&nbsp;</a></span>wiced_bt_dev_configure_secure_connections_only_mode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wiced_bt_dev_configure_secure_connections_only_mode </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Configure device to allow connections only with secure connections supported devices. </p>
-<dl class="section note"><dt>Note</dt><dd>API must be called only once after BTM_ENABLED_EVT event received, before starting bluetooth activity</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
 <a id="ga2e41482216a1a152e3ecaf1c17d5e93f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2e41482216a1a152e3ecaf1c17d5e93f">&#9670;&nbsp;</a></span>wiced_bt_dev_sec_bond()</h2>
 
@@ -363,44 +335,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ga4bbf570f3c73cbfa33ee41d7d0c09a99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4bbf570f3c73cbfa33ee41d7d0c09a99">&#9670;&nbsp;</a></span>wiced_bt_dev_get_bonded_devices()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_dev_get_bonded_devices </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__dev__bonded__device__info__t.html">wiced_bt_dev_bonded_device_info_t</a> *&#160;</td>
-          <td class="paramname"><em>p_paired_device_list</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>p_num_devices</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>get bonded device list </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">p_paired_device_list</td><td>: array for getting bd address of bonded devices </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_num_devices</td><td>: list size of p_pared_device_list total number of bonded devices stored</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>wiced_result_t </dd></dl>
 
 </div>
 </div>

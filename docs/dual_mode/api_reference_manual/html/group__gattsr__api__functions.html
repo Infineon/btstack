@@ -97,25 +97,25 @@ $(document).ready(function(){initNavTree('group__gattsr__api__functions.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9c1293b04258393f7e8e5201ca215c21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga9c1293b04258393f7e8e5201ca215c21">wiced_bt_gatt_send_indication</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_val)</td></tr>
-<tr class="memdesc:ga9c1293b04258393f7e8e5201ca215c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send an indication to the client for the specified handle.  <a href="#ga9c1293b04258393f7e8e5201ca215c21">More...</a><br /></td></tr>
-<tr class="separator:ga9c1293b04258393f7e8e5201ca215c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe6e79a8df2dd04b926d2316b79fdc42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gabe6e79a8df2dd04b926d2316b79fdc42">wiced_bt_gatt_send_notification</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_val)</td></tr>
-<tr class="memdesc:gabe6e79a8df2dd04b926d2316b79fdc42"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a notification to the client for the specified handle.  <a href="#gabe6e79a8df2dd04b926d2316b79fdc42">More...</a><br /></td></tr>
-<tr class="separator:gabe6e79a8df2dd04b926d2316b79fdc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa5719e4476aba741dd921b14ccae916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gaaa5719e4476aba741dd921b14ccae916">wiced_bt_gatt_send_multiple_notifications</a> (uint16_t conn_id, uint32_t num_notifications, <a class="el" href="structwiced__bt__gatt__handle__length__value__t.html">wiced_bt_gatt_handle_length_value_t</a> *p_notifications)</td></tr>
-<tr class="memdesc:gaaa5719e4476aba741dd921b14ccae916"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a multiple variable length notifications to a profile.  <a href="#gaaa5719e4476aba741dd921b14ccae916">More...</a><br /></td></tr>
-<tr class="separator:gaaa5719e4476aba741dd921b14ccae916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0cb76e23dcabd30c6fbe2e8139f96ad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga0cb76e23dcabd30c6fbe2e8139f96ad9">wiced_bt_gatt_server_send_indication</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_app_buffer, <a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
+<tr class="memdesc:ga0cb76e23dcabd30c6fbe2e8139f96ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a long (1 upto (MTU -3) bytes) indication to the client for the specified handle with a persistent buffer in <code>p_app_buffer</code>.  <a href="#ga0cb76e23dcabd30c6fbe2e8139f96ad9">More...</a><br /></td></tr>
+<tr class="separator:ga0cb76e23dcabd30c6fbe2e8139f96ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6b81296d8e3deebefdab879b874439e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gae6b81296d8e3deebefdab879b874439e">wiced_bt_gatt_server_send_notification</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_app_buffer, <a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
+<tr class="memdesc:gae6b81296d8e3deebefdab879b874439e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a long (1 upto (MTU -3) bytes) notification to the client for the specified handle with a persistent buffer in <code>p_app_buffer</code>.  <a href="#gae6b81296d8e3deebefdab879b874439e">More...</a><br /></td></tr>
+<tr class="separator:gae6b81296d8e3deebefdab879b874439e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab222ca3f30e05cab6168f2755b838035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gab222ca3f30e05cab6168f2755b838035">wiced_bt_gatt_server_send_multiple_notifications</a> (uint16_t conn_id, uint16_t app_buffer_len, uint8_t *p_app_buffer, <a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
+<tr class="memdesc:gab222ca3f30e05cab6168f2755b838035"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a long (1 upto (MTU -1) bytes) multiple variable length notification to the client with a persistent buffer in <code>p_app_buffer</code>.  <a href="#gab222ca3f30e05cab6168f2755b838035">More...</a><br /></td></tr>
+<tr class="separator:gab222ca3f30e05cab6168f2755b838035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga9c1293b04258393f7e8e5201ca215c21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9c1293b04258393f7e8e5201ca215c21">&#9670;&nbsp;</a></span>wiced_bt_gatt_send_indication()</h2>
+<a id="ga0cb76e23dcabd30c6fbe2e8139f96ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0cb76e23dcabd30c6fbe2e8139f96ad9">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_indication()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a> wiced_bt_gatt_send_indication </td>
+          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_indication </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em>, </td>
@@ -136,7 +136,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_val</em>&#160;</td>
+          <td class="paramname"><em>p_app_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
+          <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -146,28 +152,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This API will send an indication to the client for the specified handle. </p>
+<p>This API will send a long (1 upto (MTU -3) bytes) indication to the client for the specified handle with a persistent buffer in <code>p_app_buffer</code>. </p>
+<p>The indication confirmation from the remote is indicated by an GATT_ATTRIBUTE_REQUEST_EVT with <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8" title="GATT request opcode.">wiced_bt_gatt_attribute_request_t.opcode</a> = GATT_HANDLE_VALUE_IND</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: connection identifier. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">attr_handle</td><td>: Attribute handle of this handle value indication. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">val_len</td><td>: Length of notification value passed. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_val</td><td>: Notification Value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val_len</td><td>: Length of indication value passed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_buffer</td><td>: Indication Value, peristent till the data is sent out to the controller </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_ctxt</td><td>: Application context for <code>p_app_buffer</code> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>The application may free the <code>p_app_buffer</code> pointer on receiving a <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
-<a id="gabe6e79a8df2dd04b926d2316b79fdc42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabe6e79a8df2dd04b926d2316b79fdc42">&#9670;&nbsp;</a></span>wiced_bt_gatt_send_notification()</h2>
+<a id="gae6b81296d8e3deebefdab879b874439e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6b81296d8e3deebefdab879b874439e">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_notification()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a> wiced_bt_gatt_send_notification </td>
+          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_notification </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em>, </td>
@@ -188,7 +197,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_val</em>&#160;</td>
+          <td class="paramname"><em>p_app_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
+          <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -198,28 +213,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This API will send a notification to the client for the specified handle. </p>
+<p>This API will send a long (1 upto (MTU -3) bytes) notification to the client for the specified handle with a persistent buffer in <code>p_app_buffer</code>. </p>
+<p>The send complete of the notification is indicated by an GATT_ATTRIBUTE_REQUEST_EVT with <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8" title="GATT request opcode.">wiced_bt_gatt_attribute_request_t.opcode</a> = GATT_HANDLE_VALUE_NOTIF</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: connection identifier. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr_handle</td><td>: Attribute handle of this handle value indication. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr_handle</td><td>: Attribute handle of this handle value notification. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">val_len</td><td>: Length of notification value passed. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_val</td><td>: Notification Value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_buffer</td><td>: Notification Value, peristent till the data is sent out to the controller </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_ctxt</td><td>: Application context for <code>p_app_buffer</code> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>The application may free the <code>p_app_buffer</code> pointer on receiving a <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
-<a id="gaaa5719e4476aba741dd921b14ccae916"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa5719e4476aba741dd921b14ccae916">&#9670;&nbsp;</a></span>wiced_bt_gatt_send_multiple_notifications()</h2>
+<a id="gab222ca3f30e05cab6168f2755b838035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab222ca3f30e05cab6168f2755b838035">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_multiple_notifications()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga478cad15a09d0633e04d8c682c45c521">wiced_bt_gatt_status_t</a> wiced_bt_gatt_send_multiple_notifications </td>
+          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_multiple_notifications </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em>, </td>
@@ -227,14 +245,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>num_notifications</em>, </td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>app_buffer_len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__gatt__handle__length__value__t.html">wiced_bt_gatt_handle_length_value_t</a> *&#160;</td>
-          <td class="paramname"><em>p_notifications</em>&#160;</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>p_app_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
+          <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -244,15 +268,24 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This API will send a multiple variable length notifications to a profile. </p>
+<p>This API will send a long (1 upto (MTU -1) bytes) multiple variable length notification to the client with a persistent buffer in <code>p_app_buffer</code>. </p>
+<p>The send complete of the notification is indicated by an GATT_ATTRIBUTE_REQUEST_EVT with <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8" title="GATT request opcode.">wiced_bt_gatt_attribute_request_t.opcode</a> = GATT_HANDLE_VALUE_MULTI_NOTIF</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: connection identifier. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_notifications</td><td>: number of notifications </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_notifications</td><td>: pointer to array of handle length notification values.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">app_buffer_len</td><td>: Length of multiple notification values passed, should not exceed MTU - 1. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_buffer</td><td>: Notification Values, peristent till the data is sent out to the controller </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>: Notification values are formatted by the application by setting the handle(2 octets LE), len(2 octets LE) and data of handle of length for atleast 2 handle, len, data pairs. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_ctxt</td><td>: Application context for <code>p_app_buffer</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The application may free the <code>p_app_buffer</code> pointer on receiving a <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>

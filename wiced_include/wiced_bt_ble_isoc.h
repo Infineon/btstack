@@ -81,6 +81,7 @@ typedef uint8_t wiced_bt_ble_isoc_event_t; /**< ISOC Events (see #wiced_bt_ble_i
 typedef struct
 {
     uint16_t    cis_conn_handle;        /**< CIS Connection Handle */
+    uint16_t    acl_handle;             /**< ACL Connection Handle */
     uint8_t     cig_id;                 /**< CIG ID */
     uint8_t     cis_id;                 /**< CIS ID */
 }wiced_ble_isoc_cis_request_data_t;
@@ -89,6 +90,7 @@ typedef struct
 typedef struct
 {
     uint16_t    cis_conn_handle;        /**< CIS Connection Handle */
+    uint16_t    acl_handle;             /**< ACL Connection Handle */
     uint8_t     cis_id;                 /**< CIS ID */
 }wiced_ble_isoc_cis_disconnect_data_t;
 
@@ -96,20 +98,21 @@ typedef struct
 typedef struct
 {
     uint8_t                     status;                 /**< CIG Establishment Status */
+    uint16_t                    acl_handle;             /**< ACL Connection Handle */
     uint16_t                    cis_conn_handle;        /**< CIS Connection Handle */
     uint32_t                    cig_sync_delay;         /**< CIG Sync Delay in microseconds */
     uint32_t                    cis_sync_delay;         /**< CIS Sync Delay in microseconds */
-    uint32_t                    latency_m_to_s;         /**< Maximum time, in microseconds, for an SDU to be transported from the master Controller to slave Controller */
-    uint32_t                    latency_s_to_m;         /**< Maximum time, in microseconds, for an SDU to be transported from the slave Controller to master Controller */
-    wiced_bt_ble_isoc_phy_t     phy_m_to_s;             /**< The transmitter PHY of packets from the master */
-    wiced_bt_ble_isoc_phy_t     phy_s_to_m;             /**< The transmitter PHY of packets from the slave */
+    uint32_t                    latency_c_to_p;         /**< Maximum time, in microseconds, for an SDU to be transported from the master Controller to slave Controller */
+    uint32_t                    latency_p_to_c;         /**< Maximum time, in microseconds, for an SDU to be transported from the slave Controller to master Controller */
+    wiced_bt_ble_isoc_phy_t     phy_c_to_p;             /**< The transmitter PHY of packets from the master */
+    wiced_bt_ble_isoc_phy_t     phy_p_to_c;             /**< The transmitter PHY of packets from the slave */
     uint8_t                     nse;                    /**< Maximum Number of Subevent in each isochronous event */
-    uint8_t                     bn_m_to_s;              /**< Burst number for master to slave transmission */
-    uint8_t                     bn_s_to_m;              /**< Burst number for slave to master transmission */
-    uint8_t                     ft_m_to_s;              /**< Flush timeout, in multiples of the ISO_Interval for master to slave transmission */
-    uint8_t                     ft_s_to_m;              /**< Flush timeout, in multiples of the ISO_Interval for slave to master transmission */
-    uint16_t                    max_pdu_m_to_s;         /**< Maximum size, in bytes, of an SDU from the master’s Host */
-    uint16_t                    max_pdu_s_to_m;         /**< Maximum size, in octets, of an SDU from the slave’s Host */
+    uint8_t                     bn_c_to_p;              /**< Burst number for master to slave transmission */
+    uint8_t                     bn_p_to_c;              /**< Burst number for slave to master transmission */
+    uint8_t                     ft_c_to_p;              /**< Flush timeout, in multiples of the ISO_Interval for master to slave transmission */
+    uint8_t                     ft_p_to_c;              /**< Flush timeout, in multiples of the ISO_Interval for slave to master transmission */
+    uint16_t                    max_pdu_c_to_p;         /**< Maximum size, in bytes, of an SDU from the master’s Host */
+    uint16_t                    max_pdu_p_to_c;         /**< Maximum size, in octets, of an SDU from the slave’s Host */
     uint16_t                    iso_interval;           /**< Time between two consecutive CIS anchor points */
 }wiced_ble_isoc_cis_established_data_t;
 
@@ -127,6 +130,7 @@ typedef struct
 typedef struct
 {
     uint8_t        status;                       /**< SCA Status */
+    uint16_t       acl_handle;                   /**< ACL Connection Handle */
     wiced_bt_device_address_t peer_bda;          /**< Peer Bluetooth Address */
     uint8_t        sca;                          /**< Slave Clock Accuracy value */
 }wiced_ble_isoc_sca_t;
@@ -145,12 +149,12 @@ typedef union
 typedef struct
 {
     uint8_t                     cis_id;           /**< CIS Id : ZERO if not created*/
-    uint16_t                    max_sdu_m_to_s;   /**< Maximum size, in bytes, of an SDU from the master’s Host
+    uint16_t                    max_sdu_c_to_p;   /**< Maximum size, in bytes, of an SDU from the master’s Host
                                                        Valid Range 0x000 to 0xFFF*/
-    uint16_t                    max_sdu_s_to_m;   /**< Maximum size, in octets, of an SDU from the slave’s Host
+    uint16_t                    max_sdu_p_to_c;   /**< Maximum size, in octets, of an SDU from the slave’s Host
                                                        Valid Range 0x000 to 0xFFF*/
-    wiced_bt_ble_isoc_phy_t     phy_m_to_s;       /**< The transmitter PHY of packets from the master */
-    wiced_bt_ble_isoc_phy_t     phy_s_to_m;       /**< The transmitter PHY of packets from the slave */
+    wiced_bt_ble_isoc_phy_t     phy_c_to_p;       /**< The transmitter PHY of packets from the master */
+    wiced_bt_ble_isoc_phy_t     phy_p_to_c;       /**< The transmitter PHY of packets from the slave */
     uint8_t                     rtn_m_to_s;       /**< Maximum number of times every CIS Data PDU should be retransmitted from the master to slave */
     uint8_t                     rtn_s_to_m;       /**< Maximum number of times every CIS Data PDU should be retransmitted from the slave to master */
 }wiced_bt_ble_cis_config_t;
@@ -159,11 +163,11 @@ typedef struct
 typedef struct
 {
     uint8_t                     cig_id;                     /**< CIG ID if known */
-    uint32_t                    sdu_interval_m_to_s;        /**< Time interval in microseconds between the start of consecutive SDUs from the master’s Host for all the CISes in the CIG */
-    uint32_t                    sdu_interval_s_to_m;        /**< Time interval in microseconds between the start of consecutive SDUs from the slave’s Host for all the CISes in the CIG. */
-    uint8_t                     slave_clock_accuracy;       /**< Slave Clock Accuracy */
-    uint16_t                    max_trans_latency_m_to_s;   /**< Maximum time, in microseconds, for an SDU to be transported from the master Controller to slave Controller */
-    uint16_t                    max_trans_latency_s_to_m;   /**< Maximum time, in microseconds, for an SDU to be transported from the slave Controller to master Controller */
+    uint32_t                    sdu_interval_c_to_p;        /**< Time interval in microseconds between the start of consecutive SDUs from the master’s Host for all the CISes in the CIG */
+    uint32_t                    sdu_interval_p_to_c;        /**< Time interval in microseconds between the start of consecutive SDUs from the slave’s Host for all the CISes in the CIG. */
+    uint8_t                     peripheral_clock_accuracy;       /**< Slave Clock Accuracy */
+    uint16_t                    max_trans_latency_c_to_p;   /**< Maximum time, in microseconds, for an SDU to be transported from the master Controller to slave Controller */
+    uint16_t                    max_trans_latency_p_to_c;   /**< Maximum time, in microseconds, for an SDU to be transported from the slave Controller to master Controller */
     wiced_bt_ble_isoc_packing_t packing;                    /**< Packing method  */
     wiced_bt_ble_isoc_framing_t framing;                    /**< Framing parameter */
     uint8_t                     cis_count;                  /**< Total number of CISes in the CIG being added or modified
@@ -175,25 +179,25 @@ typedef struct
 {
     uint8_t cis_id;                     /**< CIS Id : ZERO if not created*/
     uint8_t nse;                        /**< Maximum number of subevents in each CIS event */
-    uint16_t max_sdu_m_to_s;            /**< Maximum size, in bytes, of an SDU from the master’s Host Valid Range 0x000 to 0xFFF*/
-    uint16_t max_sdu_s_to_m;            /**< Maximum size, in octets, of an SDU from the slave’s Host Valid Range 0x000 to 0xFFF*/
-    uint16_t max_pdu_m_to_s;            /**< Maximum size, in bytes, of an SDU from the master’s Host Valid Range 0x000 to 0xFFF*/
-    uint16_t max_pdu_s_to_m;            /**< Maximum size, in octets, of an SDU from the slave’s Host Valid Range 0x000 to 0xFFF*/
-    wiced_bt_ble_isoc_phy_t phy_m_to_s; /**< The transmitter PHY of packets from the master */
-    wiced_bt_ble_isoc_phy_t phy_s_to_m; /**< The transmitter PHY of packets from the slave */
-    uint8_t bn_m_to_s;                  /**< Maximum number of times every CIS Data PDU should be retransmitted from the master to slave */
-    uint8_t bn_s_to_m;                  /**< Maximum number of times every CIS Data PDU should be retransmitted from the slave to master */
+    uint16_t max_sdu_c_to_p;            /**< Maximum size, in bytes, of an SDU from the master’s Host Valid Range 0x000 to 0xFFF*/
+    uint16_t max_sdu_p_to_c;            /**< Maximum size, in octets, of an SDU from the slave’s Host Valid Range 0x000 to 0xFFF*/
+    uint16_t max_pdu_c_to_p;            /**< Maximum size, in bytes, of an SDU from the master’s Host Valid Range 0x000 to 0xFFF*/
+    uint16_t max_pdu_p_to_c;            /**< Maximum size, in octets, of an SDU from the slave’s Host Valid Range 0x000 to 0xFFF*/
+    wiced_bt_ble_isoc_phy_t phy_c_to_p; /**< The transmitter PHY of packets from the master */
+    wiced_bt_ble_isoc_phy_t phy_p_to_c; /**< The transmitter PHY of packets from the slave */
+    uint8_t bn_c_to_p;                  /**< Maximum number of times every CIS Data PDU should be retransmitted from the master to slave */
+    uint8_t bn_p_to_c;                  /**< Maximum number of times every CIS Data PDU should be retransmitted from the slave to master */
 } wiced_bt_ble_cis_config_test_t;
 
 typedef struct
 {
     uint8_t cig_id;               /**< CIG ID if known */
-    uint32_t sdu_interval_m_to_s; /**< Time interval in microseconds between the start of consecutive SDUs from the master’s Host for all the CISes in the CIG */
-    uint32_t sdu_interval_s_to_m; /**< Time interval in microseconds between the start of consecutive SDUs from the slave’s Host for all the CISes in the CIG. */
-    uint8_t ft_m_to_s;            /**< The flush timeout in multiples of ISO_Interval for each payload sent from the master to slave. */
-    uint8_t ft_s_to_m;            /**< The flush timeout in multiples of ISO_Interval for each payload sent from the slave to master. */
+    uint32_t sdu_interval_c_to_p; /**< Time interval in microseconds between the start of consecutive SDUs from the master’s Host for all the CISes in the CIG */
+    uint32_t sdu_interval_p_to_c; /**< Time interval in microseconds between the start of consecutive SDUs from the slave’s Host for all the CISes in the CIG. */
+    uint8_t ft_c_to_p;            /**< The flush timeout in multiples of ISO_Interval for each payload sent from the master to slave. */
+    uint8_t ft_p_to_c;            /**< The flush timeout in multiples of ISO_Interval for each payload sent from the slave to master. */
     uint16_t iso_interval;        /**< Time between consecutive CIS anchor points */
-    uint8_t slave_clock_accuracy;               /**< Slave Clock Accuracy */
+    uint8_t peripheral_clock_accuracy;               /**< Slave Clock Accuracy */
     wiced_bt_ble_isoc_packing_t packing;        /**< Packing method  */
     wiced_bt_ble_isoc_framing_t framing;        /**< Framing parameter */
     uint8_t cis_count;                          /**< Total number of CISes in the CIG being added or modified Valid Range 0x00 to 0x10 */

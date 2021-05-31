@@ -145,9 +145,9 @@
 
 
 /* MultiProfile Attribute IDs */
-#define BTA_MPS_UUID_MPSD_SCENARIOS         ((UINT16) 0x200)
-#define BTA_MPS_UUID_MPMD_SCENARIOS         ((UINT16) 0x201)
-#define BTA_MPS_UUID_PPD_SUPPORTED          ((UINT16) 0x202)
+#define BTA_MPS_UUID_MPSD_SCENARIOS         ((uint16_t) 0x200)
+#define BTA_MPS_UUID_MPMD_SCENARIOS         ((uint16_t) 0x201)
+#define BTA_MPS_UUID_PPD_SUPPORTED          ((uint16_t) 0x202)
 
 /* Define common 16-bit protocol UUIDs
 */
@@ -329,8 +329,8 @@
 #define  SIZE_IN_NEXT_LONG            7
 
 /* Language Encoding Constants */
-#define LANG_ID_CODE_ENGLISH            ((UINT16) 0x656e)   /* "en" */
-#define LANG_ID_CHAR_ENCODE_UTF8        ((UINT16) 0x006a)   /* UTF-8 */
+#define LANG_ID_CODE_ENGLISH            ((uint16_t) 0x656e)   /* "en" */
+#define LANG_ID_CHAR_ENCODE_UTF8        ((uint16_t) 0x006a)   /* UTF-8 */
 
 /* Constants used for display purposes only.  These define ovelapping attribute values */
 #define  ATTR_ID_VERS_OR_GRP_OR_DRELNUM_OR_IPSUB_OR_SPECID_OR_MPSD  0x0200

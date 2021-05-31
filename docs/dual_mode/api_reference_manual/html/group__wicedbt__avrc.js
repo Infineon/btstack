@@ -1,16 +1,24 @@
 var group__wicedbt__avrc =
 [
-    [ "wiced_bt_avrc_conn_cb_t", "structwiced__bt__avrc__conn__cb__t.html", [
-      [ "p_ctrl_cback", "structwiced__bt__avrc__conn__cb__t.html#aed951a16aa3c95a11c19259ef6eef5e7", null ],
-      [ "p_msg_cback", "structwiced__bt__avrc__conn__cb__t.html#a996ff4b97416b306cdf8309821f63e01", null ],
-      [ "p_xmitted_cback", "structwiced__bt__avrc__conn__cb__t.html#a849f2cb72747c2223970624deb703168", null ],
-      [ "company_id", "structwiced__bt__avrc__conn__cb__t.html#a7391f429effae1aa3c94d912e7e879b9", null ],
-      [ "connection_role", "structwiced__bt__avrc__conn__cb__t.html#ac7c94f23894a317a5f85003c8dd7665a", null ],
-      [ "control", "structwiced__bt__avrc__conn__cb__t.html#a653395d33ec88ad1c5a3573746ea139d", null ],
-      [ "avrc_seg_buf_len", "structwiced__bt__avrc__conn__cb__t.html#a2a2db7e712dcca85954acc6073996dd6", null ],
-      [ "p_avrc_buff", "structwiced__bt__avrc__conn__cb__t.html#a8e37c743ae6384580620dc1a4ad1a145", null ],
-      [ "avct_seg_buf_len", "structwiced__bt__avrc__conn__cb__t.html#a467459a192ab1c5070780d068d7c2b3e", null ],
-      [ "p_avct_buff", "structwiced__bt__avrc__conn__cb__t.html#aa603052444815f6a912658e9fe4dd4ff", null ]
+    [ "wiced_bt_avrc_msg_t", "structwiced__bt__avrc__msg__t.html", [
+      [ "msg_type", "structwiced__bt__avrc__msg__t.html#a7f785003d4bd04d7c99f88522dc92e38", null ],
+      [ "handle", "structwiced__bt__avrc__msg__t.html#ac92946cdc59c6ab93428a7edb73863e2", null ],
+      [ "label", "structwiced__bt__avrc__msg__t.html#a89755c8e28bea0a4252b9ff9b2f04d69", null ],
+      [ "opcode", "structwiced__bt__avrc__msg__t.html#adb6ca5789ea6b39abd8d001133fa0fd4", null ],
+      [ "response", "structwiced__bt__avrc__msg__t.html#a236385bee49ccc538a1715c637e0d8dc", null ],
+      [ "command", "structwiced__bt__avrc__msg__t.html#a9e121cc5b79886c95dadbdc17583bfff", null ],
+      [ "type", "structwiced__bt__avrc__msg__t.html#ad8737aefae4ddde9ef06ceed12fa2b8b", null ]
+    ] ],
+    [ "wiced_bt_avrc_config_t", "structwiced__bt__avrc__config__t.html", [
+      [ "p_ctrl_cback", "structwiced__bt__avrc__config__t.html#a38e2647efd79e92aec32bce0ff37b918", null ],
+      [ "p_msg_cback", "structwiced__bt__avrc__config__t.html#af75ee5a48f6bad3566bf4830dce46ae3", null ],
+      [ "company_id", "structwiced__bt__avrc__config__t.html#acc1aac462450108fc0dabffe6579d0d6", null ],
+      [ "connection_role", "structwiced__bt__avrc__config__t.html#af489f3e4e8f9ef81292738c6b3beda42", null ],
+      [ "control", "structwiced__bt__avrc__config__t.html#a7d8188ffbad35c3a568d7cb99f5159be", null ],
+      [ "avrc_seg_buf_len", "structwiced__bt__avrc__config__t.html#a8295003c1254e59cf6a788006d2041b1", null ],
+      [ "p_avrc_buff", "structwiced__bt__avrc__config__t.html#ae4f271509a7c55e906928225660b7078", null ],
+      [ "avct_seg_buf_len", "structwiced__bt__avrc__config__t.html#aaa52d47b6a78c37e627640c5e58346a2", null ],
+      [ "p_avct_buff", "structwiced__bt__avrc__config__t.html#a7c226a1040d2514641379a4f8f9f0b4e", null ]
     ] ],
     [ "wiced_bt_avrc_hdr_t", "structwiced__bt__avrc__hdr__t.html", [
       [ "ctype", "structwiced__bt__avrc__hdr__t.html#a7e8e8624a3b639fac8f4529497cde7b1", null ],
@@ -18,59 +26,12 @@ var group__wicedbt__avrc =
       [ "subunit_id", "structwiced__bt__avrc__hdr__t.html#a01472df7bed251c7bd6413bb8da57a63", null ],
       [ "opcode", "structwiced__bt__avrc__hdr__t.html#aee22ec012c4a17f26e5b31c13a7178d9", null ]
     ] ],
-    [ "wiced_bt_avrc_msg_unit_t", "structwiced__bt__avrc__msg__unit__t.html", [
-      [ "hdr", "structwiced__bt__avrc__msg__unit__t.html#ae2492ebcae0d85ccc3d5801399bcd76c", null ],
-      [ "company_id", "structwiced__bt__avrc__msg__unit__t.html#aef0daa0895d1b81d42c0b8b7aefd7cb9", null ],
-      [ "unit_type", "structwiced__bt__avrc__msg__unit__t.html#af575f60376d9abc58a944031d32dd014", null ],
-      [ "unit", "structwiced__bt__avrc__msg__unit__t.html#a7e155a2100c00da14928cce9e4bcdae7", null ]
-    ] ],
-    [ "wiced_bt_avrc_msg_sub_t", "structwiced__bt__avrc__msg__sub__t.html", [
-      [ "hdr", "structwiced__bt__avrc__msg__sub__t.html#af9a5b3dc240d53af365ccdbe3d4594c6", null ],
-      [ "subunit_type", "structwiced__bt__avrc__msg__sub__t.html#a50917b29605f280b42c5f1c7f70efc8a", null ],
-      [ "panel", "structwiced__bt__avrc__msg__sub__t.html#a881def208fa5b904913cace8dea3b21a", null ],
-      [ "page", "structwiced__bt__avrc__msg__sub__t.html#a000ca05ac5ad2fd4ac4a602a0013e4fd", null ]
-    ] ],
-    [ "wiced_bt_avrc_msg_vendor_t", "structwiced__bt__avrc__msg__vendor__t.html", [
-      [ "hdr", "structwiced__bt__avrc__msg__vendor__t.html#ab44feca5f7488d1301f526ef44a82657", null ],
-      [ "company_id", "structwiced__bt__avrc__msg__vendor__t.html#ae395d6d1f86555abeeddc91d0c234b32", null ],
-      [ "p_vendor_data", "structwiced__bt__avrc__msg__vendor__t.html#afcaf19304a1b95665d2016ae221c49cb", null ],
-      [ "vendor_len", "structwiced__bt__avrc__msg__vendor__t.html#a472f754cc95e8c9c702831544389a9b6", null ]
-    ] ],
-    [ "wiced_bt_avrc_msg_pass_t", "structwiced__bt__avrc__msg__pass__t.html", [
-      [ "hdr", "structwiced__bt__avrc__msg__pass__t.html#a14d5e1390010706c6e55e1991842d693", null ],
-      [ "op_id", "structwiced__bt__avrc__msg__pass__t.html#aba3b58d2dc42b2acf815d531d1ae66a9", null ],
-      [ "state", "structwiced__bt__avrc__msg__pass__t.html#a4bf0d8187e755dbf482f8cc6088d0e89", null ],
-      [ "p_pass_data", "structwiced__bt__avrc__msg__pass__t.html#abb79960d31cacfa6b4651954f2254597", null ],
-      [ "pass_len", "structwiced__bt__avrc__msg__pass__t.html#a58725b9ffd45d76fb25a3ba3af261312", null ]
-    ] ],
-    [ "wiced_bt_avrc_msg_browse_t", "structwiced__bt__avrc__msg__browse__t.html", [
-      [ "hdr", "structwiced__bt__avrc__msg__browse__t.html#a418e96be150d71bfd200c5e18d015752", null ],
-      [ "p_browse_data", "structwiced__bt__avrc__msg__browse__t.html#a06fdcce2eeaf1c3771505228e4a291a4", null ],
-      [ "browse_len", "structwiced__bt__avrc__msg__browse__t.html#ad1cc185f5fea80661d1adbb655097fc3", null ]
-    ] ],
-    [ "wiced_bt_avrc_msg_t", "unionwiced__bt__avrc__msg__t.html", [
-      [ "hdr", "unionwiced__bt__avrc__msg__t.html#a03e7f6456d41043549ef1c97f66e0c41", null ],
-      [ "unit", "unionwiced__bt__avrc__msg__t.html#a2b4bf6ede10e0227aa8efa73e81a1500", null ],
-      [ "sub", "unionwiced__bt__avrc__msg__t.html#a1c2b7d16cafcc034a330c2abe1045b40", null ],
-      [ "vendor", "unionwiced__bt__avrc__msg__t.html#ac913105f7a514a2153163bd7232f3339", null ],
-      [ "pass", "unionwiced__bt__avrc__msg__t.html#adb94f8496b6e715f475b2eb7d88e3555", null ],
-      [ "browse", "unionwiced__bt__avrc__msg__t.html#ab3a366b00115394ad99091eee48dd9a2", null ]
-    ] ],
     [ "wiced_bt_avrc_xmit_buf_t", "structwiced__bt__avrc__xmit__buf__t.html", [
       [ "buffer_size", "structwiced__bt__avrc__xmit__buf__t.html#a6a31a050bde1eaf12c6a790f91a9167e", null ],
       [ "len_used", "structwiced__bt__avrc__xmit__buf__t.html#a52b716d60a1311c4e74236259681d81b", null ],
       [ "is_cmd", "structwiced__bt__avrc__xmit__buf__t.html#a5d2009676d2f92c16e832406c2ee1082", null ],
       [ "meta_pdu_id", "structwiced__bt__avrc__xmit__buf__t.html#af468107cc7f16ec02d68b65c6d4ee5f8", null ],
       [ "payload", "structwiced__bt__avrc__xmit__buf__t.html#a2d1e1582095112464e4d1ac352045af0", null ]
-    ] ],
-    [ "wiced_bt_avrc_full_name_t", "structwiced__bt__avrc__full__name__t.html", [
-      [ "charset_id", "structwiced__bt__avrc__full__name__t.html#a3fdf865fcdf5393e9dced613deb932ec", null ],
-      [ "str_len", "structwiced__bt__avrc__full__name__t.html#a09410ff2fc37d17d1c2a8c787d0ba7cb", null ],
-      [ "p_str", "structwiced__bt__avrc__full__name__t.html#a589da74d84c3bfb9af4113ac98a266a6", null ]
-    ] ],
-    [ "wiced_bt_avrc_name_t", "structwiced__bt__avrc__name__t.html", [
-      [ "str_len", "structwiced__bt__avrc__name__t.html#a865fd974f59275f18392ef4a73260509", null ],
-      [ "p_str", "structwiced__bt__avrc__name__t.html#a1ed5bb7c8f44fb9a1e1b5da62534925d", null ]
     ] ],
     [ "wiced_bt_avrc_caps_param_t", "unionwiced__bt__avrc__caps__param__t.html", [
       [ "company_id", "unionwiced__bt__avrc__caps__param__t.html#a36308d61d37a7c1be5d79d93085de959", null ],
@@ -80,11 +41,224 @@ var group__wicedbt__avrc =
       [ "attr_id", "structwiced__bt__avrc__app__setting__t.html#a22c8504f42d7fe7c1fcf56eaece26c82", null ],
       [ "attr_val", "structwiced__bt__avrc__app__setting__t.html#a9f8205d5d5f3b7b8a85e189aecfc8628", null ]
     ] ],
+    [ "wiced_bt_avrc_metadata_play_cmd_t", "structwiced__bt__avrc__metadata__play__cmd__t.html", [
+      [ "scope", "structwiced__bt__avrc__metadata__play__cmd__t.html#a268ba37e421f836071bb7163c3e58634", null ],
+      [ "uid", "structwiced__bt__avrc__metadata__play__cmd__t.html#aa9527437c743c877d7216f2341679a62", null ],
+      [ "uid_counter", "structwiced__bt__avrc__metadata__play__cmd__t.html#a43e58ab6720433d15d19eabdc668cebc", null ]
+    ] ],
+    [ "wiced_bt_avrc_addr_player_param_t", "structwiced__bt__avrc__addr__player__param__t.html", [
+      [ "player_id", "structwiced__bt__avrc__addr__player__param__t.html#a81e03f6c023d60356c31776f80d4c686", null ],
+      [ "uid_counter", "structwiced__bt__avrc__addr__player__param__t.html#a768afad505ef1aec81cab6869fa271aa", null ]
+    ] ],
+    [ "wiced_bt_avrc_name_t", "structwiced__bt__avrc__name__t.html", [
+      [ "str_len", "structwiced__bt__avrc__name__t.html#a865fd974f59275f18392ef4a73260509", null ],
+      [ "p_str", "structwiced__bt__avrc__name__t.html#a1ed5bb7c8f44fb9a1e1b5da62534925d", null ]
+    ] ],
+    [ "wiced_bt_avrc_full_name_t", "structwiced__bt__avrc__full__name__t.html", [
+      [ "charset_id", "structwiced__bt__avrc__full__name__t.html#a3fdf865fcdf5393e9dced613deb932ec", null ],
+      [ "name", "structwiced__bt__avrc__full__name__t.html#ab426f2c69a735412d4ee79b4f899d145", null ]
+    ] ],
+    [ "wiced_bt_avrc_unit_info_cmd_t", "structwiced__bt__avrc__unit__info__cmd__t.html", [
+      [ "unit_info", "structwiced__bt__avrc__unit__info__cmd__t.html#a4966af3b9d71242481b58e2f8e44b41f", null ]
+    ] ],
+    [ "wiced_bt_avrc_unit_info_rsp_t", "structwiced__bt__avrc__unit__info__rsp__t.html", [
+      [ "byte", "structwiced__bt__avrc__unit__info__rsp__t.html#a2d2dc0099492165a83a5611a94662576", null ],
+      [ "unit", "structwiced__bt__avrc__unit__info__rsp__t.html#a9997303ccf9d0eb80003b62b8a9ea989", null ],
+      [ "unit_type", "structwiced__bt__avrc__unit__info__rsp__t.html#a4a4d3f6175c43eb74bc11f26bd91efa5", null ],
+      [ "company_id", "structwiced__bt__avrc__unit__info__rsp__t.html#a3ecb0e6e2542d4f9b71a3fa993ba68e1", null ]
+    ] ],
+    [ "wiced_bt_avrc_sub_unit_info_cmd_t", "structwiced__bt__avrc__sub__unit__info__cmd__t.html", [
+      [ "page", "structwiced__bt__avrc__sub__unit__info__cmd__t.html#adb0bb7d504ef4895afe28ca29cded1cf", null ],
+      [ "extension_code", "structwiced__bt__avrc__sub__unit__info__cmd__t.html#a62090e7ce78a9326760cefea49979f73", null ],
+      [ "data", "structwiced__bt__avrc__sub__unit__info__cmd__t.html#ac2a5cbc9dc215f4c12b9bb509dbd1512", null ]
+    ] ],
+    [ "wiced_bt_avrc_sub_unit_info_rsp_t", "structwiced__bt__avrc__sub__unit__info__rsp__t.html", [
+      [ "extension_code", "structwiced__bt__avrc__sub__unit__info__rsp__t.html#a7a871d4a01ea4a506af27a814240a959", null ],
+      [ "page", "structwiced__bt__avrc__sub__unit__info__rsp__t.html#a11902b6a8dc9a4a79b3af02e09712443", null ],
+      [ "max_subunit_id", "structwiced__bt__avrc__sub__unit__info__rsp__t.html#a0b24388483364e8924d9228779fde110", null ],
+      [ "subunit_type", "structwiced__bt__avrc__sub__unit__info__rsp__t.html#a9056a421b5a73e514de6bf5ee5b273c8", null ],
+      [ "octets", "structwiced__bt__avrc__sub__unit__info__rsp__t.html#a24b8a3e5014fe99e916c181f17c16429", null ]
+    ] ],
+    [ "wiced_bt_avrc_pass_thru_hdr_t", "structwiced__bt__avrc__pass__thru__hdr__t.html", [
+      [ "operation_id", "structwiced__bt__avrc__pass__thru__hdr__t.html#a888287aaeae1bc8f2020684206ad0ecb", null ],
+      [ "state", "structwiced__bt__avrc__pass__thru__hdr__t.html#a70216619bbd8691b37d78516a0743213", null ],
+      [ "operation_field_len", "structwiced__bt__avrc__pass__thru__hdr__t.html#ac2584975b2776435667f07243be155e9", null ]
+    ] ],
+    [ "wiced_bt_avrc_pass_thru_group_nav_cmd_t", "structwiced__bt__avrc__pass__thru__group__nav__cmd__t.html", [
+      [ "company_id", "structwiced__bt__avrc__pass__thru__group__nav__cmd__t.html#a0e5acb9f2f9b98d61c8c2a07ce4b1c41", null ],
+      [ "vendor_operation_id", "structwiced__bt__avrc__pass__thru__group__nav__cmd__t.html#ae1f1a63c0687c2a8c72c1311f4339de1", null ]
+    ] ],
+    [ "wiced_bt_avrc_pass_thru_cmd_t", "unionwiced__bt__avrc__pass__thru__cmd__t.html", [
+      [ "hdr", "unionwiced__bt__avrc__pass__thru__cmd__t.html#a46f5624184b6d33eb7933ac625dba0de", null ],
+      [ "group_nav", "unionwiced__bt__avrc__pass__thru__cmd__t.html#afa92ef11db9edb2ee237d54284562ef3", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_get_caps_cmd_t", "structwiced__bt__avrc__metadata__get__caps__cmd__t.html", [
+      [ "capability_id", "structwiced__bt__avrc__metadata__get__caps__cmd__t.html#ab05b07af6a10430e2cefd90031bdd381", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_list_app_settings_values_cmd_t", "structwiced__bt__avrc__metadata__list__app__settings__values__cmd__t.html", [
+      [ "attr_id", "structwiced__bt__avrc__metadata__list__app__settings__values__cmd__t.html#afd3b209d96cffd6927d8266dbf2a4f88", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_get_cur_app_value_cmd_t", "structwiced__bt__avrc__metadata__get__cur__app__value__cmd__t.html", [
+      [ "num_attr", "structwiced__bt__avrc__metadata__get__cur__app__value__cmd__t.html#a7cc32493291afe3e3e5d75ae3ccc842d", null ],
+      [ "p_vals", "structwiced__bt__avrc__metadata__get__cur__app__value__cmd__t.html#ab5c6520d2b5dbf2cc5403f705fdbe0d7", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_set_app_value_cmd_t", "structwiced__bt__avrc__metadata__set__app__value__cmd__t.html", [
+      [ "num_val", "structwiced__bt__avrc__metadata__set__app__value__cmd__t.html#ac5075249ecb1c5de997ee5cf993bd2d7", null ],
+      [ "p_vals", "structwiced__bt__avrc__metadata__set__app__value__cmd__t.html#ab0d500718799c88bf90739843c18c715", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_get_app_attr_txt_cmd_t", "structwiced__bt__avrc__metadata__get__app__attr__txt__cmd__t.html", [
+      [ "num_attr", "structwiced__bt__avrc__metadata__get__app__attr__txt__cmd__t.html#a1978153ccf7eb0297defd6bfb4002893", null ],
+      [ "p_attrs", "structwiced__bt__avrc__metadata__get__app__attr__txt__cmd__t.html#a0e6858aa0899d99065c9563d6bdfdd5d", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_get_app_val_txt_cmd_t", "structwiced__bt__avrc__metadata__get__app__val__txt__cmd__t.html", [
+      [ "attr_id", "structwiced__bt__avrc__metadata__get__app__val__txt__cmd__t.html#a6ddec851317f1d8a877a37389d8cd630", null ],
+      [ "num_val", "structwiced__bt__avrc__metadata__get__app__val__txt__cmd__t.html#a0b05b1161d52401806be260e9c2973b2", null ],
+      [ "p_vals", "structwiced__bt__avrc__metadata__get__app__val__txt__cmd__t.html#a576457debbc052a64e5d5b456e2b3cbe", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_inform_charset_cmd_t", "structwiced__bt__avrc__metadata__inform__charset__cmd__t.html", [
+      [ "num_id", "structwiced__bt__avrc__metadata__inform__charset__cmd__t.html#adf206e27f39c883b7c056e5140d7ef7f", null ],
+      [ "p_charsets", "structwiced__bt__avrc__metadata__inform__charset__cmd__t.html#aacf9451ea7676d6b04108a3e136eb977", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_battery_status_cmd_t", "structwiced__bt__avrc__metadata__battery__status__cmd__t.html", [
+      [ "battery_status", "structwiced__bt__avrc__metadata__battery__status__cmd__t.html#a01b11e9b9b58dd3d004cd0c59b854315", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_get_elem_attrs_cmd_t", "structwiced__bt__avrc__metadata__get__elem__attrs__cmd__t.html", [
+      [ "identifier", "structwiced__bt__avrc__metadata__get__elem__attrs__cmd__t.html#a81b68b266f1384d9520fd86cb090003d", null ],
+      [ "num_attr", "structwiced__bt__avrc__metadata__get__elem__attrs__cmd__t.html#a5a408594cbd19c57ab40156b2593ceb6", null ],
+      [ "attrs", "structwiced__bt__avrc__metadata__get__elem__attrs__cmd__t.html#a6c38e435b1dbfa303e29f29b936a1990", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_reg_notif_cmd_t", "structwiced__bt__avrc__metadata__reg__notif__cmd__t.html", [
+      [ "event_id", "structwiced__bt__avrc__metadata__reg__notif__cmd__t.html#ad5353b3c09db531fc806a72c4560bb19", null ],
+      [ "playback_interval", "structwiced__bt__avrc__metadata__reg__notif__cmd__t.html#a78adc72f069adba0c30196c0aab72d8a", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_continuation_pdu_cmd_t", "structwiced__bt__avrc__metadata__continuation__pdu__cmd__t.html", [
+      [ "pdu_id", "structwiced__bt__avrc__metadata__continuation__pdu__cmd__t.html#a9d5b4f2363de9cfe336befad0027b14a", null ]
+    ] ],
+    [ "wiced_bt_avrc_browse_get_items_cmd_t", "structwiced__bt__avrc__browse__get__items__cmd__t.html", [
+      [ "scope", "structwiced__bt__avrc__browse__get__items__cmd__t.html#a08a44814a65979b4b501e678ffb5daf2", null ],
+      [ "start_item", "structwiced__bt__avrc__browse__get__items__cmd__t.html#a0dac1905c4e0f868c8cfafe49b130166", null ],
+      [ "end_item", "structwiced__bt__avrc__browse__get__items__cmd__t.html#a029aba5236ece02e043ffd80fe619a32", null ],
+      [ "attr_count", "structwiced__bt__avrc__browse__get__items__cmd__t.html#a7084404254fb823e21b07763e6144867", null ],
+      [ "p_attr_list", "structwiced__bt__avrc__browse__get__items__cmd__t.html#aab3704b5be892c127a56f84ad78819e4", null ]
+    ] ],
+    [ "wiced_bt_avrc_browse_chg_path_cmd_t", "structwiced__bt__avrc__browse__chg__path__cmd__t.html", [
+      [ "uid_counter", "structwiced__bt__avrc__browse__chg__path__cmd__t.html#a183533917a9fc8496c7838bb05e1a539", null ],
+      [ "direction", "structwiced__bt__avrc__browse__chg__path__cmd__t.html#a844c9980f3e94d3cdcdd5ff67e0eafd3", null ],
+      [ "folder_uid", "structwiced__bt__avrc__browse__chg__path__cmd__t.html#a117e936768406a5768a55a78736d1d99", null ]
+    ] ],
+    [ "wiced_bt_avrc_browse_get_item_attrs_cmd_t", "structwiced__bt__avrc__browse__get__item__attrs__cmd__t.html", [
+      [ "scope", "structwiced__bt__avrc__browse__get__item__attrs__cmd__t.html#ad4ea0e4e57635d886d5b58f0bfe120ce", null ],
+      [ "uid", "structwiced__bt__avrc__browse__get__item__attrs__cmd__t.html#ab571589eb0380f8bfc9cf84de6a9e46d", null ],
+      [ "uid_counter", "structwiced__bt__avrc__browse__get__item__attrs__cmd__t.html#abea6b86162ddea8c02d4b11c9771c1e6", null ],
+      [ "attr_count", "structwiced__bt__avrc__browse__get__item__attrs__cmd__t.html#aacbb2c17312491fd26dae3f6baef0376", null ],
+      [ "p_attr_list", "structwiced__bt__avrc__browse__get__item__attrs__cmd__t.html#afdf194aeb480e34b0e3576f37197d83f", null ]
+    ] ],
+    [ "wiced_bt_avrc_browse_search_cmd_t", "structwiced__bt__avrc__browse__search__cmd__t.html", [
+      [ "string", "structwiced__bt__avrc__browse__search__cmd__t.html#a0d4cc7ac76ac02a5d20798a8fd4773dc", null ]
+    ] ],
+    [ "wiced_bt_avrc_browse_get_num_of_items_cmd_t", "structwiced__bt__avrc__browse__get__num__of__items__cmd__t.html", [
+      [ "scope", "structwiced__bt__avrc__browse__get__num__of__items__cmd__t.html#a6c4c16dac3d96bcefdb8d98e81641305", null ]
+    ] ],
+    [ "wiced_bt_avrc_browse_next_cmd_t", "structwiced__bt__avrc__browse__next__cmd__t.html", [
+      [ "target_pdu", "structwiced__bt__avrc__browse__next__cmd__t.html#ab6f743e540df2d2033c1149942c5aefc", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_hdr_t", "structwiced__bt__avrc__metadata__hdr__t.html", [
+      [ "company_id", "structwiced__bt__avrc__metadata__hdr__t.html#a56d03c8d3c7603f2c81def0c62d58bfe", null ],
+      [ "pdu", "structwiced__bt__avrc__metadata__hdr__t.html#a904eb1f76866040cf988d9e2c416b4c2", null ],
+      [ "packet_type", "structwiced__bt__avrc__metadata__hdr__t.html#a7002e97a5722bc67448e22b8c43a2dcd", null ],
+      [ "param_len", "structwiced__bt__avrc__metadata__hdr__t.html#ac788acf42e6c17e5e7e7fc313ef3a4d5", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_cmd_t", "structwiced__bt__avrc__metadata__cmd__t.html", [
+      [ "metadata_hdr", "structwiced__bt__avrc__metadata__cmd__t.html#a83a2ce40792deb3cc50e093f983ed9f5", null ],
+      [ "get_caps", "structwiced__bt__avrc__metadata__cmd__t.html#acd0f165e4e4f85d59899763fbb6c181f", null ],
+      [ "list_app_values", "structwiced__bt__avrc__metadata__cmd__t.html#a98290d1d0657fcf610bc710c4727a976", null ],
+      [ "get_cur_app_val", "structwiced__bt__avrc__metadata__cmd__t.html#aa9e4effeab9d5f2d9012307351863fb1", null ],
+      [ "set_app_val", "structwiced__bt__avrc__metadata__cmd__t.html#aba413b92ce92eddcc2fa80f7ca8ab423", null ],
+      [ "get_app_attr_txt", "structwiced__bt__avrc__metadata__cmd__t.html#aff08895ca1fcd73941d7f7135cfa1bd7", null ],
+      [ "get_app_val_txt", "structwiced__bt__avrc__metadata__cmd__t.html#a8194b5eb6abb7233787b99e551351a0e", null ],
+      [ "inform_charset", "structwiced__bt__avrc__metadata__cmd__t.html#aacd667bafcccc5c694729eebf62d9cb3", null ],
+      [ "inform_battery_status", "structwiced__bt__avrc__metadata__cmd__t.html#a8e38e40e532d4fe956c4fce772b77172", null ],
+      [ "get_elem_attrs", "structwiced__bt__avrc__metadata__cmd__t.html#a2c4cb643df5316f0f210163d40c6ef50", null ],
+      [ "reg_notif", "structwiced__bt__avrc__metadata__cmd__t.html#aa44f366e42278ba89721a757066567ed", null ],
+      [ "continuation_pdu", "structwiced__bt__avrc__metadata__cmd__t.html#af2fb4a7c709b833e1da2b4bb40bb31c3", null ],
+      [ "abort_pdu", "structwiced__bt__avrc__metadata__cmd__t.html#a4c1602510896d978f2fc50386637ceff", null ],
+      [ "player_id", "structwiced__bt__avrc__metadata__cmd__t.html#af30914df5cef1fbee98c4731c88c1c6c", null ],
+      [ "volume", "structwiced__bt__avrc__metadata__cmd__t.html#ada756e5c39a2c056b1390f9470460436", null ],
+      [ "play_item", "structwiced__bt__avrc__metadata__cmd__t.html#ace8e6f08d28c2d4404278a3e2fa12d1f", null ],
+      [ "u", "structwiced__bt__avrc__metadata__cmd__t.html#ac2080800fd77a2fe0f561b223fde9814", null ]
+    ] ],
+    [ "wiced_bt_avrc_browse_cmd_t", "structwiced__bt__avrc__browse__cmd__t.html", [
+      [ "pdu", "structwiced__bt__avrc__browse__cmd__t.html#a547ae44cb1805c72ef5365458f0b2e29", null ],
+      [ "param_len", "structwiced__bt__avrc__browse__cmd__t.html#ad518b841453e38a31caaddee9b0ad988", null ],
+      [ "continu", "structwiced__bt__avrc__browse__cmd__t.html#ac331933699035e6e610ee5f400f4b889", null ],
+      [ "abort", "structwiced__bt__avrc__browse__cmd__t.html#a0d3e265bb04664aa561b32842cbbb39e", null ],
+      [ "player_id", "structwiced__bt__avrc__browse__cmd__t.html#aa06201a685eebde02909016e4c16b1e4", null ],
+      [ "get_folder_items", "structwiced__bt__avrc__browse__cmd__t.html#a5fd4b0690eceb4eb35b29029addcbd23", null ],
+      [ "chg_path", "structwiced__bt__avrc__browse__cmd__t.html#ac797f49f11c972b4ea908df9b8045a6c", null ],
+      [ "get_item_attrs", "structwiced__bt__avrc__browse__cmd__t.html#a67c7188d0ce0312aca08b93d4cb413e2", null ],
+      [ "search", "structwiced__bt__avrc__browse__cmd__t.html#a8a834788684c64eea9409943bab0c743", null ],
+      [ "get_num_of_items", "structwiced__bt__avrc__browse__cmd__t.html#a0b9db34ec35e37425986287a5a113c8a", null ],
+      [ "browse_cmd", "structwiced__bt__avrc__browse__cmd__t.html#aff7281acc19cf8215aa1c0ed5921da7a", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_get_caps_rsp_t", "structwiced__bt__avrc__metadata__get__caps__rsp__t.html", [
+      [ "capability_id", "structwiced__bt__avrc__metadata__get__caps__rsp__t.html#a2f3590e0dc69f2072125a7adbb040c9e", null ],
+      [ "count", "structwiced__bt__avrc__metadata__get__caps__rsp__t.html#a23722578c4aba5aa32ff3991457d1a4c", null ],
+      [ "param", "structwiced__bt__avrc__metadata__get__caps__rsp__t.html#af65784d30dd2d38840a7f6427d254060", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_list_app_attr_rsp_t", "structwiced__bt__avrc__metadata__list__app__attr__rsp__t.html", [
+      [ "num_attr", "structwiced__bt__avrc__metadata__list__app__attr__rsp__t.html#ad98620aa5ce8b7d36a5a481fc912f7c1", null ],
+      [ "p_attrs", "structwiced__bt__avrc__metadata__list__app__attr__rsp__t.html#aeaa8c1323fdc01e7f48659059ddd95a8", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_list_app_values_rsp_t", "structwiced__bt__avrc__metadata__list__app__values__rsp__t.html", [
+      [ "num_val", "structwiced__bt__avrc__metadata__list__app__values__rsp__t.html#ab933c098d26640069606860712a4d61f", null ],
+      [ "p_vals", "structwiced__bt__avrc__metadata__list__app__values__rsp__t.html#ab93db6d89c298d48bd1d1a60f848256c", null ]
+    ] ],
     [ "wiced_bt_avrc_app_setting_text_t", "structwiced__bt__avrc__app__setting__text__t.html", [
       [ "attr_id", "structwiced__bt__avrc__app__setting__text__t.html#aa00ea302cbd793a16d28a0d7086d8826", null ],
-      [ "charset_id", "structwiced__bt__avrc__app__setting__text__t.html#aba39ca82c17e508a3fef991d5ffd7323", null ],
-      [ "str_len", "structwiced__bt__avrc__app__setting__text__t.html#a07f340ac80b280d150a96f52958c979c", null ],
-      [ "p_str", "structwiced__bt__avrc__app__setting__text__t.html#a510dcfa3fa58b172f636a5efb58ed588", null ]
+      [ "name", "structwiced__bt__avrc__app__setting__text__t.html#a3de41ea2f009f98fda7f1cdff094c16d", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_get_cur_app_value_rsp_t", "structwiced__bt__avrc__metadata__get__cur__app__value__rsp__t.html", [
+      [ "num_val", "structwiced__bt__avrc__metadata__get__cur__app__value__rsp__t.html#abf7ff92a771e559cb29aec518d08582a", null ],
+      [ "p_vals", "structwiced__bt__avrc__metadata__get__cur__app__value__rsp__t.html#aea344c2782d8610f6fbb324538de5cc5", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_get_app_attr_txt_rsp_t", "structwiced__bt__avrc__metadata__get__app__attr__txt__rsp__t.html", [
+      [ "num_attr", "structwiced__bt__avrc__metadata__get__app__attr__txt__rsp__t.html#ab7fb483c578dff2a60480e2e1ade5fe7", null ],
+      [ "length", "structwiced__bt__avrc__metadata__get__app__attr__txt__rsp__t.html#a71047d51a8bf9f4a8ac5fbd700a4b759", null ],
+      [ "p_val_stream", "structwiced__bt__avrc__metadata__get__app__attr__txt__rsp__t.html#a3dd6af37e3029204ffc5ef5c9521fa0e", null ]
+    ] ],
+    [ "wiced_bt_avrc_attr_entry_t", "structwiced__bt__avrc__attr__entry__t.html", [
+      [ "attr_id", "structwiced__bt__avrc__attr__entry__t.html#abed1348f1dc458effd3341a27d81a90f", null ],
+      [ "name", "structwiced__bt__avrc__attr__entry__t.html#a926a1c3baf91edf84381645a97c7636a", null ]
+    ] ],
+    [ "wiced_bt_avrc_get_attrs_t", "structwiced__bt__avrc__get__attrs__t.html", [
+      [ "num_attr", "structwiced__bt__avrc__get__attrs__t.html#a7bc493cf68b34b3df11342871577e926", null ],
+      [ "length", "structwiced__bt__avrc__get__attrs__t.html#a2af153b6edd3b906c9bafe8eb1b96cf2", null ],
+      [ "p_attr_stream", "structwiced__bt__avrc__get__attrs__t.html#a566f543bd2121de39523169759903de8", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_get_play_status_rsp_t", "structwiced__bt__avrc__metadata__get__play__status__rsp__t.html", [
+      [ "song_len", "structwiced__bt__avrc__metadata__get__play__status__rsp__t.html#a4731ca10bcb290d18a74118a898a5b32", null ],
+      [ "song_pos", "structwiced__bt__avrc__metadata__get__play__status__rsp__t.html#a223b84171b630d22fb459b5bf3e1ee12", null ],
+      [ "play_status", "structwiced__bt__avrc__metadata__get__play__status__rsp__t.html#a36248a2459a2a6e877b2de52029ad9ea", null ]
+    ] ],
+    [ "wiced_bt_avrc_player_app_param_t", "structwiced__bt__avrc__player__app__param__t.html", [
+      [ "num_attr", "structwiced__bt__avrc__player__app__param__t.html#a035f58a32c10e1e3646f3e1190d415d0", null ],
+      [ "len", "structwiced__bt__avrc__player__app__param__t.html#a44d21c82423d8fea7f8d24f26686470c", null ],
+      [ "p_attrs", "structwiced__bt__avrc__player__app__param__t.html#a2d88df402147dba7651e37176644843f", null ]
+    ] ],
+    [ "wiced_bt_avrc_notif_rsp_param_t", "unionwiced__bt__avrc__notif__rsp__param__t.html", [
+      [ "play_status", "unionwiced__bt__avrc__notif__rsp__param__t.html#ad3aad9f6676b9d20d4c614040afa847e", null ],
+      [ "track", "unionwiced__bt__avrc__notif__rsp__param__t.html#aaac3370121e13e8a927e3b73a219742a", null ],
+      [ "play_pos", "unionwiced__bt__avrc__notif__rsp__param__t.html#a188c6362a1ac2addcb7be142afb0adc5", null ],
+      [ "battery_status", "unionwiced__bt__avrc__notif__rsp__param__t.html#ad90016d56e44428abd14f2241916759a", null ],
+      [ "system_status", "unionwiced__bt__avrc__notif__rsp__param__t.html#a18c55d33ca88022c3d82364ddd581b40", null ],
+      [ "player_setting", "unionwiced__bt__avrc__notif__rsp__param__t.html#a2dde20b706c4c7ea9248182dfb160dc2", null ],
+      [ "addr_player", "unionwiced__bt__avrc__notif__rsp__param__t.html#a5dff00cf0d78ed80c42848d04e2d1e12", null ],
+      [ "uid_counter", "unionwiced__bt__avrc__notif__rsp__param__t.html#a44daf30b0ad947cfc701fbffb8d028cf", null ],
+      [ "volume", "unionwiced__bt__avrc__notif__rsp__param__t.html#a1f717a7be348f01877fd55b133a5f25a", null ]
+    ] ],
+    [ "wiced_bt_avrc_metadata_reg_notif_rsp_t", "structwiced__bt__avrc__metadata__reg__notif__rsp__t.html", [
+      [ "event_id", "structwiced__bt__avrc__metadata__reg__notif__rsp__t.html#a0802c7cc0170755dfb32ffa1a2b06c78", null ],
+      [ "param", "structwiced__bt__avrc__metadata__reg__notif__rsp__t.html#ad7162e9aec1fbad4308e849221bb9521", null ]
     ] ],
     [ "wiced_bt_avrc_item_player_t", "structwiced__bt__avrc__item__player__t.html", [
       [ "player_id", "structwiced__bt__avrc__item__player__t.html#afd67d3d83f0486aee325775714d33834", null ],
@@ -100,366 +274,90 @@ var group__wicedbt__avrc =
       [ "playable", "structwiced__bt__avrc__item__folder__t.html#a67cc9e1d4aa2f75e3be3fb131f322234", null ],
       [ "name", "structwiced__bt__avrc__item__folder__t.html#a8fdb15c76194b5f64facb73055b3047b", null ]
     ] ],
-    [ "wiced_bt_avrc_attr_entry_t", "structwiced__bt__avrc__attr__entry__t.html", [
-      [ "attr_id", "structwiced__bt__avrc__attr__entry__t.html#abed1348f1dc458effd3341a27d81a90f", null ],
-      [ "name", "structwiced__bt__avrc__attr__entry__t.html#a926a1c3baf91edf84381645a97c7636a", null ]
-    ] ],
     [ "wiced_bt_avrc_item_media_t", "structwiced__bt__avrc__item__media__t.html", [
       [ "uid", "structwiced__bt__avrc__item__media__t.html#a2b0f195cc3794207241f86c0a9819838", null ],
       [ "type", "structwiced__bt__avrc__item__media__t.html#ad13cf7131446e9bb5d3ab93aecea2a90", null ],
       [ "name", "structwiced__bt__avrc__item__media__t.html#a2c5f2798cf1ddadc0581c23a059b070b", null ],
       [ "attr_count", "structwiced__bt__avrc__item__media__t.html#a74e316c8339476fcbd1fa38cae97a33a", null ],
-      [ "p_attr_list", "structwiced__bt__avrc__item__media__t.html#af9ec2e17a69e84e3abf11bd812b1faa1", null ]
+      [ "attr_list_len", "structwiced__bt__avrc__item__media__t.html#ac7d7de2cf15d2777218161c636682eb1", null ],
+      [ "p_attr_list", "structwiced__bt__avrc__item__media__t.html#ad0baf18fe2c63be13e2c757caeab9023", null ]
     ] ],
     [ "wiced_bt_avrc_item_t", "structwiced__bt__avrc__item__t.html", [
       [ "item_type", "structwiced__bt__avrc__item__t.html#ae06b2bba361b6a915f360a6b4fb9dfca", null ],
+      [ "item_length", "structwiced__bt__avrc__item__t.html#af81410851b21cdbe7c7eb1be539ad7dc", null ],
       [ "player", "structwiced__bt__avrc__item__t.html#a1d3cc81f53287410b2dee01581e2d458", null ],
       [ "folder", "structwiced__bt__avrc__item__t.html#a5d5c4fb4665eefdb13556337ef9189f0", null ],
       [ "media", "structwiced__bt__avrc__item__t.html#abb7cd5780f4cb646f3494ede3d473392", null ],
-      [ "u", "structwiced__bt__avrc__item__t.html#adb15b90520822c6d69c0ab9fe73ae55b", null ]
+      [ "u", "structwiced__bt__avrc__item__t.html#a68a934ae8bbbc6f45685f6c2f02dc32f", null ]
     ] ],
-    [ "wiced_bt_avrc_get_caps_cmd_t", "structwiced__bt__avrc__get__caps__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__caps__cmd__t.html#a96ccc3f5ab2c3d6f9428601becac8e0c", null ],
-      [ "status", "structwiced__bt__avrc__get__caps__cmd__t.html#a4d8c57ab0d2d598bf3a04906043eb7ab", null ],
-      [ "opcode", "structwiced__bt__avrc__get__caps__cmd__t.html#afeea0eb49faabc33e053abe4f7787245", null ],
-      [ "capability_id", "structwiced__bt__avrc__get__caps__cmd__t.html#accbee2c2fcc09cea09594c502a22dd85", null ]
+    [ "wiced_bt_avrc_browse_set_br_player_rsp_t", "structwiced__bt__avrc__browse__set__br__player__rsp__t.html", [
+      [ "uid_counter", "structwiced__bt__avrc__browse__set__br__player__rsp__t.html#a26f4c1cdc0ce9d574a7ad6dde8c6b7ad", null ],
+      [ "num_items", "structwiced__bt__avrc__browse__set__br__player__rsp__t.html#ad1d6dc49cad1a8a0f463d136cb782de2", null ],
+      [ "charset_id", "structwiced__bt__avrc__browse__set__br__player__rsp__t.html#ae6ba81b4c6ade7bd8c9fdde3f93e25f6", null ],
+      [ "folder_depth", "structwiced__bt__avrc__browse__set__br__player__rsp__t.html#a01b04dbba5db14ffb610ed3d4f65f272", null ],
+      [ "length", "structwiced__bt__avrc__browse__set__br__player__rsp__t.html#ae787ce25d842e5c6c24a4f9846165846", null ],
+      [ "p_folder_name", "structwiced__bt__avrc__browse__set__br__player__rsp__t.html#ad63801140d9ec3f79ffc7fe05bbb772a", null ]
     ] ],
-    [ "wiced_bt_avrc_list_app_values_cmd_t", "structwiced__bt__avrc__list__app__values__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__list__app__values__cmd__t.html#ae613db92a79f32d45c16da28f5f707c0", null ],
-      [ "status", "structwiced__bt__avrc__list__app__values__cmd__t.html#a18d1aef423bcfa63bfcfa46df7f15755", null ],
-      [ "opcode", "structwiced__bt__avrc__list__app__values__cmd__t.html#a47b6e52bc2fd51487c369fad651d0a8a", null ],
-      [ "attr_id", "structwiced__bt__avrc__list__app__values__cmd__t.html#a49ded866544175a96873d507cf9826f8", null ]
+    [ "wiced_bt_avrc_browse_get_items_rsp_t", "structwiced__bt__avrc__browse__get__items__rsp__t.html", [
+      [ "uid_counter", "structwiced__bt__avrc__browse__get__items__rsp__t.html#a788b75c2166f016fed245142a222d832", null ],
+      [ "item_count", "structwiced__bt__avrc__browse__get__items__rsp__t.html#ac3b8b7e0a366ba555793035885b6a655", null ],
+      [ "length", "structwiced__bt__avrc__browse__get__items__rsp__t.html#a9ea58032a4673f72f6bd1ce91dd5b2e3", null ],
+      [ "item_list", "structwiced__bt__avrc__browse__get__items__rsp__t.html#a17cd20421d1ac20e82ba7873dae10fee", null ]
     ] ],
-    [ "wiced_bt_avrc_get_cur_app_value_cmd_t", "structwiced__bt__avrc__get__cur__app__value__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__cur__app__value__cmd__t.html#a827a4e663cdfd2fa46d0225e76042eaa", null ],
-      [ "status", "structwiced__bt__avrc__get__cur__app__value__cmd__t.html#a65879d152836aa78d22dcea7f613f851", null ],
-      [ "opcode", "structwiced__bt__avrc__get__cur__app__value__cmd__t.html#a4d6e0252b1462f5228661eceb56b850e", null ],
-      [ "num_attr", "structwiced__bt__avrc__get__cur__app__value__cmd__t.html#a777cda05e1bb7a9be1cee14691ba546a", null ],
-      [ "attrs", "structwiced__bt__avrc__get__cur__app__value__cmd__t.html#a52835837caf34f04bc3d11d75777387e", null ]
+    [ "wiced_bt_avrc_browse_chg_path_rsp_t", "structwiced__bt__avrc__browse__chg__path__rsp__t.html", [
+      [ "num_items", "structwiced__bt__avrc__browse__chg__path__rsp__t.html#a17140cc6b5d77a50d02bef5c7be41522", null ]
     ] ],
-    [ "wiced_bt_avrc_set_app_value_cmd_t", "structwiced__bt__avrc__set__app__value__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__set__app__value__cmd__t.html#a939009a14a8dd6d1ded0cab065ed34cf", null ],
-      [ "status", "structwiced__bt__avrc__set__app__value__cmd__t.html#a52b83cd6a0c268d578c3a7249a763c6d", null ],
-      [ "opcode", "structwiced__bt__avrc__set__app__value__cmd__t.html#ae6e1d858e73c0ff157f15e38e2f368e2", null ],
-      [ "num_val", "structwiced__bt__avrc__set__app__value__cmd__t.html#aacd33b63cbcd8dbf4f2f0bd67d4a6cb1", null ],
-      [ "p_vals", "structwiced__bt__avrc__set__app__value__cmd__t.html#a4695ff0402d2d78711b85e6325e95b75", null ]
+    [ "wiced_bt_avrc_browse_num_of_items_rsp_t", "structwiced__bt__avrc__browse__num__of__items__rsp__t.html", [
+      [ "uid_counter", "structwiced__bt__avrc__browse__num__of__items__rsp__t.html#a0cea312e8b1cfd903a59b1c85a567cbf", null ],
+      [ "num_items", "structwiced__bt__avrc__browse__num__of__items__rsp__t.html#add5d83554f4ea268c653b7e3109d235c", null ]
     ] ],
-    [ "wiced_bt_avrc_get_app_attr_txt_cmd_t", "structwiced__bt__avrc__get__app__attr__txt__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__app__attr__txt__cmd__t.html#a2b1fe80d7f61a1c57c91267a4a65418b", null ],
-      [ "status", "structwiced__bt__avrc__get__app__attr__txt__cmd__t.html#aa127ba1e10a38431b6a277e0cf198e01", null ],
-      [ "opcode", "structwiced__bt__avrc__get__app__attr__txt__cmd__t.html#ae76bcabfcada9bae3a749cff71905581", null ],
-      [ "num_attr", "structwiced__bt__avrc__get__app__attr__txt__cmd__t.html#a5aab5b5efd26def3c6530b6f3b22c616", null ],
-      [ "attrs", "structwiced__bt__avrc__get__app__attr__txt__cmd__t.html#a3ce2a7639723e4dae07852a3497d4769", null ]
+    [ "wiced_bt_avrc_metadata_rsp_t", "structwiced__bt__avrc__metadata__rsp__t.html", [
+      [ "metadata_hdr", "structwiced__bt__avrc__metadata__rsp__t.html#a86cd5940c1e35e788b08d15a9e275801", null ],
+      [ "get_caps", "structwiced__bt__avrc__metadata__rsp__t.html#a6f07ec5ff979e1af278fe99ea4ec6003", null ],
+      [ "list_app_attr", "structwiced__bt__avrc__metadata__rsp__t.html#ad60c268c7a5f96fd4d332f762c2c0034", null ],
+      [ "list_app_values", "structwiced__bt__avrc__metadata__rsp__t.html#a4021a278fcd4c8da90930bae9b80c4f2", null ],
+      [ "get_cur_app_val", "structwiced__bt__avrc__metadata__rsp__t.html#acf506be813ceaabf308ce2f870c9bc81", null ],
+      [ "get_app_attr_txt", "structwiced__bt__avrc__metadata__rsp__t.html#a7bc7bce0d8a243eed51f3c474e67d97e", null ],
+      [ "get_app_val_txt", "structwiced__bt__avrc__metadata__rsp__t.html#a84b65696dc4f3445d79b5cec49e75f41", null ],
+      [ "get_elem_attrs", "structwiced__bt__avrc__metadata__rsp__t.html#abe0c236909765b4eb217b98d34190d8c", null ],
+      [ "get_play_status", "structwiced__bt__avrc__metadata__rsp__t.html#ab67e2c63d777e56c361a7a7e6b9de9c9", null ],
+      [ "reg_notif", "structwiced__bt__avrc__metadata__rsp__t.html#acdc2c541a789ac8ac577e8562cd62a76", null ],
+      [ "volume", "structwiced__bt__avrc__metadata__rsp__t.html#a89bd3905f5019db3bd28b7ce62087e66", null ],
+      [ "status", "structwiced__bt__avrc__metadata__rsp__t.html#afbe214dd0505649820ac51d2b7144983", null ],
+      [ "play_status", "structwiced__bt__avrc__metadata__rsp__t.html#aa5e86e18330fa7dcc85c4e58f257d049", null ],
+      [ "rejected_rsp", "structwiced__bt__avrc__metadata__rsp__t.html#a38a7a631f4d0e299f67b3ef881716447", null ],
+      [ "u", "structwiced__bt__avrc__metadata__rsp__t.html#a9594ea2ddce14b76234ada956a99f83f", null ]
     ] ],
-    [ "wiced_bt_avrc_get_app_val_txt_cmd_t", "structwiced__bt__avrc__get__app__val__txt__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__app__val__txt__cmd__t.html#acc8e67ccf300c91efadc2cd1adc60d43", null ],
-      [ "status", "structwiced__bt__avrc__get__app__val__txt__cmd__t.html#a4f3f0c082022dda66fce756adeacfe28", null ],
-      [ "opcode", "structwiced__bt__avrc__get__app__val__txt__cmd__t.html#a8b5ec56e932e563e758248860442a8e0", null ],
-      [ "attr_id", "structwiced__bt__avrc__get__app__val__txt__cmd__t.html#aebd4b4f056fdf02eb5d0bdd8e0c36d7a", null ],
-      [ "num_val", "structwiced__bt__avrc__get__app__val__txt__cmd__t.html#aac57365e0e3af3a47c327f09fb47dd66", null ],
-      [ "vals", "structwiced__bt__avrc__get__app__val__txt__cmd__t.html#aba75d874f50a42513e09a8393ceacb46", null ]
-    ] ],
-    [ "wiced_bt_avrc_inform_charset_cmd_t", "structwiced__bt__avrc__inform__charset__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__inform__charset__cmd__t.html#a113d384893f0e833ce94f1420612613a", null ],
-      [ "status", "structwiced__bt__avrc__inform__charset__cmd__t.html#ac21b0ce37f0f8811e55e9b48a5aead00", null ],
-      [ "opcode", "structwiced__bt__avrc__inform__charset__cmd__t.html#afd0dbb7cc245590a4a45883c27644fde", null ],
-      [ "num_id", "structwiced__bt__avrc__inform__charset__cmd__t.html#a77cfb7bf7fa01fa670044ec75c8dc253", null ],
-      [ "charsets", "structwiced__bt__avrc__inform__charset__cmd__t.html#a44101d952b3def673755f9472af35df5", null ]
-    ] ],
-    [ "wiced_bt_avrc_battery_status_cmd_t", "structwiced__bt__avrc__battery__status__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__battery__status__cmd__t.html#a76297e0783b9f9c53bdb4a1e343f3adf", null ],
-      [ "status", "structwiced__bt__avrc__battery__status__cmd__t.html#a34a4f4412ab8537fa92850c42c94daaa", null ],
-      [ "opcode", "structwiced__bt__avrc__battery__status__cmd__t.html#a883c420fdcdfe17465062cd36f87fdae", null ],
-      [ "battery_status", "structwiced__bt__avrc__battery__status__cmd__t.html#a21bab6cba0507710eda2a52e162c595c", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_elem_attrs_cmd_t", "structwiced__bt__avrc__get__elem__attrs__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__elem__attrs__cmd__t.html#a1bd253caa5e2915415370bb3b4201369", null ],
-      [ "status", "structwiced__bt__avrc__get__elem__attrs__cmd__t.html#a4123976e1973aa0f8571b285314951b4", null ],
-      [ "opcode", "structwiced__bt__avrc__get__elem__attrs__cmd__t.html#af23513afa1deacb7b34a76ab36815e9b", null ],
-      [ "num_attr", "structwiced__bt__avrc__get__elem__attrs__cmd__t.html#a5fe93a3ac4f9d1a2a6c12b1832ae5aa2", null ],
-      [ "attrs", "structwiced__bt__avrc__get__elem__attrs__cmd__t.html#a85cf8a4aaa5c64a0473d9d0f4b8b7775", null ]
-    ] ],
-    [ "wiced_bt_avrc_reg_notif_cmd_t", "structwiced__bt__avrc__reg__notif__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__reg__notif__cmd__t.html#ac7b6d441e3789d5d9dbe6703b4aa7f96", null ],
-      [ "status", "structwiced__bt__avrc__reg__notif__cmd__t.html#ae32566aea7fe49d59d8506786b8dc84a", null ],
-      [ "opcode", "structwiced__bt__avrc__reg__notif__cmd__t.html#aa063025149b549cee98300329c540248", null ],
-      [ "event_id", "structwiced__bt__avrc__reg__notif__cmd__t.html#a8849074d697002f9685a5c47afad704f", null ],
-      [ "param", "structwiced__bt__avrc__reg__notif__cmd__t.html#a0cc25b526f025e5187b6d9f2a67167cf", null ]
-    ] ],
-    [ "wiced_bt_avrc_set_addr_player_cmd_t", "structwiced__bt__avrc__set__addr__player__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__set__addr__player__cmd__t.html#a4fe350047888f51c2fbe88f2d644c0dc", null ],
-      [ "status", "structwiced__bt__avrc__set__addr__player__cmd__t.html#af2af17ff6310e786f4db4b199e5de6f7", null ],
-      [ "opcode", "structwiced__bt__avrc__set__addr__player__cmd__t.html#a1b0240787270b1750dce1692d99a633b", null ],
-      [ "player_id", "structwiced__bt__avrc__set__addr__player__cmd__t.html#a22c3055d01d1bee41cfaa8a1d8334b9c", null ]
-    ] ],
-    [ "wiced_bt_avrc_set_br_player_cmd_t", "structwiced__bt__avrc__set__br__player__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__set__br__player__cmd__t.html#a76c0e6c37ce8dce118df3b8c238cc023", null ],
-      [ "status", "structwiced__bt__avrc__set__br__player__cmd__t.html#a5016c44ae65815308ac4cd7c28c42447", null ],
-      [ "opcode", "structwiced__bt__avrc__set__br__player__cmd__t.html#ac6104e15ec91d4a1a3391d26a16a2cfe", null ],
-      [ "player_id", "structwiced__bt__avrc__set__br__player__cmd__t.html#ad23fce1fc6f49ac2edad000af645ef3a", null ]
-    ] ],
-    [ "wiced_bt_avrc_set_volume_cmd_t", "structwiced__bt__avrc__set__volume__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__set__volume__cmd__t.html#aa05679c4b47f940fddaa89b9496bef5f", null ],
-      [ "status", "structwiced__bt__avrc__set__volume__cmd__t.html#a2aa6ee9da20a532cc24c9f18d16186aa", null ],
-      [ "opcode", "structwiced__bt__avrc__set__volume__cmd__t.html#a4140a99cb41d160f80e1ac752c78c4b0", null ],
-      [ "volume", "structwiced__bt__avrc__set__volume__cmd__t.html#a5391e9b404f7f9ab4607c0a7524efaa2", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_items_cmd_t", "structwiced__bt__avrc__get__items__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__items__cmd__t.html#a3e6618464b5ce81472a8fa0f8279f192", null ],
-      [ "status", "structwiced__bt__avrc__get__items__cmd__t.html#ac57acc84133ad0adabcba62f1f5b9d4f", null ],
-      [ "opcode", "structwiced__bt__avrc__get__items__cmd__t.html#a7ab4d457a46eee4039adc4f3b5636862", null ],
-      [ "scope", "structwiced__bt__avrc__get__items__cmd__t.html#af667d45f3522d6c5f36c614cf6b7d8bb", null ],
-      [ "start_item", "structwiced__bt__avrc__get__items__cmd__t.html#a1daa9768c6addce52ac032267ff3ff0b", null ],
-      [ "end_item", "structwiced__bt__avrc__get__items__cmd__t.html#ab779c9e613b06c88a17f3a4c7530327a", null ],
-      [ "attr_count", "structwiced__bt__avrc__get__items__cmd__t.html#a77af7ea6abad0c9bf961ad3a31c7eaea", null ],
-      [ "p_attr_list", "structwiced__bt__avrc__get__items__cmd__t.html#add64e85a0e3d2caad4d03f69db2db6c4", null ]
-    ] ],
-    [ "wiced_bt_avrc_chg_path_cmd_t", "structwiced__bt__avrc__chg__path__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__chg__path__cmd__t.html#a9170216b9b732c5a8b8a0f29ec3966d9", null ],
-      [ "status", "structwiced__bt__avrc__chg__path__cmd__t.html#abaa21665faf3e7c7ef73200ace7323d5", null ],
-      [ "opcode", "structwiced__bt__avrc__chg__path__cmd__t.html#af4b011ebdf368535066e77f1fbac7536", null ],
-      [ "uid_counter", "structwiced__bt__avrc__chg__path__cmd__t.html#aa43a5df37b0612b92ae7b3773545c664", null ],
-      [ "direction", "structwiced__bt__avrc__chg__path__cmd__t.html#a20ee5eeb3d1acf70811ce8f51edb600e", null ],
-      [ "folder_uid", "structwiced__bt__avrc__chg__path__cmd__t.html#a059438277ecdbf385e09293d26b12e64", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_attrs_cmd_t", "structwiced__bt__avrc__get__attrs__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__attrs__cmd__t.html#a7655c07cd09c511c1a75f31d62860ac9", null ],
-      [ "status", "structwiced__bt__avrc__get__attrs__cmd__t.html#a000925fa4e1a95bec159a2fdedc158de", null ],
-      [ "opcode", "structwiced__bt__avrc__get__attrs__cmd__t.html#a22753998261c33bc4bd8821663444619", null ],
-      [ "scope", "structwiced__bt__avrc__get__attrs__cmd__t.html#a6616dc126c43aec1286ee2da1ba620b1", null ],
-      [ "uid", "structwiced__bt__avrc__get__attrs__cmd__t.html#a589d9a0fb0854c0eccbdb35424503956", null ],
-      [ "uid_counter", "structwiced__bt__avrc__get__attrs__cmd__t.html#a345d27c9422998aeee2cd32bc68962f6", null ],
-      [ "attr_count", "structwiced__bt__avrc__get__attrs__cmd__t.html#a25d5514046cf9280fdd47a0c4048ecde", null ],
-      [ "p_attr_list", "structwiced__bt__avrc__get__attrs__cmd__t.html#ace8433354e218db5dd3ccd88329c8f24", null ]
-    ] ],
-    [ "wiced_bt_avrc_search_cmd_t", "structwiced__bt__avrc__search__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__search__cmd__t.html#a24ab3d3963e824a895e18788658c5ca6", null ],
-      [ "status", "structwiced__bt__avrc__search__cmd__t.html#a43c59c5ba1a62a51dd3131fc94acb8ac", null ],
-      [ "opcode", "structwiced__bt__avrc__search__cmd__t.html#a68e6790d8da102ed2460e91650a2cc8e", null ],
-      [ "string", "structwiced__bt__avrc__search__cmd__t.html#a9007bfd5bcf0f6c82173cba1f4d7dd21", null ]
-    ] ],
-    [ "wiced_bt_avrc_play_item_cmd_t", "structwiced__bt__avrc__play__item__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__play__item__cmd__t.html#ae7d8396f6b85aa8bc208f14252547656", null ],
-      [ "status", "structwiced__bt__avrc__play__item__cmd__t.html#aefa137d7e278859d36d3390ce23e7230", null ],
-      [ "opcode", "structwiced__bt__avrc__play__item__cmd__t.html#abfaae993bedfe7ffec603de7dc1e6baa", null ],
-      [ "scope", "structwiced__bt__avrc__play__item__cmd__t.html#a6ef98ce2463cb2389b271dc6072d7204", null ],
-      [ "uid", "structwiced__bt__avrc__play__item__cmd__t.html#a1fe1e038092dd92e1906bf18475a5b88", null ],
-      [ "uid_counter", "structwiced__bt__avrc__play__item__cmd__t.html#a5f759ab2254bfef7d7fb87411505ba41", null ]
-    ] ],
-    [ "wiced_bt_avrc_add_to_play_cmd_t", "structwiced__bt__avrc__add__to__play__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__add__to__play__cmd__t.html#a3098d3837e32301d536daba57894ab9f", null ],
-      [ "status", "structwiced__bt__avrc__add__to__play__cmd__t.html#aa4ea1584eef16f07b58db647b56d9900", null ],
-      [ "opcode", "structwiced__bt__avrc__add__to__play__cmd__t.html#a27d3b3959a22cba29e1c9744973e2682", null ],
-      [ "scope", "structwiced__bt__avrc__add__to__play__cmd__t.html#acab9b3c1f1efefd16f0b5a2a1cb70b02", null ],
-      [ "uid", "structwiced__bt__avrc__add__to__play__cmd__t.html#a3a543d973b512ac7655fc536b5e7f3ad", null ],
-      [ "uid_counter", "structwiced__bt__avrc__add__to__play__cmd__t.html#ade2517f4302b21c40f1d500362ea5420", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_num_of_items_cmd_t", "structwiced__bt__avrc__get__num__of__items__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__num__of__items__cmd__t.html#a9ae7b9d7652877badd3989d77056948f", null ],
-      [ "status", "structwiced__bt__avrc__get__num__of__items__cmd__t.html#a44bb90b6d611d484706da9aca51314ae", null ],
-      [ "opcode", "structwiced__bt__avrc__get__num__of__items__cmd__t.html#a47074360532d2b12c170ba33e75c3e66", null ],
-      [ "scope", "structwiced__bt__avrc__get__num__of__items__cmd__t.html#ac518658676f503c50521876d7d7e4b92", null ]
+    [ "wiced_bt_avrc_browse_rsp_t", "structwiced__bt__avrc__browse__rsp__t.html", [
+      [ "pdu_id", "structwiced__bt__avrc__browse__rsp__t.html#a262a159700d60036df293b56ec7b9cc5", null ],
+      [ "param_len", "structwiced__bt__avrc__browse__rsp__t.html#a61948ec1cd38b49e008db57709f33d46", null ],
+      [ "status", "structwiced__bt__avrc__browse__rsp__t.html#a000a74f1ece1205c03c0e66cc4ff077d", null ],
+      [ "set_browse_player", "structwiced__bt__avrc__browse__rsp__t.html#a8f9694d09abdc787d614221f4293758f", null ],
+      [ "get_folder_items", "structwiced__bt__avrc__browse__rsp__t.html#aae218e80c53dc69a52aad853eb4ce104", null ],
+      [ "chg_path", "structwiced__bt__avrc__browse__rsp__t.html#abc9ee4b01e714fc048fab0f32c55d551", null ],
+      [ "get_attrs", "structwiced__bt__avrc__browse__rsp__t.html#ae8700c97be31196306412c5021cdfbdd", null ],
+      [ "get_num_of_items", "structwiced__bt__avrc__browse__rsp__t.html#a84d22ae2014fa98ef0be835ed35d756c", null ],
+      [ "search", "structwiced__bt__avrc__browse__rsp__t.html#a554c42b990e074a2de989ec0e586463d", null ],
+      [ "reject", "structwiced__bt__avrc__browse__rsp__t.html#a7ba2955525786c777630b38c58af568c", null ],
+      [ "u", "structwiced__bt__avrc__browse__rsp__t.html#ac103bbbca9c2e47a0f85f72b7e6b6de5", null ]
     ] ],
     [ "wiced_bt_avrc_cmd_t", "structwiced__bt__avrc__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__cmd__t.html#a87c989f6ce0780fe76163afed3337822", null ],
-      [ "status", "structwiced__bt__avrc__cmd__t.html#af491497035a5889a707ab66213cfd619", null ],
-      [ "opcode", "structwiced__bt__avrc__cmd__t.html#a2175bfe972425c7fd3883c7acb4aba7b", null ]
-    ] ],
-    [ "wiced_bt_avrc_next_cmd_t", "structwiced__bt__avrc__next__cmd__t.html", [
-      [ "pdu", "structwiced__bt__avrc__next__cmd__t.html#a1961dcb88b39a38ad7d6040e1acd17cf", null ],
-      [ "status", "structwiced__bt__avrc__next__cmd__t.html#afe75ed8ee0239ede3fd9ce2da44b7382", null ],
-      [ "opcode", "structwiced__bt__avrc__next__cmd__t.html#afad150b0f51a96c3a2ca7a8f19cb9417", null ],
-      [ "target_pdu", "structwiced__bt__avrc__next__cmd__t.html#ac2706c10eb4d31f8f465236bf0cb630a", null ]
-    ] ],
-    [ "wiced_bt_avrc_command_t", "unionwiced__bt__avrc__command__t.html", [
-      [ "pdu", "unionwiced__bt__avrc__command__t.html#a72e3ca134c71c1c8cd07a7851e7b0c9f", null ],
-      [ "cmd", "unionwiced__bt__avrc__command__t.html#a5ffd6207401e32a2d4adb4541cca44f5", null ],
-      [ "get_caps", "unionwiced__bt__avrc__command__t.html#a5e97fadd46f33aaa54bcfcf9abb48a03", null ],
-      [ "list_app_attr", "unionwiced__bt__avrc__command__t.html#a82546a7c255664974991abac63b5ceaf", null ],
-      [ "list_app_values", "unionwiced__bt__avrc__command__t.html#ac96e2b6274268529e8bd37e189e31d3c", null ],
-      [ "get_cur_app_val", "unionwiced__bt__avrc__command__t.html#ad6b2b269b77606bb8343a6aad95cae4a", null ],
-      [ "set_app_val", "unionwiced__bt__avrc__command__t.html#a7ba921fbdb3fec569da23660fe95dd64", null ],
-      [ "get_app_attr_txt", "unionwiced__bt__avrc__command__t.html#ab6674e1691e8355aa0800ab34e361861", null ],
-      [ "get_app_val_txt", "unionwiced__bt__avrc__command__t.html#a215ceeee5b2ee31247016d377b4fc4ad", null ],
-      [ "inform_charset", "unionwiced__bt__avrc__command__t.html#a133c7be3625cefc11ee1e37a8f6eb2ac", null ],
-      [ "inform_battery_status", "unionwiced__bt__avrc__command__t.html#a26e3433221a645538efccab1d0e03e36", null ],
-      [ "get_elem_attrs", "unionwiced__bt__avrc__command__t.html#a35ce47cfaba45c6356e8f3d6549f2a7f", null ],
-      [ "get_play_status", "unionwiced__bt__avrc__command__t.html#ac7410b7c5a69761ba1acdc36b960d78f", null ],
-      [ "reg_notif", "unionwiced__bt__avrc__command__t.html#ad8420fe4940683f76eeb962f7e167ee6", null ],
-      [ "continu", "unionwiced__bt__avrc__command__t.html#af6d657d8c2dca8e828e5bc553ec09a66", null ],
-      [ "abort", "unionwiced__bt__avrc__command__t.html#a73904f1e182b21d46c575ea79a96a489", null ],
-      [ "addr_player", "unionwiced__bt__avrc__command__t.html#a805f0b1a5b68f29ca88e3182b639ce8a", null ],
-      [ "volume", "unionwiced__bt__avrc__command__t.html#a34c64b38587ae852734ff2b5a23db6ad", null ],
-      [ "br_player", "unionwiced__bt__avrc__command__t.html#a431d05ef60d6dcffbd625043aaa5439b", null ],
-      [ "get_items", "unionwiced__bt__avrc__command__t.html#ab9cff3532c299cd2ec94ad525a2bb43b", null ],
-      [ "chg_path", "unionwiced__bt__avrc__command__t.html#acc9fb502c41e370f59c6dad6e9dd5131", null ],
-      [ "get_attrs", "unionwiced__bt__avrc__command__t.html#a631edbdcc6925dd65ed3c406cb7239be", null ],
-      [ "search", "unionwiced__bt__avrc__command__t.html#ae7f2308ffa2dd89e98e07117a7ec5b25", null ],
-      [ "play_item", "unionwiced__bt__avrc__command__t.html#a14af7dbf4a5b8cdd6ac618e574f5f80c", null ],
-      [ "add_to_play", "unionwiced__bt__avrc__command__t.html#a7a0f90e313c6fd03ddc4237cd1a22b58", null ],
-      [ "get_num_of_items", "unionwiced__bt__avrc__command__t.html#a56f1f7cff71e55f81ee50a48dc3ff49b", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_caps_rsp_t", "structwiced__bt__avrc__get__caps__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__caps__rsp__t.html#ada5594ab4a33328fb523f7c07db266ec", null ],
-      [ "status", "structwiced__bt__avrc__get__caps__rsp__t.html#aa9f390e08a549f0efe19b3b354d6ec1b", null ],
-      [ "opcode", "structwiced__bt__avrc__get__caps__rsp__t.html#a4d6808f2330f7ae770c1a47e0afc74ce", null ],
-      [ "capability_id", "structwiced__bt__avrc__get__caps__rsp__t.html#abc9638728ed6676cc7a9d59a64f02df6", null ],
-      [ "count", "structwiced__bt__avrc__get__caps__rsp__t.html#a739ae5fbfd33c29fac985856b75f5ee3", null ],
-      [ "param", "structwiced__bt__avrc__get__caps__rsp__t.html#a3f76d920bb77a906f8fd0086dcb48cc9", null ]
-    ] ],
-    [ "wiced_bt_avrc_list_app_attr_rsp_t", "structwiced__bt__avrc__list__app__attr__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__list__app__attr__rsp__t.html#a4f7f5b8f3e2eaae333c7b0ae50496685", null ],
-      [ "status", "structwiced__bt__avrc__list__app__attr__rsp__t.html#a52eb617ebb940548ee9b5e42909ba2a4", null ],
-      [ "opcode", "structwiced__bt__avrc__list__app__attr__rsp__t.html#ac7b8da66a89332312e85e55b8b81ac2e", null ],
-      [ "num_attr", "structwiced__bt__avrc__list__app__attr__rsp__t.html#aee92b18ec8f4672c64e80b069e9959d5", null ],
-      [ "attrs", "structwiced__bt__avrc__list__app__attr__rsp__t.html#a0109b8912cee783926730b2174b4cc41", null ]
-    ] ],
-    [ "wiced_bt_avrc_list_app_values_rsp_t", "structwiced__bt__avrc__list__app__values__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__list__app__values__rsp__t.html#aa39e9450960d91c4eb8276551951f6a3", null ],
-      [ "status", "structwiced__bt__avrc__list__app__values__rsp__t.html#a013308dea3db553919c0036c7e1e2e73", null ],
-      [ "opcode", "structwiced__bt__avrc__list__app__values__rsp__t.html#a95b6c4cf31b887ecac9b3a9b8dac9c46", null ],
-      [ "num_val", "structwiced__bt__avrc__list__app__values__rsp__t.html#a543ab9a0a21ae97a668026564be22ab4", null ],
-      [ "vals", "structwiced__bt__avrc__list__app__values__rsp__t.html#a8cd8194dd841ec36b402c2bbf2439da8", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_cur_app_value_rsp_t", "structwiced__bt__avrc__get__cur__app__value__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__cur__app__value__rsp__t.html#a6750a5a3454776931ef6872d11950aed", null ],
-      [ "status", "structwiced__bt__avrc__get__cur__app__value__rsp__t.html#aa1791b123b9f91386750b8c54f8a0c68", null ],
-      [ "opcode", "structwiced__bt__avrc__get__cur__app__value__rsp__t.html#a025c1ee23cc83294223488004beeaf5f", null ],
-      [ "num_val", "structwiced__bt__avrc__get__cur__app__value__rsp__t.html#ae40b0b0f09f651543a41ac9ea0a991f8", null ],
-      [ "p_vals", "structwiced__bt__avrc__get__cur__app__value__rsp__t.html#a3e67585a4c23740b0a86219eb5c1888b", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_app_attr_txt_rsp_t", "structwiced__bt__avrc__get__app__attr__txt__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__app__attr__txt__rsp__t.html#aebb2e9a8fca526bc047194ca91e03a8f", null ],
-      [ "status", "structwiced__bt__avrc__get__app__attr__txt__rsp__t.html#a405e44f5db7dc786c38c62e3cfb1604e", null ],
-      [ "opcode", "structwiced__bt__avrc__get__app__attr__txt__rsp__t.html#ad6a17e43488de3df7152d70b048b7b10", null ],
-      [ "num_attr", "structwiced__bt__avrc__get__app__attr__txt__rsp__t.html#a529962ea5586dcd1e6244650ff1fe0da", null ],
-      [ "p_attrs", "structwiced__bt__avrc__get__app__attr__txt__rsp__t.html#a59f1a8fa718b900614f5ced6288b87a0", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_elem_attrs_rsp_t", "structwiced__bt__avrc__get__elem__attrs__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__elem__attrs__rsp__t.html#ad96f072118326b685aacf75f6249248f", null ],
-      [ "status", "structwiced__bt__avrc__get__elem__attrs__rsp__t.html#af3a13ea36c4e98315acde9b4a7196d4c", null ],
-      [ "opcode", "structwiced__bt__avrc__get__elem__attrs__rsp__t.html#a332699e0f865f923160e0ab466b33f84", null ],
-      [ "num_attr", "structwiced__bt__avrc__get__elem__attrs__rsp__t.html#a2497beb54479959516e99abf468bc969", null ],
-      [ "p_attrs", "structwiced__bt__avrc__get__elem__attrs__rsp__t.html#a164fc06b2f508b5f5ca791e41848557b", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_play_status_rsp_t", "structwiced__bt__avrc__get__play__status__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__play__status__rsp__t.html#a4a7af1c212f70b9e2396c51aff9e74ff", null ],
-      [ "status", "structwiced__bt__avrc__get__play__status__rsp__t.html#a4f37dfeb6242e2683ce00b550cf228d0", null ],
-      [ "opcode", "structwiced__bt__avrc__get__play__status__rsp__t.html#aa5f187e6db96cdf8cc31a843a820f026", null ],
-      [ "song_len", "structwiced__bt__avrc__get__play__status__rsp__t.html#a4c27d421bd55627a87f9ef72c0f8a912", null ],
-      [ "song_pos", "structwiced__bt__avrc__get__play__status__rsp__t.html#a4cc51a273c45d68d5a9183eaf8a500fd", null ],
-      [ "play_status", "structwiced__bt__avrc__get__play__status__rsp__t.html#a9e882bf6c8c2066a4c395810aeaa6a64", null ]
-    ] ],
-    [ "wiced_bt_avrc_addr_player_param_t", "structwiced__bt__avrc__addr__player__param__t.html", [
-      [ "player_id", "structwiced__bt__avrc__addr__player__param__t.html#a81e03f6c023d60356c31776f80d4c686", null ],
-      [ "uid_counter", "structwiced__bt__avrc__addr__player__param__t.html#a768afad505ef1aec81cab6869fa271aa", null ]
-    ] ],
-    [ "wiced_bt_avrc_player_app_param_t", "structwiced__bt__avrc__player__app__param__t.html", [
-      [ "num_attr", "structwiced__bt__avrc__player__app__param__t.html#a035f58a32c10e1e3646f3e1190d415d0", null ],
-      [ "attr_id", "structwiced__bt__avrc__player__app__param__t.html#a6fe6c48ea37410956d2ed6749edf9dc9", null ],
-      [ "attr_value", "structwiced__bt__avrc__player__app__param__t.html#aa8a518b1aee438b1f0880e8eecf92191", null ]
-    ] ],
-    [ "wiced_bt_avrc_notif_rsp_param_t", "unionwiced__bt__avrc__notif__rsp__param__t.html", [
-      [ "play_status", "unionwiced__bt__avrc__notif__rsp__param__t.html#ad3aad9f6676b9d20d4c614040afa847e", null ],
-      [ "track", "unionwiced__bt__avrc__notif__rsp__param__t.html#aaac3370121e13e8a927e3b73a219742a", null ],
-      [ "play_pos", "unionwiced__bt__avrc__notif__rsp__param__t.html#a188c6362a1ac2addcb7be142afb0adc5", null ],
-      [ "battery_status", "unionwiced__bt__avrc__notif__rsp__param__t.html#ad90016d56e44428abd14f2241916759a", null ],
-      [ "system_status", "unionwiced__bt__avrc__notif__rsp__param__t.html#a18c55d33ca88022c3d82364ddd581b40", null ],
-      [ "player_setting", "unionwiced__bt__avrc__notif__rsp__param__t.html#a2dde20b706c4c7ea9248182dfb160dc2", null ],
-      [ "addr_player", "unionwiced__bt__avrc__notif__rsp__param__t.html#a5dff00cf0d78ed80c42848d04e2d1e12", null ],
-      [ "uid_counter", "unionwiced__bt__avrc__notif__rsp__param__t.html#a44daf30b0ad947cfc701fbffb8d028cf", null ],
-      [ "volume", "unionwiced__bt__avrc__notif__rsp__param__t.html#a1f717a7be348f01877fd55b133a5f25a", null ]
-    ] ],
-    [ "wiced_bt_avrc_reg_notif_rsp_t", "structwiced__bt__avrc__reg__notif__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__reg__notif__rsp__t.html#ab0caf2640057816644250615b344bf25", null ],
-      [ "status", "structwiced__bt__avrc__reg__notif__rsp__t.html#afef09a8bf61ac1274c08ba491f4bffe6", null ],
-      [ "opcode", "structwiced__bt__avrc__reg__notif__rsp__t.html#a1db39aafbee748463c1f0cc0bd1fe34a", null ],
-      [ "event_id", "structwiced__bt__avrc__reg__notif__rsp__t.html#aac8f12f2b32cf48c9a3a2e72e052ea69", null ],
-      [ "param", "structwiced__bt__avrc__reg__notif__rsp__t.html#ad6e3ba31c09e956e37c0e98253db17e6", null ]
-    ] ],
-    [ "wiced_bt_avrc_set_volume_rsp_t", "structwiced__bt__avrc__set__volume__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__set__volume__rsp__t.html#a9d0eab6775100a2a6e745d06662421a9", null ],
-      [ "status", "structwiced__bt__avrc__set__volume__rsp__t.html#ab0eab3f30e24381dac48fab15e421f27", null ],
-      [ "opcode", "structwiced__bt__avrc__set__volume__rsp__t.html#aab957c5e7f9bec3ed68140447ea5801b", null ],
-      [ "volume", "structwiced__bt__avrc__set__volume__rsp__t.html#abfa45855c7387f8fb0cd334ee9af41a1", null ]
-    ] ],
-    [ "wiced_bt_avrc_set_br_player_rsp_t", "structwiced__bt__avrc__set__br__player__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__set__br__player__rsp__t.html#af7a5d113605e3ce0902a4131ab2b1129", null ],
-      [ "status", "structwiced__bt__avrc__set__br__player__rsp__t.html#a18bb36ede1b5d620fc4f95590e8fa1b9", null ],
-      [ "opcode", "structwiced__bt__avrc__set__br__player__rsp__t.html#a1882bcc8077f9e77438ffa3402cf6cec", null ],
-      [ "uid_counter", "structwiced__bt__avrc__set__br__player__rsp__t.html#a5d0cf09048f0cb2a19f67bd7d111b983", null ],
-      [ "num_items", "structwiced__bt__avrc__set__br__player__rsp__t.html#ac5a301cd484f6c82a76301bce7f90d1a", null ],
-      [ "charset_id", "structwiced__bt__avrc__set__br__player__rsp__t.html#a01909268bbd298a8f39b7a842e43c9b1", null ],
-      [ "folder_depth", "structwiced__bt__avrc__set__br__player__rsp__t.html#a270b61a9ebead328376987326fe4361d", null ],
-      [ "p_folders", "structwiced__bt__avrc__set__br__player__rsp__t.html#ae994c2af16177981bafddd0a271391ff", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_items_rsp_t", "structwiced__bt__avrc__get__items__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__items__rsp__t.html#a6e6260979699528b968c3ba1d895a13a", null ],
-      [ "status", "structwiced__bt__avrc__get__items__rsp__t.html#ac0e0e5eb705a95e81cb16e221eb52adf", null ],
-      [ "opcode", "structwiced__bt__avrc__get__items__rsp__t.html#a3bacd21c6990ddcc38acc0dfe116640b", null ],
-      [ "uid_counter", "structwiced__bt__avrc__get__items__rsp__t.html#a4ef213d154d729dee48a5a5431413bb6", null ],
-      [ "item_count", "structwiced__bt__avrc__get__items__rsp__t.html#af46989497f9ce7b06f74e75341d3df48", null ],
-      [ "p_item_list", "structwiced__bt__avrc__get__items__rsp__t.html#ae40b2eb6746f12b16ee7b18b1c8ac287", null ]
-    ] ],
-    [ "wiced_bt_avrc_chg_path_rsp_t", "structwiced__bt__avrc__chg__path__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__chg__path__rsp__t.html#abf8cb204a989f9c1a6d5e2c36953e41f", null ],
-      [ "status", "structwiced__bt__avrc__chg__path__rsp__t.html#a219bcbcc8bedea6492c6889eaa6304e7", null ],
-      [ "opcode", "structwiced__bt__avrc__chg__path__rsp__t.html#ab8d57c7e739361f0b8e82b1821e6d1b3", null ],
-      [ "num_items", "structwiced__bt__avrc__chg__path__rsp__t.html#ac8932284d3911784eae09d087a5d65b9", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_attrs_rsp_t", "structwiced__bt__avrc__get__attrs__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__attrs__rsp__t.html#ab5e3139ddabb6297a8a07ac12ce11eb9", null ],
-      [ "status", "structwiced__bt__avrc__get__attrs__rsp__t.html#aed3816c6fc92b428340827576952788d", null ],
-      [ "opcode", "structwiced__bt__avrc__get__attrs__rsp__t.html#a10abccc86bea21d6dcad18205c40f906", null ],
-      [ "attr_count", "structwiced__bt__avrc__get__attrs__rsp__t.html#aa76e2c2c909884f18f652888e07dc5e1", null ],
-      [ "p_attr_list", "structwiced__bt__avrc__get__attrs__rsp__t.html#a0528bee727df09da00ace56b6d32deee", null ]
-    ] ],
-    [ "wiced_bt_avrc_get_num_of_items_rsp_t", "structwiced__bt__avrc__get__num__of__items__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__get__num__of__items__rsp__t.html#a534c28031bc7b4ec7dabbcd6c55467c2", null ],
-      [ "status", "structwiced__bt__avrc__get__num__of__items__rsp__t.html#a7a4e1a526153a82172b9cb1afee6642a", null ],
-      [ "opcode", "structwiced__bt__avrc__get__num__of__items__rsp__t.html#a4655554caa8ff810f2a9052a3aae0d6a", null ],
-      [ "uid_counter", "structwiced__bt__avrc__get__num__of__items__rsp__t.html#a839ce5181b94b4439bd4f0d2a9c4d1fc", null ],
-      [ "num_items", "structwiced__bt__avrc__get__num__of__items__rsp__t.html#a9464ae74cec313a5f4cb5913c295f552", null ]
-    ] ],
-    [ "wiced_bt_avrc_search_rsp_t", "structwiced__bt__avrc__search__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__search__rsp__t.html#ac5a4825ba3a656e4e96e27d1321c1bae", null ],
-      [ "status", "structwiced__bt__avrc__search__rsp__t.html#a2dd8f9196e73859cdbcedcfecad37cac", null ],
-      [ "opcode", "structwiced__bt__avrc__search__rsp__t.html#adb8c1cf3d6f99f97fbb8a849f833a1d4", null ],
-      [ "uid_counter", "structwiced__bt__avrc__search__rsp__t.html#a827188c40d31b4e9bd7e7e9c2085175e", null ],
-      [ "num_items", "structwiced__bt__avrc__search__rsp__t.html#ad4a4b8a6ae6c2b2736bf112ef0ae0a90", null ]
+      [ "hdr", "structwiced__bt__avrc__cmd__t.html#ad6da795f43a185df385807746a0025b1", null ],
+      [ "unit", "structwiced__bt__avrc__cmd__t.html#aec979973c4db98919d34f4551796c1a9", null ],
+      [ "sub_unit", "structwiced__bt__avrc__cmd__t.html#acd56057f6b8022acec5a684e7a1da56f", null ],
+      [ "pass_thru", "structwiced__bt__avrc__cmd__t.html#ab05dff975dea3fc414289b2f942025be", null ],
+      [ "metadata", "structwiced__bt__avrc__cmd__t.html#a080f19ce24b97378dc7c2867f1ab74e1", null ],
+      [ "browse_cmd", "structwiced__bt__avrc__cmd__t.html#a68f70312280d436a18a290d96c6ea1e8", null ],
+      [ "type", "structwiced__bt__avrc__cmd__t.html#a40fb2280663d57a212dc8def95a1c872", null ]
     ] ],
     [ "wiced_bt_avrc_rsp_t", "structwiced__bt__avrc__rsp__t.html", [
-      [ "pdu", "structwiced__bt__avrc__rsp__t.html#a1ecd2f0911829c5ddf5be135fdd8cc90", null ],
-      [ "status", "structwiced__bt__avrc__rsp__t.html#ab5ad7ff248134981b4c64050d55022db", null ],
-      [ "opcode", "structwiced__bt__avrc__rsp__t.html#a0449ec37cd4845f14857ae3c18699ec1", null ]
-    ] ],
-    [ "wiced_bt_avrc_response_t", "unionwiced__bt__avrc__response__t.html", [
-      [ "pdu", "unionwiced__bt__avrc__response__t.html#af40bfb5d2c3c3394ccc5f33a21a003e4", null ],
-      [ "rsp", "unionwiced__bt__avrc__response__t.html#a93050493f9afa125ad540cc1cb124961", null ],
-      [ "get_caps", "unionwiced__bt__avrc__response__t.html#a3d8fb5e2f1ea335d94d7b8eaabd8980c", null ],
-      [ "list_app_attr", "unionwiced__bt__avrc__response__t.html#a825c2df41c58cd944f21ec90ae76dbb9", null ],
-      [ "list_app_values", "unionwiced__bt__avrc__response__t.html#ae35073f27258d735f2cc2fb05669a3f0", null ],
-      [ "get_cur_app_val", "unionwiced__bt__avrc__response__t.html#ae79acf6dac838b7c209be876e79d612f", null ],
-      [ "set_app_val", "unionwiced__bt__avrc__response__t.html#a3e5b18de7b0f98d61b025f3b7e51ffb9", null ],
-      [ "get_app_attr_txt", "unionwiced__bt__avrc__response__t.html#a83d4e11038af4a0ee8cab290f6e504ce", null ],
-      [ "get_app_val_txt", "unionwiced__bt__avrc__response__t.html#a64dd81bf978a7351d42c248bdcb188bd", null ],
-      [ "inform_charset", "unionwiced__bt__avrc__response__t.html#a8efca17cfe4b73de3ff80665c42b7d9a", null ],
-      [ "inform_battery_status", "unionwiced__bt__avrc__response__t.html#aa3735d67a0d276289d22d526e8b7bfb3", null ],
-      [ "get_elem_attrs", "unionwiced__bt__avrc__response__t.html#a925c5377358e56f284b42a6571ba3c28", null ],
-      [ "get_play_status", "unionwiced__bt__avrc__response__t.html#aacd0f340975b4bd8c0cf191a83eaf1a1", null ],
-      [ "reg_notif", "unionwiced__bt__avrc__response__t.html#aa094bd32343d04dceb329f3640913a48", null ],
-      [ "continu", "unionwiced__bt__avrc__response__t.html#a5bcb1b55774f104c9a58024c9b19b40a", null ],
-      [ "abort", "unionwiced__bt__avrc__response__t.html#a370c9b2fac77fe97ad41afb0de57d899", null ],
-      [ "addr_player", "unionwiced__bt__avrc__response__t.html#a334bac134d3ad1f416226f22c861232e", null ],
-      [ "volume", "unionwiced__bt__avrc__response__t.html#a7aed203f3420032a5bd7033ce0fecdcd", null ],
-      [ "br_player", "unionwiced__bt__avrc__response__t.html#a5c4ff5b9a285cdab8ccefe140acefcd6", null ],
-      [ "get_items", "unionwiced__bt__avrc__response__t.html#a3e40dafdcd6ccf1ac2a80618def3ed35", null ],
-      [ "chg_path", "unionwiced__bt__avrc__response__t.html#a92102d586bef6603adce260ed988faaa", null ],
-      [ "get_attrs", "unionwiced__bt__avrc__response__t.html#a749913ae4bb1432451565e65a5e27d2c", null ],
-      [ "get_num_of_items", "unionwiced__bt__avrc__response__t.html#a6cac8527851f0ccb4cce8d0243f49627", null ],
-      [ "search", "unionwiced__bt__avrc__response__t.html#aac852a32d532f1b3cb6c13b30c21020f", null ],
-      [ "play_item", "unionwiced__bt__avrc__response__t.html#a730d6f167871c3ab2ac15739764ed624", null ],
-      [ "add_to_play", "unionwiced__bt__avrc__response__t.html#a26bda51f97696d9acae401f178d491b1", null ]
+      [ "hdr", "structwiced__bt__avrc__rsp__t.html#a2a80f3d23ec2f5b51a7330927fd1fa93", null ],
+      [ "unit", "structwiced__bt__avrc__rsp__t.html#ac74b3337f23f36a88491413b197d697f", null ],
+      [ "sub_unit", "structwiced__bt__avrc__rsp__t.html#a5b2646405472c0c32034d777d96009e3", null ],
+      [ "pass", "structwiced__bt__avrc__rsp__t.html#a4f821601b323621c3ef872f650731b64", null ],
+      [ "metadata", "structwiced__bt__avrc__rsp__t.html#a996b5463697821b401b5f3c892a47b13", null ],
+      [ "browse_rsp", "structwiced__bt__avrc__rsp__t.html#a3fa4eb4bbe33d12752da63b124f72aa6", null ],
+      [ "type", "structwiced__bt__avrc__rsp__t.html#a2cb22edc482ad03c3645a38b4d6e99cc", null ]
     ] ],
     [ "AVRC_SUCCESS", "group__wicedbt__avrc.html#gad5a56f77558eae22c03166bee0337408", null ],
     [ "AVRC_NO_RESOURCES", "group__wicedbt__avrc.html#ga1dc014b54cf38ef230c3ab6b972be740", null ],
@@ -475,15 +373,6 @@ var group__wicedbt__avrc =
     [ "AVRC_CT_PASSIVE", "group__wicedbt__avrc.html#ga85cbf631ef22b6009773cd8088efc157", null ],
     [ "AVRC_CONN_INITIATOR", "group__wicedbt__avrc.html#gaf66a38ee187ad664e4f515aff32e4c83", null ],
     [ "AVRC_CONN_ACCEPTOR", "group__wicedbt__avrc.html#ga9a117ee379792d912aab535fcd8e9453", null ],
-    [ "AVRC_OPEN_IND_EVT", "group__wicedbt__avrc.html#gaf1a71dcd1149a9e096718124237be86f", null ],
-    [ "AVRC_CLOSE_IND_EVT", "group__wicedbt__avrc.html#ga612f35e5421d17b942b011ea3a20bd1c", null ],
-    [ "AVRC_CONG_IND_EVT", "group__wicedbt__avrc.html#ga3590b217cbc977e4e5f46d7c1a036c6a", null ],
-    [ "AVRC_UNCONG_IND_EVT", "group__wicedbt__avrc.html#ga17f381ae1c9ac077f3aac4581d8d1c03", null ],
-    [ "AVRC_BROWSE_OPEN_IND_EVT", "group__wicedbt__avrc.html#ga4ee3a4b0002b630f9399c00d0e850f7a", null ],
-    [ "AVRC_BROWSE_CLOSE_IND_EVT", "group__wicedbt__avrc.html#ga49723a5227a4ef04f3123557df411099", null ],
-    [ "AVRC_BROWSE_CONG_IND_EVT", "group__wicedbt__avrc.html#gaf8e3d5e8a2efbb0f55d388e7d4376a6d", null ],
-    [ "AVRC_BROWSE_UNCONG_IND_EVT", "group__wicedbt__avrc.html#gab45c191c699b9442a198b966f8834d61", null ],
-    [ "AVRC_CMD_TIMEOUT_EVT", "group__wicedbt__avrc.html#ga860816f59542d81318ebdca7a5d12b44", null ],
     [ "AVRC_SUPF_CT_CAT1", "group__wicedbt__avrc.html#ga908fd7974849ffb0d43d3410015e38ab", null ],
     [ "AVRC_SUPF_CT_CAT2", "group__wicedbt__avrc.html#ga4e0f171eb4ef2f72f4164bd7f8f0ec74", null ],
     [ "AVRC_SUPF_CT_CAT3", "group__wicedbt__avrc.html#ga1ec797a61ef3caca6329aea4e84d81c3", null ],
@@ -505,6 +394,7 @@ var group__wicedbt__avrc =
     [ "AVRC_REV_1_3", "group__wicedbt__avrc.html#gaac704951ce5a591365ad76382b4dff86", null ],
     [ "AVRC_REV_1_4", "group__wicedbt__avrc.html#ga51b9d2801460cd024152d08a1be24149", null ],
     [ "AVRC_REV_1_5", "group__wicedbt__avrc.html#ga398a5bdd642ac793d3d341cf2d4aca7c", null ],
+    [ "AVRC_REV_1_6", "group__wicedbt__avrc.html#ga4a022c64a58bfd7fd1ef85e5f8758202", null ],
     [ "AVRC_PACKET_LEN", "group__wicedbt__avrc.html#ga3c639f50c376c2bf79f104778235b393", null ],
     [ "AVRC_MIN_CONTROL_MTU", "group__wicedbt__avrc.html#gaef48490050a854c4286201aed43e5d04", null ],
     [ "AVRC_MIN_BROWSE_MTU", "group__wicedbt__avrc.html#gaefa7b23f4b02f83a169f1ec9946c5ac0", null ],
@@ -513,18 +403,6 @@ var group__wicedbt__avrc =
     [ "AVRC_UID_SIZE", "group__wicedbt__avrc.html#ga43e643cd957871dda225cc31cb2006a7", null ],
     [ "AVRC_UID_SIZE", "group__wicedbt__avrc.html#ga43e643cd957871dda225cc31cb2006a7", null ],
     [ "AVRC_FEATURE_MASK_SIZE", "group__wicedbt__avrc.html#ga7f2b706bf19756275ae588e9e5c1ad2b", null ],
-    [ "AVRC_CMD_CTRL", "group__wicedbt__avrc.html#ga614ed6a494f8dfdae51eb351c42ec5f7", null ],
-    [ "AVRC_CMD_STATUS", "group__wicedbt__avrc.html#ga8abe78d8ec694d71a1faf77b3476a469", null ],
-    [ "AVRC_CMD_SPEC_INQ", "group__wicedbt__avrc.html#gaf1d6b813315f57462bd372056475ee2c", null ],
-    [ "AVRC_CMD_NOTIF", "group__wicedbt__avrc.html#ga8a773658d4c1b9459f3b2f0036927972", null ],
-    [ "AVRC_CMD_GEN_INQ", "group__wicedbt__avrc.html#gaf8cd30e250d0b2d14d1a1f69c1ad945b", null ],
-    [ "AVRC_RSP_NOT_IMPL", "group__wicedbt__avrc.html#ga89aeebd10bc9adebd9613b3ee77b2bb1", null ],
-    [ "AVRC_RSP_ACCEPT", "group__wicedbt__avrc.html#gafebf8c70b4cc80ef8f40978aacc80bb1", null ],
-    [ "AVRC_RSP_REJ", "group__wicedbt__avrc.html#ga446af5df4907233c996896a7401a46bc", null ],
-    [ "AVRC_RSP_IN_TRANS", "group__wicedbt__avrc.html#ga8ad9b3360e18b1ee9deac08b34b3c964", null ],
-    [ "AVRC_RSP_IMPL_STBL", "group__wicedbt__avrc.html#gaf82fc3b83bc432770802b2dd976b5a95", null ],
-    [ "AVRC_RSP_CHANGED", "group__wicedbt__avrc.html#ga1b77242e3ba4f52e6f31b441715f4c31", null ],
-    [ "AVRC_RSP_INTERIM", "group__wicedbt__avrc.html#gad828ce137b0546400725099c8fa6c3d7", null ],
     [ "AVRC_SUB_MONITOR", "group__wicedbt__avrc.html#ga6620216b6a43c0deab2ed3f9b4046835", null ],
     [ "AVRC_SUB_AUDIO", "group__wicedbt__avrc.html#ga860649b12e3ddcc139b63c7cb5572808", null ],
     [ "AVRC_SUB_PRINTER", "group__wicedbt__avrc.html#ga56fcde66b56fd0b0b09ec9b51dec689f", null ],
@@ -685,9 +563,14 @@ var group__wicedbt__avrc =
     [ "AVRC_PLAYER_VAL_ALL_SCAN", "group__wicedbt__avrc.html#ga6fb77341a1d8d63b279364b030f4cdc3", null ],
     [ "AVRC_PLAYER_VAL_GROUP_SCAN", "group__wicedbt__avrc.html#gab3b2ca7f01e8ff5c7cb4e14520790762", null ],
     [ "AVRC_BATTERY_STATUS_NORMAL", "group__wicedbt__avrc.html#gae8dd17b72ba2a0f35bcd510fd3a6b44a", null ],
+    [ "AVRC_BATTERY_STATUS_NORMAL", "group__wicedbt__avrc.html#gae8dd17b72ba2a0f35bcd510fd3a6b44a", null ],
+    [ "AVRC_BATTERY_STATUS_WARNING", "group__wicedbt__avrc.html#ga28e9a00b02625ee81d137709f790d9d7", null ],
     [ "AVRC_BATTERY_STATUS_WARNING", "group__wicedbt__avrc.html#ga28e9a00b02625ee81d137709f790d9d7", null ],
     [ "AVRC_BATTERY_STATUS_CRITICAL", "group__wicedbt__avrc.html#ga42146c9ce5a3b800b60e32d929f0219e", null ],
+    [ "AVRC_BATTERY_STATUS_CRITICAL", "group__wicedbt__avrc.html#ga42146c9ce5a3b800b60e32d929f0219e", null ],
     [ "AVRC_BATTERY_STATUS_EXTERNAL", "group__wicedbt__avrc.html#ga1f8a40f6d4a5e413574427a5d3c1f034", null ],
+    [ "AVRC_BATTERY_STATUS_EXTERNAL", "group__wicedbt__avrc.html#ga1f8a40f6d4a5e413574427a5d3c1f034", null ],
+    [ "AVRC_BATTERY_STATUS_FULL_CHARGE", "group__wicedbt__avrc.html#gad82f0a5382637370ab63d164274f2ab8", null ],
     [ "AVRC_BATTERY_STATUS_FULL_CHARGE", "group__wicedbt__avrc.html#gad82f0a5382637370ab63d164274f2ab8", null ],
     [ "AVRC_CHAR_SET_SIZE", "group__wicedbt__avrc.html#gaedcfc3ffbfc509b32f0bd221db38666b", null ],
     [ "AVRC_MEDIA_ATTR_ID_TITLE", "group__wicedbt__avrc.html#ga6f203ce0c564f1f8aa6a466d8fe86775", null ],
@@ -726,7 +609,10 @@ var group__wicedbt__avrc =
     [ "AVRC_EVT_MSG_LEN_9", "group__wicedbt__avrc.html#gab4114283b365b11dc5ee16f430eec335", null ],
     [ "AVRC_MAX_VOLUME", "group__wicedbt__avrc.html#ga4175f93dd2cfdb5b4ff4930fec98d37b", null ],
     [ "AVRC_SYSTEMSTATE_PWR_ON", "group__wicedbt__avrc.html#gae6bca7bc97a55d3c18dbb41153352e97", null ],
+    [ "AVRC_SYSTEMSTATE_PWR_ON", "group__wicedbt__avrc.html#gae6bca7bc97a55d3c18dbb41153352e97", null ],
     [ "AVRC_SYSTEMSTATE_PWR_OFF", "group__wicedbt__avrc.html#gadb5e4499a08e8433fbf46805b1ce6937", null ],
+    [ "AVRC_SYSTEMSTATE_PWR_OFF", "group__wicedbt__avrc.html#gadb5e4499a08e8433fbf46805b1ce6937", null ],
+    [ "AVRC_SYSTEMSTATE_PWR_UNPLUGGED", "group__wicedbt__avrc.html#gab543d277b032e313333e244bc2f51a60", null ],
     [ "AVRC_SYSTEMSTATE_PWR_UNPLUGGED", "group__wicedbt__avrc.html#gab543d277b032e313333e244bc2f51a60", null ],
     [ "AVRC_CHARSET_ID_ASCII", "group__wicedbt__avrc.html#ga7b46c297c7f9ff8bfe508d8c6dd5fce2", null ],
     [ "AVRC_CHARSET_ID_UTF8", "group__wicedbt__avrc.html#ga7ee904985522c86e9958c60ef9ecd337", null ],
@@ -1032,6 +918,8 @@ var group__wicedbt__avrc =
     [ "AVRC_PF_GET_NUM_OF_ITEMS_MASK", "group__wicedbt__avrc.html#ga9748597054b0f058fca4a2816aa60c44", null ],
     [ "AVRC_PF_GET_NUM_OF_ITEMS_OFF", "group__wicedbt__avrc.html#ga2e52f43ffec45cee077426724fbd6671", null ],
     [ "AVRC_PF_GET_NUM_OF_ITEMS_SUPPORTED", "group__wicedbt__avrc.html#gaaef317e6905cb80d4f70ea4b528f8e98", null ],
+    [ "AVRC_METADATA_INCLUDED", "group__wicedbt__avrc.html#ga2628fabd4921f1f1f613e60401131564", null ],
+    [ "AVRC_ADV_CTRL_INCLUDED", "group__wicedbt__avrc.html#ga5e8a419947b69601facecc398143adc7", null ],
     [ "AVCT_CMD", "group__wicedbt__avrc.html#ga962f0bddb5098057b86dde720300d10e", null ],
     [ "AVCT_RSP", "group__wicedbt__avrc.html#gaed340750bd462134f15e1d6ecabd2029", null ],
     [ "AVCT_REJ", "group__wicedbt__avrc.html#gab0391d566b50d6ae6d1860779cf9f4df", null ],
@@ -1050,8 +938,6 @@ var group__wicedbt__avrc =
     [ "AVRC_MAX_APP_ATTR_SIZE", "group__wicedbt__avrc.html#ga0d986819bc350eb083bc80df3be9f7ef", null ],
     [ "AVRC_MAX_CHARSET_SIZE", "group__wicedbt__avrc.html#ga17541368410a263f1a26e70125173d3b", null ],
     [ "AVRC_MAX_ELEM_ATTR_SIZE", "group__wicedbt__avrc.html#ga76d6fe2bd606031ce7e382c3e3933e85", null ],
-    [ "AVRC_METADATA_INCLUDED", "group__wicedbt__avrc.html#ga2628fabd4921f1f1f613e60401131564", null ],
-    [ "AVRC_ADV_CTRL_INCLUDED", "group__wicedbt__avrc.html#ga5e8a419947b69601facecc398143adc7", null ],
     [ "AVRC_DEFAULT_METADATA_SCRATCH_SZ", "group__wicedbt__avrc.html#ga0f8dc8a2ed91ed946746edc793e18421", null ],
     [ "AVRC_DEFAULT_METADATA_CMD_SIZE", "group__wicedbt__avrc.html#gaba3cb878037690b10ae9c2ac83bdd08e", null ],
     [ "AVRC_DEFAULT_METADATA_RSP_SIZE", "group__wicedbt__avrc.html#gadae3e21e92051043512b8a54c4360afe", null ],
@@ -1060,34 +946,63 @@ var group__wicedbt__avrc =
     [ "AVRC_CAP_MAX_NUM_COMP_ID", "group__wicedbt__avrc.html#gaa08d5021a98ee5999e257e3c920adbc5", null ],
     [ "AVRC_CAP_MAX_NUM_EVT_ID", "group__wicedbt__avrc.html#ga0904360accd58074a8ee3b22aa495ddd", null ],
     [ "AVRC_MAX_APP_SETTINGS", "group__wicedbt__avrc.html#ga9f10d7c7244c20b3afdab5cffdcb8f95", null ],
-    [ "wiced_bt_avrc_ctrl_cback_t", "group__wicedbt__avrc.html#ga7011e88a728bc58122eeb2cdb917290a", null ],
-    [ "wiced_bt_avrc_msg_cback_t", "group__wicedbt__avrc.html#gafffa9aab77176e67b2a697ff1bc1baba", null ],
-    [ "wiced_bt_avrc_xmitted_cback_t", "group__wicedbt__avrc.html#ga3f31b9947d60da1528813f59afb4762c", null ],
+    [ "wiced_bt_avrc_ctrl_cback_t", "group__wicedbt__avrc.html#ga766252a1a6194bfe140a54622b957fb0", null ],
+    [ "wiced_bt_avrc_msg_cback_t", "group__wicedbt__avrc.html#ga4cc62f55d9f68bfb788c16b1890fd464", null ],
     [ "wiced_bt_avrc_sts_t", "group__wicedbt__avrc.html#ga05446fa1277163e92d7ffe155d72b072", null ],
     [ "wiced_bt_avrc_battery_status_t", "group__wicedbt__avrc.html#gac30dd19d8a2f66698d35803761d0b31f", null ],
     [ "wiced_bt_avrc_playstate_t", "group__wicedbt__avrc.html#ga426ebe2890a54a05df0de13bcbca761a", null ],
     [ "wiced_bt_avrc_systemstate_t", "group__wicedbt__avrc.html#ga67579f0a5db3d608f68ef18e93fabf40", null ],
     [ "wiced_bt_avrc_uid_t", "group__wicedbt__avrc.html#gac398588e69e7ec2dad8fb270ddafbddd", null ],
     [ "wiced_bt_avrc_feature_mask_t", "group__wicedbt__avrc.html#ga9e860233f7a8a2f0ff76c430989af3b2", null ],
-    [ "wiced_bt_avrc_register", "group__wicedbt__avrc.html#gab9939c73a82c55758d3c92c38e5932f6", null ],
-    [ "wiced_bt_avrc_open", "group__wicedbt__avrc.html#gade6b9f60a9d2a4bb6e3df798ba4fefbe", null ],
+    [ "wiced_bt_avrc_ctrl_evt_e", "group__wicedbt__avrc.html#gafe764cb02abe95c03a74f6117ea13b3c", [
+      [ "AVRC_OPEN_IND_EVT", "group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cad847732c9765a0a7b9cb3fcc209dcd6f", null ],
+      [ "AVRC_CONG_IND_EVT", "group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3ca888a7b25531652a01570f775498daf00", null ],
+      [ "AVRC_UNCONG_IND_EVT", "group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3caebe358d85d13a7574d44d41a035e22a4", null ],
+      [ "AVRC_BROWSE_OPEN_IND_EVT", "group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cab7ed614c0f6012e90d8db3b2a430e2ac", null ],
+      [ "AVRC_BROWSE_CONG_IND_EVT", "group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cae5ade264e0d5a48dfe3708c2e58899f2", null ],
+      [ "AVRC_BROWSE_UNCONG_IND_EVT", "group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cac8b9db2d97ac3c32d2455053aa4f6873", null ],
+      [ "AVRC_CMD_TIMEOUT_EVT", "group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3ca9d8d2cf7f45e9c72bb17e1bec88e97b8", null ],
+      [ "AVRC_APP_BUFFER_TX_EVT", "group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cabf454db5bdfd28b6a7a8f1d888389bb7", null ]
+    ] ],
+    [ "wiced_bt_avrc_ctype_e", "group__wicedbt__avrc.html#ga5966b6261b97dcd1e0c44679dd7ac268", [
+      [ "AVRC_CMD_CTRL", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a43f13ec452222530435e55ef6f304a65", null ],
+      [ "AVRC_CMD_STATUS", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a6931dc929083a706030df90df116c88e", null ],
+      [ "AVRC_CMD_SPEC_INQ", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a3313b3c236e578201db89feb8aefd371", null ],
+      [ "AVRC_CMD_NOTIF", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268ac0fcde9ce9d981d19c029852ed86b287", null ],
+      [ "AVRC_CMD_GEN_INQ", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268acd1a1b75865492c2c1c99d993f84417f", null ],
+      [ "AVRC_RSP_NOT_IMPL", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268ae0700b6a54a7c2f3e3211a127f7f9676", null ],
+      [ "AVRC_RSP_ACCEPT", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268af0c6e1cc31508b33a164d1d29bfd98c3", null ],
+      [ "AVRC_RSP_REJ", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a066ebba66c5e8d2647db3eb04d3e269d", null ],
+      [ "AVRC_RSP_IN_TRANS", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a9001cca5ac03765fb5ce20d9edbaef3d", null ],
+      [ "AVRC_RSP_IMPL_STBL", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268acae1b82cf10eacee6c19c989aab66ea9", null ],
+      [ "AVRC_RSP_CHANGED", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a6eda05471be70016bcd8e2dc6624ba05", null ],
+      [ "AVRC_RSP_INTERIM", "group__wicedbt__avrc.html#gga5966b6261b97dcd1e0c44679dd7ac268a75cd6472298f137e20a359a6c9c68fdc", null ]
+    ] ],
+    [ "wiced_bt_avrc_init", "group__wicedbt__avrc.html#ga03ce4d2f4f4b76633e9e787fb9605f70", null ],
+    [ "wiced_bt_avrc_open", "group__wicedbt__avrc.html#ga820dc492c909378eb40923df0a13077c", null ],
     [ "wiced_bt_avrc_close", "group__wicedbt__avrc.html#ga20865c922791e758eec3a77f33364b3c", null ],
     [ "wiced_bt_avrc_open_browse", "group__wicedbt__avrc.html#gac1219ab8e90216bd8b923af3b62380d5", null ],
     [ "wiced_bt_avrc_close_browse", "group__wicedbt__avrc.html#ga2df5f8c057a702967322a410658fb503", null ],
-    [ "wiced_bt_avrc_msg_req", "group__wicedbt__avrc.html#gae26d6796b3e76d2afbc30ffb5ee57e6c", null ],
-    [ "wiced_bt_avrc_unit_cmd", "group__wicedbt__avrc.html#gab272eb157462febcc3d0cfc32d51141a", null ],
-    [ "wiced_bt_avrc_sub_cmd", "group__wicedbt__avrc.html#gaf5328ba7ec2cb429b0ba936f6a5a4a0e", null ],
-    [ "wiced_bt_avrc_pass_cmd", "group__wicedbt__avrc.html#gaa4bc3f7062695799d225888b3e3bd997", null ],
-    [ "wiced_bt_avrc_pass_rsp", "group__wicedbt__avrc.html#ga81a16be1b555d5c1612fcc027beacdf0", null ],
-    [ "wiced_bt_avrc_vendor_cmd", "group__wicedbt__avrc.html#ga30a8db76c42eb57b53467131975e528e", null ],
-    [ "wiced_bt_avrc_vendor_rsp", "group__wicedbt__avrc.html#ga24b0e07817d7456c52dc0e500c59c787", null ],
+    [ "wiced_bt_avrc_send_metadata_msg", "group__wicedbt__avrc.html#ga7c485d87951a230ba963159e6110afbe", null ],
+    [ "wiced_bt_avrc_send_unit_cmd", "group__wicedbt__avrc.html#ga1155f17abf6c4cdfcf2153e4376aa69c", null ],
+    [ "wiced_bt_avrc_send_subunit_cmd", "group__wicedbt__avrc.html#ga0ea0c79d2c1446621d9403bb357ec8b9", null ],
+    [ "wiced_bt_avrc_send_passthrough_cmd", "group__wicedbt__avrc.html#gab31132676eb3a2d68081f093e3e8820e", null ],
+    [ "wiced_bt_avrc_send_passthrough_rsp", "group__wicedbt__avrc.html#ga30c0a991fab701c36892334419e20c94", null ],
+    [ "wiced_bt_avrc_send_vendor_cmd", "group__wicedbt__avrc.html#ga16abdf4ca6414f08eede51a72067c464", null ],
+    [ "wiced_bt_avrc_send_vendor_rsp", "group__wicedbt__avrc.html#ga2b9aa857801f0f769003cd4864be37c4", null ],
     [ "wiced_bt_avrc_set_trace_level", "group__wicedbt__avrc.html#gaf82aba859dc9511b2f3adb64e4b45d76", null ],
-    [ "wiced_bt_avrc_parse_command", "group__wicedbt__avrc.html#ga37cf649b6af0e1e0490255a0fa381e17", null ],
-    [ "wiced_bt_avrc_parse_response", "group__wicedbt__avrc.html#gadd50cdff96ce504d5e955f249a35564b", null ],
-    [ "wiced_bt_avrc_bld_command", "group__wicedbt__avrc.html#gaea26696d4694549340f04de20470e6f9", null ],
-    [ "wiced_bt_avrc_bld_response", "group__wicedbt__avrc.html#gaafce7eeae9bfd0d285e9e774fec4f9cb", null ],
-    [ "wiced_bt_avrc_is_valid_avc_type", "group__wicedbt__avrc.html#gaedd40b6b72c5bfe47ff7afb0f8bd4c98", null ],
+    [ "wiced_bt_avrc_bld_metadata_cmd", "group__wicedbt__avrc.html#ga4262353594f6a8938e991c6bca3e7dd5", null ],
+    [ "wiced_bt_avrc_bld_metadata_response", "group__wicedbt__avrc.html#gae13abb4d31d6b80009e5fdee2f953427", null ],
+    [ "wiced_bt_avrc_bld_browse_command", "group__wicedbt__avrc.html#ga9663ca9209a013d09ab284acafcc9014", null ],
+    [ "wiced_bt_avrc_bld_browse_response", "group__wicedbt__avrc.html#ga5c6a04df55965f363fb3349d047f2b80", null ],
+    [ "wiced_bt_avrc_send_browse_data", "group__wicedbt__avrc.html#gaefe0b4153cd6f8a4d2474a91d29ed5d7", null ],
+    [ "wiced_bt_avrc_is_valid_avc_type", "group__wicedbt__avrc.html#gaed06e3effda6d0acedcdf039049b1937", null ],
     [ "wiced_bt_avrc_is_valid_player_attr", "group__wicedbt__avrc.html#ga1ad00da8d7c5cb694718f9b7a96ad8bf", null ],
     [ "wiced_bt_avrc_get_ctrl_mtu", "group__wicedbt__avrc.html#ga0db23b5c7ad666a6bfb1dc6f12c0f6b5", null ],
-    [ "wiced_bt_avrc_get_data_mtu", "group__wicedbt__avrc.html#gaeb296f7679ef98161268b640e8beaa10", null ]
+    [ "wiced_bt_avrc_get_data_mtu", "group__wicedbt__avrc.html#gaeb296f7679ef98161268b640e8beaa10", null ],
+    [ "avrc_is_valid_player_attrib_value", "group__wicedbt__avrc.html#ga116cd61ed89f98ff26a28c6ea9ab744f", null ],
+    [ "avrc_read_attr_entry_from_stream", "group__wicedbt__avrc.html#gae65520d66d292b6540a6b8bd0e0d8f11", null ],
+    [ "avrc_read_full_name_from_stream", "group__wicedbt__avrc.html#gaabd9d3e82e5846f1a50155678c7a9951", null ],
+    [ "avrc_read_browse_item_from_stream", "group__wicedbt__avrc.html#gaaac82cd3fdcfc0b155947caee0b9d7b8", null ],
+    [ "avrc_read_name_from_stream", "group__wicedbt__avrc.html#ga8786545c8367a2345773b82154ffe8ce", null ]
 ];

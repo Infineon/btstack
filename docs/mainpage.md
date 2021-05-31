@@ -1,14 +1,13 @@
 # Overview
 
 This document lists the Application Programming Interfaces exposed by BTSTACK library for Application developers to use and create BLE or BR/EDR or Dual Mode (BLE+BR/EDR) Applications.
-BTSTACK library is used in conjuction with a porting layer such as the [one available for FreeRTOS on PSOC](https://github.com/cypresssemiconductorco/bluetooth-freertos).
-
+BTSTACK library is used in conjuction with a porting layer such as the [one available for FreeRTOS on PSOC](https://github.com/cypresssemiconductorco/bluetooth-freertos). The porting layer implements the code to access memory, transport, timer and other OS functionalities required by the stack. Care must be taken to ensure to use right OS constructs. Example, if Stack APIs are invoked from an interrupt context, correct locking/mutual exclusion mechanisms that are allowed to be used from an interrupt context by the platform must be used.
 
 Typical steps in using BTSTACK library APIs are -
 
 ## Initialization
  - The application thread typically starts the bluetooth stack with a call to #wiced_bt_stack_init.
- - The application then waits for the BTM_ENABLED event received through the registered callback
+ - The application then waits for the BTM_ENABLED event received through the registered callback.
  - Further interaction with the stack may be done in the same thread context in case of single threaded or in an application thread.
  - The BTSTACK library is thread-safe and can be operated in multi-threaded environments.
 

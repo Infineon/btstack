@@ -100,9 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab44b8568a7e3d887d034e4e4d0277bc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__le.html#gab44b8568a7e3d887d034e4e4d0277bc0">wiced_bt_gatt_le_connect</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> bd_addr_type, <a class="el" href="group__wicedbt___device_management.html#ga4309edd4a7a1c7f30bdc57d8107e84ab">wiced_bt_ble_conn_mode_t</a> conn_mode, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> is_direct)</td></tr>
 <tr class="memdesc:gab44b8568a7e3d887d034e4e4d0277bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open GATT over LE connection to a remote device Result is notified using <b> GATT_CONNECTION_STATUS_EVT </b> of <a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a>.  <a href="#gab44b8568a7e3d887d034e4e4d0277bc0">More...</a><br /></td></tr>
 <tr class="separator:gab44b8568a7e3d887d034e4e4d0277bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7aee6dd1256d097cc5a006fc02532263"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__le.html#ga7aee6dd1256d097cc5a006fc02532263">wiced_bt_gatt_listen</a> (<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> start, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr)</td></tr>
-<tr class="memdesc:ga7aee6dd1256d097cc5a006fc02532263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or stop LE advertisement and listen for connection.  <a href="#ga7aee6dd1256d097cc5a006fc02532263">More...</a><br /></td></tr>
-<tr class="separator:ga7aee6dd1256d097cc5a006fc02532263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f4ea3070442ba623e179b4a3ffcab0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__le.html#ga6f4ea3070442ba623e179b4a3ffcab0c">wiced_bt_gatt_listen</a> (<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> start, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> type)</td></tr>
+<tr class="memdesc:ga6f4ea3070442ba623e179b4a3ffcab0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or stop LE advertisement and listen for connection.  <a href="#ga6f4ea3070442ba623e179b4a3ffcab0c">More...</a><br /></td></tr>
+<tr class="separator:ga6f4ea3070442ba623e179b4a3ffcab0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gab44b8568a7e3d887d034e4e4d0277bc0"></a>
@@ -158,8 +158,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7aee6dd1256d097cc5a006fc02532263"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7aee6dd1256d097cc5a006fc02532263">&#9670;&nbsp;</a></span>wiced_bt_gatt_listen()</h2>
+<a id="ga6f4ea3070442ba623e179b4a3ffcab0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f4ea3070442ba623e179b4a3ffcab0c">&#9670;&nbsp;</a></span>wiced_bt_gatt_listen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +174,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>bd_addr</em>&#160;</td>
+          <td class="paramname"><em>bd_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -187,8 +193,9 @@ Functions</h2></td></tr>
 <p>Start or stop LE advertisement and listen for connection. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>: TRUE to add device to whitelist / FALSE to remove </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Device to add/remove from whitelist</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>: TRUE to add device to Filter Accept List / FALSE to remove </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Device to add/remove from Filter Accept List </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>: Address type of <code>bd_addr</code> </td></tr>
   </table>
   </dd>
 </dl>

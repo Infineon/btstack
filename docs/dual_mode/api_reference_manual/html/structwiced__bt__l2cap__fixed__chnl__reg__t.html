@@ -101,10 +101,10 @@ Data Fields</h2></td></tr>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html#a7869b865e083528a9bb76f9ec4393cdf">channel_id</a></td></tr>
 <tr class="memdesc:a7869b865e083528a9bb76f9ec4393cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed channel ID. <br /></td></tr>
 <tr class="separator:a7869b865e083528a9bb76f9ec4393cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c99ae62a90bdcae806e62af640bf553"><td class="memItemLeft" align="right" valign="top"><a id="a2c99ae62a90bdcae806e62af640bf553"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html#a2c99ae62a90bdcae806e62af640bf553">in_use</a></td></tr>
-<tr class="memdesc:a2c99ae62a90bdcae806e62af640bf553"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRUE if channel is in use. <br /></td></tr>
-<tr class="separator:a2c99ae62a90bdcae806e62af640bf553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05e7fe3f98693f1ff4b4601fab804fe"><td class="memItemLeft" align="right" valign="top"><a id="ad05e7fe3f98693f1ff4b4601fab804fe"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html#ad05e7fe3f98693f1ff4b4601fab804fe">default_idle_timeout</a></td></tr>
+<tr class="memdesc:ad05e7fe3f98693f1ff4b4601fab804fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">default idle timeout <br /></td></tr>
+<tr class="separator:ad05e7fe3f98693f1ff4b4601fab804fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b805007d9b827a848aa711308b1e1d"><td class="memItemLeft" align="right" valign="top"><a id="a52b805007d9b827a848aa711308b1e1d"></a>
 <a class="el" href="group__l2cap.html#gac22d67eed3442a90a411e8a8fecbe736">wiced_bt_l2cap_fixed_chnl_cback_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html#a52b805007d9b827a848aa711308b1e1d">fixed_conn_cback</a></td></tr>
 <tr class="memdesc:a52b805007d9b827a848aa711308b1e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected callback. <br /></td></tr>
@@ -113,18 +113,10 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <a class="el" href="group__l2cap.html#gae164afd58df70e53ff78489e7b7718e7">wiced_bt_l2cap_fixed_data_cback_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html#aa8e1572e7a8103d7df41daa1e7f11a04">fixed_data_cback</a></td></tr>
 <tr class="memdesc:aa8e1572e7a8103d7df41daa1e7f11a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data received callback. <br /></td></tr>
 <tr class="separator:aa8e1572e7a8103d7df41daa1e7f11a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad05e7fe3f98693f1ff4b4601fab804fe"><td class="memItemLeft" align="right" valign="top"><a id="ad05e7fe3f98693f1ff4b4601fab804fe"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html#ad05e7fe3f98693f1ff4b4601fab804fe">default_idle_timeout</a></td></tr>
-<tr class="memdesc:ad05e7fe3f98693f1ff4b4601fab804fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">default idle timeout <br /></td></tr>
-<tr class="separator:ad05e7fe3f98693f1ff4b4601fab804fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30bcfc2d596276f4cbc67317a6c574b5"><td class="memItemLeft" align="right" valign="top"><a id="a30bcfc2d596276f4cbc67317a6c574b5"></a>
 <a class="el" href="group__l2cap.html#ga202240560832cdbfbf208871afd29153">wiced_bt_l2cap_tx_complete_cback_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html#a30bcfc2d596276f4cbc67317a6c574b5">fixed_tx_complete_cback</a></td></tr>
 <tr class="memdesc:a30bcfc2d596276f4cbc67317a6c574b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">TX complete callback. <br /></td></tr>
 <tr class="separator:a30bcfc2d596276f4cbc67317a6c574b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61787d1e3ac2ba6bd08a30c3995fab2e"><td class="memItemLeft" align="right" valign="top"><a id="a61787d1e3ac2ba6bd08a30c3995fab2e"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html#a61787d1e3ac2ba6bd08a30c3995fab2e">context</a></td></tr>
-<tr class="memdesc:a61787d1e3ac2ba6bd08a30c3995fab2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upper layer context. <br /></td></tr>
-<tr class="separator:a61787d1e3ac2ba6bd08a30c3995fab2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -455,8 +455,8 @@ Functions</h2></td></tr>
 
 <p>This function makes the device start or stop operating in the observer role. </p>
 <p>The observer role device receives advertising events from a broadcast device.</p>
-<dl class="section note"><dt>Note</dt><dd>This API uses following parameters from the configuration settings <a class="el" href="structwiced__bt__cfg__settings__t.html#a76b00475f4ff263fa0d41a84a57132a3">wiced_bt_cfg_settings_t::ble_scan_cfg</a> <br />
- low_duty_scan_interval,<br />
+<dl class="section note"><dt>Note</dt><dd>This API uses following parameters from the configuration settings <a class="el" href="structwiced__bt__cfg__ble__t.html#a40e0b767868cd73baea1632154787837">wiced_bt_cfg_ble_t::p_ble_scan_cfg</a>, <br />
+ <a class="el" href="structwiced__bt__cfg__ble__scan__settings__t.html#a39f60ca0d36638d69e8a5dfeb45d05dc">wiced_bt_cfg_ble_scan_settings_t::low_duty_scan_interval</a>,<br />
  <a class="el" href="structwiced__bt__cfg__ble__scan__settings__t.html#ab02bcd82a62d0a4b8c44105be0d72739">wiced_bt_cfg_ble_scan_settings_t::low_duty_scan_window</a>, <br />
  <a class="el" href="structwiced__bt__cfg__ble__scan__settings__t.html#aa313e57e5adb2036efd86b94a392b856">wiced_bt_cfg_ble_scan_settings_t::scan_mode</a>, <br />
  <a class="el" href="structwiced__bt__cfg__ble__scan__settings__t.html#aa313e57e5adb2036efd86b94a392b856">wiced_bt_cfg_ble_scan_settings_t::scan_mode</a></dd></dl>
@@ -507,7 +507,7 @@ Functions</h2></td></tr>
 <p>Start LE scanning. </p>
 <p>The <b>scan_type</b> parameter determines what scanning parameters and durations to use (as specified by the application configuration).</p>
 <p>Scan results are notified using <code>p_scan_result_cback</code> </p>
-<dl class="section note"><dt>Note</dt><dd>This API uses following parameters from the configuration settings of wiced_bt_cfg_settings_t.ble_scan_cfg<br />
+<dl class="section note"><dt>Note</dt><dd>This API uses following parameters from the configuration settings of <a class="el" href="structwiced__bt__cfg__ble__t.html#a40e0b767868cd73baea1632154787837">wiced_bt_cfg_ble_t::p_ble_scan_cfg</a>,<br />
  <a class="el" href="structwiced__bt__cfg__ble__scan__settings__t.html#ab994b84a2607f2582dd1a16d06697695">wiced_bt_cfg_ble_scan_settings_t::high_duty_scan_interval</a>,<br />
  <a class="el" href="structwiced__bt__cfg__ble__scan__settings__t.html#a647df2e5b122a0840d66b5a869ae63d6">wiced_bt_cfg_ble_scan_settings_t::high_duty_scan_window</a>,<br />
  <a class="el" href="structwiced__bt__cfg__ble__scan__settings__t.html#a536095167d2d9f28fb2bb9137aacc5ea">wiced_bt_cfg_ble_scan_settings_t::high_duty_scan_duration</a>,<br />
