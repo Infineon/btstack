@@ -76,7 +76,8 @@ extern "C" {
         RESULT_ENUM( prefix, MODE4_LEVEL4_NOT_SUPPORTED,8119 ),   /**< Connections Only Mode can't be supported */            \
         RESULT_ENUM( prefix, USE_DEFAULT_SECURITY,      8120 ),   /**< Use default security */                                 \
         RESULT_ENUM( prefix, KEY_MISSING,               8121 ),   /**< Key Missing */                                           \
-        RESULT_ENUM( prefix, ENCRYPT_DISABLED,          8122 ),   /**< Encryption is disabled */
+        RESULT_ENUM( prefix, ENCRYPT_DISABLED,          8122 ),   /**< Encryption is disabled */                                \
+        RESULT_ENUM( prefix, SERVICE_NOT_FOUND,         8123 ),   /**< Service not found */
 
 
 /******************************************************

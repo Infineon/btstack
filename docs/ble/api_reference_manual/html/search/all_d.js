@@ -10,6 +10,7 @@ var searchData=
   ['max_5fapp_5fl2cap_5fchannels',['max_app_l2cap_channels',['../structwiced__bt__cfg__l2cap__application__t.html#a0e9d4f46b7b34bbd29b653c2b5e14dc3',1,'wiced_bt_cfg_l2cap_application_t']]],
   ['max_5fapp_5fl2cap_5fle_5ffixed_5fchannels',['max_app_l2cap_le_fixed_channels',['../structwiced__bt__cfg__l2cap__application__t.html#a7a9f0564ec1278e70b660ae794ac5314',1,'wiced_bt_cfg_l2cap_application_t']]],
   ['max_5fapp_5fl2cap_5fpsms',['max_app_l2cap_psms',['../structwiced__bt__cfg__l2cap__application__t.html#a1309688cf441f82aa3e31109971a6b65',1,'wiced_bt_cfg_l2cap_application_t']]],
+  ['max_5fbig_5fcount',['max_big_count',['../structwiced__bt__cfg__isoc__t.html#a789cd77d45b834261598bd8cf9befad2',1,'wiced_bt_cfg_isoc_t']]],
   ['max_5fbuffers_5fper_5fcis',['max_buffers_per_cis',['../structwiced__bt__cfg__isoc__t.html#ab0328f82bcf4260c0e6b49b941abb5f1',1,'wiced_bt_cfg_isoc_t']]],
   ['max_5fce_5flen',['max_ce_len',['../structwiced__bt__ble__ext__conn__cfg__t.html#afbcab6486fbe3884e06eb38a5fb35274',1,'wiced_bt_ble_ext_conn_cfg_t']]],
   ['max_5fcig_5fcount',['max_cig_count',['../structwiced__bt__cfg__isoc__t.html#aa8c67e25a3fdb6a63bbf79989f03d527',1,'wiced_bt_cfg_isoc_t']]],

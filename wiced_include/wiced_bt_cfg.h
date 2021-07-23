@@ -240,6 +240,7 @@ typedef struct
     uint16_t  max_sdu_size;   /**< Max SDU size */
     uint8_t   channel_count;  /**< Channel count */
     uint8_t   max_buffers_per_cis;            /**< Max Number of buffers per CIS */
+    uint8_t   max_big_count;  /**< Max Number of BIG connections */
 }wiced_bt_cfg_isoc_t;
 
 /** BR/EDR configuration settings */

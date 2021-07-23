@@ -59,7 +59,8 @@ var group__wiced__bt__cfg =
       [ "max_cig_count", "structwiced__bt__cfg__isoc__t.html#aa8c67e25a3fdb6a63bbf79989f03d527", null ],
       [ "max_sdu_size", "structwiced__bt__cfg__isoc__t.html#a61dd17b5ad5735589ea54933f3a08491", null ],
       [ "channel_count", "structwiced__bt__cfg__isoc__t.html#a648c5a40f30d0682dda482a1222b0835", null ],
-      [ "max_buffers_per_cis", "structwiced__bt__cfg__isoc__t.html#ab0328f82bcf4260c0e6b49b941abb5f1", null ]
+      [ "max_buffers_per_cis", "structwiced__bt__cfg__isoc__t.html#ab0328f82bcf4260c0e6b49b941abb5f1", null ],
+      [ "max_big_count", "structwiced__bt__cfg__isoc__t.html#a789cd77d45b834261598bd8cf9befad2", null ]
     ] ],
     [ "wiced_bt_cfg_br_t", "structwiced__bt__cfg__br__t.html", [
       [ "br_max_simultaneous_links", "structwiced__bt__cfg__br__t.html#ad849811234d489e04cef752966db6a41", null ],

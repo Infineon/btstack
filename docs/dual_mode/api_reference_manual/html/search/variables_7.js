@@ -11,5 +11,6 @@ var searchData=
   ['get_5fnum_5fof_5fitems',['get_num_of_items',['../structwiced__bt__avrc__browse__cmd__t.html#a0b9db34ec35e37425986287a5a113c8a',1,'wiced_bt_avrc_browse_cmd_t::get_num_of_items()'],['../structwiced__bt__avrc__browse__rsp__t.html#a84d22ae2014fa98ef0be835ed35d756c',1,'wiced_bt_avrc_browse_rsp_t::get_num_of_items()']]],
   ['get_5fplay_5fstatus',['get_play_status',['../structwiced__bt__avrc__metadata__rsp__t.html#ab67e2c63d777e56c361a7a7e6b9de9c9',1,'wiced_bt_avrc_metadata_rsp_t']]],
   ['getcap_5fcfm',['getcap_cfm',['../unionwiced__bt__avdt__ctrl__t.html#af51295f0fc71cc0959d113b5aafb7901',1,'wiced_bt_avdt_ctrl_t']]],
+  ['group_5fnav',['group_nav',['../unionwiced__bt__avrc__pass__thru__cmd__t.html#afa92ef11db9edb2ee237d54284562ef3',1,'wiced_bt_avrc_pass_thru_cmd_t']]],
   ['group_5fvalue',['group_value',['../unionwiced__bt__gatt__discovery__data__t.html#a1ac0172a46771798bfcb9422614efde5',1,'wiced_bt_gatt_discovery_data_t']]]
 ];

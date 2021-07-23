@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['u',['u',['../structwiced__bt__avrc__item__t.html#a68a934ae8bbbc6f45685f6c2f02dc32f',1,'wiced_bt_avrc_item_t']]],
+  ['u',['u',['../structwiced__bt__avrc__metadata__cmd__t.html#ac2080800fd77a2fe0f561b223fde9814',1,'wiced_bt_avrc_metadata_cmd_t::u()'],['../structwiced__bt__avrc__item__t.html#a68a934ae8bbbc6f45685f6c2f02dc32f',1,'wiced_bt_avrc_item_t::u()'],['../structwiced__bt__avrc__metadata__rsp__t.html#a9594ea2ddce14b76234ada956a99f83f',1,'wiced_bt_avrc_metadata_rsp_t::u()'],['../structwiced__bt__avrc__browse__rsp__t.html#ac103bbbca9c2e47a0f85f72b7e6b6de5',1,'wiced_bt_avrc_browse_rsp_t::u()']]],
   ['u16',['u16',['../structwiced__bt__sdp__discovery__attribute__value__t.html#a4d57e1798e153600454a77872401f3d0',1,'wiced_bt_sdp_discovery_attribute_value_t']]],
   ['u32',['u32',['../structwiced__bt__sdp__discovery__attribute__value__t.html#a4539a63e674db9a7f8679e96899c8ff6',1,'wiced_bt_sdp_discovery_attribute_value_t']]],
   ['u8',['u8',['../structwiced__bt__sdp__discovery__attribute__value__t.html#ace0e0a04c815d89277cccf143c01b77c',1,'wiced_bt_sdp_discovery_attribute_value_t']]],

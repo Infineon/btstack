@@ -701,7 +701,7 @@ typedef struct
 {
     uint16_t                        conn_id;         /**< ID of the connection */
     wiced_bt_gatt_discovery_type_t  discovery_type;  /**< Discovery type (see @link wiced_bt_gatt_discovery_type_e wiced_bt_gatt_discovery_type_t @endlink) */
-    wiced_bt_gatt_status_t          status;          /**< Status of clcb_operation */
+    wiced_bt_gatt_status_t          status;          /**< Status of the discovery operation */
 } wiced_bt_gatt_discovery_complete_t;
 
 
@@ -709,7 +709,7 @@ typedef struct
 typedef struct
 {
     uint16_t                                conn_id;            /**< ID of the connection */
-    wiced_bt_gatt_optype_t                  op;                 /**< Type of clcb_operation completed (see @link wiced_bt_gatt_optype_e wiced_bt_gatt_optype_t @endlink) */
+    wiced_bt_gatt_optype_t                  op;                 /**< Type of operation completed (see @link wiced_bt_gatt_optype_e wiced_bt_gatt_optype_t @endlink) */
     wiced_bt_gatt_status_t                  status;             /**< Status of clcb_operation */
     uint8_t                                 pending_events;     /**< Number of pending events, used to initiate next read */
     wiced_bt_gatt_operation_complete_rsp_t  response_data;      /**< Response data (dependent on optype) */
@@ -994,7 +994,7 @@ extern "C"
  *  @return @link wiced_bt_gatt_status_e wiced_bt_gatt_status_t @endlink
  *  @ingroup gattsr_api_functions
  */
-wiced_bt_gatt_status_t wiced_bt_gatt_server_send_indication(uint16_t conn_id,
+wiced_bt_gatt_status_t wiced_bt_gatt_server_send_indication(uint16_t conn_id, 
     uint16_t attr_handle, uint16_t val_len, uint8_t *p_app_buffer,
     wiced_bt_gatt_app_context_t p_app_ctxt);
 
@@ -1123,10 +1123,10 @@ wiced_bt_gatt_status_t wiced_bt_gatt_server_send_mtu_rsp(uint16_t conn_id, uint1
  *
  * @return wiced_bt_gatt_status_t
  */
-wiced_bt_gatt_status_t wiced_bt_gatt_server_send_read_handle_rsp(uint16_t conn_id,
+wiced_bt_gatt_status_t wiced_bt_gatt_server_send_read_handle_rsp(uint16_t conn_id, 
     wiced_bt_gatt_opcode_t opcode, 
     uint16_t len, 
-    uint8_t *p_attr_rsp,
+    uint8_t *p_attr_rsp, 
     wiced_bt_gatt_app_context_t p_app_ctxt);
 
 /**
@@ -1148,9 +1148,9 @@ wiced_bt_gatt_status_t wiced_bt_gatt_server_send_read_handle_rsp(uint16_t conn_i
  *
  * @return wiced_bt_gatt_status_t
  */
-wiced_bt_gatt_status_t wiced_bt_gatt_server_send_read_by_type_rsp (uint16_t conn_id,
+wiced_bt_gatt_status_t wiced_bt_gatt_server_send_read_by_type_rsp (uint16_t conn_id, 
     wiced_bt_gatt_opcode_t opcode,
-    uint8_t type_len,
+    uint8_t type_len, 
     uint16_t data_len, uint8_t*p_app_rsp_buffer, wiced_bt_gatt_app_context_t p_app_ctxt);
 
 /**
@@ -1171,8 +1171,8 @@ wiced_bt_gatt_status_t wiced_bt_gatt_server_send_read_by_type_rsp (uint16_t conn
  *
  * @return wiced_bt_gatt_status_t
  */
-wiced_bt_gatt_status_t wiced_bt_gatt_server_send_read_multiple_rsp (uint16_t conn_id,
-    wiced_bt_gatt_opcode_t opcode,
+wiced_bt_gatt_status_t wiced_bt_gatt_server_send_read_multiple_rsp (uint16_t conn_id, 
+    wiced_bt_gatt_opcode_t opcode, 
     uint16_t len, uint8_t* p_app_rsp_buffer, wiced_bt_gatt_app_context_t p_app_ctxt);
 
 /**
@@ -1188,7 +1188,7 @@ wiced_bt_gatt_status_t wiced_bt_gatt_server_send_read_multiple_rsp (uint16_t con
  *
  * @return wiced_bt_gatt_status_t
  */
-wiced_bt_gatt_status_t wiced_bt_gatt_server_send_write_rsp(uint16_t conn_id,
+wiced_bt_gatt_status_t wiced_bt_gatt_server_send_write_rsp(uint16_t conn_id, 
     wiced_bt_gatt_opcode_t opcode, uint16_t handle);
 
 /**
@@ -1216,9 +1216,9 @@ wiced_bt_gatt_status_t wiced_bt_gatt_server_send_write_rsp(uint16_t conn_id,
  *
  * @return wiced_bt_gatt_status_t
  */
-wiced_bt_gatt_status_t wiced_bt_gatt_server_send_prepare_write_rsp(uint16_t conn_id,
+wiced_bt_gatt_status_t wiced_bt_gatt_server_send_prepare_write_rsp(uint16_t conn_id, 
     wiced_bt_gatt_opcode_t opcode,
-    uint16_t handle, uint16_t offset,
+    uint16_t handle, uint16_t offset, 
     uint16_t len, uint8_t *p_app_rsp_buffer, wiced_bt_gatt_app_context_t p_app_ctxt);
 
 
@@ -1380,8 +1380,8 @@ wiced_bt_gatt_status_t wiced_bt_gatt_client_send_discover (uint16_t conn_id,
  */
 wiced_bt_gatt_status_t wiced_bt_gatt_client_send_read_handle(uint16_t conn_id, uint16_t handle,
     uint16_t offset, 
-    uint8_t * p_read_buf,
-    uint16_t len,
+    uint8_t * p_read_buf, 
+    uint16_t len, 
     wiced_bt_gatt_auth_req_t auth_req);
 
 /**
@@ -1403,7 +1403,7 @@ wiced_bt_gatt_status_t wiced_bt_gatt_client_send_read_handle(uint16_t conn_id, u
  *
  */
 wiced_bt_gatt_status_t wiced_bt_gatt_client_send_read_by_type(uint16_t conn_id,
-    uint16_t s_handle, uint16_t e_handle, wiced_bt_uuid_t *p_uuid,
+    uint16_t s_handle, uint16_t e_handle, wiced_bt_uuid_t *p_uuid, 
     uint8_t *p_read_buf, uint16_t len,
     wiced_bt_gatt_auth_req_t auth_req);
 
@@ -1664,6 +1664,18 @@ wiced_bt_gatt_status_t wiced_bt_gatt_get_device_address(uint16_t conn_id, wiced_
     wiced_bt_transport_t* p_transport, wiced_bt_ble_address_type_t* p_addr_type);
 
 /**
+ * API to validate connected gatt conn_id
+ *
+ *  @param[in]  conn_id    : Connection handle of the gatt bearer
+ *
+ *  @returns #wiced_bt_gatt_status_t
+ *
+ *  @ingroup gatt_common_api
+ */
+wiced_bt_gatt_status_t wiced_bt_gatt_validate_conn_id(uint16_t conn_id);
+
+
+/**
  * @brief Utility function to compare UUIDs
  * @param[in] p_left : UUID to compare
  * @param[in] p_right : UUID to compare
@@ -1769,9 +1781,18 @@ int wiced_bt_gatt_put_handle_in_stream(uint8_t *p_handle_stream, int stream_len,
  */
 const uint8_t *wiced_bt_gatt_get_handle_value(uint16_t handle, int *p_len);
 
+/**
+ * @brief Utility function to get the number of packets queued to tx
+ *
+ * @param[in] conn_id : Connection identifier
+ * @param[out] p_fragments_with_controller: pointer to receive the number of fragments with the controller
+ *
+ * \return number of packets queued to tx
+ */
+int wiced_bt_gatt_get_num_queued_tx_packets(uint16_t conn_id, int *p_fragments_with_controller);
+
 #ifdef __cplusplus
 }
 
 #endif
-
 

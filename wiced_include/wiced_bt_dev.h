@@ -316,6 +316,12 @@ enum wiced_bt_dev_le_auth_req_e {
 };
 typedef uint8_t wiced_bt_dev_le_auth_req_t;             /**< BLE authentication requirement (see #wiced_bt_dev_le_auth_req_e) */
 
+/** LE Security key level */
+#define SMP_SEC_NONE                 0            /**< Security Key Level: None */
+#define SMP_SEC_UNAUTHENTICATE      (1 << 0)      /**< Security Key Level: key not authenticated */
+#define SMP_SEC_AUTHENTICATED       (1 << 2)      /**< Security Key Level: key authenticated */
+typedef uint8_t wiced_bt_smp_sec_level_t;    /**< LE Security key level */
+
 /** Public key */
 typedef struct
 {
@@ -495,7 +501,7 @@ typedef struct
 {
     wiced_result_t                    status;                 /**< status of the simple pairing process   */
     uint8_t                           reason;                 /**< failure reason (see #wiced_bt_smp_status_t) */
-    uint8_t                           sec_level;              /**< 0 - None, 1- Unauthenticated Key, 4-Authenticated Key  */
+    wiced_bt_smp_sec_level_t          sec_level;              /**< 0 - None, 1- Unauthenticated Key, 4-Authenticated Key  */
     wiced_bool_t                      is_pair_cancel;         /**< True if cancelled, else False   */
     wiced_bt_device_address_t         resolved_bd_addr;       /**< Resolved address (if remote device using private address) */
     wiced_bt_ble_address_type_t       resolved_bd_addr_type;  /**< Resolved addr type of bonded device */
@@ -834,23 +840,23 @@ typedef struct
 /** Paired device BLE Keys  */
 typedef struct wiced_bt_ble_keys_s
 {
-    BT_OCTET16          irk;            /**< peer diverified identity root */
-    BT_OCTET16          pltk;           /**< peer long term key */
-    BT_OCTET16          pcsrk;          /**< peer SRK peer device used to secured sign local data  */
+    BT_OCTET16               irk;            /**< peer diverified identity root */
+    BT_OCTET16               pltk;           /**< peer long term key */
+    BT_OCTET16               pcsrk;          /**< peer SRK peer device used to secured sign local data  */
 
-    BT_OCTET16          lltk;           /**< local long term key */
-    BT_OCTET16          lcsrk;          /**< local SRK peer device used to secured sign local data  */
+    BT_OCTET16               lltk;           /**< local long term key */
+    BT_OCTET16               lcsrk;          /**< local SRK peer device used to secured sign local data  */
 
-    BT_OCTET8           rand;           /**< random vector for LTK generation */
-    uint16_t            ediv;           /**< LTK diversifier of this Peripheral device */
-    uint16_t            div;            /**< local DIV  to generate local LTK=d1(ER,DIV,0) and CSRK=d1(ER,DIV,1)  */
-    uint8_t             sec_level;      /**< local pairing security level */
-    uint8_t             key_size;       /**< key size of the LTK delivered to peer device */
-    uint8_t             srk_sec_level;  /**< security property of peer SRK for this device */
-    uint8_t             local_csrk_sec_level;  /**< security property of local CSRK for this device */
+    BT_OCTET8                rand;           /**< random vector for LTK generation */
+    uint16_t                 ediv;           /**< LTK diversifier of this Peripheral device */
+    uint16_t                 div;            /**< local DIV  to generate local LTK=d1(ER,DIV,0) and CSRK=d1(ER,DIV,1)  */
+    wiced_bt_smp_sec_level_t sec_level;      /**< local pairing security level */
+    uint8_t                  key_size;       /**< key size of the LTK delivered to peer device */
+    uint8_t                  srk_sec_level;  /**< security property of peer SRK for this device */
+    uint8_t                  local_csrk_sec_level;  /**< security property of local CSRK for this device */
 
-    uint32_t            counter;        /**< peer sign counter for verifying rcv signed cmd */
-    uint32_t            local_counter;  /**< local sign counter for sending signed write cmd*/
+    uint32_t                 counter;        /**< peer sign counter for verifying rcv signed cmd */
+    uint32_t                 local_counter;  /**< local sign counter for sending signed write cmd*/
 }wiced_bt_ble_keys_t;
 
 /** Paired Device Link key data */
@@ -1678,12 +1684,11 @@ void wiced_bt_smp_oob_data_reply(wiced_bt_device_address_t bd_addr, wiced_result
  * operation is completed, local OOB data will be
  * provided via BTM_SMP_SC_LOCAL_OOB_DATA_NOTIFICATION_EVT.
  *
- * @param[in]       bd_addr         : intended remote address for the OOB data
- * @param[in]       bd_addr_type    : BLE_ADDR_PUBLIC or BLE_ADDR_PUBLIC
+ * @param[in]       bd_addr         : remote device address for the OOB data
+ * @param[in]       bd_addr_type    : device address type of address \p bd_addr
  *
  * @return          TRUE: creation of local SC OOB data set started.
  *
- * @note            BR/EDR Only
  */
 wiced_bool_t wiced_bt_smp_create_local_sc_oob_data (wiced_bt_device_address_t bd_addr, wiced_bt_ble_address_type_t bd_addr_type);
 

@@ -6,5 +6,6 @@ var searchData=
   ['num_5fcompleted_5fext_5fadv_5fevents',['num_completed_ext_adv_events',['../structwiced__bt__ble__ext__adv__set__terminated__event__data__t.html#ad56295f549b2ff83e0fae66abeb3b5aa',1,'wiced_bt_ble_ext_adv_set_terminated_event_data_t']]],
   ['num_5felements',['NUM_ELEMENTS',['../group__bt__types.html#ga0bf05373027b4f63e6a275eb4c3da931',1,'wiced_bt_types.h']]],
   ['num_5fhandles',['num_handles',['../structwiced__bt__gatt__read__multiple__req__t.html#ad2d6d1618bbade63c4823c8fc05c7bba',1,'wiced_bt_gatt_read_multiple_req_t']]],
-  ['numeric_5fvalue',['numeric_value',['../structwiced__bt__dev__user__cfm__req__t.html#ae7f1276a069563b37e82ca7c8ff56c32',1,'wiced_bt_dev_user_cfm_req_t']]]
+  ['numeric_5fvalue',['numeric_value',['../structwiced__bt__dev__user__cfm__req__t.html#ae7f1276a069563b37e82ca7c8ff56c32',1,'wiced_bt_dev_user_cfm_req_t']]],
+  ['nvram',['NVRAM',['../group__nvram.html',1,'']]]
 ];

@@ -144,6 +144,7 @@ var group__l2cap =
     [ "L2C_BLE_IS_VALID_PSM", "group__l2cap.html#gabd075c971c2d6c15bd2f51765053e1c4", null ],
     [ "wiced_bt_l2cap_ch_cfg_bits_t", "group__l2cap.html#ga6827dfd644f1172740f9e69c0df06bc9", null ],
     [ "wiced_bt_l2cap_chnl_priority_t", "group__l2cap.html#gae159cf0a184ef83a6b33727f05747b69", null ],
+    [ "wiced_bt_l2cap_fixed_channel_mask_t", "group__l2cap.html#ga0a4a747ef09577a8dfdb31de1ddca88d", null ],
     [ "wiced_bt_l2cap_connected_cback_t", "group__l2cap.html#ga8eb954ec0a272b02c6fc69bd07ea7602", null ],
     [ "wiced_bt_l2cap_disconnect_indication_cback_t", "group__l2cap.html#ga8e06cc2cf38b4956b5bf6f521de8b3c7", null ],
     [ "wiced_bt_l2cap_disconnect_confirm_cback_t", "group__l2cap.html#ga0a296b1bb20b46ebc680a7bec99a740a", null ],

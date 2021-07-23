@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name',['name',['../structwiced__bt__avrc__app__setting__text__t.html#a3de41ea2f009f98fda7f1cdff094c16d',1,'wiced_bt_avrc_app_setting_text_t::name()'],['../structwiced__bt__avrc__item__player__t.html#acea6f2929a10ab8bc4b33ab7703c2370',1,'wiced_bt_avrc_item_player_t::name()'],['../structwiced__bt__avrc__item__folder__t.html#a8fdb15c76194b5f64facb73055b3047b',1,'wiced_bt_avrc_item_folder_t::name()'],['../structwiced__bt__avrc__item__media__t.html#a2c5f2798cf1ddadc0581c23a059b070b',1,'wiced_bt_avrc_item_media_t::name()']]],
+  ['name',['name',['../structwiced__bt__avrc__full__name__t.html#ab426f2c69a735412d4ee79b4f899d145',1,'wiced_bt_avrc_full_name_t::name()'],['../structwiced__bt__avrc__app__setting__text__t.html#a3de41ea2f009f98fda7f1cdff094c16d',1,'wiced_bt_avrc_app_setting_text_t::name()'],['../structwiced__bt__avrc__attr__entry__t.html#a926a1c3baf91edf84381645a97c7636a',1,'wiced_bt_avrc_attr_entry_t::name()'],['../structwiced__bt__avrc__item__player__t.html#acea6f2929a10ab8bc4b33ab7703c2370',1,'wiced_bt_avrc_item_player_t::name()'],['../structwiced__bt__avrc__item__folder__t.html#a8fdb15c76194b5f64facb73055b3047b',1,'wiced_bt_avrc_item_folder_t::name()'],['../structwiced__bt__avrc__item__media__t.html#a2c5f2798cf1ddadc0581c23a059b070b',1,'wiced_bt_avrc_item_media_t::name()']]],
   ['no_5ftraffic',['NO_TRAFFIC',['../group__bt__types.html#ga2e62702df46486d10f869cb00339eb8d',1,'wiced_bt_types.h']]],
   ['not_5fused',['not_used',['../structwiced__bt__device__edr__packet__types__t.html#a19dda30cacb280cbfee6ae7859b2993a',1,'wiced_bt_device_edr_packet_types_t']]],
   ['nsc_5fmask',['nsc_mask',['../structwiced__bt__avdt__cs__t.html#a7bb40517554eeb1ec9258e6d680ae4da',1,'wiced_bt_avdt_cs_t']]],
@@ -21,5 +21,6 @@ var searchData=
   ['num_5fsubbands',['num_subbands',['../structwiced__bt__a2d__sbc__cie__t.html#afde57c73de24168c479920aa1376161a',1,'wiced_bt_a2d_sbc_cie_t']]],
   ['num_5fuuid_5ffilters',['num_uuid_filters',['../structwiced__bt__sdp__discovery__db__t.html#afe0c35dff37a42c46bd796009c2f6c74',1,'wiced_bt_sdp_discovery_db_t']]],
   ['num_5fval',['num_val',['../structwiced__bt__avrc__metadata__set__app__value__cmd__t.html#ac5075249ecb1c5de997ee5cf993bd2d7',1,'wiced_bt_avrc_metadata_set_app_value_cmd_t::num_val()'],['../structwiced__bt__avrc__metadata__get__app__val__txt__cmd__t.html#a0b05b1161d52401806be260e9c2973b2',1,'wiced_bt_avrc_metadata_get_app_val_txt_cmd_t::num_val()'],['../structwiced__bt__avrc__metadata__list__app__values__rsp__t.html#ab933c098d26640069606860712a4d61f',1,'wiced_bt_avrc_metadata_list_app_values_rsp_t::num_val()'],['../structwiced__bt__avrc__metadata__get__cur__app__value__rsp__t.html#abf7ff92a771e559cb29aec518d08582a',1,'wiced_bt_avrc_metadata_get_cur_app_value_rsp_t::num_val()']]],
-  ['numeric_5fvalue',['numeric_value',['../structwiced__bt__dev__user__cfm__req__t.html#ae7f1276a069563b37e82ca7c8ff56c32',1,'wiced_bt_dev_user_cfm_req_t']]]
+  ['numeric_5fvalue',['numeric_value',['../structwiced__bt__dev__user__cfm__req__t.html#ae7f1276a069563b37e82ca7c8ff56c32',1,'wiced_bt_dev_user_cfm_req_t']]],
+  ['nvram',['NVRAM',['../group__nvram.html',1,'']]]
 ];

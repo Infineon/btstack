@@ -754,6 +754,7 @@
 #define HCI_BLE_ISOC_BIG_SYNC_ESTABLISHED_EVT       0x1D
 #define HCI_BLE_ISOC_BIG_SYNC_LOST_EVT              0x1E
 #define HCI_BLE_ISOC_PEER_SCA_COMPLETE_EVT          0x1F
+#define HCI_BLE_ISOC_BIGINFO_ADV_REPORT_EVT         0x22
 
 /* ConnectionLess Broadcast events */
 #define HCI_SYNC_TRAIN_COMP_EVT             0x4F
@@ -996,9 +997,9 @@
 */
 #if BTM_BLE_PRIVACY_SPT == TRUE
 /* BLE event mask */
-#define HCI_BLE_EVENT_MASK_DEF               "\x00\x00\x00\x00\x43\x0f\xff\xff"
+#define HCI_BLE_EVENT_MASK_DEF               "\x00\x00\x00\x02\x7f\x0f\xff\xff"
 #else
-#define HCI_BLE_EVENT_MASK_DEF               "\x00\x00\x00\x00\x43\x0f\xff\x7f"
+#define HCI_BLE_EVENT_MASK_DEF               "\x00\x00\x00\x02\x7F\x0f\xff\x7f"
 #endif
 /*
 ** Definitions for packet type masks (BT1.2 and BT2.0 definitions)
@@ -2121,6 +2122,12 @@ typedef struct
 #define HCI_LE_FEATURE_PERIODIC_ADVERTISING_MASK        0x20
 #define HCI_LE_FEATURE_PERIODIC_ADVERTISING_OFF         1
 #define HCI_LE_PERIODIC_ADVERTISING_SUPPORTED(x) ((x)[ HCI_LE_FEATURE_PERIODIC_ADVERTISING_OFF] & HCI_LE_FEATURE_PERIODIC_ADVERTISING_MASK)
+
+/* Connected Isochronous Stream: bit 28 and 29 */
+#define HCI_LE_FEATURE_ISOC_CHANNELS_MASK        0x30
+#define HCI_LE_FEATURE_ISOC_CHANNELS_OFF         3
+#define HCI_LE_ISOC_CHANNELS_SUPPORTED(x)                                                                       \
+    ((x)[HCI_LE_FEATURE_ISOC_CHANNELS_OFF] & HCI_LE_FEATURE_ISOC_CHANNELS_MASK)
 
 /* Channel Selection Algorithm #2 feature: bit 14 */
 //Todo

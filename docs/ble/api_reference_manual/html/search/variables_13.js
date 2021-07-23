@@ -14,7 +14,7 @@ var searchData=
   ['sco_5fconnection_5frequest',['sco_connection_request',['../unionwiced__bt__management__evt__data__t.html#a0062e13a0e8a04d8e5891cd034c73eb7',1,'wiced_bt_management_evt_data_t']]],
   ['sco_5fdisconnected',['sco_disconnected',['../unionwiced__bt__management__evt__data__t.html#a8a1f247b6ffbede076ebc1c5c465031c',1,'wiced_bt_management_evt_data_t']]],
   ['sdu_5finter_5ftime',['sdu_inter_time',['../structt_h_c_i___e_x_t___f_l_o_w___s_p_e_c.html#a7dc80ab1094bfb71f5c9e57092516eca',1,'tHCI_EXT_FLOW_SPEC']]],
-  ['sec_5flevel',['sec_level',['../structwiced__bt__dev__ble__pairing__info__t.html#a3049c1e5a5ffc5d9673ce32003f4c6e2',1,'wiced_bt_dev_ble_pairing_info_t::sec_level()'],['../structwiced__bt__ble__keys__t.html#ae12ce851ce60184837219092db590571',1,'wiced_bt_ble_keys_t::sec_level()']]],
+  ['sec_5flevel',['sec_level',['../structwiced__bt__dev__ble__pairing__info__t.html#aa29e9ca6e0626e1ca64c3f783174462a',1,'wiced_bt_dev_ble_pairing_info_t::sec_level()'],['../structwiced__bt__ble__keys__t.html#a1d484093752cdb946808d4c0ecaf98b2',1,'wiced_bt_ble_keys_t::sec_level()']]],
   ['sec_5fphy',['sec_phy',['../structwiced__bt__ble__ext__adv__report__t.html#ae1d54d04d5e0541c37861a28a86306c7',1,'wiced_bt_ble_ext_adv_report_t']]],
   ['secondary_5fphy',['secondary_phy',['../structwiced__bt__ble__scan__results__t.html#aafd0a61c3e2231d5cdeee7de0cd33ae6',1,'wiced_bt_ble_scan_results_t']]],
   ['security_5faborted',['security_aborted',['../unionwiced__bt__management__evt__data__t.html#a9176306094bdc1813f0da551892de75f',1,'wiced_bt_management_evt_data_t']]],

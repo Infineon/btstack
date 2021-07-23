@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['server_20api',['Server API',['../group__gatt__server__api__functions.html',1,'']]]
+  ['phy',['Phy',['../group__btm__ble__phy__functions.html',1,'']]]
 ];

@@ -232,6 +232,7 @@ var NAVTREEINDEX1 =
 "group__gatt__client__api__functions.html#gae363a106fa85653e78cdf18d84c500d2":[1,5,1,7],
 "group__gatt__common__api.html":[1,5,2],
 "group__gatt__common__api.html#ga15d5aff42e22c934fbbde1a7a2680ff6":[1,5,2,5],
+"group__gatt__common__api.html#ga2bfd5052c63d135f8df4078a61d0938b":[1,5,2,7],
 "group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9":[1,5,2,3],
 "group__gatt__common__api.html#gac384524f7e61172da9eb0beb764ed46d":[1,5,2,4],
 "group__gatt__common__api.html#gad8044837c2bda2ff0515d86bd160d45e":[1,5,2,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__gatt__robust__caching__api__functions.html#gabe091d84b05f98e689d214bfce4b9cef":[1,5,0,2,0],
 "group__gatt__robust__caching__api__functions.html#gae04af1c4b05f0ceaf2a725513861dbf0":[1,5,0,2,2],
 "group__gatt__robust__caching__api__functions.html#gaf11cc1177e1e9f7622ab0c2b555512ab":[1,5,0,2,1],
-"group__gatt__server__api__functions.html":[1,5,0],
-"group__gattdb__api__functions.html":[1,5,0,1]
+"group__gatt__server__api__functions.html":[1,5,0]
 };

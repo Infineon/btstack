@@ -14,7 +14,5 @@ var group__l2cap__common__api__functions =
     [ "wiced_bt_l2cap_data_write", "group__l2cap__common__api__functions.html#ga2cd224a6bc467d85d853540f8abdec5e", null ],
     [ "wiced_bt_l2cap_set_idle_timeout", "group__l2cap__common__api__functions.html#gaff27f5b67e8050fe84916d3a67006a50", null ],
     [ "wiced_bt_l2cap_set_idle_timeout_by_bd_addr", "group__l2cap__common__api__functions.html#ga9834af87f6f31578b7095bdb4e55e459", null ],
-    [ "wiced_bt_l2cap_set_trace_level", "group__l2cap__common__api__functions.html#gae063bb78235a75f6c9439a73bd4ca12f", null ],
-    [ "wiced_bt_l2cap_get_bdaddrby_handle", "group__l2cap__common__api__functions.html#gaebb8e6a7ac8add5164c86871af99747e", null ],
-    [ "wiced_bt_l2cap_get_disconnect_reason", "group__l2cap__common__api__functions.html#gac18718acb74010cf9061490132f9282b", null ]
+    [ "wiced_bt_l2cap_get_bdaddrby_handle", "group__l2cap__common__api__functions.html#gaebb8e6a7ac8add5164c86871af99747e", null ]
 ];

@@ -209,6 +209,7 @@
 #define HCI_CONTROL_HIDD_COMMAND_HID_HOST_ADDR              ( ( HCI_CONTROL_GROUP_HIDD << 8 ) | 0x05 )     /* Paired host address */
 #define HCI_CONTROL_HIDD_COMMAND_DISCONNECT                 ( ( HCI_CONTROL_GROUP_HIDD << 8 ) | 0x06 )     /* Disconnect HID connection */
 #define HCI_CONTROL_HIDD_COMMAND_VIRTUAL_UNPLUG             ( ( HCI_CONTROL_GROUP_HIDD << 8 ) | 0x07 )     /* Send Virtual Unplug */
+#define HCI_CONTROL_HIDD_COMMAND_KEY                        ( ( HCI_CONTROL_GROUP_HIDD << 8 ) | 0x08 )     /* Send Host Button key */
 
 #define HCI_CONTROL_HID_COMMAND_ACCEPT_PAIRING              HCI_CONTROL_HIDD_COMMAND_ACCEPT_PAIRING
 #define HCI_CONTROL_HID_COMMAND_SEND_REPORT                 HCI_CONTROL_HIDD_COMMAND_SEND_REPORT
@@ -715,6 +716,8 @@
 #define HCI_CONTROL_HIDD_EVENT_VIRTUAL_CABLE_UNPLUGGED      ( ( HCI_CONTROL_GROUP_HIDD << 8 ) | 0x02 )    /* Host requested Virtual Cable Unplug */
 #define HCI_CONTROL_HIDD_EVENT_DATA                         ( ( HCI_CONTROL_GROUP_HIDD << 8 ) | 0x03 )    /* Host sent report */
 #define HCI_CONTROL_HIDD_EVENT_CLOSED                       ( ( HCI_CONTROL_GROUP_HIDD << 8 ) | 0x04 )    /* Host attempt to establish connection failed */
+#define HCI_CONTROL_HIDD_EVENT_HOST_ADDR                    ( ( HCI_CONTROL_GROUP_HIDD << 8 ) | 0x05 )    /* Paired host address */
+#define HCI_CONTROL_HIDD_EVENT_STATE_CHANGE                 ( ( HCI_CONTROL_GROUP_HIDD << 8 ) | 0x06 )    /* Device State Change */
 #define HCI_CONTROL_HIDD_EVENT_COMMAND_STATUS               ( ( HCI_CONTROL_GROUP_HIDD << 8 ) | 0xFF )    /* Result status for HID commands */
 
 #define HCI_CONTROL_HID_EVENT_OPENED                        HCI_CONTROL_HIDD_EVENT_OPENED

@@ -363,6 +363,17 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gaf4b1d1b54dc1c34075463a86c083f4b8">BTM_SECURITY_LOCAL_KEY_DATA_LEN</a>&#160;&#160;&#160;65</td></tr>
 <tr class="memdesc:gaf4b1d1b54dc1c34075463a86c083f4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local security key data length (used by <a class="el" href="structwiced__bt__local__identity__keys__t.html" title="LE identity key for local device (used by BTM_LE_LOCAL_IDENTITY_KEYS_UPDATE_EVT and BTM_LE_LOCAL_KEYS...">wiced_bt_local_identity_keys_t</a> structure) <br /></td></tr>
 <tr class="separator:gaf4b1d1b54dc1c34075463a86c083f4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b389d0200be0a871a4258d88a8ae79c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga5b389d0200be0a871a4258d88a8ae79c">SMP_SEC_NONE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ga5b389d0200be0a871a4258d88a8ae79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE Security key level.  <a href="#ga5b389d0200be0a871a4258d88a8ae79c">More...</a><br /></td></tr>
+<tr class="separator:ga5b389d0200be0a871a4258d88a8ae79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70362ba7d33801032f7fae4f5c66c6c8"><td class="memItemLeft" align="right" valign="top"><a id="ga70362ba7d33801032f7fae4f5c66c6c8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga70362ba7d33801032f7fae4f5c66c6c8">SMP_SEC_UNAUTHENTICATE</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="memdesc:ga70362ba7d33801032f7fae4f5c66c6c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Security Key Level: key not authenticated. <br /></td></tr>
+<tr class="separator:ga70362ba7d33801032f7fae4f5c66c6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga013f9abd01f24129a77253a4c980ccc8"><td class="memItemLeft" align="right" valign="top"><a id="ga013f9abd01f24129a77253a4c980ccc8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga013f9abd01f24129a77253a4c980ccc8">SMP_SEC_AUTHENTICATED</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="memdesc:ga013f9abd01f24129a77253a4c980ccc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Security Key Level: key authenticated. <br /></td></tr>
+<tr class="separator:ga013f9abd01f24129a77253a4c980ccc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabcea397e642a42cabcd6677fbec034e3"><td class="memItemLeft" align="right" valign="top"><a id="gabcea397e642a42cabcd6677fbec034e3"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gabcea397e642a42cabcd6677fbec034e3">BTM_OOB_STATE</a></td></tr>
 <tr class="memdesc:gabcea397e642a42cabcd6677fbec034e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">OOB Data status. <br /></td></tr>
@@ -452,6 +463,10 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga6fbe43cbb7c3586833c3c5477e751d5a">wiced_bt_dev_le_auth_req_t</a></td></tr>
 <tr class="memdesc:ga6fbe43cbb7c3586833c3c5477e751d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE authentication requirement (see <a class="el" href="group__wicedbt___device_management.html#gaef5791fdc8d52268ee25d1edfec15f90" title="LE Authentication requirement.">wiced_bt_dev_le_auth_req_e</a>) <br /></td></tr>
 <tr class="separator:ga6fbe43cbb7c3586833c3c5477e751d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca4147177a51487244e4fb3876dd1986"><td class="memItemLeft" align="right" valign="top"><a id="gaca4147177a51487244e4fb3876dd1986"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gaca4147177a51487244e4fb3876dd1986">wiced_bt_smp_sec_level_t</a></td></tr>
+<tr class="memdesc:gaca4147177a51487244e4fb3876dd1986"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE Security key level. <br /></td></tr>
+<tr class="separator:gaca4147177a51487244e4fb3876dd1986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5f7c4c6d1b30b26d34c0144e96de38c"><td class="memItemLeft" align="right" valign="top"><a id="gac5f7c4c6d1b30b26d34c0144e96de38c"></a>
 typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gac5f7c4c6d1b30b26d34c0144e96de38c">wiced_bt_dev_oob_data_t</a></td></tr>
 <tr class="memdesc:gac5f7c4c6d1b30b26d34c0144e96de38c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OOB data (see <a class="el" href="group__wicedbt___device_management.html#gab993ff958015bba892afb8f472bd99d1" title="OOB Data status.">wiced_bt_dev_oob_data_e</a>) <br /></td></tr>
@@ -1011,6 +1026,23 @@ Enumerations</h2></td></tr>
 <tr class="separator:gaa76569d7be1ed9ff5262e81b3b651325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga5b389d0200be0a871a4258d88a8ae79c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b389d0200be0a871a4258d88a8ae79c">&#9670;&nbsp;</a></span>SMP_SEC_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SMP_SEC_NONE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>LE Security key level. </p>
+<p>Security Key Level: None </p>
+
+</div>
+</div>
 <a id="ga40a34b1b809b9b782d9572d3bbd3a92f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga40a34b1b809b9b782d9572d3bbd3a92f">&#9670;&nbsp;</a></span>BTM_LINK_TYPE_SCO</h2>
 

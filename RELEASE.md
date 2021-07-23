@@ -6,16 +6,22 @@ Following are the limitations when using host based address resolution (only app
     There is a very small window when the host stack gets an ADV, resolves the address and tries to connect to the private address, but during that time the peripheral has changed the address. This might very occasionally cause a connection attempt to fail.
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
-### Known issues in V3.0.0
-- In GATT Disconnection event connection id always set to 0x8000.
-  Workaround to identify the terminated connection is to check the BD ADDR in the event data.
-- Documentation - in wiced_bt_gatt.h, the term clcb_operation should be read as 'operation' in the following structure definition
-  - wiced_bt_gatt_discovery_complete_t, in documentation of member status.
-  - wiced_bt_gatt_operation_complete_t, in documentation of member op.
-
 ## Changelog
 
-### V3.0.0
+## V3.1.0
+BTSTACK3.1 is BT5.2 certified. Certification includes EATT and ISOC features, QDID: [172247](https://launchstudio.bluetooth.com/ListingDetails/134246).
+ - APIs added in this release:
+   - API to get number of GATT packets in the tx queue: int wiced_bt_gatt_get_num_queued_tx_packets()
+   - API to get num packets in L2C queue: wiced_bt_l2cap_get_num_queued_tx_packets()
+   - API for checkecking whether a connection id is still in operation/connected: wiced_bt_gatt_status_t wiced_bt_gatt_validate_conn_id()
+ - Minor documentation updates are done including the issue in wiced_bt_gatt.h using the term clcb_operation instead of operation that was present in BTSTACK3.0.
+ - Bug fixes
+   - In GATT Disconnection event connection id always set to 0x8000.
+   - Fix crash in API wiced_bt_remove_from_queue when dequeuing from an empty queue.
+   - Fix for incorrect discovery_type value in GATT_DISCOVERY_CPLT_EVT.
+   - Fix to allow back to back operations on event complete in gatt read, read multiple, read_by_type_rsp.
+
+## V3.0.0
 This release contains major updates BTSTACK interfaces requiring modifications in existing applications in order for them to work with BTSTACK3.0. Please see the **[Migration Guide](https://cypresssemiconductorco.github.io/btstack/BTSTACK_2.0_to_3.0_API_Migration_Guide.htm)** for more details on how to migrate your application written for BTSTACK1.X or BTSTACK2.0 to BTSTACK3.0.
  - Stack configuration parameters (wiced_bt_cfg_settings_t) are updated for better readability and to remove parameters that are not necessary, providing APIs where requred. Stack APIs such as GATT profile APIs have been modified for ease of use.
  - BT SIG has updated the naming of a number of entities (e.g., roles of bluetooth devices), the stack interfaces and internal code has been updated accordingly.
@@ -28,21 +34,28 @@ As part of this change, the wiced_bt_cfg_settings_t and associated structures ar
  - Better Congestion handling
  - Improved overall memory usage for GATT applications
 
-### V2.0.0
+### Known issues in V3.0.0
+- In GATT Disconnection event connection id always set to 0x8000.
+  Workaround to identify the terminated connection is to check the BD ADDR in the event data.
+- Documentation - in wiced_bt_gatt.h, the term clcb_operation should be read as 'operation' in the following structure definition
+  - wiced_bt_gatt_discovery_complete_t, in documentation of member status.
+  - wiced_bt_gatt_operation_complete_t, in documentation of member op.
+
+## V2.0.0
  - The BT Host Stack is BT5.2 certified, QDID: 160340.
  - Extended Advertisement feature is supported.
  - EATT is supported.
  - Documentation improvements.
  - Documentation fixes.
 
-### V1.5.0
+## V1.5.0
 This release is an update over BTSTACK1.4 release.
  - New API in wiced_bt_stack_Platform.h, wiced_bt_stack_indicate_lower_tx_complete() has been added. This is called by the lower layer transport driver to restart sending ACL data to the controller when buffers are agian available with the lower layer transport driver after having run out.
  - The stack now supports Host based address resolution when using controllers that do not support address resolution.
  - API wiced_bt_stack_shutdown in wiced_bt_stack_platform.h, to be called by porting layer to clean-up stack context data when wiced_bt_stack_deinit() is called by application.
 
 
-### V1.4.0
+## V1.4.0
 BTSTACK v1.40 has bug fixes and enhancements.
  - New interface in wiced_bt_stack_platform.h, which defines porting layer facing interfaces, to disable stack traces and identify trace type (DEBUG, ERROR, etc.,).
  - New API to get expected dynamic memory required in stack based on a given wiced_bt_cfg_settings_t is added (wiced_bt_stack_get_dynamic_memory_size_for_config).
@@ -51,5 +64,5 @@ BTSTACK v1.40 has bug fixes and enhancements.
   - Support for split database added
 - wiced_bt_delete_heap API to delete application created heaps added
 
-### V1.3.0
+## V1.3.0
 - Initial public release of Bluetooth Host stack

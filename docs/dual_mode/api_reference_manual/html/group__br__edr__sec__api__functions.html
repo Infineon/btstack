@@ -487,13 +487,12 @@ Functions</h2></td></tr>
 <p>When operation is completed, local OOB data will be provided via BTM_SMP_SC_LOCAL_OOB_DATA_NOTIFICATION_EVT.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: intended remote address for the OOB data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr_type</td><td>: BLE_ADDR_PUBLIC or BLE_ADDR_PUBLIC</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: remote device address for the OOB data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr_type</td><td>: device address type of address <code>bd_addr</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE: creation of local SC OOB data set started.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>BR/EDR Only </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE: creation of local SC OOB data set started. </dd></dl>
 
 </div>
 </div>

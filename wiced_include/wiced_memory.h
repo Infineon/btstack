@@ -16,10 +16,6 @@
 #include "wiced_data_types.h"
 #include "wiced_result.h"
 
-#ifndef WICED_MEMORY_DEBUG_ENABLE
-/** Debug Memory Level*/
-#define  WICED_MEMORY_DEBUG_ENABLE FALSE
-#endif
 
 /* WICED does not care about the structure of the contents of a WICED buffer */
 /** WICED BT Buffer */
@@ -59,7 +55,7 @@ typedef struct wiced_bt_heap_statistics_s
     uint16_t    current_largest_free_size;   /**< largest free fragment size, which can be allocated  */
     uint16_t    current_num_free_fragments;  /**< num of free fragments */
     uint16_t    current_free_size;           /**< total free size of all fragments */
-}wiced_bt_heap_statistics_t;
+} wiced_bt_heap_statistics_t;
 
 
 /** This queue is a general purpose buffer queue, for application use.*/
@@ -136,42 +132,25 @@ wiced_bt_pool_t* wiced_bt_create_pool(const char* name, uint32_t buffer_size, ui
 void wiced_bt_delete_pool(wiced_bt_pool_t* p_pool);
 
 
-#if defined (WICED_MEMORY_DEBUG_ENABLE ) && (WICED_MEMORY_DEBUG_ENABLE == TRUE)
 /** Get buffer from requested pool */
-wiced_bt_buffer_t* wiced_bt_get_buffer_from_pool_trace(wiced_bt_pool_t* p_pool, const char* function, int line);
-/** Get buffer from requested pool refer #wiced_bt_get_buffer_from_pool_trace */
-#define wiced_bt_get_buffer_from_pool(pool) wiced_bt_get_buffer_from_pool_trace((pool), __FUNCTION__, __LINE__)
-#else
-/** Get buffer from requested pool */
-wiced_bt_buffer_t* wiced_bt_get_buffer_from_pool_no_trace(wiced_bt_pool_t* p_pool);
 /**
  * Allocates a buffer from the requested pool.
  *
- * @param[in]       pool  : pointer to pool from which to get the buffer
+ * @param[in]       p_pool  : pointer to pool from which to get the buffer
  *
  * @return         the pointer to the buffer or NULL on failure
  */
-#define wiced_bt_get_buffer_from_pool(pool) wiced_bt_get_buffer_from_pool_no_trace((pool))
-#endif
+wiced_bt_buffer_t* wiced_bt_get_buffer_from_pool (wiced_bt_pool_t* p_pool);
 
-#if defined (WICED_MEMORY_DEBUG_ENABLE ) && (WICED_MEMORY_DEBUG_ENABLE == TRUE)
-/** Get buffer from requested heap */
-wiced_bt_buffer_t* wiced_bt_get_buffer_from_heap_trace(wiced_bt_heap_t* p_heap, uint32_t size, const char* function, int line);
-/** Get buffer from requested heap */
-#define wiced_bt_get_buffer_from_heap(heap, size) wiced_bt_get_buffer_from_heap_trace((heap), (size), __FUNCTION__, __LINE__)
-#else
-/** Get buffer from requested heap */
-wiced_bt_buffer_t* wiced_bt_get_buffer_from_heap_no_trace(wiced_bt_heap_t* p_heap, uint32_t size);
 /**
  * Allocates a buffer from the requested heap.
  *
- * @param[in]       heap  : pointer to heap from which to get the buffer
+ * @param[in]       p_heap  : pointer to heap from which to get the buffer
  * @param[in]       size  : size to be allocated
  *
  * @return         the pointer to the buffer or NULL on failure
  */
-#define wiced_bt_get_buffer_from_heap(heap, size) wiced_bt_get_buffer_from_heap_no_trace((heap), (size))
-#endif
+wiced_bt_buffer_t* wiced_bt_get_buffer_from_heap (wiced_bt_heap_t* p_heap, uint32_t size);
 
 /**
  * Allocates a buffer from the <b> DEFAULT heap </b>.
@@ -202,23 +181,14 @@ uint32_t wiced_bt_get_pool_free_count (wiced_bt_pool_t* p_pool);
 */
 uint32_t wiced_bt_get_largest_heap_buffer (wiced_bt_heap_t* p_heap);
 
-#if defined (WICED_MEMORY_DEBUG_ENABLE) && (WICED_MEMORY_DEBUG_ENABLE == TRUE)
-/** Free Buffer */
-void wiced_bt_free_buffer_trace(wiced_bt_buffer_t* p_buf, const char* function, int line);
-/** Free Buffer */
-#define wiced_bt_free_buffer(free_buf)  wiced_bt_free_buffer_trace((free_buf), __FUNCTION__, __LINE__)
-#else
-/** Free Buffer */
-void wiced_bt_free_buffer_no_trace(wiced_bt_buffer_t* p_buf);
 /**
  * Frees a buffer back to the pool or heap it came from
  *
- * @param[in]       free_buf : pointer to the start of the (pool/heap) buffer to be freed
+ * @param[in]       p_buf : pointer to the start of the (pool/heap) buffer to be freed
  *
  * @return         None
  */
-#define wiced_bt_free_buffer  wiced_bt_free_buffer_no_trace
-#endif
+void wiced_bt_free_buffer (wiced_bt_buffer_t* p_buf);
 
 
 /**

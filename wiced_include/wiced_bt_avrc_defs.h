@@ -95,7 +95,7 @@ extern "C"
  * @{ */
 #define AVRC_CO_BLUETOOTH_SIG   0x00FFFFFF  /**< Bluetooth SIG */
 #define AVRC_CO_WIDCOMM         0x00000361  /**< Widcomm Inc. */
-#define AVRC_CO_BROADCOM        0x00001018  /**< Cypress Semiconductor */
+#define AVRC_CO_BROADCOM        0x00001018  /**< Broadcom */
 #define AVRC_CO_METADATA        0x00001958  /**< AVRC metadata messages */
 /** @} AVRC_COMPANY_ID */
 
@@ -399,10 +399,6 @@ typedef uint8_t wiced_bt_avrc_systemstate_t;    /**<AVRC systemstate*/
 /*****************************************************************************
 **  Advanced Control
 *****************************************************************************/
-#define AVRC_NUM_PLAYER_SUPPORTED   0x02
-#define AVRC_MAX_FOLDER_DEPTH       0x03
-
-
 #define AVRC_ITEM_PLAYER            0x01    /**< AVRC player item */
 #define AVRC_ITEM_FOLDER            0x02    /**< AVRC folder item */
 #define AVRC_ITEM_MEDIA             0x03    /**< AVRC media item */
@@ -803,17 +799,17 @@ typedef uint8_t wiced_bt_avrc_uid_t[AVRC_UID_SIZE]; /**<AVRC UID*/
 /*****************************************************************************
 **  data type definitions
 *****************************************************************************/
-#define AVRC_1_6_INCLUDED           TRUE /* TRUE to support the AVRCP 1.6 (GetTotalNumOfItems). */
+#define AVRC_1_6_INCLUDED           TRUE /**< TRUE to support the AVRCP 1.6 (GetTotalNumOfItems). */
 
 #define AVRC_METADATA_INCLUDED      TRUE    /**<Metadata feature included status*/
 #define AVRC_ADV_CTRL_INCLUDED      TRUE    /**<AVRC advanced control included status*/
 /* TRUE to support the browsing channel. */
-#define AVRC_BROWSE_INCLUDED    AVCT_BROWSE_INCLUDED
+#define AVRC_BROWSE_INCLUDED    AVCT_BROWSE_INCLUDED    /**<TRUE to support if AVCT browse enable */
 
 /** AV/C message header */
 typedef struct
 {
-    uint8_t   ctype;                        /**< Message type (see @ref AVRC_CTYPE "AVRC Message Types") */
+    uint8_t   ctype;                        /**< Message type (see @ref wiced_bt_avrc_ctype_e) */
     uint8_t   subunit_type;                 /**< Subunit type (see @ref AVRC_SUBUNIT_TYPE "AVRC subunit types") */
     uint8_t   subunit_id;                   /**< Subunit ID (typically ignored for AVRCP; except for VENDOR DEPENDENT messages (Value range: 0-7) */
     uint8_t   opcode;                       /**< Opcode (passthrough, vendor, etc) */
@@ -943,7 +939,7 @@ typedef struct {
 /**AVRCP full name used in building and receiving metadata packet*/
 typedef struct {
     uint16_t              charset_id;	/**< character set id*/
-    wiced_bt_avrc_name_t  name;
+    wiced_bt_avrc_name_t  name;         /**< attribute name */
 } wiced_bt_avrc_full_name_t;
 
 /**Unit info command message */
@@ -994,7 +990,7 @@ typedef struct {
 
 typedef union {
     wiced_bt_avrc_pass_thru_hdr_t hdr;                  /**< passthrough command header */
-    wiced_bt_avrc_pass_thru_group_nav_cmd_t group_nav;  /* group navigation command*/
+    wiced_bt_avrc_pass_thru_group_nav_cmd_t group_nav;  /**< group navigation command*/
 }wiced_bt_avrc_pass_thru_cmd_t;
 
 /** GetCapability */
@@ -1069,7 +1065,7 @@ typedef struct
 /** Continue PDUs */
 typedef struct
 {
-    uint8_t                  pdu_id;
+    uint8_t                  pdu_id;    /**< pdu id */
 } wiced_bt_avrc_metadata_continuation_pdu_cmd_t;
 
 /** GetFolderItems */
@@ -1126,14 +1122,14 @@ typedef struct {
     uint32_t company_id;	/**< Company identifier */
     uint8_t pdu;			/**< pdu id */
     uint8_t packet_type;	/**< message type */
-    uint16_t param_len;		/*data length */
+    uint16_t param_len;		/**< data length */
 }wiced_bt_avrc_metadata_hdr_t;
 
 
 
 /** AVRC commands */
 typedef struct {
-    wiced_bt_avrc_metadata_hdr_t metadata_hdr;
+    wiced_bt_avrc_metadata_hdr_t metadata_hdr;  /**< AVRC command header, see @ref wiced_bt_avrc_metadata_hdr_t  */
     union
     {
         wiced_bt_avrc_metadata_get_caps_cmd_t                   get_caps;               /**< GetCapability cmd       */
@@ -1152,10 +1148,10 @@ typedef struct {
         uint16_t                                                 player_id;              /**< SetAddrPlayer cmd       */
         uint8_t                                                  volume;                 /**< SetAbsVolume cmd        */
         wiced_bt_avrc_metadata_play_cmd_t                        play_item;              /**< PlayItem & AddToNowPlaying */
-    }u;
+    }u; /**< Metadata command */
 }wiced_bt_avrc_metadata_cmd_t;
 
-
+/** Browse command structure*/
 typedef struct {
     uint8_t pdu;	/**< pdu id */
     uint16_t param_len;	/**< data length */
@@ -1168,7 +1164,7 @@ typedef struct {
         wiced_bt_avrc_browse_get_item_attrs_cmd_t             get_item_attrs;         /**< GetItemAttrs         */
         wiced_bt_avrc_browse_search_cmd_t                     search;                 /**< Search               */
         wiced_bt_avrc_browse_get_num_of_items_cmd_t           get_num_of_items;       /**< GetTotalNumOfItems   */
-    }browse_cmd;
+    }browse_cmd;/**< Browse command */
 }wiced_bt_avrc_browse_cmd_t;
 
 
@@ -1194,6 +1190,7 @@ typedef struct
     uint8_t                 *p_vals;		 /**< list of application values in response*/
 } wiced_bt_avrc_metadata_list_app_values_rsp_t;
 
+/** PlayerApplicationSetting_text */
 typedef struct
 {
     uint8_t   attr_id;		/**< attribute id */
@@ -1218,12 +1215,13 @@ typedef struct
     
 } wiced_bt_avrc_metadata_get_app_attr_txt_rsp_t;
 
+/** Browsing attribute */
 typedef struct
 {
-    uint32_t                        attr_id;        /* Use AVRC_MEDIA_ATTR_ID_TITLE, AVRC_MEDIA_ATTR_ID_ARTIST, AVRC_MEDIA_ATTR_ID_ALBUM,
+    uint32_t                        attr_id;        /**< Use AVRC_MEDIA_ATTR_ID_TITLE, AVRC_MEDIA_ATTR_ID_ARTIST, AVRC_MEDIA_ATTR_ID_ALBUM,
                                                         AVRC_MEDIA_ATTR_ID_TRACK_NUM, AVRC_MEDIA_ATTR_ID_NUM_TRACKS,
                                                         AVRC_MEDIA_ATTR_ID_GENRE, AVRC_MEDIA_ATTR_ID_PLAYING_TIME */
-    wiced_bt_avrc_full_name_t       name;           /* The attribute value, value length and character set id. */
+    wiced_bt_avrc_full_name_t       name;           /**< The attribute value, value length and character set id. */
 } wiced_bt_avrc_attr_entry_t;
 
 /** GetElemAttrs */
@@ -1234,7 +1232,7 @@ typedef struct
     uint8_t                     *p_attr_stream;   /**< list of application values in response of type @ref  wiced_bt_avrc_attr_entry_t */   
 } wiced_bt_avrc_get_attrs_t;
 
-typedef wiced_bt_avrc_get_attrs_t wiced_bt_avrc_metadata_get_element_attrs_rsp_t;
+typedef wiced_bt_avrc_get_attrs_t wiced_bt_avrc_metadata_get_element_attrs_rsp_t; /**< getelementattribute response type */
 
 /** GetPlayStatus */
 typedef struct
@@ -1319,15 +1317,15 @@ typedef struct
     uint8_t                         type;           /**< Use AVRC_MEDIA_TYPE_AUDIO or AVRC_MEDIA_TYPE_VIDEO. */
     wiced_bt_avrc_full_name_t       name;           /**< The media name, name length and character set id. */
     uint8_t                         attr_count;     /**< The number of attributes in p_attr_list */
-    uint8_t                         attr_list_len;
-    uint8_t                         *p_attr_list; 	/**< Attribute entry list of type @refwiced_bt_avrc_attr_entry_t */
+    uint8_t                         attr_list_len; /**< Total length of the attribute_list */
+    uint8_t                         *p_attr_list; 	/**< Attribute entry list of type @ref wiced_bt_avrc_attr_entry_t */
 } wiced_bt_avrc_item_media_t;
 
 /** AVRCP Browsable item i.e. Player/Folder/Media items*/
 typedef struct
 {
     uint8_t                         item_type;      /**< AVRC_ITEM_PLAYER, AVRC_ITEM_FOLDER, or AVRC_ITEM_MEDIA */
-    uint8_t                         item_length;
+    uint8_t                         item_length;    /**< Total length of the AVRC item */
     union
     {
         wiced_bt_avrc_item_player_t player;         /**< The properties of a media player item.*/
@@ -1344,7 +1342,7 @@ typedef struct
     uint16_t                charset_id;		/**< character set id*/
     uint8_t                 folder_depth;	/**< folder depth*/
     uint8_t                 length;			/**< length of the folder list of root path*/
-    uint8_t 				*p_folder_name; /*  folder list of root path of type @ref wiced_bt_avrc_name_t*/
+    uint8_t 				*p_folder_name; /**<  folder list of root path of type @ref wiced_bt_avrc_name_t*/
 } wiced_bt_avrc_browse_set_br_player_rsp_t;
 
 /** GetFolderItems */
@@ -1353,7 +1351,7 @@ typedef struct
     uint16_t                uid_counter;	/**< uid counter*/
     uint16_t                item_count;		/**< number of items in response*/
     uint16_t                length;			/**< length of the item list in response */
-    uint8_t    				*item_list;  	/* item_list in response of type @ref wiced_bt_avrc_item_t*/
+    uint8_t    				*item_list;  	/**< item_list in response of type @ref wiced_bt_avrc_item_t*/
 } wiced_bt_avrc_browse_get_items_rsp_t;
 
 /** ChangePath */
@@ -1362,7 +1360,7 @@ typedef struct
     uint32_t                num_items;	/**< number of items in new path */
 } wiced_bt_avrc_browse_chg_path_rsp_t;
 
-typedef wiced_bt_avrc_get_attrs_t wiced_bt_avrc_browse_get_attrs_rsp_t;
+typedef wiced_bt_avrc_get_attrs_t wiced_bt_avrc_browse_get_attrs_rsp_t; /**< browsing getitemattributes */
 
 /** Get Total Number of Items */
 typedef struct
@@ -1371,11 +1369,11 @@ typedef struct
     uint32_t                num_items;		/**< number of items */
 } wiced_bt_avrc_browse_num_of_items_rsp_t;
 
-typedef  wiced_bt_avrc_browse_num_of_items_rsp_t wiced_bt_avrc_browse_search_rsp_t;
+typedef  wiced_bt_avrc_browse_num_of_items_rsp_t wiced_bt_avrc_browse_search_rsp_t;/**< browsing search response */
 
 /** AVRC Metadata response messages */
 typedef struct {
-    wiced_bt_avrc_metadata_hdr_t metadata_hdr;
+    wiced_bt_avrc_metadata_hdr_t metadata_hdr; /**< AVRC response header */
 
     union
     {
@@ -1393,7 +1391,7 @@ typedef struct {
         uint8_t                                            play_status;            /**< PlayItem, AddToNowPlaying */
         uint8_t                                            rejected_rsp;           /**< error code for rejected response */
 
-    }u;
+    }u;/**< Avrc Metadata response type */
 }wiced_bt_avrc_metadata_rsp_t;
 
 /** AVRC Browse response messages */
@@ -1410,7 +1408,7 @@ typedef struct {
         wiced_bt_avrc_browse_num_of_items_rsp_t          get_num_of_items;       /**< GetTotalNumberOfItems */
         wiced_bt_avrc_browse_search_rsp_t                search;                 /**< Search */
         uint8_t                                          reject;
-    }u;
+    }u; /**< Browsing response */
 } wiced_bt_avrc_browse_rsp_t;
 
 /** AVRC Command  messages */
@@ -1422,7 +1420,7 @@ typedef struct {
         wiced_bt_avrc_pass_thru_cmd_t pass_thru;        /**< Passthrough command */
         wiced_bt_avrc_metadata_cmd_t metadata;          /**< Metadata command */
         wiced_bt_avrc_browse_cmd_t browse_cmd;          /**< Browse command */
-    }type;
+    }type;/**< Avrc command type */
 }wiced_bt_avrc_cmd_t;
 
 /** AVRC response messages */
@@ -1435,7 +1433,7 @@ typedef struct {
         wiced_bt_avrc_pass_thru_hdr_t     pass;         /**< Passthrough response */
         wiced_bt_avrc_metadata_rsp_t      metadata;     /**< vendor response */
         wiced_bt_avrc_browse_rsp_t        browse_rsp;   /**< Browse response */
-    }type;
+    }type;  /**< AVRC response type */
 
 }wiced_bt_avrc_rsp_t;
 

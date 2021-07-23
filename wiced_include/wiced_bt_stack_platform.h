@@ -336,6 +336,7 @@ void wiced_bt_stack_init_internal(wiced_bt_management_cback_t mgmt_cback,
  * @return    None
  */
 void wiced_bt_stack_shutdown(void);
+
 /**@} wiced_bt_platform_group */
 
 

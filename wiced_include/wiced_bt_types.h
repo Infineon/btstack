@@ -357,6 +357,9 @@ extern uint8_t *BTU_copyStreamToBda(uint8_t *pBDA, uint8_t *pStream);
 /** uint8_t to Field */
 #define UINT8_TO_BE_FIELD(p, u8)   {*(uint8_t *)(p) = (uint8_t)(u8);}
 
+#define SET(x) (x = 1)
+#define CLEAR(x) (x = 0)
+
 /* Macros to Print the BD_ADDRESS */
 /** Expand BDA */
 #define EXPAND_BDADDR(bd)                 bd[0],bd[1],bd[2],bd[3],bd[4],bd[5]

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timer_20management_20services',['Timer Management Services',['../group__timer.html',1,'']]]
+  ['server_20api',['Server API',['../group__gatt__server__api__functions.html',1,'']]]
 ];

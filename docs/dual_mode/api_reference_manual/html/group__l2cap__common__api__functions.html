@@ -139,15 +139,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9834af87f6f31578b7095bdb4e55e459"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#ga9834af87f6f31578b7095bdb4e55e459">wiced_bt_l2cap_set_idle_timeout_by_bd_addr</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, uint16_t timeout, <a class="el" href="group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0">wiced_bt_transport_t</a> transport)</td></tr>
 <tr class="memdesc:ga9834af87f6f31578b7095bdb4e55e459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher layers call this function to set the idle timeout for a connection.  <a href="#ga9834af87f6f31578b7095bdb4e55e459">More...</a><br /></td></tr>
 <tr class="separator:ga9834af87f6f31578b7095bdb4e55e459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae063bb78235a75f6c9439a73bd4ca12f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#gae063bb78235a75f6c9439a73bd4ca12f">wiced_bt_l2cap_set_trace_level</a> (uint8_t trace_level)</td></tr>
-<tr class="memdesc:gae063bb78235a75f6c9439a73bd4ca12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the trace level for L2CAP.  <a href="#gae063bb78235a75f6c9439a73bd4ca12f">More...</a><br /></td></tr>
-<tr class="separator:gae063bb78235a75f6c9439a73bd4ca12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaebb8e6a7ac8add5164c86871af99747e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#gaebb8e6a7ac8add5164c86871af99747e">wiced_bt_l2cap_get_bdaddrby_handle</a> (uint16_t handle, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr)</td></tr>
 <tr class="memdesc:gaebb8e6a7ac8add5164c86871af99747e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get BD address for the given HCI handle.  <a href="#gaebb8e6a7ac8add5164c86871af99747e">More...</a><br /></td></tr>
 <tr class="separator:gaebb8e6a7ac8add5164c86871af99747e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac18718acb74010cf9061490132f9282b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#gac18718acb74010cf9061490132f9282b">wiced_bt_l2cap_get_disconnect_reason</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> remote_bda, <a class="el" href="group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0">wiced_bt_transport_t</a> transport)</td></tr>
-<tr class="memdesc:gac18718acb74010cf9061490132f9282b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the disconnect reason code.  <a href="#gac18718acb74010cf9061490132f9282b">More...</a><br /></td></tr>
-<tr class="separator:gac18718acb74010cf9061490132f9282b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gae9a06f8b983a720ef8f052bbaa823ad6"></a>
@@ -713,34 +707,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae063bb78235a75f6c9439a73bd4ca12f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae063bb78235a75f6c9439a73bd4ca12f">&#9670;&nbsp;</a></span>wiced_bt_l2cap_set_trace_level()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t wiced_bt_l2cap_set_trace_level </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>trace_level</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function sets the trace level for L2CAP. </p>
-<p>If called with a value of 0xFF, it simply reads the current trace level.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">trace_level</td><td>Trace level</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the new (current) trace level </dd></dl>
-
-</div>
-</div>
 <a id="gaebb8e6a7ac8add5164c86871af99747e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaebb8e6a7ac8add5164c86871af99747e">&#9670;&nbsp;</a></span>wiced_bt_l2cap_get_bdaddrby_handle()</h2>
 
@@ -776,44 +742,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: TRUE if found lcb for the given handle, FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a id="gac18718acb74010cf9061490132f9282b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac18718acb74010cf9061490132f9282b">&#9670;&nbsp;</a></span>wiced_bt_l2cap_get_disconnect_reason()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t wiced_bt_l2cap_get_disconnect_reason </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>remote_bda</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0">wiced_bt_transport_t</a>&#160;</td>
-          <td class="paramname"><em>transport</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function returns the disconnect reason code. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>: Remote BD Address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">transport</td><td>: Transport (BR-EDR or LE)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>disconnect reason </dd></dl>
 
 </div>
 </div>

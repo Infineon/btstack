@@ -69,18 +69,15 @@
 /** AVRC CTRL events */
 enum wiced_bt_avrc_ctrl_evt_e
 {
-    /**< AVRC_OPEN_IND_EVT event is sent when the connection is successfully opened.T
+    AVRC_OPEN_IND_EVT,    /**< AVRC_OPEN_IND_EVT event is sent when the connection is successfully opened.T
     his eventis sent in response to an wiced_bt_avrc_open().*/
-    AVRC_OPEN_IND_EVT,
-    /**< AVRC_CLOSE_IND_EVT event is sent when a connection is closed.
+    AVRC_CLOSE_IND_EVT,    /**< AVRC_CLOSE_IND_EVT event is sent when a connection is closed.
     This event can result from a call to wiced_bt_avrc_close() or when the peer closes    the connection.  It is also sent when a connection attempted through
     wiced_bt_avrc_open() fails. */
-    AVRC_CLOSE_IND_EVT,
     AVRC_CONG_IND_EVT,          /**< AVRC_CONG_IND_EVT event indicates that AVCTP is congested and cannot send any more messages. */
     AVRC_UNCONG_IND_EVT,        /**< AVRC_UNCONG_IND_EVT event indicates that AVCTP is uncongested and ready to send messages. */
-    /**< AVRC_BROWSE_OPEN_IND_EVT event is sent when the browse channel is successfully opened.
+    AVRC_BROWSE_OPEN_IND_EVT,    /**< AVRC_BROWSE_OPEN_IND_EVT event is sent when the browse channel is successfully opened.
     This eventis sent in response to an wiced_bt_avrc_open() or wiced_bt_avrc_open_browse() . */
-    AVRC_BROWSE_OPEN_IND_EVT,
     /**< AVRC_BROWSE_CLOSE_IND_EVT event is sent when a browse channel is closed.
     This event can result from a call to wiced_bt_avrc_close(), wiced_bt_avrc_close_browse() or when the peer closes
     the connection.  It is also sent when a connection attempted through
@@ -92,14 +89,13 @@ enum wiced_bt_avrc_ctrl_evt_e
     AVRC_APP_BUFFER_TX_EVT     /**< AVRC_APP_BUFFER_TX_EVT event indicates status of the data transmission */
 };
 
-typedef uint8_t wiced_bt_avrc_ctrl_evt_t;
-
+typedef uint8_t wiced_bt_avrc_ctrl_evt_t; /**< @ref wiced_bt_avrc_ctrl_evt_e */
 
 /** AVRC ctype events */
 enum wiced_bt_avrc_ctype_e
 {
     AVRC_CMD_CTRL = 0,  /**< Instruct a target to perform an operation */
-    AVRC_CMD_STATUS,    /**< Check a device�s current status */
+    AVRC_CMD_STATUS,    /**< Check a device's current status */
     AVRC_CMD_SPEC_INQ,  /**< Check whether a target supports a particular
                                       control command; all operands are included */
     AVRC_CMD_NOTIF,     /**< Used for receiving notification of a change in a devices state */
@@ -107,11 +103,11 @@ enum wiced_bt_avrc_ctype_e
 
     /** Response type codes */
     AVRC_RSP_NOT_IMPL = 8, /**< The target does not implement the command specified by the opcode and operand,
-                                or doesn�t implement the specified subunit */
+                                or doesn't implement the specified subunit */
     AVRC_RSP_ACCEPT,   /**< The target executed or is executing the command */
     AVRC_RSP_REJ,   /**< The target implements the command specified by the
                          opcode but cannot respond because the current state
-                         of the target doesn�t allow it */
+                         of the target doesn't allow it */
     AVRC_RSP_IN_TRANS,  /**< The target implements the status command but it is
                           in a state of transition; the status command may
                            be retried at a future time */
@@ -120,7 +116,7 @@ enum wiced_bt_avrc_ctype_e
                            commands, the target returns stable and includes
                            the status results */
     AVRC_RSP_CHANGED,  /**< The response frame contains a notification that the
-                            target device�s state has changed */
+                            target device's state has changed */
     AVRC_RSP_INTERIM = 15 /**< For control commands, the target has accepted the
                             request but cannot return information within 100
                             milliseconds; for notify commands, the target accepted
@@ -129,7 +125,7 @@ enum wiced_bt_avrc_ctype_e
 
 };
 
-typedef uint8_t wiced_bt_avrc_ctype_t;
+typedef uint8_t wiced_bt_avrc_ctype_t;  /**< @ref wiced_bt_avrc_ctype_e */
 
 /** Supported categories */
 #define AVRC_SUPF_CT_CAT1               0x0001      /**< Category 1 */
@@ -164,7 +160,7 @@ typedef struct{
     union{
     wiced_bt_avrc_rsp_t response;   /**< response message */
     wiced_bt_avrc_cmd_t command;    /**< command message */
-    }type;
+    }type; /**<  Received message type */
     
 }wiced_bt_avrc_msg_t;
 
@@ -177,7 +173,7 @@ typedef struct{
  * AVRC control callback function.
  *
  * @param[in]       handle      : Connection handle
- * @param[in]       event       : AVRC ctrl event (see @ref wiced_bt_avrc_ctrl_evt_t)
+ * @param[in]       event       : AVRC ctrl event (see @ref wiced_bt_avrc_ctrl_evt_e)
  * @param[in]       result      : Result code (see @ref AVRC_RESULT "AVRC result codes")
  * @param[in]       p_buf       : pointer to application transmit buffer
  * @param[in]       peer_addr   : Peer device address
@@ -204,7 +200,7 @@ typedef void (wiced_bt_avrc_ctrl_cback_t) (uint8_t handle, wiced_bt_avrc_ctrl_ev
 typedef void (wiced_bt_avrc_msg_cback_t) (wiced_bt_avrc_msg_t *p_msg);
 
 
-/** AVRC connection configuration structure; used when calling wiced_bt_avrc_open() to configure the AVRC connection and register for callbacks. */
+/** AVRC connection configuration structure; used when calling wiced_bt_avrc_open() to configure the AVRC connection and register the callbacks. */
 typedef struct
 {
     wiced_bt_avrc_ctrl_cback_t      *p_ctrl_cback;      /**< AVRC connection control callback */
@@ -290,7 +286,7 @@ uint16_t wiced_bt_avrc_close_browse(uint8_t handle);
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Transaction label
- * @param[in]       ctype       : Message type (see @ref wiced_bt_avrc_ctype_t)
+ * @param[in]       ctype       : Message type (see @ref wiced_bt_avrc_ctype_e)
  * @param[in]       p_cmdbuf    : Pointer to the buffer holding the AVRC message
  *
  * @return          Result code (see @ref AVRC_RESULT "AVRC result codes")
@@ -354,7 +350,7 @@ uint16_t wiced_bt_avrc_send_passthrough_cmd(uint8_t handle, uint8_t label, wiced
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Transaction label
- * @param[in]       c_type      : msg type(AVRC_RSP_ACCEPT/AVRC_RSP_REJ)(see ref @wiced_bt_avrc_ctype_e)
+ * @param[in]       ctype      : msg type(AVRC_RSP_ACCEPT/AVRC_RSP_REJ)(see @ref wiced_bt_avrc_ctype_e)
  * @param[in]       p_msg       : Pointer to the pass through response
  *
  * @return          Result code (see @ref AVRC_RESULT "AVRC result codes")
@@ -470,15 +466,15 @@ wiced_bt_avrc_sts_t wiced_bt_avrc_bld_browse_response (wiced_bt_avrc_browse_rsp_
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Message label
- * @param[in]       ctype       : avrc message type (see @ref AVRC_CTYPE "AVRC message types") 
- * @param[in]       p_rspbuf    : Pointer to the buffer  to send
+ * @param[in]       ctype       : avrc message type (see @ref wiced_bt_avrc_ctype_e) 
+ * @param[in]       p_xmit_buf  : Pointer to transmit buffer
  *
  *
  * @return          Result code (see @ref AVRC_RESULT "AVRC result codes")
  *
  */
 
-uint16_t  wiced_bt_avrc_send_browse_data(uint8_t handle, uint8_t label,  wiced_bt_avrc_ctype_t ctype, wiced_bt_avrc_xmit_buf_t *p_pl);
+uint16_t  wiced_bt_avrc_send_browse_data(uint8_t handle, uint8_t label,  wiced_bt_avrc_ctype_t ctype, wiced_bt_avrc_xmit_buf_t *p_xmit_buf);
 
 
 
@@ -487,7 +483,7 @@ uint16_t  wiced_bt_avrc_send_browse_data(uint8_t handle, uint8_t label,  wiced_b
  * Check if correct AVRC message type is specified
  *
  * @param[in]       pdu_id      : PDU ID
- * @param[in]       ctype       : avrc message type (see @ref AVRC_CTYPE "AVRC message types")
+ * @param[in]       ctype       : avrc message type (see @ref wiced_bt_avrc_ctype_e)
  *
  * @return          true if it is valid, false otherwise
  *

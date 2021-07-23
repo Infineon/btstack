@@ -230,5 +230,4 @@ enum gatt_appearance_e
     APPEARANCE_LOCATION_AND_NAVIGATION_POD      = 5188,
 };
 
-
 #endif

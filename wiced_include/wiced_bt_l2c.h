@@ -238,6 +238,13 @@ typedef struct
  */
 typedef uint8_t wiced_bt_l2cap_chnl_priority_t;
 
+
+/**
+* fixed channel is represented by a single bit in an 8 octet bit mask
+* Used in \ref wiced_bt_l2cap_get_peer_features API to get the fixed channel mask data
+*/
+typedef uint8_t wiced_bt_l2cap_fixed_channel_mask_t[L2CAP_FIXED_CHNL_ARRAY_SIZE];
+
 /**
  * @anchor L2CAP_CHNL_PRIORITY
  * @name L2CAP transmission channel priority
@@ -685,16 +692,6 @@ wiced_bool_t wiced_bt_l2cap_set_idle_timeout_by_bd_addr (wiced_bt_device_address
                                                          wiced_bt_transport_t transport);
 
 /**
- *  @brief          This function sets the trace level for L2CAP. If called with
- *                  a value of 0xFF, it simply reads the current trace level.
- *
- *  @param[in]      trace_level: Trace level
- *
- *  @return         the new (current) trace level
- */
-uint8_t wiced_bt_l2cap_set_trace_level (uint8_t trace_level);
-
-/**
  *  @brief          Get BD address for the given HCI handle
  *
  *  @param[in]      handle  : HCI handle
@@ -704,16 +701,6 @@ uint8_t wiced_bt_l2cap_set_trace_level (uint8_t trace_level);
  *
  */
 wiced_bool_t wiced_bt_l2cap_get_bdaddrby_handle (uint16_t handle, wiced_bt_device_address_t bd_addr);
-
-/**
- *  @brief          This function returns the disconnect reason code.
- *
- *  @param[in]      remote_bda : Remote BD Address
- *  @param[in]      transport  : Transport (BR-EDR or LE)
- *
- *  @return         disconnect reason
- */
-uint16_t wiced_bt_l2cap_get_disconnect_reason (wiced_bt_device_address_t remote_bda, wiced_bt_transport_t transport);
 
 /** @} */
 
@@ -890,7 +877,7 @@ wiced_bool_t wiced_bt_l2cap_set_flush_timeout (wiced_bt_device_address_t bd_addr
  *
  *  @param[in]      bd_addr     : Peer Bd Address
  *  @param[in]      p_ext_feat  : features
- *  @param[in]      p_chnl_mask : mask storage area
+ *  @param[in]      p_chnl_mask : mask storage area of type \ref wiced_bt_l2cap_fixed_channel_mask_t
  *
  *  @return:        TRUE if peer is connected
  *
@@ -1112,6 +1099,17 @@ uint16_t wiced_bt_l2cap_le_get_peer_mtu (uint16_t lcid);
 uint16_t wiced_bt_l2cap_le_determ_secur_rsp (wiced_bt_device_address_t bd_addr, uint8_t req_secur, uint8_t req_encr_key_size);
 /**@} l2cap_le_api_functions */
 /**@} l2cap*/
+
+/**
+ * @brief Utility function to get the number of packets queued to tx
+ *
+ * @param[in] bd_addr: bluetooth address of the peer device
+ * @param[in] lcid : local_cid
+ * @param[out] p_fragments_with_controller : fragments with the controller
+ *
+ * \return number of packets queued to tx
+ */
+int wiced_bt_l2cap_get_num_queued_tx_packets(wiced_bt_device_address_t bd_addr, uint16_t lcid, int *p_fragments_with_controller);
 
 
 #ifdef __cplusplus

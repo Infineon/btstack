@@ -109,6 +109,7 @@ var searchData=
   ['wiced_5fbt_5fremote_5fname_5fcback_5ft',['wiced_bt_remote_name_cback_t',['../group__wicedbt___device_management.html#ga1102d990364545df00ee778c4418729d',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fremote_5fname_5ft',['wiced_bt_remote_name_t',['../group__bt__types.html#ga2f6808a023ce2f63ce06745c5ca8ed0f',1,'wiced_bt_types.h']]],
   ['wiced_5fbt_5fsec_5flevel_5ft',['wiced_bt_sec_level_t',['../group__wiced__bt__cfg.html#gac87ddd863edac8d1cb50edd12662c340',1,'wiced_bt_cfg.h']]],
+  ['wiced_5fbt_5fsmp_5fsec_5flevel_5ft',['wiced_bt_smp_sec_level_t',['../group__wicedbt___device_management.html#gaca4147177a51487244e4fb3876dd1986',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fsmp_5fstatus_5ft',['wiced_bt_smp_status_t',['../group__wicedbt___device_management.html#gaed9ea4328615e51aae386ffa2db1b6bc',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5ftransport_5ft',['wiced_bt_transport_t',['../group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0',1,'wiced_bt_types.h']]],
   ['wiced_5fdev_5fble_5fsignature_5ft',['wiced_dev_ble_signature_t',['../group__wicedbt___device_management.html#ga39b3b50eac531691f2bc87291526bb73',1,'wiced_bt_ble.h']]],

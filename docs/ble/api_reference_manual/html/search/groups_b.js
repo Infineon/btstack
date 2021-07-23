@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utilities',['Utilities',['../group__wicedbt__utility.html',1,'']]]
+  ['timer_20management_20services',['Timer Management Services',['../group__timer.html',1,'']]]
 ];
