@@ -132,6 +132,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaee4449a3ac58eb206334994ddaa4877d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__av__a2d__helper.html#ga6a78ee8aece921283d90e5a721436925">wiced_bt_a2d_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__av__a2d__helper.html#gaee4449a3ac58eb206334994ddaa4877d">wiced_bt_a2d_find_service</a> (uint16_t service_uuid, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="structwiced__bt__a2d__sdp__db__params__t.html">wiced_bt_a2d_sdp_db_params_t</a> *p_db, <a class="el" href="group__wicedbt__av__a2d__helper.html#gaa41501df37f123cd9f12b7d789bdf74b">wiced_bt_a2d_find_cback</a> *p_cback)</td></tr>
 <tr class="memdesc:gaee4449a3ac58eb206334994ddaa4877d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs Service Discovery and fetches SRC/SINK SDP Record Info.  <a href="#gaee4449a3ac58eb206334994ddaa4877d">More...</a><br /></td></tr>
 <tr class="separator:gaee4449a3ac58eb206334994ddaa4877d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa7b05ee61088ac4c09e98bdb5131736"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__av__a2d__helper.html#ga6a78ee8aece921283d90e5a721436925">wiced_bt_a2d_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__av__a2d__helper.html#gafa7b05ee61088ac4c09e98bdb5131736">wiced_bt_set_a2dp_connection_priority</a> (uint8_t handle, uint8_t high_priority)</td></tr>
+<tr class="memdesc:gafa7b05ee61088ac4c09e98bdb5131736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the A2dp connection as high priority.  <a href="#gafa7b05ee61088ac4c09e98bdb5131736">More...</a><br /></td></tr>
+<tr class="separator:gafa7b05ee61088ac4c09e98bdb5131736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 (Source) Profile supported features.</h2></td></tr>
@@ -516,6 +519,44 @@ A2D set bits.</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__av__a2d__helper.html#ga6a78ee8aece921283d90e5a721436925">wiced_bt_a2d_status_t</a> </dd></dl>
+
+</div>
+</div>
+<a id="gafa7b05ee61088ac4c09e98bdb5131736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa7b05ee61088ac4c09e98bdb5131736">&#9670;&nbsp;</a></span>wiced_bt_set_a2dp_connection_priority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__wicedbt__av__a2d__helper.html#ga6a78ee8aece921283d90e5a721436925">wiced_bt_a2d_status_t</a> wiced_bt_set_a2dp_connection_priority </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>high_priority</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the A2dp connection as high priority. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: Connection handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">high_priority</td><td>: If "1" set the connection to high priority, "0" if normal priority </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
 </div>
 </div>

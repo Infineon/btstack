@@ -288,12 +288,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">lcid</td><td>: Local CID value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_drb</td><td>: Address of the DRB </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_drb</td><td>: DRB to be used to receive data for this channel </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">drb_max_payload_len</td><td>: DRB Size. It should greater than or equal to to MTU. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_unreg_cb</td><td>: <a class="el" href="group__l2cap.html#ga3708e90651b47861800452aa90044a7f">wiced_bt_l2cap_drb_release_cb</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_unreg_cb</td><td>: <a class="el" href="group__l2cap.html#ga3708e90651b47861800452aa90044a7f">wiced_bt_l2cap_drb_release_cb</a> to release the DRB</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>: In case <code>p_drb</code> passed here has been allocated, it can be released when the stack calls <code>p_unreg_cb</code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if disconnect sent, else FALSE </dd></dl>
 
 </div>

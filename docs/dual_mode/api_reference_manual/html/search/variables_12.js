@@ -31,6 +31,7 @@ var searchData=
   ['response_5fdata',['response_data',['../structwiced__bt__gatt__operation__complete__t.html#ab934d05a1d67625734356a30935dd27e',1,'wiced_bt_gatt_operation_complete_t']]],
   ['result',['result',['../structwiced__bt__dev__encryption__status__t.html#a6c33df0a26312b20bedd5a0ecaa980ca',1,'wiced_bt_dev_encryption_status_t::result()'],['../structwiced__bt__gatt__eatt__connection__confirmation__event__t.html#a59b6fad3112e176962233ecc645a3fdf',1,'wiced_bt_gatt_eatt_connection_confirmation_event_t::result()'],['../structwiced__bt__l2cap__cfg__information__t.html#a14d7acfffa5a30489df9946b721fdbf4',1,'wiced_bt_l2cap_cfg_information_t::result()']]],
   ['ret_5ftout',['ret_tout',['../structwiced__bt__avdt__reg__t.html#abceffca6896956b8b69c225dc539ca53',1,'wiced_bt_avdt_reg_t']]],
+  ['retrans_5feffort',['retrans_effort',['../structwiced__bt__sco__params__t.html#a93dfc01ece32939d166f439a2b311ad2',1,'wiced_bt_sco_params_t']]],
   ['retrans_5fwindows',['retrans_windows',['../structwiced__bt__sco__connection__change__t.html#aa935b4f9a87b7b8b00effdf7ad06f618',1,'wiced_bt_sco_connection_change_t']]],
   ['rfcomm_5fcfg',['rfcomm_cfg',['../structwiced__bt__cfg__br__t.html#a4ef7f35aec9a5701f0da17682d3e1e98',1,'wiced_bt_cfg_br_t']]],
   ['role',['role',['../structwiced__bt__ble__conn__params__t.html#a4ead927fad433b02e7ec8d2d0b726d97',1,'wiced_bt_ble_conn_params_t::role()'],['../structwiced__bt__dev__switch__role__result__t.html#a224b472c4217bf0e65c51168abd61ab8',1,'wiced_bt_dev_switch_role_result_t::role()']]],

@@ -161,6 +161,12 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__channel__sel__algo__event__data__t.html">wiced_bt_ble_channel_sel_algo_event_data_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel selection algorithm event data format.  <a href="structwiced__bt__ble__channel__sel__algo__event__data__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__biginfo__adv__report__t.html">wiced_bt_ble_biginfo_adv_report_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BIGInfo report.  <a href="structwiced__bt__ble__biginfo__adv__report__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__periodic__adv__sync__transfer__event__data__t.html">wiced_bt_ble_periodic_adv_sync_transfer_event_data_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodic Adv Sync Transfer Received Event Data.  <a href="structwiced__bt__ble__periodic__adv__sync__transfer__event__data__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionwiced__bt__ble__adv__ext__event__data__t.html">wiced_bt_ble_adv_ext_event_data_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">union of events data  <a href="unionwiced__bt__ble__adv__ext__event__data__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +176,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:gae3ba16e014add5799d4b298344cb5984"><td class="memItemLeft" align="right" valign="top"><a id="gae3ba16e014add5799d4b298344cb5984"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__api__functions.html#gae3ba16e014add5799d4b298344cb5984">BTM_BLE_LEGACY_AD_DATA_LEN</a>&#160;&#160;&#160;31</td></tr>
+<tr class="memdesc:gae3ba16e014add5799d4b298344cb5984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max legacy advertisement data len. <br /></td></tr>
+<tr class="separator:gae3ba16e014add5799d4b298344cb5984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4549fd128a3e5a4c0b7499a154130377"><td class="memItemLeft" align="right" valign="top"><a id="ga4549fd128a3e5a4c0b7499a154130377"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__api__functions.html#ga4549fd128a3e5a4c0b7499a154130377">BTM_AFH_CHNL_MAP_SIZE</a>&#160;&#160;&#160;HCI_AFH_CHANNEL_MAP_LEN</td></tr>
 <tr class="memdesc:ga4549fd128a3e5a4c0b7499a154130377"><td class="mdescLeft">&#160;</td><td class="mdescRight">AFH channel map size. <br /></td></tr>
@@ -494,6 +504,10 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__api__functions.html#ga9ca488f9e3a161d2d37dccb4f5992c7e">wiced_bt_ble_adv_sync_options_t</a></td></tr>
 <tr class="memdesc:ga9ca488f9e3a161d2d37dccb4f5992c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options used in create periodic sync to periodic adv command (see <a class="el" href="group__btm__ble__api__functions.html#ga5f6ce070f4dc0efbf5a1ad4aeb54dc26" title="Options used in create periodic sync to periodic adv command.">wiced_bt_ble_adv_sync_options_e</a>) <br /></td></tr>
 <tr class="separator:ga9ca488f9e3a161d2d37dccb4f5992c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fcc30537c71955222aa684d4529f488"><td class="memItemLeft" align="right" valign="top"><a id="ga0fcc30537c71955222aa684d4529f488"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__api__functions.html#ga0fcc30537c71955222aa684d4529f488">wiced_bt_ble_periodic_adv_sync_transfer_mode_t</a></td></tr>
+<tr class="memdesc:ga0fcc30537c71955222aa684d4529f488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode used in create periodic sync to periodic adv command (see <a class="el" href="group__btm__ble__api__functions.html#gad87f6ef7689d0d4d3cdaf1a43b4032a6" title="Mode used in Periodic Advertising Sync Transfer Parameters.">wiced_bt_ble_periodic_adv_sync_transfer_mode_e</a>) <br /></td></tr>
+<tr class="separator:ga0fcc30537c71955222aa684d4529f488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga70c1c3632c806556629a4009d009ed8d"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__api__functions.html#ga70c1c3632c806556629a4009d009ed8d">wiced_bt_ble_periodic_adv_sync_handle_t</a></td></tr>
 <tr class="memdesc:ga70c1c3632c806556629a4009d009ed8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync_Handle to be used to identify the periodic advertiser.  <a href="#ga70c1c3632c806556629a4009d009ed8d">More...</a><br /></td></tr>
 <tr class="separator:ga70c1c3632c806556629a4009d009ed8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -815,13 +829,23 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:gabcf469159bec2fd7d1f1d6b5a76cda51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter policy used in extended create connection command.  <a href="group__btm__ble__api__functions.html#gabcf469159bec2fd7d1f1d6b5a76cda51">More...</a><br /></td></tr>
 <tr class="separator:gabcf469159bec2fd7d1f1d6b5a76cda51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f6ce070f4dc0efbf5a1ad4aeb54dc26"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__api__functions.html#ga5f6ce070f4dc0efbf5a1ad4aeb54dc26">wiced_bt_ble_adv_sync_options_e</a> { <br />
-&#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#gga5f6ce070f4dc0efbf5a1ad4aeb54dc26a65301d81e398ef6d8eab8cf8492b89c3">WICED_BT_BLE_IGNORE_SYNC_TO_PERIODIC_ADV_LIST</a> = 0, 
+&#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#gga5f6ce070f4dc0efbf5a1ad4aeb54dc26a65301d81e398ef6d8eab8cf8492b89c3">WICED_BT_BLE_IGNORE_SYNC_TO_PERIODIC_ADV_LIST</a>, 
 <br />
 &#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#gga5f6ce070f4dc0efbf5a1ad4aeb54dc26ab7cf10c331eb70f50a12a15cda4ef35b">WICED_BT_BLE_SYNC_TO_PERIODIC_ADV_LIST</a> = 1
 <br />
  }</td></tr>
 <tr class="memdesc:ga5f6ce070f4dc0efbf5a1ad4aeb54dc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options used in create periodic sync to periodic adv command.  <a href="group__btm__ble__api__functions.html#ga5f6ce070f4dc0efbf5a1ad4aeb54dc26">More...</a><br /></td></tr>
 <tr class="separator:ga5f6ce070f4dc0efbf5a1ad4aeb54dc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad87f6ef7689d0d4d3cdaf1a43b4032a6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__api__functions.html#gad87f6ef7689d0d4d3cdaf1a43b4032a6">wiced_bt_ble_periodic_adv_sync_transfer_mode_e</a> { <br />
+&#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#ggad87f6ef7689d0d4d3cdaf1a43b4032a6a027f7f75ae4e289bf26fb3bddcc1577d">WICED_BT_BLE_IGNORE_PA_SYNC_TRANSFER_EVT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#ggad87f6ef7689d0d4d3cdaf1a43b4032a6a7f4f9bb5a98ef9c9c5862d55e874e6ff">WICED_BT_BLE_ENABLE_PA_SYNC_TRANSFER_DISABLE_PA_REPORT_EVT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#ggad87f6ef7689d0d4d3cdaf1a43b4032a6aa0a144bf54726daeab19fdca5d168040">WICED_BT_BLE_ENABLE_PA_SYNC_TRANSFER_ENABLE_PA_REPORT_EVT</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:gad87f6ef7689d0d4d3cdaf1a43b4032a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode used in Periodic Advertising Sync Transfer Parameters.  <a href="group__btm__ble__api__functions.html#gad87f6ef7689d0d4d3cdaf1a43b4032a6">More...</a><br /></td></tr>
+<tr class="separator:gad87f6ef7689d0d4d3cdaf1a43b4032a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16af7b253440dadd46a80a4b9fddba4d"><td class="memItemLeft" align="right" valign="top"><a id="ga16af7b253440dadd46a80a4b9fddba4d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>PERIODIC_SYNC_HANDLE_MIN</b> = 0, 
 <br />
@@ -877,7 +901,11 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a9c8f066bee4af20cde89bffa2f0a5be0">WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a5d7b21cd7c34e47c01ff033d73d7a26d">WICED_BT_BLE_CHANNEL_SEL_ALGO_EVENT</a>
+&#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a5d7b21cd7c34e47c01ff033d73d7a26d">WICED_BT_BLE_CHANNEL_SEL_ALGO_EVENT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794addd59b434c4315dcdfee99c1a211a9cd">WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a526894e0785581c1c109031c06f18536">WICED_BT_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga748b7c8c9f7711162f8def9f5408a794"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADV extension events to the application.  <a href="group__btm__ble__api__functions.html#ga748b7c8c9f7711162f8def9f5408a794">More...</a><br /></td></tr>
@@ -1753,6 +1781,32 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="gad87f6ef7689d0d4d3cdaf1a43b4032a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad87f6ef7689d0d4d3cdaf1a43b4032a6">&#9670;&nbsp;</a></span>wiced_bt_ble_periodic_adv_sync_transfer_mode_e</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__btm__ble__api__functions.html#gad87f6ef7689d0d4d3cdaf1a43b4032a6">wiced_bt_ble_periodic_adv_sync_transfer_mode_e</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mode used in Periodic Advertising Sync Transfer Parameters. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad87f6ef7689d0d4d3cdaf1a43b4032a6a027f7f75ae4e289bf26fb3bddcc1577d"></a>WICED_BT_BLE_IGNORE_PA_SYNC_TRANSFER_EVT&#160;</td><td class="fielddoc"><p>No attempt is made to synchronize to the periodic advertising and no HCI_LE_Periodic_Advertising_Sync_Transfer_Received event is sent to the Host (default). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad87f6ef7689d0d4d3cdaf1a43b4032a6a7f4f9bb5a98ef9c9c5862d55e874e6ff"></a>WICED_BT_BLE_ENABLE_PA_SYNC_TRANSFER_DISABLE_PA_REPORT_EVT&#160;</td><td class="fielddoc"><p>An HCI_LE_Periodic_Advertising_Sync_Transfer_Received event is sent to the Host. </p>
+<p>HCI_LE_Periodic_Advertising_Report events will be disabled. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad87f6ef7689d0d4d3cdaf1a43b4032a6aa0a144bf54726daeab19fdca5d168040"></a>WICED_BT_BLE_ENABLE_PA_SYNC_TRANSFER_ENABLE_PA_REPORT_EVT&#160;</td><td class="fielddoc"><p>An HCI_LE_Periodic_Advertising_Sync_Transfer_Received event is sent to the Host. </p>
+<p>HCI_LE_Periodic_Advertising_Report events will be enabled. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga8739336a6d1ebba1faaf824bc5c1024d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8739336a6d1ebba1faaf824bc5c1024d">&#9670;&nbsp;</a></span>wiced_bt_ble_ext_adv_report_count_e</h2>
 
@@ -1828,6 +1882,12 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga748b7c8c9f7711162f8def9f5408a794a5d7b21cd7c34e47c01ff033d73d7a26d"></a>WICED_BT_BLE_CHANNEL_SEL_ALGO_EVENT&#160;</td><td class="fielddoc"><p>LE Channel selected algorithm event. </p>
 <p>Event Data: <a class="el" href="structwiced__bt__ble__channel__sel__algo__event__data__t.html" title="Channel selection algorithm event data format.">wiced_bt_ble_channel_sel_algo_event_data_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga748b7c8c9f7711162f8def9f5408a794addd59b434c4315dcdfee99c1a211a9cd"></a>WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT&#160;</td><td class="fielddoc"><p>BIGInfo adv report event. </p>
+<p>Event Data: <a class="el" href="structwiced__bt__ble__biginfo__adv__report__t.html" title="BIGInfo report.">wiced_bt_ble_biginfo_adv_report_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga748b7c8c9f7711162f8def9f5408a794a526894e0785581c1c109031c06f18536"></a>WICED_BT_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT&#160;</td><td class="fielddoc"><p>Periodic Adv Sync Transfer Event. </p>
+<p>Event Data: <a class="el" href="structwiced__bt__ble__periodic__adv__sync__transfer__event__data__t.html" title="Periodic Adv Sync Transfer Received Event Data.">wiced_bt_ble_periodic_adv_sync_transfer_event_data_t</a> </p>
 </td></tr>
 </table>
 

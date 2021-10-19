@@ -37,6 +37,7 @@ var group__wiced__mem =
     [ "wiced_bt_get_buffer_from_heap", "group__wiced__mem.html#gaf2a3683b317c42e9c264c5725179fe10", null ],
     [ "wiced_bt_get_pool_free_count", "group__wiced__mem.html#gac2d26815b0ed4aa9f7d72650d7c5b28f", null ],
     [ "wiced_bt_get_largest_heap_buffer", "group__wiced__mem.html#ga1f954d898c5466a865a47ab097f385e7", null ],
+    [ "wiced_bt_get_largest_stack_heap_buffer", "group__wiced__mem.html#gaf7910db6f2bb29ec6e6ddd8f943a182c", null ],
     [ "wiced_bt_free_buffer", "group__wiced__mem.html#ga652a40fcdb27f8fea2d125e82aef9750", null ],
     [ "wiced_bt_get_buffer_size", "group__wiced__mem.html#ga5d688277844f22111723e3339e725d8a", null ],
     [ "wiced_bt_init_q", "group__wiced__mem.html#ga62e721c9f6a3f49dd10e5633a6a280ad", null ],

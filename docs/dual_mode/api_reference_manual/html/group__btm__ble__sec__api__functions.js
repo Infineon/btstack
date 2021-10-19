@@ -5,6 +5,7 @@ var group__btm__ble__sec__api__functions =
     [ "wiced_bt_dev_get_ble_keys", "group__btm__ble__sec__api__functions.html#gac39c9efdd1042d3f8855d854237dc3d6", null ],
     [ "wiced_bt_dev_add_device_to_address_resolution_db", "group__btm__ble__sec__api__functions.html#ga806119ffc38aa9ec12a03f9f2c8c8d43", null ],
     [ "wiced_bt_dev_remove_device_from_address_resolution_db", "group__btm__ble__sec__api__functions.html#ga91b6c2557800b5d63f8c94c17af05183", null ],
+    [ "wiced_bt_dev_get_acl_conn_handle", "group__btm__ble__sec__api__functions.html#ga411296312ff6cdcc59a48eb83095faf7", null ],
     [ "wiced_bt_ble_data_signature", "group__btm__ble__sec__api__functions.html#ga1745ec7401f09c80ec5aecbacc9c0002", null ],
     [ "wiced_bt_ble_verify_signature", "group__btm__ble__sec__api__functions.html#ga771629322c842c541611d928ad128a40", null ],
     [ "wiced_bt_ble_get_security_state", "group__btm__ble__sec__api__functions.html#gaa3a12d9312cb8bac5e7eb7033aedda8c", null ],
@@ -15,6 +16,7 @@ var group__btm__ble__sec__api__functions =
     [ "wiced_bt_ble_set_ext_adv_random_address", "group__btm__ble__sec__api__functions.html#ga61ceb293a5b5516e6636613745f2d378", null ],
     [ "wiced_bt_ble_set_ext_adv_parameters", "group__btm__ble__sec__api__functions.html#ga328ed17b1071ac4e72fa77caf109d0ee", null ],
     [ "wiced_bt_ble_set_ext_adv_data", "group__btm__ble__sec__api__functions.html#gab91b53f0e9576c558d127de0ef279c00", null ],
+    [ "wiced_bt_ble_set_legacy_adv_data", "group__btm__ble__sec__api__functions.html#ga572770db7d98fd7cda26073647a3750e", null ],
     [ "wiced_bt_ble_set_ext_scan_rsp_data", "group__btm__ble__sec__api__functions.html#ga4b9c27f7ae0f08717ba63b3c039dd4c3", null ],
     [ "wiced_bt_ble_start_ext_adv", "group__btm__ble__sec__api__functions.html#gaf4dbc610bcac8d7554ccd46455b1f607", null ],
     [ "wiced_bt_ble_remove_adv_set", "group__btm__ble__sec__api__functions.html#ga51bc6fe0241b40268d57af96672d382c", null ],
@@ -33,5 +35,10 @@ var group__btm__ble__sec__api__functions =
     [ "wiced_bt_ble_clear_periodic_adv_list", "group__btm__ble__sec__api__functions.html#gad2329674370e66e66d197356a835d9eb", null ],
     [ "wiced_bt_ble_read_periodic_adv_list_size", "group__btm__ble__sec__api__functions.html#gab4ee9b80be610167f7f321f4a7c7e33c", null ],
     [ "wiced_bt_ble_register_adv_ext_cback", "group__btm__ble__sec__api__functions.html#gaeeb1dac623e8abdc52d5668098521f16", null ],
-    [ "wiced_bt_ble_set_periodic_adv_rcv_enable", "group__btm__ble__sec__api__functions.html#ga1ca3f74c632f844d13d8e8dccc206f3b", null ]
+    [ "wiced_bt_ble_set_periodic_adv_rcv_enable", "group__btm__ble__sec__api__functions.html#ga1ca3f74c632f844d13d8e8dccc206f3b", null ],
+    [ "wiced_bt_ble_periodic_adv_sync_transfer", "group__btm__ble__sec__api__functions.html#ga97c11172a661e18cac72cfbcd26ef99d", null ],
+    [ "wiced_bt_ble_periodic_adv_set_info_transfer", "group__btm__ble__sec__api__functions.html#gad8114bf8c2a91cf7594430d9424a6b85", null ],
+    [ "wiced_bt_ble_set_periodic_adv_sync_transfer_param", "group__btm__ble__sec__api__functions.html#gafe4510f1d83118f564d4ae881e1c0a84", null ],
+    [ "wiced_bt_ble_set_default_periodic_adv_sync_transfer_param", "group__btm__ble__sec__api__functions.html#ga7cef00191d761540f510bf76282f593a", null ],
+    [ "wiced_ble_private_device_address_resolution", "group__btm__ble__sec__api__functions.html#gaa1a08bf54c9c06015c1bbafbaab433c1", null ]
 ];

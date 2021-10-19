@@ -63,6 +63,12 @@ var group__l2cap =
       [ "fixed_data_cback", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#aa8e1572e7a8103d7df41daa1e7f11a04", null ],
       [ "fixed_tx_complete_cback", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#a30bcfc2d596276f4cbc67317a6c574b5", null ]
     ] ],
+    [ "wiced_bt_l2cap_ecrb_cb_ptrs_t", "structwiced__bt__l2cap__ecrb__cb__ptrs__t.html", [
+      [ "pL2CA_ECRB_ConnectInd_Cb", "structwiced__bt__l2cap__ecrb__cb__ptrs__t.html#ad422d1cd285bde3411a74eeec10fe85f", null ],
+      [ "pL2CA_ECRB_ConnectCfm_Cb", "structwiced__bt__l2cap__ecrb__cb__ptrs__t.html#ab6a77948ff0aaeced5710ab9bbfecdd1", null ],
+      [ "pL2CA_ECRB_MtuChanged_Cb", "structwiced__bt__l2cap__ecrb__cb__ptrs__t.html#a6a1f9e052967e903b2bac0f675b5315d", null ],
+      [ "pL2CA_ReleaseDRB_Cb", "structwiced__bt__l2cap__ecrb__cb__ptrs__t.html#a0c2c9eab2e2f788a668a00368dfa80e5", null ]
+    ] ],
     [ "L2CAP_CONN_OK", "group__l2cap.html#ga1c3124459bc093d9ee974c024a08dd80", null ],
     [ "L2CAP_CONN_PENDING", "group__l2cap.html#gaf7a6a61438d32cd8a86aded6630fbd8e", null ],
     [ "L2CAP_CONN_NO_PSM", "group__l2cap.html#ga24bdc2415febb2c406ae66fc741c47f4", null ],
@@ -73,7 +79,9 @@ var group__l2cap =
     [ "L2CAP_BLE_CONN_BAD_AUTHORIZ", "group__l2cap.html#ga54c8b0caa348bca488bc7f8d5e2f9c8c", null ],
     [ "L2CAP_BLE_CONN_BAD_KEY_SIZE", "group__l2cap.html#gaea4d2ca81108c8bcfc45de7a98a52ade", null ],
     [ "L2CAP_BLE_CONN_BAD_ENCRYPT", "group__l2cap.html#ga75bf9f1505a79933a8bc7945888d82e8", null ],
-    [ "L2CAP_ECRB_MAX_CHANNELS_PER_CMD", "group__l2cap.html#ga5397015950b4d07f743943d5a4566e1b", null ],
+    [ "L2CAP_BLE_CONN_INVALID_CID", "group__l2cap.html#ga5d5d4cf8ac03e15edd8186ea202cf00c", null ],
+    [ "L2CAP_BLE_CONN_CID_ALREADY_USED", "group__l2cap.html#gab2f3a5adb96ddd9b73b6dae10626d642", null ],
+    [ "L2CAP_BLE_CONN_BAD_PARAMS", "group__l2cap.html#ga98e67e66f886f6427f273c458a5c9301", null ],
     [ "L2CAP_ECRB_MIN_MTU", "group__l2cap.html#ga467e2353f863be840bd5faa90eccae6c", null ],
     [ "L2CAP_ECRB_MIN_MPS", "group__l2cap.html#ga1d68514711d5b2dcda828eabed7fbe00", null ],
     [ "L2CAP_ECRB_ALL_CONNS_SUCCESSFUL", "group__l2cap.html#gaf31a4728521eb4b930914f56c5d5685b", null ],
@@ -154,5 +162,8 @@ var group__l2cap =
     [ "wiced_bt_l2cap_fixed_data_cback_t", "group__l2cap.html#gae164afd58df70e53ff78489e7b7718e7", null ],
     [ "wiced_bt_l2cap_le_connect_indication_cback_t", "group__l2cap.html#gaad82cf3146183d8eab241071358169b6", null ],
     [ "wiced_bt_l2cap_drb_release_cb", "group__l2cap.html#ga3708e90651b47861800452aa90044a7f", null ],
-    [ "wiced_bt_l2cap_le_connect_confirm_cback_t", "group__l2cap.html#gaa04b89594d9c3dc7d39a3066c02794cf", null ]
+    [ "wiced_bt_l2cap_le_connect_confirm_cback_t", "group__l2cap.html#gaa04b89594d9c3dc7d39a3066c02794cf", null ],
+    [ "wiced_bt_l2cap_ecrb_connect_ind", "group__l2cap.html#gaf52b6b2c8b5f0b7e29b9152e786c14b8", null ],
+    [ "wiced_bt_l2cap_ecrb_confirm_cb", "group__l2cap.html#gaf993046174899c65ebee5456a12e3be3", null ],
+    [ "wiced_bt_l2cap_ecrb_mtu_changed_cb", "group__l2cap.html#ga78a9fe09013d325da3ad898e0e185d84", null ]
 ];

@@ -1105,7 +1105,7 @@
 #define HCI_CONTROL_MESH_STATUS_ERROR                       1   /* Command start failed */
 #define HCI_CONTROL_MESH_STATUS_CONNECT_FAILED              2
 
-// HCI definitions for script application. 
+// HCI definitions for script application.
 //
 #define HCI_CONTROL_GROUP_SCRIPT                              0x25
 #define HCI_CONTROL_SCRIPT_COMMAND_EXECUTE                  ( ( HCI_CONTROL_GROUP_SCRIPT << 8 ) | 0x01 )    /* Execute a function */
@@ -1115,5 +1115,11 @@
 #define HCI_CONTROL_SCRIPT_TRACE                            ( ( HCI_CONTROL_GROUP_SCRIPT << 8 ) | 0xF0 )   /* Trace message (low nibble has type) */
 
 #define HCI_CONTROL_HCI_AUDIO_COMMAND_BUTTON                ( ( HCI_CONTROL_GROUP_HCI_AUDIO << 8 ) | 0x30 ) /* Button event */
-#endif /* HCI_CONTROL_API.H_ */
 
+#define HCI_CONTROL_DEVICE_ROLE_UNICAST_SOURCE (1 << 0)
+#define HCI_CONTROL_DEVICE_ROLE_UNICAST_SINK (1 << 1)
+#define HCI_CONTROL_DEVICE_ROLE_BROADCAST_SOURCE (1 << 2)
+#define HCI_CONTROL_DEVICE_ROLE_BROADCAST_ASSISTANT (1 << 3)
+#define HCI_CONTROL_DEVICE_ROLE_BROADCAST_SINK (1 << 4)
+
+#endif /* HCI_CONTROL_API.H_ */

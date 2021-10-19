@@ -230,4 +230,7 @@ enum gatt_appearance_e
     APPEARANCE_LOCATION_AND_NAVIGATION_POD      = 5188,
 };
 
+#define IS_CHAR_DECLARATION_UUID(type)    ((type.len == 2) && (type.uu.uuid16 == GATT_UUID_CHAR_DECLARE))
+#define IS_CHAR_CLIENT_CONFIG_UUID(type)  ((type.len == 2) && (type.uu.uuid16 == GATT_UUID_CHAR_CLIENT_CONFIG))
+
 #endif

@@ -152,6 +152,9 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <tr class="memitem:ab424e8d1a539328e651f7ef3ec25f53f"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__stack__platform__t.html#ab424e8d1a539328e651f7ef3ec25f53f">pf_patch_download</a> )(void)</td></tr>
 <tr class="memdesc:ab424e8d1a539328e651f7ef3ec25f53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for additional controller initialization by the porting layer to be performed after the HCI reset.  <a href="#ab424e8d1a539328e651f7ef3ec25f53f">More...</a><br /></td></tr>
 <tr class="separator:ab424e8d1a539328e651f7ef3ec25f53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed774e9dc09f073b14790a248f007d8c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__stack__platform__t.html#aed774e9dc09f073b14790a248f007d8c">is_legacy_bless_controller</a>: 1</td></tr>
+<tr class="memdesc:aed774e9dc09f073b14790a248f007d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set is_legacy_bless_controller to 1 for only BLESS controllers.  <a href="#aed774e9dc09f073b14790a248f007d8c">More...</a><br /></td></tr>
+<tr class="separator:aed774e9dc09f073b14790a248f007d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a9ca85e972a5e580a918826a1c1f46de3"></a>
@@ -467,6 +470,23 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 <p>Used for additional controller initialization by the porting layer to be performed after the HCI reset. </p>
 <p>Can be set to NULL if no additional initialization required </p>
+
+</div>
+</div>
+<a id="aed774e9dc09f073b14790a248f007d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed774e9dc09f073b14790a248f007d8c">&#9670;&nbsp;</a></span>is_legacy_bless_controller</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t wiced_bt_stack_platform_t::is_legacy_bless_controller</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set is_legacy_bless_controller to 1 for only BLESS controllers. </p>
+<p>This is used while sending BLESS vendor specific commands. </p>
 
 </div>
 </div>

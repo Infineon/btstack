@@ -514,7 +514,6 @@ var searchData=
   ['avrc_5fmax_5favct_5frcv_5fpkt_5fsize',['AVRC_MAX_AVCT_RCV_PKT_SIZE',['../group__wicedbt__avrc.html#gafc74537f8541af8fa0e1b65318f8f390',1,'wiced_bt_avrc_defs.h']]],
   ['avrc_5fmax_5fcharset_5fsize',['AVRC_MAX_CHARSET_SIZE',['../group__wicedbt__avrc.html#ga17541368410a263f1a26e70125173d3b',1,'wiced_bt_avrc_defs.h']]],
   ['avrc_5fmax_5felem_5fattr_5fsize',['AVRC_MAX_ELEM_ATTR_SIZE',['../group__wicedbt__avrc.html#ga76d6fe2bd606031ce7e382c3e3933e85',1,'wiced_bt_avrc_defs.h']]],
-  ['avrc_5fmax_5fmedia_5fattr_5flen',['AVRC_MAX_MEDIA_ATTR_LEN',['../group__wicedbt__avrc.html#ga13b3f64447f801a17d64d4a709587a8f',1,'wiced_bt_avrc_defs.h']]],
   ['avrc_5fmax_5fmetadata_5frcv_5fmsg_5fsize',['AVRC_MAX_METADATA_RCV_MSG_SIZE',['../group__wicedbt__avrc.html#gaba97ac290d1da6468c610b92f19a6ad8',1,'wiced_bt_avrc_defs.h']]],
   ['avrc_5fmax_5fnum_5fmedia_5fattr_5fid',['AVRC_MAX_NUM_MEDIA_ATTR_ID',['../group__wicedbt__avrc.html#gaaf525c43658b36dd3d3b035f8f3242ed',1,'wiced_bt_avrc_defs.h']]],
   ['avrc_5fmax_5fvolume',['AVRC_MAX_VOLUME',['../group__wicedbt__avrc.html#ga4175f93dd2cfdb5b4ff4930fec98d37b',1,'wiced_bt_avrc_defs.h']]],

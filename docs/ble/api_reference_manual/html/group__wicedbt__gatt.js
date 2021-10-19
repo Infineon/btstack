@@ -163,7 +163,7 @@ var group__wicedbt__gatt =
     [ "wiced_bt_gatt_eatt_connection_indication_event_t", "structwiced__bt__gatt__eatt__connection__indication__event__t.html", [
       [ "bdaddr", "structwiced__bt__gatt__eatt__connection__indication__event__t.html#a33f08900bfd8379c68c0c85ec812a3cc", null ],
       [ "transport", "structwiced__bt__gatt__eatt__connection__indication__event__t.html#a3caa96712d568ac5bcc3ebcbf5167a64", null ],
-      [ "lcids", "structwiced__bt__gatt__eatt__connection__indication__event__t.html#a33b5ec276aa01fc2e0328cd25aa138e0", null ],
+      [ "lcids", "structwiced__bt__gatt__eatt__connection__indication__event__t.html#ac5ec9c8439b1f54dcfa809a56c962f06", null ],
       [ "mtu", "structwiced__bt__gatt__eatt__connection__indication__event__t.html#ae68661f90d0725eaba6d3ea342f68130", null ],
       [ "trans_id", "structwiced__bt__gatt__eatt__connection__indication__event__t.html#a40dcd29d29ec92a1c6f03e88c166740e", null ]
     ] ],
@@ -199,7 +199,6 @@ var group__wicedbt__gatt =
     [ "GATTDB_PERM_AUTH_READABLE", "group__wicedbt__gatt.html#gaf35356bd37477cdb6e6d9ac4dbf69762", null ],
     [ "GATTDB_PERM_RELIABLE_WRITE", "group__wicedbt__gatt.html#gaf5ad84c1e0460264f3706875ac8792ee", null ],
     [ "GATTDB_PERM_AUTH_WRITABLE", "group__wicedbt__gatt.html#ga1eb057f59e9b65654e93fc106a6f3c77", null ],
-    [ "GATTDB_PERM_WRITABLE", "group__wicedbt__gatt.html#ga6025f6cc5dd0b90ce746ef671028bd58", null ],
     [ "GATTDB_PERM_MASK", "group__wicedbt__gatt.html#gaee57afb45b7c88a1cf3690efd44e8219", null ],
     [ "GATTDB_PERM_SERVICE_UUID_128", "group__wicedbt__gatt.html#gad6f106f82541c47480d2a162e267030c", null ],
     [ "GATTDB_CHAR_PROP_BROADCAST", "group__wicedbt__gatt.html#ga58f0e454eb4b1dbf9f95779f4bd2ee75", null ],
@@ -245,8 +244,6 @@ var group__wicedbt__gatt =
     [ "wiced_bt_gatt_permission_t", "group__wicedbt__gatt.html#ga68017055d05ad1b83bccec1193f52b29", null ],
     [ "wiced_bt_gatt_format_t", "group__wicedbt__gatt.html#ga641b20a5354aeb20bdefd12c61600b4b", null ],
     [ "wiced_bt_gatt_csf_bits_t", "group__wicedbt__gatt.html#ga37f052680754df664faafdcbd4273e1c", null ],
-    [ "wiced_bt_eatt_lcid_list", "group__wicedbt__gatt.html#ga28e10c1787e3db895975e3f614315273", null ],
-    [ "wiced_bt_gatt_eatt_conn_id_list", "group__wicedbt__gatt.html#ga4fdb2145ff962cd70165abe0033d90b4", null ],
     [ "wiced_bt_eatt_drbs", "group__wicedbt__gatt.html#gaccfa49f84e56ea41ab53e943e2e5acc6", null ],
     [ "wiced_bt_gatt_app_context_t", "group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c", null ],
     [ "wiced_bt_gatt_cback_t", "group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2", null ],

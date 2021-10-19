@@ -1668,7 +1668,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga5e8a419947b69601facecc398143adc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">AVRC advanced control included status. <br /></td></tr>
 <tr class="separator:ga5e8a419947b69601facecc398143adc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d3064ddce89c52ead81891eaeb3c266"><td class="memItemLeft" align="right" valign="top"><a id="ga4d3064ddce89c52ead81891eaeb3c266"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#ga4d3064ddce89c52ead81891eaeb3c266">AVRC_BROWSE_INCLUDED</a>&#160;&#160;&#160;AVCT_BROWSE_INCLUDED</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#ga4d3064ddce89c52ead81891eaeb3c266">AVRC_BROWSE_INCLUDED</a>&#160;&#160;&#160;<a class="el" href="group__gentypes.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
 <tr class="memdesc:ga4d3064ddce89c52ead81891eaeb3c266"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRUE to support if AVCT browse enable. <br /></td></tr>
 <tr class="separator:ga4d3064ddce89c52ead81891eaeb3c266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga962f0bddb5098057b86dde720300d10e"><td class="memItemLeft" align="right" valign="top"><a id="ga962f0bddb5098057b86dde720300d10e"></a>
@@ -1952,6 +1952,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8786545c8367a2345773b82154ffe8ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#ga8786545c8367a2345773b82154ffe8ce">avrc_read_name_from_stream</a> (uint8_t *p_name_stream, uint16_t stream_len, <a class="el" href="structwiced__bt__avrc__name__t.html">wiced_bt_avrc_name_t</a> *p_name)</td></tr>
 <tr class="memdesc:ga8786545c8367a2345773b82154ffe8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function parse the string received in buffer.  <a href="#ga8786545c8367a2345773b82154ffe8ce">More...</a><br /></td></tr>
 <tr class="separator:ga8786545c8367a2345773b82154ffe8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06f2ebd873bd027f2d90c2af0cf4dcee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#ga06f2ebd873bd027f2d90c2af0cf4dcee">wiced_bt_avrc_set_browse_drb</a> (uint8_t handle, <a class="el" href="structt_d_r_b.html">tDRB</a> *p_drb, uint16_t payload_len, <a class="el" href="group__l2cap.html#ga3708e90651b47861800452aa90044a7f">wiced_bt_l2cap_drb_release_cb</a> *p_unreg_cb)</td></tr>
+<tr class="memdesc:ga06f2ebd873bd027f2d90c2af0cf4dcee"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function set the data receive buffer in stack.  <a href="#ga06f2ebd873bd027f2d90c2af0cf4dcee">More...</a><br /></td></tr>
+<tr class="separator:ga06f2ebd873bd027f2d90c2af0cf4dcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 AVRC result codes.</h2></td></tr>
@@ -2802,9 +2805,6 @@ media attribute ids</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#gaaf525c43658b36dd3d3b035f8f3242ed">AVRC_MAX_NUM_MEDIA_ATTR_ID</a>&#160;&#160;&#160;7</td></tr>
 <tr class="memdesc:gaaf525c43658b36dd3d3b035f8f3242ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of media attribute ids. <br /></td></tr>
 <tr class="separator:gaaf525c43658b36dd3d3b035f8f3242ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga13b3f64447f801a17d64d4a709587a8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#ga13b3f64447f801a17d64d4a709587a8f">AVRC_MAX_MEDIA_ATTR_LEN</a>&#160;&#160;&#160;80</td></tr>
-<tr class="memdesc:ga13b3f64447f801a17d64d4a709587a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the stored media attribute fields.  <a href="#ga13b3f64447f801a17d64d4a709587a8f">More...</a><br /></td></tr>
-<tr class="separator:ga13b3f64447f801a17d64d4a709587a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Play state values</h2></td></tr>
@@ -3186,22 +3186,6 @@ Events that can be registered for notifications</h2></td></tr>
 
 </div>
 </div>
-<a id="ga13b3f64447f801a17d64d4a709587a8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga13b3f64447f801a17d64d4a709587a8f">&#9670;&nbsp;</a></span>AVRC_MAX_MEDIA_ATTR_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AVRC_MAX_MEDIA_ATTR_LEN&#160;&#160;&#160;80</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Maximum length of the stored media attribute fields. </p>
-
-</div>
-</div>
 <a id="gae6bca7bc97a55d3c18dbb41153352e97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae6bca7bc97a55d3c18dbb41153352e97">&#9670;&nbsp;</a></span>AVRC_SYSTEMSTATE_PWR_ON <span class="overload">[1/2]</span></h2>
 
@@ -3369,10 +3353,10 @@ Events that can be registered for notifications</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(((a &gt;= <a class="code" href="group__wicedbt__avrc.html#gace262cbd074899765912190d6c8a806e">AVRC_EVT_PLAY_STATUS_CHANGE</a>) &amp;&amp; \</div><div class="line">                                              (a &lt;= <a class="code" href="group__wicedbt__avrc.html#gab0ef3dc2fbf61619e022ed023765375f">AVRC_EVT_VOLUME_CHANGE</a>)) ? <a class="code" href="group__gentypes.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a> : <a class="code" href="group__gentypes.html#gaa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div><div class="ttc" id="group__wicedbt__avrc_html_gab0ef3dc2fbf61619e022ed023765375f"><div class="ttname"><a href="group__wicedbt__avrc.html#gab0ef3dc2fbf61619e022ed023765375f">AVRC_EVT_VOLUME_CHANGE</a></div><div class="ttdeci">#define AVRC_EVT_VOLUME_CHANGE</div><div class="ttdoc">volume changed event</div><div class="ttdef"><b>Definition:</b> wiced_bt_avrc_defs.h:373</div></div>
-<div class="ttc" id="group__gentypes_html_gaa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="group__gentypes.html#gaa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdoc">false</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:32</div></div>
-<div class="ttc" id="group__gentypes_html_gaa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="group__gentypes.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdoc">true</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:36</div></div>
-<div class="ttc" id="group__wicedbt__avrc_html_gace262cbd074899765912190d6c8a806e"><div class="ttname"><a href="group__wicedbt__avrc.html#gace262cbd074899765912190d6c8a806e">AVRC_EVT_PLAY_STATUS_CHANGE</a></div><div class="ttdeci">#define AVRC_EVT_PLAY_STATUS_CHANGE</div><div class="ttdoc">play status changed event</div><div class="ttdef"><b>Definition:</b> wiced_bt_avrc_defs.h:361</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(((a &gt;= <a class="code" href="group__wicedbt__avrc.html#gace262cbd074899765912190d6c8a806e">AVRC_EVT_PLAY_STATUS_CHANGE</a>) &amp;&amp; \</div><div class="line">                                              (a &lt;= <a class="code" href="group__wicedbt__avrc.html#gab0ef3dc2fbf61619e022ed023765375f">AVRC_EVT_VOLUME_CHANGE</a>)) ? <a class="code" href="group__gentypes.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a> : <a class="code" href="group__gentypes.html#gaa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div><div class="ttc" id="group__wicedbt__avrc_html_gab0ef3dc2fbf61619e022ed023765375f"><div class="ttname"><a href="group__wicedbt__avrc.html#gab0ef3dc2fbf61619e022ed023765375f">AVRC_EVT_VOLUME_CHANGE</a></div><div class="ttdeci">#define AVRC_EVT_VOLUME_CHANGE</div><div class="ttdoc">volume changed event</div><div class="ttdef"><b>Definition:</b> wiced_bt_avrc_defs.h:372</div></div>
+<div class="ttc" id="group__gentypes_html_gaa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="group__gentypes.html#gaa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdoc">false</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:31</div></div>
+<div class="ttc" id="group__gentypes_html_gaa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="group__gentypes.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdoc">true</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:35</div></div>
+<div class="ttc" id="group__wicedbt__avrc_html_gace262cbd074899765912190d6c8a806e"><div class="ttname"><a href="group__wicedbt__avrc.html#gace262cbd074899765912190d6c8a806e">AVRC_EVT_PLAY_STATUS_CHANGE</a></div><div class="ttdeci">#define AVRC_EVT_PLAY_STATUS_CHANGE</div><div class="ttdoc">play status changed event</div><div class="ttdef"><b>Definition:</b> wiced_bt_avrc_defs.h:360</div></div>
 </div><!-- fragment -->
 <p>Macro to check for valid AVRC event. </p>
 
@@ -3393,8 +3377,8 @@ Events that can be registered for notifications</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(((a &lt;= <a class="code" href="group__wicedbt__avrc.html#ga8828765038db6197435b89af97301851">AVRC_PLAYER_SETTING_SCAN</a>) || \</div><div class="line">                                               (a &gt;= <a class="code" href="group__wicedbt__avrc.html#ga15c529464d797555394a16f7f0537cf2">AVRC_PLAYER_SETTING_LOW_MENU_EXT</a>)) ? <a class="code" href="group__gentypes.html#ga5b2438400e0a0860adaae6d13fec33f8">WICED_TRUE</a> : <a class="code" href="group__gentypes.html#ga98455f16ecc9e3b1e94af3d3437416f5">WICED_FALSE</a>)</div><div class="ttc" id="group__gentypes_html_ga5b2438400e0a0860adaae6d13fec33f8"><div class="ttname"><a href="group__gentypes.html#ga5b2438400e0a0860adaae6d13fec33f8">WICED_TRUE</a></div><div class="ttdeci">#define WICED_TRUE</div><div class="ttdoc">Wiced true.</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:28</div></div>
-<div class="ttc" id="group__gentypes_html_ga98455f16ecc9e3b1e94af3d3437416f5"><div class="ttname"><a href="group__gentypes.html#ga98455f16ecc9e3b1e94af3d3437416f5">WICED_FALSE</a></div><div class="ttdeci">#define WICED_FALSE</div><div class="ttdoc">Wiced false.</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:25</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(((a &lt;= <a class="code" href="group__wicedbt__avrc.html#ga8828765038db6197435b89af97301851">AVRC_PLAYER_SETTING_SCAN</a>) || \</div><div class="line">                                               (a &gt;= <a class="code" href="group__wicedbt__avrc.html#ga15c529464d797555394a16f7f0537cf2">AVRC_PLAYER_SETTING_LOW_MENU_EXT</a>)) ? <a class="code" href="group__gentypes.html#ga5b2438400e0a0860adaae6d13fec33f8">WICED_TRUE</a> : <a class="code" href="group__gentypes.html#ga98455f16ecc9e3b1e94af3d3437416f5">WICED_FALSE</a>)</div><div class="ttc" id="group__gentypes_html_ga5b2438400e0a0860adaae6d13fec33f8"><div class="ttname"><a href="group__gentypes.html#ga5b2438400e0a0860adaae6d13fec33f8">WICED_TRUE</a></div><div class="ttdeci">#define WICED_TRUE</div><div class="ttdoc">Wiced true.</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:27</div></div>
+<div class="ttc" id="group__gentypes_html_ga98455f16ecc9e3b1e94af3d3437416f5"><div class="ttname"><a href="group__gentypes.html#ga98455f16ecc9e3b1e94af3d3437416f5">WICED_FALSE</a></div><div class="ttdeci">#define WICED_FALSE</div><div class="ttdoc">Wiced false.</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:24</div></div>
 <div class="ttc" id="group__wicedbt__avrc_html_ga8828765038db6197435b89af97301851"><div class="ttname"><a href="group__wicedbt__avrc.html#ga8828765038db6197435b89af97301851">AVRC_PLAYER_SETTING_SCAN</a></div><div class="ttdeci">#define AVRC_PLAYER_SETTING_SCAN</div><div class="ttdoc">id for scan</div><div class="ttdef"><b>Definition:</b> wiced_bt_avrc_defs.h:285</div></div>
 <div class="ttc" id="group__wicedbt__avrc_html_ga15c529464d797555394a16f7f0537cf2"><div class="ttname"><a href="group__wicedbt__avrc.html#ga15c529464d797555394a16f7f0537cf2">AVRC_PLAYER_SETTING_LOW_MENU_EXT</a></div><div class="ttdeci">#define AVRC_PLAYER_SETTING_LOW_MENU_EXT</div><div class="ttdoc">id for low menu exit</div><div class="ttdef"><b>Definition:</b> wiced_bt_avrc_defs.h:286</div></div>
 </div><!-- fragment -->
@@ -3417,9 +3401,9 @@ Events that can be registered for notifications</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((a &gt;= <a class="code" href="group__wicedbt__avrc.html#ga6f203ce0c564f1f8aa6a466d8fe86775">AVRC_MEDIA_ATTR_ID_TITLE</a>) &amp;&amp; \</div><div class="line">                                             (a &lt;= <a class="code" href="group__wicedbt__avrc.html#ga5c5e38a290f8d094c849fb133a79c351">AVRC_MEDIA_ATTR_ID_PLAYING_TIME</a>) ? <a class="code" href="group__gentypes.html#ga5b2438400e0a0860adaae6d13fec33f8">WICED_TRUE</a> : <a class="code" href="group__gentypes.html#ga98455f16ecc9e3b1e94af3d3437416f5">WICED_FALSE</a>)</div><div class="ttc" id="group__gentypes_html_ga5b2438400e0a0860adaae6d13fec33f8"><div class="ttname"><a href="group__gentypes.html#ga5b2438400e0a0860adaae6d13fec33f8">WICED_TRUE</a></div><div class="ttdeci">#define WICED_TRUE</div><div class="ttdoc">Wiced true.</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:28</div></div>
+<b>Value:</b><div class="fragment"><div class="line">((a &gt;= <a class="code" href="group__wicedbt__avrc.html#ga6f203ce0c564f1f8aa6a466d8fe86775">AVRC_MEDIA_ATTR_ID_TITLE</a>) &amp;&amp; \</div><div class="line">                                             (a &lt;= <a class="code" href="group__wicedbt__avrc.html#ga5c5e38a290f8d094c849fb133a79c351">AVRC_MEDIA_ATTR_ID_PLAYING_TIME</a>) ? <a class="code" href="group__gentypes.html#ga5b2438400e0a0860adaae6d13fec33f8">WICED_TRUE</a> : <a class="code" href="group__gentypes.html#ga98455f16ecc9e3b1e94af3d3437416f5">WICED_FALSE</a>)</div><div class="ttc" id="group__gentypes_html_ga5b2438400e0a0860adaae6d13fec33f8"><div class="ttname"><a href="group__gentypes.html#ga5b2438400e0a0860adaae6d13fec33f8">WICED_TRUE</a></div><div class="ttdeci">#define WICED_TRUE</div><div class="ttdoc">Wiced true.</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:27</div></div>
 <div class="ttc" id="group__wicedbt__avrc_html_ga6f203ce0c564f1f8aa6a466d8fe86775"><div class="ttname"><a href="group__wicedbt__avrc.html#ga6f203ce0c564f1f8aa6a466d8fe86775">AVRC_MEDIA_ATTR_ID_TITLE</a></div><div class="ttdeci">#define AVRC_MEDIA_ATTR_ID_TITLE</div><div class="ttdoc">Attribute id for title.</div><div class="ttdef"><b>Definition:</b> wiced_bt_avrc_defs.h:329</div></div>
-<div class="ttc" id="group__gentypes_html_ga98455f16ecc9e3b1e94af3d3437416f5"><div class="ttname"><a href="group__gentypes.html#ga98455f16ecc9e3b1e94af3d3437416f5">WICED_FALSE</a></div><div class="ttdeci">#define WICED_FALSE</div><div class="ttdoc">Wiced false.</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:25</div></div>
+<div class="ttc" id="group__gentypes_html_ga98455f16ecc9e3b1e94af3d3437416f5"><div class="ttname"><a href="group__gentypes.html#ga98455f16ecc9e3b1e94af3d3437416f5">WICED_FALSE</a></div><div class="ttdeci">#define WICED_FALSE</div><div class="ttdoc">Wiced false.</div><div class="ttdef"><b>Definition:</b> wiced_data_types.h:24</div></div>
 <div class="ttc" id="group__wicedbt__avrc_html_ga5c5e38a290f8d094c849fb133a79c351"><div class="ttname"><a href="group__wicedbt__avrc.html#ga5c5e38a290f8d094c849fb133a79c351">AVRC_MEDIA_ATTR_ID_PLAYING_TIME</a></div><div class="ttdeci">#define AVRC_MEDIA_ATTR_ID_PLAYING_TIME</div><div class="ttdoc">Attribute id for playing time.</div><div class="ttdef"><b>Definition:</b> wiced_bt_avrc_defs.h:335</div></div>
 </div><!-- fragment -->
 <p>Check for valid metadata attribute. </p>
@@ -4623,6 +4607,58 @@ Events that can be registered for notifications</h2></td></tr>
   </dd>
 </dl>
 <p>Returns Returns number of bytes read from the buffer </p>
+
+</div>
+</div>
+<a id="ga06f2ebd873bd027f2d90c2af0cf4dcee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06f2ebd873bd027f2d90c2af0cf4dcee">&#9670;&nbsp;</a></span>wiced_bt_avrc_set_browse_drb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_avrc_set_browse_drb </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structt_d_r_b.html">tDRB</a> *&#160;</td>
+          <td class="paramname"><em>p_drb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>payload_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__l2cap.html#ga3708e90651b47861800452aa90044a7f">wiced_bt_l2cap_drb_release_cb</a> *&#160;</td>
+          <td class="paramname"><em>p_unreg_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function set the data receive buffer in stack. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: AVRC connection handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_drb</td><td>: pointer to the buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">payload_len</td><td>: valid length of buffer pointed by <code>p_drb</code> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_unreg_cb</td><td>: Callback function to release the DRB pointed by <code>p_drb</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Returns Returns TRUE if success otherwise, FALSE </p>
 
 </div>
 </div>

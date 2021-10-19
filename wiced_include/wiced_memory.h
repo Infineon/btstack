@@ -182,6 +182,13 @@ uint32_t wiced_bt_get_pool_free_count (wiced_bt_pool_t* p_pool);
 uint32_t wiced_bt_get_largest_heap_buffer (wiced_bt_heap_t* p_heap);
 
 /**
+* To get the size of the largest buffer available in the stack heap
+*
+* @return  the size of the largest buffer available in the stack heap
+*/
+uint32_t wiced_bt_get_largest_stack_heap_buffer(void);
+
+/**
  * Frees a buffer back to the pool or heap it came from
  *
  * @param[in]       p_buf : pointer to the start of the (pool/heap) buffer to be freed

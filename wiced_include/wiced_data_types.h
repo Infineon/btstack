@@ -11,7 +11,6 @@
 #ifndef WICED_DATA_TYPES_H
 #define WICED_DATA_TYPES_H
 
-
 #include <stdint.h>
 #include <string.h>
 

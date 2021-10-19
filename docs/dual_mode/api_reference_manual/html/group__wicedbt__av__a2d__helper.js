@@ -73,5 +73,6 @@ var group__wicedbt__av__a2d__helper =
     [ "wiced_bt_a2d_status_t", "group__wicedbt__av__a2d__helper.html#ga6a78ee8aece921283d90e5a721436925", null ],
     [ "wiced_bt_a2d_find_cback", "group__wicedbt__av__a2d__helper.html#gaa41501df37f123cd9f12b7d789bdf74b", null ],
     [ "wiced_bt_a2d_bits_set", "group__wicedbt__av__a2d__helper.html#ga8ccbe103977bb96a5e441d382fdfd92c", null ],
-    [ "wiced_bt_a2d_find_service", "group__wicedbt__av__a2d__helper.html#gaee4449a3ac58eb206334994ddaa4877d", null ]
+    [ "wiced_bt_a2d_find_service", "group__wicedbt__av__a2d__helper.html#gaee4449a3ac58eb206334994ddaa4877d", null ],
+    [ "wiced_bt_set_a2dp_connection_priority", "group__wicedbt__av__a2d__helper.html#gafa7b05ee61088ac4c09e98bdb5131736", null ]
 ];

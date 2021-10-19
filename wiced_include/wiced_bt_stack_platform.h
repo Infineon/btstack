@@ -201,6 +201,12 @@ typedef struct
      * after the HCI reset. Can be set to NULL if no additional initialization required
      */
     void (*pf_patch_download)(void);
+
+    /**
+     *set is_legacy_bless_controller to 1 for only BLESS controllers.
+     *This is used while sending BLESS vendor specific commands.
+     */
+    uint32_t is_legacy_bless_controller : 1;
 } wiced_bt_stack_platform_t;
 
 /**

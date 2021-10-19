@@ -8,6 +8,23 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.2.0
+BTSTACK3.2 contains below updates to the Bluetooth host stack:
+ - New APIs added
+   - wiced_bt_l2cap_deregister_fixed_channel() API to deregister a fixed L2CAP channel (see also wiced_bt_l2cap_register_fixed_channel().
+   - wiced_bt_dev_update_debug_trace_mode() to enable/disable debug traces.
+   - APIs for ECRB (Enhanced Credit Based L2CAP) channels management.
+   - wiced_ble_private_device_address_resolution() that checks if a private address is resolvable with the given IRK.
+   - wiced_bt_dev_get_acl_conn_handle() to get connection handle given a peer BD Address.
+ - Bug fixes and other updates
+   - The stack internally sets the default BLE data length to 251 at start-up, i.e., enables BLE Data Length Extension. Also, pairing is disabled by default so that application can enable using wiced_bt_set_pairable_mode(),
+   - Fix for crash during LE-COC data transfer.
+   - Fix for issue where extended advertisement was enabled before random address was set.
+   - Fix to update just_works field correctly in BTM_USER_CONFIRMATION_REQUEST_EVT.
+
+### Known issues in V3.2.0
+ - Documentation bug - in the documentation the API wiced_bt_ble_security_grant(), possible values for argument 'res' is mentioned as BTM_SUCCESS, BTM_MODE_UNSUPPORTED and BTM_REPEATED_ATTEMPTS. Please read them as WICED_BT_SUCCESS, WICED_BT_UNSUPPORTED and WICED_BT_REPEATED_ATTEMPTS, respectively.
+
 ## V3.1.0
 BTSTACK3.1 is BT5.2 certified. Certification includes EATT and ISOC features, QDID: [172247](https://launchstudio.bluetooth.com/ListingDetails/134246).
  - APIs added in this release:

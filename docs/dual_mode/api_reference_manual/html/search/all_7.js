@@ -119,7 +119,6 @@ var searchData=
   ['gattdb_5fperm_5freliable_5fwrite',['GATTDB_PERM_RELIABLE_WRITE',['../group__wicedbt__gatt.html#gaf5ad84c1e0460264f3706875ac8792ee',1,'wiced_bt_gatt.h']]],
   ['gattdb_5fperm_5fservice_5fuuid_5f128',['GATTDB_PERM_SERVICE_UUID_128',['../group__wicedbt__gatt.html#gad6f106f82541c47480d2a162e267030c',1,'wiced_bt_gatt.h']]],
   ['gattdb_5fperm_5fvariable_5flength',['GATTDB_PERM_VARIABLE_LENGTH',['../group__wicedbt__gatt.html#ga6b99f4fe859d77eb8ea67cee666a5143',1,'wiced_bt_gatt.h']]],
-  ['gattdb_5fperm_5fwritable',['GATTDB_PERM_WRITABLE',['../group__wicedbt__gatt.html#ga6025f6cc5dd0b90ce746ef671028bd58',1,'wiced_bt_gatt.h']]],
   ['gattdb_5fperm_5fwrite_5fcmd',['GATTDB_PERM_WRITE_CMD',['../group__wicedbt__gatt.html#ga6de9b0a3f50fc93f1e4ab9d731aa014c',1,'wiced_bt_gatt.h']]],
   ['gattdb_5fperm_5fwrite_5freq',['GATTDB_PERM_WRITE_REQ',['../group__wicedbt__gatt.html#ga2aa8ca0f2b0155154210eb6067ca34ac',1,'wiced_bt_gatt.h']]],
   ['gattdb_5fuuid128_5fsize',['GATTDB_UUID128_SIZE',['../group__wicedbt__gatt.html#gaac9eea72e4087535001e967b961b742b',1,'wiced_bt_gatt.h']]],

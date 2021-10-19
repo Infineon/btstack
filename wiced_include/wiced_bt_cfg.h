@@ -117,7 +117,7 @@ typedef struct
 {
     wiced_bt_ble_scan_mode_t            scan_mode;                          /**< BLE scan mode \ref wiced_bt_ble_scan_mode_t */
 
-    /* Advertisement scan configuration 
+    /* Advertisement scan configuration
     * @note Refer to 7.8.10 LE Set Scan Parameters command
     */
     uint16_t                            high_duty_scan_interval;            /**< High duty scan interval (in slots (1 slot = 0.625 ms)) (default: #WICED_BT_CFG_DEFAULT_HIGH_DUTY_SCAN_INTERVAL) */
@@ -128,7 +128,7 @@ typedef struct
     uint16_t                            low_duty_scan_window;               /**< Low duty scan window (in slots (1 slot = 0.625 ms)) (default: #WICED_BT_CFG_DEFAULT_LOW_DUTY_SCAN_WINDOW) */
     uint16_t                            low_duty_scan_duration;             /**< Low duty scan duration in seconds (0 for infinite) */
 
-    /* Connection scan configuration 
+    /* Connection scan configuration
     * @note Refer to 7.8.10 LE Set Scan Parameters command
     */
     uint16_t                            high_duty_conn_scan_interval;       /**< High duty cycle connection scan interval (in slots (1 slot = 0.625 ms)) (default: #WICED_BT_CFG_DEFAULT_HIGH_DUTY_CONN_SCAN_INTERVAL) */
@@ -235,13 +235,13 @@ typedef struct
 /** Ischoronous Connection configuration settings */
 typedef struct
 {
-    uint8_t   max_cis_conn;   /**< Max Number of CIS connections */
-    uint8_t   max_cig_count;  /**< Max Number of CIG connections */
-    uint16_t  max_sdu_size;   /**< Max SDU size */
-    uint8_t   channel_count;  /**< Channel count */
-    uint8_t   max_buffers_per_cis;            /**< Max Number of buffers per CIS */
-    uint8_t   max_big_count;  /**< Max Number of BIG connections */
-}wiced_bt_cfg_isoc_t;
+    uint16_t max_sdu_size;       /**< Max SDU size */
+    uint8_t channel_count;       /**< maximum number of audio channels per packet (left, right, etc.,) */
+    uint8_t max_cis_conn;        /**< Max Number of CIS connections */
+    uint8_t max_cig_count;       /**< Max Number of CIG connections */
+    uint8_t max_buffers_per_cis; /**< Max Number of buffers per CIS */
+    uint8_t max_big_count;       /**< Max Number of BIG connections */
+} wiced_bt_cfg_isoc_t;
 
 /** BR/EDR configuration settings */
 typedef struct {

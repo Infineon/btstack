@@ -581,7 +581,6 @@ var group__wicedbt__avrc =
     [ "AVRC_MEDIA_ATTR_ID_GENRE", "group__wicedbt__avrc.html#ga1fcc66ba6c5e7e88c1df82c7b1131061", null ],
     [ "AVRC_MEDIA_ATTR_ID_PLAYING_TIME", "group__wicedbt__avrc.html#ga5c5e38a290f8d094c849fb133a79c351", null ],
     [ "AVRC_MAX_NUM_MEDIA_ATTR_ID", "group__wicedbt__avrc.html#gaaf525c43658b36dd3d3b035f8f3242ed", null ],
-    [ "AVRC_MAX_MEDIA_ATTR_LEN", "group__wicedbt__avrc.html#ga13b3f64447f801a17d64d4a709587a8f", null ],
     [ "AVRC_PLAYSTATE_RESP_MSG_SIZE", "group__wicedbt__avrc.html#gaf7829af4119885c4c2469882f86d3b38", null ],
     [ "AVRC_PLAYSTATE_STOPPED", "group__wicedbt__avrc.html#gaeb37e34c026a555686c5f53aa80e4373", null ],
     [ "AVRC_PLAYSTATE_PLAYING", "group__wicedbt__avrc.html#ga863a69ea936200cd1d2ce7c134dca970", null ],
@@ -1012,5 +1011,6 @@ var group__wicedbt__avrc =
     [ "avrc_read_attr_entry_from_stream", "group__wicedbt__avrc.html#gae65520d66d292b6540a6b8bd0e0d8f11", null ],
     [ "avrc_read_full_name_from_stream", "group__wicedbt__avrc.html#gaabd9d3e82e5846f1a50155678c7a9951", null ],
     [ "avrc_read_browse_item_from_stream", "group__wicedbt__avrc.html#gaaac82cd3fdcfc0b155947caee0b9d7b8", null ],
-    [ "avrc_read_name_from_stream", "group__wicedbt__avrc.html#ga8786545c8367a2345773b82154ffe8ce", null ]
+    [ "avrc_read_name_from_stream", "group__wicedbt__avrc.html#ga8786545c8367a2345773b82154ffe8ce", null ],
+    [ "wiced_bt_avrc_set_browse_drb", "group__wicedbt__avrc.html#ga06f2ebd873bd027f2d90c2af0cf4dcee", null ]
 ];

@@ -195,6 +195,18 @@ uint8_t wiced_bt_a2d_bits_set(uint8_t mask);
  */
 wiced_bt_a2d_status_t wiced_bt_a2d_find_service( uint16_t service_uuid, wiced_bt_device_address_t bd_addr, wiced_bt_a2d_sdp_db_params_t *p_db, wiced_bt_a2d_find_cback *p_cback );
 
+/**
+ * Set the A2dp connection as high priority
+ * 
+ * @param[in]       handle      : Connection handle
+ * @param[in]       high_priority   : If "1" set the connection to high priority,
+ *                                    "0" if normal priority
+ * @return          None
+ *
+ */
+    
+wiced_bt_a2d_status_t wiced_bt_set_a2dp_connection_priority( uint8_t handle, uint8_t high_priority );
+
 #ifdef __cplusplus
 }
 #endif

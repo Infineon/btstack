@@ -7,6 +7,7 @@ var modules =
     [ "Device Management", "group__wicedbt___device_management.html", "group__wicedbt___device_management" ],
     [ "Generic Attribute (GATT)", "group__wicedbt__gatt.html", "group__wicedbt__gatt" ],
     [ "RFCOMM", "group__rfcomm__api__functions.html", "group__rfcomm__api__functions" ],
+    [ "Synchronous Connection Oriented (SCO) Channel", "group__sco.html", "group__sco" ],
     [ "Service Discovery Protocol (SDP)", "group__sdp.html", "group__sdp" ],
     [ "Bluetooth Stack Platform Interface", "group__wiced__bt__platform__group.html", "group__wiced__bt__platform__group" ],
     [ "NVRAM", "group__nvram.html", "group__nvram" ],

@@ -376,24 +376,30 @@
  *
  * L2CAP connection result codes.
  */
-#define L2CAP_CONN_OK                0      /**< Connection OK */
-#define L2CAP_CONN_PENDING           1      /**< Connection Pending */
-#define L2CAP_CONN_NO_PSM            2      /**< Connection NO PSM */
-#define L2CAP_CONN_SECURITY_BLOCK    3      /**< Connection Security Block */
-#define L2CAP_CONN_NO_RESOURCES      4      /**< Connection NO Resource */
-#define L2CAP_CONN_BAD_CTLR_ID       5      /**< Bad Controller ID 
-                                                @note AMP related */
-#define L2CAP_BLE_CONN_BAD_AUTHENT   5      /**< BLE Connection Bad Authentication */
-#define L2CAP_BLE_CONN_BAD_AUTHORIZ  6      /**< BLE Connection Bad Autherization */
-#define L2CAP_BLE_CONN_BAD_KEY_SIZE  7      /**< BLE Connection Bad key size */
-#define L2CAP_BLE_CONN_BAD_ENCRYPT   8      /**< BLE Connection Bad Encryption */
+#define L2CAP_CONN_OK                0     /**< Connection OK */
+#define L2CAP_CONN_PENDING           1     /**< Connection Pending */
+#define L2CAP_CONN_NO_PSM            2     /**< Connection NO PSM */
+#define L2CAP_CONN_SECURITY_BLOCK    3     /**< Connection Security Block */
+#define L2CAP_CONN_NO_RESOURCES      4     /**< Connection NO Resource */
+#define L2CAP_CONN_BAD_CTLR_ID       5     /**< Bad Controller ID */
+
+/**  @note AMP related */
+#define L2CAP_BLE_CONN_BAD_AUTHENT      5     /**< BLE Connection Bad Authentication */
+#define L2CAP_BLE_CONN_BAD_AUTHORIZ     6     /**< BLE Connection Bad Autherization */
+#define L2CAP_BLE_CONN_BAD_KEY_SIZE     7     /**< BLE Connection Bad key size */
+#define L2CAP_BLE_CONN_BAD_ENCRYPT      8     /**< BLE Connection Bad Encryption */
+#define L2CAP_BLE_CONN_INVALID_CID      9     /**< Invalid Source CID */
+#define L2CAP_BLE_CONN_CID_ALREADY_USED 10    /**< Source CID already allocated */
+#define L2CAP_BLE_CONN_BAD_PARAMS       11    /**< Bad parameters */
+/** @note LE COC related */
+
+
 /** @} L2CAP_CONN_RESULT */
 
 
 /*************************************************************************************************
 ** The following definitions are related to credit-based flow control mode
 *************************************************************************************************/
-#define     L2CAP_ECRB_MAX_CHANNELS_PER_CMD     5       /**< ECRB Max Channels per Command */
 #define     L2CAP_ECRB_MIN_MTU                  64      /**< ECRB Min MTU */
 #define     L2CAP_ECRB_MIN_MPS                  64      /**< ECRB Min MPS */
 

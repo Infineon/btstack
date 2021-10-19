@@ -17,7 +17,8 @@ var group__wiced__bt__platform__group =
       [ "pf_debug_trace", "structwiced__bt__stack__platform__t.html#a8a91e6fe656d0c241cecd96e8545a782", null ],
       [ "trace_buffer_len", "structwiced__bt__stack__platform__t.html#a5dc571e1e6283ba422b8af5d3ea807fe", null ],
       [ "trace_buffer", "structwiced__bt__stack__platform__t.html#a44e54c18febc40a36c6a17fe0052bb6e", null ],
-      [ "pf_patch_download", "structwiced__bt__stack__platform__t.html#ab424e8d1a539328e651f7ef3ec25f53f", null ]
+      [ "pf_patch_download", "structwiced__bt__stack__platform__t.html#ab424e8d1a539328e651f7ef3ec25f53f", null ],
+      [ "is_legacy_bless_controller", "structwiced__bt__stack__platform__t.html#aed774e9dc09f073b14790a248f007d8c", null ]
     ] ],
     [ "wiced_bt_internal_post_stack_init_cb", "group__wiced__bt__platform__group.html#gaaee366da383e708d1dea13b16cbba1e5", null ],
     [ "wiced_bt_internal_stack_evt_handler_cb", "group__wiced__bt__platform__group.html#ga1b2ab26fed7589a50fad5ecc0cc6f1d3", null ],

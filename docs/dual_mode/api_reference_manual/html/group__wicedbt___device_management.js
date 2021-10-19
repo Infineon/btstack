@@ -405,7 +405,6 @@ var group__wicedbt___device_management =
     [ "BTM_MANAGEMENT_EVT", "group__wicedbt___device_management.html#ga1660b9dbc7262f13518d42f6ddbcdf7c", null ],
     [ "BTM_BLE_ADVERT_MODE", "group__wicedbt___device_management.html#gab0cb201b9cdc382e537c80c729cb3571", null ],
     [ "BTM_BLE_CONN_MODE", "group__wicedbt___device_management.html#ga308266bd5dcabfd34768883df3e29d48", null ],
-    [ "wiced_bt_dev_status_t", "group__wicedbt___device_management.html#gaebfc7a7f17241ffdaf1a70efc43ffb57", null ],
     [ "wiced_bt_dev_io_cap_t", "group__wicedbt___device_management.html#ga4c2f9492aecc7959d58856bd53848d81", null ],
     [ "wiced_bt_dev_auth_req_t", "group__wicedbt___device_management.html#ga91a2b02a829b05c885362a8f86c27dfb", null ],
     [ "wiced_bt_dev_le_auth_req_t", "group__wicedbt___device_management.html#ga6fbe43cbb7c3586833c3c5477e751d5a", null ],

@@ -22,10 +22,10 @@
 /******************************************************
  *              Constants
  ******************************************************/
-#define WICED_BT_SCO_CONNECTION_ACCEPT              0x00
-#define WICED_BT_SCO_CONNECTION_REJECT_RESOURCES    0x0D
-#define WICED_BT_SCO_CONNECTION_REJECT_SECURITY     0x0E
-#define WICED_BT_SCO_CONNECTION_REJECT_DEVICE       0x0F
+#define WICED_BT_SCO_CONNECTION_ACCEPT              0x00 /**< Status accept connection */
+#define WICED_BT_SCO_CONNECTION_REJECT_RESOURCES    0x0D /**< Status reject connection due to no resources */
+#define WICED_BT_SCO_CONNECTION_REJECT_SECURITY     0x0E /**< Status reject connection due to security */
+#define WICED_BT_SCO_CONNECTION_REJECT_DEVICE       0x0F /**< Status reject connection from peer */
 
 #ifndef WICED_SCO_PKT_TYPES_MASK
 #define WICED_INVALID_SCO_INDEX           0xFFFF    /**< Default SCO index */
@@ -83,7 +83,6 @@ extern "C"
 #endif
 
 /**
- *
  *The wiced_sco_lib.a was required to included before we link this function.
  *Creates a synchronous connection oriented connection as initiator.
  *
@@ -104,8 +103,7 @@ wiced_bt_dev_status_t wiced_bt_sco_create_as_initiator (wiced_bt_device_address_
                                                         wiced_bt_sco_params_t *p_params);
 
 /**
- *
- *Creates a synchronous connection oriented connection as acceptor.
+ * Creates a synchronous connection oriented connection as acceptor.
  *
  *  @param[in]  remote_bda              :  remote device bd_addr
  *  @param[out] p_sco_index             : SCO index returned
@@ -122,13 +120,12 @@ wiced_bt_dev_status_t wiced_bt_sco_create_as_initiator (wiced_bt_device_address_
  */
 wiced_bt_dev_status_t wiced_bt_sco_create_as_acceptor_ex (wiced_bt_device_address_t remote_bda, uint16_t *p_sco_index);
 
-/* defined this macro for backward compatiblity */
+/**   defined this macro for backward compatiblity */
 #define wiced_bt_sco_create_as_acceptor(p_sco_idx)  wiced_bt_sco_create_as_acceptor_ex(NULL,  p_sco_index)
 
 
 /**
- *
- *Removes a specific synchronous connection oriented connection.
+ * Removes a specific synchronous connection oriented connection.
  *
  *  @param[in]  sco_index                           : SCO index to remove
  *

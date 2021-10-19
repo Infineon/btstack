@@ -334,7 +334,6 @@ typedef uint8_t wiced_bt_avrc_battery_status_t; /**<AVRC battery*/
 #define AVRC_MEDIA_ATTR_ID_GENRE                 0x00000006 /**< Attribute id for genre*/
 #define AVRC_MEDIA_ATTR_ID_PLAYING_TIME          0x00000007 /**< Attribute id for playing time*/
 #define AVRC_MAX_NUM_MEDIA_ATTR_ID               7          /**< Number of media attribute ids*/
-#define AVRC_MAX_MEDIA_ATTR_LEN                 80          /**< Maximum length of the stored media attribute fields. */
 /**@}AVRC_MEDIA_ATTR_IDS*/
 
 /**
@@ -804,7 +803,7 @@ typedef uint8_t wiced_bt_avrc_uid_t[AVRC_UID_SIZE]; /**<AVRC UID*/
 #define AVRC_METADATA_INCLUDED      TRUE    /**<Metadata feature included status*/
 #define AVRC_ADV_CTRL_INCLUDED      TRUE    /**<AVRC advanced control included status*/
 /* TRUE to support the browsing channel. */
-#define AVRC_BROWSE_INCLUDED    AVCT_BROWSE_INCLUDED    /**<TRUE to support if AVCT browse enable */
+#define AVRC_BROWSE_INCLUDED    TRUE    /**<TRUE to support if AVCT browse enable */
 
 /** AV/C message header */
 typedef struct

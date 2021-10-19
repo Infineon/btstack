@@ -120,13 +120,35 @@ var group__btm__ble__api__functions =
       [ "connection_handle", "structwiced__bt__ble__channel__sel__algo__event__data__t.html#a8daf68fc5daf3ef655aefc3d3a137761", null ],
       [ "channel_sel_algo", "structwiced__bt__ble__channel__sel__algo__event__data__t.html#a0b62665bbf5c518ee37b1b498d06db3d", null ]
     ] ],
+    [ "wiced_bt_ble_biginfo_adv_report_t", "structwiced__bt__ble__biginfo__adv__report__t.html", [
+      [ "sync_handle", "structwiced__bt__ble__biginfo__adv__report__t.html#ac9b57c2212c2dd93bd4c566c3db0e3bb", null ],
+      [ "num_bis", "structwiced__bt__ble__biginfo__adv__report__t.html#abf188803914725b2e0e5f0249df5edca", null ],
+      [ "number_of_subevents", "structwiced__bt__ble__biginfo__adv__report__t.html#ab2b3c1381bbbd5ee351b7bb72e682056", null ],
+      [ "iso_interval", "structwiced__bt__ble__biginfo__adv__report__t.html#ac94a297de2040d21d503f5ae1bf27b96", null ],
+      [ "burst_number", "structwiced__bt__ble__biginfo__adv__report__t.html#a45c587d970345865089e8180c4e4249f", null ],
+      [ "pretransmission_offset", "structwiced__bt__ble__biginfo__adv__report__t.html#a979bf71115f27990eed34bc2a200482b", null ],
+      [ "immediate_repetition_count", "structwiced__bt__ble__biginfo__adv__report__t.html#a60f733503c6680e7b0c8f57953fa747d", null ],
+      [ "max_pdu", "structwiced__bt__ble__biginfo__adv__report__t.html#aa3ea9eb3c4f4db8679bc7ceb1592aa37", null ],
+      [ "sdu_interval", "structwiced__bt__ble__biginfo__adv__report__t.html#ac9624a8c7b520ca3c4ed89295d761c75", null ],
+      [ "max_sdu", "structwiced__bt__ble__biginfo__adv__report__t.html#a5c1cbf9eff09de70d9dca1fc47251950", null ],
+      [ "phy", "structwiced__bt__ble__biginfo__adv__report__t.html#ab0e469d54f1453dfd1a97c26dc3aa4a1", null ],
+      [ "framing", "structwiced__bt__ble__biginfo__adv__report__t.html#a5463deda46476a790bbc274d37864fc3", null ],
+      [ "encryption", "structwiced__bt__ble__biginfo__adv__report__t.html#a0070c3c6850fee141440bc469f59ed3c", null ]
+    ] ],
+    [ "wiced_bt_ble_periodic_adv_sync_transfer_event_data_t", "structwiced__bt__ble__periodic__adv__sync__transfer__event__data__t.html", [
+      [ "sync_data", "structwiced__bt__ble__periodic__adv__sync__transfer__event__data__t.html#a6bc30dd72d2ef070132628751757d60b", null ],
+      [ "conn_handle", "structwiced__bt__ble__periodic__adv__sync__transfer__event__data__t.html#a0f52b7e4d2b5ef71a14bca94b0398f42", null ],
+      [ "service_data", "structwiced__bt__ble__periodic__adv__sync__transfer__event__data__t.html#ad03c7a0ae7e9dcaa6d1ac97c5faac164", null ]
+    ] ],
     [ "wiced_bt_ble_adv_ext_event_data_t", "unionwiced__bt__ble__adv__ext__event__data__t.html", [
       [ "sync_establish", "unionwiced__bt__ble__adv__ext__event__data__t.html#a78245f65a9e349e6a00167b11b887785", null ],
       [ "periodic_adv_report", "unionwiced__bt__ble__adv__ext__event__data__t.html#ad0533039a59e9f8863df9ee2d1566440", null ],
       [ "sync_handle", "unionwiced__bt__ble__adv__ext__event__data__t.html#aca96e84924286e2a9d23be8de7891769", null ],
       [ "adv_set_terminated", "unionwiced__bt__ble__adv__ext__event__data__t.html#af36006a0bfaf1b7ea385b55ad2b21243", null ],
       [ "scan_req_received", "unionwiced__bt__ble__adv__ext__event__data__t.html#a51bf2b3cb231d7b157ca5f4bfe895081", null ],
-      [ "channel_sel_algo", "unionwiced__bt__ble__adv__ext__event__data__t.html#a20357be459fe0aafc6b485c42b6cd3d8", null ]
+      [ "channel_sel_algo", "unionwiced__bt__ble__adv__ext__event__data__t.html#a20357be459fe0aafc6b485c42b6cd3d8", null ],
+      [ "biginfo_adv_report", "unionwiced__bt__ble__adv__ext__event__data__t.html#a16f522d07102a2440787c6a55a37519a", null ],
+      [ "sync_transfer", "unionwiced__bt__ble__adv__ext__event__data__t.html#a183e2c89def5a638202069283cecdb06", null ]
     ] ],
     [ "wiced_bt_ble_ext_scan_config_t", "structwiced__bt__ble__ext__scan__config__t.html", [
       [ "scanning_phys", "structwiced__bt__ble__ext__scan__config__t.html#a58cab73084222c1a13ac5715c7e95249", null ],
@@ -136,6 +158,7 @@ var group__btm__ble__api__functions =
       [ "duration", "structwiced__bt__ble__ext__scan__config__t.html#a4b3df3e340d415a8fa0a112896437efd", null ],
       [ "period", "structwiced__bt__ble__ext__scan__config__t.html#a1af021a2bf4ae5528b054eb46c6727c9", null ]
     ] ],
+    [ "BTM_BLE_LEGACY_AD_DATA_LEN", "group__btm__ble__api__functions.html#gae3ba16e014add5799d4b298344cb5984", null ],
     [ "BTM_AFH_CHNL_MAP_SIZE", "group__btm__ble__api__functions.html#ga4549fd128a3e5a4c0b7499a154130377", null ],
     [ "BLE_CHANNEL_MAP_LEN", "group__btm__ble__api__functions.html#ga8e87c05d9589c4b55178ec4ce7685db2", null ],
     [ "BTM_BLE_DEFAULT_ADVERT_CHNL_MAP", "group__btm__ble__api__functions.html#ga502320b4a85ebeee1cd6d37d6b6d1048", null ],
@@ -219,6 +242,7 @@ var group__btm__ble__api__functions =
     [ "wiced_bt_ble_ext_scan_filter_duplicate_t", "group__btm__ble__api__functions.html#ga873f6d031154b1a214cb56b873991983", null ],
     [ "wiced_bt_ble_ext_filter_policy_t", "group__btm__ble__api__functions.html#gaf0ef601e684add601e7fe71fb4a6cfb0", null ],
     [ "wiced_bt_ble_adv_sync_options_t", "group__btm__ble__api__functions.html#ga9ca488f9e3a161d2d37dccb4f5992c7e", null ],
+    [ "wiced_bt_ble_periodic_adv_sync_transfer_mode_t", "group__btm__ble__api__functions.html#ga0fcc30537c71955222aa684d4529f488", null ],
     [ "wiced_bt_ble_periodic_adv_sync_handle_t", "group__btm__ble__api__functions.html#ga70c1c3632c806556629a4009d009ed8d", null ],
     [ "wiced_bt_ble_adv_report_event_mask_t", "group__btm__ble__api__functions.html#gaeef30254c858058c82419185b0ddfb19", null ],
     [ "wiced_bt_ble_ext_adv_report_count_t", "group__btm__ble__api__functions.html#gae39922d547c599431fbcf3ce82b9f905", null ],
@@ -367,6 +391,11 @@ var group__btm__ble__api__functions =
       [ "WICED_BT_BLE_IGNORE_SYNC_TO_PERIODIC_ADV_LIST", "group__btm__ble__api__functions.html#gga5f6ce070f4dc0efbf5a1ad4aeb54dc26a65301d81e398ef6d8eab8cf8492b89c3", null ],
       [ "WICED_BT_BLE_SYNC_TO_PERIODIC_ADV_LIST", "group__btm__ble__api__functions.html#gga5f6ce070f4dc0efbf5a1ad4aeb54dc26ab7cf10c331eb70f50a12a15cda4ef35b", null ]
     ] ],
+    [ "wiced_bt_ble_periodic_adv_sync_transfer_mode_e", "group__btm__ble__api__functions.html#gad87f6ef7689d0d4d3cdaf1a43b4032a6", [
+      [ "WICED_BT_BLE_IGNORE_PA_SYNC_TRANSFER_EVT", "group__btm__ble__api__functions.html#ggad87f6ef7689d0d4d3cdaf1a43b4032a6a027f7f75ae4e289bf26fb3bddcc1577d", null ],
+      [ "WICED_BT_BLE_ENABLE_PA_SYNC_TRANSFER_DISABLE_PA_REPORT_EVT", "group__btm__ble__api__functions.html#ggad87f6ef7689d0d4d3cdaf1a43b4032a6a7f4f9bb5a98ef9c9c5862d55e874e6ff", null ],
+      [ "WICED_BT_BLE_ENABLE_PA_SYNC_TRANSFER_ENABLE_PA_REPORT_EVT", "group__btm__ble__api__functions.html#ggad87f6ef7689d0d4d3cdaf1a43b4032a6aa0a144bf54726daeab19fdca5d168040", null ]
+    ] ],
     [ "wiced_bt_ble_ext_adv_report_count_e", "group__btm__ble__api__functions.html#ga8739336a6d1ebba1faaf824bc5c1024d", [
       [ "ADV_REP_EVT_COUNT_MIN", "group__btm__ble__api__functions.html#gga8739336a6d1ebba1faaf824bc5c1024da2e150f9aebb639d8b399e3063d3db808", null ],
       [ "ADV_REP_EVT_COUNT_MAX", "group__btm__ble__api__functions.html#gga8739336a6d1ebba1faaf824bc5c1024da7e93b8fb79eb54fffb0ef7aae25a3bbc", null ]
@@ -382,6 +411,8 @@ var group__btm__ble__api__functions =
       [ "WICED_BT_BLE_PERIODIC_ADV_SYNC_LOST_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794aaaf1d4bf45583f02dda32444fc82aff7", null ],
       [ "WICED_BT_BLE_ADV_SET_TERMINATED_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a7c965ceaa4c4c40f6ac8c8da92361fde", null ],
       [ "WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a9c8f066bee4af20cde89bffa2f0a5be0", null ],
-      [ "WICED_BT_BLE_CHANNEL_SEL_ALGO_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a5d7b21cd7c34e47c01ff033d73d7a26d", null ]
+      [ "WICED_BT_BLE_CHANNEL_SEL_ALGO_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a5d7b21cd7c34e47c01ff033d73d7a26d", null ],
+      [ "WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794addd59b434c4315dcdfee99c1a211a9cd", null ],
+      [ "WICED_BT_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a526894e0785581c1c109031c06f18536", null ]
     ] ]
 ];

@@ -5,6 +5,7 @@ var searchData=
   ['bd_5fname',['bd_name',['../structwiced__bt__dev__name__and__class__t.html#a3558c0d699cec072d51a65fa885eb39a',1,'wiced_bt_dev_name_and_class_t']]],
   ['bda',['bda',['../structwiced__bt__ble__address__t.html#a716ccf91b7a7048b73c1e836e7782afe',1,'wiced_bt_ble_address_t']]],
   ['bdaddr',['bdaddr',['../structwiced__bt__gatt__eatt__connection__indication__event__t.html#a33f08900bfd8379c68c0c85ec812a3cc',1,'wiced_bt_gatt_eatt_connection_indication_event_t::bdaddr()'],['../structwiced__bt__gatt__eatt__connection__confirmation__event__t.html#a43609d063dd067cb31d94e18163b3393',1,'wiced_bt_gatt_eatt_connection_confirmation_event_t::bdaddr()']]],
+  ['biginfo_5fadv_5freport',['biginfo_adv_report',['../unionwiced__bt__ble__adv__ext__event__data__t.html#a16f522d07102a2440787c6a55a37519a',1,'wiced_bt_ble_adv_ext_event_data_t']]],
   ['ble',['ble',['../unionwiced__bt__dev__pairing__info__t.html#a50777c69302df1ab048ee099e125ae19',1,'wiced_bt_dev_pairing_info_t']]],
   ['ble_5faddr_5ftype',['ble_addr_type',['../structwiced__bt__ble__scan__results__t.html#ac40d8a76f432cee5f3fe074a23e9521d',1,'wiced_bt_ble_scan_results_t::ble_addr_type()'],['../structwiced__bt__device__sec__keys__t.html#a662c31c3b4577be030465e29f7ddff8d',1,'wiced_bt_device_sec_keys_t::ble_addr_type()']]],
   ['ble_5fadvert_5fstate_5fchanged',['ble_advert_state_changed',['../unionwiced__bt__management__evt__data__t.html#ac4ba345e189e8054bd0d970b78556681',1,'wiced_bt_management_evt_data_t']]],
@@ -24,5 +25,6 @@ var searchData=
   ['br_5fpacket_5ftypes',['br_packet_types',['../unionwiced__bt__br__edr__pkt__type__stats.html#aff8999a1d20c8033452e2a080b0404a0',1,'wiced_bt_br_edr_pkt_type_stats']]],
   ['buffer',['buffer',['../structwiced__bt__gatt__buffer__request__t.html#a14ea41e9f4b0a9d8c85928f936ec87d5',1,'wiced_bt_gatt_buffer_request_t']]],
   ['buffer_5frequest',['buffer_request',['../unionwiced__bt__gatt__event__data__t.html#a63b2c97e5d33c59213742ec6829be9d5',1,'wiced_bt_gatt_event_data_t']]],
-  ['buffer_5fxmitted',['buffer_xmitted',['../unionwiced__bt__gatt__event__data__t.html#aeff4fc0fddaf005b07a149278cc06b0b',1,'wiced_bt_gatt_event_data_t']]]
+  ['buffer_5fxmitted',['buffer_xmitted',['../unionwiced__bt__gatt__event__data__t.html#aeff4fc0fddaf005b07a149278cc06b0b',1,'wiced_bt_gatt_event_data_t']]],
+  ['burst_5fnumber',['burst_number',['../structwiced__bt__ble__biginfo__adv__report__t.html#a45c587d970345865089e8180c4e4249f',1,'wiced_bt_ble_biginfo_adv_report_t']]]
 ];

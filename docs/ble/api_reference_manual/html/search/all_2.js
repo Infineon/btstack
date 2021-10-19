@@ -18,6 +18,7 @@ var searchData=
   ['be_5fstream_5fto_5fuint64',['BE_STREAM_TO_UINT64',['../group__bt__types.html#ga4af9adb72d2ec435804009e3a42faf95',1,'wiced_bt_types.h']]],
   ['be_5fstream_5fto_5fuint8',['BE_STREAM_TO_UINT8',['../group__bt__types.html#ga4454b5f42ce3b497db9a1da9e7dab8e0',1,'wiced_bt_types.h']]],
   ['best_5feffort',['BEST_EFFORT',['../group__bt__types.html#ga7e50b31f4954e8f57d1d5f3bf7587a5e',1,'wiced_bt_types.h']]],
+  ['biginfo_5fadv_5freport',['biginfo_adv_report',['../unionwiced__bt__ble__adv__ext__event__data__t.html#a16f522d07102a2440787c6a55a37519a',1,'wiced_bt_ble_adv_ext_event_data_t']]],
   ['bit16_5fto_5f8',['BIT16_TO_8',['../group__wicedbt__gatt.html#gad41c1417450d3265f5f3fd404ca8d4cc',1,'wiced_bt_gatt.h']]],
   ['ble',['ble',['../unionwiced__bt__dev__pairing__info__t.html#a50777c69302df1ab048ee099e125ae19',1,'wiced_bt_dev_pairing_info_t']]],
   ['ble_5faddr_5fpublic',['BLE_ADDR_PUBLIC',['../group__bt__types.html#ga409fbb547f9650620650b5301df0e2ff',1,'wiced_bt_types.h']]],
@@ -195,6 +196,7 @@ var searchData=
   ['btm_5fble_5fgeneral_5fdiscoverable_5fflag',['BTM_BLE_GENERAL_DISCOVERABLE_FLAG',['../group__wicedbt___device_management.html#ga4f81edfc3b5c8c09a6763ad0ea208d5b',1,'wiced_bt_ble.h']]],
   ['btm_5fble_5fkey_5ftype_5fer',['BTM_BLE_KEY_TYPE_ER',['../group__wicedbt___device_management.html#gab678a6f6a58d58330ecc4d6c40c350b4',1,'wiced_bt_dev.h']]],
   ['btm_5fble_5fkey_5ftype_5fid',['BTM_BLE_KEY_TYPE_ID',['../group__wicedbt___device_management.html#ga815234b7d0e7c2973a647fe424a18b52',1,'wiced_bt_dev.h']]],
+  ['btm_5fble_5flegacy_5fad_5fdata_5flen',['BTM_BLE_LEGACY_AD_DATA_LEN',['../group__wicedbt___device_management.html#gae3ba16e014add5799d4b298344cb5984',1,'wiced_bt_ble.h']]],
   ['btm_5fble_5flimited_5fdiscoverable_5fflag',['BTM_BLE_LIMITED_DISCOVERABLE_FLAG',['../group__wicedbt___device_management.html#gab20d056f3428f5778449830c448fb342',1,'wiced_bt_ble.h']]],
   ['btm_5fble_5flimited_5fdiscoverable_5fmask',['BTM_BLE_LIMITED_DISCOVERABLE_MASK',['../group__wicedbt___device_management.html#gab0cd1e19edb5ca7afac36773db1d747f',1,'wiced_bt_ble.h']]],
   ['btm_5fble_5fnon_5flimited_5fdiscoverable_5fflag',['BTM_BLE_NON_LIMITED_DISCOVERABLE_FLAG',['../group__wicedbt___device_management.html#ga701fee231d79e37bfc459434fc980228',1,'wiced_bt_ble.h']]],
@@ -341,6 +343,7 @@ var searchData=
   ['buffer',['buffer',['../structwiced__bt__gatt__buffer__request__t.html#a14ea41e9f4b0a9d8c85928f936ec87d5',1,'wiced_bt_gatt_buffer_request_t']]],
   ['buffer_5frequest',['buffer_request',['../unionwiced__bt__gatt__event__data__t.html#a63b2c97e5d33c59213742ec6829be9d5',1,'wiced_bt_gatt_event_data_t']]],
   ['buffer_5fxmitted',['buffer_xmitted',['../unionwiced__bt__gatt__event__data__t.html#aeff4fc0fddaf005b07a149278cc06b0b',1,'wiced_bt_gatt_event_data_t']]],
+  ['burst_5fnumber',['burst_number',['../structwiced__bt__ble__biginfo__adv__report__t.html#a45c587d970345865089e8180c4e4249f',1,'wiced_bt_ble_biginfo_adv_report_t']]],
   ['bluetooth_20stack_20initialize_20_26_20configuration',['Bluetooth Stack Initialize &amp; Configuration',['../group__wiced__bt__cfg.html',1,'']]],
   ['bluetooth_20stack_20platform_20interface',['Bluetooth Stack Platform Interface',['../group__wiced__bt__platform__group.html',1,'']]]
 ];
