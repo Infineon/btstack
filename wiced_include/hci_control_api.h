@@ -256,6 +256,8 @@
 #define HCI_CONTROL_AG_COMMAND_DISCONNECT                   ( ( HCI_CONTROL_GROUP_AG << 8 ) | 0x02 )    /* Release HF connection */
 #define HCI_CONTROL_AG_COMMAND_OPEN_AUDIO                   ( ( HCI_CONTROL_GROUP_AG << 8 ) | 0x03 )    /* Create audio connection on existing service level connection */
 #define HCI_CONTROL_AG_COMMAND_CLOSE_AUDIO                  ( ( HCI_CONTROL_GROUP_AG << 8 ) | 0x04 )    /* Disconnect audio */
+#define HCI_CONTROL_AG_COMMAND_SET_CIND                     ( (HCI_CONTROL_GROUP_AG << 8  ) | 0x05 )    /* Set CIND */
+#define HCI_CONTROL_AG_COMMAND_STR                          ( (HCI_CONTROL_GROUP_AG << 8  ) | 0x06 ) /* Send AT Command */
 
 /* BT Serial over GATT service commands */
 #define HCI_CONTROL_BSG_COMMAND_DATA                        ( ( HCI_CONTROL_GROUP_BSG << 8 ) | 0x03 )    /* Send data */
@@ -781,6 +783,8 @@
 #define HCI_CONTROL_AG_EVENT_CONNECTED                      ( ( HCI_CONTROL_GROUP_AG << 8 ) | 0x03 )
 #define HCI_CONTROL_AG_EVENT_AUDIO_OPEN                     ( ( HCI_CONTROL_GROUP_AG << 8 ) | 0x04 )
 #define HCI_CONTROL_AG_EVENT_AUDIO_CLOSE                    ( ( HCI_CONTROL_GROUP_AG << 8 ) | 0x05 )
+#define HCI_CONTROL_AG_EVENT_AT_CMD                         ( ( HCI_CONTROL_GROUP_AG << 8)  | 0x06 )
+#define HCI_CONTROL_AG_EVENT_CLCC_REQ                       ( ( HCI_CONTROL_GROUP_AG << 8 ) | 0x07 )
 
 /* Events for the Broadcom Serial over GATT profile */
 #define HCI_CONTROL_BSG_EVENT_CONNECTED                     ( ( HCI_CONTROL_GROUP_BSG << 8 ) | 0x01 )    /* BSG Connected */

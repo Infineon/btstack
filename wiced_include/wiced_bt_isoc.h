@@ -442,14 +442,15 @@ wiced_result_t wiced_bt_isoc_central_create_cis(wiced_bt_isoc_create_cis_param_t
  *
  *                  Create CIS (Connected Isochronous Stream) connection
  *
- * @param[in]       peer_bda        : Peer Bluetooth Address
- * @param[in]       cis_handle      : CIS handle
+ * @param[in]       cis_count         : Number of elements in Peer BDA list and CIS handle list.
+ * @param[in]       peer_bda_list   : Peer Bluetooth Address List
+ * @param[in]       cis_handle_list : CIS handles List
  *
  * @return      status
  *
  *  Note : Once CIS is establish WICED_BLE_ISOC_CIS_ESTABLISHED event will be received in registered application callback.
  */
-wiced_result_t wiced_bt_isoc_create_cis_by_bda(wiced_bt_device_address_t peer_bda, uint16_t cis_handle);
+wiced_result_t wiced_bt_isoc_create_cis_by_bda(uint8_t cis_count, uint8_t *peer_bda_list, uint16_t *cis_handle_list);
 
 /**
  *
@@ -464,7 +465,8 @@ wiced_result_t wiced_bt_isoc_create_cis_by_bda(wiced_bt_device_address_t peer_bd
  *
  *  Note : Once CIS is establish WICED_BLE_ISOC_CIS_ESTABLISHED event will be received in registered application callback.
  */
-wiced_result_t wiced_bt_isoc_peripheral_accept_cis(uint8_t cig_id, uint8_t cis_id, uint16_t cis_conn_handle, uint8_t src_ase_id, uint8_t sink_ase_id);
+wiced_result_t wiced_bt_isoc_peripheral_accept_cis(
+    uint8_t cig_id, uint8_t cis_id, uint16_t cis_conn_handle, uint8_t src_ase_id, uint8_t sink_ase_id);
 
 /**
  *
@@ -480,6 +482,20 @@ wiced_result_t wiced_bt_isoc_peripheral_accept_cis(uint8_t cig_id, uint8_t cis_i
  *
  */
 wiced_result_t wiced_bt_isoc_peripheral_reject_cis(uint16_t cis_handle, uint8_t reason);
+
+/**
+ *
+ * Function         wiced_bt_isoc_peripheral_remove_cig
+ *
+ *                  Remove CIG (Connected Isochronous Group)
+ *                  Slave should call this API on receiving WICED_BLE_ISOC_CIS_DISCONNECTED event in registered application callback and if ASCS State is Releasing
+ *
+ * @param[in]       cig_id  : CIG ID
+ *
+ * @return      status
+ *
+ */
+wiced_result_t wiced_bt_isoc_peripheral_remove_cig(uint8_t cig_id);
 
 /**
  *

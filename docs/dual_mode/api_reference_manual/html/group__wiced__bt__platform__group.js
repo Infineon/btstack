@@ -23,7 +23,6 @@ var group__wiced__bt__platform__group =
     [ "wiced_bt_internal_post_stack_init_cb", "group__wiced__bt__platform__group.html#gaaee366da383e708d1dea13b16cbba1e5", null ],
     [ "wiced_bt_internal_stack_evt_handler_cb", "group__wiced__bt__platform__group.html#ga1b2ab26fed7589a50fad5ecc0cc6f1d3", null ],
     [ "wiced_bt_stack_platform_initialize", "group__wiced__bt__platform__group.html#ga91ec048a4f0938e38123ccd86b267b49", null ],
-    [ "wiced_bt_stack_platform_deinit", "group__wiced__bt__platform__group.html#ga730fd4fa5ec00d5d786274807315cc75", null ],
     [ "wiced_bt_process_acl_data", "group__wiced__bt__platform__group.html#ga98a0933baa000767bc3ad60d0a7890e3", null ],
     [ "wiced_bt_process_hci_events", "group__wiced__bt__platform__group.html#ga4e569527f83bc2d6f443ef3ae0f83ece", null ],
     [ "wiced_bt_process_sco_data", "group__wiced__bt__platform__group.html#ga3e08857799934c4e9eb3108e16cc95e1", null ],

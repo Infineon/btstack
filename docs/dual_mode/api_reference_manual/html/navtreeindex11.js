@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structwiced__bt__avrc__config__t.html#a7d8188ffbad35c3a568d7cb99f5159be":[1,2,1,4],
 "structwiced__bt__avrc__config__t.html#a8295003c1254e59cf6a788006d2041b1":[1,2,1,5],
 "structwiced__bt__avrc__config__t.html#aaa52d47b6a78c37e627640c5e58346a2":[1,2,1,7],
 "structwiced__bt__avrc__config__t.html#acc1aac462450108fc0dabffe6579d0d6":[1,2,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structwiced__bt__ble__ext__adv__report__t.html#ae1d54d04d5e0541c37861a28a86306c7":[1,4,0,13,4],
 "structwiced__bt__ble__ext__adv__report__t.html#af5ccb86cd144447ae03450b0479d5cb7":[1,4,0,13,1],
 "structwiced__bt__ble__ext__adv__report__t.html#af9444d8e38e41c31dd76e889efb31819":[1,4,0,13,8],
-"structwiced__bt__ble__ext__adv__set__terminated__event__data__t.html":[1,4,0,16],
-"structwiced__bt__ble__ext__adv__set__terminated__event__data__t.html#a7bbad4fc9c743fd017ab4cfb8113e283":[1,4,0,16,1]
+"structwiced__bt__ble__ext__adv__set__terminated__event__data__t.html":[1,4,0,16]
 };

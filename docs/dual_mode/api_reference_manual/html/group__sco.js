@@ -25,7 +25,7 @@ var group__sco =
     [ "WICED_SCO_PKT_TYPES_MASK_NO_2_EV5", "group__sco.html#gadf96df28e67a977311d78e9345420a1a", null ],
     [ "WICED_SCO_PKT_TYPES_MASK_NO_3_EV5", "group__sco.html#ga27dd611918b66dda74daf54abd072d87", null ],
     [ "WICED_BT_SCO_DATA_CB_GET_LENGTH", "group__sco.html#ga790bb3988e26ca2335c728a350c63736", null ],
-    [ "wiced_bt_sco_create_as_acceptor", "group__sco.html#ga2a00baeb2aacd89a8a5d8d4712327ea1", null ],
+    [ "wiced_bt_sco_create_as_acceptor", "group__sco.html#ga710aef2dfe643f8e121777d9e74e9bdc", null ],
     [ "wiced_bt_sco_data_cb_t", "group__sco.html#ga433b5e0db003b8b72321db4556af7a85", null ],
     [ "wiced_bt_sco_route_path_t", "group__sco.html#ga4548402097137688617e39d9377fc8a2", [
       [ "WICED_BT_SCO_OVER_HCI", "group__sco.html#gga4548402097137688617e39d9377fc8a2a1743bae050dc932671cc4a2ada6b9032", null ],

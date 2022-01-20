@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"group__wiced__mem.html#ga1b0787e7f01a5eabf0fda49461d4a0fa":[1,11,23],
 "group__wiced__mem.html#ga1f954d898c5466a865a47ab097f385e7":[1,11,16],
 "group__wiced__mem.html#ga29951f8f099d15eb96c47cfbdf656c3c":[1,11,7],
 "group__wiced__mem.html#ga3142e3e24bbbf661867d9abd49bf94cd":[1,11,21],
@@ -14,10 +13,12 @@ var NAVTREEINDEX4 =
 "group__wiced__mem.html#ga5d688277844f22111723e3339e725d8a":[1,11,19],
 "group__wiced__mem.html#ga62e721c9f6a3f49dd10e5633a6a280ad":[1,11,20],
 "group__wiced__mem.html#ga652a40fcdb27f8fea2d125e82aef9750":[1,11,18],
-"group__wiced__mem.html#ga781d441cbf87a58a121c92fb9132d9b1":[1,11,30],
+"group__wiced__mem.html#ga781d441cbf87a58a121c92fb9132d9b1":[1,11,32],
+"group__wiced__mem.html#ga84a646c738099e9e0b4f764c3b6596e9":[1,11,31],
 "group__wiced__mem.html#ga88ac7077880864d79dbc134e460a814c":[1,11,27],
 "group__wiced__mem.html#ga8eb99f9920449033af7323ed0eb8f69c":[1,11,6],
-"group__wiced__mem.html#ga9a5e60280610d3027effc84ee35654b6":[1,11,31],
+"group__wiced__mem.html#ga97f9f80721d4e711b6243992a9d1939b":[1,11,30],
+"group__wiced__mem.html#ga9a5e60280610d3027effc84ee35654b6":[1,11,33],
 "group__wiced__mem.html#ga9ddff2d22209edda9d0193a2c81dacfc":[1,11,3],
 "group__wiced__mem.html#gaa0382948eb39d8de2496e8cd11ee13ce":[1,11,11],
 "group__wiced__mem.html#gaba17f78395b7d5d3be0a963fc64d8a82":[1,11,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "group__wicedbt___device_management.html#ggab94d20733e23c6a87c030964a9215bcbafe57c2809c252b3cbfe8a7967141d19e":[1,4,139,1],
 "group__wicedbt___device_management.html#ggab993ff958015bba892afb8f472bd99d1a0d00d87b03f809f13ae1db96dd400495":[1,4,132,1],
 "group__wicedbt___device_management.html#ggab993ff958015bba892afb8f472bd99d1a1410073aa4272bd4a53abfae7f1cc3b9":[1,4,132,2],
-"group__wicedbt___device_management.html#ggab993ff958015bba892afb8f472bd99d1a9c767691088264ae4be92eb6b067c4d3":[1,4,132,4],
-"group__wicedbt___device_management.html#ggab993ff958015bba892afb8f472bd99d1aaf14c124fa9038a22fc1636c37db9e7c":[1,4,132,3]
+"group__wicedbt___device_management.html#ggab993ff958015bba892afb8f472bd99d1a9c767691088264ae4be92eb6b067c4d3":[1,4,132,4]
 };

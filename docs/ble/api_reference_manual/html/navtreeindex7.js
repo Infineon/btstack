@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"structwiced__bt__l2cap__cfg__information__t.html":[1,0,1],
+"structwiced__bt__l2cap__cfg__information__t.html#a02c533f5b961c30e86f47c82ddeb0afb":[1,0,1,1],
 "structwiced__bt__l2cap__cfg__information__t.html#a02fac97e495a16dedb41d26b58822389":[1,0,1,5],
 "structwiced__bt__l2cap__cfg__information__t.html#a14d7acfffa5a30489df9946b721fdbf4":[1,0,1,0],
 "structwiced__bt__l2cap__cfg__information__t.html#a1d2c893de731a828f45f761ebcd549db":[1,0,1,3],

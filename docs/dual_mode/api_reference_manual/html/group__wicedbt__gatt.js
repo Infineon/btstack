@@ -348,6 +348,7 @@ var group__wicedbt__gatt =
       [ "WICED_BT_GATT_PRC_IN_PROGRESS", "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ad98032cb0f4e9f788e95ff168ca82f45", null ],
       [ "WICED_BT_GATT_OUT_OF_RANGE", "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a0036290c8a33c53d72e27b02865528b3", null ],
       [ "WICED_BT_GATT_BAD_OPCODE", "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a84304c1c9643ef269e18963fe8d11df0", null ],
+      [ "WICED_BT_GATT_NOT_IMPLEMENTED", "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ac250d7a0f40a69c21f1f57f8be7bc6d3", null ],
       [ "WICED_BT_GATT_INVALID_CONNECTION_ID", "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a9d2a6d96d94e68fca532e7b39905fcad", null ]
     ] ],
     [ "wiced_bt_gatt_opcode_e", "group__wicedbt__gatt.html#ga1bec0037cd2837dc90a967458b3cc68b", [

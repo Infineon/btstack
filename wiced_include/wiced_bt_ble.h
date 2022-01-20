@@ -1323,9 +1323,9 @@ wiced_bool_t wiced_bt_notify_multi_advertisement_packet_transmissions( uint8_t a
  * Grant or deny access.  Used in response to an BTM_SECURITY_REQUEST_EVT event.
  *
  * @param[in]       bd_addr     : peer device bd address.
- * @param[in]       res         : BTM_SUCCESS to grant access;
-                                  BTM_MODE_UNSUPPORTED, if local device does not allow pairing;
-                                  BTM_REPEATED_ATTEMPTS otherwise
+ * @param[in]       res         : WICED_BT_SUCCESS to grant access;
+                                  WICED_BT_UNSUPPORTED , if local device does not allow pairing;
+                                  WICED_BT_REPEATED_ATTEMPTS otherwise
  *
  * @return          <b> None </b>
  *
@@ -1922,7 +1922,7 @@ wiced_bt_dev_status_t wiced_bt_ble_set_default_periodic_adv_sync_transfer_param(
 /**
  * Function         wiced_ble_private_device_address_resolution
  *
- *                  Private Device Address Resolution
+ *                  This API verifies whether given device address is Resolvable Private Address or not
  *
  * @param rpa       BLE Resolvable Private Address
  * @param irk       BLE IRK

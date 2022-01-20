@@ -219,16 +219,6 @@ typedef struct
 extern wiced_result_t wiced_bt_stack_platform_initialize(wiced_bt_stack_platform_t * platform_interfaces);
 
 /**
- * DeInitialize the platform interfaces and free the memory allocated by #wiced_bt_stack_platform_initialize API
- *
- * @return   <b> WICED_BT_SUCCESS </b> : on success; \n
- *           <b> WICED_BT_ERROR  </b>  : if an error occurred
- *
- * @note : After calling this API, DON'T call any BT API without calling #wiced_bt_stack_platform_initialize again.
- */
-extern wiced_result_t wiced_bt_stack_platform_deinit(void);
-
-/**
  * Called by the porting layer to process the incoming ACL data received from the
  * remote bluetooth device
  *

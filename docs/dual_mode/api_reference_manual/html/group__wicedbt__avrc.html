@@ -1901,12 +1901,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga30c0a991fab701c36892334419e20c94"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#ga30c0a991fab701c36892334419e20c94">wiced_bt_avrc_send_passthrough_rsp</a> (uint8_t handle, uint8_t label, <a class="el" href="group__wicedbt__avrc.html#gacaa07739c3008013cc6a696bec35b9a9">wiced_bt_avrc_ctype_t</a> ctype, <a class="el" href="unionwiced__bt__avrc__pass__thru__cmd__t.html">wiced_bt_avrc_pass_thru_cmd_t</a> *p_msg)</td></tr>
 <tr class="memdesc:ga30c0a991fab701c36892334419e20c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a PASS THROUGH response to the peer device.  <a href="#ga30c0a991fab701c36892334419e20c94">More...</a><br /></td></tr>
 <tr class="separator:ga30c0a991fab701c36892334419e20c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16abdf4ca6414f08eede51a72067c464"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#ga16abdf4ca6414f08eede51a72067c464">wiced_bt_avrc_send_vendor_cmd</a> (uint8_t handle, uint8_t label, <a class="el" href="structwiced__bt__avrc__cmd__t.html">wiced_bt_avrc_cmd_t</a> *p_msg)</td></tr>
-<tr class="memdesc:ga16abdf4ca6414f08eede51a72067c464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a VENDOR DEPENDENT command to the peer device.  <a href="#ga16abdf4ca6414f08eede51a72067c464">More...</a><br /></td></tr>
-<tr class="separator:ga16abdf4ca6414f08eede51a72067c464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b9aa857801f0f769003cd4864be37c4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#ga2b9aa857801f0f769003cd4864be37c4">wiced_bt_avrc_send_vendor_rsp</a> (uint8_t handle, uint8_t label, <a class="el" href="structwiced__bt__avrc__rsp__t.html">wiced_bt_avrc_rsp_t</a> *p_msg)</td></tr>
-<tr class="memdesc:ga2b9aa857801f0f769003cd4864be37c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a VENDOR DEPENDENT response to the peer device.  <a href="#ga2b9aa857801f0f769003cd4864be37c4">More...</a><br /></td></tr>
-<tr class="separator:ga2b9aa857801f0f769003cd4864be37c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23ca1c8487ada9117720153a9fe67415"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#ga23ca1c8487ada9117720153a9fe67415">wiced_bt_avrc_send_vendor_msg</a> (uint8_t handle, uint8_t label, uint8_t cr, <a class="el" href="structwiced__bt__avrc__hdr__t.html">wiced_bt_avrc_hdr_t</a> *p_hdr, uint32_t company_id, <a class="el" href="structwiced__bt__avrc__xmit__buf__t.html">wiced_bt_avrc_xmit_buf_t</a> *p_msg)</td></tr>
+<tr class="memdesc:ga23ca1c8487ada9117720153a9fe67415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a VENDOR DEPENDENT message to the peer device.  <a href="#ga23ca1c8487ada9117720153a9fe67415">More...</a><br /></td></tr>
+<tr class="separator:ga23ca1c8487ada9117720153a9fe67415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf82aba859dc9511b2f3adb64e4b45d76"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__avrc.html#gaf82aba859dc9511b2f3adb64e4b45d76">wiced_bt_avrc_set_trace_level</a> (uint8_t new_level)</td></tr>
 <tr class="memdesc:gaf82aba859dc9511b2f3adb64e4b45d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the trace level for AVRC.  <a href="#gaf82aba859dc9511b2f3adb64e4b45d76">More...</a><br /></td></tr>
 <tr class="separator:gaf82aba859dc9511b2f3adb64e4b45d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3961,14 +3958,14 @@ Events that can be registered for notifications</h2></td></tr>
 
 </div>
 </div>
-<a id="ga16abdf4ca6414f08eede51a72067c464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16abdf4ca6414f08eede51a72067c464">&#9670;&nbsp;</a></span>wiced_bt_avrc_send_vendor_cmd()</h2>
+<a id="ga23ca1c8487ada9117720153a9fe67415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23ca1c8487ada9117720153a9fe67415">&#9670;&nbsp;</a></span>wiced_bt_avrc_send_vendor_msg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t wiced_bt_avrc_send_vendor_cmd </td>
+          <td class="memname">uint16_t wiced_bt_avrc_send_vendor_msg </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -3982,7 +3979,25 @@ Events that can be registered for notifications</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__avrc__cmd__t.html">wiced_bt_avrc_cmd_t</a> *&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__avrc__hdr__t.html">wiced_bt_avrc_hdr_t</a> *&#160;</td>
+          <td class="paramname"><em>p_hdr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>company_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__avrc__xmit__buf__t.html">wiced_bt_avrc_xmit_buf_t</a> *&#160;</td>
           <td class="paramname"><em>p_msg</em>&#160;</td>
         </tr>
         <tr>
@@ -3993,59 +4008,16 @@ Events that can be registered for notifications</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Send a VENDOR DEPENDENT command to the peer device. </p>
-<p>This function can only be called for controller role connections. Any response message from the peer is passed back through the wiced_bt_avrc_msg_cback_t callback function.</p>
+<p>Send a VENDOR DEPENDENT message to the peer device. </p>
+<p>This function can be called for CT/TG role connections. Any response message from the peer is passed back through the wiced_bt_avrc_msg_cback_t callback function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: Connection handle </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">label</td><td>: Transaction label </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_msg</td><td>: Pointer to the vendor dependent command</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Result code (see <a class="el" href="group__wicedbt__avrc.html#AVRC_RESULT">AVRC result codes</a>) </dd></dl>
-
-</div>
-</div>
-<a id="ga2b9aa857801f0f769003cd4864be37c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2b9aa857801f0f769003cd4864be37c4">&#9670;&nbsp;</a></span>wiced_bt_avrc_send_vendor_rsp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t wiced_bt_avrc_send_vendor_rsp </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>label</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__avrc__rsp__t.html">wiced_bt_avrc_rsp_t</a> *&#160;</td>
-          <td class="paramname"><em>p_msg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Send a VENDOR DEPENDENT response to the peer device. </p>
-<p>This function can only be called for target role connections. This function must be called when a VENDOR DEPENDENT command message is received from the peer through the wiced_bt_avrc_msg_cback_t callback function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: Connection handle </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">label</td><td>: Transaction label </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_msg</td><td>: Pointer to the vendor dependent response</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cr</td><td>: Command or resonse </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_hdr</td><td>: Pointer to the avrc header, which gets copied to be used as protocol header</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">company_id</td><td>: This unique Company_ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_msg</td><td>: Pointer to the vendor dependent data <code>p_msg</code> can be freed by application on receiving the AVRC_APP_BUFFER_TX_EVT. The p_msg pointer shall be valid and kept to the contents of location pointed to by the p_msg pointer shall be valid and kept.</td></tr>
   </table>
   </dd>
 </dl>

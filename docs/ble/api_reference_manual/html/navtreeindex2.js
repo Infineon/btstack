@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"group__wiced__mem.html#gaba17f78395b7d5d3be0a963fc64d8a82":[1,6,13],
 "group__wiced__mem.html#gabd087700ddd0362c48b52e9c6f66a059":[1,6,9],
 "group__wiced__mem.html#gabf9a622ef54fe5731cec0a055923c96f":[1,6,24],
 "group__wiced__mem.html#gac2d26815b0ed4aa9f7d72650d7c5b28f":[1,6,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ad269ecdb719b290553cc44f03cd0b280":[1,1,237,9],
 "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65adab633d8b20b3bdae03abdca5e38a58e":[1,1,237,25],
 "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ae3453acd1e9a4c6b87ecb92186dcdb43":[1,1,237,17],
-"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ae682f8c7b29b62feff081eff032d9c90":[1,1,237,3],
-"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65af23f68e9b7a9061e6aff1a42e5d0734b":[1,1,237,10]
+"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ae682f8c7b29b62feff081eff032d9c90":[1,1,237,3]
 };

@@ -8,6 +8,15 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.3.0
+BTSTACK3.3 release contains bug fixes and and an enhancement listed below.
+ - Fix for GAP conformance test case GAP/SEC/SEM/BV-14-C.
+ - Fix for an issue where Maximum possible multi-adv connections value was wrong and adv instance creation was failing.
+ - Update the documentation for wiced_bt_ble_security_grant() API.
+ - Removed unused platform API wiced_bt_stack_platform_deinit().
+ - Added memory management APIs to allocate free long term memory blocks, wiced_memory_alloc_long_term_mem_block() and wiced_memory_free_long_term_mem_block() in wiced_memory.h
+
+
 ## V3.2.0
 BTSTACK3.2 contains below updates to the Bluetooth host stack:
  - New APIs added

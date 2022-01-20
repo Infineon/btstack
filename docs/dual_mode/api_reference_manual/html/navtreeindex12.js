@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structwiced__bt__ble__ext__adv__set__terminated__event__data__t.html#a7bbad4fc9c743fd017ab4cfb8113e283":[1,4,0,16,1],
 "structwiced__bt__ble__ext__adv__set__terminated__event__data__t.html#a91935b1a2b914c2b978805bef6129fdc":[1,4,0,16,0],
 "structwiced__bt__ble__ext__adv__set__terminated__event__data__t.html#ad56295f549b2ff83e0fae66abeb3b5aa":[1,4,0,16,3],
 "structwiced__bt__ble__ext__adv__set__terminated__event__data__t.html#af3429b0961d99f6e6bfb288b750403e3":[1,4,0,16,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structwiced__bt__dev__inquiry__scan__result__t.html#adae49a120fa48dd7fb3f948970051f62":[1,4,10,8],
 "structwiced__bt__dev__inquiry__scan__result__t.html#adba76039a4561f2c0e7d44804b8df420":[1,4,10,3],
 "structwiced__bt__dev__inquiry__scan__result__t.html#aec8aa934a6f6e7083a719bb9697c4bcf":[1,4,10,6],
-"structwiced__bt__dev__local__addr__ext__t.html":[1,4,6],
-"structwiced__bt__dev__local__addr__ext__t.html#a0c3da1c35217e68c22e3aa1eb56d7f71":[1,4,6,1]
+"structwiced__bt__dev__local__addr__ext__t.html":[1,4,6]
 };

@@ -2,7 +2,7 @@ var NAVTREEINDEX10 =
 {
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a9352261c3103e9e53676935bdf558d72":[1,5,102,36],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a940dc749f8826007288271498e70c864":[1,5,102,22],
-"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a9d2a6d96d94e68fca532e7b39905fcad":[1,5,102,46],
+"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a9d2a6d96d94e68fca532e7b39905fcad":[1,5,102,47],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a9e7e92ed4815a5b58ccff7879ba1aa12":[1,5,102,21],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652aa4a45cb0c3f236a706ccfe15272fb67d":[1,5,102,8],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652aaf1eb294b5f8123d4072c3555456b9ee":[1,5,102,1],
@@ -13,6 +13,7 @@ var NAVTREEINDEX10 =
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ab5c9584dbc5c321853f20ca974b29278":[1,5,102,26],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ab740cd5de3c75c77290c477c72bdcc39":[1,5,102,0],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ac0952ad8cd93d418a30982310a70b749":[1,5,102,15],
+"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ac250d7a0f40a69c21f1f57f8be7bc6d3":[1,5,102,46],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ac3c64147f016a2d28fa71c7ba82a531f":[1,5,102,9],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652acc2bc3ff958f4fe3c5c7d1f57e2839b5":[1,5,102,42],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ad0d4739a3643df18be9c71a1dfa0fb44":[1,5,102,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structwiced__bt__avrc__cmd__t.html#aec979973c4db98919d34f4551796c1a9":[1,2,59,1],
 "structwiced__bt__avrc__config__t.html":[1,2,1],
 "structwiced__bt__avrc__config__t.html#a38e2647efd79e92aec32bce0ff37b918":[1,2,1,0],
-"structwiced__bt__avrc__config__t.html#a7c226a1040d2514641379a4f8f9f0b4e":[1,2,1,8],
-"structwiced__bt__avrc__config__t.html#a7d8188ffbad35c3a568d7cb99f5159be":[1,2,1,4]
+"structwiced__bt__avrc__config__t.html#a7c226a1040d2514641379a4f8f9f0b4e":[1,2,1,8]
 };

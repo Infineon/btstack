@@ -87,6 +87,7 @@ enum wiced_bt_gatt_status_e
     WICED_BT_GATT_PRC_IN_PROGRESS            = 0x8798,         /**< Procedure Already in Progress */
     WICED_BT_GATT_OUT_OF_RANGE               = 0x8799,         /**< Value Out of Range */
     WICED_BT_GATT_BAD_OPCODE                 = 0x879A,         /**< Bad opcode */
+    WICED_BT_GATT_NOT_IMPLEMENTED            = 0x879B,         /**< Not implemented */
 
 
     WICED_BT_GATT_INVALID_CONNECTION_ID      = 0xFFFF,         /**< Invalid connection id */
@@ -1900,6 +1901,44 @@ const uint8_t *wiced_bt_gatt_get_handle_value(uint16_t handle, int *p_len);
  * \return number of packets queued to tx
  */
 int wiced_bt_gatt_get_num_queued_tx_packets(uint16_t conn_id, int *p_fragments_with_controller);
+
+/** 
+* @brief Utility function to read local registered db by type, by iterating to the next in a loop
+* database entry. Initially \p p_db_start is set to NULL, which resets the search to the head of the local database. 
+* The database is traversed to locate the next entry which matches the intended \p type. 
+* If an entry is found the data of that entry is written to \p p_disc_data and the entry in the database is returned.
+* The returned entry is passed in the subsequent call to this function in \p p_db_start. 
+* If an entry is not found the function returns a NULL, which indicates that the entire database has been iterated and the calling loop
+* can end.
+* 
+* @param[in] type: Discovery type 
+* @param[in] p_db_start: The database entry to search from. Value of NULL, resets the database pointer to the head
+* @param[out] p_disc_data: discovered data, only valid if the return is not NULL
+* 
+* @return wiced_gattdb_entry_t *
+*/
+const wiced_gattdb_entry_t *wiced_bt_gattdb_local_read_data_by_type(wiced_bt_gatt_discovery_type_t type,
+                                                                    const wiced_gattdb_entry_t *p_db_start,
+                                                                    wiced_bt_gatt_discovery_data_t *p_disc_data);
+
+/** 
+ * @brief Utility function to return the 16 bit UUID of the database entry in the local database
+ *  This will return a attribute UUID in the entry. If the attribute uuid is not 2 bytes. It will return 0x0 which is invalid uuid.
+ * 
+ * @param[in] p_db_entry: Database entry for which the UUID is to be returned.
+ * 
+ * @return 16 bit UUID value if available, or 0
+*/
+uint16_t wiced_bt_gattdb_getAttrUUID16(const wiced_gattdb_entry_t *p_db_entry);
+
+/** 
+ * @brief Utility function to return the data of the database entry in the local database
+ * 
+ * @param[in] p_db_entry: Database entry of which the data is to be returned.
+ * 
+ * @return data of the database entry
+*/
+uint8_t *wiced_bt_gattdb_getAttrValue(const wiced_gattdb_entry_t *p_db_entry);
 
 #ifdef __cplusplus
 }

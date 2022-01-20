@@ -121,7 +121,7 @@ wiced_bt_dev_status_t wiced_bt_sco_create_as_initiator (wiced_bt_device_address_
 wiced_bt_dev_status_t wiced_bt_sco_create_as_acceptor_ex (wiced_bt_device_address_t remote_bda, uint16_t *p_sco_index);
 
 /**   defined this macro for backward compatiblity */
-#define wiced_bt_sco_create_as_acceptor(p_sco_idx)  wiced_bt_sco_create_as_acceptor_ex(NULL,  p_sco_index)
+#define wiced_bt_sco_create_as_acceptor(p_sco_index) wiced_bt_sco_create_as_acceptor_ex(NULL, p_sco_index)
 
 
 /**

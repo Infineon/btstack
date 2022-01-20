@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"structwiced__bt__dev__local__addr__ext__t.html#a0c3da1c35217e68c22e3aa1eb56d7f71":[1,4,6,1],
 "structwiced__bt__dev__local__addr__ext__t.html#a3c22cb04b0f6692c5e3f33bb1f3e82e1":[1,4,6,3],
 "structwiced__bt__dev__local__addr__ext__t.html#a89832b7e6f921a5fcc6fe266312dbd06":[1,4,6,2],
 "structwiced__bt__dev__local__addr__ext__t.html#aa4a021d6743d948fe2e1dc1b4669ca49":[1,4,6,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "structwiced__bt__l2cap__cfg__information__t.html#a02c533f5b961c30e86f47c82ddeb0afb":[1,0,4,1],
 "structwiced__bt__l2cap__cfg__information__t.html#a02fac97e495a16dedb41d26b58822389":[1,0,4,5],
 "structwiced__bt__l2cap__cfg__information__t.html#a14d7acfffa5a30489df9946b721fdbf4":[1,0,4,0],
-"structwiced__bt__l2cap__cfg__information__t.html#a1d2c893de731a828f45f761ebcd549db":[1,0,4,3],
-"structwiced__bt__l2cap__cfg__information__t.html#a1d7849e9c6ddf49a2fb4992a5e686e5e":[1,0,4,6]
+"structwiced__bt__l2cap__cfg__information__t.html#a1d2c893de731a828f45f761ebcd549db":[1,0,4,3]
 };

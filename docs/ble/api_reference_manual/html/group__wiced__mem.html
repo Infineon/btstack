@@ -203,6 +203,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4490eaf46263868144322240d5553285"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#ga4490eaf46263868144322240d5553285">wiced_bt_queue_get_count</a> (<a class="el" href="structwiced__bt__buffer__q__t.html">wiced_bt_buffer_q_t</a> *p_q)</td></tr>
 <tr class="memdesc:ga4490eaf46263868144322240d5553285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of items in the queue.  <a href="#ga4490eaf46263868144322240d5553285">More...</a><br /></td></tr>
 <tr class="separator:ga4490eaf46263868144322240d5553285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97f9f80721d4e711b6243992a9d1939b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wiced__mem.html#ga46491871adba51d8026e9fa85acbbaba">wiced_bt_buffer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#ga97f9f80721d4e711b6243992a9d1939b">wiced_memory_alloc_long_term_mem_block</a> (int size, const char *block_name)</td></tr>
+<tr class="memdesc:ga97f9f80721d4e711b6243992a9d1939b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate long term memory, typically used for control blocks allocated through config, not expected to be freed during the lifetime of the application.  <a href="#ga97f9f80721d4e711b6243992a9d1939b">More...</a><br /></td></tr>
+<tr class="separator:ga97f9f80721d4e711b6243992a9d1939b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84a646c738099e9e0b4f764c3b6596e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#ga84a646c738099e9e0b4f764c3b6596e9">wiced_memory_free_long_term_mem_block</a> (<a class="el" href="group__wiced__mem.html#ga46491871adba51d8026e9fa85acbbaba">wiced_bt_buffer_t</a> *p_mem)</td></tr>
+<tr class="memdesc:ga84a646c738099e9e0b4f764c3b6596e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free long term memory, used to free memory allocated with wiced_memory_allocate_long_term, typically called during application shutdown.  <a href="#ga84a646c738099e9e0b4f764c3b6596e9">More...</a><br /></td></tr>
+<tr class="separator:ga84a646c738099e9e0b4f764c3b6596e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga781d441cbf87a58a121c92fb9132d9b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#ga781d441cbf87a58a121c92fb9132d9b1">wiced_bt_get_heap_statistics</a> (void *p_heap, <a class="el" href="structwiced__bt__heap__statistics__t.html">wiced_bt_heap_statistics_t</a> *p_stats)</td></tr>
 <tr class="memdesc:ga781d441cbf87a58a121c92fb9132d9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Print the heap stats.  <a href="#ga781d441cbf87a58a121c92fb9132d9b1">More...</a><br /></td></tr>
 <tr class="separator:ga781d441cbf87a58a121c92fb9132d9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -943,6 +949,70 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of items in the queue </dd></dl>
+
+</div>
+</div>
+<a id="ga97f9f80721d4e711b6243992a9d1939b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97f9f80721d4e711b6243992a9d1939b">&#9670;&nbsp;</a></span>wiced_memory_alloc_long_term_mem_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__wiced__mem.html#ga46491871adba51d8026e9fa85acbbaba">wiced_bt_buffer_t</a>* wiced_memory_alloc_long_term_mem_block </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>block_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate long term memory, typically used for control blocks allocated through config, not expected to be freed during the lifetime of the application. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>: size of memory to be allocated</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the allocated memory </dd></dl>
+
+</div>
+</div>
+<a id="ga84a646c738099e9e0b4f764c3b6596e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga84a646c738099e9e0b4f764c3b6596e9">&#9670;&nbsp;</a></span>wiced_memory_free_long_term_mem_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_memory_free_long_term_mem_block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__wiced__mem.html#ga46491871adba51d8026e9fa85acbbaba">wiced_bt_buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>p_mem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free long term memory, used to free memory allocated with wiced_memory_allocate_long_term, typically called during application shutdown. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_mem</td><td>: pointer memory to be freed</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
 </div>
 </div>

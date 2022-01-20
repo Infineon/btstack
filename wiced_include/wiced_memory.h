@@ -197,7 +197,6 @@ uint32_t wiced_bt_get_largest_stack_heap_buffer(void);
  */
 void wiced_bt_free_buffer (wiced_bt_buffer_t* p_buf);
 
-
 /**
  * Gets the buffer size
  *
@@ -299,6 +298,28 @@ uint32_t wiced_bt_queue_is_empty (wiced_bt_buffer_q_t *p_q);
  * @return          number of items in the queue
  */
 uint32_t wiced_bt_queue_get_count(wiced_bt_buffer_q_t* p_q);
+
+/**
+ * Allocate long term memory, typically used for control blocks 
+ * allocated through config, not expected to be freed during the 
+ * lifetime of the application 
+ *
+ * @param[in]  size  : size of memory to be allocated
+ *
+ * @return     pointer to the allocated memory
+ */
+wiced_bt_buffer_t *wiced_memory_alloc_long_term_mem_block(int size, const char *block_name);
+
+/**
+ * Free long term memory, used to free memory allocated with 
+ * \ref wiced_memory_allocate_long_term, typically called during 
+ * application shutdown
+ *
+ * @param[in]  p_mem : pointer memory to be freed
+ *
+ * @return   none
+ */
+void wiced_memory_free_long_term_mem_block(wiced_bt_buffer_t *p_mem);
 
 
 /**

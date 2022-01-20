@@ -359,36 +359,25 @@ uint16_t wiced_bt_avrc_send_passthrough_rsp(uint8_t handle, uint8_t label, wiced
 
 
 /**
- * Send a VENDOR DEPENDENT command to the peer device.  This
- * function can only be called for controller role connections.
+ * Send a VENDOR DEPENDENT message to the peer device.  This
+ * function can  be called for CT/TG role connections.
  * Any response message from the peer is passed back through
  * the wiced_bt_avrc_msg_cback_t callback function.
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Transaction label
- * @param[in]       p_msg       : Pointer to the vendor dependent command
+ * @param[in]       cr          : Command or resonse
+ * @param[in]       p_hdr      :  Pointer to the avrc header, which gets copied to be used as protocol header  
+ * @param[in]       company_id  : This unique Company_ID 
+ * @param[in]       p_msg       : Pointer to the vendor dependent data \p p_msg 
+ *                                can be freed by application on receiving the AVRC_APP_BUFFER_TX_EVT. 
+ *                                The p_msg pointer shall be valid and kept to the contents of location 
+ *                                pointed to by the p_msg pointer shall be valid and kept.
  *
  * @return          Result code (see @ref AVRC_RESULT "AVRC result codes")
  *
  */
-uint16_t wiced_bt_avrc_send_vendor_cmd(uint8_t handle, uint8_t  label, wiced_bt_avrc_cmd_t *p_msg);
-
-
-/**
- * Send a VENDOR DEPENDENT response to the peer device.  This
- * function can only be called for target role connections.
- * This function must be called when a VENDOR DEPENDENT
- * command message is received from the peer through the
- * wiced_bt_avrc_msg_cback_t callback function.
- *
- * @param[in]       handle      : Connection handle
- * @param[in]       label       : Transaction label
- * @param[in]       p_msg       : Pointer to the vendor dependent response
- *
- * @return          Result code (see @ref AVRC_RESULT "AVRC result codes")
- *
- */
-uint16_t wiced_bt_avrc_send_vendor_rsp(uint8_t handle, uint8_t  label, wiced_bt_avrc_rsp_t *p_msg);
+uint16_t wiced_bt_avrc_send_vendor_msg(uint8_t handle, uint8_t label, uint8_t cr, wiced_bt_avrc_hdr_t *p_hdr, uint32_t company_id, wiced_bt_avrc_xmit_buf_t  *p_msg);
 
 /**
  * Sets the trace level for AVRC. If 0xff is passed, the

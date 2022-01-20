@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"unionwiced__bt__br__edr__pkt__type__stats.html#aff8999a1d20c8033452e2a080b0404a0":[1,4,54,1],
 "unionwiced__bt__dev__inq__filt__cond__t.html":[1,4,8],
 "unionwiced__bt__dev__inq__filt__cond__t.html#a6e97123cbb3dd8c3a006402562cb62eb":[1,4,8,0],
 "unionwiced__bt__dev__inq__filt__cond__t.html#af26d5786367e9c2cd57689f923da453c":[1,4,8,1],
