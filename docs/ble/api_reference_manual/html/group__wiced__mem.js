@@ -53,5 +53,7 @@ var group__wiced__mem =
     [ "wiced_memory_alloc_long_term_mem_block", "group__wiced__mem.html#ga97f9f80721d4e711b6243992a9d1939b", null ],
     [ "wiced_memory_free_long_term_mem_block", "group__wiced__mem.html#ga84a646c738099e9e0b4f764c3b6596e9", null ],
     [ "wiced_bt_get_heap_statistics", "group__wiced__mem.html#ga781d441cbf87a58a121c92fb9132d9b1", null ],
+    [ "wiced_bt_get_heap_statistics_with_index", "group__wiced__mem.html#gadab993022a065bf698a2586ed8d6da25", null ],
+    [ "wiced_bt_get_pool_statistics", "group__wiced__mem.html#gae9082cf1022d7671966a403534d9fdaf", null ],
     [ "wiced_set_exception_callback", "group__wiced__mem.html#ga9a5e60280610d3027effc84ee35654b6", null ]
 ];

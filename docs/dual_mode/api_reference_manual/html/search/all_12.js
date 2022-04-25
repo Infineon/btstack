@@ -37,7 +37,7 @@ var searchData=
   ['reverse_5fstream_5fto_5farray',['REVERSE_STREAM_TO_ARRAY',['../group__bt__types.html#gaf1005f15e43e88fa739072e75597153a',1,'wiced_bt_types.h']]],
   ['rfcomm',['RFCOMM',['../group__rfcomm__api__functions.html',1,'']]],
   ['rfcomm_5fcfg',['rfcomm_cfg',['../structwiced__bt__cfg__br__t.html#a4ef7f35aec9a5701f0da17682d3e1e98',1,'wiced_bt_cfg_br_t']]],
-  ['role',['role',['../structwiced__bt__ble__conn__params__t.html#a4ead927fad433b02e7ec8d2d0b726d97',1,'wiced_bt_ble_conn_params_t::role()'],['../structwiced__bt__dev__switch__role__result__t.html#a224b472c4217bf0e65c51168abd61ab8',1,'wiced_bt_dev_switch_role_result_t::role()']]],
+  ['role',['role',['../structwiced__bt__ble__conn__params__t.html#a0cddeab89b8d4fe08ab2170530e295cb',1,'wiced_bt_ble_conn_params_t::role()'],['../structwiced__bt__dev__switch__role__result__t.html#ac90734df604952ac60e4e27888137992',1,'wiced_bt_dev_switch_role_result_t::role()']]],
   ['rpa_5frefresh_5ftimeout',['rpa_refresh_timeout',['../structwiced__bt__cfg__ble__t.html#a4fa95b2aafb296e0adced091399f2236',1,'wiced_bt_cfg_ble_t']]],
   ['rr',['rr',['../unionwiced__bt__avdt__report__data__t.html#a9ed0199da46c650a935d75ec9e2b2078',1,'wiced_bt_avdt_report_data_t']]],
   ['rsp_5flen',['rsp_len',['../structwiced__bt__gatt__read__multiple__rsp__t.html#a266bd6b49aaf4df1afad71d604e6a017',1,'wiced_bt_gatt_read_multiple_rsp_t']]],

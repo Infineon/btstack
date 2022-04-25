@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"group__btm__ble__api__functions.html#ga74afed208bbe3506c1f0f0e668c4050b":[1,4,0,54],
+"group__btm__ble__api__functions.html#ga785ebb30d19020fe4c455c48194b76de":[1,4,0,33],
+"group__btm__ble__api__functions.html#ga795beb1024b87fe34c272e7d20311c1e":[1,4,0,50],
+"group__btm__ble__api__functions.html#ga7ae1e45420048d29a396fb79a783d1e5":[1,4,0,43],
 "group__btm__ble__api__functions.html#ga82993fe40d64b02833a265fd15ae5de2":[1,4,0,34],
 "group__btm__ble__api__functions.html#ga85abcdffb41185cf65f29c689cf36a16":[1,4,0,120],
 "group__btm__ble__api__functions.html#ga8739336a6d1ebba1faaf824bc5c1024d":[1,4,0,132],
@@ -215,6 +219,7 @@ var NAVTREEINDEX1 =
 "group__btm__ble__sec__api__functions.html#ga4eb30b5be9071a28bc839ce9b96874b9":[1,4,0,4,29],
 "group__btm__ble__sec__api__functions.html#ga51bc6fe0241b40268d57af96672d382c":[1,4,0,4,19],
 "group__btm__ble__sec__api__functions.html#ga572770db7d98fd7cda26073647a3750e":[1,4,0,4,16],
+"group__btm__ble__sec__api__functions.html#ga5bc1e0f5151f2b2e550bbd8c96035a82":[1,4,0,4,41],
 "group__btm__ble__sec__api__functions.html#ga61ceb293a5b5516e6636613745f2d378":[1,4,0,4,13],
 "group__btm__ble__sec__api__functions.html#ga6d2839b209126fec355350a77d4e9b59":[1,4,0,4,30],
 "group__btm__ble__sec__api__functions.html#ga6f62bfefe564c8ab304d43a02629467a":[1,4,0,4,10],
@@ -244,10 +249,5 @@ var NAVTREEINDEX1 =
 "group__gatt__client__api__functions.html":[1,5,1],
 "group__gatt__client__api__functions.html#ga18fac5275124f232b594ffe4af146774":[1,5,1,0],
 "group__gatt__client__api__functions.html#ga1a0c27ab8cf1552b82d7892fef722a4a":[1,5,1,5],
-"group__gatt__client__api__functions.html#ga22d6a277ecfcc3f3193e248e5a9c89c3":[1,5,1,2],
-"group__gatt__client__api__functions.html#ga557c18bfce7377c09deee7b45a94c99a":[1,5,1,6],
-"group__gatt__client__api__functions.html#ga57ead21a135107e216056fb40e5013fd":[1,5,1,4],
-"group__gatt__client__api__functions.html#ga9ed05bb952c196c118f3c3d5305f215e":[1,5,1,1],
-"group__gatt__client__api__functions.html#gaab8c3fff985e0a6beb83cd368b63e548":[1,5,1,3],
-"group__gatt__client__api__functions.html#gae363a106fa85653e78cdf18d84c500d2":[1,5,1,7]
+"group__gatt__client__api__functions.html#ga22d6a277ecfcc3f3193e248e5a9c89c3":[1,5,1,2]
 };

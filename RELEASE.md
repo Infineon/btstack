@@ -8,6 +8,21 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.4.0
+BTSTACK3.4 release contains bug fixes and and an enhancement listed below.
+ - Stack now conforms to PTS8.1.1. Below are the test cases that fail and are under discussion/debug with PTS,
+   - TSE#12608 --> GATT/CL/GPM/BV-12-C
+   - TSE#17703 --> L2CAP/COS/CED/BI-02-C, L2CAP/ECFC/BI-08-C
+   - TSE#17581 --> L2CAP/ECFC/BV-38-C
+   - TSE#18208 --> L2CAP/ECFC/BI-09-C
+ - Added data type and macros for HCI roles. See wiced_bt_dev.h
+ - Added new event BTM_BLE_DATA_LENGTH_UPDATE_EVENT to notify change in the data length and timeout configured for Rx and Tx on the BLE link. See wiced_bt_dev.h.
+ - Added new API wiced_bt_dev_sec_pair_without_bonding() for pairing but without bonding. See wiced_bt_dev.h.
+ - Added new APIs wiced_bt_dev_is_address_resolution_enabled and wiced_bt_dev_is_privacy_supported to query the support status for controller based address resolution and device privacy mode, respectively. See wiced_bt_dev_utils.h.
+ - GATT status code updated with error code for improper configuration of CCCD (WICED_BT_GATT_CCCD_IMPROPER_CONFIGURED). See wiced_bt_gatt.h.
+ - Added APIs to get heap and pool statistics in wiced_memory.h.
+
+
 ## V3.3.0
 BTSTACK3.3 release contains bug fixes and and an enhancement listed below.
  - Fix for GAP conformance test case GAP/SEC/SEM/BV-14-C.

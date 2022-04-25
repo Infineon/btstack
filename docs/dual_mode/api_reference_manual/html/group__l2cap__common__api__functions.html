@@ -116,7 +116,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga728a05e414212f3fa6a62b602d0eccb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher layers call this function to set the idle timeout for a fixed channel.  <a href="#ga728a05e414212f3fa6a62b602d0eccb9">More...</a><br /></td></tr>
 <tr class="separator:ga728a05e414212f3fa6a62b602d0eccb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga19fedef3a0ab3ec2b155aefd73d4eb9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#ga19fedef3a0ab3ec2b155aefd73d4eb9e">wiced_bt_l2cap_ecrb_register</a> (uint16_t psm, <a class="el" href="structwiced__bt__l2cap__ecrb__cb__ptrs__t.html">wiced_bt_l2cap_ecrb_cb_ptrs_t</a> *p_ecrb_callbacks)</td></tr>
-<tr class="memdesc:ga19fedef3a0ab3ec2b155aefd73d4eb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application calls this function to register support for enhanced.  <a href="#ga19fedef3a0ab3ec2b155aefd73d4eb9e">More...</a><br /></td></tr>
+<tr class="memdesc:ga19fedef3a0ab3ec2b155aefd73d4eb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application calls this function to register support for enhanced credit-based channels.  <a href="#ga19fedef3a0ab3ec2b155aefd73d4eb9e">More...</a><br /></td></tr>
 <tr class="separator:ga19fedef3a0ab3ec2b155aefd73d4eb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga759cb1c76bec995a078fde74b3663deb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#ga759cb1c76bec995a078fde74b3663deb">wiced_bt_l2cap_ecrb_deregister</a> (uint16_t psm)</td></tr>
 <tr class="memdesc:ga759cb1c76bec995a078fde74b3663deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application calls this function to deregister support for enhanced credit-based channels.  <a href="#ga759cb1c76bec995a078fde74b3663deb">More...</a><br /></td></tr>
@@ -434,8 +434,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Application calls this function to register support for enhanced. </p>
-<p>credit-based channels. The PSM must have been previously registered for BR and/or LE.</p>
+<p>Application calls this function to register support for enhanced credit-based channels. </p>
+<p>The PSM must have been previously registered for BR and/or LE.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">psm</td><td>: PSM value </td></tr>

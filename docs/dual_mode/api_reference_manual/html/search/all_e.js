@@ -23,6 +23,5 @@ var searchData=
   ['num_5fuuid_5ffilters',['num_uuid_filters',['../structwiced__bt__sdp__discovery__db__t.html#afe0c35dff37a42c46bd796009c2f6c74',1,'wiced_bt_sdp_discovery_db_t']]],
   ['num_5fval',['num_val',['../structwiced__bt__avrc__metadata__set__app__value__cmd__t.html#ac5075249ecb1c5de997ee5cf993bd2d7',1,'wiced_bt_avrc_metadata_set_app_value_cmd_t::num_val()'],['../structwiced__bt__avrc__metadata__get__app__val__txt__cmd__t.html#a0b05b1161d52401806be260e9c2973b2',1,'wiced_bt_avrc_metadata_get_app_val_txt_cmd_t::num_val()'],['../structwiced__bt__avrc__metadata__list__app__values__rsp__t.html#ab933c098d26640069606860712a4d61f',1,'wiced_bt_avrc_metadata_list_app_values_rsp_t::num_val()'],['../structwiced__bt__avrc__metadata__get__cur__app__value__rsp__t.html#abf7ff92a771e559cb29aec518d08582a',1,'wiced_bt_avrc_metadata_get_cur_app_value_rsp_t::num_val()']]],
   ['number_5fof_5fsubevents',['number_of_subevents',['../structwiced__bt__ble__biginfo__adv__report__t.html#ab2b3c1381bbbd5ee351b7bb72e682056',1,'wiced_bt_ble_biginfo_adv_report_t']]],
-  ['numeric_5fvalue',['numeric_value',['../structwiced__bt__dev__user__cfm__req__t.html#ae7f1276a069563b37e82ca7c8ff56c32',1,'wiced_bt_dev_user_cfm_req_t']]],
-  ['nvram',['NVRAM',['../group__nvram.html',1,'']]]
+  ['numeric_5fvalue',['numeric_value',['../structwiced__bt__dev__user__cfm__req__t.html#ae7f1276a069563b37e82ca7c8ff56c32',1,'wiced_bt_dev_user_cfm_req_t']]]
 ];

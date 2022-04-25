@@ -1,6 +1,34 @@
-
 /*
- * $ Copyright Cypress Semiconductor $
+ * Copyright 2016-2022, Cypress Semiconductor Corporation or
+ * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
+ *
+ * This software, including source code, documentation and related
+ * materials ("Software") is owned by Cypress Semiconductor Corporation
+ * or one of its affiliates ("Cypress") and is protected by and subject to
+ * worldwide patent protection (United States and foreign),
+ * United States copyright laws and international treaty provisions.
+ * Therefore, you may use this Software only as provided in the license
+ * agreement accompanying the software package from which you
+ * obtained this Software ("EULA").
+ * If no EULA applies, Cypress hereby grants you a personal, non-exclusive,
+ * non-transferable license to copy, modify, and compile the Software
+ * source code solely for use in connection with Cypress's
+ * integrated circuit products.  Any reproduction, modification, translation,
+ * compilation, or representation of this Software except as specified
+ * above is prohibited without the express written permission of Cypress.
+ *
+ * Disclaimer: THIS SOFTWARE IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT, IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Cypress
+ * reserves the right to make changes to the Software without notice. Cypress
+ * does not assume any liability arising out of the application or use of the
+ * Software or any product or circuit described in the Software. Cypress does
+ * not authorize its products for use in any products where a malfunction or
+ * failure of the Cypress product may reasonably be expected to result in
+ * significant property damage, injury or death ("High Risk Product"). By
+ * including Cypress's product in a High Risk Product, the manufacturer
+ * of such system or application assumes all risk of such use and in doing
+ * so agrees to indemnify Cypress against all liability.
  */
 
 /** @file
@@ -318,10 +346,10 @@ typedef void (wiced_bt_l2cap_disconnect_confirm_cback_t) (uint16_t local_cid, ui
  *
  *  @param local_cid : Local CID
  *  @param p_drb     : Pointer to the data received buffer, check \ref tDRB
- *  @note: Application is expected to use the data in the callback. Applications should not attempt 
+ *  @note: Application is expected to use the data in the callback. Applications should not attempt
  *  to free/release the \p p_drb pointer in this callback, since the buffer will be reused to receive
  *  the next incoming packet
- * 
+ *
  *  @return void
 */
 typedef void (wiced_bt_l2cap_data_indication_cback_t) (uint16_t local_cid, tDRB *p_drb);
@@ -483,7 +511,7 @@ typedef struct
 *******************************************************************************/
 /** ECRB Application callback for incoming connection requests */
 typedef void(wiced_bt_l2cap_ecrb_connect_ind)(wiced_bt_device_address_t peer_addr,
-    wiced_bt_transport_t transport, uint16_t psm, wiced_bt_ecrb_cid_list_t lcids, 
+    wiced_bt_transport_t transport, uint16_t psm, wiced_bt_ecrb_cid_list_t lcids,
     uint8_t id, uint16_t peer_mtu);
 
 /** ECRB Application callback for outging connection confirms */
@@ -605,13 +633,13 @@ wiced_bool_t wiced_bt_l2cap_remove_fixed_chnl (uint16_t fixed_cid, wiced_bt_devi
 wiced_bool_t wiced_bt_l2cap_set_fixed_channel_timeout (wiced_bt_device_address_t rem_bda, uint16_t fixed_cid, uint16_t idle_timeout);
 
 /**
-* @brief      Application calls this function to register support for enhanced  
+* @brief      Application calls this function to register support for enhanced
 *              credit-based channels. The PSM must have been previously registered
 *              for BR and/or LE.
-* 
+*
 * @param[in]   psm              : PSM value
 * @param[in]   p_ecrb_callbacks : callbacks for the credit based channel connections
-* 
+*
 * @return WICED_TRUE if all ok
 */
 wiced_bool_t wiced_bt_l2cap_ecrb_register(uint16_t psm, wiced_bt_l2cap_ecrb_cb_ptrs_t *p_ecrb_callbacks);
@@ -619,9 +647,9 @@ wiced_bool_t wiced_bt_l2cap_ecrb_register(uint16_t psm, wiced_bt_l2cap_ecrb_cb_p
 /**
  * @brief Application calls this function to deregister support for enhanced
  *        credit-based channels. The PSM must have been previously registered.
- * 
+ *
  * @param[in] psm: PSM value
- * 
+ *
  * @return  WICED_TRUE if all OK.
  */
 wiced_bool_t wiced_bt_l2cap_ecrb_deregister(uint16_t psm);
@@ -630,28 +658,28 @@ wiced_bool_t wiced_bt_l2cap_ecrb_deregister(uint16_t psm);
 /**
  * @brief  Higher layers call this function to create up to 5 credit-based L2CAP
  *         connections on the same PSM.
- * @note The connection is not established at this time, but connection establishment 
+ * @note The connection is not established at this time, but connection establishment
  *       gets started. The callback function will be invoked when connection establishes or fails.
- * 
+ *
  * @param[in] psm: PSM Value
  * @param[in] transport: BT transport for the connection
- * @param[in] bd_addr : Bluetooth device address to connect 
+ * @param[in] bd_addr : Bluetooth device address to connect
  * @param[in] bd_addr_type: BLE_ADDR_PUBLIC or BLE_ADDR_RANDOM
  * @param[in] conn_mode : BLE connection mode
- * @param[in] our_rx_mtu: Our RX MTU to be used for the channels 
- * @param[in] our_rx_mps: Our RX MPS to be used for the channels 
- * @note \p our_rx_mps must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size or 
+ * @param[in] our_rx_mtu: Our RX MTU to be used for the channels
+ * @param[in] our_rx_mps: Our RX MPS to be used for the channels
+ * @note \p our_rx_mps must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size or
  *  \ref wiced_bt_cfg_br_t.br_max_rx_pdu_size for BLE and BR/EDR transports respectively
  * @param[in] num_channels : Number of channels to be created
- * @param[in] p_rx_drb_list: list of the allocated \ref tDRB 's, one for each \p num_channels 
+ * @param[in] p_rx_drb_list: list of the allocated \ref tDRB 's, one for each \p num_channels
  * @note: the size of DRB allocated must be >= \p our_rx_mtu
  * @param[out] lcid_list: list of cids (channel ids) which will be started
- * 
+ *
  * @return number of channels which will be started
  */
 int wiced_bt_l2cap_ecrb_connect_req(uint16_t psm, wiced_bt_transport_t transport,
     wiced_bt_device_address_t bd_addr, wiced_bt_ble_address_type_t bd_addr_type,
-    wiced_bt_ble_conn_mode_t conn_mode, 
+    wiced_bt_ble_conn_mode_t conn_mode,
     uint16_t our_rx_mtu, uint16_t our_rx_mps, int num_channels,
     tDRB **p_rx_drb_list, wiced_bt_ecrb_cid_list_t lcid_list);
 
@@ -659,45 +687,45 @@ int wiced_bt_l2cap_ecrb_connect_req(uint16_t psm, wiced_bt_transport_t transport
 * @brief      Higher layers call this function to accept incoming Enhanced Credit-based
 *             L2CAP channel establishment, for which they had gotten a connect indication
 *             callback.
-* 
+*
 * @param[in] result : Result of the connection set by the application. L2CAP result codes (\ref L2CAP_CONN_RESULT)
 * @param[in] trans_id : trans_id received in the \ref wiced_bt_l2cap_ecrb_connect_ind
-* @param[in] our_rx_mtu: Our RX MTU to be used for the channels 
-* @param[in] our_rx_mps: Our RX MPS to be used for the channels 
-* @note \p our_rx_mps must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size or 
+* @param[in] our_rx_mtu: Our RX MTU to be used for the channels
+* @param[in] our_rx_mps: Our RX MPS to be used for the channels
+* @note \p our_rx_mps must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size or
 *  \ref wiced_bt_cfg_br_t.br_max_rx_pdu_size for BLE and BR/EDR transports respectively
-* @param[out] lcid_list: list of cids (channel ids) which will be started as received in 
+* @param[out] lcid_list: list of cids (channel ids) which will be started as received in
 *                        \ref wiced_bt_l2cap_ecrb_connect_ind
-* @note       The CID list in \p lcid_list must match the CID list returned in the callback. 
+* @note       The CID list in \p lcid_list must match the CID list returned in the callback.
 *             The DRB pointer list must contain a valid DRB pointer for each non-zero CID
 *             in the list that the application accepts.
-* @param[in] p_rx_drb_list : list of the allocated \ref tDRB 's, one for each \p num_channels 
+* @param[in] p_rx_drb_list : list of the allocated \ref tDRB 's, one for each \p num_channels
  * @note: the size of DRB allocated must be >= \p our_rx_mtu
-* 
+*
 * @return void
 */
 void wiced_bt_l2cap_ecrb_ConnectRsp(uint16_t result, uint8_t trans_id, int16_t our_rx_mtu, uint16_t our_rx_mps,
     wiced_bt_ecrb_cid_list_t lcid_list, tDRB **p_rx_drb_list);
 
 /**
- * @brief Higher layers call this function to reconfigure the MTU and or MPS of 
+ * @brief Higher layers call this function to reconfigure the MTU and or MPS of
  *        Enhanced Credit-based L2CAP channels.
- * 
- * @param[in] new_rx_mtu: Our new RX MTU to be used for the channels 
- *    @note If \p new_rx_mtu is zero, no change to MTU is requested. 
+ *
+ * @param[in] new_rx_mtu: Our new RX MTU to be used for the channels
+ *    @note If \p new_rx_mtu is zero, no change to MTU is requested.
  *          Otherwise \p new_rx_mtu must be larger than the old MTU for all channels.
- * 
- * @param[in] new_rx_mps: Our new RX MPS to be used for the channels 
- *     @note If \p new_rx_mts is zero, no change to MPS is requested. 
+ *
+ * @param[in] new_rx_mps: Our new RX MPS to be used for the channels
+ *     @note If \p new_rx_mts is zero, no change to MPS is requested.
  *           Otherwise \p new_rx_mps must be larger than the old MPS for all channels.
- *     @note \p new_rx_mps must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size or 
+ *     @note \p new_rx_mps must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size or
 *            \ref wiced_bt_cfg_br_t.br_max_rx_pdu_size for BLE and BR/EDR transports respectively
-* 
+*
  * @param[in] num_channels : Number of channels to be created
  * @param[in] lcid_list : list of channels to be reconfigured
- * @param[in] p_rx_drb_list : list of the allocated \ref tDRB 's, one for each \p num_channels 
+ * @param[in] p_rx_drb_list : list of the allocated \ref tDRB 's, one for each \p num_channels
  * @note: the size of DRB allocated must be >= \p new_rx_mtu
- * 
+ *
  * @return WICED_TRUE if reconfigure sent OK
  */
 wiced_bool_t wiced_bt_l2cap_ecrb_reconfigure(uint16_t new_rx_mtu, int16_t new_rx_mps, int num_channels,
@@ -899,11 +927,11 @@ uint16_t wiced_bt_l2cap_ertm_connect_req (uint16_t psm, wiced_bt_device_address_
  *  @brief         Higher layers call this function to register a DRM for an ERTM connection.
  *
  *  @param[in]     lcid                 : Local CID value
- *  @param[in]     p_drb                : DRB to be used to receive data for this channel 
+ *  @param[in]     p_drb                : DRB to be used to receive data for this channel
  *  @param[in]     drb_max_payload_len  : DRB Size. It should greater than or equal to to MTU.
  *  @param[in]     p_unreg_cb           : \ref wiced_bt_l2cap_drb_release_cb to release the DRB
- * 
- * @note: In case \p p_drb passed here has been allocated, it can be released when the stack 
+ *
+ * @note: In case \p p_drb passed here has been allocated, it can be released when the stack
  * calls \p p_unreg_cb
  *
  *  @return        TRUE if disconnect sent, else FALSE
@@ -1132,16 +1160,16 @@ wiced_bool_t wiced_bt_l2cap_le_deregister (uint16_t le_psm);
  *  @param[in]      p_bd_addr           : BD Address
  *  @param[in]      bd_addr_type        : BLE_ADDR_PUBLIC or BLE_ADDR_RANDOM
  *  @param[in]      conn_mode           : BLE_CONN_MODE_HIGH_DUTY or BLE_CONN_MODE_LOW_DUTY
- *  @param[in]      rx_mtu              : Rx MTU value 
+ *  @param[in]      rx_mtu              : Rx MTU value
  * @note \p rx_mtu must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size
  *  @param[in]      req_security        : Security required
  *  @param[in]      req_encr_key_size   : key size
  *  @param[in]      p_rx_drb            : DRB to receive peer's data. MUST be large enough to
  *                                        hold RX MTU data, check \ref tDRB
- * 
+ *
  * @note \p p_rx_drb can be released by the application on receiving a callback with the
  * \ref wiced_bt_l2cap_le_appl_information_t.le_release_drb_cb of the \p p_cb_information member of
- * \ref wiced_bt_l2cap_le_register  
+ * \ref wiced_bt_l2cap_le_register
  *
  *  @return         the CID of the connection, or 0 if it failed to start
  */
@@ -1163,10 +1191,10 @@ uint16_t wiced_bt_l2cap_le_connect_req (uint16_t le_psm, wiced_bt_device_address
  *  @param[in]      rx_mtu      : Rx MTU value (must be <= ACL_POOL_SIZE)
  *  @param[in]      p_rx_drb    : DRB to receive peer's data. MUST be large enough to
  *                                hold RX MTU data, check \ref tDRB
- * 
+ *
  * @note \p p_rx_drb can be released by the application on receiving a callback with the
  * \ref wiced_bt_l2cap_le_appl_information_t.le_release_drb_cb of the \p p_cb_information member of
- * \ref wiced_bt_l2cap_le_register  
+ * \ref wiced_bt_l2cap_le_register
  *
  *  @return         TRUE for success, FALSE for failure
  */
@@ -1215,12 +1243,12 @@ uint8_t wiced_bt_l2cap_le_data_write (uint16_t cid, uint8_t *p_data, uint16_t bu
  *                  channels only, viz LE COC, ECRB channels)
  *                  To stop sending credits/flow off the remote peer set \p flow_off_peer to WICED_TRUE
  *                  To resume sending credits/flow on set \p flow_off_peer to WICED_FALSE
- *                  @note: This API is typically invoked by applications that buffer incoming data 
- *                  for further processing/forwarding. On invoking the API further issuance of L2CAP credits 
+ *                  @note: This API is typically invoked by applications that buffer incoming data
+ *                  for further processing/forwarding. On invoking the API further issuance of L2CAP credits
  *                  is stopped, however, the remote will continue to send data till it runs out of credits.
- *                  The maximum amount of data size expected to be received is 2 * Receive MTU which could be 
+ *                  The maximum amount of data size expected to be received is 2 * Receive MTU which could be
  *                  split over a max of (Receive MTU + 2(Sdu header size))/(Receive MPS) number of packets
- *                  
+ *
  *
  *  @param[in]      lcid          : Local CID value
  *  @param[in]      flow_off_peer : to flow off peer set to WICED_TRUE, to flow on peer set to WICED_FALSE

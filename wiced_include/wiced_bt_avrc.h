@@ -1,5 +1,34 @@
 /*
- * $ Copyright Cypress Semiconductor $
+ * Copyright 2016-2022, Cypress Semiconductor Corporation or
+ * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
+ *
+ * This software, including source code, documentation and related
+ * materials ("Software") is owned by Cypress Semiconductor Corporation
+ * or one of its affiliates ("Cypress") and is protected by and subject to
+ * worldwide patent protection (United States and foreign),
+ * United States copyright laws and international treaty provisions.
+ * Therefore, you may use this Software only as provided in the license
+ * agreement accompanying the software package from which you
+ * obtained this Software ("EULA").
+ * If no EULA applies, Cypress hereby grants you a personal, non-exclusive,
+ * non-transferable license to copy, modify, and compile the Software
+ * source code solely for use in connection with Cypress's
+ * integrated circuit products.  Any reproduction, modification, translation,
+ * compilation, or representation of this Software except as specified
+ * above is prohibited without the express written permission of Cypress.
+ *
+ * Disclaimer: THIS SOFTWARE IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT, IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Cypress
+ * reserves the right to make changes to the Software without notice. Cypress
+ * does not assume any liability arising out of the application or use of the
+ * Software or any product or circuit described in the Software. Cypress does
+ * not authorize its products for use in any products where a malfunction or
+ * failure of the Cypress product may reasonably be expected to result in
+ * significant property damage, injury or death ("High Risk Product"). By
+ * including Cypress's product in a High Risk Product, the manufacturer
+ * of such system or application assumes all risk of such use and in doing
+ * so agrees to indemnify Cypress against all liability.
  */
 
 /** @file
@@ -80,7 +109,7 @@ enum wiced_bt_avrc_ctrl_evt_e
     /**< AVRC_BROWSE_CLOSE_IND_EVT event is sent when a browse channel is closed.
     This event can result from a call to wiced_bt_avrc_close(), wiced_bt_avrc_close_browse() or when the peer closes
     the connection.  It is also sent when a connection attempted through
-    wiced_bt_avrc_openBrowse() fails. */ 
+    wiced_bt_avrc_openBrowse() fails. */
     AVRC_BROWSE_CLOSE_IND_EVT,
     AVRC_BROWSE_CONG_IND_EVT,   /**< AVRC_BROWSE_CONG_IND_EVT event indicates that AVCTP browse channel is congested and cannot send any more messages. */
     AVRC_BROWSE_UNCONG_IND_EVT, /**< AVRC_BROWSE_UNCONG_IND_EVT event indicates that AVCTP browse channel is uncongested and ready to send messages. */
@@ -160,7 +189,7 @@ typedef struct{
     wiced_bt_avrc_rsp_t response;   /**< response message */
     wiced_bt_avrc_cmd_t command;    /**< command message */
     }type; /**<  Received message type */
-    
+
 }wiced_bt_avrc_msg_t;
 
 
@@ -367,11 +396,11 @@ uint16_t wiced_bt_avrc_send_passthrough_rsp(uint8_t handle, uint8_t label, wiced
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Transaction label
  * @param[in]       cr          : Command or resonse
- * @param[in]       p_hdr      :  Pointer to the avrc header, which gets copied to be used as protocol header  
- * @param[in]       company_id  : This unique Company_ID 
- * @param[in]       p_msg       : Pointer to the vendor dependent data \p p_msg 
- *                                can be freed by application on receiving the AVRC_APP_BUFFER_TX_EVT. 
- *                                The p_msg pointer shall be valid and kept to the contents of location 
+ * @param[in]       p_hdr      :  Pointer to the avrc header, which gets copied to be used as protocol header
+ * @param[in]       company_id  : This unique Company_ID
+ * @param[in]       p_msg       : Pointer to the vendor dependent data \p p_msg
+ *                                can be freed by application on receiving the AVRC_APP_BUFFER_TX_EVT.
+ *                                The p_msg pointer shall be valid and kept to the contents of location
  *                                pointed to by the p_msg pointer shall be valid and kept.
  *
  * @return          Result code (see @ref AVRC_RESULT "AVRC result codes")
@@ -454,7 +483,7 @@ wiced_bt_avrc_sts_t wiced_bt_avrc_bld_browse_response (wiced_bt_avrc_browse_rsp_
  *
  * @param[in]       handle      : Connection handle
  * @param[in]       label       : Message label
- * @param[in]       ctype       : avrc message type (see @ref wiced_bt_avrc_ctype_e) 
+ * @param[in]       ctype       : avrc message type (see @ref wiced_bt_avrc_ctype_e)
  * @param[in]       p_xmit_buf  : Pointer to transmit buffer
  *
  *
@@ -523,7 +552,7 @@ wiced_bool_t avrc_is_valid_player_attrib_value(uint8_t attrib, uint8_t value);
 
 /**
  *
- * This function parse the avrc attribute 
+ * This function parse the avrc attribute
  *
  * @param[in]       p_attr_stream : received response stream offset-ed by amount read
  * @param[in]       stream_len    : valid length of buffer pointed by \p p_attr_stream
@@ -538,7 +567,7 @@ int avrc_read_attr_entry_from_stream(uint8_t *p_attr_stream, uint16_t stream_len
  *
  * This function parse the string with charset_id received in buffer.
  *
- * @param[in]       p_name_stream   : received response stream offset-ed by amount read 
+ * @param[in]       p_name_stream   : received response stream offset-ed by amount read
  * @param[in]       stream_len      : valid length of buffer pointed by \p p_name_stream
  * @param[out]      p_name          :  pointer to the @ref wiced_bt_avrc_full_name_t parsed into
  *
@@ -599,7 +628,3 @@ wiced_bool_t wiced_bt_avrc_set_browse_drb(uint8_t handle, tDRB *p_drb, uint16_t 
 #ifdef __cplusplus
 }
 #endif
-
-
-
-

@@ -9,7 +9,7 @@ var group__wiced__bt__platform__group =
       [ "stack_lock", "structwiced__bt__stack__platform__t.html#ac8bd28e51d6868aca4d38cf5b3320258", null ],
       [ "pf_get_acl_to_lower_buffer", "structwiced__bt__stack__platform__t.html#a8c562c1e3eb34a6446875475a1516c1c", null ],
       [ "pf_write_acl_to_lower", "structwiced__bt__stack__platform__t.html#a5a4b5442450b48076ed52dfcd8b9c645", null ],
-      [ "pf_write_iso_to_lower", "structwiced__bt__stack__platform__t.html#ae690ee0869b35884f16e3b1615948f53", null ],
+      [ "pf_write_iso_to_lower", "structwiced__bt__stack__platform__t.html#aa2928d2f9c68ef62fa7cb2a163ff48be", null ],
       [ "pf_write_cmd_to_lower", "structwiced__bt__stack__platform__t.html#a9c53e952d84ff4d34955aee7c3fc2aa7", null ],
       [ "pf_get_sco_to_lower_buffer", "structwiced__bt__stack__platform__t.html#a52a07c249b67cb49669bcd684b3de451", null ],
       [ "pf_write_sco_to_lower", "structwiced__bt__stack__platform__t.html#af2edd57362c9701e0cc0214395009174", null ],

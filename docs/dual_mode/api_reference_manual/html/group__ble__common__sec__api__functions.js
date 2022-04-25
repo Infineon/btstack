@@ -1,6 +1,7 @@
 var group__ble__common__sec__api__functions =
 [
     [ "wiced_bt_dev_sec_bond", "group__ble__common__sec__api__functions.html#ga2e41482216a1a152e3ecaf1c17d5e93f", null ],
+    [ "wiced_bt_dev_sec_pair_without_bonding", "group__ble__common__sec__api__functions.html#gaec31decb7680a981a8a0d96e03ae004a", null ],
     [ "wiced_bt_dev_sec_bond_cancel", "group__ble__common__sec__api__functions.html#ga4a977184563090cb94394b7da1f09760", null ],
     [ "wiced_bt_dev_set_encryption", "group__ble__common__sec__api__functions.html#ga828fe3d842b9923e408a10b87ae8fb69", null ],
     [ "wiced_bt_dev_confirm_req_reply", "group__ble__common__sec__api__functions.html#gafc9a54cc8cf09e7f9c42c9a24ce9df97", null ],

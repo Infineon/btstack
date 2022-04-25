@@ -242,6 +242,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__phy__update__t.html">wiced_bt_ble_phy_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE Physical link update event related data.  <a href="structwiced__bt__ble__phy__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__phy__data__length__update__t.html">wiced_bt_ble_phy_data_length_update_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE data length update event related data.  <a href="structwiced__bt__ble__phy__data__length__update__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__multi__adv__response__t.html">wiced_bt_ble_multi_adv_response_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE Multi adv VSC response data.  <a href="structwiced__bt__ble__multi__adv__response__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1510,7 +1513,9 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a965a79b8ed951bb08083f3072b7d8f16">BTM_LPM_STATE_LOW_POWER</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65afccff06434be32f2e31fae45a59fb0bc">BTM_MULTI_ADVERT_RESP_EVENT</a>
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65afccff06434be32f2e31fae45a59fb0bc">BTM_MULTI_ADVERT_RESP_EVENT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a4317545a7c310a63a2ff6a77143db123">BTM_BLE_DATA_LENGTH_UPDATE_EVENT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga4a427fc37161f2041016d7936399be65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bluetooth Management events used in <a class="el" href="group__wicedbt___device_management.html#ga86af8a8bb467047c9af6007f15b0d344" title="Bluetooth Management callback.">wiced_bt_management_cback_t</a>.  <a href="group__wicedbt___device_management.html#ga4a427fc37161f2041016d7936399be65">More...</a><br /></td></tr>
@@ -3292,6 +3297,8 @@ Return values of the management events Return values of notification and status 
 <p>Used for Host Stack Use Case. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65afccff06434be32f2e31fae45a59fb0bc"></a>BTM_MULTI_ADVERT_RESP_EVENT&#160;</td><td class="fielddoc"><p>Event notifies Multi adv command status event used for the status of the command sent Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a8871dd5b4fb2d4c67bfa22056119f518">wiced_bt_management_evt_data_t::ble_multi_adv_response_event</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a4317545a7c310a63a2ff6a77143db123"></a>BTM_BLE_DATA_LENGTH_UPDATE_EVENT&#160;</td><td class="fielddoc"><p>Event to notify change in the data length and timeout configured for Rx and Tx on the BLE link Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a05673ca23e277594224f12252963fa9a">wiced_bt_management_evt_data_t::ble_data_length_update_event</a>. </p>
 </td></tr>
 </table>
 

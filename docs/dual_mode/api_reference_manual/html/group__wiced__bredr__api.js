@@ -14,7 +14,7 @@ var group__wiced__bredr__api =
     [ "wiced_bt_dev_set_sniff_subrating", "group__wiced__bredr__api.html#gae25ed058e78ce94a0884a6d62d1d1b8e", null ],
     [ "wiced_bt_dev_read_rssi", "group__wiced__bredr__api.html#gafea954a02935ce3dfa5409ff40e25ae3", null ],
     [ "wiced_bt_dev_write_eir", "group__wiced__bredr__api.html#ga08b1a111be46bb1341db8329a98ba2c2", null ],
-    [ "wiced_bt_dev_switch_role", "group__wiced__bredr__api.html#gae6856d6e894c112400e78ff00dbadd1a", null ],
+    [ "wiced_bt_dev_switch_role", "group__wiced__bredr__api.html#ga8a29fcd76f386debd6d5aaef21426cc5", null ],
     [ "wiced_bt_dev_set_afh_channel_classification", "group__wiced__bredr__api.html#ga77cedd68365c2d02c743dc2aaee13ba8", null ],
     [ "wiced_bt_dev_get_remote_name", "group__wiced__bredr__api.html#ga65bc31725b27be92d23b71707c4d309c", null ],
     [ "wiced_bt_dev_set_link_policy", "group__wiced__bredr__api.html#gafa20b1e8c312d27e8ea2824f68ccb374", null ],

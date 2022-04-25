@@ -10,7 +10,6 @@ var modules =
     [ "Synchronous Connection Oriented (SCO) Channel", "group__sco.html", "group__sco" ],
     [ "Service Discovery Protocol (SDP)", "group__sdp.html", "group__sdp" ],
     [ "Bluetooth Stack Platform Interface", "group__wiced__bt__platform__group.html", "group__wiced__bt__platform__group" ],
-    [ "NVRAM", "group__nvram.html", "group__nvram" ],
     [ "Memory Management", "group__wiced__mem.html", "group__wiced__mem" ],
     [ "Common Bluetooth definitions", "group__gentypes.html", "group__gentypes" ],
     [ "Timer Management Services", "group__timer.html", "group__timer" ]

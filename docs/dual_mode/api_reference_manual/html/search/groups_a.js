@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['phy',['Phy',['../group__btm__ble__phy__functions.html',1,'']]]
+  ['rfcomm',['RFCOMM',['../group__rfcomm__api__functions.html',1,'']]]
 ];

@@ -1,5 +1,34 @@
 /*
- * $ Copyright Cypress Semiconductor $
+ * Copyright 2019-2022, Cypress Semiconductor Corporation or
+ * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
+ *
+ * This software, including source code, documentation and related
+ * materials ("Software") is owned by Cypress Semiconductor Corporation
+ * or one of its affiliates ("Cypress") and is protected by and subject to
+ * worldwide patent protection (United States and foreign),
+ * United States copyright laws and international treaty provisions.
+ * Therefore, you may use this Software only as provided in the license
+ * agreement accompanying the software package from which you
+ * obtained this Software ("EULA").
+ * If no EULA applies, Cypress hereby grants you a personal, non-exclusive,
+ * non-transferable license to copy, modify, and compile the Software
+ * source code solely for use in connection with Cypress's
+ * integrated circuit products.  Any reproduction, modification, translation,
+ * compilation, or representation of this Software except as specified
+ * above is prohibited without the express written permission of Cypress.
+ *
+ * Disclaimer: THIS SOFTWARE IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT, IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Cypress
+ * reserves the right to make changes to the Software without notice. Cypress
+ * does not assume any liability arising out of the application or use of the
+ * Software or any product or circuit described in the Software. Cypress does
+ * not authorize its products for use in any products where a malfunction or
+ * failure of the Cypress product may reasonably be expected to result in
+ * significant property damage, injury or death ("High Risk Product"). By
+ * including Cypress's product in a High Risk Product, the manufacturer
+ * of such system or application assumes all risk of such use and in doing
+ * so agrees to indemnify Cypress against all liability.
  */
 
 /** @file
@@ -300,9 +329,9 @@ uint32_t wiced_bt_queue_is_empty (wiced_bt_buffer_q_t *p_q);
 uint32_t wiced_bt_queue_get_count(wiced_bt_buffer_q_t* p_q);
 
 /**
- * Allocate long term memory, typically used for control blocks 
- * allocated through config, not expected to be freed during the 
- * lifetime of the application 
+ * Allocate long term memory, typically used for control blocks
+ * allocated through config, not expected to be freed during the
+ * lifetime of the application
  *
  * @param[in]  size  : size of memory to be allocated
  *
@@ -311,8 +340,8 @@ uint32_t wiced_bt_queue_get_count(wiced_bt_buffer_q_t* p_q);
 wiced_bt_buffer_t *wiced_memory_alloc_long_term_mem_block(int size, const char *block_name);
 
 /**
- * Free long term memory, used to free memory allocated with 
- * \ref wiced_memory_allocate_long_term, typically called during 
+ * Free long term memory, used to free memory allocated with
+ * \ref wiced_memory_allocate_long_term, typically called during
  * application shutdown
  *
  * @param[in]  p_mem : pointer memory to be freed
@@ -323,7 +352,7 @@ void wiced_memory_free_long_term_mem_block(wiced_bt_buffer_t *p_mem);
 
 
 /**
- * Get/Print the heap stats
+ * Get heap stats
  *
  * @param[in]       p_heap  : heap pointer (output of #wiced_bt_create_heap)
  * @param[out]      p_stats : pointer to receive the heap statistics
@@ -331,6 +360,27 @@ void wiced_memory_free_long_term_mem_block(wiced_bt_buffer_t *p_mem);
  * @return          TRUE in case of valid stats returned in p_stats
  */
 wiced_bool_t wiced_bt_get_heap_statistics(void* p_heap, wiced_bt_heap_statistics_t* p_stats);
+
+/**
+ * Get heap stats of heap at index. Application calls the function in a loop incrementing the index
+ * till the function returns WICED_FALSE
+ *
+ * @param[in]  index  : index of heap, starts from 0
+ * @param[out] p_stats : pointer to receive the heap statistics
+ *
+ * @return TRUE in case of valid stats returned in p_stats
+ */
+wiced_bool_t wiced_bt_get_heap_statistics_with_index(int index, wiced_bt_heap_statistics_t *p_stats);
+
+/**
+ * Get pool stats
+ *
+ * @param[in]  p_pool  : pool pointer (output of #wiced_bt_create_pool)
+ * @param[out] p_stats : pointer to receive the pool statistics
+ *
+ * @return  TRUE in case of valid stats returned in p_stats
+ */
+wiced_result_t wiced_bt_get_pool_statistics(wiced_bt_pool_t *p_pool, wiced_bt_pool_statistics_t *p_pool_details);
 
 /**
  * Set the exception callback

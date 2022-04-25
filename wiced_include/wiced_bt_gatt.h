@@ -1,5 +1,34 @@
 /*
- * $ Copyright Cypress Semiconductor $
+ * Copyright 2016-2022, Cypress Semiconductor Corporation or
+ * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
+ *
+ * This software, including source code, documentation and related
+ * materials ("Software") is owned by Cypress Semiconductor Corporation
+ * or one of its affiliates ("Cypress") and is protected by and subject to
+ * worldwide patent protection (United States and foreign),
+ * United States copyright laws and international treaty provisions.
+ * Therefore, you may use this Software only as provided in the license
+ * agreement accompanying the software package from which you
+ * obtained this Software ("EULA").
+ * If no EULA applies, Cypress hereby grants you a personal, non-exclusive,
+ * non-transferable license to copy, modify, and compile the Software
+ * source code solely for use in connection with Cypress's
+ * integrated circuit products.  Any reproduction, modification, translation,
+ * compilation, or representation of this Software except as specified
+ * above is prohibited without the express written permission of Cypress.
+ *
+ * Disclaimer: THIS SOFTWARE IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT, IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Cypress
+ * reserves the right to make changes to the Software without notice. Cypress
+ * does not assume any liability arising out of the application or use of the
+ * Software or any product or circuit described in the Software. Cypress does
+ * not authorize its products for use in any products where a malfunction or
+ * failure of the Cypress product may reasonably be expected to result in
+ * significant property damage, injury or death ("High Risk Product"). By
+ * including Cypress's product in a High Risk Product, the manufacturer
+ * of such system or application assumes all risk of such use and in doing
+ * so agrees to indemnify Cypress against all liability.
  */
 
 /** @file
@@ -34,6 +63,10 @@
  */
 #define GATT_CLIENT_MAX_WRITE_SIGNED_DATA (23 - 3 - GATT_AUTH_SIGN_LEN)
 
+ /**
+  * GATT Header size (1 byte opcode + 2 byte handle)
+  */
+#define WICED_GATT_HDR_SIZE  3
 
 /** GATT Status Codes*/
 enum wiced_bt_gatt_status_e
@@ -58,15 +91,18 @@ enum wiced_bt_gatt_status_e
     WICED_BT_GATT_INSUF_RESOURCE             = 0x11,         /**< Insufficient Resource */
     WICED_BT_GATT_DATABASE_OUT_OF_SYNC       = 0x12,         /**< GATT Database Out of Sync */
 	WICED_BT_GATT_VALUE_NOT_ALLOWED          = 0x13,         /**< Value Not allowed */
-
                                                              /* 0xE0 ~ 0xFB reserved for future use */
-                                                             /* WICED defined status  */
+    WICED_BT_GATT_WRITE_REQ_REJECTED         = 0xFC,         /**< Client Write operation rejected */
+    WICED_BT_GATT_CCCD_IMPROPER_CONFIGURED   = 0xFD,         /**< Client Characteristic Configuration Descriptor Improperly Configured */
+    WICED_BT_GATT_BUSY                       = 0xFE,         /**< Busy or Procedure already in progress */
+    WICED_BT_GATT_OUT_OF_RANGE               = 0xFF,         /**< Value Out of Range */
+                                                              /* WICED defined status  */
     WICED_BT_GATT_ILLEGAL_PARAMETER          = 0x8780,         /**< Illegal Parameter */
     WICED_BT_GATT_NO_RESOURCES               = 0x8781,         /**< No Resources */
     WICED_BT_GATT_INTERNAL_ERROR             = 0x8783,         /**< Internal Error */
     WICED_BT_GATT_WRONG_STATE                = 0x8784,         /**< Wrong State */
     WICED_BT_GATT_DB_FULL                    = 0x8785,         /**< DB Full */
-    WICED_BT_GATT_BUSY                       = 0x8786,         /**< Busy */
+    WICED_BT_GATT_UNUSED1                    = 0x8786,         /**< Unused */
     WICED_BT_GATT_ERROR                      = 0x8787,         /**< Error */
     WICED_BT_GATT_CMD_STARTED                = 0x8788,         /**< Command Started */
     WICED_BT_GATT_PENDING                    = 0x8789,         /**< Pending */
@@ -82,10 +118,10 @@ enum wiced_bt_gatt_status_e
     WICED_BT_GATT_HANDLED                    = 0x8793,         /**< Set by application to indicate it has responded to the message */
     WICED_BT_GATT_NO_PENDING_OPERATION       = 0x8794,         /**< No pending client operation for the response sent by app */
     WICED_BT_GATT_INDICATION_RESPONSE_PENDING= 0x8795,         /**< Indication response pending */
-    WICED_BT_GATT_WRITE_REQ_REJECTED         = 0x8796,         /**< Client Write operation rejected */
+    WICED_BT_GATT_UNUSED2                    = 0x8796,         /**< Unused */
     WICED_BT_GATT_CCC_CFG_ERR                = 0x8797,         /**< Improper Client Char Configuration */
     WICED_BT_GATT_PRC_IN_PROGRESS            = 0x8798,         /**< Procedure Already in Progress */
-    WICED_BT_GATT_OUT_OF_RANGE               = 0x8799,         /**< Value Out of Range */
+    WICED_BT_GATT_UNUSED3                    = 0x8799,         /**< Unused */
     WICED_BT_GATT_BAD_OPCODE                 = 0x879A,         /**< Bad opcode */
     WICED_BT_GATT_NOT_IMPLEMENTED            = 0x879B,         /**< Not implemented */
 
@@ -436,7 +472,7 @@ typedef union
                                                                        authenticated */
 
 /**<  Permission mask for writable characteristics */
-#define GATTDB_PERM_WRITABLE  (GATTDB_PERM_WRITE_CMD | GATTDB_PERM_WRITE_REQ| GATTDB_PERM_AUTH_WRITABLE)  
+#define GATTDB_PERM_WRITABLE  (GATTDB_PERM_WRITE_CMD | GATTDB_PERM_WRITE_REQ| GATTDB_PERM_AUTH_WRITABLE)
 #define GATTDB_PERM_MASK                             (0x7f)  /**< All the permission bits. */
 #define GATTDB_PERM_SERVICE_UUID_128                 (0x1 << 7)  /**< Set for 128 bit services/characteristic UUIDs, check
                                                                        @ref GATT_DB_MACROS "Service and Characteristic macros"
@@ -623,7 +659,7 @@ typedef uint8_t wiced_bt_gatt_permission_t;
 /** @} GATT_DB_MACROS */
 
 /**
-* Format of the value of a characteristic. 
+* Format of the value of a characteristic.
 * Enumeration types for the \sa UUID_DESCRIPTOR_CHARACTERISTIC_PRESENTATION_FORMAT descriptor
 */
 enum wiced_bt_gatt_format_e
@@ -721,7 +757,7 @@ typedef struct
     wiced_bool_t                    connected;   /**< TRUE if connected, FALSE if disconnected */
     wiced_bt_gatt_disconn_reason_t  reason;      /**< Reason code (see @link wiced_bt_gatt_disconn_reason_e wiced_bt_gatt_disconn_reason_t @endlink) */
     wiced_bt_transport_t            transport;   /**< Transport type of the connection */
-    uint8_t                         link_role;   /**< Link role on this connection */
+    wiced_bt_dev_role_t             link_role;   /**< Link role on this connection */
 } wiced_bt_gatt_connection_status_t;
 
 /** GATT attribute request (used by GATT_ATTRIBUTE_REQUEST_EVT notification) */
@@ -743,7 +779,7 @@ typedef struct
 /**
  * App context is returned back to application in event GATT_APP_BUFFER_TRANSMITTED_EVT on transmission of
  * application data buffer
- * 
+ *
 */
 typedef void * wiced_bt_gatt_app_context_t;
 
@@ -763,17 +799,17 @@ typedef void * wiced_bt_gatt_app_context_t;
  *     - \sa wiced_bt_gatt_server_send_read_by_type_rsp
  *     - \sa wiced_bt_gatt_server_send_read_multiple_rsp
  *     - \sa wiced_bt_gatt_server_send_prepare_write_rsp
- * 
- * @note Typically the application context is expected to be a function/hint (used by the application) 
- * to allow it to free/deallocate the memory passed to the stack when writing data to the stack. 
- * For e.g, when issueing wiced_bt_gatt_client_send_write, the app can allocate p_app_write_buffer and set the 
- * p_app_ctxt to the appropriate free function. This memory allocated for this transaction has to be freed 
- * when returned by the stack in the GATT_APP_BUFFER_TRANSMITTED_EVT. 
+ *
+ * @note Typically the application context is expected to be a function/hint (used by the application)
+ * to allow it to free/deallocate the memory passed to the stack when writing data to the stack.
+ * For e.g, when issueing wiced_bt_gatt_client_send_write, the app can allocate p_app_write_buffer and set the
+ * p_app_ctxt to the appropriate free function. This memory allocated for this transaction has to be freed
+ * when returned by the stack in the GATT_APP_BUFFER_TRANSMITTED_EVT.
  * The process is made simple since in this case as
- *  \p p_app_data is the application p_app_write_buffer and 
+ *  \p p_app_data is the application p_app_write_buffer and
  *  \p p_app_ctxt is the application free function/hint
- * @note \ref GATT_APP_BUFFER_TRANSMITTED_EVT is expected to be used only to free app memory as described. The 
- * next transaction should be attempted on the respective \ref GATT_OPERATION_CPLT_EVT 
+ * @note \ref GATT_APP_BUFFER_TRANSMITTED_EVT is expected to be used only to free app memory as described. The
+ * next transaction should be attempted on the respective \ref GATT_OPERATION_CPLT_EVT
  */
 typedef struct
 {
@@ -1902,40 +1938,40 @@ const uint8_t *wiced_bt_gatt_get_handle_value(uint16_t handle, int *p_len);
  */
 int wiced_bt_gatt_get_num_queued_tx_packets(uint16_t conn_id, int *p_fragments_with_controller);
 
-/** 
+/**
 * @brief Utility function to read local registered db by type, by iterating to the next in a loop
-* database entry. Initially \p p_db_start is set to NULL, which resets the search to the head of the local database. 
-* The database is traversed to locate the next entry which matches the intended \p type. 
+* database entry. Initially \p p_db_start is set to NULL, which resets the search to the head of the local database.
+* The database is traversed to locate the next entry which matches the intended \p type.
 * If an entry is found the data of that entry is written to \p p_disc_data and the entry in the database is returned.
-* The returned entry is passed in the subsequent call to this function in \p p_db_start. 
+* The returned entry is passed in the subsequent call to this function in \p p_db_start.
 * If an entry is not found the function returns a NULL, which indicates that the entire database has been iterated and the calling loop
 * can end.
-* 
-* @param[in] type: Discovery type 
+*
+* @param[in] type: Discovery type
 * @param[in] p_db_start: The database entry to search from. Value of NULL, resets the database pointer to the head
 * @param[out] p_disc_data: discovered data, only valid if the return is not NULL
-* 
+*
 * @return wiced_gattdb_entry_t *
 */
 const wiced_gattdb_entry_t *wiced_bt_gattdb_local_read_data_by_type(wiced_bt_gatt_discovery_type_t type,
                                                                     const wiced_gattdb_entry_t *p_db_start,
                                                                     wiced_bt_gatt_discovery_data_t *p_disc_data);
 
-/** 
+/**
  * @brief Utility function to return the 16 bit UUID of the database entry in the local database
  *  This will return a attribute UUID in the entry. If the attribute uuid is not 2 bytes. It will return 0x0 which is invalid uuid.
- * 
+ *
  * @param[in] p_db_entry: Database entry for which the UUID is to be returned.
- * 
+ *
  * @return 16 bit UUID value if available, or 0
 */
 uint16_t wiced_bt_gattdb_getAttrUUID16(const wiced_gattdb_entry_t *p_db_entry);
 
-/** 
+/**
  * @brief Utility function to return the data of the database entry in the local database
- * 
+ *
  * @param[in] p_db_entry: Database entry of which the data is to be returned.
- * 
+ *
  * @return data of the database entry
 */
 uint8_t *wiced_bt_gattdb_getAttrValue(const wiced_gattdb_entry_t *p_db_entry);
@@ -1944,4 +1980,3 @@ uint8_t *wiced_bt_gattdb_getAttrValue(const wiced_gattdb_entry_t *p_db_entry);
 }
 
 #endif
-

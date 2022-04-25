@@ -23,6 +23,6 @@ Typical steps in using BTSTACK library APIs are -
  - This GATT database will be queried by the remote GATT client device during the GATT discover procedure
 
 ## Callbacks
- - The application sets up callbacks with the BTSTACK Library. 
-   - For receiving Bluetooth link and general device management callbacks, appliation registers a callback using #wiced_bt_stack_init 
+ - The application sets up callbacks with the BTSTACK Library.
+   - For receiving Bluetooth link and general device management callbacks, appliation registers a callback using #wiced_bt_stack_init
    - For the GATT applications a GATT callback function is registered using the call to wiced_bt_gatt_register.

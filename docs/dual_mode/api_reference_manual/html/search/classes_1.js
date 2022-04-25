@@ -102,6 +102,7 @@ var searchData=
   ['wiced_5fbt_5fble_5fperiodic_5fadv_5freport_5fevent_5fdata_5ft',['wiced_bt_ble_periodic_adv_report_event_data_t',['../structwiced__bt__ble__periodic__adv__report__event__data__t.html',1,'']]],
   ['wiced_5fbt_5fble_5fperiodic_5fadv_5fsync_5festablished_5fevent_5fdata_5ft',['wiced_bt_ble_periodic_adv_sync_established_event_data_t',['../structwiced__bt__ble__periodic__adv__sync__established__event__data__t.html',1,'']]],
   ['wiced_5fbt_5fble_5fperiodic_5fadv_5fsync_5ftransfer_5fevent_5fdata_5ft',['wiced_bt_ble_periodic_adv_sync_transfer_event_data_t',['../structwiced__bt__ble__periodic__adv__sync__transfer__event__data__t.html',1,'']]],
+  ['wiced_5fbt_5fble_5fphy_5fdata_5flength_5fupdate_5ft',['wiced_bt_ble_phy_data_length_update_t',['../structwiced__bt__ble__phy__data__length__update__t.html',1,'']]],
   ['wiced_5fbt_5fble_5fphy_5fpreferences_5ft',['wiced_bt_ble_phy_preferences_t',['../structwiced__bt__ble__phy__preferences__t.html',1,'']]],
   ['wiced_5fbt_5fble_5fphy_5fupdate_5ft',['wiced_bt_ble_phy_update_t',['../structwiced__bt__ble__phy__update__t.html',1,'']]],
   ['wiced_5fbt_5fble_5fpref_5fconn_5fparams_5ft',['wiced_bt_ble_pref_conn_params_t',['../structwiced__bt__ble__pref__conn__params__t.html',1,'']]],

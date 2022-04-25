@@ -8,6 +8,5 @@ var searchData=
   ['num_5felements',['NUM_ELEMENTS',['../group__bt__types.html#ga0bf05373027b4f63e6a275eb4c3da931',1,'wiced_bt_types.h']]],
   ['num_5fhandles',['num_handles',['../structwiced__bt__gatt__read__multiple__req__t.html#ad2d6d1618bbade63c4823c8fc05c7bba',1,'wiced_bt_gatt_read_multiple_req_t']]],
   ['number_5fof_5fsubevents',['number_of_subevents',['../structwiced__bt__ble__biginfo__adv__report__t.html#ab2b3c1381bbbd5ee351b7bb72e682056',1,'wiced_bt_ble_biginfo_adv_report_t']]],
-  ['numeric_5fvalue',['numeric_value',['../structwiced__bt__dev__user__cfm__req__t.html#ae7f1276a069563b37e82ca7c8ff56c32',1,'wiced_bt_dev_user_cfm_req_t']]],
-  ['nvram',['NVRAM',['../group__nvram.html',1,'']]]
+  ['numeric_5fvalue',['numeric_value',['../structwiced__bt__dev__user__cfm__req__t.html#ae7f1276a069563b37e82ca7c8ff56c32',1,'wiced_bt_dev_user_cfm_req_t']]]
 ];

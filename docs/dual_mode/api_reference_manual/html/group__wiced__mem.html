@@ -210,8 +210,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga84a646c738099e9e0b4f764c3b6596e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free long term memory, used to free memory allocated with wiced_memory_allocate_long_term, typically called during application shutdown.  <a href="#ga84a646c738099e9e0b4f764c3b6596e9">More...</a><br /></td></tr>
 <tr class="separator:ga84a646c738099e9e0b4f764c3b6596e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga781d441cbf87a58a121c92fb9132d9b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#ga781d441cbf87a58a121c92fb9132d9b1">wiced_bt_get_heap_statistics</a> (void *p_heap, <a class="el" href="structwiced__bt__heap__statistics__t.html">wiced_bt_heap_statistics_t</a> *p_stats)</td></tr>
-<tr class="memdesc:ga781d441cbf87a58a121c92fb9132d9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Print the heap stats.  <a href="#ga781d441cbf87a58a121c92fb9132d9b1">More...</a><br /></td></tr>
+<tr class="memdesc:ga781d441cbf87a58a121c92fb9132d9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get heap stats.  <a href="#ga781d441cbf87a58a121c92fb9132d9b1">More...</a><br /></td></tr>
 <tr class="separator:ga781d441cbf87a58a121c92fb9132d9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadab993022a065bf698a2586ed8d6da25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#gadab993022a065bf698a2586ed8d6da25">wiced_bt_get_heap_statistics_with_index</a> (int index, <a class="el" href="structwiced__bt__heap__statistics__t.html">wiced_bt_heap_statistics_t</a> *p_stats)</td></tr>
+<tr class="memdesc:gadab993022a065bf698a2586ed8d6da25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get heap stats of heap at index.  <a href="#gadab993022a065bf698a2586ed8d6da25">More...</a><br /></td></tr>
+<tr class="separator:gadab993022a065bf698a2586ed8d6da25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9082cf1022d7671966a403534d9fdaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#gae9082cf1022d7671966a403534d9fdaf">wiced_bt_get_pool_statistics</a> (<a class="el" href="group__wiced__mem.html#ga8eb99f9920449033af7323ed0eb8f69c">wiced_bt_pool_t</a> *p_pool, <a class="el" href="structwiced__bt__pool__statistics__t.html">wiced_bt_pool_statistics_t</a> *p_pool_details)</td></tr>
+<tr class="memdesc:gae9082cf1022d7671966a403534d9fdaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pool stats.  <a href="#gae9082cf1022d7671966a403534d9fdaf">More...</a><br /></td></tr>
+<tr class="separator:gae9082cf1022d7671966a403534d9fdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9a5e60280610d3027effc84ee35654b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#ga9a5e60280610d3027effc84ee35654b6">wiced_set_exception_callback</a> (<a class="el" href="group__gentypes.html#gabc649ae1a0417bf22e71c4b72543a67f">pf_wiced_exception</a> pf_handler)</td></tr>
 <tr class="memdesc:ga9a5e60280610d3027effc84ee35654b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the exception callback.  <a href="#ga9a5e60280610d3027effc84ee35654b6">More...</a><br /></td></tr>
 <tr class="separator:ga9a5e60280610d3027effc84ee35654b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1042,11 +1048,88 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get/Print the heap stats. </p>
+<p>Get heap stats. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p_heap</td><td>: heap pointer (output of <a class="el" href="group__wiced__mem.html#gabd087700ddd0362c48b52e9c6f66a059" title="Initializes dynamic memory area.">wiced_bt_create_heap</a>) </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">p_stats</td><td>: pointer to receive the heap statistics</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE in case of valid stats returned in p_stats </dd></dl>
+
+</div>
+</div>
+<a id="gadab993022a065bf698a2586ed8d6da25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadab993022a065bf698a2586ed8d6da25">&#9670;&nbsp;</a></span>wiced_bt_get_heap_statistics_with_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_get_heap_statistics_with_index </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__heap__statistics__t.html">wiced_bt_heap_statistics_t</a> *&#160;</td>
+          <td class="paramname"><em>p_stats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get heap stats of heap at index. </p>
+<p>Application calls the function in a loop incrementing the index till the function returns WICED_FALSE</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>: index of heap, starts from 0 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_stats</td><td>: pointer to receive the heap statistics</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE in case of valid stats returned in p_stats </dd></dl>
+
+</div>
+</div>
+<a id="gae9082cf1022d7671966a403534d9fdaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9082cf1022d7671966a403534d9fdaf">&#9670;&nbsp;</a></span>wiced_bt_get_pool_statistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_get_pool_statistics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__wiced__mem.html#ga8eb99f9920449033af7323ed0eb8f69c">wiced_bt_pool_t</a> *&#160;</td>
+          <td class="paramname"><em>p_pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__pool__statistics__t.html">wiced_bt_pool_statistics_t</a> *&#160;</td>
+          <td class="paramname"><em>p_pool_details</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get pool stats. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_pool</td><td>: pool pointer (output of <a class="el" href="group__wiced__mem.html#gaa0382948eb39d8de2496e8cd11ee13ce" title="Creates a buffer pool for application usage.">wiced_bt_create_pool</a>) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_stats</td><td>: pointer to receive the pool statistics</td></tr>
   </table>
   </dd>
 </dl>

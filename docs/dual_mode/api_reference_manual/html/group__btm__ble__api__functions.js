@@ -32,7 +32,7 @@ var group__btm__ble__api__functions =
       [ "phy_opts", "structwiced__bt__ble__phy__preferences__t.html#a82442a587d6c18386382487c3deacd42", null ]
     ] ],
     [ "wiced_bt_ble_conn_params_t", "structwiced__bt__ble__conn__params__t.html", [
-      [ "role", "structwiced__bt__ble__conn__params__t.html#a4ead927fad433b02e7ec8d2d0b726d97", null ],
+      [ "role", "structwiced__bt__ble__conn__params__t.html#a0cddeab89b8d4fe08ab2170530e295cb", null ],
       [ "conn_interval", "structwiced__bt__ble__conn__params__t.html#a545ef7b2495e29e8e4812629fb135c44", null ],
       [ "conn_latency", "structwiced__bt__ble__conn__params__t.html#a9cca6008241e70f7882704bc6d9deb65", null ],
       [ "supervision_timeout", "structwiced__bt__ble__conn__params__t.html#ab7c6cee604c76191bd70926d8b40562e", null ]

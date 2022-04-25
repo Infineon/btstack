@@ -99,7 +99,7 @@ var searchData=
   ['pf_5funlock_5ffunc',['pf_unlock_func',['../structwiced__bt__lock__t.html#adf2acaaee99a81184c536a934eda5737',1,'wiced_bt_lock_t']]],
   ['pf_5fwrite_5facl_5fto_5flower',['pf_write_acl_to_lower',['../structwiced__bt__stack__platform__t.html#a5a4b5442450b48076ed52dfcd8b9c645',1,'wiced_bt_stack_platform_t']]],
   ['pf_5fwrite_5fcmd_5fto_5flower',['pf_write_cmd_to_lower',['../structwiced__bt__stack__platform__t.html#a9c53e952d84ff4d34955aee7c3fc2aa7',1,'wiced_bt_stack_platform_t']]],
-  ['pf_5fwrite_5fiso_5fto_5flower',['pf_write_iso_to_lower',['../structwiced__bt__stack__platform__t.html#ae690ee0869b35884f16e3b1615948f53',1,'wiced_bt_stack_platform_t']]],
+  ['pf_5fwrite_5fiso_5fto_5flower',['pf_write_iso_to_lower',['../structwiced__bt__stack__platform__t.html#aa2928d2f9c68ef62fa7cb2a163ff48be',1,'wiced_bt_stack_platform_t']]],
   ['pf_5fwrite_5fsco_5fto_5flower',['pf_write_sco_to_lower',['../structwiced__bt__stack__platform__t.html#af2edd57362c9701e0cc0214395009174',1,'wiced_bt_stack_platform_t']]],
   ['phy',['phy',['../structwiced__bt__ble__biginfo__adv__report__t.html#ab0e469d54f1453dfd1a97c26dc3aa4a1',1,'wiced_bt_ble_biginfo_adv_report_t']]],
   ['phy_5fopts',['phy_opts',['../structwiced__bt__ble__phy__preferences__t.html#a82442a587d6c18386382487c3deacd42',1,'wiced_bt_ble_phy_preferences_t']]],

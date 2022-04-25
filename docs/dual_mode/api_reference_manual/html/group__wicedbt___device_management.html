@@ -228,6 +228,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__phy__update__t.html">wiced_bt_ble_phy_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE Physical link update event related data.  <a href="structwiced__bt__ble__phy__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__phy__data__length__update__t.html">wiced_bt_ble_phy_data_length_update_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE data length update event related data.  <a href="structwiced__bt__ble__phy__data__length__update__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__multi__adv__response__t.html">wiced_bt_ble_multi_adv_response_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE Multi adv VSC response data.  <a href="structwiced__bt__ble__multi__adv__response__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,6 +350,17 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga6bfbfb382f36e0625cdbd53055e7b8bd">BTM_INQ_RESULT_EXTENDED</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memdesc:ga6bfbfb382f36e0625cdbd53055e7b8bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended Inquiry results. <br /></td></tr>
 <tr class="separator:ga6bfbfb382f36e0625cdbd53055e7b8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga265e06618516326f9bf06442155a5a62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga265e06618516326f9bf06442155a5a62">HCI_ROLE_CENTRAL</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memdesc:ga265e06618516326f9bf06442155a5a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">HCI role definitions.  <a href="#ga265e06618516326f9bf06442155a5a62">More...</a><br /></td></tr>
+<tr class="separator:ga265e06618516326f9bf06442155a5a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7dca154fa7edb5aadf21b1f063e8755"><td class="memItemLeft" align="right" valign="top"><a id="gab7dca154fa7edb5aadf21b1f063e8755"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#gab7dca154fa7edb5aadf21b1f063e8755">HCI_ROLE_PERIPHERAL</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memdesc:gab7dca154fa7edb5aadf21b1f063e8755"><td class="mdescLeft">&#160;</td><td class="mdescRight">device role peripheral <br /></td></tr>
+<tr class="separator:gab7dca154fa7edb5aadf21b1f063e8755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b10ec37d927d796c5f40871798cb263"><td class="memItemLeft" align="right" valign="top"><a id="ga9b10ec37d927d796c5f40871798cb263"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga9b10ec37d927d796c5f40871798cb263">HCI_ROLE_UNKNOWN</a>&#160;&#160;&#160;0xff</td></tr>
+<tr class="memdesc:ga9b10ec37d927d796c5f40871798cb263"><td class="mdescLeft">&#160;</td><td class="mdescRight">device role unknown <br /></td></tr>
+<tr class="separator:ga9b10ec37d927d796c5f40871798cb263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6b8558a6d2ad9d96c98e0e666fc3428f"><td class="memItemLeft" align="right" valign="top"><a id="ga6b8558a6d2ad9d96c98e0e666fc3428f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga6b8558a6d2ad9d96c98e0e666fc3428f">BTM_PIN_TYPE_VARIABLE</a>&#160;&#160;&#160;HCI_PIN_TYPE_VARIABLE</td></tr>
 <tr class="memdesc:ga6b8558a6d2ad9d96c98e0e666fc3428f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable Pin Type. <br /></td></tr>
@@ -447,6 +461,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga2d19551672148cfd9e6ebee4d4a1dcec"><td class="memItemLeft" align="right" valign="top"><a id="ga2d19551672148cfd9e6ebee4d4a1dcec"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga2d19551672148cfd9e6ebee4d4a1dcec">wiced_bt_dev_role_t</a></td></tr>
+<tr class="memdesc:ga2d19551672148cfd9e6ebee4d4a1dcec"><td class="mdescLeft">&#160;</td><td class="mdescRight">device role for the connection <br /></td></tr>
+<tr class="separator:ga2d19551672148cfd9e6ebee4d4a1dcec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c2f9492aecc7959d58856bd53848d81"><td class="memItemLeft" align="right" valign="top"><a id="ga4c2f9492aecc7959d58856bd53848d81"></a>
 typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___device_management.html#ga4c2f9492aecc7959d58856bd53848d81">wiced_bt_dev_io_cap_t</a></td></tr>
 <tr class="memdesc:ga4c2f9492aecc7959d58856bd53848d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO capabilities. <br /></td></tr>
@@ -943,7 +961,9 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a965a79b8ed951bb08083f3072b7d8f16">BTM_LPM_STATE_LOW_POWER</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65afccff06434be32f2e31fae45a59fb0bc">BTM_MULTI_ADVERT_RESP_EVENT</a>
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65afccff06434be32f2e31fae45a59fb0bc">BTM_MULTI_ADVERT_RESP_EVENT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a4317545a7c310a63a2ff6a77143db123">BTM_BLE_DATA_LENGTH_UPDATE_EVENT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga4a427fc37161f2041016d7936399be65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bluetooth Management events used in <a class="el" href="group__wicedbt___device_management.html#ga86af8a8bb467047c9af6007f15b0d344" title="Bluetooth Management callback.">wiced_bt_management_cback_t</a>.  <a href="group__wicedbt___device_management.html#ga4a427fc37161f2041016d7936399be65">More...</a><br /></td></tr>
@@ -1022,6 +1042,23 @@ Enumerations</h2></td></tr>
 <tr class="separator:gaa76569d7be1ed9ff5262e81b3b651325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga265e06618516326f9bf06442155a5a62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga265e06618516326f9bf06442155a5a62">&#9670;&nbsp;</a></span>HCI_ROLE_CENTRAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HCI_ROLE_CENTRAL&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HCI role definitions. </p>
+<p>device role central </p>
+
+</div>
+</div>
 <a id="ga5b389d0200be0a871a4258d88a8ae79c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5b389d0200be0a871a4258d88a8ae79c">&#9670;&nbsp;</a></span>SMP_SEC_NONE</h2>
 
@@ -1960,6 +1997,8 @@ Return values of the management events Return values of notification and status 
 <p>Used for Host Stack Use Case. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65afccff06434be32f2e31fae45a59fb0bc"></a>BTM_MULTI_ADVERT_RESP_EVENT&#160;</td><td class="fielddoc"><p>Event notifies Multi adv command status event used for the status of the command sent Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a8871dd5b4fb2d4c67bfa22056119f518">wiced_bt_management_evt_data_t::ble_multi_adv_response_event</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a4317545a7c310a63a2ff6a77143db123"></a>BTM_BLE_DATA_LENGTH_UPDATE_EVENT&#160;</td><td class="fielddoc"><p>Event to notify change in the data length and timeout configured for Rx and Tx on the BLE link Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a05673ca23e277594224f12252963fa9a">wiced_bt_management_evt_data_t::ble_data_length_update_event</a>. </p>
 </td></tr>
 </table>
 

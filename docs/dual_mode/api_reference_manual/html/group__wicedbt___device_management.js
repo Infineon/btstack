@@ -65,7 +65,7 @@ var group__wicedbt___device_management =
     ] ],
     [ "wiced_bt_dev_switch_role_result_t", "structwiced__bt__dev__switch__role__result__t.html", [
       [ "status", "structwiced__bt__dev__switch__role__result__t.html#a1fbece4c1a135cb2efb569fb9c8839bc", null ],
-      [ "role", "structwiced__bt__dev__switch__role__result__t.html#a224b472c4217bf0e65c51168abd61ab8", null ],
+      [ "role", "structwiced__bt__dev__switch__role__result__t.html#ac90734df604952ac60e4e27888137992", null ],
       [ "bd_addr", "structwiced__bt__dev__switch__role__result__t.html#a46d526a7e2ba37b43eef018d8abdf24a", null ]
     ] ],
     [ "wiced_bt_public_key_t", "structwiced__bt__public__key__t.html", [
@@ -192,6 +192,13 @@ var group__wicedbt___device_management =
       [ "bd_address", "structwiced__bt__ble__phy__update__t.html#a4ace94166b3fc214d4006d302167e2fa", null ],
       [ "tx_phy", "structwiced__bt__ble__phy__update__t.html#a041a5bb52786e8570e52bd4d7f867e58", null ],
       [ "rx_phy", "structwiced__bt__ble__phy__update__t.html#a23946a723394464319005031b32f21fd", null ]
+    ] ],
+    [ "wiced_bt_ble_phy_data_length_update_t", "structwiced__bt__ble__phy__data__length__update__t.html", [
+      [ "bd_address", "structwiced__bt__ble__phy__data__length__update__t.html#ab14bd19f2d2621fb5e33b55b80713bb4", null ],
+      [ "max_tx_octets", "structwiced__bt__ble__phy__data__length__update__t.html#af1fa694a924974eccb8a9e859531223e", null ],
+      [ "max_tx_time", "structwiced__bt__ble__phy__data__length__update__t.html#ae256c48792b9a6065c4f7058607baa83", null ],
+      [ "max_rx_octets", "structwiced__bt__ble__phy__data__length__update__t.html#a5bfb5c1db9bdfbefe58d5c885ce1a482", null ],
+      [ "max_rx_time", "structwiced__bt__ble__phy__data__length__update__t.html#ad2dd6236627d144219f3f649a5bf520d", null ]
     ] ],
     [ "wiced_bt_ble_multi_adv_response_t", "structwiced__bt__ble__multi__adv__response__t.html", [
       [ "opcode", "structwiced__bt__ble__multi__adv__response__t.html#afbb54fc2fd1ed8a94aae09442e909dae", null ],
@@ -364,7 +371,8 @@ var group__wicedbt___device_management =
       [ "sco_connection_change", "unionwiced__bt__management__evt__data__t.html#acc9e3283db2bde3a418c34a1c23c0c42", null ],
       [ "ble_connection_param_update", "unionwiced__bt__management__evt__data__t.html#a8aeabca3bf09a32ea4590efd9b0a24cd", null ],
       [ "ble_phy_update_event", "unionwiced__bt__management__evt__data__t.html#a840cc7fa1679b24d48031a1693ac920b", null ],
-      [ "ble_multi_adv_response_event", "unionwiced__bt__management__evt__data__t.html#a8871dd5b4fb2d4c67bfa22056119f518", null ]
+      [ "ble_multi_adv_response_event", "unionwiced__bt__management__evt__data__t.html#a8871dd5b4fb2d4c67bfa22056119f518", null ],
+      [ "ble_data_length_update_event", "unionwiced__bt__management__evt__data__t.html#a05673ca23e277594224f12252963fa9a", null ]
     ] ],
     [ "BTM_INQ_RES_IGNORE_RSSI", "group__wicedbt___device_management.html#ga1d613db0782c8f392c3425a1da1c606f", null ],
     [ "BTM_SCAN_PARAM_IGNORE", "group__wicedbt___device_management.html#ga0705e06f6fe4159a74dd389a08f3b5b8", null ],
@@ -380,6 +388,9 @@ var group__wicedbt___device_management =
     [ "BTM_INQ_RESULT", "group__wicedbt___device_management.html#ga8144ae6592727fa7b52cf4ffe9f5ba79", null ],
     [ "BTM_INQ_RESULT_WITH_RSSI", "group__wicedbt___device_management.html#gaea6700bffbdfe6f3ef55fee6c0ab1913", null ],
     [ "BTM_INQ_RESULT_EXTENDED", "group__wicedbt___device_management.html#ga6bfbfb382f36e0625cdbd53055e7b8bd", null ],
+    [ "HCI_ROLE_CENTRAL", "group__wicedbt___device_management.html#ga265e06618516326f9bf06442155a5a62", null ],
+    [ "HCI_ROLE_PERIPHERAL", "group__wicedbt___device_management.html#gab7dca154fa7edb5aadf21b1f063e8755", null ],
+    [ "HCI_ROLE_UNKNOWN", "group__wicedbt___device_management.html#ga9b10ec37d927d796c5f40871798cb263", null ],
     [ "BTM_PIN_TYPE_VARIABLE", "group__wicedbt___device_management.html#ga6b8558a6d2ad9d96c98e0e666fc3428f", null ],
     [ "BTM_PIN_TYPE_FIXED", "group__wicedbt___device_management.html#ga48c13c0c67f2759e54f0ac215832ad16", null ],
     [ "BTM_SECURITY_KEY_DATA_LEN", "group__wicedbt___device_management.html#ga286fa588b1ba4168b7a3ab24b105e720", null ],
@@ -405,6 +416,7 @@ var group__wicedbt___device_management =
     [ "BTM_MANAGEMENT_EVT", "group__wicedbt___device_management.html#ga1660b9dbc7262f13518d42f6ddbcdf7c", null ],
     [ "BTM_BLE_ADVERT_MODE", "group__wicedbt___device_management.html#gab0cb201b9cdc382e537c80c729cb3571", null ],
     [ "BTM_BLE_CONN_MODE", "group__wicedbt___device_management.html#ga308266bd5dcabfd34768883df3e29d48", null ],
+    [ "wiced_bt_dev_role_t", "group__wicedbt___device_management.html#ga2d19551672148cfd9e6ebee4d4a1dcec", null ],
     [ "wiced_bt_dev_io_cap_t", "group__wicedbt___device_management.html#ga4c2f9492aecc7959d58856bd53848d81", null ],
     [ "wiced_bt_dev_auth_req_t", "group__wicedbt___device_management.html#ga91a2b02a829b05c885362a8f86c27dfb", null ],
     [ "wiced_bt_dev_le_auth_req_t", "group__wicedbt___device_management.html#ga6fbe43cbb7c3586833c3c5477e751d5a", null ],
@@ -628,7 +640,8 @@ var group__wicedbt___device_management =
       [ "BTM_BLE_CONNECTION_PARAM_UPDATE", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a6e6df529fc0869b66488a4609deb4d0d", null ],
       [ "BTM_BLE_PHY_UPDATE_EVT", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ab6f87a638df97b57c0a5a2a77a0e1b97", null ],
       [ "BTM_LPM_STATE_LOW_POWER", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a965a79b8ed951bb08083f3072b7d8f16", null ],
-      [ "BTM_MULTI_ADVERT_RESP_EVENT", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65afccff06434be32f2e31fae45a59fb0bc", null ]
+      [ "BTM_MULTI_ADVERT_RESP_EVENT", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65afccff06434be32f2e31fae45a59fb0bc", null ],
+      [ "BTM_BLE_DATA_LENGTH_UPDATE_EVENT", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a4317545a7c310a63a2ff6a77143db123", null ]
     ] ],
     [ "wiced_bt_dev_link_quality_stats_param_e", "group__wicedbt___device_management.html#gad3ae6f503bc223e42c68e23a701af1e2", [
       [ "WICED_CLEAR_LINK_QUALITY_STATS", "group__wicedbt___device_management.html#ggad3ae6f503bc223e42c68e23a701af1e2a23a526630f1fa55ecce6845c6f909045", null ],

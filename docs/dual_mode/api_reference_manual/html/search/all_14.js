@@ -6,6 +6,7 @@ var searchData=
   ['thci_5fext_5fflow_5fspec',['tHCI_EXT_FLOW_SPEC',['../structt_h_c_i___e_x_t___f_l_o_w___s_p_e_c.html',1,'']]],
   ['time_5fread',['time_read',['../structwiced__bt__sdp__discovery__record__t.html#acf2163c1a64b9119939ac9df95067641',1,'wiced_bt_sdp_discovery_record_t']]],
   ['timer_20management_20services',['Timer Management Services',['../group__timer.html',1,'']]],
+  ['timer_5fparam_5ftype',['TIMER_PARAM_TYPE',['../group__timer.html#ga2cd25e917632799891ef3d99a326b331',1,'wiced_timer.h']]],
   ['token_5fbucket_5fsize',['token_bucket_size',['../structwiced__bt__flow__spec__t.html#af4eb9b1a97b8dc3f732bf2124d43e1a0',1,'wiced_bt_flow_spec_t']]],
   ['token_5frate',['token_rate',['../structwiced__bt__flow__spec__t.html#aab51a7692589e5bb14821ded70745708',1,'wiced_bt_flow_spec_t']]],
   ['trace_5fbuffer',['trace_buffer',['../structwiced__bt__stack__platform__t.html#a44e54c18febc40a36c6a17fe0052bb6e',1,'wiced_bt_stack_platform_t']]],
