@@ -27,6 +27,7 @@ var group__btm__ble__sec__api__functions =
     [ "wiced_bt_ble_set_periodic_adv_data", "group__btm__ble__sec__api__functions.html#ga3f983b0b8d6ad3693c168b1c78d802d0", null ],
     [ "wiced_bt_ble_start_periodic_adv", "group__btm__ble__sec__api__functions.html#gab1016d53ad56373cde08fcdd4c66b7ad", null ],
     [ "wiced_bt_ble_cache_ext_scan_config", "group__btm__ble__sec__api__functions.html#ga107a1b5869c56e7d8154b08d292a2a22", null ],
+    [ "wiced_bt_ble_cache_ext_conn_config", "group__btm__ble__sec__api__functions.html#ga6fe6895722ff57c749ec3f305cfaade2", null ],
     [ "wiced_bt_ble_create_sync_to_periodic_adv", "group__btm__ble__sec__api__functions.html#ga1ffc9aca67fcb417cb99a62b2e3c8d93", null ],
     [ "wiced_bt_ble_cancel_sync_to_periodic_adv", "group__btm__ble__sec__api__functions.html#ga8530513e13c2cf3eef7f26e10f57fd23", null ],
     [ "wiced_bt_ble_terminate_sync_to_periodic_adv", "group__btm__ble__sec__api__functions.html#ga4eb30b5be9071a28bc839ce9b96874b9", null ],
@@ -41,5 +42,6 @@ var group__btm__ble__sec__api__functions =
     [ "wiced_bt_ble_set_periodic_adv_sync_transfer_param", "group__btm__ble__sec__api__functions.html#gafe4510f1d83118f564d4ae881e1c0a84", null ],
     [ "wiced_bt_ble_set_default_periodic_adv_sync_transfer_param", "group__btm__ble__sec__api__functions.html#ga7cef00191d761540f510bf76282f593a", null ],
     [ "wiced_ble_private_device_address_resolution", "group__btm__ble__sec__api__functions.html#gaa1a08bf54c9c06015c1bbafbaab433c1", null ],
-    [ "wiced_bt_ble_read_le_features", "group__btm__ble__sec__api__functions.html#ga5bc1e0f5151f2b2e550bbd8c96035a82", null ]
+    [ "wiced_bt_ble_read_le_features", "group__btm__ble__sec__api__functions.html#ga5bc1e0f5151f2b2e550bbd8c96035a82", null ],
+    [ "wiced_bt_ble_address_resolution_list_clear_and_disable", "group__btm__ble__sec__api__functions.html#gafadf1111bda74127bcd449cf16ad5c06", null ]
 ];

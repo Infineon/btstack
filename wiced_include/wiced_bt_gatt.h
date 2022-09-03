@@ -472,7 +472,7 @@ typedef union
                                                                        authenticated */
 
 /**<  Permission mask for writable characteristics */
-#define GATTDB_PERM_WRITABLE  (GATTDB_PERM_WRITE_CMD | GATTDB_PERM_WRITE_REQ| GATTDB_PERM_AUTH_WRITABLE)
+#define GATTDB_PERM_WRITABLE (GATTDB_PERM_WRITE_CMD | GATTDB_PERM_WRITE_REQ | GATTDB_PERM_AUTH_WRITABLE) /**<Writable permissions*/
 #define GATTDB_PERM_MASK                             (0x7f)  /**< All the permission bits. */
 #define GATTDB_PERM_SERVICE_UUID_128                 (0x1 << 7)  /**< Set for 128 bit services/characteristic UUIDs, check
                                                                        @ref GATT_DB_MACROS "Service and Characteristic macros"
@@ -1516,9 +1516,16 @@ wiced_bt_gatt_status_t wiced_bt_gatt_client_send_read_handle(uint16_t conn_id, u
     wiced_bt_gatt_auth_req_t auth_req);
 
 /**
- * Read from remote ATT server.
- * Result is notified using <b> GATT_OPERATION_CPLT_EVT </b> of #wiced_bt_gatt_cback_t,
- * with \ref wiced_bt_gatt_operation_complete_t.op set to GATTC_OPTYPE_READ_BY_TYPE
+ * Read by type from remote ATT server.
+ * The handle information for the read by type request is received via
+ * <b> GATT_OPERATION_CPLT_EVT </b> of #wiced_bt_gatt_cback_t with
+ * \ref wiced_bt_gatt_operation_complete_t.op set to \ref GATTC_OPTYPE_READ_HANDLE
+ * A non-zero \ref wiced_bt_gatt_operation_complete_t.pending_events indicates multiple handle responses
+ * which may be returned from the server for some UUIDs
+ *
+ * The end of the read by type transaction is notified with result via
+ * <b> GATT_OPERATION_CPLT_EVT </b> of #wiced_bt_gatt_cback_t with
+ * \ref wiced_bt_gatt_operation_complete_t.op set to GATTC_OPTYPE_READ_BY_TYPE
  *
  *  @param[in]  conn_id     : Connection id
  *  @param[in] s_handle : Start handle of the range to search

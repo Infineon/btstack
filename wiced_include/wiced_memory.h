@@ -334,6 +334,7 @@ uint32_t wiced_bt_queue_get_count(wiced_bt_buffer_q_t* p_q);
  * lifetime of the application
  *
  * @param[in]  size  : size of memory to be allocated
+ * @param[in]  block_name: friendly name of memory block to be allocated.
  *
  * @return     pointer to the allocated memory
  */
@@ -341,7 +342,7 @@ wiced_bt_buffer_t *wiced_memory_alloc_long_term_mem_block(int size, const char *
 
 /**
  * Free long term memory, used to free memory allocated with
- * \ref wiced_memory_allocate_long_term, typically called during
+ * \ref wiced_memory_alloc_long_term_mem_block, typically called during
  * application shutdown
  *
  * @param[in]  p_mem : pointer memory to be freed
@@ -380,7 +381,7 @@ wiced_bool_t wiced_bt_get_heap_statistics_with_index(int index, wiced_bt_heap_st
  *
  * @return  TRUE in case of valid stats returned in p_stats
  */
-wiced_result_t wiced_bt_get_pool_statistics(wiced_bt_pool_t *p_pool, wiced_bt_pool_statistics_t *p_pool_details);
+wiced_result_t wiced_bt_get_pool_statistics(wiced_bt_pool_t *p_pool, wiced_bt_pool_statistics_t *p_stats);
 
 /**
  * Set the exception callback

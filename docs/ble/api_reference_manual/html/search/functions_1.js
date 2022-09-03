@@ -2,7 +2,9 @@ var searchData=
 [
   ['wiced_5fble_5fprivate_5fdevice_5faddress_5fresolution',['wiced_ble_private_device_address_resolution',['../group__btm__ble__sec__api__functions.html#gaa1a08bf54c9c06015c1bbafbaab433c1',1,'wiced_bt_ble.h']]],
   ['wiced_5fbt_5fble_5fadd_5fdevice_5fto_5fperiodic_5fadv_5flist',['wiced_bt_ble_add_device_to_periodic_adv_list',['../group__btm__ble__sec__api__functions.html#ga6d2839b209126fec355350a77d4e9b59',1,'wiced_bt_ble.h']]],
+  ['wiced_5fbt_5fble_5faddress_5fresolution_5flist_5fclear_5fand_5fdisable',['wiced_bt_ble_address_resolution_list_clear_and_disable',['../group__btm__ble__sec__api__functions.html#gafadf1111bda74127bcd449cf16ad5c06',1,'wiced_bt_ble.h']]],
   ['wiced_5fbt_5fble_5fbuild_5fraw_5fadvertisement_5fdata',['wiced_bt_ble_build_raw_advertisement_data',['../group__btm__ble__adv__scan__functions.html#ga74e692cbbd0a833ff06c1ab4af0b5bda',1,'wiced_bt_ble.h']]],
+  ['wiced_5fbt_5fble_5fcache_5fext_5fconn_5fconfig',['wiced_bt_ble_cache_ext_conn_config',['../group__btm__ble__sec__api__functions.html#ga6fe6895722ff57c749ec3f305cfaade2',1,'wiced_bt_ble.h']]],
   ['wiced_5fbt_5fble_5fcache_5fext_5fscan_5fconfig',['wiced_bt_ble_cache_ext_scan_config',['../group__btm__ble__sec__api__functions.html#ga107a1b5869c56e7d8154b08d292a2a22',1,'wiced_bt_ble.h']]],
   ['wiced_5fbt_5fble_5fcancel_5fsync_5fto_5fperiodic_5fadv',['wiced_bt_ble_cancel_sync_to_periodic_adv',['../group__btm__ble__sec__api__functions.html#ga8530513e13c2cf3eef7f26e10f57fd23',1,'wiced_bt_ble.h']]],
   ['wiced_5fbt_5fble_5fcheck_5fadvertising_5fdata',['wiced_bt_ble_check_advertising_data',['../group__btm__ble__adv__scan__functions.html#ga8d62204cf6ab289f977215c08d5864ca',1,'wiced_bt_ble.h']]],
@@ -125,7 +127,7 @@ var searchData=
   ['wiced_5fbt_5fget_5flargest_5fheap_5fbuffer',['wiced_bt_get_largest_heap_buffer',['../group__wiced__mem.html#ga1f954d898c5466a865a47ab097f385e7',1,'wiced_memory.h']]],
   ['wiced_5fbt_5fget_5flargest_5fstack_5fheap_5fbuffer',['wiced_bt_get_largest_stack_heap_buffer',['../group__wiced__mem.html#gaf7910db6f2bb29ec6e6ddd8f943a182c',1,'wiced_memory.h']]],
   ['wiced_5fbt_5fget_5fpool_5ffree_5fcount',['wiced_bt_get_pool_free_count',['../group__wiced__mem.html#gac2d26815b0ed4aa9f7d72650d7c5b28f',1,'wiced_memory.h']]],
-  ['wiced_5fbt_5fget_5fpool_5fstatistics',['wiced_bt_get_pool_statistics',['../group__wiced__mem.html#gae9082cf1022d7671966a403534d9fdaf',1,'wiced_memory.h']]],
+  ['wiced_5fbt_5fget_5fpool_5fstatistics',['wiced_bt_get_pool_statistics',['../group__wiced__mem.html#gaf9408276a6611c7479ae21ca81e20ca1',1,'wiced_memory.h']]],
   ['wiced_5fbt_5fgetfirst',['wiced_bt_getfirst',['../group__wiced__mem.html#ga3d0f730da71f5eefc2ffb8c7047f02f9',1,'wiced_memory.h']]],
   ['wiced_5fbt_5fgetlast',['wiced_bt_getlast',['../group__wiced__mem.html#ga0250fcacf935ca7fb2f0c802bc498316',1,'wiced_memory.h']]],
   ['wiced_5fbt_5fgetnext',['wiced_bt_getnext',['../group__wiced__mem.html#ga88ac7077880864d79dbc134e460a814c',1,'wiced_memory.h']]],

@@ -1,5 +1,10 @@
 var NAVTREEINDEX15 =
 {
+"unionwiced__bt__avrc__notif__rsp__param__t.html#a18c55d33ca88022c3d82364ddd581b40":[1,2,47,4],
+"unionwiced__bt__avrc__notif__rsp__param__t.html#a1f717a7be348f01877fd55b133a5f25a":[1,2,47,8],
+"unionwiced__bt__avrc__notif__rsp__param__t.html#a2dde20b706c4c7ea9248182dfb160dc2":[1,2,47,5],
+"unionwiced__bt__avrc__notif__rsp__param__t.html#a44daf30b0ad947cfc701fbffb8d028cf":[1,2,47,7],
+"unionwiced__bt__avrc__notif__rsp__param__t.html#a5dff00cf0d78ed80c42848d04e2d1e12":[1,2,47,6],
 "unionwiced__bt__avrc__notif__rsp__param__t.html#aaac3370121e13e8a927e3b73a219742a":[1,2,47,1],
 "unionwiced__bt__avrc__notif__rsp__param__t.html#ad3aad9f6676b9d20d4c614040afa847e":[1,2,47,0],
 "unionwiced__bt__avrc__notif__rsp__param__t.html#ad90016d56e44428abd14f2241916759a":[1,2,47,3],

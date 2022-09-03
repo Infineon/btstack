@@ -131,6 +131,10 @@ typedef uint8_t wiced_bt_db_hash_t[BT_DB_HASH_LEN]; /**< BLE database hash */
 /** GATT Client Support features */
 typedef uint8_t wiced_bt_gatt_client_supported_features_t[WICED_BT_GATT_CLIENT_SUPPORTED_FEATURE_OCTET_LEN];
 
+#define WICED_BT_GATT_SERVER_SUPPORTED_FEATURE_OCTET_LEN 1 /**< GATT Server Supported feature length */
+/** GATT Server Support features */
+typedef uint8_t wiced_bt_gatt_server_supported_features_t[WICED_BT_GATT_SERVER_SUPPORTED_FEATURE_OCTET_LEN];
+
 /** UUID Type */
 typedef struct
 {

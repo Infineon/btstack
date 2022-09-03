@@ -1,13 +1,17 @@
 var NAVTREEINDEX2 =
 {
+"group__wiced__mem.html#ga9a5e60280610d3027effc84ee35654b6":[1,5,35],
+"group__wiced__mem.html#ga9ddff2d22209edda9d0193a2c81dacfc":[1,5,3],
+"group__wiced__mem.html#gaa0382948eb39d8de2496e8cd11ee13ce":[1,5,11],
+"group__wiced__mem.html#gaba17f78395b7d5d3be0a963fc64d8a82":[1,5,13],
 "group__wiced__mem.html#gabd087700ddd0362c48b52e9c6f66a059":[1,5,9],
 "group__wiced__mem.html#gabf9a622ef54fe5731cec0a055923c96f":[1,5,24],
 "group__wiced__mem.html#gac2d26815b0ed4aa9f7d72650d7c5b28f":[1,5,15],
 "group__wiced__mem.html#gadab993022a065bf698a2586ed8d6da25":[1,5,33],
 "group__wiced__mem.html#gae7ff550ebc3ec2693de3b360f1a1539f":[1,5,8],
-"group__wiced__mem.html#gae9082cf1022d7671966a403534d9fdaf":[1,5,34],
 "group__wiced__mem.html#gaf2a3683b317c42e9c264c5725179fe10":[1,5,14],
 "group__wiced__mem.html#gaf7910db6f2bb29ec6e6ddd8f943a182c":[1,5,17],
+"group__wiced__mem.html#gaf9408276a6611c7479ae21ca81e20ca1":[1,5,34],
 "group__wicedbt___device_management.html":[1,1],
 "group__wicedbt___device_management.html#ga013f9abd01f24129a77253a4c980ccc8":[1,1,130],
 "group__wicedbt___device_management.html#ga01724e6a7493c8ea5fd268cf9a3e5de1":[1,1,91],
@@ -245,9 +249,5 @@ var NAVTREEINDEX2 =
 "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a9cb82502be00a366c3427b7c6ba29556":[1,1,238,27],
 "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a9f21d946a11c13d53d1249b7bb8c70cf":[1,1,238,1],
 "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65aadc39481ea06a7cd6b16c13aa882583d":[1,1,238,29],
-"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ab6f87a638df97b57c0a5a2a77a0e1b97":[1,1,238,33],
-"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ac2e321db33778e75effc95483c14e265":[1,1,238,6],
-"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65acf3aca6c8fd4e53a7659df498546a103":[1,1,238,18],
-"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ad269ecdb719b290553cc44f03cd0b280":[1,1,238,9],
-"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65adab633d8b20b3bdae03abdca5e38a58e":[1,1,238,25]
+"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ab6f87a638df97b57c0a5a2a77a0e1b97":[1,1,238,33]
 };

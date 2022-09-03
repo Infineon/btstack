@@ -32,21 +32,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "group___result.html",
-"group__btm__ble__api__functions.html#ga74afed208bbe3506c1f0f0e668c4050b",
-"group__gatt__client__api__functions.html#ga557c18bfce7377c09deee7b45a94c99a",
-"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a38c69fe7247db39a37872c4042c4f006",
-"group__wiced__mem.html#ga1f954d898c5466a865a47ab097f385e7",
-"group__wicedbt___device_management.html#ggab94d20733e23c6a87c030964a9215bcba597f7a92892b9e1c4323c8e6f2f5d898",
-"group__wicedbt__avdt.html#ga2d4f98804d8e66e4a76ab8e6004859c0",
-"group__wicedbt__avrc.html#ga3772bbc3a22f2c1ee98f12c7c95bfa47",
-"group__wicedbt__avrc.html#ga9ea376c3be46dc1210b231606ca66f8a",
-"group__wicedbt__avrc.html#gaff212f0430000e09f92fe47876994c6d",
-"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a5baece0002dc780ea8fb1e9dd0901ae9",
-"structwiced__bt__avrc__browse__set__br__player__rsp__t.html#ae787ce25d842e5c6c24a4f9846165846",
-"structwiced__bt__ble__ext__adv__report__t.html#a147301a71b3d035c54a7cf3004edcf70",
-"structwiced__bt__dev__encryption__status__t.html#aa344cdcd4e32fa661cf947b3ec49416b",
-"structwiced__bt__l2cap__appl__information__t.html#a2e00007ae56cb020366fbfd7dfe336ab",
-"unionwiced__bt__avrc__notif__rsp__param__t.html#aaac3370121e13e8a927e3b73a219742a"
+"group__btm__ble__api__functions.html#ga741cf5a4faaa7f62fc0314304b4fcbf0",
+"group__gatt__client__api__functions.html",
+"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a147ef28430c932743dabdf452f371555",
+"group__wiced__mem.html",
+"group__wicedbt___device_management.html#ggab2179004dac20c28116a07931fdf62a6ab4fc0ebb965d9e5c04c59ce9ef96ad41",
+"group__wicedbt__avdt.html#ga2523a4eeca4e006e28511921defeaa31",
+"group__wicedbt__avrc.html#ga3391c01f298a1389015476d0a465e3d0",
+"group__wicedbt__avrc.html#ga9dd66d676e637fa83a96742c40d4fb48",
+"group__wicedbt__avrc.html#gafe6379ff2c92814b3708020d4454be05",
+"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a3721e028c30464c7dc6ac5275b2c59a6",
+"structwiced__bt__avrc__browse__set__br__player__rsp__t.html#a01b04dbba5db14ffb610ed3d4f65f272",
+"structwiced__bt__ble__ext__adv__duration__config__t.html#accfb479787c49951b35485d20020b460",
+"structwiced__bt__dev__enabled__t.html",
+"structwiced__bt__heap__statistics__t.html#ad8b427af61dbaca2ba89b57dab4cdc2d",
+"unionwiced__bt__avrc__notif__rsp__param__t.html#a18c55d33ca88022c3d82364ddd581b40"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

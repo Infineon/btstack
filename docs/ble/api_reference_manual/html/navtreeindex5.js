@@ -1,5 +1,10 @@
 var NAVTREEINDEX5 =
 {
+"index.html":[],
+"index.html":[0],
+"modules.html":[1],
+"pages.html":[],
+"structt_d_r_b.html":[1,6,0,3],
 "structt_d_r_b.html#a03b3684a053c6fec95b16c395b528214":[1,6,0,3,0],
 "structt_d_r_b.html#a669fac4ab39139f0e03587357530dddc":[1,6,0,3,2],
 "structt_d_r_b.html#aedefe32ab5c4e9cc53410180d276ab45":[1,6,0,3,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX5 =
 "structwiced__bt__cfg__l2cap__application__t.html#a0aee0bf617bd2d757e8166c7e69a52ac":[1,2,9,4],
 "structwiced__bt__cfg__l2cap__application__t.html#a0e9d4f46b7b34bbd29b653c2b5e14dc3":[1,2,9,1],
 "structwiced__bt__cfg__l2cap__application__t.html#a1309688cf441f82aa3e31109971a6b65":[1,2,9,0],
-"structwiced__bt__cfg__l2cap__application__t.html#a7a9f0564ec1278e70b660ae794ac5314":[1,2,9,2],
-"structwiced__bt__cfg__l2cap__application__t.html#ad9dfed1360209830366ed341e79a51e7":[1,2,9,3],
-"structwiced__bt__cfg__rfcomm__t.html":[1,2,5],
-"structwiced__bt__cfg__rfcomm__t.html#a6b05d658ec05c434a0702cfca2ba90ce":[1,2,5,0],
-"structwiced__bt__cfg__rfcomm__t.html#a70f414afd5e8ee9c53673eedf8876914":[1,2,5,1],
-"structwiced__bt__cfg__settings__t.html":[1,2,10]
+"structwiced__bt__cfg__l2cap__application__t.html#a7a9f0564ec1278e70b660ae794ac5314":[1,2,9,2]
 };

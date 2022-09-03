@@ -8,6 +8,21 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.5.0
+BTSTACK3.5 release contains bug fixes and and an enhancement listed below.
+ - Updated API description for wiced_bt_gatt_client_send_read_by_type().
+ - Fix to issue where setting adv parameters was allowing incorrect adv type to be set for directed advertisements.
+ - Fix for an issue in wiced_bt_delete_heap().
+ - Fixed an issue to return correct connection handle when there is an ISOC CIS disconnection and added reason field.
+ - Fix to avoid clearing of CIS data path info from stack during CIS disconnection.
+ - Added sections in the code for aiding placement of btstack data path in the linker file.
+ - Creation of stack libraries using ARM and IAR toolchains.
+
+### Known issues in V3.5.0
+ - The issue is related to the handling of directed advertisement flags in the LE Set Extended Adv commands. Android expects the device to send directed advertisement packets with its
+   Random Private Address, whereas the device issues the same with the remotes public address.
+   The workaround for the issue is to use undirected advertisements for applications to continue with their development when using a controller that supports Extended Advertisements.
+
 ## V3.4.0
 BTSTACK3.4 release contains bug fixes and and an enhancement listed below.
  - Stack now conforms to PTS8.1.1. Below are the test cases that fail and are under discussion/debug with PTS,

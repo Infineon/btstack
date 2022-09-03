@@ -32,13 +32,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "group___result.html",
-"group__gatt__common__api.html#gac384524f7e61172da9eb0beb764ed46d",
-"group__wiced__mem.html#gabd087700ddd0362c48b52e9c6f66a059",
-"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ae3453acd1e9a4c6b87ecb92186dcdb43",
-"group__wicedbt__gatt.html#ga715c8bd037ec698eb84cba0f1ddd1540",
-"structt_d_r_b.html#a03b3684a053c6fec95b16c395b528214",
-"structwiced__bt__cfg__settings__t.html#a11955842286935ea1a45899935510349",
-"structwiced__bt__l2cap__appl__information__t.html#a2e00007ae56cb020366fbfd7dfe336ab"
+"group__gatt__common__api.html#ga2bfd5052c63d135f8df4078a61d0938b",
+"group__wiced__mem.html#ga9a5e60280610d3027effc84ee35654b6",
+"group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ac2e321db33778e75effc95483c14e265",
+"group__wicedbt__gatt.html#ga6bf4e326bf95c613ff59591782abf6b4",
+"index.html",
+"structwiced__bt__cfg__l2cap__application__t.html#ad9dfed1360209830366ed341e79a51e7",
+"structwiced__bt__heap__statistics__t.html#ad8b427af61dbaca2ba89b57dab4cdc2d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

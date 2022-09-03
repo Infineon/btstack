@@ -200,6 +200,7 @@ var group__wicedbt__gatt =
     [ "GATTDB_PERM_AUTH_READABLE", "group__wicedbt__gatt.html#gaf35356bd37477cdb6e6d9ac4dbf69762", null ],
     [ "GATTDB_PERM_RELIABLE_WRITE", "group__wicedbt__gatt.html#gaf5ad84c1e0460264f3706875ac8792ee", null ],
     [ "GATTDB_PERM_AUTH_WRITABLE", "group__wicedbt__gatt.html#ga1eb057f59e9b65654e93fc106a6f3c77", null ],
+    [ "GATTDB_PERM_WRITABLE", "group__wicedbt__gatt.html#ga6025f6cc5dd0b90ce746ef671028bd58", null ],
     [ "GATTDB_PERM_MASK", "group__wicedbt__gatt.html#gaee57afb45b7c88a1cf3690efd44e8219", null ],
     [ "GATTDB_PERM_SERVICE_UUID_128", "group__wicedbt__gatt.html#gad6f106f82541c47480d2a162e267030c", null ],
     [ "GATTDB_CHAR_PROP_BROADCAST", "group__wicedbt__gatt.html#ga58f0e454eb4b1dbf9f95779f4bd2ee75", null ],

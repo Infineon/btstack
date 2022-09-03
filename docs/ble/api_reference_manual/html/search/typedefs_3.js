@@ -85,6 +85,7 @@ var searchData=
   ['wiced_5fbt_5fgatt_5foptype_5ft',['wiced_bt_gatt_optype_t',['../group__wicedbt__gatt.html#ga05306a406063206bfa783075f5bedff2',1,'wiced_bt_gatt.h']]],
   ['wiced_5fbt_5fgatt_5fpermission_5ft',['wiced_bt_gatt_permission_t',['../group__wicedbt__gatt.html#ga68017055d05ad1b83bccec1193f52b29',1,'wiced_bt_gatt.h']]],
   ['wiced_5fbt_5fgatt_5fserver_5fchar_5fconfig_5ft',['wiced_bt_gatt_server_char_config_t',['../group__wicedbt__gatt.html#gac459e3c6da6cdc4b53b477d6cc2d0661',1,'wiced_bt_gatt.h']]],
+  ['wiced_5fbt_5fgatt_5fserver_5fsupported_5ffeatures_5ft',['wiced_bt_gatt_server_supported_features_t',['../group__bt__types.html#ga036c121345aaff7c106328f0f0fdefe2',1,'wiced_bt_types.h']]],
   ['wiced_5fbt_5fgatt_5fstatus_5ft',['wiced_bt_gatt_status_t',['../group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a',1,'wiced_bt_gatt.h']]],
   ['wiced_5fbt_5fhci_5ftrace_5fcback_5ft',['wiced_bt_hci_trace_cback_t',['../group__wicedbt___device_management.html#ga8b6fbcab797b63e5fa1b9eaa99a229c3',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fheap_5ft',['wiced_bt_heap_t',['../group__wiced__mem.html#ga29951f8f099d15eb96c47cfbdf656c3c',1,'wiced_memory.h']]],

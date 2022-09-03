@@ -77,6 +77,7 @@ typedef enum
 
 typedef enum
 {
+    WICED_BLE_ISOC_DPD_UNUSED = 0,
     WICED_BLE_ISOC_DPD_INPUT_BIT = 1,
     WICED_BLE_ISOC_DPD_OUTPUT_BIT = 2,
     WICED_BLE_ISOC_DPD_INPUT_OUTPUT_BIT = WICED_BLE_ISOC_DPD_INPUT_BIT & WICED_BLE_ISOC_DPD_OUTPUT_BIT,
@@ -158,6 +159,7 @@ typedef struct
     uint16_t    cis_conn_handle;        /**< CIS Connection Handle */
     uint8_t     cis_id;                 /**< CIS ID */
     uint8_t     cig_id;                 /**< CIG ID */
+    uint8_t     reason;                 /**< Disconnection Reason */
 }wiced_bt_isoc_cis_disconnect_data_t;
 
 /** ISOC CIS Established Event Data */

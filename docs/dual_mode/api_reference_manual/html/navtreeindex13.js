@@ -1,5 +1,10 @@
 var NAVTREEINDEX13 =
 {
+"structwiced__bt__dev__enabled__t.html":[1,4,41],
+"structwiced__bt__dev__enabled__t.html#a53ed6f3e10938676c9e891210a16af65":[1,4,41,0],
+"structwiced__bt__dev__encryption__status__t.html":[1,4,45],
+"structwiced__bt__dev__encryption__status__t.html#a4a6e96558fa84c99c09860da4751da6f":[1,4,45,1],
+"structwiced__bt__dev__encryption__status__t.html#a6c33df0a26312b20bedd5a0ecaa980ca":[1,4,45,3],
 "structwiced__bt__dev__encryption__status__t.html#aa344cdcd4e32fa661cf947b3ec49416b":[1,4,45,2],
 "structwiced__bt__dev__encryption__status__t.html#ac820421ffb8c6f0c6cad02b1700469a2":[1,4,45,0],
 "structwiced__bt__dev__inq__parms__t.html":[1,4,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX13 =
 "structwiced__bt__heap__statistics__t.html#a72ebd938f4cbabf8601c17d842100ef1":[1,10,1,1],
 "structwiced__bt__heap__statistics__t.html#a7593dec8c12709cbd19068f3afb2a2dc":[1,10,1,2],
 "structwiced__bt__heap__statistics__t.html#aab76797927aba2bb8b6d0c3403e1885c":[1,10,1,4],
-"structwiced__bt__heap__statistics__t.html#ad3809985755c38a2f608dd9a838f06ab":[1,10,1,3],
-"structwiced__bt__heap__statistics__t.html#ad8b427af61dbaca2ba89b57dab4cdc2d":[1,10,1,0],
-"structwiced__bt__l2cap__appl__information__t.html":[1,0,6],
-"structwiced__bt__l2cap__appl__information__t.html#a116f61fdbf56574de545a18611e345bf":[1,0,6,8],
-"structwiced__bt__l2cap__appl__information__t.html#a201f156f265c18d387a77ae949d4a60b":[1,0,6,9],
-"structwiced__bt__l2cap__appl__information__t.html#a2da9196c24ab6e6d225d94dc1ac795d4":[1,0,6,1]
+"structwiced__bt__heap__statistics__t.html#ad3809985755c38a2f608dd9a838f06ab":[1,10,1,3]
 };

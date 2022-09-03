@@ -1,5 +1,10 @@
 var NAVTREEINDEX6 =
 {
+"structwiced__bt__cfg__l2cap__application__t.html#ad9dfed1360209830366ed341e79a51e7":[1,2,9,3],
+"structwiced__bt__cfg__rfcomm__t.html":[1,2,5],
+"structwiced__bt__cfg__rfcomm__t.html#a6b05d658ec05c434a0702cfca2ba90ce":[1,2,5,0],
+"structwiced__bt__cfg__rfcomm__t.html#a70f414afd5e8ee9c53673eedf8876914":[1,2,5,1],
+"structwiced__bt__cfg__settings__t.html":[1,2,10],
 "structwiced__bt__cfg__settings__t.html#a11955842286935ea1a45899935510349":[1,2,10,1],
 "structwiced__bt__cfg__settings__t.html#a3b6e440bf2a528a1126b81d8f1b5684a":[1,2,10,3],
 "structwiced__bt__cfg__settings__t.html#a570d12a7d3e33b52533317ed286dc89b":[1,2,10,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX6 =
 "structwiced__bt__heap__statistics__t.html#a72ebd938f4cbabf8601c17d842100ef1":[1,5,1,1],
 "structwiced__bt__heap__statistics__t.html#a7593dec8c12709cbd19068f3afb2a2dc":[1,5,1,2],
 "structwiced__bt__heap__statistics__t.html#aab76797927aba2bb8b6d0c3403e1885c":[1,5,1,4],
-"structwiced__bt__heap__statistics__t.html#ad3809985755c38a2f608dd9a838f06ab":[1,5,1,3],
-"structwiced__bt__heap__statistics__t.html#ad8b427af61dbaca2ba89b57dab4cdc2d":[1,5,1,0],
-"structwiced__bt__l2cap__appl__information__t.html":[1,0,2],
-"structwiced__bt__l2cap__appl__information__t.html#a116f61fdbf56574de545a18611e345bf":[1,0,2,8],
-"structwiced__bt__l2cap__appl__information__t.html#a201f156f265c18d387a77ae949d4a60b":[1,0,2,9],
-"structwiced__bt__l2cap__appl__information__t.html#a2da9196c24ab6e6d225d94dc1ac795d4":[1,0,2,1]
+"structwiced__bt__heap__statistics__t.html#ad3809985755c38a2f608dd9a838f06ab":[1,5,1,3]
 };

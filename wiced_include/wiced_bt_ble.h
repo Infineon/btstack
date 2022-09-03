@@ -1716,6 +1716,21 @@ wiced_bt_dev_status_t wiced_bt_ble_start_periodic_adv(wiced_bt_ble_ext_adv_handl
 wiced_bt_dev_status_t wiced_bt_ble_cache_ext_scan_config(wiced_bt_ble_ext_scan_config_t *p_ext_scan_cfg);
 
 /**
+ * Stores the extended ADV connection configuration.
+ *
+ * @param[in]       p_ext_conn_cfg    - pointer to connection configuration
+ *
+ * @return          wiced_bt_dev_status_t
+ *
+ * <b> WICED_BT_ILLEGAL_VALUE </b> : If paramer is wrong \n
+ * <b> WICED_BT_UNSUPPORTED </b>   : If command not supported \n
+ * <b> WICED_BT_NO_RESOURCES </b>  : If no memory to issue the command \n
+ * <b> WICED_BT_SUCCESS </b>       : If successful\n
+ *
+ */
+wiced_bt_dev_status_t wiced_bt_ble_cache_ext_conn_config(wiced_bt_ble_ext_conn_cfg_t *p_ext_conn_cfg);
+
+/**
  * Sends the HCI command to synchronize with periodic advertising from an advertiser and begin receiving periodic
  * advertising packets.
  *
@@ -1973,6 +1988,17 @@ wiced_result_t wiced_ble_private_device_address_resolution(wiced_bt_device_addre
  *                  WICED_BT_ERROR   otherwise.
  */
 wiced_result_t wiced_bt_ble_read_le_features(wiced_bt_device_address_t bda, wiced_bt_features_t features);
+
+/**
+ * Function         wiced_bt_ble_address_resolution_list_clear_and_disable
+ *
+ *                  This API clears the address resolution list and disables the address resolution feature.
+ *
+ * @return          wiced_result_t
+ *                  WICED_BT_SUCCESS if address resolution list is cleared and adress resolution feature is disabled.
+ *                  WICED_BT_ERROR   otherwise.
+ */
+wiced_result_t wiced_bt_ble_address_resolution_list_clear_and_disable(void);
 
 /**@} btm_ble_api_functions */
 
