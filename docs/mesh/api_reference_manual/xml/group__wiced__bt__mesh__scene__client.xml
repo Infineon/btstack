@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__mesh__scene__client" kind="group">
+    <compoundname>wiced_bt_mesh_scene_client</compoundname>
+    <title>Mesh Scene Client</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__mesh__scene__client_1ga36e6a46593b1274659abc67dbd4ecccf" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() wiced_bt_mesh_scene_client_callback_t(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</definition>
+        <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
+        <name>wiced_bt_mesh_scene_client_callback_t</name>
+        <briefdescription>
+<para>Scene Client callback is called by the Mesh Models library on receiving a message from the peer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1SCENE_EVENT" kindref="member">Scene Events</ref>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information about the message received. The same pointer should be used in the reply if required. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data structure</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5453" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5453" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__mesh__scene__client_1ga6bc5e806ce3b1fba6aad69808a4bc7f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_scene_client_init</definition>
+        <argsstring>(uint8_t element_idx, wiced_bt_mesh_scene_client_callback_t *p_callback, wiced_bool_t is_provisioned)</argsstring>
+        <name>wiced_bt_mesh_model_scene_client_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__mesh__scene__client_1ga36e6a46593b1274659abc67dbd4ecccf" kindref="member">wiced_bt_mesh_scene_client_callback_t</ref> *</type>
+          <declname>p_callback</declname>
+        </param>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>is_provisioned</declname>
+        </param>
+        <briefdescription>
+<para>Scene Client Module initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device element to where model is used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Application or Parent model callback that will be executed on receiving a message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_provisioned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5464" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__scene__client_1ga59b0b27a3a744d5a3c6e3d90094c1053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_model_scene_client_message_handler</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
+        <name>wiced_bt_mesh_model_scene_client_message_handler</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Scene client Message Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An application or a parent model can call this models library function to process a message received from the Scene Server device. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5478" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__scene__client_1gae7d775e6242219c46ef46bc7ce0b29aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_scene_client_send_request</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_scene_request_t *p_request)</argsstring>
+        <name>wiced_bt_mesh_model_scene_client_send_request</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__scene__request__t" kindref="compound">wiced_bt_mesh_scene_request_t</ref> *</type>
+          <declname>p_request</declname>
+        </param>
+        <briefdescription>
+<para>Scene Client send request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application can call Scene Client send request function to send Scene Store/Recall/Get/Delete client message to the server.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data structure containing request type and scene number</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5489" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__scene__client_1ga161e9c990de9c9e37718685727d27130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_scene_client_send_recall</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_scene_recall_t *p_request)</argsstring>
+        <name>wiced_bt_mesh_model_scene_client_send_recall</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__scene__recall__t" kindref="compound">wiced_bt_mesh_scene_recall_t</ref> *</type>
+          <declname>p_request</declname>
+        </param>
+        <briefdescription>
+<para>Scene Client Send Recall. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application can call Scene Client Send Recall function to send Scene Recall client message to the server.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a data structure containing request type and scene number</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5500" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__scene__client_1gac29bd88635c2fe67f5bd2ed055fc939a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_scene_client_send_register_get</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_model_scene_client_send_register_get</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>Scene Client Send Register Get. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application can call Scene Client Send Register Get function to send Scene Register Get client message to the server.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5510" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The AIROC Mesh Scene Client module provides a way for an application to control Scene Servers in the mesh network. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To include the Mesh Models support for the Scene Client module the application shall contain the WICED_BT_MESH_MODEL_SCENE_CLIENT</para>
+<para>TBD </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

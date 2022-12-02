@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__light__delta__uv__last__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_light_delta_uv_last_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__delta__uv__last__data__t_1a36c118df6bd83fdb5236bd464405cfdd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_delta_uv_last_data_t::last_level</definition>
+        <argsstring></argsstring>
+        <name>last_level</name>
+        <briefdescription>
+<para>The value of the Light Lightness Last state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1358" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1358" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Light Lightness Last Status Data structure exchanged between the application and Light Lightness Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1357" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1356" bodyend="1359"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__light__delta__uv__last__data__t_1a36c118df6bd83fdb5236bd464405cfdd" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_delta_uv_last_data_t</scope><name>last_level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

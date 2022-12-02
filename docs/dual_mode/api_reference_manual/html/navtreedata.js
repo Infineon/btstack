@@ -32,7 +32,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "group___result.html",
-"group__btm__ble__api__functions.html#ga741cf5a4faaa7f62fc0314304b4fcbf0",
+"group__btm__ble__api__functions.html#ga739083f7f029919eb7e5b9f5de5bfb48",
 "group__gatt__client__api__functions.html",
 "group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a147ef28430c932743dabdf452f371555",
 "group__wiced__mem.html",

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_4e6935c92f50a57c71fc19646a166fc4" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="wiced__bt__mesh__agg_8h">wiced_bt_mesh_agg.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__app_8h">wiced_bt_mesh_app.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__cfg_8h">wiced_bt_mesh_cfg.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__client_8h">wiced_bt_mesh_client.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__core_8h">wiced_bt_mesh_core.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__dfu_8h">wiced_bt_mesh_dfu.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__event_8h">wiced_bt_mesh_event.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__lcd_8h">wiced_bt_mesh_lcd.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__mdf_8h">wiced_bt_mesh_mdf.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__model__defs_8h">wiced_bt_mesh_model_defs.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__model__utils_8h">wiced_bt_mesh_model_utils.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__models_8h">wiced_bt_mesh_models.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__private__proxy_8h">wiced_bt_mesh_private_proxy.h</innerfile>
+    <innerfile refid="wiced__bt__mesh__provision_8h">wiced_bt_mesh_provision.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__provision__start__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_provision_start_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__start__data__t_1ab3bc0f03959e145f327a509da4fa3e81" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_provision_start_data_t::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+<para>Address to assign to the device during provisioning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="333" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__start__data__t_1ab3b4df4d51a1a44bb0e5ba569d14d75d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_provision_start_data_t::net_key_idx</definition>
+        <argsstring></argsstring>
+        <name>net_key_idx</name>
+        <briefdescription>
+<para>The network key index to assign to the device during provisioning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="334" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__start__data__t_1a00dd6eb4df19d77385cb595edadf6b00" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_start_data_t::algorithm</definition>
+        <argsstring></argsstring>
+        <name>algorithm</name>
+        <briefdescription>
+<para>The algorithm used for provisioning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="335" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__start__data__t_1a650fe2ee06baba1f4c4c69a0e80f6a81" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_start_data_t::public_key_type</definition>
+        <argsstring></argsstring>
+        <name>public_key_type</name>
+        <briefdescription>
+<para>If 1 Public Key OOB information available. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="336" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__start__data__t_1a5ca78faa57eb7523d46fbad31e6ba9b2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_start_data_t::auth_method</definition>
+        <argsstring></argsstring>
+        <name>auth_method</name>
+        <briefdescription>
+<para>Authentication Method used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="337" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__start__data__t_1a334bde414ca7e9b1f1f1e4e395e905f8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_start_data_t::auth_action</definition>
+        <argsstring></argsstring>
+        <name>auth_action</name>
+        <briefdescription>
+<para>Selected Output OOB Action or Input OOB Action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="338" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__start__data__t_1a9653cd30ca88afafd12f59fca7359713" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_start_data_t::auth_size</definition>
+        <argsstring></argsstring>
+        <name>auth_size</name>
+        <briefdescription>
+<para>Size of the Output OOB used or size of the Input OOB used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="339" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="332" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="331" bodyend="340"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__provision__start__data__t_1ab3bc0f03959e145f327a509da4fa3e81" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_start_data_t</scope><name>addr</name></member>
+      <member refid="structwiced__bt__mesh__provision__start__data__t_1a00dd6eb4df19d77385cb595edadf6b00" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_start_data_t</scope><name>algorithm</name></member>
+      <member refid="structwiced__bt__mesh__provision__start__data__t_1a334bde414ca7e9b1f1f1e4e395e905f8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_start_data_t</scope><name>auth_action</name></member>
+      <member refid="structwiced__bt__mesh__provision__start__data__t_1a5ca78faa57eb7523d46fbad31e6ba9b2" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_start_data_t</scope><name>auth_method</name></member>
+      <member refid="structwiced__bt__mesh__provision__start__data__t_1a9653cd30ca88afafd12f59fca7359713" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_start_data_t</scope><name>auth_size</name></member>
+      <member refid="structwiced__bt__mesh__provision__start__data__t_1ab3b4df4d51a1a44bb0e5ba569d14d75d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_start_data_t</scope><name>net_key_idx</name></member>
+      <member refid="structwiced__bt__mesh__provision__start__data__t_1a650fe2ee06baba1f4c4c69a0e80f6a81" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_start_data_t</scope><name>public_key_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

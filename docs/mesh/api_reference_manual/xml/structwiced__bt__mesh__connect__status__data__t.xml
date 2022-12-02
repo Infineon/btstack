@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__connect__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_connect_status_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__connect__status__data__t_1a372859545e0a7573c5c29f7eab9af791" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_connect_status_data_t::provisioner_addr</definition>
+        <argsstring></argsstring>
+        <name>provisioner_addr</name>
+        <briefdescription>
+<para>Remote provisioning server address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="309" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__connect__status__data__t_1a178bb7cddda65b3d8868058c8f323748" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_connect_status_data_t::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+<para>Address of the first element of the device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Maybe 0 when unprovisioned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="310" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__connect__status__data__t_1ae9c6cea1a432f19f6fc9afbb14caf6fa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_connect_status_data_t::connected</definition>
+        <argsstring></argsstring>
+        <name>connected</name>
+        <briefdescription>
+<para>If TRUE, connection has been established. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="311" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__connect__status__data__t_1a0a78e75e9b0e306f3343dafbf23f5a38" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_connect_status_data_t::over_gatt</definition>
+        <argsstring></argsstring>
+        <name>over_gatt</name>
+        <briefdescription>
+<para>If TRUE, connection is over GATT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="312" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="308" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="307" bodyend="313"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__connect__status__data__t_1a178bb7cddda65b3d8868058c8f323748" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_connect_status_data_t</scope><name>addr</name></member>
+      <member refid="structwiced__bt__mesh__connect__status__data__t_1ae9c6cea1a432f19f6fc9afbb14caf6fa" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_connect_status_data_t</scope><name>connected</name></member>
+      <member refid="structwiced__bt__mesh__connect__status__data__t_1a0a78e75e9b0e306f3343dafbf23f5a38" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_connect_status_data_t</scope><name>over_gatt</name></member>
+      <member refid="structwiced__bt__mesh__connect__status__data__t_1a372859545e0a7573c5c29f7eab9af791" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_connect_status_data_t</scope><name>provisioner_addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

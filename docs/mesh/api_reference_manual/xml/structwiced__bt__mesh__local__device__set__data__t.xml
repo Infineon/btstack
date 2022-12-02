@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__local__device__set__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_local_device_set_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__local__device__set__data__t_1a141d779e11d5045d1bd397d60aad0237" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_local_device_set_data_t::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+<para>Local Node Address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="174" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__local__device__set__data__t_1a0fc552bb4f012308cd359b10a0778357" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_local_device_set_data_t::dev_key[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>dev_key</name>
+        <briefdescription>
+<para>Local Device Key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="175" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__local__device__set__data__t_1a9658922b853f3a9883b8ed9f7f38ad8d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_local_device_set_data_t::network_key[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>network_key</name>
+        <briefdescription>
+<para>Mesh Network Key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="176" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__local__device__set__data__t_1a121dd7076bfd27e2b163b134b6bf31b1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_local_device_set_data_t::net_key_idx</definition>
+        <argsstring></argsstring>
+        <name>net_key_idx</name>
+        <briefdescription>
+<para>Network Key Index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="177" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__local__device__set__data__t_1ab9aa8408dbecc1835af523498efa04e2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_local_device_set_data_t::iv_idx</definition>
+        <argsstring></argsstring>
+        <name>iv_idx</name>
+        <briefdescription>
+<para>Current Network IV Index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="178" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__local__device__set__data__t_1a8dde81b41728179fc5b101ba0d148805" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_local_device_set_data_t::key_refresh</definition>
+        <argsstring></argsstring>
+        <name>key_refresh</name>
+        <briefdescription>
+<para>1 if Key Refresh Phase 2 is in progress </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="179" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__local__device__set__data__t_1a4804f7a1684578784b97c1aed38abf77" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_local_device_set_data_t::iv_update</definition>
+        <argsstring></argsstring>
+        <name>iv_update</name>
+        <briefdescription>
+<para>1 if IV Update procedure is in progress </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="180" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__local__device__set__data__t_1a4bbff5f82b440965922e7ea627aee1ab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_local_device_set_data_t::model_level_access</definition>
+        <argsstring></argsstring>
+        <name>model_level_access</name>
+        <briefdescription>
+<para>1 if application implements model level, 0 if application talks to model library </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="181" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="173" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="172" bodyend="182"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__local__device__set__data__t_1a141d779e11d5045d1bd397d60aad0237" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_local_device_set_data_t</scope><name>addr</name></member>
+      <member refid="structwiced__bt__mesh__local__device__set__data__t_1a0fc552bb4f012308cd359b10a0778357" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_local_device_set_data_t</scope><name>dev_key</name></member>
+      <member refid="structwiced__bt__mesh__local__device__set__data__t_1ab9aa8408dbecc1835af523498efa04e2" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_local_device_set_data_t</scope><name>iv_idx</name></member>
+      <member refid="structwiced__bt__mesh__local__device__set__data__t_1a4804f7a1684578784b97c1aed38abf77" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_local_device_set_data_t</scope><name>iv_update</name></member>
+      <member refid="structwiced__bt__mesh__local__device__set__data__t_1a8dde81b41728179fc5b101ba0d148805" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_local_device_set_data_t</scope><name>key_refresh</name></member>
+      <member refid="structwiced__bt__mesh__local__device__set__data__t_1a4bbff5f82b440965922e7ea627aee1ab" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_local_device_set_data_t</scope><name>model_level_access</name></member>
+      <member refid="structwiced__bt__mesh__local__device__set__data__t_1a121dd7076bfd27e2b163b134b6bf31b1" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_local_device_set_data_t</scope><name>net_key_idx</name></member>
+      <member refid="structwiced__bt__mesh__local__device__set__data__t_1a9658922b853f3a9883b8ed9f7f38ad8d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_local_device_set_data_t</scope><name>network_key</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

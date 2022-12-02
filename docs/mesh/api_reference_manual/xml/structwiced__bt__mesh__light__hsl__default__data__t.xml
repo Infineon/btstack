@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__light__hsl__default__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_light_hsl_default_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__default__data__t_1afcf9aebf2e1829c640228c703e196033" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__light__hsl__data__t" kindref="compound">wiced_bt_mesh_light_hsl_data_t</ref></type>
+        <definition>wiced_bt_mesh_light_hsl_data_t wiced_bt_mesh_light_hsl_default_data_t::default_status</definition>
+        <argsstring></argsstring>
+        <name>default_status</name>
+        <briefdescription>
+<para>Target value of the Light HSL state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1441" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1441" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Light HSL Set Default Data structure exchanged between the application and the models library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="114">
+        <label>wiced_bt_mesh_light_hsl_default_data_t</label>
+        <link refid="structwiced__bt__mesh__light__hsl__default__data__t"/>
+        <childnode refid="115" relation="usage">
+          <edgelabel>default_status</edgelabel>
+        </childnode>
+      </node>
+      <node id="115">
+        <label>wiced_bt_mesh_light_hsl_data_t</label>
+        <link refid="structwiced__bt__mesh__light__hsl__data__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1440" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1439" bodyend="1442"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__light__hsl__default__data__t_1afcf9aebf2e1829c640228c703e196033" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_default_data_t</scope><name>default_status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

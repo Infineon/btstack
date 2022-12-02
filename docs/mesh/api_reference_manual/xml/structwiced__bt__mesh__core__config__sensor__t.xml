@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__core__config__sensor__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_core_config_sensor_t</compoundname>
+    <includes local="no">wiced_bt_mesh_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__config__sensor__t_1a100d82f686952c41a3ca2e17de1dd4d4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_core_config_sensor_t::property_id</definition>
+        <argsstring></argsstring>
+        <name>property_id</name>
+        <briefdescription>
+<para>Property ID identifying a sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="142" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__config__sensor__t_1a7a1e2b3276767d2a803c62ea1c92cb42" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_config_sensor_t::prop_value_len</definition>
+        <argsstring></argsstring>
+        <name>prop_value_len</name>
+        <briefdescription>
+<para>Length of the raw_value corresponding to property_id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="143" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__config__sensor__t_1a5e9c8faf1f55b5c6d4e90eb862389ac7" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__config__descriptor__t" kindref="compound">wiced_bt_mesh_sensor_config_descriptor_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_config_descriptor_t wiced_bt_mesh_core_config_sensor_t::descriptor</definition>
+        <argsstring></argsstring>
+        <name>descriptor</name>
+        <briefdescription>
+<para>Sensor Descriptor state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="144" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__config__sensor__t_1a53b2c1ff1526b0cf2dd1b68d9d9a20de" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* wiced_bt_mesh_core_config_sensor_t::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Sensor Data state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="145" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__config__sensor__t_1a7b8060b705cb96109bce7a3500eb51ca" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__config__cadence__t" kindref="compound">wiced_bt_mesh_sensor_config_cadence_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_config_cadence_t wiced_bt_mesh_core_config_sensor_t::cadence</definition>
+        <argsstring></argsstring>
+        <name>cadence</name>
+        <briefdescription>
+<para>Sensor Cadence state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="146" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__config__sensor__t_1a8c54377a669f0d0ca3468529fc884032" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_config_sensor_t::num_series</definition>
+        <argsstring></argsstring>
+        <name>num_series</name>
+        <briefdescription>
+<para>Number of series data present in sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="147" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__config__sensor__t_1aeb55288e73b29d0192973bb595b5adda" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__config__column__data__t" kindref="compound">wiced_bt_mesh_sensor_config_column_data_t</ref> *</type>
+        <definition>wiced_bt_mesh_sensor_config_column_data_t* wiced_bt_mesh_core_config_sensor_t::series_columns</definition>
+        <argsstring></argsstring>
+        <name>series_columns</name>
+        <briefdescription>
+<para>List of series column values of sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="148" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__config__sensor__t_1a0a4862f9c9684e5b0e2f8edc41cdc4c7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_config_sensor_t::num_settings</definition>
+        <argsstring></argsstring>
+        <name>num_settings</name>
+        <briefdescription>
+<para>Number of settings present in sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="149" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__config__sensor__t_1ac409578201e2bd4f30467482f400bee9" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__config__setting__t" kindref="compound">wiced_bt_mesh_sensor_config_setting_t</ref> *</type>
+        <definition>wiced_bt_mesh_sensor_config_setting_t* wiced_bt_mesh_core_config_sensor_t::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <briefdescription>
+<para>List of setting data present in sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="150" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines configuration data of the one sensor in the array of structure wiced_bt_mesh_core_config_element_t. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="16">
+        <label>wiced_bt_mesh_sensor_config_setting_t</label>
+        <link refid="structwiced__bt__mesh__sensor__config__setting__t"/>
+      </node>
+      <node id="14">
+        <label>wiced_bt_mesh_core_config_sensor_t</label>
+        <link refid="structwiced__bt__mesh__core__config__sensor__t"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>cadence</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>settings</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>series_columns</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>descriptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>wiced_bt_mesh_sensor_config_column_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__config__column__data__t"/>
+      </node>
+      <node id="15">
+        <label>wiced_bt_mesh_sensor_config_cadence_t</label>
+        <link refid="structwiced__bt__mesh__sensor__config__cadence__t"/>
+      </node>
+      <node id="18">
+        <label>wiced_bt_mesh_sensor_config_descriptor_t</label>
+        <link refid="structwiced__bt__mesh__sensor__config__descriptor__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="141" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="140" bodyend="151"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__core__config__sensor__t_1a7b8060b705cb96109bce7a3500eb51ca" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_config_sensor_t</scope><name>cadence</name></member>
+      <member refid="structwiced__bt__mesh__core__config__sensor__t_1a53b2c1ff1526b0cf2dd1b68d9d9a20de" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_config_sensor_t</scope><name>data</name></member>
+      <member refid="structwiced__bt__mesh__core__config__sensor__t_1a5e9c8faf1f55b5c6d4e90eb862389ac7" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_config_sensor_t</scope><name>descriptor</name></member>
+      <member refid="structwiced__bt__mesh__core__config__sensor__t_1a8c54377a669f0d0ca3468529fc884032" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_config_sensor_t</scope><name>num_series</name></member>
+      <member refid="structwiced__bt__mesh__core__config__sensor__t_1a0a4862f9c9684e5b0e2f8edc41cdc4c7" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_config_sensor_t</scope><name>num_settings</name></member>
+      <member refid="structwiced__bt__mesh__core__config__sensor__t_1a7a1e2b3276767d2a803c62ea1c92cb42" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_config_sensor_t</scope><name>prop_value_len</name></member>
+      <member refid="structwiced__bt__mesh__core__config__sensor__t_1a100d82f686952c41a3ca2e17de1dd4d4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_config_sensor_t</scope><name>property_id</name></member>
+      <member refid="structwiced__bt__mesh__core__config__sensor__t_1aeb55288e73b29d0192973bb595b5adda" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_config_sensor_t</scope><name>series_columns</name></member>
+      <member refid="structwiced__bt__mesh__core__config__sensor__t_1ac409578201e2bd4f30467482f400bee9" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_config_sensor_t</scope><name>settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

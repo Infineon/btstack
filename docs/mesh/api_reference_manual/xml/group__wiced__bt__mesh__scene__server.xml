@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__mesh__scene__server" kind="group">
+    <compoundname>wiced_bt_mesh_scene_server</compoundname>
+    <title>Mesh Scene Server</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__mesh__scene__server_1ga6bc81bfebc813fd66471917ad15680ce" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() wiced_bt_mesh_scene_server_callback_t(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</definition>
+        <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
+        <name>wiced_bt_mesh_scene_server_callback_t</name>
+        <briefdescription>
+<para>Scene Server callback is called by the Mesh Models library on receiving a message from the peer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1SCENE_EVENT" kindref="member">Scene Events</ref>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information about the message received. The same pointer should be used in the reply if required. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data structure</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5387" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5387" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__mesh__scene__server_1ga57c347957938182da3fdd501d9a72bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_scene_server_init</definition>
+        <argsstring>(wiced_bt_mesh_scene_server_callback_t *p_callback, wiced_bool_t is_provisioned)</argsstring>
+        <name>wiced_bt_mesh_model_scene_server_init</name>
+        <param>
+          <type><ref refid="group__wiced__bt__mesh__scene__server_1ga6bc81bfebc813fd66471917ad15680ce" kindref="member">wiced_bt_mesh_scene_server_callback_t</ref> *</type>
+          <declname>p_callback</declname>
+        </param>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>is_provisioned</declname>
+        </param>
+        <briefdescription>
+<para>Scene Server Module initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Application or Parent model callback that will be executed on receiving a message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_provisioned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5397" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__scene__server_1gad02139dbd5de33dbfa4574f1b7524817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_model_scene_server_message_handler</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
+        <name>wiced_bt_mesh_model_scene_server_message_handler</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Scene Server Message Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5410" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__scene__server_1ga1e69d93cd77b795bd811c1ae913a39e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_model_scene_setup_server_message_handler</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
+        <name>wiced_bt_mesh_model_scene_setup_server_message_handler</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Scene Setup Server Message Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5423" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__scene__server_1ga747d06b09d82c7ddb25585393215b9bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_scene_data_changed</definition>
+        <argsstring>(uint8_t element_idx)</argsstring>
+        <name>wiced_bt_mesh_model_scene_data_changed</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <briefdescription>
+<para>Scene Data Changed The Scene Data Changed function should be called when any data stored with a scene has changed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5429" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The AIROC Mesh Scene Server module provides a way for an application to implement a functionality for the devices that support scene state. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To include the Mesh Models support for the Scene Server module the application shall contain the WICED_BT_MESH_MODEL_SCENE_SERVER</para>
+<para>TBD </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,988 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__mesh__app_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_mesh_app.h</compoundname>
+    <includes refid="wiced__bt__mesh__event_8h" local="yes">wiced_bt_mesh_event.h</includes>
+    <includes refid="wiced__bt__mesh__model__defs_8h" local="yes">wiced_bt_mesh_model_defs.h</includes>
+    <includes local="yes">wiced_bt_gatt.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>wiced_bt_gatt.h</label>
+      </node>
+      <node id="4">
+        <label>wiced_bt_mesh_app.h</label>
+        <link refid="wiced__bt__mesh__app_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structwiced__bt__mesh__app__func__table__t" prot="public">wiced_bt_mesh_app_func_table_t</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Bits of the wiced_bt_mesh_hci_command_t::flags</header>
+      <description><para><anchor id="wiced__bt__mesh__app_8h_1WICED_BT_MESH_HCI_COMMAND_FLAGS"/></para>
+<para>The following is the bits meaning of the field flags in the structure wiced_bt_mesh_hci_command_t. </para>
+</description>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a4449c1a0bef589911b04e36c432c79ae" prot="public" static="no">
+        <name>WICED_BT_MESH_HCI_COMMAND_FLAGS_SEND_SEGMENTED</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+<para>Bits meaning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>1 means core uses segmentation to send that message even if it fits into unsegmented message. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="62" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a9ca0e88913f3bc4fada92ce7ff208f19" prot="public" static="no">
+        <name>WICED_BT_MESH_HCI_COMMAND_FLAGS_TAG_USE_DIRECTED</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+<para>Tag Use Directed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="63" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a84fd061bd22ab81c6db48ebf2c23e070" prot="public" static="no">
+        <name>WICED_BT_MESH_HCI_COMMAND_FLAGS_TAG_IMMUTABLE_CREDENTIALS</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+<para>Tag Immutable Credentials. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="64" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a0fbf3f0689483f99eed18d527a18609a" prot="public" static="no">
+        <name>TRACE_NONE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="18" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a8ef360431a8a28dd07add1d69347ffb8" prot="public" static="no">
+        <name>TRACE_CRITICAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="19" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a7c12181b2e8dc912219651ff42d22e42" prot="public" static="no">
+        <name>TRACE_ERROR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="20" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a38e42b7c50e2112f0f0154e376c792d6" prot="public" static="no">
+        <name>TRACE_WARNING</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="21" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1aa1ac2baa71c9625b5131f180c6d2bfb8" prot="public" static="no">
+        <name>TRACE_INFO</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="22" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a22aa2a3eb0d062dc388befd69b195f83" prot="public" static="no">
+        <name>TRACE_DEBUG</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="23" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1ae2adc72d0e39407908f2f72a1f9b3016" prot="public" static="no">
+        <name>CY_MAGIC_RPR_SUPPORTED</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="28" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a4846486d26aa3324301a4bed00cdc607" prot="public" static="no">
+        <name>CY_MAGIC_SELF_CONFIG_SUPPORTED</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="29" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a9a0c3ed720133d6cd9e967722d3a012e" prot="public" static="no">
+        <name>CY_MAGIC_RELAY_SUPPORTED</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="30" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a4a0b1bdfd5a4186fe0b26ce7c74a3f5f" prot="public" static="no">
+        <name>CY_MAGIC_L1</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="31" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1acd0b97b6ae0c4abe697b7934482e75c6" prot="public" static="no">
+        <name>CY_MAGIC_L2</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="32" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__app_8h_1a36d525cf4d116b2fe4ecc00222b256f1" prot="public" static="no">
+        <name>PACKED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="36" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1aceaf5af0611b60c68e42f37beff99bef" prot="public" static="no">
+        <type>PACKED struct @0</type>
+        <definition>typedef PACKED struct @0  wiced_bt_mesh_hci_event_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_mesh_hci_event_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1aa63fe5f32eb3320cf52763e9d740515b" prot="public" static="no">
+        <type>PACKED struct @1</type>
+        <definition>typedef PACKED struct @1  wiced_bt_mesh_hci_command_t</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_mesh_hci_command_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1a949a59463ce1d155856e0bc8536e561f" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_mesh_app_init_t) (wiced_bool_t is_provisioned)</definition>
+        <argsstring>)(wiced_bool_t is_provisioned)</argsstring>
+        <name>wiced_bt_mesh_app_init_t</name>
+        <briefdescription>
+<para>A callback function to perform application startup initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The mesh_app_init function shall be implemented by the mesh application. It is executed at startup, when device is provisioned, and when device is gets unprovisioned (processing of the Node Reset).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">is_provisioned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If TRUE a device is provisioned.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="104" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1a1c28bae63da9d115cc65dfba939fad2d" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_mesh_app_hardware_init_t) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>wiced_bt_mesh_app_hardware_init_t</name>
+        <briefdescription>
+<para>A callback function to perform application hardware initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The mesh_app_hardware_init function shall be implemented by the mesh application if it wants to control hardware. If application does not implement this callback the mesh application library performs default action. It will register the interrupt callback for the application button of the platform and perform the factory reset when the button is pushed.</para>
+<para><simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="115" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1afb180b8dae9d56c01b66b9d8ebc11c4f" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_mesh_app_gatt_conn_status_t) (wiced_bt_gatt_connection_status_t *p_status)</definition>
+        <argsstring>)(wiced_bt_gatt_connection_status_t *p_status)</argsstring>
+        <name>wiced_bt_mesh_app_gatt_conn_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A callback function notifying the application when GATT connection has been established or lost.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status of the GATT connection.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="124" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1aa4b5dbaf1f52536a3f617a689b620628" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_mesh_app_attention_t) (uint8_t element, uint8_t time)</definition>
+        <argsstring>)(uint8_t element, uint8_t time)</argsstring>
+        <name>wiced_bt_mesh_app_attention_t</name>
+        <briefdescription>
+<para>A callback function to attract human attention by LED blinks or other. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application shall implement the mesh_attention function to support Health Server Model and Attention functionality during provisioning. A client device may request device to show itself. The device should blink or change colors, or make sound, or whatever device can do.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the element </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 - Off; 0x01 - 0xff - On, time to attract user attention in seconds.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="137" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1a3f8ad62093b3496657f46b9aba830711" prot="public" static="no">
+        <type>wiced_bool_t(*</type>
+        <definition>typedef wiced_bool_t(* wiced_bt_mesh_app_notify_period_set_t) (uint8_t element, uint16_t company_id, uint16_t model_id, uint32_t time)</definition>
+        <argsstring>)(uint8_t element, uint16_t company_id, uint16_t model_id, uint32_t time)</argsstring>
+        <name>wiced_bt_mesh_app_notify_period_set_t</name>
+        <briefdescription>
+<para>Notification period changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application may be notified by the model library that it needs to periodically send current Status notifications. Application for the sensor devices, i.e. declare WICED_BT_MESH_MODEL_SENSOR_SERVER model on one of the elements, are required to handle this callback. If the device does not have sensors, support for this callback is optional. Applications that do not want to handle the callback, should make sure that they report changes to the local states to the Mesh Models library. For example, an application for a light where the brightness can be adjusted both over Bluetooth and locally, may report local changes every time something is adjusted locally. The Mesh Models library will remember all the status changes and will automatically send notifications as appropriate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the element </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">company_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Company ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interval in milliseconds, if 0, application should not send periodic notifications.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns WICED_TRUE if application will take care of the periodic publications. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="158" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1aa4cd2f64abc9da704801ff358e799772" prot="public" static="no">
+        <type>uint32_t(*</type>
+        <definition>typedef uint32_t(* wiced_bt_mesh_app_proc_rx_cmd_t) (uint16_t opcode, uint8_t *p_data, uint32_t length)</definition>
+        <argsstring>)(uint16_t opcode, uint8_t *p_data, uint32_t length)</argsstring>
+        <name>wiced_bt_mesh_app_proc_rx_cmd_t</name>
+        <briefdescription>
+<para>Processing of a AIROC HCI Command from the MCU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application shall implement this function to process AIROC HCI commands received over the &quot;WICED UART&quot; or SPI transport.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AIROC HCI Command Opcode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AIROC HCI Command parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the AIROC HCI Command parameters</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if application processed opcode. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="171" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1a967affe1911e4e3b9630f653fb17ce7e" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_mesh_app_lpn_sleep_t) (uint32_t duration)</definition>
+        <argsstring>)(uint32_t duration)</argsstring>
+        <name>wiced_bt_mesh_app_lpn_sleep_t</name>
+        <briefdescription>
+<para>Low Power Node sleep. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Low Power Node application shall implement this function to receive notification when sleep mode can be entered. Application can adjust timeout according to its preferences and enter HID_OFF state. If HID_OFF is not desirable, application can just return.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of time Mesh Core does not require processing in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="182" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1a3cba2fc7084c4fdbc732c6535348ac10" prot="public" static="no">
+        <type>wiced_bool_t(*</type>
+        <definition>typedef wiced_bool_t(* wiced_bt_mesh_app_non_conn_adv_handler_t) (int8_t rssi, const uint8_t *p_adv_data, const uint8_t *remote_bd_addr)</definition>
+        <argsstring>)(int8_t rssi, const uint8_t *p_adv_data, const uint8_t *remote_bd_addr)</argsstring>
+        <name>wiced_bt_mesh_app_non_conn_adv_handler_t</name>
+        <briefdescription>
+<para>Non-connectable adv packet application handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A customer application can implement this function to handle application specific non-connectable adv packets.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rssi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Adv packet RSSI value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_adv_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Adv packet data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">remote_bd_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Remote device address</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if application processed adv and it does not need to be processed by the core </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="195" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__mesh__app_8h_1a88e4a8c62c79133167d296b33febeb24" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* wiced_bt_mesh_app_factory_reset_t) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>wiced_bt_mesh_app_factory_reset_t</name>
+        <briefdescription>
+<para>Factory reset notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application shall implement this function if it has internal NVRAM storage which needs to be deleted when device is instructed to perform the factory reset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="203" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1ac87170cf133e48fc4c61ea4b90bfb515" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t src</definition>
+        <argsstring></argsstring>
+        <name>src</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="41" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a74794ae4e53b0a5e847a8f33fc5fbd6e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dst</definition>
+        <argsstring></argsstring>
+        <name>dst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="42" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a65ecdf93f477372c38b29a69e896d6ba" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t app_key_idx</definition>
+        <argsstring></argsstring>
+        <name>app_key_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="43" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t element_idx</definition>
+        <argsstring></argsstring>
+        <name>element_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="44" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a3b962e67ba74725bd60ca3c29f785abe" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="45" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a4d402503271315376ddf4e47674d4965" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ttl</definition>
+        <argsstring></argsstring>
+        <name>ttl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="46" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a685ae33c442d30cc507fa5415f536e74" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t company_id</definition>
+        <argsstring></argsstring>
+        <name>company_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="47" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1aeb39438c0aa5ad494c96060b00351545" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t opcode</definition>
+        <argsstring></argsstring>
+        <name>opcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="48" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1aa86e1085c6a16f60258f29c9d5fc2144" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t data[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="49" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a6b61e176817d67212481b1075c4c426f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reply</definition>
+        <argsstring></argsstring>
+        <name>reply</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="73" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1aa2585d779da0ab21273a8d92de9a0ebe" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="74" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a9e817b5279fd147d7a5b53ec556bfe49" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t retrans_cnt</definition>
+        <argsstring></argsstring>
+        <name>retrans_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="76" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a890a5f699e1821d80b4cd8a10ae45a2d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t retrans_time</definition>
+        <argsstring></argsstring>
+        <name>retrans_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="77" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a7389b2a7e380437f6af8ee6784f93a47" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reply_timeout</definition>
+        <argsstring></argsstring>
+        <name>reply_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="78" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a88c48bd63c3c612b7bc0c2443bb5e359" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_mfr_name[WICED_BT_MESH_PROPERTY_LEN_DEVICE_MANUFACTURER_NAME]</definition>
+        <argsstring>[WICED_BT_MESH_PROPERTY_LEN_DEVICE_MANUFACTURER_NAME]</argsstring>
+        <name>mesh_mfr_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a3e29b0e687230083a84eb7cab847522e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_model_num[WICED_BT_MESH_PROPERTY_LEN_DEVICE_MODEL_NUMBER]</definition>
+        <argsstring>[WICED_BT_MESH_PROPERTY_LEN_DEVICE_MODEL_NUMBER]</argsstring>
+        <name>mesh_model_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1aa54d754de328802239afe080a4486095" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_system_id[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>mesh_system_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wiced__bt__mesh__app_8h_1a1be79f4d4f1ee096c350206c966ade67" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__app__func__table__t" kindref="compound">wiced_bt_mesh_app_func_table_t</ref></type>
+        <definition>wiced_bt_mesh_app_func_table_t wiced_bt_mesh_app_func_table</definition>
+        <argsstring></argsstring>
+        <name>wiced_bt_mesh_app_func_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="217" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wiced__bt__mesh__app_8h_1afb07501fe0ef607d9097a072bafcbc94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mesh_application_gen_uuid</definition>
+        <argsstring>(uint8_t *uuid)</argsstring>
+        <name>mesh_application_gen_uuid</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>uuid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wiced__bt__mesh__app_8h_1ab54ffb89ccdceac79ffd11b8d77284bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mesh_application_factory_reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>mesh_application_factory_reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wiced__bt__mesh__app_8h_1a18c9f7839eb84bb8058c9e9f9440fd34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mesh_application_hard_reset</definition>
+        <argsstring>(uint8_t *uuid, uint8_t uuid_len)</argsstring>
+        <name>mesh_application_hard_reset</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>uuid</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>uuid_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wiced__bt__mesh__app_8h_1a76e079c3781d0cccd4d08e8471ad5efc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t mesh_application_get_nvram_id_app_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>mesh_application_get_nvram_id_app_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the first usable by application NVRAM Identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application can use the NVRAM IDs starting from returned value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wiced__bt__mesh__app_8h_1a389b20cf9a38ec164ade375438aaa82b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mesh_application_reg_non_conn_adv_handler</definition>
+        <argsstring>(wiced_bt_mesh_app_non_conn_adv_handler_t handler)</argsstring>
+        <name>mesh_application_reg_non_conn_adv_handler</name>
+        <param>
+          <type>wiced_bt_mesh_app_non_conn_adv_handler_t</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register an application dependent non-connectable adv packet handler Register an application dependent non-connectable adv packet handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="234" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&gt; Definitions for interface for mesh application interface library </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>2016-YEAR<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_MESH_APPS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_MESH_APPS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_mesh_event.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_mesh_model_defs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRACE_NONE<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRACE_CRITICAL<sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRACE_ERROR<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRACE_WARNING<sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRACE_INFO<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRACE_DEBUG<sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>Following<sp/>bits<sp/>may<sp/>be<sp/>set<sp/>in<sp/>the<sp/>uuid[4]<sp/>if<sp/>SELF_CONFIG<sp/>and/or<sp/>EMBEDDED_PROVISION<sp/>features<sp/>supported</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_MAGIC_RPR_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_MAGIC_SELF_CONFIG_SUPPORTED<sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_MAGIC_RELAY_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_MAGIC_L1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_MAGIC_L2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PACKED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>src;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>dst;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>app_key_idx;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>element_idx;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/>rssi;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>ttl;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>company_id;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>opcode;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>data[1];</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/>wiced_bt_mesh_hci_event_t;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="comment">//<sp/>Bits<sp/>of<sp/>the<sp/>field<sp/>wiced_bt_mesh_hci_command_t::flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_HCI_COMMAND_FLAGS_SEND_SEGMENTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01<sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_HCI_COMMAND_FLAGS_TAG_USE_DIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02<sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_HCI_COMMAND_FLAGS_TAG_IMMUTABLE_CREDENTIALS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04<sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">//<sp/>Represents<sp/>WICED-HCI<sp/>command.<sp/>In<sp/>the<sp/>stream<sp/>it<sp/>is<sp/>has<sp/>LE<sp/>bytes<sp/>order</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>dst;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>app_key_idx;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>element_idx;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>reply;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>flags;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>ttl;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>retrans_cnt;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>retrans_time;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>reply_timeout;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>data[1];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}<sp/>wiced_bt_mesh_hci_command_t;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>mesh_mfr_name[WICED_BT_MESH_PROPERTY_LEN_DEVICE_MANUFACTURER_NAME];</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>mesh_model_num[WICED_BT_MESH_PROPERTY_LEN_DEVICE_MODEL_NUMBER];</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>mesh_system_id[8];</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Functions<sp/>to<sp/>be<sp/>implemented<sp/>by<sp/>application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*wiced_bt_mesh_app_init_t)(wiced_bool_t<sp/>is_provisioned);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*wiced_bt_mesh_app_hardware_init_t)(void);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*wiced_bt_mesh_app_gatt_conn_status_t)(wiced_bt_gatt_connection_status_t<sp/>*p_status);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*wiced_bt_mesh_app_attention_t)(uint8_t<sp/>element,<sp/>uint8_t<sp/>time);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_bool_t<sp/>(*wiced_bt_mesh_app_notify_period_set_t)(uint8_t<sp/>element,<sp/>uint16_t<sp/>company_id,<sp/>uint16_t<sp/>model_id,<sp/>uint32_t<sp/>time);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/>(*wiced_bt_mesh_app_proc_rx_cmd_t)(uint16_t<sp/>opcode,<sp/>uint8_t<sp/>*p_data,<sp/>uint32_t<sp/>length);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*wiced_bt_mesh_app_lpn_sleep_t)(uint32_t<sp/>duration);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_bool_t<sp/>(*wiced_bt_mesh_app_non_conn_adv_handler_t)(int8_t<sp/>rssi,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*p_adv_data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>remote_bd_addr);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*wiced_bt_mesh_app_factory_reset_t)(void);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="structwiced__bt__mesh__app__func__table__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_mesh_app_init_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_mesh_app_init;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_mesh_app_hardware_init_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_mesh_app_hw_init;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_mesh_app_gatt_conn_status_t<sp/><sp/><sp/><sp/>p_mesh_app_gatt_conn_status;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_mesh_app_attention_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_mesh_app_attention;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_mesh_app_notify_period_set_t<sp/><sp/><sp/>p_mesh_app_notify_period_set;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_mesh_app_proc_rx_cmd_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_mesh_app_proc_rx_cmd;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_mesh_app_lpn_sleep_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_mesh_app_lpn_sleep;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_mesh_app_factory_reset_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_mesh_app_factory_reset;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}<sp/><ref refid="structwiced__bt__mesh__app__func__table__t" kindref="compound">wiced_bt_mesh_app_func_table_t</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structwiced__bt__mesh__app__func__table__t" kindref="compound">wiced_bt_mesh_app_func_table_t</ref><sp/>wiced_bt_mesh_app_func_table;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_application_gen_uuid(uint8_t*<sp/>uuid);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_application_factory_reset(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>uuid_len<sp/>==<sp/>16<sp/>then<sp/>assigns<sp/>UUID<sp/>to<sp/>the<sp/>node.<sp/>It<sp/>does<sp/>factory<sp/>reset.<sp/>And<sp/>it<sp/>does<sp/>factory<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_application_hard_reset(uint8_t*<sp/>uuid,<sp/>uint8_t<sp/>uuid_len);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint16_t<sp/>mesh_application_get_nvram_id_app_start(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_application_reg_non_conn_adv_handler(wiced_bt_mesh_app_non_conn_adv_handler_t<sp/>handler);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HCI_CONTROL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>wiced_bt_mesh_hci_event_t<sp/>*wiced_bt_mesh_create_hci_event(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>wiced_bt_mesh_hci_event_t<sp/>*wiced_bt_mesh_alloc_hci_event(uint8_t<sp/>element_idx);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*wiced_bt_mesh_create_event_from_wiced_hci(uint16_t<sp/>opcode,<sp/>uint16_t<sp/>company_id,<sp/>uint16_t<sp/>model_id,<sp/>uint8_t<sp/>**p_data,<sp/>uint32_t<sp/>*len);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_mesh_skip_wiced_hci_hdr(uint8_t<sp/>**p_data,<sp/>uint32_t<sp/>*len);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>wiced_bt_mesh_get_element_idx_from_wiced_hci(uint8_t<sp/>**p_data,<sp/>uint32_t<sp/>*len);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>wiced_result_t<sp/>mesh_transport_send_data(uint16_t<sp/>opcode,<sp/>uint8_t<sp/>*p_trans_buf,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_mesh_send_hci_tx_complete(wiced_bt_mesh_hci_event_t<sp/>*p_hci_event,<sp/><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment">//<sp/>converts<sp/>6<sp/>bits<sp/>of<sp/>bin<sp/>value<sp/>to<sp/>base<sp/>64<sp/>character<sp/>(A-Z,a-z,0-9,+,/)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal">uint8_t<sp/>wiced_bt_mesh_base64_encode_6bits(uint8_t<sp/>bin);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__WICED_BT_MESH_APP_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h"/>
+  </compounddef>
+</doxygen>

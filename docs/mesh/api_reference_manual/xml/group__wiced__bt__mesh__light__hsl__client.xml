@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__mesh__light__hsl__client" kind="group">
+    <compoundname>wiced_bt_mesh_light_hsl_client</compoundname>
+    <title>Mesh Light HSL Client</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__mesh__light__hsl__client_1ga58dcde3c9036bb3f05a32cff0c3824b8" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() wiced_bt_mesh_light_hsl_client_callback_t(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</definition>
+        <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
+        <name>wiced_bt_mesh_light_hsl_client_callback_t</name>
+        <briefdescription>
+<para>Light HSL Client callback is called by the Mesh Models library on receiving a message from the peer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event that the application should process (see <ref refid="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h_1LIGHT_HSL_EVENT" kindref="member">Light HSL Events</ref>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information about the message received. The same pointer should be used in the reply if required. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the level data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4356" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="4356" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1ga4a5ba6e61d99c16a9a200d78b606f628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_model_light_hsl_client_message_handler</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_message_handler</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Light HSL Client Message Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4369" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1gada398fc9c96265929f4b8aa8fc1c8438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_light_hsl_client_init</definition>
+        <argsstring>(uint8_t element_idx, wiced_bt_mesh_light_hsl_client_callback_t *p_callback, wiced_bool_t is_provisioned)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__mesh__light__hsl__client_1ga58dcde3c9036bb3f05a32cff0c3824b8" kindref="member">wiced_bt_mesh_light_hsl_client_callback_t</ref> *</type>
+          <declname>p_callback</declname>
+        </param>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>is_provisioned</declname>
+        </param>
+        <briefdescription>
+<para>Light HSL Client Module initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device element to where model is used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_provisioned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4380" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1ga2fd72a5f93177dca37b4e97d1e51143d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_get</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_get</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Get message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4389" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1gafa53e42d9df52bbc3a2802d05c1a1629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_set</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_light_hsl_set_t *p_data)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_set</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__light__hsl__set__t" kindref="compound">wiced_bt_mesh_light_hsl_set_t</ref> *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Set client message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data to send</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4399" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1gaf37c8b5422fa52260005ffaf75df8327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_hue_get</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_hue_get</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Hue Get message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4408" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1ga591aa733ed43e54866b9d89c3f53e36b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_hue_set</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_light_hsl_hue_set_t *p_data)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_hue_set</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__light__hsl__hue__set__t" kindref="compound">wiced_bt_mesh_light_hsl_hue_set_t</ref> *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Hue Set client message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data to send</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4418" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1ga771fbc828b62810aa822ce279d556e8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_saturation_get</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_saturation_get</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Saturation Get message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4427" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1gab9871a0e3021f547ca0e69287758b33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_saturation_set</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_light_hsl_saturation_set_t *p_data)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_saturation_set</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__light__hsl__saturation__set__t" kindref="compound">wiced_bt_mesh_light_hsl_saturation_set_t</ref> *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Saturation Set client message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data to send</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1ga626c6b8c6e122bbe954797c5d528adbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_target_get</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_target_get</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Target Get message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4446" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1gaf1b84617666c4fe73cd18aa3a382578e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_default_get</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_default_get</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Get Default client message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data to send</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4456" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1gada984140a7f7738e42ec711a127f3e62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_default_set</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_light_hsl_default_data_t *p_data)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_default_set</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__light__hsl__default__data__t" kindref="compound">wiced_bt_mesh_light_hsl_default_data_t</ref> *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Set Default client message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data to send</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4466" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1ga9987313a4b4ca8106e4ccd44b998604f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_range_get</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_range_get</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Range Get client message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data to send</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4476" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__hsl__client_1ga8b2e47b2526e78065b913186033ee2dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_light_hsl_client_send_range_set</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_light_hsl_range_set_data_t *p_data)</argsstring>
+        <name>wiced_bt_mesh_model_light_hsl_client_send_range_set</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__light__hsl__range__set__data__t" kindref="compound">wiced_bt_mesh_light_hsl_range_set_data_t</ref> *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Light HSL Range Set client message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data to send</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4486" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__mesh__light__hsl__client_1ga14feb2a343c42a2479f73a2120fd8203" prot="public" static="no">
+        <name>WICED_BT_MESH_MODEL_LIGHT_HSL_CLIENT</name>
+        <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_HSL_CLNT, <ref refid="group__wiced__bt__mesh__light__hsl__client_1ga4a5ba6e61d99c16a9a200d78b606f628" kindref="member">wiced_bt_mesh_model_light_hsl_client_message_handler</ref>, NULL, NULL }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4344" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="4344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The AIROC Mesh Light HSL Client module of the Mesh Models library provides a way for an application to configure and control color lights that support Hue/Saturation control. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To include Light HSL Client functionality, the device description shall contain WICED_BT_MESH_MODEL_LIGHT_HSL_CLIENT. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__sensor__descriptor__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_sensor_descriptor_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__descriptor__data__t_1a3f44806de13e2754c4f054597f09408f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_sensor_descriptor_data_t::property_id</definition>
+        <argsstring></argsstring>
+        <name>property_id</name>
+        <briefdescription>
+<para>property that describes the meaning and format of data reported by sensor </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="255" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__descriptor__data__t_1a98378fbe2f38282c5d96269bfb0899e8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_sensor_descriptor_data_t::positive_tolerance</definition>
+        <argsstring></argsstring>
+        <name>positive_tolerance</name>
+        <briefdescription>
+<para>12-bit value representing the magnitude of a possible positive tolerance with sensor measurement </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="256" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__descriptor__data__t_1ac823cd4f79448e8ebc28d15c3c8f7c83" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_sensor_descriptor_data_t::negative_tolerance</definition>
+        <argsstring></argsstring>
+        <name>negative_tolerance</name>
+        <briefdescription>
+<para>12-bit value representing the magnitude of a possible negative tolerance with sensor measurement </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="257" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__descriptor__data__t_1aabad29c98469d22cfc4f9ee099ed7316" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_sensor_descriptor_data_t::sampling_function</definition>
+        <argsstring></argsstring>
+        <name>sampling_function</name>
+        <briefdescription>
+<para>averaging operation or type of sampling function applied to the measured value </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="258" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__descriptor__data__t_1a8ba6fc336aec49ced0561ec07a90c97c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_sensor_descriptor_data_t::measurement_period</definition>
+        <argsstring></argsstring>
+        <name>measurement_period</name>
+        <briefdescription>
+<para>uint8 value n that represents the averaging time span, accumulation time, or measurement period in seconds </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="259" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__descriptor__data__t_1aaf16d4940c03028b85a453d48b4970bc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_sensor_descriptor_data_t::update_interval</definition>
+        <argsstring></argsstring>
+        <name>update_interval</name>
+        <briefdescription>
+<para>measurement reported by a sensor is internally refreshed at the frequency indicated in the Sensor Update Interval field </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="260" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sensor Descriptor structure exchanged between the application and the Sensor Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="254" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="253" bodyend="261"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__sensor__descriptor__data__t_1a8ba6fc336aec49ced0561ec07a90c97c" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_descriptor_data_t</scope><name>measurement_period</name></member>
+      <member refid="structwiced__bt__mesh__sensor__descriptor__data__t_1ac823cd4f79448e8ebc28d15c3c8f7c83" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_descriptor_data_t</scope><name>negative_tolerance</name></member>
+      <member refid="structwiced__bt__mesh__sensor__descriptor__data__t_1a98378fbe2f38282c5d96269bfb0899e8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_descriptor_data_t</scope><name>positive_tolerance</name></member>
+      <member refid="structwiced__bt__mesh__sensor__descriptor__data__t_1a3f44806de13e2754c4f054597f09408f" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_descriptor_data_t</scope><name>property_id</name></member>
+      <member refid="structwiced__bt__mesh__sensor__descriptor__data__t_1aabad29c98469d22cfc4f9ee099ed7316" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_descriptor_data_t</scope><name>sampling_function</name></member>
+      <member refid="structwiced__bt__mesh__sensor__descriptor__data__t_1aaf16d4940c03028b85a453d48b4970bc" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_descriptor_data_t</scope><name>update_interval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

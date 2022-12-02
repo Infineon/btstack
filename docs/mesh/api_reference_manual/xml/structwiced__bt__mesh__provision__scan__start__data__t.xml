@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__provision__scan__start__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_provision_scan_start_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__scan__start__data__t_1a22e12d4fcf9c3e2b87c32edd3bcb9753" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_scan_start_data_t::scanned_items_limit</definition>
+        <argsstring></argsstring>
+        <name>scanned_items_limit</name>
+        <briefdescription>
+<para>Max number of scanned items to report. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="223" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__scan__start__data__t_1a555c301180dcd48370a499d342f1a05d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_scan_start_data_t::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+<para>Time limit for a scan(in seconds) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="224" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__scan__start__data__t_1a48c3af759a144ecb18d0d55b912d61c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_scan_start_data_t::scan_single_uuid</definition>
+        <argsstring></argsstring>
+        <name>scan_single_uuid</name>
+        <briefdescription>
+<para>If true, client searches for a specific UUID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="225" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__scan__start__data__t_1af7c9e5a62dc42d44e5398fd2e1ad4ed7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_scan_start_data_t::uuid[MESH_DEVICE_UUID_LEN]</definition>
+        <argsstring>[MESH_DEVICE_UUID_LEN]</argsstring>
+        <name>uuid</name>
+        <briefdescription>
+<para>Specific UUID client is interested in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="226" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="222" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="221" bodyend="227"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__provision__scan__start__data__t_1a48c3af759a144ecb18d0d55b912d61c5" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_scan_start_data_t</scope><name>scan_single_uuid</name></member>
+      <member refid="structwiced__bt__mesh__provision__scan__start__data__t_1a22e12d4fcf9c3e2b87c32edd3bcb9753" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_scan_start_data_t</scope><name>scanned_items_limit</name></member>
+      <member refid="structwiced__bt__mesh__provision__scan__start__data__t_1a555c301180dcd48370a499d342f1a05d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_scan_start_data_t</scope><name>timeout</name></member>
+      <member refid="structwiced__bt__mesh__provision__scan__start__data__t_1af7c9e5a62dc42d44e5398fd2e1ad4ed7" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_scan_start_data_t</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

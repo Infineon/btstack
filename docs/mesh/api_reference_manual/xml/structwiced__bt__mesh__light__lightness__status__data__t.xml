@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__light__lightness__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_light_lightness_status_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__lightness__status__data__t_1a309e4e377860b4704e65b158efbe6777" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_lightness_status_data_t::present</definition>
+        <argsstring></argsstring>
+        <name>present</name>
+        <briefdescription>
+<para>The present value of the Light Lightness Actual state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1132" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__lightness__status__data__t_1a5f0f098b7f3c35a7759353bed2c80b88" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_lightness_status_data_t::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+<para>The target value of the Light Lightness Actual state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1133" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__lightness__status__data__t_1a4c6fdd21d239eb9caeee6c654aa720a9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_light_lightness_status_data_t::remaining_time</definition>
+        <argsstring></argsstring>
+        <name>remaining_time</name>
+        <briefdescription>
+<para>Remaining time for transition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1134" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Light Lightness Status Data structure exchanged between the application and Light Lightness Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1131" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1130" bodyend="1135"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__light__lightness__status__data__t_1a309e4e377860b4704e65b158efbe6777" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lightness_status_data_t</scope><name>present</name></member>
+      <member refid="structwiced__bt__mesh__light__lightness__status__data__t_1a4c6fdd21d239eb9caeee6c654aa720a9" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lightness_status_data_t</scope><name>remaining_time</name></member>
+      <member refid="structwiced__bt__mesh__light__lightness__status__data__t_1a5f0f098b7f3c35a7759353bed2c80b88" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lightness_status_data_t</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__core__hal__api__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_core_hal_api_t</compoundname>
+    <includes local="no">wiced_bt_mesh_core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__hal__api__t_1a30c0d0174e439c75f7e45c0aa3e01a30" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__mesh__core_1gaa3e49a2dc4626402aa6001fe9620a5b8" kindref="member">wiced_bt_mesh_core_hal_rand_gen_num_array_t</ref></type>
+        <definition>wiced_bt_mesh_core_hal_rand_gen_num_array_t wiced_bt_mesh_core_hal_api_t::rand_gen_num_array</definition>
+        <argsstring></argsstring>
+        <name>rand_gen_num_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="529" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__hal__api__t_1a9855c7cbf90304a91eb0b69fef49a5ed" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__mesh__core_1ga0ff5534132da3ed051b729e66edd6379" kindref="member">wiced_bt_mesh_core_hal_get_pseudo_rand_number_t</ref></type>
+        <definition>wiced_bt_mesh_core_hal_get_pseudo_rand_number_t wiced_bt_mesh_core_hal_api_t::get_pseudo_rand_number</definition>
+        <argsstring></argsstring>
+        <name>get_pseudo_rand_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="530" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__hal__api__t_1a89ce5e737ce52e3009206f2fa49e9180" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__mesh__core_1ga752f79974790268e4e5af5e4516ea7aa" kindref="member">wiced_bt_mesh_core_hal_rand_gen_num_t</ref></type>
+        <definition>wiced_bt_mesh_core_hal_rand_gen_num_t wiced_bt_mesh_core_hal_api_t::rand_gen_num</definition>
+        <argsstring></argsstring>
+        <name>rand_gen_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="531" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__hal__api__t_1afe38eab459953475cd73d4231099d8c0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__mesh__core_1ga7ef977434be734c8cb8ecb0702959400" kindref="member">wiced_bt_mesh_core_hal_wdog_reset_system_t</ref></type>
+        <definition>wiced_bt_mesh_core_hal_wdog_reset_system_t wiced_bt_mesh_core_hal_api_t::wdog_reset_system</definition>
+        <argsstring></argsstring>
+        <name>wdog_reset_system</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="532" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__hal__api__t_1af982abbde1c0277e84a3a04752922298" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__mesh__core_1gad1209c42aa9f4f39124aecda34281817" kindref="member">wiced_bt_mesh_core_hal_delete_nvram_t</ref></type>
+        <definition>wiced_bt_mesh_core_hal_delete_nvram_t wiced_bt_mesh_core_hal_api_t::delete_nvram</definition>
+        <argsstring></argsstring>
+        <name>delete_nvram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="533" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__hal__api__t_1a0ce19c9f6a992422915547bc9dbea654" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__mesh__core_1gab35ec1c11bcbed428c83fe63f2375f8c" kindref="member">wiced_bt_mesh_core_hal_write_nvram_t</ref></type>
+        <definition>wiced_bt_mesh_core_hal_write_nvram_t wiced_bt_mesh_core_hal_api_t::write_nvram</definition>
+        <argsstring></argsstring>
+        <name>write_nvram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="534" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__hal__api__t_1aec120667fb42bacb0f79ecad1d8f88e3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__mesh__core_1gab555f24ead6112b89d4de338e79e6b4a" kindref="member">wiced_bt_mesh_core_hal_read_nvram_t</ref></type>
+        <definition>wiced_bt_mesh_core_hal_read_nvram_t wiced_bt_mesh_core_hal_api_t::read_nvram</definition>
+        <argsstring></argsstring>
+        <name>read_nvram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="535" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__hal__api__t_1a29384cee330b24b74a095fef3f5bb472" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__mesh__core_1ga649029885402c5995c38669566887f51" kindref="member">wiced_bt_mesh_core_hal_aes_encrypt_t</ref></type>
+        <definition>wiced_bt_mesh_core_hal_aes_encrypt_t wiced_bt_mesh_core_hal_api_t::aes_encrypt</definition>
+        <argsstring></argsstring>
+        <name>aes_encrypt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="536" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>hal api for <ref refid="group__wiced__bt__mesh__core_1ga614041f855c21e8a06110b88d8b6a8b3" kindref="member">wiced_bt_mesh_core_set_hal_api()</ref> Application has to implement all these functions and call <ref refid="group__wiced__bt__mesh__core_1ga614041f855c21e8a06110b88d8b6a8b3" kindref="member">wiced_bt_mesh_core_set_hal_api()</ref> at the startup. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="528" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="527" bodyend="537"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__core__hal__api__t_1a29384cee330b24b74a095fef3f5bb472" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_hal_api_t</scope><name>aes_encrypt</name></member>
+      <member refid="structwiced__bt__mesh__core__hal__api__t_1af982abbde1c0277e84a3a04752922298" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_hal_api_t</scope><name>delete_nvram</name></member>
+      <member refid="structwiced__bt__mesh__core__hal__api__t_1a9855c7cbf90304a91eb0b69fef49a5ed" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_hal_api_t</scope><name>get_pseudo_rand_number</name></member>
+      <member refid="structwiced__bt__mesh__core__hal__api__t_1a89ce5e737ce52e3009206f2fa49e9180" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_hal_api_t</scope><name>rand_gen_num</name></member>
+      <member refid="structwiced__bt__mesh__core__hal__api__t_1a30c0d0174e439c75f7e45c0aa3e01a30" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_hal_api_t</scope><name>rand_gen_num_array</name></member>
+      <member refid="structwiced__bt__mesh__core__hal__api__t_1aec120667fb42bacb0f79ecad1d8f88e3" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_hal_api_t</scope><name>read_nvram</name></member>
+      <member refid="structwiced__bt__mesh__core__hal__api__t_1afe38eab459953475cd73d4231099d8c0" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_hal_api_t</scope><name>wdog_reset_system</name></member>
+      <member refid="structwiced__bt__mesh__core__hal__api__t_1a0ce19c9f6a992422915547bc9dbea654" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_hal_api_t</scope><name>write_nvram</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

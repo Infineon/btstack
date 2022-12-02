@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__core__state__model__app__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_core_state_model_app_t</compoundname>
+    <includes local="no">wiced_bt_mesh_core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__state__model__app__t_1aedf290427350d04e0a1dc223a8c133d6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_core_state_model_app_t::element_address</definition>
+        <argsstring></argsstring>
+        <name>element_address</name>
+        <briefdescription>
+<para>Element Address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="321" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__state__model__app__t_1ab35e0a87ce8699085be01b4b0ab71059" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_core_state_model_app_t::app_key_index</definition>
+        <argsstring></argsstring>
+        <name>app_key_index</name>
+        <briefdescription>
+<para>App Key Index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="322" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__state__model__app__t_1a2a4fb70a56482ba9a501af2b1d7f43b1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_core_state_model_app_t::model_id</definition>
+        <argsstring></argsstring>
+        <name>model_id</name>
+        <briefdescription>
+<para>Model ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="323" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__state__model__app__t_1a6d0f5607750afca3b0857cce41359a71" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_core_state_model_app_t::vendor_id</definition>
+        <argsstring></argsstring>
+        <name>vendor_id</name>
+        <briefdescription>
+<para>Vendor ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 means SIG model </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="324" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data for state types WICED_BT_MESH_CORE_STATE_APP_XXX. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="320" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="319" bodyend="325"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__core__state__model__app__t_1ab35e0a87ce8699085be01b4b0ab71059" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_state_model_app_t</scope><name>app_key_index</name></member>
+      <member refid="structwiced__bt__mesh__core__state__model__app__t_1aedf290427350d04e0a1dc223a8c133d6" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_state_model_app_t</scope><name>element_address</name></member>
+      <member refid="structwiced__bt__mesh__core__state__model__app__t_1a2a4fb70a56482ba9a501af2b1d7f43b1" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_state_model_app_t</scope><name>model_id</name></member>
+      <member refid="structwiced__bt__mesh__core__state__model__app__t_1a6d0f5607750afca3b0857cce41359a71" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_state_model_app_t</scope><name>vendor_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

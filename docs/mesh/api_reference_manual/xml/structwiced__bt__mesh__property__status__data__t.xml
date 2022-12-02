@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__property__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_property_status_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__property__status__data__t_1a4b63b353f5f48fbbc519b26a5f5cd599" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_property_status_data_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>One of the property types defined in the wiced_bt_mesh_property_type enumeration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1267" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__property__status__data__t_1ad940a5b9d182700df66dda03f8463467" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_property_status_data_t::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>The Property ID received in the set message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1268" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__property__status__data__t_1a2038ec2757e15c860d6b646924c7f522" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_property_status_data_t::access</definition>
+        <argsstring></argsstring>
+        <name>access</name>
+        <briefdescription>
+<para>Access level allowed for the property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a bit map when 0x01 indicates readable and 0x02 writable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1269" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__property__status__data__t_1ae30a2ae41f017e1969a2eded3cc66f37" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_property_status_data_t::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+<para>Size of the Property Value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1270" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__property__status__data__t_1a81eb9b2ded72e25b85815dd9ad013b36" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_property_status_data_t::value[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>First byte of property value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1271" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1271" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Property Status Data structure exchanged between the application Generic User Property Models. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1266" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1265" bodyend="1272"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__property__status__data__t_1a2038ec2757e15c860d6b646924c7f522" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_property_status_data_t</scope><name>access</name></member>
+      <member refid="structwiced__bt__mesh__property__status__data__t_1ad940a5b9d182700df66dda03f8463467" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_property_status_data_t</scope><name>id</name></member>
+      <member refid="structwiced__bt__mesh__property__status__data__t_1ae30a2ae41f017e1969a2eded3cc66f37" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_property_status_data_t</scope><name>len</name></member>
+      <member refid="structwiced__bt__mesh__property__status__data__t_1a4b63b353f5f48fbbc519b26a5f5cd599" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_property_status_data_t</scope><name>type</name></member>
+      <member refid="structwiced__bt__mesh__property__status__data__t_1a81eb9b2ded72e25b85815dd9ad013b36" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_property_status_data_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

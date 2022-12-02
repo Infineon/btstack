@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__sensor__setting__get__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_sensor_setting_get_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__setting__get__data__t_1afd46c32e48a02e7b9ec797b3d04761a7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_sensor_setting_get_data_t::property_id</definition>
+        <argsstring></argsstring>
+        <name>property_id</name>
+        <briefdescription>
+<para>Property ID identifying a sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="366" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__setting__get__data__t_1a6f59955906818df9f9287d4a161b9e94" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_sensor_setting_get_data_t::setting_property_id</definition>
+        <argsstring></argsstring>
+        <name>setting_property_id</name>
+        <briefdescription>
+<para>Setting ID identifying a setting within a sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="367" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sensor Setting get structure exchanged between the application and the Sensor Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="365" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="364" bodyend="368"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__sensor__setting__get__data__t_1afd46c32e48a02e7b9ec797b3d04761a7" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_setting_get_data_t</scope><name>property_id</name></member>
+      <member refid="structwiced__bt__mesh__sensor__setting__get__data__t_1a6f59955906818df9f9287d4a161b9e94" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_setting_get_data_t</scope><name>setting_property_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

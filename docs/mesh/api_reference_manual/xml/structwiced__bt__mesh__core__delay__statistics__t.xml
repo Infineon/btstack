@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__core__delay__statistics__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_core_delay_statistics_t</compoundname>
+    <includes local="no">wiced_bt_mesh_core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__delay__statistics__t_1a33dca8a35f954beff37c98898f2c84b4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_delay_statistics_t::rx_cnt</definition>
+        <argsstring></argsstring>
+        <name>rx_cnt</name>
+        <briefdescription>
+<para>Number of successfuly received and decrypted messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1757" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1757" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__delay__statistics__t_1adb8cebb02ba1fb25404b7ea09ddc8e7b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_delay_statistics_t::rx_delay</definition>
+        <argsstring></argsstring>
+        <name>rx_delay</name>
+        <briefdescription>
+<para>Overage delay of successfuly received and decrypted messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1758" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1758" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__delay__statistics__t_1a72fc6cf3f39d185f363ab44f5d1036d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_delay_statistics_t::tx_cnt</definition>
+        <argsstring></argsstring>
+        <name>tx_cnt</name>
+        <briefdescription>
+<para>Number of successfuly encrypted and transmitted messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1759" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1759" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__delay__statistics__t_1aeaafa6c77e3950ca2d1aef884aafc36b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_delay_statistics_t::tx_delay</definition>
+        <argsstring></argsstring>
+        <name>tx_delay</name>
+        <briefdescription>
+<para>Overage delay of successfuly encrypted and transmitted messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1760" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1760" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents delay statistics. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1756" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1755" bodyend="1761"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__core__delay__statistics__t_1a33dca8a35f954beff37c98898f2c84b4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_delay_statistics_t</scope><name>rx_cnt</name></member>
+      <member refid="structwiced__bt__mesh__core__delay__statistics__t_1adb8cebb02ba1fb25404b7ea09ddc8e7b" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_delay_statistics_t</scope><name>rx_delay</name></member>
+      <member refid="structwiced__bt__mesh__core__delay__statistics__t_1a72fc6cf3f39d185f363ab44f5d1036d4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_delay_statistics_t</scope><name>tx_cnt</name></member>
+      <member refid="structwiced__bt__mesh__core__delay__statistics__t_1aeaafa6c77e3950ca2d1aef884aafc36b" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_delay_statistics_t</scope><name>tx_delay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

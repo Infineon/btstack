@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__event__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_event_t</compoundname>
+    <includes local="no">wiced_bt_mesh_event.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1ae48d391ec6e3de2eae666cc688f7b33a" prot="public" static="no" mutable="no">
+        <type>struct wiced_bt_mesh_event__t *</type>
+        <definition>struct wiced_bt_mesh_event__t* wiced_bt_mesh_event_t::p_next</definition>
+        <argsstring></argsstring>
+        <name>p_next</name>
+        <briefdescription>
+<para>Pointer to the next event in the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="53" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a9470c6e975e439f7b4ca5049bfb60855" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* wiced_bt_mesh_event_t::complete_callback</definition>
+        <argsstring></argsstring>
+        <name>complete_callback</name>
+        <briefdescription>
+<para>pointer to the send complete callback </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="54" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1adca666e02f1982dd3167ade6677f06fb" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_event_t::company_id</definition>
+        <argsstring></argsstring>
+        <name>company_id</name>
+        <briefdescription>
+<para>Company ID for the Model ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="55" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1adaab52713e0d22457bc33588f5952556" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_event_t::model_id</definition>
+        <argsstring></argsstring>
+        <name>model_id</name>
+        <briefdescription>
+<para>Model ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="56" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1af95112f42754c4a907971c46c689cc2d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_event_t::opcode</definition>
+        <argsstring></argsstring>
+        <name>opcode</name>
+        <briefdescription>
+<para>Opcode of the message to be transmitted or that has been received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="57" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a77129e25676720f45ad6825c660c8c6f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_event_t::hci_opcode</definition>
+        <argsstring></argsstring>
+        <name>hci_opcode</name>
+        <briefdescription>
+<para>HCI Opcode received of the message from the MCU being processed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="58" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a3d9cb033c16c67c564a11c976ab77a9d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::element_idx</definition>
+        <argsstring></argsstring>
+        <name>element_idx</name>
+        <briefdescription>
+<para>Element Index of the source or destination of the message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="59" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1abb6595db0fc0fec465f734711e9fed46" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::ttl</definition>
+        <argsstring></argsstring>
+        <name>ttl</name>
+        <briefdescription>
+<para>Time to leave to be used when transmitting or as received from the peer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="60" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a0c86a4095031180948d0e59594f5e744" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_event_t::src</definition>
+        <argsstring></argsstring>
+        <name>src</name>
+        <briefdescription>
+<para>Address of the source mesh node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="61" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1ac7782ecb3f02c7b9bddcb8a28e8c0472" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_event_t::dst</definition>
+        <argsstring></argsstring>
+        <name>dst</name>
+        <briefdescription>
+<para>Address of the destination mesh node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="62" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a0172da03815180299211b605282b630b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_event_t::app_key_idx</definition>
+        <argsstring></argsstring>
+        <name>app_key_idx</name>
+        <briefdescription>
+<para>Application key index used to decrypt when message was received or which should be used to encrypt to send the message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="63" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1abbd2dfc1bcdd10e4541810ed97b35769" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_event_t::data_len</definition>
+        <argsstring></argsstring>
+        <name>data_len</name>
+        <briefdescription>
+<para>Length of data corresponding to the event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="64" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a4af99e741748c59c026633098de403c0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::credential_flag</definition>
+        <argsstring></argsstring>
+        <name>credential_flag</name>
+        <briefdescription>
+<para>One of the CREDENTIAL_FLAG_XXX value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It comes from publication or credentials of the received message </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="68" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a60c3cc4e52d6c8577048f93b0976f7cf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::retrans_cnt</definition>
+        <argsstring></argsstring>
+        <name>retrans_cnt</name>
+        <briefdescription>
+<para>Number of retransmissions for each message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Should be &lt;= 0x7f. It is ignored using 0 value or if it is reply (reply == WICED_TRUE). If bit 0x80 is set, the retransmission count and time applies to number of network rexmits, no access layer rexmits, the time is in 10ms ticks The number of transmissions is the retrans_cnt + 1. The transmission interval = (retrans_time + 1) * 10 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="69" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1aa9f5d7cabe7896425dd986150b93dfe7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::retrans_time</definition>
+        <argsstring></argsstring>
+        <name>retrans_time</name>
+        <briefdescription>
+<para>Interval between retransmissions in 50-millisecond steps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If bit 0x80 of the retrans_cnt is set then The transmission interval = (retrans_time + 1) * 10 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="74" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a4a5ea5eb7302915c411045f322da75ed" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::reply</definition>
+        <argsstring></argsstring>
+        <name>reply</name>
+        <briefdescription>
+<para>If TRUE the reply is expected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="75" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1aa4118ef5430b63c72d2e81675b9f41dc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::reply_timeout</definition>
+        <argsstring></argsstring>
+        <name>reply_timeout</name>
+        <briefdescription>
+<para>Time to wait for the peer model layer acknowledgment in 50-millisecond steps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="77" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a99d3339d072af029eba691f3b6a59cbc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::tx_flag</definition>
+        <argsstring></argsstring>
+        <name>tx_flag</name>
+        <briefdescription>
+<para>Transmission failed or timeout occurred waiting for peer reply. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="83" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a0fabf651ce682e9494df3fa66399d0b9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::rpl_delay</definition>
+        <argsstring></argsstring>
+        <name>rpl_delay</name>
+        <briefdescription>
+<para>Model indicates how SEQ shall be saved by the core. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is delay in seconds to save SEQ in RPL. 0-save immediatly; 0xff - don&apos;t save; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="85" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a7e09efc7b06626f571455c73c315bb5f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::tx_delay</definition>
+        <argsstring></argsstring>
+        <name>tx_delay</name>
+        <briefdescription>
+<para>If this value is not 0, <ref refid="group__wiced__bt__mesh__core_1ga7696232e84e5bc2ea948cc954eb9117a" kindref="member">wiced_bt_mesh_core_send()</ref> will delay sending of the event by this number of milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="86" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a25f1b2cdde52322aaffcc70926558cd4" prot="public" static="no" mutable="no">
+        <type>union wiced_bt_mesh_event_t::@20</type>
+        <definition>union wiced_bt_mesh_event_t::@20  wiced_bt_mesh_event_t::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a84d12d2b32539b12ec7eb967d7082a70" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="90" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a0c8c027d3c869e69edf90d6a2fcfe003" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_event_t::friend_addr</definition>
+        <argsstring></argsstring>
+        <name>friend_addr</name>
+        <briefdescription>
+<para>core sets it to friend address when calls complete_callback if segmented message has been sent and acked by the friend OnBehalfOf LPN. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Otherwise it is 0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="91" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1af440a8e3b26382faff349c6c396a8305" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_event_t::send_segmented</definition>
+        <argsstring></argsstring>
+        <name>send_segmented</name>
+        <briefdescription>
+<para>if non-0 then core uses segmentation to send that message even if it fits into unsegmented message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="92" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a9be0f514cc498fabb30da31031fe2618" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t wiced_bt_mesh_event_t::rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+<para>RSSI of the received message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="93" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__event__t_1a61bebb15f9136db2a701850adee538ec" prot="public" static="no" mutable="no">
+        <type>wiced_timer_t</type>
+        <definition>wiced_timer_t wiced_bt_mesh_event_t::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="94" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mesh event structure is exchanged between the app and the mesh models library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="52" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="51" bodyend="95"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__event__t_1a0172da03815180299211b605282b630b" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>app_key_idx</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1adca666e02f1982dd3167ade6677f06fb" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>company_id</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a9470c6e975e439f7b4ca5049bfb60855" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>complete_callback</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a4af99e741748c59c026633098de403c0" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>credential_flag</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1abbd2dfc1bcdd10e4541810ed97b35769" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>data_len</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1ac7782ecb3f02c7b9bddcb8a28e8c0472" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>dst</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a3d9cb033c16c67c564a11c976ab77a9d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>element_idx</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a84d12d2b32539b12ec7eb967d7082a70" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>flags</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a0c8c027d3c869e69edf90d6a2fcfe003" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>friend_addr</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a77129e25676720f45ad6825c660c8c6f" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>hci_opcode</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1adaab52713e0d22457bc33588f5952556" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>model_id</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1af95112f42754c4a907971c46c689cc2d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>opcode</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1ae48d391ec6e3de2eae666cc688f7b33a" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>p_next</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a4a5ea5eb7302915c411045f322da75ed" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>reply</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1aa4118ef5430b63c72d2e81675b9f41dc" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>reply_timeout</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a60c3cc4e52d6c8577048f93b0976f7cf" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>retrans_cnt</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1aa9f5d7cabe7896425dd986150b93dfe7" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>retrans_time</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a0fabf651ce682e9494df3fa66399d0b9" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>rpl_delay</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a9be0f514cc498fabb30da31031fe2618" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>rssi</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1af440a8e3b26382faff349c6c396a8305" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>send_segmented</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a0c86a4095031180948d0e59594f5e744" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>src</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a25f1b2cdde52322aaffcc70926558cd4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>status</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a61bebb15f9136db2a701850adee538ec" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>timer</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1abb6595db0fc0fec465f734711e9fed46" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>ttl</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a7e09efc7b06626f571455c73c315bb5f" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>tx_delay</name></member>
+      <member refid="structwiced__bt__mesh__event__t_1a99d3339d072af029eba691f3b6a59cbc" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_event_t</scope><name>tx_flag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

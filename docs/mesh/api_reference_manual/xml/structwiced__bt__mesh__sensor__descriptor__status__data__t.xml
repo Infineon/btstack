@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__sensor__descriptor__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_sensor_descriptor_status_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__descriptor__status__data__t_1a2edebc3f8225b483ba52f66b81184127" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_sensor_descriptor_status_data_t::num_descriptors</definition>
+        <argsstring></argsstring>
+        <name>num_descriptors</name>
+        <briefdescription>
+<para>Total number of descriptors present in status structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="268" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__descriptor__status__data__t_1ab46a0d2463504f6ce26bf9c3e01dd2e9" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__descriptor__data__t" kindref="compound">wiced_bt_mesh_sensor_descriptor_data_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_descriptor_data_t wiced_bt_mesh_sensor_descriptor_status_data_t::descriptor_list[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>descriptor_list</name>
+        <briefdescription>
+<para>Start of the descriptor data list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="269" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sensor Descriptor status structure exchanged between the application and the Sensor Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="309">
+        <label>wiced_bt_mesh_sensor_descriptor_status_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__descriptor__status__data__t"/>
+        <childnode refid="310" relation="usage">
+          <edgelabel>descriptor_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="310">
+        <label>wiced_bt_mesh_sensor_descriptor_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__descriptor__data__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="267" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="266" bodyend="270"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__sensor__descriptor__status__data__t_1ab46a0d2463504f6ce26bf9c3e01dd2e9" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_descriptor_status_data_t</scope><name>descriptor_list</name></member>
+      <member refid="structwiced__bt__mesh__sensor__descriptor__status__data__t_1a2edebc3f8225b483ba52f66b81184127" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_descriptor_status_data_t</scope><name>num_descriptors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

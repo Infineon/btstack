@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__light__xyl__range__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_light_xyl_range_status_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__range__status__data__t_1a921f36b49f2e01bd058b23a0ffef08d2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_light_xyl_range_status_data_t::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+<para>Status Code for the requesting message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1571" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__range__status__data__t_1a8054c8a3dcd13ea4de2f3409e1fcfe99" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_xyl_range_status_data_t::x_min</definition>
+        <argsstring></argsstring>
+        <name>x_min</name>
+        <briefdescription>
+<para>Light xyL x Range Min field of the Light xyL x Range state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1572" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__range__status__data__t_1ad640ad6319e495ef551cbb625f9adb8a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_xyl_range_status_data_t::x_max</definition>
+        <argsstring></argsstring>
+        <name>x_max</name>
+        <briefdescription>
+<para>Light xyL x Range Max field of the Light xyL y Range state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1573" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__range__status__data__t_1a390e94615c78fbd9b174237698ed42a7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_xyl_range_status_data_t::y_min</definition>
+        <argsstring></argsstring>
+        <name>y_min</name>
+        <briefdescription>
+<para>Light xyL y Range Min field of the Light xyL y Range state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1574" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__range__status__data__t_1aa9d200e2b1585732fc9a1c9246935388" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_xyl_range_status_data_t::y_max</definition>
+        <argsstring></argsstring>
+        <name>y_max</name>
+        <briefdescription>
+<para>Light xyL y Range Max field of the Light xyL y Range state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1575" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1575" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Light xyL Range Set Data structure exchanged between the application and Light xyL Level Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1570" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1569" bodyend="1576"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__light__xyl__range__status__data__t_1a921f36b49f2e01bd058b23a0ffef08d2" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_range_status_data_t</scope><name>status</name></member>
+      <member refid="structwiced__bt__mesh__light__xyl__range__status__data__t_1ad640ad6319e495ef551cbb625f9adb8a" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_range_status_data_t</scope><name>x_max</name></member>
+      <member refid="structwiced__bt__mesh__light__xyl__range__status__data__t_1a8054c8a3dcd13ea4de2f3409e1fcfe99" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_range_status_data_t</scope><name>x_min</name></member>
+      <member refid="structwiced__bt__mesh__light__xyl__range__status__data__t_1aa9d200e2b1585732fc9a1c9246935388" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_range_status_data_t</scope><name>y_max</name></member>
+      <member refid="structwiced__bt__mesh__light__xyl__range__status__data__t_1a390e94615c78fbd9b174237698ed42a7" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_range_status_data_t</scope><name>y_min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

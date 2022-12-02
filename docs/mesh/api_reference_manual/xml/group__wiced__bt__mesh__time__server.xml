@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__mesh__time__server" kind="group">
+    <compoundname>wiced_bt_mesh_time_server</compoundname>
+    <title>Mesh Time Server</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__mesh__time__server_1ga2dc4bc6e1a8f8906dcca2cca45d6484a" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() wiced_bt_mesh_time_server_callback_t(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</definition>
+        <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
+        <name>wiced_bt_mesh_time_server_callback_t</name>
+        <briefdescription>
+<para>Time Server callback is called by the Mesh Models library on receiving a message from the peer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event that the application should process (see Time Events) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the RTC Time data structure</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5534" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5534" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__mesh__time__server_1ga3117772aede901882a01c00f53702498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_time_server_init</definition>
+        <argsstring>(wiced_bt_mesh_time_server_callback_t *p_callback, wiced_bool_t is_provisioned)</argsstring>
+        <name>wiced_bt_mesh_model_time_server_init</name>
+        <param>
+          <type><ref refid="group__wiced__bt__mesh__time__server_1ga2dc4bc6e1a8f8906dcca2cca45d6484a" kindref="member">wiced_bt_mesh_time_server_callback_t</ref> *</type>
+          <declname>p_callback</declname>
+        </param>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>is_provisioned</declname>
+        </param>
+        <briefdescription>
+<para>Time Server Module initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Application or Parent model callback that will be executed on receiving a message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5543" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__time__server_1ga3a8a503141d4226ce1a763a9673beed3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_model_time_server_message_handler</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
+        <name>wiced_bt_mesh_model_time_server_message_handler</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Time Server Message Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5556" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__time__server_1ga2b6a069963f62619d773756836d56ab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_model_time_setup_server_message_handler</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
+        <name>wiced_bt_mesh_model_time_setup_server_message_handler</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Time Setup Server Message Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5569" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__time__server_1gae8f8ae85d110535c3d0b5278fca8df45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_time_server_status_send</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_time_state_msg_t *p_time_status_data)</argsstring>
+        <name>wiced_bt_mesh_model_time_server_status_send</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__time__state__msg__t" kindref="compound">wiced_bt_mesh_time_state_msg_t</ref> *</type>
+          <declname>p_time_status_data</declname>
+        </param>
+        <briefdescription>
+<para>Time server status send. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_time_zone_status_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data portion of the time zone status message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5579" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__time__server_1gad29bdd5693a04943116e28289d0b8f6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_time_server_zone_status_send</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_time_zone_status_t *p_time_zone_status_data)</argsstring>
+        <name>wiced_bt_mesh_model_time_server_zone_status_send</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__time__zone__status__t" kindref="compound">wiced_bt_mesh_time_zone_status_t</ref> *</type>
+          <declname>p_time_zone_status_data</declname>
+        </param>
+        <briefdescription>
+<para>Time zone status send. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_time_status_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data portion of the time status message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5589" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__time__server_1ga2ed80c7456a651933b1e46bad7a29a9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_time_server_tai_utc_delta_status_send</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_time_tai_utc_delta_status_t *p_time_delta_status_data)</argsstring>
+        <name>wiced_bt_mesh_model_time_server_tai_utc_delta_status_send</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__time__tai__utc__delta__status__t" kindref="compound">wiced_bt_mesh_time_tai_utc_delta_status_t</ref> *</type>
+          <declname>p_time_delta_status_data</declname>
+        </param>
+        <briefdescription>
+<para>Time TAI_UTC delta status send. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_time_delta_status_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data portion of the Time TAI_UTC delta status message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5599" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The AIROC Mesh Time Server module provides a way for an application to implement a functionality for the devices that support time state. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To include the Mesh Models support for the Time Server module the application shall contain the WICED_BT_MESH_MODEL_TIME_SERVER</para>
+<para>TBD </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_5687d4d1c1ed4aeda526a9dec2d4bf18" kind="dir">
+    <compoundname>mesh_libs</compoundname>
+    <innerdir refid="dir_4e6935c92f50a57c71fc19646a166fc4">include</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/"/>
+  </compounddef>
+</doxygen>

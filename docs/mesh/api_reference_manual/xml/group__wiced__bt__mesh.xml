@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__mesh" kind="group">
+    <compoundname>wiced_bt_mesh</compoundname>
+    <title>LE Mesh</title>
+    <innerpage refid="group__wiced__bt__mesh_wiced_bt_mesh_application_structure">Mesh Application Structure</innerpage>
+    <innergroup refid="group__wiced__bt__mesh__core">Mesh Core Library API</innergroup>
+    <innergroup refid="group__wiced__bt__mesh__client">Mesh Client Library API</innergroup>
+    <innergroup refid="group__wiced__bt__mesh__models">Mesh Models Library API</innergroup>
+    <innergroup refid="group__wiced__bt__mesh__provisioning">Mesh Provisioning Library API</innergroup>
+    <briefdescription>
+<para>Mesh API provides a developer a simple way to incorporate LE mesh functionality in an AIROC application. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Most application will only need access to <ref refid="group__wiced__bt__mesh__models" kindref="compound">Mesh Models</ref> library. The applications that supports adding new devices to the mesh network (provisioning) and network configuration may also use <ref refid="group__wiced__bt__mesh__provisioning" kindref="compound">Mesh Provisioning</ref> library. Applications that use Vendor specific models in addition to standard Bluetooth SIG models, may also need to access <ref refid="group__wiced__bt__mesh__core" kindref="compound">Mesh Core</ref> library functions directly. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

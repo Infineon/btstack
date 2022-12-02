@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__default__transition__time__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_default_transition_time_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__default__transition__time__data__t_1a73738b12a3a47a936ab6edf2186b0c71" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_default_transition_time_data_t::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+<para>Transition time in milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1060" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1060" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Default Transition Time Data structure exchanged between an application and the Generic Default Transition Time Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1059" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1058" bodyend="1061"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__default__transition__time__data__t_1a73738b12a3a47a936ab6edf2186b0c71" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_default_transition_time_data_t</scope><name>time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

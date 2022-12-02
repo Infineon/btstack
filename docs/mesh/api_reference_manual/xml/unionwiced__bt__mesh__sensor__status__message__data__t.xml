@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="unionwiced__bt__mesh__sensor__status__message__data__t" kind="union" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_sensor_status_message_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a4b6a60cd1da276eaab36b02d20a7d53d" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__descriptor__status__data__t" kindref="compound">wiced_bt_mesh_sensor_descriptor_status_data_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_descriptor_status_data_t wiced_bt_mesh_sensor_status_message_data_t::desc_status</definition>
+        <argsstring></argsstring>
+        <name>desc_status</name>
+        <briefdescription>
+<para>Descriptor Status data received from Server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="433" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a77d44e958599e56adad86927d2326b0f" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__status__data__t" kindref="compound">wiced_bt_mesh_sensor_status_data_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_status_data_t wiced_bt_mesh_sensor_status_message_data_t::sensor_status</definition>
+        <argsstring></argsstring>
+        <name>sensor_status</name>
+        <briefdescription>
+<para>Sensor Status data received from Server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="434" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a0772c13a1dea4b8fda58aff3a0044657" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__column__status__data__t" kindref="compound">wiced_bt_mesh_sensor_column_status_data_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_column_status_data_t wiced_bt_mesh_sensor_status_message_data_t::column_status</definition>
+        <argsstring></argsstring>
+        <name>column_status</name>
+        <briefdescription>
+<para>Column Status data received from Server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="435" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a291cfd913a772d9775d2dbc8637c46c0" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__series__status__data__t" kindref="compound">wiced_bt_mesh_sensor_series_status_data_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_series_status_data_t wiced_bt_mesh_sensor_status_message_data_t::series_status</definition>
+        <argsstring></argsstring>
+        <name>series_status</name>
+        <briefdescription>
+<para>Series Status data received from Server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="436" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a90b3e6f4674af474563d632ddf36fb91" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__setting__status__data__t" kindref="compound">wiced_bt_mesh_sensor_setting_status_data_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_setting_status_data_t wiced_bt_mesh_sensor_status_message_data_t::setting_status</definition>
+        <argsstring></argsstring>
+        <name>setting_status</name>
+        <briefdescription>
+<para>Setting Status data received from Server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="437" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1ab6ff7eb5ed3cb9623090e1c8aba5b1ab" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__settings__status__data__t" kindref="compound">wiced_bt_mesh_sensor_settings_status_data_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_settings_status_data_t wiced_bt_mesh_sensor_status_message_data_t::settings_status</definition>
+        <argsstring></argsstring>
+        <name>settings_status</name>
+        <briefdescription>
+<para>Settings Status data received from Server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="438" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a5a8e20c144fdab69272b2aee6393b778" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__cadence__status__data__t" kindref="compound">wiced_bt_mesh_sensor_cadence_status_data_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_cadence_status_data_t wiced_bt_mesh_sensor_status_message_data_t::cadence_status</definition>
+        <argsstring></argsstring>
+        <name>cadence_status</name>
+        <briefdescription>
+<para>Cadence Status data received from Server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="439" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sensor status data structure exchanged between the sensor model and Application. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="333">
+        <label>wiced_bt_mesh_sensor_column_status_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__column__status__data__t"/>
+        <childnode refid="334" relation="usage">
+          <edgelabel>column_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="336">
+        <label>wiced_bt_mesh_sensor_cadence_t</label>
+        <link refid="structwiced__bt__mesh__sensor__cadence__t"/>
+      </node>
+      <node id="338">
+        <label>wiced_bt_mesh_sensor_status_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__status__data__t"/>
+      </node>
+      <node id="337">
+        <label>wiced_bt_mesh_sensor_series_status_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__series__status__data__t"/>
+        <childnode refid="334" relation="usage">
+          <edgelabel>column_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="343">
+        <label>wiced_bt_mesh_sensor_setting_t</label>
+        <link refid="structwiced__bt__mesh__sensor__setting__t"/>
+      </node>
+      <node id="335">
+        <label>wiced_bt_mesh_sensor_cadence_status_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__cadence__status__data__t"/>
+        <childnode refid="336" relation="usage">
+          <edgelabel>cadence_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="339">
+        <label>wiced_bt_mesh_sensor_descriptor_status_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__descriptor__status__data__t"/>
+        <childnode refid="340" relation="usage">
+          <edgelabel>descriptor_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="342">
+        <label>wiced_bt_mesh_sensor_setting_status_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__setting__status__data__t"/>
+        <childnode refid="343" relation="usage">
+          <edgelabel>setting</edgelabel>
+        </childnode>
+      </node>
+      <node id="332">
+        <label>wiced_bt_mesh_sensor_status_message_data_t</label>
+        <link refid="unionwiced__bt__mesh__sensor__status__message__data__t"/>
+        <childnode refid="333" relation="usage">
+          <edgelabel>column_status</edgelabel>
+        </childnode>
+        <childnode refid="335" relation="usage">
+          <edgelabel>cadence_status</edgelabel>
+        </childnode>
+        <childnode refid="337" relation="usage">
+          <edgelabel>series_status</edgelabel>
+        </childnode>
+        <childnode refid="338" relation="usage">
+          <edgelabel>sensor_status</edgelabel>
+        </childnode>
+        <childnode refid="339" relation="usage">
+          <edgelabel>desc_status</edgelabel>
+        </childnode>
+        <childnode refid="341" relation="usage">
+          <edgelabel>settings_status</edgelabel>
+        </childnode>
+        <childnode refid="342" relation="usage">
+          <edgelabel>setting_status</edgelabel>
+        </childnode>
+      </node>
+      <node id="341">
+        <label>wiced_bt_mesh_sensor_settings_status_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__settings__status__data__t"/>
+      </node>
+      <node id="340">
+        <label>wiced_bt_mesh_sensor_descriptor_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__descriptor__data__t"/>
+      </node>
+      <node id="334">
+        <label>wiced_bt_mesh_sensor_column_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__column__data__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="432" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="431" bodyend="440"/>
+    <listofallmembers>
+      <member refid="unionwiced__bt__mesh__sensor__status__message__data__t_1a5a8e20c144fdab69272b2aee6393b778" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_message_data_t</scope><name>cadence_status</name></member>
+      <member refid="unionwiced__bt__mesh__sensor__status__message__data__t_1a0772c13a1dea4b8fda58aff3a0044657" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_message_data_t</scope><name>column_status</name></member>
+      <member refid="unionwiced__bt__mesh__sensor__status__message__data__t_1a4b6a60cd1da276eaab36b02d20a7d53d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_message_data_t</scope><name>desc_status</name></member>
+      <member refid="unionwiced__bt__mesh__sensor__status__message__data__t_1a77d44e958599e56adad86927d2326b0f" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_message_data_t</scope><name>sensor_status</name></member>
+      <member refid="unionwiced__bt__mesh__sensor__status__message__data__t_1a291cfd913a772d9775d2dbc8637c46c0" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_message_data_t</scope><name>series_status</name></member>
+      <member refid="unionwiced__bt__mesh__sensor__status__message__data__t_1a90b3e6f4674af474563d632ddf36fb91" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_message_data_t</scope><name>setting_status</name></member>
+      <member refid="unionwiced__bt__mesh__sensor__status__message__data__t_1ab6ff7eb5ed3cb9623090e1c8aba5b1ab" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_message_data_t</scope><name>settings_status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

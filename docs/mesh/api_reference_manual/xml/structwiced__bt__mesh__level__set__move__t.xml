@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__level__set__move__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_level_set_move_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__level__set__move__t_1ac24bb3e8f8cb838b535def0000d1c431" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t wiced_bt_mesh_level_set_move_t::delta</definition>
+        <argsstring></argsstring>
+        <name>delta</name>
+        <briefdescription>
+<para>The Delta Level step to calculate Move speed for the Generic Level state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1037" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1037" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__level__set__move__t_1a638f8d6f03af16f2dd2e23f47975381d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_level_set_move_t::transition_time</definition>
+        <argsstring></argsstring>
+        <name>transition_time</name>
+        <briefdescription>
+<para>Transition time to the target level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1038" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1038" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__level__set__move__t_1a93dd69289628983dcd8bf6c5d30125f8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_level_set_move_t::delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <briefdescription>
+<para>Delay before starting the transition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1039" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1039" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__level__set__move__t_1a3f82e3241fca9c1a264a0fd9b8cb9ee7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_level_set_move_t::continuation</definition>
+        <argsstring></argsstring>
+        <name>continuation</name>
+        <briefdescription>
+<para>If false, a new delta transaction is started. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1042" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1042" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Move Set Data structure exchanged between the application and the Generic Level Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1036" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1035" bodyend="1043"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__level__set__move__t_1a3f82e3241fca9c1a264a0fd9b8cb9ee7" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_level_set_move_t</scope><name>continuation</name></member>
+      <member refid="structwiced__bt__mesh__level__set__move__t_1a93dd69289628983dcd8bf6c5d30125f8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_level_set_move_t</scope><name>delay</name></member>
+      <member refid="structwiced__bt__mesh__level__set__move__t_1ac24bb3e8f8cb838b535def0000d1c431" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_level_set_move_t</scope><name>delta</name></member>
+      <member refid="structwiced__bt__mesh__level__set__move__t_1a638f8d6f03af16f2dd2e23f47975381d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_level_set_move_t</scope><name>transition_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

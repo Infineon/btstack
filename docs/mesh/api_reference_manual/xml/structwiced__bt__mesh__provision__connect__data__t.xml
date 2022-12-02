@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__provision__connect__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_provision_connect_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__connect__data__t_1a289289a060e214761793a8b6afe97dc8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_connect_data_t::uuid[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>uuid</name>
+        <briefdescription>
+<para>UUID of the device to provision. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="301" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__connect__data__t_1a93be51525841eddfe87c2a820aec35f4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_connect_data_t::identify_duration</definition>
+        <argsstring></argsstring>
+        <name>identify_duration</name>
+        <briefdescription>
+<para>Duration of the identify state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="302" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__connect__data__t_1af1ce89b2aa6265f82f239e0b8f83db88" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_connect_data_t::procedure</definition>
+        <argsstring></argsstring>
+        <name>procedure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="303" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="300" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="299" bodyend="304"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__provision__connect__data__t_1a93be51525841eddfe87c2a820aec35f4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_connect_data_t</scope><name>identify_duration</name></member>
+      <member refid="structwiced__bt__mesh__provision__connect__data__t_1af1ce89b2aa6265f82f239e0b8f83db88" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_connect_data_t</scope><name>procedure</name></member>
+      <member refid="structwiced__bt__mesh__provision__connect__data__t_1a289289a060e214761793a8b6afe97dc8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_connect_data_t</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

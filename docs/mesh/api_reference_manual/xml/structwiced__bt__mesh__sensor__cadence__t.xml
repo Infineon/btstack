@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__sensor__cadence__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_sensor_cadence_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__cadence__t_1ac2e36aaf164cc93a93f1547a5c301233" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_sensor_cadence_t::fast_cadence_period_divisor</definition>
+        <argsstring></argsstring>
+        <name>fast_cadence_period_divisor</name>
+        <briefdescription>
+<para>Divisor for the Publish Period. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="397" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__cadence__t_1aac653da05043f0f038b3035415864bd4" prot="public" static="no" mutable="no">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_sensor_cadence_t::trigger_type</definition>
+        <argsstring></argsstring>
+        <name>trigger_type</name>
+        <briefdescription>
+<para>Defines the unit and format of the Status Trigger Delta fields. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="398" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__cadence__t_1a60e2ecf4ff7c9612143392482bdf5d0f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_sensor_cadence_t::trigger_delta_down</definition>
+        <argsstring></argsstring>
+        <name>trigger_delta_down</name>
+        <briefdescription>
+<para>Delta down value that triggers a status message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="399" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__cadence__t_1ab097b7270d14063d1e9a3d8ab99c7ceb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_sensor_cadence_t::trigger_delta_up</definition>
+        <argsstring></argsstring>
+        <name>trigger_delta_up</name>
+        <briefdescription>
+<para>Delta up value that triggers a status message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="400" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__cadence__t_1a9a0aaab6cd5ccbc9444aeab763c3e259" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_sensor_cadence_t::min_interval</definition>
+        <argsstring></argsstring>
+        <name>min_interval</name>
+        <briefdescription>
+<para>Minimum interval between two consecutive Status messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="401" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__cadence__t_1ac013557dda0a255e85d61603ab94e859" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_sensor_cadence_t::fast_cadence_low</definition>
+        <argsstring></argsstring>
+        <name>fast_cadence_low</name>
+        <briefdescription>
+<para>Low value for the fast cadence range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="402" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__cadence__t_1a0812a758cf219fbb1af72ac5bf9f2e8b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_sensor_cadence_t::fast_cadence_high</definition>
+        <argsstring></argsstring>
+        <name>fast_cadence_high</name>
+        <briefdescription>
+<para>High value for the fast cadence range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="403" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sensor Cadence structure exchanged between the application and the Sensor Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="396" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="395" bodyend="404"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__sensor__cadence__t_1a0812a758cf219fbb1af72ac5bf9f2e8b" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_cadence_t</scope><name>fast_cadence_high</name></member>
+      <member refid="structwiced__bt__mesh__sensor__cadence__t_1ac013557dda0a255e85d61603ab94e859" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_cadence_t</scope><name>fast_cadence_low</name></member>
+      <member refid="structwiced__bt__mesh__sensor__cadence__t_1ac2e36aaf164cc93a93f1547a5c301233" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_cadence_t</scope><name>fast_cadence_period_divisor</name></member>
+      <member refid="structwiced__bt__mesh__sensor__cadence__t_1a9a0aaab6cd5ccbc9444aeab763c3e259" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_cadence_t</scope><name>min_interval</name></member>
+      <member refid="structwiced__bt__mesh__sensor__cadence__t_1a60e2ecf4ff7c9612143392482bdf5d0f" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_cadence_t</scope><name>trigger_delta_down</name></member>
+      <member refid="structwiced__bt__mesh__sensor__cadence__t_1ab097b7270d14063d1e9a3d8ab99c7ceb" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_cadence_t</scope><name>trigger_delta_up</name></member>
+      <member refid="structwiced__bt__mesh__sensor__cadence__t_1aac653da05043f0f038b3035415864bd4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_cadence_t</scope><name>trigger_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

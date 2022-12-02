@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__time__role__msg__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_time_role_msg_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__time__role__msg__t_1ab8ad274d9f6fa89f3ebe2c3e25394077" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_time_role_msg_t::role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <briefdescription>
+<para>The Time Role for the element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="544" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Time role structure exchanged between the Application and Time model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="543" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="542" bodyend="545"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__time__role__msg__t_1ab8ad274d9f6fa89f3ebe2c3e25394077" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_role_msg_t</scope><name>role</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

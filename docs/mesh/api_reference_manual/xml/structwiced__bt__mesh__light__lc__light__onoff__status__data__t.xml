@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__light__lc__light__onoff__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_light_lc_light_onoff_status_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__lc__light__onoff__status__data__t_1a62cc72c3f863a78d875a954479612196" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_light_lc_light_onoff_status_data_t::present_onoff</definition>
+        <argsstring></argsstring>
+        <name>present_onoff</name>
+        <briefdescription>
+<para>Present value of the Light LC Light OnOff state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1617" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__lc__light__onoff__status__data__t_1a82d20e05294ecb36b9457abe45801194" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_light_lc_light_onoff_status_data_t::target_onoff</definition>
+        <argsstring></argsstring>
+        <name>target_onoff</name>
+        <briefdescription>
+<para>Target value of the Light LC Light OnOff state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1618" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__lc__light__onoff__status__data__t_1afb4acb5f61649ff9ca35b24b924f63b4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_light_lc_light_onoff_status_data_t::remaining_time</definition>
+        <argsstring></argsstring>
+        <name>remaining_time</name>
+        <briefdescription>
+<para>Remaining time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1619" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1619" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Light LC Light OnOff Status data structure exchanged between the application and Light LC library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1616" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1615" bodyend="1620"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__light__lc__light__onoff__status__data__t_1a62cc72c3f863a78d875a954479612196" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lc_light_onoff_status_data_t</scope><name>present_onoff</name></member>
+      <member refid="structwiced__bt__mesh__light__lc__light__onoff__status__data__t_1afb4acb5f61649ff9ca35b24b924f63b4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lc_light_onoff_status_data_t</scope><name>remaining_time</name></member>
+      <member refid="structwiced__bt__mesh__light__lc__light__onoff__status__data__t_1a82d20e05294ecb36b9457abe45801194" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lc_light_onoff_status_data_t</scope><name>target_onoff</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

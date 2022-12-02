@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__app__func__table__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_app_func_table_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__app__func__table__t_1ab2012adb745069e07148154e0925a2bd" prot="public" static="no" mutable="no">
+        <type>wiced_bt_mesh_app_init_t</type>
+        <definition>wiced_bt_mesh_app_init_t wiced_bt_mesh_app_func_table_t::p_mesh_app_init</definition>
+        <argsstring></argsstring>
+        <name>p_mesh_app_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="207" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__app__func__table__t_1a3bf58ca53d5b3deb8b73a18bbf7c0b57" prot="public" static="no" mutable="no">
+        <type>wiced_bt_mesh_app_hardware_init_t</type>
+        <definition>wiced_bt_mesh_app_hardware_init_t wiced_bt_mesh_app_func_table_t::p_mesh_app_hw_init</definition>
+        <argsstring></argsstring>
+        <name>p_mesh_app_hw_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="208" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__app__func__table__t_1ad7ba1b4ed520b9668ddb68fcd53d81ab" prot="public" static="no" mutable="no">
+        <type>wiced_bt_mesh_app_gatt_conn_status_t</type>
+        <definition>wiced_bt_mesh_app_gatt_conn_status_t wiced_bt_mesh_app_func_table_t::p_mesh_app_gatt_conn_status</definition>
+        <argsstring></argsstring>
+        <name>p_mesh_app_gatt_conn_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="209" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__app__func__table__t_1aa1fcbdf25330f25ad0eecb42819c30e5" prot="public" static="no" mutable="no">
+        <type>wiced_bt_mesh_app_attention_t</type>
+        <definition>wiced_bt_mesh_app_attention_t wiced_bt_mesh_app_func_table_t::p_mesh_app_attention</definition>
+        <argsstring></argsstring>
+        <name>p_mesh_app_attention</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="210" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__app__func__table__t_1ab104af78c0cb201a9ef43cd06547e0ce" prot="public" static="no" mutable="no">
+        <type>wiced_bt_mesh_app_notify_period_set_t</type>
+        <definition>wiced_bt_mesh_app_notify_period_set_t wiced_bt_mesh_app_func_table_t::p_mesh_app_notify_period_set</definition>
+        <argsstring></argsstring>
+        <name>p_mesh_app_notify_period_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="211" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__app__func__table__t_1a3a4a273a13ab274e2090d06661ccd676" prot="public" static="no" mutable="no">
+        <type>wiced_bt_mesh_app_proc_rx_cmd_t</type>
+        <definition>wiced_bt_mesh_app_proc_rx_cmd_t wiced_bt_mesh_app_func_table_t::p_mesh_app_proc_rx_cmd</definition>
+        <argsstring></argsstring>
+        <name>p_mesh_app_proc_rx_cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="212" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__app__func__table__t_1afa52357f5640de6b46cc6c406d152146" prot="public" static="no" mutable="no">
+        <type>wiced_bt_mesh_app_lpn_sleep_t</type>
+        <definition>wiced_bt_mesh_app_lpn_sleep_t wiced_bt_mesh_app_func_table_t::p_mesh_app_lpn_sleep</definition>
+        <argsstring></argsstring>
+        <name>p_mesh_app_lpn_sleep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="213" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__app__func__table__t_1afe0f212b452c3de13c350f718f6c6499" prot="public" static="no" mutable="no">
+        <type>wiced_bt_mesh_app_factory_reset_t</type>
+        <definition>wiced_bt_mesh_app_factory_reset_t wiced_bt_mesh_app_func_table_t::p_mesh_app_factory_reset</definition>
+        <argsstring></argsstring>
+        <name>p_mesh_app_factory_reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="214" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" line="206" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_app.h" bodystart="205" bodyend="215"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__app__func__table__t_1aa1fcbdf25330f25ad0eecb42819c30e5" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_app_func_table_t</scope><name>p_mesh_app_attention</name></member>
+      <member refid="structwiced__bt__mesh__app__func__table__t_1afe0f212b452c3de13c350f718f6c6499" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_app_func_table_t</scope><name>p_mesh_app_factory_reset</name></member>
+      <member refid="structwiced__bt__mesh__app__func__table__t_1ad7ba1b4ed520b9668ddb68fcd53d81ab" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_app_func_table_t</scope><name>p_mesh_app_gatt_conn_status</name></member>
+      <member refid="structwiced__bt__mesh__app__func__table__t_1a3bf58ca53d5b3deb8b73a18bbf7c0b57" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_app_func_table_t</scope><name>p_mesh_app_hw_init</name></member>
+      <member refid="structwiced__bt__mesh__app__func__table__t_1ab2012adb745069e07148154e0925a2bd" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_app_func_table_t</scope><name>p_mesh_app_init</name></member>
+      <member refid="structwiced__bt__mesh__app__func__table__t_1afa52357f5640de6b46cc6c406d152146" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_app_func_table_t</scope><name>p_mesh_app_lpn_sleep</name></member>
+      <member refid="structwiced__bt__mesh__app__func__table__t_1ab104af78c0cb201a9ef43cd06547e0ce" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_app_func_table_t</scope><name>p_mesh_app_notify_period_set</name></member>
+      <member refid="structwiced__bt__mesh__app__func__table__t_1a3a4a273a13ab274e2090d06661ccd676" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_app_func_table_t</scope><name>p_mesh_app_proc_rx_cmd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__mesh__event_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_mesh_event.h</compoundname>
+    <includes local="yes">wiced_timer.h</includes>
+    <includedby refid="wiced__bt__mesh__app_8h" local="yes">wiced_bt_mesh_app.h</includedby>
+    <includedby refid="wiced__bt__mesh__client_8h" local="yes">wiced_bt_mesh_client.h</includedby>
+    <includedby refid="wiced__bt__mesh__provision_8h" local="yes">wiced_bt_mesh_provision.h</includedby>
+    <includedby refid="wiced__bt__mesh__models_8h" local="yes">wiced_bt_mesh_models.h</includedby>
+    <includedby refid="wiced__bt__mesh__core_8h" local="yes">wiced_bt_mesh_core.h</includedby>
+    <incdepgraph>
+      <node id="17">
+        <label>wiced_timer.h</label>
+      </node>
+      <node id="16">
+        <label>wiced_bt_mesh_event.h</label>
+        <link refid="wiced__bt__mesh__event_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structwiced__bt__mesh__event__t" prot="public">wiced_bt_mesh_event_t</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Bits of the wiced_bt_mesh_event_t::app_key_idx</header>
+      <description><para><anchor id="wiced__bt__mesh__event_8h_1WICED_BT_MESH_EVENT_KEY_IDX"/></para>
+<para>The following is the bits meaning of the field app_key_idx in the structure <ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref>. </para>
+</description>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aa6efc0f6bab0b5a0b20918f1e1d28b1b" prot="public" static="no">
+        <name>WICED_BT_MESH_EVENT_KEY_IDX_DEFAULT_NETKEYIDX</name>
+        <initializer>0xffff</initializer>
+        <briefdescription>
+<para>Bits meaning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use device key with default (first) net key idx. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="32" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a0a5502c4082c8354132761bca51a29cb" prot="public" static="no">
+        <name>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY</name>
+        <initializer>0x8000</initializer>
+        <briefdescription>
+<para>1 means it is protected by device key and remaining part contains net_key_idx. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 means it is protected by application key and remaining part contains app_key_idx. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="33" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ab39000c7f3940b7903be4a2485f0f68a" prot="public" static="no">
+        <name>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_INT_IDX</name>
+        <initializer>0x4000</initializer>
+        <briefdescription>
+<para>1 means it is internal key index in the same order as added. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 means it is global key index. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="34" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ad458d5bfc758fb4d737d919ecb6f2019" prot="public" static="no">
+        <name>WICED_BT_MESH_EVENT_KEY_IDX_MSK_KEYIDX</name>
+        <initializer>0x0fff</initializer>
+        <briefdescription>
+<para>Mask of the app_key_index/net_key_index depending on value 0/1 of the bit WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="35" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ac72ed29e9d61b250316f3b6870ca2745" prot="public" static="no">
+        <name>CREDENTIAL_FLAG_FLOODING</name>
+        <initializer>0x00    /*&lt; Flooding Credentials  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="65" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ac5a7aa705cc4be1b676c9c70d1d7403b" prot="public" static="no">
+        <name>CREDENTIAL_FLAG_FRENDSHIP</name>
+        <initializer>0x01    /*&lt; Friendship Credentials  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="66" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a4610e9e139c824b77c81e24ed83f5203" prot="public" static="no">
+        <name>CREDENTIAL_FLAG_DIRECTED</name>
+        <initializer>0x02    /*&lt; Directed Forwarding Credentials  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="67" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1abe46201a835b3b2e98cf0cbe981b59be" prot="public" static="no">
+        <name>RETRANSMIT_TIMER_TICK</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="72" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a539b0066c6b2d2fe46c845b2e32ad93b" prot="public" static="no">
+        <name>RETRANSMIT_TIMER2_TICK</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="73" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aaab7e3aa3012530273e898ce1573f17c" prot="public" static="no">
+        <name>REPLY_TIMER_TICK</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="76" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1abdf9aa4b3b81f170071376607f870006" prot="public" static="no">
+        <name>TX_STATUS_COMPLETED</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="80" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1af800d1ab3c27c3acddc0016aead1922a" prot="public" static="no">
+        <name>TX_STATUS_FAILED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="81" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a974ff50cf7f2e723add959f384429cee" prot="public" static="no">
+        <name>TX_STATUS_ACK_RECEIVED</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="82" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1af53ef804bc2279ea0446390ea50f471f" prot="public" static="no">
+        <name>RPL_DELAY_DONT_SAVE</name>
+        <initializer>0xff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="84" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aa1e9cfcf45b509a85c8f6dbf1da02af7" prot="public" static="no">
+        <name>TAG_USE_DIRECTED</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="88" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a9ec051fd153b183097019f24d51156b2" prot="public" static="no">
+        <name>TAG_IMMUTABLE_CREDENTIALS</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="89" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__mesh__core_1gaccd6185e2edfb1a91692727fef0da12a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+        <definition>wiced_bt_mesh_event_t* wiced_bt_mesh_create_reply_event</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_create_reply_event</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>Create message reply mesh event from the received mesh event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function doesn&apos;t create but just updates received mesh event to be used to send message back to the originator. After application or a models library calls Mesh Models Library or Mesh Core library passing the pointer to the mesh event, it loses the ownership of the event and should not use it again.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information about the message received.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the input p_event updated for response </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__core_1gad429c40f45f13693d7e64894a7402f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+        <definition>wiced_bt_mesh_event_t* wiced_bt_mesh_copy_event</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_copy_event</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>Create the copy of the existing mesh event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function creates new mesh event with same content as input mesh event.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mesh event to copy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the created mesh event </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__core_1ga3b31ef1c2c2249006531d402f13c1fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+        <definition>wiced_bt_mesh_event_t* wiced_bt_mesh_create_event</definition>
+        <argsstring>(uint8_t element_index, uint16_t company_id, uint16_t model_id, uint16_t dst, uint16_t app_key_idx)</argsstring>
+        <name>wiced_bt_mesh_create_event</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>company_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>model_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>app_key_idx</declname>
+        </param>
+        <briefdescription>
+<para>Create mesh event for an unsolicited message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In case dst is 0 the function takes all information from the model&apos;s publication or fails if publication is not configured for the specified model. In case non-0 dst the function uses specified dst and app_key_idx and fills all other fields with default values. In special case with company_id equals to 0xffff the function creates a message event with default ttl.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element index. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>company_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Company ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination address. If parameter is 0, the function finds publication and take uses its fields for the mesh event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>app_key_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Application key index used to decrypt when message was received or which should be used to encrypt to send the message. Or it can be net key index - see <ref refid="wiced__bt__mesh__event_8h_1WICED_BT_MESH_EVENT_KEY_IDX" kindref="member">Bits of the wiced_bt_mesh_event_t::app_key_idx</ref>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>p_event Pointer to a newly allocated mesh event. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__core_1gab53118d6d25849be44f82d3af7eeb0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_release_event</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_release_event</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>Release mesh event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The application should call this function when it receives the mesh event in the callback and the reply value is set to 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information for the message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Mesh Model definitions </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>2016-YEAR<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>__MESH_EVENT_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MESH_EVENT_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_timer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment">//<sp/>Bits<sp/>of<sp/>the<sp/>field<sp/>wiced_bt_mesh_event_t::app_key_idx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_EVENT_KEY_IDX_DEFAULT_NETKEYIDX<sp/><sp/><sp/>0xffff<sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8000<sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_INT_IDX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4000<sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_EVENT_KEY_IDX_MSK_KEYIDX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0fff<sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="structwiced__bt__mesh__event__t" refkind="compound"><highlight class="preprocessor">typedef<sp/>struct<sp/>wiced_bt_mesh_event__t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">wiced_bt_mesh_event__t<sp/>*p_next;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*complete_callback;<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>company_id;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>opcode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hci_opcode;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element_idx;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ttl;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>src;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>app_key_idx;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_len;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor">#define<sp/>CREDENTIAL_FLAG_FLOODING<sp/><sp/><sp/><sp/>0x00<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Flooding<sp/>Credentials<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CREDENTIAL_FLAG_FRENDSHIP<sp/><sp/><sp/>0x01<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Friendship<sp/>Credentials<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CREDENTIAL_FLAG_DIRECTED<sp/><sp/><sp/><sp/>0x02<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Directed<sp/>Forwarding<sp/>Credentials<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>credential_flag;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retrans_cnt;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor">#define<sp/>RETRANSMIT_TIMER_TICK<sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RETRANSMIT_TIMER2_TICK<sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retrans_time;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reply;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor">#define<sp/>REPLY_TIMER_TICK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reply_timeout;<sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_STATUS_COMPLETED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_STATUS_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_STATUS_ACK_RECEIVED<sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tx_flag;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor">#define<sp/>RPL_DELAY_DONT_SAVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rpl_delay;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tx_delay;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>status;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAG_USE_DIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAG_IMMUTABLE_CREDENTIALS<sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flags;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>friend_addr;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>send_segmented;<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rssi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_timer_t<sp/><sp/><sp/>timer;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1gaccd6185e2edfb1a91692727fef0da12a" kindref="member">wiced_bt_mesh_create_reply_event</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1gad429c40f45f13693d7e64894a7402f69" kindref="member">wiced_bt_mesh_copy_event</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1ga3b31ef1c2c2249006531d402f13c1fb6" kindref="member">wiced_bt_mesh_create_event</ref>(uint8_t<sp/>element_index,<sp/>uint16_t<sp/>company_id,<sp/>uint16_t<sp/>model_id,<sp/>uint16_t<sp/>dst,<sp/>uint16_t<sp/>app_key_idx);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1gab53118d6d25849be44f82d3af7eeb0db" kindref="member">wiced_bt_mesh_release_event</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@}<sp/>wiced_bt_mesh_core<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MESH_EVENT_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h"/>
+  </compounddef>
+</doxygen>

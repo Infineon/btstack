@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__mesh__light__lightness__server" kind="group">
+    <compoundname>wiced_bt_mesh_light_lightness_server</compoundname>
+    <title>Mesh Light Lightness Server</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__mesh__light__lightness__server_1gaabcb1d96daa26aa395a17dcc1b98241f" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() wiced_bt_mesh_light_lightness_server_callback_t(uint8_t element_idx, uint16_t event, void *p_data)</definition>
+        <argsstring>(uint8_t element_idx, uint16_t event, void *p_data)</argsstring>
+        <name>wiced_bt_mesh_light_lightness_server_callback_t</name>
+        <briefdescription>
+<para>Light Lightness Server callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Light Lightness Server callback is executed by the Mesh Models library when the application is required to adjust the amount of light emitted by the device. The application is responsible for setting the hardware (for example, by controlling PWM) to comply with the value requested by the library.</para>
+<para>If peer device requested to transition to the new brightness level over a period of time, the callback will be executed repeatedly. Mesh Library calculates the present lightness level and submits to the application to update the hardware.</para>
+<para>The p_data parameter points to the <ref refid="structwiced__bt__mesh__light__lightness__status__t" kindref="compound">wiced_bt_mesh_light_lightness_status_t</ref> structure. Typically the application will only need to use the value of the lightness_linear_present field which specify the lightness of the device which shall be set at this particular moment. If the remaining_time field is not zero, the transition to the new target level is in progress and the Mesh Library will execute the callback at least once more before the transition is completed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element index of the primary element </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The only event that the application should process is WICED_BT_MESH_LIGHT_LIGHTNESS_STATUS </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="structwiced__bt__mesh__light__lightness__status__t" kindref="compound">wiced_bt_mesh_light_lightness_status_t</ref> structure</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3424" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3424" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__server_1gaae4681ec20a9d843b07ee8807e68241c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_light_lightness_server_init</definition>
+        <argsstring>(uint8_t element_idx, wiced_bt_mesh_light_lightness_server_callback_t *p_callback, wiced_bool_t is_provisioned)</argsstring>
+        <name>wiced_bt_mesh_model_light_lightness_server_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__mesh__light__lightness__server_1gaabcb1d96daa26aa395a17dcc1b98241f" kindref="member">wiced_bt_mesh_light_lightness_server_callback_t</ref> *</type>
+          <declname>p_callback</declname>
+        </param>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>is_provisioned</declname>
+        </param>
+        <briefdescription>
+<para>Light Lightness Server Module initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A Mesh application which contains Light Lightness Server (for example, an application for a dimmable light) should call this function during application initialization passing element index of the element. If application needs to support multiple dimmable lights, the initialization shall be called multiple times, once per each element.</para>
+<para>The application shall not call this function if the Light Lightness is not the top level function of the device, for example, when the Light Lightness is included as a part of the HSL Light.</para>
+<para>The application callback <ref refid="group__wiced__bt__mesh__light__lightness__server_1gaabcb1d96daa26aa395a17dcc1b98241f" kindref="member">wiced_bt_mesh_light_lightness_server_callback_t</ref> will be executed by the Model Library when it is required to set amount of light emitted by the light to a certain level.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element index where the server is located. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Application or Parent model callback that will be executed to control the device hardware. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_provisioned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the Mesh Models Library deletes this module&apos;s configuration data stored in the NVRAM.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if initialization was successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3445" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__server_1ga730594b6d325c881e88df4fb3ff3dd3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_light_lightness_actual_changed</definition>
+        <argsstring>(uint8_t element_idx, uint16_t value)</argsstring>
+        <name>wiced_bt_mesh_model_light_lightness_actual_changed</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Light Lightness Actual changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An application shall call this function to notify the Models Library that the value of Lightness has been changed locally.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element index for which lightness value has changed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value of lightness</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3457" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__server_1ga814516f38364c0cf37c710bca3754d42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_light_lightness_linear_changed</definition>
+        <argsstring>(uint8_t element_idx, uint16_t value)</argsstring>
+        <name>wiced_bt_mesh_model_light_lightness_linear_changed</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Light Lightness Linear changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An application shall call this function to notify the Models Library that the value of Lightness has been changed locally.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element index for which lightness value has changed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value of lightness</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3469" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__server_1ga4239007109ce36d64ff99bd73f5e37f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_model_light_lightness_server_message_handler</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
+        <name>wiced_bt_mesh_model_light_lightness_server_message_handler</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Light Lightness Server Message Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Light Lightness Server Message Handler is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this model, and returns WICED_FALSE otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3484" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__server_1ga457be8e99b3df7a5da4c37e2217e7f9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_model_light_lightness_setup_server_message_handler</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
+        <name>wiced_bt_mesh_model_light_lightness_setup_server_message_handler</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Light Lightness Setup Server Message Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Light Lightness Server Message Handler is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this model, and returns WICED_FALSE otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3499" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__server_1gaabcd35c812f4ea1010db7f803a7e1bd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_light_lightness_set_parent</definition>
+        <argsstring>(uint8_t element_idx, wiced_bt_mesh_light_lightness_server_callback_t *p_callback)</argsstring>
+        <name>wiced_bt_mesh_model_light_lightness_set_parent</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__mesh__light__lightness__server_1gaabcb1d96daa26aa395a17dcc1b98241f" kindref="member">wiced_bt_mesh_light_lightness_server_callback_t</ref> *</type>
+          <declname>p_callback</declname>
+        </param>
+        <briefdescription>
+<para>Light Lightness Server Set Parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. In multi server applications, for example a color light which supports both HSL and CTL controls, only one model should receive Get/Set for lightness, level and on/onff messages. This function should be called when the startup controller changes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device element to where model is used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Application or Parent model callback that will be executed on receiving a message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if initialization was successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3513" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__server_1gad58caa585f22114fb28ec2f7dd4ab380" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_model_light_lightness_server_scene_store_handler</definition>
+        <argsstring>(uint8_t element_idx, uint8_t *p_buffer, uint16_t buffer_len)</argsstring>
+        <name>wiced_bt_mesh_model_light_lightness_server_scene_store_handler</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_buffer</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>buffer_len</declname>
+        </param>
+        <briefdescription>
+<para>Light Lightness Server Scene Store Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The mesh Scene Server calls this function so that the module can store required data for the scene.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element index for which scene information is being stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a buffer where data should be stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum amount of data a model can store</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3527" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__server_1gadcc26283abf845ba27559f4069b68578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_model_light_lightness_server_scene_recall_handler</definition>
+        <argsstring>(uint8_t element_idx, uint8_t *p_buffer, uint16_t buffer_len, uint32_t transition_time, uint32_t delay)</argsstring>
+        <name>wiced_bt_mesh_model_light_lightness_server_scene_recall_handler</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_buffer</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>buffer_len</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>transition_time</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+<para>Light Lightness Server Scene Restore Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. When Scene Server receives Scene Recall message it calls this function with data previously stored in the NVRAM.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element index for which scene information is being recalled </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a buffer where model&apos;s data is located </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum amount of data a model can get from the buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transition_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specified time in milliseconds to transition to the target state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies time in milliseconds before starting to transition to the target state</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3543" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__mesh__light__lightness__server_1ga1fffbf21e1b920895a4718a3a207a1a9" prot="public" static="no">
+        <name>WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_SERVER</name>
+        <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_DEFTT_SRV, <ref refid="group__wiced__bt__mesh__default__transition__time__server_1gaadbba5b7363b2afda149d73b56d0959d" kindref="member">wiced_bt_mesh_model_default_transition_time_server_message_handler</ref>, NULL, NULL }, \
+    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_SCENE_SRV, <ref refid="group__wiced__bt__mesh__scene__server_1gad02139dbd5de33dbfa4574f1b7524817" kindref="member">wiced_bt_mesh_model_scene_server_message_handler</ref>, NULL, NULL }, \
+    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_SCENE_SETUP_SRV, <ref refid="group__wiced__bt__mesh__scene__server_1ga1e69d93cd77b795bd811c1ae913a39e9" kindref="member">wiced_bt_mesh_model_scene_setup_server_message_handler</ref>, NULL, NULL }, \
+    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_ONOFF_SRV, <ref refid="group__wiced__bt__mesh__onoff__server_1gae8407b3533ba16b322606715ecc95421" kindref="member">wiced_bt_mesh_model_onoff_server_message_handler</ref>, NULL, NULL }, \
+    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_ONOFF_SRV, <ref refid="group__wiced__bt__mesh__power__onoff__server_1gaff7b2624880843f3d34cdf348db91348" kindref="member">wiced_bt_mesh_model_power_onoff_server_message_handler</ref>, NULL, NULL }, \
+    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_ONOFF_SETUP_SRV, <ref refid="group__wiced__bt__mesh__power__onoff__server_1ga6c4dd5a8835747d24d55e38a1b630bfd" kindref="member">wiced_bt_mesh_model_power_onoff_setup_server_message_handler</ref>, NULL, NULL }, \
+    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_LEVEL_SRV, <ref refid="group__wiced__bt__mesh__level__server_1ga54956fe15bf384bcd2cc9da8435c25e2" kindref="member">wiced_bt_mesh_model_level_server_message_handler</ref>, NULL, NULL }, \
+    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_LIGHTNESS_SRV, <ref refid="group__wiced__bt__mesh__light__lightness__server_1ga4239007109ce36d64ff99bd73f5e37f0" kindref="member">wiced_bt_mesh_model_light_lightness_server_message_handler</ref>, <ref refid="group__wiced__bt__mesh__light__lightness__server_1gad58caa585f22114fb28ec2f7dd4ab380" kindref="member">wiced_bt_mesh_model_light_lightness_server_scene_store_handler</ref>, <ref refid="group__wiced__bt__mesh__light__lightness__server_1gadcc26283abf845ba27559f4069b68578" kindref="member">wiced_bt_mesh_model_light_lightness_server_scene_recall_handler</ref> }, \
+    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_LIGHTNESS_SETUP_SRV, <ref refid="group__wiced__bt__mesh__light__lightness__server_1ga457be8e99b3df7a5da4c37e2217e7f9f" kindref="member">wiced_bt_mesh_model_light_lightness_setup_server_message_handler</ref>, NULL, NULL }</initializer>
+        <briefdescription>
+<para>Mesh Light Lightness Server Device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Mesh Light Lightness Server Device device implements all required models for a dimmable bulb. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3390" column="10" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3390" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The AIROC Mesh Light Lightness Server module provides a way for an application to implement a dimmable light device which can be controlled specifically by setting the brightness, but also can be can be controlled using a Level slider (Generic Level client) and On/Off switch (Generic On/Off client). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In addition to that the device supports a default transition time server functionality and the application can specify on power up behavior.</para>
+<para>To include the Mesh Models support for the Light Lightness Server model the application includes <ref refid="group__wiced__bt__mesh__light__lightness__server_1ga1fffbf21e1b920895a4718a3a207a1a9" kindref="member">WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_SERVER</ref> in the device definition. If the device supports several elements with Light Lightness Server, for example, a light fixture or a chandelier with several dimmable lights, the <ref refid="group__wiced__bt__mesh__light__lightness__server_1ga1fffbf21e1b920895a4718a3a207a1a9" kindref="member">WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_SERVER</ref> shall be included for each element.</para>
+<para>In addition to the definition, the application shall initialize the Light Lightness module by calling <ref refid="group__wiced__bt__mesh__light__lightness__server_1gaae4681ec20a9d843b07ee8807e68241c" kindref="member">wiced_bt_mesh_model_light_lightness_server_init</ref> function for each element where the light dimming functionality is required providing the <ref refid="group__wiced__bt__mesh__light__lightness__server_1gaabcb1d96daa26aa395a17dcc1b98241f" kindref="member">wiced_bt_mesh_light_lightness_server_callback_t</ref> callback that will be executed when the brightness level of the device needs to be changed.</para>
+<para>Note: The Light Lightness module is used internally by the mesh models library in color light scenarios where dimming is one of the methods controlling the light. In that case, the application shall not implicitely include <ref refid="group__wiced__bt__mesh__light__lightness__server_1ga1fffbf21e1b920895a4718a3a207a1a9" kindref="member">WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_SERVER</ref> and shall not perform module initialization.</para>
+<para>While performing initialization the application provides the callback that will be executed when the library needs to change the brightness of a light due to a request received over the mesh network, or due to the internal schedule.</para>
+<para>If brightness of the dimmable light is changed locally the application should call the wiced_bt_mesh_model_light_lightness_status_changed so that the library can maintain correct state and send an appropriate status message if it is configured to do so.</para>
+<para>Most of the functionality of the Light Lightness server device is implemented in the Mesh Models Library. The application only needs to set hardware appropriately on receiving WICED_BT_MESH_LIGHT_LIGHTNESS_STATUS event. If client requests to change the brightness to the target value over a period of time, the library will maintain the timer and will periodically call the application with appropriate power level.</para>
+<para>The default transition time is managed by the Mesh Models library. The application provides factory default in the default_transition_time element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client.</para>
+<para>The on power up behavior is managed by the Mesh Models library. The application provides factory default in the onpowerup_state element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="wiced__bt__mesh__agg_8h" kind="file" language="C++">
+    <compoundname>wiced_bt_mesh_agg.h</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>2016-YEAR<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>file<sp/>&lt;mesh_model_agg.h&gt;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Mesh<sp/>Opcodes<sp/>Aggregator<sp/>Models</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__MESH_OPCODES_AGGREGATOR_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MESH_OPCODES_AGGREGATOR_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wiced_bt_mesh_model_defs.h<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#ifdef<sp/>WICED_BT_MESH_USE_TEMP_OPCODES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_CORE_MODEL_ID_OPCODES_AGGREGATOR_SRV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xBF54</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_CORE_MODEL_ID_OPCODES_AGGREGATOR_CLNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xBF55</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_CORE_MODEL_ID_OPCODES_AGGREGATOR_SRV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_CORE_MODEL_ID_OPCODES_AGGREGATOR_CLNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0011</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment">/*<sp/>Mesh<sp/>Opcodes<sp/>Aggregator<sp/>opcodes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WICED_BT_MESH_USE_TEMP_OPCODES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_CORE_CMD_OPCODES_AGGREGATOR_SEQUENCE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xB809</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_CORE_CMD_OPCODES_AGGREGATOR_STATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xB810</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_CORE_CMD_OPCODES_AGGREGATOR_SEQUENCE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8072</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_CORE_CMD_OPCODES_AGGREGATOR_STATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8073</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_OPCODES_AGGREGATOR_STATUS_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_OPCODES_AGGREGATOR_STATUS_INVALID_ADDRESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_OPCODES_AGGREGATOR_STATUS_WRONG_ACCESS_KEY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_OPCODES_AGGREGATOR_STATUS_WRONG_OP_CODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_OPCODES_AGGREGATOR_STATUS_MESSAGE_NOT_UNDERSTOOD<sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_AGG_SEQ_MAX_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>378</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wiced_bt_mesh_models.h<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/>#define<sp/>WICED_BT_MESH_MODEL_OPCODES_AGGREGATOR_CLIENT<sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/>MESH_COMPANY_ID_BT_SIG,<sp/>WICED_BT_MESH_CORE_MODEL_ID_OPCODES_AGGREGATOR_CLNT,<sp/>wiced_bt_mesh_opcodes_aggregator_client_message_handler,<sp/>NULL,<sp/>NULL<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_MODEL_OPCODES_AGGREGATOR_SERVER<sp/>\</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/>MESH_COMPANY_ID_BT_SIG,<sp/>WICED_BT_MESH_CORE_MODEL_ID_OPCODES_AGGREGATOR_SRV,<sp/>wiced_bt_mesh_opcodes_aggregator_server_message_handler,<sp/>NULL,<sp/>NULL<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_client_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_server_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wiced_bt_mesh_provision.h<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_AGG_ITEM_ADD_SUCCEEDED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Add<sp/>item<sp/>to<sp/>Opcodes<sp/>Aggregator<sp/>succeeded</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_AGG_ITEM_ADD_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Add<sp/>item<sp/>to<sp/>Opcodes<sp/>Aggregator<sp/>failed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*wiced_bt_mesh_agg_item_add_callback_t)(uint8_t<sp/>status);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_start(uint16_t<sp/>dst_addr,<sp/>uint8_t<sp/>dst_elem_idx,<sp/>uint16_t<sp/>app_key_idx,<sp/>wiced_bool_t<sp/>is_command,<sp/>uint16_t<sp/>element_addr,<sp/>wiced_bt_mesh_agg_item_add_callback_t<sp/>p_callback);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_finish_and_send(uint8_t<sp/>status);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_is_aggregate_message();</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_add_aggregator_item(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint16_t<sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*p_param,<sp/>uint16_t<sp/>param_len);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_add_aggregator_item_data(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal">uint16_t<sp/>wiced_bt_mesh_read_aggregator_item(uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len,<sp/>uint16_t<sp/>*p_opcode,<sp/>uint8_t<sp/>**pp_param,<sp/>uint16_t<sp/>*p_param_len);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal">uint8_t<sp/>wiced_bt_mesh_check_aggregator_status();</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MESH_PRIVATE_PROXY_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_agg.h"/>
+  </compounddef>
+</doxygen>

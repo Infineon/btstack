@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structmesh__core__provision__cb__t" kind="struct" language="C++" prot="public">
+    <compoundname>mesh_core_provision_cb_t</compoundname>
+    <includes local="no">wiced_bt_mesh_core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a4bbccf673eba9d462f5369160ba5ea66" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::pb_priv_key[WICED_BT_MESH_PROVISION_PRIV_KEY_LEN]</definition>
+        <argsstring>[WICED_BT_MESH_PROVISION_PRIV_KEY_LEN]</argsstring>
+        <name>pb_priv_key</name>
+        <briefdescription>
+<para>public key of the node for ECDH authentication </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1051" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1051" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1ae4924c7bcf5d10b7d25991d71c268c1e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::pb_public_key[WICED_BT_MESH_PROVISION_PUBLIC_KEY_LEN]</definition>
+        <argsstring>[WICED_BT_MESH_PROVISION_PUBLIC_KEY_LEN]</argsstring>
+        <name>pb_public_key</name>
+        <briefdescription>
+<para>private key of the node for ECDH authentication </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1052" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1052" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a5bbb9be5bc0ad7522a6a9e0494e3a007" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t mesh_core_provision_cb_t::conn_id</definition>
+        <argsstring></argsstring>
+        <name>conn_id</name>
+        <briefdescription>
+<para>link id (connection id) for PB_ADV </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1053" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1053" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1abb0a43c47c0476a2b8d06150140b5841" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>one of the BP_ADV_TRANSPORT_STATE_XXX </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1054" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1054" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a2c935328e943b767d5ebfb0b728552e3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::client_pdu_sent</definition>
+        <argsstring></argsstring>
+        <name>client_pdu_sent</name>
+        <briefdescription>
+<para>TRUE(&gt;0) during the time when RPR client is sending PDU to the provisioning node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1055" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1055" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a46b423afdf468142d0ff7e19bca4a932" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::pb_type</definition>
+        <argsstring></argsstring>
+        <name>pb_type</name>
+        <briefdescription>
+<para>type of the provisioning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>one of the PB_TYPE_XXX </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1056" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1056" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1abe0dca8926ae4642f86ee55f6065d095" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t mesh_core_provision_cb_t::node_id</definition>
+        <argsstring></argsstring>
+        <name>node_id</name>
+        <briefdescription>
+<para>address of the provisioning node </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1057" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1057" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a54c33df6a58e85aaef79e514487137b7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t mesh_core_provision_cb_t::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+<para>end timeout between PDUs in seconds - disconnect after that </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1058" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1058" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a2e99be52b753d25a452af248a2055152" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::identify_duration</definition>
+        <argsstring></argsstring>
+        <name>identify_duration</name>
+        <briefdescription>
+<para>Identify duration field of the Invite PDU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1059" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1059" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1ad54d5aa8f3649ec756976a60fae2c76a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Provisioning type (see <ref refid="group__wiced__bt__mesh__core_1WICED_BT_MESH_PROVISION_TYPE" kindref="member">WICED_BT_MESH_PROVISION_TYPE</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1060" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1060" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1ae18c3cfabc7b998281410a628714b8f6" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__core__provision__capabilities__t" kindref="compound">wiced_bt_mesh_core_provision_capabilities_t</ref></type>
+        <definition>wiced_bt_mesh_core_provision_capabilities_t mesh_core_provision_cb_t::capabilities</definition>
+        <argsstring></argsstring>
+        <name>capabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1061" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1061" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a865501fdea069de673b85361dbc8e80a" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__core__provision__start__t" kindref="compound">wiced_bt_mesh_core_provision_start_t</ref></type>
+        <definition>wiced_bt_mesh_core_provision_start_t mesh_core_provision_cb_t::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1062" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1062" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1ae99441bc15dddb2b25c7dc3cec46cb72" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::peer_public_key_or_ecdh_secret[WICED_BT_MESH_PROVISION_PUBLIC_KEY_LEN]</definition>
+        <argsstring>[WICED_BT_MESH_PROVISION_PUBLIC_KEY_LEN]</argsstring>
+        <name>peer_public_key_or_ecdh_secret</name>
+        <briefdescription>
+<para>we will use it for ECDH secret too </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1063" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1063" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a1aeb863be653414142886d08890c442a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::conf_key_or_dev_key[WICED_BT_MESH_KEY_LEN *2]</definition>
+        <argsstring>[WICED_BT_MESH_KEY_LEN *2]</argsstring>
+        <name>conf_key_or_dev_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1064" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1064" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1ab542c07774424ab73c33c47da2ea1156" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::confirmation[WICED_BT_MESH_PROVISION_CONFIRMATION_LEN *2]</definition>
+        <argsstring>[WICED_BT_MESH_PROVISION_CONFIRMATION_LEN *2]</argsstring>
+        <name>confirmation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1065" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1065" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1aca8fa20bdbf95422291ae727f5effb00" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::prov_salt[WICED_BT_MESH_KEY_LEN *2]</definition>
+        <argsstring>[WICED_BT_MESH_KEY_LEN *2]</argsstring>
+        <name>prov_salt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1066" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1066" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a4a01bf712a040a0f930b34d0d00fe0ab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::session_key[WICED_BT_MESH_KEY_LEN]</definition>
+        <argsstring>[WICED_BT_MESH_KEY_LEN]</argsstring>
+        <name>session_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1067" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1067" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1af1bd305aad9de915c76536e9056ec20b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::random[WICED_BT_MESH_PROVISION_RANDOM_LEN *2]</definition>
+        <argsstring>[WICED_BT_MESH_PROVISION_RANDOM_LEN *2]</argsstring>
+        <name>random</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1068" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1068" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1aca53ad52eedebf257f1c24823baa98d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::oob_value[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>oob_value</name>
+        <briefdescription>
+<para>max static OOB value len is 256 bits(32bytes). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Max input and output OOB value length is 8 bytes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1069" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1069" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a3c1a395e7803c8d5e6460c4a9107aa0a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mesh_core_provision_cb_t::oob_value_len</definition>
+        <argsstring></argsstring>
+        <name>oob_value_len</name>
+        <briefdescription>
+<para>length of the OOB value </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1070" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1070" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1abadbd73da856974583b451a993b3566e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t mesh_core_provision_cb_t::net_key_idx</definition>
+        <argsstring></argsstring>
+        <name>net_key_idx</name>
+        <briefdescription>
+<para>NetKeyIdx provisioned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1071" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1071" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh__core__provision__cb__t_1a0e033534d6889d2367b3fce39132081f" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__core__precord__descriptor__t" kindref="compound">wiced_bt_mesh_core_precord_descriptor_t</ref> *</type>
+        <definition>wiced_bt_mesh_core_precord_descriptor_t* mesh_core_provision_cb_t::p_prov_record_descriptor</definition>
+        <argsstring></argsstring>
+        <name>p_prov_record_descriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1072" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1072" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mesh Core Provisioning Control Block. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>wiced_bt_mesh_core_provision_capabilities_t</label>
+        <link refid="structwiced__bt__mesh__core__provision__capabilities__t"/>
+      </node>
+      <node id="3">
+        <label>mesh_core_provision_cb_t</label>
+        <link refid="structmesh__core__provision__cb__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>p_prov_record_descriptor</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>capabilities</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>start</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>wiced_bt_mesh_core_provision_start_t</label>
+        <link refid="structwiced__bt__mesh__core__provision__start__t"/>
+      </node>
+      <node id="4">
+        <label>wiced_bt_mesh_core_precord_descriptor_t</label>
+        <link refid="structwiced__bt__mesh__core__precord__descriptor__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1050" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1049" bodyend="1073"/>
+    <listofallmembers>
+      <member refid="structmesh__core__provision__cb__t_1ae18c3cfabc7b998281410a628714b8f6" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>capabilities</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a2c935328e943b767d5ebfb0b728552e3" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>client_pdu_sent</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a1aeb863be653414142886d08890c442a" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>conf_key_or_dev_key</name></member>
+      <member refid="structmesh__core__provision__cb__t_1ab542c07774424ab73c33c47da2ea1156" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>confirmation</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a5bbb9be5bc0ad7522a6a9e0494e3a007" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>conn_id</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a2e99be52b753d25a452af248a2055152" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>identify_duration</name></member>
+      <member refid="structmesh__core__provision__cb__t_1abadbd73da856974583b451a993b3566e" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>net_key_idx</name></member>
+      <member refid="structmesh__core__provision__cb__t_1abe0dca8926ae4642f86ee55f6065d095" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>node_id</name></member>
+      <member refid="structmesh__core__provision__cb__t_1aca53ad52eedebf257f1c24823baa98d4" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>oob_value</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a3c1a395e7803c8d5e6460c4a9107aa0a" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>oob_value_len</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a0e033534d6889d2367b3fce39132081f" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>p_prov_record_descriptor</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a4bbccf673eba9d462f5369160ba5ea66" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>pb_priv_key</name></member>
+      <member refid="structmesh__core__provision__cb__t_1ae4924c7bcf5d10b7d25991d71c268c1e" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>pb_public_key</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a46b423afdf468142d0ff7e19bca4a932" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>pb_type</name></member>
+      <member refid="structmesh__core__provision__cb__t_1ae99441bc15dddb2b25c7dc3cec46cb72" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>peer_public_key_or_ecdh_secret</name></member>
+      <member refid="structmesh__core__provision__cb__t_1aca8fa20bdbf95422291ae727f5effb00" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>prov_salt</name></member>
+      <member refid="structmesh__core__provision__cb__t_1af1bd305aad9de915c76536e9056ec20b" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>random</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a4a01bf712a040a0f930b34d0d00fe0ab" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>session_key</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a865501fdea069de673b85361dbc8e80a" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>start</name></member>
+      <member refid="structmesh__core__provision__cb__t_1abb0a43c47c0476a2b8d06150140b5841" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>state</name></member>
+      <member refid="structmesh__core__provision__cb__t_1a54c33df6a58e85aaef79e514487137b7" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>timeout</name></member>
+      <member refid="structmesh__core__provision__cb__t_1ad54d5aa8f3649ec756976a60fae2c76a" prot="public" virt="non-virtual"><scope>mesh_core_provision_cb_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

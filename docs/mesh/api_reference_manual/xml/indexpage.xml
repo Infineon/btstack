@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Overview</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This document lists the Application Programming Interfaces exposed by Bluetooth LE Mesh library for Application developers to use and create Mesh Applications. LE Mesh library is used in conjuction with a BTStack and porting layer such as the <ulink url="https://github.com/Infineon/btstack-integration">one available for FreeRTOS on PSOC</ulink>.</para>
+<para><heading level="2">Description</heading>
+</para>
+<para>Mesh API provides a developer a simple way to incorporate BLE mesh functionality in a WICED application. Most application will only need access to Mesh Models library. The applications that supports adding new devices to the mesh network (provisioning) and network configuration may also use Mesh Provisioning library. Applications that use Vendor specific models in addition to standard Bluetooth SIG models, may also need to access Mesh Core library functions directly. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

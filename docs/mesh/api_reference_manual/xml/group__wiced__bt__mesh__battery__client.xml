@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__mesh__battery__client" kind="group">
+    <compoundname>wiced_bt_mesh_battery_client</compoundname>
+    <title>Mesh Battery Client</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__mesh__battery__client_1ga2a4913b233aa084085a604cac4967929" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() wiced_bt_mesh_battery_client_callback_t(uint16_t event, wiced_bt_mesh_event_t *p_event, mesh_battery_event_t *p_data)</definition>
+        <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, mesh_battery_event_t *p_data)</argsstring>
+        <name>wiced_bt_mesh_battery_client_callback_t</name>
+        <briefdescription>
+<para>Battery Client callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Battery Client callback is called by the Mesh Models library on receiving a Battery Status message from the peer</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1BATTERY_EVENT" kindref="member">Mesh Battery Events</ref>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The information about the message received. The same pointer should be used in the reply if required.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1781" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1781" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__mesh__battery__client_1gafb463c5826c849d1d354bd9400744bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_battery_client_init</definition>
+        <argsstring>(wiced_bt_mesh_battery_client_callback_t *p_callback, wiced_bool_t is_provisioned)</argsstring>
+        <name>wiced_bt_mesh_model_battery_client_init</name>
+        <param>
+          <type><ref refid="group__wiced__bt__mesh__battery__client_1ga2a4913b233aa084085a604cac4967929" kindref="member">wiced_bt_mesh_battery_client_callback_t</ref> *</type>
+          <declname>p_callback</declname>
+        </param>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>is_provisioned</declname>
+        </param>
+        <briefdescription>
+<para>Battery Client Module initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Application should call this function during startup to register a callback which will be executed when received message requires application processing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_provisioned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1792" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__battery__client_1gaa0515e868daea1bafa72491319aceef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_model_battery_client_message_handler</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
+        <name>wiced_bt_mesh_model_battery_client_message_handler</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Battery Client Message Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The application should call this models library function to process a message received from the Battery Server. The function parses and validates the message and if appropriate calls the application to perform functionality.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1805" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__battery__client_1ga6b7e1bcc36f0ebad5745743445a34758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_battery_client_send_get</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_battery_client_send_get</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>Battery Client Send. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The application can call this function to send get request to the Battery Server. The mesh event should contain the destination address and the application key index to be used to secure the message. In some cases the model can be configured by the provisioner to send the request to a specific address and use specific key. In that case application can use zeroes in the destination address and app key index fields.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event created by the app for unsolicited message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1818" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The AIROC Mesh Battery Client module provides a way for an application to retrieve the battery status of a mesh node. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The module can also process unsolicited status messages from mesh nodes.</para>
+<para>On startup the application should call wiced_bt_mesh_model_battery_client_init function providing the callback that will be called when battery status message is received. The application can call the wiced_bt_mesh_battery_client_send_get function to retrieve the battery status of a mesh device. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

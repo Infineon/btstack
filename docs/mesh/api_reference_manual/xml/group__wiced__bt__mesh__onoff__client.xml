@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__mesh__onoff__client" kind="group">
+    <compoundname>wiced_bt_mesh_onoff_client</compoundname>
+    <title>Mesh OnOff Client</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__wiced__bt__mesh__onoff__client_1ga225edd7412e2ba02d4f1614ebdddef55" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() wiced_bt_mesh_onoff_client_callback_t(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</definition>
+        <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
+        <name>wiced_bt_mesh_onoff_client_callback_t</name>
+        <briefdescription>
+<para>On/Off Client callback is called by the Mesh Models library on receiving a On/Off status message from the peer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1ONOFF_EVENT" kindref="member">Mesh On/Off Events</ref>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information about the message received. It is application responsibility to release the event using <ref refid="group__wiced__bt__mesh__core_1gab53118d6d25849be44f82d3af7eeb0db" kindref="member">wiced_bt_mesh_release_event</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data to send</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2198" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wiced__bt__mesh__onoff__client_1ga05dc5ec90d2ad8a1e9ce1d64c4fc85fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wiced_bt_mesh_model_onoff_client_init</definition>
+        <argsstring>(uint8_t element_idx, wiced_bt_mesh_onoff_client_callback_t *p_callback, wiced_bool_t is_provisioned)</argsstring>
+        <name>wiced_bt_mesh_model_onoff_client_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__wiced__bt__mesh__onoff__client_1ga225edd7412e2ba02d4f1614ebdddef55" kindref="member">wiced_bt_mesh_onoff_client_callback_t</ref> *</type>
+          <declname>p_callback</declname>
+        </param>
+        <param>
+          <type>wiced_bool_t</type>
+          <declname>is_provisioned</declname>
+        </param>
+        <briefdescription>
+<para>On/Off Client Module initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function shall be called to initialize the On/Off Module of the Mesh Models library. For multi element applications, the initialization shall be done for each element that supports On/Off get/set functionality. The p_callback parameter may be set to NULL if no On/Off Status processing is required.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device element to where model is used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_provisioned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2212" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__onoff__client_1ga673750835549336e8128e8c6d630441f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_model_onoff_client_message_handler</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
+        <name>wiced_bt_mesh_model_onoff_client_message_handler</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>On/Off Client Message Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The Mesh Core library calls this function for each message received. The function shall return WICED_TRUE if the message is destined for this specific model, and returns WICED_FALSE otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__onoff__client_1ga48f7caf8978568cec1f508ca4934ccf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_onoff_client_get</definition>
+        <argsstring>(uint8_t element_idx)</argsstring>
+        <name>wiced_bt_mesh_model_onoff_client_get</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send get On/Off state client message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Model library will send the message out only if the OnOff Client model is configured by the provisioner for publication.</para>
+<para>If the application has registerd the callback during the initialization, the callback will be executed twice, first with <ref refid="group__wiced__bt__mesh__provisioning_1ga31c4c354e12fd933b285fe399a6559bf" kindref="member">WICED_BT_MESH_TX_COMPLETE</ref> event indicating that the event has been sent out and then with WICED_BT_MESH_ONOFF_STATUS event with the status information.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element Index of the model</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2241" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__onoff__client_1ga4ce52a7d57bd8cba120ad2925962b60d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_onoff_client_send_get</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
+        <name>wiced_bt_mesh_model_onoff_client_send_get</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send get On/Off state client message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__onoff__client_1ga3d456b1f9a9c0b2ff58361ecc99520ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_onoff_client_set</definition>
+        <argsstring>(uint8_t element_idx, wiced_bt_mesh_onoff_set_data_t *p_data)</argsstring>
+        <name>wiced_bt_mesh_model_onoff_client_set</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>element_idx</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__onoff__set__data__t" kindref="compound">wiced_bt_mesh_onoff_set_data_t</ref> *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send On/Off command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The application does not need to know the destination of the command or application key that will be used to secure the packet. The Mesh Models library will send the message out only if the OnOff Client model of the referenced element is configured by the provisioner for publication.</para>
+<para>If the application has registered the callback during the initialization, the callback will be executed with <ref refid="group__wiced__bt__mesh__provisioning_1ga31c4c354e12fd933b285fe399a6559bf" kindref="member">WICED_BT_MESH_TX_COMPLETE</ref> event indicating that the event has been sent out. The OnOff command is sent not requiring acknowledgment. The WICED_BT_MESH_ONOFF_STATUS event will only be executed only if the provisioner configured the recipient of the command to publish the status data to this element, or to a group to which this element belongs to.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element Index of the model </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data to send</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2269" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__mesh__onoff__client_1ga1e7739e0b5f369e9f5c236be43a7e71e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_mesh_model_onoff_client_send_set</definition>
+        <argsstring>(wiced_bt_mesh_event_t *p_event, wiced_bt_mesh_onoff_set_data_t *p_data)</argsstring>
+        <name>wiced_bt_mesh_model_onoff_client_send_set</name>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <declname>p_event</declname>
+        </param>
+        <param>
+          <type><ref refid="structwiced__bt__mesh__onoff__set__data__t" kindref="compound">wiced_bt_mesh_onoff_set_data_t</ref> *</type>
+          <declname>p_data</declname>
+        </param>
+        <briefdescription>
+<para>The application can call this function to send Set OnOff client message to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data to send</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2279" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__wiced__bt__mesh__onoff__client_1ga891ae2d88c30f0ebd1ba36fc327ffec4" prot="public" static="no">
+        <name>WICED_BT_MESH_MODEL_ONOFF_CLIENT</name>
+        <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_ONOFF_CLNT, <ref refid="group__wiced__bt__mesh__onoff__client_1ga673750835549336e8128e8c6d630441f" kindref="member">wiced_bt_mesh_model_onoff_client_message_handler</ref>, NULL, NULL }</initializer>
+        <briefdescription>
+<para>Mesh On/Off Client Device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The device implements a Generic On/Off switch. The device can be configured to control any device that supports Generic On/Off Server model (WICED_BT_MESH_CORE_MODEL_ID_GENERIC_ONOFF_SRV). For example, a <ref refid="group__wiced__bt__mesh__light__ctl__server_1ga31d00ceb59ef7db4fc28879b20509808" kindref="member">WICED_BT_MESH_MODEL_LIGHT_CTL_SERVER</ref>, <ref refid="group__wiced__bt__mesh__light__hsl__server_1gab330cac44df7024819bff2f0d94b72e8" kindref="member">WICED_BT_MESH_MODEL_LIGHT_HSL_SERVER</ref>,... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2186" column="9" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2186" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The AIROC Mesh On/Off Client module of the Mesh Models library provides a way for an application to send OnOff commands to the server and optionally receive status information. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To include On/Off functionality, the device description shall contain <ref refid="group__wiced__bt__mesh__onoff__client_1ga891ae2d88c30f0ebd1ba36fc327ffec4" kindref="member">WICED_BT_MESH_MODEL_ONOFF_CLIENT</ref>. To implement a device which supports multiple switches, the <ref refid="group__wiced__bt__mesh__onoff__client_1ga891ae2d88c30f0ebd1ba36fc327ffec4" kindref="member">WICED_BT_MESH_MODEL_ONOFF_CLIENT</ref> shall be included in multiple elements. Based on this information, the device that performs configuration will be able to specify different destination for every switch.</para>
+<para>In a simplest form, an application needs to initialize using the <ref refid="group__wiced__bt__mesh__onoff__client_1ga05dc5ec90d2ad8a1e9ce1d64c4fc85fa" kindref="member">wiced_bt_mesh_model_onoff_client_init</ref> function and then call <ref refid="group__wiced__bt__mesh__onoff__client_1ga3d456b1f9a9c0b2ff58361ecc99520ad" kindref="member">wiced_bt_mesh_model_onoff_client_set</ref> to tell the Mesh Library to send a command. The configuration of the destination address and security credential is done during the provisioning/configuration process and the application does not need to worry about it.</para>
+<para>If an application needs more control of how messages are sent out, it can use <ref refid="group__wiced__bt__mesh__onoff__client_1ga4ce52a7d57bd8cba120ad2925962b60d" kindref="member">wiced_bt_mesh_model_onoff_client_send_get</ref> and <ref refid="group__wiced__bt__mesh__onoff__client_1ga1e7739e0b5f369e9f5c236be43a7e71e" kindref="member">wiced_bt_mesh_model_onoff_client_send_set</ref> functions. These functions require to use the p_event parameter which include among others address of the desgination, application key index, retrnansmission parameters, TTL, and various others. After creating the event, the application can adjust the paramters as needed.</para>
+<para>To receive On/Off status information, an application during initialization specifies the callback that will be executed when OnOff status message is received. The status information can be received as a result of sending On/Off Get and Set commands. In addition to that, the On/Off server can be configured to send the status information to the device that implements the OnOff Client module, or to a group of the devices to which the OnOff Client belongs. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

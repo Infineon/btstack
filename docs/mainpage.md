@@ -1,7 +1,7 @@
 # Overview
 
 This document lists the Application Programming Interfaces exposed by BTSTACK library for Application developers to use and create BLE or BR/EDR or Dual Mode (BLE+BR/EDR) Applications.
-BTSTACK library is used in conjuction with a porting layer such as the [one available for FreeRTOS on PSOC](https://github.com/cypresssemiconductorco/bluetooth-freertos). The porting layer implements the code to access memory, transport, timer and other OS functionalities required by the stack. Care must be taken to ensure to use right OS constructs. Example, if Stack APIs are invoked from an interrupt context, correct locking/mutual exclusion mechanisms that are allowed to be used from an interrupt context by the platform must be used.
+BTSTACK library is used in conjuction with a porting layer such as the [one available for FreeRTOS on PSOC](https://github.com/Infineon/btstack-integration). The porting layer implements the code to access memory, transport, timer and other OS functionalities required by the stack. Care must be taken to ensure to use right OS constructs. Example, if Stack APIs are invoked from an interrupt context, correct locking/mutual exclusion mechanisms that are allowed to be used from an interrupt context by the platform must be used.
 
 Typical steps in using BTSTACK library APIs are -
 

@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__core__provision__capabilities__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_core_provision_capabilities_t</compoundname>
+    <includes local="no">wiced_bt_mesh_core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__provision__capabilities__t_1a87f7e401cbd697251d21a85c6fb13be2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_provision_capabilities_t::elements_num</definition>
+        <argsstring></argsstring>
+        <name>elements_num</name>
+        <briefdescription>
+<para>Number of elements supported by the device (1-255) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="891" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="891" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__provision__capabilities__t_1a34f7d1db036802f6a79b47c7212144b9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_provision_capabilities_t::algorithms[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>algorithms</name>
+        <briefdescription>
+<para>Bitmap of Supported algorithms and other capabilities (FIPS_P256_EC is the only one supported at 1.0 time) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="892" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="892" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__provision__capabilities__t_1aa36ea62419ca4edd426a7564a850cfc4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_provision_capabilities_t::pub_key_type</definition>
+        <argsstring></argsstring>
+        <name>pub_key_type</name>
+        <briefdescription>
+<para>Bitmap of Supported public key types (Static OOB information available 0x01 is the only one supported at 1.0 time) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="893" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="893" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__provision__capabilities__t_1a2965ef5baba05602896c67b016bdd4e3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_provision_capabilities_t::static_oob_type</definition>
+        <argsstring></argsstring>
+        <name>static_oob_type</name>
+        <briefdescription>
+<para>Supported static OOB Types (1 if available) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="894" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="894" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__provision__capabilities__t_1ac0f8ca023b78fcd6e86385d3c86eeb6e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_provision_capabilities_t::output_oob_size</definition>
+        <argsstring></argsstring>
+        <name>output_oob_size</name>
+        <briefdescription>
+<para>Maximum size of Output OOB supported (0 - device does not support output OOB, 1-8 max size in octets supported by the device) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="895" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="895" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__provision__capabilities__t_1a28f0beb3fd47bd04b70a04dc47b6ab62" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_provision_capabilities_t::output_oob_action[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>output_oob_action</name>
+        <briefdescription>
+<para>Output OOB Action field values (see <ref refid="group__wiced__bt__mesh__core_1BT_MESH_OUT_OOB_ACT" kindref="member">Output OOB Action field values</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="896" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="896" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__provision__capabilities__t_1a56270ba9d562581f13eac5d31c9110d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_provision_capabilities_t::input_oob_size</definition>
+        <argsstring></argsstring>
+        <name>input_oob_size</name>
+        <briefdescription>
+<para>Maximum size in octets of Input OOB supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="897" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="897" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__provision__capabilities__t_1a14ae8e2a7fdc63aa5574b79447fd62a4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_provision_capabilities_t::input_oob_action[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>input_oob_action</name>
+        <briefdescription>
+<para>Supported Input OOB Actions (see <ref refid="group__wiced__bt__mesh__core_1BT_MESH_IN_OOB_ACT" kindref="member">Input OOB Action field values</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="898" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="898" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines Capabilities data of the provisioning device. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="890" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="889" bodyend="899"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__core__provision__capabilities__t_1a34f7d1db036802f6a79b47c7212144b9" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_provision_capabilities_t</scope><name>algorithms</name></member>
+      <member refid="structwiced__bt__mesh__core__provision__capabilities__t_1a87f7e401cbd697251d21a85c6fb13be2" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_provision_capabilities_t</scope><name>elements_num</name></member>
+      <member refid="structwiced__bt__mesh__core__provision__capabilities__t_1a14ae8e2a7fdc63aa5574b79447fd62a4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_provision_capabilities_t</scope><name>input_oob_action</name></member>
+      <member refid="structwiced__bt__mesh__core__provision__capabilities__t_1a56270ba9d562581f13eac5d31c9110d8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_provision_capabilities_t</scope><name>input_oob_size</name></member>
+      <member refid="structwiced__bt__mesh__core__provision__capabilities__t_1a28f0beb3fd47bd04b70a04dc47b6ab62" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_provision_capabilities_t</scope><name>output_oob_action</name></member>
+      <member refid="structwiced__bt__mesh__core__provision__capabilities__t_1ac0f8ca023b78fcd6e86385d3c86eeb6e" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_provision_capabilities_t</scope><name>output_oob_size</name></member>
+      <member refid="structwiced__bt__mesh__core__provision__capabilities__t_1aa36ea62419ca4edd426a7564a850cfc4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_provision_capabilities_t</scope><name>pub_key_type</name></member>
+      <member refid="structwiced__bt__mesh__core__provision__capabilities__t_1a2965ef5baba05602896c67b016bdd4e3" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_provision_capabilities_t</scope><name>static_oob_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

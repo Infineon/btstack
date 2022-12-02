@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__provision__device__record__fragment__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_provision_device_record_fragment_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__device__record__fragment__data__t_1a0e411fee62989cc6758c4e71c12fbe53" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_provision_device_record_fragment_data_t::record_id</definition>
+        <argsstring></argsstring>
+        <name>record_id</name>
+        <briefdescription>
+<para>Identifies the provisioning record whose data fragment is sent in the response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="381" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__device__record__fragment__data__t_1aad414a344d927094a904254e62968b9a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_provision_device_record_fragment_data_t::fragment_offset</definition>
+        <argsstring></argsstring>
+        <name>fragment_offset</name>
+        <briefdescription>
+<para>The starting offset of the data fragment in the provisioning record data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="382" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__device__record__fragment__data__t_1a2055570f11e7c0b79a206161c7e571a4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_provision_device_record_fragment_data_t::total_length</definition>
+        <argsstring></argsstring>
+        <name>total_length</name>
+        <briefdescription>
+<para>Total length of the provisioning record data stored on the device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="383" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="380" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="379" bodyend="384"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__provision__device__record__fragment__data__t_1aad414a344d927094a904254e62968b9a" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_device_record_fragment_data_t</scope><name>fragment_offset</name></member>
+      <member refid="structwiced__bt__mesh__provision__device__record__fragment__data__t_1a0e411fee62989cc6758c4e71c12fbe53" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_device_record_fragment_data_t</scope><name>record_id</name></member>
+      <member refid="structwiced__bt__mesh__provision__device__record__fragment__data__t_1a2055570f11e7c0b79a206161c7e571a4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_device_record_fragment_data_t</scope><name>total_length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__light__ctl__temperature__range__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_light_ctl_temperature_range_status_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__ctl__temperature__range__status__data__t_1ae9c7b71dc710f002bc99e1a6c69322e8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_light_ctl_temperature_range_status_data_t::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+<para>Status of the Set Range operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1328" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__ctl__temperature__range__status__data__t_1a6bd21e0ab63b94ec251424eab803ae78" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_ctl_temperature_range_status_data_t::min_level</definition>
+        <argsstring></argsstring>
+        <name>min_level</name>
+        <briefdescription>
+<para>The value of the Light Lightness Min field of the Light Lightness Range state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1329" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__ctl__temperature__range__status__data__t_1a061d6bd6b4b24d025674276c718474cf" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_ctl_temperature_range_status_data_t::max_level</definition>
+        <argsstring></argsstring>
+        <name>max_level</name>
+        <briefdescription>
+<para>The value of the Light Lightness Max field of the Light Lightness Range state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1330" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1330" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Temperature Range Status Data structure exchanged between the application and Light CTL Temperature Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1327" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1326" bodyend="1331"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__light__ctl__temperature__range__status__data__t_1a061d6bd6b4b24d025674276c718474cf" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_ctl_temperature_range_status_data_t</scope><name>max_level</name></member>
+      <member refid="structwiced__bt__mesh__light__ctl__temperature__range__status__data__t_1a6bd21e0ab63b94ec251424eab803ae78" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_ctl_temperature_range_status_data_t</scope><name>min_level</name></member>
+      <member refid="structwiced__bt__mesh__light__ctl__temperature__range__status__data__t_1ae9c7b71dc710f002bc99e1a6c69322e8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_ctl_temperature_range_status_data_t</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

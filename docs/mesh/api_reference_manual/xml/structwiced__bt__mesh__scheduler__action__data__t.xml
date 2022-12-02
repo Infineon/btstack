@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__scheduler__action__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_scheduler_action_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1a86d82454049f804c226c317b6055f5e4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_scheduler_action_data_t::action_number</definition>
+        <argsstring></argsstring>
+        <name>action_number</name>
+        <briefdescription>
+<para>zero based entry number </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="609" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1a331aaa8480d0d938f0b7c7e7bd530192" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_scheduler_action_data_t::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+<para>scheduled year for the action, or 0 if action needs to happen every year </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="610" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1afc60950bec81d9518f658938a8de4383" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_scheduler_action_data_t::month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+<para>Bit field of the months for the action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="611" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="611" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1a825153de0c18eb48c41f8fb2d3a6ddc0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_scheduler_action_data_t::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+<para>Scheduled day of the month, or 0 to repeat every day. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="612" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1adcbf70ae5156cd49ad2fe48f714685eb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_scheduler_action_data_t::hour</definition>
+        <argsstring></argsstring>
+        <name>hour</name>
+        <briefdescription>
+<para>Scheduled hour for the action, values 0-23 indicate the hour, or use one of the (<ref refid="wiced__bt__mesh__models_8h_1SCHEDULER_HOUR" kindref="member">special values</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="613" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1a697098fc97a703fba076b0c04480b321" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_scheduler_action_data_t::minute</definition>
+        <argsstring></argsstring>
+        <name>minute</name>
+        <briefdescription>
+<para>Scheduled hour for the action, values 0-59 indicate the minute, or use one of the (<ref refid="wiced__bt__mesh__models_8h_1SCHEDULER_MINUTE" kindref="member">special values</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="614" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="614" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1a94ecf599e58a840112423b6da9476390" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_scheduler_action_data_t::second</definition>
+        <argsstring></argsstring>
+        <name>second</name>
+        <briefdescription>
+<para>Scheduled second for the action, values 0-59 indicate the second, or use one of the (<ref refid="wiced__bt__mesh__models_8h_1SCHEDULER_SECONDS" kindref="member">special values</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="615" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1a4117281fa9a5a5c7196bf75946f9cf32" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_scheduler_action_data_t::day_of_week</definition>
+        <argsstring></argsstring>
+        <name>day_of_week</name>
+        <briefdescription>
+<para>Bit field of the days of week when the action should happen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="616" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1a199537760340f85cf6c1ef12e3e31a3b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_scheduler_action_data_t::action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <briefdescription>
+<para>Action to be executed (see <ref refid="wiced__bt__mesh__models_8h_1SCHEDULER_ACTIONS" kindref="member">possible scheduler actions</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="617" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1a8017a6e3cfaa593ea56e7bcd9745b95e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_scheduler_action_data_t::transition_time</definition>
+        <argsstring></argsstring>
+        <name>transition_time</name>
+        <briefdescription>
+<para>Transition time to turn on/off or to transition to a scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="618" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scheduler__action__data__t_1a5449631c3400d2c418f2828dc94e791b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_scheduler_action_data_t::scene_number</definition>
+        <argsstring></argsstring>
+        <name>scene_number</name>
+        <briefdescription>
+<para>Scene number to transition to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="619" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Scheduler Actions Data structure exchanged between the application Scheduler Models. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="608" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="607" bodyend="620"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1a199537760340f85cf6c1ef12e3e31a3b" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>action</name></member>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1a86d82454049f804c226c317b6055f5e4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>action_number</name></member>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1a825153de0c18eb48c41f8fb2d3a6ddc0" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>day</name></member>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1a4117281fa9a5a5c7196bf75946f9cf32" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>day_of_week</name></member>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1adcbf70ae5156cd49ad2fe48f714685eb" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>hour</name></member>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1a697098fc97a703fba076b0c04480b321" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>minute</name></member>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1afc60950bec81d9518f658938a8de4383" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>month</name></member>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1a5449631c3400d2c418f2828dc94e791b" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>scene_number</name></member>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1a94ecf599e58a840112423b6da9476390" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>second</name></member>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1a8017a6e3cfaa593ea56e7bcd9745b95e" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>transition_time</name></member>
+      <member refid="structwiced__bt__mesh__scheduler__action__data__t_1a331aaa8480d0d938f0b7c7e7bd530192" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_data_t</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

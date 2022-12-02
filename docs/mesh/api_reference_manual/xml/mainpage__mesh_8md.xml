@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="mainpage__mesh_8md" kind="file" language="Markdown">
+    <compoundname>mainpage_mesh.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Overview</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>document<sp/>lists<sp/>the<sp/>Application<sp/>Programming<sp/>Interfaces<sp/>exposed<sp/>by<sp/>Bluetooth<sp/>LE<sp/>Mesh<sp/>library<sp/>for<sp/>Application<sp/>developers<sp/>to<sp/>use<sp/>and<sp/>create<sp/>Mesh<sp/>Applications.</highlight></codeline>
+<codeline><highlight class="normal">LE<sp/>Mesh<sp/>library<sp/>is<sp/>used<sp/>in<sp/>conjuction<sp/>with<sp/>a<sp/>BTStack<sp/>and<sp/>porting<sp/>layer<sp/>such<sp/>as<sp/>the<sp/>[one<sp/>available<sp/>for<sp/>FreeRTOS<sp/>on<sp/>PSOC](https://github.com/Infineon/btstack-integration).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Description</highlight></codeline>
+<codeline><highlight class="normal">Mesh<sp/>API<sp/>provides<sp/>a<sp/>developer<sp/>a<sp/>simple<sp/>way<sp/>to<sp/>incorporate<sp/>BLE<sp/>mesh<sp/>functionality<sp/>in<sp/>a<sp/>WICED<sp/>application.</highlight></codeline>
+<codeline><highlight class="normal">Most<sp/>application<sp/>will<sp/>only<sp/>need<sp/>access<sp/>to<sp/>Mesh<sp/>Models<sp/>library.<sp/>The<sp/>applications<sp/>that<sp/>supports<sp/>adding<sp/>new<sp/>devices<sp/>to<sp/>the<sp/>mesh<sp/>network<sp/>(provisioning)<sp/>and<sp/>network<sp/>configuration<sp/>may<sp/>also<sp/>use<sp/>Mesh<sp/>Provisioning<sp/>library.</highlight></codeline>
+<codeline><highlight class="normal">Applications<sp/>that<sp/>use<sp/>Vendor<sp/>specific<sp/>models<sp/>in<sp/>addition<sp/>to<sp/>standard<sp/>Bluetooth<sp/>SIG<sp/>models,<sp/>may<sp/>also<sp/>need<sp/>to<sp/>access<sp/>Mesh<sp/>Core<sp/>library<sp/>functions<sp/>directly.</highlight></codeline>
+    </programlisting>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/docs/mainpage_mesh.md"/>
+  </compounddef>
+</doxygen>

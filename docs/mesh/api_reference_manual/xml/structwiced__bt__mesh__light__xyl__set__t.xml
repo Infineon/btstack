@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__light__xyl__set__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_light_xyl_set_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__set__t_1a400486549ec496f75a5d82b49d2f3b57" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__light__xyl__data__t" kindref="compound">wiced_bt_mesh_light_xyl_data_t</ref></type>
+        <definition>wiced_bt_mesh_light_xyl_data_t wiced_bt_mesh_light_xyl_set_t::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+<para>Target value of the Light xyL state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1542" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__set__t_1ac93b8697f18d6f6a9f25698a56f061f0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_light_xyl_set_t::transition_time</definition>
+        <argsstring></argsstring>
+        <name>transition_time</name>
+        <briefdescription>
+<para>Transition time to the target levels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1543" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__set__t_1a1696810dc9f7780b4dd5399679ff0fb9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_xyl_set_t::delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <briefdescription>
+<para>Delay before starting the transition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1544" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1544" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Light xyL Set Data structure exchanged between the application and the models library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="187">
+        <label>wiced_bt_mesh_light_xyl_set_t</label>
+        <link refid="structwiced__bt__mesh__light__xyl__set__t"/>
+        <childnode refid="188" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+      </node>
+      <node id="188">
+        <label>wiced_bt_mesh_light_xyl_data_t</label>
+        <link refid="structwiced__bt__mesh__light__xyl__data__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1541" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1540" bodyend="1545"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__light__xyl__set__t_1a1696810dc9f7780b4dd5399679ff0fb9" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_set_t</scope><name>delay</name></member>
+      <member refid="structwiced__bt__mesh__light__xyl__set__t_1a400486549ec496f75a5d82b49d2f3b57" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_set_t</scope><name>target</name></member>
+      <member refid="structwiced__bt__mesh__light__xyl__set__t_1ac93b8697f18d6f6a9f25698a56f061f0" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_set_t</scope><name>transition_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

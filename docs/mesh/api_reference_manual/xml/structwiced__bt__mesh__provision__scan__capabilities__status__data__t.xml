@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__provision__scan__capabilities__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_provision_scan_capabilities_status_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__scan__capabilities__status__data__t_1af36996af2e3b160ec96f7432e4aa6fbe" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_scan_capabilities_status_data_t::max_scanned_items</definition>
+        <argsstring></argsstring>
+        <name>max_scanned_items</name>
+        <briefdescription>
+<para>The maximum number of UUIDs that can be reported during scanning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="216" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__scan__capabilities__status__data__t_1a50ba89260456c100a0d199031279958b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_scan_capabilities_status_data_t::active_scan_supported</definition>
+        <argsstring></argsstring>
+        <name>active_scan_supported</name>
+        <briefdescription>
+<para>Indication if active scan is supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="217" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="215" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="214" bodyend="218"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__provision__scan__capabilities__status__data__t_1a50ba89260456c100a0d199031279958b" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_scan_capabilities_status_data_t</scope><name>active_scan_supported</name></member>
+      <member refid="structwiced__bt__mesh__provision__scan__capabilities__status__data__t_1af36996af2e3b160ec96f7432e4aa6fbe" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_scan_capabilities_status_data_t</scope><name>max_scanned_items</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

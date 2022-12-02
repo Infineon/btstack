@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__properties__get__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_properties_get_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__properties__get__data__t_1a2e1c4e14ac9d4ab1dddacc6e1faf9977" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_properties_get_data_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>One of the property types defined in the wiced_bt_mesh_property_type enumeration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1226" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__properties__get__data__t_1a70efe312d60ba8127086330e690b495e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_properties_get_data_t::starting_id</definition>
+        <argsstring></argsstring>
+        <name>starting_id</name>
+        <briefdescription>
+<para>The property ID to be reported in the property status message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1227" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Properties Get Data for Generic Property Models. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1225" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1224" bodyend="1228"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__properties__get__data__t_1a70efe312d60ba8127086330e690b495e" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_properties_get_data_t</scope><name>starting_id</name></member>
+      <member refid="structwiced__bt__mesh__properties__get__data__t_1a2e1c4e14ac9d4ab1dddacc6e1faf9977" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_properties_get_data_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

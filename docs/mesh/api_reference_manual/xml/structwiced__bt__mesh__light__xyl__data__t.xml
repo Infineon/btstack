@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__light__xyl__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_light_xyl_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__data__t_1af01381fcc01f1340be1fcb73b299db32" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_xyl_data_t::lightness</definition>
+        <argsstring></argsstring>
+        <name>lightness</name>
+        <briefdescription>
+<para>Value of the Light xyL Lightness. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1500" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__data__t_1a23e7fe8dca2d9e33e6bd1135e7d2f167" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_xyl_data_t::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+<para>x coordinate on the CIE1931 color space chart of a color light emitted by an element </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1501" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__xyl__data__t_1aae02a4daaea6aa7f91123d112085461a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_light_xyl_data_t::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+<para>y coordinate on the CIE1931 color space chart of a color light emitted by an element </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1502" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1502" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure reppresenting the state of the Light xyL device. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1499" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1498" bodyend="1503"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__light__xyl__data__t_1af01381fcc01f1340be1fcb73b299db32" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_data_t</scope><name>lightness</name></member>
+      <member refid="structwiced__bt__mesh__light__xyl__data__t_1a23e7fe8dca2d9e33e6bd1135e7d2f167" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_data_t</scope><name>x</name></member>
+      <member refid="structwiced__bt__mesh__light__xyl__data__t_1aae02a4daaea6aa7f91123d112085461a" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_data_t</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__scene__register__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_scene_register_status_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__scene__register__status__data__t_1ac19e4ffbe7274735e8f08c9da42a2dcf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_scene_register_status_data_t::status_code</definition>
+        <argsstring></argsstring>
+        <name>status_code</name>
+        <briefdescription>
+<para>Scene operation status code (see <ref refid="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_SCENE_STATUS_CODE" kindref="member">WICED_BT_MESH_SCENE_STATUS_CODE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="482" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scene__register__status__data__t_1ae8ec0384e03e35eb81cbdec8dc0e8434" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_scene_register_status_data_t::current_scene</definition>
+        <argsstring></argsstring>
+        <name>current_scene</name>
+        <briefdescription>
+<para>Scene Number of a current scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="483" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scene__register__status__data__t_1a75f17cd82b02083172e46f09154db349" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_scene_register_status_data_t::scene_num</definition>
+        <argsstring></argsstring>
+        <name>scene_num</name>
+        <briefdescription>
+<para>Number of scenese reported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="484" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__scene__register__status__data__t_1ab6f4dc3fb82b25c70adccf7bf8670cf3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_scene_register_status_data_t::scene[WICED_BT_MESH_MODELS_MAX_SCENES]</definition>
+        <argsstring>[WICED_BT_MESH_MODELS_MAX_SCENES]</argsstring>
+        <name>scene</name>
+        <briefdescription>
+<para>Remaining time for transition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="485" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Scene Register Status Data structure exchanged between the application Scene Models. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="481" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="480" bodyend="486"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__scene__register__status__data__t_1ae8ec0384e03e35eb81cbdec8dc0e8434" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scene_register_status_data_t</scope><name>current_scene</name></member>
+      <member refid="structwiced__bt__mesh__scene__register__status__data__t_1ab6f4dc3fb82b25c70adccf7bf8670cf3" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scene_register_status_data_t</scope><name>scene</name></member>
+      <member refid="structwiced__bt__mesh__scene__register__status__data__t_1a75f17cd82b02083172e46f09154db349" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scene_register_status_data_t</scope><name>scene_num</name></member>
+      <member refid="structwiced__bt__mesh__scene__register__status__data__t_1ac19e4ffbe7274735e8f08c9da42a2dcf" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scene_register_status_data_t</scope><name>status_code</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

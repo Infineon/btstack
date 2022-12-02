@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__onoff__set__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_onoff_set_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__onoff__set__data__t_1ad0bb581a797735a5bedf8967cceebc7a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_onoff_set_data_t::onoff</definition>
+        <argsstring></argsstring>
+        <name>onoff</name>
+        <briefdescription>
+<para>The target value of the Generic OnOff state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="991" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__onoff__set__data__t_1a24aee22b8c856abc8f96fe2858a51303" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_onoff_set_data_t::transition_time</definition>
+        <argsstring></argsstring>
+        <name>transition_time</name>
+        <briefdescription>
+<para>Transition time to the target state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="992" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__onoff__set__data__t_1aa6c6473803b7d76d16c565f3dcb16c56" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_onoff_set_data_t::delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <briefdescription>
+<para>Delay before starting the transition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="993" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="993" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>OnOff Set Data structure exchanged between the application Generic OnOff Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="990" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="989" bodyend="994"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__onoff__set__data__t_1aa6c6473803b7d76d16c565f3dcb16c56" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_onoff_set_data_t</scope><name>delay</name></member>
+      <member refid="structwiced__bt__mesh__onoff__set__data__t_1ad0bb581a797735a5bedf8967cceebc7a" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_onoff_set_data_t</scope><name>onoff</name></member>
+      <member refid="structwiced__bt__mesh__onoff__set__data__t_1a24aee22b8c856abc8f96fe2858a51303" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_onoff_set_data_t</scope><name>transition_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

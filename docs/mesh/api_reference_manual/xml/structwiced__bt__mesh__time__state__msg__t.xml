@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__time__state__msg__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_time_state_msg_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__time__state__msg__t_1a609e8aaee6a0ab5909a5c7503cd76251" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t wiced_bt_mesh_time_state_msg_t::tai_seconds</definition>
+        <argsstring></argsstring>
+        <name>tai_seconds</name>
+        <briefdescription>
+<para>Current TAI time in seconds since the epoch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="493" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__time__state__msg__t_1aa6eaafc5fa54a7168f94b89814f7d207" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_time_state_msg_t::subsecond</definition>
+        <argsstring></argsstring>
+        <name>subsecond</name>
+        <briefdescription>
+<para>The sub-second time in units of 1/256s. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="494" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__time__state__msg__t_1a8f955c855e2e7229bab761d639931a36" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_time_state_msg_t::uncertainty</definition>
+        <argsstring></argsstring>
+        <name>uncertainty</name>
+        <briefdescription>
+<para>Estimated uncertainty in 10-millisecond steps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="495" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__time__state__msg__t_1aeff28d4ccb80029f2c03307af83f1af0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_time_state_msg_t::time_authority</definition>
+        <argsstring></argsstring>
+        <name>time_authority</name>
+        <briefdescription>
+<para>Element has a reliable source of TAI or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="496" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__time__state__msg__t_1a4ba9c69c8105f62bcabbe9603746679c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_time_state_msg_t::tai_utc_delta_current</definition>
+        <argsstring></argsstring>
+        <name>tai_utc_delta_current</name>
+        <briefdescription>
+<para>Current difference between TAI and UTC in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="497" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__time__state__msg__t_1a541be576baf3f075253fb51ded725cbf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_time_state_msg_t::time_zone_offset_current</definition>
+        <argsstring></argsstring>
+        <name>time_zone_offset_current</name>
+        <briefdescription>
+<para>Current zone offset in 15-minute increments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="498" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Time State structure exchanged between the Time Client and Time Server. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="492" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="491" bodyend="499"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__time__state__msg__t_1aa6eaafc5fa54a7168f94b89814f7d207" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_state_msg_t</scope><name>subsecond</name></member>
+      <member refid="structwiced__bt__mesh__time__state__msg__t_1a609e8aaee6a0ab5909a5c7503cd76251" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_state_msg_t</scope><name>tai_seconds</name></member>
+      <member refid="structwiced__bt__mesh__time__state__msg__t_1a4ba9c69c8105f62bcabbe9603746679c" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_state_msg_t</scope><name>tai_utc_delta_current</name></member>
+      <member refid="structwiced__bt__mesh__time__state__msg__t_1aeff28d4ccb80029f2c03307af83f1af0" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_state_msg_t</scope><name>time_authority</name></member>
+      <member refid="structwiced__bt__mesh__time__state__msg__t_1a541be576baf3f075253fb51ded725cbf" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_state_msg_t</scope><name>time_zone_offset_current</name></member>
+      <member refid="structwiced__bt__mesh__time__state__msg__t_1a8f955c855e2e7229bab761d639931a36" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_state_msg_t</scope><name>uncertainty</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

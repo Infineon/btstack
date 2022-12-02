@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__sensor__column__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_sensor_column_status_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__column__status__data__t_1a9cdfc016d9c3ade4979d70b16fd074d2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_sensor_column_status_data_t::property_id</definition>
+        <argsstring></argsstring>
+        <name>property_id</name>
+        <briefdescription>
+<para>Property identifying a sensor and the Y axis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="308" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__column__status__data__t_1a5b970eab3ab0b820c5c5f17c8e54f272" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_sensor_column_status_data_t::prop_value_len</definition>
+        <argsstring></argsstring>
+        <name>prop_value_len</name>
+        <briefdescription>
+<para>Length of the raw_value corresponding to property_id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="309" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__column__status__data__t_1abe9d45ae270b7c7a849ffb83f444b054" prot="public" static="no" mutable="no">
+        <type>wiced_bool_t</type>
+        <definition>wiced_bool_t wiced_bt_mesh_sensor_column_status_data_t::is_column_present</definition>
+        <argsstring></argsstring>
+        <name>is_column_present</name>
+        <briefdescription>
+<para>boolean value indicating if the column width is present in the message </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="310" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__column__status__data__t_1a895ced8da096834f6b0d4f3f84b57e15" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__sensor__column__data__t" kindref="compound">wiced_bt_mesh_sensor_column_data_t</ref></type>
+        <definition>wiced_bt_mesh_sensor_column_data_t wiced_bt_mesh_sensor_column_status_data_t::column_data</definition>
+        <argsstring></argsstring>
+        <name>column_data</name>
+        <briefdescription>
+<para>Data field of column status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="311" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sensor Column status structure exchanged between the application and the Sensor Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="296">
+        <label>wiced_bt_mesh_sensor_column_status_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__column__status__data__t"/>
+        <childnode refid="297" relation="usage">
+          <edgelabel>column_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="297">
+        <label>wiced_bt_mesh_sensor_column_data_t</label>
+        <link refid="structwiced__bt__mesh__sensor__column__data__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="307" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="306" bodyend="312"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__sensor__column__status__data__t_1a895ced8da096834f6b0d4f3f84b57e15" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_column_status_data_t</scope><name>column_data</name></member>
+      <member refid="structwiced__bt__mesh__sensor__column__status__data__t_1abe9d45ae270b7c7a849ffb83f444b054" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_column_status_data_t</scope><name>is_column_present</name></member>
+      <member refid="structwiced__bt__mesh__sensor__column__status__data__t_1a5b970eab3ab0b820c5c5f17c8e54f272" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_column_status_data_t</scope><name>prop_value_len</name></member>
+      <member refid="structwiced__bt__mesh__sensor__column__status__data__t_1a9cdfc016d9c3ade4979d70b16fd074d2" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_column_status_data_t</scope><name>property_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__wiced__bt__mesh_wiced_bt_mesh_application_structure" kind="page">
+    <compoundname>wiced_bt_mesh_application_structure</compoundname>
+    <title>Mesh Application Structure</title>
+    <briefdescription>
+<para>Each AIROC Mesh Application shall contain a <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">device configuration</ref> and application callbacks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Each AIROC Mesh Application shall contain a <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">device configuration</ref> and application callbacks.</para>
+<para>The device configuration provides to the mesh stack the information about the device which is supported. For example it can be a color bulb, or a dimmer, or a dimmable light with additional vendor specific functionality. The callbacks are used by the mesh stack to notify the application when certain actions shall be performed. For example, the application for the color bulb would probably be interested to process notification when the brightness shall be set to 50%, or when the color shall be set to red. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

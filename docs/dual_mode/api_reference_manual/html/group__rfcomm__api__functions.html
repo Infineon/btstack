@@ -961,6 +961,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This function sends the given application data to the peer device. </p>
+<dl class="section note"><dt>Note</dt><dd>the application shall pass a valid <code>p_data</code> buffer allocated on the heap or a global to this call. The buffer contents cannot be altered till a TX complete callback <a class="el" href="group__rfcomm__api__functions.html#gad9593eadcb99b8ff4f6b7e7f8a5825f8">wiced_bt_port_tx_cback_t</a> is received</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The connection handle returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a> </td></tr>

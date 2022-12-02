@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__core__state__seq__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_core_state_seq_t</compoundname>
+    <includes local="no">wiced_bt_mesh_core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__state__seq__t_1a911794c61c0e4625f1840a1563f62763" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_core_state_seq_t::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+<para>Unicast device address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 means own address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="291" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__state__seq__t_1abbf070adca61cfe6453bd71c9982827a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_core_state_seq_t::seq</definition>
+        <argsstring></argsstring>
+        <name>seq</name>
+        <briefdescription>
+<para>Sequence Number (SEQ). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It should be &lt;= 0x00ffffff (3 bytes length). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="292" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__state__seq__t_1a061940d4529e9ad0150781f5970b3cc6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_core_state_seq_t::previous_iv_idx</definition>
+        <argsstring></argsstring>
+        <name>previous_iv_idx</name>
+        <briefdescription>
+<para>FALSE - it is SEQ for current IV INDEX. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE - for previous. If addr is 0 then it is ignored. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="293" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__core__state__seq__t_1adace47279b2d196d2ea391b9d6e2ffe4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_core_state_seq_t::rpl_entry_idx</definition>
+        <argsstring></argsstring>
+        <name>rpl_entry_idx</name>
+        <briefdescription>
+<para>Index of this entry in the RPL. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is needed to do direct access to the NVRAM IDX for write. If addr is 0 then it is ignored. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="294" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data for state type WICED_BT_MESH_CORE_STATE_TYPE_SEQ. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It represents the own Sequence Number(SEQ) or SEQ in any entry of Replay Protection Lis(RPL). </para>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="290" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="289" bodyend="295"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__core__state__seq__t_1a911794c61c0e4625f1840a1563f62763" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_state_seq_t</scope><name>addr</name></member>
+      <member refid="structwiced__bt__mesh__core__state__seq__t_1a061940d4529e9ad0150781f5970b3cc6" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_state_seq_t</scope><name>previous_iv_idx</name></member>
+      <member refid="structwiced__bt__mesh__core__state__seq__t_1adace47279b2d196d2ea391b9d6e2ffe4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_state_seq_t</scope><name>rpl_entry_idx</name></member>
+      <member refid="structwiced__bt__mesh__core__state__seq__t_1abbf070adca61cfe6453bd71c9982827a" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_state_seq_t</scope><name>seq</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

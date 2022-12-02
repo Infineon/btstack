@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__sensor__column__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_sensor_column_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__column__data__t_1ab6afa2b6cd01eea857d8527fe31ef871" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_sensor_column_data_t::raw_valuex[WICED_BT_MESH_MAX_PROP_VAL_LEN]</definition>
+        <argsstring>[WICED_BT_MESH_MAX_PROP_VAL_LEN]</argsstring>
+        <name>raw_valuex</name>
+        <briefdescription>
+<para>Raw value representing the left corner of the column on the X axis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="298" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__column__data__t_1a85fa60c2dd6ad0b0e601d7f817b1f3d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_sensor_column_data_t::column_width[WICED_BT_MESH_MAX_PROP_VAL_LEN]</definition>
+        <argsstring>[WICED_BT_MESH_MAX_PROP_VAL_LEN]</argsstring>
+        <name>column_width</name>
+        <briefdescription>
+<para>Raw value representing the width of the column. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="299" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__sensor__column__data__t_1a512474bab52ebf2858b8b02c4da061ab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_sensor_column_data_t::raw_valuey[WICED_BT_MESH_MAX_PROP_VAL_LEN]</definition>
+        <argsstring>[WICED_BT_MESH_MAX_PROP_VAL_LEN]</argsstring>
+        <name>raw_valuey</name>
+        <briefdescription>
+<para>Raw value representing the height of the column on the Y axis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="300" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sensor column data structure exchanged between the application and the Sensor Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="297" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="296" bodyend="301"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__sensor__column__data__t_1a85fa60c2dd6ad0b0e601d7f817b1f3d8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_column_data_t</scope><name>column_width</name></member>
+      <member refid="structwiced__bt__mesh__sensor__column__data__t_1ab6afa2b6cd01eea857d8527fe31ef871" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_column_data_t</scope><name>raw_valuex</name></member>
+      <member refid="structwiced__bt__mesh__sensor__column__data__t_1a512474bab52ebf2858b8b02c4da061ab" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_column_data_t</scope><name>raw_valuey</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__provision__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_provision_status_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__status__data__t_1a3f6943155d129887558a5c21e5e354d8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_provision_status_data_t::provisioner_addr</definition>
+        <argsstring></argsstring>
+        <name>provisioner_addr</name>
+        <briefdescription>
+<para>Address of the remote provisioning server, or 0 if provisioning is by local device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="357" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__status__data__t_1aee67315e6dd6914344c711dca72ad521" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_provision_status_data_t::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+<para>address to assign </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="358" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__status__data__t_1a0cea9ff174e6bb9d7e06bde1b392d748" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_mesh_provision_status_data_t::net_key_idx</definition>
+        <argsstring></argsstring>
+        <name>net_key_idx</name>
+        <briefdescription>
+<para>NetKeyIdx of the key provisioned to the device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="359" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__status__data__t_1a344b8dde1b9d4c8d6433241ed9eef833" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_status_data_t::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+<para>result of the provision operation </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="360" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__provision__status__data__t_1aba2b86ef6da5b509472f3110ec0a8fc9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_provision_status_data_t::dev_key[WICED_BT_MESH_KEY_LEN]</definition>
+        <argsstring>[WICED_BT_MESH_KEY_LEN]</argsstring>
+        <name>dev_key</name>
+        <briefdescription>
+<para>Device key generated during provisioning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This key shall be used by provisioner to configure the provisioned device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="361" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="356" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="355" bodyend="362"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__provision__status__data__t_1aee67315e6dd6914344c711dca72ad521" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_status_data_t</scope><name>addr</name></member>
+      <member refid="structwiced__bt__mesh__provision__status__data__t_1aba2b86ef6da5b509472f3110ec0a8fc9" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_status_data_t</scope><name>dev_key</name></member>
+      <member refid="structwiced__bt__mesh__provision__status__data__t_1a0cea9ff174e6bb9d7e06bde1b392d748" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_status_data_t</scope><name>net_key_idx</name></member>
+      <member refid="structwiced__bt__mesh__provision__status__data__t_1a3f6943155d129887558a5c21e5e354d8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_status_data_t</scope><name>provisioner_addr</name></member>
+      <member refid="structwiced__bt__mesh__provision__status__data__t_1a344b8dde1b9d4c8d6433241ed9eef833" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_status_data_t</scope><name>result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

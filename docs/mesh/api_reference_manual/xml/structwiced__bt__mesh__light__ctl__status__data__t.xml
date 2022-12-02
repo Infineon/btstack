@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__light__ctl__status__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_light_ctl_status_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__ctl__status__data__t_1a8eb723bfdb0e3c8c26a557ebceda82b4" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__light__ctl__data__t" kindref="compound">wiced_bt_mesh_light_ctl_data_t</ref></type>
+        <definition>wiced_bt_mesh_light_ctl_data_t wiced_bt_mesh_light_ctl_status_data_t::present</definition>
+        <argsstring></argsstring>
+        <name>present</name>
+        <briefdescription>
+<para>Present value of the Light CTL Lightness, Temperature and Delta UV. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1289" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__ctl__status__data__t_1aceab6d0d13b07372e42211651d8f0c0c" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__mesh__light__ctl__data__t" kindref="compound">wiced_bt_mesh_light_ctl_data_t</ref></type>
+        <definition>wiced_bt_mesh_light_ctl_data_t wiced_bt_mesh_light_ctl_status_data_t::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+<para>Target value of the Light CTL Lightness, Temperature and Delta UV. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1290" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwiced__bt__mesh__light__ctl__status__data__t_1a84023703d5b5f6d418bf2f40616eda3c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t wiced_bt_mesh_light_ctl_status_data_t::remaining_time</definition>
+        <argsstring></argsstring>
+        <name>remaining_time</name>
+        <briefdescription>
+<para>Remaining time for transition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1291" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1291" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Light CTL Status Data structure exchanged between the application and the models library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="96">
+        <label>wiced_bt_mesh_light_ctl_data_t</label>
+        <link refid="structwiced__bt__mesh__light__ctl__data__t"/>
+      </node>
+      <node id="95">
+        <label>wiced_bt_mesh_light_ctl_status_data_t</label>
+        <link refid="structwiced__bt__mesh__light__ctl__status__data__t"/>
+        <childnode refid="96" relation="usage">
+          <edgelabel>target</edgelabel>
+          <edgelabel>present</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1288" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1287" bodyend="1292"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__light__ctl__status__data__t_1a8eb723bfdb0e3c8c26a557ebceda82b4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_ctl_status_data_t</scope><name>present</name></member>
+      <member refid="structwiced__bt__mesh__light__ctl__status__data__t_1a84023703d5b5f6d418bf2f40616eda3c" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_ctl_status_data_t</scope><name>remaining_time</name></member>
+      <member refid="structwiced__bt__mesh__light__ctl__status__data__t_1aceab6d0d13b07372e42211651d8f0c0c" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_ctl_status_data_t</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structwiced__bt__mesh__power__onoff__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>wiced_bt_mesh_power_onoff_data_t</compoundname>
+    <includes local="no">wiced_bt_mesh_models.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwiced__bt__mesh__power__onoff__data__t_1ae6865dd7e8f2a1c7942c30ce37495d61" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_mesh_power_onoff_data_t::on_power_up</definition>
+        <argsstring></argsstring>
+        <name>on_power_up</name>
+        <briefdescription>
+<para>Value on power up. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1069" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1069" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Power OnOff Data structure exchanged between an application and the Power OnOff Model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1068" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1067" bodyend="1070"/>
+    <listofallmembers>
+      <member refid="structwiced__bt__mesh__power__onoff__data__t_1ae6865dd7e8f2a1c7942c30ce37495d61" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_power_onoff_data_t</scope><name>on_power_up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
