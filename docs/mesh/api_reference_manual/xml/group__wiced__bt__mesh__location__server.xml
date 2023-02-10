@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1856" column="1" bodyfile="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1856" bodyend="-1"/>
+        <location file="C:/r1/builds/RiwskXkg/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1856" column="1" bodyfile="C:/r1/builds/RiwskXkg/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1856" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1866" column="1"/>
+        <location file="C:/r1/builds/RiwskXkg/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1866" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__location__server_1gaf501d5b111e4100c464f2a1c6b99a1f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1880" column="1"/>
+        <location file="C:/r1/builds/RiwskXkg/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1880" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__location__server_1ga0549c6bcb0387593085c789248ba5969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1894" column="1"/>
+        <location file="C:/r1/builds/RiwskXkg/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1894" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__location__server_1ga4e80009e6350f38795e567d86f2736b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/r1/builds/QBNjiSSM/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1906" column="1"/>
+        <location file="C:/r1/builds/RiwskXkg/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1906" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
