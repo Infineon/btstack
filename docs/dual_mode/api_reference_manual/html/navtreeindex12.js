@@ -1,5 +1,13 @@
 var NAVTREEINDEX12 =
 {
+"structwiced__bt__ble__connection__param__update__t.html":[1,4,37],
+"structwiced__bt__ble__connection__param__update__t.html#a3c080080674c907ba99f2b91ed5ad7a7":[1,4,37,4],
+"structwiced__bt__ble__connection__param__update__t.html#a5fc4b17a842abcf3a918b95fa8b1ac83":[1,4,37,2],
+"structwiced__bt__ble__connection__param__update__t.html#a83d5d785582246b0524daa1f981a7414":[1,4,37,1],
+"structwiced__bt__ble__connection__param__update__t.html#aaa48189b574756acf676490685f19dd4":[1,4,37,0],
+"structwiced__bt__ble__connection__param__update__t.html#ae566838800ef3e7ad627dc8ef7292e5c":[1,4,37,3],
+"structwiced__bt__ble__ext__adv__duration__config__t.html":[1,4,0,11],
+"structwiced__bt__ble__ext__adv__duration__config__t.html#a599a64503308e67254d8d425295e591d":[1,4,0,11,2],
 "structwiced__bt__ble__ext__adv__duration__config__t.html#accfb479787c49951b35485d20020b460":[1,4,0,11,0],
 "structwiced__bt__ble__ext__adv__duration__config__t.html#ad6df903e8310aafc6810b0b758c4b7b9":[1,4,0,11,1],
 "structwiced__bt__ble__ext__adv__report__t.html":[1,4,0,13],
@@ -241,13 +249,5 @@ var NAVTREEINDEX12 =
 "structwiced__bt__dev__bredr__io__caps__req__t.html#a6e76e519c841bb529b9c2996c1047636":[1,4,48,2],
 "structwiced__bt__dev__bredr__io__caps__req__t.html#aa33dc5207255c675a88d5814a8e7d1ca":[1,4,48,3],
 "structwiced__bt__dev__bredr__io__caps__rsp__t.html":[1,4,16],
-"structwiced__bt__dev__bredr__io__caps__rsp__t.html#a9483968dd4dff3d025b1a6c7a37c5e0d":[1,4,16,0],
-"structwiced__bt__dev__bredr__io__caps__rsp__t.html#a994f0ca3a8cc14605430323dc9019e6d":[1,4,16,2],
-"structwiced__bt__dev__bredr__io__caps__rsp__t.html#ab09209589127eedc3143cb066290a6f5":[1,4,16,3],
-"structwiced__bt__dev__bredr__io__caps__rsp__t.html#adcee4eb9bed391cc9114b2be90ab5481":[1,4,16,1],
-"structwiced__bt__dev__cod__cond__t.html":[1,4,7],
-"structwiced__bt__dev__cod__cond__t.html#a8bb22f35cda35c73c85074cd6c2c569b":[1,4,7,0],
-"structwiced__bt__dev__cod__cond__t.html#ac2a389297ff41f5e30483466b630b2b2":[1,4,7,1],
-"structwiced__bt__dev__disabled__t.html":[1,4,42],
-"structwiced__bt__dev__disabled__t.html#ad9d48cff02c079ca2f907494ac4550a2":[1,4,42,0]
+"structwiced__bt__dev__bredr__io__caps__rsp__t.html#a9483968dd4dff3d025b1a6c7a37c5e0d":[1,4,16,0]
 };

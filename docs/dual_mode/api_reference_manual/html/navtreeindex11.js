@@ -1,5 +1,13 @@
 var NAVTREEINDEX11 =
 {
+"structwiced__bt__avrc__browse__rsp__t.html#a8f9694d09abdc787d614221f4293758f":[1,2,58,3],
+"structwiced__bt__avrc__browse__rsp__t.html#aae218e80c53dc69a52aad853eb4ce104":[1,2,58,4],
+"structwiced__bt__avrc__browse__rsp__t.html#abc9ee4b01e714fc048fab0f32c55d551":[1,2,58,5],
+"structwiced__bt__avrc__browse__rsp__t.html#ac103bbbca9c2e47a0f85f72b7e6b6de5":[1,2,58,10],
+"structwiced__bt__avrc__browse__rsp__t.html#ae8700c97be31196306412c5021cdfbdd":[1,2,58,6],
+"structwiced__bt__avrc__browse__search__cmd__t.html":[1,2,31],
+"structwiced__bt__avrc__browse__search__cmd__t.html#a0d4cc7ac76ac02a5d20798a8fd4773dc":[1,2,31,0],
+"structwiced__bt__avrc__browse__set__br__player__rsp__t.html":[1,2,53],
 "structwiced__bt__avrc__browse__set__br__player__rsp__t.html#a01b04dbba5db14ffb610ed3d4f65f272":[1,2,53,3],
 "structwiced__bt__avrc__browse__set__br__player__rsp__t.html#a26f4c1cdc0ce9d574a7ad6dde8c6b7ad":[1,2,53,0],
 "structwiced__bt__avrc__browse__set__br__player__rsp__t.html#ad1d6dc49cad1a8a0f463d136cb782de2":[1,2,53,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX11 =
 "structwiced__bt__ble__conn__params__t.html#a0cddeab89b8d4fe08ab2170530e295cb":[1,4,0,8,0],
 "structwiced__bt__ble__conn__params__t.html#a545ef7b2495e29e8e4812629fb135c44":[1,4,0,8,1],
 "structwiced__bt__ble__conn__params__t.html#a9cca6008241e70f7882704bc6d9deb65":[1,4,0,8,2],
-"structwiced__bt__ble__conn__params__t.html#ab7c6cee604c76191bd70926d8b40562e":[1,4,0,8,3],
-"structwiced__bt__ble__connection__param__update__t.html":[1,4,37],
-"structwiced__bt__ble__connection__param__update__t.html#a3c080080674c907ba99f2b91ed5ad7a7":[1,4,37,4],
-"structwiced__bt__ble__connection__param__update__t.html#a5fc4b17a842abcf3a918b95fa8b1ac83":[1,4,37,2],
-"structwiced__bt__ble__connection__param__update__t.html#a83d5d785582246b0524daa1f981a7414":[1,4,37,1],
-"structwiced__bt__ble__connection__param__update__t.html#aaa48189b574756acf676490685f19dd4":[1,4,37,0],
-"structwiced__bt__ble__connection__param__update__t.html#ae566838800ef3e7ad627dc8ef7292e5c":[1,4,37,3],
-"structwiced__bt__ble__ext__adv__duration__config__t.html":[1,4,0,11],
-"structwiced__bt__ble__ext__adv__duration__config__t.html#a599a64503308e67254d8d425295e591d":[1,4,0,11,2]
+"structwiced__bt__ble__conn__params__t.html#ab7c6cee604c76191bd70926d8b40562e":[1,4,0,8,3]
 };

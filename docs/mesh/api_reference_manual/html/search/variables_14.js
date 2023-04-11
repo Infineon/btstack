@@ -3,8 +3,6 @@ var searchData=
   ['wiced_5fbt_5fcore_5fboost_5fcpu_5fon_5fcrypt_5fop',['wiced_bt_core_boost_cpu_on_crypt_op',['../group__wiced__bt__mesh__core.html#gab29a265dd3459d528acd525fae75c21a',1,'wiced_bt_mesh_core.h']]],
   ['wiced_5fbt_5fcore_5fiv_5fupdate_5ftest_5fmode',['wiced_bt_core_iv_update_test_mode',['../group__wiced__bt__mesh__core.html#gae94d91477d3820045a68253ca07ad044',1,'wiced_bt_mesh_core.h']]],
   ['wiced_5fbt_5fcore_5flower_5ftransport_5fack_5ftimeout_5fms',['wiced_bt_core_lower_transport_ack_timeout_ms',['../group__wiced__bt__mesh__core.html#ga021068ae3488888ac9d25c1c5876f47f',1,'wiced_bt_mesh_core.h']]],
-  ['wiced_5fbt_5fcore_5flower_5ftransport_5fseg_5ftrans_5fcnt',['wiced_bt_core_lower_transport_seg_trans_cnt',['../group__wiced__bt__mesh__core.html#ga4ceeacfaa2f37d06d9e53a00486133b4',1,'wiced_bt_mesh_core.h']]],
-  ['wiced_5fbt_5fcore_5flower_5ftransport_5fseg_5ftrans_5ftimeout_5fms',['wiced_bt_core_lower_transport_seg_trans_timeout_ms',['../group__wiced__bt__mesh__core.html#gab05caf699466e69eaea83685b6cd0d46',1,'wiced_bt_mesh_core.h']]],
   ['wiced_5fbt_5fcore_5fshort_5ftrans_5fmic',['wiced_bt_core_short_trans_mic',['../group__wiced__bt__mesh__core.html#ga457c303574ad2fc3970319743c106c00',1,'wiced_bt_mesh_core.h']]],
   ['wiced_5fbt_5fmesh_5fcore_5fdelay_5fanswer_5fgroup_5fmin',['wiced_bt_mesh_core_delay_answer_group_min',['../group__wiced__bt__mesh__core.html#ga6a353d9b305deffc799732a7973ad2da',1,'wiced_bt_mesh_core.h']]],
   ['wiced_5fbt_5fmesh_5fcore_5fdelay_5fanswer_5funicast_5fmin',['wiced_bt_mesh_core_delay_answer_unicast_min',['../group__wiced__bt__mesh__core.html#gab77df8b9d7aca57149866b5aad6382d8',1,'wiced_bt_mesh_core.h']]],

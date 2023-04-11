@@ -552,6 +552,12 @@ wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><b>wiced_bt_me
 <tr class="memitem:ga8a49a7e773deb5fc3400b0fc363263a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__models.html#ga8a49a7e773deb5fc3400b0fc363263a8">wiced_bt_mesh_model_find_element_idx</a> (uint16_t company_id, uint16_t model_id, uint8_t start_idx)</td></tr>
 <tr class="memdesc:ga8a49a7e773deb5fc3400b0fc363263a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find model in the node configuration starting with specified element index.  <a href="#ga8a49a7e773deb5fc3400b0fc363263a8">More...</a><br /></td></tr>
 <tr class="separator:ga8a49a7e773deb5fc3400b0fc363263a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf8b966c4acdd4d8035acb264852c951"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__models.html#gabf8b966c4acdd4d8035acb264852c951">wiced_bt_mesh_config_server_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
+<tr class="memdesc:gabf8b966c4acdd4d8035acb264852c951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Config Server Model Message Handler.  <a href="#gabf8b966c4acdd4d8035acb264852c951">More...</a><br /></td></tr>
+<tr class="separator:gabf8b966c4acdd4d8035acb264852c951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga040739f9972262688c78c945f631af8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__models.html#ga040739f9972262688c78c945f631af8a">wiced_bt_mesh_config_server_send_reply</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint16_t opcode, uint8_t *p_buffer, uint16_t len)</td></tr>
+<tr class="memdesc:ga040739f9972262688c78c945f631af8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function can be called to send message through the core.  <a href="#ga040739f9972262688c78c945f631af8a">More...</a><br /></td></tr>
+<tr class="separator:ga040739f9972262688c78c945f631af8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -734,7 +740,8 @@ Battery Service Required State Flags</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_CONFIG_SRV, NULL, NULL, NULL }, \</div><div class="line">    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_HEALTH_SRV, NULL, NULL, NULL }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_CONFIG_SRV, <a class="code" href="group__wiced__bt__mesh__models.html#gabf8b966c4acdd4d8035acb264852c951">wiced_bt_mesh_config_server_message_handler</a>, NULL, NULL }, \</div><div class="line">    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_HEALTH_SRV, NULL, NULL, NULL }</div><div class="ttc" id="group__wiced__bt__mesh__models_html_gabf8b966c4acdd4d8035acb264852c951"><div class="ttname"><a href="group__wiced__bt__mesh__models.html#gabf8b966c4acdd4d8035acb264852c951">wiced_bt_mesh_config_server_message_handler</a></div><div class="ttdeci">wiced_bool_t wiced_bt_mesh_config_server_message_handler(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</div><div class="ttdoc">Config Server Model Message Handler.</div></div>
+</div><!-- fragment -->
 <p>Mesh Device includes Configuration Server and Health Server models. </p>
 <p>This need to be included in the first element of the device. </p>
 
@@ -1871,6 +1878,104 @@ Battery Service Required State Flags</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">company_id</td><td>Company ID of the model </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">model_id</td><td>Model ID of the model </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">start_idx</td><td>Starting element index </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gabf8b966c4acdd4d8035acb264852c951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf8b966c4acdd4d8035acb264852c951">&#9670;&nbsp;</a></span>wiced_bt_mesh_config_server_message_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_bool_t wiced_bt_mesh_config_server_message_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Config Server Model Message Handler. </p>
+<p>Application Library typically calls this function when function to process a message received from the Config Client. The function parses the message and if appropriate calls the application back to perform functionality.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with information about received message. </td></tr>
+    <tr><td class="paramname">p_data</td><td>Pointer to the data portion of the message </td></tr>
+    <tr><td class="paramname">data_len</td><td>Length of the data in the message</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if the message is for this company ID/Model combination, WICED_FALSE otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ga040739f9972262688c78c945f631af8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga040739f9972262688c78c945f631af8a">&#9670;&nbsp;</a></span>wiced_bt_mesh_config_server_send_reply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_mesh_config_server_send_reply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>p_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function can be called to send message through the core. </p>
+<p>The function keeps track of the output event .</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Fully prepared <a class="el" href="structwiced__bt__mesh__event__t.html" title="Mesh event structure is exchanged between the app and the mesh models library.">wiced_bt_mesh_event_t</a> structure with information on where and how event should be sent </td></tr>
+    <tr><td class="paramname">opcode</td><td>opcode to send </td></tr>
+    <tr><td class="paramname">params</td><td>Pointer to the parameters data to be sent out. </td></tr>
+    <tr><td class="paramname">len</td><td>Size of the parameters data to be sent out. The maximum length is about 377 bytes (depends on the size of the opcode). </td></tr>
   </table>
   </dd>
 </dl>

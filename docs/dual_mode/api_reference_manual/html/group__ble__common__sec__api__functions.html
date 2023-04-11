@@ -311,7 +311,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Encrypt the specified connection. </p>
-<p>Status is notified using <b>BTM_ENCRYPTION_STATUS_EVT </b> of <a class="el" href="group__wicedbt___device_management.html#ga86af8a8bb467047c9af6007f15b0d344" title="Bluetooth Management callback.">wiced_bt_management_cback_t</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Address of peer device </td></tr>
@@ -322,7 +321,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 <p><b> WICED_BT_SUCCESS </b> : already encrypted <br />
-<b> WICED_BT_PENDING </b> : command will be returned in the callback <br />
+<b> WICED_BT_PENDING </b> : Status is notified using <b>BTM_ENCRYPTION_STATUS_EVT </b> of <a class="el" href="group__wicedbt___device_management.html#ga86af8a8bb467047c9af6007f15b0d344" title="Bluetooth Management callback.">wiced_bt_management_cback_t</a>.<br />
 <b> WICED_BT_WRONG_MODE </b> : connection not up. <br />
 <b> WICED_BT_BUSY </b> : security procedures are currently active </p>
 

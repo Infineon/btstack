@@ -1,5 +1,13 @@
 var NAVTREEINDEX5 =
 {
+"group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325a5a9e9d392ad933c7a1892d4cf2060e3b":[1,4,150,2],
+"group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325a5bb2ec2cf78b2319a2580cc57af49c6b":[1,4,150,1],
+"group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325a9d17dfd997e959ada7cc24536962585e":[1,4,150,3],
+"group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325aaaaf027672e988fe5312fe012a65abe6":[1,4,150,4],
+"group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325ad19f09febc4f10b2928d87607fb83e8e":[1,4,150,7],
+"group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325ad4b1a9774a21f599e68e2a32730880f2":[1,4,150,0],
+"group__wicedbt___device_management.html#ggaa76569d7be1ed9ff5262e81b3b651325ad827fa21b9e5f3ccdecf458cea4bc28b":[1,4,150,6],
+"group__wicedbt___device_management.html#ggab2179004dac20c28116a07931fdf62a6a4fb5713eaccd55f525d683b222abe6a4":[1,4,130,1],
 "group__wicedbt___device_management.html#ggab2179004dac20c28116a07931fdf62a6ab4fc0ebb965d9e5c04c59ce9ef96ad41":[1,4,130,0],
 "group__wicedbt___device_management.html#ggab94d20733e23c6a87c030964a9215bcba15d7b0ff405e8478cd1584c9de0dcdee":[1,4,144,0],
 "group__wicedbt___device_management.html#ggab94d20733e23c6a87c030964a9215bcba2c8d4e8602549da1f6ba22dba550adf6":[1,4,144,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX5 =
 "group__wicedbt__avdt.html#ga0d3930548bacd054ca954f0d0d675c93":[1,1,124],
 "group__wicedbt__avdt.html#ga0dea634ad785a82305f75c9b6a30d1db":[1,1,121],
 "group__wicedbt__avdt.html#ga1239000590e61a2c0340a32f00e937ed":[1,1,153],
-"group__wicedbt__avdt.html#ga126fb459b3366a2bb503ac97bd82fb80":[1,1,147],
-"group__wicedbt__avdt.html#ga14f7b511081b2aef4f3438029b35f489":[1,1,46],
-"group__wicedbt__avdt.html#ga15308693d817a28de02c79e2f380c06d":[1,1,86],
-"group__wicedbt__avdt.html#ga1a42acc7bc74bcad08055f50958a1ceb":[1,1,29],
-"group__wicedbt__avdt.html#ga1bd707f8fad9c308b7a88b4825d0a37e":[1,1,93],
-"group__wicedbt__avdt.html#ga1c2513cdf1dea7c0bfcc677c3ef3612e":[1,1,71],
-"group__wicedbt__avdt.html#ga1e6ab46d7d453b0c307a11c8a84bc7a1":[1,1,65],
-"group__wicedbt__avdt.html#ga1fa27e2b4e5cd48c4f9579d79d3f5049":[1,1,119],
-"group__wicedbt__avdt.html#ga2032509e53be0db56cc5a070511cc366":[1,1,84]
+"group__wicedbt__avdt.html#ga126fb459b3366a2bb503ac97bd82fb80":[1,1,147]
 };

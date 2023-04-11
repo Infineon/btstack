@@ -47,6 +47,8 @@ var searchData=
   ['wiced_5fbt_5fmesh_5fconfig_5fnode_5freset',['wiced_bt_mesh_config_node_reset',['../group__wiced__bt__mesh__provisioning.html#gac16fe9d91c9e64f4b5cb7e7363d3d1fb',1,'wiced_bt_mesh_provision.h']]],
   ['wiced_5fbt_5fmesh_5fconfig_5frelay_5fget',['wiced_bt_mesh_config_relay_get',['../group__wiced__bt__mesh__provisioning.html#ga562131f5334771617f7da6cc66b8cf2a',1,'wiced_bt_mesh_provision.h']]],
   ['wiced_5fbt_5fmesh_5fconfig_5frelay_5fset',['wiced_bt_mesh_config_relay_set',['../group__wiced__bt__mesh__provisioning.html#gaa56a1ef9d543fc828274a905d65b3d8e',1,'wiced_bt_mesh_provision.h']]],
+  ['wiced_5fbt_5fmesh_5fconfig_5fserver_5fmessage_5fhandler',['wiced_bt_mesh_config_server_message_handler',['../group__wiced__bt__mesh__models.html#gabf8b966c4acdd4d8035acb264852c951',1,'wiced_bt_mesh_models.h']]],
+  ['wiced_5fbt_5fmesh_5fconfig_5fserver_5fsend_5freply',['wiced_bt_mesh_config_server_send_reply',['../group__wiced__bt__mesh__models.html#ga040739f9972262688c78c945f631af8a',1,'wiced_bt_mesh_models.h']]],
   ['wiced_5fbt_5fmesh_5fcopy_5fevent',['wiced_bt_mesh_copy_event',['../group__wiced__bt__mesh__core.html#gad429c40f45f13693d7e64894a7402f69',1,'wiced_bt_mesh_event.h']]],
   ['wiced_5fbt_5fmesh_5fcore_5fadv_5fend',['wiced_bt_mesh_core_adv_end',['../group__wiced__bt__mesh__core.html#ga06764c4d3bde30e471ad4d37dbaad61b',1,'wiced_bt_mesh_core.h']]],
   ['wiced_5fbt_5fmesh_5fcore_5fadv_5fpacket',['wiced_bt_mesh_core_adv_packet',['../group__wiced__bt__mesh__core.html#gaaedd919871b0fe4282d77a6da8041131',1,'wiced_bt_mesh_core.h']]],

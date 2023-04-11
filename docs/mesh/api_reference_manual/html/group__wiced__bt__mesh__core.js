@@ -402,8 +402,6 @@ var group__wiced__bt__mesh__core =
     [ "wiced_bt_mesh_release_event", "group__wiced__bt__mesh__core.html#gab53118d6d25849be44f82d3af7eeb0db", null ],
     [ "wiced_bt_core_short_trans_mic", "group__wiced__bt__mesh__core.html#ga457c303574ad2fc3970319743c106c00", null ],
     [ "wiced_bt_core_iv_update_test_mode", "group__wiced__bt__mesh__core.html#gae94d91477d3820045a68253ca07ad044", null ],
-    [ "wiced_bt_core_lower_transport_seg_trans_timeout_ms", "group__wiced__bt__mesh__core.html#gab05caf699466e69eaea83685b6cd0d46", null ],
-    [ "wiced_bt_core_lower_transport_seg_trans_cnt", "group__wiced__bt__mesh__core.html#ga4ceeacfaa2f37d06d9e53a00486133b4", null ],
     [ "wiced_bt_core_boost_cpu_on_crypt_op", "group__wiced__bt__mesh__core.html#gab29a265dd3459d528acd525fae75c21a", null ],
     [ "wiced_bt_mesh_core_unprovisioned_beacon_interval", "group__wiced__bt__mesh__core.html#ga8a80d7f9d8040e2773ad0abe7040b9fa", null ],
     [ "wiced_bt_mesh_core_provisioning_srv_adv_interval", "group__wiced__bt__mesh__core.html#ga313ce4b3dd41b04450a0cc5ff30ec0bf", null ],

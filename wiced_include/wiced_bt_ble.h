@@ -299,9 +299,16 @@ typedef uint8_t wiced_bt_ble_sec_action_type_t;  /**< BLE security type. refer #
  */
 typedef uint8_t   wiced_bt_ble_host_phy_preferences_t;
 
-#define BTM_BLE_PREFER_NO_LELR                         0x0000 /**< No preferred coding */
-#define BTM_BLE_PREFER_LELR_125K                       0x0001 /**< Preferred coding is S=2 */
-#define BTM_BLE_PREFER_LELR_512K                       0x0002 /**< Preferred coding is S=8 */
+#define BTM_BLE_PREFER_NO_LELR    0x0000 /**< No preferred coding */
+#define BTM_BLE_PREFER_LELR_S2    0x0001 /**< Preferred coding is S=2, 500 kb/s */
+#define BTM_BLE_PREFER_LELR_S8    0x0002 /**< Preferred coding is S=8, 125 kb/s */
+
+/**
+ * @note BTM_BLE_PREFER_LELR_512K and BTM_BLE_PREFER_LELR_125K are going to be deprecated.
+ * Use BTM_BLE_PREFER_LELR_S2 and BTM_BLE_PREFER_LELR_S8 instead.
+ */
+#define BTM_BLE_PREFER_LELR_512K    BTM_BLE_PREFER_LELR_S2 /**< @note To be deprecated use \ref BTM_BLE_PREFER_LELR_S2 */
+#define BTM_BLE_PREFER_LELR_125K    BTM_BLE_PREFER_LELR_S8 /**< @note To be deprecated use \ref BTM_BLE_PREFER_LELR_S8 */
 
 /**  The PHY_options parameter is a bit field that allows the Host to specify options
  *    for LE long range PHY. Default connection is with no LE coded PHY.The Controller may override any
@@ -815,6 +822,7 @@ typedef struct
     uint8_t     tx_power;
     uint8_t     rssi;
     uint8_t     cte_type;
+    uint16_t    periodic_evt_counter;
     uint8_t     sub_event;
     uint8_t     data_status;
     uint8_t     data_length;                                /**< Length of the subevent indication data  */

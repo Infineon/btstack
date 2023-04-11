@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"group__wiced__bt__mesh__light__ctl__server.html#ga31d00ceb59ef7db4fc28879b20509808":[1,0,2,16,0],
-"group__wiced__bt__mesh__light__ctl__server.html#ga4a9b2818fca0e0ca075045a4905d0eac":[1,0,2,16,1],
 "group__wiced__bt__mesh__light__ctl__server.html#ga6a3c44332d8149a9ee922d8007ea8f94":[1,0,2,16,6],
 "group__wiced__bt__mesh__light__ctl__server.html#ga794cb5d5a4e341379bb70536b8ce41a3":[1,0,2,16,3],
 "group__wiced__bt__mesh__light__ctl__server.html#ga7c86ca7a890ae4fe7f1a97305dfe9b2a":[1,0,2,16,7],
@@ -124,6 +122,7 @@ var NAVTREEINDEX1 =
 "group__wiced__bt__mesh__model__light__lc__server.html#gaf857fcb55bb6493c1520ff9d7416928a":[1,0,2,22,0],
 "group__wiced__bt__mesh__models.html":[1,0,2],
 "group__wiced__bt__mesh__models.html#ga002171e5549f1b9a78712220855aa1cb":[1,0,2,113],
+"group__wiced__bt__mesh__models.html#ga040739f9972262688c78c945f631af8a":[1,0,2,164],
 "group__wiced__bt__mesh__models.html#ga056143bc1c99837f0824f39d94dcd244":[1,0,2,136],
 "group__wiced__bt__mesh__models.html#ga09b33cd37abb8712637cfec3223d2005":[1,0,2,152],
 "group__wiced__bt__mesh__models.html#ga12600391b31eb42978eb8959670103b4":[1,0,2,144],
@@ -167,6 +166,7 @@ var NAVTREEINDEX1 =
 "group__wiced__bt__mesh__models.html#gab74a3871693811ae897a7d80d8e3f93a":[1,0,2,150],
 "group__wiced__bt__mesh__models.html#gab8c8aef8d2255030ba1b5b430da95d3d":[1,0,2,157],
 "group__wiced__bt__mesh__models.html#gabbefa81d7ef47be9593ed93c80221946":[1,0,2,132],
+"group__wiced__bt__mesh__models.html#gabf8b966c4acdd4d8035acb264852c951":[1,0,2,163],
 "group__wiced__bt__mesh__models.html#gac290185d2284f327e37042878522094c":[1,0,2,140],
 "group__wiced__bt__mesh__models.html#gac795a2a9ea8f003c58113c23d12e7ceb":[1,0,2,129],
 "group__wiced__bt__mesh__models.html#gaca85d3e843373ba038d444bf75349cc0":[1,0,2,159],
@@ -175,7 +175,7 @@ var NAVTREEINDEX1 =
 "group__wiced__bt__mesh__models.html#gad1d333fbc179417919390f7d2608c7d9":[1,0,2,161],
 "group__wiced__bt__mesh__models.html#gad1f64d6cb990d50e97aeef2018da01b9":[1,0,2,123],
 "group__wiced__bt__mesh__models.html#gadadea936ad14f7ecdef0e8419eda2934":[1,0,2,149],
-"group__wiced__bt__mesh__models.html#gadd4e9a3c7edc1b5c0e7a20106f3be48d":[1,0,2,163],
+"group__wiced__bt__mesh__models.html#gadd4e9a3c7edc1b5c0e7a20106f3be48d":[1,0,2,165],
 "group__wiced__bt__mesh__models.html#gae191641b773db5b28a85cb2aec02981e":[1,0,2,141],
 "group__wiced__bt__mesh__models.html#gae202cddf29465ddbc705bd7b0427f68e":[1,0,2,121],
 "group__wiced__bt__mesh__models.html#gae7ee9d791394ed2c2c2d5d7a9342743e":[1,0,2,108],

@@ -1270,8 +1270,6 @@
     <member refid="group__wiced__bt__mesh__core_1gac76ead3405e33dd3fa4f8844b1140558" kind="variable"><name>wiced_bt_mesh_core_write_config_delay</name></member>
     <member refid="group__wiced__bt__mesh__core_1ga457c303574ad2fc3970319743c106c00" kind="variable"><name>wiced_bt_core_short_trans_mic</name></member>
     <member refid="group__wiced__bt__mesh__core_1gae94d91477d3820045a68253ca07ad044" kind="variable"><name>wiced_bt_core_iv_update_test_mode</name></member>
-    <member refid="group__wiced__bt__mesh__core_1gab05caf699466e69eaea83685b6cd0d46" kind="variable"><name>wiced_bt_core_lower_transport_seg_trans_timeout_ms</name></member>
-    <member refid="group__wiced__bt__mesh__core_1ga4ceeacfaa2f37d06d9e53a00486133b4" kind="variable"><name>wiced_bt_core_lower_transport_seg_trans_cnt</name></member>
     <member refid="group__wiced__bt__mesh__core_1gab29a265dd3459d528acd525fae75c21a" kind="variable"><name>wiced_bt_core_boost_cpu_on_crypt_op</name></member>
     <member refid="group__wiced__bt__mesh__core_1ga8a80d7f9d8040e2773ad0abe7040b9fa" kind="variable"><name>wiced_bt_mesh_core_unprovisioned_beacon_interval</name></member>
     <member refid="group__wiced__bt__mesh__core_1ga313ce4b3dd41b04450a0cc5ff30ec0bf" kind="variable"><name>wiced_bt_mesh_core_provisioning_srv_adv_interval</name></member>
@@ -1343,6 +1341,7 @@
     <member refid="wiced__bt__mesh__core_8h_1a08039083641de393e46a26af9ec7733e" kind="function"><name>wiced_bt_mesh_core_set_adv_bdaddr</name></member>
     <member refid="wiced__bt__mesh__core_8h_1a29655a1e9dd136c64f4848f8ab314c8d" kind="function"><name>wiced_bt_mesh_core_delay_statistics_get</name></member>
     <member refid="wiced__bt__mesh__core_8h_1a797b24f4317ac3d4bb0d5271997e1359" kind="function"><name>wiced_bt_mesh_core_delay_statistics_reset</name></member>
+    <member refid="wiced__bt__mesh__core_8h_1ae868140a5416701caf3344d35a2e09ab" kind="function"><name>wiced_bt_mesh_set_inter_segment_delay</name></member>
   </compound>
   <compound refid="wiced__bt__mesh__dfu_8h" kind="file"><name>wiced_bt_mesh_dfu.h</name>
   </compound>
@@ -2846,6 +2845,8 @@
     <member refid="group__wiced__bt__mesh__models_1ga645656708d9462cca755b56f5b43ac43" kind="function"><name>wiced_bt_mesh_remote_provisioning_nonconnectable_adv_packet</name></member>
     <member refid="group__wiced__bt__mesh__models_1gad1d333fbc179417919390f7d2608c7d9" kind="function"><name>wiced_bt_mesh_models_set_trace_level</name></member>
     <member refid="group__wiced__bt__mesh__models_1ga8a49a7e773deb5fc3400b0fc363263a8" kind="function"><name>wiced_bt_mesh_model_find_element_idx</name></member>
+    <member refid="group__wiced__bt__mesh__models_1gabf8b966c4acdd4d8035acb264852c951" kind="function"><name>wiced_bt_mesh_config_server_message_handler</name></member>
+    <member refid="group__wiced__bt__mesh__models_1ga040739f9972262688c78c945f631af8a" kind="function"><name>wiced_bt_mesh_config_server_send_reply</name></member>
   </compound>
   <compound refid="wiced__bt__mesh__private__proxy_8h" kind="file"><name>wiced_bt_mesh_private_proxy.h</name>
   </compound>
@@ -2929,6 +2930,8 @@
     <member refid="group__wiced__bt__mesh__provisioning_1ga55ddd33adf20052eb0dbd54bca5c2aed" kind="define"><name>WICED_BT_MESH_DF_DIRECTED_CONTROL_RELAY_RETRANSMIT_STATUS</name></member>
     <member refid="group__wiced__bt__mesh__provisioning_1ga864bf1d766cefdf61afc26747d355019" kind="define"><name>WICED_BT_MESH_CONFIG_LARGE_COMPOS_DATA_STATUS</name></member>
     <member refid="group__wiced__bt__mesh__provisioning_1gaec700cf9dc227c0c4d29b050d5a988da" kind="define"><name>WICED_BT_MESH_CONFIG_MODELS_METADATA_STATUS</name></member>
+    <member refid="group__wiced__bt__mesh__provisioning_1ga92017cde64dbab2f2f8b1e0108db3678" kind="define"><name>WICED_BT_MESH_CONFIG_SAR_TRANSMITTER_STATUS</name></member>
+    <member refid="group__wiced__bt__mesh__provisioning_1ga7447f48e6f40d95078e68a695eeab082" kind="define"><name>WICED_BT_MESH_CONFIG_SAR_RECEIVER_STATUS</name></member>
     <member refid="wiced__bt__mesh__provision_8h_1ace3e0f222718c1f10ffe56d7ed3fbbd3" kind="define"><name>WICED_BT_MESH_AD_FILTER_TYPES_MAX</name></member>
     <member refid="wiced__bt__mesh__provision_8h_1a6da92d93815ffc606c4824a68b9adbac" kind="define"><name>CONNECT_TYPE_NODE_ID</name></member>
     <member refid="wiced__bt__mesh__provision_8h_1a55701ae8eeca2dca690c8309a61e1f85" kind="define"><name>CONNECT_TYPE_NET_ID</name></member>
@@ -3129,6 +3132,8 @@
     <member refid="group__wiced__bt__mesh__provisioning_1ga67ff1cf5af81b4fa3b3575ceafeb11cd" kind="function"><name>wiced_bt_mesh_provision_retrieve_record</name></member>
     <member refid="group__wiced__bt__mesh__provisioning_1ga65a520aece993585a65364b4eeae0c94" kind="function"><name>wiced_bt_mesh_provision_send_invite</name></member>
   </compound>
+  <compound refid="wiced__bt__mesh__sar_8h" kind="file"><name>wiced_bt_mesh_sar.h</name>
+  </compound>
   <compound refid="group__wiced__bt__mesh__core" kind="group"><name>wiced_bt_mesh_core</name>
     <member refid="group__wiced__bt__mesh__core_1ga835762c5ffaaf4bc6d752ff2a4df81e8" kind="define"><name>WICED_BT_MESH_CORE_FEATURE_BIT_RELAY</name></member>
     <member refid="group__wiced__bt__mesh__core_1gaaa9c9bc83f787d4573b60b3b317b7110" kind="define"><name>WICED_BT_MESH_CORE_FEATURE_BIT_FRIEND</name></member>
@@ -3319,8 +3324,6 @@
     <member refid="group__wiced__bt__mesh__core_1gac76ead3405e33dd3fa4f8844b1140558" kind="variable"><name>wiced_bt_mesh_core_write_config_delay</name></member>
     <member refid="group__wiced__bt__mesh__core_1ga457c303574ad2fc3970319743c106c00" kind="variable"><name>wiced_bt_core_short_trans_mic</name></member>
     <member refid="group__wiced__bt__mesh__core_1gae94d91477d3820045a68253ca07ad044" kind="variable"><name>wiced_bt_core_iv_update_test_mode</name></member>
-    <member refid="group__wiced__bt__mesh__core_1gab05caf699466e69eaea83685b6cd0d46" kind="variable"><name>wiced_bt_core_lower_transport_seg_trans_timeout_ms</name></member>
-    <member refid="group__wiced__bt__mesh__core_1ga4ceeacfaa2f37d06d9e53a00486133b4" kind="variable"><name>wiced_bt_core_lower_transport_seg_trans_cnt</name></member>
     <member refid="group__wiced__bt__mesh__core_1gab29a265dd3459d528acd525fae75c21a" kind="variable"><name>wiced_bt_core_boost_cpu_on_crypt_op</name></member>
     <member refid="group__wiced__bt__mesh__core_1ga8a80d7f9d8040e2773ad0abe7040b9fa" kind="variable"><name>wiced_bt_mesh_core_unprovisioned_beacon_interval</name></member>
     <member refid="group__wiced__bt__mesh__core_1ga313ce4b3dd41b04450a0cc5ff30ec0bf" kind="variable"><name>wiced_bt_mesh_core_provisioning_srv_adv_interval</name></member>
@@ -3510,6 +3513,8 @@
     <member refid="group__wiced__bt__mesh__models_1ga645656708d9462cca755b56f5b43ac43" kind="function"><name>wiced_bt_mesh_remote_provisioning_nonconnectable_adv_packet</name></member>
     <member refid="group__wiced__bt__mesh__models_1gad1d333fbc179417919390f7d2608c7d9" kind="function"><name>wiced_bt_mesh_models_set_trace_level</name></member>
     <member refid="group__wiced__bt__mesh__models_1ga8a49a7e773deb5fc3400b0fc363263a8" kind="function"><name>wiced_bt_mesh_model_find_element_idx</name></member>
+    <member refid="group__wiced__bt__mesh__models_1gabf8b966c4acdd4d8035acb264852c951" kind="function"><name>wiced_bt_mesh_config_server_message_handler</name></member>
+    <member refid="group__wiced__bt__mesh__models_1ga040739f9972262688c78c945f631af8a" kind="function"><name>wiced_bt_mesh_config_server_send_reply</name></member>
     <member refid="group__wiced__bt__mesh__models_1ga3daa5b0817f9552901ee39f38cc00621" kind="define"><name>WICED_BT_BATTERY_LEVEL_UNKNOWN</name></member>
     <member refid="group__wiced__bt__mesh__models_1gac795a2a9ea8f003c58113c23d12e7ceb" kind="define"><name>WICED_BT_BATTERY_TIME_TO_DISCHARGE_UNKNOWN</name></member>
     <member refid="group__wiced__bt__mesh__models_1ga2b4c1569fc411dc57d64a5f84b41b8f5" kind="define"><name>WICED_BT_BATTERY_TIME_TO_CHARGE_UNKNOWN</name></member>
@@ -4072,6 +4077,8 @@
     <member refid="group__wiced__bt__mesh__provisioning_1ga55ddd33adf20052eb0dbd54bca5c2aed" kind="define"><name>WICED_BT_MESH_DF_DIRECTED_CONTROL_RELAY_RETRANSMIT_STATUS</name></member>
     <member refid="group__wiced__bt__mesh__provisioning_1ga864bf1d766cefdf61afc26747d355019" kind="define"><name>WICED_BT_MESH_CONFIG_LARGE_COMPOS_DATA_STATUS</name></member>
     <member refid="group__wiced__bt__mesh__provisioning_1gaec700cf9dc227c0c4d29b050d5a988da" kind="define"><name>WICED_BT_MESH_CONFIG_MODELS_METADATA_STATUS</name></member>
+    <member refid="group__wiced__bt__mesh__provisioning_1ga92017cde64dbab2f2f8b1e0108db3678" kind="define"><name>WICED_BT_MESH_CONFIG_SAR_TRANSMITTER_STATUS</name></member>
+    <member refid="group__wiced__bt__mesh__provisioning_1ga7447f48e6f40d95078e68a695eeab082" kind="define"><name>WICED_BT_MESH_CONFIG_SAR_RECEIVER_STATUS</name></member>
     <member refid="group__wiced__bt__mesh__provisioning_1ga9fa82908adbc925b11ac1054dad231e1" kind="define"><name>OPERATION_ADD</name></member>
     <member refid="group__wiced__bt__mesh__provisioning_1ga530a7b7a33ad0dda31288df908248cae" kind="define"><name>OPERATION_DELETE</name></member>
     <member refid="group__wiced__bt__mesh__provisioning_1gab31f9359f2a7ae944e1d2436273840c1" kind="define"><name>OPERATION_OVERWRITE</name></member>

@@ -2038,14 +2038,16 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <p>The opt parameter allows passing specific options like:</p><ul>
 <li>NO_RTP : do not add the RTP header to buffer</li>
 </ul>
+<p>Market bit is 1-bit field in RTP header could be used to distinguished the first packet after a silence period during which packets have not been transmitted contiguously,should be distinguished by setting the marker bit in the RTP data header to one. The marker bit in all other packets is zero. (Refer <a href="https://www.rfc-editor.org/rfc/rfc3550.html">https://www.rfc-editor.org/rfc/rfc3550.html</a>)</p>
+<p>Payload type is 7-bit field in RTP header which denotes the media type defined in RTP spec(Refer <a href="https://datatracker.ietf.org/doc/html/rfc3551">https://datatracker.ietf.org/doc/html/rfc3551</a> )</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: AVDT connection handle </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_media_buf</td><td>: Pointer to the media buffer to write </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buf_len</td><td>: Size of the buffer </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">time_stamp</td><td>: Time stamp </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">m_pt</td><td>: Marker and payload byte </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>: Date option mask (see <a class="el" href="group__wicedbt__avdt.html#AVDT_DATA_OPT">AVDT data options</a>)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m_pt</td><td>: Marker and Payload type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>: Data option mask either to include or skip RTP header in media packet(see <a class="el" href="group__wicedbt__avdt.html#AVDT_DATA_OPT">AVDT data options</a>)</td></tr>
   </table>
   </dd>
 </dl>
