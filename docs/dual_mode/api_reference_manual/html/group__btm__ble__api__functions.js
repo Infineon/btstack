@@ -60,6 +60,24 @@ var group__btm__ble__api__functions =
       [ "adv_duration", "structwiced__bt__ble__ext__adv__duration__config__t.html#ad6df903e8310aafc6810b0b758c4b7b9", null ],
       [ "max_ext_adv_events", "structwiced__bt__ble__ext__adv__duration__config__t.html#a599a64503308e67254d8d425295e591d", null ]
     ] ],
+    [ "wiced_bt_ble_ext_adv_params_t", "structwiced__bt__ble__ext__adv__params__t.html", [
+      [ "event_properties", "structwiced__bt__ble__ext__adv__params__t.html#ad79e7e013ed1de5d6cab6b523c189b31", null ],
+      [ "primary_adv_int_min", "structwiced__bt__ble__ext__adv__params__t.html#a0278c29d9b1d456cc9fea94a18a886be", null ],
+      [ "primary_adv_int_max", "structwiced__bt__ble__ext__adv__params__t.html#a4d328246b594f4e61ae47ba20baf3278", null ],
+      [ "primary_adv_channel_map", "structwiced__bt__ble__ext__adv__params__t.html#ac5dc81aee02855b37bfa287e33f96086", null ],
+      [ "own_addr_type", "structwiced__bt__ble__ext__adv__params__t.html#a5d9d086d370cc284b5795974972151c8", null ],
+      [ "peer_addr_type", "structwiced__bt__ble__ext__adv__params__t.html#a1559b052e3228ff66c4fee8226808494", null ],
+      [ "peer_addr", "structwiced__bt__ble__ext__adv__params__t.html#abeedfb0779205c4b4dc05198436b6f3c", null ],
+      [ "adv_filter_policy", "structwiced__bt__ble__ext__adv__params__t.html#a1438af74dba70a4b97d664d2bdfe8fc5", null ],
+      [ "adv_tx_power", "structwiced__bt__ble__ext__adv__params__t.html#af79165156c686c8770b057c6f20e3ab2", null ],
+      [ "primary_adv_phy", "structwiced__bt__ble__ext__adv__params__t.html#a318da9a5a6008892a38f15c606ef1f19", null ],
+      [ "secondary_adv_max_skip", "structwiced__bt__ble__ext__adv__params__t.html#a49498625c2f25ca638eec2023373b822", null ],
+      [ "secondary_adv_phy", "structwiced__bt__ble__ext__adv__params__t.html#a180d46350a484c249a6f583f60632ad5", null ],
+      [ "adv_sid", "structwiced__bt__ble__ext__adv__params__t.html#ab56e1f7b7d90fc4f3398073a3796d67b", null ],
+      [ "scan_request_not", "structwiced__bt__ble__ext__adv__params__t.html#a821bbd73668fdfb12e614a7066906c27", null ],
+      [ "primary_phy_opts", "structwiced__bt__ble__ext__adv__params__t.html#a1449852b42d06d7196e6324753fb23f6", null ],
+      [ "secondary_phy_opts", "structwiced__bt__ble__ext__adv__params__t.html#a7a0093c035276177a48e20849f251824", null ]
+    ] ],
     [ "wiced_bt_ble_ext_conn_cfg_t", "structwiced__bt__ble__ext__conn__cfg__t.html", [
       [ "initiating_phys", "structwiced__bt__ble__ext__conn__cfg__t.html#a7ced4554dd87cc10a92daafb5ab0c370", null ],
       [ "scan_int", "structwiced__bt__ble__ext__conn__cfg__t.html#ab45ec5167a8184cd5936dc2ff2f7d4a3", null ],
@@ -244,6 +262,7 @@ var group__btm__ble__api__functions =
     [ "wiced_bt_ble_ext_filter_policy_t", "group__btm__ble__api__functions.html#gaf0ef601e684add601e7fe71fb4a6cfb0", null ],
     [ "wiced_bt_ble_adv_sync_options_t", "group__btm__ble__api__functions.html#ga9ca488f9e3a161d2d37dccb4f5992c7e", null ],
     [ "wiced_bt_ble_periodic_adv_sync_transfer_mode_t", "group__btm__ble__api__functions.html#ga0fcc30537c71955222aa684d4529f488", null ],
+    [ "wiced_bt_ble_phy_adv_options_t", "group__btm__ble__api__functions.html#ga6dbdc6514657b7399033c11f9bbeab35", null ],
     [ "wiced_bt_ble_periodic_adv_sync_handle_t", "group__btm__ble__api__functions.html#ga70c1c3632c806556629a4009d009ed8d", null ],
     [ "wiced_bt_ble_adv_report_event_mask_t", "group__btm__ble__api__functions.html#gaeef30254c858058c82419185b0ddfb19", null ],
     [ "wiced_bt_ble_ext_adv_report_count_t", "group__btm__ble__api__functions.html#gae39922d547c599431fbcf3ce82b9f905", null ],
@@ -395,7 +414,12 @@ var group__btm__ble__api__functions =
     [ "wiced_bt_ble_periodic_adv_sync_transfer_mode_e", "group__btm__ble__api__functions.html#gad87f6ef7689d0d4d3cdaf1a43b4032a6", [
       [ "WICED_BT_BLE_IGNORE_PA_SYNC_TRANSFER_EVT", "group__btm__ble__api__functions.html#ggad87f6ef7689d0d4d3cdaf1a43b4032a6a027f7f75ae4e289bf26fb3bddcc1577d", null ],
       [ "WICED_BT_BLE_ENABLE_PA_SYNC_TRANSFER_DISABLE_PA_REPORT_EVT", "group__btm__ble__api__functions.html#ggad87f6ef7689d0d4d3cdaf1a43b4032a6a7f4f9bb5a98ef9c9c5862d55e874e6ff", null ],
-      [ "WICED_BT_BLE_ENABLE_PA_SYNC_TRANSFER_ENABLE_PA_REPORT_EVT", "group__btm__ble__api__functions.html#ggad87f6ef7689d0d4d3cdaf1a43b4032a6aa0a144bf54726daeab19fdca5d168040", null ]
+      [ "WICED_BT_BLE_ENABLE_PA_SYNC_TRANSFER_ENABLE_PA_REPORT_EVT", "group__btm__ble__api__functions.html#ggad87f6ef7689d0d4d3cdaf1a43b4032a6aa0a144bf54726daeab19fdca5d168040", null ],
+      [ "WICED_BT_BLE_PHY_ADV_OPTIONS_NO_PREFERENCE", "group__btm__ble__api__functions.html#gga16af7b253440dadd46a80a4b9fddba4dad15fb4e53675e80ddbaf9b56da54d9c2", null ],
+      [ "WICED_BT_BLE_PHY_ADV_OPTIONS_PREFER_S2", "group__btm__ble__api__functions.html#gga16af7b253440dadd46a80a4b9fddba4da78a755f6f52e1e428ff6fef358a89ecf", null ],
+      [ "WICED_BT_BLE_PHY_ADV_OPTIONS_PREFER_S8", "group__btm__ble__api__functions.html#gga16af7b253440dadd46a80a4b9fddba4daf402915af25ed8e476de994de095ba38", null ],
+      [ "WICED_BT_BLE_PHY_ADV_OPTIONS_REQUIRE_S2", "group__btm__ble__api__functions.html#gga16af7b253440dadd46a80a4b9fddba4da9fa026a32f840c2c8b6089b0c2cc7dec", null ],
+      [ "WICED_BT_BLE_PHY_ADV_OPTIONS_REQUIRE_S8", "group__btm__ble__api__functions.html#gga16af7b253440dadd46a80a4b9fddba4da03a513fc30fbc12b7b2866c798f60e08", null ]
     ] ],
     [ "wiced_bt_ble_ext_adv_report_count_e", "group__btm__ble__api__functions.html#ga8739336a6d1ebba1faaf824bc5c1024d", [
       [ "ADV_REP_EVT_COUNT_MIN", "group__btm__ble__api__functions.html#gga8739336a6d1ebba1faaf824bc5c1024da2e150f9aebb639d8b399e3063d3db808", null ],

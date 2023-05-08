@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/r1/builds/vzVwSv2k/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1449" column="1" bodyfile="C:/r1/builds/vzVwSv2k/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1449" bodyend="-1"/>
+        <location file="C:/r1/builds/cntsQZEy/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1449" column="1" bodyfile="C:/r1/builds/cntsQZEy/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1449" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__hue__status__data__t_1aedad4966d33a4a0040b6eed658a6d8f9" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/r1/builds/vzVwSv2k/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1450" column="1" bodyfile="C:/r1/builds/vzVwSv2k/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1450" bodyend="-1"/>
+        <location file="C:/r1/builds/cntsQZEy/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1450" column="1" bodyfile="C:/r1/builds/cntsQZEy/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1450" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__hue__status__data__t_1a174e8d29bf98b2d64e8f61662e2abaf3" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/r1/builds/vzVwSv2k/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1451" column="1" bodyfile="C:/r1/builds/vzVwSv2k/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1451" bodyend="-1"/>
+        <location file="C:/r1/builds/cntsQZEy/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1451" column="1" bodyfile="C:/r1/builds/cntsQZEy/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1451" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -52,7 +52,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/r1/builds/vzVwSv2k/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1448" column="1" bodyfile="C:/r1/builds/vzVwSv2k/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1447" bodyend="1452"/>
+    <location file="C:/r1/builds/cntsQZEy/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1448" column="1" bodyfile="C:/r1/builds/cntsQZEy/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1447" bodyend="1452"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__light__hsl__hue__status__data__t_1a41912d29e9e7583955af0b6ff0167c4d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_hue_status_data_t</scope><name>present_hue</name></member>
       <member refid="structwiced__bt__mesh__light__hsl__hue__status__data__t_1a174e8d29bf98b2d64e8f61662e2abaf3" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_hue_status_data_t</scope><name>remaining_time</name></member>

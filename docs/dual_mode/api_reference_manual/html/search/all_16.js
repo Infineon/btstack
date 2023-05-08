@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['v',['v',['../structwiced__bt__sdp__discovery__attribute__value__t.html#a1f872dc1c4f3d0f95afaf9c978a597ee',1,'wiced_bt_sdp_discovery_attribute_value_t']]],
+  ['v',['v',['../structwiced__bt__sdp__discovery__attribute__value__t.html#a8e2e1b393a354f04518cb735855d26ac',1,'wiced_bt_sdp_discovery_attribute_value_t']]],
   ['val_5fhandle',['val_handle',['../structwiced__bt__gatt__char__declaration__t.html#a2b426ef607f5ea21963bd09e6050f4e5',1,'wiced_bt_gatt_char_declaration_t']]],
   ['val_5flen',['val_len',['../structwiced__bt__gatt__write__req__t.html#a3046b6c49c4bb75fad8c7d73a0e66330',1,'wiced_bt_gatt_write_req_t']]],
   ['value',['value',['../structwiced__bt__power__mgmt__notification__t.html#af0f4f54821fa04ca3d4bcbe67c750798',1,'wiced_bt_power_mgmt_notification_t']]],

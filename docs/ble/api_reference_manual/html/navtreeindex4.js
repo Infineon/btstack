@@ -1,5 +1,13 @@
 var NAVTREEINDEX4 =
 {
+"group__wicedbt__gatt.html#ga38354ffdf7194b42d5d78069a14568d4":[1,3,45],
+"group__wicedbt__gatt.html#ga3b43418049399accbe6bf33b39da9c68":[1,3,88],
+"group__wicedbt__gatt.html#ga3d73409cb072fcca477913ec1ec1264f":[1,3,39],
+"group__wicedbt__gatt.html#ga401c1e4feca51776cf572f4c5efce274":[1,3,76],
+"group__wicedbt__gatt.html#ga44fcc1fe578d11d29279b92a7fcc936d":[1,3,89],
+"group__wicedbt__gatt.html#ga498a040c6ad01dd19d214d5b64b8a7a2":[1,3,93],
+"group__wicedbt__gatt.html#ga511b4fcc444e38aa416d71e16981e48c":[1,3,74],
+"group__wicedbt__gatt.html#ga51a4bde18db79359bec10b5309f5a29b":[1,3,37],
 "group__wicedbt__gatt.html#ga56509bfc8babb79b4543be997b6a8ded":[1,3,58],
 "group__wicedbt__gatt.html#ga58f0e454eb4b1dbf9f95779f4bd2ee75":[1,3,54],
 "group__wicedbt__gatt.html#ga6025f6cc5dd0b90ce746ef671028bd58":[1,3,51],
@@ -241,13 +249,5 @@ var NAVTREEINDEX4 =
 "group__wicedbt__gatt.html#ggabda9597f28d2e1ddbdd82b7785a4659fa3a6cc08277ea15ef3a398696a45ca878":[1,3,111,0],
 "group__wicedbt__gatt.html#ggabda9597f28d2e1ddbdd82b7785a4659fa5d336bc84dd9c89c8fe9b51d6a052f03":[1,3,111,3],
 "group__wicedbt__gatt.html#ggabda9597f28d2e1ddbdd82b7785a4659fa6dde4da438650d50f37163f0a6951158":[1,3,111,4],
-"group__wicedbt__gatt.html#ggad8d1c475c5995f5351c2c52de0394321a1b8ab4c39e7f684cb0361b638cbe22bf":[1,3,108,1],
-"group__wicedbt__gatt.html#ggad8d1c475c5995f5351c2c52de0394321a35dc117c2476b92720114abfa142a45e":[1,3,108,2],
-"group__wicedbt__gatt.html#ggad8d1c475c5995f5351c2c52de0394321a4cc9ef78dd96b94767cb429ebffd7fee":[1,3,108,0],
-"group__wicedbt__gatt.html#ggae9cf9c9ea35e6f1bf6d95ad14a26d420a49ce03dbc15abddceba02e0a6f9acfc9":[1,3,112,1],
-"group__wicedbt__gatt.html#ggae9cf9c9ea35e6f1bf6d95ad14a26d420a9c7dd2d96164aafdda8d8f644045e3a1":[1,3,112,0],
-"group__wicedbt__utility.html":[1,1,4],
-"group__wicedbt__utility.html#ga10e6d57bbd051aaf42815071f6631d6f":[1,1,4,9],
-"group__wicedbt__utility.html#ga449c0b615910dc6de36b15b870c1d920":[1,1,4,5],
-"group__wicedbt__utility.html#ga47d967c6345178460a13cbcb9bebebd0":[1,1,4,8]
+"group__wicedbt__gatt.html#ggad8d1c475c5995f5351c2c52de0394321a1b8ab4c39e7f684cb0361b638cbe22bf":[1,3,108,1]
 };

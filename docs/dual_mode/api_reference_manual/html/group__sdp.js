@@ -6,7 +6,7 @@ var group__sdp =
       [ "u32", "structwiced__bt__sdp__discovery__attribute__value__t.html#a4539a63e674db9a7f8679e96899c8ff6", null ],
       [ "array", "structwiced__bt__sdp__discovery__attribute__value__t.html#af6a3f4b4c91e082726806b53552a07ab", null ],
       [ "p_sub_attr", "structwiced__bt__sdp__discovery__attribute__value__t.html#a2f227b7c2507e15f733a6b84c2538e0e", null ],
-      [ "v", "structwiced__bt__sdp__discovery__attribute__value__t.html#a1f872dc1c4f3d0f95afaf9c978a597ee", null ]
+      [ "v", "structwiced__bt__sdp__discovery__attribute__value__t.html#a8e2e1b393a354f04518cb735855d26ac", null ]
     ] ],
     [ "wiced_bt_sdp_discovery_attribute_t", "structwiced__bt__sdp__discovery__attribute__t.html", [
       [ "p_next_attr", "structwiced__bt__sdp__discovery__attribute__t.html#a8928cd1e5271eea889abcf0d56b99e56", null ],

@@ -457,6 +457,28 @@
 #define HCI_BLE_ISOC_REMOVE_DATA_PATH       (0x006F | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_SET_HOST_FEATURE            (0x0074 | HCI_GRP_BLE_CMDS)
 
+#define HCI_LE_ENHANCED_READ_TRANSMIT_POWER_LEVEL           ( 0x76  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_READ_REMOTE_TRANSMIT_POWER_LEVEL             ( 0x77  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_PATH_LOSS_REPORTING_PARAMETERS           ( 0x78  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_PATH_LOSS_REPORTING_ENABLE               ( 0x79  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_TRANSMIT_POWER_REPORTING_ENABLE          ( 0x7A  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_TRANSMITTER_TEST_V4                          ( 0x7B  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_DATA_RELATED_ADDRESS_CHANGES             ( 0x7C  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_DEFAULT_SUBRATE                          ( 0x7D  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SUBRATE_REQUEST                              ( 0x7E  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_EXTENDED_ADVERTISING_PARAMETERS_V2       ( 0x7F  | HCI_GRP_BLE_CMDS)
+
+
+#define HCI_LE_SET_PERIODIC_ADVERTISING_SUBEVENT_DATA       ( 0x82  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_PERIODIC_ADVERTISING_RESPONSE_DATA       ( 0x83  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_PERIODIC_SYNC_SUBEVENT                   ( 0x84  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_EXTENDED_CREATE_CONNECTION_V5                ( 0x85  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_PERIODIC_ADVERTISING_PARAMETERS_V2       ( 0x86  | HCI_GRP_BLE_CMDS)
+
+
+#define HCI_LE_GENERATE_DHKEY_V2                            ( 0x5e  | HCI_GRP_BLE_CMDS)
+
+
 
 /* LE supported states definition */
 #define HCI_LE_ADV_STATE          0x00000001
@@ -2090,7 +2112,18 @@ typedef struct
 #define HCI_LE_FEATURE_POWER_CTRL_REQ_BIT_POS               33      /**< LE Power Control Request */
 #define HCI_LE_FEATURE_POWER_CHANGE_IND_BIT_POS             34      /**< LE Power Change Indication */
 #define HCI_LE_FEATURE_PATH_LOSS_MONITO_BIT_POS             35      /**< LE Path Loss Monitoring */
-#define HCI_LE_FEATURE_MAX_BIT_POS                          HCI_LE_FEATURE_PATH_LOSS_MONITO_BIT_POS       /**< Max Possible Value */
+#define HCI_LE_FEATURE_PERIODIC_ADV_ADI_SUPPORT_BIT_POS     36      /**< Periodic Advertising ADI Support */
+#define HCI_LE_FEATURE_CONNECTION_SUBRATING_BIT_POS         37      /**< Connection Subrating */
+#define HCI_LE_FEATURE_CONNECTION_SUBRATING_HOST_BIT_POS    38      /**< Connection Subrating (Host Support) */
+#define HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_BIT_POS       39      /**< Channel Classification */
+#define HCI_LE_FEATURE_ADV_CODING_SELECTION_BIT_POS         40      /**< Advertising Coding Selection */
+#define HCI_LE_FEATURE_ADV_CODING_SELECTION_HOST_BIT_POS    41      /**< Advertising Coding Selection (Host Support) */
+#define HCI_LE_FEATURE_PAWR_ADVERTISER_BIT_POS              43      /**< Periodic Advertising with Responses - Advertiser */
+#define HCI_LE_FEATURE_PAWR_SCANNER_BIT_POS                 44      /**< Periodic Advertising with Responses - Scanner */
+#define HCI_LE_FEATURE_MAX_BIT_POS HCI_LE_FEATURE_PAWR_SCANNER_BIT_POS /**< Max Possible Value */
+
+typedef uint8_t wiced_bt_ble_feature_bit_t; /**< LE supported feature bits */
+
 
 /*
 **   LE features encoding - page 0
@@ -2185,6 +2218,11 @@ typedef struct
 /* Minimum Number of Used Channels Procedure feature: bit 16*/
 //Todo
 
+/* LE Advertising Coding Selection: bit 40 */
+#define HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_MASK (1)
+#define HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_OFF 5
+#define HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION(x)                                                                              \
+    ((x)[HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_OFF] & HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_MASK)
 
 /*
 **   Local Supported Commands encoding

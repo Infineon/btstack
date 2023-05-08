@@ -1,5 +1,13 @@
 var NAVTREEINDEX10 =
 {
+"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3a77054e40ff77d1fa3fb25de3b5d91be2":[1,5,110,5],
+"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3a7e97c6366787c317c027aa3a1e648883":[1,5,110,4],
+"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3aa7f37ff5bedf1d351f58794a0b8f31a8":[1,5,110,6],
+"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3ad6e1eb38309c9111f10bfe10b0f0cf0b":[1,5,110,0],
+"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3afe3bf47fd5580486bf2d42569658c6ea":[1,5,110,3],
+"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a0036290c8a33c53d72e27b02865528b3":[1,5,105,23],
+"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a093cacbaf28cf52537659a1284383370":[1,5,105,37],
+"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a119eceba07f45ac0845a7251c365b869":[1,5,105,24],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a17658aae4d78d44463dcbf6d82126a74":[1,5,105,22],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a183c254525d543b5034ac5bd962eacaf":[1,5,105,18],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a1b1b881808e9f009c24cf940277cfd84":[1,5,105,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX10 =
 "structwiced__bt__avrc__browse__next__cmd__t.html":[1,2,33],
 "structwiced__bt__avrc__browse__next__cmd__t.html#ab6f743e540df2d2033c1149942c5aefc":[1,2,33,0],
 "structwiced__bt__avrc__browse__num__of__items__rsp__t.html":[1,2,56],
-"structwiced__bt__avrc__browse__num__of__items__rsp__t.html#a0cea312e8b1cfd903a59b1c85a567cbf":[1,2,56,0],
-"structwiced__bt__avrc__browse__num__of__items__rsp__t.html#add5d83554f4ea268c653b7e3109d235c":[1,2,56,1],
-"structwiced__bt__avrc__browse__rsp__t.html":[1,2,58],
-"structwiced__bt__avrc__browse__rsp__t.html#a000a74f1ece1205c03c0e66cc4ff077d":[1,2,58,2],
-"structwiced__bt__avrc__browse__rsp__t.html#a262a159700d60036df293b56ec7b9cc5":[1,2,58,0],
-"structwiced__bt__avrc__browse__rsp__t.html#a554c42b990e074a2de989ec0e586463d":[1,2,58,8],
-"structwiced__bt__avrc__browse__rsp__t.html#a61948ec1cd38b49e008db57709f33d46":[1,2,58,1],
-"structwiced__bt__avrc__browse__rsp__t.html#a7ba2955525786c777630b38c58af568c":[1,2,58,9],
-"structwiced__bt__avrc__browse__rsp__t.html#a84d22ae2014fa98ef0be835ed35d756c":[1,2,58,7]
+"structwiced__bt__avrc__browse__num__of__items__rsp__t.html#a0cea312e8b1cfd903a59b1c85a567cbf":[1,2,56,0]
 };

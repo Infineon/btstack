@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"group__gatt__client__api__functions.html#gae363a106fa85653e78cdf18d84c500d2":[1,3,2,7],
+"group__gatt__common__api.html":[1,3,3],
 "group__gatt__common__api.html#ga15d5aff42e22c934fbbde1a7a2680ff6":[1,3,3,4],
 "group__gatt__common__api.html#ga2bfd5052c63d135f8df4078a61d0938b":[1,3,3,7],
 "group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9":[1,3,3,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "group__wiced__mem.html#ga3a76bfa31cc060df2c279049036c71b2":[1,5,22],
 "group__wiced__mem.html#ga3d0f730da71f5eefc2ffb8c7047f02f9":[1,5,25],
 "group__wiced__mem.html#ga4490eaf46263868144322240d5553285":[1,5,29],
-"group__wiced__mem.html#ga46491871adba51d8026e9fa85acbbaba":[1,5,5],
-"group__wiced__mem.html#ga5180d91f266fbb45fb60ec66485b5c2e":[1,5,12],
-"group__wiced__mem.html#ga5d688277844f22111723e3339e725d8a":[1,5,19]
+"group__wiced__mem.html#ga46491871adba51d8026e9fa85acbbaba":[1,5,5]
 };

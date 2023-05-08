@@ -8,6 +8,10 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.7.1
+BTSTACK3.7.1 is a patch release with following enhancements -
+ - Add v2 support for HCI_LE_Set_Extended_Advertising_Parameters present in BT Core Spec 5.4
+
 ## V3.7.0
 BTSTACK3.7 contains following enhancements and fixes -
  - Enhancements for lowering stack library code size. Only the part of the stack code that is used by application is included in the linked image.
@@ -21,7 +25,7 @@ BTSTACK3.7 contains following enhancements and fixes -
    - wiced_bt_gatt_server_enable_signing
  - Fix to Correct macro names used for S=2 and S=8 coding
  - Fix for A2DP/SNK/AVP/BI-20-C, A2DP/SNK/AVP/BI-10-C failures
- - Fix issue settign default Tx power with CY BLESS controller.
+ - Fix issue setting default Tx power with CY BLESS controller.
  - Updated document for following APIs -
    - wiced_bt_l2cap_enable_update_ble_conn_params
    - wiced_bt_avdt_write_req

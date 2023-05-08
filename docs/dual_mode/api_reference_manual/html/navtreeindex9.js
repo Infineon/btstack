@@ -1,5 +1,13 @@
 var NAVTREEINDEX9 =
 {
+"group__wicedbt__avrc.html#gaf7829af4119885c4c2469882f86d3b38":[1,2,283],
+"group__wicedbt__avrc.html#gaf82aba859dc9511b2f3adb64e4b45d76":[1,2,675],
+"group__wicedbt__avrc.html#gaf935350c9d742fe17ba68349410aa1e4":[1,2,449],
+"group__wicedbt__avrc.html#gafa69ed2715a6ed352053b239053e4648":[1,2,334],
+"group__wicedbt__avrc.html#gafb75f0dcc57599555e0b0a570a151928":[1,2,574],
+"group__wicedbt__avrc.html#gafb8f089cc1e01b4193d484932e537ad8":[1,2,297],
+"group__wicedbt__avrc.html#gafbc0fa2168a5b186565d6c590d053427":[1,2,250],
+"group__wicedbt__avrc.html#gafc74537f8541af8fa0e1b65318f8f390":[1,2,645],
 "group__wicedbt__avrc.html#gafca7420ea7b9e0f6995eb6dad847a29a":[1,2,279],
 "group__wicedbt__avrc.html#gafd0cba16a4d1437a43dbca5f96ec4f74":[1,2,229],
 "group__wicedbt__avrc.html#gafd297a2479799465ca4550efbec9971e":[1,2,364],
@@ -241,13 +249,5 @@ var NAVTREEINDEX9 =
 "group__wicedbt__gatt.html#gga74bcbf0e406569a4b160911606784726abfefa1e28af0eb00d69291c0bb5635fd":[1,5,117,0],
 "group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3a368b0248b9044b3191d70264c120d914":[1,5,110,1],
 "group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3a52927de18ccd481c77e0fbb76052f420":[1,5,110,7],
-"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3a6c034d69f24b2376c40799f674bbd994":[1,5,110,2],
-"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3a77054e40ff77d1fa3fb25de3b5d91be2":[1,5,110,5],
-"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3a7e97c6366787c317c027aa3a1e648883":[1,5,110,4],
-"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3aa7f37ff5bedf1d351f58794a0b8f31a8":[1,5,110,6],
-"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3ad6e1eb38309c9111f10bfe10b0f0cf0b":[1,5,110,0],
-"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3afe3bf47fd5580486bf2d42569658c6ea":[1,5,110,3],
-"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a0036290c8a33c53d72e27b02865528b3":[1,5,105,23],
-"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a093cacbaf28cf52537659a1284383370":[1,5,105,37],
-"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a119eceba07f45ac0845a7251c365b869":[1,5,105,24]
+"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3a6c034d69f24b2376c40799f674bbd994":[1,5,110,2]
 };
