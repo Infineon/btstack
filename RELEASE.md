@@ -8,6 +8,10 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.7.2
+BTSTACK3.7.2 is a patch release with following fix -
+ - Fix an issue where GATT congestion release notification was not sent by Server side
+
 ## V3.7.1
 BTSTACK3.7.1 is a patch release with following enhancements -
  - Add v2 support for HCI_LE_Set_Extended_Advertising_Parameters present in BT Core Spec 5.4
