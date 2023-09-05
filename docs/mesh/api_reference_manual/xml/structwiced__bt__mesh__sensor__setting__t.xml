@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="346" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="346" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="346" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="346" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__setting__t_1aa1448214d2b60ce86275411bd4b82a0b" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="347" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="347" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="347" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="347" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__setting__t_1a7430fceece512fc122a62d7129b3e87c" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="348" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="348" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="348" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="348" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__setting__t_1adcbfa4728a811c5d90a66bcf46fa7a95" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="349" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="349" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="349" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="349" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -66,7 +66,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="343" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="342" bodyend="350"/>
+    <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="343" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="342" bodyend="350"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__sensor__setting__t_1aa1448214d2b60ce86275411bd4b82a0b" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_setting_t</scope><name>access</name></member>
       <member refid="structwiced__bt__mesh__sensor__setting__t_1a2607ca949eda3bd93742fce4302db83d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_setting_t</scope><name>setting_property_id</name></member>

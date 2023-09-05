@@ -698,6 +698,6 @@
 <codeline lineno="1283"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1284"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MESH_MODEL_DFU_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_dfu.h"/>
+    <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_dfu.h"/>
   </compounddef>
 </doxygen>

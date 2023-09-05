@@ -431,11 +431,13 @@
 
 #define HCI_BLE_READ_BUFFER_SIZE_V2         (0x0060 | HCI_GRP_BLE_CMDS)
 
+
 /* PAWR */
 #define HCI_BLE_SET_PAWR_SUBEVENT_IND_DATA  (0x0082 | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_SET_PAWR_SUBEVENT_RSP_DATA  (0x0083 | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_SET_PAWR_SYNC_SUBEVENT      (0x0084 | HCI_GRP_BLE_CMDS)
-#define HCI_BLE_SET_PAWR_PARAMS             (0x0086 | HCI_GRP_BLE_CMDS)
+#define HCI_BLE_SET_PERIODIC_ADV_PARAMS_V2  (0x0086 | HCI_GRP_BLE_CMDS)
+
 
 /* LE ISOC */
 #define HCI_BLE_ISOC_READ_TX_SYNC           (0x0061 | HCI_GRP_BLE_CMDS)
@@ -464,15 +466,15 @@
 #define HCI_LE_SET_TRANSMIT_POWER_REPORTING_ENABLE          ( 0x7A  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_TRANSMITTER_TEST_V4                          ( 0x7B  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_DATA_RELATED_ADDRESS_CHANGES             ( 0x7C  | HCI_GRP_BLE_CMDS)
-#define HCI_LE_SET_DEFAULT_SUBRATE                          ( 0x7D  | HCI_GRP_BLE_CMDS)
-#define HCI_LE_SUBRATE_REQUEST                              ( 0x7E  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_DEFAULT_SUBRATE_REQUEST                  ( 0x7D  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_SUBRATE_REQUEST                          ( 0x7E  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_EXTENDED_ADVERTISING_PARAMETERS_V2       ( 0x7F  | HCI_GRP_BLE_CMDS)
 
 
 #define HCI_LE_SET_PERIODIC_ADVERTISING_SUBEVENT_DATA       ( 0x82  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_PERIODIC_ADVERTISING_RESPONSE_DATA       ( 0x83  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_PERIODIC_SYNC_SUBEVENT                   ( 0x84  | HCI_GRP_BLE_CMDS)
-#define HCI_LE_EXTENDED_CREATE_CONNECTION_V5                ( 0x85  | HCI_GRP_BLE_CMDS)
+#define HCI_LE_EXTENDED_CREATE_CONNECTION_V2                ( 0x85  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_PERIODIC_ADVERTISING_PARAMETERS_V2       ( 0x86  | HCI_GRP_BLE_CMDS)
 
 
@@ -817,12 +819,15 @@
 #define HCI_BLE_ISOC_BIG_SYNC_LOST_EVT              0x1E
 #define HCI_BLE_ISOC_PEER_SCA_COMPLETE_EVT          0x1F
 #define HCI_BLE_BIGINFO_ADV_REPORT_EVT              0x22
+#define HCI_BLE_SUBRATE_CHANGE_EVT                  0x23
 
 /* PAWR */
 #define HCI_BLE_PAWR_SYNC_ESTABLISHED_EVT           0x24
 #define HCI_BLE_PAWR_IND_REPORT_EVT                 0x25
 #define HCI_BLE_PAWR_SUBEVENT_DATA_REQ_EVT          0x27
 #define HCI_BLE_PAWR_RSP_REPORT_EVT                 0x28
+#define HCI_BLE_ENHANCED_CONN_COMPLETE_V2_EVT       0x29
+
 
 /* ConnectionLess Broadcast events */
 #define HCI_SYNC_TRAIN_COMP_EVT             0x4F
@@ -1026,49 +1031,6 @@
     0x0000000000800000 Authenticated_Payload_Timeout_Expired Event
 */
 
-/* LE Event Mask
-    Bit     LE Subevent Types
-    0       LE Connection Complete Event
-    1       LE Advertising Report Event
-    2       LE Connection Update Complete Event
-    3       LE Read Remote Features Complete Event
-    4       LE Long Term Key Request Event
-    5       LE Remote Connection Parameter Request Event
-    6       LE Data Length Change Event
-    7       LE Read Local P-256 Public Key Complete Event
-    8       LE Generate DHKey Complete Event
-    9       LE Enhanced Connection Complete Event
-    10     LE Directed Advertising Report Event
-    11     LE PHY Update Complete Event
-    12     LE Extended Advertising Report Event
-    13     LE Periodic Advertising Sync Established Event
-    14     LE Periodic Advertising Report Event
-    15     LE Periodic Advertising Sync Lost Event
-    16     LE Extended Scan Timeout Event
-    17     LE Extended Advertising Set Terminated Event
-    18     LE Scan Request Received Event
-    19     LE Channel Selection Algorithm Event
-    20     LE Connectionless IQ Report event
-    21     LE Connection IQ Report event
-    22     LE CTE Request Failed event
-    23     LE Periodic Advertising Sync Transfer Received event
-    24     LE CIS Established event
-    25     LE CIS Request event
-    26     LE Create BIG Complete event
-    27     LE Terminate BIG Complete event
-    28     LE BIG Sync Established event
-    29     LE BIG Sync Lost event
-    30     LE Request Peer SCA Complete event
-    31     LE Path Loss Threshold event
-    32     LE Transmit Power Reporting event
-    33     LE BIGInfo Advertising Report event
-*/
-#if BTM_BLE_PRIVACY_SPT == TRUE
-/* BLE event mask */
-#define HCI_BLE_EVENT_MASK_DEF "\x00\x00\x00\xFA\x7f\x8f\xff\xff"
-#else
-#define HCI_BLE_EVENT_MASK_DEF "\x00\x00\x00\xFA\x7F\x8f\xff\x7f"
-#endif
 
 /*
 ** Definitions for packet type masks (BT1.2 and BT2.0 definitions)
@@ -2199,6 +2161,17 @@ typedef uint8_t wiced_bt_ble_feature_bit_t; /**< LE supported feature bits */
 #define HCI_LE_FEATURE_PERIODIC_ADVERTISING_OFF         1
 #define HCI_LE_PERIODIC_ADVERTISING_SUPPORTED(x) ((x)[ HCI_LE_FEATURE_PERIODIC_ADVERTISING_OFF] & HCI_LE_FEATURE_PERIODIC_ADVERTISING_MASK)
 
+/* LE Periodic Advertising with Responses -Advertiser bit 43 */
+#define HCI_LE_FEATURE_PAWR_ADVERTISER_MASK        0x08
+#define HCI_LE_FEATURE_PAWR_ADVERTISER_OFF         5
+#define HCI_LE_FEATURE_PAWR_ADVERTISER_SUPPORTED(x) ((x)[ HCI_LE_FEATURE_PAWR_ADVERTISER_OFF] & HCI_LE_FEATURE_PAWR_ADVERTISER_MASK)
+
+/* LE Periodic Advertising with Responses -Scanner bit 44 */
+#define HCI_LE_FEATURE_PAWR_SCANNER_MASK        0x10
+#define HCI_LE_FEATURE_PAWR_SCANNER_OFF         5
+#define HCI_LE_FEATURE_PAWR_SCANNER_SUPPORTED(x) ((x)[ HCI_LE_FEATURE_PAWR_SCANNER_OFF] & HCI_LE_FEATURE_PAWR_SCANNER_MASK)
+
+
 /* Connected Isochronous Stream: bit 28 and 29 */
 #define HCI_LE_FEATURE_ISOC_CHANNELS_MASK        0x30
 #define HCI_LE_FEATURE_ISOC_CHANNELS_OFF         3
@@ -2218,11 +2191,23 @@ typedef uint8_t wiced_bt_ble_feature_bit_t; /**< LE supported feature bits */
 /* Minimum Number of Used Channels Procedure feature: bit 16*/
 //Todo
 
+/* LE Channel Classification: bit 39 */
+#define HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_MASK (0x80)
+#define HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_OFF 4
+#define HCI_LE_FEATURE_CHANNEL_CLASSIFICATION(x)                                                                 \
+    ((x)[HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_OFF] & HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_MASK)
+
 /* LE Advertising Coding Selection: bit 40 */
 #define HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_MASK (1)
 #define HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_OFF 5
 #define HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION(x)                                                                              \
     ((x)[HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_OFF] & HCI_LE_FEATURE_ADVERTISING_CODING_SELECTION_MASK)
+
+/* LE Connection Subrating : bit 37 */
+#define HCI_LE_FEATURE_CONNECTION_SUBRATING_MASK (0x20)
+#define HCI_LE_FEATURE_CONNECTION_SUBRATING_OFF  (4)
+#define HCI_LE_FEATURE_CONNECTION_SUBRATING_SUPPORTED(x)                         \
+    ((x)[HCI_LE_FEATURE_CONNECTION_SUBRATING_OFF] & HCI_LE_FEATURE_CONNECTION_SUBRATING_MASK)
 
 /*
 **   Local Supported Commands encoding
@@ -3185,6 +3170,19 @@ typedef uint8_t wiced_bt_ble_feature_bit_t; /**< LE supported feature bits */
 #define HCI_SUPP_COMMANDS_LE_RC_CONN_PARAM_UPD_NEG_RPY_OFF           33
 #define HCI_LE_RC_CONN_PARAM_UPD_NEG_RPY_SUPPORTED(x)      ((x)[HCI_SUPP_COMMANDS_LE_RC_CONN_PARAM_UPD_NEG_RPY_OFF] & HCI_SUPP_COMMANDS_RLE_RC_CONN_PARAM_UPD_NEG_RPY_MASK)
 
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_MASK 0x80
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_OFF 37
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_SUPPORTED(x)   ((x)[HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_OFF] & HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_MASK)
+
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_V2_MASK 0x01
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_V2_OFF 47
+#define HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_V2_SUPPORTED(x)   ((x)[HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_V2_OFF] & HCI_SUPP_COMMANDS_LE_EXT_CREATE_CONN_V2_MASK)
+
+#define HCI_SUPP_COMMANDS_LE_SET_PERIODIC_ADV_PARAM_V2_MASK          0x02
+#define HCI_SUPP_COMMANDS_LE_SET_PERIODIC_ADV_PARAM_V2_OFF           47
+#define HCI_LE_COMMAND_SET_PERIODIC_ADV_PARAM_V2_SUPPORTED(x)      ((x)[HCI_SUPP_COMMANDS_LE_SET_PERIODIC_ADV_PARAM_V2_OFF] & HCI_SUPP_COMMANDS_LE_SET_PERIODIC_ADV_PARAM_V2_MASK)
+
+
 #if defined(MPAF_ZIGBEE)
 #define HCI_BRCM_I15DOT4_COMMAND            (0x0177 | HCI_GRP_VENDOR_SPECIFIC)
 #endif
@@ -3262,3 +3260,6 @@ Commands of HCI_GRP_VENDOR_SPECIFIC group for WIDCOMM SW LM Simulator
 #define HCI_BRCM_LQ_LE_STATS           (0x00ED | HCI_GRP_VENDOR_SPECIFIC)
 #define HCI_BRCM_LQ_BREDR_STATS        (0x01CE | HCI_GRP_VENDOR_SPECIFIC)
 #endif
+
+/* VSC for setting HID Over ISOC Config (latency) */
+#define HCI_VSC_SET_HOI_CONFIG         (0x01EF | HCI_GRP_VENDOR_SPECIFIC)

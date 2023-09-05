@@ -335,6 +335,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga348deb818473ff185ce675bcdbe605b9">LINK_KEY_LEN</a>&#160;&#160;&#160;16</td></tr>
 <tr class="memdesc:ga348deb818473ff185ce675bcdbe605b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link Key Len. <br /></td></tr>
 <tr class="separator:ga348deb818473ff185ce675bcdbe605b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35dc4d7d23c1b86227ceb68e6ebc4fc2"><td class="memItemLeft" align="right" valign="top"><a id="ga35dc4d7d23c1b86227ceb68e6ebc4fc2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga35dc4d7d23c1b86227ceb68e6ebc4fc2">IV_LEN</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:ga35dc4d7d23c1b86227ceb68e6ebc4fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization Vector len. <br /></td></tr>
+<tr class="separator:ga35dc4d7d23c1b86227ceb68e6ebc4fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga76cc4e51e261caae3879751a959b97d6"><td class="memItemLeft" align="right" valign="top"><a id="ga76cc4e51e261caae3879751a959b97d6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga76cc4e51e261caae3879751a959b97d6">DRB_OVERHEAD_SIZE</a>&#160;&#160;&#160;(sizeof (uint16_t) + sizeof (uint16_t))</td></tr>
 <tr class="memdesc:ga76cc4e51e261caae3879751a959b97d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">length and offset <br /></td></tr>
@@ -587,6 +591,10 @@ Typedefs</h2></td></tr>
 typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>[<a class="el" href="group__bt__types.html#gadc5356a86213ced2eebbc50b6251f6fe">BD_ADDR_LEN</a>]</td></tr>
 <tr class="memdesc:gacf9a377aceca799be625c0dfe554902e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device address length. <br /></td></tr>
 <tr class="separator:gacf9a377aceca799be625c0dfe554902e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadbd678f6da4e4664861233129424bb7"><td class="memItemLeft" align="right" valign="top"><a id="gaadbd678f6da4e4664861233129424bb7"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gaadbd678f6da4e4664861233129424bb7">wiced_bt_hci_err_code_t</a></td></tr>
+<tr class="memdesc:gaadbd678f6da4e4664861233129424bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">HCI error codes. <br /></td></tr>
+<tr class="separator:gaadbd678f6da4e4664861233129424bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaebfc7a7f17241ffdaf1a70efc43ffb57"><td class="memItemLeft" align="right" valign="top"><a id="gaebfc7a7f17241ffdaf1a70efc43ffb57"></a>
 typedef <a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gaebfc7a7f17241ffdaf1a70efc43ffb57">wiced_bt_dev_status_t</a></td></tr>
 <tr class="memdesc:gaebfc7a7f17241ffdaf1a70efc43ffb57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result/Status. <br /></td></tr>
@@ -639,6 +647,10 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga893b7181fa78c4b8523e2efee30fe223">wiced_bt_link_key_t</a>[<a class="el" href="group__bt__types.html#ga348deb818473ff185ce675bcdbe605b9">LINK_KEY_LEN</a>]</td></tr>
 <tr class="memdesc:ga893b7181fa78c4b8523e2efee30fe223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link Key. <br /></td></tr>
 <tr class="separator:ga893b7181fa78c4b8523e2efee30fe223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga355e143f786df95e7532269df0ff1aac"><td class="memItemLeft" align="right" valign="top"><a id="ga355e143f786df95e7532269df0ff1aac"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#ga355e143f786df95e7532269df0ff1aac">wiced_bt_iv_t</a>[<a class="el" href="group__bt__types.html#ga35dc4d7d23c1b86227ceb68e6ebc4fc2">IV_LEN</a>]</td></tr>
+<tr class="memdesc:ga355e143f786df95e7532269df0ff1aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">IV, Initialization Vector. <br /></td></tr>
+<tr class="separator:ga355e143f786df95e7532269df0ff1aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaff3eb04924fbda24d4efd4285c7da1bc"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__types.html#gaff3eb04924fbda24d4efd4285c7da1bc">wiced_bt_ecrb_cid_list_t</a>[<a class="el" href="group__bt__types.html#ga5397015950b4d07f743943d5a4566e1b">L2CAP_ECRB_MAX_CHANNELS_PER_CMD</a>]</td></tr>
 <tr class="memdesc:gaff3eb04924fbda24d4efd4285c7da1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of ECRB lcid's  <a href="#gaff3eb04924fbda24d4efd4285c7da1bc">More...</a><br /></td></tr>
 <tr class="separator:gaff3eb04924fbda24d4efd4285c7da1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>

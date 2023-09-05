@@ -225,6 +225,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__connection__param__update__t.html">wiced_bt_ble_connection_param_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE connection parameter update event related data.  <a href="structwiced__bt__ble__connection__param__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__conn__subrate__t.html">wiced_bt_ble_conn_subrate_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE connection subrate parameters.  <a href="structwiced__bt__ble__conn__subrate__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__phy__update__t.html">wiced_bt_ble_phy_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLE Physical link update event related data.  <a href="structwiced__bt__ble__phy__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,6 +290,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__lq__stats__result__t.html">wiced_bt_lq_stats_result_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LQ Quality Result (in response to wiced_bt_dev_lq_stats)  <a href="structwiced__bt__lq__stats__result__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__device__addr__update__t.html">wiced_bt_ble_device_addr_update_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event on update of random device address.  <a href="structwiced__bt__ble__device__addr__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionwiced__bt__management__evt__data__t.html">wiced_bt_management_evt_data_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure definitions for Bluetooth Management (wiced_bt_management_cback_t) event notifications.  <a href="unionwiced__bt__management__evt__data__t.html#details">More...</a><br /></td></tr>
@@ -963,7 +969,11 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65afccff06434be32f2e31fae45a59fb0bc">BTM_MULTI_ADVERT_RESP_EVENT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a4317545a7c310a63a2ff6a77143db123">BTM_BLE_DATA_LENGTH_UPDATE_EVENT</a>
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a4317545a7c310a63a2ff6a77143db123">BTM_BLE_DATA_LENGTH_UPDATE_EVENT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a26fee70310ba41d60236afc68a411bde">BTM_BLE_SUBRATE_CHANGE_EVENT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65aa49bd8765b31119cd5008c25e136b11e">BTM_BLE_DEVICE_ADDRESS_UPDATE_EVENT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga4a427fc37161f2041016d7936399be65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bluetooth Management events used in <a class="el" href="group__wicedbt___device_management.html#ga86af8a8bb467047c9af6007f15b0d344" title="Bluetooth Management callback.">wiced_bt_management_cback_t</a>.  <a href="group__wicedbt___device_management.html#ga4a427fc37161f2041016d7936399be65">More...</a><br /></td></tr>
@@ -1921,8 +1931,8 @@ Return values of the management events Return values of notification and status 
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65ac2e321db33778e75effc95483c14e265"></a>BTM_PASSKEY_NOTIFICATION_EVT&#160;</td><td class="fielddoc"><p>Event notifies user passkey app App is expected to display the passkey to the user Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a646a994016c6bd883c38bfc4d0255c5c">wiced_bt_management_evt_data_t::user_passkey_notification</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a088b131278aef7d16200e55a9bb719cd"></a>BTM_PASSKEY_REQUEST_EVT&#160;</td><td class="fielddoc"><p>Event requests user passkey from app <a class="el" href="group__br__edr__sec__api__functions.html#ga6c0d114b3e9c02f0f139106065d0fc91" title="Provide the pairing passkey (in response to BTM_PASSKEY_REQUEST_EVT  of wiced_bt_management_cback_t)">wiced_bt_dev_pass_key_req_reply</a>). </p>
-<p>Application is expected to respond with the passkey for pairing with <a class="el" href="group__br__edr__sec__api__functions.html#ga6c0d114b3e9c02f0f139106065d0fc91" title="Provide the pairing passkey (in response to BTM_PASSKEY_REQUEST_EVT  of wiced_bt_management_cback_t)">wiced_bt_dev_pass_key_req_reply</a> Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#ad32e1bb725d6bec1790a87a1a4a37dc2">wiced_bt_management_evt_data_t::user_passkey_request</a> </p>
+<tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a088b131278aef7d16200e55a9bb719cd"></a>BTM_PASSKEY_REQUEST_EVT&#160;</td><td class="fielddoc"><p>Event requests user passkey from app (respond using <a class="el" href="group__br__edr__sec__api__functions.html#ga6c0d114b3e9c02f0f139106065d0fc91" title="Provide the pairing passkey (in response to BTM_PASSKEY_REQUEST_EVT  of wiced_bt_management_cback_t)">wiced_bt_dev_pass_key_req_reply</a>). </p>
+<p>Application is expected to respond with the passkey for pairing with <a class="el" href="group__br__edr__sec__api__functions.html#ga6c0d114b3e9c02f0f139106065d0fc91">wiced_bt_dev_pass_key_req_reply</a> Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#ad32e1bb725d6bec1790a87a1a4a37dc2">wiced_bt_management_evt_data_t::user_passkey_request</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a103e09ac213663251e549718cdf5cbe5"></a>BTM_KEYPRESS_NOTIFICATION_EVT&#160;</td><td class="fielddoc"><p>Event notifies keypress notification event to app Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#aef3757148e0dd747f04536edb14f4393">wiced_bt_management_evt_data_t::user_keypress_notification</a>. </p>
 </td></tr>
@@ -1975,7 +1985,7 @@ Return values of the management events Return values of notification and status 
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a79e2658300e5048effb5dce5abd8e7f7"></a>BTM_SMP_SC_REMOTE_OOB_DATA_REQUEST_EVT&#160;</td><td class="fielddoc"><p>Event requests LE secure connection remote oob data request. </p>
 <p>Reply using wiced_bt_smp_sc_oob_reply. Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a2904013c10dad3947c247e443296a8d8">wiced_bt_management_evt_data_t::smp_sc_remote_oob_data_request</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a9cb82502be00a366c3427b7c6ba29556"></a>BTM_SMP_SC_LOCAL_OOB_DATA_NOTIFICATION_EVT&#160;</td><td class="fielddoc"><p>Event notifies LE secure connection local OOB data (wiced_bt_smp_create_local_sc_oob_data) returned by the stack The app is expected to copy the data into it's memory and share out of band with the peer To build the data to be shared, app can use <a class="el" href="group__br__edr__sec__api__functions.html#ga4d62997eaf7e2bda56c669d165c63685" title="Build the OOB data block to be used to send OOB extended data over OOB (non-Bluetooth) link.">wiced_bt_dev_build_oob_data</a> Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#adfebf23894163ad1a59112b4656b23c1">wiced_bt_management_evt_data_t::p_smp_sc_local_oob_data</a>. </p>
+<tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a9cb82502be00a366c3427b7c6ba29556"></a>BTM_SMP_SC_LOCAL_OOB_DATA_NOTIFICATION_EVT&#160;</td><td class="fielddoc"><p>Event notifies LE secure connection local OOB data (wiced_bt_smp_create_local_sc_oob_data) returned by the stack The app is expected to copy the data into it's memory and share out of band with the peer To build the data to be shared, app can use <a class="el" href="group__br__edr__sec__api__functions.html#ga4d62997eaf7e2bda56c669d165c63685">wiced_bt_dev_build_oob_data</a> Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#adfebf23894163ad1a59112b4656b23c1">wiced_bt_management_evt_data_t::p_smp_sc_local_oob_data</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a10d43447690538c7759b2c952b1db62a"></a>BTM_SCO_CONNECTED_EVT&#160;</td><td class="fielddoc"><p>Event notfies SCO connected to app Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#ab0cf1942bbc307c3cc92397a0cd8f077">wiced_bt_management_evt_data_t::sco_connected</a>. </p>
 <dl class="section note"><dt>Note</dt><dd>BR/EDR Only </dd></dl>
@@ -1999,6 +2009,10 @@ Return values of the management events Return values of notification and status 
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65afccff06434be32f2e31fae45a59fb0bc"></a>BTM_MULTI_ADVERT_RESP_EVENT&#160;</td><td class="fielddoc"><p>Event notifies Multi adv command status event used for the status of the command sent Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a8871dd5b4fb2d4c67bfa22056119f518">wiced_bt_management_evt_data_t::ble_multi_adv_response_event</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a4317545a7c310a63a2ff6a77143db123"></a>BTM_BLE_DATA_LENGTH_UPDATE_EVENT&#160;</td><td class="fielddoc"><p>Event to notify change in the data length and timeout configured for Rx and Tx on the BLE link Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a05673ca23e277594224f12252963fa9a">wiced_bt_management_evt_data_t::ble_data_length_update_event</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a26fee70310ba41d60236afc68a411bde"></a>BTM_BLE_SUBRATE_CHANGE_EVENT&#160;</td><td class="fielddoc"><p>Event to notify subrate change event BLE link Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a90989e81b8a4ae6168f28d503b6ca98a">wiced_bt_management_evt_data_t::ble_subrate_change_event</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65aa49bd8765b31119cd5008c25e136b11e"></a>BTM_BLE_DEVICE_ADDRESS_UPDATE_EVENT&#160;</td><td class="fielddoc"><p>Event to notify change in the device address Application can register to receive a callback on device address update through <a class="el" href="group__btm__ble__sec__api__functions.html#gac86072b25aa830842e94cff3eb1ffe03">wiced_bt_ble_notify_on_device_address_change</a> Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a90989e81b8a4ae6168f28d503b6ca98a">wiced_bt_management_evt_data_t::ble_subrate_change_event</a>. </p>
 </td></tr>
 </table>
 

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1207" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1207" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1207" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1207" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__lightness__range__status__data__t_1aeb1c89db03740e3a08177325887c0f68" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1208" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1208" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1208" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1208" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__lightness__range__status__data__t_1a16d89a8912182a2c4a2a168f305cd3d7" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1209" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1209" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1209" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1209" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -52,7 +52,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1206" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1205" bodyend="1210"/>
+    <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1206" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1205" bodyend="1210"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__light__lightness__range__status__data__t_1a16d89a8912182a2c4a2a168f305cd3d7" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lightness_range_status_data_t</scope><name>max_level</name></member>
       <member refid="structwiced__bt__mesh__light__lightness__range__status__data__t_1aeb1c89db03740e3a08177325887c0f68" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lightness_range_status_data_t</scope><name>min_level</name></member>

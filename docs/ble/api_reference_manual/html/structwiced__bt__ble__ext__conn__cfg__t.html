@@ -97,8 +97,15 @@ $(document).ready(function(){initNavTree('structwiced__bt__ble__ext__conn__cfg__
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:acd75d1c0fcf4484355fe5d21a701d388"><td class="memItemLeft" align="right" valign="top"><a id="acd75d1c0fcf4484355fe5d21a701d388"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__conn__cfg__t.html#acd75d1c0fcf4484355fe5d21a701d388">adv_handle</a></td></tr>
+<tr class="memdesc:acd75d1c0fcf4484355fe5d21a701d388"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertising handle, Range: 0x00 to 0xEF or 0xFF <br /></td></tr>
+<tr class="separator:acd75d1c0fcf4484355fe5d21a701d388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d73a195a31be12aebdcbda3a9c11d9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__conn__cfg__t.html#a01d73a195a31be12aebdcbda3a9c11d9">sub_event</a></td></tr>
+<tr class="memdesc:a01d73a195a31be12aebdcbda3a9c11d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">subevent,Range: 0x00 to 0x7F or 0xFF  <a href="#a01d73a195a31be12aebdcbda3a9c11d9">More...</a><br /></td></tr>
+<tr class="separator:a01d73a195a31be12aebdcbda3a9c11d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ced4554dd87cc10a92daafb5ab0c370"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt___device_management.html#gab633f94f262d0f2ebcb9eba473c620d4">wiced_bt_ble_ext_adv_phy_mask_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__conn__cfg__t.html#a7ced4554dd87cc10a92daafb5ab0c370">initiating_phys</a></td></tr>
-<tr class="memdesc:a7ced4554dd87cc10a92daafb5ab0c370"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Bit 0 = 1: Scan connectable advertisements on the LE 1M PHY.  <a href="#a7ced4554dd87cc10a92daafb5ab0c370">More...</a><br /></td></tr>
+<tr class="memdesc:a7ced4554dd87cc10a92daafb5ab0c370"><td class="mdescLeft">&#160;</td><td class="mdescRight">the PHY(s) bit mask on which the advertising packets should be received on the primary advertising channel and the PHYs for which connection parameters have been specified.  <a href="#a7ced4554dd87cc10a92daafb5ab0c370">More...</a><br /></td></tr>
 <tr class="separator:a7ced4554dd87cc10a92daafb5ab0c370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab45ec5167a8184cd5936dc2ff2f7d4a3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__conn__cfg__t.html#ab45ec5167a8184cd5936dc2ff2f7d4a3">scan_int</a> [<a class="el" href="group__wicedbt___device_management.html#ggadf764cbdea00d65edcd07bb9953ad2b7a1cd156fb3c05bed54c53f3ea747e4b27">WICED_BT_BLE_EXT_ADV_NUM_PHYS</a>]</td></tr>
 <tr class="memdesc:ab45ec5167a8184cd5936dc2ff2f7d4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range N: 0x0004 to 0xFFFF.Time = N * 0.625 ms.  <a href="#ab45ec5167a8184cd5936dc2ff2f7d4a3">More...</a><br /></td></tr>
@@ -130,6 +137,23 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="separator:afbcab6486fbe3884e06eb38a5fb35274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a01d73a195a31be12aebdcbda3a9c11d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d73a195a31be12aebdcbda3a9c11d9">&#9670;&nbsp;</a></span>sub_event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t wiced_bt_ble_ext_conn_cfg_t::sub_event</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>subevent,Range: 0x00 to 0x7F or 0xFF </p>
+<p>Bit 0 = 1: Scan connectable advertisements on the LE 1M PHY. Connection parameters for the LE 1M PHY are provided. Bit 1 = 1: Connection parameters for the LE 2M PHY are provided. Bit 2 = 1: Scan connectable advertisements on the LE Coded PHY. Connection parameters for the LE Coded PHY are provided </p>
+
+</div>
+</div>
 <a id="a7ced4554dd87cc10a92daafb5ab0c370"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ced4554dd87cc10a92daafb5ab0c370">&#9670;&nbsp;</a></span>initiating_phys</h2>
 
@@ -142,8 +166,7 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
       </table>
 </div><div class="memdoc">
 
-<p>&lt; Bit 0 = 1: Scan connectable advertisements on the LE 1M PHY. </p>
-<p>Connection parameters for the LE 1M PHY are provided. Bit 1 = 1: Connection parameters for the LE 2M PHY are provided. Bit 2 = 1: Scan connectable advertisements on the LE Coded PHY. Connection parameters for the LE Coded PHY are provided the PHY(s) bit mask on which the advertising packets should be received on the primary advertising channel and the PHYs for which connection parameters have been specified. </p>
+<p>the PHY(s) bit mask on which the advertising packets should be received on the primary advertising channel and the PHYs for which connection parameters have been specified. </p>
 
 </div>
 </div>

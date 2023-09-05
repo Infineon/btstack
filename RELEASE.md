@@ -8,6 +8,18 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.8.0
+BTSTACK3.8 is BT5.4 certified. QDID: 219623.
+This release contains bug fixes and and an enhancement listed below.
+ - Support for PAwR added, refer to wiced_bt_ble.h for details of interfaces
+ - Added utility functions for Advertisement encryption and decryption, see wiced_bt_ble_encrypt_adv_packet and wiced_bt_ble_decrypt_adv_packet
+ - Implementation of BT Core spec erratum 22240
+ - Added API wiced_bt_app_serialize_function that can be called by applications to serialize the execution of an application function in the BT stack context
+ - Updates to optimize the code size for Dual-mode stack
+ - Support for connection subrate request procedure, added the API wiced_bt_l2cap_subrate_request and related events
+ - Added API wiced_bt_ble_notify_on_device_address_change to notify the application on device address change via BTM_BLE_DEVICE_ADDRESS_UPDATE_EVENT event.
+ - Other bug fixes and documentation enhancements.
+
 ## V3.7.2
 BTSTACK3.7.2 is a patch release with following fix -
  - Fix an issue where GATT congestion release notification was not sent by Server side

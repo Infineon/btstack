@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="433" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="433" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="433" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="433" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a77d44e958599e56adad86927d2326b0f" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__sensor__status__data__t" kindref="compound">wiced_bt_mesh_sensor_status_data_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="434" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="434" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="434" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="434" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a0772c13a1dea4b8fda58aff3a0044657" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__sensor__column__status__data__t" kindref="compound">wiced_bt_mesh_sensor_column_status_data_t</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="435" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="435" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="435" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="435" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a291cfd913a772d9775d2dbc8637c46c0" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__sensor__series__status__data__t" kindref="compound">wiced_bt_mesh_sensor_series_status_data_t</ref></type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="436" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="436" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="436" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="436" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a90b3e6f4674af474563d632ddf36fb91" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__sensor__setting__status__data__t" kindref="compound">wiced_bt_mesh_sensor_setting_status_data_t</ref></type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="437" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="437" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="437" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="437" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1ab6ff7eb5ed3cb9623090e1c8aba5b1ab" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__sensor__settings__status__data__t" kindref="compound">wiced_bt_mesh_sensor_settings_status_data_t</ref></type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="438" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="438" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="438" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="438" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__mesh__sensor__status__message__data__t_1a5a8e20c144fdab69272b2aee6393b778" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__sensor__cadence__status__data__t" kindref="compound">wiced_bt_mesh_sensor_cadence_status_data_t</ref></type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="439" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="439" bodyend="-1"/>
+        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="439" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="439" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -194,7 +194,7 @@
         <link refid="structwiced__bt__mesh__sensor__column__data__t"/>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="432" column="1" bodyfile="D:/glb/V4fkqsJ4/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="431" bodyend="440"/>
+    <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="432" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="431" bodyend="440"/>
     <listofallmembers>
       <member refid="unionwiced__bt__mesh__sensor__status__message__data__t_1a5a8e20c144fdab69272b2aee6393b778" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_message_data_t</scope><name>cadence_status</name></member>
       <member refid="unionwiced__bt__mesh__sensor__status__message__data__t_1a0772c13a1dea4b8fda58aff3a0044657" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_message_data_t</scope><name>column_status</name></member>

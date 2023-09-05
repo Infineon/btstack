@@ -106,6 +106,7 @@ enum ble_uuid_service
     WICED_BT_UUID_HEARING_ACCESS = 0X1854,                // 54 18
     WICED_BT_UUID_TMAS = 0X1855,                          // 55 18
     WICED_BT_UUID_PUBLIC_BROADCAST_ANNOUNCEMENT = 0X1856, // 56 18
+    WICED_BT_UUID_TELEPHPONE_AND_MEDIA_AUDIO = 0X1857,    // 57 18
 };
 
 /** UUID per Bluetooth Assigned numbers */
@@ -116,7 +117,8 @@ enum ble_uuid_attribute
     UUID_ATTRIBUTE_INCLUDE                              = 0x2802,
     UUID_ATTRIBUTE_CHARACTERISTIC                       = 0x2803,
 
-     WICED_BT_UUID_INPUT_STATE = 0x2B77,
+    WICED_BT_UUID_TMAP_ROLE = 0X2B51,
+    WICED_BT_UUID_INPUT_STATE = 0x2B77,
     WICED_BT_UUID_GAIN_SETTING_ATTRIBUTE = 0x2B78,
     WICED_BT_UUID_INPUT_TYPE = 0x2B79,
     WICED_BT_UUID_INPUT_STATUS = 0x2B7A,
@@ -423,6 +425,8 @@ enum ble_uuid_characteristic
     UUID_CHARACTERISTIC_OBJECT_LIST_FILTER                                  = 0x2AC7,
     UUID_CHARACTERISTIC_OBJECT_CHANGED                                      = 0x2AC8,
     UUID_CHARACTERISTIC_RPA_ONLY                                            = 0x2AC9,
+    UUID_CHARACTERISTIC_ENCRYPTED_DATA_KEY_MATERIAL                         = 0x2B88,
+    UUID_CHARACTERISTIC_LE_GATT_SECURITY_LEVELS                             = 0x2BF5,
 };
 
 #endif

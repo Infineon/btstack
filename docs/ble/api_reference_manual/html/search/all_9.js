@@ -6,6 +6,8 @@ var searchData=
   ['include_5fservice_5fuuid128',['INCLUDE_SERVICE_UUID128',['../group__wicedbt__gatt.html#ga701776dae7f04f55d385ef6220a0a16f',1,'wiced_bt_gatt.h']]],
   ['include_5fservice_5fuuid16',['INCLUDE_SERVICE_UUID16',['../group__wicedbt__gatt.html#gaef58572ebee8cf06205d768d520b2c5b',1,'wiced_bt_gatt.h']]],
   ['included_5fservice_5ftype',['included_service_type',['../unionwiced__bt__gatt__discovery__data__t.html#ab513b62d6cffb56b3e11c9715986e660',1,'wiced_bt_gatt_discovery_data_t']]],
+  ['ind_5fdata',['ind_data',['../structwiced__bt__ble__pawr__subevent__ind__data__t.html#a1f161de740dc7a5f5dff9dcdeaa77536',1,'wiced_bt_ble_pawr_subevent_ind_data_t']]],
+  ['ind_5fdata_5flength',['ind_data_length',['../structwiced__bt__ble__pawr__subevent__ind__data__t.html#af067a35bc90d06ddc2fe7c54cc1ea285',1,'wiced_bt_ble_pawr_subevent_ind_data_t']]],
   ['init_5fkeys',['init_keys',['../structwiced__bt__dev__ble__io__caps__req__t.html#aca827eb0788362f017340effb7613b09',1,'wiced_bt_dev_ble_io_caps_req_t']]],
   ['initiating_5fphys',['initiating_phys',['../structwiced__bt__ble__ext__conn__cfg__t.html#a7ced4554dd87cc10a92daafb5ab0c370',1,'wiced_bt_ble_ext_conn_cfg_t']]],
   ['int8_5fto_5fstream',['INT8_TO_STREAM',['../group__bt__types.html#gae408d18ec3d93b0ccd0e596cff64d0fc',1,'wiced_bt_types.h']]],
@@ -24,5 +26,7 @@ var searchData=
   ['is_5fpair_5fcancel',['is_pair_cancel',['../structwiced__bt__dev__ble__pairing__info__t.html#aada60ce4522667e668b8264113625b8b',1,'wiced_bt_dev_ble_pairing_info_t']]],
   ['is_5fscan_5frsp_5fadv_5freport',['IS_SCAN_RSP_ADV_REPORT',['../group__wicedbt___device_management.html#ga0b6eb23b26afb4c0a34e175bf1d0e735',1,'wiced_bt_ble.h']]],
   ['is_5fscannable_5fadv_5freport',['IS_SCANNABLE_ADV_REPORT',['../group__wicedbt___device_management.html#ga1ff2fec9720644ff4d9a30df03e441be',1,'wiced_bt_ble.h']]],
-  ['iso_5finterval',['iso_interval',['../structwiced__bt__ble__biginfo__adv__report__t.html#ac94a297de2040d21d503f5ae1bf27b96',1,'wiced_bt_ble_biginfo_adv_report_t']]]
+  ['iso_5finterval',['iso_interval',['../structwiced__bt__ble__biginfo__adv__report__t.html#ac94a297de2040d21d503f5ae1bf27b96',1,'wiced_bt_ble_biginfo_adv_report_t']]],
+  ['iv',['iv',['../structwiced__bt__ble__key__material__t.html#ad412c598ac240009457301635e53434b',1,'wiced_bt_ble_key_material_t']]],
+  ['iv_5flen',['IV_LEN',['../group__bt__types.html#ga35dc4d7d23c1b86227ceb68e6ebc4fc2',1,'wiced_bt_types.h']]]
 ];

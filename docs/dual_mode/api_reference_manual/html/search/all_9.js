@@ -9,6 +9,8 @@ var searchData=
   ['include_5fservice_5fuuid128',['INCLUDE_SERVICE_UUID128',['../group__wicedbt__gatt.html#ga701776dae7f04f55d385ef6220a0a16f',1,'wiced_bt_gatt.h']]],
   ['include_5fservice_5fuuid16',['INCLUDE_SERVICE_UUID16',['../group__wicedbt__gatt.html#gaef58572ebee8cf06205d768d520b2c5b',1,'wiced_bt_gatt.h']]],
   ['included_5fservice_5ftype',['included_service_type',['../unionwiced__bt__gatt__discovery__data__t.html#ab513b62d6cffb56b3e11c9715986e660',1,'wiced_bt_gatt_discovery_data_t']]],
+  ['ind_5fdata',['ind_data',['../structwiced__bt__ble__pawr__subevent__ind__data__t.html#a1f161de740dc7a5f5dff9dcdeaa77536',1,'wiced_bt_ble_pawr_subevent_ind_data_t']]],
+  ['ind_5fdata_5flength',['ind_data_length',['../structwiced__bt__ble__pawr__subevent__ind__data__t.html#af067a35bc90d06ddc2fe7c54cc1ea285',1,'wiced_bt_ble_pawr_subevent_ind_data_t']]],
   ['inform_5fbattery_5fstatus',['inform_battery_status',['../structwiced__bt__avrc__metadata__cmd__t.html#a8e38e40e532d4fe956c4fce772b77172',1,'wiced_bt_avrc_metadata_cmd_t']]],
   ['inform_5fcharset',['inform_charset',['../structwiced__bt__avrc__metadata__cmd__t.html#aacd667bafcccc5c694729eebf62d9cb3',1,'wiced_bt_avrc_metadata_cmd_t']]],
   ['init_5fkeys',['init_keys',['../structwiced__bt__dev__ble__io__caps__req__t.html#aca827eb0788362f017340effb7613b09',1,'wiced_bt_dev_ble_io_caps_req_t']]],
@@ -38,5 +40,7 @@ var searchData=
   ['item_5fcount',['item_count',['../structwiced__bt__avrc__browse__get__items__rsp__t.html#ac3b8b7e0a366ba555793035885b6a655',1,'wiced_bt_avrc_browse_get_items_rsp_t']]],
   ['item_5flength',['item_length',['../structwiced__bt__avrc__item__t.html#af81410851b21cdbe7c7eb1be539ad7dc',1,'wiced_bt_avrc_item_t']]],
   ['item_5flist',['item_list',['../structwiced__bt__avrc__browse__get__items__rsp__t.html#a17cd20421d1ac20e82ba7873dae10fee',1,'wiced_bt_avrc_browse_get_items_rsp_t']]],
-  ['item_5ftype',['item_type',['../structwiced__bt__avrc__item__t.html#ae06b2bba361b6a915f360a6b4fb9dfca',1,'wiced_bt_avrc_item_t']]]
+  ['item_5ftype',['item_type',['../structwiced__bt__avrc__item__t.html#ae06b2bba361b6a915f360a6b4fb9dfca',1,'wiced_bt_avrc_item_t']]],
+  ['iv',['iv',['../structwiced__bt__ble__key__material__t.html#ad412c598ac240009457301635e53434b',1,'wiced_bt_ble_key_material_t']]],
+  ['iv_5flen',['IV_LEN',['../group__bt__types.html#ga35dc4d7d23c1b86227ceb68e6ebc4fc2',1,'wiced_bt_types.h']]]
 ];

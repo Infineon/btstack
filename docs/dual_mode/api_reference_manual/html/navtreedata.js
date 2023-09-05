@@ -32,21 +32,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "group___result.html",
-"group__btm__ble__api__functions.html#ga701fee231d79e37bfc459434fc980228",
-"group__btm__ble__sec__api__functions.html#gad2329674370e66e66d197356a835d9eb",
-"group__rfcomm__api__functions.html#gga919c228fbe128a196f66f0569ff3c1eeaadaeb45047fa16f70517bfe3382263a6",
-"group__wiced__bt__cfg.html#ggabc9b4dbc8e43ce6442971e2804d1aca5ac37a6789b7228dc28f64813c23490274",
-"group__wicedbt___device_management.html#gga8a46ed3147b4b1dc48b67a34b75c8baba4ea4193a3f5d7952d0ee74c0b6a5bbdd",
-"group__wicedbt__avdt.html",
-"group__wicedbt__avrc.html#ga2c7519575ae8093701610cdc4f0aac82",
-"group__wicedbt__avrc.html#ga97284bfc4d55b30e630fadbcbf1575dd",
-"group__wicedbt__avrc.html#gaf7829af4119885c4c2469882f86d3b38",
-"group__wicedbt__gatt.html#gga779678b722181c2c2ef4df09e62872b3a77054e40ff77d1fa3fb25de3b5d91be2",
-"structwiced__bt__avrc__browse__num__of__items__rsp__t.html#add5d83554f4ea268c653b7e3109d235c",
-"structwiced__bt__ble__channel__sel__algo__event__data__t.html",
-"structwiced__bt__dev__ble__io__caps__req__t.html",
-"structwiced__bt__gatt__read__multiple__req__t.html",
-"structwiced__timer__t.html#a39374022d2b551da2f287b642a42bfbb"
+"group__btm__ble__api__functions.html#ga60bed9d170be5754f637844eb070bcd3",
+"group__btm__ble__sec__api__functions.html#ga771629322c842c541611d928ad128a40",
+"group__rfcomm__api__functions.html#gabbe544a7a6843471ef384c6dafc976aa",
+"group__wiced__bt__cfg.html#gab43babc7e9cd800227f7a05316c52e8b",
+"group__wicedbt___device_management.html#gga83e5618d32b7fa1fb7c17ea40555e028a340ebe0ec5dcdf4de0439c942106430a",
+"group__wicedbt__av__a2d__helper.html#gaa8c72f0c985ad4f55e2a722a25603cac",
+"group__wicedbt__avrc.html#ga24195cad5a4510204fabf999ccc01033",
+"group__wicedbt__avrc.html#ga8e02a88da71bfa3fd4f417560694c7cf",
+"group__wicedbt__avrc.html#gaee45c543f7e3703111f1e60196420b28",
+"group__wicedbt__gatt.html#gga244b6c64a958765582c0d6a2c1fdfed4adf260c38869592cdd11e0ef1cd891494",
+"structwiced__bt__avrc__browse__get__item__attrs__cmd__t.html#aacbb2c17312491fd26dae3f6baef0376",
+"structwiced__bt__avrc__xmit__buf__t.html#af468107cc7f16ec02d68b65c6d4ee5f8",
+"structwiced__bt__ble__scan__results__t.html#a80db1a4adc1a2c6814d4c2c5450debc5",
+"structwiced__bt__flow__spec__t.html#a9c3356ff7f5cde79de835eccc0aa0ef8",
+"structwiced__bt__sco__connection__request__t.html#abf028a688096b7b1604a8610ee5fc580"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

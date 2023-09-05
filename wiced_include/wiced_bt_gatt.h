@@ -716,6 +716,7 @@ enum t_gatt_csf_assignments {
 /** GATT Client Support features */
 typedef uint8_t wiced_bt_gatt_csf_bits_t;
 
+
 /**< Data Receive Buffer
  *  Data Receive Buffer or DRB is a memory area of type #tDRB and size(channel MTU size + #DRB_OVERHEAD_SIZE).
  * The DRB buffer is allocated by the application during channel creation.
@@ -763,6 +764,8 @@ typedef struct
     wiced_bt_gatt_disconn_reason_t  reason;      /**< Reason code (see @link wiced_bt_gatt_disconn_reason_e wiced_bt_gatt_disconn_reason_t @endlink) */
     wiced_bt_transport_t            transport;   /**< Transport type of the connection */
     wiced_bt_dev_role_t             link_role;   /**< Link role on this connection */
+    uint8_t                         adv_handle;  /**< adv_handle to identify an advertising set */
+    uint16_t                        sync_handle;  /**<  Sync_Handle to  identify the periodic advertising train */
 } wiced_bt_gatt_connection_status_t;
 
 /** GATT attribute request (used by GATT_ATTRIBUTE_REQUEST_EVT notification) */
@@ -977,7 +980,7 @@ typedef struct
 {
     wiced_bt_device_address_t  bdaddr;                 /**< Bluetooth address of remote device */
     wiced_bt_transport_t       transport;              /**< Transport type of the connection */
-    wiced_bt_ecrb_cid_list_t    lcids;                  /**< List of the l2cap cids (channel ids) */
+    wiced_bt_ecrb_cid_list_t   lcids;                  /**< List of the l2cap cids (channel ids) */
     uint16_t                   mtu;                    /**< Peer MTU */
     uint8_t                    trans_id;               /**< Transaction id for the connection */
 } wiced_bt_gatt_eatt_connection_indication_event_t;

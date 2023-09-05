@@ -177,7 +177,7 @@ Functions</h2></td></tr>
 <p>Use <a class="el" href="group__btm__ble__adv__scan__functions.html#gab51079605334c28e06d02f44ffd5ec6b" title="Set advertisement raw data to the controller.">wiced_bt_ble_set_raw_advertisement_data</a> to configure advertising data prior to starting avertisements. The advertisements are stopped upon successful LE connection establishment.</p>
 <dl class="section note"><dt>Note</dt><dd>1. Steps for undirected ADVs viz., BTM_BLE_ADVERT_UNDIRECTED_HIGH, BTM_BLE_ADVERT_UNDIRECTED_LOW, and non connectable advs viz., BTM_BLE_ADVERT_NONCONN_HIGH, BTM_BLE_ADVERT_NONCONN_LOW a) Set ADV data b) Set Scan Response data if adv type is scannable </dd>
 <dd>
-2. if adv type is set to Directed then the stack resets any advertisement data which has been set for an earlier advertisement. Refer note 1 prior to attempting an undirected advertisement</dd></dl>
+2. if adv type is set to Directed then the stack resets any advertisement data which was set for an earlier advertisement. To attempt an UNDIRECTED_ADV after a DIRECTED_ADV, refer to instructions in note 1.</dd></dl>
 <p>The <b>advert_mode</b> parameter determines what advertising parameters and durations to use (as specified by the application configuration).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -83,7 +83,7 @@ var searchData=
   ['l2cap_5frole_5fscatternet_5fallowed',['L2CAP_ROLE_SCATTERNET_ALLOWED',['../group__l2cap.html#ga48e2f51a7931eeba4e4d5dff16b00a00',1,'wiced_bt_l2c.h']]],
   ['label',['label',['../structwiced__bt__avdt__evt__hdr__t.html#aae0126f7fa79c18754876001b5252769',1,'wiced_bt_avdt_evt_hdr_t::label()'],['../structwiced__bt__avrc__msg__t.html#a89755c8e28bea0a4252b9ff9b2f04d69',1,'wiced_bt_avrc_msg_t::label()']]],
   ['lap_5fto_5fstream',['LAP_TO_STREAM',['../group__bt__types.html#gabe267206594e412cd6dd4814dbc9a3fa',1,'wiced_bt_types.h']]],
-  ['latency',['latency',['../structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f',1,'wiced_bt_flow_spec_t']]],
+  ['latency',['latency',['../structwiced__bt__ble__conn__subrate__t.html#ab10fd7703600a082f0bffbf1dbeb7f23',1,'wiced_bt_ble_conn_subrate_t::latency()'],['../structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f',1,'wiced_bt_flow_spec_t::latency()']]],
   ['layer',['layer',['../structwiced__bt__a2d__m12__cie__t.html#a8254c2564a848956ef730984024782f1',1,'wiced_bt_a2d_m12_cie_t']]],
   ['lcid',['lcid',['../structwiced__bt__avdt__open__t.html#a948dbad4891db87aca9cedfbe496f4a3',1,'wiced_bt_avdt_open_t']]],
   ['lcids',['lcids',['../structwiced__bt__gatt__eatt__connection__indication__event__t.html#ac5ec9c8439b1f54dcfa809a56c962f06',1,'wiced_bt_gatt_eatt_connection_indication_event_t']]],

@@ -1302,6 +1302,16 @@ uint16_t wiced_bt_l2cap_le_determ_secur_rsp (wiced_bt_device_address_t bd_addr, 
  * \return number of packets queued to tx
  */
 int wiced_bt_l2cap_get_num_queued_tx_packets(wiced_bt_device_address_t bd_addr, uint16_t lcid, int *p_fragments_with_controller);
+
+/**
+ * @brief Function to request a change in the link subrate parameters
+ *
+ * @param[in] p_subrate: subrate parameters
+ *
+ * \return wiced_result_t
+ */
+wiced_result_t wiced_bt_l2cap_subrate_request(wiced_bt_ble_conn_subrate_t *p_subrate);
+
 #ifdef __cplusplus
 }
 #endif

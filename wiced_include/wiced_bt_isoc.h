@@ -533,7 +533,9 @@ wiced_result_t wiced_bt_isoc_peripheral_reject_cis(uint16_t cis_handle, uint8_t 
  * Function         wiced_bt_isoc_peripheral_remove_cig
  *
  *                  Remove CIG (Connected Isochronous Group)
- *                  Slave should call this API on receiving WICED_BLE_ISOC_CIS_DISCONNECTED event in registered application callback and if ASCS State is Releasing
+ *                  Slave should call this API in below cases
+ *                  1. On receiving WICED_BLE_ISOC_CIS_DISCONNECTED event in registered application callback and if ASCS State is Releasing
+ *                  2. On not receiving WICED_SUCCESS status in WICED_BLE_ISOC_CIS_ESTABLISHED event in registered application callabck
  *
  * @param[in]       cig_id  : CIG ID
  *

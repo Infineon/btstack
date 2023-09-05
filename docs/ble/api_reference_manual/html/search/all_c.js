@@ -59,7 +59,7 @@ var searchData=
   ['l2cap_5fping_5fresult_5fno_5fresponse',['L2CAP_PING_RESULT_NO_RESPONSE',['../group__l2cap.html#gab412c5740493977b7aeca5816120519f',1,'wiced_bt_l2c.h']]],
   ['l2cap_5fping_5fresult_5fok',['L2CAP_PING_RESULT_OK',['../group__l2cap.html#ga9e5612c1b7888cb1a969861fdb7faf0b',1,'wiced_bt_l2c.h']]],
   ['lap_5fto_5fstream',['LAP_TO_STREAM',['../group__bt__types.html#gabe267206594e412cd6dd4814dbc9a3fa',1,'wiced_bt_types.h']]],
-  ['latency',['latency',['../structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f',1,'wiced_bt_flow_spec_t']]],
+  ['latency',['latency',['../structwiced__bt__ble__conn__subrate__t.html#ab10fd7703600a082f0bffbf1dbeb7f23',1,'wiced_bt_ble_conn_subrate_t::latency()'],['../structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f',1,'wiced_bt_flow_spec_t::latency()']]],
   ['lcids',['lcids',['../structwiced__bt__gatt__eatt__connection__indication__event__t.html#ac5ec9c8439b1f54dcfa809a56c962f06',1,'wiced_bt_gatt_eatt_connection_indication_event_t']]],
   ['lcsrk',['lcsrk',['../structwiced__bt__ble__keys__t.html#a686bc84601157a39331938b78d2d1668',1,'wiced_bt_ble_keys_t']]],
   ['le_5fchannel_5fsel_5falgo_5f1_5fused',['LE_CHANNEL_SEL_ALGO_1_USED',['../group__wicedbt___device_management.html#ggacd4a1a8913528880bad341a4f46f92afaf29644acab31ee07ad38f9cbcf6cf5b8',1,'wiced_bt_ble.h']]],

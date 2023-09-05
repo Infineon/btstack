@@ -60,6 +60,10 @@ var group__btm__ble__api__functions =
       [ "adv_duration", "structwiced__bt__ble__ext__adv__duration__config__t.html#ad6df903e8310aafc6810b0b758c4b7b9", null ],
       [ "max_ext_adv_events", "structwiced__bt__ble__ext__adv__duration__config__t.html#a599a64503308e67254d8d425295e591d", null ]
     ] ],
+    [ "wiced_bt_ble_key_material_t", "structwiced__bt__ble__key__material__t.html", [
+      [ "session_key", "structwiced__bt__ble__key__material__t.html#a2da6579072ec24611077b154ec328423", null ],
+      [ "iv", "structwiced__bt__ble__key__material__t.html#ad412c598ac240009457301635e53434b", null ]
+    ] ],
     [ "wiced_bt_ble_ext_adv_params_t", "structwiced__bt__ble__ext__adv__params__t.html", [
       [ "event_properties", "structwiced__bt__ble__ext__adv__params__t.html#ad79e7e013ed1de5d6cab6b523c189b31", null ],
       [ "primary_adv_int_min", "structwiced__bt__ble__ext__adv__params__t.html#a0278c29d9b1d456cc9fea94a18a886be", null ],
@@ -79,6 +83,8 @@ var group__btm__ble__api__functions =
       [ "secondary_phy_opts", "structwiced__bt__ble__ext__adv__params__t.html#a7a0093c035276177a48e20849f251824", null ]
     ] ],
     [ "wiced_bt_ble_ext_conn_cfg_t", "structwiced__bt__ble__ext__conn__cfg__t.html", [
+      [ "adv_handle", "structwiced__bt__ble__ext__conn__cfg__t.html#acd75d1c0fcf4484355fe5d21a701d388", null ],
+      [ "sub_event", "structwiced__bt__ble__ext__conn__cfg__t.html#a01d73a195a31be12aebdcbda3a9c11d9", null ],
       [ "initiating_phys", "structwiced__bt__ble__ext__conn__cfg__t.html#a7ced4554dd87cc10a92daafb5ab0c370", null ],
       [ "scan_int", "structwiced__bt__ble__ext__conn__cfg__t.html#ab45ec5167a8184cd5936dc2ff2f7d4a3", null ],
       [ "scan_window", "structwiced__bt__ble__ext__conn__cfg__t.html#af245fb50b4e23fed37454732c71f0b5b", null ],
@@ -158,6 +164,48 @@ var group__btm__ble__api__functions =
       [ "conn_handle", "structwiced__bt__ble__periodic__adv__sync__transfer__event__data__t.html#a0f52b7e4d2b5ef71a14bca94b0398f42", null ],
       [ "service_data", "structwiced__bt__ble__periodic__adv__sync__transfer__event__data__t.html#ad03c7a0ae7e9dcaa6d1ac97c5faac164", null ]
     ] ],
+    [ "wiced_bt_ble_pawr_sync_established_event_data_t", "structwiced__bt__ble__pawr__sync__established__event__data__t.html", [
+      [ "status", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#aa821b81e71e84c4a1c6b0d642b865977", null ],
+      [ "sync_handle", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#a611dd2b5b48b6bdbb31a29c1d9222c37", null ],
+      [ "adv_sid", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#a787f9769adc08d881daa38e23177fb08", null ],
+      [ "adv_addr_type", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#a7c3b7a4927e1b93e08cbe4920860f1ed", null ],
+      [ "adv_addr", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#ae1725b00276fde2d3b5e9d5abd6f86eb", null ],
+      [ "adv_phy", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#ab9b9fa6e0d375b3d6ae96c8c5c28df72", null ],
+      [ "periodic_adv_int", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#a7b4f84640d46851a224f340fed493601", null ],
+      [ "advertiser_clock_accuracy", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#ad02bd86f2c4c64827b5ecadedc1bf16e", null ],
+      [ "num_subevents", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#a433d6128ec3583a0e637f7154aeec0f6", null ],
+      [ "subevent_interval", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#a22991f20200cb6691c911b63ee56a082", null ],
+      [ "response_slot_delay", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#a0f3dec2d9066af46fc49121b1175a759", null ],
+      [ "response_slot_spacing", "structwiced__bt__ble__pawr__sync__established__event__data__t.html#a40a39e3203bc571d71b9e76e9ca1b2f6", null ]
+    ] ],
+    [ "wiced_bt_ble_pawr_subevent_data_req_event_data_t", "structwiced__bt__ble__pawr__subevent__data__req__event__data__t.html", [
+      [ "adv_handle", "structwiced__bt__ble__pawr__subevent__data__req__event__data__t.html#a2d935807b610e2882b2d7c7547a7b51e", null ],
+      [ "subevent_start", "structwiced__bt__ble__pawr__subevent__data__req__event__data__t.html#a5ddf4d2babc481e935468d73cbe1e054", null ],
+      [ "subevent_start_count", "structwiced__bt__ble__pawr__subevent__data__req__event__data__t.html#a3a793ed7348c31175060727de76c0a80", null ]
+    ] ],
+    [ "wiced_bt_ble_pawr_rsp_report_event_data_t", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html", [
+      [ "adv_handle", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html#a93c27e44b763fc66425026bc43afc109", null ],
+      [ "subevent", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html#ac159d9c8d4d2be35d94af715f28f9c90", null ],
+      [ "tx_status", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html#a12660b71af42d75b6196a4a825475c91", null ],
+      [ "tx_power", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html#abca0c141de09def4f215f9bc2896f8ea", null ],
+      [ "rssi", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html#ab814b6fc370f65fc5f4b404dab303d61", null ],
+      [ "cte_type", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html#ae1f0af40bcb9beac5f3af540178d31b6", null ],
+      [ "response_slot", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html#a42c32c51c966aef858ba49501271b454", null ],
+      [ "data_status", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html#a73d616ca48e477c63b97093d7336430d", null ],
+      [ "data_len", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html#ad4faf71e15053717aed61bfda4da3600", null ],
+      [ "data", "structwiced__bt__ble__pawr__rsp__report__event__data__t.html#abcb27224d4ded02a6e2c9c107d63041e", null ]
+    ] ],
+    [ "wiced_bt_ble_pawr_ind_report_event_data_t", "structwiced__bt__ble__pawr__ind__report__event__data__t.html", [
+      [ "sync_handle", "structwiced__bt__ble__pawr__ind__report__event__data__t.html#ae248efac33dbe8f42715e783492f8ed7", null ],
+      [ "tx_power", "structwiced__bt__ble__pawr__ind__report__event__data__t.html#a074ea30b048e896fb4b37b4249401069", null ],
+      [ "rssi", "structwiced__bt__ble__pawr__ind__report__event__data__t.html#ab4234c556042f6c0b6b7e668f8183264", null ],
+      [ "cte_type", "structwiced__bt__ble__pawr__ind__report__event__data__t.html#ae298d8cdf966fc7bde2e157799b81b7c", null ],
+      [ "periodic_evt_counter", "structwiced__bt__ble__pawr__ind__report__event__data__t.html#a3257c035a20f64b063bba7580d991ebe", null ],
+      [ "sub_event", "structwiced__bt__ble__pawr__ind__report__event__data__t.html#af3385e8088d41771047914ac0354740c", null ],
+      [ "data_status", "structwiced__bt__ble__pawr__ind__report__event__data__t.html#a6f13c55cc9081225bd74417bafe6bca6", null ],
+      [ "data_length", "structwiced__bt__ble__pawr__ind__report__event__data__t.html#ad552b222987c27108c116abfd46b4546", null ],
+      [ "data", "structwiced__bt__ble__pawr__ind__report__event__data__t.html#a03f5472b79ce41c590b6db5b56f06dbe", null ]
+    ] ],
     [ "wiced_bt_ble_adv_ext_event_data_t", "unionwiced__bt__ble__adv__ext__event__data__t.html", [
       [ "sync_establish", "unionwiced__bt__ble__adv__ext__event__data__t.html#a78245f65a9e349e6a00167b11b887785", null ],
       [ "periodic_adv_report", "unionwiced__bt__ble__adv__ext__event__data__t.html#ad0533039a59e9f8863df9ee2d1566440", null ],
@@ -166,7 +214,11 @@ var group__btm__ble__api__functions =
       [ "scan_req_received", "unionwiced__bt__ble__adv__ext__event__data__t.html#a51bf2b3cb231d7b157ca5f4bfe895081", null ],
       [ "channel_sel_algo", "unionwiced__bt__ble__adv__ext__event__data__t.html#a20357be459fe0aafc6b485c42b6cd3d8", null ],
       [ "biginfo_adv_report", "unionwiced__bt__ble__adv__ext__event__data__t.html#a16f522d07102a2440787c6a55a37519a", null ],
-      [ "sync_transfer", "unionwiced__bt__ble__adv__ext__event__data__t.html#a183e2c89def5a638202069283cecdb06", null ]
+      [ "sync_transfer", "unionwiced__bt__ble__adv__ext__event__data__t.html#a183e2c89def5a638202069283cecdb06", null ],
+      [ "pawr_sync", "unionwiced__bt__ble__adv__ext__event__data__t.html#a83ce0889d12c8106d60ddb66740f83aa", null ],
+      [ "pawr_data_req", "unionwiced__bt__ble__adv__ext__event__data__t.html#af99467ac096c2c4782cbf62ee21b6e02", null ],
+      [ "pawr_ind_report", "unionwiced__bt__ble__adv__ext__event__data__t.html#a7b46be7ee3e5ac0c10ca0ea329730d7d", null ],
+      [ "pawr_rsp_report", "unionwiced__bt__ble__adv__ext__event__data__t.html#ac77d075c004b650dc98ee4342fd4760c", null ]
     ] ],
     [ "wiced_bt_ble_ext_scan_config_t", "structwiced__bt__ble__ext__scan__config__t.html", [
       [ "scanning_phys", "structwiced__bt__ble__ext__scan__config__t.html#a58cab73084222c1a13ac5715c7e95249", null ],
@@ -175,6 +227,31 @@ var group__btm__ble__api__functions =
       [ "enc_phy_scan_win", "structwiced__bt__ble__ext__scan__config__t.html#a941803bfaac1371cc8adf42af7a645c4", null ],
       [ "duration", "structwiced__bt__ble__ext__scan__config__t.html#a4b3df3e340d415a8fa0a112896437efd", null ],
       [ "period", "structwiced__bt__ble__ext__scan__config__t.html#a1af021a2bf4ae5528b054eb46c6727c9", null ]
+    ] ],
+    [ "wiced_bt_ble_pawr_subevent_ind_data_t", "structwiced__bt__ble__pawr__subevent__ind__data__t.html", [
+      [ "subevent_num", "structwiced__bt__ble__pawr__subevent__ind__data__t.html#a8cedc63ace9da3e3252438e5780998af", null ],
+      [ "rsp_slot_start", "structwiced__bt__ble__pawr__subevent__ind__data__t.html#a80b349ddae7ad02e139ce8eff04fb456", null ],
+      [ "rsp_slot_count", "structwiced__bt__ble__pawr__subevent__ind__data__t.html#ad2862d8d120abaf043e60a1441b3a9c3", null ],
+      [ "ind_data_length", "structwiced__bt__ble__pawr__subevent__ind__data__t.html#af067a35bc90d06ddc2fe7c54cc1ea285", null ],
+      [ "ind_data", "structwiced__bt__ble__pawr__subevent__ind__data__t.html#a1f161de740dc7a5f5dff9dcdeaa77536", null ]
+    ] ],
+    [ "wiced_bt_ble_pawr_subevent_rsp_data_t", "structwiced__bt__ble__pawr__subevent__rsp__data__t.html", [
+      [ "req_event", "structwiced__bt__ble__pawr__subevent__rsp__data__t.html#a90daca03cbe9e197e9bd430e77853ae5", null ],
+      [ "req_subevent", "structwiced__bt__ble__pawr__subevent__rsp__data__t.html#acad189feaeb339ec3d7dcd348b08afa4", null ],
+      [ "rsp_subevent", "structwiced__bt__ble__pawr__subevent__rsp__data__t.html#ab2dc334275fb262827862f1b5d730557", null ],
+      [ "rsp_slot", "structwiced__bt__ble__pawr__subevent__rsp__data__t.html#a646177c2953e36331ba64c361705ba13", null ],
+      [ "rsp_data_len", "structwiced__bt__ble__pawr__subevent__rsp__data__t.html#afa730622176e53e8b3b09a4c5a00a20f", null ],
+      [ "p_data", "structwiced__bt__ble__pawr__subevent__rsp__data__t.html#a86fda3abbfe4287abecea347064fd9c5", null ]
+    ] ],
+    [ "wiced_bt_ble_periodic_adv_params_t", "structwiced__bt__ble__periodic__adv__params__t.html", [
+      [ "adv_int_min", "structwiced__bt__ble__periodic__adv__params__t.html#a532ce0a440e59aa7173198fe65c7940a", null ],
+      [ "adv_int_max", "structwiced__bt__ble__periodic__adv__params__t.html#a0d2506bae7ea50ea6437ebfc9db7518f", null ],
+      [ "adv_properties", "structwiced__bt__ble__periodic__adv__params__t.html#a6ff2ae7ae3074dcd024e315090ecb813", null ],
+      [ "subevent_num", "structwiced__bt__ble__periodic__adv__params__t.html#a7cd1ed7226b71881edf0c47ef0c554d4", null ],
+      [ "subevent_interval", "structwiced__bt__ble__periodic__adv__params__t.html#a9e1f5f27f33c6aed7dc58b393d171562", null ],
+      [ "rsp_slot_delay", "structwiced__bt__ble__periodic__adv__params__t.html#af3e7b84f125c8206de9f99626cec4dee", null ],
+      [ "rsp_slot_spacing", "structwiced__bt__ble__periodic__adv__params__t.html#a76ec8146febfdbe3e1e886c558ffd35c", null ],
+      [ "rsp_slot_num", "structwiced__bt__ble__periodic__adv__params__t.html#ab91ca24870cbc4d2469fe132fcaac1b5", null ]
     ] ],
     [ "BTM_BLE_LEGACY_AD_DATA_LEN", "group__btm__ble__api__functions.html#gae3ba16e014add5799d4b298344cb5984", null ],
     [ "BTM_AFH_CHNL_MAP_SIZE", "group__btm__ble__api__functions.html#ga4549fd128a3e5a4c0b7499a154130377", null ],
@@ -235,6 +312,7 @@ var group__btm__ble__api__functions =
     [ "IS_LEGACY_ADV_REPORT", "group__btm__ble__api__functions.html#ga110fc0a0d9cab6da22c601a2fa817e02", null ],
     [ "IS_ADV_REPORT_DATA_STATUS_INCOMPLETE", "group__btm__ble__api__functions.html#ga1e4c6a24324a032b1d635b683baef640", null ],
     [ "IS_ADV_REPORT_DATA_STATUS_TRUNCATED", "group__btm__ble__api__functions.html#ga5e5db4071328c31ce3cf42dd57e4b621", null ],
+    [ "WICED_BT_MAX_PAWR_SUBEVENT_DATA_LEN", "group__btm__ble__api__functions.html#ga35a2daf6ca76260720b9e2bfd58db500", null ],
     [ "wiced_bt_ble_chnl_map_t", "group__btm__ble__api__functions.html#ga0fcba53bbcdcb2cfde297d440bebe36d", null ],
     [ "wiced_bt_ble_scanner_filter_policy_t", "group__btm__ble__api__functions.html#ga6d09736846bcb960a4fd36934d24bfef", null ],
     [ "wiced_bt_ble_advert_filter_policy_t", "group__btm__ble__api__functions.html#ga9f721100e521471e5a9cc5f9adcd92d4", null ],
@@ -326,6 +404,7 @@ var group__btm__ble__api__functions =
       [ "BTM_BLE_ADVERT_TYPE_MESH_MSG", "group__btm__ble__api__functions.html#gga4e721fb996eccc386b0311f022675eb2a6cbf5832ab8701d792982f06d4253b73", null ],
       [ "BTM_BLE_ADVERT_TYPE_MESH_BEACON", "group__btm__ble__api__functions.html#gga4e721fb996eccc386b0311f022675eb2a0b024a60e472f92d7939803d7a3f2428", null ],
       [ "BTM_BLE_ADVERT_TYPE_PSRI", "group__btm__ble__api__functions.html#gga4e721fb996eccc386b0311f022675eb2a842db8adcf1ff825bede10fc8224ac03", null ],
+      [ "BTM_BLE_ADVERT_TYPE_EAD", "group__btm__ble__api__functions.html#gga4e721fb996eccc386b0311f022675eb2a35468fc9178df1bfb72aa460f1e17902", null ],
       [ "BTM_BLE_ADVERT_TYPE_3D_INFO_DATA", "group__btm__ble__api__functions.html#gga4e721fb996eccc386b0311f022675eb2aa4b82acd5521d1f98bb55e094756236d", null ],
       [ "BTM_BLE_ADVERT_TYPE_MANUFACTURER", "group__btm__ble__api__functions.html#gga4e721fb996eccc386b0311f022675eb2a3a2b09951a570aa7bf720a7626119e6a", null ]
     ] ],
@@ -438,6 +517,10 @@ var group__btm__ble__api__functions =
       [ "WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a9c8f066bee4af20cde89bffa2f0a5be0", null ],
       [ "WICED_BT_BLE_CHANNEL_SEL_ALGO_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a5d7b21cd7c34e47c01ff033d73d7a26d", null ],
       [ "WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794addd59b434c4315dcdfee99c1a211a9cd", null ],
-      [ "WICED_BT_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a526894e0785581c1c109031c06f18536", null ]
+      [ "WICED_BT_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a526894e0785581c1c109031c06f18536", null ],
+      [ "WICED_BT_BLE_PAWR_SYNC_ESTABLISHED_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a80f1be48571025bfacfdb13ef6ecdb27", null ],
+      [ "WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a3330036ce07f7f874651ead39c37e32e", null ],
+      [ "WICED_BT_BLE_PAWR_IND_REPORT_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a72f37c90abede3df292e513c8816c5a0", null ],
+      [ "WICED_BT_BLE_PAWR_RSP_REPORT_EVENT", "group__btm__ble__api__functions.html#gga748b7c8c9f7711162f8def9f5408a794a24e43dcfac6a68faebf40b853d49b3d0", null ]
     ] ]
 ];

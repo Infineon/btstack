@@ -221,6 +221,7 @@ enum wiced_bt_ble_advert_type_e {
     BTM_BLE_ADVERT_TYPE_MESH_MSG                    = 0x2A,                 /**< Mesh Message */
     BTM_BLE_ADVERT_TYPE_MESH_BEACON                 = 0x2B,                 /**< Mesh Beacon */
     BTM_BLE_ADVERT_TYPE_PSRI                        = 0x2E,                 /**< Generic Audio Provate Set Random Identifier */
+    BTM_BLE_ADVERT_TYPE_EAD                         = 0x31,                 /**< Encrypted Advertising Data */
     BTM_BLE_ADVERT_TYPE_3D_INFO_DATA                = 0x3D,                 /**< 3D Information Data */
     BTM_BLE_ADVERT_TYPE_MANUFACTURER                = 0xFF                  /**< Manufacturer data */
 };
@@ -347,6 +348,7 @@ typedef struct
     uint16_t  conn_latency;  /**< connection latency */
     uint16_t  conn_supervision_timeout;  /**< connection supervision timeout */
 }wiced_bt_ble_pref_conn_params_t;
+
 
 
 /* The power table for multi ADV Tx Power levels
@@ -521,6 +523,13 @@ typedef struct
 
 } wiced_bt_ble_ext_adv_duration_config_t;
 
+/** Encryption Data Key Material structure */
+typedef struct
+{
+    wiced_bt_link_key_t session_key; /**< Session key */
+    wiced_bt_iv_t iv;                /**< Initialization Vector */
+} wiced_bt_ble_key_material_t;
+
 
 /** Periodic adv property */
 enum wiced_bt_ble_periodic_adv_prop_e
@@ -591,7 +600,7 @@ enum
     /** The Host requires that S=8 coding be used when transmitting on the LE Coded PHY */
     WICED_BT_BLE_PHY_ADV_OPTIONS_REQUIRE_S8 = 4,
 };
-/** Phy adv options to be set in \ref wiced_bt_ble_set_ext_adv_params_v2 */
+/** Phy adv options */
 typedef uint8_t wiced_bt_ble_phy_adv_options_t;
 
 /** Parameters for extended adv */
@@ -650,6 +659,8 @@ typedef struct
 /** Extended ADV connection configuration structure */
 typedef struct
 {
+    uint8_t adv_handle;  /**< advertising handle, Range: 0x00 to 0xEF or 0xFF */
+    uint8_t sub_event;  /**< subevent,Range: 0x00 to 0x7F or 0xFF */
     /**< Bit 0 = 1: Scan connectable advertisements on the LE 1M PHY. Connection
                   parameters for the LE 1M PHY are provided.
        Bit 1 = 1: Connection parameters for the LE 2M PHY are provided.
@@ -840,8 +851,10 @@ typedef struct
     uint16_t service_data; /**< Service Data value provided by the peer device */
 } wiced_bt_ble_periodic_adv_sync_transfer_event_data_t;
 
-/* @cond BETA_API
-   beta APIs for Periodic Advertising with Response*/
+/* @cond PAWR_API
+   APIs for Periodic Advertising with Response*/
+
+/** Maximum PAWR Subevent data len */
 #define WICED_BT_MAX_PAWR_SUBEVENT_DATA_LEN  251
 
 /** Periodic Advertising with Response (PAWR) Sync Established Event Data */
@@ -872,30 +885,30 @@ typedef struct
 /** Periodic Advertising with Response (PAWR) Response Report Event Data */
 typedef struct
 {
-    uint8_t     adv_handle;
-    uint8_t     subevent;
-    uint8_t     tx_status;
-    uint8_t     tx_power;
-    uint8_t     rssi;
-    uint8_t     cte_type;
-    uint8_t     response_slot;
-    uint8_t     data_status;
-    uint8_t     data_len;
-    uint8_t     data[WICED_BT_MAX_PAWR_SUBEVENT_DATA_LEN];
+    uint8_t adv_handle;      /**< advertisement set handle */
+    uint8_t subevent;        /**< subevent number */
+    uint8_t tx_status;       /**< if 1, AUX_SYNC_SUBEVENT_IND pkt was transmitted, else no */
+    uint8_t tx_power;        /**< tx power */
+    uint8_t rssi;            /**< rssi */
+    uint8_t cte_type;        /**< constant tone extension */
+    uint8_t response_slot;   /**< response slot */
+    uint8_t data_status;     /**< data status */
+    uint8_t data_len;        /**< data length */
+    uint8_t data[WICED_BT_MAX_PAWR_SUBEVENT_DATA_LEN];    /**< data in the event */
 } wiced_bt_ble_pawr_rsp_report_event_data_t;
 
 /** Periodic Advertising with Response (PAWR) Indication Report Event Data */
 typedef struct
 {
-    wiced_bt_ble_periodic_adv_sync_handle_t sync_handle;                /**< sync handle */
-    uint8_t     tx_power;
-    uint8_t     rssi;
-    uint8_t     cte_type;
-    uint16_t    periodic_evt_counter;
-    uint8_t     sub_event;
-    uint8_t     data_status;
-    uint8_t     data_length;                                /**< Length of the subevent indication data  */
-    uint8_t     data[WICED_BT_MAX_PAWR_SUBEVENT_DATA_LEN];  /**< Subevent data  */
+    wiced_bt_ble_periodic_adv_sync_handle_t sync_handle;    /**< sync handle */
+    uint8_t     tx_power;       /**< tx power */
+    uint8_t     rssi;           /**< rssi */
+    uint8_t     cte_type;       /**< constant tone extension */
+    uint16_t    periodic_evt_counter;    /**< Periodic Event counter */
+    uint8_t     sub_event;           /**< Subevent number*/
+    uint8_t     data_status;         /**< data status */
+    uint8_t     data_length;         /**< data length */
+    uint8_t     data[WICED_BT_MAX_PAWR_SUBEVENT_DATA_LEN];    /**< data in the event */
 } wiced_bt_ble_pawr_ind_report_event_data_t;
 /* @endcond */
 
@@ -910,8 +923,8 @@ typedef enum
     WICED_BT_BLE_CHANNEL_SEL_ALGO_EVENT,                /**< LE Channel selected algorithm event. Event Data: wiced_bt_ble_channel_sel_algo_event_data_t */
     WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT,              /**< BIGInfo adv report event. Event Data: wiced_bt_ble_biginfo_adv_report_t */
     WICED_BT_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT,      /**< Periodic Adv Sync Transfer Event. Event Data: wiced_bt_ble_periodic_adv_sync_transfer_event_data_t */
-	/* @cond BETA_API
-	beta APIs for Periodic Advertising with Response*/
+	/* @cond PAWR_API
+	APIs for Periodic Advertising with Response*/
     WICED_BT_BLE_PAWR_SYNC_ESTABLISHED_EVENT,           /**< Periodic Adv Sync Transfer Event. Event Data: wiced_bt_ble_pawr_sync_established_event_data_t */
     WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT,          /**< Periodic Adv Sync Transfer Event. Event Data: wiced_bt_ble_pawr_subevent_data_req_event_data_t */
     WICED_BT_BLE_PAWR_IND_REPORT_EVENT,                 /**< Periodic Adv Sync Transfer Event. Event Data: wiced_bt_ble_pawr_ind_report_event_data_t */
@@ -930,8 +943,8 @@ typedef union
     wiced_bt_ble_channel_sel_algo_event_data_t              channel_sel_algo;   /**< Data for WICED_BT_BLE_CHANNEL_SEL_ALGO_EVENT*/
     wiced_bt_ble_biginfo_adv_report_t                       biginfo_adv_report; /**< Data for WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT*/
     wiced_bt_ble_periodic_adv_sync_transfer_event_data_t    sync_transfer;      /**< Data for WICED_BT_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT */
-	/* @cond BETA_API
-	beta APIs for Periodic Advertising with Response*/
+	/* @cond PAWR_API
+	APIs for Periodic Advertising with Response*/
     wiced_bt_ble_pawr_sync_established_event_data_t         pawr_sync;          /**< Data for WICED_BT_BLE_PAWR_SYNC_ESTABLISHED_EVENT*/
     wiced_bt_ble_pawr_subevent_data_req_event_data_t        pawr_data_req;      /**< Data for WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT*/
     wiced_bt_ble_pawr_ind_report_event_data_t               pawr_ind_report;    /**< Data for WICED_BT_BLE_PAWR_IND_REPORT_EVENT*/
@@ -972,8 +985,8 @@ typedef struct
  */
 typedef void (*wiced_bt_ble_adv_ext_event_cb_fp_t) (wiced_bt_ble_adv_ext_event_t event, wiced_bt_ble_adv_ext_event_data_t *p_data);
 
-/* @cond BETA_API
-   beta APIs for Periodic Advertising with Response*/
+/* @cond PAWR_API
+   APIs for Periodic Advertising with Response*/
 /** Configuration for Periodic Advertising with Response (PAWR) subevent indication data
 **  which is sent by the central device at the start of each subevent
 */
@@ -985,7 +998,35 @@ typedef struct
     uint8_t     ind_data_length;            /**< Length of the subevent indication data  */
     uint8_t     ind_data[WICED_BT_MAX_PAWR_SUBEVENT_DATA_LEN]; /**< Subevent data  */
 } wiced_bt_ble_pawr_subevent_ind_data_t;
-/* @endcond */
+
+
+/** Configuration for Periodic Advertising with Response (PAWR) response data*/
+typedef struct
+{
+    uint16_t req_event;         /**< Request Event */
+    uint8_t req_subevent;       /**< Request Subevent */
+    int8_t rsp_subevent;        /**< Response Subevent */
+    uint8_t rsp_slot;           /**< Response Slot */
+    uint8_t rsp_data_len;       /**< Response data length */
+    uint8_t *p_data;            /**< Response data  */
+} wiced_bt_ble_pawr_subevent_rsp_data_t;
+
+
+/** LE Set Periodic Advertising Parameter V2 command parameter */
+typedef struct
+{
+    uint16_t    adv_int_min; /**< Minimum Periodic Advertising Interval  */
+    uint16_t    adv_int_max; /**< Maximum Periodic Advertising Interval  */
+    wiced_bt_ble_periodic_adv_prop_t adv_properties; /**< Advertising properties */
+    uint8_t     subevent_num;               /**< Number of subevents*/
+    uint8_t     subevent_interval;             /**< Interval between subevents */
+    uint8_t     rsp_slot_delay;             /**< Response slot delay */
+    uint8_t     rsp_slot_spacing;             /**< Response slot spacing */
+    uint8_t     rsp_slot_num;            /**< Number of subevent response slots */
+} wiced_bt_ble_periodic_adv_params_t;
+
+/** @endcond */
+
 
 
 /******************************************************
@@ -1015,7 +1056,8 @@ extern "C" {
  * and non connectable advs viz., BTM_BLE_ADVERT_NONCONN_HIGH, BTM_BLE_ADVERT_NONCONN_LOW
  *   a) Set ADV data
  *   b) Set Scan Response data if adv type is scannable
- * @note 2. if adv type is set to Directed then the stack resets any advertisement data which has been set for an earlier advertisement. Refer note 1 prior to attempting an undirected advertisement
+ * @note 2. if adv type is set to Directed then the stack resets any advertisement data which was set for an earlier advertisement.
+ * To attempt an UNDIRECTED_ADV after a DIRECTED_ADV, refer to instructions in note 1.
  *
  * The <b>advert_mode</b> parameter determines what advertising parameters and durations
  * to use (as specified by the application configuration).
@@ -1837,7 +1879,6 @@ uint8_t wiced_bt_ble_read_num_ext_adv_sets(void);
  *
  */
 uint16_t wiced_bt_ble_read_max_ext_adv_data_len(void);
-
 /**
  * Sends the HCI command to set the parameters for periodic advertising
  *
@@ -1858,6 +1899,24 @@ wiced_bt_dev_status_t wiced_bt_ble_set_periodic_adv_params(wiced_bt_ble_ext_adv_
                                                            uint16_t periodic_adv_int_min,
                                                            uint16_t periodic_adv_int_max,
                                                            wiced_bt_ble_periodic_adv_prop_t periodic_adv_properties);
+
+/**
+ * Sends the HCI command V2 to set the parameters for periodic advertising
+ *
+ * @param[in]       adv_handle            advertisement set handle
+ * @param[in]       p_adv_params          pointer to periodic advertising parameters
+ *
+ * @return          wiced_bt_dev_status_t
+ *
+ * <b> WICED_BT_ILLEGAL_VALUE </b> : If paramer is wrong \n
+ * <b> WICED_BT_UNSUPPORTED </b>   : If command not supported \n
+ * <b> WICED_BT_NO_RESOURCES </b>  : If no memory to issue the command \n
+ * <b> WICED_BT_SUCCESS </b>       : If successful\n
+ *
+ */
+wiced_bt_dev_status_t wiced_bt_ble_set_periodic_adv_params_v2(wiced_bt_ble_ext_adv_handle_t adv_handle,
+                                                           wiced_bt_ble_periodic_adv_params_t  *p_adv_params);
+
 
 /**
  * Sends the HCI command to write the periodic adv data
@@ -2192,28 +2251,20 @@ wiced_result_t wiced_bt_ble_read_le_features(wiced_bt_device_address_t bda, wice
  */
 wiced_result_t wiced_bt_ble_address_resolution_list_clear_and_disable(void);
 
-/* @cond BETA_API
-   beta APIs for Periodic Advertising with Response*/
+/* @cond PAWR_API
+   APIs for Periodic Advertising with Response*/
 /**
 * Function         wiced_bt_ble_set_pawr_params
 *
 *                  This API is called on a central to set the PAWR parameters
 *
 * @param[in]  adv_handle    Handle of the Advertising Set
-* @param[out] features  Pointer to store the supported features
+* @param[out] p_adv_params  Pointer to p_adv_params
 * @return          wiced_result_t
 *                  WICED_BT_SUCCESS contents of features are valid
 *                  WICED_BT_ERROR   otherwise.
 */
-wiced_bt_dev_status_t wiced_bt_ble_set_pawr_params (wiced_bt_ble_ext_adv_handle_t adv_handle,
-                            uint16_t                         periodic_adv_int_min,
-                            uint16_t                         periodic_adv_int_max,
-                            wiced_bt_ble_periodic_adv_prop_t periodic_adv_properties,
-                            uint8_t                          num_subevents,
-                            uint8_t                          subevent_interval,
-                            uint8_t                          response_slot_delay,
-                            uint8_t                          response_slot_spacing,
-                            uint8_t                          num_response_slots);
+wiced_bt_dev_status_t wiced_bt_ble_set_pawr_params (wiced_bt_ble_ext_adv_handle_t adv_handle,wiced_bt_ble_periodic_adv_params_t  *p_adv_params);
 
 /**
 * Function         wiced_bt_ble_set_pawr_subevent_ind_data
@@ -2221,7 +2272,8 @@ wiced_bt_dev_status_t wiced_bt_ble_set_pawr_params (wiced_bt_ble_ext_adv_handle_
 *                  This API is called on a peripheral to set the subevent indication data
 *
 * @param[in]  adv_handle    Handle of the Advertising Set
-* @param[out] features  Pointer to store the supported features
+* @param[in] num_subevents  Number of subevent data in the command
+* @param[in] p_se_data     Pointer to the subevent data
 * @return          wiced_result_t
 *                  WICED_BT_SUCCESS contents of features are valid
 *                  WICED_BT_ERROR   otherwise.
@@ -2236,13 +2288,12 @@ wiced_bt_dev_status_t wiced_bt_ble_set_pawr_subevent_ind_data (wiced_bt_ble_ext_
 *                  This API is called on a peripheral to set the subevent response data
 *
 * @param[in]  sync_handle    Handle of the synchronized advertising train
-* @param[out] features  Pointer to store the supported features
+* @param[out] p_rsp_data  Pointer to p_rsp_data
 * @return          wiced_result_t
 *                  WICED_BT_SUCCESS contents of features are valid
 *                  WICED_BT_ERROR   otherwise.
 */
-wiced_bt_dev_status_t wiced_bt_ble_set_pawr_subevent_rsp_data (uint16_t sync_handle,
-    uint8_t subevent_num, uint8_t rsp_slot, uint8_t rsp_data_len, uint8_t *p_data);
+wiced_bt_dev_status_t wiced_bt_ble_set_pawr_subevent_rsp_data (uint16_t sync_handle,wiced_bt_ble_pawr_subevent_rsp_data_t *p_rsp_data);
 
 
 /**
@@ -2280,7 +2331,52 @@ wiced_bt_dev_status_t wiced_bt_ble_set_pawr_sync_subevents (uint16_t sync_handle
 */
 wiced_bt_dev_status_t wiced_bt_ble_set_host_features(wiced_bt_ble_feature_bit_t feature, uint8_t bit_value);
 
+/**
+* Function wiced_bt_ble_encrypt_adv_packet
+*
+*    This API is called to encrypt advertising data. Encrypts data at \p p_plaintext of length \p payload_len into
+*    \p p_encrypted of length \p payload_len
+*
+* @param[in] p_key         session key
+* @param[in] p_iv          initialization vector
+* @param[in] p_randomizer  randomizer
+* @param[in] p_plaintext   plaintext to be encoded
+* @param[in] p_encrypted   encrypted output
+* @param[in] payload_len   plaintext/encrypted data len
+*
+* @return MIC, Message Integrity Check derived from the data
+*/
+uint32_t wiced_bt_ble_encrypt_adv_packet(
+    uint8_t *p_key, uint8_t *p_iv, uint8_t *p_randomizer, const uint8_t *p_plaintext, uint8_t *p_encrypted, int payload_len);
 
+/**
+* Function wiced_bt_ble_decrypt_adv_packet
+*
+*    This API is called to decrypt advertising data. Decrypts data at \p p_encrypted of length \p coded_len into
+*    \p p_plaintext of length \p coded_len
+*
+* @param[in] p_key        session key
+* @param[in] p_iv         initialization vector
+* @param[in] p_randomizer randomizer
+* @param[in] p_encrypted  encrypted data input
+* @param[in] p_plaintext  plaintext output
+* @param[in] coded_len    encrypted data len
+*
+* @return MIC, Message Integrity Check derived from the data
+*/
+uint32_t wiced_bt_ble_decrypt_adv_packet(
+    uint8_t *p_key, uint8_t *p_iv, uint8_t *p_randomizer, const uint8_t *p_encrypted, uint8_t *p_plaintext, int coded_len);
+
+/**
+* Function wiced_bt_ble_notify_on_device_address_change
+*
+*          This API is called to notify the application on device address change
+*
+* @param[in] enable  enable change of address notification
+*
+* @return None
+*/
+wiced_bt_dev_status_t wiced_bt_ble_notify_on_device_address_change(wiced_bool_t enable);
 
 /**@} btm_ble_api_functions */
 

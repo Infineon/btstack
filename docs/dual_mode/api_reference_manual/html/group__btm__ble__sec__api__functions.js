@@ -25,6 +25,7 @@ var group__btm__ble__sec__api__functions =
     [ "wiced_bt_ble_read_num_ext_adv_sets", "group__btm__ble__sec__api__functions.html#ga40931779181f9e3e6f82e715853f6632", null ],
     [ "wiced_bt_ble_read_max_ext_adv_data_len", "group__btm__ble__sec__api__functions.html#gab43c682f7d7037cf76adf6a39456010a", null ],
     [ "wiced_bt_ble_set_periodic_adv_params", "group__btm__ble__sec__api__functions.html#ga280ea50f07f084d3bb267dedf8e71a93", null ],
+    [ "wiced_bt_ble_set_periodic_adv_params_v2", "group__btm__ble__sec__api__functions.html#gaf1bfac5cad40750720496d174dbe7775", null ],
     [ "wiced_bt_ble_set_periodic_adv_data", "group__btm__ble__sec__api__functions.html#ga3f983b0b8d6ad3693c168b1c78d802d0", null ],
     [ "wiced_bt_ble_start_periodic_adv", "group__btm__ble__sec__api__functions.html#gab1016d53ad56373cde08fcdd4c66b7ad", null ],
     [ "wiced_bt_ble_cache_ext_scan_config", "group__btm__ble__sec__api__functions.html#ga107a1b5869c56e7d8154b08d292a2a22", null ],
@@ -45,5 +46,12 @@ var group__btm__ble__sec__api__functions =
     [ "wiced_ble_private_device_address_resolution", "group__btm__ble__sec__api__functions.html#gaa1a08bf54c9c06015c1bbafbaab433c1", null ],
     [ "wiced_bt_ble_read_le_features", "group__btm__ble__sec__api__functions.html#ga5bc1e0f5151f2b2e550bbd8c96035a82", null ],
     [ "wiced_bt_ble_address_resolution_list_clear_and_disable", "group__btm__ble__sec__api__functions.html#gafadf1111bda74127bcd449cf16ad5c06", null ],
-    [ "wiced_bt_ble_set_host_features", "group__btm__ble__sec__api__functions.html#gae3bb5b03e161b641202178ffe672705c", null ]
+    [ "wiced_bt_ble_set_pawr_params", "group__btm__ble__sec__api__functions.html#gafe1db88ca6e925ebc7068c6b708780af", null ],
+    [ "wiced_bt_ble_set_pawr_subevent_ind_data", "group__btm__ble__sec__api__functions.html#ga6ed932d4e9fbf80dd914420d3fc20910", null ],
+    [ "wiced_bt_ble_set_pawr_subevent_rsp_data", "group__btm__ble__sec__api__functions.html#gaea8a75e3417d822d0542b2f9be6d161e", null ],
+    [ "wiced_bt_ble_set_pawr_sync_subevents", "group__btm__ble__sec__api__functions.html#gab8548cf52d3e7397be60ed56b3298e31", null ],
+    [ "wiced_bt_ble_set_host_features", "group__btm__ble__sec__api__functions.html#gae3bb5b03e161b641202178ffe672705c", null ],
+    [ "wiced_bt_ble_encrypt_adv_packet", "group__btm__ble__sec__api__functions.html#ga1a7468928a46673a5995bef911e3feab", null ],
+    [ "wiced_bt_ble_decrypt_adv_packet", "group__btm__ble__sec__api__functions.html#ga698450b605ad602a6356e7edeb510004", null ],
+    [ "wiced_bt_ble_notify_on_device_address_change", "group__btm__ble__sec__api__functions.html#gac86072b25aa830842e94cff3eb1ffe03", null ]
 ];

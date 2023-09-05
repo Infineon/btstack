@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['latency',['latency',['../structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f',1,'wiced_bt_flow_spec_t']]],
+  ['latency',['latency',['../structwiced__bt__ble__conn__subrate__t.html#ab10fd7703600a082f0bffbf1dbeb7f23',1,'wiced_bt_ble_conn_subrate_t::latency()'],['../structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f',1,'wiced_bt_flow_spec_t::latency()']]],
   ['lcids',['lcids',['../structwiced__bt__gatt__eatt__connection__indication__event__t.html#ac5ec9c8439b1f54dcfa809a56c962f06',1,'wiced_bt_gatt_eatt_connection_indication_event_t']]],
   ['lcsrk',['lcsrk',['../structwiced__bt__ble__keys__t.html#a686bc84601157a39331938b78d2d1668',1,'wiced_bt_ble_keys_t']]],
   ['le_5fconnect_5fconfirm_5fcback',['le_connect_confirm_cback',['../structwiced__bt__l2cap__le__appl__information__t.html#afe24ed45b7ef47ceb3ee2738d9b82166',1,'wiced_bt_l2cap_le_appl_information_t']]],

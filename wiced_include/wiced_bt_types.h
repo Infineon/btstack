@@ -104,6 +104,8 @@ extern "C" {
 typedef uint8_t         wiced_bt_device_address_t[BD_ADDR_LEN]; /**< Device address length */
 #endif
 
+typedef uint8_t wiced_bt_hci_err_code_t; /**< HCI error codes */
+
 /** Result/Status */
 typedef wiced_result_t  wiced_bt_dev_status_t;
 
@@ -224,6 +226,9 @@ typedef struct
 
 #define LINK_KEY_LEN    16      /**< Link Key Len */
 typedef uint8_t wiced_bt_link_key_t[LINK_KEY_LEN];  /**< Link Key */
+
+#define IV_LEN 8 /**< Initialization Vector len */
+typedef uint8_t wiced_bt_iv_t[IV_LEN]; /**< IV, Initialization Vector */
 
 #define DRB_OVERHEAD_SIZE   (sizeof (uint16_t) + sizeof (uint16_t))     /**< length and offset */
 

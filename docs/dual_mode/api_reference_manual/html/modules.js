@@ -9,6 +9,7 @@ var modules =
     [ "RFCOMM", "group__rfcomm__api__functions.html", "group__rfcomm__api__functions" ],
     [ "Synchronous Connection Oriented (SCO) Channel", "group__sco.html", "group__sco" ],
     [ "Service Discovery Protocol (SDP)", "group__sdp.html", "group__sdp" ],
+    [ "Application Utility Functions", "group__app__utils.html", "group__app__utils" ],
     [ "Bluetooth Stack Platform Interface", "group__wiced__bt__platform__group.html", "group__wiced__bt__platform__group" ],
     [ "Memory Management", "group__wiced__mem.html", "group__wiced__mem" ],
     [ "Common Bluetooth definitions", "group__gentypes.html", "group__gentypes" ],

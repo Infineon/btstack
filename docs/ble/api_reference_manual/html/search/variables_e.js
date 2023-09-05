@@ -5,6 +5,7 @@ var searchData=
   ['num_5fbis',['num_bis',['../structwiced__bt__ble__biginfo__adv__report__t.html#abf188803914725b2e0e5f0249df5edca',1,'wiced_bt_ble_biginfo_adv_report_t']]],
   ['num_5fcompleted_5fext_5fadv_5fevents',['num_completed_ext_adv_events',['../structwiced__bt__ble__ext__adv__set__terminated__event__data__t.html#ad56295f549b2ff83e0fae66abeb3b5aa',1,'wiced_bt_ble_ext_adv_set_terminated_event_data_t']]],
   ['num_5fhandles',['num_handles',['../structwiced__bt__gatt__read__multiple__req__t.html#ad2d6d1618bbade63c4823c8fc05c7bba',1,'wiced_bt_gatt_read_multiple_req_t']]],
+  ['num_5fsubevents',['num_subevents',['../structwiced__bt__ble__pawr__sync__established__event__data__t.html#a433d6128ec3583a0e637f7154aeec0f6',1,'wiced_bt_ble_pawr_sync_established_event_data_t']]],
   ['number_5fof_5fsubevents',['number_of_subevents',['../structwiced__bt__ble__biginfo__adv__report__t.html#ab2b3c1381bbbd5ee351b7bb72e682056',1,'wiced_bt_ble_biginfo_adv_report_t']]],
   ['numeric_5fvalue',['numeric_value',['../structwiced__bt__dev__user__cfm__req__t.html#ae7f1276a069563b37e82ca7c8ff56c32',1,'wiced_bt_dev_user_cfm_req_t']]]
 ];
