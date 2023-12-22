@@ -659,16 +659,16 @@ typedef struct
 /** Extended ADV connection configuration structure */
 typedef struct
 {
-    uint8_t adv_handle;  /**< advertising handle, Range: 0x00 to 0xEF or 0xFF */
-    uint8_t sub_event;  /**< subevent,Range: 0x00 to 0x7F or 0xFF */
-    /**< Bit 0 = 1: Scan connectable advertisements on the LE 1M PHY. Connection
-                  parameters for the LE 1M PHY are provided.
-       Bit 1 = 1: Connection parameters for the LE 2M PHY are provided.
-       Bit 2 = 1: Scan connectable advertisements on the LE Coded PHY. Connection
-                  parameters for the LE Coded PHY are provided */
-    wiced_bt_ble_ext_adv_phy_mask_t   initiating_phys;      /**< the PHY(s) bit mask on which the advertising
-                                                            packets should be received on the primary advertising channel and the PHYs
-                                                            for which connection parameters have been specified.*/
+    uint8_t adv_handle;  /**< advertising handle, Range: 0x00 to 0xEF or 0xFF. @note adv_handle shall be set to 0xff in case adv_handle parameter is not to be used */
+    uint8_t sub_event;  /**< subevent,Range: 0x00 to 0x7F or 0xFF. @note sub_event shall be set to 0xff in case sub_event parameter is not to be used */
+
+    wiced_bt_ble_ext_adv_phy_mask_t   initiating_phys;      /**< Bit 0 = 1: Scan connectable advertisements on the LE 1M PHY.
+	                                                                     Connection parameters for the LE 1M PHY are provided.
+                                                                 Bit 1 = 1: Connection parameters for the LE 2M PHY are provided.
+                                                                 Bit 2 = 1: Scan connectable advertisements on the LE Coded PHY. Connection
+                                                                            parameters for the LE Coded PHY are provided.
+	                                                          The PHY(s) bit mask on which the advertising packets should be received on the primary
+			                                          advertising channel and the PHYs for which connection parameters have been specified.*/
 
     uint16_t      scan_int[WICED_BT_BLE_EXT_ADV_NUM_PHYS];       /**< Range N: 0x0004 to 0xFFFF.Time = N * 0.625 ms. Time Range: 2.5 ms to 40.959375 s */
     uint16_t      scan_window[WICED_BT_BLE_EXT_ADV_NUM_PHYS];    /**< Range N: 0x0004 to 0xFFFF.Time = N * 0.625 ms. Time Range: 2.5 ms to 40.959375 s */
@@ -1970,6 +1970,9 @@ wiced_bt_dev_status_t wiced_bt_ble_cache_ext_scan_config(wiced_bt_ble_ext_scan_c
  * Stores the extended ADV connection configuration.
  *
  * @param[in]       p_ext_conn_cfg    - pointer to connection configuration
+ *
+ * @note The adv_handle and sub_event parameters of connection configuration shall be set to 0xFF if
+ *        p_ext_conn_cfg->adv_handle and p_ext_conn_cfg->sub_event parameters are not to be used
  *
  * @return          wiced_bt_dev_status_t
  *

@@ -69,6 +69,13 @@
 #define WICED_SCO_PKT_TYPES_MASK_NO_3_EV5 0x0200    /**< SCO packet type 3-EV5 */
 #endif
 
+#define WICED_BT_SCO_NUM_CODECS   2
+#define WICED_BT_SCO_IDX_CVSD     0   /**< eSCO setting for CVSD */
+#define WICED_BT_SCO_IDX_MSBC     1   /**< eSCO setting for mSBC T2 */
+#define WICED_BT_SCO_IDX_NONE     WICED_BT_SCO_NUM_CODECS
+
+typedef uint8_t wiced_bt_sco_idx_t;   /**< SCO codec index */
+
 /** SCO route path */
 typedef enum
 {
@@ -101,6 +108,40 @@ typedef struct
     wiced_bt_sco_route_path_t    path;           /**< sco routing path see #wiced_bt_sco_route_path_t*/
     wiced_bt_sco_data_cb_t       *p_sco_data_cb; /**< If not NULL and route is APP_CB, callback function called for incoming pcm data */
 }wiced_bt_voice_path_setup_t;
+
+typedef struct
+{
+    uint8_t   coding_format;      /* Coding Format see hcidefs.h */
+    uint16_t  company_id;         /* Company ID from BT SIG Assigned Numbers */
+    uint16_t  vs_codec_id;        /* Vendor Specific Codec ID:  */
+} wiced_bt_coding_format;
+
+typedef struct
+{
+    uint32_t tx_bw;                           /* TX BW (# of octets/second) */
+    uint32_t rx_bw;                           /* RX BW (# of octets/second) */
+    wiced_bt_coding_format tx_cf;               /* TX coding format */
+    wiced_bt_coding_format rx_cf;               /* RX coding format */
+    uint16_t tx_codec_frame_size;             /* TX CODEC frame size (OTA frame size) */
+    uint16_t rx_codec_frame_size;             /* RX CODEC frame size (OTA frame size) */
+    uint32_t input_bandwidth;                 /* Input BW (nominal rate octets/sec) */
+    uint32_t output_bandwidth;                /* Output BW (nominal rate octets/sec) */
+    wiced_bt_coding_format input_cf;            /* Input coding format */
+    wiced_bt_coding_format output_cf;           /* Output coding format */
+    uint16_t input_coded_data_size;           /* Input coded data size (in bits) */
+    uint16_t output_coded_data_size;          /* Output coded data size (in bits) */
+    uint8_t input_pcm_data_format;            /* Input PCM data format (see hcidefs.h) */
+    uint8_t output_pcm_data_format;           /* Output PCM data format (see hcidefs.h) */
+    uint8_t input_pcm_payload_msb_position;   /* Input PCM sample payload MSB position */
+    uint8_t output_pcm_payload_msb_position;  /* Output PCM sample payload MSB position */
+    uint8_t input_data_path;                  /* 0x00 - HCI, or 0x01-0xFE for VS) */
+    uint8_t output_data_path;                 /* 0x00 - HCI, or 0x01-0xFE for VS) */
+    uint8_t input_transport_unit_size;        /* Input transport unit size */
+    uint8_t output_transport_unit_size;       /* Output transport unit size */
+    uint16_t max_latency;                     /* Maximum latency (0x4-0xFFFE in msecs) */
+    uint16_t packet_types;                    /* Packet Types */
+    uint8_t retrans_effort;                   /* 0x00-0x02, 0xFF don't care */
+} wiced_bt_enh_esco_params_t;
 
 
 /******************************************************
@@ -244,6 +285,26 @@ uint16_t wiced_bt_sco_output_stream( uint16_t sco_index, uint8_t* p_pcmsrc,uint1
 
 void  wiced_bt_sco_turn_off_pcm_clock( void );
 
+/**
+ * Read the esco parametes
+ *
+ * @param[in] index: index to SCO codec
+ * @param[out] p_enh_esco_params:  application allocated buffer pointer to read the parameters
+ *
+ * @return : None
+ */
+void wiced_bt_read_esco_parameters(wiced_bt_sco_idx_t index, wiced_bt_enh_esco_params_t  *p_enh_esco_params);
+
+/**
+ * update the default esco parametes, This API needs to be called before initiating SCO connection
+ *
+ * @param[in] index: SCO Codec index to update the parameters
+ * @param[in] p_enh_esco_params:  pointer to sco parameters
+ *
+ * @return : None
+ */
+
+void wiced_bt_config_esco_parameters(wiced_bt_sco_idx_t index, wiced_bt_enh_esco_params_t *p_enh_esco_params);
 
 #ifdef __cplusplus
 }

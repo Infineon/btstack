@@ -104,7 +104,9 @@ extern "C" {
 #endif
 
 /**
- * Returns the number of free bytes of RAM left
+ * Returns the number of free bytes of RAM available for allocation from the
+ * dynamic memory allocation of the Bluetooth Controller firmware
+ * @note This API is valid only for embedded platforms where the application,stack and controller memory is allocated from a common dynamic memory area.
  *
  * @return          the number of free bytes of RAM left
  */

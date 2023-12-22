@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="450" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="450" bodyend="-1"/>
+        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="450" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="450" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__scene__request__t_1a9c5810179079cf0bf0f5a7764c4d3abd" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="451" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="451" bodyend="-1"/>
+        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="451" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="451" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -38,7 +38,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="446" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="445" bodyend="452"/>
+    <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="446" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="445" bodyend="452"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__scene__request__t_1a9c5810179079cf0bf0f5a7764c4d3abd" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scene_request_t</scope><name>scene_number</name></member>
       <member refid="structwiced__bt__mesh__scene__request__t_1aaf552dffd2a3e73b45475e1b53b39c06" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scene_request_t</scope><name>type</name></member>

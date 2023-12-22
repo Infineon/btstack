@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1338" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1338" bodyend="-1"/>
+        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1338" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1338" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__ctl__temperature__range__data__t_1ad4448825cae26f59e21efcabf00e83fa" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1339" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1339" bodyend="-1"/>
+        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1339" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1339" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -38,7 +38,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1337" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1336" bodyend="1340"/>
+    <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1337" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1336" bodyend="1340"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__light__ctl__temperature__range__data__t_1ad4448825cae26f59e21efcabf00e83fa" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_ctl_temperature_range_data_t</scope><name>max_level</name></member>
       <member refid="structwiced__bt__mesh__light__ctl__temperature__range__data__t_1a54a9740df3a832ca8d9b45309de231d3" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_ctl_temperature_range_data_t</scope><name>min_level</name></member>

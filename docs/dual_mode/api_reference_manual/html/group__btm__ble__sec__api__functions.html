@@ -1480,6 +1480,7 @@ This API cannot be used for the advertising handle with the event_properties tha
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>The adv_handle and sub_event parameters of connection configuration shall be set to 0xFF if p_ext_conn_cfg-&gt;adv_handle and p_ext_conn_cfg-&gt;sub_event parameters are not to be used</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>wiced_bt_dev_status_t</dd></dl>
 <p><b> WICED_BT_ILLEGAL_VALUE </b> : If paramer is wrong <br />
 <b> WICED_BT_UNSUPPORTED </b> : If command not supported <br />

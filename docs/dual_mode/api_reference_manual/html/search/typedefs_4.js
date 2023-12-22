@@ -145,6 +145,7 @@ var searchData=
   ['wiced_5fbt_5frfcomm_5fresult_5ft',['wiced_bt_rfcomm_result_t',['../group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d',1,'wiced_bt_rfcomm.h']]],
   ['wiced_5fbt_5frfcomm_5fsignal_5ft',['wiced_bt_rfcomm_signal_t',['../group__rfcomm__api__functions.html#ga33ea46c5bfe359825b3973b9ed7bdb01',1,'wiced_bt_rfcomm.h']]],
   ['wiced_5fbt_5fsco_5fdata_5fcb_5ft',['wiced_bt_sco_data_cb_t',['../group__sco.html#ga433b5e0db003b8b72321db4556af7a85',1,'wiced_bt_sco.h']]],
+  ['wiced_5fbt_5fsco_5fidx_5ft',['wiced_bt_sco_idx_t',['../group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a',1,'wiced_bt_sco.h']]],
   ['wiced_5fbt_5fsco_5ftype_5ft',['wiced_bt_sco_type_t',['../group__wicedbt___device_management.html#gaa60fe446ece8ef8847c1dc84e6485ccc',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fsdp_5fdiscovery_5fcomplete_5fcback_5ft',['wiced_bt_sdp_discovery_complete_cback_t',['../group__sdp.html#ga67cbc8e056216dc0f23717a556437565',1,'wiced_bt_sdp.h']]],
   ['wiced_5fbt_5fsec_5flevel_5ft',['wiced_bt_sec_level_t',['../group__wiced__bt__cfg.html#gac87ddd863edac8d1cb50edd12662c340',1,'wiced_bt_cfg.h']]],

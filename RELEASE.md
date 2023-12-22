@@ -8,6 +8,17 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.8.1
+BTSTACK3.8.1 is a patch release with following enhancements and fixes -
+ - Added new wiced API, wiced_bt_isoc_read_tx_sync(), to send HCI_LE_Read_ISO_TX_Sync HCI command
+ - Fixed the issue in AIROC™ BT/BLE stack deinitialization
+ - Properly set maximum transmission payload size to be used for LL data PDUs
+ - Changes to stop PAwR extended connection when Enhanced connection complete error is received
+ - Corrected enum value of WICED_BLE_ISOC_DPD_INPUT_OUTPUT_BIT
+ - Changes for optimization of acl link allocation in stack
+ - Updated wiced_memory_get_free_bytes() and wiced_bt_ble_cache_ext_conn_config() API documentation
+ - Added support to configure input and output coding format for SCO connection using newly added wiced_bt_read_esco_parameters() and wiced_bt_config_esco_parameters() APIs
+
 ## V3.8.0
 BTSTACK3.8 is BT5.4 certified. QDID: 219623.
 This release contains bug fixes and and an enhancement listed below.

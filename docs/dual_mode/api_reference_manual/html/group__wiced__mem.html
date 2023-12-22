@@ -138,7 +138,7 @@ typedef struct t_wiced_bt_heap&#160;</td><td class="memItemRight" valign="bottom
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gae7ff550ebc3ec2693de3b360f1a1539f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#gae7ff550ebc3ec2693de3b360f1a1539f">wiced_memory_get_free_bytes</a> (void)</td></tr>
-<tr class="memdesc:gae7ff550ebc3ec2693de3b360f1a1539f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of free bytes of RAM left.  <a href="#gae7ff550ebc3ec2693de3b360f1a1539f">More...</a><br /></td></tr>
+<tr class="memdesc:gae7ff550ebc3ec2693de3b360f1a1539f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of free bytes of RAM available for allocation from the dynamic memory allocation of the Bluetooth Controller firmware.  <a href="#gae7ff550ebc3ec2693de3b360f1a1539f">More...</a><br /></td></tr>
 <tr class="separator:gae7ff550ebc3ec2693de3b360f1a1539f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabd087700ddd0362c48b52e9c6f66a059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wiced__mem.html#ga29951f8f099d15eb96c47cfbdf656c3c">wiced_bt_heap_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__mem.html#gabd087700ddd0362c48b52e9c6f66a059">wiced_bt_create_heap</a> (const char *name, void *p_area, int size, <a class="el" href="structwiced__bt__lock__t.html">wiced_bt_lock_t</a> *p_lock, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> b_make_default)</td></tr>
 <tr class="memdesc:gabd087700ddd0362c48b52e9c6f66a059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes dynamic memory area.  <a href="#gabd087700ddd0362c48b52e9c6f66a059">More...</a><br /></td></tr>
@@ -283,7 +283,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the number of free bytes of RAM left. </p>
+<p>Returns the number of free bytes of RAM available for allocation from the dynamic memory allocation of the Bluetooth Controller firmware. </p>
+<dl class="section note"><dt>Note</dt><dd>This API is valid only for embedded platforms where the application,stack and controller memory is allocated from a common dynamic memory area.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>the number of free bytes of RAM left </dd></dl>
 
 </div>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="506" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="506" bodyend="-1"/>
+        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="506" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="506" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__time__zone__set__t_1a00fdd62f8c5e97742be7c649e64b47fb" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="507" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="507" bodyend="-1"/>
+        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="507" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="507" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -38,7 +38,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="505" column="1" bodyfile="D:/glb/1ntFjKB8/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="504" bodyend="508"/>
+    <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="505" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="504" bodyend="508"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__time__zone__set__t_1a00fdd62f8c5e97742be7c649e64b47fb" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_zone_set_t</scope><name>tai_of_zone_change</name></member>
       <member refid="structwiced__bt__mesh__time__zone__set__t_1a4e2f0ea30e6b41ec53d942e3e5c8ea44" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_zone_set_t</scope><name>time_zone_offset_new</name></member>

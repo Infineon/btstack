@@ -106,6 +106,10 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__voice__path__setup__t.html">wiced_bt_voice_path_setup_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO path config.  <a href="structwiced__bt__voice__path__setup__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__coding__format.html">wiced_bt_coding_format</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -165,6 +169,20 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga27dd611918b66dda74daf54abd072d87">WICED_SCO_PKT_TYPES_MASK_NO_3_EV5</a>&#160;&#160;&#160;0x0200</td></tr>
 <tr class="memdesc:ga27dd611918b66dda74daf54abd072d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type 3-EV5. <br /></td></tr>
 <tr class="separator:ga27dd611918b66dda74daf54abd072d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga158c68e01064256fdd9af42620cb7931"><td class="memItemLeft" align="right" valign="top"><a id="ga158c68e01064256fdd9af42620cb7931"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WICED_BT_SCO_NUM_CODECS</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga158c68e01064256fdd9af42620cb7931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga632f8a7f3e2def6fc14cbc0572580d7e"><td class="memItemLeft" align="right" valign="top"><a id="ga632f8a7f3e2def6fc14cbc0572580d7e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga632f8a7f3e2def6fc14cbc0572580d7e">WICED_BT_SCO_IDX_CVSD</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ga632f8a7f3e2def6fc14cbc0572580d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">eSCO setting for CVSD <br /></td></tr>
+<tr class="separator:ga632f8a7f3e2def6fc14cbc0572580d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c67caf3e5135f2ff19bc21ca09e9e1d"><td class="memItemLeft" align="right" valign="top"><a id="ga0c67caf3e5135f2ff19bc21ca09e9e1d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga0c67caf3e5135f2ff19bc21ca09e9e1d">WICED_BT_SCO_IDX_MSBC</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ga0c67caf3e5135f2ff19bc21ca09e9e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">eSCO setting for mSBC T2 <br /></td></tr>
+<tr class="separator:ga0c67caf3e5135f2ff19bc21ca09e9e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0037c6bff6fc412a8f46998e02f3b9b9"><td class="memItemLeft" align="right" valign="top"><a id="ga0037c6bff6fc412a8f46998e02f3b9b9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WICED_BT_SCO_IDX_NONE</b>&#160;&#160;&#160;WICED_BT_SCO_NUM_CODECS</td></tr>
+<tr class="separator:ga0037c6bff6fc412a8f46998e02f3b9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga790bb3988e26ca2335c728a350c63736"><td class="memItemLeft" align="right" valign="top"><a id="ga790bb3988e26ca2335c728a350c63736"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga790bb3988e26ca2335c728a350c63736">WICED_BT_SCO_DATA_CB_GET_LENGTH</a>(ltch_len)&#160;&#160;&#160;((ltch_len&gt;&gt;8)&amp;0xff)</td></tr>
 <tr class="memdesc:ga790bb3988e26ca2335c728a350c63736"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO data callback length. <br /></td></tr>
@@ -176,6 +194,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga94ae563f30b6b2bd4835125e673f6d7a"><td class="memItemLeft" align="right" valign="top"><a id="ga94ae563f30b6b2bd4835125e673f6d7a"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a></td></tr>
+<tr class="memdesc:ga94ae563f30b6b2bd4835125e673f6d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO codec index. <br /></td></tr>
+<tr class="separator:ga94ae563f30b6b2bd4835125e673f6d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga433b5e0db003b8b72321db4556af7a85"><td class="memItemLeft" align="right" valign="top"><a id="ga433b5e0db003b8b72321db4556af7a85"></a>
 typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga433b5e0db003b8b72321db4556af7a85">wiced_bt_sco_data_cb_t</a>(uint16_t sco_channel, uint16_t length, uint8_t *p_data)</td></tr>
 <tr class="memdesc:ga433b5e0db003b8b72321db4556af7a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call back function for pcm data transfer, ltch_len = (length)&lt;&lt;8|(sco_channel) <br /></td></tr>
@@ -218,6 +240,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gae8704d3d0ef9c0ad9d789b6b2db4eda8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gae8704d3d0ef9c0ad9d789b6b2db4eda8">wiced_bt_sco_turn_off_pcm_clock</a> (void)</td></tr>
 <tr class="memdesc:gae8704d3d0ef9c0ad9d789b6b2db4eda8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The wiced_voice_path.a was required to include before we link this function.  <a href="#gae8704d3d0ef9c0ad9d789b6b2db4eda8">More...</a><br /></td></tr>
 <tr class="separator:gae8704d3d0ef9c0ad9d789b6b2db4eda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb5f3a06a7cd387c9a521b29edfe65b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gaeb5f3a06a7cd387c9a521b29edfe65b0">wiced_bt_read_esco_parameters</a> (<a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a> index, <a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a> *p_enh_esco_params)</td></tr>
+<tr class="memdesc:gaeb5f3a06a7cd387c9a521b29edfe65b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the esco parametes.  <a href="#gaeb5f3a06a7cd387c9a521b29edfe65b0">More...</a><br /></td></tr>
+<tr class="separator:gaeb5f3a06a7cd387c9a521b29edfe65b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ac9a7d506011ce7beab3c6f3799761b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga6ac9a7d506011ce7beab3c6f3799761b">wiced_bt_config_esco_parameters</a> (<a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a> index, <a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a> *p_enh_esco_params)</td></tr>
+<tr class="memdesc:ga6ac9a7d506011ce7beab3c6f3799761b"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the default esco parametes, This API needs to be called before initiating SCO connection  <a href="#ga6ac9a7d506011ce7beab3c6f3799761b">More...</a><br /></td></tr>
+<tr class="separator:ga6ac9a7d506011ce7beab3c6f3799761b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga4548402097137688617e39d9377fc8a2"></a>
@@ -538,6 +566,82 @@ Functions</h2></td></tr>
 
 <p>The wiced_voice_path.a was required to include before we link this function. </p>
 <p>To turn off the PCM/I2S hardware clock This function needs to be called after the application turns off (or mutes audio data in/out of) the codec</p>
+<dl class="section return"><dt>Returns</dt><dd>: None </dd></dl>
+
+</div>
+</div>
+<a id="gaeb5f3a06a7cd387c9a521b29edfe65b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb5f3a06a7cd387c9a521b29edfe65b0">&#9670;&nbsp;</a></span>wiced_bt_read_esco_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_read_esco_parameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a> *&#160;</td>
+          <td class="paramname"><em>p_enh_esco_params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the esco parametes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>index to SCO codec </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_enh_esco_params</td><td>application allocated buffer pointer to read the parameters</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None </dd></dl>
+
+</div>
+</div>
+<a id="ga6ac9a7d506011ce7beab3c6f3799761b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ac9a7d506011ce7beab3c6f3799761b">&#9670;&nbsp;</a></span>wiced_bt_config_esco_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_config_esco_parameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a> *&#160;</td>
+          <td class="paramname"><em>p_enh_esco_params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>update the default esco parametes, This API needs to be called before initiating SCO connection </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>SCO Codec index to update the parameters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_enh_esco_params</td><td>pointer to sco parameters</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>: None </dd></dl>
 
 </div>

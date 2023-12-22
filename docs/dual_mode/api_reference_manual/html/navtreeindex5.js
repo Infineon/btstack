@@ -1,5 +1,10 @@
 var NAVTREEINDEX5 =
 {
+"group__wicedbt___device_management.html#gga83e5618d32b7fa1fb7c17ea40555e028a0aa5f98cb6fe00a35385192aa64b3b52":[1,4,144,1],
+"group__wicedbt___device_management.html#gga83e5618d32b7fa1fb7c17ea40555e028a26e90dbfa7ba7971bdfe3fff3247ea71":[1,4,144,21],
+"group__wicedbt___device_management.html#gga83e5618d32b7fa1fb7c17ea40555e028a28fc16e35ab78fc08fafadf78b772e2a":[1,4,144,6],
+"group__wicedbt___device_management.html#gga83e5618d32b7fa1fb7c17ea40555e028a2a0bbc5ee5a6285d6ccb5d513053ec91":[1,4,144,4],
+"group__wicedbt___device_management.html#gga83e5618d32b7fa1fb7c17ea40555e028a2f0ead04b4d51d8746d0baa24764293e":[1,4,144,9],
 "group__wicedbt___device_management.html#gga83e5618d32b7fa1fb7c17ea40555e028a340ebe0ec5dcdf4de0439c942106430a":[1,4,144,18],
 "group__wicedbt___device_management.html#gga83e5618d32b7fa1fb7c17ea40555e028a40d553ff55f5b42fd922d9ff0025b6a7":[1,4,144,7],
 "group__wicedbt___device_management.html#gga83e5618d32b7fa1fb7c17ea40555e028a4224a5ce7d434cde8365697326e8644d":[1,4,144,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX5 =
 "group__wicedbt__av__a2d__helper.html#ga72a61563b28df572ed2710a46d93fb58":[1,1,0,15],
 "group__wicedbt__av__a2d__helper.html#ga783c8401e79dc865b6389f7a7eb309e3":[1,1,0,41],
 "group__wicedbt__av__a2d__helper.html#ga79c33dc162a9a5c1b83a090467ef2cb0":[1,1,0,32],
-"group__wicedbt__av__a2d__helper.html#ga85ac5b10048aea1745446013aa929957":[1,1,0,56],
-"group__wicedbt__av__a2d__helper.html#ga8ccbe103977bb96a5e441d382fdfd92c":[1,1,0,60],
-"group__wicedbt__av__a2d__helper.html#ga918081db9789f2672ff97f3bf19b64d8":[1,1,0,57],
-"group__wicedbt__av__a2d__helper.html#ga993c5e5412998d6c3ccc603155cbaee6":[1,1,0,27],
-"group__wicedbt__av__a2d__helper.html#gaa41501df37f123cd9f12b7d789bdf74b":[1,1,0,59],
-"group__wicedbt__av__a2d__helper.html#gaa6a1e0bed19c7df95e0249e825947807":[1,1,0,47]
+"group__wicedbt__av__a2d__helper.html#ga85ac5b10048aea1745446013aa929957":[1,1,0,56]
 };
