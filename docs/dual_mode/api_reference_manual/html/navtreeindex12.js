@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structwiced__bt__avrc__unit__info__rsp__t.html#a9997303ccf9d0eb80003b62b8a9ea989":[1,2,11,1],
 "structwiced__bt__avrc__xmit__buf__t.html":[1,2,3],
 "structwiced__bt__avrc__xmit__buf__t.html#a2d1e1582095112464e4d1ac352045af0":[1,2,3,4],
 "structwiced__bt__avrc__xmit__buf__t.html#a52b716d60a1311c4e74236259681d81b":[1,2,3,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structwiced__bt__ble__scan__req__received__event__data__t.html":[1,4,0,19],
 "structwiced__bt__ble__scan__req__received__event__data__t.html#a41a2e832cc0cb3ab3138886bb8284ced":[1,4,0,19,2],
 "structwiced__bt__ble__scan__req__received__event__data__t.html#a834d04d7588d08b2138951d3bad01548":[1,4,0,19,0],
-"structwiced__bt__ble__scan__req__received__event__data__t.html#ade44be195016ce8494a899698be6dab4":[1,4,0,19,1],
-"structwiced__bt__ble__scan__results__t.html":[1,4,0,6]
+"structwiced__bt__ble__scan__req__received__event__data__t.html#ade44be195016ce8494a899698be6dab4":[1,4,0,19,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"structwiced__bt__flow__spec__t.html#a6e6a9b6233b29a7dcab88b5acbd156a2":[1,7,0,1,6],
 "structwiced__bt__flow__spec__t.html#a9c3356ff7f5cde79de835eccc0aa0ef8":[1,7,0,1,1],
 "structwiced__bt__flow__spec__t.html#aab51a7692589e5bb14821ded70745708":[1,7,0,1,2],
 "structwiced__bt__flow__spec__t.html#ad711c78a4e64edcd6d8dbbc037638c57":[1,7,0,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "structwiced__bt__smp__sc__local__oob__t.html#afc8dd611aa0e5f056861960449e90fc6":[1,1,37,3],
 "structwiced__bt__smp__sc__remote__oob__req__t.html":[1,1,39],
 "structwiced__bt__smp__sc__remote__oob__req__t.html#ab0b3869621e7372eb426023fe0a6a919":[1,1,39,0],
-"structwiced__bt__smp__sc__remote__oob__req__t.html#ad79d9b88cb94073e7697a3deb395c9bf":[1,1,39,1],
-"structwiced__bt__stack__platform__t.html":[1,5,0]
+"structwiced__bt__smp__sc__remote__oob__req__t.html#ad79d9b88cb94073e7697a3deb395c9bf":[1,1,39,1]
 };

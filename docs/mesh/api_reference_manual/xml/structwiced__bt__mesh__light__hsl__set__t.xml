@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1411" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1411" bodyend="-1"/>
+        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1411" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1411" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__set__t_1a635d27de08785dab0e01bf832a3ed80c" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1412" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1412" bodyend="-1"/>
+        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1412" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1412" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__set__t_1aadde0d8c69ed9e23ea53adbff3d01281" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1413" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1413" bodyend="-1"/>
+        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1413" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1413" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -65,7 +65,7 @@
         <link refid="structwiced__bt__mesh__light__hsl__data__t"/>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1410" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1409" bodyend="1414"/>
+    <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1410" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1409" bodyend="1414"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__light__hsl__set__t_1aadde0d8c69ed9e23ea53adbff3d01281" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_set_t</scope><name>delay</name></member>
       <member refid="structwiced__bt__mesh__light__hsl__set__t_1a59a078e1fa2d53c65a753bf4fa3dd3e5" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_set_t</scope><name>target</name></member>

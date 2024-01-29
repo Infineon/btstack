@@ -264,6 +264,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gac86072b25aa830842e94cff3eb1ffe03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__sec__api__functions.html#gac86072b25aa830842e94cff3eb1ffe03">wiced_bt_ble_notify_on_device_address_change</a> (<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> enable)</td></tr>
 <tr class="memdesc:gac86072b25aa830842e94cff3eb1ffe03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function wiced_bt_ble_notify_on_device_address_change.  <a href="#gac86072b25aa830842e94cff3eb1ffe03">More...</a><br /></td></tr>
 <tr class="separator:gac86072b25aa830842e94cff3eb1ffe03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa08c87a6bb5303c94ad71460496b5420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__sec__api__functions.html#gaa08c87a6bb5303c94ad71460496b5420">wiced_bt_ble_set_data_packet_length</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, uint16_t tx_pdu_length, uint16_t tx_time)</td></tr>
+<tr class="memdesc:gaa08c87a6bb5303c94ad71460496b5420"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API allows to set maximum transmission payload size and maximum packet transmission time to be used for LL DATA PDUs on a given connection.  <a href="#gaa08c87a6bb5303c94ad71460496b5420">More...</a><br /></td></tr>
+<tr class="separator:gaa08c87a6bb5303c94ad71460496b5420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga3acbf83e7825ddbcdd6d792543ab0422"></a>
@@ -2532,6 +2535,55 @@ This API cannot be used for the advertising handle with the event_properties tha
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="gaa08c87a6bb5303c94ad71460496b5420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa08c87a6bb5303c94ad71460496b5420">&#9670;&nbsp;</a></span>wiced_bt_ble_set_data_packet_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_ble_set_data_packet_length </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>bd_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>tx_pdu_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>tx_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API allows to set maximum transmission payload size and maximum packet transmission time to be used for LL DATA PDUs on a given connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>- bd_Addr for which the LL Data PDU need to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_pdu_length</td><td>- maximum LL Data PDU on this connection. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_time</td><td>- maximum number of microseconds taken to transmit a packet on this connection(Range 0x0148 to 0x4290).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>wiced_bt_dev_status_t</dd></dl>
+<p><b> WICED_BT_SUCCESS </b> : If command sent successfully<br />
+<b> WICED_BT_ERROR </b> : If there is no connection exists <br />
+<b> WICED_BT_WRONG_MODE </b> : If command not supported <br />
+ </p><dl class="section note"><dt>Note</dt><dd>if tx_time = 0, then a default value applies based on the max supported by the controller HCI version. </dd></dl>
 
 </div>
 </div>

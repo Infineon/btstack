@@ -53,5 +53,6 @@ var group__btm__ble__sec__api__functions =
     [ "wiced_bt_ble_set_host_features", "group__btm__ble__sec__api__functions.html#gae3bb5b03e161b641202178ffe672705c", null ],
     [ "wiced_bt_ble_encrypt_adv_packet", "group__btm__ble__sec__api__functions.html#ga1a7468928a46673a5995bef911e3feab", null ],
     [ "wiced_bt_ble_decrypt_adv_packet", "group__btm__ble__sec__api__functions.html#ga698450b605ad602a6356e7edeb510004", null ],
-    [ "wiced_bt_ble_notify_on_device_address_change", "group__btm__ble__sec__api__functions.html#gac86072b25aa830842e94cff3eb1ffe03", null ]
+    [ "wiced_bt_ble_notify_on_device_address_change", "group__btm__ble__sec__api__functions.html#gac86072b25aa830842e94cff3eb1ffe03", null ],
+    [ "wiced_bt_ble_set_data_packet_length", "group__btm__ble__sec__api__functions.html#gaa08c87a6bb5303c94ad71460496b5420", null ]
 ];

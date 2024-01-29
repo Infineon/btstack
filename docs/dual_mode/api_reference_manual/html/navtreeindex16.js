@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"unionwiced__bt__management__evt__data__t.html#a9176306094bdc1813f0da551892de75f":[1,4,61,15],
 "unionwiced__bt__management__evt__data__t.html#a9bad79759d3a2bcce9439119005079a6":[1,4,61,22],
 "unionwiced__bt__management__evt__data__t.html#a9d21953e55a1a582f0ff357a625b5797":[1,4,61,12],
 "unionwiced__bt__management__evt__data__t.html#aa046f786225f992d3728f19f78780e2c":[1,4,61,8],

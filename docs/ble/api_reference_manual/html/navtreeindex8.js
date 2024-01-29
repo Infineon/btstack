@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"structwiced__bt__stack__platform__t.html":[1,5,0],
 "structwiced__bt__stack__platform__t.html#a44e54c18febc40a36c6a17fe0052bb6e":[1,5,0,15],
 "structwiced__bt__stack__platform__t.html#a4ca937c1c6089ca69d83cf9400455332":[1,5,0,3],
 "structwiced__bt__stack__platform__t.html#a52a07c249b67cb49669bcd684b3de451":[1,5,0,10],

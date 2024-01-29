@@ -8,6 +8,10 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.8.2
+BTSTACK3.8.2 is a patch release with following enhancement -
+ - Added a new wiced API, wiced_bt_ble_set_data_packet_length(), to set maximum transmission payload size and maximum packet transmission time to be used for LL DATA PDUs on a given connection
+
 ## V3.8.1
 BTSTACK3.8.1 is a patch release with following enhancements and fixes -
  - Added new wiced API, wiced_bt_isoc_read_tx_sync(), to send HCI_LE_Read_ISO_TX_Sync HCI command

@@ -6,6 +6,7 @@ var NAVTREEINDEX2 =
 "group__btm__ble__sec__api__functions.html#ga8530513e13c2cf3eef7f26e10f57fd23":[1,4,0,4,31],
 "group__btm__ble__sec__api__functions.html#ga91b6c2557800b5d63f8c94c17af05183":[1,4,0,4,4],
 "group__btm__ble__sec__api__functions.html#ga97c11172a661e18cac72cfbcd26ef99d":[1,4,0,4,39],
+"group__btm__ble__sec__api__functions.html#gaa08c87a6bb5303c94ad71460496b5420":[1,4,0,4,54],
 "group__btm__ble__sec__api__functions.html#gaa1a08bf54c9c06015c1bbafbaab433c1":[1,4,0,4,43],
 "group__btm__ble__sec__api__functions.html#gaa3a12d9312cb8bac5e7eb7033aedda8c":[1,4,0,4,8],
 "group__btm__ble__sec__api__functions.html#gab1016d53ad56373cde08fcdd4c66b7ad":[1,4,0,4,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d":[1,6,1],
 "group__rfcomm__api__functions.html#ga802c52c03865b1cb09af25e41363275d":[1,6,0],
 "group__rfcomm__api__functions.html#ga87bbfb9c882d8080fef5f63e2ad256c0":[1,6,14],
-"group__rfcomm__api__functions.html#ga919c228fbe128a196f66f0569ff3c1ee":[1,6,7],
-"group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6":[1,6,6]
+"group__rfcomm__api__functions.html#ga919c228fbe128a196f66f0569ff3c1ee":[1,6,7]
 };

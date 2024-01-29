@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ab740cd5de3c75c77290c477c72bdcc39":[1,3,105,0],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ac0952ad8cd93d418a30982310a70b749":[1,3,105,15],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ac250d7a0f40a69c21f1f57f8be7bc6d3":[1,3,105,50],
 "group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652ac3c64147f016a2d28fa71c7ba82a531f":[1,3,105,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "structwiced__bt__ble__periodic__adv__report__event__data__t.html#a633314c1bede0dffc032ab18b34e881c":[1,1,18,4],
 "structwiced__bt__ble__periodic__adv__report__event__data__t.html#a68e21f7deabb727aec8f1bcc41cc9eb2":[1,1,18,0],
 "structwiced__bt__ble__periodic__adv__report__event__data__t.html#a74ea007235ed5518fa961f66107e7d2d":[1,1,18,6],
-"structwiced__bt__ble__periodic__adv__report__event__data__t.html#a9bc695800d85a5e9914e1b9dd2ecd191":[1,1,18,3],
-"structwiced__bt__ble__periodic__adv__report__event__data__t.html#ad7c785c36c03f7b276f5f40e21a34748":[1,1,18,1]
+"structwiced__bt__ble__periodic__adv__report__event__data__t.html#a9bc695800d85a5e9914e1b9dd2ecd191":[1,1,18,3]
 };

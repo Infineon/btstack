@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2023, Cypress Semiconductor Corporation or
+ * Copyright 2016-2024, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -2380,6 +2380,25 @@ uint32_t wiced_bt_ble_decrypt_adv_packet(
 * @return None
 */
 wiced_bt_dev_status_t wiced_bt_ble_notify_on_device_address_change(wiced_bool_t enable);
+
+/**
+ * This API allows to set maximum transmission payload size and maximum packet transmission time to be used for LL DATA PDUs on a given connection
+ *
+ * @param[in]       bd_addr  - bd_Addr for which the LL Data PDU need to set
+ * @param[in]       tx_pdu_length -  maximum LL Data PDU on this connection.
+ * @param[in]       tx_time -  maximum number of microseconds taken to transmit a packet on this connection(Range 0x0148 to 0x4290).
+ *
+ * @return          wiced_bt_dev_status_t
+ *
+ * <b> WICED_BT_SUCCESS </b>       : If  command sent successfully\n
+ * <b> WICED_BT_ERROR </b>         : If there is no connection exists \n
+ * <b> WICED_BT_WRONG_MODE </b>   : If command not supported \n
+ *
+ *  @note if tx_time = 0, then a default value applies based on the max supported by the controller HCI version.
+
+ */
+
+wiced_bt_dev_status_t wiced_bt_ble_set_data_packet_length(wiced_bt_device_address_t bd_addr, uint16_t tx_pdu_length, uint16_t tx_time);
 
 /**@} btm_ble_api_functions */
 

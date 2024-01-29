@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"structwiced__bt__ble__periodic__adv__report__event__data__t.html#ad7c785c36c03f7b276f5f40e21a34748":[1,1,18,1],
 "structwiced__bt__ble__periodic__adv__report__event__data__t.html#ae144156abfcebad8b8bfbf9aa10a8c59":[1,1,18,2],
 "structwiced__bt__ble__periodic__adv__sync__established__event__data__t.html":[1,1,17],
 "structwiced__bt__ble__periodic__adv__sync__established__event__data__t.html#a1a62df47ceeb705019bb76653efb91ee":[1,1,17,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "structwiced__bt__device__sec__keys__t.html#aadc5f677556cd789f9f62f86890dcbef":[1,1,66,1],
 "structwiced__bt__device__sec__keys__t.html#aea79a5fded063d3ca481e5a7062c3d76":[1,1,66,0],
 "structwiced__bt__flow__spec__t.html":[1,7,0,1],
-"structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f":[1,7,0,1,5],
-"structwiced__bt__flow__spec__t.html#a6e6a9b6233b29a7dcab88b5acbd156a2":[1,7,0,1,6]
+"structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f":[1,7,0,1,5]
 };

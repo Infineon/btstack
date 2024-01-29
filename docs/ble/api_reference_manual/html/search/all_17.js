@@ -194,6 +194,7 @@ var searchData=
   ['wiced_5fbt_5fble_5fset_5fadv_5ftx_5fpower',['wiced_bt_ble_set_adv_tx_power',['../group__btm__ble__adv__scan__functions.html#ga7f1db3380fcc8c1a93b3e0f34b302ff0',1,'wiced_bt_ble.h']]],
   ['wiced_5fbt_5fble_5fset_5fbackground_5fconnection_5ftype',['wiced_bt_ble_set_background_connection_type',['../group__btm__ble__conn__filter__accept__list__functions.html#ga4ca85e744e80f9883a70a4520f70420f',1,'wiced_bt_ble.h']]],
   ['wiced_5fbt_5fble_5fset_5fchannel_5fclassification',['wiced_bt_ble_set_channel_classification',['../group__btm__ble__phy__functions.html#ga3748634252d38e79fbc4247975a2ef43',1,'wiced_bt_ble.h']]],
+  ['wiced_5fbt_5fble_5fset_5fdata_5fpacket_5flength',['wiced_bt_ble_set_data_packet_length',['../group__btm__ble__sec__api__functions.html#gaa08c87a6bb5303c94ad71460496b5420',1,'wiced_bt_ble.h']]],
   ['wiced_5fbt_5fble_5fset_5fdefault_5fperiodic_5fadv_5fsync_5ftransfer_5fparam',['wiced_bt_ble_set_default_periodic_adv_sync_transfer_param',['../group__btm__ble__sec__api__functions.html#ga7cef00191d761540f510bf76282f593a',1,'wiced_bt_ble.h']]],
   ['wiced_5fbt_5fble_5fset_5fdefault_5fphy',['wiced_bt_ble_set_default_phy',['../group__btm__ble__phy__functions.html#ga79c240476c81674e2c929a12b9ffceaa',1,'wiced_bt_ble.h']]],
   ['wiced_5fbt_5fble_5fset_5fext_5fadv_5fdata',['wiced_bt_ble_set_ext_adv_data',['../group__btm__ble__sec__api__functions.html#gab91b53f0e9576c558d127de0ef279c00',1,'wiced_bt_ble.h']]],

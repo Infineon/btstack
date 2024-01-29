@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6":[1,6,6],
 "group__rfcomm__api__functions.html#gabbe544a7a6843471ef384c6dafc976aa":[1,6,11],
 "group__rfcomm__api__functions.html#gaca604941c538633cc92ad5a5361dab96":[1,6,4],
 "group__rfcomm__api__functions.html#gad4241f1a332dbd4d03bbc8ce75cfa839":[1,6,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "group__wiced__bt__cfg.html#ga84ad6a1925c84b57bdef0d6e50bad20c":[1,3,35],
 "group__wiced__bt__cfg.html#ga8cf23a9fa2038a04b4f83b41b2f55417":[1,3,11],
 "group__wiced__bt__cfg.html#ga8d79d1fdc1be2ad820a1e1c450d45406":[1,3,18],
-"group__wiced__bt__cfg.html#ga9725e9d8bd831984257d7a11112be51b":[1,3,34],
-"group__wiced__bt__cfg.html#ga9ae58ae7b7a0d3cace4d3df27d1a7081":[1,3,13]
+"group__wiced__bt__cfg.html#ga9725e9d8bd831984257d7a11112be51b":[1,3,34]
 };

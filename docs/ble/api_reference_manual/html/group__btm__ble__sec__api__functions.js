@@ -54,6 +54,7 @@ var group__btm__ble__sec__api__functions =
     [ "wiced_bt_ble_encrypt_adv_packet", "group__btm__ble__sec__api__functions.html#ga1a7468928a46673a5995bef911e3feab", null ],
     [ "wiced_bt_ble_decrypt_adv_packet", "group__btm__ble__sec__api__functions.html#ga698450b605ad602a6356e7edeb510004", null ],
     [ "wiced_bt_ble_notify_on_device_address_change", "group__btm__ble__sec__api__functions.html#gac86072b25aa830842e94cff3eb1ffe03", null ],
+    [ "wiced_bt_ble_set_data_packet_length", "group__btm__ble__sec__api__functions.html#gaa08c87a6bb5303c94ad71460496b5420", null ],
     [ "wiced_bt_dev_sec_pair_without_bonding", "group__btm__ble__sec__api__functions.html#gaec31decb7680a981a8a0d96e03ae004a", null ],
     [ "wiced_bt_dev_sec_bond_cancel", "group__btm__ble__sec__api__functions.html#ga4a977184563090cb94394b7da1f09760", null ],
     [ "wiced_bt_dev_set_encryption", "group__btm__ble__sec__api__functions.html#ga828fe3d842b9923e408a10b87ae8fb69", null ],

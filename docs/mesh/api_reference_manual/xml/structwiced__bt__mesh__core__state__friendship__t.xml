@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="342" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="342" bodyend="-1"/>
+        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="342" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="342" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__core__state__friendship__t_1a535341a90b67cfa23f3893fdb6352b26" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="343" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="343" bodyend="-1"/>
+        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="343" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="343" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -38,7 +38,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="341" column="1" bodyfile="D:/glb/3YsLxoDm/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="340" bodyend="344"/>
+    <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="341" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="340" bodyend="344"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__core__state__friendship__t_1a535341a90b67cfa23f3893fdb6352b26" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_state_friendship_t</scope><name>addr</name></member>
       <member refid="structwiced__bt__mesh__core__state__friendship__t_1afefbe81a49379637df9f96ff2773eaca" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_state_friendship_t</scope><name>established</name></member>
