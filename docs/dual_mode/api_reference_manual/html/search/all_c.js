@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['le_20_28bluetooth_20low_20energy_29',['LE (Bluetooth Low Energy)',['../group__btm__ble__api__functions.html',1,'']]],
+  ['le_20security',['LE Security',['../group__btm__ble__sec__api__functions.html',1,'']]],
+  ['le_20_28bluetooth_20low_20energy_29',['LE (Bluetooth Low Energy)',['../group__gatt__le.html',1,'']]],
   ['l2c_5fble_5finvalid_5fpsm',['L2C_BLE_INVALID_PSM',['../group__l2cap.html#ga032af010a1e5d51fb5e3206be77c01b3',1,'wiced_bt_l2c.h']]],
   ['l2c_5fble_5fis_5fvalid_5fpsm',['L2C_BLE_IS_VALID_PSM',['../group__l2cap.html#gabd075c971c2d6c15bd2f51765053e1c4',1,'wiced_bt_l2c.h']]],
   ['l2c_5finvalid_5fpsm',['L2C_INVALID_PSM',['../group__l2cap.html#ga526c4ea340fa1eadc1301b3080b6bb41',1,'wiced_bt_l2c.h']]],
@@ -68,6 +71,7 @@ var searchData=
   ['l2cap_5fflush_5fchannels_5fget',['L2CAP_FLUSH_CHANNELS_GET',['../group__l2cap.html#ga0d353f91f7c3c2e95134ffcfcb890015',1,'wiced_bt_l2c.h']]],
   ['l2cap_5fflushable_5fmask',['L2CAP_FLUSHABLE_MASK',['../group__l2cap.html#gabe8a54b9dce954e44f79274c050d4d96',1,'wiced_bt_l2c.h']]],
   ['l2cap_5fflushable_5fpacket',['L2CAP_FLUSHABLE_PACKET',['../group__l2cap.html#ga6561498074e97ec73b49de963fa69896',1,'wiced_bt_l2c.h']]],
+  ['le',['LE',['../group__l2cap__le__api__functions.html',1,'']]],
   ['l2cap_5fminimum_5foffset',['L2CAP_MINIMUM_OFFSET',['../group__l2cap.html#ga393b58267d11d569c394b326b3350412',1,'wiced_bt_l2c.h']]],
   ['l2cap_5fnon_5fflushable_5fpacket',['L2CAP_NON_FLUSHABLE_PACKET',['../group__l2cap.html#gae040774bd5a495540e49d7456732c23f',1,'wiced_bt_l2c.h']]],
   ['l2cap_5fping_5fresult_5fno_5flink',['L2CAP_PING_RESULT_NO_LINK',['../group__l2cap.html#ga4e8e4a2973a1f1a2e7220b4a95d1efda',1,'wiced_bt_l2c.h']]],

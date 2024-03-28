@@ -554,16 +554,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">psm</td><td>PSM Value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">transport</td><td>BT transport for the connection </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">transport</td><td>Bluetooth transport for the connection </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Bluetooth device address to connect </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr_type</td><td>BLE_ADDR_PUBLIC or BLE_ADDR_RANDOM </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_mode</td><td>: BLE connection mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn_mode</td><td>: LE connection mode </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">our_rx_mtu</td><td>Our RX MTU to be used for the channels </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">our_rx_mps</td><td>Our RX MPS to be used for the channels </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><code>our_rx_mps</code> must be less then <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> or <a class="el" href="structwiced__bt__cfg__br__t.html#a88a90b0eb26296fb9726344a1da02dde">wiced_bt_cfg_br_t::br_max_rx_pdu_size</a> for BLE and BR/EDR transports respectively </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><code>our_rx_mps</code> must be less then <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> or <a class="el" href="structwiced__bt__cfg__br__t.html#a88a90b0eb26296fb9726344a1da02dde">wiced_bt_cfg_br_t::br_max_rx_pdu_size</a> for LE and BR/EDR transports respectively </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">num_channels</td><td>: Number of channels to be created </td></tr>
@@ -642,7 +642,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><code>our_rx_mps</code> must be less then <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> or <a class="el" href="structwiced__bt__cfg__br__t.html#a88a90b0eb26296fb9726344a1da02dde">wiced_bt_cfg_br_t::br_max_rx_pdu_size</a> for BLE and BR/EDR transports respectively </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><code>our_rx_mps</code> must be less then <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> or <a class="el" href="structwiced__bt__cfg__br__t.html#a88a90b0eb26296fb9726344a1da02dde">wiced_bt_cfg_br_t::br_max_rx_pdu_size</a> for LE and BR/EDR transports respectively </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">lcid_list</td><td>list of cids (channel ids) which will be started as received in <a class="el" href="group__l2cap.html#gaf52b6b2c8b5f0b7e29b9152e786c14b8">wiced_bt_l2cap_ecrb_connect_ind</a> </td></tr>
@@ -721,7 +721,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>If <code>new_rx_mts</code> is zero, no change to MPS is requested. Otherwise <code>new_rx_mps</code> must be larger than the old MPS for all channels. </dd>
 <dd>
-<code>new_rx_mps</code> must be less then <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> or <a class="el" href="structwiced__bt__cfg__br__t.html#a88a90b0eb26296fb9726344a1da02dde">wiced_bt_cfg_br_t::br_max_rx_pdu_size</a> for BLE and BR/EDR transports respectively</dd></dl>
+<code>new_rx_mps</code> must be less then <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> or <a class="el" href="structwiced__bt__cfg__br__t.html#a88a90b0eb26296fb9726344a1da02dde">wiced_bt_cfg_br_t::br_max_rx_pdu_size</a> for LE and BR/EDR transports respectively</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">num_channels</td><td>: Number of channels to be created </td></tr>

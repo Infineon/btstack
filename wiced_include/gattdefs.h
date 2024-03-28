@@ -33,7 +33,7 @@
 
 /** @file
  *
- *  WICED Generic Attribute (GATT) Application Programming Interface definitions
+ *  AIROC Generic Attribute (GATT) Application Programming Interface definitions
  */
 
 #ifndef  _GATTDEFS_H

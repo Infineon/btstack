@@ -43,7 +43,9 @@
  * @{
  */
 
-#pragma once
+#ifndef __WICED_BT_STACK_PLATFORM_H__
+#define __WICED_BT_STACK_PLATFORM_H__
+
 
 #include <stdarg.h>
 #include "wiced_bt_types.h"
@@ -51,7 +53,7 @@
 #include "wiced_bt_cfg.h"
 #include "wiced_bt_dev.h"
 
-/** Wiced BT Stack Platform */
+/** AIROC Bluetooth Stack Platform */
 typedef struct
 {
     /**
@@ -113,7 +115,7 @@ typedef struct
     /**
      * Platform function to get ACL buffer to send to lower
      *
-     * Called by stack to get a buffer to fill in the data to be sent to 'transport' (BLE or BR/EDR)
+     * Called by stack to get a buffer to fill in the data to be sent to 'transport' (LE or BR/EDR)
      * of 'size'
      *
      * @param[in] transport : Transport on which the buffer is to be sent
@@ -342,7 +344,7 @@ typedef wiced_bool_t (*wiced_bt_internal_stack_evt_handler_cb)(uint8_t* p_event)
 /**
 * Internal stack init
 *
-* @param[in] mgmt_cback : Application BT Management callback
+* @param[in] mgmt_cback : Application Bluetooth Management callback
 * @param[in] post_stack_cb : Internal post stack init callback
 * @param[in] evt_handler_cb : Internal stack event handler
 *
@@ -362,3 +364,5 @@ void wiced_bt_stack_init_internal(wiced_bt_management_cback_t mgmt_cback,
 void wiced_bt_stack_shutdown(void);
 
 /**@} wiced_bt_platform_group */
+
+#endif //__WICED_BT_STACK_PLATFORM_H__

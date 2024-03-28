@@ -1,6 +1,7 @@
 var modules =
 [
     [ "Logical Link Control and Adaptation Protocol (L2CAP)", "group__l2cap.html", "group__l2cap" ],
+    [ "Helper Functions", "group__wicedbt__av__a2d__helper.html", "group__wicedbt__av__a2d__helper" ],
     [ "Audio/Video Distribution Transport (AVDT)", "group__wicedbt__avdt.html", "group__wicedbt__avdt" ],
     [ "Audio/Video Remote Control (AVRC)", "group__wicedbt__avrc.html", "group__wicedbt__avrc" ],
     [ "Bluetooth Stack Initialize & Configuration", "group__wiced__bt__cfg.html", "group__wiced__bt__cfg" ],

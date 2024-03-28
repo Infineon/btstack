@@ -36,13 +36,15 @@
  * Bluetooth A2DP Application Programming Interface
  *
  */
-#pragma once
+#ifndef __WICED_BT_A2D_H__
+#define __WICED_BT_A2D_H__
+
 #include "wiced_bt_sdp.h"
 
 /**
  * @cond DUAL_MODE
  * @addtogroup  wicedbt_av_a2d_helper      Helper Functions
- * @ingroup     wicedbt_avdt
+ * @ingroup     wicedbt_a2dp
  *
  * @{
  */
@@ -242,3 +244,5 @@ wiced_bt_a2d_status_t wiced_bt_set_a2dp_connection_priority( uint8_t handle, uin
 
 /** @} wicedbt_av_a2d_helper */
 /** @endcond */
+
+#endif //__WICED_BT_A2D_H__

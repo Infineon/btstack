@@ -124,7 +124,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gac3d5f8d286b23c21b9cff9e71aa6a83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called to provide the OOB data for SMP in response to BTM_SMP_REMOTE_OOB_DATA_REQUEST_EVT.  <a href="#gac3d5f8d286b23c21b9cff9e71aa6a83c">More...</a><br /></td></tr>
 <tr class="separator:gac3d5f8d286b23c21b9cff9e71aa6a83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafce580b6606202828f9dfb1893cc30f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__br__edr__sec__api__functions.html#gafce580b6606202828f9dfb1893cc30f4">wiced_bt_smp_create_local_sc_oob_data</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> bd_addr_type)</td></tr>
-<tr class="memdesc:gafce580b6606202828f9dfb1893cc30f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create local BLE SC (secure connection) OOB data.  <a href="#gafce580b6606202828f9dfb1893cc30f4">More...</a><br /></td></tr>
+<tr class="memdesc:gafce580b6606202828f9dfb1893cc30f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create local LE SC (secure connection) OOB data.  <a href="#gafce580b6606202828f9dfb1893cc30f4">More...</a><br /></td></tr>
 <tr class="separator:gafce580b6606202828f9dfb1893cc30f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae2882a01b03b99c30ef16059305a449d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__br__edr__sec__api__functions.html#gae2882a01b03b99c30ef16059305a449d">wiced_bt_smp_sc_oob_reply</a> (<a class="el" href="structwiced__bt__smp__sc__oob__data__t.html">wiced_bt_smp_sc_oob_data_t</a> *p_oob_data)</td></tr>
 <tr class="memdesc:gae2882a01b03b99c30ef16059305a449d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the SC OOB data for SMP in response to BTM_SMP_SC_REMOTE_OOB_DATA_REQUEST_EVT.  <a href="#gae2882a01b03b99c30ef16059305a449d">More...</a><br /></td></tr>
@@ -133,7 +133,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga41a38c0723bea818a4ae42c5e83f3367"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called to parse the OOB data payload received over OOB (non-Bluetooth) link.  <a href="#ga41a38c0723bea818a4ae42c5e83f3367">More...</a><br /></td></tr>
 <tr class="separator:ga41a38c0723bea818a4ae42c5e83f3367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7d1811b8a8b3cb6f8763d9ce5bdd4ca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__br__edr__sec__api__functions.html#ga7d1811b8a8b3cb6f8763d9ce5bdd4ca4">wiced_bt_dev_lrac_disable_secure_connection</a> (void)</td></tr>
-<tr class="memdesc:ga7d1811b8a8b3cb6f8763d9ce5bdd4ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable BT secure connection.  <a href="#ga7d1811b8a8b3cb6f8763d9ce5bdd4ca4">More...</a><br /></td></tr>
+<tr class="memdesc:ga7d1811b8a8b3cb6f8763d9ce5bdd4ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable Bluetooth secure connection.  <a href="#ga7d1811b8a8b3cb6f8763d9ce5bdd4ca4">More...</a><br /></td></tr>
 <tr class="separator:ga7d1811b8a8b3cb6f8763d9ce5bdd4ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -483,7 +483,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create local BLE SC (secure connection) OOB data. </p>
+<p>Create local LE SC (secure connection) OOB data. </p>
 <p>When operation is completed, local OOB data will be provided via BTM_SMP_SC_LOCAL_OOB_DATA_NOTIFICATION_EVT.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -584,8 +584,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Disable BT secure connection. </p>
-<dl class="section note"><dt>Note</dt><dd>This utility is used for LRAC application to disable the BT secure connection only. If the interference issue is fixed, this utility may be removed This utility shall be called before the bt stack is initialized (by calling app_bt_init()). </dd></dl>
+<p>Disable Bluetooth secure connection. </p>
+<dl class="section note"><dt>Note</dt><dd>This utility is used for LRAC application to disable the Bluetooth secure connection only. If the interference issue is fixed, this utility may be removed This utility shall be called before the Bluetooth stack is initialized (by calling app_bt_init()). </dd></dl>
 
 </div>
 </div>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="115" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="115" bodyend="-1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="115" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a07441afe04c45a42bc8d357c650af8ff" prot="public" static="no" mutable="no">
         <type>wiced_bool_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="116" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="116" bodyend="-1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="116" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a79214ad4a26ebbeedc2a417c614dd3d6" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="117" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="117" bodyend="-1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="117" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a6677ccc45cb2b5d4ce5d698ca203fb3b" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="118" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="118" bodyend="-1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="118" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a3e0806ccfa1fe185ea61d3b26650d697" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="119" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="119" bodyend="-1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="119" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a12657f33570baf845c59c0a2562ab220" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="120" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="120" bodyend="-1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="120" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a47a487dd8bbc424d005cc3cc5387f95d" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="121" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="121" bodyend="-1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="121" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -108,7 +108,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="114" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="113" bodyend="122"/>
+    <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="114" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="113" bodyend="122"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__sensor__config__cadence__t_1a47a487dd8bbc424d005cc3cc5387f95d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_config_cadence_t</scope><name>fast_cadence_high</name></member>
       <member refid="structwiced__bt__mesh__sensor__config__cadence__t_1a12657f33570baf845c59c0a2562ab220" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_config_cadence_t</scope><name>fast_cadence_low</name></member>

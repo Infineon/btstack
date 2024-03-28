@@ -8,6 +8,11 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.9.0
+BTSTACK3.9 contains following enhancements and fixes -
+ - Added a new wiced API, wiced_bt_set_transmit_power_range() (See API documentation for details)
+ - Added a fix to disallow signed write command on EATT channel as per BT Core Spec
+
 ## V3.8.2
 BTSTACK3.8.2 is a patch release with following enhancement -
  - Added a new wiced API, wiced_bt_ble_set_data_packet_length(), to set maximum transmission payload size and maximum packet transmission time to be used for LL DATA PDUs on a given connection

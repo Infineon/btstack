@@ -1,6 +1,5 @@
 var group__wicedbt__avdt =
 [
-    [ "Helper Functions", "group__wicedbt__av__a2d__helper.html", "group__wicedbt__av__a2d__helper" ],
     [ "wiced_bt_avdt_sender_info_t", "structwiced__bt__avdt__sender__info__t.html", [
       [ "ntp_sec", "structwiced__bt__avdt__sender__info__t.html#a9a50e834dd0371453d3480fa4da4c342", null ],
       [ "ntp_frac", "structwiced__bt__avdt__sender__info__t.html#aabee3ecdb83542d24e4f0d1262378cc8", null ],

@@ -33,9 +33,11 @@
 
 /** @file
  *
- *  WICED Generic Attribute (GATT) Application Programming Interface
+ *  AIROC Generic Attribute (GATT) Application Programming Interface
  */
-#pragma once
+#ifndef __WICED_BT_GATT_H__
+#define __WICED_BT_GATT_H__
+
 
 #include "wiced_result.h"
 #include "gattdefs.h"
@@ -96,7 +98,7 @@ enum wiced_bt_gatt_status_e
     WICED_BT_GATT_CCCD_IMPROPER_CONFIGURED   = 0xFD,         /**< Client Characteristic Configuration Descriptor Improperly Configured */
     WICED_BT_GATT_BUSY                       = 0xFE,         /**< Busy or Procedure already in progress */
     WICED_BT_GATT_OUT_OF_RANGE               = 0xFF,         /**< Value Out of Range */
-                                                              /* WICED defined status  */
+                                                              /* AIROC defined status  */
     WICED_BT_GATT_ILLEGAL_PARAMETER          = 0x8780,         /**< Illegal Parameter */
     WICED_BT_GATT_NO_RESOURCES               = 0x8781,         /**< No Resources */
     WICED_BT_GATT_INTERNAL_ERROR             = 0x8783,         /**< Internal Error */
@@ -716,7 +718,6 @@ enum t_gatt_csf_assignments {
 /** GATT Client Support features */
 typedef uint8_t wiced_bt_gatt_csf_bits_t;
 
-
 /**< Data Receive Buffer
  *  Data Receive Buffer or DRB is a memory area of type #tDRB and size(channel MTU size + #DRB_OVERHEAD_SIZE).
  * The DRB buffer is allocated by the application during channel creation.
@@ -1054,10 +1055,10 @@ extern "C"
  */
 
 /**
- * BLE (Bluetooth Low Energy) Specific functions.
+ * LE (Bluetooth Low Energy) Specific functions.
  *
  * @if DUAL_MODE
- * @addtogroup gatt_le BLE (Bluetooth Low Energy)
+ * @addtogroup gatt_le LE (Bluetooth Low Energy)
  * @ingroup gatt_common_api
  * @endif
  */
@@ -1514,7 +1515,7 @@ void wiced_bt_gatt_set_peer_caching_status(uint16_t conn_id, wiced_bt_gatt_cachi
  *  @ingroup gatt_client_api_functions
 
  *  @note Allowed mtu range is 23 upto \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size for
- *  BLE links as configured in #wiced_bt_cfg_settings_t
+ *  LE links as configured in #wiced_bt_cfg_settings_t
  *
 */
 wiced_bt_gatt_status_t wiced_bt_gatt_client_configure_mtu (uint16_t conn_id, uint16_t mtu);
@@ -2030,5 +2031,6 @@ uint8_t *wiced_bt_gattdb_getAttrValue(const wiced_gattdb_entry_t *p_db_entry);
 
 #ifdef __cplusplus
 }
-
 #endif
+
+#endif //__WICED_BT_GATT_H__

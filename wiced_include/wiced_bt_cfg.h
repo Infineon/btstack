@@ -35,7 +35,8 @@
  * Runtime Bluetooth configuration parameters
  *
  */
-#pragma once
+#ifndef __WICED_BT_CFG_H__
+#define __WICED_BT_CFG_H__
 
 #include "wiced_data_types.h"
 #include "wiced_bt_types.h"
@@ -49,7 +50,7 @@ extern "C" {
  * @addtogroup  wiced_bt_cfg Bluetooth Stack Initialize & Configuration
  *
  *
- * This section describes API and Data structures required to initialize and configure the BT-Stack.
+ * This section describes API and Data structures required to initialize and configure the Bluetooth-Stack.
  *
  * @{
  */
@@ -64,7 +65,7 @@ extern "C" {
  *
  * Bluetooth Configuration Default Values
  *
- * @note These are typical values for config parameters used for some common BLE, BR/EDR use cases.
+ * @note These are typical values for config parameters used for some common LE, BR/EDR use cases.
  */
 #define WICED_BT_CFG_DEFAULT_INQUIRY_SCAN_INTERVAL                  0x0800      /**< Inquiry scan interval (in slots (1 slot = 0.625 ms)) */
 #define WICED_BT_CFG_DEFAULT_INQUIRY_SCAN_WINDOW                    0x0012      /**< Inquiry scan window (in slots (1 slot = 0.625 ms)) */
@@ -144,7 +145,7 @@ typedef uint8_t wiced_bt_sec_level_t; /**< Required security level */
 /** LE Scan settings */
 typedef struct
 {
-    wiced_bt_ble_scan_mode_t            scan_mode;                          /**< BLE scan mode \ref wiced_bt_ble_scan_mode_t */
+    wiced_bt_ble_scan_mode_t            scan_mode;                          /**< LE scan mode \ref wiced_bt_ble_scan_mode_t */
 
     /* Advertisement scan configuration
     * @note Refer to 7.8.10 LE Set Scan Parameters command
@@ -169,7 +170,7 @@ typedef struct
     uint16_t                            low_duty_conn_duration;             /**< Low duty cycle connection duration in seconds (0 for infinite) */
 
     /* Connection configuration
-    * @note: Refer to description of valid values in the BT SIG Spec Ver 5.2, section 7.8.12 LE Create Connection command
+    * @note: Refer to description of valid values in the Bluetooth SIG Spec Ver 5.2, section 7.8.12 LE Create Connection command
     */
     uint16_t                            conn_min_interval;                  /**< Minimum connection interval (in 1.25 msec) (default: #WICED_BT_CFG_DEFAULT_CONN_MIN_INTERVAL) */
     uint16_t                            conn_max_interval;                  /**< Maximum connection interval (in 1.25 msec) (default: #WICED_BT_CFG_DEFAULT_CONN_MAX_INTERVAL) */
@@ -184,7 +185,7 @@ enum wiced_bt_ble_advert_chnl_map_e
     BTM_BLE_ADVERT_CHNL_38 = (0x01 << 1),  /**< ADV channel */
     BTM_BLE_ADVERT_CHNL_39 = (0x01 << 2)   /**< ADV channel */
 };
-typedef uint8_t wiced_bt_ble_advert_chnl_map_t;  /**< BLE advertisement channel map (see #wiced_bt_ble_advert_chnl_map_e) */
+typedef uint8_t wiced_bt_ble_advert_chnl_map_t;  /**< LE advertisement channel map (see #wiced_bt_ble_advert_chnl_map_e) */
 
 /** Advertising settings */
 /**
@@ -261,7 +262,7 @@ typedef struct
     uint8_t  max_ports;  /**< Maximum number of simultaneous RFCOMM ports */
 } wiced_bt_cfg_rfcomm_t;
 
-/** Ischoronous Connection configuration settings */
+/** Isochronous Connection configuration settings */
 typedef struct
 {
     uint16_t max_sdu_size;       /**< Max SDU size */
@@ -286,7 +287,7 @@ typedef struct {
     wiced_bt_cfg_avrc_t    avrc_cfg;                  /**< Audio/Video Remote Control configuration */
 }wiced_bt_cfg_br_t;
 
-/** BLE configuration settings */
+/** LE configuration settings */
 typedef struct {
     uint8_t    ble_max_simultaneous_links;   /**< Max number for simultaneous connections for a layer, profile, protocol */
     uint16_t   ble_max_rx_pdu_size;          /**< Maximum size allowed for any received L2CAP PDU
@@ -298,12 +299,12 @@ typedef struct {
 
     uint16_t   rpa_refresh_timeout;          /**< Interval of random address refreshing - secs. The timeout value cannot be more than 1 hr = 3600s
                                               *
-                                              * @note BLE Privacy is disabled if the value is 0.
+                                              * @note LE Privacy is disabled if the value is 0.
                                               */
     uint16_t   host_addr_resolution_db_size; /**< addr resolution db size */
 
-    const wiced_bt_cfg_ble_scan_settings_t   *p_ble_scan_cfg;     /**< BLE scan settings */
-    const wiced_bt_cfg_ble_advert_settings_t *p_ble_advert_cfg;   /**< BLE advertisement settings */
+    const wiced_bt_cfg_ble_scan_settings_t   *p_ble_scan_cfg;     /**< LE scan settings */
+    const wiced_bt_cfg_ble_advert_settings_t *p_ble_advert_cfg;   /**< LE advertisement settings */
     int8_t                                    default_ble_power_level;  /**< Default LE power level, Refer lm_TxPwrTable table for the power range */
 }wiced_bt_cfg_ble_t;
 
@@ -327,9 +328,9 @@ typedef struct wiced_bt_cfg_settings_t_
                                                                     to connect to the widest range of devices. Allows stack to choose
                                                                     the highest level of security possible between the two devices */
     const wiced_bt_cfg_br_t *p_br_cfg;                       /**< BR/EDR related configuration */
-    const wiced_bt_cfg_ble_t *p_ble_cfg;                     /**< BLE related configuration */
+    const wiced_bt_cfg_ble_t *p_ble_cfg;                     /**< LE related configuration */
     const wiced_bt_cfg_gatt_t *p_gatt_cfg;                   /**< GATT settings */
-    const wiced_bt_cfg_isoc_t *p_isoc_cfg;                   /**< Ischoronous Connection configuration */
+    const wiced_bt_cfg_isoc_t *p_isoc_cfg;                   /**< Isochronous Connection configuration */
     const wiced_bt_cfg_l2cap_application_t *p_l2cap_app_cfg; /**< l2cap configuration fgitor application defined profiles/protocols */
 } wiced_bt_cfg_settings_t;
 
@@ -349,3 +350,5 @@ int32_t wiced_bt_stack_get_dynamic_memory_size_for_config(const wiced_bt_cfg_set
 
 
 /**@} wiced_bt_cfg */
+
+#endif //__WICED_BT_CFG_H__

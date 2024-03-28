@@ -247,7 +247,6 @@ var searchData=
   ['btm_5fble_5fscan_5ftype_5fnone',['BTM_BLE_SCAN_TYPE_NONE',['../group__wicedbt___device_management.html#gga5962ac95c03367e51789815eadcb25a6abc40e19980e55fd0a10f4570315a7f59',1,'wiced_bt_dev.h']]],
   ['btm_5fble_5fscan_5fwindow_5fmax',['BTM_BLE_SCAN_WINDOW_MAX',['../group__wicedbt___device_management.html#ga785ebb30d19020fe4c455c48194b76de',1,'wiced_bt_ble.h']]],
   ['btm_5fble_5fscan_5fwindow_5fmin',['BTM_BLE_SCAN_WINDOW_MIN',['../group__wicedbt___device_management.html#ga3b130962b0822fe18f5229ec5f691ef5',1,'wiced_bt_ble.h']]],
-  ['ble_20security',['BLE Security',['../group__btm__ble__sec__api__functions.html',1,'']]],
   ['btm_5fble_5fsec_5fencrypt',['BTM_BLE_SEC_ENCRYPT',['../group__wicedbt___device_management.html#ggaee9fcae42ad155c155022526287bd015a388faf71a5345af1a3d7b3546199ecd5',1,'wiced_bt_ble.h']]],
   ['btm_5fble_5fsec_5fencrypt_5fmitm',['BTM_BLE_SEC_ENCRYPT_MITM',['../group__wicedbt___device_management.html#ggaee9fcae42ad155c155022526287bd015a83230e5e309d2d7315d308ddf2b01160',1,'wiced_bt_ble.h']]],
   ['btm_5fble_5fsec_5fencrypt_5fno_5fmitm',['BTM_BLE_SEC_ENCRYPT_NO_MITM',['../group__wicedbt___device_management.html#ggaee9fcae42ad155c155022526287bd015ae3a9ecda34c85028bad52cbe945443cf',1,'wiced_bt_ble.h']]],

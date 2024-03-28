@@ -43,18 +43,18 @@
 /*
 **  Definitions for HCI protocol versions
 */
-#define HCI_PROTO_VERSION     0x01      /* Version for BT spec 1.1          */
-#define HCI_PROTO_VERSION_1_2 0x02      /* Version for BT spec 1.2          */
-#define HCI_PROTO_VERSION_2_0 0x03      /* Version for BT spec 2.0          */
-#define HCI_PROTO_VERSION_2_1 0x04      /* Version for BT spec 2.1 [Lisbon] */
-#define HCI_PROTO_VERSION_3_0 0x05      /* Version for BT spec 3.0          */
-#define HCI_PROTO_VERSION_4_0 0x06      /* Version for BT spec 4.0 [LE]     */
-#define HCI_PROTO_VERSION_4_1 0x07      /* Version for BT spec 4.1          */
-#define HCI_PROTO_VERSION_4_2 0x08      /* Version for BT spec 4.2          */
-#define HCI_PROTO_VERSION_5_0 0x09      /* Version for BT spec 5.0          */
-#define HCI_PROTO_VERSION_5_1 0x0A      /* Version for BT spec 5.1          */
-#define HCI_PROTO_VERSION_5_2 0x0B      /* Version for BT spec 5.2          */
-#define HCI_PROTO_VERSION_5_3 0x0C      /* Version for BT spec 5.3          */
+#define HCI_PROTO_VERSION     0x01      /* Version for Bluetooth spec 1.1          */
+#define HCI_PROTO_VERSION_1_2 0x02      /* Version for Bluetooth spec 1.2          */
+#define HCI_PROTO_VERSION_2_0 0x03      /* Version for Bluetooth spec 2.0          */
+#define HCI_PROTO_VERSION_2_1 0x04      /* Version for Bluetooth spec 2.1 [Lisbon] */
+#define HCI_PROTO_VERSION_3_0 0x05      /* Version for Bluetooth spec 3.0          */
+#define HCI_PROTO_VERSION_4_0 0x06      /* Version for Bluetooth spec 4.0 [LE]     */
+#define HCI_PROTO_VERSION_4_1 0x07      /* Version for Bluetooth spec 4.1          */
+#define HCI_PROTO_VERSION_4_2 0x08      /* Version for Bluetooth spec 4.2          */
+#define HCI_PROTO_VERSION_5_0 0x09      /* Version for Bluetooth spec 5.0          */
+#define HCI_PROTO_VERSION_5_1 0x0A      /* Version for Bluetooth spec 5.1          */
+#define HCI_PROTO_VERSION_5_2 0x0B      /* Version for Bluetooth spec 5.2          */
+#define HCI_PROTO_VERSION_5_3 0x0C      /* Version for Bluetooth spec 5.3          */
 
 /*
 **  Definitions for HCI groups
@@ -343,9 +343,9 @@
 #define HCI_VSC_MULTI_AV_HANDLE         0x0AAA
 #define HCI_VSC_BURST_MODE_HANDLE       0x0BBB
 
-/* BLE HCI */
+/* LE HCI */
 #define HCI_GRP_BLE_CMDS                (0x08 << 10) /* 0x2000*/
-/* Commands of BLE Controller setup and configuration */
+/* Commands of LE Controller setup and configuration */
 #define HCI_BLE_SET_EVENT_MASK          (0x0001 | HCI_GRP_BLE_CMDS) /* 0x2001 */
 #define HCI_BLE_READ_BUFFER_SIZE        (0x0002 | HCI_GRP_BLE_CMDS) /* 0x2002 */
 #define HCI_BLE_READ_LOCAL_SPT_FEAT (0x0003 | HCI_GRP_BLE_CMDS) /* 0x2003 */
@@ -431,7 +431,6 @@
 
 #define HCI_BLE_READ_BUFFER_SIZE_V2         (0x0060 | HCI_GRP_BLE_CMDS)
 
-
 /* PAWR */
 #define HCI_BLE_SET_PAWR_SUBEVENT_IND_DATA  (0x0082 | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_SET_PAWR_SUBEVENT_RSP_DATA  (0x0083 | HCI_GRP_BLE_CMDS)
@@ -458,6 +457,8 @@
 #define HCI_BLE_ISOC_SETUP_DATA_PATH        (0x006E | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_ISOC_REMOVE_DATA_PATH       (0x006F | HCI_GRP_BLE_CMDS)
 #define HCI_BLE_SET_HOST_FEATURE            (0x0074 | HCI_GRP_BLE_CMDS)
+#define HCI_CONFIGURE_DATA_PATH             (0X083 | HCI_GRP_HOST_CONT_BASEBAND_CMDS)
+
 
 #define HCI_LE_ENHANCED_READ_TRANSMIT_POWER_LEVEL           ( 0x76  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_READ_REMOTE_TRANSMIT_POWER_LEVEL             ( 0x77  | HCI_GRP_BLE_CMDS)
@@ -502,7 +503,7 @@
 #define HCI_SUPP_LE_STATES_NON_CONN_ADV_OFF           0
 #define HCI_LE_STATES_NON_CONN_ADV_SUPPORTED(x)      ((x)[HCI_SUPP_LE_STATES_NON_CONN_ADV_OFF] & HCI_SUPP_LE_STATES_NON_CONN_ADV_MASK)
 
-/*Scanneable Connectable Adv state  is supported. 0x0000000000000002 */
+/*Scannable Connectable Adv state  is supported. 0x0000000000000002 */
 #define HCI_SUPP_LE_STATES_SCAN_ADV_MASK          0x02
 #define HCI_SUPP_LE_STATESSCAN_ADV_OFF           0
 #define HCI_LE_STATES_SCAN_ADV_SUPPORTED(x)      ((x)[HCI_SUPP_LE_STATESSCAN_ADV_OFF] & HCI_SUPP_LE_STATES_SCAN_ADV_MASK)
@@ -532,7 +533,7 @@
 #define HCI_SUPP_LE_STATES_ACTIVE_SCAN_OFF           0
 #define HCI_LE_STATES_ACTIVE_SCAN_SUPPORTED(x)      ((x)[HCI_SUPP_LE_STATES_ACTIVE_SCAN_OFF] & HCI_SUPP_LE_STATES_ACTIVE_SCAN_MASK)
 
-/* Initiating state is supported. 0x0000000000000040 (or connection state in master role is also supported) */
+/* Initiating state is supported. 0x0000000000000040 (or connection state in Central Role is also supported) */
 #define HCI_SUPP_LE_STATES_INIT_MASK          0x40
 #define HCI_SUPP_LE_STATES_INIT_OFF           0
 #define HCI_LE_STATES_INIT_SUPPORTED(x)      ((x)[HCI_SUPP_LE_STATES_INIT_OFF] & HCI_SUPP_LE_STATES_INIT_MASK)
@@ -1031,9 +1032,52 @@
     0x0000000000800000 Authenticated_Payload_Timeout_Expired Event
 */
 
+/* LE Event Mask
+    Bit     LE Subevent Types
+    0       LE Connection Complete Event
+    1       LE Advertising Report Event
+    2       LE Connection Update Complete Event
+    3       LE Read Remote Features Complete Event
+    4       LE Long Term Key Request Event
+    5       LE Remote Connection Parameter Request Event
+    6       LE Data Length Change Event
+    7       LE Read Local P-256 Public Key Complete Event
+    8       LE Generate DHKey Complete Event
+    9       LE Enhanced Connection Complete Event
+    10     LE Directed Advertising Report Event
+    11     LE PHY Update Complete Event
+    12     LE Extended Advertising Report Event
+    13     LE Periodic Advertising Sync Established Event
+    14     LE Periodic Advertising Report Event
+    15     LE Periodic Advertising Sync Lost Event
+    16     LE Extended Scan Timeout Event
+    17     LE Extended Advertising Set Terminated Event
+    18     LE Scan Request Received Event
+    19     LE Channel Selection Algorithm Event
+    20     LE Connectionless IQ Report event
+    21     LE Connection IQ Report event
+    22     LE CTE Request Failed event
+    23     LE Periodic Advertising Sync Transfer Received event
+    24     LE CIS Established event
+    25     LE CIS Request event
+    26     LE Create BIG Complete event
+    27     LE Terminate BIG Complete event
+    28     LE BIG Sync Established event
+    29     LE BIG Sync Lost event
+    30     LE Request Peer SCA Complete event
+    31     LE Path Loss Threshold event
+    32     LE Transmit Power Reporting event
+    33     LE BIGInfo Advertising Report event
+*/
+#if BTM_BLE_PRIVACY_SPT == TRUE
+/* LE event mask */
+#define HCI_BLE_EVENT_MASK_DEF "\x00\x00\x00\xFA\x7f\x8f\xff\xff"
+#else
+#define HCI_BLE_EVENT_MASK_DEF "\x00\x00\x00\xFA\x7F\x8f\xff\x7f"
+#endif
 
 /*
-** Definitions for packet type masks (BT1.2 and BT2.0 definitions)
+** Definitions for packet type masks (Bluetooth 1.2 and Bluetooth 2.0 definitions)
 */
 #define HCI_PKT_TYPES_MASK_NO_2_DH1         0x0002
 #define HCI_PKT_TYPES_MASK_NO_3_DH1         0x0004
@@ -1082,7 +1126,7 @@
                                               |  HCI_PKT_TYPES_MASK_DH5)) != 0))
 
 /*
-** Definitions for eSCO packet type masks (BT1.2 and BT2.0 definitions)
+** Definitions for eSCO packet type masks (Bluetooth 1.2 and Bluetooth 2.0 definitions)
 */
 #define HCI_ESCO_PKT_TYPES_MASK_HV1         0x0001
 #define HCI_ESCO_PKT_TYPES_MASK_HV2         0x0002
@@ -1363,7 +1407,7 @@
 #define HCI_A_LAW_SUPPORTED(x)      (((x) & HCI_AIR_CODING_FORMAT_MASK) == HCI_AIR_CODING_FORMAT_A_LAW)
 #define HCI_TRANSPNT_SUPPORTED(x)   (((x) & HCI_AIR_CODING_FORMAT_MASK) == HCI_AIR_CODING_FORMAT_TRANSPNT)
 
-/* Coding Formats (BT 4.1 or later Assigned numbers) */
+/* Coding Formats (Bluetooth 4.1 or later Assigned numbers) */
 #define HCI_CODING_FORMAT_ULAW      ((uint8_t) 0x00)  /* u-Law log    */
 #define HCI_CODING_FORMAT_ALAW      ((uint8_t) 0x01)  /* A-Law log    */
 #define HCI_CODING_FORMAT_CVSD      ((uint8_t) 0x02)  /* CVSD         */
@@ -1372,14 +1416,14 @@
 #define HCI_CODING_FORMAT_MSBC      ((uint8_t) 0x05)  /* MSBC PCM   */
 #define HCI_CODING_FORMAT_VS        ((uint8_t) 0xFF)  /* Specifies VSC used */
 
-/* PCM Data Formats (BT 4.1 or later Assigned numbers) */
+/* PCM Data Formats (Bluetooth 4.1 or later Assigned numbers) */
 #define HCI_PCM_DATA_FORMAT_NA      ((uint8_t) 0x00)  /* N/A to coding format in use */
 #define HCI_PCM_DATA_FORMAT_1_COMP  ((uint8_t) 0x01)  /* 1's complement   */
 #define HCI_PCM_DATA_FORMAT_2_COMP  ((uint8_t) 0x02)  /* 2's complement   */
 #define HCI_PCM_DATA_FORMAT_SIGN    ((uint8_t) 0x03)  /* Sign-magnitude   */
 #define HCI_PCM_DATA_FORMAT_UNSIGN  ((uint8_t) 0x04)  /* Unsigned         */
 
-/* Data Path (BT 4.1 or later Assigned numbers) */
+/* Data Path (Bluetooth 4.1 or later Assigned numbers) */
 #define HCI_DATA_PATH_HCI           ((uint8_t) 0x00)  /* HCI-0, 0x01-0xFE (PCM Chan) */
 #define HCI_DATA_PATH_TEST           ((uint8_t) 0xFF)  /* 0xFF-Audio Test */
 
@@ -2066,8 +2110,8 @@ typedef struct
 #define HCI_LE_FEATURE_PERIODIC_ADV_SYNC_RX_BIT_POS         25      /**< Periodic Advertising Sync Transfer -Recipient */
 #define HCI_LE_FEATURE_SLEEP_CLK_ACCURACY_UPDATE_BIT_POS    26      /**< Sleep Clock Accuracy Updates */
 #define HCI_LE_FEATURE_RMT_PUB_KEY_VALIDATE_BIT_POS         27      /**< Remote Public Key Validation */
-#define HCI_LE_FEATURE_CIS_CENTRAL_BIT_POS                  28      /**< Connected Isochronous Stream – Central */
-#define HCI_LE_FEATURE_CIS_PERIPHERAL_BIT_POS               29      /**< Connected Isochronous Stream – Peripheral */
+#define HCI_LE_FEATURE_CIS_CENTRAL_BIT_POS                  28      /**< Connected Isochronous Stream - Central */
+#define HCI_LE_FEATURE_CIS_PERIPHERAL_BIT_POS               29      /**< Connected Isochronous Stream - Peripheral */
 #define HCI_LE_FEATURE_ISOC_BROADCASTER_BIT_POS             30      /**< Isochronous Broadcaster */
 #define HCI_LE_FEATURE_SYNC_RX_BIT_POS                      31      /**< Synchronized Receiver */
 #define HCI_LE_FEATURE_ISOC_CHNL_BIT_POS                    32      /**< Isochronous Channels (Host Support) */

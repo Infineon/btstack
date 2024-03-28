@@ -966,7 +966,9 @@ var searchData=
   ['avrc_5fsystemstate_5fpwr_5funplugged',['AVRC_SYSTEMSTATE_PWR_UNPLUGGED',['../group__wicedbt__avrc.html#gab543d277b032e313333e244bc2f51a60',1,'AVRC_SYSTEMSTATE_PWR_UNPLUGGED():&#160;wiced_bt_avrc_defs.h'],['../group__wicedbt__avrc.html#gab543d277b032e313333e244bc2f51a60',1,'AVRC_SYSTEMSTATE_PWR_UNPLUGGED():&#160;wiced_bt_avrc_defs.h']]],
   ['avrc_5fuid_5fsize',['AVRC_UID_SIZE',['../group__wicedbt__avrc.html#ga43e643cd957871dda225cc31cb2006a7',1,'AVRC_UID_SIZE():&#160;wiced_bt_avrc_defs.h'],['../group__wicedbt__avrc.html#ga43e643cd957871dda225cc31cb2006a7',1,'AVRC_UID_SIZE():&#160;wiced_bt_avrc_defs.h']]],
   ['avrc_5funcong_5find_5fevt',['AVRC_UNCONG_IND_EVT',['../group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3caebe358d85d13a7574d44d41a035e22a4',1,'wiced_bt_avrc.h']]],
+  ['airoc_20bluetooth_20types',['AIROC Bluetooth Types',['../group__bt__types.html',1,'']]],
   ['advertisement_20_26_20scan',['Advertisement &amp; Scan',['../group__btm__ble__adv__scan__functions.html',1,'']]],
+  ['airoc_20result',['AIROC result',['../group___result.html',1,'']]],
   ['a2dp_20sbc_20support',['A2DP SBC Support',['../group__wicedbt__a2dp__sbc.html',1,'']]],
   ['audio_2fvideo_20distribution_20transport_20_28avdt_29',['Audio/Video Distribution Transport (AVDT)',['../group__wicedbt__avdt.html',1,'']]],
   ['audio_2fvideo_20remote_20control_20_28avrc_29',['Audio/Video Remote Control (AVRC)',['../group__wicedbt__avrc.html',1,'']]]

@@ -48,7 +48,9 @@
   *
   *  @{
   */
-#pragma once
+#ifndef __WICED_BT_RFCOMM_H__
+#define __WICED_BT_RFCOMM_H__
+
 
 #include "wiced_bt_dev.h"
 
@@ -343,3 +345,5 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_check_connection (uint16_t handle, wice
 
 /**@}rfcomm_api_functions */
 /**  @endcond */
+
+#endif //__WICED_BT_RFCOMM_H__

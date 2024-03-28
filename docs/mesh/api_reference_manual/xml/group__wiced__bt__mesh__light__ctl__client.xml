@@ -18,7 +18,7 @@
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see <ref refid="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h_1LIGHT_CTL_EVENT" kindref="member">Light CTL Events</ref>) </para>
+<para>The event that the application should process (see <ref refid="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h_1LIGHT_CTL_EVENT" kindref="member">Light CTL Events</ref>) </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3973" column="1" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3973" bodyend="-1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3973" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3973" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3986" column="1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3986" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__ctl__client_1ga85f95cda591ad444665dc03f8660531c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3997" column="1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3997" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__ctl__client_1gaeb219cef5b353dc7578bb3666d2c4602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4006" column="1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4006" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__ctl__client_1ga77fcfdad659ca7d66bd22b107fa79a3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -227,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4016" column="1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4016" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__ctl__client_1gac086a0f995cf61506c63b503d987657c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -257,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4025" column="1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4025" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__ctl__client_1ga1ad33bce8aa9da4eb9b26fad95f697d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -299,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4035" column="1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4035" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__ctl__client_1ga40a2c9aa9bcbc96342b203438b1794df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -337,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4045" column="1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4045" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__ctl__client_1gab4f874e27b43852931eda1dbf98dc932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -379,7 +379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4055" column="1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4055" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__ctl__client_1ga8bff760779ac2cb673e4508a9fea1131" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -417,7 +417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4065" column="1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4065" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__ctl__client_1ga248addf8f4f397b3b0f28670c2abde3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -459,7 +459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4075" column="1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4075" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -472,7 +472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3961" column="9" bodyfile="D:/glb/9QBavCgr/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3961" bodyend="-1"/>
+        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3961" column="9" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3961" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

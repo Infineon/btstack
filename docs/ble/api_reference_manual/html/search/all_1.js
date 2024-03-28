@@ -89,5 +89,7 @@ var searchData=
   ['aux1_5fcount',['aux1_count',['../structwiced__bt__device__br__packet__types__t.html#af231b7c00ea7ede0a6db5630ef978624',1,'wiced_bt_device_br_packet_types_t']]],
   ['avdt_5fcfg',['avdt_cfg',['../structwiced__bt__cfg__br__t.html#ae67c7cd18627db324af2b35d6caaa9fa',1,'wiced_bt_cfg_br_t']]],
   ['avrc_5fcfg',['avrc_cfg',['../structwiced__bt__cfg__br__t.html#af44a76013773060ba1ebb0c2ba6e8367',1,'wiced_bt_cfg_br_t']]],
-  ['advertisement_20_26_20scan',['Advertisement &amp; Scan',['../group__btm__ble__adv__scan__functions.html',1,'']]]
+  ['airoc_20bluetooth_20types',['AIROC Bluetooth Types',['../group__bt__types.html',1,'']]],
+  ['advertisement_20_26_20scan',['Advertisement &amp; Scan',['../group__btm__ble__adv__scan__functions.html',1,'']]],
+  ['airoc_20result',['AIROC result',['../group___result.html',1,'']]]
 ];

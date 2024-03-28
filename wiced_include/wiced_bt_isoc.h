@@ -33,7 +33,7 @@
 
 /** @file
  *
- * WICED Bluetooth Low Energy (BLE) Ischoronous function
+ * AIROC Bluetooth Low Energy (LE) Isochronous function
  *
  *  Some Acronyms and Abbreviations :
  *      CIS   -  Connected Isochronous Stream
@@ -43,14 +43,16 @@
  *      ISO   -  Isochronous
  *      ISOAL -  Isochronous Adaption Layer
  */
-#pragma once
+#ifndef __WICED_BT_ISOC_H__
+#define __WICED_BT_ISOC_H__
+
 
 #include "wiced_bt_types.h"
 #include "wiced_result.h"
 #include "wiced_bt_cfg.h"
 
 /**
- * @defgroup  wicedbt_isoc        Ischoronous (ISOC)
+ * @defgroup  wicedbt_isoc        Isochronous (ISOC)
  *
  * This section describes the API's to use ISOC functionality.
  *
@@ -409,10 +411,10 @@ typedef void (wiced_bt_isoc_read_tx_sync_complete_cback_t)(wiced_bt_isoc_read_tx
 /** @} wicedbt_isoc_defs         */
 
 /**
- * @addtogroup  wicedbt_isoc_functions   Ischoronous (ISOC) functions
+ * @addtogroup  wicedbt_isoc_functions   Isochronous (ISOC) functions
  * @ingroup     wicedbt_isoc
  *
- * Ischoronous(ISOC) Functions.
+ * Isochronous(ISOC) Functions.
  *
  * @{
  */
@@ -731,7 +733,9 @@ wiced_bool_t wiced_bt_isoc_setup_data_path(uint16_t conn_hdl,
                                            wiced_bool_t is_cis,
                                            wiced_bt_isoc_data_path_direction_t data_path_dir,
                                            wiced_bt_isoc_data_path_id_t data_path_id,
-                                           uint32_t controller_delay);
+                                           uint32_t controller_delay,
+                                           uint8_t csc_length,
+                                           uint8_t *csc);
 
 /**
   * This function writes ISO buffer to the lower layer (or controller in the Hosted Stack)
@@ -768,5 +772,6 @@ wiced_bool_t wiced_bt_isoc_setup_data_path(uint16_t conn_hdl,
 
 #ifdef __cplusplus
 }
-
 #endif
+
+#endif //__WICED_BT_ISOC_H__

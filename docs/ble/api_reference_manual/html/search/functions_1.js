@@ -196,6 +196,7 @@ var searchData=
   ['wiced_5fbt_5fset_5flocal_5fbdaddr',['wiced_bt_set_local_bdaddr',['../group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fset_5fpairable_5fmode',['wiced_bt_set_pairable_mode',['../group__wicedbt__utility.html#gae95344797140c44aa120d34957a576b3',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fset_5fstack_5fconfig',['wiced_bt_set_stack_config',['../group__wiced__bt__platform__group.html#gaedb4a439d3f91abba89b33c1e0947991',1,'wiced_bt_stack_platform.h']]],
+  ['wiced_5fbt_5fset_5ftransmit_5fpower_5frange',['wiced_bt_set_transmit_power_range',['../group__wicedbt__utility.html#ga4f14854ca88222ae7cace8fdf89242b3',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fset_5ftx_5fpower',['wiced_bt_set_tx_power',['../group__wicedbt__utility.html#ga449c0b615910dc6de36b15b870c1d920',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fsmp_5fmodule_5finit',['wiced_bt_smp_module_init',['../group__wiced__bt__cfg.html#ga12ca3e0453fe327c489bd39c520fd452',1,'wiced_bt_stack.h']]],
   ['wiced_5fbt_5fstack_5fdeinit',['wiced_bt_stack_deinit',['../group__wiced__bt__cfg.html#gaa7ee2ece60f1e4d174e85167c85377c7',1,'wiced_bt_stack.h']]],
@@ -219,6 +220,6 @@ var searchData=
   ['wiced_5fset_5fmulti_5fadvertisement_5fscan_5fresponse_5fdata',['wiced_set_multi_advertisement_scan_response_data',['../group__btm__ble__multi__adv__functions.html#gaabb3afd4913a5d23eabbcece8ffc30e9',1,'wiced_bt_ble.h']]],
   ['wiced_5fset_5fmulti_5fadvertisements_5frandom_5faddress',['wiced_set_multi_advertisements_random_address',['../group__btm__ble__multi__adv__functions.html#gaf875d7862f1685f247d15f3bec49023a',1,'wiced_bt_ble.h']]],
   ['wiced_5fstart_5fmulti_5fadvertisements',['wiced_start_multi_advertisements',['../group__btm__ble__multi__adv__functions.html#gad7c886fa1ae0a32a7a80f42d5de7bac6',1,'wiced_bt_ble.h']]],
-  ['wiced_5fstart_5ftimer',['wiced_start_timer',['../group__timer.html#ga03465ced8e9ddb566caeb608934a3069',1,'wiced_timer.h']]],
+  ['wiced_5fstart_5ftimer',['wiced_start_timer',['../group__timer.html#ga88f3fefc1d119b55f4b011b80448565a',1,'wiced_timer.h']]],
   ['wiced_5fstop_5ftimer',['wiced_stop_timer',['../group__timer.html#ga7823a463dbe5ac932f1c3e73407d19ae',1,'wiced_timer.h']]]
 ];

@@ -58,7 +58,7 @@ typedef void (wiced_timer_callback_t)(wiced_timer_callback_arg_t cb_params);
 
 /** Timer structure.
  *
- *  NOTE: this structure is used internally by the wiced stack. Applications MUST NOT
+ *  NOTE: this structure is used internally by the AIROC stack. Applications MUST NOT
  *        modify any of the elements of this structure.
  *
  *        Timer control block memory MUST be peristant from when the timer is initialized,
@@ -74,7 +74,7 @@ typedef struct _wiced_timer_t
 } wiced_timer_t;
 
 /**
- * Defines the wiced timer types. These timers are system tick driven and a
+ * Defines the AIROC timer types. These timers are system tick driven and a
  * systick is 1 millisecond.So the minimum timer resolution supported is
  * 1 millisecond
  */
@@ -108,11 +108,12 @@ wiced_result_t wiced_init_timer (wiced_timer_t* p_timer, wiced_timer_callback_t 
  * @note: Starting an already running timer restarts the timer timeout
  *
  * @param[in]    p_timer                :Pointer to the timer structure
- * @param[in]    timeout_ms             :timeout in milliseconds
+ * @param[in]    timeout                :timeout in milliseconds if milliseconds timer is used and
+ *                                              timeout in seconds if seconds timer is used
  *
  * @return       wiced_result_t
  */
-wiced_result_t wiced_start_timer (wiced_timer_t* p_timer,uint32_t timeout_ms);
+wiced_result_t wiced_start_timer (wiced_timer_t* p_timer,uint32_t timeout);
 
 /** Stops a timer
  *

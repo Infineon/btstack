@@ -1,8 +1,8 @@
 var NAVTREEINDEX4 =
 {
-"group__wicedbt___device_management.html#ggaf0fdeb6794ca91ad6e2c539b620d88fead3d21f8e9e46a60838f40fe72d44b446":[1,1,250,3],
-"group__wicedbt___device_management.html#ggafc7d04e4f50a18a0d391769cb3173bc5abe7d8a512840890085fd2eb482392e4e":[1,1,231,1],
-"group__wicedbt___device_management.html#ggafc7d04e4f50a18a0d391769cb3173bc5ada7dca465da270c477d740ae59265183":[1,1,231,0],
+"group__wicedbt___device_management.html#ggaf0fdeb6794ca91ad6e2c539b620d88fead3d21f8e9e46a60838f40fe72d44b446":[1,1,252,3],
+"group__wicedbt___device_management.html#ggafc7d04e4f50a18a0d391769cb3173bc5abe7d8a512840890085fd2eb482392e4e":[1,1,233,1],
+"group__wicedbt___device_management.html#ggafc7d04e4f50a18a0d391769cb3173bc5ada7dca465da270c477d740ae59265183":[1,1,233,0],
 "group__wicedbt__gatt.html":[1,3],
 "group__wicedbt__gatt.html#ga05306a406063206bfa783075f5bedff2":[1,3,92],
 "group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a":[1,3,83],

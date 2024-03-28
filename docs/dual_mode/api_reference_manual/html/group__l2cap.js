@@ -2,7 +2,7 @@ var group__l2cap =
 [
     [ "Common", "group__l2cap__common__api__functions.html", "group__l2cap__common__api__functions" ],
     [ "BR/EDR", "group__l2cap__br__edr__api__functions.html", "group__l2cap__br__edr__api__functions" ],
-    [ "BLE", "group__l2cap__le__api__functions.html", "group__l2cap__le__api__functions" ],
+    [ "LE", "group__l2cap__le__api__functions.html", "group__l2cap__le__api__functions" ],
     [ "wiced_bt_l2cap_fcr_options_t", "structwiced__bt__l2cap__fcr__options__t.html", [
       [ "mode", "structwiced__bt__l2cap__fcr__options__t.html#afe0306ffb830b08231439dfbdbae604f", null ],
       [ "tx_window_size", "structwiced__bt__l2cap__fcr__options__t.html#adf212aeb4309ab5a175db0c10e14b34e", null ],

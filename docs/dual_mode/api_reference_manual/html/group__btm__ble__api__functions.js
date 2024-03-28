@@ -4,7 +4,7 @@ var group__btm__ble__api__functions =
     [ "Connection and Filter Accept List", "group__btm__ble__conn__filter__accept__list__functions.html", "group__btm__ble__conn__filter__accept__list__functions" ],
     [ "Phy", "group__btm__ble__phy__functions.html", "group__btm__ble__phy__functions" ],
     [ "MultiAdv", "group__btm__ble__multi__adv__functions.html", "group__btm__ble__multi__adv__functions" ],
-    [ "BLE Security", "group__btm__ble__sec__api__functions.html", "group__btm__ble__sec__api__functions" ],
+    [ "LE Security", "group__btm__ble__sec__api__functions.html", "group__btm__ble__sec__api__functions" ],
     [ "wiced_bt_ble_advert_elem_t", "structwiced__bt__ble__advert__elem__t.html", [
       [ "p_data", "structwiced__bt__ble__advert__elem__t.html#a70f91e32698c6fdde84563cd0edf149d", null ],
       [ "len", "structwiced__bt__ble__advert__elem__t.html#aaa6cf169af0de34e6be4b0be9d7057e2", null ],

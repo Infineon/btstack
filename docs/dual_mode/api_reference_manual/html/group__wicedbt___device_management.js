@@ -1,6 +1,6 @@
 var group__wicedbt___device_management =
 [
-    [ "BLE (Bluetooth Low Energy)", "group__btm__ble__api__functions.html", "group__btm__ble__api__functions" ],
+    [ "LE (Bluetooth Low Energy)", "group__btm__ble__api__functions.html", "group__btm__ble__api__functions" ],
     [ "BR/EDR (Bluetooth Basic Rate / Enhanced Data Rate)", "group__wicedbt__bredr.html", "group__wicedbt__bredr" ],
     [ "Utilities", "group__wicedbt__utility.html", "group__wicedbt__utility" ],
     [ "wiced_bt_tx_power_result_t", "structwiced__bt__tx__power__result__t.html", [
@@ -8,6 +8,16 @@ var group__wicedbt___device_management =
       [ "hci_status", "structwiced__bt__tx__power__result__t.html#a5eb8b36dda8a6a6d2b98a3036d016832", null ],
       [ "tx_power", "structwiced__bt__tx__power__result__t.html#aa48e71a910f6e2863bb0ad0299b7ab96", null ],
       [ "rem_bda", "structwiced__bt__tx__power__result__t.html#a3074d71d1d02c33baa8824d64edf165c", null ]
+    ] ],
+    [ "wiced_bt_transmit_power_range_res_buf_t", "structwiced__bt__transmit__power__range__res__buf__t.html", [
+      [ "status", "structwiced__bt__transmit__power__range__res__buf__t.html#af35e582b17beba75f1754daedafd6e6f", null ],
+      [ "max_tx_power", "structwiced__bt__transmit__power__range__res__buf__t.html#a95eb6f28a0bbec8cc3e754293bb68143", null ],
+      [ "min_tx_power", "structwiced__bt__transmit__power__range__res__buf__t.html#a3ac91be1b6543090fe81a8ce5563724f", null ]
+    ] ],
+    [ "wiced_bt_set_transmit_power_range_result_t", "structwiced__bt__set__transmit__power__range__result__t.html", [
+      [ "opcode", "structwiced__bt__set__transmit__power__range__result__t.html#a2e1680489cc1e9fe54b4e891116ed592", null ],
+      [ "param_len", "structwiced__bt__set__transmit__power__range__result__t.html#a8c3cd969ffd99fc57b07fb197098bb4e", null ],
+      [ "p_param_buf", "structwiced__bt__set__transmit__power__range__result__t.html#a724b737ba53f06ecd4dfa11cc77e65bf", null ]
     ] ],
     [ "wiced_bt_set_adv_tx_power_result_t", "structwiced__bt__set__adv__tx__power__result__t.html", [
       [ "un_used1", "structwiced__bt__set__adv__tx__power__result__t.html#a9662d6c9ef0a812c98f0749718b5386c", null ],

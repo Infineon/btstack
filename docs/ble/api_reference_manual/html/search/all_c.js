@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['le_20security',['LE Security',['../group__btm__ble__sec__api__functions.html',1,'']]],
   ['l2c_5fble_5finvalid_5fpsm',['L2C_BLE_INVALID_PSM',['../group__l2cap.html#ga032af010a1e5d51fb5e3206be77c01b3',1,'wiced_bt_l2c.h']]],
   ['l2c_5fble_5fis_5fvalid_5fpsm',['L2C_BLE_IS_VALID_PSM',['../group__l2cap.html#gabd075c971c2d6c15bd2f51765053e1c4',1,'wiced_bt_l2c.h']]],
   ['l2c_5finvalid_5fpsm',['L2C_INVALID_PSM',['../group__l2cap.html#ga526c4ea340fa1eadc1301b3080b6bb41',1,'wiced_bt_l2c.h']]],

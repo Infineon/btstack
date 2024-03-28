@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "abptw",
   5: "gtw",
   6: "abghlmpsw",
-  7: "abcdeghlmprstuw",
+  7: "abcdeghlmprstu",
   8: "o"
 };
 

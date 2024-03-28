@@ -36,7 +36,9 @@
  * Bluetooth Synchronous Connection Oriented Channel Application Programming Interface
  *
  */
-#pragma once
+#ifndef __WICED_BT_SCO_H__
+#define __WICED_BT_SCO_H__
+
 
 
 /**
@@ -79,7 +81,7 @@ typedef uint8_t wiced_bt_sco_idx_t;   /**< SCO codec index */
 /** SCO route path */
 typedef enum
 {
-     WICED_BT_SCO_OVER_HCI,         /**< SCO over HCI to Wiced stack in the host */
+     WICED_BT_SCO_OVER_HCI,         /**< SCO over HCI to AIROC stack in the host */
      WICED_BT_SCO_OVER_PCM    /**< Not supported yet. PCM data config for routing over I2S/PCM interface */
 }wiced_bt_sco_route_path_t;
 
@@ -312,3 +314,5 @@ void wiced_bt_config_esco_parameters(wiced_bt_sco_idx_t index, wiced_bt_enh_esco
 
 /** @} sco */
 /* @endcond*/
+
+#endif //__WICED_BT_SCO_H__

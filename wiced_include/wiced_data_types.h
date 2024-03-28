@@ -34,7 +34,7 @@
 **
 ** Name:         wiced_data_types.h
 **
-** Description:  wiced data types header file for VS2010 projects
+** Description:  AIROC data types header file for VS2010 projects
 **
 ** Copyright (c) Cypress Semiconductor
 **
@@ -53,10 +53,10 @@
  */
 
 #ifndef WICED_FALSE
-#define WICED_FALSE 0   /**< Wiced false */
+#define WICED_FALSE 0   /**< AIROC false */
 #endif // !WICED_FALSE
 #ifndef WICED_TRUE
-#define WICED_TRUE  1   /**< Wiced true */
+#define WICED_TRUE  1   /**< AIROC true */
 #endif // !WICED_TRUE
 
 #ifndef FALSE
@@ -88,12 +88,12 @@
 #endif
 
 /* To prevent complier to optimize with LDM and STM instructions */
-#define WICED_MEMCPY(a, b, c)       memcpy((void*)(a), (const void*)(b), c)     /**< Wiced Memory copy*/
-#define WICED_MEMSET(a, b, c)       memset((void*)(a), b, c)                    /**< Wiced Memory set */
-#define WICED_MEMMOVE(a, b, c)      memmove((void*)(a), (const void*)(b), c)    /**< Wiced Memory move*/
-#define WICED_MEMCMP(a, b, c)       memcmp((void*)(a), (const void*)(b), c)     /**< Wiced Memory compare*/
+#define WICED_MEMCPY(a, b, c)       memcpy((void*)(a), (const void*)(b), c)     /**< AIROC Memory copy*/
+#define WICED_MEMSET(a, b, c)       memset((void*)(a), b, c)                    /**< AIROC Memory set */
+#define WICED_MEMMOVE(a, b, c)      memmove((void*)(a), (const void*)(b), c)    /**< AIROC Memory move*/
+#define WICED_MEMCMP(a, b, c)       memcmp((void*)(a), (const void*)(b), c)     /**< AIROC Memory compare*/
 
-/** Wiced Boolean */
+/** AIROC Boolean */
 typedef unsigned int   wiced_bool_t;
 
 /** Function prototypes to lock and unlock (typically using a mutex). The context

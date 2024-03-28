@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['wiced_20bt_20types',['Wiced BT Types',['../group__bt__types.html',1,'']]],
-  ['wiced_20result',['WICED result',['../group___result.html',1,'']]],
   ['wiced_5fble_5fprivate_5fdevice_5faddress_5fresolution',['wiced_ble_private_device_address_resolution',['../group__btm__ble__sec__api__functions.html#gaa1a08bf54c9c06015c1bbafbaab433c1',1,'wiced_bt_ble.h']]],
   ['wiced_5fbool_5ft',['wiced_bool_t',['../group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064',1,'wiced_data_types.h']]],
   ['wiced_5fbt_5fa2d_5fvendor_5fcie_5ft',['wiced_bt_a2d_vendor_cie_t',['../structwiced__bt__a2d__vendor__cie__t.html',1,'']]],
@@ -630,6 +628,8 @@ var searchData=
   ['wiced_5fbt_5fset_5flocal_5fbdaddr',['wiced_bt_set_local_bdaddr',['../group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fset_5fpairable_5fmode',['wiced_bt_set_pairable_mode',['../group__wicedbt__utility.html#gae95344797140c44aa120d34957a576b3',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fset_5fstack_5fconfig',['wiced_bt_set_stack_config',['../group__wiced__bt__platform__group.html#gaedb4a439d3f91abba89b33c1e0947991',1,'wiced_bt_stack_platform.h']]],
+  ['wiced_5fbt_5fset_5ftransmit_5fpower_5frange',['wiced_bt_set_transmit_power_range',['../group__wicedbt__utility.html#ga4f14854ca88222ae7cace8fdf89242b3',1,'wiced_bt_dev.h']]],
+  ['wiced_5fbt_5fset_5ftransmit_5fpower_5frange_5fresult_5ft',['wiced_bt_set_transmit_power_range_result_t',['../structwiced__bt__set__transmit__power__range__result__t.html',1,'']]],
   ['wiced_5fbt_5fset_5ftx_5fpower',['wiced_bt_set_tx_power',['../group__wicedbt__utility.html#ga449c0b615910dc6de36b15b870c1d920',1,'wiced_bt_dev.h']]],
   ['wiced_5fbt_5fsmp_5fmodule_5finit',['wiced_bt_smp_module_init',['../group__wiced__bt__cfg.html#ga12ca3e0453fe327c489bd39c520fd452',1,'wiced_bt_stack.h']]],
   ['wiced_5fbt_5fsmp_5fremote_5foob_5freq_5ft',['wiced_bt_smp_remote_oob_req_t',['../structwiced__bt__smp__remote__oob__req__t.html',1,'']]],
@@ -652,6 +652,7 @@ var searchData=
   ['wiced_5fbt_5ftrace_5farray',['WICED_BT_TRACE_ARRAY',['../group__gentypes.html#ga10ff3340ed1baba5a78b417fdada3113',1,'wiced_bt_trace.h']]],
   ['wiced_5fbt_5ftrace_5fcrit',['WICED_BT_TRACE_CRIT',['../group__gentypes.html#gaaf386757dcdcd407d36542e9de683697',1,'wiced_bt_trace.h']]],
   ['wiced_5fbt_5ftrace_5ftype_5ft',['wiced_bt_trace_type_t',['../group__bt__types.html#ga07d710014e873107ed8772dc40f03bef',1,'wiced_bt_types.h']]],
+  ['wiced_5fbt_5ftransmit_5fpower_5frange_5fres_5fbuf_5ft',['wiced_bt_transmit_power_range_res_buf_t',['../structwiced__bt__transmit__power__range__res__buf__t.html',1,'']]],
   ['wiced_5fbt_5ftransport_5ft',['wiced_bt_transport_t',['../group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0',1,'wiced_bt_types.h']]],
   ['wiced_5fbt_5ftx_5fpower_5fresult_5ft',['wiced_bt_tx_power_result_t',['../structwiced__bt__tx__power__result__t.html',1,'']]],
   ['wiced_5fbt_5funion_5fpacked',['WICED_BT_UNION_PACKED',['../group__gentypes.html#gaf559ec18050599646fbf55d40ed98b37',1,'wiced_data_types.h']]],
@@ -692,7 +693,7 @@ var searchData=
   ['wiced_5fset_5fmulti_5fadvertisement_5fscan_5fresponse_5fdata',['wiced_set_multi_advertisement_scan_response_data',['../group__btm__ble__multi__adv__functions.html#gaabb3afd4913a5d23eabbcece8ffc30e9',1,'wiced_bt_ble.h']]],
   ['wiced_5fset_5fmulti_5fadvertisements_5frandom_5faddress',['wiced_set_multi_advertisements_random_address',['../group__btm__ble__multi__adv__functions.html#gaf875d7862f1685f247d15f3bec49023a',1,'wiced_bt_ble.h']]],
   ['wiced_5fstart_5fmulti_5fadvertisements',['wiced_start_multi_advertisements',['../group__btm__ble__multi__adv__functions.html#gad7c886fa1ae0a32a7a80f42d5de7bac6',1,'wiced_bt_ble.h']]],
-  ['wiced_5fstart_5ftimer',['wiced_start_timer',['../group__timer.html#ga03465ced8e9ddb566caeb608934a3069',1,'wiced_timer.h']]],
+  ['wiced_5fstart_5ftimer',['wiced_start_timer',['../group__timer.html#ga88f3fefc1d119b55f4b011b80448565a',1,'wiced_timer.h']]],
   ['wiced_5fstop_5ftimer',['wiced_stop_timer',['../group__timer.html#ga7823a463dbe5ac932f1c3e73407d19ae',1,'wiced_timer.h']]],
   ['wiced_5fsuppress_5fwarnings',['WICED_SUPPRESS_WARNINGS',['../group__gentypes.html#ga6c327dc4edeae1729c0742debf67ab0e',1,'wiced_data_types.h']]],
   ['wiced_5ftimer_5fcallback_5farg_5ft',['wiced_timer_callback_arg_t',['../group__timer.html#gafcfb6bcad5801f85b6da1afef4b609f0',1,'wiced_timer.h']]],

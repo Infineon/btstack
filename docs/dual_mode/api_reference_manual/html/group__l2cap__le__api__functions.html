@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bluetooth Host Stack Library: BLE</title>
+<title>Bluetooth Host Stack Library: LE</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('group__l2cap__le__api__functions.html'
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">BLE<div class="ingroups"><a class="el" href="group__l2cap.html">Logical Link Control and Adaptation Protocol (L2CAP)</a></div></div>  </div>
+<div class="title">LE<div class="ingroups"><a class="el" href="group__l2cap.html">Logical Link Control and Adaptation Protocol (L2CAP)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
@@ -98,10 +98,10 @@ $(document).ready(function(){initNavTree('group__l2cap__le__api__functions.html'
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga28268b114d35484254e29696a165f72a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__le__api__functions.html#ga28268b114d35484254e29696a165f72a">wiced_bt_l2cap_cancel_ble_connect_req</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> rem_bda)</td></tr>
-<tr class="memdesc:ga28268b114d35484254e29696a165f72a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a pending connection attempt to a BLE device.  <a href="#ga28268b114d35484254e29696a165f72a">More...</a><br /></td></tr>
+<tr class="memdesc:ga28268b114d35484254e29696a165f72a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a pending connection attempt to a LE device.  <a href="#ga28268b114d35484254e29696a165f72a">More...</a><br /></td></tr>
 <tr class="separator:ga28268b114d35484254e29696a165f72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacfa5536d207a4b9bb796e31ad37b09b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__le__api__functions.html#gacfa5536d207a4b9bb796e31ad37b09b6">wiced_bt_l2cap_update_ble_conn_params</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> rem_bdRa, uint16_t min_int, uint16_t max_int, uint16_t latency, uint16_t timeout)</td></tr>
-<tr class="memdesc:gacfa5536d207a4b9bb796e31ad37b09b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update BLE connection parameters.  <a href="#gacfa5536d207a4b9bb796e31ad37b09b6">More...</a><br /></td></tr>
+<tr class="memdesc:gacfa5536d207a4b9bb796e31ad37b09b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update LE connection parameters.  <a href="#gacfa5536d207a4b9bb796e31ad37b09b6">More...</a><br /></td></tr>
 <tr class="separator:gacfa5536d207a4b9bb796e31ad37b09b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84c66f4df107063ddb0adc482b5491ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__le__api__functions.html#ga84c66f4df107063ddb0adc482b5491ae">wiced_bt_l2cap_enable_update_ble_conn_params</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> rem_bda, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> enable)</td></tr>
 <tr class="memdesc:ga84c66f4df107063ddb0adc482b5491ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application requests to disable or enable parameters update.  <a href="#ga84c66f4df107063ddb0adc482b5491ae">More...</a><br /></td></tr>
@@ -157,7 +157,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cancel a pending connection attempt to a BLE device. </p>
+<p>Cancel a pending connection attempt to a LE device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rem_bda</td><td>: BD Address of remote</td></tr>
@@ -212,7 +212,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update BLE connection parameters. </p>
+<p>Update LE connection parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rem_bdRa</td><td>: Remote BD Address </td></tr>

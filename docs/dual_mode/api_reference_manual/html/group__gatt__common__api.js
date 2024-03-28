@@ -1,6 +1,6 @@
 var group__gatt__common__api =
 [
-    [ "BLE (Bluetooth Low Energy)", "group__gatt__le.html", "group__gatt__le" ],
+    [ "LE (Bluetooth Low Energy)", "group__gatt__le.html", "group__gatt__le" ],
     [ "BR/EDR (Bluetooth Basic Rate / Enhanced Data Rate)", "group__gatt__br.html", "group__gatt__br" ],
     [ "EATT", "group__gatt__eatt__functions.html", "group__gatt__eatt__functions" ],
     [ "wiced_bt_gatt_register", "group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9", null ],
