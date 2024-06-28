@@ -392,12 +392,6 @@
 #define L2CAP_FCR_FREQ_NORMAL           0       /**< A single test is run */
 #define L2CAP_FCR_FREQ_RANDOM           1       /**< Randomly loses or corrupts a packet */
 
- /**
- * @addtogroup  l2cap
- *
- * @{
- */
-
 /**
  * @anchor L2CAP_CONN_RESULT
  * @name L2CAP connection result codes
@@ -462,7 +456,5 @@
 
 #define     L2CAP_ECRB_NOT_SUPPORTED_BY_PEER    0xF000      /**< Not Supported by Peer */
 /** @} L2CAP_ECRB_RESULT */
-
-/**@} l2cap*/
 
 #endif

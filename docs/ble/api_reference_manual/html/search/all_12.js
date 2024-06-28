@@ -26,6 +26,7 @@ var searchData=
   ['response_5fslot_5fdelay',['response_slot_delay',['../structwiced__bt__ble__pawr__sync__established__event__data__t.html#a0f3dec2d9066af46fc49121b1175a759',1,'wiced_bt_ble_pawr_sync_established_event_data_t']]],
   ['response_5fslot_5fspacing',['response_slot_spacing',['../structwiced__bt__ble__pawr__sync__established__event__data__t.html#a40a39e3203bc571d71b9e76e9ca1b2f6',1,'wiced_bt_ble_pawr_sync_established_event_data_t']]],
   ['result',['result',['../structwiced__bt__dev__encryption__status__t.html#a6c33df0a26312b20bedd5a0ecaa980ca',1,'wiced_bt_dev_encryption_status_t::result()'],['../structwiced__bt__gatt__eatt__connection__confirmation__event__t.html#a59b6fad3112e176962233ecc645a3fdf',1,'wiced_bt_gatt_eatt_connection_confirmation_event_t::result()'],['../structwiced__bt__l2cap__cfg__information__t.html#a14d7acfffa5a30489df9946b721fdbf4',1,'wiced_bt_l2cap_cfg_information_t::result()']]],
+  ['result_5fenum',['RESULT_ENUM',['../wiced__bt__constants_8h.html#a4a4d7188ffaa6248f20265c0b8385d5d',1,'wiced_bt_constants.h']]],
   ['reverse_5farray_5fto_5fstream',['REVERSE_ARRAY_TO_STREAM',['../group__bt__types.html#ga3cb267c64567710b1866be56fcd4123f',1,'wiced_bt_types.h']]],
   ['reverse_5fstream_5fto_5farray',['REVERSE_STREAM_TO_ARRAY',['../group__bt__types.html#gaf1005f15e43e88fa739072e75597153a',1,'wiced_bt_types.h']]],
   ['rfcomm_5fcfg',['rfcomm_cfg',['../structwiced__bt__cfg__br__t.html#a4ef7f35aec9a5701f0da17682d3e1e98',1,'wiced_bt_cfg_br_t']]],

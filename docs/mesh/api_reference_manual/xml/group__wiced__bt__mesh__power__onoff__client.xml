@@ -10,7 +10,7 @@
         <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_power_onoff_client_callback_t</name>
         <briefdescription>
-<para>Power On/Off Client callback is called by the Mesh Models library on receiving WICED_BT_MESH_POWER_ONOFF_ONPOWERUP_STATUS message from the peer. </para>
+<para>Power On/Off Client callback is called by the Mesh Models library on receiving <ref refid="wiced__bt__mesh__models_8h_1ae51ecf64870394ba4515296f48c57499" kindref="member">WICED_BT_MESH_POWER_ONOFF_ONPOWERUP_STATUS</ref> message from the peer. </para>
         </briefdescription>
         <detaileddescription>
 <para>The function is also called when transmission of the request has been completed <ref refid="group__wiced__bt__mesh__provisioning_1ga31c4c354e12fd933b285fe399a6559bf" kindref="member">WICED_BT_MESH_TX_COMPLETE</ref> with tx_failed field of the p_event parameter indicating if the request has been sent out successfully.</para>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2822" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2822" bodyend="-1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2822" column="1" bodyfile="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2822" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2833" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2833" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__onoff__client_1ga1a8051787824f2f8c30718a2871cd7f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2847" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2847" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__onoff__client_1ga0e675596ea9b81df95f2bf81c886a168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2856" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2856" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__onoff__client_1ga30456c1896ae6fc5d8259e70a6218b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2867" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2867" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -236,7 +236,7 @@
     </briefdescription>
     <detaileddescription>
 <para>It is typicallly used by the applications running on devices which performs mesh network configuration.</para>
-<para>To include Power On/Off functionality, the device description shall contain WICED_BT_MESH_MODEL_POWER_ONOFF_CLIENT. The application shall also initialize the Power On/Off Client calling the <ref refid="group__wiced__bt__mesh__power__onoff__client_1ga4d60833328cbf560c43ba130f56f69c7" kindref="member">wiced_bt_mesh_model_power_onoff_client_init</ref> registering a callback to receive Power OnOff status messages</para>
+<para>To include Power On/Off functionality, the device description shall contain <ref refid="group__wiced__bt__mesh__models_1ga610ee34685a0db4c994d9356893d2b98" kindref="member">WICED_BT_MESH_MODEL_POWER_ONOFF_CLIENT</ref>. The application shall also initialize the Power On/Off Client calling the <ref refid="group__wiced__bt__mesh__power__onoff__client_1ga4d60833328cbf560c43ba130f56f69c7" kindref="member">wiced_bt_mesh_model_power_onoff_client_init</ref> registering a callback to receive Power OnOff status messages</para>
 <para>To find out the current On Power Up state set on a particular device and to modify the behavior the application shall use <ref refid="group__wiced__bt__mesh__power__onoff__client_1ga0e675596ea9b81df95f2bf81c886a168" kindref="member">wiced_bt_mesh_model_power_onoff_client_send_onpowerup_get</ref>. and <ref refid="group__wiced__bt__mesh__power__onoff__client_1ga30456c1896ae6fc5d8259e70a6218b4c" kindref="member">wiced_bt_mesh_model_power_onoff_client_send_onpowerup_set</ref> methods respectively. These functions require to use the p_event parameter which include among others the address of the desgination device, the application key index, the retrnansmission parameters, the TTL, and various others. </para>
     </detaileddescription>
   </compounddef>

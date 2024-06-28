@@ -33,12 +33,7 @@
 
 /** @file
  *
- *  \addtogroup timer Timer Management Services
- *  \ingroup HardwareDrivers
- *
- *  @{
- *
- * Defines the interfaces for Timer Management Services
+ * Interfaces for Timer Management Services
  */
 
 #ifndef _WICED_TIMER_H_
@@ -90,6 +85,14 @@ typedef enum
 extern "C"
 {
 #endif
+/**
+ *  \addtogroup timer Timer Management Services
+ *  \ingroup HardwareDrivers
+ *
+ *  @{
+ *
+ * Defines the interfaces for Timer Management Services
+ */
 
 /**  Initializes the timer
  *
@@ -97,7 +100,7 @@ extern "C"
  *@param[in]    p_timer_cb      :Timer callback function to be invoked on timer expiry
  *@param[in]    cb_arg          :Parameter to be passed to the timer callback function which
  *                                              gets invoked on timer expiry,if any
- *@param[in]    timer_type      :Shows if the timer is milliseconds or seconds, and if periodic or not
+ *@param[in]    timer_type      : \ref wiced_timer_type_e Shows if the timer is milliseconds or seconds, and if periodic or not
  *
  * @return   wiced_result_t
  */

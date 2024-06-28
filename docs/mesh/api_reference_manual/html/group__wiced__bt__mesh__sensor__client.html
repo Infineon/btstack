@@ -87,29 +87,23 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__sensor__client
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh Sensor Client<div class="ingroups"><a class="el" href="group__wiced__bt__mesh.html">LE Mesh</a> &raquo; <a class="el" href="group__wiced__bt__mesh__models.html">Mesh Models Library API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
 <p>The AIROC Mesh Sensor Client module provides a way for an application to control Sensor Servers in the mesh network. </p>
-<p>To include the Mesh Models support for the Sensor Client module the application shall contain the WICED_BT_MESH_MODEL_SENSOR_CLIENT</p>
+<p>To include the Mesh Models support for the Sensor Client module the application shall contain the <a class="el" href="group__wiced__bt__mesh__models.html#gac81bdfa0f7f50361b703d96eb7332e15">WICED_BT_MESH_MODEL_SENSOR_CLIENT</a></p>
 <p>TBD </p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga5e797fed2de3f19fd5615d4a5fe28ac4"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__sensor__client.html#ga5e797fed2de3f19fd5615d4a5fe28ac4">wiced_bt_mesh_sensor_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
-<tr class="memdesc:ga5e797fed2de3f19fd5615d4a5fe28ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#ga5e797fed2de3f19fd5615d4a5fe28ac4">More...</a><br /></td></tr>
-<tr class="separator:ga5e797fed2de3f19fd5615d4a5fe28ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga10e988bdc5e8088ea23a34cfaa003aa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__sensor__client.html#ga10e988bdc5e8088ea23a34cfaa003aa7">wiced_bt_mesh_model_sensor_client_init</a> (uint8_t element_idx, <a class="el" href="group__wiced__bt__mesh__sensor__client.html#ga5e797fed2de3f19fd5615d4a5fe28ac4">wiced_bt_mesh_sensor_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
+<tr class="memitem:ga10e988bdc5e8088ea23a34cfaa003aa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__sensor__client.html#ga10e988bdc5e8088ea23a34cfaa003aa7">wiced_bt_mesh_model_sensor_client_init</a> (uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, <a class="el" href="group__wiced__bt__mesh__sensor__client.html#ga5e797fed2de3f19fd5615d4a5fe28ac4">wiced_bt_mesh_sensor_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
 <tr class="memdesc:ga10e988bdc5e8088ea23a34cfaa003aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor Client Module initialization.  <a href="#ga10e988bdc5e8088ea23a34cfaa003aa7">More...</a><br /></td></tr>
 <tr class="separator:ga10e988bdc5e8088ea23a34cfaa003aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa852f7ae0062598ff7d8b6343bb0e9d2"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__sensor__client.html#gaa852f7ae0062598ff7d8b6343bb0e9d2">wiced_bt_mesh_model_sensor_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
+<tr class="memitem:gaa852f7ae0062598ff7d8b6343bb0e9d2"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__sensor__client.html#gaa852f7ae0062598ff7d8b6343bb0e9d2">wiced_bt_mesh_model_sensor_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
 <tr class="memdesc:gaa852f7ae0062598ff7d8b6343bb0e9d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor client Message Handler.  <a href="#gaa852f7ae0062598ff7d8b6343bb0e9d2">More...</a><br /></td></tr>
 <tr class="separator:gaa852f7ae0062598ff7d8b6343bb0e9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae9a142956b40e22829b2d19c02f019e3"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__sensor__client.html#gae9a142956b40e22829b2d19c02f019e3">wiced_bt_mesh_model_sensor_client_descriptor_send_get</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, <a class="el" href="structwiced__bt__mesh__sensor__get__t.html">wiced_bt_mesh_sensor_get_t</a> *desc_get_data)</td></tr>
@@ -139,6 +133,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga99a9bdecedc85f3aa787d9f4e0798c55"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__sensor__client.html#ga99a9bdecedc85f3aa787d9f4e0798c55">wiced_bt_mesh_model_sensor_client_sensor_cadence_send_set</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, <a class="el" href="structwiced__bt__mesh__sensor__cadence__set__data__t.html">wiced_bt_mesh_sensor_cadence_set_data_t</a> *cadence_set)</td></tr>
 <tr class="memdesc:ga99a9bdecedc85f3aa787d9f4e0798c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor Cadence set.  <a href="#ga99a9bdecedc85f3aa787d9f4e0798c55">More...</a><br /></td></tr>
 <tr class="separator:ga99a9bdecedc85f3aa787d9f4e0798c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga5e797fed2de3f19fd5615d4a5fe28ac4"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__sensor__client.html#ga5e797fed2de3f19fd5615d4a5fe28ac4">wiced_bt_mesh_sensor_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
+<tr class="memdesc:ga5e797fed2de3f19fd5615d4a5fe28ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#ga5e797fed2de3f19fd5615d4a5fe28ac4">More...</a><br /></td></tr>
+<tr class="separator:ga5e797fed2de3f19fd5615d4a5fe28ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga5e797fed2de3f19fd5615d4a5fe28ac4"></a>
@@ -167,6 +167,44 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gae9a142956b40e22829b2d19c02f019e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9a142956b40e22829b2d19c02f019e3">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_descriptor_send_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_sensor_client_descriptor_send_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__sensor__get__t.html">wiced_bt_mesh_sensor_get_t</a> *&#160;</td>
+          <td class="paramname"><em>desc_get_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sensor Descriptor get. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
+    <tr><td class="paramname">desc_get_data</td><td>pointer to descriptor get values</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
 <a id="ga10e988bdc5e8088ea23a34cfaa003aa7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga10e988bdc5e8088ea23a34cfaa003aa7">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_init()</h2>
 
@@ -258,14 +296,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae9a142956b40e22829b2d19c02f019e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae9a142956b40e22829b2d19c02f019e3">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_descriptor_send_get()</h2>
+<a id="ga52a24d45ec6d3012aa059b15d8955698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52a24d45ec6d3012aa059b15d8955698">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_sensor_cadence_send_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_sensor_client_descriptor_send_get </td>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_sensor_client_sensor_cadence_send_get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
           <td class="paramname"><em>p_event</em>, </td>
@@ -274,7 +312,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structwiced__bt__mesh__sensor__get__t.html">wiced_bt_mesh_sensor_get_t</a> *&#160;</td>
-          <td class="paramname"><em>desc_get_data</em>&#160;</td>
+          <td class="paramname"><em>cadence_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -284,11 +322,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sensor Descriptor get. </p>
+<p>Sensor Cadence get. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
-    <tr><td class="paramname">desc_get_data</td><td>pointer to descriptor get values</td></tr>
+    <tr><td class="paramname">cadence_data</td><td>pointer to data portion of the cadence get message</td></tr>
   </table>
   </dd>
 </dl>
@@ -296,14 +334,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab7de2001d55667daddfcc8d8f04b62a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab7de2001d55667daddfcc8d8f04b62a1">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_sensor_send_get()</h2>
+<a id="ga99a9bdecedc85f3aa787d9f4e0798c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99a9bdecedc85f3aa787d9f4e0798c55">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_sensor_cadence_send_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_sensor_client_sensor_send_get </td>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_sensor_client_sensor_cadence_send_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
           <td class="paramname"><em>p_event</em>, </td>
@@ -311,8 +349,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__sensor__get__t.html">wiced_bt_mesh_sensor_get_t</a> *&#160;</td>
-          <td class="paramname"><em>sensor_get</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__sensor__cadence__set__data__t.html">wiced_bt_mesh_sensor_cadence_set_data_t</a> *&#160;</td>
+          <td class="paramname"><em>cadence_set</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -322,11 +360,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sensor Data get. </p>
+<p>Sensor Cadence set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
-    <tr><td class="paramname">sensor_get</td><td>pointer to the sensor data to be received</td></tr>
+    <tr><td class="paramname">cadence_set</td><td>pointer to data portion of the cadence set message</td></tr>
   </table>
   </dd>
 </dl>
@@ -365,6 +403,44 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
     <tr><td class="paramname">column_data</td><td>pointer to data portion of the sensor column get message</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
+<a id="gab7de2001d55667daddfcc8d8f04b62a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab7de2001d55667daddfcc8d8f04b62a1">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_sensor_send_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_sensor_client_sensor_send_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__sensor__get__t.html">wiced_bt_mesh_sensor_get_t</a> *&#160;</td>
+          <td class="paramname"><em>sensor_get</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sensor Data get. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
+    <tr><td class="paramname">sensor_get</td><td>pointer to the sensor data to be received</td></tr>
   </table>
   </dd>
 </dl>
@@ -448,44 +524,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga87880b44ff3a5d2957748ac0fdf9733c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga87880b44ff3a5d2957748ac0fdf9733c">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_sensor_settings_send_get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_sensor_client_sensor_settings_send_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__sensor__get__t.html">wiced_bt_mesh_sensor_get_t</a> *&#160;</td>
-          <td class="paramname"><em>settings_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sensor Settings get. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
-    <tr><td class="paramname">settings_data</td><td>pointer to data portion of the sensor settings get message</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
 <a id="gac3a4035e505416db2ce7d5db5077f0a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac3a4035e505416db2ce7d5db5077f0a8">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_sensor_setting_send_set()</h2>
 
@@ -524,14 +562,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga52a24d45ec6d3012aa059b15d8955698"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52a24d45ec6d3012aa059b15d8955698">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_sensor_cadence_send_get()</h2>
+<a id="ga87880b44ff3a5d2957748ac0fdf9733c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87880b44ff3a5d2957748ac0fdf9733c">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_sensor_settings_send_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_sensor_client_sensor_cadence_send_get </td>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_sensor_client_sensor_settings_send_get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
           <td class="paramname"><em>p_event</em>, </td>
@@ -540,7 +578,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structwiced__bt__mesh__sensor__get__t.html">wiced_bt_mesh_sensor_get_t</a> *&#160;</td>
-          <td class="paramname"><em>cadence_data</em>&#160;</td>
+          <td class="paramname"><em>settings_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -550,49 +588,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sensor Cadence get. </p>
+<p>Sensor Settings get. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
-    <tr><td class="paramname">cadence_data</td><td>pointer to data portion of the cadence get message</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
-<a id="ga99a9bdecedc85f3aa787d9f4e0798c55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga99a9bdecedc85f3aa787d9f4e0798c55">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_sensor_client_sensor_cadence_send_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_sensor_client_sensor_cadence_send_set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__sensor__cadence__set__data__t.html">wiced_bt_mesh_sensor_cadence_set_data_t</a> *&#160;</td>
-          <td class="paramname"><em>cadence_set</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sensor Cadence set. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
-    <tr><td class="paramname">cadence_set</td><td>pointer to data portion of the cadence set message</td></tr>
+    <tr><td class="paramname">settings_data</td><td>pointer to data portion of the sensor settings get message</td></tr>
   </table>
   </dd>
 </dl>

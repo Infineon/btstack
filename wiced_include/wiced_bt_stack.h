@@ -62,7 +62,8 @@ extern "C" {
 /****************************************************************************/
 /**
  *
- * @ingroup     wiced_bt_cfg
+ * @addtogroup  wiced_bt_init_functions       Bluetooth Stack Initialization & Configuration
+ * This section describes API and Data structures required to initialize and configure the BTSTACK and various submodules.
  *
  * @{
  */
@@ -70,52 +71,59 @@ extern "C" {
 
 /**
  *
- * Initialize the Bluetooth controller and stack; register
- * callback for Bluetooth event notification.
+ * This API initializes the stack based on the configuration in \b p_bt_cfg_settings and allocates memory as per the configuration. It also initializes platform interfaces and the controller.
+ * It registers the application callback for notification of Bluetooth events issues by the stack.
+ * Upon successfully Initialization of Bluetooth controller and stack, application receives #BTM_ENABLED_EVT with the event data in  #wiced_bt_dev_enabled_t.
  *
- * @param[in] p_bt_management_cback     : Callback for receiving Bluetooth management events
+ * @warning Controller FW (patch) download is the part of #wiced_bt_stack_init , if \ref wiced_bt_stack_platform_t.pf_patch_download fails, application may not receive #BTM_ENABLED_EVT.
+ *
+ * @param[in] p_bt_management_cback     : Callback for receiving Bluetooth management events(#wiced_bt_management_evt_e)
  * @param[in] p_bt_cfg_settings         : Bluetooth stack configuration #wiced_bt_cfg_settings_t
  *
- * @return   <b> WICED_BT_SUCCESS </b> : on success; \n
- *           <b> WICED_BT_FAILED  </b> : if an error occurred
- * @note This API must be called before using any Bluetooth functionality. \n
- * If p_bt_cfg_settings is null, stack uses default parameters defined in wiced_bt_cfg.h \n
+ * @return   <b> WICED_BT_SUCCESS </b> : On success \n
+ *           <b> WICED_ERROR  </b> : If an error occurred
+ * @note This API must be implemented by platform porting layer. \n
+ * This API must be called before using any Bluetooth functionality. \n
+ * If \b p_bt_cfg_settings is null, stack uses default parameters defined in <b> wiced_bt_cfg.h </b> \n
  *     However, it is strongly recommended that applications define the configuration to appropriate values based on the application use case.
  */
 wiced_result_t wiced_bt_stack_init(wiced_bt_management_cback_t *p_bt_management_cback,
                                     const wiced_bt_cfg_settings_t *p_bt_cfg_settings);
 
 /**
- * This is a blocking call (returns after all de-initialisation procedures are complete)
+ * This is a blocking call (returns after all de-initialization procedures are complete)
  * It is recommended that the application disconnect any outstanding connections prior to invoking this function.
  *
- * @return  <b>  WICED_BT_SUCCESS </b> : on success; \n
- *          <b>  WICED_BT_ERROR   </b> : if an error occurred
+ * @return  <b>  WICED_BT_SUCCESS </b> : On success; \n
+ *          <b>  WICED_BT_ERROR   </b> : If an error occurred
  */
 wiced_result_t wiced_bt_stack_deinit( void );
 
 /**
-* Initialize l2cap
-*
-* @return wiced_result_t
-*/
-wiced_result_t wiced_bt_l2c_module_init(void);
-
- /**
- * Initialize SMP.
- * Called by application to accept incoming pairing requests
+ * Initialize SMP(Security Manager).
+ * This API enables the Security Manager module in the stack to accept incoming pairing requests
+ *@note calling any SMP API in the application without calling #wiced_bt_smp_module_init will result in error or undefined behavior.
  *
- * @result wiced_result_t
+ * @result #wiced_result_t \n
+ *  <b> WICED_BT_SUCCESS </b>: If successful \n
+ *  <b> WICED_BT_ERROR </b>: If an error occurred
+
  */
+
 wiced_result_t wiced_bt_smp_module_init(void);
 
 /**
-* Enable host based resolution
-* This should be invoked in the BTM_ENABLED_EVT event
+* This API enables the Host based address resolution.
+* If Host based resolution is enabled then advertisment packet with Resolvable private address is resolved by host.
+* @note This should be invoked in the #BTM_ENABLED_EVT event.
+*
+* @result #wiced_result_t \n
+*  <b> WICED_BT_SUCCESS </b>: If successful \n
+*  <b> WICED_NO_MEMORY </b>: If no memory/buffers available to create the Resolving list
 */
 wiced_result_t wiced_bt_init_resolution(void);
 
-
+/**@} wiced_bt_init_functions */
 /**@} wicedbt_Framework */
 
 

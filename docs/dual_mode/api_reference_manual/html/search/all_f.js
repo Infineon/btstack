@@ -16,6 +16,13 @@ var searchData=
   ['operation_5fid',['operation_id',['../structwiced__bt__avrc__pass__thru__hdr__t.html#a888287aaeae1bc8f2020684206ad0ecb',1,'wiced_bt_avrc_pass_thru_hdr_t']]],
   ['our_5frx_5fmps',['our_rx_mps',['../structwiced__bt__gatt__eatt__connection__response__t.html#a8242f7954951cb2067c007bcefd95122',1,'wiced_bt_gatt_eatt_connection_response_t']]],
   ['our_5frx_5fmtu',['our_rx_mtu',['../structwiced__bt__gatt__eatt__connection__response__t.html#ae5fc20f636b8626f58df8842ed91a16a',1,'wiced_bt_gatt_eatt_connection_response_t']]],
+  ['output_5fbandwidth',['output_bandwidth',['../structwiced__bt__enh__esco__params__t.html#a1ffa994bf27f3a6fde9bf14a8a2cdffa',1,'wiced_bt_enh_esco_params_t']]],
+  ['output_5fcf',['output_cf',['../structwiced__bt__enh__esco__params__t.html#a087ae831b2736fc5b2a4f2a30d2420e6',1,'wiced_bt_enh_esco_params_t']]],
+  ['output_5fcoded_5fdata_5fsize',['output_coded_data_size',['../structwiced__bt__enh__esco__params__t.html#a690f574cfd8bc9be24d0d76121785d42',1,'wiced_bt_enh_esco_params_t']]],
+  ['output_5fdata_5fpath',['output_data_path',['../structwiced__bt__enh__esco__params__t.html#ad378064eee7fa94028af3d3d8c4e5f44',1,'wiced_bt_enh_esco_params_t']]],
+  ['output_5fpcm_5fdata_5fformat',['output_pcm_data_format',['../structwiced__bt__enh__esco__params__t.html#a070584679338290dc7bea6c68759747f',1,'wiced_bt_enh_esco_params_t']]],
+  ['output_5fpcm_5fpayload_5fmsb_5fposition',['output_pcm_payload_msb_position',['../structwiced__bt__enh__esco__params__t.html#a9f7e87eb2bf48248ed85573b44c50120',1,'wiced_bt_enh_esco_params_t']]],
+  ['output_5ftransport_5funit_5fsize',['output_transport_unit_size',['../structwiced__bt__enh__esco__params__t.html#ac536d399d59b8e6d6873ca67b2abd9a7',1,'wiced_bt_enh_esco_params_t']]],
   ['own_5faddr_5ftype',['own_addr_type',['../structwiced__bt__ble__multi__adv__params__t.html#a984df1d6500488f5daeffa08984633b8',1,'wiced_bt_ble_multi_adv_params_t::own_addr_type()'],['../structwiced__bt__ble__ext__adv__params__t.html#a5d9d086d370cc284b5795974972151c8',1,'wiced_bt_ble_ext_adv_params_t::own_addr_type()']]],
   ['own_5fbd_5faddr',['own_bd_addr',['../structwiced__bt__ble__multi__adv__params__t.html#a670fabbd2fc224d4d7b8408f4e60aa87',1,'wiced_bt_ble_multi_adv_params_t']]]
 ];

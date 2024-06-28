@@ -3,6 +3,7 @@ var searchData=
   ['no_5ftraffic',['NO_TRAFFIC',['../group__bt__types.html#ga2e62702df46486d10f869cb00339eb8d',1,'wiced_bt_types.h']]],
   ['not_5fused',['not_used',['../structwiced__bt__device__edr__packet__types__t.html#a19dda30cacb280cbfee6ae7859b2993a',1,'wiced_bt_device_edr_packet_types_t']]],
   ['null_5fcount',['null_count',['../structwiced__bt__device__br__packet__types__t.html#af93c5251f1d5d7df7387d9c5287f7d92',1,'wiced_bt_device_br_packet_types_t::null_count()'],['../structwiced__bt__device__edr__packet__types__t.html#a31c032339cadb75ad5f13767ad2c1737',1,'wiced_bt_device_edr_packet_types_t::null_count()']]],
+  ['null_5fdesc_5ftype',['NULL_DESC_TYPE',['../wiced__bt__sdp__defs_8h.html#a3410d22e0465caf4dffcc60082334f88',1,'wiced_bt_sdp_defs.h']]],
   ['num_5fbis',['num_bis',['../structwiced__bt__ble__biginfo__adv__report__t.html#abf188803914725b2e0e5f0249df5edca',1,'wiced_bt_ble_biginfo_adv_report_t']]],
   ['num_5fcompleted_5fext_5fadv_5fevents',['num_completed_ext_adv_events',['../structwiced__bt__ble__ext__adv__set__terminated__event__data__t.html#ad56295f549b2ff83e0fae66abeb3b5aa',1,'wiced_bt_ble_ext_adv_set_terminated_event_data_t']]],
   ['num_5felements',['NUM_ELEMENTS',['../group__bt__types.html#ga0bf05373027b4f63e6a275eb4c3da931',1,'wiced_bt_types.h']]],

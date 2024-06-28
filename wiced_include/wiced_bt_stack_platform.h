@@ -32,15 +32,9 @@
  */
 /** @file
  *
- * Runtime Bluetooth configuration parameters
+ * Runtime Bluetooth configuration parameters \n
+ * This file contains platform interface structure, set of function pointers and APIs which provide OS/platform resources to AIROC Bluetooth Stack.
  *
- */
- /**
- * @addtogroup  wiced_bt_platform_group Bluetooth Stack Platform Interface
- *
- * Interface between Stack and platform.
- *
- * @{
  */
 
 #ifndef __WICED_BT_STACK_PLATFORM_H__
@@ -53,7 +47,11 @@
 #include "wiced_bt_cfg.h"
 #include "wiced_bt_dev.h"
 
-/** AIROC Bluetooth Stack Platform */
+/** AIROC Bluetooth Stack Platform Structure. \n
+* This structure contains a set of function pointers and platform settings for tracing, which are to be set by the platform poring layer. \n
+* Interfaces like memory, timer and locking mechanism for multi-threaded apps are supplied by the porting layer.
+*
+*/
 typedef struct
 {
     /**
@@ -240,16 +238,86 @@ typedef struct
 } wiced_bt_stack_platform_t;
 
 /**
- * Initialize the platform interfaces, by providing porting functions specific to
- * the underlying platform.
+* Function prototype for the post Stack Init Callback.
+*/
+typedef void (*wiced_bt_internal_post_stack_init_cb)(void);
+
+/**
+* Function prototype for the HCI event monitor function that the application may suppply.
+* The application MUST return TRUE if the it handled the event and does not want the stack to
+* process the event. \n
+* If the application returns FALSE, the stack will process the event.
+*/
+typedef wiced_bool_t (*wiced_bt_internal_stack_evt_handler_cb)(uint8_t* p_event);
+
+
+ /**
+ * @addtogroup  wiced_bt_platform_group Bluetooth Stack Platform Interface
  *
- * @return   <b> WICED_BT_SUCCESS </b> : on success; \n
+ * Interface between Stack and platform.
+ * It contains APIs which are used for configuring and initializing the AIROC Bluetooth stack. \n
+ * The APIs should be called in the order mentioned below. \n
+ * 1. #wiced_bt_stack_platform_initialize() \n
+ * 2. #wiced_bt_set_stack_config() \n
+ * 3. #wiced_bt_stack_init_internal() \n
+ * 4. #wiced_bt_continue_reset() \n
+ * Please check API documentation for more details. Depending on the HCI platform interface, the calls may be made asynchronously. \n
+ * This section also lists the APIs which are used for processing data and events received from Controller.
+ *
+ * @{
+ */
+/**
+ * API to initialize the platform interfaces, by providing porting functions specific to
+ * the underlying platform.
+ * This API is called from #wiced_bt_stack_init()
+ *
+ * @param[in] platform_interfaces  : Pointer to platform interface structure #wiced_bt_stack_platform_t \n
+ *                                   Implementation of callback functions, which are members of #wiced_bt_stack_platform_t, may differ from platform to platform
+ *
+ * @return   #wiced_result_t \n
+ *           <b> WICED_BT_SUCCESS </b> : on success \n
  *           <b> WICED_BT_ERROR  </b>  : if an error occurred
  */
 extern wiced_result_t wiced_bt_stack_platform_initialize(wiced_bt_stack_platform_t * platform_interfaces);
 
 /**
- * Called by the porting layer to process the incoming ACL data received from the
+* API to set AIROC Bluetooth stack configuration. This API is invoked by porting layer to configure AIROC Bluetooth Stack.
+* This API is called from #wiced_bt_stack_init()
+*
+* @param[in] p_bt_new_cfg_settings : Pointer to stack configuration settings
+*
+* @return   0 if there is any error in the configuration, otherwise the dynamic
+*           memory size requirement of the stack for the given \p p_bt_new_cfg_settings configuration.
+*
+*/
+extern uint32_t wiced_bt_set_stack_config(const wiced_bt_cfg_settings_t *p_bt_new_cfg_settings);
+
+/**
+* API for doing internal stack initialization.
+* Once HCI platform interface to Controller is initialized, porting layer calls this API to start with AIROC Bluetooth Stack initialization.
+*
+* @param[in] mgmt_cback : Application Bluetooth Management callback
+* @param[in] post_stack_cb : Internal post stack init callback
+* @param[in] evt_handler_cb : Internal stack event handler
+*
+* @return    void
+*
+*/
+void wiced_bt_stack_init_internal(wiced_bt_management_cback_t mgmt_cback,
+                                  wiced_bt_internal_post_stack_init_cb post_stack_cb,
+                                  wiced_bt_internal_stack_evt_handler_cb evt_handler_cb);
+
+/**
+ * This API is called by porting layer to complete/continue the reset process.
+ * It is called after downloading firmware patches to the Controller.
+ *
+ * @return    void
+ */
+extern void wiced_bt_continue_reset(void);
+
+/**
+ * API to process ACL data.
+ * This API is called by porting layer to process incoming ACL data received from the
  * remote bluetooth device
  *
  * @param[in] pData  : Pointer to the ACL data to be processed
@@ -260,106 +328,63 @@ extern wiced_result_t wiced_bt_stack_platform_initialize(wiced_bt_stack_platform
 extern void wiced_bt_process_acl_data(uint8_t* pData, uint32_t length);
 
 /**
- * Called by the porting layer to process the incoming HCI events from the local
+ * API to process HCI events.
+ * This API is called by porting layer to process incoming HCI events from the local
  * bluetooth controller
  *
  * @param[in] pData  : Pointer to the HCI Events to be processed
  * @param[in] length : Length of the event buffer
+ *
  * @return    void
  */
 extern void wiced_bt_process_hci_events(uint8_t* pData, uint32_t length);
 
 /**
- * Called by the porting layer to process the incoming  SCO data received from the
+ * API to process SCO data.
+ * This API is called by porting layer to process incoming SCO data received from the
  * remote bluetooth device
  *
  * @param[in] pData  : Pointer to the SCO data to be processed
-  * @param[in] length : Length of the SCO data buffer
+ * @param[in] length : Length of the SCO data buffer
+ *
  * @return    void
  */
 
 extern void wiced_bt_process_sco_data(uint8_t *pData, uint32_t length);
 
 /**
- * Called by the porting layer to process the incoming  ISOC data received from the
+ * API to process ISOC data.
+ * This API is called by porting layer to process incoming ISOC data received from the
  * remote bluetooth device
  *
  * @param[in] pData  : Pointer to the ISOC data to be processed
  * @param[in] length : Length of the ISOC data buffer
+ *
  * @return    void
  */
 extern void wiced_bt_process_isoc_data(uint8_t *pData, uint32_t length);
 
  /**
- * Called by the porting layer on expiry of the timer to process pending timers
+ * This API is called by porting layer on expiry of the timer to process pending timers
  *
  * @return    void
  */
 extern void wiced_bt_process_timer(void);
 
-
 /**
- * Called by the lower layer transport driver to restart sending ACL data to the controller
- * Note: Porting layer API.
- *     This API is expected to be invoked by the lower layer transport driver, to restart
- *     transfers from the stack to the controller.
- *     The lower tx layer is expected to have space for atleast one complete ACL buffer
- *     Typically used in cases where the lower Tx has lesser number of buffers than allowed by controller
+ * This API is called by porting layer to restart sending ACL data to the Controller through lower layer transport driver.
+ * @note This API is expected to be invoked by porting layer, to restart
+ *     transfers from stack to Controller. \n
+ *     The lower transport layer is expected to have space for atleast one complete ACL buffer. \n
+ *     Typically used in cases where the lower transport has lesser number of buffers than allowed by the Controller.
  */
 extern void wiced_bt_stack_indicate_lower_tx_complete(void);
-
-/**
- * Called by the porting layer to complete/continue the reset process
- * Typically called after downloading firmware patches to the controller
- *
- * @return    void
- */
-extern void wiced_bt_continue_reset(void);
-
-/**
-* Set the stack config. Invoked by the porting layer
-*
-* @param[in] p_bt_new_cfg_settings : Stack configuration settings
-*
-* @return   0 if there is any error in the configuration otherwise the dynamic
-*           memory size requirements of the stack for the configuration.
-*
-*
-*/
-extern uint32_t wiced_bt_set_stack_config(const wiced_bt_cfg_settings_t* p_bt_new_cfg_settings);
-
-/**
-* Function prototype for the post Stack Init Callback.
-*/
-typedef void (*wiced_bt_internal_post_stack_init_cb)(void);
-
-
-/**
-* Function prototype for the HCI event monitor function that the application may suppply.
-* The application MUST return TRUE if the it handled the event and does not want the stack to
-* process the event. If the application returns FALSE, the stack will process the event.
-*/
-typedef wiced_bool_t (*wiced_bt_internal_stack_evt_handler_cb)(uint8_t* p_event);
-
-/**
-* Internal stack init
-*
-* @param[in] mgmt_cback : Application Bluetooth Management callback
-* @param[in] post_stack_cb : Internal post stack init callback
-* @param[in] evt_handler_cb : Internal stack event handler
-*
-* @return    Dynamic memory size requirements of the stack for the configuration
-*
-*/
-void wiced_bt_stack_init_internal(wiced_bt_management_cback_t mgmt_cback,
-    wiced_bt_internal_post_stack_init_cb post_stack_cb,
-    wiced_bt_internal_stack_evt_handler_cb evt_handler_cb);
 
 /**
  * This function blocks until all de-initialisation procedures are complete.
  * It is recommended that the application disconnect any outstanding connections prior to invoking this function.
  *
- * @return    None
+ * @return    void
  */
 void wiced_bt_stack_shutdown(void);
 

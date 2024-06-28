@@ -89,67 +89,168 @@ $(document).ready(function(){initNavTree('structwiced__bt__ble__ext__adv__report
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">wiced_bt_ble_ext_adv_report_t Struct Reference<div class="ingroups"><a class="el" href="group__wicedbt___device_management.html">Device Management</a> &raquo; <a class="el" href="group__btm__ble__api__functions.html">LE (Bluetooth Low Energy)</a></div></div>  </div>
+<div class="title">wiced_bt_ble_ext_adv_report_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>Extended advertisement report data format. </p>
-<p>Note:When multiple advertising packets are used to complete a single advertising report(i.e. if adv set data received as multipl adv reports), the RSSI and TxPower event parameters shall be set based on the last packet received. </p>
+<dl class="section note"><dt>Note</dt><dd>When multiple advertising packets are used to complete a single advertising report(i.e. if adv set data received as multipl adv reports), the RSSI and TxPower event parameters shall be set based on the last packet received. </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ace6aae799d872a84a20b4e2b1e151fdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__btm__ble__api__functions.html#gaeef30254c858058c82419185b0ddfb19">wiced_bt_ble_adv_report_event_mask_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#ace6aae799d872a84a20b4e2b1e151fdf">event_type</a></td></tr>
+<tr class="memitem:ace6aae799d872a84a20b4e2b1e151fdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__ble_8h.html#aeef30254c858058c82419185b0ddfb19">wiced_bt_ble_adv_report_event_mask_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#ace6aae799d872a84a20b4e2b1e151fdf">event_type</a></td></tr>
 <tr class="memdesc:ace6aae799d872a84a20b4e2b1e151fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the adv.  <a href="#ace6aae799d872a84a20b4e2b1e151fdf">More...</a><br /></td></tr>
 <tr class="separator:ace6aae799d872a84a20b4e2b1e151fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ccb86cd144447ae03450b0479d5cb7"><td class="memItemLeft" align="right" valign="top"><a id="af5ccb86cd144447ae03450b0479d5cb7"></a>
-<a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#af5ccb86cd144447ae03450b0479d5cb7">addr_type</a></td></tr>
-<tr class="memdesc:af5ccb86cd144447ae03450b0479d5cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertiser address type <br /></td></tr>
+<tr class="memitem:af5ccb86cd144447ae03450b0479d5cb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#af5ccb86cd144447ae03450b0479d5cb7">addr_type</a></td></tr>
+<tr class="memdesc:af5ccb86cd144447ae03450b0479d5cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertiser address type  <a href="#af5ccb86cd144447ae03450b0479d5cb7">More...</a><br /></td></tr>
 <tr class="separator:af5ccb86cd144447ae03450b0479d5cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07d7016a62b02be5a4797a884825b618"><td class="memItemLeft" align="right" valign="top"><a id="a07d7016a62b02be5a4797a884825b618"></a>
-<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a07d7016a62b02be5a4797a884825b618">bd_addr</a></td></tr>
-<tr class="memdesc:a07d7016a62b02be5a4797a884825b618"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertiser address <br /></td></tr>
+<tr class="memitem:a07d7016a62b02be5a4797a884825b618"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a07d7016a62b02be5a4797a884825b618">bd_addr</a></td></tr>
+<tr class="memdesc:a07d7016a62b02be5a4797a884825b618"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertiser address  <a href="#a07d7016a62b02be5a4797a884825b618">More...</a><br /></td></tr>
 <tr class="separator:a07d7016a62b02be5a4797a884825b618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a473965977cc43e7046896ec18f6f5d52"><td class="memItemLeft" align="right" valign="top"><a id="a473965977cc43e7046896ec18f6f5d52"></a>
-<a class="el" href="group__btm__ble__api__functions.html#ga1df2af97f3bf1553de03806b88b4a0b0">wiced_bt_ble_ext_adv_phy_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a473965977cc43e7046896ec18f6f5d52">prim_phy</a></td></tr>
-<tr class="memdesc:a473965977cc43e7046896ec18f6f5d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">PHY on which extended ADV PDUs received. <br /></td></tr>
+<tr class="memitem:a473965977cc43e7046896ec18f6f5d52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__ble_8h.html#a1df2af97f3bf1553de03806b88b4a0b0">wiced_bt_ble_ext_adv_phy_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a473965977cc43e7046896ec18f6f5d52">prim_phy</a></td></tr>
+<tr class="memdesc:a473965977cc43e7046896ec18f6f5d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">PHY on which extended ADV PDUs received.  <a href="#a473965977cc43e7046896ec18f6f5d52">More...</a><br /></td></tr>
 <tr class="separator:a473965977cc43e7046896ec18f6f5d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1d54d04d5e0541c37861a28a86306c7"><td class="memItemLeft" align="right" valign="top"><a id="ae1d54d04d5e0541c37861a28a86306c7"></a>
-<a class="el" href="group__btm__ble__api__functions.html#ga1df2af97f3bf1553de03806b88b4a0b0">wiced_bt_ble_ext_adv_phy_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#ae1d54d04d5e0541c37861a28a86306c7">sec_phy</a></td></tr>
-<tr class="memdesc:ae1d54d04d5e0541c37861a28a86306c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">PHY on which auxilary ADV PDUs received. <br /></td></tr>
+<tr class="memitem:ae1d54d04d5e0541c37861a28a86306c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__ble_8h.html#a1df2af97f3bf1553de03806b88b4a0b0">wiced_bt_ble_ext_adv_phy_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#ae1d54d04d5e0541c37861a28a86306c7">sec_phy</a></td></tr>
+<tr class="memdesc:ae1d54d04d5e0541c37861a28a86306c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">PHY on which auxilary ADV PDUs received.  <a href="#ae1d54d04d5e0541c37861a28a86306c7">More...</a><br /></td></tr>
 <tr class="separator:ae1d54d04d5e0541c37861a28a86306c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58efda4fa39753a4e8ac91f0585e6f1e"><td class="memItemLeft" align="right" valign="top"><a id="a58efda4fa39753a4e8ac91f0585e6f1e"></a>
-<a class="el" href="group__btm__ble__api__functions.html#gac6d6963aef40793449cbd2ead59fe54b">wiced_bt_ble_ext_adv_sid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a58efda4fa39753a4e8ac91f0585e6f1e">adv_sid</a></td></tr>
-<tr class="memdesc:a58efda4fa39753a4e8ac91f0585e6f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertising set identifier <br /></td></tr>
+<tr class="memitem:a58efda4fa39753a4e8ac91f0585e6f1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__ble_8h.html#ac6d6963aef40793449cbd2ead59fe54b">wiced_bt_ble_ext_adv_sid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a58efda4fa39753a4e8ac91f0585e6f1e">adv_sid</a></td></tr>
+<tr class="memdesc:a58efda4fa39753a4e8ac91f0585e6f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertising set identifier  <a href="#a58efda4fa39753a4e8ac91f0585e6f1e">More...</a><br /></td></tr>
 <tr class="separator:a58efda4fa39753a4e8ac91f0585e6f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a147301a71b3d035c54a7cf3004edcf70"><td class="memItemLeft" align="right" valign="top"><a id="a147301a71b3d035c54a7cf3004edcf70"></a>
-int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a147301a71b3d035c54a7cf3004edcf70">tx_pwr</a></td></tr>
-<tr class="memdesc:a147301a71b3d035c54a7cf3004edcf70"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertisement transmit power <br /></td></tr>
+<tr class="memitem:a147301a71b3d035c54a7cf3004edcf70"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a147301a71b3d035c54a7cf3004edcf70">tx_pwr</a></td></tr>
+<tr class="memdesc:a147301a71b3d035c54a7cf3004edcf70"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertisement transmit power  <a href="#a147301a71b3d035c54a7cf3004edcf70">More...</a><br /></td></tr>
 <tr class="separator:a147301a71b3d035c54a7cf3004edcf70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab40064100475e851b280262bdac0dd4f"><td class="memItemLeft" align="right" valign="top"><a id="ab40064100475e851b280262bdac0dd4f"></a>
-int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#ab40064100475e851b280262bdac0dd4f">rssi</a></td></tr>
-<tr class="memdesc:ab40064100475e851b280262bdac0dd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertisement RSSI <br /></td></tr>
+<tr class="memitem:ab40064100475e851b280262bdac0dd4f"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#ab40064100475e851b280262bdac0dd4f">rssi</a></td></tr>
+<tr class="memdesc:ab40064100475e851b280262bdac0dd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">advertisement RSSI  <a href="#ab40064100475e851b280262bdac0dd4f">More...</a><br /></td></tr>
 <tr class="separator:ab40064100475e851b280262bdac0dd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9444d8e38e41c31dd76e889efb31819"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#af9444d8e38e41c31dd76e889efb31819">periodic_adv_int</a></td></tr>
 <tr class="memdesc:af9444d8e38e41c31dd76e889efb31819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval of the periodic advertisements if periodic adv enabled on the same set.  <a href="#af9444d8e38e41c31dd76e889efb31819">More...</a><br /></td></tr>
 <tr class="separator:af9444d8e38e41c31dd76e889efb31819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a68778601d6efdf8f23cff19d2ac1c"><td class="memItemLeft" align="right" valign="top"><a id="a07a68778601d6efdf8f23cff19d2ac1c"></a>
-<a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a07a68778601d6efdf8f23cff19d2ac1c">dir_addr_type</a></td></tr>
-<tr class="memdesc:a07a68778601d6efdf8f23cff19d2ac1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target device address type in case of directed adv report. <br /></td></tr>
+<tr class="memitem:a07a68778601d6efdf8f23cff19d2ac1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a07a68778601d6efdf8f23cff19d2ac1c">dir_addr_type</a></td></tr>
+<tr class="memdesc:a07a68778601d6efdf8f23cff19d2ac1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target device address type in case of directed adv report.  <a href="#a07a68778601d6efdf8f23cff19d2ac1c">More...</a><br /></td></tr>
 <tr class="separator:a07a68778601d6efdf8f23cff19d2ac1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adafaa7ad59c0e2754251d19b64ce9e9e"><td class="memItemLeft" align="right" valign="top"><a id="adafaa7ad59c0e2754251d19b64ce9e9e"></a>
-<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#adafaa7ad59c0e2754251d19b64ce9e9e">dir_bdaddr</a></td></tr>
-<tr class="memdesc:adafaa7ad59c0e2754251d19b64ce9e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target device address in case of directed adv report. <br /></td></tr>
+<tr class="memitem:adafaa7ad59c0e2754251d19b64ce9e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#adafaa7ad59c0e2754251d19b64ce9e9e">dir_bdaddr</a></td></tr>
+<tr class="memdesc:adafaa7ad59c0e2754251d19b64ce9e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target device address in case of directed adv report.  <a href="#adafaa7ad59c0e2754251d19b64ce9e9e">More...</a><br /></td></tr>
 <tr class="separator:adafaa7ad59c0e2754251d19b64ce9e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77433e98f2d9d12cda196710c2ac172e"><td class="memItemLeft" align="right" valign="top"><a id="a77433e98f2d9d12cda196710c2ac172e"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a77433e98f2d9d12cda196710c2ac172e">data_len</a></td></tr>
-<tr class="memdesc:a77433e98f2d9d12cda196710c2ac172e"><td class="mdescLeft">&#160;</td><td class="mdescRight">adv data length <br /></td></tr>
+<tr class="memitem:a77433e98f2d9d12cda196710c2ac172e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a77433e98f2d9d12cda196710c2ac172e">data_len</a></td></tr>
+<tr class="memdesc:a77433e98f2d9d12cda196710c2ac172e"><td class="mdescLeft">&#160;</td><td class="mdescRight">adv data length  <a href="#a77433e98f2d9d12cda196710c2ac172e">More...</a><br /></td></tr>
 <tr class="separator:a77433e98f2d9d12cda196710c2ac172e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d11c41acc153f0766c68af626ba9c28"><td class="memItemLeft" align="right" valign="top"><a id="a2d11c41acc153f0766c68af626ba9c28"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a2d11c41acc153f0766c68af626ba9c28">ad_data</a> []</td></tr>
-<tr class="memdesc:a2d11c41acc153f0766c68af626ba9c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">adv data <br /></td></tr>
+<tr class="memitem:a2d11c41acc153f0766c68af626ba9c28"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__ext__adv__report__t.html#a2d11c41acc153f0766c68af626ba9c28">ad_data</a> []</td></tr>
+<tr class="memdesc:a2d11c41acc153f0766c68af626ba9c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">adv data  <a href="#a2d11c41acc153f0766c68af626ba9c28">More...</a><br /></td></tr>
 <tr class="separator:a2d11c41acc153f0766c68af626ba9c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a2d11c41acc153f0766c68af626ba9c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d11c41acc153f0766c68af626ba9c28">&#9670;&nbsp;</a></span>ad_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t wiced_bt_ble_ext_adv_report_t::ad_data[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adv data </p>
+
+</div>
+</div>
+<a id="af5ccb86cd144447ae03450b0479d5cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ccb86cd144447ae03450b0479d5cb7">&#9670;&nbsp;</a></span>addr_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> wiced_bt_ble_ext_adv_report_t::addr_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>advertiser address type </p>
+
+</div>
+</div>
+<a id="a58efda4fa39753a4e8ac91f0585e6f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58efda4fa39753a4e8ac91f0585e6f1e">&#9670;&nbsp;</a></span>adv_sid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wiced__bt__ble_8h.html#ac6d6963aef40793449cbd2ead59fe54b">wiced_bt_ble_ext_adv_sid_t</a> wiced_bt_ble_ext_adv_report_t::adv_sid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>advertising set identifier </p>
+
+</div>
+</div>
+<a id="a07d7016a62b02be5a4797a884825b618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d7016a62b02be5a4797a884825b618">&#9670;&nbsp;</a></span>bd_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> wiced_bt_ble_ext_adv_report_t::bd_addr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>advertiser address </p>
+
+</div>
+</div>
+<a id="a77433e98f2d9d12cda196710c2ac172e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77433e98f2d9d12cda196710c2ac172e">&#9670;&nbsp;</a></span>data_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t wiced_bt_ble_ext_adv_report_t::data_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adv data length </p>
+
+</div>
+</div>
+<a id="a07a68778601d6efdf8f23cff19d2ac1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a68778601d6efdf8f23cff19d2ac1c">&#9670;&nbsp;</a></span>dir_addr_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> wiced_bt_ble_ext_adv_report_t::dir_addr_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Target device address type in case of directed adv report. </p>
+
+</div>
+</div>
+<a id="adafaa7ad59c0e2754251d19b64ce9e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adafaa7ad59c0e2754251d19b64ce9e9e">&#9670;&nbsp;</a></span>dir_bdaddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> wiced_bt_ble_ext_adv_report_t::dir_bdaddr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Target device address in case of directed adv report. </p>
+
+</div>
+</div>
 <a id="ace6aae799d872a84a20b4e2b1e151fdf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace6aae799d872a84a20b4e2b1e151fdf">&#9670;&nbsp;</a></span>event_type</h2>
 
@@ -157,13 +258,13 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__btm__ble__api__functions.html#gaeef30254c858058c82419185b0ddfb19">wiced_bt_ble_adv_report_event_mask_t</a> wiced_bt_ble_ext_adv_report_t::event_type</td>
+          <td class="memname"><a class="el" href="wiced__bt__ble_8h.html#aeef30254c858058c82419185b0ddfb19">wiced_bt_ble_adv_report_event_mask_t</a> wiced_bt_ble_ext_adv_report_t::event_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Type of the adv. </p>
-<p>(See <a class="el" href="group__btm__ble__api__functions.html#gaeef30254c858058c82419185b0ddfb19" title="Bit mask to identify the type of the adv received in extended adv report.">wiced_bt_ble_adv_report_event_mask_t</a>) </p>
+<p>(See <a class="el" href="wiced__bt__ble_8h.html#aeef30254c858058c82419185b0ddfb19" title="Bit mask to identify the type of the adv received in extended adv report.">wiced_bt_ble_adv_report_event_mask_t</a>) </p>
 
 </div>
 </div>
@@ -181,6 +282,70 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 
 <p>Interval of the periodic advertisements if periodic adv enabled on the same set. </p>
 <p>Range: N = 0x0006 to 0xFFFF, Time = N * 1.25 ms </p>
+
+</div>
+</div>
+<a id="a473965977cc43e7046896ec18f6f5d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473965977cc43e7046896ec18f6f5d52">&#9670;&nbsp;</a></span>prim_phy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wiced__bt__ble_8h.html#a1df2af97f3bf1553de03806b88b4a0b0">wiced_bt_ble_ext_adv_phy_t</a> wiced_bt_ble_ext_adv_report_t::prim_phy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PHY on which extended ADV PDUs received. </p>
+
+</div>
+</div>
+<a id="ab40064100475e851b280262bdac0dd4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab40064100475e851b280262bdac0dd4f">&#9670;&nbsp;</a></span>rssi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t wiced_bt_ble_ext_adv_report_t::rssi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>advertisement RSSI </p>
+
+</div>
+</div>
+<a id="ae1d54d04d5e0541c37861a28a86306c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1d54d04d5e0541c37861a28a86306c7">&#9670;&nbsp;</a></span>sec_phy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wiced__bt__ble_8h.html#a1df2af97f3bf1553de03806b88b4a0b0">wiced_bt_ble_ext_adv_phy_t</a> wiced_bt_ble_ext_adv_report_t::sec_phy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PHY on which auxilary ADV PDUs received. </p>
+
+</div>
+</div>
+<a id="a147301a71b3d035c54a7cf3004edcf70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147301a71b3d035c54a7cf3004edcf70">&#9670;&nbsp;</a></span>tx_pwr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t wiced_bt_ble_ext_adv_report_t::tx_pwr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>advertisement transmit power </p>
 
 </div>
 </div>

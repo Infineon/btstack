@@ -32,12 +32,7 @@
  */
 
 /** @file
- *
- *  \addtogroup wiced_mem Memory Management
- *
- *  @{
- * Helper APIs to create heaps and pools and allocate/free buffers from those pools or heaps.
- * When a heap or a pool is created, this utility allocates required chunk of memory from the system and manages it for the creator.
+ * Memory management APIs
  */
 
 #ifndef __WICED_MEMORY_H__
@@ -104,6 +99,13 @@ typedef struct
 #ifdef __cplusplus
 extern "C" {
 #endif
+/**
+ *  \addtogroup wiced_mem Memory Management
+ *
+ *  @{
+ * Helper APIs to create heaps and pools and allocate/free buffers from those pools or heaps.
+ * When a heap or a pool is created, this utility allocates required chunk of memory from the system and manages it for the creator.
+ */
 
 /**
  * Returns the number of free bytes of RAM available for allocation from the
@@ -396,9 +398,9 @@ wiced_result_t wiced_bt_get_pool_statistics(wiced_bt_pool_t *p_pool, wiced_bt_po
  */
 void wiced_set_exception_callback(pf_wiced_exception pf_handler);
 
+/** @} */
 #ifdef __cplusplus
 }
 #endif
-/** @} */
 
 #endif //__WICED_MEMORY_H__

@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('group__l2cap__common__api__functions.h
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Common<div class="ingroups"><a class="el" href="group__l2cap.html">Logical Link Control and Adaptation Protocol (L2CAP)</a></div></div>  </div>
+<div class="title">Common<div class="ingroups"><a class="el" href="group__l2cap.html">Logical Link Control and Adaptation Protocol (L2CAP) APIs</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
@@ -121,7 +121,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga759cb1c76bec995a078fde74b3663deb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#ga759cb1c76bec995a078fde74b3663deb">wiced_bt_l2cap_ecrb_deregister</a> (uint16_t psm)</td></tr>
 <tr class="memdesc:ga759cb1c76bec995a078fde74b3663deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application calls this function to deregister support for enhanced credit-based channels.  <a href="#ga759cb1c76bec995a078fde74b3663deb">More...</a><br /></td></tr>
 <tr class="separator:ga759cb1c76bec995a078fde74b3663deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga002c9dd41a84dffb8c9f8330be128e9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#ga002c9dd41a84dffb8c9f8330be128e9d">wiced_bt_l2cap_ecrb_connect_req</a> (uint16_t psm, <a class="el" href="group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0">wiced_bt_transport_t</a> transport, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> bd_addr_type, <a class="el" href="group__wicedbt___device_management.html#ga4309edd4a7a1c7f30bdc57d8107e84ab">wiced_bt_ble_conn_mode_t</a> conn_mode, uint16_t our_rx_mtu, uint16_t our_rx_mps, int num_channels, <a class="el" href="structt_d_r_b.html">tDRB</a> **p_rx_drb_list, <a class="el" href="group__bt__types.html#gaff3eb04924fbda24d4efd4285c7da1bc">wiced_bt_ecrb_cid_list_t</a> lcid_list)</td></tr>
+<tr class="memitem:ga002c9dd41a84dffb8c9f8330be128e9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#ga002c9dd41a84dffb8c9f8330be128e9d">wiced_bt_l2cap_ecrb_connect_req</a> (uint16_t psm, <a class="el" href="group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0">wiced_bt_transport_t</a> transport, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> bd_addr_type, <a class="el" href="wiced__bt__dev_8h.html#a4309edd4a7a1c7f30bdc57d8107e84ab">wiced_bt_ble_conn_mode_t</a> conn_mode, uint16_t our_rx_mtu, uint16_t our_rx_mps, int num_channels, <a class="el" href="structt_d_r_b.html">tDRB</a> **p_rx_drb_list, <a class="el" href="group__bt__types.html#gaff3eb04924fbda24d4efd4285c7da1bc">wiced_bt_ecrb_cid_list_t</a> lcid_list)</td></tr>
 <tr class="memdesc:ga002c9dd41a84dffb8c9f8330be128e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher layers call this function to create up to 5 credit-based L2CAP connections on the same PSM.  <a href="#ga002c9dd41a84dffb8c9f8330be128e9d">More...</a><br /></td></tr>
 <tr class="separator:ga002c9dd41a84dffb8c9f8330be128e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga536ec7f339490e662fffcd11a2525a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#ga536ec7f339490e662fffcd11a2525a5d">wiced_bt_l2cap_ecrb_ConnectRsp</a> (uint16_t result, uint8_t trans_id, int16_t our_rx_mtu, uint16_t our_rx_mps, <a class="el" href="group__bt__types.html#gaff3eb04924fbda24d4efd4285c7da1bc">wiced_bt_ecrb_cid_list_t</a> lcid_list, <a class="el" href="structt_d_r_b.html">tDRB</a> **p_rx_drb_list)</td></tr>
@@ -130,7 +130,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1ca1d8190c10328fb06b68573fb88ac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#ga1ca1d8190c10328fb06b68573fb88ac3">wiced_bt_l2cap_ecrb_reconfigure</a> (uint16_t new_rx_mtu, int16_t new_rx_mps, int num_channels, <a class="el" href="group__bt__types.html#gaff3eb04924fbda24d4efd4285c7da1bc">wiced_bt_ecrb_cid_list_t</a> lcid_list, <a class="el" href="structt_d_r_b.html">tDRB</a> **p_rx_drb_list)</td></tr>
 <tr class="memdesc:ga1ca1d8190c10328fb06b68573fb88ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher layers call this function to reconfigure the MTU and or MPS of Enhanced Credit-based L2CAP channels.  <a href="#ga1ca1d8190c10328fb06b68573fb88ac3">More...</a><br /></td></tr>
 <tr class="separator:ga1ca1d8190c10328fb06b68573fb88ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d963f266263672e7a672c27a21cc711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#ga4d963f266263672e7a672c27a21cc711">wiced_bt_l2cap_get_current_config</a> (uint16_t lcid, <a class="el" href="structwiced__bt__l2cap__cfg__information__t.html">wiced_bt_l2cap_cfg_information_t</a> **pp_our_cfg, <a class="el" href="group__l2cap.html#ga6827dfd644f1172740f9e69c0df06bc9">wiced_bt_l2cap_ch_cfg_bits_t</a> *p_our_cfg_bits, <a class="el" href="structwiced__bt__l2cap__cfg__information__t.html">wiced_bt_l2cap_cfg_information_t</a> **pp_peer_cfg, <a class="el" href="group__l2cap.html#ga6827dfd644f1172740f9e69c0df06bc9">wiced_bt_l2cap_ch_cfg_bits_t</a> *p_peer_cfg_bits)</td></tr>
+<tr class="memitem:ga4d963f266263672e7a672c27a21cc711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#ga4d963f266263672e7a672c27a21cc711">wiced_bt_l2cap_get_current_config</a> (uint16_t lcid, <a class="el" href="structwiced__bt__l2cap__cfg__information__t.html">wiced_bt_l2cap_cfg_information_t</a> **pp_our_cfg, <a class="el" href="wiced__bt__l2c_8h.html#a6827dfd644f1172740f9e69c0df06bc9">wiced_bt_l2cap_ch_cfg_bits_t</a> *p_our_cfg_bits, <a class="el" href="structwiced__bt__l2cap__cfg__information__t.html">wiced_bt_l2cap_cfg_information_t</a> **pp_peer_cfg, <a class="el" href="wiced__bt__l2c_8h.html#a6827dfd644f1172740f9e69c0df06bc9">wiced_bt_l2cap_ch_cfg_bits_t</a> *p_peer_cfg_bits)</td></tr>
 <tr class="memdesc:ga4d963f266263672e7a672c27a21cc711"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns configurations of L2CAP channel.  <a href="#ga4d963f266263672e7a672c27a21cc711">More...</a><br /></td></tr>
 <tr class="separator:ga4d963f266263672e7a672c27a21cc711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb82303005eb9c2c60358f49c3308455"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__common__api__functions.html#gabb82303005eb9c2c60358f49c3308455">wiced_bt_l2cap_register</a> (uint16_t psm, <a class="el" href="structwiced__bt__l2cap__appl__information__t.html">wiced_bt_l2cap_appl_information_t</a> *p_cb_information)</td></tr>
@@ -162,68 +162,24 @@ Functions</h2></td></tr>
 <tr class="separator:gaebb8e6a7ac8add5164c86871af99747e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae9a06f8b983a720ef8f052bbaa823ad6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae9a06f8b983a720ef8f052bbaa823ad6">&#9670;&nbsp;</a></span>wiced_bt_l2cap_register_fixed_channel()</h2>
+<a id="ga6cf452fa369a74b725afe2bf2917abbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6cf452fa369a74b725afe2bf2917abbb">&#9670;&nbsp;</a></span>wiced_bt_l2cap_allocate_psm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_register_fixed_channel </td>
+          <td class="memname">uint16_t wiced_bt_l2cap_allocate_psm </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>fixed_cid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html">wiced_bt_l2cap_fixed_chnl_reg_t</a> *&#160;</td>
-          <td class="paramname"><em>p_freg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Register a fixed channel. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed Channel # </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_freg</td><td>: Channel Callbacks and config</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE if registered OK </dd></dl>
-
-</div>
-</div>
-<a id="gab6c839df6fd0717659e0c1758c44f9e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab6c839df6fd0717659e0c1758c44f9e6">&#9670;&nbsp;</a></span>wiced_bt_l2cap_deregister_fixed_channel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_deregister_fixed_channel </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>fixed_cid</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>De-register a fixed channel. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed Channel #</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE if registered OK </dd></dl>
+<p>Other layers call this function to find an unused PSM for L2CAP services. </p>
+<dl class="section return"><dt>Returns</dt><dd>PSM to use. </dd></dl>
 
 </div>
 </div>
@@ -272,35 +228,35 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaaac3977d50dff78f8cf766a5921c784a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaac3977d50dff78f8cf766a5921c784a">&#9670;&nbsp;</a></span>wiced_bt_l2cap_send_fixed_chnl_data()</h2>
+<a id="ga2cd224a6bc467d85d853540f8abdec5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2cd224a6bc467d85d853540f8abdec5e">&#9670;&nbsp;</a></span>wiced_bt_l2cap_data_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t wiced_bt_l2cap_send_fixed_chnl_data </td>
+          <td class="memname">uint8_t wiced_bt_l2cap_data_write </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>fixed_cid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>rem_bda</em>, </td>
+          <td class="paramname"><em>cid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_data</em>, </td>
+          <td class="paramname"><em>p_buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>data_len</em>&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -310,151 +266,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write data on a fixed signalling channel. </p>
+<p>Higher layers call this function to write data with extended. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed CID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rem_bda</td><td>: BD Address of remote </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_data</td><td>: Pointer to data to send </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>: Length of data to send</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>: CID value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_buf</td><td>: Input buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_len</td><td>: p_buf buffer size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>: refer <a class="el" href="wiced__bt__l2c_8h.html#L2CAP_DATAWRITE_FLUSH">L2CAP data write flags</a></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>L2CAP_DATAWRITE_SUCCESS, if data accepted L2CAP_DATAWRITE_FAILED, if error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>refer <a class="el" href="wiced__bt__l2c_8h.html#L2CAP_DATAWRITE">L2CAP data write result</a> </dd></dl>
 
 </div>
 </div>
-<a id="gafbddfd71d35ac472aa4116d9291a09e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafbddfd71d35ac472aa4116d9291a09e1">&#9670;&nbsp;</a></span>wiced_bt_l2cap_remove_fixed_chnl()</h2>
+<a id="ga4c7c609b52d8cc676006e7a9fc28f8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c7c609b52d8cc676006e7a9fc28f8f5">&#9670;&nbsp;</a></span>wiced_bt_l2cap_deregister()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_remove_fixed_chnl </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>fixed_cid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>rem_bda</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Remove a fixed channel to a remote device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed CID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rem_bda</td><td>: BD Address of remote Idle timeout to use (or 0xFFFF if don't care)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE if channel removed </dd></dl>
-
-</div>
-</div>
-<a id="ga728a05e414212f3fa6a62b602d0eccb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga728a05e414212f3fa6a62b602d0eccb9">&#9670;&nbsp;</a></span>wiced_bt_l2cap_set_fixed_channel_timeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_set_fixed_channel_timeout </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>rem_bda</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>fixed_cid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>idle_timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Higher layers call this function to set the idle timeout for a fixed channel. </p>
-<p>The "idle timeout" is the amount of time that a connection can remain up with no L2CAP channels on it. A timeout of zero means that the connection will be torn down immediately when the last channel is removed. A timeout of 0xFFFF means no timeout. Values are in seconds. A bd_addr is the remote BD address. If bd_addr = BT_BD_ANY, then the idle timeouts for all active l2cap links will be changed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rem_bda</td><td>: Remote BD address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed CID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">idle_timeout</td><td>: Idle timeout</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE if command succeeded, FALSE if failed </dd></dl>
-
-</div>
-</div>
-<a id="ga19fedef3a0ab3ec2b155aefd73d4eb9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga19fedef3a0ab3ec2b155aefd73d4eb9e">&#9670;&nbsp;</a></span>wiced_bt_l2cap_ecrb_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_ecrb_register </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>psm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__l2cap__ecrb__cb__ptrs__t.html">wiced_bt_l2cap_ecrb_cb_ptrs_t</a> *&#160;</td>
-          <td class="paramname"><em>p_ecrb_callbacks</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Application calls this function to register support for enhanced credit-based channels. </p>
-<p>The PSM must have been previously registered for BR and/or LE.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">psm</td><td>: PSM value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_ecrb_callbacks</td><td>: callbacks for the credit based channel connections</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if all ok </dd></dl>
-
-</div>
-</div>
-<a id="ga759cb1c76bec995a078fde74b3663deb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga759cb1c76bec995a078fde74b3663deb">&#9670;&nbsp;</a></span>wiced_bt_l2cap_ecrb_deregister()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_ecrb_deregister </td>
+          <td class="memname">void wiced_bt_l2cap_deregister </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>psm</em></td><td>)</td>
@@ -463,15 +296,95 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Application calls this function to deregister support for enhanced credit-based channels. </p>
-<p>The PSM must have been previously registered.</p>
+<p>Other layers call this function to deregister for L2CAP services. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">psm</td><td>PSM value</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">psm</td><td>: PSM value</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if all OK. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="gab6c839df6fd0717659e0c1758c44f9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6c839df6fd0717659e0c1758c44f9e6">&#9670;&nbsp;</a></span>wiced_bt_l2cap_deregister_fixed_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_deregister_fixed_channel </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>fixed_cid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>De-register a fixed channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed Channel #</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if registered OK </dd></dl>
+
+</div>
+</div>
+<a id="gacdd50150646f5c2b687cc631c10086f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacdd50150646f5c2b687cc631c10086f8">&#9670;&nbsp;</a></span>wiced_bt_l2cap_disconnect_req()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_disconnect_req </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>cid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Higher layers call this function to disconnect a channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>: CID value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if disconnect sent, else FALSE </dd></dl>
+
+</div>
+</div>
+<a id="ga65566b353208f4de37cc91625a4abcbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65566b353208f4de37cc91625a4abcbf">&#9670;&nbsp;</a></span>wiced_bt_l2cap_disconnect_rsp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_disconnect_rsp </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>cid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Higher layers call this function to acknowledge the disconnection of a channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>: CID value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -508,7 +421,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__wicedbt___device_management.html#ga4309edd4a7a1c7f30bdc57d8107e84ab">wiced_bt_ble_conn_mode_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="wiced__bt__dev_8h.html#a4309edd4a7a1c7f30bdc57d8107e84ab">wiced_bt_ble_conn_mode_t</a>&#160;</td>
           <td class="paramname"><em>conn_mode</em>, </td>
         </tr>
         <tr>
@@ -635,8 +548,8 @@ Functions</h2></td></tr>
 <p>Higher layers call this function to accept incoming Enhanced Credit-based L2CAP channel establishment, for which they had gotten a connect indication callback. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>: Result of the connection set by the application. L2CAP result codes (<a class="el" href="group__l2cap.html#L2CAP_CONN_RESULT">L2CAP_CONN_RESULT</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">trans_id</td><td>: trans_id received in the <a class="el" href="group__l2cap.html#gaf52b6b2c8b5f0b7e29b9152e786c14b8">wiced_bt_l2cap_ecrb_connect_ind</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>: Result of the connection set by the application. L2CAP result codes (<a class="el" href="l2cdefs_8h.html#L2CAP_CONN_RESULT">L2CAP_CONN_RESULT</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">trans_id</td><td>: trans_id received in the <a class="el" href="wiced__bt__l2c_8h.html#af52b6b2c8b5f0b7e29b9152e786c14b8">wiced_bt_l2cap_ecrb_connect_ind</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">our_rx_mtu</td><td>Our RX MTU to be used for the channels </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">our_rx_mps</td><td>Our RX MPS to be used for the channels </td></tr>
   </table>
@@ -645,7 +558,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd><code>our_rx_mps</code> must be less then <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> or <a class="el" href="structwiced__bt__cfg__br__t.html#a88a90b0eb26296fb9726344a1da02dde">wiced_bt_cfg_br_t::br_max_rx_pdu_size</a> for LE and BR/EDR transports respectively </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">lcid_list</td><td>list of cids (channel ids) which will be started as received in <a class="el" href="group__l2cap.html#gaf52b6b2c8b5f0b7e29b9152e786c14b8">wiced_bt_l2cap_ecrb_connect_ind</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lcid_list</td><td>list of cids (channel ids) which will be started as received in <a class="el" href="wiced__bt__l2c_8h.html#af52b6b2c8b5f0b7e29b9152e786c14b8">wiced_bt_l2cap_ecrb_connect_ind</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -658,6 +571,34 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>: the size of DRB allocated must be &gt;= <code>our_rx_mtu</code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ga759cb1c76bec995a078fde74b3663deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga759cb1c76bec995a078fde74b3663deb">&#9670;&nbsp;</a></span>wiced_bt_l2cap_ecrb_deregister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_ecrb_deregister </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>psm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Application calls this function to deregister support for enhanced credit-based channels. </p>
+<p>The PSM must have been previously registered.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">psm</td><td>PSM value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if all OK. </dd></dl>
 
 </div>
 </div>
@@ -735,6 +676,83 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga19fedef3a0ab3ec2b155aefd73d4eb9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19fedef3a0ab3ec2b155aefd73d4eb9e">&#9670;&nbsp;</a></span>wiced_bt_l2cap_ecrb_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_ecrb_register </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>psm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__l2cap__ecrb__cb__ptrs__t.html">wiced_bt_l2cap_ecrb_cb_ptrs_t</a> *&#160;</td>
+          <td class="paramname"><em>p_ecrb_callbacks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Application calls this function to register support for enhanced credit-based channels. </p>
+<p>The PSM must have been previously registered for BR and/or LE.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">psm</td><td>: PSM value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_ecrb_callbacks</td><td>: callbacks for the credit based channel connections</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if all ok </dd></dl>
+
+</div>
+</div>
+<a id="gaebb8e6a7ac8add5164c86871af99747e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebb8e6a7ac8add5164c86871af99747e">&#9670;&nbsp;</a></span>wiced_bt_l2cap_get_bdaddrby_handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_get_bdaddrby_handle </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>bd_addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get BD address for the given HCI handle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: HCI handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Peer Bd Address</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: TRUE if found lcb for the given handle, FALSE otherwise </dd></dl>
+
+</div>
+</div>
 <a id="ga4d963f266263672e7a672c27a21cc711"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4d963f266263672e7a672c27a21cc711">&#9670;&nbsp;</a></span>wiced_bt_l2cap_get_current_config()</h2>
 
@@ -756,7 +774,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__l2cap.html#ga6827dfd644f1172740f9e69c0df06bc9">wiced_bt_l2cap_ch_cfg_bits_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="wiced__bt__l2c_8h.html#a6827dfd644f1172740f9e69c0df06bc9">wiced_bt_l2cap_ch_cfg_bits_t</a> *&#160;</td>
           <td class="paramname"><em>p_our_cfg_bits</em>, </td>
         </tr>
         <tr>
@@ -768,7 +786,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__l2cap.html#ga6827dfd644f1172740f9e69c0df06bc9">wiced_bt_l2cap_ch_cfg_bits_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="wiced__bt__l2c_8h.html#a6827dfd644f1172740f9e69c0df06bc9">wiced_bt_l2cap_ch_cfg_bits_t</a> *&#160;</td>
           <td class="paramname"><em>p_peer_cfg_bits</em>&#160;</td>
         </tr>
         <tr>
@@ -832,137 +850,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4c7c609b52d8cc676006e7a9fc28f8f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4c7c609b52d8cc676006e7a9fc28f8f5">&#9670;&nbsp;</a></span>wiced_bt_l2cap_deregister()</h2>
+<a id="gae9a06f8b983a720ef8f052bbaa823ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9a06f8b983a720ef8f052bbaa823ad6">&#9670;&nbsp;</a></span>wiced_bt_l2cap_register_fixed_channel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void wiced_bt_l2cap_deregister </td>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_register_fixed_channel </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>psm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Other layers call this function to deregister for L2CAP services. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">psm</td><td>: PSM value</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="ga6cf452fa369a74b725afe2bf2917abbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6cf452fa369a74b725afe2bf2917abbb">&#9670;&nbsp;</a></span>wiced_bt_l2cap_allocate_psm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t wiced_bt_l2cap_allocate_psm </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Other layers call this function to find an unused PSM for L2CAP services. </p>
-<dl class="section return"><dt>Returns</dt><dd>PSM to use. </dd></dl>
-
-</div>
-</div>
-<a id="gacdd50150646f5c2b687cc631c10086f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacdd50150646f5c2b687cc631c10086f8">&#9670;&nbsp;</a></span>wiced_bt_l2cap_disconnect_req()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_disconnect_req </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>cid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Higher layers call this function to disconnect a channel. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>: CID value</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE if disconnect sent, else FALSE </dd></dl>
-
-</div>
-</div>
-<a id="ga65566b353208f4de37cc91625a4abcbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga65566b353208f4de37cc91625a4abcbf">&#9670;&nbsp;</a></span>wiced_bt_l2cap_disconnect_rsp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_disconnect_rsp </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>cid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Higher layers call this function to acknowledge the disconnection of a channel. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>: CID value</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="ga2cd224a6bc467d85d853540f8abdec5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2cd224a6bc467d85d853540f8abdec5e">&#9670;&nbsp;</a></span>wiced_bt_l2cap_data_write()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t wiced_bt_l2cap_data_write </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>cid</em>, </td>
+          <td class="paramname"><em>fixed_cid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>buf_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__l2cap__fixed__chnl__reg__t.html">wiced_bt_l2cap_fixed_chnl_reg_t</a> *&#160;</td>
+          <td class="paramname"><em>p_freg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -972,17 +876,151 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Higher layers call this function to write data with extended. </p>
+<p>Register a fixed channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>: CID value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_buf</td><td>: Input buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buf_len</td><td>: p_buf buffer size </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>: refer <a class="el" href="group__l2cap.html#L2CAP_DATAWRITE_FLUSH">L2CAP data write flags</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed Channel # </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_freg</td><td>: Channel Callbacks and config</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>refer <a class="el" href="group__l2cap.html#L2CAP_DATAWRITE">L2CAP data write result</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if registered OK </dd></dl>
+
+</div>
+</div>
+<a id="gafbddfd71d35ac472aa4116d9291a09e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbddfd71d35ac472aa4116d9291a09e1">&#9670;&nbsp;</a></span>wiced_bt_l2cap_remove_fixed_chnl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_remove_fixed_chnl </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>fixed_cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>rem_bda</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a fixed channel to a remote device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed CID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rem_bda</td><td>: BD Address of remote Idle timeout to use (or 0xFFFF if don't care)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if channel removed </dd></dl>
+
+</div>
+</div>
+<a id="gaaac3977d50dff78f8cf766a5921c784a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaac3977d50dff78f8cf766a5921c784a">&#9670;&nbsp;</a></span>wiced_bt_l2cap_send_fixed_chnl_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t wiced_bt_l2cap_send_fixed_chnl_data </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>fixed_cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>rem_bda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write data on a fixed signalling channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed CID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rem_bda</td><td>: BD Address of remote </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_data</td><td>: Pointer to data to send </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>: Length of data to send</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>L2CAP_DATAWRITE_SUCCESS, if data accepted L2CAP_DATAWRITE_FAILED, if error </dd></dl>
+
+</div>
+</div>
+<a id="ga728a05e414212f3fa6a62b602d0eccb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga728a05e414212f3fa6a62b602d0eccb9">&#9670;&nbsp;</a></span>wiced_bt_l2cap_set_fixed_channel_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_set_fixed_channel_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>rem_bda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>fixed_cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>idle_timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Higher layers call this function to set the idle timeout for a fixed channel. </p>
+<p>The "idle timeout" is the amount of time that a connection can remain up with no L2CAP channels on it. A timeout of zero means that the connection will be torn down immediately when the last channel is removed. A timeout of 0xFFFF means no timeout. Values are in seconds. A bd_addr is the remote BD address. If bd_addr = BT_BD_ANY, then the idle timeouts for all active l2cap links will be changed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rem_bda</td><td>: Remote BD address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fixed_cid</td><td>: Fixed CID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idle_timeout</td><td>: Idle timeout</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if command succeeded, FALSE if failed </dd></dl>
 
 </div>
 </div>
@@ -1076,44 +1114,6 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if command succeeded, FALSE if failed</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This timeout applies to all logical channels active on the ACL link. </dd></dl>
-
-</div>
-</div>
-<a id="gaebb8e6a7ac8add5164c86871af99747e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaebb8e6a7ac8add5164c86871af99747e">&#9670;&nbsp;</a></span>wiced_bt_l2cap_get_bdaddrby_handle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_get_bdaddrby_handle </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>bd_addr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get BD address for the given HCI handle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: HCI handle </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Peer Bd Address</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>: TRUE if found lcb for the given handle, FALSE otherwise </dd></dl>
 
 </div>
 </div>

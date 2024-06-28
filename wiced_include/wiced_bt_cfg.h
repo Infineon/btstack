@@ -46,14 +46,7 @@
 extern "C" {
 #endif
 
-/**
- * @addtogroup  wiced_bt_cfg Bluetooth Stack Initialize & Configuration
- *
- *
- * This section describes API and Data structures required to initialize and configure the Bluetooth-Stack.
- *
- * @{
- */
+
 /*****************************************************************************
  * Default configuration values
  ****************************************************************************/
@@ -335,11 +328,13 @@ typedef struct wiced_bt_cfg_settings_t_
 } wiced_bt_cfg_settings_t;
 
 /**
- * Returns the expected dynamic memory size required for the stack based on the p_bt_cfg_settings
+ * @ingroup wiced_bt_init_functions
+ *
+ * Returns the expected dynamic memory size required for the stack based on the \b p_bt_cfg_settings
  *
  * @param[in] p_bt_cfg_settings         : Bluetooth stack configuration
  *
- * @return    dynamic memory size requirements of the stack
+ * @return    Dynamic memory size requirements of the stack
  */
 int32_t wiced_bt_stack_get_dynamic_memory_size_for_config(const wiced_bt_cfg_settings_t* p_bt_cfg_settings);
 

@@ -87,8 +87,8 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__battery__clien
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh Battery Client<div class="ingroups"><a class="el" href="group__wiced__bt__mesh.html">LE Mesh</a> &raquo; <a class="el" href="group__wiced__bt__mesh__models.html">Mesh Models Library API</a></div></div>  </div>
 </div><!--header-->
@@ -98,23 +98,23 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__battery__clien
 <p>The module can also process unsolicited status messages from mesh nodes.</p>
 <p>On startup the application should call wiced_bt_mesh_model_battery_client_init function providing the callback that will be called when battery status message is received. The application can call the wiced_bt_mesh_battery_client_send_get function to retrieve the battery status of a mesh device. </p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga2a4913b233aa084085a604cac4967929"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__battery__client.html#ga2a4913b233aa084085a604cac4967929">wiced_bt_mesh_battery_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, <a class="el" href="structmesh__battery__event__t.html">mesh_battery_event_t</a> *p_data)</td></tr>
-<tr class="memdesc:ga2a4913b233aa084085a604cac4967929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Battery Client callback.  <a href="#ga2a4913b233aa084085a604cac4967929">More...</a><br /></td></tr>
-<tr class="separator:ga2a4913b233aa084085a604cac4967929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gafb463c5826c849d1d354bd9400744bf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__battery__client.html#gafb463c5826c849d1d354bd9400744bf0">wiced_bt_mesh_model_battery_client_init</a> (<a class="el" href="group__wiced__bt__mesh__battery__client.html#ga2a4913b233aa084085a604cac4967929">wiced_bt_mesh_battery_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
 <tr class="memdesc:gafb463c5826c849d1d354bd9400744bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Battery Client Module initialization.  <a href="#gafb463c5826c849d1d354bd9400744bf0">More...</a><br /></td></tr>
 <tr class="separator:gafb463c5826c849d1d354bd9400744bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0515e868daea1bafa72491319aceef9"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__battery__client.html#gaa0515e868daea1bafa72491319aceef9">wiced_bt_mesh_model_battery_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
+<tr class="memitem:gaa0515e868daea1bafa72491319aceef9"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__battery__client.html#gaa0515e868daea1bafa72491319aceef9">wiced_bt_mesh_model_battery_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
 <tr class="memdesc:gaa0515e868daea1bafa72491319aceef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Battery Client Message Handler.  <a href="#gaa0515e868daea1bafa72491319aceef9">More...</a><br /></td></tr>
 <tr class="separator:gaa0515e868daea1bafa72491319aceef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6b7e1bcc36f0ebad5745743445a34758"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__battery__client.html#ga6b7e1bcc36f0ebad5745743445a34758">wiced_bt_mesh_battery_client_send_get</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event)</td></tr>
 <tr class="memdesc:ga6b7e1bcc36f0ebad5745743445a34758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Battery Client Send.  <a href="#ga6b7e1bcc36f0ebad5745743445a34758">More...</a><br /></td></tr>
 <tr class="separator:ga6b7e1bcc36f0ebad5745743445a34758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga2a4913b233aa084085a604cac4967929"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__battery__client.html#ga2a4913b233aa084085a604cac4967929">wiced_bt_mesh_battery_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, <a class="el" href="structmesh__battery__event__t.html">mesh_battery_event_t</a> *p_data)</td></tr>
+<tr class="memdesc:ga2a4913b233aa084085a604cac4967929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Battery Client callback.  <a href="#ga2a4913b233aa084085a604cac4967929">More...</a><br /></td></tr>
+<tr class="separator:ga2a4913b233aa084085a604cac4967929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga2a4913b233aa084085a604cac4967929"></a>
@@ -143,6 +143,34 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga6b7e1bcc36f0ebad5745743445a34758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6b7e1bcc36f0ebad5745743445a34758">&#9670;&nbsp;</a></span>wiced_bt_mesh_battery_client_send_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_battery_client_send_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Battery Client Send. </p>
+<p>The application can call this function to send get request to the Battery Server. The mesh event should contain the destination address and the application key index to be used to secure the message. In some cases the model can be configured by the provisioner to send the request to a specific address and use specific key. In that case application can use zeroes in the destination address and app key index fields.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event created by the app for unsolicited message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
 <a id="gafb463c5826c849d1d354bd9400744bf0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gafb463c5826c849d1d354bd9400744bf0">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_battery_client_init()</h2>
 
@@ -225,34 +253,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if the message is for this company ID/Model combination, WICED_FALSE otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="ga6b7e1bcc36f0ebad5745743445a34758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6b7e1bcc36f0ebad5745743445a34758">&#9670;&nbsp;</a></span>wiced_bt_mesh_battery_client_send_get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_battery_client_send_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Battery Client Send. </p>
-<p>The application can call this function to send get request to the Battery Server. The mesh event should contain the destination address and the application key index to be used to secure the message. In some cases the model can be configured by the provisioner to send the request to a specific address and use specific key. In that case application can use zeroes in the destination address and app key index fields.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event created by the app for unsolicited message.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
 
 </div>
 </div>

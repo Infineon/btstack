@@ -33,6 +33,10 @@
 
 /** @file
  * Bluetooth L2CAP Application Programming Interface
+ * Logical Link Control and Adaptation Layer Protocol,
+ * referred to as L2CAP, provides connection oriented and
+ * connectionless data services to upper layer protocols with protocol
+ * multiplexing capability and segmentation and reassembly operation.
  */
 
 #ifndef __WICED_BT_L2C_H__
@@ -43,16 +47,6 @@
 #include "wiced_bt_types.h"
 #include "wiced_bt_ble.h"
 
-/**
- *  @addtogroup    l2cap   Logical Link Control and Adaptation Protocol (L2CAP)
- *
- * Logical Link Control and Adaptation Layer Protocol,
- * referred to as L2CAP, provides connection oriented and
- * connectionless data services to upper layer protocols with protocol
- * multiplexing capability and segmentation and reassembly operation.
- *
- * @{
- */
 
 /*****************************************************************************
  *  Constants
@@ -294,9 +288,9 @@ typedef uint8_t wiced_bt_l2cap_fixed_channel_mask_t[L2CAP_FIXED_CHNL_ARRAY_SIZE]
  * @name L2CAP LE PSM
  * @{
  *
- *  Validity check for LE_PSM.
- *  Fixed LE_PSMs are in the range 0x0001 - 0x007F.
- *  Dynamic LE_PSM are in the range 0x0080 - 0x00FF.
+ *  Validity check for LE_PSM.\n
+ *  Fixed LE_PSMs are in the range 0x0001 - 0x007F.\n
+ *  Dynamic LE_PSM are in the range 0x0080 - 0x00FF.\n
  *  The values 0x0000 and 0x0100 - 0xFFFF are reserved.
 */
 #define MINIMIUM_DYNAMIC_LE_PSM       0x0080                                                   /**< First application dynamic PSM  allowed */
@@ -545,15 +539,23 @@ extern "C"
  ****************************************************************************/
 
 /**
+ *  @addtogroup    l2cap   Logical Link Control and Adaptation Protocol (L2CAP) APIs
+ *  @{
+ *     Bluetooth L2CAP Application Programming Interface
+ *     Logical Link Control and Adaptation Layer Protocol,
+ *     referred to as L2CAP, provides connection oriented and
+ *     connectionless data services to upper layer protocols with protocol
+ *     multiplexing capability and segmentation and reassembly operation.
+ */
+
+/**
  * @if DUAL_MODE
  *  @addtogroup  l2cap_common_api_functions       Common
  *  @ingroup     l2cap
  *   Commonly used API's for both BE/EDR and LE \ref l2cap "L2CAP"
- * @else
- *  @ingroup     l2cap
+ * @{
  * @endif
  *
- * @{
  */
 
 /**
@@ -870,7 +872,11 @@ wiced_bool_t wiced_bt_l2cap_set_idle_timeout_by_bd_addr (wiced_bt_device_address
  */
 wiced_bool_t wiced_bt_l2cap_get_bdaddrby_handle (uint16_t handle, wiced_bt_device_address_t bd_addr);
 
-/** @} */
+/**
+ * @if DUAL_MODE
+ *   @} l2cap_common_api_functions
+ * @endif
+ * */
 
 /**
  * @cond DUAL_MODE
@@ -1073,7 +1079,7 @@ uint8_t wiced_bt_l2cap_get_chnl_fcr_mode (uint16_t lcid);
  *  @ingroup     l2cap
  *  API's used for LE \ref l2cap "L2CAP".
  * @else
- *  @ingroup     l2cap
+ * @ingroup      l2cap
  * @endif
  *
  * @{
@@ -1291,8 +1297,6 @@ uint16_t wiced_bt_l2cap_le_get_peer_mtu (uint16_t lcid);
  *                  L2CAP_CONN_NO_RESOURCES.
  */
 uint16_t wiced_bt_l2cap_le_determ_secur_rsp (wiced_bt_device_address_t bd_addr, uint8_t req_secur, uint8_t req_encr_key_size);
-/**@} l2cap_le_api_functions */
-/**@} l2cap*/
 
 /**
  * @brief Utility function to get the number of packets queued to tx
@@ -1313,6 +1317,10 @@ int wiced_bt_l2cap_get_num_queued_tx_packets(wiced_bt_device_address_t bd_addr, 
  * \return wiced_result_t
  */
 wiced_result_t wiced_bt_l2cap_subrate_request(wiced_bt_ble_conn_subrate_t *p_subrate);
+
+/**
+ * @} l2cap_le_api_functions
+ * @} l2cap*/
 
 #ifdef __cplusplus
 }

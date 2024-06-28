@@ -32,22 +32,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "group___result.html",
-"group__btm__ble__api__functions.html#ga60bed9d170be5754f637844eb070bcd3",
-"group__btm__ble__sec__api__functions.html#ga771629322c842c541611d928ad128a40",
-"group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6",
-"group__wiced__bt__cfg.html#ga9ae58ae7b7a0d3cace4d3df27d1a7081",
-"group__wicedbt___device_management.html#gga83e5618d32b7fa1fb7c17ea40555e028a025846728f8c695e7e398e8fddb64c5a",
-"group__wicedbt__av__a2d__helper.html#ga85ac5b10048aea1745446013aa929957",
-"group__wicedbt__avrc.html#ga201c9906afcf85db3ed9fe897c79b90a",
-"group__wicedbt__avrc.html#ga8bb93b56c03242efc69af5aeb99112db",
-"group__wicedbt__avrc.html#gaed06e3effda6d0acedcdf039049b1937",
-"group__wicedbt__gatt.html#gga244b6c64a958765582c0d6a2c1fdfed4ac05a4c251fbf7a790f4ce43eab68f600",
-"structwiced__bt__avrc__browse__cmd__t.html#a8a834788684c64eea9409943bab0c743",
-"structwiced__bt__avrc__unit__info__rsp__t.html#a4a4d3f6175c43eb74bc11f26bd91efa5",
-"structwiced__bt__ble__scan__req__received__event__data__t.html#ade44be195016ce8494a899698be6dab4",
-"structwiced__bt__device__link__keys__t.html#adacd7612dfb1254f2c995c8e38c0b9d8",
-"structwiced__bt__lq__le__stats.html#af5a933c9403e62f1cd91a3c1e51df284",
-"unionwiced__bt__management__evt__data__t.html#a7e67c4d87ed84d50030cc68c7d35cd68"
+"group__btm__ble__conn__filter__accept__list__functions.html#ga3e8e35f3b362c07a9c329b06579be3f1",
+"group__sco.html#gacb5ee4295683cb8f50b496318011841f",
+"group__wicedbt__a2dp__mpeg__2__4.html#gab10369f6b984750d924c0baadcc3bf07",
+"group__wicedbt__avrc.html#ga004c0e41cee6b14575f54a4fe20f9294",
+"group__wicedbt__avrc.html#ga68412b17e8ee30cf8683d5c381184073",
+"group__wicedbt__avrc.html#gad270b18f6db1cf1cafd1599b2d66f38e",
+"structwiced__bt__avdt__report__blk__t.html#a1db87772f806eb7dfa0655b1b9b651f5",
+"structwiced__bt__avrc__metadata__rsp__t.html#abe0c236909765b4eb217b98d34190d8c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

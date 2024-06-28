@@ -1,6 +1,8 @@
 var searchData=
 [
   ['data',['data',['../structwiced__bt__ble__pawr__rsp__report__event__data__t.html#abcb27224d4ded02a6e2c9c107d63041e',1,'wiced_bt_ble_pawr_rsp_report_event_data_t::data()'],['../structwiced__bt__ble__pawr__ind__report__event__data__t.html#a03f5472b79ce41c590b6db5b56f06dbe',1,'wiced_bt_ble_pawr_ind_report_event_data_t::data()'],['../structwiced__bt__gatt__attribute__request__t.html#aa4b31db667f0ddb782b38005a942ba09',1,'wiced_bt_gatt_attribute_request_t::data()']]],
+  ['data_5fele_5falt_5fdesc_5ftype',['DATA_ELE_ALT_DESC_TYPE',['../wiced__bt__sdp__defs_8h.html#a1f8a54ebeed8d37a3e7cf9756e681190',1,'wiced_bt_sdp_defs.h']]],
+  ['data_5fele_5fseq_5fdesc_5ftype',['DATA_ELE_SEQ_DESC_TYPE',['../wiced__bt__sdp__defs_8h.html#aab4d6f5e590b6c593bff9a25dd3a6774',1,'wiced_bt_sdp_defs.h']]],
   ['data_5findication_5fcback',['data_indication_cback',['../structwiced__bt__l2cap__appl__information__t.html#aca561436a003734a64e4b1b2d3806d83',1,'wiced_bt_l2cap_appl_information_t::data_indication_cback()'],['../structwiced__bt__l2cap__le__appl__information__t.html#afa30934bbf2f817264cc6a68b5b4590a',1,'wiced_bt_l2cap_le_appl_information_t::data_indication_cback()']]],
   ['data_5flen',['data_len',['../structwiced__bt__ble__ext__adv__report__t.html#a77433e98f2d9d12cda196710c2ac172e',1,'wiced_bt_ble_ext_adv_report_t::data_len()'],['../structwiced__bt__ble__periodic__adv__report__event__data__t.html#a34318e2becf4a6b8847bd405e8b6baef',1,'wiced_bt_ble_periodic_adv_report_event_data_t::data_len()'],['../structwiced__bt__ble__pawr__rsp__report__event__data__t.html#ad4faf71e15053717aed61bfda4da3600',1,'wiced_bt_ble_pawr_rsp_report_event_data_t::data_len()']]],
   ['data_5flength',['data_length',['../structwiced__bt__ble__pawr__ind__report__event__data__t.html#ad552b222987c27108c116abfd46b4546',1,'wiced_bt_ble_pawr_ind_report_event_data_t']]],
@@ -17,6 +19,9 @@ var searchData=
   ['dh3_5fcount',['dh3_count',['../structwiced__bt__device__br__packet__types__t.html#a07c1b2da6c76b46bec6308e537be7fc1',1,'wiced_bt_device_br_packet_types_t']]],
   ['dh5_5fcount',['dh5_count',['../structwiced__bt__device__br__packet__types__t.html#a25b08480f6837d9803a4af2b7f243a42',1,'wiced_bt_device_br_packet_types_t']]],
   ['dhk',['dhk',['../structwiced__bt__local__id__keys.html#a020434ed732fa953426a7b7bc6d39a3e',1,'wiced_bt_local_id_keys']]],
+  ['di_5fvendor_5fid_5fdefault',['DI_VENDOR_ID_DEFAULT',['../wiced__bt__sdp__defs_8h.html#a734823da4c696943d5ef63ac5bb88348',1,'wiced_bt_sdp_defs.h']]],
+  ['di_5fvendor_5fid_5fsource_5fbtsig',['DI_VENDOR_ID_SOURCE_BTSIG',['../wiced__bt__sdp__defs_8h.html#a300beafc5b440f65d8baf817d88ec4cd',1,'wiced_bt_sdp_defs.h']]],
+  ['di_5fvendor_5fid_5fsource_5fusbif',['DI_VENDOR_ID_SOURCE_USBIF',['../wiced__bt__sdp__defs_8h.html#aab79bdc837ab8f0fdfefdff068294bcb',1,'wiced_bt_sdp_defs.h']]],
   ['dir_5faddr_5ftype',['dir_addr_type',['../structwiced__bt__ble__ext__adv__report__t.html#a07a68778601d6efdf8f23cff19d2ac1c',1,'wiced_bt_ble_ext_adv_report_t']]],
   ['dir_5fbdaddr',['dir_bdaddr',['../structwiced__bt__ble__ext__adv__report__t.html#adafaa7ad59c0e2754251d19b64ce9e9e',1,'wiced_bt_ble_ext_adv_report_t']]],
   ['direct_5faddr_5ftype',['direct_addr_type',['../structwiced__bt__ble__scan__results__t.html#a0fb87a5e882b32219e25cfaf2277370f',1,'wiced_bt_ble_scan_results_t']]],

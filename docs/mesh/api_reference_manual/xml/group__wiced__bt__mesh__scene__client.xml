@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5453" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5453" bodyend="-1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5453" column="1" bodyfile="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5453" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5464" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5464" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__scene__client_1ga59b0b27a3a744d5a3c6e3d90094c1053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5478" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5478" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__scene__client_1gae7d775e6242219c46ef46bc7ce0b29aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5489" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5489" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__scene__client_1ga161e9c990de9c9e37718685727d27130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5500" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5500" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__scene__client_1gac29bd88635c2fe67f5bd2ed055fc939a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -272,14 +272,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5510" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5510" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>The AIROC Mesh Scene Client module provides a way for an application to control Scene Servers in the mesh network. </para>
     </briefdescription>
     <detaileddescription>
-<para>To include the Mesh Models support for the Scene Client module the application shall contain the WICED_BT_MESH_MODEL_SCENE_CLIENT</para>
+<para>To include the Mesh Models support for the Scene Client module the application shall contain the <ref refid="group__wiced__bt__mesh__models_1gade625db49075267786f8c6fbbcf46d81" kindref="member">WICED_BT_MESH_MODEL_SCENE_CLIENT</ref></para>
 <para>TBD </para>
     </detaileddescription>
   </compounddef>

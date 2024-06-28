@@ -8,6 +8,10 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.9.1
+BTSTACK3.9.1 is a patch release with following enhancements -
+ - Improved Doxygen API content and formatting
+
 ## V3.9.0
 BTSTACK3.9 contains following enhancements and fixes -
  - Added a new wiced API, wiced_bt_set_transmit_power_range() (See API documentation for details)

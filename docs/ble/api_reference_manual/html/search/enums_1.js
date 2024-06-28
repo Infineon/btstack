@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['t_5fgatt_5fcsf_5fassignments',['t_gatt_csf_assignments',['../group__wicedbt__gatt.html#ga74bcbf0e406569a4b160911606784726',1,'wiced_bt_gatt.h']]]
+  ['gatt_5fappearance_5fe',['gatt_appearance_e',['../gattdefs_8h.html#a244b6c64a958765582c0d6a2c1fdfed4',1,'gattdefs.h']]]
 ];

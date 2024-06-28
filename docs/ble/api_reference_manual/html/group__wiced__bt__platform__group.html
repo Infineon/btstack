@@ -87,8 +87,6 @@ $(document).ready(function(){initNavTree('group__wiced__bt__platform__group.html
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Bluetooth Stack Platform Interface</div>  </div>
@@ -96,97 +94,76 @@ $(document).ready(function(){initNavTree('group__wiced__bt__platform__group.html
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
 <p>Interface between Stack and platform. </p>
+<p>It contains APIs which are used for configuring and initializing the AIROC Bluetooth stack. <br />
+The APIs should be called in the order mentioned below. <br />
+</p><ol type="1">
+<li><a class="el" href="group__wiced__bt__platform__group.html#ga91ec048a4f0938e38123ccd86b267b49" title="API to initialize the platform interfaces, by providing porting functions specific to the underlying ...">wiced_bt_stack_platform_initialize()</a> <br />
+</li>
+<li><a class="el" href="group__wiced__bt__platform__group.html#gaedb4a439d3f91abba89b33c1e0947991" title="API to set AIROC Bluetooth stack configuration.">wiced_bt_set_stack_config()</a> <br />
+</li>
+<li><a class="el" href="group__wiced__bt__platform__group.html#gac40dc0f89a01ca8b864c49a9a740786f" title="API for doing internal stack initialization.">wiced_bt_stack_init_internal()</a> <br />
+</li>
+<li><a class="el" href="group__wiced__bt__platform__group.html#gade7b4741a97ade2e02e044078bf46bc2" title="This API is called by porting layer to complete/continue the reset process.">wiced_bt_continue_reset()</a> <br />
+Please check API documentation for more details. Depending on the HCI platform interface, the calls may be made asynchronously. <br />
+This section also lists the APIs which are used for processing data and events received from Controller. </li>
+</ol>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__stack__platform__t.html">wiced_bt_stack_platform_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">AIROC Bluetooth Stack Platform.  <a href="structwiced__bt__stack__platform__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gaaee366da383e708d1dea13b16cbba1e5"><td class="memItemLeft" align="right" valign="top"><a id="gaaee366da383e708d1dea13b16cbba1e5"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#gaaee366da383e708d1dea13b16cbba1e5">wiced_bt_internal_post_stack_init_cb</a>) (void)</td></tr>
-<tr class="memdesc:gaaee366da383e708d1dea13b16cbba1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function prototype for the post Stack Init Callback. <br /></td></tr>
-<tr class="separator:gaaee366da383e708d1dea13b16cbba1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b2ab26fed7589a50fad5ecc0cc6f1d3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga1b2ab26fed7589a50fad5ecc0cc6f1d3">wiced_bt_internal_stack_evt_handler_cb</a>) (uint8_t *p_event)</td></tr>
-<tr class="memdesc:ga1b2ab26fed7589a50fad5ecc0cc6f1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function prototype for the HCI event monitor function that the application may suppply.  <a href="#ga1b2ab26fed7589a50fad5ecc0cc6f1d3">More...</a><br /></td></tr>
-<tr class="separator:ga1b2ab26fed7589a50fad5ecc0cc6f1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga91ec048a4f0938e38123ccd86b267b49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga91ec048a4f0938e38123ccd86b267b49">wiced_bt_stack_platform_initialize</a> (<a class="el" href="structwiced__bt__stack__platform__t.html">wiced_bt_stack_platform_t</a> *platform_interfaces)</td></tr>
-<tr class="memdesc:ga91ec048a4f0938e38123ccd86b267b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the platform interfaces, by providing porting functions specific to the underlying platform.  <a href="#ga91ec048a4f0938e38123ccd86b267b49">More...</a><br /></td></tr>
+<tr class="memdesc:ga91ec048a4f0938e38123ccd86b267b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to initialize the platform interfaces, by providing porting functions specific to the underlying platform.  <a href="#ga91ec048a4f0938e38123ccd86b267b49">More...</a><br /></td></tr>
 <tr class="separator:ga91ec048a4f0938e38123ccd86b267b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedb4a439d3f91abba89b33c1e0947991"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#gaedb4a439d3f91abba89b33c1e0947991">wiced_bt_set_stack_config</a> (const <a class="el" href="structwiced__bt__cfg__settings__t.html">wiced_bt_cfg_settings_t</a> *p_bt_new_cfg_settings)</td></tr>
+<tr class="memdesc:gaedb4a439d3f91abba89b33c1e0947991"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to set AIROC Bluetooth stack configuration.  <a href="#gaedb4a439d3f91abba89b33c1e0947991">More...</a><br /></td></tr>
+<tr class="separator:gaedb4a439d3f91abba89b33c1e0947991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac40dc0f89a01ca8b864c49a9a740786f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#gac40dc0f89a01ca8b864c49a9a740786f">wiced_bt_stack_init_internal</a> (<a class="el" href="wiced__bt__dev_8h.html#a86af8a8bb467047c9af6007f15b0d344">wiced_bt_management_cback_t</a> mgmt_cback, <a class="el" href="wiced__bt__stack__platform_8h.html#aaee366da383e708d1dea13b16cbba1e5">wiced_bt_internal_post_stack_init_cb</a> post_stack_cb, <a class="el" href="wiced__bt__stack__platform_8h.html#a1b2ab26fed7589a50fad5ecc0cc6f1d3">wiced_bt_internal_stack_evt_handler_cb</a> evt_handler_cb)</td></tr>
+<tr class="memdesc:gac40dc0f89a01ca8b864c49a9a740786f"><td class="mdescLeft">&#160;</td><td class="mdescRight">API for doing internal stack initialization.  <a href="#gac40dc0f89a01ca8b864c49a9a740786f">More...</a><br /></td></tr>
+<tr class="separator:gac40dc0f89a01ca8b864c49a9a740786f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade7b4741a97ade2e02e044078bf46bc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#gade7b4741a97ade2e02e044078bf46bc2">wiced_bt_continue_reset</a> (void)</td></tr>
+<tr class="memdesc:gade7b4741a97ade2e02e044078bf46bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is called by porting layer to complete/continue the reset process.  <a href="#gade7b4741a97ade2e02e044078bf46bc2">More...</a><br /></td></tr>
+<tr class="separator:gade7b4741a97ade2e02e044078bf46bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98a0933baa000767bc3ad60d0a7890e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga98a0933baa000767bc3ad60d0a7890e3">wiced_bt_process_acl_data</a> (uint8_t *pData, uint32_t length)</td></tr>
-<tr class="memdesc:ga98a0933baa000767bc3ad60d0a7890e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer to process the incoming ACL data received from the remote bluetooth device.  <a href="#ga98a0933baa000767bc3ad60d0a7890e3">More...</a><br /></td></tr>
+<tr class="memdesc:ga98a0933baa000767bc3ad60d0a7890e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to process ACL data.  <a href="#ga98a0933baa000767bc3ad60d0a7890e3">More...</a><br /></td></tr>
 <tr class="separator:ga98a0933baa000767bc3ad60d0a7890e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4e569527f83bc2d6f443ef3ae0f83ece"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga4e569527f83bc2d6f443ef3ae0f83ece">wiced_bt_process_hci_events</a> (uint8_t *pData, uint32_t length)</td></tr>
-<tr class="memdesc:ga4e569527f83bc2d6f443ef3ae0f83ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer to process the incoming HCI events from the local bluetooth controller.  <a href="#ga4e569527f83bc2d6f443ef3ae0f83ece">More...</a><br /></td></tr>
+<tr class="memdesc:ga4e569527f83bc2d6f443ef3ae0f83ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to process HCI events.  <a href="#ga4e569527f83bc2d6f443ef3ae0f83ece">More...</a><br /></td></tr>
 <tr class="separator:ga4e569527f83bc2d6f443ef3ae0f83ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e08857799934c4e9eb3108e16cc95e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga3e08857799934c4e9eb3108e16cc95e1">wiced_bt_process_sco_data</a> (uint8_t *pData, uint32_t length)</td></tr>
-<tr class="memdesc:ga3e08857799934c4e9eb3108e16cc95e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer to process the incoming SCO data received from the remote bluetooth device.  <a href="#ga3e08857799934c4e9eb3108e16cc95e1">More...</a><br /></td></tr>
+<tr class="memdesc:ga3e08857799934c4e9eb3108e16cc95e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to process SCO data.  <a href="#ga3e08857799934c4e9eb3108e16cc95e1">More...</a><br /></td></tr>
 <tr class="separator:ga3e08857799934c4e9eb3108e16cc95e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9655dc8f977b3d51d80c07d69c17352c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga9655dc8f977b3d51d80c07d69c17352c">wiced_bt_process_isoc_data</a> (uint8_t *pData, uint32_t length)</td></tr>
-<tr class="memdesc:ga9655dc8f977b3d51d80c07d69c17352c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer to process the incoming ISOC data received from the remote bluetooth device.  <a href="#ga9655dc8f977b3d51d80c07d69c17352c">More...</a><br /></td></tr>
+<tr class="memdesc:ga9655dc8f977b3d51d80c07d69c17352c"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to process ISOC data.  <a href="#ga9655dc8f977b3d51d80c07d69c17352c">More...</a><br /></td></tr>
 <tr class="separator:ga9655dc8f977b3d51d80c07d69c17352c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad0cd082b2d2e5c54b077d3e7aafcbc48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#gad0cd082b2d2e5c54b077d3e7aafcbc48">wiced_bt_process_timer</a> (void)</td></tr>
-<tr class="memdesc:gad0cd082b2d2e5c54b077d3e7aafcbc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer on expiry of the timer to process pending timers.  <a href="#gad0cd082b2d2e5c54b077d3e7aafcbc48">More...</a><br /></td></tr>
+<tr class="memdesc:gad0cd082b2d2e5c54b077d3e7aafcbc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is called by porting layer on expiry of the timer to process pending timers.  <a href="#gad0cd082b2d2e5c54b077d3e7aafcbc48">More...</a><br /></td></tr>
 <tr class="separator:gad0cd082b2d2e5c54b077d3e7aafcbc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa98ea87121fed670412f976b3f0b252c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#gaa98ea87121fed670412f976b3f0b252c">wiced_bt_stack_indicate_lower_tx_complete</a> (void)</td></tr>
-<tr class="memdesc:gaa98ea87121fed670412f976b3f0b252c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the lower layer transport driver to restart sending ACL data to the controller Note: Porting layer API.  <a href="#gaa98ea87121fed670412f976b3f0b252c">More...</a><br /></td></tr>
+<tr class="memdesc:gaa98ea87121fed670412f976b3f0b252c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is called by porting layer to restart sending ACL data to the Controller through lower layer transport driver.  <a href="#gaa98ea87121fed670412f976b3f0b252c">More...</a><br /></td></tr>
 <tr class="separator:gaa98ea87121fed670412f976b3f0b252c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gade7b4741a97ade2e02e044078bf46bc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#gade7b4741a97ade2e02e044078bf46bc2">wiced_bt_continue_reset</a> (void)</td></tr>
-<tr class="memdesc:gade7b4741a97ade2e02e044078bf46bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the porting layer to complete/continue the reset process Typically called after downloading firmware patches to the controller.  <a href="#gade7b4741a97ade2e02e044078bf46bc2">More...</a><br /></td></tr>
-<tr class="separator:gade7b4741a97ade2e02e044078bf46bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaedb4a439d3f91abba89b33c1e0947991"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#gaedb4a439d3f91abba89b33c1e0947991">wiced_bt_set_stack_config</a> (const <a class="el" href="structwiced__bt__cfg__settings__t.html">wiced_bt_cfg_settings_t</a> *p_bt_new_cfg_settings)</td></tr>
-<tr class="memdesc:gaedb4a439d3f91abba89b33c1e0947991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stack config.  <a href="#gaedb4a439d3f91abba89b33c1e0947991">More...</a><br /></td></tr>
-<tr class="separator:gaedb4a439d3f91abba89b33c1e0947991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac40dc0f89a01ca8b864c49a9a740786f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#gac40dc0f89a01ca8b864c49a9a740786f">wiced_bt_stack_init_internal</a> (<a class="el" href="group__wicedbt___device_management.html#ga86af8a8bb467047c9af6007f15b0d344">wiced_bt_management_cback_t</a> mgmt_cback, <a class="el" href="group__wiced__bt__platform__group.html#gaaee366da383e708d1dea13b16cbba1e5">wiced_bt_internal_post_stack_init_cb</a> post_stack_cb, <a class="el" href="group__wiced__bt__platform__group.html#ga1b2ab26fed7589a50fad5ecc0cc6f1d3">wiced_bt_internal_stack_evt_handler_cb</a> evt_handler_cb)</td></tr>
-<tr class="memdesc:gac40dc0f89a01ca8b864c49a9a740786f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal stack init.  <a href="#gac40dc0f89a01ca8b864c49a9a740786f">More...</a><br /></td></tr>
-<tr class="separator:gac40dc0f89a01ca8b864c49a9a740786f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8a424e7de59385dc69b3189987c3fae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__platform__group.html#ga8a424e7de59385dc69b3189987c3fae2">wiced_bt_stack_shutdown</a> (void)</td></tr>
 <tr class="memdesc:ga8a424e7de59385dc69b3189987c3fae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function blocks until all de-initialisation procedures are complete.  <a href="#ga8a424e7de59385dc69b3189987c3fae2">More...</a><br /></td></tr>
 <tr class="separator:ga8a424e7de59385dc69b3189987c3fae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga1b2ab26fed7589a50fad5ecc0cc6f1d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b2ab26fed7589a50fad5ecc0cc6f1d3">&#9670;&nbsp;</a></span>wiced_bt_internal_stack_evt_handler_cb</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>(* wiced_bt_internal_stack_evt_handler_cb) (uint8_t *p_event)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function prototype for the HCI event monitor function that the application may suppply. </p>
-<p>The application MUST return TRUE if the it handled the event and does not want the stack to process the event. If the application returns FALSE, the stack will process the event. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga91ec048a4f0938e38123ccd86b267b49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga91ec048a4f0938e38123ccd86b267b49">&#9670;&nbsp;</a></span>wiced_bt_stack_platform_initialize()</h2>
+<a id="gade7b4741a97ade2e02e044078bf46bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade7b4741a97ade2e02e044078bf46bc2">&#9670;&nbsp;</a></span>wiced_bt_continue_reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_stack_platform_initialize </td>
+          <td class="memname">void wiced_bt_continue_reset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__stack__platform__t.html">wiced_bt_stack_platform_t</a> *&#160;</td>
-          <td class="paramname"><em>platform_interfaces</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the platform interfaces, by providing porting functions specific to the underlying platform. </p>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_SUCCESS </b> : on success; <br />
- <b> WICED_BT_ERROR </b> : if an error occurred </dd></dl>
+<p>This API is called by porting layer to complete/continue the reset process. </p>
+<p>It is called after downloading firmware patches to the Controller.</p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -216,7 +193,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called by the porting layer to process the incoming ACL data received from the remote bluetooth device. </p>
+<p>API to process ACL data. </p>
+<p>This API is called by porting layer to process incoming ACL data received from the remote bluetooth device</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pData</td><td>: Pointer to the ACL data to be processed </td></tr>
@@ -254,49 +232,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called by the porting layer to process the incoming HCI events from the local bluetooth controller. </p>
+<p>API to process HCI events. </p>
+<p>This API is called by porting layer to process incoming HCI events from the local bluetooth controller</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pData</td><td>: Pointer to the HCI Events to be processed </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>: Length of the event buffer </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="ga3e08857799934c4e9eb3108e16cc95e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3e08857799934c4e9eb3108e16cc95e1">&#9670;&nbsp;</a></span>wiced_bt_process_sco_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wiced_bt_process_sco_data </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>pData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Called by the porting layer to process the incoming SCO data received from the remote bluetooth device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pData</td><td>: Pointer to the SCO data to be processed </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>: Length of the SCO data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>: Length of the event buffer</td></tr>
   </table>
   </dd>
 </dl>
@@ -330,11 +271,51 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called by the porting layer to process the incoming ISOC data received from the remote bluetooth device. </p>
+<p>API to process ISOC data. </p>
+<p>This API is called by porting layer to process incoming ISOC data received from the remote bluetooth device</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pData</td><td>: Pointer to the ISOC data to be processed </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>: Length of the ISOC data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>: Length of the ISOC data buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ga3e08857799934c4e9eb3108e16cc95e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e08857799934c4e9eb3108e16cc95e1">&#9670;&nbsp;</a></span>wiced_bt_process_sco_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_process_sco_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>API to process SCO data. </p>
+<p>This API is called by porting layer to process incoming SCO data received from the remote bluetooth device</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pData</td><td>: Pointer to the SCO data to be processed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>: Length of the SCO data buffer</td></tr>
   </table>
   </dd>
 </dl>
@@ -358,49 +339,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called by the porting layer on expiry of the timer to process pending timers. </p>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="gaa98ea87121fed670412f976b3f0b252c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa98ea87121fed670412f976b3f0b252c">&#9670;&nbsp;</a></span>wiced_bt_stack_indicate_lower_tx_complete()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wiced_bt_stack_indicate_lower_tx_complete </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Called by the lower layer transport driver to restart sending ACL data to the controller Note: Porting layer API. </p>
-<p>This API is expected to be invoked by the lower layer transport driver, to restart transfers from the stack to the controller. The lower tx layer is expected to have space for atleast one complete ACL buffer Typically used in cases where the lower Tx has lesser number of buffers than allowed by controller </p>
-
-</div>
-</div>
-<a id="gade7b4741a97ade2e02e044078bf46bc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gade7b4741a97ade2e02e044078bf46bc2">&#9670;&nbsp;</a></span>wiced_bt_continue_reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wiced_bt_continue_reset </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Called by the porting layer to complete/continue the reset process Typically called after downloading firmware patches to the controller. </p>
+<p>This API is called by porting layer on expiry of the timer to process pending timers. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
@@ -421,15 +360,38 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the stack config. </p>
-<p>Invoked by the porting layer</p>
+<p>API to set AIROC Bluetooth stack configuration. </p>
+<p>This API is invoked by porting layer to configure AIROC Bluetooth Stack. This API is called from <a class="el" href="group__wiced__bt__init__functions.html#gabac5a1c3126b145f079c6797790844af" title="This API initializes the stack based on the configuration in p_bt_cfg_settings and allocates memory a...">wiced_bt_stack_init()</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_bt_new_cfg_settings</td><td>: Stack configuration settings</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_bt_new_cfg_settings</td><td>: Pointer to stack configuration settings</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if there is any error in the configuration otherwise the dynamic memory size requirements of the stack for the configuration. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is any error in the configuration, otherwise the dynamic memory size requirement of the stack for the given <code>p_bt_new_cfg_settings</code> configuration. </dd></dl>
+
+</div>
+</div>
+<a id="gaa98ea87121fed670412f976b3f0b252c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa98ea87121fed670412f976b3f0b252c">&#9670;&nbsp;</a></span>wiced_bt_stack_indicate_lower_tx_complete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_stack_indicate_lower_tx_complete </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is called by porting layer to restart sending ACL data to the Controller through lower layer transport driver. </p>
+<dl class="section note"><dt>Note</dt><dd>This API is expected to be invoked by porting layer, to restart transfers from stack to Controller. <br />
+ The lower transport layer is expected to have space for atleast one complete ACL buffer. <br />
+ Typically used in cases where the lower transport has lesser number of buffers than allowed by the Controller. </dd></dl>
 
 </div>
 </div>
@@ -442,19 +404,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void wiced_bt_stack_init_internal </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__wicedbt___device_management.html#ga86af8a8bb467047c9af6007f15b0d344">wiced_bt_management_cback_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="wiced__bt__dev_8h.html#a86af8a8bb467047c9af6007f15b0d344">wiced_bt_management_cback_t</a>&#160;</td>
           <td class="paramname"><em>mgmt_cback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__wiced__bt__platform__group.html#gaaee366da383e708d1dea13b16cbba1e5">wiced_bt_internal_post_stack_init_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="wiced__bt__stack__platform_8h.html#aaee366da383e708d1dea13b16cbba1e5">wiced_bt_internal_post_stack_init_cb</a>&#160;</td>
           <td class="paramname"><em>post_stack_cb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__wiced__bt__platform__group.html#ga1b2ab26fed7589a50fad5ecc0cc6f1d3">wiced_bt_internal_stack_evt_handler_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="wiced__bt__stack__platform_8h.html#a1b2ab26fed7589a50fad5ecc0cc6f1d3">wiced_bt_internal_stack_evt_handler_cb</a>&#160;</td>
           <td class="paramname"><em>evt_handler_cb</em>&#160;</td>
         </tr>
         <tr>
@@ -465,7 +427,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Internal stack init. </p>
+<p>API for doing internal stack initialization. </p>
+<p>Once HCI platform interface to Controller is initialized, porting layer calls this API to start with AIROC Bluetooth Stack initialization.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mgmt_cback</td><td>: Application Bluetooth Management callback </td></tr>
@@ -474,7 +437,38 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Dynamic memory size requirements of the stack for the configuration </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ga91ec048a4f0938e38123ccd86b267b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga91ec048a4f0938e38123ccd86b267b49">&#9670;&nbsp;</a></span>wiced_bt_stack_platform_initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_stack_platform_initialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__stack__platform__t.html">wiced_bt_stack_platform_t</a> *&#160;</td>
+          <td class="paramname"><em>platform_interfaces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>API to initialize the platform interfaces, by providing porting functions specific to the underlying platform. </p>
+<p>This API is called from <a class="el" href="group__wiced__bt__init__functions.html#gabac5a1c3126b145f079c6797790844af" title="This API initializes the stack based on the configuration in p_bt_cfg_settings and allocates memory a...">wiced_bt_stack_init()</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">platform_interfaces</td><td>: Pointer to platform interface structure <a class="el" href="structwiced__bt__stack__platform__t.html" title="AIROC Bluetooth Stack Platform Structure.">wiced_bt_stack_platform_t</a> <br />
+ Implementation of callback functions, which are members of <a class="el" href="structwiced__bt__stack__platform__t.html" title="AIROC Bluetooth Stack Platform Structure.">wiced_bt_stack_platform_t</a>, may differ from platform to platform</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310" title="AIROC result.">wiced_result_t</a> <br />
+ <b> WICED_BT_SUCCESS </b> : on success <br />
+ <b> WICED_BT_ERROR </b> : if an error occurred </dd></dl>
 
 </div>
 </div>
@@ -496,7 +490,7 @@ Functions</h2></td></tr>
 
 <p>This function blocks until all de-initialisation procedures are complete. </p>
 <p>It is recommended that the application disconnect any outstanding connections prior to invoking this function.</p>
-<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>

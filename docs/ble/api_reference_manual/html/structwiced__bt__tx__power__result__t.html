@@ -89,31 +89,92 @@ $(document).ready(function(){initNavTree('structwiced__bt__tx__power__result__t.
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">wiced_bt_tx_power_result_t Struct Reference<div class="ingroups"><a class="el" href="group__wicedbt___device_management.html">Device Management</a></div></div>  </div>
+<div class="title">wiced_bt_tx_power_result_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>TX Power Result (in response to <a class="el" href="group__wicedbt__utility.html#ga48a580210a970a52c39fca816ccfd0d7" title="Read the transmit power for the requested link.">wiced_bt_dev_read_tx_power</a>) </p>
+<div class="textblock"><p>TX Power Result (in response to <a class="el" href="group__tx__power__settings.html#ga48a580210a970a52c39fca816ccfd0d7" title="Read the transmit power for the requested link associated with remote_bda.">wiced_bt_dev_read_tx_power</a> and <a class="el" href="group__tx__power__settings.html#ga37a11fc558b6587f8c7288aa943edf06" title="Read LE Advertisement transmit power.">wiced_bt_ble_read_adv_tx_power</a>) </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a630c3aa060987a921b484458ed3ef356"><td class="memItemLeft" align="right" valign="top"><a id="a630c3aa060987a921b484458ed3ef356"></a>
-<a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__tx__power__result__t.html#a630c3aa060987a921b484458ed3ef356">status</a></td></tr>
-<tr class="memdesc:a630c3aa060987a921b484458ed3ef356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of the operation. <br /></td></tr>
+<tr class="memitem:a630c3aa060987a921b484458ed3ef356"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__tx__power__result__t.html#a630c3aa060987a921b484458ed3ef356">status</a></td></tr>
+<tr class="memdesc:a630c3aa060987a921b484458ed3ef356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of the operation.  <a href="#a630c3aa060987a921b484458ed3ef356">More...</a><br /></td></tr>
 <tr class="separator:a630c3aa060987a921b484458ed3ef356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eb8b36dda8a6a6d2b98a3036d016832"><td class="memItemLeft" align="right" valign="top"><a id="a5eb8b36dda8a6a6d2b98a3036d016832"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__tx__power__result__t.html#a5eb8b36dda8a6a6d2b98a3036d016832">hci_status</a></td></tr>
-<tr class="memdesc:a5eb8b36dda8a6a6d2b98a3036d016832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status from controller (Refer Spec 5.0 Vol 2 Part D Error Codes) <br /></td></tr>
+<tr class="memitem:a5eb8b36dda8a6a6d2b98a3036d016832"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__tx__power__result__t.html#a5eb8b36dda8a6a6d2b98a3036d016832">hci_status</a></td></tr>
+<tr class="memdesc:a5eb8b36dda8a6a6d2b98a3036d016832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status from controller (Refer Spec 5.0 Vol 2 Part D Error Codes)  <a href="#a5eb8b36dda8a6a6d2b98a3036d016832">More...</a><br /></td></tr>
 <tr class="separator:a5eb8b36dda8a6a6d2b98a3036d016832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa48e71a910f6e2863bb0ad0299b7ab96"><td class="memItemLeft" align="right" valign="top"><a id="aa48e71a910f6e2863bb0ad0299b7ab96"></a>
-int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__tx__power__result__t.html#aa48e71a910f6e2863bb0ad0299b7ab96">tx_power</a></td></tr>
-<tr class="memdesc:aa48e71a910f6e2863bb0ad0299b7ab96"><td class="mdescLeft">&#160;</td><td class="mdescRight">TX power in dB. <br /></td></tr>
+<tr class="memitem:aa48e71a910f6e2863bb0ad0299b7ab96"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__tx__power__result__t.html#aa48e71a910f6e2863bb0ad0299b7ab96">tx_power</a></td></tr>
+<tr class="memdesc:aa48e71a910f6e2863bb0ad0299b7ab96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tx power in dB.  <a href="#aa48e71a910f6e2863bb0ad0299b7ab96">More...</a><br /></td></tr>
 <tr class="separator:aa48e71a910f6e2863bb0ad0299b7ab96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3074d71d1d02c33baa8824d64edf165c"><td class="memItemLeft" align="right" valign="top"><a id="a3074d71d1d02c33baa8824d64edf165c"></a>
-<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__tx__power__result__t.html#a3074d71d1d02c33baa8824d64edf165c">rem_bda</a></td></tr>
-<tr class="memdesc:a3074d71d1d02c33baa8824d64edf165c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remote BD address. <br /></td></tr>
+<tr class="memitem:a3074d71d1d02c33baa8824d64edf165c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__tx__power__result__t.html#a3074d71d1d02c33baa8824d64edf165c">rem_bda</a></td></tr>
+<tr class="memdesc:a3074d71d1d02c33baa8824d64edf165c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remote BD address.  <a href="#a3074d71d1d02c33baa8824d64edf165c">More...</a><br /></td></tr>
 <tr class="separator:a3074d71d1d02c33baa8824d64edf165c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a5eb8b36dda8a6a6d2b98a3036d016832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb8b36dda8a6a6d2b98a3036d016832">&#9670;&nbsp;</a></span>hci_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t wiced_bt_tx_power_result_t::hci_status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status from controller (Refer Spec 5.0 Vol 2 Part D Error Codes) </p>
+
+</div>
+</div>
+<a id="a3074d71d1d02c33baa8824d64edf165c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3074d71d1d02c33baa8824d64edf165c">&#9670;&nbsp;</a></span>rem_bda</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> wiced_bt_tx_power_result_t::rem_bda</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remote BD address. </p>
+
+</div>
+</div>
+<a id="a630c3aa060987a921b484458ed3ef356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630c3aa060987a921b484458ed3ef356">&#9670;&nbsp;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_tx_power_result_t::status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status of the operation. </p>
+
+</div>
+</div>
+<a id="aa48e71a910f6e2863bb0ad0299b7ab96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48e71a910f6e2863bb0ad0299b7ab96">&#9670;&nbsp;</a></span>tx_power</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t wiced_bt_tx_power_result_t::tx_power</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tx power in dB. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

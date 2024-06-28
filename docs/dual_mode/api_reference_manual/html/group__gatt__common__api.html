@@ -94,7 +94,8 @@ $(document).ready(function(){initNavTree('group__gatt__common__api.html','');});
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
-<p>GATT Profile Connection Functions. </p>
+<p>This section provides GATT Profile Connection APIs. </p>
+<p>These APIs are called by application for connection related functionality </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 API Reference</h2></td></tr>
@@ -105,55 +106,28 @@ API Reference</h2></td></tr>
 <tr class="memdesc:group__gatt__br"><td class="mdescLeft">&#160;</td><td class="mdescRight">BR/EDR (Bluetooth Basic Rate / Enhanced Data Rate) Specific functions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__gatt__eatt__functions"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__eatt__functions.html">EATT</a></td></tr>
-<tr class="memdesc:group__gatt__eatt__functions"><td class="mdescLeft">&#160;</td><td class="mdescRight">EATT API. <br /></td></tr>
+<tr class="memdesc:group__gatt__eatt__functions"><td class="mdescLeft">&#160;</td><td class="mdescRight">This section provides Enhanced Attribute protocol (EATT) APIs. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4957d5c9ddc93abbcaac2c3bded135c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9">wiced_bt_gatt_register</a> (<a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2">wiced_bt_gatt_cback_t</a> *p_gatt_cback)</td></tr>
-<tr class="memdesc:ga4957d5c9ddc93abbcaac2c3bded135c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an application callback for GATT.  <a href="#ga4957d5c9ddc93abbcaac2c3bded135c9">More...</a><br /></td></tr>
+<tr class="memitem:ga4957d5c9ddc93abbcaac2c3bded135c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9">wiced_bt_gatt_register</a> (<a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2">wiced_bt_gatt_cback_t</a> *p_gatt_cback)</td></tr>
+<tr class="memdesc:ga4957d5c9ddc93abbcaac2c3bded135c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an application callback with GATT.  <a href="#ga4957d5c9ddc93abbcaac2c3bded135c9">More...</a><br /></td></tr>
 <tr class="separator:ga4957d5c9ddc93abbcaac2c3bded135c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac384524f7e61172da9eb0beb764ed46d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__common__api.html#gac384524f7e61172da9eb0beb764ed46d">wiced_bt_gatt_cancel_connect</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> is_direct)</td></tr>
 <tr class="memdesc:gac384524f7e61172da9eb0beb764ed46d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel initiating GATT connection.  <a href="#gac384524f7e61172da9eb0beb764ed46d">More...</a><br /></td></tr>
 <tr class="separator:gac384524f7e61172da9eb0beb764ed46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga15d5aff42e22c934fbbde1a7a2680ff6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__common__api.html#ga15d5aff42e22c934fbbde1a7a2680ff6">wiced_bt_gatt_disconnect</a> (uint16_t conn_id)</td></tr>
+<tr class="memitem:ga15d5aff42e22c934fbbde1a7a2680ff6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__common__api.html#ga15d5aff42e22c934fbbde1a7a2680ff6">wiced_bt_gatt_disconnect</a> (uint16_t conn_id)</td></tr>
 <tr class="memdesc:ga15d5aff42e22c934fbbde1a7a2680ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the specified GATT connection.  <a href="#ga15d5aff42e22c934fbbde1a7a2680ff6">More...</a><br /></td></tr>
 <tr class="separator:ga15d5aff42e22c934fbbde1a7a2680ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad8044837c2bda2ff0515d86bd160d45e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__common__api.html#gad8044837c2bda2ff0515d86bd160d45e">wiced_bt_gatt_get_device_address</a> (uint16_t conn_id, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> *p_bdaddr, <a class="el" href="group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0">wiced_bt_transport_t</a> *p_transport, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> *p_addr_type)</td></tr>
+<tr class="memitem:gad8044837c2bda2ff0515d86bd160d45e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__common__api.html#gad8044837c2bda2ff0515d86bd160d45e">wiced_bt_gatt_get_device_address</a> (uint16_t conn_id, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> *p_bdaddr, <a class="el" href="group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0">wiced_bt_transport_t</a> *p_transport, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> *p_addr_type)</td></tr>
 <tr class="memdesc:gad8044837c2bda2ff0515d86bd160d45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to get the bluetooth device address of the connected gatt conn_id.  <a href="#gad8044837c2bda2ff0515d86bd160d45e">More...</a><br /></td></tr>
 <tr class="separator:gad8044837c2bda2ff0515d86bd160d45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2bfd5052c63d135f8df4078a61d0938b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__common__api.html#ga2bfd5052c63d135f8df4078a61d0938b">wiced_bt_gatt_validate_conn_id</a> (uint16_t conn_id)</td></tr>
+<tr class="memitem:ga2bfd5052c63d135f8df4078a61d0938b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__common__api.html#ga2bfd5052c63d135f8df4078a61d0938b">wiced_bt_gatt_validate_conn_id</a> (uint16_t conn_id)</td></tr>
 <tr class="memdesc:ga2bfd5052c63d135f8df4078a61d0938b"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to validate connected gatt conn_id.  <a href="#ga2bfd5052c63d135f8df4078a61d0938b">More...</a><br /></td></tr>
 <tr class="separator:ga2bfd5052c63d135f8df4078a61d0938b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga4957d5c9ddc93abbcaac2c3bded135c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4957d5c9ddc93abbcaac2c3bded135c9">&#9670;&nbsp;</a></span>wiced_bt_gatt_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_register </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2">wiced_bt_gatt_cback_t</a> *&#160;</td>
-          <td class="paramname"><em>p_gatt_cback</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Register an application callback for GATT. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_gatt_cback</td><td>: The GATT notification callback</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
-
-</div>
-</div>
 <a id="gac384524f7e61172da9eb0beb764ed46d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac384524f7e61172da9eb0beb764ed46d">&#9670;&nbsp;</a></span>wiced_bt_gatt_cancel_connect()</h2>
 
@@ -188,7 +162,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><b> TRUE </b> : If connection started <b> FALSE </b> : If connection start failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><b> TRUE </b> : If connection started <br />
+ <b> FALSE </b> : If connection start failure <br />
+</dd></dl>
 
 </div>
 </div>
@@ -199,7 +175,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_disconnect </td>
+          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_disconnect </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em></td><td>)</td>
@@ -209,14 +185,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Close the specified GATT connection. </p>
-<p>Result is notified using <b> GATT_CONNECTION_STATUS_EVT </b> of <a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a>.</p>
+<p>Result is notified using <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631ab44e413a73125ba989225c6629ec7dc5" title="GATT connection status change.">GATT_CONNECTION_STATUS_EVT</a> of <a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT connection ID</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT connection Identifier</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
@@ -227,7 +203,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_get_device_address </td>
+          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_get_device_address </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em>, </td>
@@ -259,7 +235,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>API to get the bluetooth device address of the connected gatt conn_id. </p>
-<dl class="section note"><dt>Note</dt><dd>: The API cannot be used to get the Bluetooth device address in case the device is disconnected</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The API cannot be used to get the Bluetooth device address in case the device is disconnected</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: Connection handle of the gatt bearer </td></tr>
@@ -269,7 +245,34 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a" title="GATT status (see wiced_bt_gatt_status_e)">wiced_bt_gatt_status_t</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a" title="GATT status (see wiced_bt_gatt_status_e)">wiced_bt_gatt_status_t</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga4957d5c9ddc93abbcaac2c3bded135c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4957d5c9ddc93abbcaac2c3bded135c9">&#9670;&nbsp;</a></span>wiced_bt_gatt_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2">wiced_bt_gatt_cback_t</a> *&#160;</td>
+          <td class="paramname"><em>p_gatt_cback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register an application callback with GATT. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_gatt_cback</td><td>: The GATT notification callback for receiving <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631" title="GATT events.">wiced_bt_gatt_evt_t</a> events</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
@@ -280,7 +283,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_validate_conn_id </td>
+          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_validate_conn_id </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em></td><td>)</td>
@@ -296,7 +299,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a" title="GATT status (see wiced_bt_gatt_status_e)">wiced_bt_gatt_status_t</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a" title="GATT status (see wiced_bt_gatt_status_e)">wiced_bt_gatt_status_t</a> </dd></dl>
 
 </div>
 </div>

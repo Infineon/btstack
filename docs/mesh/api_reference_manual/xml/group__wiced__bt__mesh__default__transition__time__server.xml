@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2571" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2571" bodyend="-1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2571" column="1" bodyfile="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2571" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2584" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2584" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__default__transition__time__server_1gaadbba5b7363b2afda149d73b56d0959d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -156,13 +156,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2598" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2598" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
       <memberdef kind="define" id="group__wiced__bt__mesh__default__transition__time__server_1gabe4c67d0391e096c8f7b362b8a60adc1" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_DEFAULT_TRANSITION_TIME_SERVER</name>
-        <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_DEFTT_SRV, <ref refid="group__wiced__bt__mesh__default__transition__time__server_1gaadbba5b7363b2afda149d73b56d0959d" kindref="member">wiced_bt_mesh_model_default_transition_time_server_message_handler</ref>, NULL, NULL }</initializer>
+        <initializer>{ <ref refid="wiced__bt__mesh__model__defs_8h_1a59a077dee05bafa600f33d9b29fd18c5" kindref="member">MESH_COMPANY_ID_BT_SIG</ref>, <ref refid="wiced__bt__mesh__model__defs_8h_1a519dc44b7e997ea62c5073c38e51fc75" kindref="member">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_DEFTT_SRV</ref>, <ref refid="group__wiced__bt__mesh__default__transition__time__server_1gaadbba5b7363b2afda149d73b56d0959d" kindref="member">wiced_bt_mesh_model_default_transition_time_server_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
 <para>Mesh Default Transition Time Server Module. </para>
         </briefdescription>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2559" column="9" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2559" bodyend="-1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2559" column="9" bodyfile="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2559" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

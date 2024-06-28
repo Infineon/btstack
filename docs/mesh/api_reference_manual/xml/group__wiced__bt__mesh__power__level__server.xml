@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2961" column="1" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2961" bodyend="-1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2961" column="1" bodyfile="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2961" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2977" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2977" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__level__server_1gaedcbfec81f7f7b3af31ecd2c9cfc3d2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2989" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2989" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__level__server_1ga2fc9792afd476737b331b4e4d3f28dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -202,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3003" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3003" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__level__server_1ga2a7638d0918f694804b4acfd8a4b69ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -257,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3017" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3017" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__level__server_1ga02612c425d9164a6d59b8e4236a94ceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3030" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3030" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__level__server_1gacc865d632fd932907aafefede5522ed9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -391,21 +391,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3045" column="1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3045" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
       <memberdef kind="define" id="group__wiced__bt__mesh__power__level__server_1gaffe3cb3dbf98e48826c58dceb86f25cf" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_POWER_LEVEL_SERVER</name>
-        <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_DEFTT_SRV, <ref refid="group__wiced__bt__mesh__default__transition__time__server_1gaadbba5b7363b2afda149d73b56d0959d" kindref="member">wiced_bt_mesh_model_default_transition_time_server_message_handler</ref>, NULL, NULL }, \
-    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_SCENE_SRV, <ref refid="group__wiced__bt__mesh__scene__server_1gad02139dbd5de33dbfa4574f1b7524817" kindref="member">wiced_bt_mesh_model_scene_server_message_handler</ref>, NULL, NULL }, \
-    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_SCENE_SETUP_SRV, <ref refid="group__wiced__bt__mesh__scene__server_1ga1e69d93cd77b795bd811c1ae913a39e9" kindref="member">wiced_bt_mesh_model_scene_setup_server_message_handler</ref>, NULL, NULL }, \
-    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_ONOFF_SRV, <ref refid="group__wiced__bt__mesh__onoff__server_1gae8407b3533ba16b322606715ecc95421" kindref="member">wiced_bt_mesh_model_onoff_server_message_handler</ref>, NULL, NULL }, \
-    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_ONOFF_SRV, <ref refid="group__wiced__bt__mesh__power__onoff__server_1gaff7b2624880843f3d34cdf348db91348" kindref="member">wiced_bt_mesh_model_power_onoff_server_message_handler</ref>, NULL, NULL }, \
-    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_ONOFF_SETUP_SRV, <ref refid="group__wiced__bt__mesh__power__onoff__server_1ga6c4dd5a8835747d24d55e38a1b630bfd" kindref="member">wiced_bt_mesh_model_power_onoff_setup_server_message_handler</ref>, NULL, NULL }, \
-    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_LEVEL_SRV, <ref refid="group__wiced__bt__mesh__level__server_1ga54956fe15bf384bcd2cc9da8435c25e2" kindref="member">wiced_bt_mesh_model_level_server_message_handler</ref>, NULL, NULL }, \
-    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_LEVEL_SRV, <ref refid="group__wiced__bt__mesh__power__level__server_1ga2fc9792afd476737b331b4e4d3f28dbd" kindref="member">wiced_bt_mesh_model_power_level_server_message_handler</ref>, <ref refid="group__wiced__bt__mesh__power__level__server_1ga02612c425d9164a6d59b8e4236a94ceb" kindref="member">wiced_bt_mesh_model_power_level_server_scene_store_handler</ref>, <ref refid="group__wiced__bt__mesh__power__level__server_1gacc865d632fd932907aafefede5522ed9" kindref="member">wiced_bt_mesh_model_power_level_server_scene_recall_handler</ref> }, \
-    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_LEVEL_SETUP_SRV, <ref refid="group__wiced__bt__mesh__power__level__server_1ga2a7638d0918f694804b4acfd8a4b69ab" kindref="member">wiced_bt_mesh_model_power_level_setup_server_message_handler</ref>, NULL, NULL }</initializer>
+        <initializer>{ <ref refid="wiced__bt__mesh__model__defs_8h_1a59a077dee05bafa600f33d9b29fd18c5" kindref="member">MESH_COMPANY_ID_BT_SIG</ref>, <ref refid="wiced__bt__mesh__model__defs_8h_1a519dc44b7e997ea62c5073c38e51fc75" kindref="member">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_DEFTT_SRV</ref>, <ref refid="group__wiced__bt__mesh__default__transition__time__server_1gaadbba5b7363b2afda149d73b56d0959d" kindref="member">wiced_bt_mesh_model_default_transition_time_server_message_handler</ref>, NULL, NULL }, \
+    { <ref refid="wiced__bt__mesh__model__defs_8h_1a59a077dee05bafa600f33d9b29fd18c5" kindref="member">MESH_COMPANY_ID_BT_SIG</ref>, <ref refid="wiced__bt__mesh__model__defs_8h_1a229d6988ca848c57462cf17782713608" kindref="member">WICED_BT_MESH_CORE_MODEL_ID_SCENE_SRV</ref>, <ref refid="group__wiced__bt__mesh__scene__server_1gad02139dbd5de33dbfa4574f1b7524817" kindref="member">wiced_bt_mesh_model_scene_server_message_handler</ref>, NULL, NULL }, \
+    { <ref refid="wiced__bt__mesh__model__defs_8h_1a59a077dee05bafa600f33d9b29fd18c5" kindref="member">MESH_COMPANY_ID_BT_SIG</ref>, <ref refid="wiced__bt__mesh__model__defs_8h_1ae4a6c91603e3305b08e3357150c04b02" kindref="member">WICED_BT_MESH_CORE_MODEL_ID_SCENE_SETUP_SRV</ref>, <ref refid="group__wiced__bt__mesh__scene__server_1ga1e69d93cd77b795bd811c1ae913a39e9" kindref="member">wiced_bt_mesh_model_scene_setup_server_message_handler</ref>, NULL, NULL }, \
+    { <ref refid="wiced__bt__mesh__model__defs_8h_1a59a077dee05bafa600f33d9b29fd18c5" kindref="member">MESH_COMPANY_ID_BT_SIG</ref>, <ref refid="wiced__bt__mesh__model__defs_8h_1a79d24b860f8af7c9cd3f9689c5859c05" kindref="member">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_ONOFF_SRV</ref>, <ref refid="group__wiced__bt__mesh__onoff__server_1gae8407b3533ba16b322606715ecc95421" kindref="member">wiced_bt_mesh_model_onoff_server_message_handler</ref>, NULL, NULL }, \
+    { <ref refid="wiced__bt__mesh__model__defs_8h_1a59a077dee05bafa600f33d9b29fd18c5" kindref="member">MESH_COMPANY_ID_BT_SIG</ref>, <ref refid="wiced__bt__mesh__model__defs_8h_1afa1e3ab8ce716e3d9470583bf919201b" kindref="member">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_ONOFF_SRV</ref>, <ref refid="group__wiced__bt__mesh__power__onoff__server_1gaff7b2624880843f3d34cdf348db91348" kindref="member">wiced_bt_mesh_model_power_onoff_server_message_handler</ref>, NULL, NULL }, \
+    { <ref refid="wiced__bt__mesh__model__defs_8h_1a59a077dee05bafa600f33d9b29fd18c5" kindref="member">MESH_COMPANY_ID_BT_SIG</ref>, <ref refid="wiced__bt__mesh__model__defs_8h_1af71ff1a01169b96d291e507950720359" kindref="member">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_ONOFF_SETUP_SRV</ref>, <ref refid="group__wiced__bt__mesh__power__onoff__server_1ga6c4dd5a8835747d24d55e38a1b630bfd" kindref="member">wiced_bt_mesh_model_power_onoff_setup_server_message_handler</ref>, NULL, NULL }, \
+    { <ref refid="wiced__bt__mesh__model__defs_8h_1a59a077dee05bafa600f33d9b29fd18c5" kindref="member">MESH_COMPANY_ID_BT_SIG</ref>, <ref refid="wiced__bt__mesh__model__defs_8h_1ab31ba6c5fa18fa65f3efd3ab49e4d5af" kindref="member">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_LEVEL_SRV</ref>, <ref refid="group__wiced__bt__mesh__level__server_1ga54956fe15bf384bcd2cc9da8435c25e2" kindref="member">wiced_bt_mesh_model_level_server_message_handler</ref>, NULL, NULL }, \
+    { <ref refid="wiced__bt__mesh__model__defs_8h_1a59a077dee05bafa600f33d9b29fd18c5" kindref="member">MESH_COMPANY_ID_BT_SIG</ref>, <ref refid="wiced__bt__mesh__model__defs_8h_1af4709329c21fdb52bea48ab7a8f12c0b" kindref="member">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_LEVEL_SRV</ref>, <ref refid="group__wiced__bt__mesh__power__level__server_1ga2fc9792afd476737b331b4e4d3f28dbd" kindref="member">wiced_bt_mesh_model_power_level_server_message_handler</ref>, <ref refid="group__wiced__bt__mesh__power__level__server_1ga02612c425d9164a6d59b8e4236a94ceb" kindref="member">wiced_bt_mesh_model_power_level_server_scene_store_handler</ref>, <ref refid="group__wiced__bt__mesh__power__level__server_1gacc865d632fd932907aafefede5522ed9" kindref="member">wiced_bt_mesh_model_power_level_server_scene_recall_handler</ref> }, \
+    { <ref refid="wiced__bt__mesh__model__defs_8h_1a59a077dee05bafa600f33d9b29fd18c5" kindref="member">MESH_COMPANY_ID_BT_SIG</ref>, <ref refid="wiced__bt__mesh__model__defs_8h_1a9db9e3f6212da7f7d028a7af4675221d" kindref="member">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_LEVEL_SETUP_SRV</ref>, <ref refid="group__wiced__bt__mesh__power__level__server_1ga2a7638d0918f694804b4acfd8a4b69ab" kindref="member">wiced_bt_mesh_model_power_level_setup_server_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
 <para>Mesh Power Level Server Device Composition Data. </para>
         </briefdescription>
@@ -414,7 +414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2931" column="10" bodyfile="D:/glb/dsvYVzqK/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2931" bodyend="-1"/>
+        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2931" column="10" bodyfile="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2931" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -425,7 +425,7 @@
 <para>To instantiate the Power Level Server module, that application includes the <ref refid="group__wiced__bt__mesh__power__level__server_1gaffe3cb3dbf98e48826c58dceb86f25cf" kindref="member">WICED_BT_MESH_MODEL_POWER_LEVEL_SERVER</ref> in the device definition. In addition to that, the application shall call <ref refid="group__wiced__bt__mesh__power__level__server_1gac58e658d3d557b1c50b530477a329375" kindref="member">wiced_bt_mesh_model_power_level_server_init</ref> function providing the <ref refid="group__wiced__bt__mesh__power__level__server_1ga58610260dbbb87bb7921af540ef45d33" kindref="member">wiced_bt_mesh_power_level_server_callback_t</ref> callback that will be executed when power level of the device needs to be changed.</para>
 <para>If the device supports several elements with the Power Level Server, for example a power strip with several power plugs, the <ref refid="group__wiced__bt__mesh__power__level__server_1gaffe3cb3dbf98e48826c58dceb86f25cf" kindref="member">WICED_BT_MESH_MODEL_POWER_LEVEL_SERVER</ref> shall be included for each element.</para>
 <para>The Mesh Power Level Server module in the Mesh Models library maintains the On/Off and Level states and notifies the application on the state changes. The application shall call the <ref refid="group__wiced__bt__mesh__power__level__server_1gaedcbfec81f7f7b3af31ecd2c9cfc3d2a" kindref="member">wiced_bt_mesh_model_power_level_server_level_changed</ref> function when the power level of the device is changed locally.</para>
-<para>Most of the functionality of the Mesh Power Level server device is implemented in the Mesh Models Library. The application only needs to set hardware appropriately on receiving WICED_BT_MESH_POWER_LEVEL_STATUS event. If client requests to change power to the target value over a period of time, the library will maintain the timer and will periodically call the application with appropriate power level.</para>
+<para>Most of the functionality of the Mesh Power Level server device is implemented in the Mesh Models Library. The application only needs to set hardware appropriately on receiving <ref refid="wiced__bt__mesh__models_8h_1a49d7ed4bf487b4105fcb82d64f5c7445" kindref="member">WICED_BT_MESH_POWER_LEVEL_STATUS</ref> event. If client requests to change power to the target value over a period of time, the library will maintain the timer and will periodically call the application with appropriate power level.</para>
 <para>The default transition time is managed by the Mesh Models library. The application provides factory default in the default_transition_time element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client.</para>
 <para>The on power up behavior is managed by the Mesh Models library. The application provides factory default in the onpowerup_state element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client. </para>
     </detaileddescription>

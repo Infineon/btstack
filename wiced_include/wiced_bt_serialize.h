@@ -18,16 +18,19 @@ extern "C" {
 #endif
 
 /**
-*  @addtogroup    app_utils   Application Utility Functions
-*
-*  @{
-*/
-
-/**
 * Serialized function prototype
 *
 */
 typedef void (*wiced_bt_serialized_app_func_t)(void *param);
+
+/**
+*  @addtogroup    app_utils   Application Utility Functions
+*
+*  @{
+*
+*  Utility functions that applications might find useful.
+*
+*/
 
 /**
 * Called by applications to serialize the execution of an application function in the BT stack context

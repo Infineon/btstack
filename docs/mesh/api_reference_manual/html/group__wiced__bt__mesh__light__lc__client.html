@@ -87,29 +87,23 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__light__lc__cli
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh Light LC Client<div class="ingroups"><a class="el" href="group__wiced__bt__mesh.html">LE Mesh</a> &raquo; <a class="el" href="group__wiced__bt__mesh__models.html">Mesh Models Library API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
 <p>The AIROC Mesh Light LC Client module of the Mesh Models library provides a way for an application to configure and control lights that support LC control. </p>
-<p>To include Light LC Client functionality, the device description shall contain WICED_BT_MESH_MODEL_LIGHT_LC_CLIENT.</p>
+<p>To include Light LC Client functionality, the device description shall contain <a class="el" href="group__wiced__bt__mesh__models.html#gac9acfdfee09acb7b0931dc56190c09c9">WICED_BT_MESH_MODEL_LIGHT_LC_CLIENT</a>.</p>
 <p>TBD </p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gab7ae689e813e1347a9bba9220d844acb"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lc__client.html#gab7ae689e813e1347a9bba9220d844acb">wiced_bt_mesh_light_lc_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
-<tr class="memdesc:gab7ae689e813e1347a9bba9220d844acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light Control Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#gab7ae689e813e1347a9bba9220d844acb">More...</a><br /></td></tr>
-<tr class="separator:gab7ae689e813e1347a9bba9220d844acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga03759ad7f3847e32f6037b3efcba3195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lc__client.html#ga03759ad7f3847e32f6037b3efcba3195">wiced_bt_mesh_model_light_lc_client_init</a> (uint8_t element_idx, <a class="el" href="group__wiced__bt__mesh__power__onoff__client.html#ga2c0d0dd298d58d00d96fb4b8a9b3bf43">wiced_bt_mesh_power_onoff_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
+<tr class="memitem:ga03759ad7f3847e32f6037b3efcba3195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lc__client.html#ga03759ad7f3847e32f6037b3efcba3195">wiced_bt_mesh_model_light_lc_client_init</a> (uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, <a class="el" href="group__wiced__bt__mesh__power__onoff__client.html#ga2c0d0dd298d58d00d96fb4b8a9b3bf43">wiced_bt_mesh_power_onoff_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
 <tr class="memdesc:ga03759ad7f3847e32f6037b3efcba3195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light Control Client Module initialization.  <a href="#ga03759ad7f3847e32f6037b3efcba3195">More...</a><br /></td></tr>
 <tr class="separator:ga03759ad7f3847e32f6037b3efcba3195"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b768fe9b2dc159bf7d28a2d2dd62969"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lc__client.html#ga3b768fe9b2dc159bf7d28a2d2dd62969">wiced_bt_mesh_model_light_lc_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
+<tr class="memitem:ga3b768fe9b2dc159bf7d28a2d2dd62969"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lc__client.html#ga3b768fe9b2dc159bf7d28a2d2dd62969">wiced_bt_mesh_model_light_lc_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
 <tr class="memdesc:ga3b768fe9b2dc159bf7d28a2d2dd62969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light Control Client Message Handler.  <a href="#ga3b768fe9b2dc159bf7d28a2d2dd62969">More...</a><br /></td></tr>
 <tr class="separator:ga3b768fe9b2dc159bf7d28a2d2dd62969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae7327bac0865f4529dd3789d243b09be"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lc__client.html#gae7327bac0865f4529dd3789d243b09be">wiced_bt_mesh_model_light_lc_client_send_mode_get</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event)</td></tr>
@@ -136,6 +130,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gac7f50dd584a54ab5b0bfd806ede06080"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lc__client.html#gac7f50dd584a54ab5b0bfd806ede06080">wiced_bt_mesh_model_light_lc_client_send_property_set</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, <a class="el" href="structwiced__bt__mesh__light__lc__property__set__data__t.html">wiced_bt_mesh_light_lc_property_set_data_t</a> *p_data)</td></tr>
 <tr class="memdesc:gac7f50dd584a54ab5b0bfd806ede06080"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application can call this function to send Light LC Property Set client message to the server.  <a href="#gac7f50dd584a54ab5b0bfd806ede06080">More...</a><br /></td></tr>
 <tr class="separator:gac7f50dd584a54ab5b0bfd806ede06080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gab7ae689e813e1347a9bba9220d844acb"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lc__client.html#gab7ae689e813e1347a9bba9220d844acb">wiced_bt_mesh_light_lc_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
+<tr class="memdesc:gab7ae689e813e1347a9bba9220d844acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light Control Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#gab7ae689e813e1347a9bba9220d844acb">More...</a><br /></td></tr>
+<tr class="separator:gab7ae689e813e1347a9bba9220d844acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gab7ae689e813e1347a9bba9220d844acb"></a>
@@ -255,6 +255,71 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga3ab94ad7030bedead08a281030911442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ab94ad7030bedead08a281030911442">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lc_client_send_light_onoff_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lc_client_send_light_onoff_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application can call this function to send the Light LC OnOff Get client message to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
+<a id="gaeaddebc8fbe3f620b33cd19431d63faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeaddebc8fbe3f620b33cd19431d63faa">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lc_client_send_light_onoff_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lc_client_send_light_onoff_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__light__lc__light__onoff__set__data__t.html">wiced_bt_mesh_light_lc_light_onoff_set_data_t</a> *&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application can call this function to send Light LC Occupancy Mode Set client message to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>
+    <tr><td class="paramname">p_data</td><td>Pointer to the data to send</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
 <a id="gae7327bac0865f4529dd3789d243b09be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae7327bac0865f4529dd3789d243b09be">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lc_client_send_mode_get()</h2>
 
@@ -363,71 +428,6 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structwiced__bt__mesh__light__lc__occupancy__mode__set__data__t.html">wiced_bt_mesh_light_lc_occupancy_mode_set_data_t</a> *&#160;</td>
-          <td class="paramname"><em>p_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send Light LC Occupancy Mode Set client message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>
-    <tr><td class="paramname">p_data</td><td>Pointer to the data to send</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
-<a id="ga3ab94ad7030bedead08a281030911442"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3ab94ad7030bedead08a281030911442">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lc_client_send_light_onoff_get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lc_client_send_light_onoff_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send the Light LC OnOff Get client message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
-<a id="gaeaddebc8fbe3f620b33cd19431d63faa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeaddebc8fbe3f620b33cd19431d63faa">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lc_client_send_light_onoff_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lc_client_send_light_onoff_set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__light__lc__light__onoff__set__data__t.html">wiced_bt_mesh_light_lc_light_onoff_set_data_t</a> *&#160;</td>
           <td class="paramname"><em>p_data</em>&#160;</td>
         </tr>
         <tr>
