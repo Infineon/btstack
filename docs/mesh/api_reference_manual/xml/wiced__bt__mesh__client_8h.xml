@@ -5,13 +5,29 @@
     <includes refid="wiced__bt__mesh__event_8h" local="yes">wiced_bt_mesh_event.h</includes>
     <includes refid="wiced__bt__mesh__provision_8h" local="yes">wiced_bt_mesh_provision.h</includes>
     <incdepgraph>
+      <node id="22">
+        <label>wiced_bt_mesh_model_defs.h</label>
+        <link refid="wiced__bt__mesh__model__defs_8h"/>
+      </node>
       <node id="20">
         <label>wiced_timer.h</label>
       </node>
-      <node id="19">
-        <label>wiced_bt_mesh_event.h</label>
-        <link refid="wiced__bt__mesh__event_8h"/>
-        <childnode refid="20" relation="include">
+      <node id="18">
+        <label>wiced_bt_mesh_client.h</label>
+        <link refid="wiced__bt__mesh__client_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>wiced_bt_mesh_core.h</label>
+        <link refid="wiced__bt__mesh__core_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="21">
@@ -24,8 +40,20 @@
         <childnode refid="23" relation="include">
         </childnode>
       </node>
+      <node id="19">
+        <label>wiced_bt_mesh_event.h</label>
+        <link refid="wiced__bt__mesh__event_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
       <node id="26">
         <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="25">
+        <label>wiced_bt_mesh_cfg.h</label>
+        <link refid="wiced__bt__mesh__cfg_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
       </node>
       <node id="23">
         <label>wiced_bt_mesh_models.h</label>
@@ -35,34 +63,6 @@
         <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
-        </childnode>
-      </node>
-      <node id="22">
-        <label>wiced_bt_mesh_model_defs.h</label>
-        <link refid="wiced__bt__mesh__model__defs_8h"/>
-      </node>
-      <node id="18">
-        <label>wiced_bt_mesh_client.h</label>
-        <link refid="wiced__bt__mesh__client_8h"/>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="25">
-        <label>wiced_bt_mesh_cfg.h</label>
-        <link refid="wiced__bt__mesh__cfg_8h"/>
-        <childnode refid="22" relation="include">
-        </childnode>
-      </node>
-      <node id="24">
-        <label>wiced_bt_mesh_core.h</label>
-        <link refid="wiced__bt__mesh__core_8h"/>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="43" column="1"/>
+        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="43" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga6846d2264854032cc1be924f6e5a9f19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="54" column="1"/>
+        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="54" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga9c70ecd8be9dd7681a7ee00191f49cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="66" column="1"/>
+        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="66" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga1b9f2c0b16806208c1434cbd19ae094d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -200,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="78" column="1"/>
+        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="78" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga498c876da4517a9ad622c9d6b400b85f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -230,7 +230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="88" column="1"/>
+        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="88" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga149dd367c0e623c9cb6127506059c00c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -255,7 +255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="102" column="1"/>
+        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="102" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga06c7244e2e167ae29995e8ff6da58c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -286,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="112" column="1"/>
+        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="112" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1gabc49027b1a5076322f9924133dcfa2c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -317,7 +317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="123" column="1"/>
+        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="123" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga29b4dab0957dabe3478ad3aa7c207e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -372,7 +372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="135" column="1"/>
+        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="135" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -449,6 +449,6 @@
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__WICED_BT_MESH_PROVISION_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/toat9Rxz/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h"/>
+    <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h"/>
   </compounddef>
 </doxygen>

@@ -8,6 +8,10 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V3.9.2
+BTSTACK3.9.2 is a patch release with following enhancements -
+ - Modified wiced_bt_dev_read_tx_power() to send HCI_Read_Transmit_Power_Level HCI command
+
 ## V3.9.1
 BTSTACK3.9.1 is a patch release with following enhancements -
  - Improved Doxygen API content and formatting

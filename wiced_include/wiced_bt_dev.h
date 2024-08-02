@@ -2289,7 +2289,8 @@ wiced_result_t wiced_bt_set_transmit_power_range(wiced_bt_device_address_t bd_ad
                                                  wiced_bt_dev_vendor_specific_command_complete_cback_t *p_cb);
 
 /**
- * Read the transmit power for the requested link associated with \p remote_bda
+ * API to read the transmit power for the requested link associated with \p remote_bda
+ * This API sends <b> HCI_Read_Transmit_Power_Level </b> command to Controller.
  *
  * @param[in]       remote_bda      : Bluetooth address of peer device
  * @param[in]       transport       : Transport type (valid types: #BT_TRANSPORT_BR_EDR and #BT_TRANSPORT_LE)

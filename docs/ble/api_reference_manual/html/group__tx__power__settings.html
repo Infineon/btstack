@@ -111,7 +111,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga4f14854ca88222ae7cace8fdf89242b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command to set the range of transmit power on the link.  <a href="#ga4f14854ca88222ae7cace8fdf89242b3">More...</a><br /></td></tr>
 <tr class="separator:ga4f14854ca88222ae7cace8fdf89242b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga48a580210a970a52c39fca816ccfd0d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tx__power__settings.html#ga48a580210a970a52c39fca816ccfd0d7">wiced_bt_dev_read_tx_power</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> remote_bda, <a class="el" href="group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0">wiced_bt_transport_t</a> transport, <a class="el" href="wiced__bt__dev_8h.html#a2ebace7053dc297ea21b0e97cd0b1ce3">wiced_bt_dev_cmpl_cback_t</a> *p_cback)</td></tr>
-<tr class="memdesc:ga48a580210a970a52c39fca816ccfd0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the transmit power for the requested link associated with <code>remote_bda</code>.  <a href="#ga48a580210a970a52c39fca816ccfd0d7">More...</a><br /></td></tr>
+<tr class="memdesc:ga48a580210a970a52c39fca816ccfd0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to read the transmit power for the requested link associated with <code>remote_bda</code> This API sends <b> HCI_Read_Transmit_Power_Level </b> command to Controller.  <a href="#ga48a580210a970a52c39fca816ccfd0d7">More...</a><br /></td></tr>
 <tr class="separator:ga48a580210a970a52c39fca816ccfd0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -225,7 +225,7 @@ This API should not be used for setting Tx power during Extended advertisement. 
       </table>
 </div><div class="memdoc">
 
-<p>Read the transmit power for the requested link associated with <code>remote_bda</code>. </p>
+<p>API to read the transmit power for the requested link associated with <code>remote_bda</code> This API sends <b> HCI_Read_Transmit_Power_Level </b> command to Controller. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>: Bluetooth address of peer device </td></tr>
