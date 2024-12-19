@@ -54,9 +54,9 @@
 <codeline lineno="79"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_MODEL_OPCODES_AGGREGATOR_SERVER<sp/>\</highlight></codeline>
 <codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/>MESH_COMPANY_ID_BT_SIG,<sp/>WICED_BT_MESH_CORE_MODEL_ID_OPCODES_AGGREGATOR_SRV,<sp/>wiced_bt_mesh_opcodes_aggregator_server_message_handler,<sp/>NULL,<sp/>NULL<sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_client_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1ad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_client_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_server_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1ad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_server_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
@@ -65,19 +65,19 @@
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_AGG_ITEM_ADD_SUCCEEDED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Add<sp/>item<sp/>to<sp/>Opcodes<sp/>Aggregator<sp/>succeeded</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_AGG_ITEM_ADD_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Add<sp/>item<sp/>to<sp/>Opcodes<sp/>Aggregator<sp/>failed</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*wiced_bt_mesh_agg_item_add_callback_t)(uint8_t<sp/><ref refid="wiced__bt__mesh__core_8h_1ade818037fd6c985038ff29656089758d" kindref="member">status</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*wiced_bt_mesh_agg_item_add_callback_t)(uint8_t<sp/>status);</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_start(uint16_t<sp/>dst_addr,<sp/>uint8_t<sp/>dst_elem_idx,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a65ecdf93f477372c38b29a69e896d6ba" kindref="member">app_key_idx</ref>,<sp/>wiced_bool_t<sp/>is_command,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1acc07a6590d5e67223bb2345a7c64060a" kindref="member">element_addr</ref>,<sp/>wiced_bt_mesh_agg_item_add_callback_t<sp/>p_callback);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_start(uint16_t<sp/>dst_addr,<sp/>uint8_t<sp/>dst_elem_idx,<sp/>uint16_t<sp/>app_key_idx,<sp/>wiced_bool_t<sp/>is_command,<sp/>uint16_t<sp/>element_addr,<sp/>wiced_bt_mesh_agg_item_add_callback_t<sp/>p_callback);</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_finish_and_send(uint8_t<sp/><ref refid="wiced__bt__mesh__core_8h_1ade818037fd6c985038ff29656089758d" kindref="member">status</ref>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_opcodes_aggregator_finish_and_send(uint8_t<sp/>status);</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight></codeline>
 <codeline lineno="165"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_is_aggregate_message();</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_add_aggregator_item(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1aeb39438c0aa5ad494c96060b00351545" kindref="member">opcode</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*p_param,<sp/>uint16_t<sp/>param_len);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_add_aggregator_item(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint16_t<sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*p_param,<sp/>uint16_t<sp/>param_len);</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight></codeline>
-<codeline lineno="181"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_add_aggregator_item_data(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1ad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_add_aggregator_item_data(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight></codeline>
-<codeline lineno="190"><highlight class="normal">uint16_t<sp/>wiced_bt_mesh_read_aggregator_item(uint8_t<sp/>*p_data,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1ad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>,<sp/>uint16_t<sp/>*p_opcode,<sp/>uint8_t<sp/>**pp_param,<sp/>uint16_t<sp/>*p_param_len);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">uint16_t<sp/>wiced_bt_mesh_read_aggregator_item(uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len,<sp/>uint16_t<sp/>*p_opcode,<sp/>uint8_t<sp/>**pp_param,<sp/>uint16_t<sp/>*p_param_len);</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"></highlight></codeline>
 <codeline lineno="199"><highlight class="normal">uint8_t<sp/>wiced_bt_mesh_check_aggregator_status();</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"></highlight></codeline>
@@ -87,6 +87,6 @@
 <codeline lineno="206"><highlight class="normal"></highlight></codeline>
 <codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MESH_PRIVATE_PROXY_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_agg.h"/>
+    <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_agg.h"/>
   </compounddef>
 </doxygen>

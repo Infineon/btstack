@@ -87,23 +87,35 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__light__xyl__cl
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh Light xyL Client<div class="ingroups"><a class="el" href="group__wiced__bt__mesh.html">LE Mesh</a> &raquo; <a class="el" href="group__wiced__bt__mesh__models.html">Mesh Models Library API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
 <p>The AIROC Mesh Light XYL Client module of the Mesh Models library provides a way for an application to configure and control color lights that support xyL control. </p>
-<p>To include Light XYL Client functionality, the device description shall contain <a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#gaa3ab34b6924828fb9ac8324e29ba5a40">WICED_BT_MESH_MODEL_LIGHT_XYL_CLIENT</a>. </p>
+<p>To include Light XYL Client functionality, the device description shall contain WICED_BT_MESH_MODEL_LIGHT_XYL_CLIENT. </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gaa3ab34b6924828fb9ac8324e29ba5a40"><td class="memItemLeft" align="right" valign="top"><a id="gaa3ab34b6924828fb9ac8324e29ba5a40"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WICED_BT_MESH_MODEL_LIGHT_XYL_CLIENT</b>&#160;&#160;&#160;{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_XYL_CLNT, <a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#gacb2f82d0881540a5e2a65264bf1a645e">wiced_bt_mesh_model_light_xyl_client_message_handler</a>, NULL, NULL }</td></tr>
+<tr class="separator:gaa3ab34b6924828fb9ac8324e29ba5a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga577770980091fd6d02eac7c3bbe20626"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#ga577770980091fd6d02eac7c3bbe20626">wiced_bt_mesh_light_xyl_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
+<tr class="memdesc:ga577770980091fd6d02eac7c3bbe20626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light xyL Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#ga577770980091fd6d02eac7c3bbe20626">More...</a><br /></td></tr>
+<tr class="separator:ga577770980091fd6d02eac7c3bbe20626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gacb2f82d0881540a5e2a65264bf1a645e"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#gacb2f82d0881540a5e2a65264bf1a645e">wiced_bt_mesh_model_light_xyl_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
+<tr class="memitem:gacb2f82d0881540a5e2a65264bf1a645e"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#gacb2f82d0881540a5e2a65264bf1a645e">wiced_bt_mesh_model_light_xyl_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
 <tr class="memdesc:gacb2f82d0881540a5e2a65264bf1a645e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light xyL Client Message Handler.  <a href="#gacb2f82d0881540a5e2a65264bf1a645e">More...</a><br /></td></tr>
 <tr class="separator:gacb2f82d0881540a5e2a65264bf1a645e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2775b4a14de345fb43363ea4321d61ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#ga2775b4a14de345fb43363ea4321d61ff">wiced_bt_mesh_model_light_xyl_client_init</a> (uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, <a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#ga577770980091fd6d02eac7c3bbe20626">wiced_bt_mesh_light_xyl_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
+<tr class="memitem:ga2775b4a14de345fb43363ea4321d61ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#ga2775b4a14de345fb43363ea4321d61ff">wiced_bt_mesh_model_light_xyl_client_init</a> (uint8_t element_idx, <a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#ga577770980091fd6d02eac7c3bbe20626">wiced_bt_mesh_light_xyl_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
 <tr class="memdesc:ga2775b4a14de345fb43363ea4321d61ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light xyL Client Module initialization.  <a href="#ga2775b4a14de345fb43363ea4321d61ff">More...</a><br /></td></tr>
 <tr class="separator:ga2775b4a14de345fb43363ea4321d61ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf2d32ad0403fab041943e3ff630ba094"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#gaf2d32ad0403fab041943e3ff630ba094">wiced_bt_mesh_model_light_xyl_client_send_get</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event)</td></tr>
@@ -127,33 +139,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gae7004f31f89fd8e51d7e8b45002e11ac"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#gae7004f31f89fd8e51d7e8b45002e11ac">wiced_bt_mesh_model_light_xyl_client_send_range_set</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, <a class="el" href="structwiced__bt__mesh__light__xyl__range__set__data__t.html">wiced_bt_mesh_light_xyl_range_set_data_t</a> *p_data)</td></tr>
 <tr class="memdesc:gae7004f31f89fd8e51d7e8b45002e11ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application can call this function to send Light xyL Range Set client message to the server.  <a href="#gae7004f31f89fd8e51d7e8b45002e11ac">More...</a><br /></td></tr>
 <tr class="separator:gae7004f31f89fd8e51d7e8b45002e11ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gaa3ab34b6924828fb9ac8324e29ba5a40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#gaa3ab34b6924828fb9ac8324e29ba5a40">WICED_BT_MESH_MODEL_LIGHT_XYL_CLIENT</a>&#160;&#160;&#160;{ <a class="el" href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a>, <a class="el" href="wiced__bt__mesh__model__defs_8h.html#a991e6ed0ac90d9e009ea6d47c93d2346">WICED_BT_MESH_CORE_MODEL_ID_LIGHT_XYL_CLNT</a>, <a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#gacb2f82d0881540a5e2a65264bf1a645e">wiced_bt_mesh_model_light_xyl_client_message_handler</a>, NULL, NULL }</td></tr>
-<tr class="separator:gaa3ab34b6924828fb9ac8324e29ba5a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga577770980091fd6d02eac7c3bbe20626"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#ga577770980091fd6d02eac7c3bbe20626">wiced_bt_mesh_light_xyl_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
-<tr class="memdesc:ga577770980091fd6d02eac7c3bbe20626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light xyL Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#ga577770980091fd6d02eac7c3bbe20626">More...</a><br /></td></tr>
-<tr class="separator:ga577770980091fd6d02eac7c3bbe20626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gaa3ab34b6924828fb9ac8324e29ba5a40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa3ab34b6924828fb9ac8324e29ba5a40">&#9670;&nbsp;</a></span>WICED_BT_MESH_MODEL_LIGHT_XYL_CLIENT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_MESH_MODEL_LIGHT_XYL_CLIENT&#160;&#160;&#160;{ <a class="el" href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a>, <a class="el" href="wiced__bt__mesh__model__defs_8h.html#a991e6ed0ac90d9e009ea6d47c93d2346">WICED_BT_MESH_CORE_MODEL_ID_LIGHT_XYL_CLNT</a>, <a class="el" href="group__wiced__bt__mesh__light__xyl__client.html#gacb2f82d0881540a5e2a65264bf1a645e">wiced_bt_mesh_model_light_xyl_client_message_handler</a>, NULL, NULL }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga577770980091fd6d02eac7c3bbe20626"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga577770980091fd6d02eac7c3bbe20626">&#9670;&nbsp;</a></span>wiced_bt_mesh_light_xyl_client_callback_t</h2>
@@ -170,7 +156,7 @@ Typedefs</h2></td></tr>
 <p>Light xyL Client callback is called by the Mesh Models library on receiving a message from the peer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>The event that the application should process (see <a class="el" href="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h.html#LIGHT_XYL_EVENT">Light xyL Events</a>) </td></tr>
+    <tr><td class="paramname">event</td><td>The event that the application should process (see <a class="el" href="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h.html#LIGHT_XYL_EVENT">Light xyL Events</a>) </td></tr>
     <tr><td class="paramname">p_event</td><td>information about the message received. The same pointer should be used in the reply if required. </td></tr>
     <tr><td class="paramname">p_data</td><td>Pointer to the level data</td></tr>
   </table>
@@ -181,6 +167,52 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gacb2f82d0881540a5e2a65264bf1a645e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb2f82d0881540a5e2a65264bf1a645e">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_xyl_client_message_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_bool_t wiced_bt_mesh_model_light_xyl_client_message_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Light xyL Client Message Handler. </p>
+<p>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with information about received message. </td></tr>
+    <tr><td class="paramname">p_data</td><td>Pointer to the data portion of the message </td></tr>
+    <tr><td class="paramname">data_len</td><td>Length of the data in the message</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="ga2775b4a14de345fb43363ea4321d61ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2775b4a14de345fb43363ea4321d61ff">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_xyl_client_init()</h2>
 
@@ -226,14 +258,41 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gacb2f82d0881540a5e2a65264bf1a645e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacb2f82d0881540a5e2a65264bf1a645e">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_xyl_client_message_handler()</h2>
+<a id="gaf2d32ad0403fab041943e3ff630ba094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2d32ad0403fab041943e3ff630ba094">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_xyl_client_send_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">wiced_bool_t wiced_bt_mesh_model_light_xyl_client_message_handler </td>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_xyl_client_send_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application can call this function to send Light xyL Get message to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
+<a id="ga68a8e6db251777f69e19fc5045939935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68a8e6db251777f69e19fc5045939935">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_xyl_client_send_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_xyl_client_send_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
           <td class="paramname"><em>p_event</em>, </td>
@@ -241,14 +300,8 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>data_len</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__light__xyl__set__t.html">wiced_bt_mesh_light_xyl_set_t</a> *&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -258,17 +311,41 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Light xyL Client Message Handler. </p>
-<p>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</p>
+<p>The application can call this function to send Light xyL Set message to the server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with information about received message. </td></tr>
-    <tr><td class="paramname">p_data</td><td>Pointer to the data portion of the message </td></tr>
-    <tr><td class="paramname">data_len</td><td>Length of the data in the message</td></tr>
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
+<a id="gab500630eb5b907a6b5d6e72cbc67de22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab500630eb5b907a6b5d6e72cbc67de22">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_xyl_client_send_target_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_xyl_client_send_target_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application can call this function to send Light xyL Target Get message to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
 
 </div>
 </div>
@@ -338,33 +415,6 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gaf2d32ad0403fab041943e3ff630ba094"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf2d32ad0403fab041943e3ff630ba094">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_xyl_client_send_get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_xyl_client_send_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send Light xyL Get message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
 <a id="ga23c99eda097e5a3ae1d4c3ae2379d51e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga23c99eda097e5a3ae1d4c3ae2379d51e">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_xyl_client_send_range_get()</h2>
 
@@ -424,70 +474,6 @@ Typedefs</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>
     <tr><td class="paramname">p_data</td><td>Pointer to the data to send</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
-<a id="ga68a8e6db251777f69e19fc5045939935"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga68a8e6db251777f69e19fc5045939935">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_xyl_client_send_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_xyl_client_send_set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__light__xyl__set__t.html">wiced_bt_mesh_light_xyl_set_t</a> *&#160;</td>
-          <td class="paramname"><em>p_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send Light xyL Set message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
-<a id="gab500630eb5b907a6b5d6e72cbc67de22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab500630eb5b907a6b5d6e72cbc67de22">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_xyl_client_send_target_get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_xyl_client_send_target_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send Light xyL Target Get message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
   </table>
   </dd>
 </dl>

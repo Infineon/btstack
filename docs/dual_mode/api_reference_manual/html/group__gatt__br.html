@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('group__gatt__br.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga06cf5e460bfd5a37cbfcb77e2e41aded"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__br.html#ga06cf5e460bfd5a37cbfcb77e2e41aded">wiced_bt_gatt_bredr_connect</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr)</td></tr>
-<tr class="memdesc:ga06cf5e460bfd5a37cbfcb77e2e41aded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open GATT over BR/EDR connection to a remote device Result is notified using <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631ab44e413a73125ba989225c6629ec7dc5" title="GATT connection status change.">GATT_CONNECTION_STATUS_EVT</a> of <a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a>.  <a href="#ga06cf5e460bfd5a37cbfcb77e2e41aded">More...</a><br /></td></tr>
+<tr class="memdesc:ga06cf5e460bfd5a37cbfcb77e2e41aded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open GATT over BR/EDR connection to a remote device Result is notified using <b> GATT_CONNECTION_STATUS_EVT </b> of <a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a>.  <a href="#ga06cf5e460bfd5a37cbfcb77e2e41aded">More...</a><br /></td></tr>
 <tr class="separator:ga06cf5e460bfd5a37cbfcb77e2e41aded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -118,16 +118,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Open GATT over BR/EDR connection to a remote device Result is notified using <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631ab44e413a73125ba989225c6629ec7dc5" title="GATT connection status change.">GATT_CONNECTION_STATUS_EVT</a> of <a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a>. </p>
+<p>Open GATT over BR/EDR connection to a remote device Result is notified using <b> GATT_CONNECTION_STATUS_EVT </b> of <a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Remote device address</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><b> TRUE </b> : If connection started <br />
- <b> FALSE </b> : If connection start failure <br />
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><b> TRUE </b> : If connection started <b> FALSE </b> : If connection start failure </dd></dl>
 
 </div>
 </div>

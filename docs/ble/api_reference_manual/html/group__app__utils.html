@@ -87,31 +87,54 @@ $(document).ready(function(){initNavTree('group__app__utils.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Application Utility Functions</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
-<p>Utility functions that applications might find useful. </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaa5a92ac3e2fc129cdae4e2023801214d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__app__utils.html#gaa5a92ac3e2fc129cdae4e2023801214d">wiced_bt_serialized_app_func_t</a>) (void *param)</td></tr>
+<tr class="memdesc:gaa5a92ac3e2fc129cdae4e2023801214d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialized function prototype.  <a href="#gaa5a92ac3e2fc129cdae4e2023801214d">More...</a><br /></td></tr>
+<tr class="separator:gaa5a92ac3e2fc129cdae4e2023801214d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaa489e34bdd329a2315ae5d572cf93038"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__app__utils.html#gaa489e34bdd329a2315ae5d572cf93038">wiced_bt_app_serialize_function</a> (<a class="el" href="wiced__bt__serialize_8h.html#aa5a92ac3e2fc129cdae4e2023801214d">wiced_bt_serialized_app_func_t</a> p_func, void *param)</td></tr>
-<tr class="memdesc:gaa489e34bdd329a2315ae5d572cf93038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by applications to serialize the execution of an application function in the BT stack context.  <a href="#gaa489e34bdd329a2315ae5d572cf93038">More...</a><br /></td></tr>
-<tr class="separator:gaa489e34bdd329a2315ae5d572cf93038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bf39612db91419dddb22cd2090215b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__app__utils.html#ga2bf39612db91419dddb22cd2090215b9">wiced_bt_serialize_function</a> (<a class="el" href="group__app__utils.html#gaa5a92ac3e2fc129cdae4e2023801214d">wiced_bt_serialized_app_func_t</a> p_func, void *param)</td></tr>
+<tr class="memdesc:ga2bf39612db91419dddb22cd2090215b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by applications to serialize the execution of an application function in the BT stack context.  <a href="#ga2bf39612db91419dddb22cd2090215b9">More...</a><br /></td></tr>
+<tr class="separator:ga2bf39612db91419dddb22cd2090215b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="gaa489e34bdd329a2315ae5d572cf93038"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa489e34bdd329a2315ae5d572cf93038">&#9670;&nbsp;</a></span>wiced_bt_app_serialize_function()</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gaa5a92ac3e2fc129cdae4e2023801214d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5a92ac3e2fc129cdae4e2023801214d">&#9670;&nbsp;</a></span>wiced_bt_serialized_app_func_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_app_serialize_function </td>
+          <td class="memname">typedef void(* wiced_bt_serialized_app_func_t) (void *param)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialized function prototype. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga2bf39612db91419dddb22cd2090215b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2bf39612db91419dddb22cd2090215b9">&#9670;&nbsp;</a></span>wiced_bt_serialize_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_serialize_function </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="wiced__bt__serialize_8h.html#aa5a92ac3e2fc129cdae4e2023801214d">wiced_bt_serialized_app_func_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__app__utils.html#gaa5a92ac3e2fc129cdae4e2023801214d">wiced_bt_serialized_app_func_t</a>&#160;</td>
           <td class="paramname"><em>p_func</em>, </td>
         </tr>
         <tr>

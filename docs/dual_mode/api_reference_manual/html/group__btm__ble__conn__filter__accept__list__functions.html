@@ -89,128 +89,34 @@ $(document).ready(function(){initNavTree('group__btm__ble__conn__filter__accept_
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Connection and Filter Accept List<div class="ingroups"><a class="el" href="group__wicedbt___device_management.html">Device Management</a> &raquo; <a class="el" href="group__btm__ble__api__functions.html">LE (Bluetooth Low Energy)</a></div></div>  </div>
+<div class="title">Connection and Filter Accept List<div class="ingroups"><a class="el" href="group__wicedbt___conn.html">LE Connection</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
-<p>This section provides functions related to LE connection and Filter Accept List operations. </p>
+<p>This section provides functions for LE connection related and Filter Accept List operations. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4ca85e744e80f9883a70a4520f70420f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#ga4ca85e744e80f9883a70a4520f70420f">wiced_bt_ble_set_background_connection_type</a> (<a class="el" href="wiced__bt__ble_8h.html#a6784dc351a127f7cd9b3fbf9f1d5c49c">wiced_bt_ble_conn_type_t</a> conn_type, void *p_select_cback)</td></tr>
+<tr class="memitem:ga4ca85e744e80f9883a70a4520f70420f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#ga4ca85e744e80f9883a70a4520f70420f">wiced_bt_ble_set_background_connection_type</a> (<a class="el" href="group__wicedbt___conn.html#ga6784dc351a127f7cd9b3fbf9f1d5c49c">wiced_bt_ble_conn_type_t</a> conn_type, void *p_select_cback)</td></tr>
 <tr class="memdesc:ga4ca85e744e80f9883a70a4520f70420f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LE background connection procedure type.  <a href="#ga4ca85e744e80f9883a70a4520f70420f">More...</a><br /></td></tr>
 <tr class="separator:ga4ca85e744e80f9883a70a4520f70420f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6db1fa9a84949b845618545933d4bbab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#ga6db1fa9a84949b845618545933d4bbab">wiced_bt_ble_update_background_connection_device</a> (<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> add_remove, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> remote_bda, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> ble_addr_type)</td></tr>
 <tr class="memdesc:ga6db1fa9a84949b845618545933d4bbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called to add or remove a device into/from the filter list.  <a href="#ga6db1fa9a84949b845618545933d4bbab">More...</a><br /></td></tr>
 <tr class="separator:ga6db1fa9a84949b845618545933d4bbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75fbda062c4d99e4edd39e0a9b4a3bd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#ga75fbda062c4d99e4edd39e0a9b4a3bd4">wiced_bt_ble_get_connection_parameters</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> remote_bda, <a class="el" href="structwiced__bt__ble__conn__params__t.html">wiced_bt_ble_conn_params_t</a> *p_conn_parameters)</td></tr>
-<tr class="memdesc:ga75fbda062c4d99e4edd39e0a9b4a3bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to read connection parameters using bluetooth address of the remote device.The <code>remote_bda</code> is received via <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631ab44e413a73125ba989225c6629ec7dc5" title="GATT connection status change.">GATT_CONNECTION_STATUS_EVT</a> <br />
- in the call back function registered using API <a class="el" href="group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9" title="Register an application callback with GATT.">wiced_bt_gatt_register</a>.  <a href="#ga75fbda062c4d99e4edd39e0a9b4a3bd4">More...</a><br /></td></tr>
-<tr class="separator:ga75fbda062c4d99e4edd39e0a9b4a3bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0a0680dc351ba8bbc0c8cc4cf5cef5b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#ga0a0680dc351ba8bbc0c8cc4cf5cef5b2">wiced_bt_ble_update_advertising_filter_accept_list</a> (<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> add, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> addr_type, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> remote_bda)</td></tr>
-<tr class="memdesc:ga0a0680dc351ba8bbc0c8cc4cf5cef5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to add or remove a device from Advertising Filter Accept List.  <a href="#ga0a0680dc351ba8bbc0c8cc4cf5cef5b2">More...</a><br /></td></tr>
+<tr class="memdesc:ga0a0680dc351ba8bbc0c8cc4cf5cef5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add or remove device from advertising filter Accept List.  <a href="#ga0a0680dc351ba8bbc0c8cc4cf5cef5b2">More...</a><br /></td></tr>
 <tr class="separator:ga0a0680dc351ba8bbc0c8cc4cf5cef5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f411c8f304ca02f2ad9bad45ed5d7a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#ga6f411c8f304ca02f2ad9bad45ed5d7a5">wiced_bt_ble_update_scanner_filter_list</a> (<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> add, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> remote_bda, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> addr_type)</td></tr>
-<tr class="memdesc:ga6f411c8f304ca02f2ad9bad45ed5d7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to add or remove a device from Scanner Filter Accept List.This API is used by the application to allow scan result and scan response only from the devices those are added in the Scanning Filter Accept List.  <a href="#ga6f411c8f304ca02f2ad9bad45ed5d7a5">More...</a><br /></td></tr>
+<tr class="memdesc:ga6f411c8f304ca02f2ad9bad45ed5d7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add or remove device from scanner filter Accept List.  <a href="#ga6f411c8f304ca02f2ad9bad45ed5d7a5">More...</a><br /></td></tr>
 <tr class="separator:ga6f411c8f304ca02f2ad9bad45ed5d7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e8e35f3b362c07a9c329b06579be3f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#ga3e8e35f3b362c07a9c329b06579be3f1">wiced_bt_ble_clear_filter_accept_list</a> (void)</td></tr>
-<tr class="memdesc:ga3e8e35f3b362c07a9c329b06579be3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to clear the Filter Accept List stored in controller.  <a href="#ga3e8e35f3b362c07a9c329b06579be3f1">More...</a><br /></td></tr>
+<tr class="memdesc:ga3e8e35f3b362c07a9c329b06579be3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request clearing filter Accept List in controller side.  <a href="#ga3e8e35f3b362c07a9c329b06579be3f1">More...</a><br /></td></tr>
 <tr class="separator:ga3e8e35f3b362c07a9c329b06579be3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga61de01c2a86f811176a40625785ed1e6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#ga61de01c2a86f811176a40625785ed1e6">wiced_bt_ble_get_filter_accept_list_size</a> (void)</td></tr>
-<tr class="memdesc:ga61de01c2a86f811176a40625785ed1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to get the number of Filter Accept List entries in the controller.  <a href="#ga61de01c2a86f811176a40625785ed1e6">More...</a><br /></td></tr>
+<tr class="memdesc:ga61de01c2a86f811176a40625785ed1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns size of Filter Accept List size in controller side.  <a href="#ga61de01c2a86f811176a40625785ed1e6">More...</a><br /></td></tr>
 <tr class="separator:ga61de01c2a86f811176a40625785ed1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa08c87a6bb5303c94ad71460496b5420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#gaa08c87a6bb5303c94ad71460496b5420">wiced_bt_ble_set_data_packet_length</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, uint16_t tx_pdu_length, uint16_t tx_time)</td></tr>
-<tr class="memdesc:gaa08c87a6bb5303c94ad71460496b5420"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API allows to suggest maximum transmission payload size (typically called GATT MTU) and maximum packet transmission time to be used for LL DATA PDUs on a given connection.  <a href="#gaa08c87a6bb5303c94ad71460496b5420">More...</a><br /></td></tr>
-<tr class="separator:gaa08c87a6bb5303c94ad71460496b5420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga3e8e35f3b362c07a9c329b06579be3f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3e8e35f3b362c07a9c329b06579be3f1">&#9670;&nbsp;</a></span>wiced_bt_ble_clear_filter_accept_list()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_ble_clear_filter_accept_list </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>API to clear the Filter Accept List stored in controller. </p>
-<dl class="section note"><dt>Note</dt><dd>This API sends <b> HCI_LE_Clear_Filter_Accept_List </b> to controller.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_TRUE </b> if request of clear is sent to controller <br />
- <b> WICED_FALSE </b> Otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="ga75fbda062c4d99e4edd39e0a9b4a3bd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga75fbda062c4d99e4edd39e0a9b4a3bd4">&#9670;&nbsp;</a></span>wiced_bt_ble_get_connection_parameters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_ble_get_connection_parameters </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>remote_bda</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__ble__conn__params__t.html">wiced_bt_ble_conn_params_t</a> *&#160;</td>
-          <td class="paramname"><em>p_conn_parameters</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>API to read connection parameters using bluetooth address of the remote device.The <code>remote_bda</code> is received via <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631ab44e413a73125ba989225c6629ec7dc5" title="GATT connection status change.">GATT_CONNECTION_STATUS_EVT</a> <br />
- in the call back function registered using API <a class="el" href="group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9" title="Register an application callback with GATT.">wiced_bt_gatt_register</a>. </p>
-<dl class="section note"><dt>Note</dt><dd>The ACL connection corresponding to provided <code>remote_bda</code> should be active in order for this API to succeed.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>: Bluetooth address of the remote device </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">p_conn_parameters</td><td>: Pointer to Connection Parameters</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310" title="AIROC result.">wiced_result_t</a> <br />
- <b> WICED_BT_ILLEGAL_VALUE </b> : if p_conn_parameters is NULL. <br />
- <b> WICED_BT_UNKNOWN_ADDR </b> : if device address is bad. <br />
- <b> WICED_BT_SUCCESS </b> otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="ga61de01c2a86f811176a40625785ed1e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga61de01c2a86f811176a40625785ed1e6">&#9670;&nbsp;</a></span>wiced_bt_ble_get_filter_accept_list_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t wiced_bt_ble_get_filter_accept_list_size </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>API to get the number of Filter Accept List entries in the controller. </p>
-<dl class="section return"><dt>Returns</dt><dd>number of entries in Filter Accept List in controller </dd></dl>
-
-</div>
-</div>
 <a id="ga4ca85e744e80f9883a70a4520f70420f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4ca85e744e80f9883a70a4520f70420f">&#9670;&nbsp;</a></span>wiced_bt_ble_set_background_connection_type()</h2>
 
@@ -220,7 +126,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_ble_set_background_connection_type </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="wiced__bt__ble_8h.html#a6784dc351a127f7cd9b3fbf9f1d5c49c">wiced_bt_ble_conn_type_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__wicedbt___conn.html#ga6784dc351a127f7cd9b3fbf9f1d5c49c">wiced_bt_ble_conn_type_t</a>&#160;</td>
           <td class="paramname"><em>conn_type</em>, </td>
         </tr>
         <tr>
@@ -240,114 +146,12 @@ Functions</h2></td></tr>
 <p>Set LE background connection procedure type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_type</td><td>: <a class="el" href="wiced__bt__ble_8h.html#a85abcdffb41185cf65f29c689cf36a16a262d3de0ebe5bab5fcb4b0e1591e0a0b" title="No background connection.">BTM_BLE_CONN_NONE</a> or <a class="el" href="wiced__bt__ble_8h.html#a85abcdffb41185cf65f29c689cf36a16a772682b72fe64ab7101e4bde893a8c47" title="Auto connection based on filter list.">BTM_BLE_CONN_AUTO</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn_type</td><td>BTM_BLE_CONN_NONE or BTM_BLE_CONN_AUTO </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_select_cback</td><td>UNUSED</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_TRUE </b> If background connection set <br />
- <b> WICED_FALSE </b> Otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="gaa08c87a6bb5303c94ad71460496b5420"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa08c87a6bb5303c94ad71460496b5420">&#9670;&nbsp;</a></span>wiced_bt_ble_set_data_packet_length()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_ble_set_data_packet_length </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>bd_addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>tx_pdu_length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>tx_time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This API allows to suggest maximum transmission payload size (typically called GATT MTU) and maximum packet transmission time to be used for LL DATA PDUs on a given connection. </p>
-<p>Controller may use smaller or larger values.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Bluetooth address for which the LL Data PDU needs to be set </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tx_pdu_length</td><td>: Preferred maximum number of payload octets (typically called GATT MTU) to be used in a single packet on this connection. <br />
- AIROC Bluetooth Host Stack adds 4 bytes of L2CAP header to <code>tx_pdu_length</code>. Valid range of LL Data PDU is 27 (0x001B) to 251 (0x00FB). <br />
- Hence valid range of <code>tx_pdu_length</code> is 23 to 247. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tx_time</td><td>: Preferred maximum number of microseconds that the controller should take to transmit a single packet on this connection (valid range is 0x0148 to 0x4290)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__bt__types.html#gaebfc7a7f17241ffdaf1a70efc43ffb57" title="Result/Status.">wiced_bt_dev_status_t</a> <br />
- <b> WICED_BT_SUCCESS </b> : If command sent successfully. <br />
-<b> WICED_BT_ERROR </b> : If there is no connection exists. <br />
-<b> WICED_BT_WRONG_MODE </b> : If command not supported. <br />
- </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This API sends <b> HCI_LE_Set_Data_Length </b> command to controller. <br />
- If <code>tx_time</code> = 0, then a default maximum value is assigned to <code>tx_time</code> based on controller HCI version. </dd></dl>
-
-</div>
-</div>
-<a id="ga0a0680dc351ba8bbc0c8cc4cf5cef5b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0a0680dc351ba8bbc0c8cc4cf5cef5b2">&#9670;&nbsp;</a></span>wiced_bt_ble_update_advertising_filter_accept_list()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_ble_update_advertising_filter_accept_list </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td>
-          <td class="paramname"><em>add</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a>&#160;</td>
-          <td class="paramname"><em>addr_type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>remote_bda</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>API to add or remove a device from Advertising Filter Accept List. </p>
-<p>This API is used by the application to allow scan or connect request only from the devices those are added in the Advertising Filter Accept List </p><dl class="section note"><dt>Note</dt><dd>This API sends <b> HCI_LE_Add_Device_To_Filter_Accept_List </b> or <b> HCI_LE_Remove_Device_From_Filter_Accept_List </b> to controller.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">add</td><td>: TRUE to add; FALSE to remove </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr_type</td><td>: The Remote device address type (see <a class="el" href="group__bt__types.html#WICED_BT_ADDR_TYPE">Bluetooth Address Types</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>: Bluetooth address of remote device</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_TRUE </b> if successful <br />
- <b> WICED_FALSE </b> Otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if background connection set </dd></dl>
 
 </div>
 </div>
@@ -388,13 +192,57 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">add_remove</td><td>: TRUE to add; FALSE to remove. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>: Bluetooth address of the device to be added/removed. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ble_addr_type</td><td>: Address type (see <a class="el" href="group__bt__types.html#WICED_BT_ADDR_TYPE">Bluetooth Address Types</a>)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>: device address to add/remove. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ble_addr_type</td><td>: Address type.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_TRUE </b> if successful <br />
- <b> WICED_FALSE </b> Otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if successful </dd></dl>
+
+</div>
+</div>
+<a id="ga0a0680dc351ba8bbc0c8cc4cf5cef5b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a0680dc351ba8bbc0c8cc4cf5cef5b2">&#9670;&nbsp;</a></span>wiced_bt_ble_update_advertising_filter_accept_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_ble_update_advertising_filter_accept_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td>
+          <td class="paramname"><em>add</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a>&#160;</td>
+          <td class="paramname"><em>addr_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>remote_bda</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add or remove device from advertising filter Accept List. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">add</td><td>TRUE to add; FALSE to remove </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr_type</td><td>Type of the addr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>remote device address.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>wiced_bool_t (<b> WICED_TRUE </b> if successful else <b> WICED_FALSE </b>) </dd></dl>
 
 </div>
 </div>
@@ -430,18 +278,58 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>API to add or remove a device from Scanner Filter Accept List.This API is used by the application to allow scan result and scan response only from the devices those are added in the Scanning Filter Accept List. </p>
-<dl class="section note"><dt>Note</dt><dd>This API sends <b> HCI_LE_Add_Device_To_Filter_Accept_List </b> or <b> HCI_LE_Remove_Device_From_Filter_Accept_List </b> to controller.</dd></dl>
+<p>Add or remove device from scanner filter Accept List. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">add</td><td>: TRUE to add; FALSE to remove </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>: Bluetooth address of remote device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr_type</td><td>: The Remote device address type (see <a class="el" href="group__bt__types.html#WICED_BT_ADDR_TYPE">Bluetooth Address Types</a>)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add</td><td>TRUE to add; FALSE to remove </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>remote device address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr_type</td><td>: remote device address type .</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_TRUE </b> if successful <br />
- <b> WICED_FALSE </b> Otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if successful else WICED_FALSE </dd></dl>
+
+</div>
+</div>
+<a id="ga3e8e35f3b362c07a9c329b06579be3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e8e35f3b362c07a9c329b06579be3f1">&#9670;&nbsp;</a></span>wiced_bt_ble_clear_filter_accept_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_ble_clear_filter_accept_list </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Request clearing filter Accept List in controller side. </p>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if request of clear is sent to controller side </dd></dl>
+
+</div>
+</div>
+<a id="ga61de01c2a86f811176a40625785ed1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61de01c2a86f811176a40625785ed1e6">&#9670;&nbsp;</a></span>wiced_bt_ble_get_filter_accept_list_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t wiced_bt_ble_get_filter_accept_list_size </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns size of Filter Accept List size in controller side. </p>
+<dl class="section return"><dt>Returns</dt><dd>size of Filter Accept List in current controller </dd></dl>
 
 </div>
 </div>

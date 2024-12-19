@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
   <compounddef id="structwiced__bt__mesh__provision__outbound__pdu__report__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_provision_outbound_pdu_report_data_t</compoundname>
-    <includes local="no">wiced_bt_mesh_provision.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structwiced__bt__mesh__provision__outbound__pdu__report__data__t_1acc80bca4c6844176c02b04658b1faa0d" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -16,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="292" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="292" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="292" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="292" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="291" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="290" bodyend="293"/>
+    <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="291" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="290" bodyend="293"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__provision__outbound__pdu__report__data__t_1acc80bca4c6844176c02b04658b1faa0d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_outbound_pdu_report_data_t</scope><name>outbound_pdu_number</name></member>
     </listofallmembers>

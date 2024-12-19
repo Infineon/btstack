@@ -8,6 +8,29 @@ Following are the limitations when using host based address resolution (only app
 
 ## Changelog
 
+## V4.0.0
+BTSTACK4.0 contains the following enhancements -
+ - Major update for Extended/Periodic/PAWR advertising and scanning APIs
+ - Major update for ISOC APIs
+ - API change \ref wiced_bt_l2cap_update_ble_conn_params
+ - Legacy advertising, scanning, connection APIs are unaffected by this release.
+ - Applications are expected to either use legacy or extended advertisement, scan APIs
+ - To create a legacy LE connection use \ref wiced_bt_gatt_le_connect
+ - To create a extended LE connection use \ref wiced_ble_ext_create_connection
+ - To detect errors related to mixing of legacy and extended APIs add the following to the application makefile and fix the reported warnings
+   - Using only legacy APIs
+     ```
+     DEFINES+=WICED_BLE_ENABLE_LEGACY_EXTENDED_API_ERROR_CHECK
+     DEFINES+=WICED_BLE_ENABLE_EXTENDED_ADV_API=0
+     DEFINES+=WICED_BLE_ENABLE_LEGACY_ADV_API=1
+     ```
+   - Using only extended APIs
+     ```
+     DEFINES+=WICED_BLE_ENABLE_LEGACY_EXTENDED_API_ERROR_CHECK
+     DEFINES+=WICED_BLE_ENABLE_EXTENDED_ADV_API=1
+     DEFINES+=WICED_BLE_ENABLE_LEGACY_ADV_API=0
+     ```
+
 ## V3.9.2
 BTSTACK3.9.2 is a patch release with following enhancements -
  - Modified wiced_bt_dev_read_tx_power() to send HCI_Read_Transmit_Power_Level HCI command
@@ -27,7 +50,7 @@ BTSTACK3.8.2 is a patch release with following enhancement -
 
 ## V3.8.1
 BTSTACK3.8.1 is a patch release with following enhancements and fixes -
- - Added new wiced API, wiced_bt_isoc_read_tx_sync(), to send HCI_LE_Read_ISO_TX_Sync HCI command
+ - Added new wiced API, wiced_ble_isoc_read_tx_sync(), to send HCI_LE_Read_ISO_TX_Sync HCI command
  - Fixed the issue in AIROC™ BT/BLE stack deinitialization
  - Properly set maximum transmission payload size to be used for LL data PDUs
  - Changes to stop PAwR extended connection when Enhanced connection complete error is received

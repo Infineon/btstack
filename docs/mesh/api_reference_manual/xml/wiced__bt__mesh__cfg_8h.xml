@@ -4,54 +4,6 @@
     <compoundname>wiced_bt_mesh_cfg.h</compoundname>
     <includes refid="wiced__bt__mesh__model__defs_8h" local="yes">wiced_bt_mesh_model_defs.h</includes>
     <includedby refid="wiced__bt__mesh__core_8h" local="yes">wiced_bt_mesh_core.h</includedby>
-    <incdepgraph>
-      <node id="11">
-        <label>wiced_bt_mesh_model_defs.h</label>
-        <link refid="wiced__bt__mesh__model__defs_8h"/>
-      </node>
-      <node id="10">
-        <label>wiced_bt_mesh_cfg.h</label>
-        <link refid="wiced__bt__mesh__cfg_8h"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="16">
-        <label>wiced_bt_mesh_client.h</label>
-        <link refid="wiced__bt__mesh__client_8h"/>
-      </node>
-      <node id="13">
-        <label>wiced_bt_mesh_core.h</label>
-        <link refid="wiced__bt__mesh__core_8h"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="17">
-        <label>wiced_bt_mesh_model_utils.h</label>
-        <link refid="wiced__bt__mesh__model__utils_8h"/>
-      </node>
-      <node id="15">
-        <label>wiced_bt_mesh_provision.h</label>
-        <link refid="wiced__bt__mesh__provision_8h"/>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>wiced_bt_mesh_cfg.h</label>
-        <link refid="wiced__bt__mesh__cfg_8h"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>wiced_bt_mesh_models.h</label>
-        <link refid="wiced__bt__mesh__models_8h"/>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-      </node>
-    </invincdepgraph>
     <innerclass refid="structwiced__bt__mesh__sensor__config__descriptor__t" prot="public">wiced_bt_mesh_sensor_config_descriptor_t</innerclass>
     <innerclass refid="structwiced__bt__mesh__sensor__config__setting__t" prot="public">wiced_bt_mesh_sensor_config_setting_t</innerclass>
     <innerclass refid="structwiced__bt__mesh__sensor__config__column__data__t" prot="public">wiced_bt_mesh_sensor_config_column_data_t</innerclass>
@@ -72,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="37" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="37" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="37" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1gaaa9c9bc83f787d4573b60b3b317b7110" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_FEATURE_BIT_FRIEND</name>
@@ -84,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="38" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="38" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="38" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1gab6471066c94a8f1f58025a2bc8746d8c" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_FEATURE_BIT_LOW_POWER</name>
@@ -96,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="39" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="39" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="39" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1gaa6cc2702357233dfbf1ad6a5a018a404" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_FEATURE_BIT_GATT_PROXY_SERVER</name>
@@ -108,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="40" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="40" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="40" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1gadfcf6faa69f6802cb66bc45e23250f4f" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_FEATURE_BIT_PB_GATT</name>
@@ -120,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="41" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="41" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="41" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga61c363af8adde72122d236f28a751bcd" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_FEATURE_BIT_NO_ADV_BEARER</name>
@@ -132,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="42" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="42" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="42" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1gad6261d99a734e74942c8ae47208575da" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_FEATURE_BIT_DISABLE_NET_BEACON</name>
@@ -144,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="43" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="43" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="43" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -162,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="52" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="52" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="52" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1gad4202d2a24fcd3f20b102726ca0fde89" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_ELECTRONIC_URI</name>
@@ -174,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="53" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="53" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="53" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga2fbc2e295ceb626ab75b7369603562c4" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_2D_CODE</name>
@@ -186,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="54" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="54" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="54" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1gac1adc63b299795e996346a28f950fe89" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_BAR_CODE</name>
@@ -198,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="55" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="55" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="55" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga4d2ffff71f16c7e0dc8561829514da6b" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_NFC</name>
@@ -210,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="56" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="56" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="56" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga03328e3b7f917bbd87303eea71d3a2de" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_NUMBER</name>
@@ -222,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="57" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="57" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="57" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga6649340d0d6ea29b5a1854c1740fe4d1" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_STRING</name>
@@ -234,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="58" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="58" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="58" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga5597d9eebdffd2433d98301c3e9dc096" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_CERTIFICATE</name>
@@ -246,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="59" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="59" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="59" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1gadde828ac793f0cff720391e30f1df38d" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_RECORD</name>
@@ -258,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="60" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="60" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="60" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga8afcd8a33eafa3e10645083e1f2d0af3" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_RFU3</name>
@@ -270,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="61" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="61" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="61" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga58cd80e362d89173cf7c05cec1ef0172" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_RFU4</name>
@@ -282,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="62" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="62" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="62" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga5566d1eed82fef8a6fca7b1cc4e9b6b7" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_ON_BOX</name>
@@ -294,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="63" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="63" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="63" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga17a67eeebede3ee18a6c3b5fc3f2e45f" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_INSIDE_BOX</name>
@@ -306,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="64" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="64" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="64" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga90b2a89c96b449f6f6e37c6a004bc678" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_ON_PIECE_OF_PAPER</name>
@@ -318,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="65" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="65" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="65" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga21d7025eb8539b16f0f9d55910d99fd6" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_INSIDE_MANUAL</name>
@@ -330,7 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="66" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="66" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="66" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga45720a1052c1fae80db8aa0d05d04103" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_OOB_BIT_ON_DEVICE</name>
@@ -342,7 +294,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="67" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="67" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="67" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -354,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="72" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="72" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="72" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__cfg_8h_1a337861c2c7068bc9a972c271bcb96311" prot="public" static="no">
         <name>WICED_BT_MESH_PROPERTY_ID_READABLE</name>
@@ -366,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="159" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="159" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="159" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__cfg_8h_1a62adb37f73e649c16dfb9b0df2eb6d8d" prot="public" static="no">
         <name>WICED_BT_MESH_PROPERTY_ID_WRITABLE</name>
@@ -378,7 +330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="160" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="160" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="160" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="160" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga38afa38309180764351e2509c04ffd24" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_NVRAM_CHUNK_MAX_SIZE</name>
@@ -389,12 +341,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="247" column="10" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="247" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="247" column="10" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="247" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="group__wiced__bt__mesh__core_1ga4b1d978949c6c52e12e21409bedb27ba" prot="public" static="no">
-        <type><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref> struct @2</type>
+        <type>PACKED struct @2</type>
         <definition>typedef PACKED struct @2  wiced_bt_mesh_core_config_model_t</definition>
         <argsstring></argsstring>
         <name>wiced_bt_mesh_core_config_model_t</name>
@@ -405,10 +357,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="134" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="134" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__core_1ga2e88e2f02ce8e0d431c2f170b35e525c" prot="public" static="no">
-        <type><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref> struct @3</type>
+        <type>PACKED struct @3</type>
         <definition>typedef PACKED struct @3  wiced_bt_mesh_core_config_property_t</definition>
         <argsstring></argsstring>
         <name>wiced_bt_mesh_core_config_property_t</name>
@@ -419,10 +371,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="165" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="165" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__core_1ga6ec7eed62f1522e04870d9e0763b758f" prot="public" static="no">
-        <type><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref> struct @4</type>
+        <type>PACKED struct @4</type>
         <definition>typedef PACKED struct @4  wiced_bt_mesh_core_config_element_t</definition>
         <argsstring></argsstring>
         <name>wiced_bt_mesh_core_config_element_t</name>
@@ -433,10 +385,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="185" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="185" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__core_1ga844503a456a8061cd80d4b2602833c70" prot="public" static="no">
-        <type><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref> struct @5</type>
+        <type>PACKED struct @5</type>
         <definition>typedef PACKED struct @5  wiced_bt_mesh_core_config_low_power_t</definition>
         <argsstring></argsstring>
         <name>wiced_bt_mesh_core_config_low_power_t</name>
@@ -447,10 +399,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="198" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="198" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__core_1ga862e7bc901be3056058d475b988e9eaa" prot="public" static="no">
-        <type><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref> struct @6</type>
+        <type>PACKED struct @6</type>
         <definition>typedef PACKED struct @6  wiced_bt_mesh_core_config_friend_t</definition>
         <argsstring></argsstring>
         <name>wiced_bt_mesh_core_config_friend_t</name>
@@ -461,10 +413,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="208" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="208" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" prot="public" static="no">
-        <type><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref> struct @7</type>
+        <type>PACKED struct @7</type>
         <definition>typedef PACKED struct @7  wiced_bt_mesh_core_config_t</definition>
         <argsstring></argsstring>
         <name>wiced_bt_mesh_core_config_t</name>
@@ -476,7 +428,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="237" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="237" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -494,7 +446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="129" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="129" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="129" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a345b5a533872a471f810a988b331f60c" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -508,7 +460,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="130" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="130" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="130" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="130" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a6d6919f886fd062ada5dfefa6a9f03cd" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -522,7 +474,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="131" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="131" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="131" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a7118696ed498d939ab3e78bfcd48575b" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -536,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="132" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="132" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="132" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1aaeca0916f4bba49cd77b8d516bfdece0" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -550,7 +502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="133" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="133" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="133" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a4fc3a0c58dfbd1e68224521185cb9384" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -564,7 +516,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="158" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="158" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="158" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="158" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a1d127017fb298b889f4ba24752d08b8e" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -578,7 +530,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="161" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="161" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="161" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a3a90c48e6a748fbb1fb512cde6ecbc83" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -592,7 +544,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="162" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="162" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="162" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a7e8c368b285fef6796e5b0fda9b89d8c" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -606,7 +558,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="163" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="163" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="163" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="163" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a952181be57dba7891e7b2da65a061e25" prot="public" static="no" mutable="no">
         <type>uint8_t *</type>
@@ -620,7 +572,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="164" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="164" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="164" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a39cce0358f4f4988ac97b1e9f078cfc7" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -634,7 +586,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="172" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="172" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="172" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="172" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a97684803c61fc488c4c3241adb81aef0" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -648,7 +600,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="173" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="173" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="173" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1ac86843b7a21bf25e410cd048df734105" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -662,7 +614,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="174" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="174" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="174" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a9496a26bb12f665ca514f4e482ccf88f" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -676,7 +628,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="175" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="175" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="175" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1ac735270828ac31865053c36c472cd475" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -690,7 +642,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="176" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="176" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="176" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1abb9f14526e7640695c42c9d782c00403" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -704,7 +656,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="177" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="177" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="177" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a4f299c7fa7736eb7e9f2bb28b7c6dccb" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -718,7 +670,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="178" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="178" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="178" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a33bd439954516567235fc257725b42f3" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -732,7 +684,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="179" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="179" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="179" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a71c41f69912afcb68df0c0d9aa272dc3" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__mesh__core_1ga2e88e2f02ce8e0d431c2f170b35e525c" kindref="member">wiced_bt_mesh_core_config_property_t</ref> *</type>
@@ -747,7 +699,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="180" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="180" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="180" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a75a9bf7d3deaa9eee09ddc5751becc5b" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -761,7 +713,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="181" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="181" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="181" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1ad3e999377a6c3b7f3cdec5e1dbed728b" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__core__config__sensor__t" kindref="compound">wiced_bt_mesh_core_config_sensor_t</ref> *</type>
@@ -775,7 +727,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="182" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="182" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="182" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1aa608ab41a91794b71319ac39b463b128" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -789,7 +741,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="183" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="183" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="183" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a79e492d9dcd6c28f91a4f0e0a24f5224" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__mesh__core_1ga4b1d978949c6c52e12e21409bedb27ba" kindref="member">wiced_bt_mesh_core_config_model_t</ref> *</type>
@@ -804,7 +756,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="184" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="184" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="184" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a2f6964e0e31458b18938e4e6d55e91d8" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -819,7 +771,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="192" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="192" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="192" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="192" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a9f12fec788954144c36a6bd005c2201a" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -834,7 +786,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="193" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="193" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="193" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="193" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1aa6d7de2ccc55b094b0ccb727df33efd6" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -849,7 +801,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="194" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="194" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="194" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="194" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a5e4de520f42e76ecd7544716f8c19fc1" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -864,7 +816,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="195" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="195" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="195" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="195" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a33e1fb7c2a245d6e65047d9811ab6952" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -879,7 +831,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="196" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="196" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="196" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="196" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a554632d58c57d739b3e73325b35f4237" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -894,7 +846,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="197" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="197" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="197" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="197" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a7961cbc3456e111b97bee1e4cf5c00a3" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -909,7 +861,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="205" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="205" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="205" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="205" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a56c4298d86ccff40abc4b969d1380bc1" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -923,7 +875,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="206" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="206" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="206" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1ab2551c99791590bbfa8f7a4265eae30a" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -938,7 +890,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="207" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="207" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="207" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="207" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a215e5feaef08c77d8e9f17ab421e8a66" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -952,7 +904,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="227" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="227" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="227" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="227" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1abd60aba7846c925f784c3e89e2f54e45" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -966,7 +918,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="228" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="228" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="228" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="228" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a05394e2501b222db77c3a39194523065" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -980,7 +932,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="229" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="229" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="229" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="229" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1ac9cf527e900f59c4194623e6201ab3e4" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -995,7 +947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="230" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="230" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="230" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="230" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a69ec24fb2d0a5f5e532deb9adaab81d6" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -1010,7 +962,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="231" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="231" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="231" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="231" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1afdedfc25df1eb073867c1e82a3406c27" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__mesh__core_1ga862e7bc901be3056058d475b988e9eaa" kindref="member">wiced_bt_mesh_core_config_friend_t</ref></type>
@@ -1025,7 +977,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="232" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="232" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="232" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="232" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a6efd3bca4f9185162e168b10d69156ff" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__mesh__core_1ga844503a456a8061cd80d4b2602833c70" kindref="member">wiced_bt_mesh_core_config_low_power_t</ref></type>
@@ -1040,7 +992,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="233" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="233" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="233" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="233" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1a160c42cabbbdfd3b3927f39d97af6e36" prot="public" static="no" mutable="no">
         <type>wiced_bool_t</type>
@@ -1054,7 +1006,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="234" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="234" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="234" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1ab102a393bd02e7c8c723aca4f3d0bbef" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -1068,7 +1020,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="235" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="235" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="235" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="235" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__cfg_8h_1ab110e39c0888dedc33191c64d04a77b5" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__mesh__core_1ga6ec7eed62f1522e04870d9e0763b758f" kindref="member">wiced_bt_mesh_core_config_element_t</ref> *</type>
@@ -1082,7 +1034,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="236" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="236" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="236" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="236" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__wiced__bt__mesh__core_1ga4489ac3d928367d11895dfc61f6fa039" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref></type>
@@ -1095,7 +1047,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="239" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="239" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1112,7 +1064,7 @@
 <codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_MESH_CFG_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_MESH_CFG_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wiced__bt__mesh__model__defs_8h" kindref="compound">wiced_bt_mesh_model_defs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_mesh_model_defs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -1184,13 +1136,13 @@
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/>fast_cadence_high;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="122"><highlight class="normal">}<sp/><ref refid="structwiced__bt__mesh__sensor__config__cadence__t" kindref="compound">wiced_bt_mesh_sensor_config_cadence_t</ref>;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="128"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a685ae33c442d30cc507fa5415f536e74" kindref="member">company_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a345b5a533872a471f810a988b331f60c" kindref="member">model_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="wiced__bt__mesh__cfg_8h_1a6d6919f886fd062ada5dfefa6a9f03cd" kindref="member">p_message_handler</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="wiced__bt__mesh__cfg_8h_1a7118696ed498d939ab3e78bfcd48575b" kindref="member">p_scene_store_handler</ref>;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="wiced__bt__mesh__cfg_8h_1aaeca0916f4bba49cd77b8d516bfdece0" kindref="member">p_scene_recall_handler</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/>company_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/>model_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*p_message_handler;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*p_scene_store_handler;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*p_scene_recall_handler;<sp/><sp/></highlight></codeline>
 <codeline lineno="134"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__mesh__core_1ga4b1d978949c6c52e12e21409bedb27ba" kindref="member">wiced_bt_mesh_core_config_model_t</ref>;</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
@@ -1199,7 +1151,7 @@
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>property_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prop_value_len;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__mesh__sensor__config__descriptor__t" kindref="compound">wiced_bt_mesh_sensor_config_descriptor_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>descriptor;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="wiced__bt__mesh__app_8h_1aa86e1085c6a16f60258f29c9d5fc2144" kindref="member">data</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__mesh__sensor__config__cadence__t" kindref="compound">wiced_bt_mesh_sensor_config_cadence_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cadence;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_series;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__mesh__sensor__config__column__data__t" kindref="compound">wiced_bt_mesh_sensor_config_column_data_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*series_columns;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1207,9 +1159,9 @@
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__mesh__sensor__config__setting__t" kindref="compound">wiced_bt_mesh_sensor_config_setting_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*settings;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="151"><highlight class="normal">}<sp/><ref refid="structwiced__bt__mesh__core__config__sensor__t" kindref="compound">wiced_bt_mesh_core_config_sensor_t</ref>;</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="157"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/>uint16_t<sp/><sp/>id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="159"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_PROPERTY_ID_READABLE<sp/><sp/><sp/><sp/><sp/><sp/>0x01<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="160"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_PROPERTY_ID_WRITABLE<sp/><sp/><sp/><sp/><sp/><sp/>0x02<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="161"><highlight class="preprocessor"><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/>type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1218,56 +1170,56 @@
 <codeline lineno="164"><highlight class="preprocessor"><sp/><sp/><sp/>uint8_t<sp/><sp/>*value;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="165"><highlight class="preprocessor">}<sp/>wiced_bt_mesh_core_config_property_t;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="166"><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="171"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a39cce0358f4f4988ac97b1e9f078cfc7" kindref="member">location</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a97684803c61fc488c4c3241adb81aef0" kindref="member">default_transition_time</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1ac86843b7a21bf25e410cd048df734105" kindref="member">onpowerup_state</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a9496a26bb12f665ca514f4e482ccf88f" kindref="member">default_level</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1ac735270828ac31865053c36c472cd475" kindref="member">range_min</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1abb9f14526e7640695c42c9d782c00403" kindref="member">range_max</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a4f299c7fa7736eb7e9f2bb28b7c6dccb" kindref="member">move_rollover</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a33bd439954516567235fc257725b42f3" kindref="member">properties_num</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga2e88e2f02ce8e0d431c2f170b35e525c" kindref="member">wiced_bt_mesh_core_config_property_t</ref><sp/>*<ref refid="wiced__bt__mesh__cfg_8h_1a71c41f69912afcb68df0c0d9aa272dc3" kindref="member">properties</ref>;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a75a9bf7d3deaa9eee09ddc5751becc5b" kindref="member">sensors_num</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__mesh__core__config__sensor__t" kindref="compound">wiced_bt_mesh_core_config_sensor_t</ref><sp/><sp/><sp/><sp/>*<ref refid="wiced__bt__mesh__cfg_8h_1ad3e999377a6c3b7f3cdec5e1dbed728b" kindref="member">sensors</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1aa608ab41a91794b71319ac39b463b128" kindref="member">models_num</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga4b1d978949c6c52e12e21409bedb27ba" kindref="member">wiced_bt_mesh_core_config_model_t</ref><sp/><sp/>*<ref refid="wiced__bt__mesh__cfg_8h_1a79e492d9dcd6c28f91a4f0e0a24f5224" kindref="member">models</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/>location;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/>default_transition_time;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>onpowerup_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/>default_level;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/>range_min;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/>range_max;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>move_rollover;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>properties_num;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga2e88e2f02ce8e0d431c2f170b35e525c" kindref="member">wiced_bt_mesh_core_config_property_t</ref><sp/>*properties;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>sensors_num;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__mesh__core__config__sensor__t" kindref="compound">wiced_bt_mesh_core_config_sensor_t</ref><sp/><sp/><sp/><sp/>*sensors;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>models_num;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga4b1d978949c6c52e12e21409bedb27ba" kindref="member">wiced_bt_mesh_core_config_model_t</ref><sp/><sp/>*models;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="185"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__mesh__core_1ga6ec7eed62f1522e04870d9e0763b758f" kindref="member">wiced_bt_mesh_core_config_element_t</ref>;</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
-<codeline lineno="190"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="191"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a2f6964e0e31458b18938e4e6d55e91d8" kindref="member">rssi_factor</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a9f12fec788954144c36a6bd005c2201a" kindref="member">receive_window_factor</ref>;<sp/><sp/></highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1aa6d7de2ccc55b094b0ccb727df33efd6" kindref="member">min_cache_size_log</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a5e4de520f42e76ecd7544716f8c19fc1" kindref="member">receive_delay</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a33e1fb7c2a245d6e65047d9811ab6952" kindref="member">poll_timeout</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a554632d58c57d739b3e73325b35f4237" kindref="member">startup_unprovisioned_adv_to</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>rssi_factor;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>receive_window_factor;<sp/><sp/></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>min_cache_size_log;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>receive_delay;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/>poll_timeout;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>startup_unprovisioned_adv_to;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="198"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__mesh__core_1ga844503a456a8061cd80d4b2602833c70" kindref="member">wiced_bt_mesh_core_config_low_power_t</ref>;</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
-<codeline lineno="203"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="204"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a7961cbc3456e111b97bee1e4cf5c00a3" kindref="member">receive_window</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a56c4298d86ccff40abc4b969d1380bc1" kindref="member">cache_buf_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1ab2551c99791590bbfa8f7a4265eae30a" kindref="member">max_lpn_num</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>receive_window;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/>cache_buf_len;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/>max_lpn_num;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="208"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__mesh__core_1ga862e7bc901be3056058d475b988e9eaa" kindref="member">wiced_bt_mesh_core_config_friend_t</ref>;</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"></highlight></codeline>
-<codeline lineno="224"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="225"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a685ae33c442d30cc507fa5415f536e74" kindref="member">company_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a215e5feaef08c77d8e9f17ab421e8a66" kindref="member">product_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1abd60aba7846c925f784c3e89e2f54e45" kindref="member">vendor_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a05394e2501b222db77c3a39194523065" kindref="member">features</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1ac9cf527e900f59c4194623e6201ab3e4" kindref="member">oob</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="wiced__bt__mesh__cfg_8h_1a69ec24fb2d0a5f5e532deb9adaab81d6" kindref="member">uri</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga862e7bc901be3056058d475b988e9eaa" kindref="member">wiced_bt_mesh_core_config_friend_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1afdedfc25df1eb073867c1e82a3406c27" kindref="member">friend_cfg</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga844503a456a8061cd80d4b2602833c70" kindref="member">wiced_bt_mesh_core_config_low_power_t</ref><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a6efd3bca4f9185162e168b10d69156ff" kindref="member">low_power</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a160c42cabbbdfd3b3927f39d97af6e36" kindref="member">gatt_client_only</ref>;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1ab102a393bd02e7c8c723aca4f3d0bbef" kindref="member">elements_num</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga6ec7eed62f1522e04870d9e0763b758f" kindref="member">wiced_bt_mesh_core_config_element_t</ref><sp/><sp/><sp/><sp/><sp/>*<ref refid="wiced__bt__mesh__cfg_8h_1ab110e39c0888dedc33191c64d04a77b5" kindref="member">elements</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>company_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>product_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vendor_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>features;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oob;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*uri;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga862e7bc901be3056058d475b988e9eaa" kindref="member">wiced_bt_mesh_core_config_friend_t</ref><sp/><sp/><sp/><sp/><sp/><sp/>friend_cfg;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga844503a456a8061cd80d4b2602833c70" kindref="member">wiced_bt_mesh_core_config_low_power_t</ref><sp/><sp/><sp/>low_power;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_client_only;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elements_num;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga6ec7eed62f1522e04870d9e0763b758f" kindref="member">wiced_bt_mesh_core_config_element_t</ref><sp/><sp/><sp/><sp/><sp/>*elements;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="237"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref>;</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"></highlight></codeline>
-<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga4489ac3d928367d11895dfc61f6fa039" kindref="member">mesh_config</ref>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref><sp/><sp/>mesh_config;</highlight></codeline>
 <codeline lineno="240"><highlight class="normal"></highlight></codeline>
 <codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack()</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="242"><highlight class="normal"></highlight></codeline>
@@ -1286,6 +1238,6 @@
 <codeline lineno="255"><highlight class="normal"></highlight></codeline>
 <codeline lineno="256"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__WICED_BT_MESH_CFG_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h"/>
+    <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h"/>
   </compounddef>
 </doxygen>

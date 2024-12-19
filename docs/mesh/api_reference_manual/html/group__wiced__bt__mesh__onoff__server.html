@@ -87,9 +87,9 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__onoff__server.
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh OnOff Server<div class="ingroups"><a class="el" href="group__wiced__bt__mesh.html">LE Mesh</a> &raquo; <a class="el" href="group__wiced__bt__mesh__models.html">Mesh Models Library API</a></div></div>  </div>
 </div><!--header-->
@@ -100,24 +100,6 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__onoff__server.
 <p>To use the OnOff Server, on startup an application or a module that extends the OnOff functionality should call wiced_bt_mesh_model_onoff_server_init function providing the callback that will be executed when an OnOff request is received to turn the device on or off.</p>
 <p>The module which extends OnOff server should call the wiced_bt_mesh_model_onoff_changed function when the OnOff state of the device is changed locally. </p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga43dd054acb66e75d3c82cca92034a6cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga43dd054acb66e75d3c82cca92034a6cf">wiced_bt_mesh_model_onoff_server_init</a> (uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, <a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga2258b6d7a8870b9d5e45cb31aad8ab9b">wiced_bt_mesh_onoff_server_callback_t</a> *p_callback, uint32_t transition_interval, wiced_bool_t is_provisioned)</td></tr>
-<tr class="memdesc:ga43dd054acb66e75d3c82cca92034a6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">On/Off Server Module initialization.  <a href="#ga43dd054acb66e75d3c82cca92034a6cf">More...</a><br /></td></tr>
-<tr class="separator:ga43dd054acb66e75d3c82cca92034a6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8407b3533ba16b322606715ecc95421"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#gae8407b3533ba16b322606715ecc95421">wiced_bt_mesh_model_onoff_server_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
-<tr class="memdesc:gae8407b3533ba16b322606715ecc95421"><td class="mdescLeft">&#160;</td><td class="mdescRight">On/Off Server Message Handler.  <a href="#gae8407b3533ba16b322606715ecc95421">More...</a><br /></td></tr>
-<tr class="separator:gae8407b3533ba16b322606715ecc95421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga183decc30f376b4a051c5a5a1752aa8d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga183decc30f376b4a051c5a5a1752aa8d">wiced_bt_mesh_model_onoff_server_scene_store_handler</a> (uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, uint8_t *p_buffer, uint16_t buffer_len)</td></tr>
-<tr class="memdesc:ga183decc30f376b4a051c5a5a1752aa8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">On/Off Server Scene Store Handler.  <a href="#ga183decc30f376b4a051c5a5a1752aa8d">More...</a><br /></td></tr>
-<tr class="separator:ga183decc30f376b4a051c5a5a1752aa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga695d902ada448311745f293913bdfa2d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga695d902ada448311745f293913bdfa2d">wiced_bt_mesh_model_onoff_server_scene_recall_handler</a> (uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, uint8_t *p_buffer, uint16_t buffer_len, uint32_t transition_time, uint32_t delay)</td></tr>
-<tr class="memdesc:ga695d902ada448311745f293913bdfa2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">On/Off Server Scene Recall Handler.  <a href="#ga695d902ada448311745f293913bdfa2d">More...</a><br /></td></tr>
-<tr class="separator:ga695d902ada448311745f293913bdfa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaac632b3bcb0f941d86d1f4d0b9d92b2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#gaac632b3bcb0f941d86d1f4d0b9d92b2e">wiced_bt_mesh_model_onoff_changed</a> (uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, uint8_t onoff)</td></tr>
-<tr class="memdesc:gaac632b3bcb0f941d86d1f4d0b9d92b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If On/Off state of the device can be changed locally, the application shall call this function to notify OnOff library that the value has been changed.  <a href="#gaac632b3bcb0f941d86d1f4d0b9d92b2e">More...</a><br /></td></tr>
-<tr class="separator:gaac632b3bcb0f941d86d1f4d0b9d92b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga9edfe8c8fd00ec622586f851f1735c18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga9edfe8c8fd00ec622586f851f1735c18">WICED_BT_MESH_MODEL_ONOFF_SERVER</a></td></tr>
@@ -126,9 +108,27 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga2258b6d7a8870b9d5e45cb31aad8ab9b"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga2258b6d7a8870b9d5e45cb31aad8ab9b">wiced_bt_mesh_onoff_server_callback_t</a>(uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, uint16_t event, void *p_data)</td></tr>
+<tr class="memitem:ga2258b6d7a8870b9d5e45cb31aad8ab9b"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga2258b6d7a8870b9d5e45cb31aad8ab9b">wiced_bt_mesh_onoff_server_callback_t</a>(uint8_t element_idx, uint16_t event, void *p_data)</td></tr>
 <tr class="memdesc:ga2258b6d7a8870b9d5e45cb31aad8ab9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic On/Off Server callback.  <a href="#ga2258b6d7a8870b9d5e45cb31aad8ab9b">More...</a><br /></td></tr>
 <tr class="separator:ga2258b6d7a8870b9d5e45cb31aad8ab9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga43dd054acb66e75d3c82cca92034a6cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga43dd054acb66e75d3c82cca92034a6cf">wiced_bt_mesh_model_onoff_server_init</a> (uint8_t element_idx, <a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga2258b6d7a8870b9d5e45cb31aad8ab9b">wiced_bt_mesh_onoff_server_callback_t</a> *p_callback, uint32_t transition_interval, wiced_bool_t is_provisioned)</td></tr>
+<tr class="memdesc:ga43dd054acb66e75d3c82cca92034a6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">On/Off Server Module initialization.  <a href="#ga43dd054acb66e75d3c82cca92034a6cf">More...</a><br /></td></tr>
+<tr class="separator:ga43dd054acb66e75d3c82cca92034a6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8407b3533ba16b322606715ecc95421"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#gae8407b3533ba16b322606715ecc95421">wiced_bt_mesh_model_onoff_server_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
+<tr class="memdesc:gae8407b3533ba16b322606715ecc95421"><td class="mdescLeft">&#160;</td><td class="mdescRight">On/Off Server Message Handler.  <a href="#gae8407b3533ba16b322606715ecc95421">More...</a><br /></td></tr>
+<tr class="separator:gae8407b3533ba16b322606715ecc95421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga183decc30f376b4a051c5a5a1752aa8d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga183decc30f376b4a051c5a5a1752aa8d">wiced_bt_mesh_model_onoff_server_scene_store_handler</a> (uint8_t element_idx, uint8_t *p_buffer, uint16_t buffer_len)</td></tr>
+<tr class="memdesc:ga183decc30f376b4a051c5a5a1752aa8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">On/Off Server Scene Store Handler.  <a href="#ga183decc30f376b4a051c5a5a1752aa8d">More...</a><br /></td></tr>
+<tr class="separator:ga183decc30f376b4a051c5a5a1752aa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga695d902ada448311745f293913bdfa2d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga695d902ada448311745f293913bdfa2d">wiced_bt_mesh_model_onoff_server_scene_recall_handler</a> (uint8_t element_idx, uint8_t *p_buffer, uint16_t buffer_len, uint32_t transition_time, uint32_t delay)</td></tr>
+<tr class="memdesc:ga695d902ada448311745f293913bdfa2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">On/Off Server Scene Recall Handler.  <a href="#ga695d902ada448311745f293913bdfa2d">More...</a><br /></td></tr>
+<tr class="separator:ga695d902ada448311745f293913bdfa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac632b3bcb0f941d86d1f4d0b9d92b2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__onoff__server.html#gaac632b3bcb0f941d86d1f4d0b9d92b2e">wiced_bt_mesh_model_onoff_changed</a> (uint8_t element_idx, uint8_t onoff)</td></tr>
+<tr class="memdesc:gaac632b3bcb0f941d86d1f4d0b9d92b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If On/Off state of the device can be changed locally, the application shall call this function to notify OnOff library that the value has been changed.  <a href="#gaac632b3bcb0f941d86d1f4d0b9d92b2e">More...</a><br /></td></tr>
+<tr class="separator:gaac632b3bcb0f941d86d1f4d0b9d92b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga9edfe8c8fd00ec622586f851f1735c18"></a>
@@ -142,17 +142,12 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ <a class="code" href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a>, <a class="code" href="wiced__bt__mesh__model__defs_8h.html#a519dc44b7e997ea62c5073c38e51fc75">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_DEFTT_SRV</a>, <a class="code" href="group__wiced__bt__mesh__default__transition__time__server.html#gaadbba5b7363b2afda149d73b56d0959d">wiced_bt_mesh_model_default_transition_time_server_message_handler</a>, NULL, NULL }, \</div><div class="line">    { <a class="code" href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a>, <a class="code" href="wiced__bt__mesh__model__defs_8h.html#a229d6988ca848c57462cf17782713608">WICED_BT_MESH_CORE_MODEL_ID_SCENE_SRV</a>, <a class="code" href="group__wiced__bt__mesh__scene__server.html#gad02139dbd5de33dbfa4574f1b7524817">wiced_bt_mesh_model_scene_server_message_handler</a>, NULL, NULL }, \</div><div class="line">    { <a class="code" href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a>, <a class="code" href="wiced__bt__mesh__model__defs_8h.html#ae4a6c91603e3305b08e3357150c04b02">WICED_BT_MESH_CORE_MODEL_ID_SCENE_SETUP_SRV</a>, <a class="code" href="group__wiced__bt__mesh__scene__server.html#ga1e69d93cd77b795bd811c1ae913a39e9">wiced_bt_mesh_model_scene_setup_server_message_handler</a>, NULL, NULL }, \</div><div class="line">    { <a class="code" href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a>, <a class="code" href="wiced__bt__mesh__model__defs_8h.html#a79d24b860f8af7c9cd3f9689c5859c05">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_ONOFF_SRV</a>, <a class="code" href="group__wiced__bt__mesh__onoff__server.html#gae8407b3533ba16b322606715ecc95421">wiced_bt_mesh_model_onoff_server_message_handler</a>, <a class="code" href="group__wiced__bt__mesh__onoff__server.html#ga183decc30f376b4a051c5a5a1752aa8d">wiced_bt_mesh_model_onoff_server_scene_store_handler</a>, <a class="code" href="group__wiced__bt__mesh__onoff__server.html#ga695d902ada448311745f293913bdfa2d">wiced_bt_mesh_model_onoff_server_scene_recall_handler</a> }</div><div class="ttc" id="group__wiced__bt__mesh__onoff__server_html_ga695d902ada448311745f293913bdfa2d"><div class="ttname"><a href="group__wiced__bt__mesh__onoff__server.html#ga695d902ada448311745f293913bdfa2d">wiced_bt_mesh_model_onoff_server_scene_recall_handler</a></div><div class="ttdeci">uint16_t wiced_bt_mesh_model_onoff_server_scene_recall_handler(uint8_t element_idx, uint8_t *p_buffer, uint16_t buffer_len, uint32_t transition_time, uint32_t delay)</div><div class="ttdoc">On/Off Server Scene Recall Handler.</div></div>
-<div class="ttc" id="wiced__bt__mesh__model__defs_8h_html_ae4a6c91603e3305b08e3357150c04b02"><div class="ttname"><a href="wiced__bt__mesh__model__defs_8h.html#ae4a6c91603e3305b08e3357150c04b02">WICED_BT_MESH_CORE_MODEL_ID_SCENE_SETUP_SRV</a></div><div class="ttdeci">#define WICED_BT_MESH_CORE_MODEL_ID_SCENE_SETUP_SRV</div><div class="ttdef"><b>Definition:</b> wiced_bt_mesh_model_defs.h:129</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_DEFTT_SRV, <a class="code" href="group__wiced__bt__mesh__default__transition__time__server.html#gaadbba5b7363b2afda149d73b56d0959d">wiced_bt_mesh_model_default_transition_time_server_message_handler</a>, NULL, NULL }, \</div><div class="line">    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_SCENE_SRV, <a class="code" href="group__wiced__bt__mesh__scene__server.html#gad02139dbd5de33dbfa4574f1b7524817">wiced_bt_mesh_model_scene_server_message_handler</a>, NULL, NULL }, \</div><div class="line">    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_SCENE_SETUP_SRV, <a class="code" href="group__wiced__bt__mesh__scene__server.html#ga1e69d93cd77b795bd811c1ae913a39e9">wiced_bt_mesh_model_scene_setup_server_message_handler</a>, NULL, NULL }, \</div><div class="line">    { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_ONOFF_SRV, <a class="code" href="group__wiced__bt__mesh__onoff__server.html#gae8407b3533ba16b322606715ecc95421">wiced_bt_mesh_model_onoff_server_message_handler</a>, <a class="code" href="group__wiced__bt__mesh__onoff__server.html#ga183decc30f376b4a051c5a5a1752aa8d">wiced_bt_mesh_model_onoff_server_scene_store_handler</a>, <a class="code" href="group__wiced__bt__mesh__onoff__server.html#ga695d902ada448311745f293913bdfa2d">wiced_bt_mesh_model_onoff_server_scene_recall_handler</a> }</div><div class="ttc" id="group__wiced__bt__mesh__onoff__server_html_ga695d902ada448311745f293913bdfa2d"><div class="ttname"><a href="group__wiced__bt__mesh__onoff__server.html#ga695d902ada448311745f293913bdfa2d">wiced_bt_mesh_model_onoff_server_scene_recall_handler</a></div><div class="ttdeci">uint16_t wiced_bt_mesh_model_onoff_server_scene_recall_handler(uint8_t element_idx, uint8_t *p_buffer, uint16_t buffer_len, uint32_t transition_time, uint32_t delay)</div><div class="ttdoc">On/Off Server Scene Recall Handler.</div></div>
 <div class="ttc" id="group__wiced__bt__mesh__default__transition__time__server_html_gaadbba5b7363b2afda149d73b56d0959d"><div class="ttname"><a href="group__wiced__bt__mesh__default__transition__time__server.html#gaadbba5b7363b2afda149d73b56d0959d">wiced_bt_mesh_model_default_transition_time_server_message_handler</a></div><div class="ttdeci">wiced_bool_t wiced_bt_mesh_model_default_transition_time_server_message_handler(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</div><div class="ttdoc">Default Transition Time Server Message Handler.</div></div>
-<div class="ttc" id="wiced__bt__mesh__model__defs_8h_html_a519dc44b7e997ea62c5073c38e51fc75"><div class="ttname"><a href="wiced__bt__mesh__model__defs_8h.html#a519dc44b7e997ea62c5073c38e51fc75">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_DEFTT_SRV</a></div><div class="ttdeci">#define WICED_BT_MESH_CORE_MODEL_ID_GENERIC_DEFTT_SRV</div><div class="ttdef"><b>Definition:</b> wiced_bt_mesh_model_defs.h:97</div></div>
 <div class="ttc" id="group__wiced__bt__mesh__scene__server_html_ga1e69d93cd77b795bd811c1ae913a39e9"><div class="ttname"><a href="group__wiced__bt__mesh__scene__server.html#ga1e69d93cd77b795bd811c1ae913a39e9">wiced_bt_mesh_model_scene_setup_server_message_handler</a></div><div class="ttdeci">wiced_bool_t wiced_bt_mesh_model_scene_setup_server_message_handler(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</div><div class="ttdoc">Scene Setup Server Message Handler.</div></div>
-<div class="ttc" id="wiced__bt__mesh__model__defs_8h_html_a79d24b860f8af7c9cd3f9689c5859c05"><div class="ttname"><a href="wiced__bt__mesh__model__defs_8h.html#a79d24b860f8af7c9cd3f9689c5859c05">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_ONOFF_SRV</a></div><div class="ttdeci">#define WICED_BT_MESH_CORE_MODEL_ID_GENERIC_ONOFF_SRV</div><div class="ttdef"><b>Definition:</b> wiced_bt_mesh_model_defs.h:91</div></div>
 <div class="ttc" id="group__wiced__bt__mesh__onoff__server_html_gae8407b3533ba16b322606715ecc95421"><div class="ttname"><a href="group__wiced__bt__mesh__onoff__server.html#gae8407b3533ba16b322606715ecc95421">wiced_bt_mesh_model_onoff_server_message_handler</a></div><div class="ttdeci">wiced_bool_t wiced_bt_mesh_model_onoff_server_message_handler(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</div><div class="ttdoc">On/Off Server Message Handler.</div></div>
 <div class="ttc" id="group__wiced__bt__mesh__onoff__server_html_ga183decc30f376b4a051c5a5a1752aa8d"><div class="ttname"><a href="group__wiced__bt__mesh__onoff__server.html#ga183decc30f376b4a051c5a5a1752aa8d">wiced_bt_mesh_model_onoff_server_scene_store_handler</a></div><div class="ttdeci">uint16_t wiced_bt_mesh_model_onoff_server_scene_store_handler(uint8_t element_idx, uint8_t *p_buffer, uint16_t buffer_len)</div><div class="ttdoc">On/Off Server Scene Store Handler.</div></div>
 <div class="ttc" id="group__wiced__bt__mesh__scene__server_html_gad02139dbd5de33dbfa4574f1b7524817"><div class="ttname"><a href="group__wiced__bt__mesh__scene__server.html#gad02139dbd5de33dbfa4574f1b7524817">wiced_bt_mesh_model_scene_server_message_handler</a></div><div class="ttdeci">wiced_bool_t wiced_bt_mesh_model_scene_server_message_handler(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</div><div class="ttdoc">Scene Server Message Handler.</div></div>
-<div class="ttc" id="wiced__bt__mesh__model__defs_8h_html_a229d6988ca848c57462cf17782713608"><div class="ttname"><a href="wiced__bt__mesh__model__defs_8h.html#a229d6988ca848c57462cf17782713608">WICED_BT_MESH_CORE_MODEL_ID_SCENE_SRV</a></div><div class="ttdeci">#define WICED_BT_MESH_CORE_MODEL_ID_SCENE_SRV</div><div class="ttdef"><b>Definition:</b> wiced_bt_mesh_model_defs.h:128</div></div>
-<div class="ttc" id="wiced__bt__mesh__model__defs_8h_html_a59a077dee05bafa600f33d9b29fd18c5"><div class="ttname"><a href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a></div><div class="ttdeci">#define MESH_COMPANY_ID_BT_SIG</div><div class="ttdef"><b>Definition:</b> wiced_bt_mesh_model_defs.h:28</div></div>
 </div><!-- fragment -->
 <p>Mesh OnOff Server Device. </p>
 <p>The model is used as a base for multiple other models. This device is typically not used standalone. The closest is Power OnOff Device which adds on power up behavior to the device and then can be used standalone. With the TIME_AND_SCHEDULER_SUPPORT the model TIME_CLNT is needed just to send TIME_GET message. Therefore message_handler is NULL. </p>
@@ -167,7 +162,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void() wiced_bt_mesh_onoff_server_callback_t(uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, uint16_t event, void *p_data)</td>
+          <td class="memname">typedef void() wiced_bt_mesh_onoff_server_callback_t(uint8_t element_idx, uint16_t event, void *p_data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -187,44 +182,6 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaac632b3bcb0f941d86d1f4d0b9d92b2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaac632b3bcb0f941d86d1f4d0b9d92b2e">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_onoff_changed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wiced_bt_mesh_model_onoff_changed </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>element_idx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>onoff</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If On/Off state of the device can be changed locally, the application shall call this function to notify OnOff library that the value has been changed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">element_idx</td><td>Element index for which onoff state has changed </td></tr>
-    <tr><td class="paramname">onoff</td><td>New value of onoff</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
-
-</div>
-</div>
 <a id="ga43dd054acb66e75d3c82cca92034a6cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga43dd054acb66e75d3c82cca92034a6cf">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_onoff_server_init()</h2>
 
@@ -324,6 +281,52 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="ga183decc30f376b4a051c5a5a1752aa8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga183decc30f376b4a051c5a5a1752aa8d">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_onoff_server_scene_store_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t wiced_bt_mesh_model_onoff_server_scene_store_handler </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>element_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>p_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>buffer_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>On/Off Server Scene Store Handler. </p>
+<p>The mesh Scene Server calls this function so that the module can store required data for the scene. The function is implemented in the Mesh Models library and does not need to be replicated by the application. To extend library functionality, the application can replace the function in the <a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga9edfe8c8fd00ec622586f851f1735c18">WICED_BT_MESH_MODEL_ONOFF_SERVER</a>, performs its functionality and then call this function directly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element_idx</td><td>Element index for which scene information is being stored </td></tr>
+    <tr><td class="paramname">p_buffer</td><td>Pointer to a buffer where data should be stored </td></tr>
+    <tr><td class="paramname">buf_size</td><td>Maximum amount of data a model can store</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes the model wrote into the provided buffer </dd></dl>
+
+</div>
+</div>
 <a id="ga695d902ada448311745f293913bdfa2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga695d902ada448311745f293913bdfa2d">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_onoff_server_scene_recall_handler()</h2>
 
@@ -384,14 +387,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga183decc30f376b4a051c5a5a1752aa8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga183decc30f376b4a051c5a5a1752aa8d">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_onoff_server_scene_store_handler()</h2>
+<a id="gaac632b3bcb0f941d86d1f4d0b9d92b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac632b3bcb0f941d86d1f4d0b9d92b2e">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_onoff_changed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t wiced_bt_mesh_model_onoff_server_scene_store_handler </td>
+          <td class="memname">void wiced_bt_mesh_model_onoff_changed </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>element_idx</em>, </td>
@@ -399,14 +402,8 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>buffer_len</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>onoff</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -416,17 +413,15 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>On/Off Server Scene Store Handler. </p>
-<p>The mesh Scene Server calls this function so that the module can store required data for the scene. The function is implemented in the Mesh Models library and does not need to be replicated by the application. To extend library functionality, the application can replace the function in the <a class="el" href="group__wiced__bt__mesh__onoff__server.html#ga9edfe8c8fd00ec622586f851f1735c18">WICED_BT_MESH_MODEL_ONOFF_SERVER</a>, performs its functionality and then call this function directly.</p>
+<p>If On/Off state of the device can be changed locally, the application shall call this function to notify OnOff library that the value has been changed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">element_idx</td><td>Element index for which scene information is being stored </td></tr>
-    <tr><td class="paramname">p_buffer</td><td>Pointer to a buffer where data should be stored </td></tr>
-    <tr><td class="paramname">buf_size</td><td>Maximum amount of data a model can store</td></tr>
+    <tr><td class="paramname">element_idx</td><td>Element index for which onoff state has changed </td></tr>
+    <tr><td class="paramname">onoff</td><td>New value of onoff</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of bytes the model wrote into the provided buffer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
 </div>
 </div>

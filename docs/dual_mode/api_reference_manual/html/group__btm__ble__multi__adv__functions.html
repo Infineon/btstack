@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('group__btm__ble__multi__adv__functions
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">MultiAdv<div class="ingroups"><a class="el" href="group__wicedbt___device_management.html">Device Management</a> &raquo; <a class="el" href="group__btm__ble__api__functions.html">LE (Bluetooth Low Energy)</a></div></div>  </div>
+<div class="title">MultiAdv<div class="ingroups"><a class="el" href="group__wicedbt___legacy.html">LE Legacy Mode Advertising and Scanning</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('group__btm__ble__multi__adv__functions
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gad7c886fa1ae0a32a7a80f42d5de7bac6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__multi__adv__functions.html#gad7c886fa1ae0a32a7a80f42d5de7bac6">wiced_start_multi_advertisements</a> (uint8_t advertising_enable, uint8_t adv_instance)</td></tr>
-<tr class="memdesc:gad7c886fa1ae0a32a7a80f42d5de7bac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or Stop Multi advertisements.  <a href="#gad7c886fa1ae0a32a7a80f42d5de7bac6">More...</a><br /></td></tr>
+<tr class="memdesc:gad7c886fa1ae0a32a7a80f42d5de7bac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start/Stop Mulit advertisements.  <a href="#gad7c886fa1ae0a32a7a80f42d5de7bac6">More...</a><br /></td></tr>
 <tr class="separator:gad7c886fa1ae0a32a7a80f42d5de7bac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d724a63eeff2bb4575e25c6484b1025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__multi__adv__functions.html#ga4d724a63eeff2bb4575e25c6484b1025">wiced_set_multi_advertisement_data</a> (uint8_t *p_data, uint8_t data_len, uint8_t adv_instance)</td></tr>
 <tr class="memdesc:ga4d724a63eeff2bb4575e25c6484b1025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set multi advertisement data for each adv_instance.  <a href="#ga4d724a63eeff2bb4575e25c6484b1025">More...</a><br /></td></tr>
@@ -118,29 +118,23 @@ Functions</h2></td></tr>
 <tr class="separator:ga92b7ecffcb97b452d2ec815b15492235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga92b7ecffcb97b452d2ec815b15492235"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga92b7ecffcb97b452d2ec815b15492235">&#9670;&nbsp;</a></span>wiced_bt_notify_multi_advertisement_packet_transmissions()</h2>
+<a id="gad7c886fa1ae0a32a7a80f42d5de7bac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7c886fa1ae0a32a7a80f42d5de7bac6">&#9670;&nbsp;</a></span>wiced_start_multi_advertisements()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_notify_multi_advertisement_packet_transmissions </td>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_start_multi_advertisements </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>adv_instance</em>, </td>
+          <td class="paramname"><em>advertising_enable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(uint32_t)&#160;</td>
-          <td class="paramname"><em>clientCallback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>advanceNoticeInMicroSeconds</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>adv_instance</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -150,17 +144,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allows the application to register a callback that will be invoked just before an ADV packet is about to be sent out and immediately after. </p>
+<p>Start/Stop Mulit advertisements. </p>
+<p>wiced_start_multi_advertisements gives option to start multiple adverstisment instances Each of the instances can set different <a class="el" href="group__btm__ble__multi__adv__functions.html#gafcf665325c65c9b084e2ab788f8bbea4" title="Set multi advertisement params for each adv_instance.">wiced_set_multi_advertisement_params</a> and <a class="el" href="group__btm__ble__multi__adv__functions.html#ga4d724a63eeff2bb4575e25c6484b1025" title="Set multi advertisement data for each adv_instance.">wiced_set_multi_advertisement_data</a>. Hence this feature allows the device to advertise to multiple Centrals at the same time like a multiple peripheral device, with different advertising data, Random private addresses, tx_power etc.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to <a class="el" href="wiced__bt__ble_8h.html#a0355d755cf2e6360dd47fb5dc3e8515a" title="Maximum number of Instance for Multi Advertisement.">MULTI_ADV_MAX_NUM_INSTANCES</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">clientCallback</td><td>: Pointer to a function that will be invoked in application thread context with WICED_BT_ADV_NOTIFICATION_READY for before ADV and WICED_BT_ADV_NOTIFICATION_DONE after ADV packet is complete. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">advanceNoticeInMicroSeconds</td><td>: Number of microseconds before the ADV the notification is to be sent. Will be rounded down to the nearest 1.25mS. Has to be an even multiple of 625uS.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">advertising_enable</td><td>: MULTI_ADVERT_START - Advertising is enabled MULTI_ADVERT_STOP - Advertising is disabled</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to MULTI_ADV_MAX_NUM_INSTANCES</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>wiced_bool_t <br />
- <b> WICED_TRUE </b> if command succeeded <b> WICED_FALSE </b> Otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>wiced_bt_dev_status_t <pre class="fragment">             TRUE if command succeeded
+</pre> </dd></dl>
 
 </div>
 </div>
@@ -201,16 +195,12 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p_data</td><td>: Advertising Data ( Max length 31 bytess) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>: Advertising Data len ( Max 31 bytes ) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to <a class="el" href="wiced__bt__ble_8h.html#a0355d755cf2e6360dd47fb5dc3e8515a" title="Maximum number of Instance for Multi Advertisement.">MULTI_ADV_MAX_NUM_INSTANCES</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to MULTI_ADV_MAX_NUM_INSTANCES</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__bt__types.html#gaebfc7a7f17241ffdaf1a70efc43ffb57" title="Result/Status.">wiced_bt_dev_status_t</a> <br />
- <b> WICED_BT_ILLEGAL_VALUE </b> : If parameter is invalid <br />
- <b> WICED_BT_NO_RESOURCES </b> : If no memory to issue the command <br />
- <b> WICED_BT_SUCCESS </b> : If command started <br />
- <b> WICED_BT_PENDING </b> : If command queued to send down <br />
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>wiced_bt_dev_status_t <br />
+ WICED_BT_SUCCESS if command succeeded </dd></dl>
 
 </div>
 </div>
@@ -243,17 +233,13 @@ Functions</h2></td></tr>
 <p>Set multi advertisement params for each adv_instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to <a class="el" href="wiced__bt__ble_8h.html#a0355d755cf2e6360dd47fb5dc3e8515a" title="Maximum number of Instance for Multi Advertisement.">MULTI_ADV_MAX_NUM_INSTANCES</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to MULTI_ADV_MAX_NUM_INSTANCES </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>: Advertising params refer <a class="el" href="structwiced__bt__ble__multi__adv__params__t.html" title="LE Multi advertising parameter.">wiced_bt_ble_multi_adv_params_t</a></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__bt__types.html#gaebfc7a7f17241ffdaf1a70efc43ffb57" title="Result/Status.">wiced_bt_dev_status_t</a> <br />
- <b> WICED_BT_ILLEGAL_VALUE </b> : If parameter is invalid <br />
- <b> WICED_BT_NO_RESOURCES </b> : If no memory to issue the command <br />
- <b> WICED_BT_SUCCESS </b> : If command started <br />
- <b> WICED_BT_PENDING </b> : If command queued to send down <br />
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>wiced_bt_dev_status_t <br />
+ WICED_BT_SUCCESS if command succeeded </dd></dl>
 
 </div>
 </div>
@@ -293,17 +279,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p_data</td><td>: Advertising Data ( Max length 31 bytess) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>: Advertising Data Len ( Max 31 bytes ) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to <a class="el" href="wiced__bt__ble_8h.html#a0355d755cf2e6360dd47fb5dc3e8515a" title="Maximum number of Instance for Multi Advertisement.">MULTI_ADV_MAX_NUM_INSTANCES</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>: Advertising Data len ( Max 31 bytes ) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to MULTI_ADV_MAX_NUM_INSTANCES</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__bt__types.html#gaebfc7a7f17241ffdaf1a70efc43ffb57" title="Result/Status.">wiced_bt_dev_status_t</a> <br />
- <b> WICED_BT_ILLEGAL_VALUE </b> : If parameter is invalid <br />
- <b> WICED_BT_NO_RESOURCES </b> : If no memory to issue the command <br />
- <b> WICED_BT_SUCCESS </b> : If command started <br />
- <b> WICED_BT_PENDING </b> : If command queued to send down <br />
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>wiced_bt_dev_status_t <br />
+ WICED_BT_SUCCESS if command succeeded </dd></dl>
 
 </div>
 </div>
@@ -337,36 +319,38 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">randomAddr</td><td>: own random address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to <a class="el" href="wiced__bt__ble_8h.html#a0355d755cf2e6360dd47fb5dc3e8515a" title="Maximum number of Instance for Multi Advertisement.">MULTI_ADV_MAX_NUM_INSTANCES</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to MULTI_ADV_MAX_NUM_INSTANCES</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>wiced_bt_dev_status_t <br />
- <b> WICED_BT_ILLEGAL_VALUE </b> : If parameter is invalid <br />
- <b> WICED_BT_NO_RESOURCES </b> : If no memory to issue the command <br />
- <b> WICED_BT_SUCCESS </b> : If command started <br />
- <b> WICED_BT_PENDING </b> : If command queued to send down <br />
-</dd></dl>
+ WICED_BT_SUCCESS if command succeeded </dd></dl>
 
 </div>
 </div>
-<a id="gad7c886fa1ae0a32a7a80f42d5de7bac6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad7c886fa1ae0a32a7a80f42d5de7bac6">&#9670;&nbsp;</a></span>wiced_start_multi_advertisements()</h2>
+<a id="ga92b7ecffcb97b452d2ec815b15492235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92b7ecffcb97b452d2ec815b15492235">&#9670;&nbsp;</a></span>wiced_bt_notify_multi_advertisement_packet_transmissions()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_start_multi_advertisements </td>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_notify_multi_advertisement_packet_transmissions </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>advertising_enable</em>, </td>
+          <td class="paramname"><em>adv_instance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>adv_instance</em>&#160;</td>
+          <td class="paramtype">void(*)(uint32_t)&#160;</td>
+          <td class="paramname"><em>clientCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>advanceNoticeInMicroSeconds</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -376,21 +360,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Start or Stop Multi advertisements. </p>
-<p>wiced_start_multi_advertisements gives option to start multiple adverstisment instances Each of the instances can set different <a class="el" href="group__btm__ble__multi__adv__functions.html#gafcf665325c65c9b084e2ab788f8bbea4" title="Set multi advertisement params for each adv_instance.">wiced_set_multi_advertisement_params</a> and <a class="el" href="group__btm__ble__multi__adv__functions.html#ga4d724a63eeff2bb4575e25c6484b1025" title="Set multi advertisement data for each adv_instance.">wiced_set_multi_advertisement_data</a>. Hence this feature allows the device to advertise to multiple Centrals at the same time like a multiple peripheral device, with different advertising data, Random private addresses, tx_power etc.</p>
+<p>Allows the application to register a callback that will be invoked just before an ADV packet is about to be sent out and immediately after. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">advertising_enable</td><td>: <pre><a class="el" href="wiced__bt__ble_8h.html#a34b1a331548bbc1c737be17e96c862a6ada6f4be134bfa59b25807b2374108378" title="Start Multi-adverstisment.">MULTI_ADVERT_START</a>  - Advertising is enabled
-<a class="el" href="wiced__bt__ble_8h.html#a34b1a331548bbc1c737be17e96c862a6aa628e6c0561dc9d890f0570047dcb64c" title="Stop Multi-adverstisment.">MULTI_ADVERT_STOP</a>   - Advertising is disabled </pre></td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to <a class="el" href="wiced__bt__ble_8h.html#a0355d755cf2e6360dd47fb5dc3e8515a" title="Maximum number of Instance for Multi Advertisement.">MULTI_ADV_MAX_NUM_INSTANCES</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adv_instance</td><td>: 1 to MULTI_ADV_MAX_NUM_INSTANCES </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clientCallback</td><td>: Pointer to a function that will be invoked in application thread context with WICED_BT_ADV_NOTIFICATION_READY for before ADV and WICED_BT_ADV_NOTIFICATION_DONE after ADV packet is complete. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">advanceNoticeInMicroSeconds</td><td>: Number of microseconds before the ADV the notification is to be sent. Will be rounded down to the nearest 1.25mS. Has to be an even multiple of 625uS.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__bt__types.html#gaebfc7a7f17241ffdaf1a70efc43ffb57" title="Result/Status.">wiced_bt_dev_status_t</a> <br />
- <b> WICED_BT_SUCCESS </b> : If command succeeded <br />
- <b> WICED_BT_PENDING </b> : If command queued to send down <br />
- <b> WICED_BT_NO_RESOURCES </b> : If no memory to issue the command <br />
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>wiced_bool_t <br />
+ WICED_TRUE if command succeeded </dd></dl>
 
 </div>
 </div>

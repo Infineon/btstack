@@ -1,11 +1,11 @@
 var group__rfcomm__api__functions =
 [
     [ "PORT_MASK_ALL", "group__rfcomm__api__functions.html#ga802c52c03865b1cb09af25e41363275d", null ],
-    [ "wiced_bt_port_event_cback_t", "group__rfcomm__api__functions.html#gaca604941c538633cc92ad5a5361dab96", null ],
-    [ "wiced_bt_port_mgmt_cback_t", "group__rfcomm__api__functions.html#ga29e5339346921b8f38a528ff118498d0", null ],
-    [ "wiced_bt_port_tx_cback_t", "group__rfcomm__api__functions.html#gad9593eadcb99b8ff4f6b7e7f8a5825f8", null ],
     [ "wiced_bt_rfcomm_result_t", "group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d", null ],
     [ "wiced_bt_rfcomm_signal_t", "group__rfcomm__api__functions.html#ga33ea46c5bfe359825b3973b9ed7bdb01", null ],
+    [ "wiced_bt_port_mgmt_cback_t", "group__rfcomm__api__functions.html#ga29e5339346921b8f38a528ff118498d0", null ],
+    [ "wiced_bt_port_event_cback_t", "group__rfcomm__api__functions.html#gaca604941c538633cc92ad5a5361dab96", null ],
+    [ "wiced_bt_port_tx_cback_t", "group__rfcomm__api__functions.html#gad9593eadcb99b8ff4f6b7e7f8a5825f8", null ],
     [ "wiced_bt_rfcomm_port_event_t", "group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6", [
       [ "PORT_EV_NONE", "group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a147ef28430c932743dabdf452f371555", null ],
       [ "PORT_EV_RXCHAR", "group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a2291aef2e65a037a6180894a022ccf51", null ],
@@ -54,7 +54,6 @@ var group__rfcomm__api__functions =
       [ "WICED_BT_RFCOMM_INVALID_SCN", "group__rfcomm__api__functions.html#gga919c228fbe128a196f66f0569ff3c1eea37cc294f3813990ea2093096fc1dfc52", null ]
     ] ],
     [ "wiced_bt_rfcomm_signal_e", "group__rfcomm__api__functions.html#gadc2b731e552fdb229490b5640e29714d", [
-      [ "PORT_SET_DTRDSR", "group__rfcomm__api__functions.html#ggadc2b731e552fdb229490b5640e29714daf5cba0e56de841cf9039be1981ba5767", null ],
       [ "PORT_CLR_DTRDSR", "group__rfcomm__api__functions.html#ggadc2b731e552fdb229490b5640e29714da9f0240aa0eaf47ffc2466ed72fe61ef6", null ],
       [ "PORT_SET_CTSRTS", "group__rfcomm__api__functions.html#ggadc2b731e552fdb229490b5640e29714dac3d657875811506d148b0c0eeb640b45", null ],
       [ "PORT_CLR_CTSRTS", "group__rfcomm__api__functions.html#ggadc2b731e552fdb229490b5640e29714dac4f76fe5d805578ce4a18d818b53a73a", null ],
@@ -64,14 +63,14 @@ var group__rfcomm__api__functions =
       [ "PORT_CLR_DCD", "group__rfcomm__api__functions.html#ggadc2b731e552fdb229490b5640e29714da30da2261c07bb597366c2924991cefb5", null ],
       [ "PORT_BREAK", "group__rfcomm__api__functions.html#ggadc2b731e552fdb229490b5640e29714da0708ac7af96c16d40ff1976d1cb29239", null ]
     ] ],
-    [ "wiced_bt_rfcomm_check_connection", "group__rfcomm__api__functions.html#ga5530e81b324a02f9a43947db3236a93c", null ],
-    [ "wiced_bt_rfcomm_control", "group__rfcomm__api__functions.html#ga417a74cdea9648969a1d28cb403cf0d3", null ],
     [ "wiced_bt_rfcomm_create_connection", "group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15", null ],
-    [ "wiced_bt_rfcomm_flow_control", "group__rfcomm__api__functions.html#ga87bbfb9c882d8080fef5f63e2ad256c0", null ],
-    [ "wiced_bt_rfcomm_read_data", "group__rfcomm__api__functions.html#ga2f25652d11064bf6879355e18dc03188", null ],
     [ "wiced_bt_rfcomm_remove_connection", "group__rfcomm__api__functions.html#gae609bc27a6207cea08e5017ffb2940b5", null ],
     [ "wiced_bt_rfcomm_set_event_callback", "group__rfcomm__api__functions.html#gabbe544a7a6843471ef384c6dafc976aa", null ],
     [ "wiced_bt_rfcomm_set_event_mask", "group__rfcomm__api__functions.html#gad4241f1a332dbd4d03bbc8ce75cfa839", null ],
+    [ "wiced_bt_rfcomm_control", "group__rfcomm__api__functions.html#ga417a74cdea9648969a1d28cb403cf0d3", null ],
+    [ "wiced_bt_rfcomm_flow_control", "group__rfcomm__api__functions.html#ga87bbfb9c882d8080fef5f63e2ad256c0", null ],
     [ "wiced_bt_rfcomm_set_rx_fifo", "group__rfcomm__api__functions.html#ga354972749236c7b8bac2ee78743a5f95", null ],
-    [ "wiced_bt_rfcomm_write_data", "group__rfcomm__api__functions.html#gadda009a09d195e0d9ac42ea0980d1694", null ]
+    [ "wiced_bt_rfcomm_read_data", "group__rfcomm__api__functions.html#ga2f25652d11064bf6879355e18dc03188", null ],
+    [ "wiced_bt_rfcomm_write_data", "group__rfcomm__api__functions.html#gadda009a09d195e0d9ac42ea0980d1694", null ],
+    [ "wiced_bt_rfcomm_check_connection", "group__rfcomm__api__functions.html#ga5530e81b324a02f9a43947db3236a93c", null ]
 ];

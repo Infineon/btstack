@@ -87,9 +87,9 @@ $(document).ready(function(){initNavTree('group__wicedbt__a2dp__mpeg__1__2.html'
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">MPEG-1,2 Support<div class="ingroups"><a class="el" href="group__wicedbt__av__a2d__helper.html">Helper Functions</a></div></div>  </div>
 </div><!--header-->
@@ -97,15 +97,6 @@ $(document).ready(function(){initNavTree('group__wicedbt__a2dp__mpeg__1__2.html'
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
 <p>This section describes A2DP MPEG-1,2 Audio codec API. </p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gaf06d7fa0bf9303bcaedfb2ca0647eb64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__av__a2d__helper.html#ga6a78ee8aece921283d90e5a721436925">wiced_bt_a2d_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaf06d7fa0bf9303bcaedfb2ca0647eb64">wiced_bt_a2d_bld_m12info</a> (uint8_t media_type, <a class="el" href="structwiced__bt__a2d__m12__cie__t.html">wiced_bt_a2d_m12_cie_t</a> *p_ie, uint8_t *p_result)</td></tr>
-<tr class="memdesc:gaf06d7fa0bf9303bcaedfb2ca0647eb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by an application to build the MPEG-1, 2 Audio Media Codec Capabilities byte sequence beginning from the LOSC octet.  <a href="#gaf06d7fa0bf9303bcaedfb2ca0647eb64">More...</a><br /></td></tr>
-<tr class="separator:gaf06d7fa0bf9303bcaedfb2ca0647eb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ec65c0c1d390a419c96fa3b937797db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__av__a2d__helper.html#ga6a78ee8aece921283d90e5a721436925">wiced_bt_a2d_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga7ec65c0c1d390a419c96fa3b937797db">wiced_bt_a2d_pars_m12info</a> (<a class="el" href="structwiced__bt__a2d__m12__cie__t.html">wiced_bt_a2d_m12_cie_t</a> *p_ie, uint8_t *p_info, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> for_caps)</td></tr>
-<tr class="memdesc:ga7ec65c0c1d390a419c96fa3b937797db"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by an application to parse the MPEG-1, 2 Audio Media Codec Capabilities byte sequence beginning from the LOSC octet.  <a href="#ga7ec65c0c1d390a419c96fa3b937797db">More...</a><br /></td></tr>
-<tr class="separator:ga7ec65c0c1d390a419c96fa3b937797db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__a2d__m12__cie__t.html">wiced_bt_a2d_m12_cie_t</a></td></tr>
@@ -117,17 +108,21 @@ Macros</h2></td></tr>
 <tr class="memitem:gaf2eb79f617514437d250edfeb9fa3bfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaf2eb79f617514437d250edfeb9fa3bfc">A2D_M12_MPL_HDR_LEN</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memdesc:gaf2eb79f617514437d250edfeb9fa3bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">the length of the MPEG_1, 2 Audio Media Payload header.  <a href="#gaf2eb79f617514437d250edfeb9fa3bfc">More...</a><br /></td></tr>
 <tr class="separator:gaf2eb79f617514437d250edfeb9fa3bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac5d0a705f73d658af33de9b0bb40bebf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gac5d0a705f73d658af33de9b0bb40bebf">A2D_M12_INFO_LEN</a>&#160;&#160;&#160;6</td></tr>
-<tr class="memdesc:gac5d0a705f73d658af33de9b0bb40bebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">the LOSC of MPEG_1, 2 Audio media codec capabilitiy  <a href="#gac5d0a705f73d658af33de9b0bb40bebf">More...</a><br /></td></tr>
+<tr class="memitem:gac5d0a705f73d658af33de9b0bb40bebf"><td class="memItemLeft" align="right" valign="top"><a id="gac5d0a705f73d658af33de9b0bb40bebf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gac5d0a705f73d658af33de9b0bb40bebf">A2D_M12_INFO_LEN</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:gac5d0a705f73d658af33de9b0bb40bebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">the LOSC of MPEG_1, 2 Audio media codec capabilitiy <br /></td></tr>
 <tr class="separator:gac5d0a705f73d658af33de9b0bb40bebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga439970b3c8e8f7f2bff17db9d75b3cb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga439970b3c8e8f7f2bff17db9d75b3cb2">A2D_M12_IE_CRC_MSK</a>&#160;&#160;&#160;0x10</td></tr>
-<tr class="memdesc:ga439970b3c8e8f7f2bff17db9d75b3cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">b4: CRC  <a href="#ga439970b3c8e8f7f2bff17db9d75b3cb2">More...</a><br /></td></tr>
+<tr class="memitem:ga439970b3c8e8f7f2bff17db9d75b3cb2"><td class="memItemLeft" align="right" valign="top"><a id="ga439970b3c8e8f7f2bff17db9d75b3cb2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga439970b3c8e8f7f2bff17db9d75b3cb2">A2D_M12_IE_CRC_MSK</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="memdesc:ga439970b3c8e8f7f2bff17db9d75b3cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">b4: CRC <br /></td></tr>
 <tr class="separator:ga439970b3c8e8f7f2bff17db9d75b3cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaf41a108bc7848d7fb5c9f6bf432f8fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaaf41a108bc7848d7fb5c9f6bf432f8fe">A2D_M12_IE_MPF_MSK</a>&#160;&#160;&#160;0x40</td></tr>
-<tr class="memdesc:gaaf41a108bc7848d7fb5c9f6bf432f8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">b6: MPF  <a href="#gaaf41a108bc7848d7fb5c9f6bf432f8fe">More...</a><br /></td></tr>
+<tr class="memitem:gaaf41a108bc7848d7fb5c9f6bf432f8fe"><td class="memItemLeft" align="right" valign="top"><a id="gaaf41a108bc7848d7fb5c9f6bf432f8fe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaaf41a108bc7848d7fb5c9f6bf432f8fe">A2D_M12_IE_MPF_MSK</a>&#160;&#160;&#160;0x40</td></tr>
+<tr class="memdesc:gaaf41a108bc7848d7fb5c9f6bf432f8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">b6: MPF <br /></td></tr>
 <tr class="separator:gaaf41a108bc7848d7fb5c9f6bf432f8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd01c0d472a02d5b30350016c0445494"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gabd01c0d472a02d5b30350016c0445494">A2D_M12_IE_VBR_MSK</a>&#160;&#160;&#160;0x80</td></tr>
-<tr class="memdesc:gabd01c0d472a02d5b30350016c0445494"><td class="mdescLeft">&#160;</td><td class="mdescRight">b7: VBR  <a href="#gabd01c0d472a02d5b30350016c0445494">More...</a><br /></td></tr>
+<tr class="memitem:gabd01c0d472a02d5b30350016c0445494"><td class="memItemLeft" align="right" valign="top"><a id="gabd01c0d472a02d5b30350016c0445494"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gabd01c0d472a02d5b30350016c0445494">A2D_M12_IE_VBR_MSK</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="memdesc:gabd01c0d472a02d5b30350016c0445494"><td class="mdescLeft">&#160;</td><td class="mdescRight">b7: VBR <br /></td></tr>
 <tr class="separator:gabd01c0d472a02d5b30350016c0445494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacef301927c6112b13b6092ed96924351"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gacef301927c6112b13b6092ed96924351">A2D_BLD_M12_PML_HDR</a>(p_dst,  frag_offset)</td></tr>
 <tr class="memdesc:gacef301927c6112b13b6092ed96924351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build MPEG-1,2 Header.  <a href="#gacef301927c6112b13b6092ed96924351">More...</a><br /></td></tr>
@@ -136,124 +131,181 @@ Macros</h2></td></tr>
 <tr class="memdesc:gade8cab0a6990c8c4cbec70f32cd13443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse MPEG-1,2 Header.  <a href="#gade8cab0a6990c8c4cbec70f32cd13443">More...</a><br /></td></tr>
 <tr class="separator:gade8cab0a6990c8c4cbec70f32cd13443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gaf06d7fa0bf9303bcaedfb2ca0647eb64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__av__a2d__helper.html#ga6a78ee8aece921283d90e5a721436925">wiced_bt_a2d_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaf06d7fa0bf9303bcaedfb2ca0647eb64">wiced_bt_a2d_bld_m12info</a> (uint8_t media_type, <a class="el" href="structwiced__bt__a2d__m12__cie__t.html">wiced_bt_a2d_m12_cie_t</a> *p_ie, uint8_t *p_result)</td></tr>
+<tr class="memdesc:gaf06d7fa0bf9303bcaedfb2ca0647eb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by an application to build the MPEG-1, 2 Audio Media Codec Capabilities byte sequence beginning from the LOSC octet.  <a href="#gaf06d7fa0bf9303bcaedfb2ca0647eb64">More...</a><br /></td></tr>
+<tr class="separator:gaf06d7fa0bf9303bcaedfb2ca0647eb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ec65c0c1d390a419c96fa3b937797db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__av__a2d__helper.html#ga6a78ee8aece921283d90e5a721436925">wiced_bt_a2d_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga7ec65c0c1d390a419c96fa3b937797db">wiced_bt_a2d_pars_m12info</a> (<a class="el" href="structwiced__bt__a2d__m12__cie__t.html">wiced_bt_a2d_m12_cie_t</a> *p_ie, uint8_t *p_info, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> for_caps)</td></tr>
+<tr class="memdesc:ga7ec65c0c1d390a419c96fa3b937797db"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by an application to parse the MPEG-1, 2 Audio Media Codec Capabilities byte sequence beginning from the LOSC octet.  <a href="#ga7ec65c0c1d390a419c96fa3b937797db">More...</a><br /></td></tr>
+<tr class="separator:ga7ec65c0c1d390a419c96fa3b937797db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 MPEG-1,2 Layer</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp7c1db4137062c56cd8559110b193c4b2"></a>for Codec Specific Information Element</p>
 <p><a class="anchor" id="A2D_M12_LAYER"></a></p>
 </td></tr>
-<tr class="memitem:ga34575dd585fde70f534cba73cf9ffa10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga34575dd585fde70f534cba73cf9ffa10">A2D_M12_IE_LAYER_MSK</a>&#160;&#160;&#160;0xE0</td></tr>
-<tr class="memdesc:ga34575dd585fde70f534cba73cf9ffa10"><td class="mdescLeft">&#160;</td><td class="mdescRight">b7-b5 layer  <a href="#ga34575dd585fde70f534cba73cf9ffa10">More...</a><br /></td></tr>
+<tr class="memitem:ga34575dd585fde70f534cba73cf9ffa10"><td class="memItemLeft" align="right" valign="top"><a id="ga34575dd585fde70f534cba73cf9ffa10"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga34575dd585fde70f534cba73cf9ffa10">A2D_M12_IE_LAYER_MSK</a>&#160;&#160;&#160;0xE0</td></tr>
+<tr class="memdesc:ga34575dd585fde70f534cba73cf9ffa10"><td class="mdescLeft">&#160;</td><td class="mdescRight">b7-b5 layer <br /></td></tr>
 <tr class="separator:ga34575dd585fde70f534cba73cf9ffa10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77924b0d3be0cf3b14e5bf408397ea55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga77924b0d3be0cf3b14e5bf408397ea55">A2D_M12_IE_LAYER1</a>&#160;&#160;&#160;0x80</td></tr>
-<tr class="memdesc:ga77924b0d3be0cf3b14e5bf408397ea55"><td class="mdescLeft">&#160;</td><td class="mdescRight">b7: layer1 (mp1)  <a href="#ga77924b0d3be0cf3b14e5bf408397ea55">More...</a><br /></td></tr>
+<tr class="memitem:ga77924b0d3be0cf3b14e5bf408397ea55"><td class="memItemLeft" align="right" valign="top"><a id="ga77924b0d3be0cf3b14e5bf408397ea55"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga77924b0d3be0cf3b14e5bf408397ea55">A2D_M12_IE_LAYER1</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="memdesc:ga77924b0d3be0cf3b14e5bf408397ea55"><td class="mdescLeft">&#160;</td><td class="mdescRight">b7: layer1 (mp1) <br /></td></tr>
 <tr class="separator:ga77924b0d3be0cf3b14e5bf408397ea55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22499853855ec6323e571412f9539a9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga22499853855ec6323e571412f9539a9c">A2D_M12_IE_LAYER2</a>&#160;&#160;&#160;0x40</td></tr>
-<tr class="memdesc:ga22499853855ec6323e571412f9539a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">b6: layer2 (mp2)  <a href="#ga22499853855ec6323e571412f9539a9c">More...</a><br /></td></tr>
+<tr class="memitem:ga22499853855ec6323e571412f9539a9c"><td class="memItemLeft" align="right" valign="top"><a id="ga22499853855ec6323e571412f9539a9c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga22499853855ec6323e571412f9539a9c">A2D_M12_IE_LAYER2</a>&#160;&#160;&#160;0x40</td></tr>
+<tr class="memdesc:ga22499853855ec6323e571412f9539a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">b6: layer2 (mp2) <br /></td></tr>
 <tr class="separator:ga22499853855ec6323e571412f9539a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ad40a9b97083dc5e2b667ddbd5cb2fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga5ad40a9b97083dc5e2b667ddbd5cb2fd">A2D_M12_IE_LAYER3</a>&#160;&#160;&#160;0x20</td></tr>
-<tr class="memdesc:ga5ad40a9b97083dc5e2b667ddbd5cb2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">b5: layer3 (mp3)  <a href="#ga5ad40a9b97083dc5e2b667ddbd5cb2fd">More...</a><br /></td></tr>
+<tr class="memitem:ga5ad40a9b97083dc5e2b667ddbd5cb2fd"><td class="memItemLeft" align="right" valign="top"><a id="ga5ad40a9b97083dc5e2b667ddbd5cb2fd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga5ad40a9b97083dc5e2b667ddbd5cb2fd">A2D_M12_IE_LAYER3</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="memdesc:ga5ad40a9b97083dc5e2b667ddbd5cb2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">b5: layer3 (mp3) <br /></td></tr>
 <tr class="separator:ga5ad40a9b97083dc5e2b667ddbd5cb2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 MPEG-1,2 Channel Mode</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp6bb45ef67232625905c06243e6b75b80"></a><a class="anchor" id="A2D_M12_CH_MD"></a></p>
 </td></tr>
-<tr class="memitem:gae0b96a481a35329cffa30ef7c3641331"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gae0b96a481a35329cffa30ef7c3641331">A2D_M12_IE_CH_MD_MSK</a>&#160;&#160;&#160;0x0F</td></tr>
-<tr class="memdesc:gae0b96a481a35329cffa30ef7c3641331"><td class="mdescLeft">&#160;</td><td class="mdescRight">b3-b0 channel mode  <a href="#gae0b96a481a35329cffa30ef7c3641331">More...</a><br /></td></tr>
+<tr class="memitem:gae0b96a481a35329cffa30ef7c3641331"><td class="memItemLeft" align="right" valign="top"><a id="gae0b96a481a35329cffa30ef7c3641331"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gae0b96a481a35329cffa30ef7c3641331">A2D_M12_IE_CH_MD_MSK</a>&#160;&#160;&#160;0x0F</td></tr>
+<tr class="memdesc:gae0b96a481a35329cffa30ef7c3641331"><td class="mdescLeft">&#160;</td><td class="mdescRight">b3-b0 channel mode <br /></td></tr>
 <tr class="separator:gae0b96a481a35329cffa30ef7c3641331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7c9787e009af294edd2e643429a738a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga7c9787e009af294edd2e643429a738a4">A2D_M12_IE_CH_MD_MONO</a>&#160;&#160;&#160;0x08</td></tr>
-<tr class="memdesc:ga7c9787e009af294edd2e643429a738a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">b3: mono  <a href="#ga7c9787e009af294edd2e643429a738a4">More...</a><br /></td></tr>
+<tr class="memitem:ga7c9787e009af294edd2e643429a738a4"><td class="memItemLeft" align="right" valign="top"><a id="ga7c9787e009af294edd2e643429a738a4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga7c9787e009af294edd2e643429a738a4">A2D_M12_IE_CH_MD_MONO</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="memdesc:ga7c9787e009af294edd2e643429a738a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">b3: mono <br /></td></tr>
 <tr class="separator:ga7c9787e009af294edd2e643429a738a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga20b70ef06ef063127b0ecb931248caa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga20b70ef06ef063127b0ecb931248caa5">A2D_M12_IE_CH_MD_DUAL</a>&#160;&#160;&#160;0x04</td></tr>
-<tr class="memdesc:ga20b70ef06ef063127b0ecb931248caa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">b2: dual  <a href="#ga20b70ef06ef063127b0ecb931248caa5">More...</a><br /></td></tr>
+<tr class="memitem:ga20b70ef06ef063127b0ecb931248caa5"><td class="memItemLeft" align="right" valign="top"><a id="ga20b70ef06ef063127b0ecb931248caa5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga20b70ef06ef063127b0ecb931248caa5">A2D_M12_IE_CH_MD_DUAL</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memdesc:ga20b70ef06ef063127b0ecb931248caa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">b2: dual <br /></td></tr>
 <tr class="separator:ga20b70ef06ef063127b0ecb931248caa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a0d498e24f84e4b062c5d54bf5da00c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga8a0d498e24f84e4b062c5d54bf5da00c">A2D_M12_IE_CH_MD_STEREO</a>&#160;&#160;&#160;0x02</td></tr>
-<tr class="memdesc:ga8a0d498e24f84e4b062c5d54bf5da00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">b1: stereo  <a href="#ga8a0d498e24f84e4b062c5d54bf5da00c">More...</a><br /></td></tr>
+<tr class="memitem:ga8a0d498e24f84e4b062c5d54bf5da00c"><td class="memItemLeft" align="right" valign="top"><a id="ga8a0d498e24f84e4b062c5d54bf5da00c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga8a0d498e24f84e4b062c5d54bf5da00c">A2D_M12_IE_CH_MD_STEREO</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memdesc:ga8a0d498e24f84e4b062c5d54bf5da00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">b1: stereo <br /></td></tr>
 <tr class="separator:ga8a0d498e24f84e4b062c5d54bf5da00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04dbfc5b06036d163c582a695453cc8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga04dbfc5b06036d163c582a695453cc8b">A2D_M12_IE_CH_MD_JOINT</a>&#160;&#160;&#160;0x01</td></tr>
-<tr class="memdesc:ga04dbfc5b06036d163c582a695453cc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">b0: joint stereo  <a href="#ga04dbfc5b06036d163c582a695453cc8b">More...</a><br /></td></tr>
+<tr class="memitem:ga04dbfc5b06036d163c582a695453cc8b"><td class="memItemLeft" align="right" valign="top"><a id="ga04dbfc5b06036d163c582a695453cc8b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga04dbfc5b06036d163c582a695453cc8b">A2D_M12_IE_CH_MD_JOINT</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memdesc:ga04dbfc5b06036d163c582a695453cc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">b0: joint stereo <br /></td></tr>
 <tr class="separator:ga04dbfc5b06036d163c582a695453cc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 MPEG-1,2 Sampling Frequency</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp7d5cc18ffc879d4d85c17ff55cb5525d"></a><a class="anchor" id="A2D_M12_SF"></a></p>
 </td></tr>
-<tr class="memitem:ga9b65e64bf3bac4520aca89eaf677e1c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga9b65e64bf3bac4520aca89eaf677e1c1">A2D_M12_IE_SAMP_FREQ_MSK</a>&#160;&#160;&#160;0x3F</td></tr>
-<tr class="memdesc:ga9b65e64bf3bac4520aca89eaf677e1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">b5-b0 sampling frequency  <a href="#ga9b65e64bf3bac4520aca89eaf677e1c1">More...</a><br /></td></tr>
+<tr class="memitem:ga9b65e64bf3bac4520aca89eaf677e1c1"><td class="memItemLeft" align="right" valign="top"><a id="ga9b65e64bf3bac4520aca89eaf677e1c1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga9b65e64bf3bac4520aca89eaf677e1c1">A2D_M12_IE_SAMP_FREQ_MSK</a>&#160;&#160;&#160;0x3F</td></tr>
+<tr class="memdesc:ga9b65e64bf3bac4520aca89eaf677e1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">b5-b0 sampling frequency <br /></td></tr>
 <tr class="separator:ga9b65e64bf3bac4520aca89eaf677e1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga43614726297938716fb8c08817667b95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga43614726297938716fb8c08817667b95">A2D_M12_IE_SAMP_FREQ_16</a>&#160;&#160;&#160;0x20</td></tr>
-<tr class="memdesc:ga43614726297938716fb8c08817667b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">b5:16 kHz  <a href="#ga43614726297938716fb8c08817667b95">More...</a><br /></td></tr>
+<tr class="memitem:ga43614726297938716fb8c08817667b95"><td class="memItemLeft" align="right" valign="top"><a id="ga43614726297938716fb8c08817667b95"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga43614726297938716fb8c08817667b95">A2D_M12_IE_SAMP_FREQ_16</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="memdesc:ga43614726297938716fb8c08817667b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">b5:16 kHz <br /></td></tr>
 <tr class="separator:ga43614726297938716fb8c08817667b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaef8b454c6db7cb8b193e16604e0cf45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaaef8b454c6db7cb8b193e16604e0cf45">A2D_M12_IE_SAMP_FREQ_22</a>&#160;&#160;&#160;0x10</td></tr>
-<tr class="memdesc:gaaef8b454c6db7cb8b193e16604e0cf45"><td class="mdescLeft">&#160;</td><td class="mdescRight">b4:22.05kHz  <a href="#gaaef8b454c6db7cb8b193e16604e0cf45">More...</a><br /></td></tr>
+<tr class="memitem:gaaef8b454c6db7cb8b193e16604e0cf45"><td class="memItemLeft" align="right" valign="top"><a id="gaaef8b454c6db7cb8b193e16604e0cf45"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaaef8b454c6db7cb8b193e16604e0cf45">A2D_M12_IE_SAMP_FREQ_22</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="memdesc:gaaef8b454c6db7cb8b193e16604e0cf45"><td class="mdescLeft">&#160;</td><td class="mdescRight">b4:22.05kHz <br /></td></tr>
 <tr class="separator:gaaef8b454c6db7cb8b193e16604e0cf45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga00a513f521d5a51bb5adc6b5ce18e37d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga00a513f521d5a51bb5adc6b5ce18e37d">A2D_M12_IE_SAMP_FREQ_24</a>&#160;&#160;&#160;0x08</td></tr>
-<tr class="memdesc:ga00a513f521d5a51bb5adc6b5ce18e37d"><td class="mdescLeft">&#160;</td><td class="mdescRight">b3:24 kHz  <a href="#ga00a513f521d5a51bb5adc6b5ce18e37d">More...</a><br /></td></tr>
+<tr class="memitem:ga00a513f521d5a51bb5adc6b5ce18e37d"><td class="memItemLeft" align="right" valign="top"><a id="ga00a513f521d5a51bb5adc6b5ce18e37d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga00a513f521d5a51bb5adc6b5ce18e37d">A2D_M12_IE_SAMP_FREQ_24</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="memdesc:ga00a513f521d5a51bb5adc6b5ce18e37d"><td class="mdescLeft">&#160;</td><td class="mdescRight">b3:24 kHz <br /></td></tr>
 <tr class="separator:ga00a513f521d5a51bb5adc6b5ce18e37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac41b1ca776de033803b40e4f0a695ded"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gac41b1ca776de033803b40e4f0a695ded">A2D_M12_IE_SAMP_FREQ_32</a>&#160;&#160;&#160;0x04</td></tr>
-<tr class="memdesc:gac41b1ca776de033803b40e4f0a695ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">b2:32 kHz  <a href="#gac41b1ca776de033803b40e4f0a695ded">More...</a><br /></td></tr>
+<tr class="memitem:gac41b1ca776de033803b40e4f0a695ded"><td class="memItemLeft" align="right" valign="top"><a id="gac41b1ca776de033803b40e4f0a695ded"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gac41b1ca776de033803b40e4f0a695ded">A2D_M12_IE_SAMP_FREQ_32</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memdesc:gac41b1ca776de033803b40e4f0a695ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">b2:32 kHz <br /></td></tr>
 <tr class="separator:gac41b1ca776de033803b40e4f0a695ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0e0ed2e043792dfacbcc2b93c5be7456"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga0e0ed2e043792dfacbcc2b93c5be7456">A2D_M12_IE_SAMP_FREQ_44</a>&#160;&#160;&#160;0x02</td></tr>
-<tr class="memdesc:ga0e0ed2e043792dfacbcc2b93c5be7456"><td class="mdescLeft">&#160;</td><td class="mdescRight">b1:44.1kHz  <a href="#ga0e0ed2e043792dfacbcc2b93c5be7456">More...</a><br /></td></tr>
+<tr class="memitem:ga0e0ed2e043792dfacbcc2b93c5be7456"><td class="memItemLeft" align="right" valign="top"><a id="ga0e0ed2e043792dfacbcc2b93c5be7456"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga0e0ed2e043792dfacbcc2b93c5be7456">A2D_M12_IE_SAMP_FREQ_44</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memdesc:ga0e0ed2e043792dfacbcc2b93c5be7456"><td class="mdescLeft">&#160;</td><td class="mdescRight">b1:44.1kHz <br /></td></tr>
 <tr class="separator:ga0e0ed2e043792dfacbcc2b93c5be7456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga51a32cc85cf0965d38e8cafb92a171e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga51a32cc85cf0965d38e8cafb92a171e8">A2D_M12_IE_SAMP_FREQ_48</a>&#160;&#160;&#160;0x01</td></tr>
-<tr class="memdesc:ga51a32cc85cf0965d38e8cafb92a171e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">b0:48 kHz  <a href="#ga51a32cc85cf0965d38e8cafb92a171e8">More...</a><br /></td></tr>
+<tr class="memitem:ga51a32cc85cf0965d38e8cafb92a171e8"><td class="memItemLeft" align="right" valign="top"><a id="ga51a32cc85cf0965d38e8cafb92a171e8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga51a32cc85cf0965d38e8cafb92a171e8">A2D_M12_IE_SAMP_FREQ_48</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memdesc:ga51a32cc85cf0965d38e8cafb92a171e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">b0:48 kHz <br /></td></tr>
 <tr class="separator:ga51a32cc85cf0965d38e8cafb92a171e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 MPEG-1,2 Bitrate</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp1db66d65030529a510d79b9ee2522e40"></a><a class="anchor" id="A2D_M12_BITRATE"></a></p>
 </td></tr>
-<tr class="memitem:gad4d1e110211d8e1b4b1f1a752ad04ed8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gad4d1e110211d8e1b4b1f1a752ad04ed8">A2D_M12_IE_BITRATE_MSK</a>&#160;&#160;&#160;0x7FFF</td></tr>
-<tr class="memdesc:gad4d1e110211d8e1b4b1f1a752ad04ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">b6-b0 of octect 2, all of octect3  <a href="#gad4d1e110211d8e1b4b1f1a752ad04ed8">More...</a><br /></td></tr>
+<tr class="memitem:gad4d1e110211d8e1b4b1f1a752ad04ed8"><td class="memItemLeft" align="right" valign="top"><a id="gad4d1e110211d8e1b4b1f1a752ad04ed8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gad4d1e110211d8e1b4b1f1a752ad04ed8">A2D_M12_IE_BITRATE_MSK</a>&#160;&#160;&#160;0x7FFF</td></tr>
+<tr class="memdesc:gad4d1e110211d8e1b4b1f1a752ad04ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">b6-b0 of octect 2, all of octect3 <br /></td></tr>
 <tr class="separator:gad4d1e110211d8e1b4b1f1a752ad04ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga055b19e0251da086a96b891e62fa7430"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga055b19e0251da086a96b891e62fa7430">A2D_M12_IE_BITRATE_0</a>&#160;&#160;&#160;0x0001</td></tr>
-<tr class="memdesc:ga055b19e0251da086a96b891e62fa7430"><td class="mdescLeft">&#160;</td><td class="mdescRight">0000  <a href="#ga055b19e0251da086a96b891e62fa7430">More...</a><br /></td></tr>
+<tr class="memitem:ga055b19e0251da086a96b891e62fa7430"><td class="memItemLeft" align="right" valign="top"><a id="ga055b19e0251da086a96b891e62fa7430"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga055b19e0251da086a96b891e62fa7430">A2D_M12_IE_BITRATE_0</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="memdesc:ga055b19e0251da086a96b891e62fa7430"><td class="mdescLeft">&#160;</td><td class="mdescRight">0000 <br /></td></tr>
 <tr class="separator:ga055b19e0251da086a96b891e62fa7430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaed3668bb98886020f53fce21955aa2ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaed3668bb98886020f53fce21955aa2ef">A2D_M12_IE_BITRATE_1</a>&#160;&#160;&#160;0x0002</td></tr>
-<tr class="memdesc:gaed3668bb98886020f53fce21955aa2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">0001  <a href="#gaed3668bb98886020f53fce21955aa2ef">More...</a><br /></td></tr>
+<tr class="memitem:gaed3668bb98886020f53fce21955aa2ef"><td class="memItemLeft" align="right" valign="top"><a id="gaed3668bb98886020f53fce21955aa2ef"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaed3668bb98886020f53fce21955aa2ef">A2D_M12_IE_BITRATE_1</a>&#160;&#160;&#160;0x0002</td></tr>
+<tr class="memdesc:gaed3668bb98886020f53fce21955aa2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">0001 <br /></td></tr>
 <tr class="separator:gaed3668bb98886020f53fce21955aa2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga523ad1f323a2490d5d79953e490f6928"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga523ad1f323a2490d5d79953e490f6928">A2D_M12_IE_BITRATE_2</a>&#160;&#160;&#160;0x0004</td></tr>
-<tr class="memdesc:ga523ad1f323a2490d5d79953e490f6928"><td class="mdescLeft">&#160;</td><td class="mdescRight">0010  <a href="#ga523ad1f323a2490d5d79953e490f6928">More...</a><br /></td></tr>
+<tr class="memitem:ga523ad1f323a2490d5d79953e490f6928"><td class="memItemLeft" align="right" valign="top"><a id="ga523ad1f323a2490d5d79953e490f6928"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga523ad1f323a2490d5d79953e490f6928">A2D_M12_IE_BITRATE_2</a>&#160;&#160;&#160;0x0004</td></tr>
+<tr class="memdesc:ga523ad1f323a2490d5d79953e490f6928"><td class="mdescLeft">&#160;</td><td class="mdescRight">0010 <br /></td></tr>
 <tr class="separator:ga523ad1f323a2490d5d79953e490f6928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab68ebd0a5e38cdc6496640a99f688184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gab68ebd0a5e38cdc6496640a99f688184">A2D_M12_IE_BITRATE_3</a>&#160;&#160;&#160;0x0008</td></tr>
-<tr class="memdesc:gab68ebd0a5e38cdc6496640a99f688184"><td class="mdescLeft">&#160;</td><td class="mdescRight">0011  <a href="#gab68ebd0a5e38cdc6496640a99f688184">More...</a><br /></td></tr>
+<tr class="memitem:gab68ebd0a5e38cdc6496640a99f688184"><td class="memItemLeft" align="right" valign="top"><a id="gab68ebd0a5e38cdc6496640a99f688184"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gab68ebd0a5e38cdc6496640a99f688184">A2D_M12_IE_BITRATE_3</a>&#160;&#160;&#160;0x0008</td></tr>
+<tr class="memdesc:gab68ebd0a5e38cdc6496640a99f688184"><td class="mdescLeft">&#160;</td><td class="mdescRight">0011 <br /></td></tr>
 <tr class="separator:gab68ebd0a5e38cdc6496640a99f688184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa75d2828bb7786ef2dba9e08baec5113"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaa75d2828bb7786ef2dba9e08baec5113">A2D_M12_IE_BITRATE_4</a>&#160;&#160;&#160;0x0010</td></tr>
-<tr class="memdesc:gaa75d2828bb7786ef2dba9e08baec5113"><td class="mdescLeft">&#160;</td><td class="mdescRight">0100  <a href="#gaa75d2828bb7786ef2dba9e08baec5113">More...</a><br /></td></tr>
+<tr class="memitem:gaa75d2828bb7786ef2dba9e08baec5113"><td class="memItemLeft" align="right" valign="top"><a id="gaa75d2828bb7786ef2dba9e08baec5113"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaa75d2828bb7786ef2dba9e08baec5113">A2D_M12_IE_BITRATE_4</a>&#160;&#160;&#160;0x0010</td></tr>
+<tr class="memdesc:gaa75d2828bb7786ef2dba9e08baec5113"><td class="mdescLeft">&#160;</td><td class="mdescRight">0100 <br /></td></tr>
 <tr class="separator:gaa75d2828bb7786ef2dba9e08baec5113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb4ce0e83e481d2c8415ebb1454b5eab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gadb4ce0e83e481d2c8415ebb1454b5eab">A2D_M12_IE_BITRATE_5</a>&#160;&#160;&#160;0x0020</td></tr>
-<tr class="memdesc:gadb4ce0e83e481d2c8415ebb1454b5eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">0101  <a href="#gadb4ce0e83e481d2c8415ebb1454b5eab">More...</a><br /></td></tr>
+<tr class="memitem:gadb4ce0e83e481d2c8415ebb1454b5eab"><td class="memItemLeft" align="right" valign="top"><a id="gadb4ce0e83e481d2c8415ebb1454b5eab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gadb4ce0e83e481d2c8415ebb1454b5eab">A2D_M12_IE_BITRATE_5</a>&#160;&#160;&#160;0x0020</td></tr>
+<tr class="memdesc:gadb4ce0e83e481d2c8415ebb1454b5eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">0101 <br /></td></tr>
 <tr class="separator:gadb4ce0e83e481d2c8415ebb1454b5eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga035e8cfe77601a419e67709c7b49f36e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga035e8cfe77601a419e67709c7b49f36e">A2D_M12_IE_BITRATE_6</a>&#160;&#160;&#160;0x0040</td></tr>
-<tr class="memdesc:ga035e8cfe77601a419e67709c7b49f36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">0110  <a href="#ga035e8cfe77601a419e67709c7b49f36e">More...</a><br /></td></tr>
+<tr class="memitem:ga035e8cfe77601a419e67709c7b49f36e"><td class="memItemLeft" align="right" valign="top"><a id="ga035e8cfe77601a419e67709c7b49f36e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga035e8cfe77601a419e67709c7b49f36e">A2D_M12_IE_BITRATE_6</a>&#160;&#160;&#160;0x0040</td></tr>
+<tr class="memdesc:ga035e8cfe77601a419e67709c7b49f36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">0110 <br /></td></tr>
 <tr class="separator:ga035e8cfe77601a419e67709c7b49f36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b30143f473887f6e16fc761ced5a695"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga2b30143f473887f6e16fc761ced5a695">A2D_M12_IE_BITRATE_7</a>&#160;&#160;&#160;0x0080</td></tr>
-<tr class="memdesc:ga2b30143f473887f6e16fc761ced5a695"><td class="mdescLeft">&#160;</td><td class="mdescRight">0111  <a href="#ga2b30143f473887f6e16fc761ced5a695">More...</a><br /></td></tr>
+<tr class="memitem:ga2b30143f473887f6e16fc761ced5a695"><td class="memItemLeft" align="right" valign="top"><a id="ga2b30143f473887f6e16fc761ced5a695"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga2b30143f473887f6e16fc761ced5a695">A2D_M12_IE_BITRATE_7</a>&#160;&#160;&#160;0x0080</td></tr>
+<tr class="memdesc:ga2b30143f473887f6e16fc761ced5a695"><td class="mdescLeft">&#160;</td><td class="mdescRight">0111 <br /></td></tr>
 <tr class="separator:ga2b30143f473887f6e16fc761ced5a695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ac3e60e5c6b0894831d7dbd7011c9f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga6ac3e60e5c6b0894831d7dbd7011c9f0">A2D_M12_IE_BITRATE_8</a>&#160;&#160;&#160;0x0100</td></tr>
-<tr class="memdesc:ga6ac3e60e5c6b0894831d7dbd7011c9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">1000  <a href="#ga6ac3e60e5c6b0894831d7dbd7011c9f0">More...</a><br /></td></tr>
+<tr class="memitem:ga6ac3e60e5c6b0894831d7dbd7011c9f0"><td class="memItemLeft" align="right" valign="top"><a id="ga6ac3e60e5c6b0894831d7dbd7011c9f0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga6ac3e60e5c6b0894831d7dbd7011c9f0">A2D_M12_IE_BITRATE_8</a>&#160;&#160;&#160;0x0100</td></tr>
+<tr class="memdesc:ga6ac3e60e5c6b0894831d7dbd7011c9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">1000 <br /></td></tr>
 <tr class="separator:ga6ac3e60e5c6b0894831d7dbd7011c9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1140ff33faaa0e8fc0a14d2ebcffabad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga1140ff33faaa0e8fc0a14d2ebcffabad">A2D_M12_IE_BITRATE_9</a>&#160;&#160;&#160;0x0200</td></tr>
-<tr class="memdesc:ga1140ff33faaa0e8fc0a14d2ebcffabad"><td class="mdescLeft">&#160;</td><td class="mdescRight">1001  <a href="#ga1140ff33faaa0e8fc0a14d2ebcffabad">More...</a><br /></td></tr>
+<tr class="memitem:ga1140ff33faaa0e8fc0a14d2ebcffabad"><td class="memItemLeft" align="right" valign="top"><a id="ga1140ff33faaa0e8fc0a14d2ebcffabad"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga1140ff33faaa0e8fc0a14d2ebcffabad">A2D_M12_IE_BITRATE_9</a>&#160;&#160;&#160;0x0200</td></tr>
+<tr class="memdesc:ga1140ff33faaa0e8fc0a14d2ebcffabad"><td class="mdescLeft">&#160;</td><td class="mdescRight">1001 <br /></td></tr>
 <tr class="separator:ga1140ff33faaa0e8fc0a14d2ebcffabad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaed0edbebd148bc7c5664aa274b5bfb5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaed0edbebd148bc7c5664aa274b5bfb5a">A2D_M12_IE_BITRATE_10</a>&#160;&#160;&#160;0x0400</td></tr>
-<tr class="memdesc:gaed0edbebd148bc7c5664aa274b5bfb5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">1010  <a href="#gaed0edbebd148bc7c5664aa274b5bfb5a">More...</a><br /></td></tr>
+<tr class="memitem:gaed0edbebd148bc7c5664aa274b5bfb5a"><td class="memItemLeft" align="right" valign="top"><a id="gaed0edbebd148bc7c5664aa274b5bfb5a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gaed0edbebd148bc7c5664aa274b5bfb5a">A2D_M12_IE_BITRATE_10</a>&#160;&#160;&#160;0x0400</td></tr>
+<tr class="memdesc:gaed0edbebd148bc7c5664aa274b5bfb5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">1010 <br /></td></tr>
 <tr class="separator:gaed0edbebd148bc7c5664aa274b5bfb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac83b5cc169edc72f54e99190112d2f63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gac83b5cc169edc72f54e99190112d2f63">A2D_M12_IE_BITRATE_11</a>&#160;&#160;&#160;0x0800</td></tr>
-<tr class="memdesc:gac83b5cc169edc72f54e99190112d2f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">1011  <a href="#gac83b5cc169edc72f54e99190112d2f63">More...</a><br /></td></tr>
+<tr class="memitem:gac83b5cc169edc72f54e99190112d2f63"><td class="memItemLeft" align="right" valign="top"><a id="gac83b5cc169edc72f54e99190112d2f63"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#gac83b5cc169edc72f54e99190112d2f63">A2D_M12_IE_BITRATE_11</a>&#160;&#160;&#160;0x0800</td></tr>
+<tr class="memdesc:gac83b5cc169edc72f54e99190112d2f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">1011 <br /></td></tr>
 <tr class="separator:gac83b5cc169edc72f54e99190112d2f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b681673f64b4da7dd3f535541d55a8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga8b681673f64b4da7dd3f535541d55a8c">A2D_M12_IE_BITRATE_12</a>&#160;&#160;&#160;0x1000</td></tr>
-<tr class="memdesc:ga8b681673f64b4da7dd3f535541d55a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">1100  <a href="#ga8b681673f64b4da7dd3f535541d55a8c">More...</a><br /></td></tr>
+<tr class="memitem:ga8b681673f64b4da7dd3f535541d55a8c"><td class="memItemLeft" align="right" valign="top"><a id="ga8b681673f64b4da7dd3f535541d55a8c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga8b681673f64b4da7dd3f535541d55a8c">A2D_M12_IE_BITRATE_12</a>&#160;&#160;&#160;0x1000</td></tr>
+<tr class="memdesc:ga8b681673f64b4da7dd3f535541d55a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">1100 <br /></td></tr>
 <tr class="separator:ga8b681673f64b4da7dd3f535541d55a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga452679917e67a902574b07686490ad02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga452679917e67a902574b07686490ad02">A2D_M12_IE_BITRATE_13</a>&#160;&#160;&#160;0x2000</td></tr>
-<tr class="memdesc:ga452679917e67a902574b07686490ad02"><td class="mdescLeft">&#160;</td><td class="mdescRight">1101  <a href="#ga452679917e67a902574b07686490ad02">More...</a><br /></td></tr>
+<tr class="memitem:ga452679917e67a902574b07686490ad02"><td class="memItemLeft" align="right" valign="top"><a id="ga452679917e67a902574b07686490ad02"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga452679917e67a902574b07686490ad02">A2D_M12_IE_BITRATE_13</a>&#160;&#160;&#160;0x2000</td></tr>
+<tr class="memdesc:ga452679917e67a902574b07686490ad02"><td class="mdescLeft">&#160;</td><td class="mdescRight">1101 <br /></td></tr>
 <tr class="separator:ga452679917e67a902574b07686490ad02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2cfacbde6c1316dbae1b7cd8d215e5c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga2cfacbde6c1316dbae1b7cd8d215e5c2">A2D_M12_IE_BITRATE_14</a>&#160;&#160;&#160;0x4000</td></tr>
-<tr class="memdesc:ga2cfacbde6c1316dbae1b7cd8d215e5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">1110  <a href="#ga2cfacbde6c1316dbae1b7cd8d215e5c2">More...</a><br /></td></tr>
+<tr class="memitem:ga2cfacbde6c1316dbae1b7cd8d215e5c2"><td class="memItemLeft" align="right" valign="top"><a id="ga2cfacbde6c1316dbae1b7cd8d215e5c2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__a2dp__mpeg__1__2.html#ga2cfacbde6c1316dbae1b7cd8d215e5c2">A2D_M12_IE_BITRATE_14</a>&#160;&#160;&#160;0x4000</td></tr>
+<tr class="memdesc:ga2cfacbde6c1316dbae1b7cd8d215e5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">1110 <br /></td></tr>
 <tr class="separator:ga2cfacbde6c1316dbae1b7cd8d215e5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gaf2eb79f617514437d250edfeb9fa3bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2eb79f617514437d250edfeb9fa3bfc">&#9670;&nbsp;</a></span>A2D_M12_MPL_HDR_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define A2D_M12_MPL_HDR_LEN&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the length of the MPEG_1, 2 Audio Media Payload header. </p>
+
+</div>
+</div>
 <a id="gacef301927c6112b13b6092ed96924351"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacef301927c6112b13b6092ed96924351">&#9670;&nbsp;</a></span>A2D_BLD_M12_PML_HDR</h2>
 
@@ -281,598 +333,6 @@ MPEG-1,2 Bitrate</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{Uint16_t_TO_BE_STREAM(p_dst, 0); \</div><div class="line">                                                Uint16_t_TO_BE_STREAM(p_dst, frag_offset); }</div></div><!-- fragment -->
 <p>Build MPEG-1,2 Header. </p>
-
-</div>
-</div>
-<a id="ga055b19e0251da086a96b891e62fa7430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga055b19e0251da086a96b891e62fa7430">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_0</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_0&#160;&#160;&#160;0x0001</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>0000 </p>
-
-</div>
-</div>
-<a id="gaed3668bb98886020f53fce21955aa2ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaed3668bb98886020f53fce21955aa2ef">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_1&#160;&#160;&#160;0x0002</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>0001 </p>
-
-</div>
-</div>
-<a id="gaed0edbebd148bc7c5664aa274b5bfb5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaed0edbebd148bc7c5664aa274b5bfb5a">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_10</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_10&#160;&#160;&#160;0x0400</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>1010 </p>
-
-</div>
-</div>
-<a id="gac83b5cc169edc72f54e99190112d2f63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac83b5cc169edc72f54e99190112d2f63">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_11</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_11&#160;&#160;&#160;0x0800</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>1011 </p>
-
-</div>
-</div>
-<a id="ga8b681673f64b4da7dd3f535541d55a8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8b681673f64b4da7dd3f535541d55a8c">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_12</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_12&#160;&#160;&#160;0x1000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>1100 </p>
-
-</div>
-</div>
-<a id="ga452679917e67a902574b07686490ad02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga452679917e67a902574b07686490ad02">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_13</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_13&#160;&#160;&#160;0x2000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>1101 </p>
-
-</div>
-</div>
-<a id="ga2cfacbde6c1316dbae1b7cd8d215e5c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2cfacbde6c1316dbae1b7cd8d215e5c2">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_14</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_14&#160;&#160;&#160;0x4000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>1110 </p>
-
-</div>
-</div>
-<a id="ga523ad1f323a2490d5d79953e490f6928"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga523ad1f323a2490d5d79953e490f6928">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_2&#160;&#160;&#160;0x0004</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>0010 </p>
-
-</div>
-</div>
-<a id="gab68ebd0a5e38cdc6496640a99f688184"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab68ebd0a5e38cdc6496640a99f688184">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_3&#160;&#160;&#160;0x0008</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>0011 </p>
-
-</div>
-</div>
-<a id="gaa75d2828bb7786ef2dba9e08baec5113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa75d2828bb7786ef2dba9e08baec5113">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_4</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_4&#160;&#160;&#160;0x0010</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>0100 </p>
-
-</div>
-</div>
-<a id="gadb4ce0e83e481d2c8415ebb1454b5eab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadb4ce0e83e481d2c8415ebb1454b5eab">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_5</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_5&#160;&#160;&#160;0x0020</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>0101 </p>
-
-</div>
-</div>
-<a id="ga035e8cfe77601a419e67709c7b49f36e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga035e8cfe77601a419e67709c7b49f36e">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_6</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_6&#160;&#160;&#160;0x0040</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>0110 </p>
-
-</div>
-</div>
-<a id="ga2b30143f473887f6e16fc761ced5a695"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2b30143f473887f6e16fc761ced5a695">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_7</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_7&#160;&#160;&#160;0x0080</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>0111 </p>
-
-</div>
-</div>
-<a id="ga6ac3e60e5c6b0894831d7dbd7011c9f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6ac3e60e5c6b0894831d7dbd7011c9f0">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_8</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_8&#160;&#160;&#160;0x0100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>1000 </p>
-
-</div>
-</div>
-<a id="ga1140ff33faaa0e8fc0a14d2ebcffabad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1140ff33faaa0e8fc0a14d2ebcffabad">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_9</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_9&#160;&#160;&#160;0x0200</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>1001 </p>
-
-</div>
-</div>
-<a id="gad4d1e110211d8e1b4b1f1a752ad04ed8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad4d1e110211d8e1b4b1f1a752ad04ed8">&#9670;&nbsp;</a></span>A2D_M12_IE_BITRATE_MSK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_BITRATE_MSK&#160;&#160;&#160;0x7FFF</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b6-b0 of octect 2, all of octect3 </p>
-
-</div>
-</div>
-<a id="ga20b70ef06ef063127b0ecb931248caa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga20b70ef06ef063127b0ecb931248caa5">&#9670;&nbsp;</a></span>A2D_M12_IE_CH_MD_DUAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_CH_MD_DUAL&#160;&#160;&#160;0x04</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b2: dual </p>
-
-</div>
-</div>
-<a id="ga04dbfc5b06036d163c582a695453cc8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga04dbfc5b06036d163c582a695453cc8b">&#9670;&nbsp;</a></span>A2D_M12_IE_CH_MD_JOINT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_CH_MD_JOINT&#160;&#160;&#160;0x01</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b0: joint stereo </p>
-
-</div>
-</div>
-<a id="ga7c9787e009af294edd2e643429a738a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7c9787e009af294edd2e643429a738a4">&#9670;&nbsp;</a></span>A2D_M12_IE_CH_MD_MONO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_CH_MD_MONO&#160;&#160;&#160;0x08</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b3: mono </p>
-
-</div>
-</div>
-<a id="gae0b96a481a35329cffa30ef7c3641331"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae0b96a481a35329cffa30ef7c3641331">&#9670;&nbsp;</a></span>A2D_M12_IE_CH_MD_MSK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_CH_MD_MSK&#160;&#160;&#160;0x0F</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b3-b0 channel mode </p>
-
-</div>
-</div>
-<a id="ga8a0d498e24f84e4b062c5d54bf5da00c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8a0d498e24f84e4b062c5d54bf5da00c">&#9670;&nbsp;</a></span>A2D_M12_IE_CH_MD_STEREO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_CH_MD_STEREO&#160;&#160;&#160;0x02</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b1: stereo </p>
-
-</div>
-</div>
-<a id="ga439970b3c8e8f7f2bff17db9d75b3cb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga439970b3c8e8f7f2bff17db9d75b3cb2">&#9670;&nbsp;</a></span>A2D_M12_IE_CRC_MSK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_CRC_MSK&#160;&#160;&#160;0x10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b4: CRC </p>
-
-</div>
-</div>
-<a id="ga77924b0d3be0cf3b14e5bf408397ea55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga77924b0d3be0cf3b14e5bf408397ea55">&#9670;&nbsp;</a></span>A2D_M12_IE_LAYER1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_LAYER1&#160;&#160;&#160;0x80</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b7: layer1 (mp1) </p>
-
-</div>
-</div>
-<a id="ga22499853855ec6323e571412f9539a9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga22499853855ec6323e571412f9539a9c">&#9670;&nbsp;</a></span>A2D_M12_IE_LAYER2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_LAYER2&#160;&#160;&#160;0x40</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b6: layer2 (mp2) </p>
-
-</div>
-</div>
-<a id="ga5ad40a9b97083dc5e2b667ddbd5cb2fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ad40a9b97083dc5e2b667ddbd5cb2fd">&#9670;&nbsp;</a></span>A2D_M12_IE_LAYER3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_LAYER3&#160;&#160;&#160;0x20</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b5: layer3 (mp3) </p>
-
-</div>
-</div>
-<a id="ga34575dd585fde70f534cba73cf9ffa10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34575dd585fde70f534cba73cf9ffa10">&#9670;&nbsp;</a></span>A2D_M12_IE_LAYER_MSK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_LAYER_MSK&#160;&#160;&#160;0xE0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b7-b5 layer </p>
-
-</div>
-</div>
-<a id="gaaf41a108bc7848d7fb5c9f6bf432f8fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf41a108bc7848d7fb5c9f6bf432f8fe">&#9670;&nbsp;</a></span>A2D_M12_IE_MPF_MSK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_MPF_MSK&#160;&#160;&#160;0x40</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b6: MPF </p>
-
-</div>
-</div>
-<a id="ga43614726297938716fb8c08817667b95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga43614726297938716fb8c08817667b95">&#9670;&nbsp;</a></span>A2D_M12_IE_SAMP_FREQ_16</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_SAMP_FREQ_16&#160;&#160;&#160;0x20</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b5:16 kHz </p>
-
-</div>
-</div>
-<a id="gaaef8b454c6db7cb8b193e16604e0cf45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaef8b454c6db7cb8b193e16604e0cf45">&#9670;&nbsp;</a></span>A2D_M12_IE_SAMP_FREQ_22</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_SAMP_FREQ_22&#160;&#160;&#160;0x10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b4:22.05kHz </p>
-
-</div>
-</div>
-<a id="ga00a513f521d5a51bb5adc6b5ce18e37d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga00a513f521d5a51bb5adc6b5ce18e37d">&#9670;&nbsp;</a></span>A2D_M12_IE_SAMP_FREQ_24</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_SAMP_FREQ_24&#160;&#160;&#160;0x08</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b3:24 kHz </p>
-
-</div>
-</div>
-<a id="gac41b1ca776de033803b40e4f0a695ded"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac41b1ca776de033803b40e4f0a695ded">&#9670;&nbsp;</a></span>A2D_M12_IE_SAMP_FREQ_32</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_SAMP_FREQ_32&#160;&#160;&#160;0x04</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b2:32 kHz </p>
-
-</div>
-</div>
-<a id="ga0e0ed2e043792dfacbcc2b93c5be7456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0e0ed2e043792dfacbcc2b93c5be7456">&#9670;&nbsp;</a></span>A2D_M12_IE_SAMP_FREQ_44</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_SAMP_FREQ_44&#160;&#160;&#160;0x02</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b1:44.1kHz </p>
-
-</div>
-</div>
-<a id="ga51a32cc85cf0965d38e8cafb92a171e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga51a32cc85cf0965d38e8cafb92a171e8">&#9670;&nbsp;</a></span>A2D_M12_IE_SAMP_FREQ_48</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_SAMP_FREQ_48&#160;&#160;&#160;0x01</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b0:48 kHz </p>
-
-</div>
-</div>
-<a id="ga9b65e64bf3bac4520aca89eaf677e1c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9b65e64bf3bac4520aca89eaf677e1c1">&#9670;&nbsp;</a></span>A2D_M12_IE_SAMP_FREQ_MSK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_SAMP_FREQ_MSK&#160;&#160;&#160;0x3F</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b5-b0 sampling frequency </p>
-
-</div>
-</div>
-<a id="gabd01c0d472a02d5b30350016c0445494"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabd01c0d472a02d5b30350016c0445494">&#9670;&nbsp;</a></span>A2D_M12_IE_VBR_MSK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_IE_VBR_MSK&#160;&#160;&#160;0x80</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>b7: VBR </p>
-
-</div>
-</div>
-<a id="gac5d0a705f73d658af33de9b0bb40bebf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac5d0a705f73d658af33de9b0bb40bebf">&#9670;&nbsp;</a></span>A2D_M12_INFO_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_INFO_LEN&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the LOSC of MPEG_1, 2 Audio media codec capabilitiy </p>
-
-</div>
-</div>
-<a id="gaf2eb79f617514437d250edfeb9fa3bfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf2eb79f617514437d250edfeb9fa3bfc">&#9670;&nbsp;</a></span>A2D_M12_MPL_HDR_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A2D_M12_MPL_HDR_LEN&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the length of the MPEG_1, 2 Audio Media Payload header. </p>
 
 </div>
 </div>

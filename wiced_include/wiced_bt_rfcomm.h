@@ -38,6 +38,7 @@
  */
 #ifndef __WICED_BT_RFCOMM_H__
 #define __WICED_BT_RFCOMM_H__
+
  /**
   * @cond DUAL_MODE
   * @addtogroup  rfcomm_api_functions       RFCOMM

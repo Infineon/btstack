@@ -87,23 +87,35 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__power__level__
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh Power Level Client<div class="ingroups"><a class="el" href="group__wiced__bt__mesh.html">LE Mesh</a> &raquo; <a class="el" href="group__wiced__bt__mesh__models.html">Mesh Models Library API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
 <p>The AIROC Mesh Power Level Client module of the Mesh Models library provides a way for an application to control power level of the Power Level Servers in the mesh network optionally receive status information. </p>
-<p>To include Power Level Client functionality, the device description shall contain <a class="el" href="group__wiced__bt__mesh__power__level__client.html#gabf76e74c45deb133616770b9f98452b0">WICED_BT_MESH_MODEL_POWER_LEVEL_CLIENT</a>. </p>
+<p>To include Power Level Client functionality, the device description shall contain WICED_BT_MESH_MODEL_POWER_LEVEL_CLIENT. </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gabf76e74c45deb133616770b9f98452b0"><td class="memItemLeft" align="right" valign="top"><a id="gabf76e74c45deb133616770b9f98452b0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WICED_BT_MESH_MODEL_POWER_LEVEL_CLIENT</b>&#160;&#160;&#160;{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_LEVEL_CLNT, <a class="el" href="group__wiced__bt__mesh__power__level__client.html#ga2fd3b64827092ecb3b13f7286b006c26">wiced_bt_mesh_model_power_level_client_message_handler</a>, NULL, NULL }</td></tr>
+<tr class="separator:gabf76e74c45deb133616770b9f98452b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gac9467199738604dff57976dc8006c64b"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__power__level__client.html#gac9467199738604dff57976dc8006c64b">wiced_bt_mesh_power_level_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
+<tr class="memdesc:gac9467199738604dff57976dc8006c64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power Level Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#gac9467199738604dff57976dc8006c64b">More...</a><br /></td></tr>
+<tr class="separator:gac9467199738604dff57976dc8006c64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga2fd3b64827092ecb3b13f7286b006c26"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__power__level__client.html#ga2fd3b64827092ecb3b13f7286b006c26">wiced_bt_mesh_model_power_level_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
+<tr class="memitem:ga2fd3b64827092ecb3b13f7286b006c26"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__power__level__client.html#ga2fd3b64827092ecb3b13f7286b006c26">wiced_bt_mesh_model_power_level_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
 <tr class="memdesc:ga2fd3b64827092ecb3b13f7286b006c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic Power Level Client Message Handler.  <a href="#ga2fd3b64827092ecb3b13f7286b006c26">More...</a><br /></td></tr>
 <tr class="separator:ga2fd3b64827092ecb3b13f7286b006c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf3be4a4eb48fb42212f3f45e73cf92e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__power__level__client.html#gaf3be4a4eb48fb42212f3f45e73cf92e2">wiced_bt_mesh_model_power_level_client_init</a> (uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, <a class="el" href="group__wiced__bt__mesh__power__level__client.html#gac9467199738604dff57976dc8006c64b">wiced_bt_mesh_power_level_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
+<tr class="memitem:gaf3be4a4eb48fb42212f3f45e73cf92e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__power__level__client.html#gaf3be4a4eb48fb42212f3f45e73cf92e2">wiced_bt_mesh_model_power_level_client_init</a> (uint8_t element_idx, <a class="el" href="group__wiced__bt__mesh__power__level__client.html#gac9467199738604dff57976dc8006c64b">wiced_bt_mesh_power_level_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
 <tr class="memdesc:gaf3be4a4eb48fb42212f3f45e73cf92e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power Level Client Module initialization.  <a href="#gaf3be4a4eb48fb42212f3f45e73cf92e2">More...</a><br /></td></tr>
 <tr class="separator:gaf3be4a4eb48fb42212f3f45e73cf92e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17e4cac8b2ea406f87e998f4a9a992ba"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__power__level__client.html#ga17e4cac8b2ea406f87e998f4a9a992ba">wiced_bt_mesh_model_power_level_client_send_get</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event)</td></tr>
@@ -127,33 +139,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9c4878d624dea57f7b646c475d748ad0"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__power__level__client.html#ga9c4878d624dea57f7b646c475d748ad0">wiced_bt_mesh_model_power_level_client_send_range_set</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, <a class="el" href="structwiced__bt__mesh__power__level__range__set__data__t.html">wiced_bt_mesh_power_level_range_set_data_t</a> *p_data)</td></tr>
 <tr class="memdesc:ga9c4878d624dea57f7b646c475d748ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application can call this function to send Set Range Level client message to the server.  <a href="#ga9c4878d624dea57f7b646c475d748ad0">More...</a><br /></td></tr>
 <tr class="separator:ga9c4878d624dea57f7b646c475d748ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gabf76e74c45deb133616770b9f98452b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__power__level__client.html#gabf76e74c45deb133616770b9f98452b0">WICED_BT_MESH_MODEL_POWER_LEVEL_CLIENT</a>&#160;&#160;&#160;{ <a class="el" href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a>, <a class="el" href="wiced__bt__mesh__model__defs_8h.html#aa69db02e80609cf819acbc85aa41fc97">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_LEVEL_CLNT</a>, <a class="el" href="group__wiced__bt__mesh__power__level__client.html#ga2fd3b64827092ecb3b13f7286b006c26">wiced_bt_mesh_model_power_level_client_message_handler</a>, NULL, NULL }</td></tr>
-<tr class="separator:gabf76e74c45deb133616770b9f98452b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gac9467199738604dff57976dc8006c64b"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__power__level__client.html#gac9467199738604dff57976dc8006c64b">wiced_bt_mesh_power_level_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
-<tr class="memdesc:gac9467199738604dff57976dc8006c64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power Level Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#gac9467199738604dff57976dc8006c64b">More...</a><br /></td></tr>
-<tr class="separator:gac9467199738604dff57976dc8006c64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gabf76e74c45deb133616770b9f98452b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf76e74c45deb133616770b9f98452b0">&#9670;&nbsp;</a></span>WICED_BT_MESH_MODEL_POWER_LEVEL_CLIENT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_MESH_MODEL_POWER_LEVEL_CLIENT&#160;&#160;&#160;{ <a class="el" href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a>, <a class="el" href="wiced__bt__mesh__model__defs_8h.html#aa69db02e80609cf819acbc85aa41fc97">WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_LEVEL_CLNT</a>, <a class="el" href="group__wiced__bt__mesh__power__level__client.html#ga2fd3b64827092ecb3b13f7286b006c26">wiced_bt_mesh_model_power_level_client_message_handler</a>, NULL, NULL }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gac9467199738604dff57976dc8006c64b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac9467199738604dff57976dc8006c64b">&#9670;&nbsp;</a></span>wiced_bt_mesh_power_level_client_callback_t</h2>
@@ -181,6 +167,52 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga2fd3b64827092ecb3b13f7286b006c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2fd3b64827092ecb3b13f7286b006c26">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_power_level_client_message_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_bool_t wiced_bt_mesh_model_power_level_client_message_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generic Power Level Client Message Handler. </p>
+<p>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. Generic Power Level Server device. The function parses the message and if appropriate calls the parent back to perform functionality.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with information about received message. </td></tr>
+    <tr><td class="paramname">p_data</td><td>Pointer to the data portion of the message </td></tr>
+    <tr><td class="paramname">data_len</td><td>Length of the data in the message</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="gaf3be4a4eb48fb42212f3f45e73cf92e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf3be4a4eb48fb42212f3f45e73cf92e2">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_power_level_client_init()</h2>
 
@@ -226,14 +258,41 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2fd3b64827092ecb3b13f7286b006c26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2fd3b64827092ecb3b13f7286b006c26">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_power_level_client_message_handler()</h2>
+<a id="ga17e4cac8b2ea406f87e998f4a9a992ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17e4cac8b2ea406f87e998f4a9a992ba">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_power_level_client_send_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">wiced_bool_t wiced_bt_mesh_model_power_level_client_message_handler </td>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_power_level_client_send_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application can call this function to send Generic Power Level Get message to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
+<a id="ga7cbe0e55ca2c30761faf84aef5a70913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7cbe0e55ca2c30761faf84aef5a70913">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_power_level_client_send_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_power_level_client_send_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
           <td class="paramname"><em>p_event</em>, </td>
@@ -241,14 +300,8 @@ Typedefs</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>data_len</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__power__level__set__level__t.html">wiced_bt_mesh_power_level_set_level_t</a> *&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -258,17 +311,42 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generic Power Level Client Message Handler. </p>
-<p>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. Generic Power Level Server device. The function parses the message and if appropriate calls the parent back to perform functionality.</p>
+<p>The application can call this function to send Set Level client message to the server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with information about received message. </td></tr>
-    <tr><td class="paramname">p_data</td><td>Pointer to the data portion of the message </td></tr>
-    <tr><td class="paramname">data_len</td><td>Length of the data in the message</td></tr>
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>
+    <tr><td class="paramname">p_data</td><td>Pointer to the data to send</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
+<a id="gae5922d8b064c2a98382bb8456e3ae41a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5922d8b064c2a98382bb8456e3ae41a">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_power_level_client_send_last_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_power_level_client_send_last_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application can call this function to send Get Last Level client message to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
 
 </div>
 </div>
@@ -337,60 +415,6 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga17e4cac8b2ea406f87e998f4a9a992ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga17e4cac8b2ea406f87e998f4a9a992ba">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_power_level_client_send_get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_power_level_client_send_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send Generic Power Level Get message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
-<a id="gae5922d8b064c2a98382bb8456e3ae41a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae5922d8b064c2a98382bb8456e3ae41a">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_power_level_client_send_last_get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_power_level_client_send_last_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send Get Last Level client message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
 <a id="gae974a818514d39241f47c59c6b5e8dbf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae974a818514d39241f47c59c6b5e8dbf">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_power_level_client_send_range_get()</h2>
 
@@ -445,44 +469,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The application can call this function to send Set Range Level client message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>
-    <tr><td class="paramname">p_data</td><td>Pointer to the data to send</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
-<a id="ga7cbe0e55ca2c30761faf84aef5a70913"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7cbe0e55ca2c30761faf84aef5a70913">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_power_level_client_send_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_power_level_client_send_set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__power__level__set__level__t.html">wiced_bt_mesh_power_level_set_level_t</a> *&#160;</td>
-          <td class="paramname"><em>p_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send Set Level client message to the server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>

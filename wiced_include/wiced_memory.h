@@ -32,7 +32,12 @@
  */
 
 /** @file
- * Memory management APIs
+ *
+ *  \addtogroup wiced_mem Memory Management
+ *
+ *  @{
+ * Helper APIs to create heaps and pools and allocate/free buffers from those pools or heaps.
+ * When a heap or a pool is created, this utility allocates required chunk of memory from the system and manages it for the creator.
  */
 
 #ifndef __WICED_MEMORY_H__
@@ -99,13 +104,6 @@ typedef struct
 #ifdef __cplusplus
 extern "C" {
 #endif
-/**
- *  \addtogroup wiced_mem Memory Management
- *
- *  @{
- * Helper APIs to create heaps and pools and allocate/free buffers from those pools or heaps.
- * When a heap or a pool is created, this utility allocates required chunk of memory from the system and manages it for the creator.
- */
 
 /**
  * Returns the number of free bytes of RAM available for allocation from the
@@ -390,17 +388,37 @@ wiced_bool_t wiced_bt_get_heap_statistics_with_index(int index, wiced_bt_heap_st
 wiced_result_t wiced_bt_get_pool_statistics(wiced_bt_pool_t *p_pool, wiced_bt_pool_statistics_t *p_stats);
 
 /**
- * Set the exception callback
+ * Set the exception callback for stack, controller, and porting layer exceptions:
+ *
+ * Note: wiced_set_exception_callback() needs to be defined in porting layer of each platform where
+ * pf_handler callback function is also defined.
  *
  * @param[in]       pf_handler : Exception callback function
  *
  * @return          void
+ *
  */
 void wiced_set_exception_callback(pf_wiced_exception pf_handler);
 
-/** @} */
+#ifdef STACK_EXCEPTION_VERBOSE
+/**
+ * Get exception message corresponding to the exception error code.
+ *.
+ *
+ * @param[in]       code :  Exception code - Numerical value of an exception
+ *                          (See CYBT_STACK_BASE_EXCEPTION in wiced_bt_stack_platform.h for stack exceptions
+ *                          See CYBT_CONTROLLER_BASE_EXCEPTION & CYBT_PORTING_BASE_EXCEPTION in cybt_platform_config.h
+ *                          for controller and porting layer exceptions)
+ *
+ * @return          Message string corresponds to the code
+ *
+ */
+const char* wiced_get_exception_message(uint16_t code);
+#endif
+
 #ifdef __cplusplus
 }
 #endif
+/** @} */
 
 #endif //__WICED_MEMORY_H__

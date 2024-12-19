@@ -40,6 +40,7 @@ extern "C" {
 #endif
     extern void BTU_trace_debug(const char* p_fmt, ...);
     extern void BTU_trace_error(const char* p_fmt, ...);
+    extern void BTU_trace_crit_error(const char *p_fmt, ...);
 
 #ifdef __cplusplus
 }
@@ -56,5 +57,5 @@ extern "C" {
 /** Debug trace array macro */
 #define WICED_BT_TRACE_ARRAY(ptr,len,string)     WICED_BT_TRACE("%s %A",string,ptr,len);
 /** Error trace array macro */
-#define WICED_BT_TRACE_CRIT     BTU_trace_error
+#define WICED_BT_TRACE_CRIT     BTU_trace_crit_error
 #endif

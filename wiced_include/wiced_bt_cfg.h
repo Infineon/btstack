@@ -46,7 +46,14 @@
 extern "C" {
 #endif
 
-
+/**
+ * @addtogroup  wiced_bt_cfg Bluetooth Stack Initialize & Configuration
+ *
+ *
+ * This section describes API and Data structures required to initialize and configure the Bluetooth-Stack.
+ *
+ * @{
+ */
 /*****************************************************************************
  * Default configuration values
  ****************************************************************************/
@@ -255,17 +262,6 @@ typedef struct
     uint8_t  max_ports;  /**< Maximum number of simultaneous RFCOMM ports */
 } wiced_bt_cfg_rfcomm_t;
 
-/** Isochronous Connection configuration settings */
-typedef struct
-{
-    uint16_t max_sdu_size;       /**< Max SDU size */
-    uint8_t channel_count;       /**< maximum number of audio channels per packet (left, right, etc.,) */
-    uint8_t max_cis_conn;        /**< Max Number of CIS connections */
-    uint8_t max_cig_count;       /**< Max Number of CIG connections */
-    uint8_t max_buffers_per_cis; /**< Max Number of buffers per CIS */
-    uint8_t max_big_count;       /**< Max Number of BIG connections */
-} wiced_bt_cfg_isoc_t;
-
 /** BR/EDR configuration settings */
 typedef struct {
     uint8_t                br_max_simultaneous_links; /**< Max number for simultaneous connections for a layer, profile, protocol */
@@ -313,28 +309,50 @@ typedef struct
     uint8_t max_app_l2cap_br_edr_ertm_tx_win;   /**< Maximum application ERTM TX Window, BR/EDR only   */
 } wiced_bt_cfg_l2cap_application_t;
 
+/** Isochronous Connection configuration settings
+* @deprecated since version BTSTACK4.0
+*/
+typedef struct
+{
+    uint16_t max_sdu_size;       /**< Max SDU size */
+    uint8_t channel_count;       /**< maximum number of audio channels per packet (left, right, etc.,) */
+    uint8_t max_cis_conn;        /**< Max Number of CIS connections */
+    uint8_t max_cig_count;       /**< Max Number of CIG connections */
+    uint8_t max_buffers_per_cis; /**< Max Number of buffers per CIS */
+    uint8_t max_big_count;       /**< Max Number of BIG connections */
+} wiced_bt_cfg_isoc_t;
+
+
 /** Bluetooth stack configuration */
 typedef struct wiced_bt_cfg_settings_t_
 {
-    uint8_t *device_name;                                    /**< Local device name (NULL terminated) */
-    wiced_bt_sec_level_t security_required;                  /**< BTM_SEC_BEST_EFFORT is recommended choice for most applications,
-                                                                    to connect to the widest range of devices. Allows stack to choose
-                                                                    the highest level of security possible between the two devices */
-    const wiced_bt_cfg_br_t *p_br_cfg;                       /**< BR/EDR related configuration */
-    const wiced_bt_cfg_ble_t *p_ble_cfg;                     /**< LE related configuration */
-    const wiced_bt_cfg_gatt_t *p_gatt_cfg;                   /**< GATT settings */
-    const wiced_bt_cfg_isoc_t *p_isoc_cfg;                   /**< Isochronous Connection configuration */
-    const wiced_bt_cfg_l2cap_application_t *p_l2cap_app_cfg; /**< l2cap configuration fgitor application defined profiles/protocols */
+    /** Local device name (NULL terminated) */
+    uint8_t *device_name;
+    /** BTM_SEC_BEST_EFFORT is recommended choice for most applications,
+     * to connect to the widest range of devices. Allows stack to choose
+     * the highest level of security possible between the two devices
+     */
+    wiced_bt_sec_level_t security_required;
+    /** BR/EDR related configuration */
+    const wiced_bt_cfg_br_t *p_br_cfg;
+    /** LE related configuration */
+    const wiced_bt_cfg_ble_t *p_ble_cfg;
+    /** GATT settings */
+    const wiced_bt_cfg_gatt_t *p_gatt_cfg;
+    /** Isochronous Connection configuration
+     * @deprecated since version BTSTACK4.0
+     */
+    const wiced_bt_cfg_isoc_t *p_isoc_cfg;
+    /** l2cap configuration application defined profiles/protocols */
+    const wiced_bt_cfg_l2cap_application_t *p_l2cap_app_cfg;
 } wiced_bt_cfg_settings_t;
 
 /**
- * @ingroup wiced_bt_init_functions
- *
- * Returns the expected dynamic memory size required for the stack based on the \b p_bt_cfg_settings
+ * Returns the expected dynamic memory size required for the stack based on the p_bt_cfg_settings
  *
  * @param[in] p_bt_cfg_settings         : Bluetooth stack configuration
  *
- * @return    Dynamic memory size requirements of the stack
+ * @return    dynamic memory size requirements of the stack
  */
 int32_t wiced_bt_stack_get_dynamic_memory_size_for_config(const wiced_bt_cfg_settings_t* p_bt_cfg_settings);
 

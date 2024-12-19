@@ -97,8 +97,8 @@ $(document).ready(function(){initNavTree('group__gatt__le.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab44b8568a7e3d887d034e4e4d0277bc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__le.html#gab44b8568a7e3d887d034e4e4d0277bc0">wiced_bt_gatt_le_connect</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> bd_addr_type, <a class="el" href="wiced__bt__dev_8h.html#a4309edd4a7a1c7f30bdc57d8107e84ab">wiced_bt_ble_conn_mode_t</a> conn_mode, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> is_direct)</td></tr>
-<tr class="memdesc:gab44b8568a7e3d887d034e4e4d0277bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open GATT over LE connection to a remote device.  <a href="#gab44b8568a7e3d887d034e4e4d0277bc0">More...</a><br /></td></tr>
+<tr class="memitem:gab44b8568a7e3d887d034e4e4d0277bc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__le.html#gab44b8568a7e3d887d034e4e4d0277bc0">wiced_bt_gatt_le_connect</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> bd_addr_type, <a class="el" href="group__wicedbt___device_management.html#ga4309edd4a7a1c7f30bdc57d8107e84ab">wiced_bt_ble_conn_mode_t</a> conn_mode, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> is_direct)</td></tr>
+<tr class="memdesc:gab44b8568a7e3d887d034e4e4d0277bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open GATT over LE connection to a remote device Result is notified using <b> GATT_CONNECTION_STATUS_EVT </b> of <a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a>.  <a href="#gab44b8568a7e3d887d034e4e4d0277bc0">More...</a><br /></td></tr>
 <tr class="separator:gab44b8568a7e3d887d034e4e4d0277bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f4ea3070442ba623e179b4a3ffcab0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__le.html#ga6f4ea3070442ba623e179b4a3ffcab0c">wiced_bt_gatt_listen</a> (<a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> start, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> type)</td></tr>
 <tr class="memdesc:ga6f4ea3070442ba623e179b4a3ffcab0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or stop LE advertisement and listen for connection.  <a href="#ga6f4ea3070442ba623e179b4a3ffcab0c">More...</a><br /></td></tr>
@@ -126,7 +126,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__dev_8h.html#a4309edd4a7a1c7f30bdc57d8107e84ab">wiced_bt_ble_conn_mode_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__wicedbt___device_management.html#ga4309edd4a7a1c7f30bdc57d8107e84ab">wiced_bt_ble_conn_mode_t</a>&#160;</td>
           <td class="paramname"><em>conn_mode</em>, </td>
         </tr>
         <tr>
@@ -143,21 +143,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Open GATT over LE connection to a remote device. </p>
-<p>Result is notified using <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631ab44e413a73125ba989225c6629ec7dc5" title="GATT connection status change.">GATT_CONNECTION_STATUS_EVT</a> of <a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a>.</p>
+<p>Open GATT over LE connection to a remote device Result is notified using <b> GATT_CONNECTION_STATUS_EVT </b> of <a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Remote device address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr_type</td><td>: Public or random address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_mode</td><td>: Connection scan mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr_type</td><td>Public or random address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn_mode</td><td>: connection scan mode </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">is_direct</td><td>: Is direct connection or not</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><b> TRUE </b> : If connection started <br />
- <b> FALSE </b> : If connection start failure <br />
- </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If <code>is_direct</code> is set to <a class="el" href="group__gentypes.html#ga98455f16ecc9e3b1e94af3d3437416f5" title="AIROC false.">WICED_FALSE</a>, it will create background connection. Default Background connection type is <a class="el" href="wiced__bt__ble_8h.html#a85abcdffb41185cf65f29c689cf36a16a262d3de0ebe5bab5fcb4b0e1591e0a0b" title="No background connection.">BTM_BLE_CONN_NONE</a>. Before calling <a class="el" href="group__gatt__le.html#gab44b8568a7e3d887d034e4e4d0277bc0" title="Open GATT over LE connection to a remote device.">wiced_bt_gatt_le_connect</a> please set background connection type (AUTO) using <a class="el" href="group__btm__ble__conn__filter__accept__list__functions.html#ga4ca85e744e80f9883a70a4520f70420f" title="Set LE background connection procedure type.">wiced_bt_ble_set_background_connection_type</a> API </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><b> TRUE </b> : If connection started <b> FALSE </b> : If connection start failure</dd></dl>
+<p>NOTE : If is_direct = WICED_FALSE, it will create background connection. Default Background connection type is BTM_BLE_CONN_NONE. Before calling wiced_bt_gatt_le_connect please set background connection type (AUTO) using wiced_bt_ble_set_background_connection_type API </p>
 
 </div>
 </div>
@@ -196,15 +193,13 @@ Functions</h2></td></tr>
 <p>Start or stop LE advertisement and listen for connection. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>: <b>TRUE</b> to add device to Filter Accept List or <b>FALSE</b> to remove </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Bluetooth address to add/remove from Filter Accept List </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>: TRUE to add device to Filter Accept List / FALSE to remove </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Device to add/remove from Filter Accept List </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>: Address type of <code>bd_addr</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><b> TRUE </b> : Success <br />
- <b> FALSE </b> : Failure <br />
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><b> TRUE </b> : Success <b> FALSE </b> : Failure </dd></dl>
 
 </div>
 </div>

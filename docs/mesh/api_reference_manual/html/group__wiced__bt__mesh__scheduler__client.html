@@ -87,8 +87,8 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__scheduler__cli
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh Scheduler Client<div class="ingroups"><a class="el" href="group__wiced__bt__mesh.html">LE Mesh</a> &raquo; <a class="el" href="group__wiced__bt__mesh__models.html">Mesh Models Library API</a></div></div>  </div>
 </div><!--header-->
@@ -97,12 +97,18 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__scheduler__cli
 <p>The AIROC Mesh Scheduler Client module provides a way for an application to control Scheduler Servers in the mesh network. </p>
 <p>TBD </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaff09f32ab11716c305fe2ddcb68ba55e"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__scheduler__client.html#gaff09f32ab11716c305fe2ddcb68ba55e">wiced_bt_mesh_scheduler_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
+<tr class="memdesc:gaff09f32ab11716c305fe2ddcb68ba55e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#gaff09f32ab11716c305fe2ddcb68ba55e">More...</a><br /></td></tr>
+<tr class="separator:gaff09f32ab11716c305fe2ddcb68ba55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gae021005cc977f8398625b6761c3c0c59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__scheduler__client.html#gae021005cc977f8398625b6761c3c0c59">wiced_bt_mesh_model_scheduler_client_init</a> (<a class="el" href="group__wiced__bt__mesh__scheduler__client.html#gaff09f32ab11716c305fe2ddcb68ba55e">wiced_bt_mesh_scheduler_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
 <tr class="memdesc:gae021005cc977f8398625b6761c3c0c59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler Client Module initialization.  <a href="#gae021005cc977f8398625b6761c3c0c59">More...</a><br /></td></tr>
 <tr class="separator:gae021005cc977f8398625b6761c3c0c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga376e8ac053469571e2f7e9425413dcfe"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__scheduler__client.html#ga376e8ac053469571e2f7e9425413dcfe">wiced_bt_mesh_model_scheduler_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
+<tr class="memitem:ga376e8ac053469571e2f7e9425413dcfe"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__scheduler__client.html#ga376e8ac053469571e2f7e9425413dcfe">wiced_bt_mesh_model_scheduler_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
 <tr class="memdesc:ga376e8ac053469571e2f7e9425413dcfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler client Message Handler.  <a href="#ga376e8ac053469571e2f7e9425413dcfe">More...</a><br /></td></tr>
 <tr class="separator:ga376e8ac053469571e2f7e9425413dcfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10bd3a0dcbe3208cfbf36a042463ffc8"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__scheduler__client.html#ga10bd3a0dcbe3208cfbf36a042463ffc8">wiced_bt_mesh_model_scheduler_client_send_get</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event)</td></tr>
@@ -114,12 +120,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga80b6ec38f49a3ffa2547c16848e267df"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__scheduler__client.html#ga80b6ec38f49a3ffa2547c16848e267df">wiced_bt_mesh_model_scheduler_client_send_action_set</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, <a class="el" href="structwiced__bt__mesh__scheduler__action__data__t.html">wiced_bt_mesh_scheduler_action_data_t</a> *p_data)</td></tr>
 <tr class="memdesc:ga80b6ec38f49a3ffa2547c16848e267df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler Client Send Action Set request.  <a href="#ga80b6ec38f49a3ffa2547c16848e267df">More...</a><br /></td></tr>
 <tr class="separator:ga80b6ec38f49a3ffa2547c16848e267df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gaff09f32ab11716c305fe2ddcb68ba55e"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__scheduler__client.html#gaff09f32ab11716c305fe2ddcb68ba55e">wiced_bt_mesh_scheduler_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
-<tr class="memdesc:gaff09f32ab11716c305fe2ddcb68ba55e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#gaff09f32ab11716c305fe2ddcb68ba55e">More...</a><br /></td></tr>
-<tr class="separator:gaff09f32ab11716c305fe2ddcb68ba55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gaff09f32ab11716c305fe2ddcb68ba55e"></a>
@@ -233,6 +233,34 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="ga10bd3a0dcbe3208cfbf36a042463ffc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10bd3a0dcbe3208cfbf36a042463ffc8">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_scheduler_client_send_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_scheduler_client_send_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scheduler Client send Get request. </p>
+<p>Application can call Scheduler Client Get function to send Scheduler Get client message to the server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
 <a id="gad27ba6975c4ab60afb69ce9d3ab56396"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad27ba6975c4ab60afb69ce9d3ab56396">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_scheduler_client_send_action_get()</h2>
 
@@ -304,34 +332,6 @@ Typedefs</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
     <tr><td class="paramname">p_data</td><td>Pointer to the data structure containing the action number of interest, time stamp when action should accure and the scene number for the device to move to.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
-<a id="ga10bd3a0dcbe3208cfbf36a042463ffc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga10bd3a0dcbe3208cfbf36a042463ffc8">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_scheduler_client_send_get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_scheduler_client_send_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Scheduler Client send Get request. </p>
-<p>Application can call Scheduler Client Get function to send Scheduler Get client message to the server.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message.</td></tr>
   </table>
   </dd>
 </dl>

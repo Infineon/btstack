@@ -87,8 +87,8 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__location__serv
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh Location Server<div class="ingroups"><a class="el" href="group__wiced__bt__mesh.html">LE Mesh</a> &raquo; <a class="el" href="group__wiced__bt__mesh__models.html">Mesh Models Library API</a></div></div>  </div>
 </div><!--header-->
@@ -99,26 +99,26 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__location__serv
 <p>Two types of location information can be exchanged between the client and the server. The Global Location Data (see <a class="el" href="structwiced__bt__mesh__location__global__data__t.html">wiced_bt_mesh_location_global_data_t</a>) and the Local Location Data (see <a class="el" href="structwiced__bt__mesh__location__local__data__t.html">wiced_bt_mesh_location_local_data_t</a>).</p>
 <p>On startup the application should call the wiced_bt_mesh_model_location_server_init function providing the callback to be executed when a Get or Set request is received from a mesh device. The application should call the wiced_bt_mesh_model_location_server_send function in response to a get request, a set request when reply is required or when application logic requires location information to be sent out. In the latter case the message will be sent out only if device is configured remotely with the destination address where the location status should be set to and and the application key to be used to secure the message. </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gade3fffd05bffd374336e26a780594062"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__server.html#gade3fffd05bffd374336e26a780594062">wiced_bt_mesh_location_server_callback_t</a>(uint8_t element_idx, uint16_t event, void *p_data)</td></tr>
+<tr class="memdesc:gade3fffd05bffd374336e26a780594062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location Server callback.  <a href="#gade3fffd05bffd374336e26a780594062">More...</a><br /></td></tr>
+<tr class="separator:gade3fffd05bffd374336e26a780594062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga182e6633f09b22e33def5c3b343227b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__server.html#ga182e6633f09b22e33def5c3b343227b1">wiced_bt_mesh_model_location_server_init</a> (<a class="el" href="group__wiced__bt__mesh__location__server.html#gade3fffd05bffd374336e26a780594062">wiced_bt_mesh_location_server_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
 <tr class="memdesc:ga182e6633f09b22e33def5c3b343227b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location Server initialization.  <a href="#ga182e6633f09b22e33def5c3b343227b1">More...</a><br /></td></tr>
 <tr class="separator:ga182e6633f09b22e33def5c3b343227b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf501d5b111e4100c464f2a1c6b99a1f7"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__server.html#gaf501d5b111e4100c464f2a1c6b99a1f7">wiced_bt_mesh_model_location_server_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
+<tr class="memitem:gaf501d5b111e4100c464f2a1c6b99a1f7"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__server.html#gaf501d5b111e4100c464f2a1c6b99a1f7">wiced_bt_mesh_model_location_server_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
 <tr class="memdesc:gaf501d5b111e4100c464f2a1c6b99a1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location Server Message Handler.  <a href="#gaf501d5b111e4100c464f2a1c6b99a1f7">More...</a><br /></td></tr>
 <tr class="separator:gaf501d5b111e4100c464f2a1c6b99a1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0549c6bcb0387593085c789248ba5969"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__server.html#ga0549c6bcb0387593085c789248ba5969">wiced_bt_mesh_model_location_setup_server_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
+<tr class="memitem:ga0549c6bcb0387593085c789248ba5969"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__server.html#ga0549c6bcb0387593085c789248ba5969">wiced_bt_mesh_model_location_setup_server_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
 <tr class="memdesc:ga0549c6bcb0387593085c789248ba5969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location Setup Server Message Handler.  <a href="#ga0549c6bcb0387593085c789248ba5969">More...</a><br /></td></tr>
 <tr class="separator:ga0549c6bcb0387593085c789248ba5969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e80009e6350f38795e567d86f2736b0"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__server.html#ga4e80009e6350f38795e567d86f2736b0">wiced_bt_mesh_model_location_server_send</a> (uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#a1d127017fb298b889f4ba24752d08b8e">type</a>, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
+<tr class="memitem:ga4e80009e6350f38795e567d86f2736b0"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__server.html#ga4e80009e6350f38795e567d86f2736b0">wiced_bt_mesh_model_location_server_send</a> (uint16_t type, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
 <tr class="memdesc:ga4e80009e6350f38795e567d86f2736b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application can call this function to send status message to the Location Client.  <a href="#ga4e80009e6350f38795e567d86f2736b0">More...</a><br /></td></tr>
 <tr class="separator:ga4e80009e6350f38795e567d86f2736b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gade3fffd05bffd374336e26a780594062"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__server.html#gade3fffd05bffd374336e26a780594062">wiced_bt_mesh_location_server_callback_t</a>(uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, uint16_t event, void *p_data)</td></tr>
-<tr class="memdesc:gade3fffd05bffd374336e26a780594062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location Server callback.  <a href="#gade3fffd05bffd374336e26a780594062">More...</a><br /></td></tr>
-<tr class="separator:gade3fffd05bffd374336e26a780594062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gade3fffd05bffd374336e26a780594062"></a>
@@ -128,7 +128,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void() wiced_bt_mesh_location_server_callback_t(uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, uint16_t event, void *p_data)</td>
+          <td class="memname">typedef void() wiced_bt_mesh_location_server_callback_t(uint8_t element_idx, uint16_t event, void *p_data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -232,52 +232,6 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4e80009e6350f38795e567d86f2736b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e80009e6350f38795e567d86f2736b0">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_location_server_send()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_location_server_send </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send status message to the Location Client. </p>
-<p>The mesh event should contain information if this is a reply or an unsolicited message.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>Type of the message to be send to the Client (see <a class="el" href="wiced__bt__mesh__models_8h.html#LOCATION_EVENT">Location Events</a>) </td></tr>
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
-    <tr><td class="paramname">p_data</td><td>Depending on the type of the message this should point to the Global Location Data (<a class="el" href="structwiced__bt__mesh__location__global__data__t.html">wiced_bt_mesh_location_global_data_t</a>) or the Local Location Data (see <a class="el" href="structwiced__bt__mesh__location__local__data__t.html">wiced_bt_mesh_location_local_data_t</a>)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
 <a id="ga0549c6bcb0387593085c789248ba5969"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0549c6bcb0387593085c789248ba5969">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_location_setup_server_message_handler()</h2>
 
@@ -321,6 +275,52 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>WICED_TRUE if the message is for this company ID/Model combination, WICED_FALSE otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ga4e80009e6350f38795e567d86f2736b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e80009e6350f38795e567d86f2736b0">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_location_server_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_location_server_send </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application can call this function to send status message to the Location Client. </p>
+<p>The mesh event should contain information if this is a reply or an unsolicited message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Type of the message to be send to the Client (see <a class="el" href="wiced__bt__mesh__models_8h.html#LOCATION_EVENT">Location Events</a>) </td></tr>
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </td></tr>
+    <tr><td class="paramname">p_data</td><td>Depending on the type of the message this should point to the Global Location Data (<a class="el" href="structwiced__bt__mesh__location__global__data__t.html">wiced_bt_mesh_location_global_data_t</a>) or the Local Location Data (see <a class="el" href="structwiced__bt__mesh__location__local__data__t.html">wiced_bt_mesh_location_local_data_t</a>)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
 
 </div>
 </div>

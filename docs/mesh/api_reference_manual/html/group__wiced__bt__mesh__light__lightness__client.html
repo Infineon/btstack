@@ -87,23 +87,35 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__light__lightne
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh Light Lightness Client<div class="ingroups"><a class="el" href="group__wiced__bt__mesh.html">LE Mesh</a> &raquo; <a class="el" href="group__wiced__bt__mesh__models.html">Mesh Models Library API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
 <p>The AIROC Mesh Light Lightness Client module of the Mesh Models library provides a way for an application to control brightness level of the Light Lightness Servers in the mesh network optionally receive status information. </p>
-<p>To include Light Lightness Client functionality, the device description shall contain <a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#gaded8c99bcc90581074f7a0273802aa49">WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_CLIENT</a>. </p>
+<p>To include Light Lightness Client functionality, the device description shall contain WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_CLIENT. </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gaded8c99bcc90581074f7a0273802aa49"><td class="memItemLeft" align="right" valign="top"><a id="gaded8c99bcc90581074f7a0273802aa49"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_CLIENT</b>&#160;&#160;&#160;{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_LIGHTNESS_CLNT, <a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga315c6d385a47f14b9c0bce70d59bf766">wiced_bt_mesh_model_light_lightness_client_message_handler</a>, NULL, NULL }</td></tr>
+<tr class="separator:gaded8c99bcc90581074f7a0273802aa49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga7d461c489cee0f0af593dd2fdf51bea6"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga7d461c489cee0f0af593dd2fdf51bea6">wiced_bt_mesh_light_lightness_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
+<tr class="memdesc:ga7d461c489cee0f0af593dd2fdf51bea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light Lightness Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#ga7d461c489cee0f0af593dd2fdf51bea6">More...</a><br /></td></tr>
+<tr class="separator:ga7d461c489cee0f0af593dd2fdf51bea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga27c00f773f5ca6f1b705b1d1ad25d350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga27c00f773f5ca6f1b705b1d1ad25d350">wiced_bt_mesh_model_light_lightness_client_init</a> (uint8_t <a class="el" href="wiced__bt__mesh__app_8h.html#a3e88ad60a04f11afc4d739c9fbd490af">element_idx</a>, <a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga7d461c489cee0f0af593dd2fdf51bea6">wiced_bt_mesh_light_lightness_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
+<tr class="memitem:ga27c00f773f5ca6f1b705b1d1ad25d350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga27c00f773f5ca6f1b705b1d1ad25d350">wiced_bt_mesh_model_light_lightness_client_init</a> (uint8_t element_idx, <a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga7d461c489cee0f0af593dd2fdf51bea6">wiced_bt_mesh_light_lightness_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
 <tr class="memdesc:ga27c00f773f5ca6f1b705b1d1ad25d350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light Lightness Client Module initialization.  <a href="#ga27c00f773f5ca6f1b705b1d1ad25d350">More...</a><br /></td></tr>
 <tr class="separator:ga27c00f773f5ca6f1b705b1d1ad25d350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga315c6d385a47f14b9c0bce70d59bf766"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga315c6d385a47f14b9c0bce70d59bf766">wiced_bt_mesh_model_light_lightness_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
+<tr class="memitem:ga315c6d385a47f14b9c0bce70d59bf766"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga315c6d385a47f14b9c0bce70d59bf766">wiced_bt_mesh_model_light_lightness_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
 <tr class="memdesc:ga315c6d385a47f14b9c0bce70d59bf766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light Lightness Client Message Handler.  <a href="#ga315c6d385a47f14b9c0bce70d59bf766">More...</a><br /></td></tr>
 <tr class="separator:ga315c6d385a47f14b9c0bce70d59bf766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad110283c46a3425c4a97530752975890"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#gad110283c46a3425c4a97530752975890">wiced_bt_mesh_model_light_lightness_client_send_get</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event)</td></tr>
@@ -133,33 +145,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gab7f2a8d86e555860e41ed604df895f5a"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#gab7f2a8d86e555860e41ed604df895f5a">wiced_bt_mesh_model_light_lightness_client_send_range_set</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, <a class="el" href="structwiced__bt__mesh__light__lightness__range__set__data__t.html">wiced_bt_mesh_light_lightness_range_set_data_t</a> *p_data)</td></tr>
 <tr class="memdesc:gab7f2a8d86e555860e41ed604df895f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application can call this function to send Light Lightness Default Set client message to the server.  <a href="#gab7f2a8d86e555860e41ed604df895f5a">More...</a><br /></td></tr>
 <tr class="separator:gab7f2a8d86e555860e41ed604df895f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gaded8c99bcc90581074f7a0273802aa49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#gaded8c99bcc90581074f7a0273802aa49">WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_CLIENT</a>&#160;&#160;&#160;{ <a class="el" href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a>, <a class="el" href="wiced__bt__mesh__model__defs_8h.html#a7466aaa6450544278016aea993bf29ae">WICED_BT_MESH_CORE_MODEL_ID_LIGHT_LIGHTNESS_CLNT</a>, <a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga315c6d385a47f14b9c0bce70d59bf766">wiced_bt_mesh_model_light_lightness_client_message_handler</a>, NULL, NULL }</td></tr>
-<tr class="separator:gaded8c99bcc90581074f7a0273802aa49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga7d461c489cee0f0af593dd2fdf51bea6"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga7d461c489cee0f0af593dd2fdf51bea6">wiced_bt_mesh_light_lightness_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
-<tr class="memdesc:ga7d461c489cee0f0af593dd2fdf51bea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light Lightness Client callback is called by the Mesh Models library on receiving a message from the peer.  <a href="#ga7d461c489cee0f0af593dd2fdf51bea6">More...</a><br /></td></tr>
-<tr class="separator:ga7d461c489cee0f0af593dd2fdf51bea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gaded8c99bcc90581074f7a0273802aa49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaded8c99bcc90581074f7a0273802aa49">&#9670;&nbsp;</a></span>WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_CLIENT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_CLIENT&#160;&#160;&#160;{ <a class="el" href="wiced__bt__mesh__model__defs_8h.html#a59a077dee05bafa600f33d9b29fd18c5">MESH_COMPANY_ID_BT_SIG</a>, <a class="el" href="wiced__bt__mesh__model__defs_8h.html#a7466aaa6450544278016aea993bf29ae">WICED_BT_MESH_CORE_MODEL_ID_LIGHT_LIGHTNESS_CLNT</a>, <a class="el" href="group__wiced__bt__mesh__light__lightness__client.html#ga315c6d385a47f14b9c0bce70d59bf766">wiced_bt_mesh_model_light_lightness_client_message_handler</a>, NULL, NULL }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga7d461c489cee0f0af593dd2fdf51bea6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7d461c489cee0f0af593dd2fdf51bea6">&#9670;&nbsp;</a></span>wiced_bt_mesh_light_lightness_client_callback_t</h2>
@@ -278,71 +264,6 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gaf7aa40c36da932b6c0fd12b9fb3e6a79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf7aa40c36da932b6c0fd12b9fb3e6a79">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lightness_client_send_default_get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lightness_client_send_default_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send the Light Lightness Default Get client message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
-<a id="ga6171eaf2f01acec4d2f1e6a06559b716"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6171eaf2f01acec4d2f1e6a06559b716">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lightness_client_send_default_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lightness_client_send_default_set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__light__lightness__default__data__t.html">wiced_bt_mesh_light_lightness_default_data_t</a> *&#160;</td>
-          <td class="paramname"><em>p_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send Light Lightness Default Set client message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>
-    <tr><td class="paramname">p_data</td><td>Pointer to the data to send</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
 <a id="gad110283c46a3425c4a97530752975890"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad110283c46a3425c4a97530752975890">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lightness_client_send_get()</h2>
 
@@ -370,26 +291,37 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gad9e93708306904c4820b37392c519596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad9e93708306904c4820b37392c519596">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lightness_client_send_last_get()</h2>
+<a id="ga6bca43f4126446ea408968a1cd534650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6bca43f4126446ea408968a1cd534650">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lightness_client_send_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lightness_client_send_last_get </td>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lightness_client_send_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em></td><td>)</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__light__lightness__actual__set__t.html">wiced_bt_mesh_light_lightness_actual_set_t</a> *&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The application can call this function to send the Light Lightness Last Get client message to the server. </p>
+<p>The application can call this function to send Light Lightness Set client message to the server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>
+    <tr><td class="paramname">p_data</td><td>Pointer to the data to send</td></tr>
   </table>
   </dd>
 </dl>
@@ -462,6 +394,98 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="gad9e93708306904c4820b37392c519596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9e93708306904c4820b37392c519596">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lightness_client_send_last_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lightness_client_send_last_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application can call this function to send the Light Lightness Last Get client message to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
+<a id="gaf7aa40c36da932b6c0fd12b9fb3e6a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7aa40c36da932b6c0fd12b9fb3e6a79">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lightness_client_send_default_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lightness_client_send_default_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application can call this function to send the Light Lightness Default Get client message to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
+<a id="ga6171eaf2f01acec4d2f1e6a06559b716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6171eaf2f01acec4d2f1e6a06559b716">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lightness_client_send_default_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lightness_client_send_default_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__light__lightness__default__data__t.html">wiced_bt_mesh_light_lightness_default_data_t</a> *&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application can call this function to send Light Lightness Default Set client message to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>
+    <tr><td class="paramname">p_data</td><td>Pointer to the data to send</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
+
+</div>
+</div>
 <a id="ga39bbe94a242cba1b451d88f21b0684b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga39bbe94a242cba1b451d88f21b0684b4">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lightness_client_send_range_get()</h2>
 
@@ -516,44 +540,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The application can call this function to send Light Lightness Default Set client message to the server. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>
-    <tr><td class="paramname">p_data</td><td>Pointer to the data to send</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS if message has been queued for transmission. </dd></dl>
-
-</div>
-</div>
-<a id="ga6bca43f4126446ea408968a1cd534650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6bca43f4126446ea408968a1cd534650">&#9670;&nbsp;</a></span>wiced_bt_mesh_model_light_lightness_client_send_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wiced_result_t wiced_bt_mesh_model_light_lightness_client_send_set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *&#160;</td>
-          <td class="paramname"><em>p_event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__mesh__light__lightness__actual__set__t.html">wiced_bt_mesh_light_lightness_actual_set_t</a> *&#160;</td>
-          <td class="paramname"><em>p_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The application can call this function to send Light Lightness Set client message to the server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_event</td><td>Mesh event with the information about the message that has been created by the app for unsolicited message. </td></tr>

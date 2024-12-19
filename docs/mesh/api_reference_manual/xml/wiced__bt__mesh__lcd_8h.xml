@@ -48,9 +48,9 @@
 <codeline lineno="66"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_MODEL_LARGE_COMPOS_DATA_SERVER<sp/>\</highlight></codeline>
 <codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/>MESH_COMPANY_ID_BT_SIG,<sp/>WICED_BT_MESH_CORE_MODEL_ID_LARGE_COMPOS_DATA_SRV,<sp/>wiced_bt_mesh_large_compos_data_server_message_handler,<sp/>NULL,<sp/>NULL<sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_large_compos_data_client_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1ad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_large_compos_data_client_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_large_compos_data_server_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1ad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_large_compos_data_server_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
@@ -58,38 +58,38 @@
 <codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>This<sp/>structure<sp/>contains<sp/>information<sp/>sent<sp/>from<sp/>the<sp/>provisioner<sp/>application<sp/>to<sp/>get<sp/>Large<sp/>Composition<sp/>Data<sp/>of<sp/>a<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__app_8h_1a36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>page;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>offset;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="105"><highlight class="normal">}<sp/>wiced_bt_mesh_config_large_compos_data_get_data_t;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>This<sp/>structure<sp/>contains<sp/>information<sp/>of<sp/>Composition<sp/>Data<sp/>from<sp/>a<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__app_8h_1a36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>page;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>offset;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>total_size;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1ad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>data_len;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>*p_data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="115"><highlight class="normal">}<sp/>wiced_bt_mesh_config_large_compos_data_status_data_t;</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
 <codeline lineno="127"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_config_large_compos_data_get(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>wiced_bt_mesh_config_large_compos_data_get_data_t<sp/>*p_get);</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>This<sp/>structure<sp/>contains<sp/>information<sp/>sent<sp/>from<sp/>the<sp/>provisioner<sp/>application<sp/>to<sp/>get<sp/>Models<sp/>Metadata<sp/>of<sp/>a<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__app_8h_1a36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>page;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>offset;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="134"><highlight class="normal">}<sp/>wiced_bt_mesh_config_models_metadata_get_data_t;</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>This<sp/>structure<sp/>contains<sp/>information<sp/>of<sp/>Models<sp/>Metadata<sp/>from<sp/>a<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__app_8h_1a36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="138"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>page;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>offset;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>total_size;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1ad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>data_len;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>*p_data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="144"><highlight class="normal">}<sp/>wiced_bt_mesh_config_models_metadata_status_data_t;</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
@@ -101,6 +101,6 @@
 <codeline lineno="163"><highlight class="normal"></highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MESH_LARGE_COMPOSITION_DATA_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_lcd.h"/>
+    <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_lcd.h"/>
   </compounddef>
 </doxygen>

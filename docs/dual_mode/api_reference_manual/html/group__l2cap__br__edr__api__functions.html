@@ -89,11 +89,10 @@ $(document).ready(function(){initNavTree('group__l2cap__br__edr__api__functions.
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">BR/EDR<div class="ingroups"><a class="el" href="group__l2cap.html">Logical Link Control and Adaptation Protocol (L2CAP) APIs</a></div></div>  </div>
+<div class="title">BR/EDR<div class="ingroups"><a class="el" href="group__l2cap.html">Logical Link Control and Adaptation Protocol (L2CAP)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
-<p>l2cap_common_api_functions </p>
 <p>API's used for BR/EDR <a class="el" href="group__l2cap.html">L2CAP</a>. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -107,7 +106,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga73269955273cc7aace17539843b8489a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__br__edr__api__functions.html#ga73269955273cc7aace17539843b8489a">wiced_bt_l2cap_ertm_connect_req</a> (uint16_t psm, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> p_bd_addr, <a class="el" href="structwiced__bt__l2cap__ertm__information__t.html">wiced_bt_l2cap_ertm_information_t</a> *p_ertm_information)</td></tr>
 <tr class="memdesc:ga73269955273cc7aace17539843b8489a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher layers call this function to create an L2CAP connection that needs to use Enhanced Retransmission Mode.  <a href="#ga73269955273cc7aace17539843b8489a">More...</a><br /></td></tr>
 <tr class="separator:ga73269955273cc7aace17539843b8489a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe952ec1f3fe8348b27fadf52a4d5875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__br__edr__api__functions.html#gabe952ec1f3fe8348b27fadf52a4d5875">wiced_bt_l2cap_register_ertm_drb</a> (uint16_t lcid, <a class="el" href="structt_d_r_b.html">tDRB</a> *p_drb, uint16_t drb_max_payload_len, <a class="el" href="wiced__bt__l2c_8h.html#a3708e90651b47861800452aa90044a7f">wiced_bt_l2cap_drb_release_cb</a> *p_unreg_cb)</td></tr>
+<tr class="memitem:gabe952ec1f3fe8348b27fadf52a4d5875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__br__edr__api__functions.html#gabe952ec1f3fe8348b27fadf52a4d5875">wiced_bt_l2cap_register_ertm_drb</a> (uint16_t lcid, <a class="el" href="structt_d_r_b.html">tDRB</a> *p_drb, uint16_t drb_max_payload_len, <a class="el" href="group__l2cap.html#ga3708e90651b47861800452aa90044a7f">wiced_bt_l2cap_drb_release_cb</a> *p_unreg_cb)</td></tr>
 <tr class="memdesc:gabe952ec1f3fe8348b27fadf52a4d5875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher layers call this function to register a DRM for an ERTM connection.  <a href="#gabe952ec1f3fe8348b27fadf52a4d5875">More...</a><br /></td></tr>
 <tr class="separator:gabe952ec1f3fe8348b27fadf52a4d5875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1be60582ea9b01e00b5441d8bfe2f279"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__br__edr__api__functions.html#ga1be60582ea9b01e00b5441d8bfe2f279">wiced_bt_l2cap_set_desire_role</a> (uint8_t new_role)</td></tr>
@@ -125,7 +124,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga742bb079aba66487a86cee6e309681ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__br__edr__api__functions.html#ga742bb079aba66487a86cee6e309681ef">wiced_bt_l2cap_flow_control</a> (uint16_t cid, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> data_enabled)</td></tr>
 <tr class="memdesc:ga742bb079aba66487a86cee6e309681ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher layers call this function to flow control a channel.  <a href="#ga742bb079aba66487a86cee6e309681ef">More...</a><br /></td></tr>
 <tr class="separator:ga742bb079aba66487a86cee6e309681ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab898add922fd24505677d647683edcdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__br__edr__api__functions.html#gab898add922fd24505677d647683edcdd">wiced_bt_l2cap_set_tx_priority</a> (uint16_t cid, <a class="el" href="wiced__bt__l2c_8h.html#ae159cf0a184ef83a6b33727f05747b69">wiced_bt_l2cap_chnl_priority_t</a> priority)</td></tr>
+<tr class="memitem:gab898add922fd24505677d647683edcdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__br__edr__api__functions.html#gab898add922fd24505677d647683edcdd">wiced_bt_l2cap_set_tx_priority</a> (uint16_t cid, <a class="el" href="group__l2cap.html#gae159cf0a184ef83a6b33727f05747b69">wiced_bt_l2cap_chnl_priority_t</a> priority)</td></tr>
 <tr class="memdesc:gab898add922fd24505677d647683edcdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the transmission priority for a channel.  <a href="#gab898add922fd24505677d647683edcdd">More...</a><br /></td></tr>
 <tr class="separator:gab898add922fd24505677d647683edcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c55891bf59c40eee6e8d809e1c6e76a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__br__edr__api__functions.html#ga4c55891bf59c40eee6e8d809e1c6e76a">wiced_bt_l2cap_set_flush_timeout</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, uint16_t flush_timeout)</td></tr>
@@ -178,6 +177,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga775fccf29157fa62d30389fea8a4e703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga775fccf29157fa62d30389fea8a4e703">&#9670;&nbsp;</a></span>wiced_bt_l2cap_ertm_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_l2cap_ertm_enable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable ERTM. </p>
+<pre class="fragment">             Calling this function will cause the linker to include
+             ERTM related functions.
+</pre><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
 <a id="ga73269955273cc7aace17539843b8489a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga73269955273cc7aace17539843b8489a">&#9670;&nbsp;</a></span>wiced_bt_l2cap_ertm_connect_req()</h2>
 
@@ -224,46 +246,35 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga775fccf29157fa62d30389fea8a4e703"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga775fccf29157fa62d30389fea8a4e703">&#9670;&nbsp;</a></span>wiced_bt_l2cap_ertm_enable()</h2>
+<a id="gabe952ec1f3fe8348b27fadf52a4d5875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe952ec1f3fe8348b27fadf52a4d5875">&#9670;&nbsp;</a></span>wiced_bt_l2cap_register_ertm_drb()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void wiced_bt_l2cap_ertm_enable </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enable ERTM. </p>
-<pre class="fragment">             Calling this function will cause the linker to include
-             ERTM related functions.
-</pre><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="ga742bb079aba66487a86cee6e309681ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga742bb079aba66487a86cee6e309681ef">&#9670;&nbsp;</a></span>wiced_bt_l2cap_flow_control()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_flow_control </td>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_register_ertm_drb </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>cid</em>, </td>
+          <td class="paramname"><em>lcid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td>
-          <td class="paramname"><em>data_enabled</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structt_d_r_b.html">tDRB</a> *&#160;</td>
+          <td class="paramname"><em>p_drb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>drb_max_payload_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__l2cap.html#ga3708e90651b47861800452aa90044a7f">wiced_bt_l2cap_drb_release_cb</a> *&#160;</td>
+          <td class="paramname"><em>p_unreg_cb</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -273,16 +284,47 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Higher layers call this function to flow control a channel. </p>
-<pre class="fragment">            data_enabled - TRUE data flows, FALSE data is stopped
-</pre><dl class="params"><dt>Parameters</dt><dd>
+<p>Higher layers call this function to register a DRM for an ERTM connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>: CID value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data_enabled</td><td>: data enabled</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lcid</td><td>: Local CID value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_drb</td><td>: DRB to be used to receive data for this channel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drb_max_payload_len</td><td>: DRB Size. It should greater than or equal to to MTU. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_unreg_cb</td><td>: <a class="el" href="group__l2cap.html#ga3708e90651b47861800452aa90044a7f">wiced_bt_l2cap_drb_release_cb</a> to release the DRB</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE if valid channel, else FALSE </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>: In case <code>p_drb</code> passed here has been allocated, it can be released when the stack calls <code>p_unreg_cb</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if disconnect sent, else FALSE </dd></dl>
+
+</div>
+</div>
+<a id="ga1be60582ea9b01e00b5441d8bfe2f279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1be60582ea9b01e00b5441d8bfe2f279">&#9670;&nbsp;</a></span>wiced_bt_l2cap_set_desire_role()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t wiced_bt_l2cap_set_desire_role </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>new_role</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sets the desire role for L2CAP. </p>
+<p>If the new role is L2CAP_ROLE_ALLOW_SWITCH, allow switch on HciCreateConnection. If the new role is L2CAP_ROLE_DISALLOW_SWITCH, do not allow switch on HciCreateConnection.</p>
+<p>If the new role is a valid role (HCI_ROLE_CENTRAL or HCI_ROLE_PERIPHERAL), the desire role is set to the new value. Otherwise, it is not changed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_role</td><td>: New role value. Refer <a class="el" href="group__l2cap.html#L2CAP_ROLE">L2CAP role</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the new (current) role. Refer <a class="el" href="group__l2cap.html#L2CAP_ROLE">L2CAP role</a> </dd></dl>
 
 </div>
 </div>
@@ -317,136 +359,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">lcid</td><td>: Local CID value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_to_flush</td><td>: Number of items for flushing, Refer <a class="el" href="wiced__bt__l2c_8h.html#L2CAP_FLUSH_CHANNELS">L2CAP flush channels</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_to_flush</td><td>: Number of items for flushing, Refer <a class="el" href="group__l2cap.html#L2CAP_FLUSH_CHANNELS">L2CAP flush channels</a></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of buffers left queued for that CID </dd></dl>
-
-</div>
-</div>
-<a id="ga0c11cd1ed947e93099670907c5cf353d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c11cd1ed947e93099670907c5cf353d">&#9670;&nbsp;</a></span>wiced_bt_l2cap_get_chnl_fcr_mode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t wiced_bt_l2cap_get_chnl_fcr_mode </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>lcid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the channel FCR mode. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lcid</td><td>Local CID</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Channel mode Refer <a class="el" href="wiced__bt__l2c_8h.html#L2CAP_FCR_MODE">L2CAP_FCR_MODE</a> </dd></dl>
-
-</div>
-</div>
-<a id="gae099861fe24b11a8f99029410190f120"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae099861fe24b11a8f99029410190f120">&#9670;&nbsp;</a></span>wiced_bt_l2cap_get_peer_features()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_get_peer_features </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>bd_addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>p_ext_feat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_chnl_mask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get a peers features and fixed channel map. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Peer Bd Address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_ext_feat</td><td>: features </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_chnl_mask</td><td>: mask storage area of type <a class="el" href="wiced__bt__l2c_8h.html#a0a4a747ef09577a8dfdb31de1ddca88d">wiced_bt_l2cap_fixed_channel_mask_t</a></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>: TRUE if peer is connected </dd></dl>
-
-</div>
-</div>
-<a id="gabe952ec1f3fe8348b27fadf52a4d5875"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabe952ec1f3fe8348b27fadf52a4d5875">&#9670;&nbsp;</a></span>wiced_bt_l2cap_register_ertm_drb()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_register_ertm_drb </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>lcid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structt_d_r_b.html">tDRB</a> *&#160;</td>
-          <td class="paramname"><em>p_drb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>drb_max_payload_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__l2c_8h.html#a3708e90651b47861800452aa90044a7f">wiced_bt_l2cap_drb_release_cb</a> *&#160;</td>
-          <td class="paramname"><em>p_unreg_cb</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Higher layers call this function to register a DRM for an ERTM connection. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lcid</td><td>: Local CID value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_drb</td><td>: DRB to be used to receive data for this channel </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">drb_max_payload_len</td><td>: DRB Size. It should greater than or equal to to MTU. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_unreg_cb</td><td>: <a class="el" href="wiced__bt__l2c_8h.html#a3708e90651b47861800452aa90044a7f">wiced_bt_l2cap_drb_release_cb</a> to release the DRB</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>: In case <code>p_drb</code> passed here has been allocated, it can be released when the stack calls <code>p_unreg_cb</code> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE if disconnect sent, else FALSE </dd></dl>
 
 </div>
 </div>
@@ -480,7 +397,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: BD Address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>: Refer <a class="el" href="wiced__bt__l2c_8h.html#L2CAP_PRIORITY">L2CAP ACL Priority Value</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>: Refer <a class="el" href="group__l2cap.html#L2CAP_PRIORITY">L2CAP ACL Priority Value</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -524,8 +441,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: BD Address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>: Refer <a class="el" href="wiced__bt__l2c_8h.html#L2CAP_PRIORITY">L2CAP ACL Priority Value</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">direction</td><td>: Refer <a class="el" href="wiced__bt__l2c_8h.html#L2CAP_DIRECTION">L2CAP ACL Priority Direction</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>: Refer <a class="el" href="group__l2cap.html#L2CAP_PRIORITY">L2CAP ACL Priority Value</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">direction</td><td>: Refer <a class="el" href="group__l2cap.html#L2CAP_DIRECTION">L2CAP ACL Priority Direction</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -533,32 +450,81 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1be60582ea9b01e00b5441d8bfe2f279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1be60582ea9b01e00b5441d8bfe2f279">&#9670;&nbsp;</a></span>wiced_bt_l2cap_set_desire_role()</h2>
+<a id="ga742bb079aba66487a86cee6e309681ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga742bb079aba66487a86cee6e309681ef">&#9670;&nbsp;</a></span>wiced_bt_l2cap_flow_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t wiced_bt_l2cap_set_desire_role </td>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_flow_control </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>new_role</em></td><td>)</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td>
+          <td class="paramname"><em>data_enabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function sets the desire role for L2CAP. </p>
-<p>If the new role is L2CAP_ROLE_ALLOW_SWITCH, allow switch on HciCreateConnection. If the new role is L2CAP_ROLE_DISALLOW_SWITCH, do not allow switch on HciCreateConnection.</p>
-<p>If the new role is a valid role (HCI_ROLE_CENTRAL or HCI_ROLE_PERIPHERAL), the desire role is set to the new value. Otherwise, it is not changed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Higher layers call this function to flow control a channel. </p>
+<pre class="fragment">            data_enabled - TRUE data flows, FALSE data is stopped
+</pre><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_role</td><td>: New role value. Refer <a class="el" href="wiced__bt__l2c_8h.html#L2CAP_ROLE">L2CAP role</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>: CID value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_enabled</td><td>: data enabled</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the new (current) role. Refer <a class="el" href="wiced__bt__l2c_8h.html#L2CAP_ROLE">L2CAP role</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if valid channel, else FALSE </dd></dl>
+
+</div>
+</div>
+<a id="gab898add922fd24505677d647683edcdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab898add922fd24505677d647683edcdd">&#9670;&nbsp;</a></span>wiced_bt_l2cap_set_tx_priority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_set_tx_priority </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__l2cap.html#gae159cf0a184ef83a6b33727f05747b69">wiced_bt_l2cap_chnl_priority_t</a>&#160;</td>
+          <td class="paramname"><em>priority</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the transmission priority for a channel. </p>
+<p>(FCR Mode)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>: CID value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>: refer <a class="el" href="group__l2cap.html#gae159cf0a184ef83a6b33727f05747b69">wiced_bt_l2cap_chnl_priority_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if a valid channel, else FALSE </dd></dl>
 
 </div>
 </div>
@@ -601,23 +567,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab898add922fd24505677d647683edcdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab898add922fd24505677d647683edcdd">&#9670;&nbsp;</a></span>wiced_bt_l2cap_set_tx_priority()</h2>
+<a id="gae099861fe24b11a8f99029410190f120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae099861fe24b11a8f99029410190f120">&#9670;&nbsp;</a></span>wiced_bt_l2cap_get_peer_features()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_set_tx_priority </td>
+          <td class="memname"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> wiced_bt_l2cap_get_peer_features </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>cid</em>, </td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>bd_addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__l2c_8h.html#ae159cf0a184ef83a6b33727f05747b69">wiced_bt_l2cap_chnl_priority_t</a>&#160;</td>
-          <td class="paramname"><em>priority</em>&#160;</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>p_ext_feat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>p_chnl_mask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -627,16 +599,43 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the transmission priority for a channel. </p>
-<p>(FCR Mode)</p>
+<p>Get a peers features and fixed channel map. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>: CID value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>: refer <a class="el" href="wiced__bt__l2c_8h.html#ae159cf0a184ef83a6b33727f05747b69">wiced_bt_l2cap_chnl_priority_t</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Peer Bd Address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_ext_feat</td><td>: features </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_chnl_mask</td><td>: mask storage area of type <a class="el" href="group__l2cap.html#ga0a4a747ef09577a8dfdb31de1ddca88d">wiced_bt_l2cap_fixed_channel_mask_t</a></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE if a valid channel, else FALSE </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>: TRUE if peer is connected </dd></dl>
+
+</div>
+</div>
+<a id="ga0c11cd1ed947e93099670907c5cf353d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c11cd1ed947e93099670907c5cf353d">&#9670;&nbsp;</a></span>wiced_bt_l2cap_get_chnl_fcr_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t wiced_bt_l2cap_get_chnl_fcr_mode </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>lcid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the channel FCR mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lcid</td><td>Local CID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Channel mode Refer <a class="el" href="group__l2cap.html#L2CAP_FCR_MODE">L2CAP_FCR_MODE</a> </dd></dl>
 
 </div>
 </div>

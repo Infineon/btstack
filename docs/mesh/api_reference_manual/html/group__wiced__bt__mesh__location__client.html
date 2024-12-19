@@ -87,8 +87,8 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__location__clie
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Mesh Location Client<div class="ingroups"><a class="el" href="group__wiced__bt__mesh.html">LE Mesh</a> &raquo; <a class="el" href="group__wiced__bt__mesh__models.html">Mesh Models Library API</a></div></div>  </div>
 </div><!--header-->
@@ -98,12 +98,18 @@ $(document).ready(function(){initNavTree('group__wiced__bt__mesh__location__clie
 <p>The module can also process unsolicited status messages from mesh nodes.</p>
 <p>On startup the application should call wiced_bt_mesh_model_location_client_init function providing the callback that will be called when location status message is received. The application can call the appropriate Get or Set function to retrieve or setup the Global or Local Location data on a specific mesh node. </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gafeae0994c14a795c89f2fb4974bca2ae"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__client.html#gafeae0994c14a795c89f2fb4974bca2ae">wiced_bt_mesh_location_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
+<tr class="memdesc:gafeae0994c14a795c89f2fb4974bca2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location Client callback.  <a href="#gafeae0994c14a795c89f2fb4974bca2ae">More...</a><br /></td></tr>
+<tr class="separator:gafeae0994c14a795c89f2fb4974bca2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaa010b446ab2b4c0b83bf8a15c5266111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__client.html#gaa010b446ab2b4c0b83bf8a15c5266111">wiced_bt_mesh_model_location_client_init</a> (<a class="el" href="group__wiced__bt__mesh__location__client.html#gafeae0994c14a795c89f2fb4974bca2ae">wiced_bt_mesh_location_client_callback_t</a> *p_callback, wiced_bool_t is_provisioned)</td></tr>
 <tr class="memdesc:gaa010b446ab2b4c0b83bf8a15c5266111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location Client Module initialization.  <a href="#gaa010b446ab2b4c0b83bf8a15c5266111">More...</a><br /></td></tr>
 <tr class="separator:gaa010b446ab2b4c0b83bf8a15c5266111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaadf4255b6ade28b4f994af0190f1df38"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__client.html#gaadf4255b6ade28b4f994af0190f1df38">wiced_bt_mesh_model_location_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t <a class="el" href="wiced__bt__mesh__provision_8h.html#ad1a572736a10ff6b282c5f43c4ea1ccf">data_len</a>)</td></tr>
+<tr class="memitem:gaadf4255b6ade28b4f994af0190f1df38"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__client.html#gaadf4255b6ade28b4f994af0190f1df38">wiced_bt_mesh_model_location_client_message_handler</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, uint8_t *p_data, uint16_t data_len)</td></tr>
 <tr class="memdesc:gaadf4255b6ade28b4f994af0190f1df38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location Client Message Handler.  <a href="#gaadf4255b6ade28b4f994af0190f1df38">More...</a><br /></td></tr>
 <tr class="separator:gaadf4255b6ade28b4f994af0190f1df38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf25e81b85240440895e917e3300469b9"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__client.html#gaf25e81b85240440895e917e3300469b9">wiced_bt_mesh_model_location_client_send_global_get</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event)</td></tr>
@@ -118,12 +124,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gadca8a5931ad41ffc75bf5dbbe4c6ff14"><td class="memItemLeft" align="right" valign="top">wiced_result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__client.html#gadca8a5931ad41ffc75bf5dbbe4c6ff14">wiced_bt_mesh_model_location_client_send_local_set</a> (<a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, <a class="el" href="structwiced__bt__mesh__location__local__data__t.html">wiced_bt_mesh_location_local_data_t</a> *p_location_data)</td></tr>
 <tr class="memdesc:gadca8a5931ad41ffc75bf5dbbe4c6ff14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application can call this function to send Set Location client message to the server.  <a href="#gadca8a5931ad41ffc75bf5dbbe4c6ff14">More...</a><br /></td></tr>
 <tr class="separator:gadca8a5931ad41ffc75bf5dbbe4c6ff14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gafeae0994c14a795c89f2fb4974bca2ae"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__mesh__location__client.html#gafeae0994c14a795c89f2fb4974bca2ae">wiced_bt_mesh_location_client_callback_t</a>(uint16_t event, <a class="el" href="structwiced__bt__mesh__event__t.html">wiced_bt_mesh_event_t</a> *p_event, void *p_data)</td></tr>
-<tr class="memdesc:gafeae0994c14a795c89f2fb4974bca2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location Client callback.  <a href="#gafeae0994c14a795c89f2fb4974bca2ae">More...</a><br /></td></tr>
-<tr class="separator:gafeae0994c14a795c89f2fb4974bca2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gafeae0994c14a795c89f2fb4974bca2ae"></a>

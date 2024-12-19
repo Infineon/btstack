@@ -93,8 +93,8 @@ $(document).ready(function(){initNavTree('group__gatt__module__init.html','');})
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
-<p>This section provides GATT Profile Server Module Initialization APIs. </p>
-<p>These APIs are called by application to enable caching and signing feature. </p>
+<p>GATT Profile Module Init. </p>
+<p><b> GATT Module Initialization Functions </b> sub module for <b>GATT</b>. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -123,10 +123,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enables GATT database hashing calculations on the server. </p>
-<p>Required to called for servers which need support for robust caching. </p><dl class="section note"><dt>Note</dt><dd>This API should be called prior to calling <a class="el" href="group__gattdb__api__functions.html#ga29fd2f86442a2fdadf9c4a05094e5c7f">wiced_bt_gatt_db_init</a>, with an NON-NULL <a class="el" href="group__gattdb__api__functions.html#ga29fd2f86442a2fdadf9c4a05094e5c7f">wiced_bt_gatt_db_init</a> hash parameter</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> <br />
- <b>WICED_BT_SUCCESS</b> : If successful<br />
- <b>WICED_BT_ERROR</b> : Otherwise </dd></dl>
+<p>Required to called for servers which need support for robust caching. </p><dl class="section note"><dt>Note</dt><dd>: This API should be called prior to calling <a class="el" href="group__gattdb__api__functions.html#ga29fd2f86442a2fdadf9c4a05094e5c7f">wiced_bt_gatt_db_init</a>, with an non-NULL <code>wiced_bt_gatt_db_init.hash</code> parameter</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> </dd></dl>
 
 </div>
 </div>
@@ -147,10 +145,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enables code for enabling and checking data signing on the server and client. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> <br />
- <b>WICED_BT_SUCCESS</b> : If successful <br />
- <b>WICED_BT_NO_RESOURCES</b> : If gatt is not initialized <br />
- <b>WICED_BT_ERROR</b> : Otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> </dd></dl>
 
 </div>
 </div>

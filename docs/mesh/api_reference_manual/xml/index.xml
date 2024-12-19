@@ -1091,6 +1091,15 @@
     <member refid="group__wiced__bt__mesh__core_1ga8cde18bf10665318c88c1ba8a94e8c89" kind="define"><name>WICED_BT_MESH_PROVISION_TYPE_SELF_PROVISIONER_DEVKEY_CANDIDATE</name></member>
     <member refid="group__wiced__bt__mesh__core_1gac34a49d8acf905c10d012c77e2473008" kind="define"><name>WICED_BT_MESH_PROVISION_TYPE_SELF_PROVISIONER_NODE_ID</name></member>
     <member refid="group__wiced__bt__mesh__core_1ga0c7a7b0ea346ab83b3a339c2fa0ceb04" kind="define"><name>WICED_BT_MESH_PROVISION_TYPE_SELF_PROVISIONER_COMPOSITION</name></member>
+    <member refid="group__wiced__bt__mesh__core_1ga36fa640e2ab2840c17fd2220534228cf" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_NONE</name></member>
+    <member refid="group__wiced__bt__mesh__core_1gac317d58e61f3f5ffb3edb055ad7f8e0c" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_ENTER_PUB_KEY</name></member>
+    <member refid="group__wiced__bt__mesh__core_1ga2be1405f7f095e743ceefa3fdfdca67f" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_ENTER_OUTPUT</name></member>
+    <member refid="group__wiced__bt__mesh__core_1ga9af5b2e58a4f3237096dfc1d8dd169b0" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_ENTER_STATIC</name></member>
+    <member refid="group__wiced__bt__mesh__core_1ga9ecc3107ecebb56672891dc153a0959d" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_ENTER_INPUT</name></member>
+    <member refid="group__wiced__bt__mesh__core_1ga674e14f6b25df4e14c0fa241ba458fff" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_DISPLAY_INPUT</name></member>
+    <member refid="group__wiced__bt__mesh__core_1gad8693daf067e0dd367c3d44f46d570bd" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_DISPLAY_OUTPUT</name></member>
+    <member refid="group__wiced__bt__mesh__core_1ga436f9c9c050dc77dc3a5da7215ad509d" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_DISPLAY_STOP</name></member>
+    <member refid="group__wiced__bt__mesh__core_1ga9b2614f5348eea1e4fce3a87fd8bfee8" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_GET_STATIC</name></member>
     <member refid="group__wiced__bt__mesh__core_1ga7a7550abb8c97b9043c64db42936cf65" kind="enum"><name>wiced_bt_mesh_provisioning_record_id_t</name></member>
     <member refid="group__wiced__bt__mesh__core_1gga7a7550abb8c97b9043c64db42936cf65acaec70f98b816b8de93ff55c14606dc8" kind="enumvalue"><name>WICED_BT_MESH_PROVISIONING_RECORD_ID_CBP_BASE_URI</name></member>
     <member refid="group__wiced__bt__mesh__core_1gga7a7550abb8c97b9043c64db42936cf65acd7c4a67b8ff2a65c2847c7e279650ee" kind="enumvalue"><name>WICED_BT_MESH_PROVISIONING_RECORD_ID_DEVICE_CERTIFICATE</name></member>
@@ -1116,15 +1125,6 @@
     <member refid="group__wiced__bt__mesh__core_1gga4a5bd636bfe824e6c2b94b0de6639c9aa5ab6f291debedf7180ff4b3804c6ba49" kind="enumvalue"><name>WICED_BT_MESH_PROVISIONING_RECORD_RESPONSE_STATUS_SUCCESS</name></member>
     <member refid="group__wiced__bt__mesh__core_1gga4a5bd636bfe824e6c2b94b0de6639c9aa58cc574a21f698b42fea81558712369a" kind="enumvalue"><name>WICED_BT_MESH_PROVISIONING_RECORD_RESPONSE_STATUS_NOT_PRESENT</name></member>
     <member refid="group__wiced__bt__mesh__core_1gga4a5bd636bfe824e6c2b94b0de6639c9aaf5bb077e215107dfbc5fbd51d2ebcbc7" kind="enumvalue"><name>WICED_BT_MESH_PROVISIONING_RECORD_RESPONSE_STATUS_OUT_OF_BOUNDS</name></member>
-    <member refid="group__wiced__bt__mesh__core_1ga36fa640e2ab2840c17fd2220534228cf" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_NONE</name></member>
-    <member refid="group__wiced__bt__mesh__core_1gac317d58e61f3f5ffb3edb055ad7f8e0c" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_ENTER_PUB_KEY</name></member>
-    <member refid="group__wiced__bt__mesh__core_1ga2be1405f7f095e743ceefa3fdfdca67f" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_ENTER_OUTPUT</name></member>
-    <member refid="group__wiced__bt__mesh__core_1ga9af5b2e58a4f3237096dfc1d8dd169b0" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_ENTER_STATIC</name></member>
-    <member refid="group__wiced__bt__mesh__core_1ga9ecc3107ecebb56672891dc153a0959d" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_ENTER_INPUT</name></member>
-    <member refid="group__wiced__bt__mesh__core_1ga674e14f6b25df4e14c0fa241ba458fff" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_DISPLAY_INPUT</name></member>
-    <member refid="group__wiced__bt__mesh__core_1gad8693daf067e0dd367c3d44f46d570bd" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_DISPLAY_OUTPUT</name></member>
-    <member refid="group__wiced__bt__mesh__core_1ga436f9c9c050dc77dc3a5da7215ad509d" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_DISPLAY_STOP</name></member>
-    <member refid="group__wiced__bt__mesh__core_1ga9b2614f5348eea1e4fce3a87fd8bfee8" kind="define"><name>WICED_BT_MESH_PROVISION_GET_OOB_TYPE_GET_STATIC</name></member>
     <member refid="wiced__bt__mesh__core_8h_1affa3091a4159033f247bc7fdcd7c2015" kind="define"><name>WICED_BT_MESH_PROXY_IDENTIFICATION_TYPE_NETWORK_ID</name></member>
     <member refid="wiced__bt__mesh__core_8h_1ac44a5a2bfd0ee475d5e5489d124c09fa" kind="define"><name>WICED_BT_MESH_PROXY_IDENTIFICATION_TYPE_NODE_IDENTITY</name></member>
     <member refid="wiced__bt__mesh__core_8h_1ae9e0fdbc32cc00efc21ff8382b1ab985" kind="define"><name>WICED_BT_MESH_PROXY_IDENTIFICATION_TYPE_PRIVATE_NETWORK_ID</name></member>

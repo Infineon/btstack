@@ -18,19 +18,16 @@ extern "C" {
 #endif
 
 /**
+*  @addtogroup    app_utils   Application Utility Functions
+*
+*  @{
+*/
+
+/**
 * Serialized function prototype
 *
 */
 typedef void (*wiced_bt_serialized_app_func_t)(void *param);
-
-/**
-*  @addtogroup    app_utils   Application Utility Functions
-*
-*  @{
-*
-*  Utility functions that applications might find useful.
-*
-*/
 
 /**
 * Called by applications to serialize the execution of an application function in the BT stack context
@@ -40,7 +37,7 @@ typedef void (*wiced_bt_serialized_app_func_t)(void *param);
 *
 * @returns  WICED_BT_SUCCESS if success else error reason.
 */
-wiced_result_t wiced_bt_app_serialize_function (wiced_bt_serialized_app_func_t p_func, void *param);
+wiced_result_t wiced_bt_serialize_function (wiced_bt_serialized_app_func_t p_func, void *param);
 
 #ifdef __cplusplus
 } /* extern "C" */

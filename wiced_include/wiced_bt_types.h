@@ -185,38 +185,39 @@ typedef struct {
 
 /**
  * @anchor WICED_BT_TRANSPORT_TYPE
- * @name Bluetooth Transport Types
+ * @name Transport types
  * @{
  */
 #define BT_TRANSPORT_BR_EDR         1       /**< BR/EDR transport */
 #define BT_TRANSPORT_LE             2       /**< LE transport */
+typedef uint8_t wiced_bt_transport_t;       /**< Transport type (see @ref WICED_BT_TRANSPORT_TYPE "Bluetooth Transport Types") */
 /** @} WICED_BT_TRANSPORT_TYPE */
-typedef uint8_t wiced_bt_transport_t; /**< Transport type (see @ref WICED_BT_TRANSPORT_TYPE "Bluetooth Transport Types") */
 
 /**
  * @anchor WICED_BT_DEVICE_TYPE
- * @name Bluetooth Device Types
+ * @name Device Types
  * @{
  */
 #define BT_DEVICE_TYPE_BREDR        0x01    /**< BR/EDR device */
 #define BT_DEVICE_TYPE_BLE          0x02    /**< LE device */
 #define BT_DEVICE_TYPE_BREDR_BLE    0x03    /**< Dual Mode device */
-/** @} WICED_BT_DEVICE_TYPE */
 typedef uint8_t wiced_bt_device_type_t;     /**< Bluetooth device type (see @ref WICED_BT_DEVICE_TYPE "Bluetooth Device Types") */
+/** @} WICED_BT_DEVICE_TYPE */
 
 /**
  * @anchor WICED_BT_ADDR_TYPE
- * @name Bluetooth Address Types
+ * @name Address Types
  * @{
  */
 #define BLE_ADDR_PUBLIC             0x00        /**< Public address */
 #define BLE_ADDR_RANDOM             0x01        /**< Random address */
 #define BLE_ADDR_PUBLIC_ID          0x02        /**< Public ID      */
 #define BLE_ADDR_RANDOM_ID          0x03        /**< Random ID      */
-/** @} WICED_BT_ADDR_TYPE */
 
 /** LE device address type (see @ref WICED_BT_ADDR_TYPE "Bluetooth Address Types") */
 typedef uint8_t wiced_bt_ble_address_type_t;
+
+/** @} WICED_BT_ADDR_TYPE */
 
 /** AIROC LE Address structure */
 typedef struct
@@ -459,6 +460,7 @@ typedef enum {
     WICED_BT_TRACE_WARN,
     WICED_BT_TRACE_API,
     WICED_BT_TRACE_EVENT,
+    WICED_BT_TRACE_CRIT_ERROR,
 }wiced_bt_trace_type_t;
 
 /**@} bt_types */

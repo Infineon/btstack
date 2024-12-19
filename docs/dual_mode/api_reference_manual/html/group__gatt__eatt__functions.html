@@ -93,25 +93,62 @@ $(document).ready(function(){initNavTree('group__gatt__eatt__functions.html','')
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
-<p>This section provides Enhanced Attribute protocol (EATT) APIs. </p>
-<p>It allows application to create, accepts connection over EATT channel. </p>
+<p>EATT API. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gae2b1a3d89f1566aae6293379eb38c530"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__eatt__functions.html#gae2b1a3d89f1566aae6293379eb38c530">wiced_bt_gatt_eatt_register</a> (<a class="el" href="structwiced__bt__gatt__eatt__callbacks__t.html">wiced_bt_gatt_eatt_callbacks_t</a> *p_gatt_cback, uint32_t max_eatt_bearers)</td></tr>
-<tr class="memdesc:gae2b1a3d89f1566aae6293379eb38c530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an application callback with GATT.  <a href="#gae2b1a3d89f1566aae6293379eb38c530">More...</a><br /></td></tr>
+<tr class="memdesc:gae2b1a3d89f1566aae6293379eb38c530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an application callback for GATT.  <a href="#gae2b1a3d89f1566aae6293379eb38c530">More...</a><br /></td></tr>
 <tr class="separator:gae2b1a3d89f1566aae6293379eb38c530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga76d7ec594e89f33248363453d65978cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__eatt__functions.html#ga76d7ec594e89f33248363453d65978cf">wiced_bt_gatt_eatt_connect</a> (uint16_t legacy_conn_id, uint32_t mtu, uint32_t mps, uint32_t num_bearers, <a class="el" href="wiced__bt__gatt_8h.html#accfa49f84e56ea41ab53e943e2e5acc6">wiced_bt_eatt_drbs</a> ppDRBs, <a class="el" href="group__bt__types.html#gabd4bfdaba72729ec61cde921be081daf">wiced_bt_gatt_eatt_conn_id_list</a> conn_id_list_out)</td></tr>
-<tr class="memdesc:ga76d7ec594e89f33248363453d65978cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to create the enhanced gatt channels, using the legacy/unenhanced connection identifier.  <a href="#ga76d7ec594e89f33248363453d65978cf">More...</a><br /></td></tr>
+<tr class="memitem:ga76d7ec594e89f33248363453d65978cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__eatt__functions.html#ga76d7ec594e89f33248363453d65978cf">wiced_bt_gatt_eatt_connect</a> (uint16_t legacy_conn_id, uint32_t mtu, uint32_t mps, uint32_t num_bearers, <a class="el" href="group__wicedbt__gatt.html#gaccfa49f84e56ea41ab53e943e2e5acc6">wiced_bt_eatt_drbs</a> ppDRBs, <a class="el" href="group__bt__types.html#gabd4bfdaba72729ec61cde921be081daf">wiced_bt_gatt_eatt_conn_id_list</a> conn_id_list_out)</td></tr>
+<tr class="memdesc:ga76d7ec594e89f33248363453d65978cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to create the enhanced gatt channels, using the legacy/unenhanced connection id.  <a href="#ga76d7ec594e89f33248363453d65978cf">More...</a><br /></td></tr>
 <tr class="separator:ga76d7ec594e89f33248363453d65978cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga085bfe9e5516f2029ba398cfd37b97f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__eatt__functions.html#ga085bfe9e5516f2029ba398cfd37b97f9">wiced_bt_gatt_eatt_connect_response</a> (<a class="el" href="structwiced__bt__gatt__eatt__connection__indication__event__t.html">wiced_bt_gatt_eatt_connection_indication_event_t</a> *p_indication, <a class="el" href="structwiced__bt__gatt__eatt__connection__response__t.html">wiced_bt_gatt_eatt_connection_response_t</a> *p_response, <a class="el" href="group__bt__types.html#gabd4bfdaba72729ec61cde921be081daf">wiced_bt_gatt_eatt_conn_id_list</a> conn_id_list_out)</td></tr>
 <tr class="memdesc:ga085bfe9e5516f2029ba398cfd37b97f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to create the respond to the enhanced gatt channels connection indication.  <a href="#ga085bfe9e5516f2029ba398cfd37b97f9">More...</a><br /></td></tr>
 <tr class="separator:ga085bfe9e5516f2029ba398cfd37b97f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga83db0a97904230b45db1025f1d89d3ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__eatt__functions.html#ga83db0a97904230b45db1025f1d89d3ec">wiced_bt_gatt_eatt_reconfigure</a> (<a class="el" href="group__bt__types.html#gabd4bfdaba72729ec61cde921be081daf">wiced_bt_gatt_eatt_conn_id_list</a> conn_id_list, uint32_t num_bearers, uint32_t mtu, uint32_t mps, <a class="el" href="wiced__bt__gatt_8h.html#accfa49f84e56ea41ab53e943e2e5acc6">wiced_bt_eatt_drbs</a> ppDRBs)</td></tr>
+<tr class="memitem:ga83db0a97904230b45db1025f1d89d3ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gatt__eatt__functions.html#ga83db0a97904230b45db1025f1d89d3ec">wiced_bt_gatt_eatt_reconfigure</a> (<a class="el" href="group__bt__types.html#gabd4bfdaba72729ec61cde921be081daf">wiced_bt_gatt_eatt_conn_id_list</a> conn_id_list, uint32_t num_bearers, uint32_t mtu, uint32_t mps, <a class="el" href="group__wicedbt__gatt.html#gaccfa49f84e56ea41ab53e943e2e5acc6">wiced_bt_eatt_drbs</a> ppDRBs)</td></tr>
 <tr class="memdesc:ga83db0a97904230b45db1025f1d89d3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">API the reconfigure the enhanced gatt channels.  <a href="#ga83db0a97904230b45db1025f1d89d3ec">More...</a><br /></td></tr>
 <tr class="separator:ga83db0a97904230b45db1025f1d89d3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gae2b1a3d89f1566aae6293379eb38c530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2b1a3d89f1566aae6293379eb38c530">&#9670;&nbsp;</a></span>wiced_bt_gatt_eatt_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t wiced_bt_gatt_eatt_register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__gatt__eatt__callbacks__t.html">wiced_bt_gatt_eatt_callbacks_t</a> *&#160;</td>
+          <td class="paramname"><em>p_gatt_cback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>max_eatt_bearers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register an application callback for GATT. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_gatt_cback</td><td>: The GATT notification callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_eatt_bearers</td><td>: Total number of gatt bearers allowed across all devices (legacy + eatt)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of (legacy + eatt) bearers allocated </dd></dl>
+
+</div>
+</div>
 <a id="ga76d7ec594e89f33248363453d65978cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga76d7ec594e89f33248363453d65978cf">&#9670;&nbsp;</a></span>wiced_bt_gatt_eatt_connect()</h2>
 
@@ -145,7 +182,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#accfa49f84e56ea41ab53e943e2e5acc6">wiced_bt_eatt_drbs</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__wicedbt__gatt.html#gaccfa49f84e56ea41ab53e943e2e5acc6">wiced_bt_eatt_drbs</a>&#160;</td>
           <td class="paramname"><em>ppDRBs</em>, </td>
         </tr>
         <tr>
@@ -162,10 +199,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>API to create the enhanced gatt channels, using the legacy/unenhanced connection identifier. </p>
+<p>API to create the enhanced gatt channels, using the legacy/unenhanced connection id. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">legacy_conn_id</td><td>: Acl connection Identifier </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">legacy_conn_id</td><td>: GATT DB characteristic handle </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mtu</td><td>: EATT bearer Maximum Transmission Unit </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mps</td><td>: EATT bearer Maximum PDU Payload Size </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_bearers</td><td>: Number of EATT bearers to be established in this call </td></tr>
@@ -174,13 +211,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310" title="AIROC result.">wiced_result_t</a> <br />
- <b> WICED_BT_SUCCESS </b>: If successful <br />
- <b> WICED_OPTION_ERROR </b>: If <code>num_bearers</code> is not in the range <br />
- <b> WICED_BT_NO_RESOURCES </b>: If no memory/buffers available to sent down to controller <br />
- <b> WICED_NOT_CONNECTED </b> : If not connected <br />
- <b> WICED_ERROR </b> : If any other error <br />
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310" title="AIROC result.">wiced_result_t</a> </dd></dl>
 
 </div>
 </div>
@@ -219,17 +250,13 @@ Functions</h2></td></tr>
 <p>API to create the respond to the enhanced gatt channels connection indication. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_indication</td><td>: <a class="el" href="structwiced__bt__gatt__eatt__connection__indication__event__t.html" title="GATT connection request (used by GATT_EATT_CONNECTION_INDICATION_EVT notification) To be returned by ...">wiced_bt_gatt_eatt_connection_indication_event_t</a> received in <a class="el" href="structwiced__bt__gatt__eatt__callbacks__t.html" title="Callbacks for GATT EATT event notifications.">wiced_bt_gatt_eatt_callbacks_t</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_response</td><td>: <a class="el" href="structwiced__bt__gatt__eatt__connection__response__t.html" title="structure to be used to respond to received EATT connection request">wiced_bt_gatt_eatt_connection_response_t</a> response data sent by the receiver of <a class="el" href="structwiced__bt__gatt__eatt__callbacks__t.html" title="Callbacks for GATT EATT event notifications.">wiced_bt_gatt_eatt_callbacks_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_indication</td><td>: <a class="el" href="structwiced__bt__gatt__eatt__connection__indication__event__t.html" title="GATT connection request (used by GATT_EATT_CONNECTION_INDICATION_EVT notification) To be returned by ...">wiced_bt_gatt_eatt_connection_indication_event_t</a> received in <a class="el" href="structwiced__bt__gatt__eatt__callbacks__t.html" title="callbacks for GATT EATT event notifications">wiced_bt_gatt_eatt_callbacks_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_response</td><td>: <a class="el" href="structwiced__bt__gatt__eatt__connection__response__t.html" title="structure to be used to respond to received EATT connection request">wiced_bt_gatt_eatt_connection_response_t</a> response data sent by the receiver of <a class="el" href="structwiced__bt__gatt__eatt__callbacks__t.html" title="callbacks for GATT EATT event notifications">wiced_bt_gatt_eatt_callbacks_t</a> </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">conn_id_list_out</td><td>: Connection Ids created for the EATT bearers</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310" title="AIROC result.">wiced_result_t</a> <br />
- <b> WICED_BT_SUCCESS </b>: If successful <br />
- <b> WICED_BT_NO_RESOURCES </b>: If no memory/buffers available to sent down to controller <br />
- <b> WICED_ERROR </b> : If any other error <br />
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>characteristic descriptor handle </dd></dl>
 
 </div>
 </div>
@@ -266,7 +293,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#accfa49f84e56ea41ab53e943e2e5acc6">wiced_bt_eatt_drbs</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__wicedbt__gatt.html#gaccfa49f84e56ea41ab53e943e2e5acc6">wiced_bt_eatt_drbs</a>&#160;</td>
           <td class="paramname"><em>ppDRBs</em>&#160;</td>
         </tr>
         <tr>
@@ -288,51 +315,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310" title="AIROC result.">wiced_result_t</a> <br />
- <b> WICED_BT_SUCCESS </b>: If successful <br />
- <b> WICED_BT_NO_RESOURCES </b>: If no memory/buffers available to sent down to controller <br />
- <b> WICED_BADARG </b> : if invalid arguments <br />
- <b> WICED_BADVALUE </b> : If invalid values <br />
- <b> WICED_ERROR </b> : If any other error <br />
-</dd></dl>
-
-</div>
-</div>
-<a id="gae2b1a3d89f1566aae6293379eb38c530"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae2b1a3d89f1566aae6293379eb38c530">&#9670;&nbsp;</a></span>wiced_bt_gatt_eatt_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t wiced_bt_gatt_eatt_register </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__gatt__eatt__callbacks__t.html">wiced_bt_gatt_eatt_callbacks_t</a> *&#160;</td>
-          <td class="paramname"><em>p_gatt_cback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_eatt_bearers</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Register an application callback with GATT. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_gatt_cback</td><td>: The GATT notification callback </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">max_eatt_bearers</td><td>: Total number of gatt bearers allowed across all devices (legacy + eatt)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of (legacy + eatt) bearers allocated </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310" title="AIROC result.">wiced_result_t</a> </dd></dl>
 
 </div>
 </div>

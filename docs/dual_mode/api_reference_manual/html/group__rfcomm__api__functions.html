@@ -87,10 +87,10 @@ $(document).ready(function(){initNavTree('group__rfcomm__api__functions.html',''
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">RFCOMM</div>  </div>
 </div><!--header-->
@@ -99,39 +99,6 @@ $(document).ready(function(){initNavTree('group__rfcomm__api__functions.html',''
 <p>The RFCOMM protocol provides emulation of serial ports over the L2CAP protocol. </p>
 <p>The protocol is based on the ETSI standard GSM 7.1.0. RFCOMM is a simple transport protocol, with additional provisions for emulating the nine circuits of RS-232 (ITU-T V.24) serial ports. The RFCOMM protocol supports up to 60 simultaneous connections between two Bluetooth devices. The number of connections that may be used simultaneously in a Bluetooth device is implementation-specific. </p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga0acf439d7bfa3540fe1f682e28a3ea15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection</a> (uint16_t uuid, uint8_t scn, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> is_server, uint16_t mtu, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, uint16_t *p_handle, <a class="el" href="group__rfcomm__api__functions.html#ga29e5339346921b8f38a528ff118498d0">wiced_bt_port_mgmt_cback_t</a> *p_mgmt_cb)</td></tr>
-<tr class="memdesc:ga0acf439d7bfa3540fe1f682e28a3ea15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish serial port connection to the peer device, or allow RFCOMM to accept a connection from peer devices.  <a href="#ga0acf439d7bfa3540fe1f682e28a3ea15">More...</a><br /></td></tr>
-<tr class="separator:ga0acf439d7bfa3540fe1f682e28a3ea15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae609bc27a6207cea08e5017ffb2940b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gae609bc27a6207cea08e5017ffb2940b5">wiced_bt_rfcomm_remove_connection</a> (uint16_t handle, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> remove_server)</td></tr>
-<tr class="memdesc:gae609bc27a6207cea08e5017ffb2940b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the specified connection.  <a href="#gae609bc27a6207cea08e5017ffb2940b5">More...</a><br /></td></tr>
-<tr class="separator:gae609bc27a6207cea08e5017ffb2940b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabbe544a7a6843471ef384c6dafc976aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gabbe544a7a6843471ef384c6dafc976aa">wiced_bt_rfcomm_set_event_callback</a> (uint16_t port_handle, <a class="el" href="group__rfcomm__api__functions.html#gaca604941c538633cc92ad5a5361dab96">wiced_bt_port_event_cback_t</a> *p_port_cb, <a class="el" href="group__rfcomm__api__functions.html#gad9593eadcb99b8ff4f6b7e7f8a5825f8">wiced_bt_port_tx_cback_t</a> *p_tx_cmpl_cb)</td></tr>
-<tr class="memdesc:gabbe544a7a6843471ef384c6dafc976aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set event callback the specified connection(neither of the callback can be NULL).  <a href="#gabbe544a7a6843471ef384c6dafc976aa">More...</a><br /></td></tr>
-<tr class="separator:gabbe544a7a6843471ef384c6dafc976aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad4241f1a332dbd4d03bbc8ce75cfa839"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gad4241f1a332dbd4d03bbc8ce75cfa839">wiced_bt_rfcomm_set_event_mask</a> (uint16_t port_handle, <a class="el" href="group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6">wiced_bt_rfcomm_port_event_t</a> mask)</td></tr>
-<tr class="memdesc:gad4241f1a332dbd4d03bbc8ce75cfa839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set events for which to be notified.  <a href="#gad4241f1a332dbd4d03bbc8ce75cfa839">More...</a><br /></td></tr>
-<tr class="separator:gad4241f1a332dbd4d03bbc8ce75cfa839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga417a74cdea9648969a1d28cb403cf0d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga417a74cdea9648969a1d28cb403cf0d3">wiced_bt_rfcomm_control</a> (uint16_t handle, uint8_t signal)</td></tr>
-<tr class="memdesc:ga417a74cdea9648969a1d28cb403cf0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send control signal to the peer device.  <a href="#ga417a74cdea9648969a1d28cb403cf0d3">More...</a><br /></td></tr>
-<tr class="separator:ga417a74cdea9648969a1d28cb403cf0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga87bbfb9c882d8080fef5f63e2ad256c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga87bbfb9c882d8080fef5f63e2ad256c0">wiced_bt_rfcomm_flow_control</a> (uint16_t handle, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> enable)</td></tr>
-<tr class="memdesc:ga87bbfb9c882d8080fef5f63e2ad256c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function directs a specified connection to pass flow control message to the peer device.  <a href="#ga87bbfb9c882d8080fef5f63e2ad256c0">More...</a><br /></td></tr>
-<tr class="separator:ga87bbfb9c882d8080fef5f63e2ad256c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga354972749236c7b8bac2ee78743a5f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga354972749236c7b8bac2ee78743a5f95">wiced_bt_rfcomm_set_rx_fifo</a> (uint16_t handle, char *p_mem, uint16_t size)</td></tr>
-<tr class="memdesc:ga354972749236c7b8bac2ee78743a5f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function provides RFCOMM with a data area to receive peer's data.  <a href="#ga354972749236c7b8bac2ee78743a5f95">More...</a><br /></td></tr>
-<tr class="separator:ga354972749236c7b8bac2ee78743a5f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f25652d11064bf6879355e18dc03188"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga2f25652d11064bf6879355e18dc03188">wiced_bt_rfcomm_read_data</a> (uint16_t handle, char *p_data, uint16_t max_len, uint16_t *p_len)</td></tr>
-<tr class="memdesc:ga2f25652d11064bf6879355e18dc03188"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function reads the received application data from the peer device.  <a href="#ga2f25652d11064bf6879355e18dc03188">More...</a><br /></td></tr>
-<tr class="separator:ga2f25652d11064bf6879355e18dc03188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadda009a09d195e0d9ac42ea0980d1694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gadda009a09d195e0d9ac42ea0980d1694">wiced_bt_rfcomm_write_data</a> (uint16_t handle, char *p_data, uint16_t max_len)</td></tr>
-<tr class="memdesc:gadda009a09d195e0d9ac42ea0980d1694"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends the given application data to the peer device.  <a href="#gadda009a09d195e0d9ac42ea0980d1694">More...</a><br /></td></tr>
-<tr class="separator:gadda009a09d195e0d9ac42ea0980d1694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5530e81b324a02f9a43947db3236a93c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga5530e81b324a02f9a43947db3236a93c">wiced_bt_rfcomm_check_connection</a> (uint16_t handle, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, uint16_t *p_lcid)</td></tr>
-<tr class="memdesc:ga5530e81b324a02f9a43947db3236a93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks connection referenced by handle is up and running.  <a href="#ga5530e81b324a02f9a43947db3236a93c">More...</a><br /></td></tr>
-<tr class="separator:ga5530e81b324a02f9a43947db3236a93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga802c52c03865b1cb09af25e41363275d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga802c52c03865b1cb09af25e41363275d">PORT_MASK_ALL</a></td></tr>
@@ -140,11 +107,13 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga67a77aad84c51f52a3a3283258fc620d"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a></td></tr>
-<tr class="memdesc:ga67a77aad84c51f52a3a3283258fc620d"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFCOMM result code (see <a class="el" href="group__rfcomm__api__functions.html#ga919c228fbe128a196f66f0569ff3c1ee" title="RFCOMM Result Codes.">wiced_bt_rfcomm_result_e</a>)  <a href="#ga67a77aad84c51f52a3a3283258fc620d">More...</a><br /></td></tr>
+<tr class="memitem:ga67a77aad84c51f52a3a3283258fc620d"><td class="memItemLeft" align="right" valign="top"><a id="ga67a77aad84c51f52a3a3283258fc620d"></a>
+typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a></td></tr>
+<tr class="memdesc:ga67a77aad84c51f52a3a3283258fc620d"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFCOMM result code (see <a class="el" href="group__rfcomm__api__functions.html#ga919c228fbe128a196f66f0569ff3c1ee" title="RFCOMM Result Codes.">wiced_bt_rfcomm_result_e</a>) <br /></td></tr>
 <tr class="separator:ga67a77aad84c51f52a3a3283258fc620d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga33ea46c5bfe359825b3973b9ed7bdb01"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga33ea46c5bfe359825b3973b9ed7bdb01">wiced_bt_rfcomm_signal_t</a></td></tr>
-<tr class="memdesc:ga33ea46c5bfe359825b3973b9ed7bdb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFCOMM Signals (see <a class="el" href="group__rfcomm__api__functions.html#gadc2b731e552fdb229490b5640e29714d" title="RFCOMM Signals.">wiced_bt_rfcomm_signal_e</a>)  <a href="#ga33ea46c5bfe359825b3973b9ed7bdb01">More...</a><br /></td></tr>
+<tr class="memitem:ga33ea46c5bfe359825b3973b9ed7bdb01"><td class="memItemLeft" align="right" valign="top"><a id="ga33ea46c5bfe359825b3973b9ed7bdb01"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga33ea46c5bfe359825b3973b9ed7bdb01">wiced_bt_rfcomm_signal_t</a></td></tr>
+<tr class="memdesc:ga33ea46c5bfe359825b3973b9ed7bdb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFCOMM Signals (see <a class="el" href="group__rfcomm__api__functions.html#gadc2b731e552fdb229490b5640e29714d" title="RFCOMM Signals.">wiced_bt_rfcomm_signal_e</a>) <br /></td></tr>
 <tr class="separator:ga33ea46c5bfe359825b3973b9ed7bdb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga29e5339346921b8f38a528ff118498d0"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga29e5339346921b8f38a528ff118498d0">wiced_bt_port_mgmt_cback_t</a>(<a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a> code, uint16_t port_handle)</td></tr>
 <tr class="memdesc:ga29e5339346921b8f38a528ff118498d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port management callback.  <a href="#ga29e5339346921b8f38a528ff118498d0">More...</a><br /></td></tr>
@@ -253,7 +222,7 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:ga919c228fbe128a196f66f0569ff3c1ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFCOMM Result Codes.  <a href="group__rfcomm__api__functions.html#ga919c228fbe128a196f66f0569ff3c1ee">More...</a><br /></td></tr>
 <tr class="separator:ga919c228fbe128a196f66f0569ff3c1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadc2b731e552fdb229490b5640e29714d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gadc2b731e552fdb229490b5640e29714d">wiced_bt_rfcomm_signal_e</a> { <br />
-&#160;&#160;<a class="el" href="group__rfcomm__api__functions.html#ggadc2b731e552fdb229490b5640e29714daf5cba0e56de841cf9039be1981ba5767">PORT_SET_DTRDSR</a> =0x01, 
+&#160;&#160;<b>PORT_SET_DTRDSR</b> =0x01, 
 <br />
 &#160;&#160;<a class="el" href="group__rfcomm__api__functions.html#ggadc2b731e552fdb229490b5640e29714da9f0240aa0eaf47ffc2466ed72fe61ef6">PORT_CLR_DTRDSR</a>, 
 <br />
@@ -274,6 +243,39 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gadc2b731e552fdb229490b5640e29714d"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFCOMM Signals.  <a href="group__rfcomm__api__functions.html#gadc2b731e552fdb229490b5640e29714d">More...</a><br /></td></tr>
 <tr class="separator:gadc2b731e552fdb229490b5640e29714d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga0acf439d7bfa3540fe1f682e28a3ea15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection</a> (uint16_t uuid, uint8_t scn, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> is_server, uint16_t mtu, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, uint16_t *p_handle, <a class="el" href="group__rfcomm__api__functions.html#ga29e5339346921b8f38a528ff118498d0">wiced_bt_port_mgmt_cback_t</a> *p_mgmt_cb)</td></tr>
+<tr class="memdesc:ga0acf439d7bfa3540fe1f682e28a3ea15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish serial port connection to the peer device, or allow RFCOMM to accept a connection from peer devices.  <a href="#ga0acf439d7bfa3540fe1f682e28a3ea15">More...</a><br /></td></tr>
+<tr class="separator:ga0acf439d7bfa3540fe1f682e28a3ea15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae609bc27a6207cea08e5017ffb2940b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gae609bc27a6207cea08e5017ffb2940b5">wiced_bt_rfcomm_remove_connection</a> (uint16_t handle, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> remove_server)</td></tr>
+<tr class="memdesc:gae609bc27a6207cea08e5017ffb2940b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the specified connection.  <a href="#gae609bc27a6207cea08e5017ffb2940b5">More...</a><br /></td></tr>
+<tr class="separator:gae609bc27a6207cea08e5017ffb2940b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbe544a7a6843471ef384c6dafc976aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gabbe544a7a6843471ef384c6dafc976aa">wiced_bt_rfcomm_set_event_callback</a> (uint16_t port_handle, <a class="el" href="group__rfcomm__api__functions.html#gaca604941c538633cc92ad5a5361dab96">wiced_bt_port_event_cback_t</a> *p_port_cb, <a class="el" href="group__rfcomm__api__functions.html#gad9593eadcb99b8ff4f6b7e7f8a5825f8">wiced_bt_port_tx_cback_t</a> *p_tx_cmpl_cb)</td></tr>
+<tr class="memdesc:gabbe544a7a6843471ef384c6dafc976aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set event callback the specified connection(neither of the callback can be NULL).  <a href="#gabbe544a7a6843471ef384c6dafc976aa">More...</a><br /></td></tr>
+<tr class="separator:gabbe544a7a6843471ef384c6dafc976aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4241f1a332dbd4d03bbc8ce75cfa839"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gad4241f1a332dbd4d03bbc8ce75cfa839">wiced_bt_rfcomm_set_event_mask</a> (uint16_t port_handle, <a class="el" href="group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6">wiced_bt_rfcomm_port_event_t</a> mask)</td></tr>
+<tr class="memdesc:gad4241f1a332dbd4d03bbc8ce75cfa839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set events for which to be notified.  <a href="#gad4241f1a332dbd4d03bbc8ce75cfa839">More...</a><br /></td></tr>
+<tr class="separator:gad4241f1a332dbd4d03bbc8ce75cfa839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga417a74cdea9648969a1d28cb403cf0d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga417a74cdea9648969a1d28cb403cf0d3">wiced_bt_rfcomm_control</a> (uint16_t handle, uint8_t signal)</td></tr>
+<tr class="memdesc:ga417a74cdea9648969a1d28cb403cf0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send control signal to the peer device.  <a href="#ga417a74cdea9648969a1d28cb403cf0d3">More...</a><br /></td></tr>
+<tr class="separator:ga417a74cdea9648969a1d28cb403cf0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87bbfb9c882d8080fef5f63e2ad256c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga87bbfb9c882d8080fef5f63e2ad256c0">wiced_bt_rfcomm_flow_control</a> (uint16_t handle, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> enable)</td></tr>
+<tr class="memdesc:ga87bbfb9c882d8080fef5f63e2ad256c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function directs a specified connection to pass flow control message to the peer device.  <a href="#ga87bbfb9c882d8080fef5f63e2ad256c0">More...</a><br /></td></tr>
+<tr class="separator:ga87bbfb9c882d8080fef5f63e2ad256c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga354972749236c7b8bac2ee78743a5f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga354972749236c7b8bac2ee78743a5f95">wiced_bt_rfcomm_set_rx_fifo</a> (uint16_t handle, char *p_mem, uint16_t size)</td></tr>
+<tr class="memdesc:ga354972749236c7b8bac2ee78743a5f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function provides RFCOMM with a data area to receive peer's data.  <a href="#ga354972749236c7b8bac2ee78743a5f95">More...</a><br /></td></tr>
+<tr class="separator:ga354972749236c7b8bac2ee78743a5f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f25652d11064bf6879355e18dc03188"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga2f25652d11064bf6879355e18dc03188">wiced_bt_rfcomm_read_data</a> (uint16_t handle, char *p_data, uint16_t max_len, uint16_t *p_len)</td></tr>
+<tr class="memdesc:ga2f25652d11064bf6879355e18dc03188"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function reads the received application data from the peer device.  <a href="#ga2f25652d11064bf6879355e18dc03188">More...</a><br /></td></tr>
+<tr class="separator:ga2f25652d11064bf6879355e18dc03188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadda009a09d195e0d9ac42ea0980d1694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#gadda009a09d195e0d9ac42ea0980d1694">wiced_bt_rfcomm_write_data</a> (uint16_t handle, char *p_data, uint16_t max_len)</td></tr>
+<tr class="memdesc:gadda009a09d195e0d9ac42ea0980d1694"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends the given application data to the peer device.  <a href="#gadda009a09d195e0d9ac42ea0980d1694">More...</a><br /></td></tr>
+<tr class="separator:gadda009a09d195e0d9ac42ea0980d1694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5530e81b324a02f9a43947db3236a93c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rfcomm__api__functions.html#ga5530e81b324a02f9a43947db3236a93c">wiced_bt_rfcomm_check_connection</a> (uint16_t handle, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, uint16_t *p_lcid)</td></tr>
+<tr class="memdesc:ga5530e81b324a02f9a43947db3236a93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks connection referenced by handle is up and running.  <a href="#ga5530e81b324a02f9a43947db3236a93c">More...</a><br /></td></tr>
+<tr class="separator:ga5530e81b324a02f9a43947db3236a93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga802c52c03865b1cb09af25e41363275d"></a>
@@ -287,47 +289,24 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a2291aef2e65a037a6180894a022ccf51">PORT_EV_RXCHAR</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6ad63e02b7e64c356efcde1a698dde128f">PORT_EV_TXEMPTY</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a38c69fe7247db39a37872c4042c4f006">PORT_EV_CTS</a> | \</div><div class="line">                                   PORT_EV_DSR | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a10c2bdf54cafcd9e2b2f2f6b73cf4bc6">PORT_EV_RLSD</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a93ddd638f2a1037efc1bf9829efbb216">PORT_EV_BREAK</a> | \</div><div class="line">                                   PORT_EV_ERR | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6acb07c980eb0b6f0e4d6f1d135338a188">PORT_EV_RING</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a34886c5f5c970ec71830f71df6a30397">PORT_EV_CONNECT_ERR</a> | \</div><div class="line">                                   PORT_EV_DSRS | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a92e6dbc56674c8ea67ba56b622e5bb1e">PORT_EV_CTSS</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6af0c404b8bfd5d6a971a3578ae6c204d7">PORT_EV_RLSDS</a> | \</div><div class="line">                                   PORT_EV_RXFLAG | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a499053e3abba3673768df96e99ed7fbb">PORT_EV_OVERRUN</a> | \</div><div class="line">                                   PORT_EV_FC | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6aa69edb81d98672d83bd20a22ac1cf308">PORT_EV_FCS</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6ab0e0e49c83bfe3fed8ded40f4c877b56">PORT_EV_CONNECTED</a>)</div><div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6ab0e0e49c83bfe3fed8ded40f4c877b56"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6ab0e0e49c83bfe3fed8ded40f4c877b56">PORT_EV_CONNECTED</a></div><div class="ttdoc">RFCOMM connection established.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:48</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a92e6dbc56674c8ea67ba56b622e5bb1e"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a92e6dbc56674c8ea67ba56b622e5bb1e">PORT_EV_CTSS</a></div><div class="ttdoc">CTS state.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:44</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a2291aef2e65a037a6180894a022ccf51"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a2291aef2e65a037a6180894a022ccf51">PORT_EV_RXCHAR</a></div><div class="ttdoc">Any Character received.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:35</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a499053e3abba3673768df96e99ed7fbb"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a499053e3abba3673768df96e99ed7fbb">PORT_EV_OVERRUN</a></div><div class="ttdoc">receiver buffer overrun</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:47</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a93ddd638f2a1037efc1bf9829efbb216"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a93ddd638f2a1037efc1bf9829efbb216">PORT_EV_BREAK</a></div><div class="ttdoc">BREAK received.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:41</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a38c69fe7247db39a37872c4042c4f006"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a38c69fe7247db39a37872c4042c4f006">PORT_EV_CTS</a></div><div class="ttdoc">CTS changed state.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:38</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6aa69edb81d98672d83bd20a22ac1cf308"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6aa69edb81d98672d83bd20a22ac1cf308">PORT_EV_FCS</a></div><div class="ttdoc">data flow enable status true = enabled</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:51</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6ad63e02b7e64c356efcde1a698dde128f"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6ad63e02b7e64c356efcde1a698dde128f">PORT_EV_TXEMPTY</a></div><div class="ttdoc">Transmitt Queue Empty.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:37</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a34886c5f5c970ec71830f71df6a30397"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a34886c5f5c970ec71830f71df6a30397">PORT_EV_CONNECT_ERR</a></div><div class="ttdoc">Was not able to establish connection or disconnected.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:49</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6af0c404b8bfd5d6a971a3578ae6c204d7"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6af0c404b8bfd5d6a971a3578ae6c204d7">PORT_EV_RLSDS</a></div><div class="ttdoc">RLSD state.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:46</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6acb07c980eb0b6f0e4d6f1d135338a188"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6acb07c980eb0b6f0e4d6f1d135338a188">PORT_EV_RING</a></div><div class="ttdoc">Ring signal detected.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:43</div></div>
-<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a10c2bdf54cafcd9e2b2f2f6b73cf4bc6"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a10c2bdf54cafcd9e2b2f2f6b73cf4bc6">PORT_EV_RLSD</a></div><div class="ttdoc">RLSD changed state.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:40</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a2291aef2e65a037a6180894a022ccf51">PORT_EV_RXCHAR</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6ad63e02b7e64c356efcde1a698dde128f">PORT_EV_TXEMPTY</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a38c69fe7247db39a37872c4042c4f006">PORT_EV_CTS</a> | \</div><div class="line">                                   PORT_EV_DSR | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a10c2bdf54cafcd9e2b2f2f6b73cf4bc6">PORT_EV_RLSD</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a93ddd638f2a1037efc1bf9829efbb216">PORT_EV_BREAK</a> | \</div><div class="line">                                   PORT_EV_ERR | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6acb07c980eb0b6f0e4d6f1d135338a188">PORT_EV_RING</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a34886c5f5c970ec71830f71df6a30397">PORT_EV_CONNECT_ERR</a> | \</div><div class="line">                                   PORT_EV_DSRS | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a92e6dbc56674c8ea67ba56b622e5bb1e">PORT_EV_CTSS</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6af0c404b8bfd5d6a971a3578ae6c204d7">PORT_EV_RLSDS</a> | \</div><div class="line">                                   PORT_EV_RXFLAG | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a499053e3abba3673768df96e99ed7fbb">PORT_EV_OVERRUN</a> | \</div><div class="line">                                   PORT_EV_FC | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6aa69edb81d98672d83bd20a22ac1cf308">PORT_EV_FCS</a> | <a class="code" href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6ab0e0e49c83bfe3fed8ded40f4c877b56">PORT_EV_CONNECTED</a>)</div><div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6ab0e0e49c83bfe3fed8ded40f4c877b56"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6ab0e0e49c83bfe3fed8ded40f4c877b56">PORT_EV_CONNECTED</a></div><div class="ttdoc">RFCOMM connection established.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:49</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a92e6dbc56674c8ea67ba56b622e5bb1e"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a92e6dbc56674c8ea67ba56b622e5bb1e">PORT_EV_CTSS</a></div><div class="ttdoc">CTS state.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:45</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a2291aef2e65a037a6180894a022ccf51"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a2291aef2e65a037a6180894a022ccf51">PORT_EV_RXCHAR</a></div><div class="ttdoc">Any Character received.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:36</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a499053e3abba3673768df96e99ed7fbb"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a499053e3abba3673768df96e99ed7fbb">PORT_EV_OVERRUN</a></div><div class="ttdoc">receiver buffer overrun</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:48</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a93ddd638f2a1037efc1bf9829efbb216"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a93ddd638f2a1037efc1bf9829efbb216">PORT_EV_BREAK</a></div><div class="ttdoc">BREAK received.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:42</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a38c69fe7247db39a37872c4042c4f006"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a38c69fe7247db39a37872c4042c4f006">PORT_EV_CTS</a></div><div class="ttdoc">CTS changed state.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:39</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6aa69edb81d98672d83bd20a22ac1cf308"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6aa69edb81d98672d83bd20a22ac1cf308">PORT_EV_FCS</a></div><div class="ttdoc">data flow enable status true = enabled</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:52</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6ad63e02b7e64c356efcde1a698dde128f"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6ad63e02b7e64c356efcde1a698dde128f">PORT_EV_TXEMPTY</a></div><div class="ttdoc">Transmitt Queue Empty.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:38</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a34886c5f5c970ec71830f71df6a30397"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a34886c5f5c970ec71830f71df6a30397">PORT_EV_CONNECT_ERR</a></div><div class="ttdoc">Was not able to establish connection or disconnected.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:50</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6af0c404b8bfd5d6a971a3578ae6c204d7"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6af0c404b8bfd5d6a971a3578ae6c204d7">PORT_EV_RLSDS</a></div><div class="ttdoc">RLSD state.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:47</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6acb07c980eb0b6f0e4d6f1d135338a188"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6acb07c980eb0b6f0e4d6f1d135338a188">PORT_EV_RING</a></div><div class="ttdoc">Ring signal detected.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:44</div></div>
+<div class="ttc" id="group__rfcomm__api__functions_html_ggaa0e1b18abc58d3ad24eb35eea2fa75c6a10c2bdf54cafcd9e2b2f2f6b73cf4bc6"><div class="ttname"><a href="group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a10c2bdf54cafcd9e2b2f2f6b73cf4bc6">PORT_EV_RLSD</a></div><div class="ttdoc">RLSD changed state.</div><div class="ttdef"><b>Definition:</b> wiced_bt_rfcomm.h:41</div></div>
 </div><!-- fragment -->
 <p>RFCOMM Port Mask to enable all. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gaca604941c538633cc92ad5a5361dab96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaca604941c538633cc92ad5a5361dab96">&#9670;&nbsp;</a></span>wiced_bt_port_event_cback_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void() wiced_bt_port_event_cback_t(<a class="el" href="group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6">wiced_bt_rfcomm_port_event_t</a> event, uint16_t port_handle)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Port event callback. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>: A 32-bit event code that contains a bit-mask of one or more events the caller would like to register.(see <a class="el" href="group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6" title="RFCOMM Port Event Masks.">wiced_bt_rfcomm_port_event_t</a>) </td></tr>
-    <tr><td class="paramname">port_handle</td><td>: Port handle from <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ga29e5339346921b8f38a528ff118498d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga29e5339346921b8f38a528ff118498d0">&#9670;&nbsp;</a></span>wiced_bt_port_mgmt_cback_t</h2>
 
@@ -345,6 +324,29 @@ Enumerations</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">code</td><td>: Result code </td></tr>
     <tr><td class="paramname">port_handle</td><td>: Port handle from <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaca604941c538633cc92ad5a5361dab96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca604941c538633cc92ad5a5361dab96">&#9670;&nbsp;</a></span>wiced_bt_port_event_cback_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void() wiced_bt_port_event_cback_t(<a class="el" href="group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6">wiced_bt_rfcomm_port_event_t</a> event, uint16_t port_handle)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Port event callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>: A 32-bit event code that contains a bit-mask of one or more events the caller would like to register.(see <a class="el" href="group__rfcomm__api__functions.html#gaa0e1b18abc58d3ad24eb35eea2fa75c6" title="RFCOMM Port Event Masks.">wiced_bt_rfcomm_port_event_t</a>) </td></tr>
+    <tr><td class="paramname">port_handle</td><td>: Port handle from <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -371,38 +373,6 @@ Enumerations</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ga67a77aad84c51f52a3a3283258fc620d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga67a77aad84c51f52a3a3283258fc620d">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_result_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef int <a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>RFCOMM result code (see <a class="el" href="group__rfcomm__api__functions.html#ga919c228fbe128a196f66f0569ff3c1ee" title="RFCOMM Result Codes.">wiced_bt_rfcomm_result_e</a>) </p>
-
-</div>
-</div>
-<a id="ga33ea46c5bfe359825b3973b9ed7bdb01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga33ea46c5bfe359825b3973b9ed7bdb01">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_signal_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef uint8_t <a class="el" href="group__rfcomm__api__functions.html#ga33ea46c5bfe359825b3973b9ed7bdb01">wiced_bt_rfcomm_signal_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>RFCOMM Signals (see <a class="el" href="group__rfcomm__api__functions.html#gadc2b731e552fdb229490b5640e29714d" title="RFCOMM Signals.">wiced_bt_rfcomm_signal_e</a>) </p>
 
 </div>
 </div>
@@ -543,8 +513,7 @@ Enumerations</h2></td></tr>
 
 <p>RFCOMM Signals. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggadc2b731e552fdb229490b5640e29714daf5cba0e56de841cf9039be1981ba5767"></a>PORT_SET_DTRDSR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggadc2b731e552fdb229490b5640e29714da9f0240aa0eaf47ffc2466ed72fe61ef6"></a>PORT_CLR_DTRDSR&#160;</td><td class="fielddoc"><p>DTRDSR set. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggadc2b731e552fdb229490b5640e29714da9f0240aa0eaf47ffc2466ed72fe61ef6"></a>PORT_CLR_DTRDSR&#160;</td><td class="fielddoc"><p>DTRDSR set. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggadc2b731e552fdb229490b5640e29714dac3d657875811506d148b0c0eeb640b45"></a>PORT_SET_CTSRTS&#160;</td><td class="fielddoc"><p>DTRDSR clear. </p>
 </td></tr>
@@ -565,94 +534,6 @@ Enumerations</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5530e81b324a02f9a43947db3236a93c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5530e81b324a02f9a43947db3236a93c">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_check_connection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a> wiced_bt_rfcomm_check_connection </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>bd_addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>p_lcid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function checks connection referenced by handle is up and running. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The connection handle returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">bd_addr</td><td>: Peer BD Address (see <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e" title="Device address length.">wiced_bt_device_address_t</a>) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">p_lcid</td><td>: L2CAP's LCID</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_RFCOMM_SUCCESS </b> : If successful<br />
- <b> WICED_BT_RFCOMM_LINE_ERR </b> : If connection is not up and running<br />
-</dd></dl>
-
-</div>
-</div>
-<a id="ga417a74cdea9648969a1d28cb403cf0d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga417a74cdea9648969a1d28cb403cf0d3">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_control()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a> wiced_bt_rfcomm_control </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>signal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Send control signal to the peer device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The connection handle returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">signal</td><td>: Signal to send (see <a class="el" href="group__rfcomm__api__functions.html#gadc2b731e552fdb229490b5640e29714d" title="RFCOMM Signals.">wiced_bt_rfcomm_signal_e</a>)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_RFCOMM_SUCCESS </b> : If successful<br />
- <b> WICED_BT_RFCOMM_BAD_HANDLE </b> : If the handle is out of range<br />
- <b> WICED_BT_RFCOMM_NOT_OPENED </b> : If the connection is not opened<br />
-</dd></dl>
-
-</div>
-</div>
 <a id="ga0acf439d7bfa3540fe1f682e28a3ea15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0acf439d7bfa3540fe1f682e28a3ea15">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_create_connection()</h2>
 
@@ -727,103 +608,6 @@ Enumerations</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_RFCOMM_SUCCESS </b> : If successful<br />
  <b> WICED_BT_RFCOMM_ALREADY_OPENED </b> : If the client tries to establish a connection to the same BD_ADDR<br />
  <b> WICED_BT_RFCOMM_NO_RESOURCES </b> : If there is not enough memory to allocate a control block structure<br />
-</dd></dl>
-
-</div>
-</div>
-<a id="ga87bbfb9c882d8080fef5f63e2ad256c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga87bbfb9c882d8080fef5f63e2ad256c0">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_flow_control()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a> wiced_bt_rfcomm_flow_control </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td>
-          <td class="paramname"><em>enable</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function directs a specified connection to pass flow control message to the peer device. </p>
-<p>Enable flag passed shows if port can accept more data.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The connection handle returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>: Flow control setting TRUE Enable data flow FALSE Disable data flow</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_RFCOMM_SUCCESS </b> : If successful<br />
- <b> WICED_BT_RFCOMM_BAD_HANDLE </b> : If the handle is out of range<br />
- <b> WICED_BT_RFCOMM_NOT_OPENED </b> : If the connection is not opened<br />
-</dd></dl>
-
-</div>
-</div>
-<a id="ga2f25652d11064bf6879355e18dc03188"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2f25652d11064bf6879355e18dc03188">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_read_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a> wiced_bt_rfcomm_read_data </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>p_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>max_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>p_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function reads the received application data from the peer device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The connection handle returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_data</td><td>: Where to read the data into </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">max_len</td><td>: Maximum Byte count to read </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">p_len</td><td>: Bytes actually read</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_RFCOMM_SUCCESS </b> : If successful<br />
- <b> WICED_BT_RFCOMM_BAD_HANDLE </b> : If the handle is out of range<br />
- <b> WICED_BT_RFCOMM_NOT_OPENED </b> : If the connection is not opened<br />
 </dd></dl>
 
 </div>
@@ -958,6 +742,89 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="ga417a74cdea9648969a1d28cb403cf0d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga417a74cdea9648969a1d28cb403cf0d3">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a> wiced_bt_rfcomm_control </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>signal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send control signal to the peer device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The connection handle returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">signal</td><td>: Signal to send (see <a class="el" href="group__rfcomm__api__functions.html#gadc2b731e552fdb229490b5640e29714d" title="RFCOMM Signals.">wiced_bt_rfcomm_signal_e</a>)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_RFCOMM_SUCCESS </b> : If successful<br />
+ <b> WICED_BT_RFCOMM_BAD_HANDLE </b> : If the handle is out of range<br />
+ <b> WICED_BT_RFCOMM_NOT_OPENED </b> : If the connection is not opened<br />
+</dd></dl>
+
+</div>
+</div>
+<a id="ga87bbfb9c882d8080fef5f63e2ad256c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87bbfb9c882d8080fef5f63e2ad256c0">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_flow_control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a> wiced_bt_rfcomm_flow_control </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function directs a specified connection to pass flow control message to the peer device. </p>
+<p>Enable flag passed shows if port can accept more data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The connection handle returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>: Flow control setting TRUE Enable data flow FALSE Disable data flow</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_RFCOMM_SUCCESS </b> : If successful<br />
+ <b> WICED_BT_RFCOMM_BAD_HANDLE </b> : If the handle is out of range<br />
+ <b> WICED_BT_RFCOMM_NOT_OPENED </b> : If the connection is not opened<br />
+</dd></dl>
+
+</div>
+</div>
 <a id="ga354972749236c7b8bac2ee78743a5f95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga354972749236c7b8bac2ee78743a5f95">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_set_rx_fifo()</h2>
 
@@ -996,6 +863,61 @@ Enumerations</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The connection handle returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_mem</td><td>: Pointer to the fifo area </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>: Size of the fifo area</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_RFCOMM_SUCCESS </b> : If successful<br />
+ <b> WICED_BT_RFCOMM_BAD_HANDLE </b> : If the handle is out of range<br />
+ <b> WICED_BT_RFCOMM_NOT_OPENED </b> : If the connection is not opened<br />
+</dd></dl>
+
+</div>
+</div>
+<a id="ga2f25652d11064bf6879355e18dc03188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f25652d11064bf6879355e18dc03188">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_read_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a> wiced_bt_rfcomm_read_data </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>max_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>p_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function reads the received application data from the peer device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The connection handle returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_data</td><td>: Where to read the data into </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_len</td><td>: Maximum Byte count to read </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_len</td><td>: Bytes actually read</td></tr>
   </table>
   </dd>
 </dl>
@@ -1051,6 +973,53 @@ Enumerations</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_RFCOMM_SUCCESS </b> : If successful<br />
  <b> WICED_BT_RFCOMM_BAD_HANDLE </b> : If the handle is out of range<br />
  <b> WICED_BT_RFCOMM_NOT_OPENED </b> : If the connection is not opened<br />
+</dd></dl>
+
+</div>
+</div>
+<a id="ga5530e81b324a02f9a43947db3236a93c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5530e81b324a02f9a43947db3236a93c">&#9670;&nbsp;</a></span>wiced_bt_rfcomm_check_connection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rfcomm__api__functions.html#ga67a77aad84c51f52a3a3283258fc620d">wiced_bt_rfcomm_result_t</a> wiced_bt_rfcomm_check_connection </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>bd_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>p_lcid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function checks connection referenced by handle is up and running. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The connection handle returned by <a class="el" href="group__rfcomm__api__functions.html#ga0acf439d7bfa3540fe1f682e28a3ea15">wiced_bt_rfcomm_create_connection </a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bd_addr</td><td>: Peer BD Address (see <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e" title="Device address length.">wiced_bt_device_address_t</a>) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_lcid</td><td>: L2CAP's LCID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_RFCOMM_SUCCESS </b> : If successful<br />
+ <b> WICED_BT_RFCOMM_LINE_ERR </b> : If connection is not up and running<br />
 </dd></dl>
 
 </div>

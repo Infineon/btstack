@@ -3,56 +3,6 @@
   <compounddef id="wiced__bt__mesh__model__utils_8h" kind="file" language="C++">
     <compoundname>wiced_bt_mesh_model_utils.h</compoundname>
     <includes refid="wiced__bt__mesh__models_8h" local="yes">wiced_bt_mesh_models.h</includes>
-    <incdepgraph>
-      <node id="69">
-        <label>wiced_bt_mesh_model_defs.h</label>
-        <link refid="wiced__bt__mesh__model__defs_8h"/>
-      </node>
-      <node id="66">
-        <label>wiced_timer.h</label>
-      </node>
-      <node id="67">
-        <label>wiced_bt_mesh_core.h</label>
-        <link refid="wiced__bt__mesh__core_8h"/>
-        <childnode refid="65" relation="include">
-        </childnode>
-        <childnode refid="68" relation="include">
-        </childnode>
-        <childnode refid="70" relation="include">
-        </childnode>
-      </node>
-      <node id="63">
-        <label>wiced_bt_mesh_model_utils.h</label>
-        <link refid="wiced__bt__mesh__model__utils_8h"/>
-        <childnode refid="64" relation="include">
-        </childnode>
-      </node>
-      <node id="65">
-        <label>wiced_bt_mesh_event.h</label>
-        <link refid="wiced__bt__mesh__event_8h"/>
-        <childnode refid="66" relation="include">
-        </childnode>
-      </node>
-      <node id="70">
-        <label>wiced_bt_ble.h</label>
-      </node>
-      <node id="68">
-        <label>wiced_bt_mesh_cfg.h</label>
-        <link refid="wiced__bt__mesh__cfg_8h"/>
-        <childnode refid="69" relation="include">
-        </childnode>
-      </node>
-      <node id="64">
-        <label>wiced_bt_mesh_models.h</label>
-        <link refid="wiced__bt__mesh__models_8h"/>
-        <childnode refid="65" relation="include">
-        </childnode>
-        <childnode refid="67" relation="include">
-        </childnode>
-        <childnode refid="69" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
       <sectiondef kind="define">
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a0fbf3f0689483f99eed18d527a18609a" prot="public" static="no">
         <name>TRACE_NONE</name>
@@ -63,7 +13,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="14" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="14" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="14" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a7c12181b2e8dc912219651ff42d22e42" prot="public" static="no">
         <name>TRACE_ERROR</name>
@@ -74,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="15" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="15" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="15" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a8ef360431a8a28dd07add1d69347ffb8" prot="public" static="no">
         <name>TRACE_CRITICAL</name>
@@ -85,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="16" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="16" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="16" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a38e42b7c50e2112f0f0154e376c792d6" prot="public" static="no">
         <name>TRACE_WARNING</name>
@@ -96,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="17" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="17" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="17" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1aa1ac2baa71c9625b5131f180c6d2bfb8" prot="public" static="no">
         <name>TRACE_INFO</name>
@@ -107,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="18" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="18" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="18" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a22aa2a3eb0d062dc388befd69b195f83" prot="public" static="no">
         <name>TRACE_DEBUG</name>
@@ -118,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="19" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="19" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="19" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1ae59948c0704730dc8694d9835d7925fe" prot="public" static="no">
         <name>MMDL_TRACE0</name>
@@ -130,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="198" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="198" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="198" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="198" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a665ea453df08bba18170501291067789" prot="public" static="no">
         <name>MMDL_TRACE1</name>
@@ -143,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="199" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="199" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="199" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1ae95cb4d82d4c81a91b17d3fae529b359" prot="public" static="no">
         <name>MMDL_TRACE2</name>
@@ -157,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="200" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="200" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="200" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="200" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a331532aabc6f86a571e8fb928d9c7a1e" prot="public" static="no">
         <name>MMDL_TRACE3</name>
@@ -172,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="201" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="201" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="201" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="201" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a86f70c9047aa016f0004c5d781d2bb89" prot="public" static="no">
         <name>MMDL_TRACE4</name>
@@ -188,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="202" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="202" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="202" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a33cb2247be6aa6de40951171be6ac658" prot="public" static="no">
         <name>MMDL_TRACEN</name>
@@ -201,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="203" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="203" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="203" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a5f46ba8500fba7b3147c36291e8605aa" prot="public" static="no">
         <name>SETBUF_LE8</name>
@@ -215,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="259" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="259" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="259" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="259" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1aea512a31bba3b39bb3e1d6942f73635b" prot="public" static="no">
         <name>SETBUF_LE16</name>
@@ -229,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="260" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="260" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="260" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="260" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a46cecd70ce781ccf438c4378918924ef" prot="public" static="no">
         <name>SETBUF_LE32</name>
@@ -243,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="261" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="261" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="261" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="261" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a6da6d5f932da529064c0ecec892a4755" prot="public" static="no">
         <name>SETBUF_LE8_ptr</name>
@@ -256,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="263" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="263" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="263" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="263" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1aa2c27cb44149cd6e1a5a645ebd5676b4" prot="public" static="no">
         <name>SETBUF_LE16_ptr</name>
@@ -269,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="264" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="264" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="264" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="264" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a98007f8c5db6c04e6f12a18474de59b9" prot="public" static="no">
         <name>SETBUF_LE24_ptr</name>
@@ -282,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="265" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="265" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="265" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="265" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1ab00003207b692a89a8fb31a0b404551e" prot="public" static="no">
         <name>SETBUF_LE32_ptr</name>
@@ -295,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="266" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="266" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="266" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="266" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1aecbe057c60b0070cee84a9c615e36374" prot="public" static="no">
         <name>GETBUF_LE16</name>
@@ -308,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="271" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="271" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="271" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="271" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1acfe6d8a3c6cec76827d9e520b8538dd0" prot="public" static="no">
         <name>GETBUF_LE24</name>
@@ -321,7 +271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="272" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="272" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="272" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="272" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a2f6a83daebc25241d3fd1b2e4d1471eb" prot="public" static="no">
         <name>GETBUF_LE32</name>
@@ -334,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="273" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="273" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="273" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="273" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1aa5d228bf2009ae29f73ba723a7a7bbd7" prot="public" static="no">
         <name>GENDEFTRANSTIME_STEP_RESOLUTION_MASK</name>
@@ -345,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="277" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="277" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="277" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="277" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1aeea9e648e59eff868c6c418e5a2f5bdb" prot="public" static="no">
         <name>GENDEFTRANSTIME_STEP_RESOLUTION_100MS</name>
@@ -356,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="278" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="278" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="278" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="278" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1aa46e27ace33dad5480cf51b371d0b1b7" prot="public" static="no">
         <name>GENDEFTRANSTIME_STEP_RESOLUTION_1S</name>
@@ -367,7 +317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="279" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="279" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="279" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="279" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a8006a64b1fdae13047dd74e0f005a175" prot="public" static="no">
         <name>GENDEFTRANSTIME_STEP_RESOLUTION_10S</name>
@@ -378,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="280" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="280" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="280" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="280" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a3ea23212fcfeef16a2466999fe0ee26d" prot="public" static="no">
         <name>GENDEFTRANSTIME_STEP_RESOLUTION_10M</name>
@@ -389,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="281" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="281" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="281" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="281" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a194405af6ae23ac2113220e71f59ce2e" prot="public" static="no">
         <name>GENDEFTRANSTIME_STEPS_MASK</name>
@@ -400,7 +350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="283" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="283" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="283" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="283" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1abe54da6fa9bb13fbc45de6f01cb25ba2" prot="public" static="no">
         <name>GENDEFTRANSTIME_STEPS_IMMEDIATE</name>
@@ -411,7 +361,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="284" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="284" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="284" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="284" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1ae1969e624872beddb5e1f55f6f3d623f" prot="public" static="no">
         <name>GENDEFTRANSTIME_STEPS_MAX</name>
@@ -422,7 +372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="285" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="285" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="285" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="285" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a37bb1bc61f3bee5e31a6de2bffbf7f6b" prot="public" static="no">
         <name>GENDEFTRANSTIME_STEPS_UNKNOWN</name>
@@ -433,19 +383,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="286" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="286" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="286" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="286" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1aaad01c74e51ecfa89681d72ea454166a" prot="public" static="no">
         <name>GET_OPCODE_LEN</name>
         <param><defname>opcode</defname></param>
-        <initializer>(<ref refid="wiced__bt__mesh__app_8h_1aeb39438c0aa5ad494c96060b00351545" kindref="member">opcode</ref> &lt;= 0x7E ? 1 : (opcode &gt;=0x8000 &amp;&amp; opcode &lt;= 0xBFFF) ? 2 : (opcode&gt;=0xC00000) ? 3 : 0xFF)</initializer>
+        <initializer>(opcode &lt;= 0x7E ? 1 : (opcode &gt;=0x8000 &amp;&amp; opcode &lt;= 0xBFFF) ? 2 : (opcode&gt;=0xC00000) ? 3 : 0xFF)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="288" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="288" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="288" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="288" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a11f6c37b818a89311fdf0bc084d332f1" prot="public" static="no">
         <name>MESH_UTILS_COLOR_CONTROLLER_HSL</name>
@@ -456,7 +406,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="593" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="593" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="593" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="593" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a12e48fd8b0294c4692feab21f613df4d" prot="public" static="no">
         <name>MESH_UTILS_COLOR_CONTROLLER_CTL</name>
@@ -467,7 +417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="594" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="594" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="594" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="594" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1ab14fdfd5f5acd357bbd1dda81ea82fed" prot="public" static="no">
         <name>MESH_UTILS_COLOR_CONTROLLER_XYL</name>
@@ -478,7 +428,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="595" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="595" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="595" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="595" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__model__utils_8h_1a61d99d7e3142db9edaa68b0c39289841" prot="public" static="no">
         <name>TIMER_PARAM_TYPE</name>
@@ -489,7 +439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="599" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="599" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="599" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="599" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -504,10 +454,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="232" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="232" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="232" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="232" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__mesh__model__utils_8h_1a8ea550457af36dd6688aeac56991d0c7" prot="public" static="no">
-        <type><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref> struct @21</type>
+        <type>PACKED struct @21</type>
         <definition>typedef PACKED struct @21  wiced_mesh_model_callback_list_item_t</definition>
         <argsstring></argsstring>
         <name>wiced_mesh_model_callback_list_item_t</name>
@@ -517,10 +467,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="238" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="238" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__mesh__model__utils_8h_1ab050b2fed68f8904a558e3119ad11845" prot="public" static="no">
-        <type><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref> struct @22</type>
+        <type>PACKED struct @22</type>
         <definition>typedef PACKED struct @22  wiced_mesh_model_handler_list_t</definition>
         <argsstring></argsstring>
         <name>wiced_mesh_model_handler_list_t</name>
@@ -530,10 +480,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="245" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="245" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__mesh__model__utils_8h_1afa5e84d839e98fee78ad01cd54bffd3e" prot="public" static="no">
-        <type><ref refid="group__wiced__bt__mesh__core_1ga36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref> struct @23</type>
+        <type>PACKED struct @23</type>
         <definition>typedef PACKED struct @23  wiced_bt_mesh_time_t</definition>
         <argsstring></argsstring>
         <name>wiced_bt_mesh_time_t</name>
@@ -543,7 +493,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="255" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="255" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__mesh__model__utils_8h_1ad4e4d82d124988ddc9198a6206d56ca7" prot="public" static="no">
         <type>void()</type>
@@ -558,7 +508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="350" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="350" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="350" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="350" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -573,7 +523,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="227" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="227" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1a345b5a533872a471f810a988b331f60c" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -586,10 +536,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="236" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="236" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="236" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="236" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1ac0a364341f86af8a678012ac02ad8ce2" prot="public" static="no" mutable="no">
-        <type><ref refid="wiced__bt__mesh__model__utils_8h_1a99b230a51c6de114d23a66ca74e1bdfb" kindref="member">wiced_bt_mesh_model_handle_cb_t</ref></type>
+        <type>wiced_bt_mesh_model_handle_cb_t</type>
         <definition>wiced_bt_mesh_model_handle_cb_t model_handle</definition>
         <argsstring></argsstring>
         <name>model_handle</name>
@@ -599,7 +549,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="237" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="237" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="237" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="237" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1ab17e2aa224521dbaaba5d71dc12ebb93" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -612,7 +562,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="242" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="242" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="242" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="242" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1ad8c52fcbd525445e88fd1b5dbdb2e6e0" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -625,10 +575,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="243" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="243" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="243" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="243" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1adef946f0ca075613e0559a7800e57fa9" prot="public" static="no" mutable="no">
-        <type><ref refid="wiced__bt__mesh__model__utils_8h_1a8ea550457af36dd6688aeac56991d0c7" kindref="member">wiced_mesh_model_callback_list_item_t</ref></type>
+        <type>wiced_mesh_model_callback_list_item_t</type>
         <definition>wiced_mesh_model_callback_list_item_t cb_list[WICED_BT_MESH_MODELS_MAX_UNIQUE_MODELS_ON_NODE]</definition>
         <argsstring>[WICED_BT_MESH_MODELS_MAX_UNIQUE_MODELS_ON_NODE]</argsstring>
         <name>cb_list</name>
@@ -638,7 +588,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="244" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="244" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="244" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1a7af2065789bc84419b8d5fe109be83b5" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -651,7 +601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="249" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="249" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="249" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1a3e00faf7fbf9805e9ec4d2edd6339050" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -664,7 +614,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="250" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="250" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="250" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="250" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1a72369a1087b2aeffe374bb054cb97c12" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -677,7 +627,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="251" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="251" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="251" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="251" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1ae5af4ff48939d13d480f87e56a9385d6" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -690,7 +640,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="252" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="252" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="252" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="252" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1a8ff981ec55c945940f4a0da7d8709b3c" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -703,7 +653,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="253" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="253" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="253" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="253" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__mesh__model__utils_8h_1a8459fc4e94de7eefc74991e41779c8fc" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -716,7 +666,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="254" column="1" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="254" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="254" column="1" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" bodystart="254" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -739,7 +689,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="229" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="229" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a6d202928acdcc5e2b35fd75ec391e9d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -758,7 +708,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="300" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="300" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1ae6e30b92888e667f28bdc20ceccb175f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -777,7 +727,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="310" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="310" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a39846e3b7b6a5aa6a13b03256ad8949b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t *</type>
@@ -800,7 +750,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="322" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="322" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1ad647ec25874bafad8e8034c7f9bc545b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -820,7 +770,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="333" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="333" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a928b715926428a06f5097667fec67eda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -842,7 +792,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="341" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="341" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a7a7c6f5cb792aba11459de9c6d8d4028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -874,7 +824,7 @@
           <declname>num_values</declname>
         </param>
         <param>
-          <type><ref refid="wiced__bt__mesh__model__utils_8h_1ad4e4d82d124988ddc9198a6206d56ca7" kindref="member">wiced_bt_mesh_transition_callback_t</ref> *</type>
+          <type>wiced_bt_mesh_transition_callback_t *</type>
           <declname>p_callback</declname>
         </param>
         <param>
@@ -888,7 +838,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="364" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="364" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a38f8c188a3d4d5170322400f84dc47af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -907,7 +857,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="371" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="371" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a7429bd94637cb855009c0226c416891a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -925,7 +875,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="378" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="378" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1ac43d59bff901fd760938f8643cb86c76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -955,7 +905,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="387" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="387" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1addc093b22e2b6331d6a133bd9c36b2b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -963,7 +913,7 @@
         <argsstring>(wiced_bt_mesh_model_handle_cb_t model_handle, uint16_t model_id)</argsstring>
         <name>mesh_sig_model_handle_register</name>
         <param>
-          <type><ref refid="wiced__bt__mesh__model__utils_8h_1a99b230a51c6de114d23a66ca74e1bdfb" kindref="member">wiced_bt_mesh_model_handle_cb_t</ref></type>
+          <type>wiced_bt_mesh_model_handle_cb_t</type>
           <declname>model_handle</declname>
         </param>
         <param>
@@ -977,7 +927,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="392" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="392" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a34a924f256d7aebd8cb02f4722999529" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1000,7 +950,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="398" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="398" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a92c7962a33523bab4c224003055f3d58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1030,7 +980,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="403" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="403" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1aef71337a8c93376a883268c762cccdf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1053,7 +1003,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="409" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="409" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a95745b82530883d95790849ce6a5b630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1148,7 +1098,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="424" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="424" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a585ea5786e1fc6bfebd04a245491bd19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1178,7 +1128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="433" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="433" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a193a8918afea74a0e52921a75fd0edd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1201,7 +1151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="439" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="439" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a622543645cd4557f3b5f5ed787a9ed8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1219,7 +1169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="444" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="444" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1ad8fefb0d1974457a893641b18867babe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -1236,7 +1186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="446" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="446" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1aea1f2f05c1673747d95e2ea1a1fbcf9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -1274,7 +1224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="456" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="456" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a0f702fb1e85c2d755562dde1f90e23ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -1291,7 +1241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="461" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="461" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a3adadf2500a191f79b41a8c03e954429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1316,7 +1266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="466" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="466" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a0231eb06fd86ad77fe65b9a419e2e99c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -1333,7 +1283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="471" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="471" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a8a868cd5f34e1e3c89f6bae7aea069a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1358,7 +1308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="476" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="476" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1ae2ea75b8bd18844cd8f9709b5d7139a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -1375,7 +1325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="481" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="481" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a03abf98001770dc52905ed1a00d4ea5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1396,7 +1346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="486" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="486" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a3eec21293378394b45c19f238872f528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -1413,7 +1363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="491" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="491" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a56996f903a519441d30726e702542429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1434,7 +1384,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="496" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="496" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1aaa95c87a1d1ce359c2e768844a624b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1475,7 +1425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="501" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="501" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a58c570989ae88f0fcfe119d1d2fbd566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -1492,7 +1442,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="506" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="506" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a2a654b72a5f5e289cd2bdd66192ffd34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -1509,7 +1459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="508" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="508" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a657ccd66a1e3008e4fbb20496538b1ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -1526,7 +1476,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="509" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="509" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1aad756009d80e585435ab03f6538d2a21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1547,7 +1497,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="514" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="514" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a48ace79a9aa90d6ca4a7ba06b1d380ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1580,7 +1530,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="516" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="516" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a81f89b8f159732fe0c727bd36730c84b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1601,7 +1551,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="517" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="517" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1ad9a3f79728b879ac67e881878c5019d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1622,7 +1572,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="518" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="518" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a8252050aa422e2106173d1dc9c7818bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1643,7 +1593,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="523" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="523" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a1a3248841c4eecd9b9fe945d8486c412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -1660,7 +1610,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="528" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="528" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a8ea742a1bd938832d4c61e6d13cd1046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1681,7 +1631,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="533" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="533" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a8c6f7bbbdd03c27ed3998d2e8c3864da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -1698,7 +1648,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="535" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="535" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a2a56fd4a130fecd76748b3d577310407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1723,7 +1673,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="536" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="536" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1afd82b6acbf869002438418e93982a57f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -1740,7 +1690,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="537" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="537" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a665969f5b2fdfe4bda444ca839768d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1761,7 +1711,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="542" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="542" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a9721e3089c606b9d893c0e50440f0893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -1778,7 +1728,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="547" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="547" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a1afef474e603be1dd2c72f7a8d656824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1799,7 +1749,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="552" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="552" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1af18a0ab11737026560e1e686835bc9f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1824,7 +1774,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="554" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="554" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1ae4ff3c77676572010be03de01d3989b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1845,7 +1795,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="556" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="556" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a4710a9376fec32aabab5a75b3acaff0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1874,7 +1824,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="557" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="557" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a0b82f6cdf50ba054d789ca2169ba0f2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1899,7 +1849,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="562" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="562" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a574bf430137f83012decadaf540c1f75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int16_t</type>
@@ -1916,7 +1866,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="567" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="567" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1aa299f0a29a2dd1025d7b568c033c19df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1924,7 +1874,7 @@
         <argsstring>(wiced_bt_mesh_time_t *p_current_time)</argsstring>
         <name>mesh_time_server_get</name>
         <param>
-          <type><ref refid="wiced__bt__mesh__model__utils_8h_1afa5e84d839e98fee78ad01cd54bffd3e" kindref="member">wiced_bt_mesh_time_t</ref> *</type>
+          <type>wiced_bt_mesh_time_t *</type>
           <declname>p_current_time</declname>
         </param>
         <briefdescription>
@@ -1933,7 +1883,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="572" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="572" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1afcb771c8662c13801ef927954e1fdd73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1949,7 +1899,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="577" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="577" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a2b7b4131391a02c17cbddcb580315ea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -1978,7 +1928,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="580" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="580" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1ab7e86b4518119876cb607c59f0755638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -2007,7 +1957,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="581" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="581" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1ab7dc72d77b3e70ebb3342c02c6b5717d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -2024,7 +1974,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="583" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="583" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1a462480f3ea74ddcd94a87c2a0bf11499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -2041,7 +1991,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="584" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="584" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1ab176a21618756972fac0a25f28545e3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -2058,7 +2008,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="587" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="587" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1aa8f97d43a30bb9af45911e1b1b21cabc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -2075,7 +2025,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="589" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="589" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__mesh__model__utils_8h_1af708c32657aabe40bff5aa7417df1f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2096,7 +2046,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="596" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h" line="596" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2111,7 +2061,7 @@
 <codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>__MESH_MODEL_UTILS_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MESH_MODEL_UTILS_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wiced__bt__mesh__models_8h" kindref="compound">wiced_bt_mesh_models.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_mesh_models.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRACE_NONE<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRACE_ERROR<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
@@ -2208,7 +2158,7 @@
 <codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(MESH_OVER_GATT_ONLY)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/>prints<sp/>bytes<sp/>array.<sp/>It<sp/>is<sp/>replacement<sp/>of<sp/>the<sp/>related<sp/>wiced<sp/>function<sp/>which<sp/>prints<sp/>bad<sp/>trace<sp/>when<sp/>it<sp/>works<sp/>via<sp/>wiced<sp/>HCI.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1aa3cc0758935809ce2921e19b4e375a37" kindref="member">mesh_dump_hex</ref>(uint8_t*<sp/>p,<sp/>uint32_t<sp/>len);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_dump_hex(uint8_t*<sp/>p,<sp/>uint32_t<sp/>len);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MMDL_TRACEN(l,<sp/>p,<sp/>len)<sp/>{if(l<sp/>&lt;=<sp/>mesh_model_trace_level)<sp/>mesh_dump_hex((uint8_t*)(p),<sp/>(uint16_t)(len));}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
@@ -2326,35 +2276,35 @@
 <codeline lineno="224"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="226"><highlight class="normal"></highlight></codeline>
-<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref><sp/>*<ref refid="wiced__bt__mesh__model__utils_8h_1a78e74ffad8253d6337c826fff4337114" kindref="member">mesh_core_config</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref><sp/>*mesh_core_config;</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"></highlight></codeline>
-<codeline lineno="229"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1aa3cc0758935809ce2921e19b4e375a37" kindref="member">mesh_dump_hex</ref>(uint8_t<sp/>*p,<sp/>uint32_t<sp/>len);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_dump_hex(uint8_t<sp/>*p,<sp/>uint32_t<sp/>len);</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight></codeline>
 <codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Generic<sp/>definition<sp/>for<sp/>all<sp/>model<sp/>handle<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_bool_t<sp/>(*<ref refid="wiced__bt__mesh__model__utils_8h_1a99b230a51c6de114d23a66ca74e1bdfb" kindref="member">wiced_bt_mesh_model_handle_cb_t</ref>)<sp/>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint16_t<sp/>src_id,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a65ecdf93f477372c38b29a69e896d6ba" kindref="member">app_key_idx</ref>,<sp/>uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a4d402503271315376ddf4e47674d4965" kindref="member">ttl</ref>,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1aeb39438c0aa5ad494c96060b00351545" kindref="member">opcode</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*params,<sp/>uint16_t<sp/>params_len);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wiced_bool_t<sp/>(*wiced_bt_mesh_model_handle_cb_t)<sp/>(uint8_t<sp/>element_idx,<sp/>uint16_t<sp/>src_id,<sp/>uint16_t<sp/>app_key_idx,<sp/>uint8_t<sp/>ttl,<sp/>uint16_t<sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*params,<sp/>uint16_t<sp/>params_len);</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"></highlight></codeline>
-<codeline lineno="234"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__app_8h_1a36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="235"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a345b5a533872a471f810a988b331f60c" kindref="member">model_id</ref>;</highlight></codeline>
-<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a99b230a51c6de114d23a66ca74e1bdfb" kindref="member">wiced_bt_mesh_model_handle_cb_t</ref><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ac0a364341f86af8a678012ac02ad8ce2" kindref="member">model_handle</ref>;</highlight></codeline>
-<codeline lineno="238"><highlight class="normal">}<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a8ea550457af36dd6688aeac56991d0c7" kindref="member">wiced_mesh_model_callback_list_item_t</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model_id;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_mesh_model_handle_cb_t<sp/>model_handle;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}<sp/>wiced_mesh_model_callback_list_item_t;</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight></codeline>
-<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__app_8h_1a36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="241"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ab17e2aa224521dbaaba5d71dc12ebb93" kindref="member">max_handles</ref>;</highlight></codeline>
-<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ad8c52fcbd525445e88fd1b5dbdb2e6e0" kindref="member">registered_handles_cnt</ref>;</highlight></codeline>
-<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a8ea550457af36dd6688aeac56991d0c7" kindref="member">wiced_mesh_model_callback_list_item_t</ref><sp/><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1adef946f0ca075613e0559a7800e57fa9" kindref="member">cb_list</ref>[<ref refid="wiced__bt__mesh__models_8h_1acab1449e1473819bdabe5800faa5859b" kindref="member">WICED_BT_MESH_MODELS_MAX_UNIQUE_MODELS_ON_NODE</ref>];</highlight></codeline>
-<codeline lineno="245"><highlight class="normal">}<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ab050b2fed68f8904a558e3119ad11845" kindref="member">wiced_mesh_model_handler_list_t</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_handles;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>registered_handles_cnt;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_mesh_model_callback_list_item_t<sp/><sp/>cb_list[WICED_BT_MESH_MODELS_MAX_UNIQUE_MODELS_ON_NODE];</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}<sp/>wiced_mesh_model_handler_list_t;</highlight></codeline>
 <codeline lineno="246"><highlight class="normal"></highlight></codeline>
-<codeline lineno="247"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__app_8h_1a36d525cf4d116b2fe4ecc00222b256f1" kindref="member">PACKED</ref><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PACKED<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="248"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a7af2065789bc84419b8d5fe109be83b5" kindref="member">year</ref>;</highlight></codeline>
-<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a3e00faf7fbf9805e9ec4d2edd6339050" kindref="member">month</ref>;</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a72369a1087b2aeffe374bb054cb97c12" kindref="member">day</ref>;</highlight></codeline>
-<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ae5af4ff48939d13d480f87e56a9385d6" kindref="member">hour</ref>;</highlight></codeline>
-<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a8ff981ec55c945940f4a0da7d8709b3c" kindref="member">minute</ref>;</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a8459fc4e94de7eefc74991e41779c8fc" kindref="member">second</ref>;</highlight></codeline>
-<codeline lineno="255"><highlight class="normal">}<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1afa5e84d839e98fee78ad01cd54bffd3e" kindref="member">wiced_bt_mesh_time_t</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>year;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>month;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>day;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>hour;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>minute;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>second;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}<sp/>wiced_bt_mesh_time_t;</highlight></codeline>
 <codeline lineno="256"><highlight class="normal"></highlight></codeline>
 <codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//Insert<sp/>given<sp/>multi<sp/>octet<sp/>value<sp/>into<sp/>given<sp/>buffer<sp/>in<sp/>LITTLE<sp/>ENDIEN<sp/>FORMAT</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//Buffer<sp/>pointer<sp/>must<sp/>be<sp/>a<sp/>byte<sp/>array</highlight><highlight class="normal"></highlight></codeline>
@@ -2389,185 +2339,185 @@
 <codeline lineno="287"><highlight class="normal"></highlight></codeline>
 <codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET_OPCODE_LEN(opcode)<sp/><sp/><sp/><sp/><sp/>(opcode<sp/>&lt;=<sp/>0x7E<sp/>?<sp/>1<sp/>:<sp/>(opcode<sp/>&gt;=0x8000<sp/>&amp;&amp;<sp/>opcode<sp/>&lt;=<sp/>0xBFFF)<sp/>?<sp/>2<sp/>:<sp/>(opcode&gt;=0xC00000)<sp/>?<sp/>3<sp/>:<sp/>0xFF)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="289"><highlight class="normal"></highlight></codeline>
-<codeline lineno="300"><highlight class="normal">uint32_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a6d202928acdcc5e2b35fd75ec391e9d6" kindref="member">get_transtime_in_ms</ref>(uint8_t<sp/>trans_time);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal">uint32_t<sp/>get_transtime_in_ms(uint8_t<sp/>trans_time);</highlight></codeline>
 <codeline lineno="301"><highlight class="normal"></highlight></codeline>
-<codeline lineno="310"><highlight class="normal">uint64_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ae6e30b92888e667f28bdc20ceccb175f" kindref="member">get_app_finetimer_ticks</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">uint64_t<sp/>get_app_finetimer_ticks(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="311"><highlight class="normal"></highlight></codeline>
-<codeline lineno="322"><highlight class="normal">uint8_t*<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a39846e3b7b6a5aa6a13b03256ad8949b" kindref="member">mesh_opcode_to_stream</ref>(uint8_t<sp/>*p,<sp/>uint32_t<sp/>op);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal">uint8_t*<sp/>mesh_opcode_to_stream(uint8_t<sp/>*p,<sp/>uint32_t<sp/>op);</highlight></codeline>
 <codeline lineno="323"><highlight class="normal"></highlight></codeline>
-<codeline lineno="333"><highlight class="normal">uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ad647ec25874bafad8e8034c7f9bc545b" kindref="member">mesh_time_ms_to_transtime</ref>(uint32_t<sp/>time_ms);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal">uint8_t<sp/>mesh_time_ms_to_transtime(uint32_t<sp/>time_ms);</highlight></codeline>
 <codeline lineno="334"><highlight class="normal"></highlight></codeline>
-<codeline lineno="341"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a928b715926428a06f5097667fec67eda" kindref="member">mesh_model_transition_server_init</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>wiced_bool_t<sp/>is_provisioned);</highlight></codeline>
+<codeline lineno="341"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_model_transition_server_init(uint8_t<sp/>element_idx,<sp/>wiced_bool_t<sp/>is_provisioned);</highlight></codeline>
 <codeline lineno="342"><highlight class="normal"></highlight></codeline>
-<codeline lineno="350"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="wiced__bt__mesh__model__utils_8h_1ad4e4d82d124988ddc9198a6206d56ca7" kindref="member">wiced_bt_mesh_transition_callback_t</ref>)<sp/>(uint32_t<sp/>*p_present,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ref_data,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
+<codeline lineno="350"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(wiced_bt_mesh_transition_callback_t)<sp/>(uint32_t<sp/>*p_present,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ref_data,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
 <codeline lineno="351"><highlight class="normal"></highlight></codeline>
-<codeline lineno="364"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a7a7c6f5cb792aba11459de9c6d8d4028" kindref="member">mesh_server_transition_start</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint32_t<sp/>transition_time,<sp/>uint32_t<sp/>delay,<sp/>uint32_t<sp/>*target,<sp/>uint32_t<sp/>*present,<sp/>uint32_t<sp/>num_values,<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ad4e4d82d124988ddc9198a6206d56ca7" kindref="member">wiced_bt_mesh_transition_callback_t</ref><sp/>*p_callback,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_ref_data);</highlight></codeline>
+<codeline lineno="364"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_server_transition_start(uint8_t<sp/>element_idx,<sp/>uint32_t<sp/>transition_time,<sp/>uint32_t<sp/>delay,<sp/>uint32_t<sp/>*target,<sp/>uint32_t<sp/>*present,<sp/>uint32_t<sp/>num_values,<sp/>wiced_bt_mesh_transition_callback_t<sp/>*p_callback,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_ref_data);</highlight></codeline>
 <codeline lineno="365"><highlight class="normal"></highlight></codeline>
-<codeline lineno="371"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a38f8c188a3d4d5170322400f84dc47af" kindref="member">mesh_server_transition_stop</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="371"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_server_transition_stop(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="372"><highlight class="normal"></highlight></codeline>
-<codeline lineno="378"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a7429bd94637cb855009c0226c416891a" kindref="member">mesh_server_transition_abort</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="378"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_server_transition_abort(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="379"><highlight class="normal"></highlight></codeline>
-<codeline lineno="387"><highlight class="normal">uint32_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ac43d59bff901fd760938f8643cb86c76" kindref="member">mesh_default_transition_time_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal">uint32_t<sp/>mesh_default_transition_time_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="388"><highlight class="normal"></highlight></codeline>
-<codeline lineno="392"><highlight class="normal">wiced_bool_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1addc093b22e2b6331d6a133bd9c36b2b6" kindref="member">mesh_sig_model_handle_register</ref>(<ref refid="wiced__bt__mesh__model__utils_8h_1a99b230a51c6de114d23a66ca74e1bdfb" kindref="member">wiced_bt_mesh_model_handle_cb_t</ref><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ac0a364341f86af8a678012ac02ad8ce2" kindref="member">model_handle</ref>,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a345b5a533872a471f810a988b331f60c" kindref="member">model_id</ref>);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal">wiced_bool_t<sp/>mesh_sig_model_handle_register(wiced_bt_mesh_model_handle_cb_t<sp/>model_handle,<sp/>uint16_t<sp/>model_id);</highlight></codeline>
 <codeline lineno="393"><highlight class="normal"></highlight></codeline>
-<codeline lineno="398"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a34a924f256d7aebd8cb02f4722999529" kindref="member">wiced_bt_mesh_models_utils_ack_received</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event_queue,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a74794ae4e53b0a5e847a8f33fc5fbd6e" kindref="member">dst</ref>);</highlight></codeline>
+<codeline lineno="398"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_mesh_models_utils_ack_received(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event_queue,<sp/>uint16_t<sp/>dst);</highlight></codeline>
 <codeline lineno="399"><highlight class="normal"></highlight></codeline>
-<codeline lineno="403"><highlight class="normal">wiced_bool_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a92c7962a33523bab4c224003055f3d58" kindref="member">wiced_bt_mesh_models_utils_opcode_queued</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event_queue,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a74794ae4e53b0a5e847a8f33fc5fbd6e" kindref="member">dst</ref>,<sp/>uint16_t<sp/>*opcode_list,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_opcodes);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_models_utils_opcode_queued(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event_queue,<sp/>uint16_t<sp/>dst,<sp/>uint16_t<sp/>*opcode_list,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_opcodes);</highlight></codeline>
 <codeline lineno="404"><highlight class="normal"></highlight></codeline>
-<codeline lineno="409"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1aef71337a8c93376a883268c762cccdf5" kindref="member">wiced_bt_mesh_models_utils_cancel_send</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event_queue,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a74794ae4e53b0a5e847a8f33fc5fbd6e" kindref="member">dst</ref>);</highlight></codeline>
+<codeline lineno="409"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_mesh_models_utils_cancel_send(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event_queue,<sp/>uint16_t<sp/>dst);</highlight></codeline>
 <codeline lineno="410"><highlight class="normal"></highlight></codeline>
-<codeline lineno="424"><highlight class="normal">wiced_result_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a95745b82530883d95790849ce6a5b630" kindref="member">wiced_bt_mesh_models_utils_send</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event,<sp/>wiced_bool_t<sp/>is_command,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1aeb39438c0aa5ad494c96060b00351545" kindref="member">opcode</ref>,<sp/>uint8_t<sp/>*p_buffer,<sp/>uint16_t<sp/>len,<sp/><ref refid="group__wiced__bt__mesh__core_1gac19ccef557a6668b64e41e6602118e94" kindref="member">wiced_bt_mesh_core_send_complete_callback_t</ref><sp/>complete_callback);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal">wiced_result_t<sp/>wiced_bt_mesh_models_utils_send(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event,<sp/>wiced_bool_t<sp/>is_command,<sp/>uint16_t<sp/>opcode,<sp/>uint8_t<sp/>*p_buffer,<sp/>uint16_t<sp/>len,<sp/><ref refid="group__wiced__bt__mesh__core_1gac19ccef557a6668b64e41e6602118e94" kindref="member">wiced_bt_mesh_core_send_complete_callback_t</ref><sp/>complete_callback);</highlight></codeline>
 <codeline lineno="425"><highlight class="normal"></highlight></codeline>
-<codeline lineno="433"><highlight class="normal">wiced_bool_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a585ea5786e1fc6bfebd04a245491bd19" kindref="member">wiced_bt_mesh_models_utils_update_reply_timeout</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref>*<sp/>p_event);</highlight></codeline>
+<codeline lineno="433"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_models_utils_update_reply_timeout(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref>*<sp/>p_event);</highlight></codeline>
 <codeline lineno="434"><highlight class="normal"></highlight></codeline>
-<codeline lineno="439"><highlight class="normal">wiced_bool_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a193a8918afea74a0e52921a75fd0edd2" kindref="member">wiced_bt_mesh_models_utils_send_complete</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event_queue,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a74794ae4e53b0a5e847a8f33fc5fbd6e" kindref="member">dst</ref>);</highlight></codeline>
+<codeline lineno="439"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_models_utils_send_complete(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event_queue,<sp/>uint16_t<sp/>dst);</highlight></codeline>
 <codeline lineno="440"><highlight class="normal"></highlight></codeline>
-<codeline lineno="444"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a622543645cd4557f3b5f5ed787a9ed8c" kindref="member">wiced_bt_mesh_models_utils_cancel_all</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event_queue);</highlight></codeline>
+<codeline lineno="444"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_mesh_models_utils_cancel_all(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>**p_out_event_queue);</highlight></codeline>
 <codeline lineno="445"><highlight class="normal"></highlight></codeline>
-<codeline lineno="446"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ad8fefb0d1974457a893641b18867babe" kindref="member">utl_sqrt</ref>(uint32_t<sp/>input);</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>utl_sqrt(uint32_t<sp/>input);</highlight></codeline>
 <codeline lineno="447"><highlight class="normal"></highlight></codeline>
-<codeline lineno="456"><highlight class="normal">uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1aea1f2f05c1673747d95e2ea1a1fbcf9b" kindref="member">mesh_power_onoff_server_onpowerup_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal">uint8_t<sp/>mesh_power_onoff_server_onpowerup_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="457"><highlight class="normal"></highlight></codeline>
 <codeline lineno="458"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="459"><highlight class="comment">*<sp/>Get<sp/>Light<sp/>Lightness<sp/>Actual<sp/>state</highlight></codeline>
 <codeline lineno="460"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="461"><highlight class="normal">uint16_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a0f702fb1e85c2d755562dde1f90e23ea" kindref="member">mesh_light_lightness_actual_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal">uint16_t<sp/>mesh_light_lightness_actual_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="462"><highlight class="normal"></highlight></codeline>
 <codeline lineno="463"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="464"><highlight class="comment">*<sp/>Set<sp/>Light<sp/>Lightness<sp/>Actual<sp/>state</highlight></codeline>
 <codeline lineno="465"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="466"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a3adadf2500a191f79b41a8c03e954429" kindref="member">mesh_light_lightness_actual_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint16_t<sp/>level,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_light_lightness_actual_set(uint8_t<sp/>element_idx,<sp/>uint16_t<sp/>level,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
 <codeline lineno="467"><highlight class="normal"></highlight></codeline>
 <codeline lineno="468"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="469"><highlight class="comment"><sp/>*<sp/>Get<sp/>Value<sp/>of<sp/>the<sp/>Light<sp/>Lightness<sp/>Linear<sp/>state</highlight></codeline>
 <codeline lineno="470"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="471"><highlight class="normal">uint16_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a0231eb06fd86ad77fe65b9a419e2e99c" kindref="member">mesh_light_lightness_linear_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal">uint16_t<sp/>mesh_light_lightness_linear_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="472"><highlight class="normal"></highlight></codeline>
 <codeline lineno="473"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="474"><highlight class="comment"><sp/>*<sp/>Set<sp/>Value<sp/>of<sp/>the<sp/>Light<sp/>Lightness<sp/>Linear<sp/>state</highlight></codeline>
 <codeline lineno="475"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="476"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a8a868cd5f34e1e3c89f6bae7aea069a8" kindref="member">mesh_light_lightness_linear_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__cfg_8h_1a952181be57dba7891e7b2da65a061e25" kindref="member">value</ref>,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_light_lightness_linear_set(uint8_t<sp/>element_idx,<sp/>uint16_t<sp/>value,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
 <codeline lineno="477"><highlight class="normal"></highlight></codeline>
 <codeline lineno="478"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="479"><highlight class="comment"><sp/>*<sp/>Get<sp/>Value<sp/>of<sp/>the<sp/>Light<sp/>Lightness<sp/>Last<sp/>state</highlight></codeline>
 <codeline lineno="480"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="481"><highlight class="normal">uint16_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ae2ea75b8bd18844cd8f9709b5d7139a4" kindref="member">mesh_light_lightness_server_last_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="481"><highlight class="normal">uint16_t<sp/>mesh_light_lightness_server_last_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="482"><highlight class="normal"></highlight></codeline>
 <codeline lineno="483"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="484"><highlight class="comment"><sp/>*<sp/>Set<sp/>Value<sp/>of<sp/>the<sp/>Light<sp/>Lightness<sp/>Last<sp/>state</highlight></codeline>
 <codeline lineno="485"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="486"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a03abf98001770dc52905ed1a00d4ea5a" kindref="member">mesh_light_lightness_server_last_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__cfg_8h_1a952181be57dba7891e7b2da65a061e25" kindref="member">value</ref>);</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_light_lightness_server_last_set(uint8_t<sp/>element_idx,<sp/>uint16_t<sp/>value);</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"></highlight></codeline>
 <codeline lineno="488"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="489"><highlight class="comment"><sp/>*<sp/>Get<sp/>Value<sp/>of<sp/>the<sp/>Light<sp/>Lightness<sp/>Linear<sp/>Last<sp/>state</highlight></codeline>
 <codeline lineno="490"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="491"><highlight class="normal">uint16_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a3eec21293378394b45c19f238872f528" kindref="member">mesh_light_lightness_server_linear_last_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="491"><highlight class="normal">uint16_t<sp/>mesh_light_lightness_server_linear_last_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="492"><highlight class="normal"></highlight></codeline>
 <codeline lineno="493"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="494"><highlight class="comment"><sp/>*<sp/>Set<sp/>Value<sp/>of<sp/>the<sp/>Light<sp/>Lightness<sp/>Linear<sp/>Last<sp/>state</highlight></codeline>
 <codeline lineno="495"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="496"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a56996f903a519441d30726e702542429" kindref="member">mesh_light_lightness_server_linear_last_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__cfg_8h_1a952181be57dba7891e7b2da65a061e25" kindref="member">value</ref>);</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_light_lightness_server_linear_last_set(uint8_t<sp/>element_idx,<sp/>uint16_t<sp/>value);</highlight></codeline>
 <codeline lineno="497"><highlight class="normal"></highlight></codeline>
 <codeline lineno="498"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="499"><highlight class="comment"><sp/>*<sp/>Process<sp/>command<sp/>from<sp/>the<sp/>light<sp/>controller<sp/>to<sp/>transition<sp/>to<sp/>new<sp/>target<sp/>linear<sp/>lightness</highlight></codeline>
 <codeline lineno="500"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="501"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1aaa95c87a1d1ce359c2e768844a624b47" kindref="member">mesh_light_lightness_server_lc_transition_start</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint16_t<sp/>actual_target,<sp/>uint16_t<sp/>linear_target,<sp/>uint32_t<sp/>lux_level_current,<sp/>uint32_t<sp/>lux_level_target,<sp/>uint32_t<sp/>transition_time,<sp/>uint32_t<sp/>delay);</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_light_lightness_server_lc_transition_start(uint8_t<sp/>element_idx,<sp/>uint16_t<sp/>actual_target,<sp/>uint16_t<sp/>linear_target,<sp/>uint32_t<sp/>lux_level_current,<sp/>uint32_t<sp/>lux_level_target,<sp/>uint32_t<sp/>transition_time,<sp/>uint32_t<sp/>delay);</highlight></codeline>
 <codeline lineno="502"><highlight class="normal"></highlight></codeline>
 <codeline lineno="503"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="504"><highlight class="comment"><sp/>*<sp/>Return<sp/>current<sp/>Light<sp/>Lightness<sp/>Default<sp/>value</highlight></codeline>
 <codeline lineno="505"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="506"><highlight class="normal">uint16_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a58c570989ae88f0fcfe119d1d2fbd566" kindref="member">mesh_light_lightness_server_default_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="506"><highlight class="normal">uint16_t<sp/>mesh_light_lightness_server_default_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="507"><highlight class="normal"></highlight></codeline>
-<codeline lineno="508"><highlight class="normal">uint16_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a2a654b72a5f5e289cd2bdd66192ffd34" kindref="member">mesh_light_lightness_actual_last_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
-<codeline lineno="509"><highlight class="normal">uint16_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a657ccd66a1e3008e4fbb20496538b1ea" kindref="member">mesh_light_lightness_linear_last_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="508"><highlight class="normal">uint16_t<sp/>mesh_light_lightness_actual_last_get(uint8_t<sp/>element_idx);</highlight></codeline>
+<codeline lineno="509"><highlight class="normal">uint16_t<sp/>mesh_light_lightness_linear_last_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="510"><highlight class="normal"></highlight></codeline>
 <codeline lineno="511"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="512"><highlight class="comment">*<sp/>Set<sp/>current<sp/>Light<sp/>Lightness<sp/>Default<sp/>value</highlight></codeline>
 <codeline lineno="513"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="514"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1aad756009d80e585435ab03f6538d2a21" kindref="member">mesh_light_lightness_server_default_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint16_t<sp/>default_value);</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_light_lightness_server_default_set(uint8_t<sp/>element_idx,<sp/>uint16_t<sp/>default_value);</highlight></codeline>
 <codeline lineno="515"><highlight class="normal"></highlight></codeline>
-<codeline lineno="516"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a48ace79a9aa90d6ca4a7ba06b1d380ad" kindref="member">mesh_light_lightness_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>wiced_bool_t<sp/>store,<sp/>uint16_t<sp/>linear,<sp/>uint16_t<sp/>actual,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
-<codeline lineno="517"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a81f89b8f159732fe0c727bd36730c84b" kindref="member">light_lightness_actual_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__cfg_8h_1a952181be57dba7891e7b2da65a061e25" kindref="member">value</ref>);</highlight></codeline>
-<codeline lineno="518"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ad9a3f79728b879ac67e881878c5019d9" kindref="member">light_lightness_linear_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__cfg_8h_1a952181be57dba7891e7b2da65a061e25" kindref="member">value</ref>);</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_light_lightness_set(uint8_t<sp/>element_idx,<sp/>wiced_bool_t<sp/>store,<sp/>uint16_t<sp/>linear,<sp/>uint16_t<sp/>actual,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>light_lightness_actual_set(uint8_t<sp/>element_idx,<sp/>uint16_t<sp/>value);</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>light_lightness_linear_set(uint8_t<sp/>element_idx,<sp/>uint16_t<sp/>value);</highlight></codeline>
 <codeline lineno="519"><highlight class="normal"></highlight></codeline>
 <codeline lineno="520"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="521"><highlight class="comment"><sp/>*<sp/>Set<sp/>target<sp/>onoff<sp/>state<sp/>for<sp/>the<sp/>element</highlight></codeline>
 <codeline lineno="522"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="523"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a8252050aa422e2106173d1dc9c7818bb" kindref="member">mesh_power_onoff_server_target_onoff_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint8_t<sp/>onoff);</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_power_onoff_server_target_onoff_set(uint8_t<sp/>element_idx,<sp/>uint8_t<sp/>onoff);</highlight></codeline>
 <codeline lineno="524"><highlight class="normal"></highlight></codeline>
 <codeline lineno="525"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="526"><highlight class="comment"><sp/>*<sp/>Get<sp/>target<sp/>onoff<sp/>state<sp/>for<sp/>the<sp/>element</highlight></codeline>
 <codeline lineno="527"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="528"><highlight class="normal">uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a1a3248841c4eecd9b9fe945d8486c412" kindref="member">mesh_power_onoff_server_target_onoff_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="528"><highlight class="normal">uint8_t<sp/>mesh_power_onoff_server_target_onoff_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="529"><highlight class="normal"></highlight></codeline>
 <codeline lineno="530"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="531"><highlight class="comment"><sp/>*<sp/>Set<sp/>present<sp/>onoff<sp/>state<sp/>for<sp/>the<sp/>element</highlight></codeline>
 <codeline lineno="532"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="533"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a8ea742a1bd938832d4c61e6d13cd1046" kindref="member">mesh_power_onoff_server_present_onoff_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint8_t<sp/>onoff);</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_power_onoff_server_present_onoff_set(uint8_t<sp/>element_idx,<sp/>uint8_t<sp/>onoff);</highlight></codeline>
 <codeline lineno="534"><highlight class="normal"></highlight></codeline>
-<codeline lineno="535"><highlight class="normal">uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a8c6f7bbbdd03c27ed3998d2e8c3864da" kindref="member">mesh_power_onoff_server_get_onoff</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
-<codeline lineno="536"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a2a56fd4a130fecd76748b3d577310407" kindref="member">mesh_power_onoff_server_set_onoff</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint8_t<sp/>onoff,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
-<codeline lineno="537"><highlight class="normal">uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1afd82b6acbf869002438418e93982a57f" kindref="member">mesh_onoff_server_get_onoff</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="535"><highlight class="normal">uint8_t<sp/>mesh_power_onoff_server_get_onoff(uint8_t<sp/>element_idx);</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>mesh_power_onoff_server_set_onoff(uint8_t<sp/>element_idx,<sp/>uint8_t<sp/>onoff,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
+<codeline lineno="537"><highlight class="normal">uint8_t<sp/>mesh_onoff_server_get_onoff(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="538"><highlight class="normal"></highlight></codeline>
 <codeline lineno="539"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="540"><highlight class="comment"><sp/>*<sp/>Set<sp/>target<sp/>onoff<sp/>state<sp/>for<sp/>the<sp/>element</highlight></codeline>
 <codeline lineno="541"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="542"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a665969f5b2fdfe4bda444ca839768d7c" kindref="member">mesh_onoff_server_target_onoff_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint8_t<sp/>onoff);</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_onoff_server_target_onoff_set(uint8_t<sp/>element_idx,<sp/>uint8_t<sp/>onoff);</highlight></codeline>
 <codeline lineno="543"><highlight class="normal"></highlight></codeline>
 <codeline lineno="544"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="545"><highlight class="comment"><sp/>*<sp/>Get<sp/>target<sp/>onoff<sp/>state<sp/>for<sp/>the<sp/>element</highlight></codeline>
 <codeline lineno="546"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="547"><highlight class="normal">uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a9721e3089c606b9d893c0e50440f0893" kindref="member">mesh_onoff_server_target_onoff_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="547"><highlight class="normal">uint8_t<sp/>mesh_onoff_server_target_onoff_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="548"><highlight class="normal"></highlight></codeline>
 <codeline lineno="549"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="550"><highlight class="comment"><sp/>*<sp/>Set<sp/>present<sp/>onoff<sp/>state<sp/>for<sp/>the<sp/>element</highlight></codeline>
 <codeline lineno="551"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="552"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a1afef474e603be1dd2c72f7a8d656824" kindref="member">mesh_onoff_server_present_onoff_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint8_t<sp/>onoff);</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_onoff_server_present_onoff_set(uint8_t<sp/>element_idx,<sp/>uint8_t<sp/>onoff);</highlight></codeline>
 <codeline lineno="553"><highlight class="normal"></highlight></codeline>
-<codeline lineno="554"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1af18a0ab11737026560e1e686835bc9f5" kindref="member">mesh_onoff_server_onoff_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint8_t<sp/>onoff,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_onoff_server_onoff_set(uint8_t<sp/>element_idx,<sp/>uint8_t<sp/>onoff,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
 <codeline lineno="555"><highlight class="normal"></highlight></codeline>
-<codeline lineno="556"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ae4ff3c77676572010be03de01d3989b0" kindref="member">mesh_onoff_execute_set_onoff</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/><ref refid="structwiced__bt__mesh__onoff__set__data__t" kindref="compound">wiced_bt_mesh_onoff_set_data_t</ref><sp/>*p_onoff_set);</highlight></codeline>
-<codeline lineno="557"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a4710a9376fec32aabab5a75b3acaff0c" kindref="member">mesh_scene_server_execute_recall</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint16_t<sp/>scene_number,<sp/>uint32_t<sp/>transition_time,<sp/>uint32_t<sp/>delay);</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_onoff_execute_set_onoff(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/><ref refid="structwiced__bt__mesh__onoff__set__data__t" kindref="compound">wiced_bt_mesh_onoff_set_data_t</ref><sp/>*p_onoff_set);</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_scene_server_execute_recall(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint16_t<sp/>scene_number,<sp/>uint32_t<sp/>transition_time,<sp/>uint32_t<sp/>delay);</highlight></codeline>
 <codeline lineno="558"><highlight class="normal"></highlight></codeline>
 <codeline lineno="559"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="560"><highlight class="comment"><sp/>*<sp/>Set<sp/>new<sp/>level</highlight></codeline>
 <codeline lineno="561"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="562"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a0b82f6cdf50ba054d789ca2169ba0f2c" kindref="member">mesh_level_server_level_set</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>int16_t<sp/>level,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_level_server_level_set(uint8_t<sp/>element_idx,<sp/>int16_t<sp/>level,<sp/>uint32_t<sp/>remaining_time);</highlight></codeline>
 <codeline lineno="563"><highlight class="normal"></highlight></codeline>
 <codeline lineno="564"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="565"><highlight class="comment"><sp/>*<sp/>Get<sp/>level<sp/>of<sp/>the<sp/>element</highlight></codeline>
 <codeline lineno="566"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="567"><highlight class="normal">int16_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a574bf430137f83012decadaf540c1f75" kindref="member">mesh_level_server_level_get</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>);</highlight></codeline>
+<codeline lineno="567"><highlight class="normal">int16_t<sp/>mesh_level_server_level_get(uint8_t<sp/>element_idx);</highlight></codeline>
 <codeline lineno="568"><highlight class="normal"></highlight></codeline>
 <codeline lineno="569"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="570"><highlight class="comment"><sp/>*<sp/>Get<sp/>current<sp/>time</highlight></codeline>
 <codeline lineno="571"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="572"><highlight class="normal">wiced_bool_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1aa299f0a29a2dd1025d7b568c033c19df" kindref="member">mesh_time_server_get</ref>(<ref refid="wiced__bt__mesh__model__utils_8h_1afa5e84d839e98fee78ad01cd54bffd3e" kindref="member">wiced_bt_mesh_time_t</ref><sp/>*p_current_time);</highlight></codeline>
+<codeline lineno="572"><highlight class="normal">wiced_bool_t<sp/>mesh_time_server_get(wiced_bt_mesh_time_t<sp/>*p_current_time);</highlight></codeline>
 <codeline lineno="573"><highlight class="normal"></highlight></codeline>
 <codeline lineno="574"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="575"><highlight class="comment"><sp/>*<sp/>Notifies<sp/>the<sp/>scheduler<sp/>about<sp/>time<sp/>change<sp/>-<sp/>it<sp/>should<sp/>be<sp/>called<sp/>by<sp/>time<sp/>server<sp/>or<sp/>by<sp/>application<sp/>on<sp/>every<sp/>time<sp/>change</highlight></codeline>
 <codeline lineno="576"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="577"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1afcb771c8662c13801ef927954e1fdd73" kindref="member">mesh_scheduler_on_time_changed</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_scheduler_on_time_changed(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="578"><highlight class="normal"></highlight></codeline>
 <codeline lineno="579"><highlight class="normal"></highlight><highlight class="comment">//<sp/>definitions<sp/>from<sp/>mesh_core.h.<sp/>Otherwise<sp/>models<sp/>uses<sp/>these<sp/>function<sp/>without<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="580"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a2b7b4131391a02c17cbddcb580315ea4" kindref="member">mesh_read_node_info</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>uint8_t*<sp/><ref refid="wiced__bt__mesh__app_8h_1aa86e1085c6a16f60258f29c9d5fc2144" kindref="member">data</ref>,<sp/>uint16_t<sp/>len,<sp/>wiced_result_t<sp/>*p_result);</highlight></codeline>
-<codeline lineno="581"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ab7e86b4518119876cb607c59f0755638" kindref="member">mesh_write_node_info</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/><ref refid="wiced__bt__mesh__app_8h_1aa86e1085c6a16f60258f29c9d5fc2144" kindref="member">data</ref>,<sp/>uint16_t<sp/>len,<sp/>wiced_result_t<sp/>*p_result);</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>mesh_read_node_info(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>uint8_t*<sp/>data,<sp/>uint16_t<sp/>len,<sp/>wiced_result_t<sp/>*p_result);</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>mesh_write_node_info(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>data,<sp/>uint16_t<sp/>len,<sp/>wiced_result_t<sp/>*p_result);</highlight></codeline>
 <codeline lineno="582"><highlight class="normal"></highlight></codeline>
-<codeline lineno="583"><highlight class="normal">uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ab7dc72d77b3e70ebb3342c02c6b5717d" kindref="member">uint32_to_log</ref>(uint32_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1a81b43df06332b4fef558297592bb7ff1" kindref="member">period</ref>);</highlight></codeline>
-<codeline lineno="584"><highlight class="normal">uint32_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1a462480f3ea74ddcd94a87c2a0bf11499" kindref="member">uint32_from_log</ref>(uint8_t<sp/>log);</highlight></codeline>
+<codeline lineno="583"><highlight class="normal">uint8_t<sp/>uint32_to_log(uint32_t<sp/>period);</highlight></codeline>
+<codeline lineno="584"><highlight class="normal">uint32_t<sp/>uint32_from_log(uint8_t<sp/>log);</highlight></codeline>
 <codeline lineno="585"><highlight class="normal"></highlight></codeline>
 <codeline lineno="586"><highlight class="normal"></highlight><highlight class="comment">//<sp/>same<sp/>as<sp/>uint32_to_log()<sp/>but<sp/>for<sp/>heartbeat<sp/>publication/subscription<sp/>count/period<sp/>-<sp/>it<sp/>is<sp/>based<sp/>on<sp/>ext**(log-1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="587"><highlight class="normal">uint8_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1ab176a21618756972fac0a25f28545e3b" kindref="member">uint32_to_log_heartbeat</ref>(uint32_t<sp/><ref refid="wiced__bt__mesh__provision_8h_1a81b43df06332b4fef558297592bb7ff1" kindref="member">period</ref>);</highlight></codeline>
+<codeline lineno="587"><highlight class="normal">uint8_t<sp/>uint32_to_log_heartbeat(uint32_t<sp/>period);</highlight></codeline>
 <codeline lineno="588"><highlight class="normal"></highlight><highlight class="comment">//<sp/>same<sp/>as<sp/>uint32_from_log()<sp/>but<sp/>for<sp/>heartbeat<sp/>publication/subscription<sp/>count/period<sp/>-<sp/>it<sp/>is<sp/>based<sp/>on<sp/>ext**(log-1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="589"><highlight class="normal">uint32_t<sp/><ref refid="wiced__bt__mesh__model__utils_8h_1aa8f97d43a30bb9af45911e1b1b21cabc" kindref="member">uint32_from_log_heartbeat</ref>(uint8_t<sp/>log);</highlight></codeline>
+<codeline lineno="589"><highlight class="normal">uint32_t<sp/>uint32_from_log_heartbeat(uint8_t<sp/>log);</highlight></codeline>
 <codeline lineno="590"><highlight class="normal"></highlight></codeline>
 <codeline lineno="591"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>device<sp/>may<sp/>have<sp/>1,<sp/>2,<sp/>or<sp/>3<sp/>models<sp/>implemented<sp/>to<sp/>control<sp/>the<sp/>color.<sp/>One<sp/>of<sp/>them<sp/>is<sp/>running<sp/>as<sp/>a<sp/>startup</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="592"><highlight class="normal"></highlight><highlight class="comment">//<sp/>controller,<sp/>and<sp/>tell<sp/>application<sp/>about<sp/>the<sp/>currently<sp/>set<sp/>color</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="593"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MESH_UTILS_COLOR_CONTROLLER_HSL<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="594"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MESH_UTILS_COLOR_CONTROLLER_CTL<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="595"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MESH_UTILS_COLOR_CONTROLLER_XYL<sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="596"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wiced__bt__mesh__model__utils_8h_1af708c32657aabe40bff5aa7417df1f8e" kindref="member">mesh_model_set_color_light_controller</ref>(uint8_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>,<sp/>uint8_t<sp/>controller);</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mesh_model_set_color_light_controller(uint8_t<sp/>element_idx,<sp/>uint8_t<sp/>controller);</highlight></codeline>
 <codeline lineno="597"><highlight class="normal"></highlight></codeline>
 <codeline lineno="598"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TIMER_PARAM_TYPE</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="599"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_PARAM_TYPE<sp/>WICED_TIMER_PARAM_TYPE</highlight><highlight class="normal"></highlight></codeline>
@@ -2583,6 +2533,6 @@
 <codeline lineno="609"><highlight class="normal"></highlight></codeline>
 <codeline lineno="610"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MESH_MODEL_UTILS_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h"/>
+    <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_utils.h"/>
   </compounddef>
 </doxygen>

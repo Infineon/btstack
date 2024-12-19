@@ -93,187 +93,21 @@ $(document).ready(function(){initNavTree('group__gattsr__api__functions.html',''
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
-<p>This section provides GATT Profile Server Data APIs. </p>
-<p>These APIs allows application to send a response to various attribute requests i.e read, write, notify, indicate etc . </p>
+<p>GATT Server Data API. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga0cb76e23dcabd30c6fbe2e8139f96ad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga0cb76e23dcabd30c6fbe2e8139f96ad9">wiced_bt_gatt_server_send_indication</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_app_buffer, <a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
+<tr class="memitem:ga0cb76e23dcabd30c6fbe2e8139f96ad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga0cb76e23dcabd30c6fbe2e8139f96ad9">wiced_bt_gatt_server_send_indication</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_app_buffer, <a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
 <tr class="memdesc:ga0cb76e23dcabd30c6fbe2e8139f96ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a long (1 upto (MTU -3) bytes) indication to the client for the specified handle with a persistent buffer in <code>p_app_buffer</code>.  <a href="#ga0cb76e23dcabd30c6fbe2e8139f96ad9">More...</a><br /></td></tr>
 <tr class="separator:ga0cb76e23dcabd30c6fbe2e8139f96ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6b81296d8e3deebefdab879b874439e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gae6b81296d8e3deebefdab879b874439e">wiced_bt_gatt_server_send_notification</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_app_buffer, <a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
+<tr class="memitem:gae6b81296d8e3deebefdab879b874439e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gae6b81296d8e3deebefdab879b874439e">wiced_bt_gatt_server_send_notification</a> (uint16_t conn_id, uint16_t attr_handle, uint16_t val_len, uint8_t *p_app_buffer, <a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
 <tr class="memdesc:gae6b81296d8e3deebefdab879b874439e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a long (1 upto (MTU -3) bytes) notification to the client for the specified handle with a persistent buffer in <code>p_app_buffer</code>.  <a href="#gae6b81296d8e3deebefdab879b874439e">More...</a><br /></td></tr>
 <tr class="separator:gae6b81296d8e3deebefdab879b874439e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab222ca3f30e05cab6168f2755b838035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gab222ca3f30e05cab6168f2755b838035">wiced_bt_gatt_server_send_multiple_notifications</a> (uint16_t conn_id, uint16_t app_buffer_len, uint8_t *p_app_buffer, <a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
+<tr class="memitem:gab222ca3f30e05cab6168f2755b838035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gab222ca3f30e05cab6168f2755b838035">wiced_bt_gatt_server_send_multiple_notifications</a> (uint16_t conn_id, uint16_t app_buffer_len, uint8_t *p_app_buffer, <a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
 <tr class="memdesc:gab222ca3f30e05cab6168f2755b838035"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API will send a long (1 upto (MTU -1) bytes) multiple variable length notification to the client with a persistent buffer in <code>p_app_buffer</code>.  <a href="#gab222ca3f30e05cab6168f2755b838035">More...</a><br /></td></tr>
 <tr class="separator:gab222ca3f30e05cab6168f2755b838035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9a964df2795b7d430c826d7345478fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gae9a964df2795b7d430c826d7345478fa">wiced_bt_gatt_server_send_mtu_rsp</a> (uint16_t conn_id, uint16_t remote_mtu, uint16_t my_mtu)</td></tr>
-<tr class="memdesc:gae9a964df2795b7d430c826d7345478fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server API to respond to a MTU request from the client.  <a href="#gae9a964df2795b7d430c826d7345478fa">More...</a><br /></td></tr>
-<tr class="separator:gae9a964df2795b7d430c826d7345478fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb88000b02c5b7731a45d78f918b09dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gadb88000b02c5b7731a45d78f918b09dd">wiced_bt_gatt_server_send_read_handle_rsp</a> (uint16_t conn_id, <a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a> opcode, uint16_t len, uint8_t *p_attr_rsp, <a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
-<tr class="memdesc:gadb88000b02c5b7731a45d78f918b09dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server API to respond to a read request from the client.  <a href="#gadb88000b02c5b7731a45d78f918b09dd">More...</a><br /></td></tr>
-<tr class="separator:gadb88000b02c5b7731a45d78f918b09dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e0750855efde37f750e815e238bafb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga8e0750855efde37f750e815e238bafb3">wiced_bt_gatt_server_send_read_by_type_rsp</a> (uint16_t conn_id, <a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a> opcode, uint8_t type_len, uint16_t data_len, uint8_t *p_app_rsp_buffer, <a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
-<tr class="memdesc:ga8e0750855efde37f750e815e238bafb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server API to respond to a read by type request from the client.  <a href="#ga8e0750855efde37f750e815e238bafb3">More...</a><br /></td></tr>
-<tr class="separator:ga8e0750855efde37f750e815e238bafb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga78979a4307e0e7ee77ffbe2b2df202a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga78979a4307e0e7ee77ffbe2b2df202a5">wiced_bt_gatt_server_send_read_multiple_rsp</a> (uint16_t conn_id, <a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a> opcode, uint16_t len, uint8_t *p_app_rsp_buffer, <a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
-<tr class="memdesc:ga78979a4307e0e7ee77ffbe2b2df202a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server API to respond to read multiple request from the client.  <a href="#ga78979a4307e0e7ee77ffbe2b2df202a5">More...</a><br /></td></tr>
-<tr class="separator:ga78979a4307e0e7ee77ffbe2b2df202a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02b4ab03e142ceb7072eefdccff40210"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga02b4ab03e142ceb7072eefdccff40210">wiced_bt_gatt_server_send_write_rsp</a> (uint16_t conn_id, <a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a> opcode, uint16_t handle)</td></tr>
-<tr class="memdesc:ga02b4ab03e142ceb7072eefdccff40210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server API to respond to a write request from the client.  <a href="#ga02b4ab03e142ceb7072eefdccff40210">More...</a><br /></td></tr>
-<tr class="separator:ga02b4ab03e142ceb7072eefdccff40210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac56f597fd98cc01035bde3d76d47f306"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gac56f597fd98cc01035bde3d76d47f306">wiced_bt_gatt_server_send_prepare_write_rsp</a> (uint16_t conn_id, <a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a> opcode, uint16_t handle, uint16_t offset, uint16_t len, uint8_t *p_app_rsp_buffer, <a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a> p_app_ctxt)</td></tr>
-<tr class="memdesc:gac56f597fd98cc01035bde3d76d47f306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server API to respond to a prepare write request from the client.  <a href="#gac56f597fd98cc01035bde3d76d47f306">More...</a><br /></td></tr>
-<tr class="separator:gac56f597fd98cc01035bde3d76d47f306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacff2e68ac9bf052b71f66a3cab8da50a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#gacff2e68ac9bf052b71f66a3cab8da50a">wiced_bt_gatt_server_send_execute_write_rsp</a> (uint16_t conn_id, <a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a> opcode)</td></tr>
-<tr class="memdesc:gacff2e68ac9bf052b71f66a3cab8da50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server API to respond to an execute write request from the client.  <a href="#gacff2e68ac9bf052b71f66a3cab8da50a">More...</a><br /></td></tr>
-<tr class="separator:gacff2e68ac9bf052b71f66a3cab8da50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6198dad1b69676e497bf5df211dee19d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga6198dad1b69676e497bf5df211dee19d">wiced_bt_gatt_server_send_error_rsp</a> (uint16_t conn_id, <a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a> opcode, uint16_t handle, <a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> status)</td></tr>
-<tr class="memdesc:ga6198dad1b69676e497bf5df211dee19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server API to send an error response to any of the received requests on encountering an error in the command.  <a href="#ga6198dad1b69676e497bf5df211dee19d">More...</a><br /></td></tr>
-<tr class="separator:ga6198dad1b69676e497bf5df211dee19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79bd173cb40c8361997a18944a585714"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gattsr__api__functions.html#ga79bd173cb40c8361997a18944a585714">wiced_bt_gatt_find_handle_by_type</a> (uint16_t s_handle, uint16_t e_handle, <a class="el" href="structwiced__bt__uuid__t.html">wiced_bt_uuid_t</a> *p_uuid)</td></tr>
-<tr class="memdesc:ga79bd173cb40c8361997a18944a585714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function on the server to find a handle matching a uuid in a range.  <a href="#ga79bd173cb40c8361997a18944a585714">More...</a><br /></td></tr>
-<tr class="separator:ga79bd173cb40c8361997a18944a585714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga79bd173cb40c8361997a18944a585714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga79bd173cb40c8361997a18944a585714">&#9670;&nbsp;</a></span>wiced_bt_gatt_find_handle_by_type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t wiced_bt_gatt_find_handle_by_type </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>s_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>e_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__uuid__t.html">wiced_bt_uuid_t</a> *&#160;</td>
-          <td class="paramname"><em>p_uuid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Utility function on the server to find a handle matching a uuid in a range. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">s_handle</td><td>: Start handle of the range to search </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e_handle</td><td>: End handle of the range to search </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_uuid</td><td>: The attribute uuid to match</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
-
-</div>
-</div>
-<a id="ga6198dad1b69676e497bf5df211dee19d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6198dad1b69676e497bf5df211dee19d">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_error_rsp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_error_rsp </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>conn_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a>&#160;</td>
-          <td class="paramname"><em>opcode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a>&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Server API to send an error response to any of the received requests on encountering an error in the command. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT Connection ID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: The opcode received in the event </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The attribute handle as received in the event </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>: The reason code for the error</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
-
-</div>
-</div>
-<a id="gacff2e68ac9bf052b71f66a3cab8da50a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacff2e68ac9bf052b71f66a3cab8da50a">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_execute_write_rsp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_execute_write_rsp </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>conn_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a>&#160;</td>
-          <td class="paramname"><em>opcode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Server API to respond to an execute write request from the client. </p>
-<p>The application receives a callback on the registered <a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2">wiced_bt_gatt_cback_t</a> with the <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8">wiced_bt_gatt_attribute_request_t::opcode</a> set to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68ba5eb1dc7717102415663e5b5c4e4d6857">GATT_REQ_EXECUTE_WRITE</a> . <br />
-The application is also expected to write the prepare write queue on receiving this command. <br />
-The command parameters are in <a class="el" href="structwiced__bt__gatt__execute__write__req__t.html">wiced_bt_gatt_execute_write_req_t</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT Connection ID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: The opcode received in the event</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
-
-</div>
-</div>
 <a id="ga0cb76e23dcabd30c6fbe2e8139f96ad9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0cb76e23dcabd30c6fbe2e8139f96ad9">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_indication()</h2>
 
@@ -281,7 +115,7 @@ The command parameters are in <a class="el" href="structwiced__bt__gatt__execute
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_indication </td>
+          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_indication </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em>, </td>
@@ -307,7 +141,7 @@ The command parameters are in <a class="el" href="structwiced__bt__gatt__execute
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
           <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
         </tr>
         <tr>
@@ -319,10 +153,10 @@ The command parameters are in <a class="el" href="structwiced__bt__gatt__execute
 </div><div class="memdoc">
 
 <p>This API will send a long (1 upto (MTU -3) bytes) indication to the client for the specified handle with a persistent buffer in <code>p_app_buffer</code>. </p>
-<p>The indication confirmation from the remote is indicated by an <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631af9ccc76a9f59eb9334787a0244680395" title="GATT attribute request (from remote client).">GATT_ATTRIBUTE_REQUEST_EVT</a> with <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8" title="GATT request opcode.">wiced_bt_gatt_attribute_request_t.opcode</a> value <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68ba176f2e54df76963dfb43e354d5addce6" title="Handle Value Indication.">GATT_HANDLE_VALUE_IND</a> in the callback function registered via <a class="el" href="group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9" title="Register an application callback with GATT.">wiced_bt_gatt_register</a></p>
+<p>The indication confirmation from the remote is indicated by an GATT_ATTRIBUTE_REQUEST_EVT with <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8" title="GATT request opcode.">wiced_bt_gatt_attribute_request_t.opcode</a> = GATT_HANDLE_VALUE_IND</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: Connection identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: connection identifier. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">attr_handle</td><td>: Attribute handle of this handle value indication. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">val_len</td><td>: Length of indication value passed. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_app_buffer</td><td>: Indication Value, peristent till the data is sent out to the controller </td></tr>
@@ -330,22 +164,19 @@ The command parameters are in <a class="el" href="structwiced__bt__gatt__execute
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_app_buffer</code> pointer on receiving a <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <br />
- <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_buffer</code> <br />
- <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> <br />
- in the registered callback function</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_app_buffer</code> pointer on receiving a <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
-<a id="gae9a964df2795b7d430c826d7345478fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae9a964df2795b7d430c826d7345478fa">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_mtu_rsp()</h2>
+<a id="gae6b81296d8e3deebefdab879b874439e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6b81296d8e3deebefdab879b874439e">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_notification()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_mtu_rsp </td>
+          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_notification </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em>, </td>
@@ -354,13 +185,25 @@ The command parameters are in <a class="el" href="structwiced__bt__gatt__execute
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>remote_mtu</em>, </td>
+          <td class="paramname"><em>attr_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>my_mtu</em>&#160;</td>
+          <td class="paramname"><em>val_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>p_app_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
+          <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -370,17 +213,20 @@ The command parameters are in <a class="el" href="structwiced__bt__gatt__execute
       </table>
 </div><div class="memdoc">
 
-<p>Server API to respond to a MTU request from the client. </p>
+<p>This API will send a long (1 upto (MTU -3) bytes) notification to the client for the specified handle with a persistent buffer in <code>p_app_buffer</code>. </p>
+<p>The send complete of the notification is indicated by an GATT_ATTRIBUTE_REQUEST_EVT with <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8" title="GATT request opcode.">wiced_bt_gatt_attribute_request_t.opcode</a> = GATT_HANDLE_VALUE_NOTIF</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT Connection ID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">remote_mtu</td><td>: The remote MTU received in <a class="el" href="unionwiced__bt__gatt__request__params__t.html#ab141385db57f6e5df2a0556b7b1f2c82">wiced_bt_gatt_request_params_t::remote_mtu</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">my_mtu</td><td>: The response MTU of the application</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: connection identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr_handle</td><td>: Attribute handle of this handle value notification. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val_len</td><td>: Length of notification value passed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_buffer</td><td>: Notification Value, peristent till the data is sent out to the controller </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_ctxt</td><td>: Application context for <code>p_app_buffer</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><b>my_mtu</b> shall be set to &lt;= the configured pdu size in <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> of <a class="el" href="structwiced__bt__cfg__settings__t.html">wiced_bt_cfg_settings_t</a> and shall be &gt;= <a class="el" href="wiced__bt__gatt_8h.html#a51a4bde18db79359bec10b5309f5a29b">GATT_BLE_DEFAULT_MTU_SIZE</a> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_app_buffer</code> pointer on receiving a <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
@@ -391,7 +237,7 @@ The command parameters are in <a class="el" href="structwiced__bt__gatt__execute
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_multiple_notifications </td>
+          <td class="memname"><a class="el" href="group__wicedbt__gatt.html#ga0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_multiple_notifications </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>conn_id</em>, </td>
@@ -411,7 +257,7 @@ The command parameters are in <a class="el" href="structwiced__bt__gatt__execute
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
           <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
         </tr>
         <tr>
@@ -423,417 +269,24 @@ The command parameters are in <a class="el" href="structwiced__bt__gatt__execute
 </div><div class="memdoc">
 
 <p>This API will send a long (1 upto (MTU -1) bytes) multiple variable length notification to the client with a persistent buffer in <code>p_app_buffer</code>. </p>
-<p>The send complete of the notification is indicated by an <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631af9ccc76a9f59eb9334787a0244680395" title="GATT attribute request (from remote client).">GATT_ATTRIBUTE_REQUEST_EVT</a> with <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8" title="GATT request opcode.">wiced_bt_gatt_attribute_request_t.opcode</a> value <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68ba3fa94b7f9da8171102100b0d8a429be7" title="Handle Value Multiple Notifications.">GATT_HANDLE_VALUE_MULTI_NOTIF</a> in the callback function registered via <a class="el" href="group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9" title="Register an application callback with GATT.">wiced_bt_gatt_register</a></p>
+<p>The send complete of the notification is indicated by an GATT_ATTRIBUTE_REQUEST_EVT with <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8" title="GATT request opcode.">wiced_bt_gatt_attribute_request_t.opcode</a> = GATT_HANDLE_VALUE_MULTI_NOTIF</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: Connection identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: connection identifier. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">app_buffer_len</td><td>: Length of multiple notification values passed, should not exceed MTU - 1. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_app_buffer</td><td>: Notification Values, peristent till the data is sent out to the controller </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Notification values are formatted by the application by setting the handle(2 octets LE), len(2 octets LE) and data of handle of length for atleast 2 handle, len, data pairs. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>: Notification values are formatted by the application by setting the handle(2 octets LE), len(2 octets LE) and data of handle of length for atleast 2 handle, len, data pairs. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p_app_ctxt</td><td>: Application context for <code>p_app_buffer</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_app_buffer</code> pointer on receiving a <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <br />
- <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_buffer</code> <br />
- <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> <br />
- in the registered callback function</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
-
-</div>
-</div>
-<a id="gae6b81296d8e3deebefdab879b874439e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae6b81296d8e3deebefdab879b874439e">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_notification()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_notification </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>conn_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>attr_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>val_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_app_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
-          <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This API will send a long (1 upto (MTU -3) bytes) notification to the client for the specified handle with a persistent buffer in <code>p_app_buffer</code>. </p>
-<p>The send complete of the notification is indicated by an <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631af9ccc76a9f59eb9334787a0244680395" title="GATT attribute request (from remote client).">GATT_ATTRIBUTE_REQUEST_EVT</a> with <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8" title="GATT request opcode.">wiced_bt_gatt_attribute_request_t.opcode</a> value <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68ba737c0a35667f9c3064bf1e223324b96e" title="Handle Value Notification.">GATT_HANDLE_VALUE_NOTIF</a> in the callback function registered via <a class="el" href="group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9" title="Register an application callback with GATT.">wiced_bt_gatt_register</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: Connection identifier. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">attr_handle</td><td>: Attribute handle of this handle value notification. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">val_len</td><td>: Length of notification value passed. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_buffer</td><td>: Notification Value, peristent till the data is sent out to the controller </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_ctxt</td><td>: Application context for <code>p_app_buffer</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_app_buffer</code> pointer on receiving a <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <br />
- <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_buffer</code> <br />
- <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> <br />
- in the registered callback function</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
-
-</div>
-</div>
-<a id="gac56f597fd98cc01035bde3d76d47f306"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac56f597fd98cc01035bde3d76d47f306">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_prepare_write_rsp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_prepare_write_rsp </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>conn_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a>&#160;</td>
-          <td class="paramname"><em>opcode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_app_rsp_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
-          <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Server API to respond to a prepare write request from the client. </p>
-<p>This API can be used to respond to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68baf95ac38b63a8c986f291ac2bda6a2399">GATT_REQ_PREPARE_WRITE</a> . <br />
-The application receives a callback on the registered <a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2">wiced_bt_gatt_cback_t</a> with the <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8">wiced_bt_gatt_attribute_request_t::opcode</a> set to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68baf95ac38b63a8c986f291ac2bda6a2399">GATT_REQ_PREPARE_WRITE</a> . <br />
-The application is also expected to queue up the writes till it receives a <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68ba5eb1dc7717102415663e5b5c4e4d6857">GATT_REQ_EXECUTE_WRITE</a> . <br />
-The command parameters are in <a class="el" href="structwiced__bt__gatt__write__req__t.html">wiced_bt_gatt_write_req_t</a> . <br />
- The mechanism of prepare writes is only applicable for attributes which have set the <a class="el" href="wiced__bt__gatt_8h.html#af5ad84c1e0460264f3706875ac8792ee">GATTDB_PERM_RELIABLE_WRITE</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT Connection ID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: The opcode received in the event </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The handle as received in the request </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>: The offset as received in the request </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>: The actual length of the <code>p_data</code> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_rsp_buffer</td><td>The data copied into the queue as received in the command. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd><code>p_app_rsp_buffer</code> is a copy of the received data. The application should not send the received <a class="el" href="structwiced__bt__gatt__write__req__t.html#ada3ddacfaaab12f08b6c6caaacc6760c">wiced_bt_gatt_write_req_t::p_val</a> pointer </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_ctxt</td><td>: Application context for <code>p_app_rsp_buffer</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_app_rsp_buffer</code> pointer on receiving a <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> set to <code>p_app_rsp_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> set to <code>p_app_ctxt</code> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
-
-</div>
-</div>
-<a id="ga8e0750855efde37f750e815e238bafb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e0750855efde37f750e815e238bafb3">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_read_by_type_rsp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_read_by_type_rsp </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>conn_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a>&#160;</td>
-          <td class="paramname"><em>opcode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>type_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>data_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_app_rsp_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
-          <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Server API to respond to a read by type request from the client. </p>
-<p>This API can be used to respond to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68ba96435c77138f86fd1e9f6aae9e3bd618">GATT_REQ_READ_BY_TYPE</a> .<br />
-The application receives a callback on the registered <a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2">wiced_bt_gatt_cback_t</a> with the <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8">wiced_bt_gatt_attribute_request_t::opcode</a> set to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68ba96435c77138f86fd1e9f6aae9e3bd618">GATT_REQ_READ_BY_TYPE</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT Connection ID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: The opcode received in the event </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type_len</td><td>The length of the type in the response </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>: Actual valid length pointed to by <code>p_app_rsp_buffer</code> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_rsp_buffer</td><td>: The formatted data response </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_ctxt</td><td>: Application context for <code>p_app_rsp_buffer</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_app_rsp_buffer</code> pointer on receiving a <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_rsp_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
-
-</div>
-</div>
-<a id="gadb88000b02c5b7731a45d78f918b09dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadb88000b02c5b7731a45d78f918b09dd">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_read_handle_rsp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_read_handle_rsp </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>conn_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a>&#160;</td>
-          <td class="paramname"><em>opcode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_attr_rsp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
-          <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Server API to respond to a read request from the client. </p>
-<p>This API can be used to respond to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68ba9370cd9ede463ad254d241672384612c">GATT_REQ_READ</a> and <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68bacaca90cb2a26ad52fb70acc38ca54879">GATT_REQ_READ_BLOB</a> request.<br />
-The application receives a callback on the registered <a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2">wiced_bt_gatt_cback_t</a> with the <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8">wiced_bt_gatt_attribute_request_t::opcode</a> set to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68ba9370cd9ede463ad254d241672384612c">GATT_REQ_READ</a> or <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68bacaca90cb2a26ad52fb70acc38ca54879">GATT_REQ_READ_BLOB</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT Connection ID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: The opcode received in the event </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>: Actual valid length pointed to by <code>p_attr_rsp</code> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_attr_rsp</td><td>: The attribute handle <a class="el" href="structwiced__bt__gatt__read__t.html#a1964e4eeda2df368a9f8a1146dce3969">wiced_bt_gatt_read_t::handle</a> data as requested, at an offset of <a class="el" href="structwiced__bt__gatt__read__t.html#a0b2fe98ed9c1bf9d78c387ff2fab01d4">wiced_bt_gatt_read_t::offset</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_ctxt</td><td>: Application context for <code>p_attr_rsp</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_attr_rsp</code> pointer on receiving a <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_attr_rsp</code> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
-
-</div>
-</div>
-<a id="ga78979a4307e0e7ee77ffbe2b2df202a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga78979a4307e0e7ee77ffbe2b2df202a5">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_read_multiple_rsp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_read_multiple_rsp </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>conn_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a>&#160;</td>
-          <td class="paramname"><em>opcode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_app_rsp_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a80c3de8e66dd4257528aeaf34484d14c">wiced_bt_gatt_app_context_t</a>&#160;</td>
-          <td class="paramname"><em>p_app_ctxt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Server API to respond to read multiple request from the client. </p>
-<p>This API can be used to respond to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68bada432729197e6189c196a01d65597293">GATT_REQ_READ_MULTI</a> or <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68baeafa2b04ebdf14895feec3338b37252b">GATT_REQ_READ_MULTI_VAR_LENGTH</a> .<br />
-The application receives a callback on the registered <a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2">wiced_bt_gatt_cback_t</a> with the <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8">wiced_bt_gatt_attribute_request_t::opcode</a> set to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68bada432729197e6189c196a01d65597293">GATT_REQ_READ_MULTI</a> or <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68baeafa2b04ebdf14895feec3338b37252b">GATT_REQ_READ_MULTI_VAR_LENGTH</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT Connection ID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: The opcode received in the event </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>: Actual valid length pointed to by <code>p_app_rsp_buffer</code> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_rsp_buffer</td><td>: The formatted data response </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_app_ctxt</td><td>: Application context for <code>p_app_rsp_buffer</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_app_rsp_buffer</code> pointer on receiving a <a class="el" href="wiced__bt__gatt_8h.html#a1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_rsp_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
-
-</div>
-</div>
-<a id="ga02b4ab03e142ceb7072eefdccff40210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga02b4ab03e142ceb7072eefdccff40210">&#9670;&nbsp;</a></span>wiced_bt_gatt_server_send_write_rsp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="wiced__bt__gatt_8h.html#a0e035835afe92d61fe430ea19029677a">wiced_bt_gatt_status_t</a> wiced_bt_gatt_server_send_write_rsp </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>conn_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="wiced__bt__gatt_8h.html#a6bf4e326bf95c613ff59591782abf6b4">wiced_bt_gatt_opcode_t</a>&#160;</td>
-          <td class="paramname"><em>opcode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>handle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Server API to respond to a write request from the client. </p>
-<p>This API can be used to respond to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68baeaf87c53ee0b114a68df4c4e2d7705e8">GATT_REQ_WRITE</a> . <br />
-The application receives a callback on the registered <a class="el" href="wiced__bt__gatt_8h.html#a826a5f3ef4bd8587ee6af52ed9b4a4f2">wiced_bt_gatt_cback_t</a> with the <a class="el" href="structwiced__bt__gatt__attribute__request__t.html#a0afffdd0df923ead9fe51276cdfc94a8">wiced_bt_gatt_attribute_request_t::opcode</a> set to <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68baeaf87c53ee0b114a68df4c4e2d7705e8">GATT_REQ_WRITE</a> or <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68bae9076bb7b96ed9e0541b756436068f32">GATT_CMD_WRITE</a> or <a class="el" href="wiced__bt__gatt_8h.html#a1bec0037cd2837dc90a967458b3cc68baba3cfce19e8ccaf9445f5e3e757f24cd">GATT_CMD_SIGNED_WRITE</a> . <br />
-The command parameters are in <a class="el" href="structwiced__bt__gatt__write__req__t.html">wiced_bt_gatt_write_req_t</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT Connection ID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: The opcode received in the event </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: The handle as received in the request</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="wiced__bt__gatt_8h.html#a972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_app_buffer</code> pointer on receiving a <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> = <code>p_app_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> = <code>p_app_ctxt</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>

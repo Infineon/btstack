@@ -9,64 +9,16 @@
     <includedby refid="wiced__bt__mesh__models_8h" local="yes">wiced_bt_mesh_models.h</includedby>
     <includedby refid="wiced__bt__mesh__core_8h" local="yes">wiced_bt_mesh_core.h</includedby>
     <incdepgraph>
-      <node id="42">
+      <node id="17">
         <label>wiced_timer.h</label>
       </node>
-      <node id="41">
+      <node id="16">
         <label>wiced_bt_mesh_event.h</label>
         <link refid="wiced__bt__mesh__event_8h"/>
-        <childnode refid="42" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="45">
-        <label>wiced_bt_mesh_client.h</label>
-        <link refid="wiced__bt__mesh__client_8h"/>
-      </node>
-      <node id="49">
-        <label>wiced_bt_mesh_core.h</label>
-        <link refid="wiced__bt__mesh__core_8h"/>
-        <childnode refid="47" relation="include">
-        </childnode>
-      </node>
-      <node id="48">
-        <label>wiced_bt_mesh_model_utils.h</label>
-        <link refid="wiced__bt__mesh__model__utils_8h"/>
-      </node>
-      <node id="46">
-        <label>wiced_bt_mesh_provision.h</label>
-        <link refid="wiced__bt__mesh__provision_8h"/>
-        <childnode refid="45" relation="include">
-        </childnode>
-      </node>
-      <node id="43">
-        <label>wiced_bt_mesh_event.h</label>
-        <link refid="wiced__bt__mesh__event_8h"/>
-        <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="45" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="47" relation="include">
-        </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
-      </node>
-      <node id="47">
-        <label>wiced_bt_mesh_models.h</label>
-        <link refid="wiced__bt__mesh__models_8h"/>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-      </node>
-      <node id="44">
-        <label>wiced_bt_mesh_app.h</label>
-        <link refid="wiced__bt__mesh__app_8h"/>
-      </node>
-    </invincdepgraph>
     <innerclass refid="structwiced__bt__mesh__event__t" prot="public">wiced_bt_mesh_event_t</innerclass>
       <sectiondef kind="user-defined">
       <header>Bits of the wiced_bt_mesh_event_t::app_key_idx</header>
@@ -84,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="32" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="32" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="32" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a0a5502c4082c8354132761bca51a29cb" prot="public" static="no">
         <name>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY</name>
@@ -97,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="33" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="33" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="33" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ab39000c7f3940b7903be4a2485f0f68a" prot="public" static="no">
         <name>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_INT_IDX</name>
@@ -110,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="34" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="34" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="34" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ad458d5bfc758fb4d737d919ecb6f2019" prot="public" static="no">
         <name>WICED_BT_MESH_EVENT_KEY_IDX_MSK_KEYIDX</name>
@@ -122,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="35" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="35" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="35" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -135,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="65" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="65" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="65" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ac5a7aa705cc4be1b676c9c70d1d7403b" prot="public" static="no">
         <name>CREDENTIAL_FLAG_FRENDSHIP</name>
@@ -146,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="66" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="66" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="66" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a4610e9e139c824b77c81e24ed83f5203" prot="public" static="no">
         <name>CREDENTIAL_FLAG_DIRECTED</name>
@@ -157,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="67" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="67" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="67" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1abe46201a835b3b2e98cf0cbe981b59be" prot="public" static="no">
         <name>RETRANSMIT_TIMER_TICK</name>
@@ -168,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="72" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="72" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="72" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a539b0066c6b2d2fe46c845b2e32ad93b" prot="public" static="no">
         <name>RETRANSMIT_TIMER2_TICK</name>
@@ -179,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="73" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="73" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="73" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aaab7e3aa3012530273e898ce1573f17c" prot="public" static="no">
         <name>REPLY_TIMER_TICK</name>
@@ -190,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="76" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="76" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="76" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1abdf9aa4b3b81f170071376607f870006" prot="public" static="no">
         <name>TX_STATUS_COMPLETED</name>
@@ -201,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="80" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="80" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="80" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1af800d1ab3c27c3acddc0016aead1922a" prot="public" static="no">
         <name>TX_STATUS_FAILED</name>
@@ -212,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="81" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="81" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="81" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a974ff50cf7f2e723add959f384429cee" prot="public" static="no">
         <name>TX_STATUS_ACK_RECEIVED</name>
@@ -223,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="82" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="82" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="82" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1af53ef804bc2279ea0446390ea50f471f" prot="public" static="no">
         <name>RPL_DELAY_DONT_SAVE</name>
@@ -234,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="84" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="84" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="84" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aa1e9cfcf45b509a85c8f6dbf1da02af7" prot="public" static="no">
         <name>TAG_USE_DIRECTED</name>
@@ -245,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="88" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="88" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="88" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a9ec051fd153b183097019f24d51156b2" prot="public" static="no">
         <name>TAG_IMMUTABLE_CREDENTIALS</name>
@@ -256,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="89" column="9" bodyfile="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="89" bodyend="-1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="89" column="9" bodyfile="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -289,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="107" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="107" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__core_1gad429c40f45f13693d7e64894a7402f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
@@ -320,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="117" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="117" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__core_1ga3b31ef1c2c2249006531d402f13c1fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
@@ -399,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="133" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="133" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__core_1gab53118d6d25849be44f82d3af7eeb0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -430,7 +382,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="143" column="1"/>
+        <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="143" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -465,27 +417,27 @@
 <codeline lineno="52"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">wiced_bt_mesh_event__t<sp/>*p_next;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*complete_callback;<sp/></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1a685ae33c442d30cc507fa5415f536e74" kindref="member">company_id</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__cfg_8h_1a345b5a533872a471f810a988b331f60c" kindref="member">model_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1aeb39438c0aa5ad494c96060b00351545" kindref="member">opcode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>company_id;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>opcode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hci_opcode;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1a3e88ad60a04f11afc4d739c9fbd490af" kindref="member">element_idx</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1a4d402503271315376ddf4e47674d4965" kindref="member">ttl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1ac87170cf133e48fc4c61ea4b90bfb515" kindref="member">src</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1a74794ae4e53b0a5e847a8f33fc5fbd6e" kindref="member">dst</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1a65ecdf93f477372c38b29a69e896d6ba" kindref="member">app_key_idx</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__provision_8h_1ad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element_idx;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ttl;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>src;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>app_key_idx;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_len;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="65"><highlight class="preprocessor">#define<sp/>CREDENTIAL_FLAG_FLOODING<sp/><sp/><sp/><sp/>0x00<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Flooding<sp/>Credentials<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CREDENTIAL_FLAG_FRENDSHIP<sp/><sp/><sp/>0x01<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Friendship<sp/>Credentials<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CREDENTIAL_FLAG_DIRECTED<sp/><sp/><sp/><sp/>0x02<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Directed<sp/>Forwarding<sp/>Credentials<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__provision_8h_1ae4118fec267d4ea4f8fe035cd8e02d88" kindref="member">credential_flag</ref>;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1a9e817b5279fd147d7a5b53ec556bfe49" kindref="member">retrans_cnt</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>credential_flag;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retrans_cnt;<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="72"><highlight class="preprocessor">#define<sp/>RETRANSMIT_TIMER_TICK<sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RETRANSMIT_TIMER2_TICK<sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1a890a5f699e1821d80b4cd8a10ae45a2d" kindref="member">retrans_time</ref>;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1a6b61e176817d67212481b1075c4c426f" kindref="member">reply</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retrans_time;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reply;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="76"><highlight class="preprocessor">#define<sp/>REPLY_TIMER_TICK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1a7389b2a7e380437f6af8ee6784f93a47" kindref="member">reply_timeout</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reply_timeout;<sp/><sp/></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_STATUS_COMPLETED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
@@ -495,21 +447,21 @@
 <codeline lineno="84"><highlight class="preprocessor">#define<sp/>RPL_DELAY_DONT_SAVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xff</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rpl_delay;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tx_delay;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="wiced__bt__mesh__core_8h_1ade818037fd6c985038ff29656089758d" kindref="member">status</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>status;</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAG_USE_DIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAG_IMMUTABLE_CREDENTIALS<sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1aa2585d779da0ab21273a8d92de9a0ebe" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flags;</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>friend_addr;<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>send_segmented;<sp/></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wiced__bt__mesh__app_8h_1a3b962e67ba74725bd60ca3c29f785abe" kindref="member">rssi</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_timer_t<sp/><sp/><sp/><ref refid="wiced__bt__mesh__provision_8h_1a0ff73b1428e9cd11a4f7a6cf46b7b550" kindref="member">timer</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rssi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_timer_t<sp/><sp/><sp/>timer;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal">}<sp/><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref>;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1gaccd6185e2edfb1a91692727fef0da12a" kindref="member">wiced_bt_mesh_create_reply_event</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1gad429c40f45f13693d7e64894a7402f69" kindref="member">wiced_bt_mesh_copy_event</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1ga3b31ef1c2c2249006531d402f13c1fb6" kindref="member">wiced_bt_mesh_create_event</ref>(uint8_t<sp/>element_index,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a685ae33c442d30cc507fa5415f536e74" kindref="member">company_id</ref>,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__cfg_8h_1a345b5a533872a471f810a988b331f60c" kindref="member">model_id</ref>,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a74794ae4e53b0a5e847a8f33fc5fbd6e" kindref="member">dst</ref>,<sp/>uint16_t<sp/><ref refid="wiced__bt__mesh__app_8h_1a65ecdf93f477372c38b29a69e896d6ba" kindref="member">app_key_idx</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1ga3b31ef1c2c2249006531d402f13c1fb6" kindref="member">wiced_bt_mesh_create_event</ref>(uint8_t<sp/>element_index,<sp/>uint16_t<sp/>company_id,<sp/>uint16_t<sp/>model_id,<sp/>uint16_t<sp/>dst,<sp/>uint16_t<sp/>app_key_idx);</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
 <codeline lineno="143"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1gab53118d6d25849be44f82d3af7eeb0db" kindref="member">wiced_bt_mesh_release_event</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
@@ -521,6 +473,6 @@
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MESH_EVENT_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/ZXNx1Nf3/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h"/>
+    <location file="D:/glb/e2TDM91a/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h"/>
   </compounddef>
 </doxygen>

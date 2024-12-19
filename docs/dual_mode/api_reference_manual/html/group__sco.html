@@ -87,17 +87,137 @@ $(document).ready(function(){initNavTree('group__sco.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Synchronous Connection Oriented (SCO) Channel</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__sco__params__t.html">wiced_bt_sco_params_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subset for the enhanced setup/accept synchronous connection paramters See BT 4.1 or later HCI spec for details.  <a href="structwiced__bt__sco__params__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__voice__path__setup__t.html">wiced_bt_voice_path_setup_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO path config.  <a href="structwiced__bt__voice__path__setup__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__coding__format.html">wiced_bt_coding_format</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coding format.  <a href="structwiced__bt__coding__format.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enhanced ESCO params.  <a href="structwiced__bt__enh__esco__params__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga49d734e161b737d295da9de4fa72a727"><td class="memItemLeft" align="right" valign="top"><a id="ga49d734e161b737d295da9de4fa72a727"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga49d734e161b737d295da9de4fa72a727">WICED_BT_SCO_CONNECTION_ACCEPT</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memdesc:ga49d734e161b737d295da9de4fa72a727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status accept connection. <br /></td></tr>
+<tr class="separator:ga49d734e161b737d295da9de4fa72a727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02079c0bf5602a19c6d2c05c4f1626b2"><td class="memItemLeft" align="right" valign="top"><a id="ga02079c0bf5602a19c6d2c05c4f1626b2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga02079c0bf5602a19c6d2c05c4f1626b2">WICED_BT_SCO_CONNECTION_REJECT_RESOURCES</a>&#160;&#160;&#160;0x0D</td></tr>
+<tr class="memdesc:ga02079c0bf5602a19c6d2c05c4f1626b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status reject connection due to no resources. <br /></td></tr>
+<tr class="separator:ga02079c0bf5602a19c6d2c05c4f1626b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga961d131fe75c05d30b53b74078cd2dba"><td class="memItemLeft" align="right" valign="top"><a id="ga961d131fe75c05d30b53b74078cd2dba"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga961d131fe75c05d30b53b74078cd2dba">WICED_BT_SCO_CONNECTION_REJECT_SECURITY</a>&#160;&#160;&#160;0x0E</td></tr>
+<tr class="memdesc:ga961d131fe75c05d30b53b74078cd2dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status reject connection due to security. <br /></td></tr>
+<tr class="separator:ga961d131fe75c05d30b53b74078cd2dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e375ab538464fd21b95caa3890056a6"><td class="memItemLeft" align="right" valign="top"><a id="ga2e375ab538464fd21b95caa3890056a6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga2e375ab538464fd21b95caa3890056a6">WICED_BT_SCO_CONNECTION_REJECT_DEVICE</a>&#160;&#160;&#160;0x0F</td></tr>
+<tr class="memdesc:ga2e375ab538464fd21b95caa3890056a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status reject connection from peer. <br /></td></tr>
+<tr class="separator:ga2e375ab538464fd21b95caa3890056a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3814708e5171cbf34f1bfee832f4e02e"><td class="memItemLeft" align="right" valign="top"><a id="ga3814708e5171cbf34f1bfee832f4e02e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga3814708e5171cbf34f1bfee832f4e02e">WICED_INVALID_SCO_INDEX</a>&#160;&#160;&#160;0xFFFF</td></tr>
+<tr class="memdesc:ga3814708e5171cbf34f1bfee832f4e02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default SCO index. <br /></td></tr>
+<tr class="separator:ga3814708e5171cbf34f1bfee832f4e02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8bdbcc0442842fafdf7cc9747b3d2ba"><td class="memItemLeft" align="right" valign="top"><a id="gad8bdbcc0442842fafdf7cc9747b3d2ba"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gad8bdbcc0442842fafdf7cc9747b3d2ba">WICED_SCO_LINK_ALL_PKT_MASK</a>&#160;&#160;&#160;0x003F</td></tr>
+<tr class="memdesc:gad8bdbcc0442842fafdf7cc9747b3d2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type all. <br /></td></tr>
+<tr class="separator:gad8bdbcc0442842fafdf7cc9747b3d2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb5ee4295683cb8f50b496318011841f"><td class="memItemLeft" align="right" valign="top"><a id="gacb5ee4295683cb8f50b496318011841f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gacb5ee4295683cb8f50b496318011841f">WICED_SCO_PKT_TYPES_MASK_HV3</a>&#160;&#160;&#160;0x0004</td></tr>
+<tr class="memdesc:gacb5ee4295683cb8f50b496318011841f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type HV3. <br /></td></tr>
+<tr class="separator:gacb5ee4295683cb8f50b496318011841f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b4e06cd487a5f1e744747995102ed11"><td class="memItemLeft" align="right" valign="top"><a id="ga0b4e06cd487a5f1e744747995102ed11"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga0b4e06cd487a5f1e744747995102ed11">WICED_SCO_PKT_TYPES_MASK_EV3</a>&#160;&#160;&#160;0x0008</td></tr>
+<tr class="memdesc:ga0b4e06cd487a5f1e744747995102ed11"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type EV3. <br /></td></tr>
+<tr class="separator:ga0b4e06cd487a5f1e744747995102ed11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc8e4eafcb9c1db54e681561ba03587b"><td class="memItemLeft" align="right" valign="top"><a id="gafc8e4eafcb9c1db54e681561ba03587b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gafc8e4eafcb9c1db54e681561ba03587b">WICED_SCO_PKT_TYPES_MASK_EV4</a>&#160;&#160;&#160;0x0010</td></tr>
+<tr class="memdesc:gafc8e4eafcb9c1db54e681561ba03587b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type EV4. <br /></td></tr>
+<tr class="separator:gafc8e4eafcb9c1db54e681561ba03587b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57b08cf3e9083d45ebc7c4df551f0d69"><td class="memItemLeft" align="right" valign="top"><a id="ga57b08cf3e9083d45ebc7c4df551f0d69"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga57b08cf3e9083d45ebc7c4df551f0d69">WICED_SCO_PKT_TYPES_MASK_EV5</a>&#160;&#160;&#160;0x0020</td></tr>
+<tr class="memdesc:ga57b08cf3e9083d45ebc7c4df551f0d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type EV5. <br /></td></tr>
+<tr class="separator:ga57b08cf3e9083d45ebc7c4df551f0d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc4d7b0c150084f7c02719e21fc714f1"><td class="memItemLeft" align="right" valign="top"><a id="gabc4d7b0c150084f7c02719e21fc714f1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gabc4d7b0c150084f7c02719e21fc714f1">WICED_SCO_PKT_TYPES_MASK_NO_2_EV3</a>&#160;&#160;&#160;0x0040</td></tr>
+<tr class="memdesc:gabc4d7b0c150084f7c02719e21fc714f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type 2-EV3. <br /></td></tr>
+<tr class="separator:gabc4d7b0c150084f7c02719e21fc714f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada1bbc05f33e6598085fc5684dde2aab"><td class="memItemLeft" align="right" valign="top"><a id="gada1bbc05f33e6598085fc5684dde2aab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gada1bbc05f33e6598085fc5684dde2aab">WICED_SCO_PKT_TYPES_MASK_NO_3_EV3</a>&#160;&#160;&#160;0x0080</td></tr>
+<tr class="memdesc:gada1bbc05f33e6598085fc5684dde2aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type 3-EV3. <br /></td></tr>
+<tr class="separator:gada1bbc05f33e6598085fc5684dde2aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf96df28e67a977311d78e9345420a1a"><td class="memItemLeft" align="right" valign="top"><a id="gadf96df28e67a977311d78e9345420a1a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gadf96df28e67a977311d78e9345420a1a">WICED_SCO_PKT_TYPES_MASK_NO_2_EV5</a>&#160;&#160;&#160;0x0100</td></tr>
+<tr class="memdesc:gadf96df28e67a977311d78e9345420a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type 2-EV5. <br /></td></tr>
+<tr class="separator:gadf96df28e67a977311d78e9345420a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27dd611918b66dda74daf54abd072d87"><td class="memItemLeft" align="right" valign="top"><a id="ga27dd611918b66dda74daf54abd072d87"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga27dd611918b66dda74daf54abd072d87">WICED_SCO_PKT_TYPES_MASK_NO_3_EV5</a>&#160;&#160;&#160;0x0200</td></tr>
+<tr class="memdesc:ga27dd611918b66dda74daf54abd072d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type 3-EV5. <br /></td></tr>
+<tr class="separator:ga27dd611918b66dda74daf54abd072d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga158c68e01064256fdd9af42620cb7931"><td class="memItemLeft" align="right" valign="top"><a id="ga158c68e01064256fdd9af42620cb7931"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga158c68e01064256fdd9af42620cb7931">WICED_BT_SCO_NUM_CODECS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:ga158c68e01064256fdd9af42620cb7931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of SCO codecs. <br /></td></tr>
+<tr class="separator:ga158c68e01064256fdd9af42620cb7931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga632f8a7f3e2def6fc14cbc0572580d7e"><td class="memItemLeft" align="right" valign="top"><a id="ga632f8a7f3e2def6fc14cbc0572580d7e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga632f8a7f3e2def6fc14cbc0572580d7e">WICED_BT_SCO_IDX_CVSD</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ga632f8a7f3e2def6fc14cbc0572580d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">eSCO setting for CVSD <br /></td></tr>
+<tr class="separator:ga632f8a7f3e2def6fc14cbc0572580d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c67caf3e5135f2ff19bc21ca09e9e1d"><td class="memItemLeft" align="right" valign="top"><a id="ga0c67caf3e5135f2ff19bc21ca09e9e1d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga0c67caf3e5135f2ff19bc21ca09e9e1d">WICED_BT_SCO_IDX_MSBC</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ga0c67caf3e5135f2ff19bc21ca09e9e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">eSCO setting for mSBC T2 <br /></td></tr>
+<tr class="separator:ga0c67caf3e5135f2ff19bc21ca09e9e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0037c6bff6fc412a8f46998e02f3b9b9"><td class="memItemLeft" align="right" valign="top"><a id="ga0037c6bff6fc412a8f46998e02f3b9b9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga0037c6bff6fc412a8f46998e02f3b9b9">WICED_BT_SCO_IDX_NONE</a>&#160;&#160;&#160;<a class="el" href="group__sco.html#ga158c68e01064256fdd9af42620cb7931">WICED_BT_SCO_NUM_CODECS</a></td></tr>
+<tr class="memdesc:ga0037c6bff6fc412a8f46998e02f3b9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limit index. <br /></td></tr>
+<tr class="separator:ga0037c6bff6fc412a8f46998e02f3b9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga790bb3988e26ca2335c728a350c63736"><td class="memItemLeft" align="right" valign="top"><a id="ga790bb3988e26ca2335c728a350c63736"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga790bb3988e26ca2335c728a350c63736">WICED_BT_SCO_DATA_CB_GET_LENGTH</a>(ltch_len)&#160;&#160;&#160;((ltch_len&gt;&gt;8)&amp;0xff)</td></tr>
+<tr class="memdesc:ga790bb3988e26ca2335c728a350c63736"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO data callback length. <br /></td></tr>
+<tr class="separator:ga790bb3988e26ca2335c728a350c63736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga710aef2dfe643f8e121777d9e74e9bdc"><td class="memItemLeft" align="right" valign="top"><a id="ga710aef2dfe643f8e121777d9e74e9bdc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga710aef2dfe643f8e121777d9e74e9bdc">wiced_bt_sco_create_as_acceptor</a>(p_sco_index)&#160;&#160;&#160;<a class="el" href="group__sco.html#gaca6b3a3088a38d0718b83f0c7dc21576">wiced_bt_sco_create_as_acceptor_ex</a>(NULL, p_sco_index)</td></tr>
+<tr class="memdesc:ga710aef2dfe643f8e121777d9e74e9bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined this macro for backward compatiblity <br /></td></tr>
+<tr class="separator:ga710aef2dfe643f8e121777d9e74e9bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga94ae563f30b6b2bd4835125e673f6d7a"><td class="memItemLeft" align="right" valign="top"><a id="ga94ae563f30b6b2bd4835125e673f6d7a"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a></td></tr>
+<tr class="memdesc:ga94ae563f30b6b2bd4835125e673f6d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO codec index. <br /></td></tr>
+<tr class="separator:ga94ae563f30b6b2bd4835125e673f6d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga433b5e0db003b8b72321db4556af7a85"><td class="memItemLeft" align="right" valign="top"><a id="ga433b5e0db003b8b72321db4556af7a85"></a>
+typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga433b5e0db003b8b72321db4556af7a85">wiced_bt_sco_data_cb_t</a>(uint16_t sco_channel, uint16_t length, uint8_t *p_data)</td></tr>
+<tr class="memdesc:ga433b5e0db003b8b72321db4556af7a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call back function for pcm data transfer, ltch_len = (length)&lt;&lt;8|(sco_channel) <br /></td></tr>
+<tr class="separator:ga433b5e0db003b8b72321db4556af7a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga4548402097137688617e39d9377fc8a2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga4548402097137688617e39d9377fc8a2">wiced_bt_sco_route_path_t</a> { <br />
+&#160;&#160;<a class="el" href="group__sco.html#gga4548402097137688617e39d9377fc8a2a1743bae050dc932671cc4a2ada6b9032">WICED_BT_SCO_OVER_HCI</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__sco.html#gga4548402097137688617e39d9377fc8a2a0424732db6badc408fdb0510540a0368">WICED_BT_SCO_OVER_PCM</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga4548402097137688617e39d9377fc8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO route path.  <a href="group__sco.html#ga4548402097137688617e39d9377fc8a2">More...</a><br /></td></tr>
+<tr class="separator:ga4548402097137688617e39d9377fc8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gad3c0ea63212a9cca3b0b668d7e392288"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gad3c0ea63212a9cca3b0b668d7e392288">wiced_bt_sco_create_as_initiator</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, uint16_t *p_sco_index, <a class="el" href="structwiced__bt__sco__params__t.html">wiced_bt_sco_params_t</a> *p_params)</td></tr>
@@ -130,459 +250,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6ac9a7d506011ce7beab3c6f3799761b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga6ac9a7d506011ce7beab3c6f3799761b">wiced_bt_config_esco_parameters</a> (<a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a> index, <a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a> *p_enh_esco_params)</td></tr>
 <tr class="memdesc:ga6ac9a7d506011ce7beab3c6f3799761b"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the default esco parametes, This API needs to be called before initiating SCO connection  <a href="#ga6ac9a7d506011ce7beab3c6f3799761b">More...</a><br /></td></tr>
 <tr class="separator:ga6ac9a7d506011ce7beab3c6f3799761b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__sco__params__t.html">wiced_bt_sco_params_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subset for the enhanced setup/accept synchronous connection paramters See BT 4.1 or later HCI spec for details.  <a href="structwiced__bt__sco__params__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__voice__path__setup__t.html">wiced_bt_voice_path_setup_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO path config.  <a href="structwiced__bt__voice__path__setup__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__coding__format.html">wiced_bt_coding_format</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga49d734e161b737d295da9de4fa72a727"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga49d734e161b737d295da9de4fa72a727">WICED_BT_SCO_CONNECTION_ACCEPT</a>&#160;&#160;&#160;0x00</td></tr>
-<tr class="memdesc:ga49d734e161b737d295da9de4fa72a727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status accept connection.  <a href="#ga49d734e161b737d295da9de4fa72a727">More...</a><br /></td></tr>
-<tr class="separator:ga49d734e161b737d295da9de4fa72a727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02079c0bf5602a19c6d2c05c4f1626b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga02079c0bf5602a19c6d2c05c4f1626b2">WICED_BT_SCO_CONNECTION_REJECT_RESOURCES</a>&#160;&#160;&#160;0x0D</td></tr>
-<tr class="memdesc:ga02079c0bf5602a19c6d2c05c4f1626b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status reject connection due to no resources.  <a href="#ga02079c0bf5602a19c6d2c05c4f1626b2">More...</a><br /></td></tr>
-<tr class="separator:ga02079c0bf5602a19c6d2c05c4f1626b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga961d131fe75c05d30b53b74078cd2dba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga961d131fe75c05d30b53b74078cd2dba">WICED_BT_SCO_CONNECTION_REJECT_SECURITY</a>&#160;&#160;&#160;0x0E</td></tr>
-<tr class="memdesc:ga961d131fe75c05d30b53b74078cd2dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status reject connection due to security.  <a href="#ga961d131fe75c05d30b53b74078cd2dba">More...</a><br /></td></tr>
-<tr class="separator:ga961d131fe75c05d30b53b74078cd2dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e375ab538464fd21b95caa3890056a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga2e375ab538464fd21b95caa3890056a6">WICED_BT_SCO_CONNECTION_REJECT_DEVICE</a>&#160;&#160;&#160;0x0F</td></tr>
-<tr class="memdesc:ga2e375ab538464fd21b95caa3890056a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status reject connection from peer.  <a href="#ga2e375ab538464fd21b95caa3890056a6">More...</a><br /></td></tr>
-<tr class="separator:ga2e375ab538464fd21b95caa3890056a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3814708e5171cbf34f1bfee832f4e02e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga3814708e5171cbf34f1bfee832f4e02e">WICED_INVALID_SCO_INDEX</a>&#160;&#160;&#160;0xFFFF</td></tr>
-<tr class="memdesc:ga3814708e5171cbf34f1bfee832f4e02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default SCO index.  <a href="#ga3814708e5171cbf34f1bfee832f4e02e">More...</a><br /></td></tr>
-<tr class="separator:ga3814708e5171cbf34f1bfee832f4e02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad8bdbcc0442842fafdf7cc9747b3d2ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gad8bdbcc0442842fafdf7cc9747b3d2ba">WICED_SCO_LINK_ALL_PKT_MASK</a>&#160;&#160;&#160;0x003F</td></tr>
-<tr class="memdesc:gad8bdbcc0442842fafdf7cc9747b3d2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type all.  <a href="#gad8bdbcc0442842fafdf7cc9747b3d2ba">More...</a><br /></td></tr>
-<tr class="separator:gad8bdbcc0442842fafdf7cc9747b3d2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacb5ee4295683cb8f50b496318011841f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gacb5ee4295683cb8f50b496318011841f">WICED_SCO_PKT_TYPES_MASK_HV3</a>&#160;&#160;&#160;0x0004</td></tr>
-<tr class="memdesc:gacb5ee4295683cb8f50b496318011841f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type HV3.  <a href="#gacb5ee4295683cb8f50b496318011841f">More...</a><br /></td></tr>
-<tr class="separator:gacb5ee4295683cb8f50b496318011841f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b4e06cd487a5f1e744747995102ed11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga0b4e06cd487a5f1e744747995102ed11">WICED_SCO_PKT_TYPES_MASK_EV3</a>&#160;&#160;&#160;0x0008</td></tr>
-<tr class="memdesc:ga0b4e06cd487a5f1e744747995102ed11"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type EV3.  <a href="#ga0b4e06cd487a5f1e744747995102ed11">More...</a><br /></td></tr>
-<tr class="separator:ga0b4e06cd487a5f1e744747995102ed11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafc8e4eafcb9c1db54e681561ba03587b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gafc8e4eafcb9c1db54e681561ba03587b">WICED_SCO_PKT_TYPES_MASK_EV4</a>&#160;&#160;&#160;0x0010</td></tr>
-<tr class="memdesc:gafc8e4eafcb9c1db54e681561ba03587b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type EV4.  <a href="#gafc8e4eafcb9c1db54e681561ba03587b">More...</a><br /></td></tr>
-<tr class="separator:gafc8e4eafcb9c1db54e681561ba03587b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57b08cf3e9083d45ebc7c4df551f0d69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga57b08cf3e9083d45ebc7c4df551f0d69">WICED_SCO_PKT_TYPES_MASK_EV5</a>&#160;&#160;&#160;0x0020</td></tr>
-<tr class="memdesc:ga57b08cf3e9083d45ebc7c4df551f0d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type EV5.  <a href="#ga57b08cf3e9083d45ebc7c4df551f0d69">More...</a><br /></td></tr>
-<tr class="separator:ga57b08cf3e9083d45ebc7c4df551f0d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc4d7b0c150084f7c02719e21fc714f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gabc4d7b0c150084f7c02719e21fc714f1">WICED_SCO_PKT_TYPES_MASK_NO_2_EV3</a>&#160;&#160;&#160;0x0040</td></tr>
-<tr class="memdesc:gabc4d7b0c150084f7c02719e21fc714f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type 2-EV3.  <a href="#gabc4d7b0c150084f7c02719e21fc714f1">More...</a><br /></td></tr>
-<tr class="separator:gabc4d7b0c150084f7c02719e21fc714f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gada1bbc05f33e6598085fc5684dde2aab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gada1bbc05f33e6598085fc5684dde2aab">WICED_SCO_PKT_TYPES_MASK_NO_3_EV3</a>&#160;&#160;&#160;0x0080</td></tr>
-<tr class="memdesc:gada1bbc05f33e6598085fc5684dde2aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type 3-EV3.  <a href="#gada1bbc05f33e6598085fc5684dde2aab">More...</a><br /></td></tr>
-<tr class="separator:gada1bbc05f33e6598085fc5684dde2aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf96df28e67a977311d78e9345420a1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#gadf96df28e67a977311d78e9345420a1a">WICED_SCO_PKT_TYPES_MASK_NO_2_EV5</a>&#160;&#160;&#160;0x0100</td></tr>
-<tr class="memdesc:gadf96df28e67a977311d78e9345420a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type 2-EV5.  <a href="#gadf96df28e67a977311d78e9345420a1a">More...</a><br /></td></tr>
-<tr class="separator:gadf96df28e67a977311d78e9345420a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27dd611918b66dda74daf54abd072d87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga27dd611918b66dda74daf54abd072d87">WICED_SCO_PKT_TYPES_MASK_NO_3_EV5</a>&#160;&#160;&#160;0x0200</td></tr>
-<tr class="memdesc:ga27dd611918b66dda74daf54abd072d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO packet type 3-EV5.  <a href="#ga27dd611918b66dda74daf54abd072d87">More...</a><br /></td></tr>
-<tr class="separator:ga27dd611918b66dda74daf54abd072d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga158c68e01064256fdd9af42620cb7931"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga158c68e01064256fdd9af42620cb7931">WICED_BT_SCO_NUM_CODECS</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga158c68e01064256fdd9af42620cb7931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga632f8a7f3e2def6fc14cbc0572580d7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga632f8a7f3e2def6fc14cbc0572580d7e">WICED_BT_SCO_IDX_CVSD</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga632f8a7f3e2def6fc14cbc0572580d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">eSCO setting for CVSD  <a href="#ga632f8a7f3e2def6fc14cbc0572580d7e">More...</a><br /></td></tr>
-<tr class="separator:ga632f8a7f3e2def6fc14cbc0572580d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c67caf3e5135f2ff19bc21ca09e9e1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga0c67caf3e5135f2ff19bc21ca09e9e1d">WICED_BT_SCO_IDX_MSBC</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:ga0c67caf3e5135f2ff19bc21ca09e9e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">eSCO setting for mSBC T2  <a href="#ga0c67caf3e5135f2ff19bc21ca09e9e1d">More...</a><br /></td></tr>
-<tr class="separator:ga0c67caf3e5135f2ff19bc21ca09e9e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0037c6bff6fc412a8f46998e02f3b9b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga0037c6bff6fc412a8f46998e02f3b9b9">WICED_BT_SCO_IDX_NONE</a>&#160;&#160;&#160;<a class="el" href="group__sco.html#ga158c68e01064256fdd9af42620cb7931">WICED_BT_SCO_NUM_CODECS</a></td></tr>
-<tr class="separator:ga0037c6bff6fc412a8f46998e02f3b9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga790bb3988e26ca2335c728a350c63736"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga790bb3988e26ca2335c728a350c63736">WICED_BT_SCO_DATA_CB_GET_LENGTH</a>(ltch_len)&#160;&#160;&#160;((ltch_len&gt;&gt;8)&amp;0xff)</td></tr>
-<tr class="memdesc:ga790bb3988e26ca2335c728a350c63736"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO data callback length.  <a href="#ga790bb3988e26ca2335c728a350c63736">More...</a><br /></td></tr>
-<tr class="separator:ga790bb3988e26ca2335c728a350c63736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga710aef2dfe643f8e121777d9e74e9bdc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga710aef2dfe643f8e121777d9e74e9bdc">wiced_bt_sco_create_as_acceptor</a>(p_sco_index)&#160;&#160;&#160;<a class="el" href="group__sco.html#gaca6b3a3088a38d0718b83f0c7dc21576">wiced_bt_sco_create_as_acceptor_ex</a>(NULL, p_sco_index)</td></tr>
-<tr class="memdesc:ga710aef2dfe643f8e121777d9e74e9bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined this macro for backward compatiblity  <a href="#ga710aef2dfe643f8e121777d9e74e9bdc">More...</a><br /></td></tr>
-<tr class="separator:ga710aef2dfe643f8e121777d9e74e9bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga94ae563f30b6b2bd4835125e673f6d7a"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a></td></tr>
-<tr class="memdesc:ga94ae563f30b6b2bd4835125e673f6d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO codec index.  <a href="#ga94ae563f30b6b2bd4835125e673f6d7a">More...</a><br /></td></tr>
-<tr class="separator:ga94ae563f30b6b2bd4835125e673f6d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga433b5e0db003b8b72321db4556af7a85"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga433b5e0db003b8b72321db4556af7a85">wiced_bt_sco_data_cb_t</a>(uint16_t sco_channel, uint16_t length, uint8_t *p_data)</td></tr>
-<tr class="memdesc:ga433b5e0db003b8b72321db4556af7a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call back function for pcm data transfer, ltch_len = (length)&lt;&lt;8|(sco_channel)  <a href="#ga433b5e0db003b8b72321db4556af7a85">More...</a><br /></td></tr>
-<tr class="separator:ga433b5e0db003b8b72321db4556af7a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga4548402097137688617e39d9377fc8a2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sco.html#ga4548402097137688617e39d9377fc8a2">wiced_bt_sco_route_path_t</a> { <br />
-&#160;&#160;<a class="el" href="group__sco.html#gga4548402097137688617e39d9377fc8a2a1743bae050dc932671cc4a2ada6b9032">WICED_BT_SCO_OVER_HCI</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__sco.html#gga4548402097137688617e39d9377fc8a2a0424732db6badc408fdb0510540a0368">WICED_BT_SCO_OVER_PCM</a>
-<br />
- }</td></tr>
-<tr class="memdesc:ga4548402097137688617e39d9377fc8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCO route path.  <a href="group__sco.html#ga4548402097137688617e39d9377fc8a2">More...</a><br /></td></tr>
-<tr class="separator:ga4548402097137688617e39d9377fc8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga49d734e161b737d295da9de4fa72a727"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga49d734e161b737d295da9de4fa72a727">&#9670;&nbsp;</a></span>WICED_BT_SCO_CONNECTION_ACCEPT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_SCO_CONNECTION_ACCEPT&#160;&#160;&#160;0x00</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Status accept connection. </p>
-
-</div>
-</div>
-<a id="ga2e375ab538464fd21b95caa3890056a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2e375ab538464fd21b95caa3890056a6">&#9670;&nbsp;</a></span>WICED_BT_SCO_CONNECTION_REJECT_DEVICE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_SCO_CONNECTION_REJECT_DEVICE&#160;&#160;&#160;0x0F</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Status reject connection from peer. </p>
-
-</div>
-</div>
-<a id="ga02079c0bf5602a19c6d2c05c4f1626b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga02079c0bf5602a19c6d2c05c4f1626b2">&#9670;&nbsp;</a></span>WICED_BT_SCO_CONNECTION_REJECT_RESOURCES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_SCO_CONNECTION_REJECT_RESOURCES&#160;&#160;&#160;0x0D</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Status reject connection due to no resources. </p>
-
-</div>
-</div>
-<a id="ga961d131fe75c05d30b53b74078cd2dba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga961d131fe75c05d30b53b74078cd2dba">&#9670;&nbsp;</a></span>WICED_BT_SCO_CONNECTION_REJECT_SECURITY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_SCO_CONNECTION_REJECT_SECURITY&#160;&#160;&#160;0x0E</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Status reject connection due to security. </p>
-
-</div>
-</div>
-<a id="ga710aef2dfe643f8e121777d9e74e9bdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga710aef2dfe643f8e121777d9e74e9bdc">&#9670;&nbsp;</a></span>wiced_bt_sco_create_as_acceptor</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define wiced_bt_sco_create_as_acceptor</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">p_sco_index</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__sco.html#gaca6b3a3088a38d0718b83f0c7dc21576">wiced_bt_sco_create_as_acceptor_ex</a>(NULL, p_sco_index)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>defined this macro for backward compatiblity </p>
-
-</div>
-</div>
-<a id="ga790bb3988e26ca2335c728a350c63736"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga790bb3988e26ca2335c728a350c63736">&#9670;&nbsp;</a></span>WICED_BT_SCO_DATA_CB_GET_LENGTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_SCO_DATA_CB_GET_LENGTH</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ltch_len</td><td>)</td>
-          <td>&#160;&#160;&#160;((ltch_len&gt;&gt;8)&amp;0xff)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO data callback length. </p>
-
-</div>
-</div>
-<a id="ga632f8a7f3e2def6fc14cbc0572580d7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga632f8a7f3e2def6fc14cbc0572580d7e">&#9670;&nbsp;</a></span>WICED_BT_SCO_IDX_CVSD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_SCO_IDX_CVSD&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>eSCO setting for CVSD </p>
-
-</div>
-</div>
-<a id="ga0c67caf3e5135f2ff19bc21ca09e9e1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c67caf3e5135f2ff19bc21ca09e9e1d">&#9670;&nbsp;</a></span>WICED_BT_SCO_IDX_MSBC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_SCO_IDX_MSBC&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>eSCO setting for mSBC T2 </p>
-
-</div>
-</div>
-<a id="ga0037c6bff6fc412a8f46998e02f3b9b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0037c6bff6fc412a8f46998e02f3b9b9">&#9670;&nbsp;</a></span>WICED_BT_SCO_IDX_NONE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_SCO_IDX_NONE&#160;&#160;&#160;<a class="el" href="group__sco.html#ga158c68e01064256fdd9af42620cb7931">WICED_BT_SCO_NUM_CODECS</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga158c68e01064256fdd9af42620cb7931"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga158c68e01064256fdd9af42620cb7931">&#9670;&nbsp;</a></span>WICED_BT_SCO_NUM_CODECS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_BT_SCO_NUM_CODECS&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga3814708e5171cbf34f1bfee832f4e02e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3814708e5171cbf34f1bfee832f4e02e">&#9670;&nbsp;</a></span>WICED_INVALID_SCO_INDEX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_INVALID_SCO_INDEX&#160;&#160;&#160;0xFFFF</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default SCO index. </p>
-
-</div>
-</div>
-<a id="gad8bdbcc0442842fafdf7cc9747b3d2ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad8bdbcc0442842fafdf7cc9747b3d2ba">&#9670;&nbsp;</a></span>WICED_SCO_LINK_ALL_PKT_MASK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_SCO_LINK_ALL_PKT_MASK&#160;&#160;&#160;0x003F</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO packet type all. </p>
-
-</div>
-</div>
-<a id="ga0b4e06cd487a5f1e744747995102ed11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0b4e06cd487a5f1e744747995102ed11">&#9670;&nbsp;</a></span>WICED_SCO_PKT_TYPES_MASK_EV3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_SCO_PKT_TYPES_MASK_EV3&#160;&#160;&#160;0x0008</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO packet type EV3. </p>
-
-</div>
-</div>
-<a id="gafc8e4eafcb9c1db54e681561ba03587b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafc8e4eafcb9c1db54e681561ba03587b">&#9670;&nbsp;</a></span>WICED_SCO_PKT_TYPES_MASK_EV4</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_SCO_PKT_TYPES_MASK_EV4&#160;&#160;&#160;0x0010</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO packet type EV4. </p>
-
-</div>
-</div>
-<a id="ga57b08cf3e9083d45ebc7c4df551f0d69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga57b08cf3e9083d45ebc7c4df551f0d69">&#9670;&nbsp;</a></span>WICED_SCO_PKT_TYPES_MASK_EV5</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_SCO_PKT_TYPES_MASK_EV5&#160;&#160;&#160;0x0020</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO packet type EV5. </p>
-
-</div>
-</div>
-<a id="gacb5ee4295683cb8f50b496318011841f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacb5ee4295683cb8f50b496318011841f">&#9670;&nbsp;</a></span>WICED_SCO_PKT_TYPES_MASK_HV3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_SCO_PKT_TYPES_MASK_HV3&#160;&#160;&#160;0x0004</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO packet type HV3. </p>
-
-</div>
-</div>
-<a id="gabc4d7b0c150084f7c02719e21fc714f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabc4d7b0c150084f7c02719e21fc714f1">&#9670;&nbsp;</a></span>WICED_SCO_PKT_TYPES_MASK_NO_2_EV3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_SCO_PKT_TYPES_MASK_NO_2_EV3&#160;&#160;&#160;0x0040</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO packet type 2-EV3. </p>
-
-</div>
-</div>
-<a id="gadf96df28e67a977311d78e9345420a1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadf96df28e67a977311d78e9345420a1a">&#9670;&nbsp;</a></span>WICED_SCO_PKT_TYPES_MASK_NO_2_EV5</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_SCO_PKT_TYPES_MASK_NO_2_EV5&#160;&#160;&#160;0x0100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO packet type 2-EV5. </p>
-
-</div>
-</div>
-<a id="gada1bbc05f33e6598085fc5684dde2aab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gada1bbc05f33e6598085fc5684dde2aab">&#9670;&nbsp;</a></span>WICED_SCO_PKT_TYPES_MASK_NO_3_EV3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_SCO_PKT_TYPES_MASK_NO_3_EV3&#160;&#160;&#160;0x0080</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO packet type 3-EV3. </p>
-
-</div>
-</div>
-<a id="ga27dd611918b66dda74daf54abd072d87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga27dd611918b66dda74daf54abd072d87">&#9670;&nbsp;</a></span>WICED_SCO_PKT_TYPES_MASK_NO_3_EV5</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WICED_SCO_PKT_TYPES_MASK_NO_3_EV5&#160;&#160;&#160;0x0200</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO packet type 3-EV5. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga433b5e0db003b8b72321db4556af7a85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga433b5e0db003b8b72321db4556af7a85">&#9670;&nbsp;</a></span>wiced_bt_sco_data_cb_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void() wiced_bt_sco_data_cb_t(uint16_t sco_channel, uint16_t length, uint8_t *p_data)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Call back function for pcm data transfer, ltch_len = (length)&lt;&lt;8|(sco_channel) </p>
-
-</div>
-</div>
-<a id="ga94ae563f30b6b2bd4835125e673f6d7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga94ae563f30b6b2bd4835125e673f6d7a">&#9670;&nbsp;</a></span>wiced_bt_sco_idx_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef uint8_t <a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SCO codec index. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga4548402097137688617e39d9377fc8a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4548402097137688617e39d9377fc8a2">&#9670;&nbsp;</a></span>wiced_bt_sco_route_path_t</h2>
@@ -608,23 +276,29 @@ Enumerations</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga6ac9a7d506011ce7beab3c6f3799761b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6ac9a7d506011ce7beab3c6f3799761b">&#9670;&nbsp;</a></span>wiced_bt_config_esco_parameters()</h2>
+<a id="gad3c0ea63212a9cca3b0b668d7e392288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3c0ea63212a9cca3b0b668d7e392288">&#9670;&nbsp;</a></span>wiced_bt_sco_create_as_initiator()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void wiced_bt_config_esco_parameters </td>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_sco_create_as_initiator </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a>&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>bd_addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a> *&#160;</td>
-          <td class="paramname"><em>p_enh_esco_params</em>&#160;</td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>p_sco_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__sco__params__t.html">wiced_bt_sco_params_t</a> *&#160;</td>
+          <td class="paramname"><em>p_params</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -634,35 +308,37 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>update the default esco parametes, This API needs to be called before initiating SCO connection </p>
+<p>The wiced_sco_lib.a was required to included before we link this function. </p>
+<p>Creates a synchronous connection oriented connection as initiator.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>SCO Codec index to update the parameters </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_enh_esco_params</td><td>pointer to sco parameters</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Peer bd_addr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_params</td><td>: Pointer to the SCO parameter structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_sco_index</td><td>: SCO index returned</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>: None </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_UNKNOWN_ADDR </b> : Create connection failed, ACL connection is not up <b> WICED_BT_BUSY </b> : Create connection failed, another SCO is being conncted to the same BD address <b> WICED_BT_WRONG_MODE </b> : Create connection failed, wrong mode <b> WICED_BT_NO_RESOURCES </b> : Create connection failed, max SCO limit has been reached <b> WICED_BT_PENDING </b> : Create connection successfully, "p_sco_index" is returned </dd></dl>
 
 </div>
 </div>
-<a id="gaeb5f3a06a7cd387c9a521b29edfe65b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeb5f3a06a7cd387c9a521b29edfe65b0">&#9670;&nbsp;</a></span>wiced_bt_read_esco_parameters()</h2>
+<a id="gaca6b3a3088a38d0718b83f0c7dc21576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca6b3a3088a38d0718b83f0c7dc21576">&#9670;&nbsp;</a></span>wiced_bt_sco_create_as_acceptor_ex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void wiced_bt_read_esco_parameters </td>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_sco_create_as_acceptor_ex </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a>&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>remote_bda</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a> *&#160;</td>
-          <td class="paramname"><em>p_enh_esco_params</em>&#160;</td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>p_sco_index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -672,15 +348,42 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Read the esco parametes. </p>
+<p>Creates a synchronous connection oriented connection as acceptor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>index to SCO codec </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">p_enh_esco_params</td><td>application allocated buffer pointer to read the parameters</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>: remote device bd_addr </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_sco_index</td><td>: SCO index returned</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>: None </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_UNKNOWN_ADDR </b> : Create connection failed, ACL connection is not up or address is invalid <b> WICED_BT_BUSY </b> : Create connection failed, a SCO connection is already conncted to the same BD address <b> WICED_BT_WRONG_MODE </b> : Create connection failed, link in park mode or automatic un-park is not supported <b> WICED_BT_NO_RESOURCES </b> : Create connection failed, max SCO limit has been reached <b> WICED_BT_PENDING </b> : Create connection successfully, "p_sco_index" is returned </dd></dl>
+
+</div>
+</div>
+<a id="ga0fba642e9f6ed365e385457be01e4e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0fba642e9f6ed365e385457be01e4e15">&#9670;&nbsp;</a></span>wiced_bt_sco_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_sco_remove </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>sco_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a specific synchronous connection oriented connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sco_index</td><td>: SCO index to remove</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_UNKNOWN_ADDR </b> : Remove connection failed, invalid SCO index <b> WICED_BT_NO_RESOURCES </b> : Remove connection failed, no resource <b> WICED_BT_SUCCESS </b> : Remove connection successfully, device is still listening for incoming connection <b> WICED_BT_PENDING </b> : Remove connection successfully </dd></dl>
 
 </div>
 </div>
@@ -729,23 +432,57 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="gaca6b3a3088a38d0718b83f0c7dc21576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaca6b3a3088a38d0718b83f0c7dc21576">&#9670;&nbsp;</a></span>wiced_bt_sco_create_as_acceptor_ex()</h2>
+<a id="gaaf913710ad791aa3c1f6509524921250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf913710ad791aa3c1f6509524921250">&#9670;&nbsp;</a></span>wiced_bt_sco_setup_voice_path()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_sco_create_as_acceptor_ex </td>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_sco_setup_voice_path </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>remote_bda</em>, </td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__voice__path__setup__t.html">wiced_bt_voice_path_setup_t</a> *&#160;</td>
+          <td class="paramname"><em>pData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The wiced_sco_lib.a was required to include before we link this function. </p>
+<p>Configure the SCO routing path.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pData</td><td>: To setup SCO routing path</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS : Config success. WICED_BT_PENDING : Command sent. Waiting for command complete event. WICED_BT_BUSY : Command not sent. Waiting for command complete event for prior command. </dd></dl>
+
+</div>
+</div>
+<a id="gaafd044397aff5fdd8d388cc251922670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaafd044397aff5fdd8d388cc251922670">&#9670;&nbsp;</a></span>wiced_bt_sco_write_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_sco_write_buffer </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>sco_inx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>p_sco_index</em>&#160;</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -755,61 +492,17 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a synchronous connection oriented connection as acceptor. </p>
+<p>The wiced_sco_lib.a was required to include before we link this function. </p>
+<p>This function write SCO data to a specified instance</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">remote_bda</td><td>: remote device bd_addr </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">p_sco_index</td><td>: SCO index returned</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sco_inx</td><td>: sco connection instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_data</td><td>: Pointer to data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>: Length of data at p_data</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_UNKNOWN_ADDR </b> : Create connection failed, ACL connection is not up or address is invalid <b> WICED_BT_BUSY </b> : Create connection failed, a SCO connection is already conncted to the same BD address <b> WICED_BT_WRONG_MODE </b> : Create connection failed, link in park mode or automatic un-park is not supported <b> WICED_BT_NO_RESOURCES </b> : Create connection failed, max SCO limit has been reached <b> WICED_BT_PENDING </b> : Create connection successfully, "p_sco_index" is returned </dd></dl>
-
-</div>
-</div>
-<a id="gad3c0ea63212a9cca3b0b668d7e392288"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad3c0ea63212a9cca3b0b668d7e392288">&#9670;&nbsp;</a></span>wiced_bt_sco_create_as_initiator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_sco_create_as_initiator </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>bd_addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>p_sco_index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__sco__params__t.html">wiced_bt_sco_params_t</a> *&#160;</td>
-          <td class="paramname"><em>p_params</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The wiced_sco_lib.a was required to included before we link this function. </p>
-<p>Creates a synchronous connection oriented connection as initiator.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Peer bd_addr </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_params</td><td>: Pointer to the SCO parameter structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">p_sco_index</td><td>: SCO index returned</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_UNKNOWN_ADDR </b> : Create connection failed, ACL connection is not up <b> WICED_BT_BUSY </b> : Create connection failed, another SCO is being conncted to the same BD address <b> WICED_BT_WRONG_MODE </b> : Create connection failed, wrong mode <b> WICED_BT_NO_RESOURCES </b> : Create connection failed, max SCO limit has been reached <b> WICED_BT_PENDING </b> : Create connection successfully, "p_sco_index" is returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS : data write is successful. WICED_BT_ERROR : generic error WICED_BT_UNKNOWN_ADDR : unknown SCO connection instance. </dd></dl>
 
 </div>
 </div>
@@ -859,61 +552,6 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0fba642e9f6ed365e385457be01e4e15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0fba642e9f6ed365e385457be01e4e15">&#9670;&nbsp;</a></span>wiced_bt_sco_remove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_sco_remove </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>sco_index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes a specific synchronous connection oriented connection. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sco_index</td><td>: SCO index to remove</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_UNKNOWN_ADDR </b> : Remove connection failed, invalid SCO index <b> WICED_BT_NO_RESOURCES </b> : Remove connection failed, no resource <b> WICED_BT_SUCCESS </b> : Remove connection successfully, device is still listening for incoming connection <b> WICED_BT_PENDING </b> : Remove connection successfully </dd></dl>
-
-</div>
-</div>
-<a id="gaaf913710ad791aa3c1f6509524921250"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf913710ad791aa3c1f6509524921250">&#9670;&nbsp;</a></span>wiced_bt_sco_setup_voice_path()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_sco_setup_voice_path </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structwiced__bt__voice__path__setup__t.html">wiced_bt_voice_path_setup_t</a> *&#160;</td>
-          <td class="paramname"><em>pData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The wiced_sco_lib.a was required to include before we link this function. </p>
-<p>Configure the SCO routing path.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pData</td><td>: To setup SCO routing path</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS : Config success. WICED_BT_PENDING : Command sent. Waiting for command complete event. WICED_BT_BUSY : Command not sent. Waiting for command complete event for prior command. </dd></dl>
-
-</div>
-</div>
 <a id="gae8704d3d0ef9c0ad9d789b6b2db4eda8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae8704d3d0ef9c0ad9d789b6b2db4eda8">&#9670;&nbsp;</a></span>wiced_bt_sco_turn_off_pcm_clock()</h2>
 
@@ -936,29 +574,23 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="gaafd044397aff5fdd8d388cc251922670"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaafd044397aff5fdd8d388cc251922670">&#9670;&nbsp;</a></span>wiced_bt_sco_write_buffer()</h2>
+<a id="gaeb5f3a06a7cd387c9a521b29edfe65b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb5f3a06a7cd387c9a521b29edfe65b0">&#9670;&nbsp;</a></span>wiced_bt_read_esco_parameters()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_sco_write_buffer </td>
+          <td class="memname">void wiced_bt_read_esco_parameters </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>sco_inx</em>, </td>
+          <td class="paramtype"><a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>p_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a> *&#160;</td>
+          <td class="paramname"><em>p_enh_esco_params</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -968,17 +600,53 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The wiced_sco_lib.a was required to include before we link this function. </p>
-<p>This function write SCO data to a specified instance</p>
+<p>Read the esco parametes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sco_inx</td><td>: sco connection instance </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_data</td><td>: Pointer to data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>: Length of data at p_data</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>index to SCO codec </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_enh_esco_params</td><td>application allocated buffer pointer to read the parameters</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>WICED_BT_SUCCESS : data write is successful. WICED_BT_ERROR : generic error WICED_BT_UNKNOWN_ADDR : unknown SCO connection instance. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>: None </dd></dl>
+
+</div>
+</div>
+<a id="ga6ac9a7d506011ce7beab3c6f3799761b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ac9a7d506011ce7beab3c6f3799761b">&#9670;&nbsp;</a></span>wiced_bt_config_esco_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wiced_bt_config_esco_parameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a">wiced_bt_sco_idx_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structwiced__bt__enh__esco__params__t.html">wiced_bt_enh_esco_params_t</a> *&#160;</td>
+          <td class="paramname"><em>p_enh_esco_params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>update the default esco parametes, This API needs to be called before initiating SCO connection </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>SCO Codec index to update the parameters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_enh_esco_params</td><td>pointer to sco parameters</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None </dd></dl>
 
 </div>
 </div>
