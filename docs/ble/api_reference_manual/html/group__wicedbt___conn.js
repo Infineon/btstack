@@ -2,6 +2,23 @@ var group__wicedbt___conn =
 [
     [ "Connection and Filter Accept List", "group__btm__ble__conn__filter__accept__list__functions.html", "group__btm__ble__conn__filter__accept__list__functions" ],
     [ "Phy", "group__btm__ble__phy__functions.html", "group__btm__ble__phy__functions" ],
+    [ "wiced_bt_ble_pref_conn_params_t", "structwiced__bt__ble__pref__conn__params__t.html", [
+      [ "conn_interval_min", "structwiced__bt__ble__pref__conn__params__t.html#aa44c68f25e83a976e17afb7a36e02994", null ],
+      [ "conn_interval_max", "structwiced__bt__ble__pref__conn__params__t.html#aa466a15e327576bc21b6c9d54cdbbf8d", null ],
+      [ "conn_latency", "structwiced__bt__ble__pref__conn__params__t.html#a19d2c544851df20ead4466ae86034a59", null ],
+      [ "conn_supervision_timeout", "structwiced__bt__ble__pref__conn__params__t.html#a7dde00723afa618605a08eabcca67d26", null ],
+      [ "min_ce_length", "structwiced__bt__ble__pref__conn__params__t.html#a6124218aace2fffd574f4928b9d76d42", null ],
+      [ "max_ce_length", "structwiced__bt__ble__pref__conn__params__t.html#a911c9695001d7428390403e146943f11", null ]
+    ] ],
+    [ "wiced_ble_legacy_create_conn_t", "structwiced__ble__legacy__create__conn__t.html", [
+      [ "le_scan_interval", "structwiced__ble__legacy__create__conn__t.html#a0b644aeda61ba8e3b41369c70c834a38", null ],
+      [ "le_scan_window", "structwiced__ble__legacy__create__conn__t.html#a8a1a04234f52a6bafb67ef4fa8eaf726", null ],
+      [ "initiator_filter_policy", "structwiced__ble__legacy__create__conn__t.html#a054c49f8caf17cbffc66591bcdd8f6ea", null ],
+      [ "peer_address_type", "structwiced__ble__legacy__create__conn__t.html#a8e4f79bbe60b9f566eebb940275203e0", null ],
+      [ "peer_address", "structwiced__ble__legacy__create__conn__t.html#a87426eae3ea77caa3b89b97a405674d1", null ],
+      [ "own_address_type", "structwiced__ble__legacy__create__conn__t.html#ad91a970230a4c4cbdc0bec2609848668", null ],
+      [ "conn_params", "structwiced__ble__legacy__create__conn__t.html#a86e5e2f8f6e0bce7317667b7ae0e185f", null ]
+    ] ],
     [ "wiced_bt_ble_phy_preferences_t", "structwiced__bt__ble__phy__preferences__t.html", [
       [ "remote_bd_addr", "structwiced__bt__ble__phy__preferences__t.html#acdc0097a9a3045b3daea5975107afb7f", null ],
       [ "tx_phys", "structwiced__bt__ble__phy__preferences__t.html#aeb5aa9d74c8dfea87b3ef6fdc1f68a85", null ],
@@ -13,14 +30,6 @@ var group__wicedbt___conn =
       [ "conn_interval", "structwiced__bt__ble__conn__params__t.html#a545ef7b2495e29e8e4812629fb135c44", null ],
       [ "conn_latency", "structwiced__bt__ble__conn__params__t.html#a9cca6008241e70f7882704bc6d9deb65", null ],
       [ "supervision_timeout", "structwiced__bt__ble__conn__params__t.html#ab7c6cee604c76191bd70926d8b40562e", null ]
-    ] ],
-    [ "wiced_bt_ble_pref_conn_params_t", "structwiced__bt__ble__pref__conn__params__t.html", [
-      [ "conn_interval_min", "structwiced__bt__ble__pref__conn__params__t.html#aa44c68f25e83a976e17afb7a36e02994", null ],
-      [ "conn_interval_max", "structwiced__bt__ble__pref__conn__params__t.html#aa466a15e327576bc21b6c9d54cdbbf8d", null ],
-      [ "conn_latency", "structwiced__bt__ble__pref__conn__params__t.html#a19d2c544851df20ead4466ae86034a59", null ],
-      [ "conn_supervision_timeout", "structwiced__bt__ble__pref__conn__params__t.html#a7dde00723afa618605a08eabcca67d26", null ],
-      [ "min_ce_length", "structwiced__bt__ble__pref__conn__params__t.html#a6124218aace2fffd574f4928b9d76d42", null ],
-      [ "max_ce_length", "structwiced__bt__ble__pref__conn__params__t.html#a911c9695001d7428390403e146943f11", null ]
     ] ],
     [ "wiced_bt_ble_key_material_t", "structwiced__bt__ble__key__material__t.html", [
       [ "session_key", "structwiced__bt__ble__key__material__t.html#a2da6579072ec24611077b154ec328423", null ],
@@ -41,9 +50,9 @@ var group__wicedbt___conn =
     [ "BLE_CHANNEL_MAP_LEN", "group__wicedbt___conn.html#ga8e87c05d9589c4b55178ec4ce7685db2", null ],
     [ "wiced_dev_ble_signature_t", "group__wicedbt___conn.html#ga39b3b50eac531691f2bc87291526bb73", null ],
     [ "wiced_bt_ble_sec_action_type_t", "group__wicedbt___conn.html#ga063af36361f0fd1f625146102b5de0b6", null ],
+    [ "wiced_ble_legacy_initiator_filter_policy_t", "group__wicedbt___conn.html#ga283231ba25e3cd70e322cd96084a0cf1", null ],
     [ "wiced_bt_ble_host_phy_preferences_t", "group__wicedbt___conn.html#ga49163e545af54ff3bc6c49089a321f65", null ],
     [ "wiced_bt_ble_lelr_phy_preferences_t", "group__wicedbt___conn.html#ga59b3d0fab3900bde261ededd0afa2ac0", null ],
-    [ "wiced_bt_ble_conn_type_t", "group__wicedbt___conn.html#ga6784dc351a127f7cd9b3fbf9f1d5c49c", null ],
     [ "wiced_bt_ble_privacy_mode_t", "group__wicedbt___conn.html#gae0c321e7abc54eeb9b5c39354a36dd8c", null ],
     [ "wiced_bt_ble_chnl_map_t", "group__wicedbt___conn.html#ga0fcba53bbcdcb2cfde297d440bebe36d", null ],
     [ "wiced_bt_ble_read_phy_complete_callback_t", "group__wicedbt___conn.html#ga1040463e377058992187e0c64e202bd5", null ],
@@ -58,21 +67,20 @@ var group__wicedbt___conn =
       [ "BTM_SEC_LE_LINK_PAIRED_WITHOUT_MITM", "group__wicedbt___conn.html#gga43bc963a74ea1613ba9951538a059838afd4f4eefbb173571ec8fb24a4af68c80", null ],
       [ "BTM_SEC_LE_LINK_PAIRED_WITH_MITM", "group__wicedbt___conn.html#gga43bc963a74ea1613ba9951538a059838aa412ae0ee1ccc0675c7eec9124ce90dc", null ]
     ] ],
-    [ "wiced_bt_ble_conn_type_e", "group__wicedbt___conn.html#ga85abcdffb41185cf65f29c689cf36a16", [
-      [ "BTM_BLE_CONN_NONE", "group__wicedbt___conn.html#gga85abcdffb41185cf65f29c689cf36a16a262d3de0ebe5bab5fcb4b0e1591e0a0b", null ],
-      [ "BTM_BLE_CONN_AUTO", "group__wicedbt___conn.html#gga85abcdffb41185cf65f29c689cf36a16a772682b72fe64ab7101e4bde893a8c47", null ],
-      [ "BTM_BLE_CONN_SELECTIVE", "group__wicedbt___conn.html#gga85abcdffb41185cf65f29c689cf36a16acf3b22bc60f10d65cd68ed08c6c68c75", null ]
+    [ "wiced_ble_legacy_initiator_filter_policy_e", "group__wicedbt___conn.html#ga8c8237b3848d43bc1906b890f244aa3d", [
+      [ "WICED_BLE_LEGACY_INITIATOR_DO_NOT_USE_FILTER_LIST", "group__wicedbt___conn.html#gga8c8237b3848d43bc1906b890f244aa3da2d501b6b7f39efd843f94eef9d4ec0c0", null ],
+      [ "WICED_BLE_LEGACY_INITIATOR_USE_FILTER_LIST", "group__wicedbt___conn.html#gga8c8237b3848d43bc1906b890f244aa3dae9a60f83b55b23fb25b8e9ff92b37798", null ]
     ] ],
     [ "wiced_bt_ble_privacy_e", "group__wicedbt___conn.html#ga209665fd7342f0f47610c5fec55910c1", [
       [ "BTM_BLE_PRIVACY_MODE_NETWORK", "group__wicedbt___conn.html#gga209665fd7342f0f47610c5fec55910c1a3e9b2b0718aefc1d10cb800c82bb2fdf", null ],
       [ "BTM_BLE_PRIVACY_MODE_DEVICE", "group__wicedbt___conn.html#gga209665fd7342f0f47610c5fec55910c1a698c582d2a341f8c28091de030d8ec92", null ]
     ] ],
+    [ "wiced_ble_legacy_create_connection", "group__wicedbt___conn.html#ga2bbbdfa84c1cf1733554317846e0d5ae", null ],
     [ "wiced_bt_ble_get_connection_parameters", "group__wicedbt___conn.html#ga75fbda062c4d99e4edd39e0a9b4a3bd4", null ],
     [ "wiced_bt_ble_data_signature", "group__btm__ble__sec__api__functions.html#ga1745ec7401f09c80ec5aecbacc9c0002", null ],
     [ "wiced_bt_ble_verify_signature", "group__btm__ble__sec__api__functions.html#ga771629322c842c541611d928ad128a40", null ],
     [ "wiced_bt_ble_get_security_state", "group__btm__ble__sec__api__functions.html#gaa3a12d9312cb8bac5e7eb7033aedda8c", null ],
     [ "wiced_bt_ble_set_privacy_mode", "group__btm__ble__sec__api__functions.html#ga2780ef822665cbfd72ba2b2eeefbc35e", null ],
-    [ "wiced_bt_ble_read_device_random_address", "group__btm__ble__sec__api__functions.html#ga6f62bfefe564c8ab304d43a02629467a", null ],
     [ "wiced_ble_private_device_address_resolution", "group__btm__ble__sec__api__functions.html#gaa1a08bf54c9c06015c1bbafbaab433c1", null ],
     [ "wiced_bt_ble_address_resolution_list_clear_and_disable", "group__btm__ble__sec__api__functions.html#gafadf1111bda74127bcd449cf16ad5c06", null ],
     [ "wiced_bt_ble_read_le_features", "group__wicedbt___conn.html#ga5bc1e0f5151f2b2e550bbd8c96035a82", null ],

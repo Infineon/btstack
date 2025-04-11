@@ -7,6 +7,7 @@ var searchData=
   ['init_5ffilter_5fpolicy',['init_filter_policy',['../structwiced__ble__ext__conn__cfg__t.html#aa455f374fb11c90fd660a44eea0eb8cd',1,'wiced_ble_ext_conn_cfg_t']]],
   ['init_5fkeys',['init_keys',['../structwiced__bt__dev__ble__io__caps__req__t.html#aca827eb0788362f017340effb7613b09',1,'wiced_bt_dev_ble_io_caps_req_t']]],
   ['initiating_5fphys',['initiating_phys',['../structwiced__ble__ext__conn__cfg__t.html#ab88b3ca0dcbfdb21ccbdc44963887e05',1,'wiced_ble_ext_conn_cfg_t']]],
+  ['initiator_5ffilter_5fpolicy',['initiator_filter_policy',['../structwiced__ble__legacy__create__conn__t.html#a054c49f8caf17cbffc66591bcdd8f6ea',1,'wiced_ble_legacy_create_conn_t']]],
   ['ir',['ir',['../structwiced__bt__local__id__keys.html#a656358b2f6ae702a75cc5f155dd90ac2',1,'wiced_bt_local_id_keys']]],
   ['irk',['irk',['../structwiced__bt__local__id__keys.html#a1407ef4cf03961e4685647fc3400361f',1,'wiced_bt_local_id_keys::irk()'],['../structwiced__bt__ble__keys__t.html#acb3d7f48cd997b4d5880e8b95a2482a7',1,'wiced_bt_ble_keys_t::irk()']]],
   ['is_5fextended_5foob_5fdata',['is_extended_oob_data',['../structwiced__bt__dev__local__oob__t.html#a32d94d3bb1684f3cedd27aabc39b9500',1,'wiced_bt_dev_local_oob_t']]],

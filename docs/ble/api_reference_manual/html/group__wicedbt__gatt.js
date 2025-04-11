@@ -119,9 +119,7 @@ var group__wicedbt__gatt =
       [ "connected", "structwiced__bt__gatt__connection__status__t.html#a86cd1b5a830109dac05a5c876d05cf76", null ],
       [ "reason", "structwiced__bt__gatt__connection__status__t.html#a580110ac3dc9accdc11da9a745963501", null ],
       [ "transport", "structwiced__bt__gatt__connection__status__t.html#a1901f57b9c53b41f41062305be272ad0", null ],
-      [ "link_role", "structwiced__bt__gatt__connection__status__t.html#a2cbfd47dc2bf3e5a32b84dcb603a2f03", null ],
-      [ "adv_handle", "structwiced__bt__gatt__connection__status__t.html#a639daa25d7174b249879bc46f4ec32e3", null ],
-      [ "sync_handle", "structwiced__bt__gatt__connection__status__t.html#a31545fd7e36db970b3c958a3361345b8", null ]
+      [ "link_role", "structwiced__bt__gatt__connection__status__t.html#a2cbfd47dc2bf3e5a32b84dcb603a2f03", null ]
     ] ],
     [ "wiced_bt_gatt_attribute_request_t", "structwiced__bt__gatt__attribute__request__t.html", [
       [ "conn_id", "structwiced__bt__gatt__attribute__request__t.html#acd1f5a1d1740563eb9c4c56f411a1c68", null ],

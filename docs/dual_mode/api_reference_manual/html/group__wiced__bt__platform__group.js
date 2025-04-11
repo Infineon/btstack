@@ -18,8 +18,8 @@ var group__wiced__bt__platform__group =
       [ "trace_buffer_len", "structwiced__bt__stack__platform__t.html#a5dc571e1e6283ba422b8af5d3ea807fe", null ],
       [ "trace_buffer", "structwiced__bt__stack__platform__t.html#a44e54c18febc40a36c6a17fe0052bb6e", null ],
       [ "pf_patch_download", "structwiced__bt__stack__platform__t.html#ab424e8d1a539328e651f7ef3ec25f53f", null ],
-      [ "is_legacy_bless_controller", "structwiced__bt__stack__platform__t.html#aed774e9dc09f073b14790a248f007d8c", null ],
-      [ "pf_get_trng", "structwiced__bt__stack__platform__t.html#a0e070674c9847fd0984a01be65f8389f", null ]
+      [ "pf_get_trng", "structwiced__bt__stack__platform__t.html#a0e070674c9847fd0984a01be65f8389f", null ],
+      [ "is_legacy_bless_controller", "structwiced__bt__stack__platform__t.html#aed774e9dc09f073b14790a248f007d8c", null ]
     ] ],
     [ "wiced_bt_smp_adapter_t", "structwiced__bt__smp__adapter__t.html", [
       [ "pf_smp_process_private_key", "structwiced__bt__smp__adapter__t.html#aa59d753b4864101d3ffe3793fefbd50b", null ],
@@ -98,5 +98,9 @@ var group__wiced__bt__platform__group =
     [ "wiced_bt_set_stack_initial_setup_data", "group__wiced__bt__platform__group.html#gafc1b5d34eef77e8e432e3f070ce92709", null ],
     [ "wiced_bt_enable_stack_default_flow", "group__wiced__bt__platform__group.html#gaa5efa37a135721ba7c58fcb6ec6f0b04", null ],
     [ "wiced_bt_platform_set_smp_adapter", "group__wiced__bt__platform__group.html#ga5206a08f08b9a21a75c61fbf5df58d0d", null ],
-    [ "wiced_bt_set_default_smp_adapter", "group__wiced__bt__platform__group.html#ga3997e1d79714e78d2c13d60f3a698911", null ]
+    [ "wiced_bt_set_default_smp_adapter", "group__wiced__bt__platform__group.html#ga3997e1d79714e78d2c13d60f3a698911", null ],
+    [ "wiced_ble_read_local_identity_keys_from_app", "group__wiced__bt__platform__group.html#gaf059de81cbbe4c5ce5872eed1cc6e32c", null ],
+    [ "wiced_ble_create_local_identity_keys", "group__wiced__bt__platform__group.html#gafbef049d9e806795cc708d94db01c8dc", null ],
+    [ "wiced_ble_init_host_private_addr_generation", "group__wiced__bt__platform__group.html#gaf3b4675291634b72041597e29d93904e", null ],
+    [ "wiced_ble_init_ctlr_private_addr_generation", "group__wiced__bt__platform__group.html#ga8260ebc21406a676e29a7081a7382494", null ]
 ];

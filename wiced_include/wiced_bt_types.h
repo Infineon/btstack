@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2024, Cypress Semiconductor Corporation or
+ * Copyright 2016-2025, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -167,6 +167,11 @@ typedef uint8_t BT_OCTET16[BT_OCTET16_LEN]; /**< octet array: size 16 */
 #define BT_OCTET32_LEN    32    /**< octet length: 32 */
 typedef uint8_t BT_OCTET32[BT_OCTET32_LEN];   /**< octet array: size 32 */
 
+/* Values for wiced_bt_flow_spec_t service_type */
+#define NO_TRAFFIC 0  /**< No Traffic */
+#define BEST_EFFORT 1 /**< Best Effort */
+#define GUARANTEED 2  /**< Guaranteed */
+
 /** Bluetooth QoS defintions */
 typedef struct {
     uint8_t         qos_flags;              /**< Quality of service flag */
@@ -177,11 +182,6 @@ typedef struct {
     uint32_t        latency;                /**< latency (microseconds) */
     uint32_t        delay_variation;        /**< delay variation (microseconds) */
 } wiced_bt_flow_spec_t;
-
-/* Values for swiced_bt_flow_spec_t service_type */
-#define NO_TRAFFIC      0   /**< No Traffic */
-#define BEST_EFFORT     1   /**< Best Effort */
-#define GUARANTEED      2   /**< Guaranteed */
 
 /**
  * @anchor WICED_BT_TRANSPORT_TYPE

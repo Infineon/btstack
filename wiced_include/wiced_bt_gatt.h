@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2024, Cypress Semiconductor Corporation or
+ * Copyright 2016-2025, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -765,8 +765,6 @@ typedef struct
     wiced_bt_gatt_disconn_reason_t  reason;      /**< Reason code (see @link wiced_bt_gatt_disconn_reason_e wiced_bt_gatt_disconn_reason_t @endlink) */
     wiced_bt_transport_t            transport;   /**< Transport type of the connection */
     wiced_bt_dev_role_t             link_role;   /**< Link role on this connection */
-    uint8_t                         adv_handle;  /**< adv_handle to identify an advertising set */
-    uint16_t                        sync_handle;  /**<  Sync_Handle to  identify the periodic advertising train */
 } wiced_bt_gatt_connection_status_t;
 
 /** GATT attribute request (used by GATT_ATTRIBUTE_REQUEST_EVT notification) */
@@ -1749,26 +1747,6 @@ wiced_bool_t wiced_bt_gatt_cancel_connect (wiced_bt_device_address_t bd_addr, wi
  * @ingroup gatt_common_api
  */
 wiced_bt_gatt_status_t wiced_bt_gatt_disconnect (uint16_t conn_id);
-
-
-/**
- * Start or stop LE advertisement and listen for connection.
- *
- *  @param[in]   start      : TRUE to add device to Filter Accept List / FALSE to remove
- *  @param[in]   bd_addr    : Device to add/remove from Filter Accept List
- *  @param[in]   type       : Address type of \p bd_addr
- *
- *  @return <b> TRUE </b>            : Success
- *          <b> FALSE </b>           : Failure
- *
- * @if DUAL_MODE
- * @ingroup gatt_le
- * @else
- * @ingroup gatt_common_api
- * @endif
- */
-wiced_bool_t wiced_bt_gatt_listen (wiced_bool_t start, wiced_bt_device_address_t bd_addr,
-    wiced_bt_ble_address_type_t type);
 
 /**
  * EATT API

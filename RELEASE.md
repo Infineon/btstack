@@ -7,6 +7,44 @@ Following are the limitations when using host based address resolution (only app
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
 ## Changelog
+## V4.1.0
+### BTSTACK4.1 contains following enhancements and fixes -
+ - Creation of stack libraries using LLVM toolchain
+### Advertisement and scan API Updates
+  - wiced_ble_ext_scan_set_config is removed. Use **wiced_ble_ext_scan_register_cb** to register extended scan result callback.
+  - Optionally use **wiced_ble_ext_scan_configure_reassembly** to reassemble partial extended adv data reports
+  - Structure member data_len of **wiced_ble_padv_rsp_report_event_data_t** is renamed to data_length
+  - Structure member max_periodic_adv_len of **wiced_ble_padv_create_sync_params_t** is removed. Optionally use **wiced_ble_padv_alloc_segment_assembler** to reassemble partial periodic adv data segments
+  - Structure member data of **wiced_ble_padv_report_event_data_t** is renamed to p_data
+### Privacy APIs
+  - Deprecated API wiced_bt_dev_delete_bonded_device. **Stack does not store any bonding information**. For applications which use BLE mode, invoke **wiced_bt_dev_remove_device_from_address_resolution_db** to remove the device from the resolving list.
+### Background connection APIs
+  - Background connections can be initiated by central devices by adding peripheral device addresses to the filter list.
+  - To add to the filter list use **wiced_ble_add_to_filter_accept_list**
+  - To remove a device from the filter list use **wiced_ble_remove_from_filter_accept_list**
+  - Initiate a background connection with the filter list use **wiced_ble_legacy_create_connection** (legacy connection), **wiced_ble_ext_create_connection** (extended)
+  - The following APIs are no longer supported
+    - wiced_bt_ble_set_background_connection_type
+    - wiced_bt_ble_update_background_connection_device
+    - wiced_bt_ble_update_advertising_filter_accept_list
+    - wiced_bt_ble_update_scanner_filter_list
+    - wiced_bt_ble_clear_filter_accept_list
+    - wiced_bt_ble_get_filter_accept_list_size
+    - wiced_bt_gatt_listen
+### wiced_ble_key_distribution_t
+  - Corrected the enumerations for **wiced_ble_key_distribution_e**
+### Setting the local device address
+- Use **wiced_bt_set_local_bdaddr** to setup the **BLE_ADDR_PUBLIC** or **BLE_ADDR_RANDOM** address.
+- If BLE_ADDR_RANDOM is used, ensure that the MSB bits are set to b'11' for static addresses and b'00' for non-resolvable addresses
+- Addresses set using this API are used during scanning, advertising, create connection, periodic advertising
+### Random address management
+- BTSTACK4.1 adds APIs to allow application control while creating IRK (Identity Resolving Key).
+- Use **wiced_ble_create_local_identity_keys** to create new keys, which are returned to the app in **BTM_LOCAL_IDENTITY_KEYS_UPDATE_EVT**
+- In case the application already has previously created local keys, use
+  - **wiced_ble_init_host_private_addr_generation** for controllers which do not support controller based privacy
+  - **wiced_ble_init_ctlr_private_addr_generation** for controllers which support controller based privacy
+- These APIs are invoked in the porting layer, but can be called from the application by setting ```-DENABLE_CREATE_LOCAL_KEYS=0``` in the application makefile
+
 
 ## V4.0.0
 BTSTACK4.0 contains the following enhancements -

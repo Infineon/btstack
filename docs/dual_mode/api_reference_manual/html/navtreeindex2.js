@@ -1,10 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a38c69fe7247db39a37872c4042c4f006":[1,15,6,4],
-"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a499053e3abba3673768df96e99ed7fbb":[1,15,6,13],
-"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a6294fef1d832b05fbc2241822e633646":[1,15,6,5],
-"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a7805af0b242dcd9e383a484820e35851":[1,15,6,11],
-"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a92e6dbc56674c8ea67ba56b622e5bb1e":[1,15,6,10],
 "group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a93ddd638f2a1037efc1bf9829efbb216":[1,15,6,7],
 "group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a9c35996deb5af9e5d67d5da1efc310bd":[1,15,6,16],
 "group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6aa69edb81d98672d83bd20a22ac1cf308":[1,15,6,17],
@@ -249,5 +244,10 @@ var NAVTREEINDEX2 =
 "group__wiced__bt__platform__group.html":[1,19],
 "group__wiced__bt__platform__group.html#ga14586f9b6afb84249092f7865f89794c":[1,19,7],
 "group__wiced__bt__platform__group.html#ga1730912a9e3ba93f3bbf5374d329f416":[1,19,21],
-"group__wiced__bt__platform__group.html#ga1a928930460ca3010e35f78cd8ea6440":[1,19,25]
+"group__wiced__bt__platform__group.html#ga1a928930460ca3010e35f78cd8ea6440":[1,19,25],
+"group__wiced__bt__platform__group.html#ga1b2ab26fed7589a50fad5ecc0cc6f1d3":[1,19,28],
+"group__wiced__bt__platform__group.html#ga2892cb4b0e7fc3a085ec5bb119994c37":[1,19,17],
+"group__wiced__bt__platform__group.html#ga36383c153b6f484c1abf7cc759b8a62f":[1,19,10],
+"group__wiced__bt__platform__group.html#ga3997e1d79714e78d2c13d60f3a698911":[1,19,43],
+"group__wiced__bt__platform__group.html#ga3e08857799934c4e9eb3108e16cc95e1":[1,19,32]
 };

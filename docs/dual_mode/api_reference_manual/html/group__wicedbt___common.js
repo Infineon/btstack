@@ -51,6 +51,8 @@ var group__wicedbt___common =
     [ "wiced_ble_isoc_phy_t", "group__wicedbt___common.html#gae8cc0fb892f0182cb79e8c859cd7aa26", null ],
     [ "wiced_ble_isoc_framing_t", "group__wicedbt___common.html#gaa3803249fa15d93f0c3a4e8f03208a7e", null ],
     [ "wiced_ble_isoc_encryption_t", "group__wicedbt___common.html#ga7428abf5d31a635aa1e1d280b1bcf0fa", null ],
+    [ "wiced_ble_own_address_options_t", "group__wicedbt___common.html#gadf2b26e55434241c4f0c9ea3fc1c98b4", null ],
+    [ "wiced_ble_scanning_filter_policy_t", "group__wicedbt___common.html#gac2e18286637d4ef166b70df056ddc7cf", null ],
     [ "wiced_bt_ble_advert_filter_policy_e", "group__wicedbt___common.html#gae169c3a016dc0a8d0df604dda69c3249", [
       [ "BTM_BLE_ADV_POLICY_ACCEPT_CONN_AND_SCAN", "group__wicedbt___common.html#ggae169c3a016dc0a8d0df604dda69c3249add3f372f36bceae2e1ed91477cc3ab26", null ],
       [ "BTM_BLE_ADV_POLICY_ACCEPT_CONN_FILTER_SCAN", "group__wicedbt___common.html#ggae169c3a016dc0a8d0df604dda69c3249ac0e52ecefb1c278fb1f3593372f7d856", null ],
@@ -121,6 +123,17 @@ var group__wicedbt___common =
     [ "wiced_ble_isoc_encryption_e", "group__wicedbt___common.html#ga7523306c99709df4ac3d2f8dee9c7b4c", [
       [ "WICED_BLE_ISOC_UNENCRYPTED", "group__wicedbt___common.html#gga7523306c99709df4ac3d2f8dee9c7b4ca1b032ef55b110b415e05a0246f38846e", null ],
       [ "WICED_BLE_ISOC_ENCRYPTED", "group__wicedbt___common.html#gga7523306c99709df4ac3d2f8dee9c7b4ca0d53fd4159b45eb87f3eb77b28336236", null ]
+    ] ],
+    [ "wiced_ble_own_address_options_e", "group__wicedbt___common.html#ga351511480455eb7aa774f4952e1b689a", [
+      [ "WICED_BLE_OWN_ADDR_PUBLIC", "group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa4def370666ad6d2b7cc24a4619647147", null ],
+      [ "WICED_BLE_OWN_ADDR_RANDOM", "group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa9ebbb8a0520175eab02e8b63ccf73ea3", null ],
+      [ "WICED_BLE_OWN_ADDR_GENERATE_RPA_PUBLIC_RANDOM", "group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aafaaa5b4a7038dbd3a28ff2d0b299b01f", null ]
+    ] ],
+    [ "wiced_ble_scanning_filter_policy_e", "group__wicedbt___common.html#gad3cb95ad9059ab2ca5690a92d1863a3b", [
+      [ "WICED_BLE_SCAN_BASIC_UNFILTERED_SP", "group__wicedbt___common.html#ggad3cb95ad9059ab2ca5690a92d1863a3baf3109a04d06fe8e1f01fb88a5890f164", null ],
+      [ "WICED_BLE_SCAN_BASIC_FILTERED_SP", "group__wicedbt___common.html#ggad3cb95ad9059ab2ca5690a92d1863a3ba61e65c46ee37d2ce0195f7085f7df308", null ],
+      [ "WICED_BLE_SCAN_EXTENDED_UNFILTERED_SP", "group__wicedbt___common.html#ggad3cb95ad9059ab2ca5690a92d1863a3bad94773130c468f248c6f2dafb23113eb", null ],
+      [ "WICED_BLE_SCAN_EXTENDED_FILTERED_SP", "group__wicedbt___common.html#ggad3cb95ad9059ab2ca5690a92d1863a3bae005b216c767f09ab2e601a1ddb669bd", null ]
     ] ],
     [ "wiced_ble_adv_data_search", "group__wicedbt___common.html#ga01cbd2d774c2ae09fc8f2778faba1b03", null ],
     [ "wiced_ble_adv_data_build", "group__wicedbt___common.html#ga3b316e86fd3f2291d95f5f304f1af311", null ]

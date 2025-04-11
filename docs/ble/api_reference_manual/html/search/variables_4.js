@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['data',['data',['../structwiced__ble__padv__report__event__data__t.html#a6a6c911cc2a8062313bce304e4bc449a',1,'wiced_ble_padv_report_event_data_t::data()'],['../structwiced__bt__gatt__attribute__request__t.html#aa4b31db667f0ddb782b38005a942ba09',1,'wiced_bt_gatt_attribute_request_t::data()']]],
+  ['data',['data',['../structwiced__bt__gatt__attribute__request__t.html#aa4b31db667f0ddb782b38005a942ba09',1,'wiced_bt_gatt_attribute_request_t']]],
   ['data_5findication_5fcback',['data_indication_cback',['../structwiced__bt__l2cap__appl__information__t.html#aca561436a003734a64e4b1b2d3806d83',1,'wiced_bt_l2cap_appl_information_t::data_indication_cback()'],['../structwiced__bt__l2cap__le__appl__information__t.html#afa30934bbf2f817264cc6a68b5b4590a',1,'wiced_bt_l2cap_le_appl_information_t::data_indication_cback()']]],
-  ['data_5flen',['data_len',['../structwiced__ble__padv__rsp__report__event__data__t.html#acff75392760d7ecc435a8072cd9306da',1,'wiced_ble_padv_rsp_report_event_data_t']]],
-  ['data_5flength',['data_length',['../structwiced__ble__padv__report__event__data__t.html#ab295bddc8137d76994c1a138e68a017c',1,'wiced_ble_padv_report_event_data_t']]],
+  ['data_5flength',['data_length',['../structwiced__ble__padv__rsp__report__event__data__t.html#ac857576c36f1c109f4d2c6a46beae146',1,'wiced_ble_padv_rsp_report_event_data_t::data_length()'],['../structwiced__ble__padv__report__event__data__t.html#ab295bddc8137d76994c1a138e68a017c',1,'wiced_ble_padv_report_event_data_t::data_length()']]],
   ['data_5fstatus',['data_status',['../structwiced__ble__padv__rsp__report__event__data__t.html#a3cbfb99a75d475734b1243c5d86b0bc8',1,'wiced_ble_padv_rsp_report_event_data_t::data_status()'],['../structwiced__ble__padv__report__event__data__t.html#aaee78d4ad1b4def2e620e57dda0ec9ed',1,'wiced_ble_padv_report_event_data_t::data_status()']]],
   ['default_5fble_5fpower_5flevel',['default_ble_power_level',['../structwiced__bt__cfg__ble__t.html#a00d296e0d2140c14b71720a6385159f2',1,'wiced_bt_cfg_ble_t']]],
   ['default_5fidle_5ftimeout',['default_idle_timeout',['../structwiced__bt__l2cap__fixed__chnl__reg__t.html#ad05e7fe3f98693f1ff4b4601fab804fe',1,'wiced_bt_l2cap_fixed_chnl_reg_t']]],

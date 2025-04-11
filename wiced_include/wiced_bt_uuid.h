@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2024, Cypress Semiconductor Corporation or
+ * Copyright 2016-2025, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -194,6 +194,10 @@ enum ble_uuid_attribute
     WICED_BT_UUID_PACS_SOURCE_AUDIO_LOCATIONS = 0X2BCC,
     WICED_BT_UUID_PACS_AUDIO_CONTEXT_AVAILABILITY = 0X2BCD,
     WICED_BT_UUID_PACS_SUPPORTED_AUDIO_CONTEXT = 0X2BCE,
+
+    WICED_BT_UUID_HAS_HEARING_AID_FEATURES = 0x2BDA,
+    WICED_BT_UUID_HAS_HEARING_AID_PRESET_CONTROL_POINT = 0x2BDB,
+    WICED_BT_UUID_HAS_HEARING_AID_ACTIVE_PRESET_INDEX = 0x2BDC,
 
     WICED_BT_UUID_RAAS_SELECTABLE_AREP                       = 0X8FC0,
     WICED_BT_UUID_RAAS_CFG_AUDIO_ROUTE_LIST                  = 0X8FC1,

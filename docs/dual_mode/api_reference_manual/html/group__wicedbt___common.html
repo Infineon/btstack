@@ -274,6 +274,13 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___common.html#ga7428abf5d31a635aa1e1d280b1bcf0fa">wiced_ble_isoc_encryption_t</a></td></tr>
 <tr class="memdesc:ga7428abf5d31a635aa1e1d280b1bcf0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISOC Encryption (see <a class="el" href="group__wicedbt___common.html#ga7523306c99709df4ac3d2f8dee9c7b4c" title="Broadcast ISOC Encryption.">wiced_ble_isoc_encryption_e</a>) <br /></td></tr>
 <tr class="separator:ga7428abf5d31a635aa1e1d280b1bcf0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf2b26e55434241c4f0c9ea3fc1c98b4"><td class="memItemLeft" align="right" valign="top"><a id="gadf2b26e55434241c4f0c9ea3fc1c98b4"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___common.html#gadf2b26e55434241c4f0c9ea3fc1c98b4">wiced_ble_own_address_options_t</a></td></tr>
+<tr class="memdesc:gadf2b26e55434241c4f0c9ea3fc1c98b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Own address options for adv, scan, create connection, see <a class="el" href="group__wicedbt___common.html#ga351511480455eb7aa774f4952e1b689a">wiced_ble_own_address_options_e</a>. <br /></td></tr>
+<tr class="separator:gadf2b26e55434241c4f0c9ea3fc1c98b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2e18286637d4ef166b70df056ddc7cf"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___common.html#gac2e18286637d4ef166b70df056ddc7cf">wiced_ble_scanning_filter_policy_t</a></td></tr>
+<tr class="memdesc:gac2e18286637d4ef166b70df056ddc7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scanning filter policy used.  <a href="#gac2e18286637d4ef166b70df056ddc7cf">More...</a><br /></td></tr>
+<tr class="separator:gac2e18286637d4ef166b70df056ddc7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -429,6 +436,30 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga7523306c99709df4ac3d2f8dee9c7b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast ISOC Encryption.  <a href="group__wicedbt___common.html#ga7523306c99709df4ac3d2f8dee9c7b4c">More...</a><br /></td></tr>
 <tr class="separator:ga7523306c99709df4ac3d2f8dee9c7b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga351511480455eb7aa774f4952e1b689a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___common.html#ga351511480455eb7aa774f4952e1b689a">wiced_ble_own_address_options_e</a> { <br />
+&#160;&#160;<a class="el" href="group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa4def370666ad6d2b7cc24a4619647147">WICED_BLE_OWN_ADDR_PUBLIC</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa9ebbb8a0520175eab02e8b63ccf73ea3">WICED_BLE_OWN_ADDR_RANDOM</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aafaaa5b4a7038dbd3a28ff2d0b299b01f">WICED_BLE_OWN_ADDR_GENERATE_RPA_PUBLIC_RANDOM</a> = 2, 
+<br />
+&#160;&#160;<b>WICED_BLE_OWN_ADDR_GENERATE_RPA_STATIC_RANDOM</b> = 3
+<br />
+ }</td></tr>
+<tr class="memdesc:ga351511480455eb7aa774f4952e1b689a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Own address options for adv, scan, create connection.  <a href="group__wicedbt___common.html#ga351511480455eb7aa774f4952e1b689a">More...</a><br /></td></tr>
+<tr class="separator:ga351511480455eb7aa774f4952e1b689a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3cb95ad9059ab2ca5690a92d1863a3b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___common.html#gad3cb95ad9059ab2ca5690a92d1863a3b">wiced_ble_scanning_filter_policy_e</a> { <br />
+&#160;&#160;<a class="el" href="group__wicedbt___common.html#ggad3cb95ad9059ab2ca5690a92d1863a3baf3109a04d06fe8e1f01fb88a5890f164">WICED_BLE_SCAN_BASIC_UNFILTERED_SP</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___common.html#ggad3cb95ad9059ab2ca5690a92d1863a3ba61e65c46ee37d2ce0195f7085f7df308">WICED_BLE_SCAN_BASIC_FILTERED_SP</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___common.html#ggad3cb95ad9059ab2ca5690a92d1863a3bad94773130c468f248c6f2dafb23113eb">WICED_BLE_SCAN_EXTENDED_UNFILTERED_SP</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___common.html#ggad3cb95ad9059ab2ca5690a92d1863a3bae005b216c767f09ab2e601a1ddb669bd">WICED_BLE_SCAN_EXTENDED_FILTERED_SP</a> = 3
+<br />
+ }</td></tr>
+<tr class="memdesc:gad3cb95ad9059ab2ca5690a92d1863a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scanning filter policy enums used in set scan parameters command.  <a href="group__wicedbt___common.html#gad3cb95ad9059ab2ca5690a92d1863a3b">More...</a><br /></td></tr>
+<tr class="separator:gad3cb95ad9059ab2ca5690a92d1863a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -487,6 +518,24 @@ Functions</h2></td></tr>
 <div class="ttc" id="group__wicedbt___common_html_ga87aaba1869076b5fa23c8d3c67924475"><div class="ttname"><a href="group__wicedbt___common.html#ga87aaba1869076b5fa23c8d3c67924475">BTM_BLE_BREDR_NOT_SUPPORTED</a></div><div class="ttdeci">#define BTM_BLE_BREDR_NOT_SUPPORTED</div><div class="ttdoc">BR/EDR Not Supported.</div><div class="ttdef"><b>Definition:</b> wiced_bt_adv_scan_common.h:107</div></div>
 </div><!-- fragment -->
 <p>LE adverisement mask. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gac2e18286637d4ef166b70df056ddc7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2e18286637d4ef166b70df056ddc7cf">&#9670;&nbsp;</a></span>wiced_ble_scanning_filter_policy_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint8_t <a class="el" href="group__wicedbt___common.html#gac2e18286637d4ef166b70df056ddc7cf">wiced_ble_scanning_filter_policy_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scanning filter policy used. </p>
+<p>(see <a class="el" href="group__wicedbt___common.html#gad3cb95ad9059ab2ca5690a92d1863a3b" title="Scanning filter policy enums used in set scan parameters command.">wiced_ble_scanning_filter_policy_e</a>) </p>
 
 </div>
 </div>
@@ -736,6 +785,59 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7523306c99709df4ac3d2f8dee9c7b4ca1b032ef55b110b415e05a0246f38846e"></a>WICED_BLE_ISOC_UNENCRYPTED&#160;</td><td class="fielddoc"><p>ISOC unencrypted. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga7523306c99709df4ac3d2f8dee9c7b4ca0d53fd4159b45eb87f3eb77b28336236"></a>WICED_BLE_ISOC_ENCRYPTED&#160;</td><td class="fielddoc"><p>ISOC encrypted. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga351511480455eb7aa774f4952e1b689a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga351511480455eb7aa774f4952e1b689a">&#9670;&nbsp;</a></span>wiced_ble_own_address_options_e</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__wicedbt___common.html#ga351511480455eb7aa774f4952e1b689a">wiced_ble_own_address_options_e</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Own address options for adv, scan, create connection. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga351511480455eb7aa774f4952e1b689aa4def370666ad6d2b7cc24a4619647147"></a>WICED_BLE_OWN_ADDR_PUBLIC&#160;</td><td class="fielddoc"><p>Use public address, see <a class="el" href="group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2">wiced_bt_set_local_bdaddr</a>. </p>
+<p>Use random address, see <a class="el" href="group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2">wiced_bt_set_local_bdaddr</a>. For advertising with extended APIs, random address set on the adv handle is used </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga351511480455eb7aa774f4952e1b689aa9ebbb8a0520175eab02e8b63ccf73ea3"></a>WICED_BLE_OWN_ADDR_RANDOM&#160;</td><td class="fielddoc"><p>Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type. </p>
+<p>If no entry found, use public address see <a class="el" href="group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2">wiced_bt_set_local_bdaddr</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga351511480455eb7aa774f4952e1b689aafaaa5b4a7038dbd3a28ff2d0b299b01f"></a>WICED_BLE_OWN_ADDR_GENERATE_RPA_PUBLIC_RANDOM&#160;</td><td class="fielddoc"><p>Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type. </p>
+<p>If no entry found, use random address see <a class="el" href="group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2">wiced_bt_set_local_bdaddr</a> For advertising with extended APIs, random address set on the adv handle is used </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gad3cb95ad9059ab2ca5690a92d1863a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3cb95ad9059ab2ca5690a92d1863a3b">&#9670;&nbsp;</a></span>wiced_ble_scanning_filter_policy_e</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__wicedbt___common.html#gad3cb95ad9059ab2ca5690a92d1863a3b">wiced_ble_scanning_filter_policy_e</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scanning filter policy enums used in set scan parameters command. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad3cb95ad9059ab2ca5690a92d1863a3baf3109a04d06fe8e1f01fb88a5890f164"></a>WICED_BLE_SCAN_BASIC_UNFILTERED_SP&#160;</td><td class="fielddoc"><p>Basic unfiltered scanning policy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad3cb95ad9059ab2ca5690a92d1863a3ba61e65c46ee37d2ce0195f7085f7df308"></a>WICED_BLE_SCAN_BASIC_FILTERED_SP&#160;</td><td class="fielddoc"><p>Basic filtered scanning policy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad3cb95ad9059ab2ca5690a92d1863a3bad94773130c468f248c6f2dafb23113eb"></a>WICED_BLE_SCAN_EXTENDED_UNFILTERED_SP&#160;</td><td class="fielddoc"><p>Extended unfiltered scanning policy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad3cb95ad9059ab2ca5690a92d1863a3bae005b216c767f09ab2e601a1ddb669bd"></a>WICED_BLE_SCAN_EXTENDED_FILTERED_SP&#160;</td><td class="fielddoc"><p>Extended filtered scanning policy. </p>
 </td></tr>
 </table>
 

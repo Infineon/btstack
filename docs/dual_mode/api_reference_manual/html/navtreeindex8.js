@@ -1,5 +1,15 @@
 var NAVTREEINDEX8 =
 {
+"group__wicedbt__avrc.html#ga588747fe8eddd83281cc379f1d20c971":[1,7,318],
+"group__wicedbt__avrc.html#ga591521bb6f40c228328ba4842180ce3e":[1,7,585],
+"group__wicedbt__avrc.html#ga5966b6261b97dcd1e0c44679dd7ac268":[1,7,663],
+"group__wicedbt__avrc.html#ga59d593bacea4173def1aa3d7eb5c06cc":[1,7,411],
+"group__wicedbt__avrc.html#ga59ed04ac232550da7e7428ea4d06a4e9":[1,7,581],
+"group__wicedbt__avrc.html#ga5a188dded47811cfafa13645bc91f100":[1,7,595],
+"group__wicedbt__avrc.html#ga5a6feeab27b61d5a233dd94b111a2606":[1,7,629],
+"group__wicedbt__avrc.html#ga5a86374ca5db855158eedb6b789b351d":[1,7,126],
+"group__wicedbt__avrc.html#ga5acc7f082dbe930ca9fcc3277b554c3e":[1,7,472],
+"group__wicedbt__avrc.html#ga5c5e38a290f8d094c849fb133a79c351":[1,7,281],
 "group__wicedbt__avrc.html#ga5c6a04df55965f363fb3349d047f2b80":[1,7,679],
 "group__wicedbt__avrc.html#ga5ce5299f1ad87dd714d238830023ec51":[1,7,465],
 "group__wicedbt__avrc.html#ga5d7c346020a9aad39998e8b88caef647":[1,7,414],
@@ -239,15 +249,5 @@ var NAVTREEINDEX8 =
 "group__wicedbt__avrc.html#gac12aaef8b486a032a8e887547b2e3fba":[1,7,67],
 "group__wicedbt__avrc.html#gac1f0ee63da8a193b55b5b12e612f4237":[1,7,332],
 "group__wicedbt__avrc.html#gac29d26a455463bcf31b8b391f0129139":[1,7,496],
-"group__wicedbt__avrc.html#gac30dd19d8a2f66698d35803761d0b31f":[1,7,654],
-"group__wicedbt__avrc.html#gac36226af0dda11e80807c7f64ad5f713":[1,7,483],
-"group__wicedbt__avrc.html#gac398588e69e7ec2dad8fb270ddafbddd":[1,7,657],
-"group__wicedbt__avrc.html#gac5bd6cb435f2ae4825497f6c7320e3bf":[1,7,206],
-"group__wicedbt__avrc.html#gac67dc5bbfe8acaf1ebea20af433373dd":[1,7,230],
-"group__wicedbt__avrc.html#gac7998df5f378c5e2b0a29c778a1fdd20":[1,7,344],
-"group__wicedbt__avrc.html#gac7c54299c7c8742785ca960453496f04":[1,7,304],
-"group__wicedbt__avrc.html#gac820a8c45de18a0b1854ac55c9ac71c8":[1,7,212],
-"group__wicedbt__avrc.html#gac853c6dec90bd7573f199af313f77eb9":[1,7,615],
-"group__wicedbt__avrc.html#gac8ac788264292e4ca9be43c06460b5b2":[1,7,464],
-"group__wicedbt__avrc.html#gac8d0ed5a0b6da8c05189874fb2d4473c":[1,7,409]
+"group__wicedbt__avrc.html#gac30dd19d8a2f66698d35803761d0b31f":[1,7,654]
 };

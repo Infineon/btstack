@@ -259,14 +259,19 @@ Functions</h2></td></tr>
 
 <p>Set Local Bluetooth Device Address. </p>
 <p>The application has to set a valid address (Static/Random) by calling this function.<br />
-If this function is not called, the default address is typically a controller assigned address(Bluetooth device part number), which is same for perticular device type.For example, all CYW43012 devcies will typically have the same default address.</p>
-<p>The application can set a static random address by setting the addr_type to <a class="el" href="group__bt__types.html#ga9e3dbc812e83ed3d950980bf5f09d332">BLE_ADDR_RANDOM</a>. For static random addresses the top two bits of the bd_addr are required to be set, the stack will override these bits if not set. The remaining 46 bits will be taken from the value provided for bd_addr, <br />
-which cannot be all 0's.</p>
+If this function is not called, the default address is typically a controller assigned address(Bluetooth device part number), which is same for particular device type.For example, all CYW43012 devcies will typically have the same default address.</p>
+<p>The application can set a non-resolvable or static random address by setting the addr_type to <a class="el" href="group__bt__types.html#ga9e3dbc812e83ed3d950980bf5f09d332">BLE_ADDR_RANDOM</a>. For non-resolvable addresses the top two bits of the bd_addr shall be set to 'b00' and atleast one of the remaining 46 shall be non-zero. For static random addresses the top two bits of the bd_addr are required to be 'b11' and atleast one of the remaining 46 shall be non-zero.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: device address to use </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>bd_addr[0] is the MSB, for non-resolvable address, set bd_addr[0] &amp;= ~0xC0 for static random address, set bd_addr[0] |= 0xC0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">addr_type</td><td>: device address type , should be BLE_ADDR_RANDOM or BLE_ADDR_PUBLIC <br />
- BLE_ADDR_RANDOM should be only for single LE mode, not for BR-EDR or Dual Mode.</td></tr>
+ </td></tr>
   </table>
   </dd>
 </dl>
@@ -461,7 +466,7 @@ WICED_BT_SUCCESS : if local bdaddr is set successfully <br />
     <tr><td class="paramdir">[in]</td><td class="paramname">bda</td><td>: bluetooth device address of desired link quality statistics </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">transport</td><td>: Tranport type LE/BR-EDR </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>: WICED_CLEAR_LINK_QUALITY_STATS = reset the link quality statistics to 0, WICED_READ_LINK_QUALITY_STATS = read link quality statistics, WICED_READ_THEN_CLEAR_LINK_QUALITY_STATS = read link quality statistics, then clear it </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_cback</td><td>: Result callback (wiced_bt_dev_cmpl_cback_t will be passed to the callback)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_cback</td><td>: Result callback (<a class="el" href="group__wicedbt__dev__utils.html#ga2ebace7053dc297ea21b0e97cd0b1ce3" title="Asynchronous operation complete callback.">wiced_bt_dev_cmpl_cback_t</a> will be passed to the callback)</td></tr>
   </table>
   </dd>
 </dl>

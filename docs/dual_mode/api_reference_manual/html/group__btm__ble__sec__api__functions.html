@@ -129,9 +129,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2780ef822665cbfd72ba2b2eeefbc35e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__sec__api__functions.html#ga2780ef822665cbfd72ba2b2eeefbc35e">wiced_bt_ble_set_privacy_mode</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> remote_bda, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> rem_bda_type, <a class="el" href="group__wicedbt___conn.html#gae0c321e7abc54eeb9b5c39354a36dd8c">wiced_bt_ble_privacy_mode_t</a> privacy_mode)</td></tr>
 <tr class="memdesc:ga2780ef822665cbfd72ba2b2eeefbc35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates privacy mode if device is already available in controller resolving list.  <a href="#ga2780ef822665cbfd72ba2b2eeefbc35e">More...</a><br /></td></tr>
 <tr class="separator:ga2780ef822665cbfd72ba2b2eeefbc35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f62bfefe564c8ab304d43a02629467a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__sec__api__functions.html#ga6f62bfefe564c8ab304d43a02629467a">wiced_bt_ble_read_device_random_address</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> random_bd_addr)</td></tr>
-<tr class="memdesc:ga6f62bfefe564c8ab304d43a02629467a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configured local random device address.  <a href="#ga6f62bfefe564c8ab304d43a02629467a">More...</a><br /></td></tr>
-<tr class="separator:ga6f62bfefe564c8ab304d43a02629467a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa1a08bf54c9c06015c1bbafbaab433c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__btm__ble__sec__api__functions.html#gaa1a08bf54c9c06015c1bbafbaab433c1">wiced_ble_private_device_address_resolution</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> rpa, <a class="el" href="group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8">BT_OCTET16</a> irk)</td></tr>
 <tr class="memdesc:gaa1a08bf54c9c06015c1bbafbaab433c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function wiced_ble_private_device_address_resolution.  <a href="#gaa1a08bf54c9c06015c1bbafbaab433c1">More...</a><br /></td></tr>
 <tr class="separator:gaa1a08bf54c9c06015c1bbafbaab433c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -478,36 +475,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6f62bfefe564c8ab304d43a02629467a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6f62bfefe564c8ab304d43a02629467a">&#9670;&nbsp;</a></span>wiced_bt_ble_read_device_random_address()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_bt_ble_read_device_random_address </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
-          <td class="paramname"><em>random_bd_addr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the configured local random device address. </p>
-<p>Note : random address depends on below settings in that priority order. 1) Global privacy configuration using rpa_refresh_timeout (see <a class="el" href="structwiced__bt__cfg__settings__t.html" title="Bluetooth stack configuration.">wiced_bt_cfg_settings_t</a>). 2) else configured for static random bd_address while downloading using BT_DEVICE_ADDRESS=random build setting.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">random_bd_addr</td><td>- device random bd address</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>wiced_bt_dev_status_t <b> WICED_BT_SUCCESS </b> : if random address is configured.<br />
-<b> WICED_BT_WRONG_MODE </b> : if random address not configured.<br />
-</dd></dl>
-
-</div>
-</div>
 <a id="gaa1a08bf54c9c06015c1bbafbaab433c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa1a08bf54c9c06015c1bbafbaab433c1">&#9670;&nbsp;</a></span>wiced_ble_private_device_address_resolution()</h2>
 
@@ -564,8 +531,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function wiced_bt_ble_address_resolution_list_clear_and_disable. </p>
-<pre class="fragment">             This API clears the address resolution list and disables the address resolution feature.
-</pre><dl class="section return"><dt>Returns</dt><dd>wiced_result_t WICED_BT_SUCCESS if address resolution list is cleared and adress resolution feature is disabled. WICED_BT_ERROR otherwise. </dd></dl>
+<p>This API clears the address resolution list and disables the address resolution feature.</p>
+<dl class="section return"><dt>Returns</dt><dd>wiced_result_t WICED_BT_SUCCESS if address resolution list is cleared and adress resolution feature is disabled. WICED_BT_ERROR otherwise. </dd></dl>
 
 </div>
 </div>

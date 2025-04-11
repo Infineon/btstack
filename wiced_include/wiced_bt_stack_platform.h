@@ -1,5 +1,5 @@
 /*
- * Copyright 2019-2024, Cypress Semiconductor Corporation or
+ * Copyright 2019-2025, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -258,20 +258,20 @@ typedef struct
     void (*pf_patch_download)(void);
 
     /**
-     *set is_legacy_bless_controller to 1 for only BLESS controllers.
-     *This is used while sending BLESS vendor specific commands.
-     */
-    uint32_t is_legacy_bless_controller:1 ;
-
-    /**
     * Set platform specific Random generator function
     * @note If platform does not support TRNG function then set this parameter to NULL
     * @return : wiced_result_t
     * @param[in] p_rand  : buffer to store generated random number
     * @param[in] p_len  : size of the buffer
     */
+    void (*pf_get_trng)(uint8_t *p_rand, uint8_t *p_len);
 
-   void (*pf_get_trng)(uint8_t *p_rand, uint8_t *p_len);
+    /**
+     *set is_legacy_bless_controller to 1 for only BLESS controllers.
+     *This is used while sending BLESS vendor specific commands.
+     */
+    uint32_t is_legacy_bless_controller:1 ;
+
 } wiced_bt_stack_platform_t;
 
 /** SMP encryption  */
@@ -592,6 +592,55 @@ wiced_result_t wiced_bt_platform_set_smp_adapter(const wiced_bt_smp_adapter_t *p
  */
 wiced_result_t wiced_bt_set_default_smp_adapter(void);
 
+/**
+* Called by porting layer to get the stored local keys from the app.
+* If application returns WICED_SUCCESS, the keys are written to the stack to start
+* Controller based address resolution with \ref wiced_ble_init_ctlr_private_addr_generation or
+* Host based address resolution with \ref wiced_ble_init_host_private_addr_generation
+* Else, \ref wiced_ble_create_local_identity_keys call needs to be invoked
+*/
+wiced_result_t wiced_ble_read_local_identity_keys_from_app(wiced_bt_local_identity_keys_t *p_local_keys);
+
+
+/**
+ * Create new local keys to be used for device privacy
+ * The new local keys generated are returned to the application in \ref BTM_LOCAL_IDENTITY_KEYS_UPDATE_EVT
+ * The porting layer can start,
+* Controller based address resolution with \ref wiced_ble_init_ctlr_private_addr_generation or
+* Host based address resolution with \ref wiced_ble_init_host_private_addr_generation
+*
+* @return  wiced_result_t
+ *
+ */
+wiced_result_t wiced_ble_create_local_identity_keys(void);
+
+/**
+ * API to write back saved local keys and init host based address generation.
+ * The local keys sent down in this call are used to generate the local RPA (Resolvable
+ * Private Address). The RPA generated is required to be refreshed periodically by the host based on the
+ * suggested \ref wiced_bt_cfg_ble_t.rpa_refresh_timeout member of wiced_bt_cfg_settings_t.p_ble_cfg
+ *
+ * @param[in] p_local_keys : device local keys generated from a previous call to
+ *  \ref wiced_ble_create_local_identity_keys
+ *
+ * @return  wiced_result_t
+ *
+ */
+wiced_result_t wiced_ble_init_host_private_addr_generation(wiced_bt_local_identity_keys_t *p_local_keys);
+
+/**
+ * API to write back saved local keys and controller based address generation.
+ * The local keys sent down in this call are used to generate the local RPA (Resolvable
+ * Private Address). The RPA generated is required to be refreshed periodically by the controller based on the
+ * suggested \ref wiced_bt_cfg_ble_t.rpa_refresh_timeout member of wiced_bt_cfg_settings_t.p_ble_cfg
+ *
+ * @param[in] p_local_keys : device local keys generated from a previous call to
+ * \ref wiced_ble_create_local_identity_keys
+ *
+ * @return  wiced_result_t
+ *
+ */
+wiced_result_t wiced_ble_init_ctlr_private_addr_generation(wiced_bt_local_identity_keys_t *p_local_keys);
 
 /**@} wiced_bt_platform_group */
 

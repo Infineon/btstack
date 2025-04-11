@@ -12,6 +12,7 @@ var searchData=
   ['unit',['unit',['../structwiced__bt__avrc__unit__info__rsp__t.html#a9997303ccf9d0eb80003b62b8a9ea989',1,'wiced_bt_avrc_unit_info_rsp_t::unit()'],['../structwiced__bt__avrc__cmd__t.html#aec979973c4db98919d34f4551796c1a9',1,'wiced_bt_avrc_cmd_t::unit()'],['../structwiced__bt__avrc__rsp__t.html#ac74b3337f23f36a88491413b197d697f',1,'wiced_bt_avrc_rsp_t::unit()']]],
   ['unit_5finfo',['unit_info',['../structwiced__bt__avrc__unit__info__cmd__t.html#a4966af3b9d71242481b58e2f8e44b41f',1,'wiced_bt_avrc_unit_info_cmd_t']]],
   ['unit_5ftype',['unit_type',['../structwiced__bt__avrc__unit__info__rsp__t.html#a4a4d3f6175c43eb74bc11f26bd91efa5',1,'wiced_bt_avrc_unit_info_rsp_t']]],
+  ['unused',['unused',['../structwiced__bt__flow__spec__cmpl__evt__t.html#ae69aab9d87aafa70c0c495cbe3f40d02',1,'wiced_bt_flow_spec_cmpl_evt_t']]],
   ['use_5fwbs',['use_wbs',['../structwiced__bt__sco__params__t.html#aa10df2dcae64049e582aa292325df3fd',1,'wiced_bt_sco_params_t']]],
   ['user_5fconfirmation_5frequest',['user_confirmation_request',['../unionwiced__bt__management__evt__data__t.html#a6b6ff34db31ba663399c697725a6b7dc',1,'wiced_bt_management_evt_data_t']]],
   ['user_5fkeypress_5fnotification',['user_keypress_notification',['../unionwiced__bt__management__evt__data__t.html#aef3757148e0dd747f04536edb14f4393',1,'wiced_bt_management_evt_data_t']]],

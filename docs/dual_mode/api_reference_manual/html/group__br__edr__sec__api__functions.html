@@ -115,16 +115,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:gab58690ef6801533d17516e4a4a2ce457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the local OOB data from controller (for sending to peer device over oob message).  <a href="#gab58690ef6801533d17516e4a4a2ce457">More...</a><br /></td></tr>
 <tr class="separator:gab58690ef6801533d17516e4a4a2ce457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga044c342a9dae8be624d64761d0016001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__br__edr__sec__api__functions.html#ga044c342a9dae8be624d64761d0016001">wiced_bt_dev_remote_oob_data_reply</a> (<a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> res, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> is_extended_oob_data, <a class="el" href="group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8">BT_OCTET16</a> c_192, <a class="el" href="group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8">BT_OCTET16</a> r_192, <a class="el" href="group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8">BT_OCTET16</a> c_256, <a class="el" href="group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8">BT_OCTET16</a> r_256)</td></tr>
-<tr class="memdesc:ga044c342a9dae8be624d64761d0016001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the remote OOB extended data for Simple Pairing in response to BTM_REMOTE_OOB_DATA_REQUEST_EVT.  <a href="#ga044c342a9dae8be624d64761d0016001">More...</a><br /></td></tr>
+<tr class="memdesc:ga044c342a9dae8be624d64761d0016001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the remote OOB extended data for Simple Pairing in response to <a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65acf3aca6c8fd4e53a7659df498546a103" title="Event requests OOB data of the remote device from app Event data: wiced_bt_management_evt_data_t::rem...">BTM_REMOTE_OOB_DATA_REQUEST_EVT</a>.  <a href="#ga044c342a9dae8be624d64761d0016001">More...</a><br /></td></tr>
 <tr class="separator:ga044c342a9dae8be624d64761d0016001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d62997eaf7e2bda56c669d165c63685"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__br__edr__sec__api__functions.html#ga4d62997eaf7e2bda56c669d165c63685">wiced_bt_dev_build_oob_data</a> (uint8_t *p_data, uint16_t max_len, <a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a> is_extended_oob_data, <a class="el" href="group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8">BT_OCTET16</a> c_192, <a class="el" href="group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8">BT_OCTET16</a> r_192, <a class="el" href="group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8">BT_OCTET16</a> c_256, <a class="el" href="group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8">BT_OCTET16</a> r_256)</td></tr>
 <tr class="memdesc:ga4d62997eaf7e2bda56c669d165c63685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the OOB data block to be used to send OOB extended data over OOB (non-Bluetooth) link.  <a href="#ga4d62997eaf7e2bda56c669d165c63685">More...</a><br /></td></tr>
 <tr class="separator:ga4d62997eaf7e2bda56c669d165c63685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac3d5f8d286b23c21b9cff9e71aa6a83c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__br__edr__sec__api__functions.html#gac3d5f8d286b23c21b9cff9e71aa6a83c">wiced_bt_smp_oob_data_reply</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> res, uint8_t len, uint8_t *p_data)</td></tr>
-<tr class="memdesc:gac3d5f8d286b23c21b9cff9e71aa6a83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called to provide the OOB data for SMP in response to BTM_SMP_REMOTE_OOB_DATA_REQUEST_EVT.  <a href="#gac3d5f8d286b23c21b9cff9e71aa6a83c">More...</a><br /></td></tr>
+<tr class="memdesc:gac3d5f8d286b23c21b9cff9e71aa6a83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called to provide the OOB data for SMP in response to <a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65adab633d8b20b3bdae03abdca5e38a58e" title="Event requests SMP remote oob data.">BTM_SMP_REMOTE_OOB_DATA_REQUEST_EVT</a>.  <a href="#gac3d5f8d286b23c21b9cff9e71aa6a83c">More...</a><br /></td></tr>
 <tr class="separator:gac3d5f8d286b23c21b9cff9e71aa6a83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae2882a01b03b99c30ef16059305a449d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__br__edr__sec__api__functions.html#gae2882a01b03b99c30ef16059305a449d">wiced_bt_smp_sc_oob_reply</a> (<a class="el" href="structwiced__bt__smp__sc__oob__data__t.html">wiced_bt_smp_sc_oob_data_t</a> *p_oob_data)</td></tr>
-<tr class="memdesc:gae2882a01b03b99c30ef16059305a449d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the SC OOB data for SMP in response to BTM_SMP_SC_REMOTE_OOB_DATA_REQUEST_EVT.  <a href="#gae2882a01b03b99c30ef16059305a449d">More...</a><br /></td></tr>
+<tr class="memdesc:gae2882a01b03b99c30ef16059305a449d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the SC OOB data for SMP in response to <a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a79e2658300e5048effb5dce5abd8e7f7" title="Event requests LE secure connection remote oob data request.">BTM_SMP_SC_REMOTE_OOB_DATA_REQUEST_EVT</a>.  <a href="#gae2882a01b03b99c30ef16059305a449d">More...</a><br /></td></tr>
 <tr class="separator:gae2882a01b03b99c30ef16059305a449d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga41a38c0723bea818a4ae42c5e83f3367"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__br__edr__sec__api__functions.html#ga41a38c0723bea818a4ae42c5e83f3367">wiced_bt_dev_read_oob_data</a> (uint8_t *p_data, uint8_t eir_tag, uint8_t *p_len)</td></tr>
 <tr class="memdesc:ga41a38c0723bea818a4ae42c5e83f3367"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called to parse the OOB data payload received over OOB (non-Bluetooth) link.  <a href="#ga41a38c0723bea818a4ae42c5e83f3367">More...</a><br /></td></tr>
@@ -250,7 +250,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the local OOB data from controller (for sending to peer device over oob message). </p>
-<p>When operation is completed, local OOB data will be provided via BTM_READ_LOCAL_OOB_DATA_COMPLETE_EVT.</p>
+<p>When operation is completed, local OOB data will be provided via <a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ae3453acd1e9a4c6b87ecb92186dcdb43" title="Event notifies result of reading local OOB data from the controller Event data: wiced_bt_management_e...">BTM_READ_LOCAL_OOB_DATA_COMPLETE_EVT</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>BR/EDR Only </dd></dl>
 
 </div>
@@ -311,12 +311,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Provide the remote OOB extended data for Simple Pairing in response to BTM_REMOTE_OOB_DATA_REQUEST_EVT. </p>
+<p>Provide the remote OOB extended data for Simple Pairing in response to <a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65acf3aca6c8fd4e53a7659df498546a103" title="Event requests OOB data of the remote device from app Event data: wiced_bt_management_evt_data_t::rem...">BTM_REMOTE_OOB_DATA_REQUEST_EVT</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">res</td><td>: response reply </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Address of the peer device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">is_extended_oob_data</td><td>: TRUE if extended OOB data (set according to BTM_REMOTE_OOB_DATA_REQUEST_EVT request) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_extended_oob_data</td><td>: TRUE if extended OOB data (set according to <a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65acf3aca6c8fd4e53a7659df498546a103" title="Event requests OOB data of the remote device from app Event data: wiced_bt_management_evt_data_t::rem...">BTM_REMOTE_OOB_DATA_REQUEST_EVT</a> request) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">c_192</td><td>: simple pairing Hash C derived from the P-192 public key. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">r_192</td><td>: simple pairing Randomizer R associated with the P-192 public key. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">c_256</td><td>: simple pairing Hash C derived from the P-256 public key (if is_extended_oob_data=TRUE) </td></tr>
@@ -440,7 +440,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function is called to provide the OOB data for SMP in response to BTM_SMP_REMOTE_OOB_DATA_REQUEST_EVT. </p>
+<p>This function is called to provide the OOB data for SMP in response to <a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65adab633d8b20b3bdae03abdca5e38a58e" title="Event requests SMP remote oob data.">BTM_SMP_REMOTE_OOB_DATA_REQUEST_EVT</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>- Address of the peer device </td></tr>
@@ -470,7 +470,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Provide the SC OOB data for SMP in response to BTM_SMP_SC_REMOTE_OOB_DATA_REQUEST_EVT. </p>
+<p>Provide the SC OOB data for SMP in response to <a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a79e2658300e5048effb5dce5abd8e7f7" title="Event requests LE secure connection remote oob data request.">BTM_SMP_SC_REMOTE_OOB_DATA_REQUEST_EVT</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p_oob_data</td><td>: oob data </td></tr>

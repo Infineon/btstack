@@ -34,7 +34,6 @@ var searchData=
   ['max_5flinks',['max_links',['../structwiced__bt__cfg__avdt__t.html#ac71000123f486d1d65a583524f3830fa',1,'wiced_bt_cfg_avdt_t::max_links()'],['../structwiced__bt__cfg__avrc__t.html#a824996d5a9dfc030c1f40f6ea85ee1d6',1,'wiced_bt_cfg_avrc_t::max_links()'],['../structwiced__bt__cfg__rfcomm__t.html#a6b05d658ec05c434a0702cfca2ba90ce',1,'wiced_bt_cfg_rfcomm_t::max_links()']]],
   ['max_5fmain_5fmode_5fsteps',['max_main_mode_steps',['../structwiced__ble__cs__config__t.html#a725dac82b87b8279bb95db28f06ad76b',1,'wiced_ble_cs_config_t::max_main_mode_steps()'],['../structwiced__ble__cs__config__complete__t.html#a363c567536826a137197cf3020b04a59',1,'wiced_ble_cs_config_complete_t::max_main_mode_steps()']]],
   ['max_5fpdu',['max_pdu',['../structwiced__ble__biginfo__adv__report__t.html#adb3dac34929c1a791508eded60e404eb',1,'wiced_ble_biginfo_adv_report_t']]],
-  ['max_5fperiodic_5fadv_5flen',['max_periodic_adv_len',['../structwiced__ble__padv__create__sync__params__t.html#a74267f2087f3807e8e0b9bd7ede44f1a',1,'wiced_ble_padv_create_sync_params_t']]],
   ['max_5fports',['max_ports',['../structwiced__bt__cfg__rfcomm__t.html#a70f414afd5e8ee9c53673eedf8876914',1,'wiced_bt_cfg_rfcomm_t']]],
   ['max_5fprocedure_5fcount',['max_procedure_count',['../structwiced__ble__cs__procedure__params__t.html#ac38547c85599186db6b90dc335c6fd31',1,'wiced_ble_cs_procedure_params_t']]],
   ['max_5fprocedure_5finterval',['max_procedure_interval',['../structwiced__ble__cs__procedure__params__t.html#aff3b8911d49d87b119e18b62c729816c',1,'wiced_ble_cs_procedure_params_t']]],

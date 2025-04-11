@@ -22,7 +22,7 @@ var searchData=
   ['timer_20management_20services',['Timer Management Services',['../group__timer.html',1,'']]],
   ['timer_5fparam_5ftype',['TIMER_PARAM_TYPE',['../group__timer.html#ga2cd25e917632799891ef3d99a326b331',1,'wiced_timer.h']]],
   ['token_5fbucket_5fsize',['token_bucket_size',['../structwiced__bt__flow__spec__t.html#af4eb9b1a97b8dc3f732bf2124d43e1a0',1,'wiced_bt_flow_spec_t']]],
-  ['token_5frate',['token_rate',['../structwiced__bt__flow__spec__t.html#aab51a7692589e5bb14821ded70745708',1,'wiced_bt_flow_spec_t']]],
+  ['token_5frate',['token_rate',['../structwiced__bt__flow__spec__cmpl__evt__t.html#aec763bcdbf0238ab358816a3f0c08c40',1,'wiced_bt_flow_spec_cmpl_evt_t::token_rate()'],['../structwiced__bt__flow__spec__t.html#aab51a7692589e5bb14821ded70745708',1,'wiced_bt_flow_spec_t::token_rate()']]],
   ['tone_5fantenna_5fconfig_5fselection',['tone_antenna_config_selection',['../structwiced__ble__cs__procedure__params__t.html#ae00aa47acdef099519a95bc57c953bfc',1,'wiced_ble_cs_procedure_params_t::tone_antenna_config_selection()'],['../structwiced__ble__cs__procedure__enable__complete__t.html#a4b2081a414e7fdaba9d53db17751ce38',1,'wiced_ble_cs_procedure_enable_complete_t::tone_antenna_config_selection()']]],
   ['trace_5fbuffer',['trace_buffer',['../structwiced__bt__stack__platform__t.html#a44e54c18febc40a36c6a17fe0052bb6e',1,'wiced_bt_stack_platform_t']]],
   ['trace_5fbuffer_5flen',['trace_buffer_len',['../structwiced__bt__stack__platform__t.html#a5dc571e1e6283ba422b8af5d3ea807fe',1,'wiced_bt_stack_platform_t']]],

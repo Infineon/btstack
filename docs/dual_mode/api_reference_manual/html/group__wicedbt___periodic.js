@@ -14,7 +14,7 @@ var group__wicedbt___periodic =
       [ "cte_type", "structwiced__ble__padv__rsp__report__event__data__t.html#a4444dc9f95baa4ba0275a69c260723f6", null ],
       [ "response_slot", "structwiced__ble__padv__rsp__report__event__data__t.html#ab55816630ba05bebaf1b10217e4d255b", null ],
       [ "data_status", "structwiced__ble__padv__rsp__report__event__data__t.html#a3cbfb99a75d475734b1243c5d86b0bc8", null ],
-      [ "data_len", "structwiced__ble__padv__rsp__report__event__data__t.html#acff75392760d7ecc435a8072cd9306da", null ],
+      [ "data_length", "structwiced__ble__padv__rsp__report__event__data__t.html#ac857576c36f1c109f4d2c6a46beae146", null ],
       [ "p_data", "structwiced__ble__padv__rsp__report__event__data__t.html#a1dd276822fd9bd0af5d38d8d4f42ca39", null ]
     ] ],
     [ "wiced_ble_padv_subevent_data_t", "structwiced__ble__padv__subevent__data__t.html", [
@@ -49,8 +49,7 @@ var group__wicedbt___periodic =
       [ "adv_addr", "structwiced__ble__padv__create__sync__params__t.html#a2dbdd68e92c5714efa58faa9bc5bfeee", null ],
       [ "skip", "structwiced__ble__padv__create__sync__params__t.html#ab3ddeec9eb73c637af1cfd0f5e5d6068", null ],
       [ "sync_timeout", "structwiced__ble__padv__create__sync__params__t.html#a51b9e4609752ebeb09baa3ed76c03231", null ],
-      [ "sync_cte_type", "structwiced__ble__padv__create__sync__params__t.html#a82e3c0a5645cca17c70ce66ac5e0969e", null ],
-      [ "max_periodic_adv_len", "structwiced__ble__padv__create__sync__params__t.html#a74267f2087f3807e8e0b9bd7ede44f1a", null ]
+      [ "sync_cte_type", "structwiced__ble__padv__create__sync__params__t.html#a82e3c0a5645cca17c70ce66ac5e0969e", null ]
     ] ],
     [ "wiced_ble_padv_sync_established_event_data_t", "structwiced__ble__padv__sync__established__event__data__t.html", [
       [ "status", "structwiced__ble__padv__sync__established__event__data__t.html#ade2778f4bfa66174114ca27da9ce150f", null ],
@@ -80,7 +79,7 @@ var group__wicedbt___periodic =
       [ "sub_event", "structwiced__ble__padv__report__event__data__t.html#a336b25ce51c8d6348f9afb3e603e4cb2", null ],
       [ "data_status", "structwiced__ble__padv__report__event__data__t.html#aaee78d4ad1b4def2e620e57dda0ec9ed", null ],
       [ "data_length", "structwiced__ble__padv__report__event__data__t.html#ab295bddc8137d76994c1a138e68a017c", null ],
-      [ "data", "structwiced__ble__padv__report__event__data__t.html#a6a6c911cc2a8062313bce304e4bc449a", null ]
+      [ "p_data", "structwiced__ble__padv__report__event__data__t.html#ad2af94b153963d1c53c3a653bb67ae08", null ]
     ] ],
     [ "wiced_ble_padv_sync_transfer_param_t", "structwiced__ble__padv__sync__transfer__param__t.html", [
       [ "skip", "structwiced__ble__padv__sync__transfer__param__t.html#a9f0d2014048aa99c74f581798ff2bfdd", null ],
@@ -132,7 +131,9 @@ var group__wicedbt___periodic =
     [ "wiced_ble_padv_transfer_set_info", "group__wicedbt___periodic.html#ga2fc8ad360e99da55bb21b9a9975c1027", null ],
     [ "wiced_ble_padv_set_sync_transfer_params", "group__wicedbt___periodic.html#ga31b65c018d76d4d6ece8e4ef720a5608", null ],
     [ "wiced_ble_padv_set_default_sync_transfer_params", "group__wicedbt___periodic.html#ga86e3b8f3acc61c48b3885099796ea621", null ],
-    [ "wiced_ble_padv_set_subevent_data", "group__wicedbt___periodic.html#gab7e7f87a9b984a58f67b3f887dc9dcfc", null ],
+    [ "wiced_ble_padv_set_subevent_data", "group__wicedbt___periodic.html#ga367db3f279a0beda73856b7bed95855e", null ],
+    [ "wiced_ble_padv_configure_subevent_response_data_reassembly", "group__wicedbt___periodic.html#ga696e64b6874b52c817558d669fb10a95", null ],
     [ "wiced_ble_padv_set_subevent_rsp_data", "group__wicedbt___periodic.html#ga88246742bb2ed45074e619c775862f21", null ],
-    [ "wiced_ble_padv_set_sync_subevent", "group__wicedbt___periodic.html#ga31082fb729d0b3071202708f7876ff86", null ]
+    [ "wiced_ble_padv_set_sync_subevent", "group__wicedbt___periodic.html#ga31082fb729d0b3071202708f7876ff86", null ],
+    [ "wiced_ble_padv_alloc_segment_assembler", "group__wicedbt___periodic.html#ga363c42ef0abe1645e7dcfc470ebe78b7", null ]
 ];

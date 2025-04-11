@@ -1,5 +1,5 @@
 /*
- * Copyright 2024, Cypress Semiconductor Corporation or
+ * Copyright 2024-2025, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -242,7 +242,7 @@ extern "C"
 
 /**
  *
- * Update the filter policy of advertiser.
+ * Update the advertising filter policy of legacy advertiser.
  *
  *  @param[in]      advertising_policy: advertising filter policy
  *
@@ -322,10 +322,9 @@ extern "C"
     /**
  * Start LE scanning
  *
- * The <b>scan_type</b> parameter determines what scanning parameters and durations
- *                  to use (as specified by the application configuration).
- *
- *                  Scan results are notified using \p p_scan_result_cback
+ * The \p scan_type parameter determines what scanning parameters and durations
+ * to use (as specified by the application configuration). Scan results are notified
+ * using \p p_scan_result_cback
  *
  * @note This API uses following parameters from the configuration settings of \ref wiced_bt_cfg_ble_t.p_ble_scan_cfg,\n
  *       \ref wiced_bt_cfg_ble_scan_settings_t.high_duty_scan_interval,\n
@@ -368,13 +367,13 @@ extern "C"
 
     /**
  *
- * Update the filter policy of scanning.
+ * Update the scanning filter policy for legacy scanning.
  *
  *  @param[in]      scanner_policy: scanning filter policy
  *
- *  @return         void
+ *  @return         wiced_result_t
  */
-    void wiced_bt_ble_update_scanner_filter_policy(wiced_bt_ble_scanner_filter_policy_t scanner_policy);
+    wiced_result_t wiced_bt_ble_update_scanner_filter_policy(wiced_bt_ble_scanner_filter_policy_t scanner_policy);
 
 /**
  * Parse advertising data (returned from scan results callback #wiced_bt_ble_scan_result_cback_t).

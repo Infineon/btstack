@@ -1,5 +1,5 @@
 /*
- * Copyright 2024, Cypress Semiconductor Corporation or
+ * Copyright 2024-2025, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -249,6 +249,38 @@ enum wiced_ble_isoc_encryption_e
 };
 typedef uint8_t wiced_ble_isoc_encryption_t; /**< ISOC Encryption (see #wiced_ble_isoc_encryption_e) */
 
+/** Own address options for adv, scan, create connection */
+enum wiced_ble_own_address_options_e
+{
+    /** Use public address, see \ref wiced_bt_set_local_bdaddr */
+    WICED_BLE_OWN_ADDR_PUBLIC = 0,
+    /**< Use random address, see \ref wiced_bt_set_local_bdaddr.
+    * For advertising with extended APIs, random address set on the adv handle is used
+    */
+    WICED_BLE_OWN_ADDR_RANDOM = 1,
+    /**< Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type.
+    * If no entry found, use public address see \ref wiced_bt_set_local_bdaddr
+    */
+    WICED_BLE_OWN_ADDR_GENERATE_RPA_PUBLIC_RANDOM = 2,
+    /**< Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type.
+    * If no entry found, use random address see \ref wiced_bt_set_local_bdaddr
+    * For advertising with extended APIs, random address set on the adv handle is used
+    */
+    WICED_BLE_OWN_ADDR_GENERATE_RPA_STATIC_RANDOM = 3
+};
+/** Own address options for adv, scan, create connection, see \ref wiced_ble_own_address_options_e*/
+typedef uint8_t wiced_ble_own_address_options_t;
+
+/** Scanning filter policy enums used in set scan parameters command */
+enum wiced_ble_scanning_filter_policy_e
+{
+    WICED_BLE_SCAN_BASIC_UNFILTERED_SP = 0,    /**< Basic unfiltered scanning policy */
+    WICED_BLE_SCAN_BASIC_FILTERED_SP = 1,      /**< Basic filtered scanning policy  */
+    WICED_BLE_SCAN_EXTENDED_UNFILTERED_SP = 2, /**< Extended unfiltered scanning policy */
+    WICED_BLE_SCAN_EXTENDED_FILTERED_SP = 3,   /**< Extended filtered scanning policy  */
+};
+/** Scanning filter policy used. (see #wiced_ble_scanning_filter_policy_e) */
+typedef uint8_t wiced_ble_scanning_filter_policy_t;
 
 /** Advertisement report context for the call to get offset and length of the searched adv type
  * #wiced_bt_ble_advert_type_t

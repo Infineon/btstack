@@ -1,5 +1,15 @@
 var NAVTREEINDEX9 =
 {
+"group__wicedbt__avrc.html#gac36226af0dda11e80807c7f64ad5f713":[1,7,483],
+"group__wicedbt__avrc.html#gac398588e69e7ec2dad8fb270ddafbddd":[1,7,657],
+"group__wicedbt__avrc.html#gac5bd6cb435f2ae4825497f6c7320e3bf":[1,7,206],
+"group__wicedbt__avrc.html#gac67dc5bbfe8acaf1ebea20af433373dd":[1,7,230],
+"group__wicedbt__avrc.html#gac7998df5f378c5e2b0a29c778a1fdd20":[1,7,344],
+"group__wicedbt__avrc.html#gac7c54299c7c8742785ca960453496f04":[1,7,304],
+"group__wicedbt__avrc.html#gac820a8c45de18a0b1854ac55c9ac71c8":[1,7,212],
+"group__wicedbt__avrc.html#gac853c6dec90bd7573f199af313f77eb9":[1,7,615],
+"group__wicedbt__avrc.html#gac8ac788264292e4ca9be43c06460b5b2":[1,7,464],
+"group__wicedbt__avrc.html#gac8d0ed5a0b6da8c05189874fb2d4473c":[1,7,409],
 "group__wicedbt__avrc.html#gac92283c2b56d0366b18b22a41ccaf451":[1,7,121],
 "group__wicedbt__avrc.html#gac945311c85f810920fe3041dcc65b9f8":[1,7,560],
 "group__wicedbt__avrc.html#gac9d7f9dc165e14a81320170a0a141e8e":[1,7,369],
@@ -239,15 +249,5 @@ var NAVTREEINDEX9 =
 "group__wicedbt__gatt.html#ga74bcbf0e406569a4b160911606784726":[1,14,117],
 "group__wicedbt__gatt.html#ga77030f7874025d3037d93aa7327ac3bc":[1,14,59],
 "group__wicedbt__gatt.html#ga772a09cba93b362579baaabe1675bea0":[1,14,81],
-"group__wicedbt__gatt.html#ga779678b722181c2c2ef4df09e62872b3":[1,14,110],
-"group__wicedbt__gatt.html#ga80c3de8e66dd4257528aeaf34484d14c":[1,14,98],
-"group__wicedbt__gatt.html#ga824858a2e84f93bc407d02bfd909466a":[1,14,79],
-"group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2":[1,14,99],
-"group__wicedbt__gatt.html#ga834b07cadd07e81544f0358c5aa52f5a":[1,14,57],
-"group__wicedbt__gatt.html#ga855ba6b88c963250542ae3873cfc39b2":[1,14,42],
-"group__wicedbt__gatt.html#ga89f8e59473d0ae05e542d5f9b30da0e4":[1,14,70],
-"group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652":[1,14,105],
-"group__wicedbt__gatt.html#ga99e4bce7a0f42c6c859191b27952b38f":[1,14,109],
-"group__wicedbt__gatt.html#ga9afe63a2d4179ae6d56ddfa40cf556a3":[1,14,116],
-"group__wicedbt__gatt.html#ga9ce8b7b2a10d8e1f851d62aa931b0e18":[1,14,91]
+"group__wicedbt__gatt.html#ga779678b722181c2c2ef4df09e62872b3":[1,14,110]
 };

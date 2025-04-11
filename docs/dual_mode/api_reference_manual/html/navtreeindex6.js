@@ -1,5 +1,15 @@
 var NAVTREEINDEX6 =
 {
+"group__wicedbt__a2dp__mpeg__1__2.html#ga8b681673f64b4da7dd3f535541d55a8c":[1,1,0,35],
+"group__wicedbt__a2dp__mpeg__1__2.html#ga9b65e64bf3bac4520aca89eaf677e1c1":[1,1,0,14],
+"group__wicedbt__a2dp__mpeg__1__2.html#gaa75d2828bb7786ef2dba9e08baec5113":[1,1,0,27],
+"group__wicedbt__a2dp__mpeg__1__2.html#gaaef8b454c6db7cb8b193e16604e0cf45":[1,1,0,16],
+"group__wicedbt__a2dp__mpeg__1__2.html#gaaf41a108bc7848d7fb5c9f6bf432f8fe":[1,1,0,13],
+"group__wicedbt__a2dp__mpeg__1__2.html#gab68ebd0a5e38cdc6496640a99f688184":[1,1,0,26],
+"group__wicedbt__a2dp__mpeg__1__2.html#gabd01c0d472a02d5b30350016c0445494":[1,1,0,21],
+"group__wicedbt__a2dp__mpeg__1__2.html#gac41b1ca776de033803b40e4f0a695ded":[1,1,0,18],
+"group__wicedbt__a2dp__mpeg__1__2.html#gac5d0a705f73d658af33de9b0bb40bebf":[1,1,0,2],
+"group__wicedbt__a2dp__mpeg__1__2.html#gac83b5cc169edc72f54e99190112d2f63":[1,1,0,34],
 "group__wicedbt__a2dp__mpeg__1__2.html#gacef301927c6112b13b6092ed96924351":[1,1,0,38],
 "group__wicedbt__a2dp__mpeg__1__2.html#gad4d1e110211d8e1b4b1f1a752ad04ed8":[1,1,0,22],
 "group__wicedbt__a2dp__mpeg__1__2.html#gadb4ce0e83e481d2c8415ebb1454b5eab":[1,1,0,28],
@@ -239,15 +249,5 @@ var NAVTREEINDEX6 =
 "group__wicedbt__avdt.html#gab606ba402595af510c4c822745a6a275":[1,6,151],
 "group__wicedbt__avdt.html#gab771841c12a7a97917c07ded41439666":[1,6,117],
 "group__wicedbt__avdt.html#gab9db5a36d394ebffb3e84d2dcc5b0251":[1,6,136],
-"group__wicedbt__avdt.html#gabaebb3696d6fb552456694a7a49dd0ad":[1,6,132],
-"group__wicedbt__avdt.html#gabf907930dac75d2eb07649f4a791a753":[1,6,20],
-"group__wicedbt__avdt.html#gac4c37e99242bdabbf7f4382256fe54ed":[1,6,100],
-"group__wicedbt__avdt.html#gac57c45196cfcda7be292c69a3d7e6d6a":[1,6,121],
-"group__wicedbt__avdt.html#gac639bfebe9265c6d71eaa70e262cb364":[1,6,79],
-"group__wicedbt__avdt.html#gac6f83c182b84932fa3a0c504163d5dbc":[1,6,32],
-"group__wicedbt__avdt.html#gac777414649db9badafc4477afccd55bd":[1,6,150],
-"group__wicedbt__avdt.html#gac7dbe9848b7ccac71430042fe64de10f":[1,6,116],
-"group__wicedbt__avdt.html#gac9deb033681947fb345e0ca1826c3fa8":[1,6,108],
-"group__wicedbt__avdt.html#gaca904d292818331ae6b05d7099a884c5":[1,6,51],
-"group__wicedbt__avdt.html#gacc5faebef8d182149a1e46b9ef57a7eb":[1,6,60]
+"group__wicedbt__avdt.html#gabaebb3696d6fb552456694a7a49dd0ad":[1,6,132]
 };

@@ -1,5 +1,5 @@
 /*
- * Copyright 2024, Cypress Semiconductor Corporation or
+ * Copyright 2024-2025, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -97,6 +97,49 @@ enum wiced_bt_ble_sec_flags_e
     BTM_SEC_LE_LINK_PAIRED_WITH_MITM = 0x04     /**< Link with man-in-the-middle protection */
 };
 
+/** LE preferred connection parameters */
+typedef struct
+{
+    uint16_t conn_interval_min;        /**< minimum connection interval */
+    uint16_t conn_interval_max;        /**< maximum connection interval */
+    uint16_t conn_latency;             /**< connection latency */
+    uint16_t conn_supervision_timeout; /**< connection supervision timeout */
+    uint16_t min_ce_length;            /**< minimum connection events */
+    uint16_t max_ce_length;            /**< maximum connection events */
+} wiced_bt_ble_pref_conn_params_t;
+
+
+/** Initiator filter policy for legacy connections */
+enum wiced_ble_legacy_initiator_filter_policy_e
+{
+    WICED_BLE_LEGACY_INITIATOR_DO_NOT_USE_FILTER_LIST = 0, /**< Do not use filter list, use the peer address and
+                                                           * peer addr type instead
+                                                           */
+    WICED_BLE_LEGACY_INITIATOR_USE_FILTER_LIST = 1         /**< Use the filter list, ignore peer address and peer type */
+} ;
+/** Initiator filter policy for legacy connections, check \ref wiced_ble_legacy_initiator_filter_policy_e */
+typedef uint8_t wiced_ble_legacy_initiator_filter_policy_t;
+
+/** Create Connection parameter for create a legacy LE ACL connection */
+typedef struct
+{
+    /** Time interval from when the Controller started its lastLE scan until it begins the subsequent LE scan.
+     * Range: 0x0004 to 0x4000 Time = N × 0.625 ms Time Range: 2.5 ms to 10.24 s */
+    uint16_t le_scan_interval;
+    /** Amount of time for the duration of the LE scan. LE_Scan_Window shall be less than or equal to LE_Scan_Interval
+     * Range: 0x0004 to 0x4000 Time = N × 0.625 ms Time Range: 2.5 ms to 10.24 s*/
+    uint16_t le_scan_window;
+    /** Initiator filter policy */
+    wiced_ble_legacy_initiator_filter_policy_t initiator_filter_policy;
+    /** peer address type */
+    wiced_bt_ble_address_type_t peer_address_type;
+    /** peer address */
+    wiced_bt_device_address_t peer_address;
+    /** Option to determine own/peer public, random address or generated RPA to be used for initiating the connection */
+    uint8_t own_address_type;
+    /** Preferred connection parameters */
+    wiced_bt_ble_pref_conn_params_t conn_params;
+} wiced_ble_legacy_create_conn_t;
 
 #define BTM_BLE_PREFER_1M_PHY 0x01   /**< LE 1M PHY preference */
 #define BTM_BLE_PREFER_2M_PHY 0x02   /**< LE 2M PHY preference */
@@ -141,28 +184,6 @@ typedef struct
     uint16_t supervision_timeout; /**< Supervision timeout */
 } wiced_bt_ble_conn_params_t;
 
-/** LE preferred connection parameters */
-typedef struct
-{
-    uint16_t conn_interval_min;        /**< minimum connection interval */
-    uint16_t conn_interval_max;        /**< maximum connection interval */
-    uint16_t conn_latency;             /**< connection latency */
-    uint16_t conn_supervision_timeout; /**< connection supervision timeout */
-    uint16_t min_ce_length;            /**< minimum connection events */
-    uint16_t max_ce_length;            /**< maximum connection events */
-} wiced_bt_ble_pref_conn_params_t;
-
-
-/** Background connection type */
-enum wiced_bt_ble_conn_type_e
-{
-    BTM_BLE_CONN_NONE,                         /**< No background connection */
-    BTM_BLE_CONN_AUTO,                         /**< Auto connection based on filter list */
-    BTM_BLE_CONN_SELECTIVE = BTM_BLE_CONN_AUTO /**< Selective not used */
-};
-/** Connection type (see #wiced_bt_ble_conn_type_e) */
-typedef uint8_t wiced_bt_ble_conn_type_t;
-
 
 /** Privacy mode
  * refer Spec version 5.0 Vol 3 Part C Section 10.7 privacy feature
@@ -205,6 +226,15 @@ extern "C"
 {
 #endif
 
+    /**
+    * API to create a legacy LE ACL connection
+    * The completion of the connection is reported with the \ref GATT_CONNECTION_STATUS_EVT
+    * @param[in] p_legacy_conn_cfg Pointer to the connection configuration
+    *
+    * @return wiced_result_t
+    */
+    wiced_result_t wiced_ble_legacy_create_connection(wiced_ble_legacy_create_conn_t *p_legacy_conn_cfg);
+
 /**
  * To read LE connection parameters based on connection address received in gatt connection up indication.
  *
@@ -232,62 +262,32 @@ extern "C"
 
 /**
  *
- * Set LE background connection procedure type.
  *
- * @param[in]       conn_type: BTM_BLE_CONN_NONE or BTM_BLE_CONN_AUTO
- * @param[in]       p_select_cback: UNUSED
- *
- * @return          TRUE if background connection set
- *
- */
-    wiced_bool_t wiced_bt_ble_set_background_connection_type(wiced_bt_ble_conn_type_t conn_type, void *p_select_cback);
-
-/**
- *
- * This function is called to add or remove a device into/from the
- * filter list. The background connection procedure is decided by
- * the background connection type, it can be auto connection, or none.
- *
- * @param[in]       add_remove    : TRUE to add; FALSE to remove.
- * @param[in]       remote_bda    : device address to add/remove.
- * @param[in]       ble_addr_type : Address type.
-
- * @return          TRUE if successful
- *
- */
-    wiced_bool_t wiced_bt_ble_update_background_connection_device(wiced_bool_t add_remove,
-                                                                  wiced_bt_device_address_t remote_bda,
-                                                                  wiced_bt_ble_address_type_t ble_addr_type);
-
-/**
- *
- * Add or remove device from advertising filter Accept List
- *
- * @param[in]       add: TRUE to add; FALSE to remove
- * @param[in]       addr_type: Type of the addr
- * @param[in]       remote_bda: remote device address.
- *
- * @return          wiced_bool_t (<b> WICED_TRUE </b> if successful else <b> WICED_FALSE </b>)
- *
- */
-    wiced_bool_t wiced_bt_ble_update_advertising_filter_accept_list(wiced_bool_t add,
-                                                                    wiced_bt_ble_address_type_t addr_type,
-                                                                    wiced_bt_device_address_t remote_bda);
-
-/**
- *
- * Add or remove device from scanner filter Accept List
- *
- * @param[in]       add: TRUE to add; FALSE to remove
- * @param[in]       remote_bda: remote device address.
+ * @param[in]       bd_addr: remote device address.
  * @param[in]       addr_type   : remote device address type .
  *
- * @return          WICED_TRUE if successful else WICED_FALSE
+ * @return  wiced_result_t
  *
  */
-    wiced_bool_t wiced_bt_ble_update_scanner_filter_list(wiced_bool_t add,
-                                                         wiced_bt_device_address_t remote_bda,
-                                                         wiced_bt_ble_address_type_t addr_type);
+    wiced_result_t wiced_ble_add_to_filter_accept_list(wiced_bt_device_address_t bd_addr,
+                                                       wiced_bt_ble_address_type_t addr_type);
+/**
+ *
+ * Remove device from scanner filter accept list
+ * @note This command shall not be used when
+ *      • any advertising filter policy uses the Filter Accept List and advertising is enabled,
+ *      • the scanning filter policy uses the Filter Accept List and scanning is enabled, or
+ *      • the initiator filter policy uses the Filter Accept List and an HCI_LE_Create_Connection
+ *        or HCI_LE_Extended_Create_Connection command is pending.
+ *
+ * @param[in]       bd_addr: remote device address.
+ * @param[in]       addr_type   : remote device address type .
+ *
+ * @return       wiced_result_t
+ *
+ */
+    wiced_result_t wiced_ble_remove_from_filter_accept_list(wiced_bt_device_address_t bd_addr,
+                                                            wiced_bt_ble_address_type_t addr_type);
 
 /**
  *
@@ -297,7 +297,7 @@ extern "C"
  * @return          TRUE if request of clear is sent to controller side
  *
  */
-    wiced_bool_t wiced_bt_ble_clear_filter_accept_list(void);
+    wiced_result_t wiced_ble_clear_filter_accept_list(void);
 
 /**
  *
@@ -307,7 +307,7 @@ extern "C"
  * @return          size of Filter Accept List in current controller
  *
  */
-uint8_t wiced_bt_ble_get_filter_accept_list_size(void);
+    uint16_t wiced_ble_get_filter_accept_list_size(void);
 
 /**@} btm_ble_conn_filter_accept_list_functions */
 
@@ -477,23 +477,6 @@ wiced_bt_dev_status_t wiced_bt_ble_set_privacy_mode(wiced_bt_device_address_t re
                                                     wiced_bt_ble_privacy_mode_t privacy_mode);
 
 /**
- * Get the configured local random device address.
- *
- * Note : random address depends on below settings in that priority order.
- *      1) Global privacy configuration using rpa_refresh_timeout (see #wiced_bt_cfg_settings_t).
- *      2) else configured for static random bd_address while downloading using BT_DEVICE_ADDRESS=random build setting.
- *
- * @param[out]       random_bd_addr     - device random bd address
- *
- * @return          wiced_bt_dev_status_t
- * <b> WICED_BT_SUCCESS </b> : if random address is configured.\n
- * <b> WICED_BT_WRONG_MODE </b> : if random address not configured.\n
- *
- */
-wiced_bt_dev_status_t wiced_bt_ble_read_device_random_address(wiced_bt_device_address_t random_bd_addr);
-
-
-/**
  * Function         wiced_ble_private_device_address_resolution
  *
  *                  This API verifies whether given device address is Resolvable Private Address or not
@@ -507,9 +490,9 @@ wiced_bt_dev_status_t wiced_bt_ble_read_device_random_address(wiced_bt_device_ad
 wiced_result_t wiced_ble_private_device_address_resolution(wiced_bt_device_address_t rpa, BT_OCTET16 irk);
 
 /**
- * Function         wiced_bt_ble_address_resolution_list_clear_and_disable
+ * Function wiced_bt_ble_address_resolution_list_clear_and_disable
  *
- *                  This API clears the address resolution list and disables the address resolution feature.
+ * This API clears the address resolution list and disables the address resolution feature.
  *
  * @return          wiced_result_t
  *                  WICED_BT_SUCCESS if address resolution list is cleared and adress resolution feature is disabled.

@@ -1,5 +1,5 @@
 /*
- * Copyright 2024, Cypress Semiconductor Corporation or
+ * Copyright 2024-2025, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -126,7 +126,7 @@ typedef struct
     uint8_t cte_type;      /**< constant tone extension */
     uint8_t response_slot; /**< response slot */
     uint8_t data_status;   /**< data status */
-    uint16_t data_len;     /**< data length */
+    uint16_t data_length;  /**< data length */
     uint8_t *p_data;       /**< data in the event */
 } wiced_ble_padv_rsp_report_event_data_t;
 
@@ -204,7 +204,6 @@ typedef struct
                                 bit 1 - Do not sync to packets with an AoD Constant Tone Extension with 1 μs slots
                                 bit 2 - Do not sync to packets with an AoD Constant Tone Extension with 2 μs slots
                                 bit 3 - Do not sync to packets with a type 3 Constant Tone Extension*/
-    uint16_t max_periodic_adv_len; /**< max periodic adv len to be received in the callback */
 } wiced_ble_padv_create_sync_params_t;
 
 /** Sync_Handle to be used to identify the periodic advertiser. Range: 0x0000-0x0EFF
@@ -292,8 +291,8 @@ typedef struct
     uint8_t data_status;
     /** Length of the subevent indication data  */
     uint16_t data_length;
-    /** Subevent data  */
-    uint8_t data[1];
+    /** Data received from a Periodic Advertising packet  */
+    uint8_t * p_data;
 } wiced_ble_padv_report_event_data_t;
 
 /** Mode used in Periodic Advertising Sync Transfer Parameters */
@@ -568,16 +567,33 @@ wiced_ble_padv_set_default_sync_transfer_params( wiced_ble_padv_sync_transfer_pa
 * @param[in] adv_handle        Handle of the Advertising Set
 * @param[in] num_subevents     Number of subevent data in the command
 * @param[in] p_se_data         Pointer to the subevent data
-* @param[in] max_response_len  max expected response length in # WICED_BT_BLE_PAWR_RSP_REPORT_EVENT
 * @note:
-* @return          wiced_result_t
+* @return          wiced_bt_dev_status_t
 *                  WICED_BT_SUCCESS contents of features are valid
 *                  WICED_BT_ERROR   otherwise.
 */
 wiced_bt_dev_status_t wiced_ble_padv_set_subevent_data(wiced_ble_ext_adv_handle_t adv_handle,
                                                        uint8_t num_subevents,
-                                                       wiced_ble_padv_subevent_data_t *p_se_data,
-                                                       uint16_t max_response_len);
+                                                       wiced_ble_padv_subevent_data_t *p_se_data);
+
+/**
+* Function         wiced_ble_padv_configure_subevent_response_data
+*
+*                  This API is used by the Host to configure the reassembly of periodic subevent response data
+*                  segments. Invoking this API is optional. Application may use this API in case it expects the
+*                  subevent responses to come in with data_status=1 (partial).
+*                  In case this API is invoked, the stack will reassemble the incoming data segments and send up
+*                  the #WICED_BT_BLE_PAWR_RSP_REPORT_EVENT
+*
+* @param[in] max_response_len  max total response length expected across mutiple data reports for a subevent
+* @param[in] max_responses     max number of subevent responses to be tracked
+*
+* @return          wiced_bt_dev_status_t
+*                  WICED_BT_SUCCESS contents of features are valid
+*                  WICED_BT_ERROR   otherwise.
+*/
+wiced_bt_dev_status_t wiced_ble_padv_configure_subevent_response_data_reassembly(uint16_t max_response_len,
+                                                                                 uint8_t max_responses);
 
 /**
 * Function         wiced_ble_padv_set_subevent_rsp_data
@@ -616,6 +632,23 @@ wiced_bt_dev_status_t wiced_ble_padv_set_sync_subevent(uint16_t sync_handle,
                                                        uint8_t *p_subevents);
 
 /* @endcond */
+
+/**
+* API allocates an object which can reassemble a periodic adv packet on the periodic adv scanner.
+* upto a length of \p max_adv_len
+* Application can invoke this API in the #WICED_BLE_PERIODIC_ADV_SYNC_ESTABLISHED_EVENT event on successful
+* sync establishment. The object created can be reused for subsequent calls to append the periodic adv reports.
+* The object is freed by the stack in case the periodic sync is lost or terminated.
+* @note This API allocates the reassembly buffer + header from the application default heap created using a call
+* to \ref wiced_bt_create_heap (b_make_default =1)
+*
+* @param [in] sync_handle Handle of the synchronized periodic ADV train
+* @param [in] max_adv_len Max length to reassemble
+*
+* @return wiced_result_t
+*
+*/
+wiced_result_t wiced_ble_padv_alloc_segment_assembler(wiced_ble_padv_sync_handle_t sync_handle, uint16_t max_adv_len);
 
 /**@} wicedbt */
 #endif // WICED_BLE_ENABLE_EXTENDED_ADV_API

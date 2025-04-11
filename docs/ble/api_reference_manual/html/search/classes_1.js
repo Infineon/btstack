@@ -24,6 +24,7 @@ var searchData=
   ['wiced_5fble_5fext_5fscan_5fphy_5fparams_5ft',['wiced_ble_ext_scan_phy_params_t',['../structwiced__ble__ext__scan__phy__params__t.html',1,'']]],
   ['wiced_5fble_5fext_5fscan_5freq_5freceived_5fevent_5fdata_5ft',['wiced_ble_ext_scan_req_received_event_data_t',['../structwiced__ble__ext__scan__req__received__event__data__t.html',1,'']]],
   ['wiced_5fble_5fext_5fscan_5fresults_5ft',['wiced_ble_ext_scan_results_t',['../structwiced__ble__ext__scan__results__t.html',1,'']]],
+  ['wiced_5fble_5flegacy_5fcreate_5fconn_5ft',['wiced_ble_legacy_create_conn_t',['../structwiced__ble__legacy__create__conn__t.html',1,'']]],
   ['wiced_5fble_5fpadv_5fcreate_5fsync_5fparams_5ft',['wiced_ble_padv_create_sync_params_t',['../structwiced__ble__padv__create__sync__params__t.html',1,'']]],
   ['wiced_5fble_5fpadv_5fparams_5ft',['wiced_ble_padv_params_t',['../structwiced__ble__padv__params__t.html',1,'']]],
   ['wiced_5fble_5fpadv_5freport_5fevent_5fdata_5ft',['wiced_ble_padv_report_event_data_t',['../structwiced__ble__padv__report__event__data__t.html',1,'']]],

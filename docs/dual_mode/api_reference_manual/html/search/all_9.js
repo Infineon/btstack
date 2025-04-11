@@ -14,6 +14,7 @@ var searchData=
   ['init_5ffilter_5fpolicy',['init_filter_policy',['../structwiced__ble__ext__conn__cfg__t.html#aa455f374fb11c90fd660a44eea0eb8cd',1,'wiced_ble_ext_conn_cfg_t']]],
   ['init_5fkeys',['init_keys',['../structwiced__bt__dev__ble__io__caps__req__t.html#aca827eb0788362f017340effb7613b09',1,'wiced_bt_dev_ble_io_caps_req_t']]],
   ['initiating_5fphys',['initiating_phys',['../structwiced__ble__ext__conn__cfg__t.html#ab88b3ca0dcbfdb21ccbdc44963887e05',1,'wiced_ble_ext_conn_cfg_t']]],
+  ['initiator_5ffilter_5fpolicy',['initiator_filter_policy',['../structwiced__ble__legacy__create__conn__t.html#a054c49f8caf17cbffc66591bcdd8f6ea',1,'wiced_ble_legacy_create_conn_t']]],
   ['input_5fbandwidth',['input_bandwidth',['../structwiced__bt__enh__esco__params__t.html#abc93d7b80a0673fa47ed566789e83074',1,'wiced_bt_enh_esco_params_t']]],
   ['input_5fcf',['input_cf',['../structwiced__bt__enh__esco__params__t.html#a8d32f008a4d7c98becfa4ed756a05b6d',1,'wiced_bt_enh_esco_params_t']]],
   ['input_5fcoded_5fdata_5fsize',['input_coded_data_size',['../structwiced__bt__enh__esco__params__t.html#a3c5969caecc4d0b657d01e854e1d91b7',1,'wiced_bt_enh_esco_params_t']]],

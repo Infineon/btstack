@@ -1,5 +1,5 @@
 /*
- * Copyright 2019-2024, Cypress Semiconductor Corporation or
+ * Copyright 2019-2025, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -463,6 +463,9 @@
 #define HCI_LE_SET_SUBRATE_REQUEST                          ( 0x7E  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_EXTENDED_ADVERTISING_PARAMETERS_V2       ( 0x7F  | HCI_GRP_BLE_CMDS)
 
+#define HCI_LE_SET_DECISION_DATA                            (0x80 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_DECISION_INSTRUCTIONS                    (0x81 | HCI_GRP_BLE_CMDS)
+
 /* PAWR */
 #define HCI_LE_SET_PERIODIC_ADVERTISING_SUBEVENT_DATA       ( 0x82  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_PERIODIC_ADVERTISING_RESPONSE_DATA       ( 0x83  | HCI_GRP_BLE_CMDS)
@@ -470,20 +473,28 @@
 #define HCI_LE_EXTENDED_CREATE_CONNECTION_V2                ( 0x85  | HCI_GRP_BLE_CMDS)
 #define HCI_LE_SET_PERIODIC_ADVERTISING_PARAMETERS_V2       ( 0x86  | HCI_GRP_BLE_CMDS)
 
-#define HCI_LE_CS_READ_LOCAL_SUPPORTED_CAPABILITIES  (0x89 | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_READ_REMOTE_SUPPORTED_CAPABILITIES (0x8A | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_READ_LOCAL_SUPPORTED_CAPABILITIES          (0x89 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_READ_REMOTE_SUPPORTED_CAPABILITIES         (0x8A | HCI_GRP_BLE_CMDS)
 #define HCI_LE_CS_WRITE_CACHED_REMOTE_SUPPORTED_CAPABILITIES (0x8B | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_SECURITY_ENABLE (0x8C | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_SET_DEFAULT_SETTINGS (0x8D | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_READ_REMOTE_FAE_TABLE (0x8E | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_WRITE_CACHED_REMOTE_FAE_TABLE (0x8F | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_CREATE_CONFIG (0x90 | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_REMOVE_CONFIG (0x91 | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_SET_CHANNEL_CLASSIFICATION (0x92 | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_SET_PROCEDURE_PARAMETERS (0x93 | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_SET_PROCEDURE_ENABLE (0x94 | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_TEST (0x95 | HCI_GRP_BLE_CMDS)
-#define HCI_LE_CS_TEST_END (0x96 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_SECURITY_ENABLE                            (0x8C | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_SET_DEFAULT_SETTINGS                       (0x8D | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_READ_REMOTE_FAE_TABLE                      (0x8E | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_WRITE_CACHED_REMOTE_FAE_TABLE              (0x8F | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_CREATE_CONFIG                              (0x90 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_REMOVE_CONFIG                              (0x91 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_SET_CHANNEL_CLASSIFICATION                 (0x92 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_SET_PROCEDURE_PARAMETERS                   (0x93 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_SET_PROCEDURE_ENABLE                       (0x94 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_TEST                                       (0x95 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CS_TEST_END                                   (0x96 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_SET_HOST_FEATURE_V2                           (0x97 | HCI_GRP_BLE_CMDS)
+
+#define HCI_LE_ADD_DEVICE_TO_MONITORED_ADVERTISERS_LIST      (0x98 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_REMOVE_DEVICE_FROM_MONITORED_ADVERTISERS_LIST (0x99 | HCI_GRP_BLE_CMDS)
+#define HCI_LE_CLEAR_MONITORED_ADVERTISERS_LIST              (0x9A | HCI_GRP_BLE_CMDS)
+#define HCI_LE_READ_MONITORED_ADVERTISERS_LIST_SIZE          (0x9B | HCI_GRP_BLE_CMDS)
+#define HCI_LE_ENABLE_MONITORING_ADVERTISERS                 (0x9C | HCI_GRP_BLE_CMDS)
+#define HCI_LE_FRAME_SPACE_UPDATE                            (0x9D | HCI_GRP_BLE_CMDS)
 
 
 /* LE supported states definition */
@@ -2096,53 +2107,59 @@ typedef struct
 #define HCI_PING_SUPPORTED(x) ((x)[HCI_EXT_FEATURE_PING_OFF] & HCI_EXT_FEATURE_PING_MASK)
 
 /** LMP Feature Bit */
-#define HCI_LE_FEATURE_LE_ENCRYPTION_BIT_POS                0       /**< LE Encryption */
-#define HCI_LE_FEATURE_CONN_PARAM_REQ_BIT_POS               1       /**< Connection Parameters Request Procedure*/
-#define HCI_LE_FEATURE_EXT_REJ_IND_BIT_POS                  2       /**< Extended Reject Indication */
-#define HCI_LE_FEATURE_PERIPHERAL_INIT_FEAT_EXC_BIT_POS     3       /**< Peripheral-initiated Features Exchange */
-#define HCI_LE_FEATURE_PING_BIT_POS                         4       /**< LE Ping */
-#define HCI_LE_FEATURE_DPLE_BIT_POS                         5       /**< LE Data Packet Length Extension */
-#define HCI_LE_FEATURE_ENHANCED_PRIVACY_BIT_POS             6       /**< LL Privacy */
-#define HCI_LE_FEATURE_EXT_SCAN_FILTER_POLICY_BIT_POS       7       /**< Extended Scanner Filter Policies */
-#define HCI_LE_FEATURE_2M_PHY_BIT_POS                       8       /**< LE 2M PHY */
-#define HCI_LE_FEATURE_TX_MODULATION_INDEX_BIT_POS          9       /**< Stable Modulation Index - Transmitter */
-#define HCI_LE_FEATURE_RX_MODULATION_INDEX_BIT_POS          10      /**< Stable Modulation Index - Receiver */
-#define HCI_LE_FEATURE_CODED_PHY_BIT_POS                    11      /**< LE Coded PHY */
-#define HCI_LE_FEATURE_EXTENDED_ADVERTISING_BIT_POS         12      /**< LE Extended Advertising */
-#define HCI_LE_FEATURE_PERIODIC_ADVERTISING_BIT_POS         13      /**< LE Periodic Advertising */
-#define HCI_LE_FEATURE_CHNL_SELECTION_ALGO2_BIT_POS         14      /**< Channel Selection Algorithm #2 */
-#define HCI_LE_FEATURE_POWER_CLASS1_BIT_POS                 15      /**< LE Power Class 1 */
-#define HCI_LE_FEATURE_MIN_USED_CHNL_PROC_BIT_POS           16      /**< Minimum Number of Used Channels Procedure */
-#define HCI_LE_FEATURE_CONN_CTE_REQ_BIT_POS                 17      /**< Connection CTE Request */
-#define HCI_LE_FEATURE_CONN_CTE_RSP_BIT_POS                 18      /**< Connection CTE Response */
-#define HCI_LE_FEATURE_CONN_LESS_CTE_TX_BIT_POS             19      /**< Connectionless CTE Transmitter */
-#define HCI_LE_FEATURE_CONN_LESS_CTE_RX_BIT_POS             20      /**< Connectionless CTE Receiver */
-#define HCI_LE_FEATURE_ANTENNA_SWITCH_AOD_BIT_POS           21      /**< Antenna Switching During CTE Transmission (AoD) */
-#define HCI_LE_FEATURE_ANTENNA_SWITCH_AOA_BIT_POS           22      /**< Antenna Switching During CTE Reception (AoA) */
-#define HCI_LE_FEATURE_RECV_CONST_TONE_EXT_BIT_POS          23      /**< Receiving Constant Tone Extensions */
-#define HCI_LE_FEATURE_PERIODIC_ADV_SYNC_TX_BIT_POS         24      /**< Periodic Advertising Sync Transfer -Sender */
-#define HCI_LE_FEATURE_PERIODIC_ADV_SYNC_RX_BIT_POS         25      /**< Periodic Advertising Sync Transfer -Recipient */
-#define HCI_LE_FEATURE_SLEEP_CLK_ACCURACY_UPDATE_BIT_POS    26      /**< Sleep Clock Accuracy Updates */
-#define HCI_LE_FEATURE_RMT_PUB_KEY_VALIDATE_BIT_POS         27      /**< Remote Public Key Validation */
-#define HCI_LE_FEATURE_CIS_CENTRAL_BIT_POS                  28      /**< Connected Isochronous Stream - Central */
-#define HCI_LE_FEATURE_CIS_PERIPHERAL_BIT_POS               29      /**< Connected Isochronous Stream - Peripheral */
-#define HCI_LE_FEATURE_ISOC_BROADCASTER_BIT_POS             30      /**< Isochronous Broadcaster */
-#define HCI_LE_FEATURE_SYNC_RX_BIT_POS                      31      /**< Synchronized Receiver */
-#define HCI_LE_FEATURE_ISOC_CHNL_BIT_POS                    32      /**< Isochronous Channels (Host Support) */
-#define HCI_LE_FEATURE_POWER_CTRL_REQ_BIT_POS               33      /**< LE Power Control Request */
-#define HCI_LE_FEATURE_POWER_CHANGE_IND_BIT_POS             34      /**< LE Power Change Indication */
-#define HCI_LE_FEATURE_PATH_LOSS_MONITO_BIT_POS             35      /**< LE Path Loss Monitoring */
-#define HCI_LE_FEATURE_PERIODIC_ADV_ADI_SUPPORT_BIT_POS     36      /**< Periodic Advertising ADI Support */
-#define HCI_LE_FEATURE_CONNECTION_SUBRATING_BIT_POS         37      /**< Connection Subrating */
-#define HCI_LE_FEATURE_CONNECTION_SUBRATING_HOST_BIT_POS    38      /**< Connection Subrating (Host Support) */
-#define HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_BIT_POS       39      /**< Channel Classification */
-#define HCI_LE_FEATURE_ADV_CODING_SELECTION_BIT_POS         40      /**< Advertising Coding Selection */
-#define HCI_LE_FEATURE_ADV_CODING_SELECTION_HOST_BIT_POS    41      /**< Advertising Coding Selection (Host Support) */
-#define HCI_LE_FEATURE_PAWR_ADVERTISER_BIT_POS              43      /**< Periodic Advertising with Responses - Advertiser */
-#define HCI_LE_FEATURE_PAWR_SCANNER_BIT_POS                 44      /**< Periodic Advertising with Responses - Scanner */
-#define HCI_LE_FEATURE_MAX_BIT_POS HCI_LE_FEATURE_PAWR_SCANNER_BIT_POS /**< Max Possible Value */
+#define HCI_LE_FEATURE_LE_ENCRYPTION_BIT_POS                0  /**< LE Encryption */
+#define HCI_LE_FEATURE_CONN_PARAM_REQ_BIT_POS               1  /**< Connection Parameters Request Procedure*/
+#define HCI_LE_FEATURE_EXT_REJ_IND_BIT_POS                  2  /**< Extended Reject Indication */
+#define HCI_LE_FEATURE_PERIPHERAL_INIT_FEAT_EXC_BIT_POS     3  /**< Peripheral-initiated Features Exchange */
+#define HCI_LE_FEATURE_PING_BIT_POS                         4  /**< LE Ping */
+#define HCI_LE_FEATURE_DPLE_BIT_POS                         5  /**< LE Data Packet Length Extension */
+#define HCI_LE_FEATURE_ENHANCED_PRIVACY_BIT_POS             6  /**< LL Privacy */
+#define HCI_LE_FEATURE_EXT_SCAN_FILTER_POLICY_BIT_POS       7  /**< Extended Scanner Filter Policies */
+#define HCI_LE_FEATURE_2M_PHY_BIT_POS                       8  /**< LE 2M PHY */
+#define HCI_LE_FEATURE_TX_MODULATION_INDEX_BIT_POS          9  /**< Stable Modulation Index - Transmitter */
+#define HCI_LE_FEATURE_RX_MODULATION_INDEX_BIT_POS          10 /**< Stable Modulation Index - Receiver */
+#define HCI_LE_FEATURE_CODED_PHY_BIT_POS                    11 /**< LE Coded PHY */
+#define HCI_LE_FEATURE_EXTENDED_ADVERTISING_BIT_POS         12 /**< LE Extended Advertising */
+#define HCI_LE_FEATURE_PERIODIC_ADVERTISING_BIT_POS         13 /**< LE Periodic Advertising */
+#define HCI_LE_FEATURE_CHNL_SELECTION_ALGO2_BIT_POS         14 /**< Channel Selection Algorithm #2 */
+#define HCI_LE_FEATURE_POWER_CLASS1_BIT_POS                 15 /**< LE Power Class 1 */
+#define HCI_LE_FEATURE_MIN_USED_CHNL_PROC_BIT_POS           16 /**< Minimum Number of Used Channels Procedure */
+#define HCI_LE_FEATURE_CONN_CTE_REQ_BIT_POS                 17 /**< Connection CTE Request */
+#define HCI_LE_FEATURE_CONN_CTE_RSP_BIT_POS                 18 /**< Connection CTE Response */
+#define HCI_LE_FEATURE_CONN_LESS_CTE_TX_BIT_POS             19 /**< Connectionless CTE Transmitter */
+#define HCI_LE_FEATURE_CONN_LESS_CTE_RX_BIT_POS             20 /**< Connectionless CTE Receiver */
+#define HCI_LE_FEATURE_ANTENNA_SWITCH_AOD_BIT_POS           21 /**< Antenna Switching During CTE Transmission (AoD) */
+#define HCI_LE_FEATURE_ANTENNA_SWITCH_AOA_BIT_POS           22 /**< Antenna Switching During CTE Reception (AoA) */
+#define HCI_LE_FEATURE_RECV_CONST_TONE_EXT_BIT_POS          23 /**< Receiving Constant Tone Extensions */
+#define HCI_LE_FEATURE_PERIODIC_ADV_SYNC_TX_BIT_POS         24 /**< Periodic Advertising Sync Transfer -Sender */
+#define HCI_LE_FEATURE_PERIODIC_ADV_SYNC_RX_BIT_POS         25 /**< Periodic Advertising Sync Transfer -Recipient */
+#define HCI_LE_FEATURE_SLEEP_CLK_ACCURACY_UPDATE_BIT_POS    26 /**< Sleep Clock Accuracy Updates */
+#define HCI_LE_FEATURE_RMT_PUB_KEY_VALIDATE_BIT_POS         27 /**< Remote Public Key Validation */
+#define HCI_LE_FEATURE_CIS_CENTRAL_BIT_POS                  28 /**< Connected Isochronous Stream - Central */
+#define HCI_LE_FEATURE_CIS_PERIPHERAL_BIT_POS               29 /**< Connected Isochronous Stream - Peripheral */
+#define HCI_LE_FEATURE_ISOC_BROADCASTER_BIT_POS             30 /**< Isochronous Broadcaster */
+#define HCI_LE_FEATURE_SYNC_RX_BIT_POS                      31 /**< Synchronized Receiver */
+#define HCI_LE_FEATURE_ISOC_CHNL_BIT_POS                    32 /**< Isochronous Channels (Host Support) */
+#define HCI_LE_FEATURE_POWER_CTRL_REQ_BIT_POS               33 /**< LE Power Control Request */
+#define HCI_LE_FEATURE_POWER_CHANGE_IND_BIT_POS             34 /**< LE Power Change Indication */
+#define HCI_LE_FEATURE_PATH_LOSS_MONITO_BIT_POS             35 /**< LE Path Loss Monitoring */
+#define HCI_LE_FEATURE_PERIODIC_ADV_ADI_SUPPORT_BIT_POS     36 /**< Periodic Advertising ADI Support */
+#define HCI_LE_FEATURE_CONNECTION_SUBRATING_BIT_POS         37 /**< Connection Subrating */
+#define HCI_LE_FEATURE_CONNECTION_SUBRATING_HOST_BIT_POS    38 /**< Connection Subrating (Host Support) */
+#define HCI_LE_FEATURE_CHANNEL_CLASSIFICATION_BIT_POS       39 /**< Channel Classification */
+#define HCI_LE_FEATURE_ADV_CODING_SELECTION_BIT_POS         40 /**< Advertising Coding Selection */
+#define HCI_LE_FEATURE_ADV_CODING_SELECTION_HOST_BIT_POS    41 /**< Advertising Coding Selection (Host Support) */
+#define HCI_LE_FEATURE_PAWR_ADVERTISER_BIT_POS              43 /**< Periodic Advertising with Responses - Advertiser */
+#define HCI_LE_FEATURE_PAWR_SCANNER_BIT_POS                 44 /**< Periodic Advertising with Responses - Scanner */
+#define HCI_LE_FEATURE_UNSEGMENTED_FRAMED_MODE_BIT_POS      45 /**< Unsegmented framed mode */
+#define HCI_LE_FEATURE_CHANNEL_SOUNDING_BIT_POS             46 /**< Channel sounding */
+#define HCI_LE_FEATURE_CHANNEL_SOUNDING_HOST_SUPPORT_BIT_POS 47 /**< Channel sounding host feature */
+#define HCI_LE_FEATURE_CHANNEL_SOUNDING_TONE_QUALITY_INDICATION_BIT_POS 48 /**< Channel sounding tone quality indication */
+#define HCI_LE_FEATURE_LL_EXTENDED_FEATURE_SET_BIT_POS      63 /**< LL extended feature set */
+#define HCI_LE_FEATURE_MONITORING_ADVERTISERS_BIT_POS       64 /**< monitoring advertisers */
+#define HCI_LE_FEATURE_FRAME_SPACE_UPDATE_BIT_POS           65 /**< frame space update */
 
-typedef uint8_t wiced_bt_ble_feature_bit_t; /**< LE supported feature bits */
+typedef uint16_t wiced_bt_ble_feature_bit_t; /**< LE supported feature bits */
 
 
 /*
