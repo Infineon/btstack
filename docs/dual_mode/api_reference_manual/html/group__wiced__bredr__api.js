@@ -17,6 +17,7 @@ var group__wiced__bredr__api =
     [ "wiced_bt_dev_switch_role", "group__wiced__bredr__api.html#ga8a29fcd76f386debd6d5aaef21426cc5", null ],
     [ "wiced_bt_dev_set_afh_channel_classification", "group__wiced__bredr__api.html#ga77cedd68365c2d02c743dc2aaee13ba8", null ],
     [ "wiced_bt_dev_get_remote_name", "group__wiced__bredr__api.html#ga65bc31725b27be92d23b71707c4d309c", null ],
+    [ "wiced_bt_dev_get_device_class", "group__wiced__bredr__api.html#gafb04e339e3e093ac211b10c4024ffc7a", null ],
     [ "wiced_bt_dev_set_link_policy", "group__wiced__bredr__api.html#gafa20b1e8c312d27e8ea2824f68ccb374", null ],
     [ "wiced_bt_coex_enable", "group__wiced__bredr__api.html#gaa34891858f4af31cf59a8e9d34228ac1", null ],
     [ "wiced_bt_coex_disable", "group__wiced__bredr__api.html#ga2a25f2513f319465608e68a02ab2c714", null ],

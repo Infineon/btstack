@@ -1,5 +1,13 @@
 var NAVTREEINDEX11 =
 {
+"group__wicedbt__utility.html#gae95344797140c44aa120d34957a576b3":[1,11,1,5],
+"index.html":[0],
+"index.html":[],
+"modules.html":[1],
+"pages.html":[],
+"structt_d_r_b.html":[1,21,0,3],
+"structt_d_r_b.html#a03b3684a053c6fec95b16c395b528214":[1,21,0,3,0],
+"structt_d_r_b.html#a669fac4ab39139f0e03587357530dddc":[1,21,0,3,2],
 "structt_d_r_b.html#aedefe32ab5c4e9cc53410180d276ab45":[1,21,0,3,1],
 "structwiced__ble__biginfo__adv__report__t.html":[1,3,6],
 "structwiced__ble__biginfo__adv__report__t.html#a04a6af99858064b4e1ff5197975b2acf":[1,3,6,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX11 =
 "structwiced__ble__padv__report__event__data__t.html#a336b25ce51c8d6348f9afb3e603e4cb2":[1,5,8,5],
 "structwiced__ble__padv__report__event__data__t.html#a3d88b0d84f79db5daee584e05b5b9cac":[1,5,8,4],
 "structwiced__ble__padv__report__event__data__t.html#a8e3214562051ec21cb6a82364748b165":[1,5,8,3],
-"structwiced__ble__padv__report__event__data__t.html#aaee78d4ad1b4def2e620e57dda0ec9ed":[1,5,8,6],
-"structwiced__ble__padv__report__event__data__t.html#ab295bddc8137d76994c1a138e68a017c":[1,5,8,7],
-"structwiced__ble__padv__report__event__data__t.html#ac7f82d39e592ae7a7b84a5e54859afc5":[1,5,8,0],
-"structwiced__ble__padv__report__event__data__t.html#ad2af94b153963d1c53c3a653bb67ae08":[1,5,8,8],
-"structwiced__ble__padv__report__event__data__t.html#afb6e69cc2694597f84e7cb1f63db72b9":[1,5,8,2],
-"structwiced__ble__padv__rsp__report__event__data__t.html":[1,5,1],
-"structwiced__ble__padv__rsp__report__event__data__t.html#a07f7c0f56a8705eea33fedfd5801edc2":[1,5,1,2],
-"structwiced__ble__padv__rsp__report__event__data__t.html#a0c9344f8b93643c74eca93a625de5899":[1,5,1,0],
-"structwiced__ble__padv__rsp__report__event__data__t.html#a1dd276822fd9bd0af5d38d8d4f42ca39":[1,5,1,9]
+"structwiced__ble__padv__report__event__data__t.html#aaee78d4ad1b4def2e620e57dda0ec9ed":[1,5,8,6]
 };

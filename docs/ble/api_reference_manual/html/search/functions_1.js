@@ -3,6 +3,7 @@ var searchData=
   ['wiced_5fble_5fadd_5fto_5ffilter_5faccept_5flist',['wiced_ble_add_to_filter_accept_list',['../group__btm__ble__conn__filter__accept__list__functions.html#ga342df0b6018898f6ab60f9d6531462e3',1,'wiced_bt_ble_conn.h']]],
   ['wiced_5fble_5fadv_5fdata_5fbuild',['wiced_ble_adv_data_build',['../group__wicedbt___common.html#ga3b316e86fd3f2291d95f5f304f1af311',1,'wiced_bt_adv_scan_common.h']]],
   ['wiced_5fble_5fadv_5fdata_5fsearch',['wiced_ble_adv_data_search',['../group__wicedbt___common.html#ga01cbd2d774c2ae09fc8f2778faba1b03',1,'wiced_bt_adv_scan_common.h']]],
+  ['wiced_5fble_5fcancel_5fconnection',['wiced_ble_cancel_connection',['../group__wicedbt___extended.html#ga17d3a85eb558ee853bbeac1ddc94d1e8',1,'wiced_bt_adv_scan_extended.h']]],
   ['wiced_5fble_5fclear_5ffilter_5faccept_5flist',['wiced_ble_clear_filter_accept_list',['../group__btm__ble__conn__filter__accept__list__functions.html#gabcf48fd129477af7bb6118b60a8b0217',1,'wiced_bt_ble_conn.h']]],
   ['wiced_5fble_5fcreate_5flocal_5fidentity_5fkeys',['wiced_ble_create_local_identity_keys',['../group__wiced__bt__platform__group.html#gafbef049d9e806795cc708d94db01c8dc',1,'wiced_bt_stack_platform.h']]],
   ['wiced_5fble_5fcs_5fcreate_5fconfig',['wiced_ble_cs_create_config',['../group__wicedbt___channel_sounding.html#ga15f9f72a6564d11b00e0815d0fed0aab',1,'wiced_bt_cs.h']]],

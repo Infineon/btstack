@@ -8,6 +8,7 @@ var searchData=
   ['default_5fidle_5ftimeout',['default_idle_timeout',['../structwiced__bt__l2cap__fixed__chnl__reg__t.html#ad05e7fe3f98693f1ff4b4601fab804fe',1,'wiced_bt_l2cap_fixed_chnl_reg_t']]],
   ['default_5fle_5ftx_5fdata_5flength',['default_le_tx_data_length',['../structwiced__bt__ble__init__data__t.html#ae6bb2482a521c2bd3e68b83b7d09f355',1,'wiced_bt_ble_init_data_t']]],
   ['delay_5fvariation',['delay_variation',['../structwiced__bt__flow__spec__t.html#a6e6a9b6233b29a7dcab88b5acbd156a2',1,'wiced_bt_flow_spec_t']]],
+  ['deny',['deny',['../structwiced__bt__ble__connection__param__request__t.html#ab7881abcbc241f21b7de7df3e7ad7520',1,'wiced_bt_ble_connection_param_request_t']]],
   ['dev_5fclass',['dev_class',['../structwiced__bt__dev__name__and__class__t.html#a3805d3281711b63858fdd187e29510d8',1,'wiced_bt_dev_name_and_class_t']]],
   ['dev_5fclass_5flen',['DEV_CLASS_LEN',['../group__bt__types.html#ga15729af135b17a98385b763caf90d7a2',1,'wiced_bt_types.h']]],
   ['dev_5finfo',['dev_info',['../structwiced__bt__stack__init__cmd__data__t.html#aa85e427a61b6ac6a3338800e4f0ccc5f',1,'wiced_bt_stack_init_cmd_data_t']]],

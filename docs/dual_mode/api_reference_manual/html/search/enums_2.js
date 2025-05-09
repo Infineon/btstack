@@ -7,6 +7,7 @@ var searchData=
   ['wiced_5fble_5fext_5fadv_5fscan_5freq_5fnotification_5fsetting_5fe',['wiced_ble_ext_adv_scan_req_notification_setting_e',['../group__wicedbt___extended.html#ga6ba958b898ce7306739353c6589a0d01',1,'wiced_bt_adv_scan_extended.h']]],
   ['wiced_5fble_5fext_5fconn_5finitiator_5ffilter_5fpolicy_5fe',['wiced_ble_ext_conn_initiator_filter_policy_e',['../group__wicedbt___extended.html#ga122edf4d5a453b329774c4cbdad6b4a5',1,'wiced_bt_adv_scan_extended.h']]],
   ['wiced_5fble_5fext_5fscan_5ffilter_5fduplicate_5fe',['wiced_ble_ext_scan_filter_duplicate_e',['../group__wicedbt___extended.html#ga0546f088ab9cda8feb5b29595cbd4fdc',1,'wiced_bt_adv_scan_extended.h']]],
+  ['wiced_5fble_5fext_5fscanning_5ffilter_5fpolicy_5fe',['wiced_ble_ext_scanning_filter_policy_e',['../group__wicedbt___extended.html#ga0483a0344a8bc72119c84e6ab95111ea',1,'wiced_bt_adv_scan_extended.h']]],
   ['wiced_5fble_5fisoc_5fencryption_5fe',['wiced_ble_isoc_encryption_e',['../group__wicedbt___common.html#ga7523306c99709df4ac3d2f8dee9c7b4c',1,'wiced_bt_adv_scan_common.h']]],
   ['wiced_5fble_5fisoc_5fframing_5fe',['wiced_ble_isoc_framing_e',['../group__wicedbt___common.html#ga71b57567c8c50d5b05eb58e865e87a8f',1,'wiced_bt_adv_scan_common.h']]],
   ['wiced_5fble_5fisoc_5fphy_5fe',['wiced_ble_isoc_phy_e',['../group__wicedbt___common.html#ga250132e1886ca2a3f16f3beef52857dd',1,'wiced_bt_adv_scan_common.h']]],

@@ -43,6 +43,7 @@ var searchData=
   ['wiced_5fbt_5fble_5fchannel_5fsel_5falgo_5fevent_5fdata_5ft',['wiced_bt_ble_channel_sel_algo_event_data_t',['../structwiced__bt__ble__channel__sel__algo__event__data__t.html',1,'']]],
   ['wiced_5fbt_5fble_5fconn_5fparams_5ft',['wiced_bt_ble_conn_params_t',['../structwiced__bt__ble__conn__params__t.html',1,'']]],
   ['wiced_5fbt_5fble_5fconn_5fsubrate_5ft',['wiced_bt_ble_conn_subrate_t',['../structwiced__bt__ble__conn__subrate__t.html',1,'']]],
+  ['wiced_5fbt_5fble_5fconnection_5fparam_5frequest_5ft',['wiced_bt_ble_connection_param_request_t',['../structwiced__bt__ble__connection__param__request__t.html',1,'']]],
   ['wiced_5fbt_5fble_5fconnection_5fparam_5fupdate_5ft',['wiced_bt_ble_connection_param_update_t',['../structwiced__bt__ble__connection__param__update__t.html',1,'']]],
   ['wiced_5fbt_5fble_5fdevice_5faddr_5fupdate_5ft',['wiced_bt_ble_device_addr_update_t',['../structwiced__bt__ble__device__addr__update__t.html',1,'']]],
   ['wiced_5fbt_5fble_5finit_5fdata_5ft',['wiced_bt_ble_init_data_t',['../structwiced__bt__ble__init__data__t.html',1,'']]],

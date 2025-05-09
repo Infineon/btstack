@@ -81,6 +81,16 @@ var group__wicedbt___device_management =
       [ "conn_latency", "structwiced__bt__ble__connection__param__update__t.html#ae566838800ef3e7ad627dc8ef7292e5c", null ],
       [ "supervision_timeout", "structwiced__bt__ble__connection__param__update__t.html#a3c080080674c907ba99f2b91ed5ad7a7", null ]
     ] ],
+    [ "wiced_bt_ble_connection_param_request_t", "structwiced__bt__ble__connection__param__request__t.html", [
+      [ "deny", "structwiced__bt__ble__connection__param__request__t.html#ab7881abcbc241f21b7de7df3e7ad7520", null ],
+      [ "bd_addr", "structwiced__bt__ble__connection__param__request__t.html#a43002726b202aa09ed6f06c39f1b397d", null ],
+      [ "min_interval", "structwiced__bt__ble__connection__param__request__t.html#a689b26931c0c3f2cff7a38b1690d6673", null ],
+      [ "max_interval", "structwiced__bt__ble__connection__param__request__t.html#a2231f05510f391be77b0fc14a4d0f2ed", null ],
+      [ "conn_latency", "structwiced__bt__ble__connection__param__request__t.html#a558d381b2fce31071a6e1aedf1d06bf0", null ],
+      [ "supervision_timeout", "structwiced__bt__ble__connection__param__request__t.html#a32feafcd93428e5b767e4d4ce1cfd48a", null ],
+      [ "min_ce_len", "structwiced__bt__ble__connection__param__request__t.html#a8084ad58c0cef212bce482de8fb822c3", null ],
+      [ "max_ce_len", "structwiced__bt__ble__connection__param__request__t.html#a71ba1b44d2e62a29f91327757f570ae3", null ]
+    ] ],
     [ "wiced_bt_ble_conn_subrate_t", "structwiced__bt__ble__conn__subrate__t.html", [
       [ "status", "structwiced__bt__ble__conn__subrate__t.html#a392d86af80a2397d5ba49bc4cfa39cbe", null ],
       [ "bd_addr", "structwiced__bt__ble__conn__subrate__t.html#a8a77d4aae779dd6e0527a40535806ede", null ],
@@ -234,7 +244,8 @@ var group__wicedbt___device_management =
       [ "ble_addr_update_event", "unionwiced__bt__management__evt__data__t.html#acf6a2f8573200e9bfdf7a17f37c4447e", null ],
       [ "ble_channel_sel_algo_event", "unionwiced__bt__management__evt__data__t.html#a2d1eb3c752912a16cb19a9f5582c83ef", null ],
       [ "max_adv_data_len", "unionwiced__bt__management__evt__data__t.html#ab2046bc045d7cfcf87f98ae14bc30acd", null ],
-      [ "br_flow_spec_event", "unionwiced__bt__management__evt__data__t.html#a5c917a3a903e260906b2f22a464c0b36", null ]
+      [ "br_flow_spec_event", "unionwiced__bt__management__evt__data__t.html#a5c917a3a903e260906b2f22a464c0b36", null ],
+      [ "ble_connection_param_request", "unionwiced__bt__management__evt__data__t.html#ae1b14040e9e21d7a2340bdcd16865389", null ]
     ] ],
     [ "BTM_INQ_RES_IGNORE_RSSI", "group__wicedbt___device_management.html#ga1d613db0782c8f392c3425a1da1c606f", null ],
     [ "BTM_SCAN_PARAM_IGNORE", "group__wicedbt___device_management.html#ga0705e06f6fe4159a74dd389a08f3b5b8", null ],
@@ -435,7 +446,8 @@ var group__wicedbt___device_management =
       [ "BTM_BLE_DEVICE_ADDRESS_UPDATE_EVENT", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65aa49bd8765b31119cd5008c25e136b11e", null ],
       [ "BTM_BLE_CHANNEL_SELECTION_ALGO_EVENT", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65aaaa0a674689f3905f116c4ba41c05ceb", null ],
       [ "BTM_BLE_READ_MAX_ADV_DATA_LEN_EVENT", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65abd036d090b923b16b710141dc6147bce", null ],
-      [ "BTM_BR_ACL_FLOW_SPEC_COMPLETE_EVENT", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a1148b096b8ec66e12acf7532e3495133", null ]
+      [ "BTM_BR_ACL_FLOW_SPEC_COMPLETE_EVENT", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a1148b096b8ec66e12acf7532e3495133", null ],
+      [ "BTM_BLE_CONNECTION_PARAM_REQUEST_EVENT", "group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ada07bef74df7e0417c3580a07ea9b89b", null ]
     ] ],
     [ "wiced_bt_link_policy_settings_values_e", "group__wicedbt___device_management.html#ga5ac33b180c10d23690c1bf22363f0e56", [
       [ "WICED_ENABLE_ROLE_SWITCH", "group__wicedbt___device_management.html#gga5ac33b180c10d23690c1bf22363f0e56adeee9c5543ed8ebfe0d808daf00d40ae", null ],

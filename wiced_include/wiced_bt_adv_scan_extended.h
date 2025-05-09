@@ -226,6 +226,15 @@ enum wiced_ble_ext_conn_initiator_filter_policy_e
 /** Initiator filter policy used. (see #wiced_ble_ext_conn_initiator_filter_policy_e) */
 typedef uint8_t wiced_ble_ext_conn_initiator_filter_policy_t;
 
+/** Scanning filter policy enums used in set extended scan parameters command */
+enum wiced_ble_ext_scanning_filter_policy_e
+{
+    WICED_BLE_EXT_SCAN_BASIC_UNFILTERED_SP = WICED_BLE_SCAN_BASIC_UNFILTERED_SP,    /**< Basic unfiltered scanning policy */
+    WICED_BLE_EXT_SCAN_BASIC_FILTERED_SP = WICED_BLE_SCAN_BASIC_FILTERED_SP,      /**< Basic filtered scanning policy  */
+    WICED_BLE_EXT_SCAN_EXTENDED_UNFILTERED_SP = WICED_BLE_SCAN_EXTENDED_UNFILTERED_SP, /**< Extended unfiltered scanning policy */
+    WICED_BLE_EXT_SCAN_EXTENDED_FILTERED_SP = WICED_BLE_SCAN_EXTENDED_FILTERED_SP,   /**< Extended filtered scanning policy  */
+};
+
 /** Phy adv options to be set in #wiced_ble_ext_adv_set_params */
 enum wiced_ble_ext_adv_phy_options_e
 {
@@ -735,6 +744,18 @@ extern "C"
  *
  */
     wiced_bt_dev_status_t wiced_ble_ext_create_connection(wiced_ble_ext_conn_cfg_t *p_ext_conn_cfg);
+
+   /**
+* Cancel a ble connection
+*
+* @return          wiced_bt_dev_status_t
+*
+* <b> WICED_BT_UNSUPPORTED </b>   : If command not supported \n
+* <b> WICED_BT_NO_RESOURCES </b>  : If no memory to issue the command \n
+* <b> WICED_BT_SUCCESS </b>       : If successful\n
+*
+*/
+   wiced_bt_dev_status_t wiced_ble_cancel_connection (void);
 
     /**
  * Callback wiced_ble_ext_adv_event_cback_t

@@ -170,6 +170,12 @@ var group__wicedbt___extended =
       [ "WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS", "group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a06234ca144f35338f6bc4120362b5001", null ],
       [ "WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS", "group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a3125d3696ae08c0771f9d4de26679179", null ]
     ] ],
+    [ "wiced_ble_ext_scanning_filter_policy_e", "group__wicedbt___extended.html#ga0483a0344a8bc72119c84e6ab95111ea", [
+      [ "WICED_BLE_EXT_SCAN_BASIC_UNFILTERED_SP", "group__wicedbt___extended.html#gga0483a0344a8bc72119c84e6ab95111eaa64122b38be62083116285f5a6a65cd65", null ],
+      [ "WICED_BLE_EXT_SCAN_BASIC_FILTERED_SP", "group__wicedbt___extended.html#gga0483a0344a8bc72119c84e6ab95111eaaf2f8d3a32c6fc24cd894a4a4db9f0dad", null ],
+      [ "WICED_BLE_EXT_SCAN_EXTENDED_UNFILTERED_SP", "group__wicedbt___extended.html#gga0483a0344a8bc72119c84e6ab95111eaa517c5757cdc0f3e7b93f7525c6a5f118", null ],
+      [ "WICED_BLE_EXT_SCAN_EXTENDED_FILTERED_SP", "group__wicedbt___extended.html#gga0483a0344a8bc72119c84e6ab95111eaad3b0ab649915838fbf913ba83ea3010f", null ]
+    ] ],
     [ "wiced_ble_ext_adv_phy_options_e", "group__wicedbt___extended.html#gace6120835d8b9dbb1bea9b4dd18e3ceb", [
       [ "WICED_BLE_EXT_ADV_PHY_OPTIONS_NO_PREFERENCE", "group__wicedbt___extended.html#ggace6120835d8b9dbb1bea9b4dd18e3ceba76d1e81913c9550612207b7040e81a83", null ],
       [ "WICED_BLE_EXT_ADV_PHY_OPTIONS_PREFER_S2", "group__wicedbt___extended.html#ggace6120835d8b9dbb1bea9b4dd18e3ceba7d986b6a29d77c76488ed229b198e554", null ],
@@ -206,5 +212,6 @@ var group__wicedbt___extended =
     [ "wiced_ble_ext_scan_set_params", "group__wicedbt___extended.html#ga21c6ed464749fe88ea28c947b522c965", null ],
     [ "wiced_ble_ext_scan_enable", "group__wicedbt___extended.html#gaef53c12c6d1bc8631e199ec6fa2f0fb4", null ],
     [ "wiced_ble_ext_create_connection", "group__wicedbt___extended.html#ga6b3ce17fe53ce2670dc00a2c0facffe3", null ],
+    [ "wiced_ble_cancel_connection", "group__wicedbt___extended.html#ga17d3a85eb558ee853bbeac1ddc94d1e8", null ],
     [ "wiced_ble_ext_adv_register_cback", "group__wicedbt___extended.html#gab81b607c21afc5fc637ad6dea217963d", null ]
 ];

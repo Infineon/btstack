@@ -1,5 +1,13 @@
 var NAVTREEINDEX12 =
 {
+"structwiced__ble__padv__report__event__data__t.html#ab295bddc8137d76994c1a138e68a017c":[1,5,8,7],
+"structwiced__ble__padv__report__event__data__t.html#ac7f82d39e592ae7a7b84a5e54859afc5":[1,5,8,0],
+"structwiced__ble__padv__report__event__data__t.html#ad2af94b153963d1c53c3a653bb67ae08":[1,5,8,8],
+"structwiced__ble__padv__report__event__data__t.html#afb6e69cc2694597f84e7cb1f63db72b9":[1,5,8,2],
+"structwiced__ble__padv__rsp__report__event__data__t.html":[1,5,1],
+"structwiced__ble__padv__rsp__report__event__data__t.html#a07f7c0f56a8705eea33fedfd5801edc2":[1,5,1,2],
+"structwiced__ble__padv__rsp__report__event__data__t.html#a0c9344f8b93643c74eca93a625de5899":[1,5,1,0],
+"structwiced__ble__padv__rsp__report__event__data__t.html#a1dd276822fd9bd0af5d38d8d4f42ca39":[1,5,1,9],
 "structwiced__ble__padv__rsp__report__event__data__t.html#a1e632836254ff0a908caa888bfe02c33":[1,5,1,4],
 "structwiced__ble__padv__rsp__report__event__data__t.html#a3cbfb99a75d475734b1243c5d86b0bc8":[1,5,1,7],
 "structwiced__ble__padv__rsp__report__event__data__t.html#a4444dc9f95baa4ba0275a69c260723f6":[1,5,1,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX12 =
 "structwiced__bt__avrc__cmd__t.html#acd56057f6b8022acec5a684e7a1da56f":[1,7,59,2],
 "structwiced__bt__avrc__cmd__t.html#ad6da795f43a185df385807746a0025b1":[1,7,59,0],
 "structwiced__bt__avrc__cmd__t.html#aec979973c4db98919d34f4551796c1a9":[1,7,59,1],
-"structwiced__bt__avrc__config__t.html":[1,7,1],
-"structwiced__bt__avrc__config__t.html#a38e2647efd79e92aec32bce0ff37b918":[1,7,1,0],
-"structwiced__bt__avrc__config__t.html#a7c226a1040d2514641379a4f8f9f0b4e":[1,7,1,8],
-"structwiced__bt__avrc__config__t.html#a7d8188ffbad35c3a568d7cb99f5159be":[1,7,1,4],
-"structwiced__bt__avrc__config__t.html#a8295003c1254e59cf6a788006d2041b1":[1,7,1,5],
-"structwiced__bt__avrc__config__t.html#aaa52d47b6a78c37e627640c5e58346a2":[1,7,1,7],
-"structwiced__bt__avrc__config__t.html#acc1aac462450108fc0dabffe6579d0d6":[1,7,1,2],
-"structwiced__bt__avrc__config__t.html#ae4f271509a7c55e906928225660b7078":[1,7,1,6],
-"structwiced__bt__avrc__config__t.html#af489f3e4e8f9ef81292738c6b3beda42":[1,7,1,3]
+"structwiced__bt__avrc__config__t.html":[1,7,1]
 };

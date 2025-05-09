@@ -658,6 +658,20 @@ typedef struct
     uint16_t                    supervision_timeout;/**< updated supervision timeout */
 } wiced_bt_ble_connection_param_update_t;
 
+/** LE connection parameter request event related data */
+typedef struct
+{
+    uint8_t deny;                      /**< allow or deny request, set 0 to allow, 1 to deny */
+    wiced_bt_device_address_t bd_addr; /**< peer bd address */
+    uint16_t min_interval;             /**< requested min connection interval */
+    uint16_t max_interval;             /**< requested max connection interval */
+    uint16_t conn_latency;             /**< requested connection latency */
+    uint16_t supervision_timeout;      /**< requested supervision timeout */
+    uint16_t min_ce_len;               /**< min connection event length preferred */
+    uint16_t max_ce_len;               /**< max connection event length preferred */
+} wiced_bt_ble_connection_param_request_t;
+
+
 /** LE Physical link update event related data */
 typedef struct
 {
@@ -1061,11 +1075,20 @@ enum wiced_bt_management_evt_e {
      */
     BTM_BR_ACL_FLOW_SPEC_COMPLETE_EVENT,           /* 41, 0x29 */
 
+    /**
+     * Event to allow application to allow/deny the incoming connection parameter update
+     * request.
+     * To allow the request set \ref wiced_bt_ble_connection_param_request_t.deny to 0.
+     * To deny the request set \ref wiced_bt_ble_connection_param_update_t.deny 1
+     * Event data: \ref wiced_bt_management_evt_data_t.ble_connection_param_request
+     */
+    BTM_BLE_CONNECTION_PARAM_REQUEST_EVENT,        /* 42, 0x3A */
+
 #if SMP_CATB_CONFORMANCE_TESTER == TRUE
     /**
      * The Secure Connections support information of the peer device.
      */
-    BTM_SMP_SC_PEER_INFO_EVT,                        /* 41, 0x29 */
+    BTM_SMP_SC_PEER_INFO_EVT,                        /* 43, 0x2B */
 #endif
 };
 #endif
@@ -1342,7 +1365,8 @@ typedef union
     wiced_bt_ble_device_addr_update_t       ble_addr_update_event;              /**< Data for #BTM_BLE_DEVICE_ADDRESS_UPDATE_EVENT */
     wiced_bt_ble_channel_sel_algo_event_data_t ble_channel_sel_algo_event;      /**< Data for #BTM_BLE_CHANNEL_SELECTION_ALGO_EVENT*/
     uint16_t                                max_adv_data_len;                   /**< Data for #BTM_BLE_READ_MAX_ADV_DATA_LEN_EVENT*/
-    wiced_bt_flow_spec_cmpl_evt_t           br_flow_spec_event; /**< Data for #BTM_BR_ACL_FLOW_SPEC_COMPLETE_EVENT*/
+    wiced_bt_flow_spec_cmpl_evt_t           br_flow_spec_event;                 /**< Data for #BTM_BR_ACL_FLOW_SPEC_COMPLETE_EVENT*/
+    wiced_bt_ble_connection_param_request_t ble_connection_param_request;       /**< Data for BTM_BLE_DEVICE_ADDRESS_UPDATE_EVENT  */
 #if SMP_CATB_CONFORMANCE_TESTER == TRUE
     wiced_bt_ble_sc_peer_info               smp_sc_peer_info;                   /* Data for #BTM_SMP_SC_PEER_INFO_EVT */
 #endif
@@ -1739,6 +1763,17 @@ wiced_bt_dev_status_t wiced_bt_dev_set_afh_channel_classification(const wiced_bt
 * <b> WICED_BT_WRONG_MODE </b>   : if the device is not up.
 **/
 wiced_result_t  wiced_bt_dev_get_remote_name (wiced_bt_device_address_t bd_addr, wiced_bt_remote_name_cback_t *p_remote_name_result_cback);
+
+/**
+*
+*  Retrieves the Class of Device of a peer BT device.
+*
+* @param[in]       bd_addr  : Peer bd address
+* @param[out]      p_cod    : Class of Device of a peer BT device
+*
+* @return          wiced_result_t
+**/
+wiced_result_t wiced_bt_dev_get_device_class(wiced_bt_device_address_t bdaddr, wiced_bt_dev_class_t* p_cod);
 
 /**
  * This function is called to set the Link Policy for remote device

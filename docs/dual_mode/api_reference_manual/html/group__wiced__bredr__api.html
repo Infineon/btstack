@@ -148,6 +148,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga65bc31725b27be92d23b71707c4d309c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#ga65bc31725b27be92d23b71707c4d309c">wiced_bt_dev_get_remote_name</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr, <a class="el" href="group__wicedbt___device_management.html#ga1102d990364545df00ee778c4418729d">wiced_bt_remote_name_cback_t</a> *p_remote_name_result_cback)</td></tr>
 <tr class="memdesc:ga65bc31725b27be92d23b71707c4d309c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Bluetooth Friendly name from remote device.  <a href="#ga65bc31725b27be92d23b71707c4d309c">More...</a><br /></td></tr>
 <tr class="separator:ga65bc31725b27be92d23b71707c4d309c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb04e339e3e093ac211b10c4024ffc7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#gafb04e339e3e093ac211b10c4024ffc7a">wiced_bt_dev_get_device_class</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bdaddr, <a class="el" href="group__bt__types.html#ga7f67c2d3420bda8e18183f3ac932521d">wiced_bt_dev_class_t</a> *p_cod)</td></tr>
+<tr class="memdesc:gafb04e339e3e093ac211b10c4024ffc7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the Class of Device of a peer BT device.  <a href="#gafb04e339e3e093ac211b10c4024ffc7a">More...</a><br /></td></tr>
+<tr class="separator:gafb04e339e3e093ac211b10c4024ffc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafa20b1e8c312d27e8ea2824f68ccb374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#gafa20b1e8c312d27e8ea2824f68ccb374">wiced_bt_dev_set_link_policy</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> remote_bda, <a class="el" href="group__wicedbt___device_management.html#ga0c5b67d556561dcab638afff83ac0d03">wiced_bt_link_policy_settings_t</a> settings)</td></tr>
 <tr class="memdesc:gafa20b1e8c312d27e8ea2824f68ccb374"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called to set the Link Policy for remote device.  <a href="#gafa20b1e8c312d27e8ea2824f68ccb374">More...</a><br /></td></tr>
 <tr class="separator:gafa20b1e8c312d27e8ea2824f68ccb374"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -846,6 +849,44 @@ Functions</h2></td></tr>
 <b> WICED_BT_ILLEGAL_VALUE </b>: if parameter(s) are out of range <br />
 <b> WICED_BT_NO_RESOURCES </b> : if could not allocate resources to start the command <br />
 <b> WICED_BT_WRONG_MODE </b> : if the device is not up. </p>
+
+</div>
+</div>
+<a id="gafb04e339e3e093ac211b10c4024ffc7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb04e339e3e093ac211b10c4024ffc7a">&#9670;&nbsp;</a></span>wiced_bt_dev_get_device_class()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_dev_get_device_class </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td>
+          <td class="paramname"><em>bdaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__bt__types.html#ga7f67c2d3420bda8e18183f3ac932521d">wiced_bt_dev_class_t</a> *&#160;</td>
+          <td class="paramname"><em>p_cod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the Class of Device of a peer BT device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Peer bd address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_cod</td><td>: Class of Device of a peer BT device</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>wiced_result_t </dd></dl>
 
 </div>
 </div>

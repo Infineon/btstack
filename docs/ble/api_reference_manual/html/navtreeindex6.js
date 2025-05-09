@@ -1,5 +1,12 @@
 var NAVTREEINDEX6 =
 {
+"structwiced__ble__cs__config__t.html":[1,7,3],
+"structwiced__ble__cs__config__t.html#a0082045b11d58a366668796202b12145":[1,7,3,16],
+"structwiced__ble__cs__config__t.html#a105019e4163b88f38e80018926ac61a6":[1,7,3,13],
+"structwiced__ble__cs__config__t.html#a16cef8a47e0b536ecbd604e6bd03f531":[1,7,3,4],
+"structwiced__ble__cs__config__t.html#a176f2bbf4475012a550b56ebb2db4ce9":[1,7,3,5],
+"structwiced__ble__cs__config__t.html#a1b5b44f5264e1420f426922cc568700f":[1,7,3,7],
+"structwiced__ble__cs__config__t.html#a2caa2ecce7634e0748ebea6a2548ebeb":[1,7,3,10],
 "structwiced__ble__cs__config__t.html#a2d1e3087f3da13f8fb2c8b049191c1a3":[1,7,3,2],
 "structwiced__ble__cs__config__t.html#a35db5eadb4229bb620ec01f36fd991de":[1,7,3,14],
 "structwiced__ble__cs__config__t.html#a5040846fc731ecab5b02569ca323b769":[1,7,3,9],
@@ -237,17 +244,10 @@ var NAVTREEINDEX6 =
 "structwiced__bt__ble__advert__elem__t.html#a1f047c04b8b36a6db70d04eda2168b0b":[1,1,1,2],
 "structwiced__bt__ble__advert__elem__t.html#a70f91e32698c6fdde84563cd0edf149d":[1,1,1,0],
 "structwiced__bt__ble__advert__elem__t.html#aaa6cf169af0de34e6be4b0be9d7057e2":[1,1,1,1],
-"structwiced__bt__ble__channel__sel__algo__event__data__t.html":[1,8,35],
-"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a0b62665bbf5c518ee37b1b498d06db3d":[1,8,35,1],
-"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a8daf68fc5daf3ef655aefc3d3a137761":[1,8,35,0],
+"structwiced__bt__ble__channel__sel__algo__event__data__t.html":[1,8,36],
+"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a0b62665bbf5c518ee37b1b498d06db3d":[1,8,36,1],
+"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a8daf68fc5daf3ef655aefc3d3a137761":[1,8,36,0],
 "structwiced__bt__ble__conn__params__t.html":[1,5,5],
 "structwiced__bt__ble__conn__params__t.html#a0cddeab89b8d4fe08ab2170530e295cb":[1,5,5,0],
-"structwiced__bt__ble__conn__params__t.html#a545ef7b2495e29e8e4812629fb135c44":[1,5,5,1],
-"structwiced__bt__ble__conn__params__t.html#a9cca6008241e70f7882704bc6d9deb65":[1,5,5,2],
-"structwiced__bt__ble__conn__params__t.html#ab7c6cee604c76191bd70926d8b40562e":[1,5,5,3],
-"structwiced__bt__ble__conn__subrate__t.html":[1,8,18],
-"structwiced__bt__ble__conn__subrate__t.html#a01b61de47e3221c6b99f5d757f01917b":[1,8,18,6],
-"structwiced__bt__ble__conn__subrate__t.html#a1f623c2f357811dc336f8102d4065f48":[1,8,18,2],
-"structwiced__bt__ble__conn__subrate__t.html#a35568e1a3702f4f8a591e9880c929141":[1,8,18,5],
-"structwiced__bt__ble__conn__subrate__t.html#a392d86af80a2397d5ba49bc4cfa39cbe":[1,8,18,0]
+"structwiced__bt__ble__conn__params__t.html#a545ef7b2495e29e8e4812629fb135c44":[1,5,5,1]
 };

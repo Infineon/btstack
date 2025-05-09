@@ -216,6 +216,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__connection__param__update__t.html">wiced_bt_ble_connection_param_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE connection parameter update event related data.  <a href="structwiced__bt__ble__connection__param__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__connection__param__request__t.html">wiced_bt_ble_connection_param_request_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE connection parameter request event related data.  <a href="structwiced__bt__ble__connection__param__request__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__ble__conn__subrate__t.html">wiced_bt_ble_conn_subrate_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE Physical link update event related data.  <a href="structwiced__bt__ble__conn__subrate__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -955,7 +958,9 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65abd036d090b923b16b710141dc6147bce">BTM_BLE_READ_MAX_ADV_DATA_LEN_EVENT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a1148b096b8ec66e12acf7532e3495133">BTM_BR_ACL_FLOW_SPEC_COMPLETE_EVENT</a>
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a1148b096b8ec66e12acf7532e3495133">BTM_BR_ACL_FLOW_SPEC_COMPLETE_EVENT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65ada07bef74df7e0417c3580a07ea9b89b">BTM_BLE_CONNECTION_PARAM_REQUEST_EVENT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga4a427fc37161f2041016d7936399be65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bluetooth Management events used in <a class="el" href="group__wicedbt___device_management.html#ga86af8a8bb467047c9af6007f15b0d344" title="Bluetooth Management callback.">wiced_bt_management_cback_t</a>.  <a href="group__wicedbt___device_management.html#ga4a427fc37161f2041016d7936399be65">More...</a><br /></td></tr>
@@ -2024,6 +2029,9 @@ Return values of the management events Return values of notification and status 
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65abd036d090b923b16b710141dc6147bce"></a>BTM_BLE_READ_MAX_ADV_DATA_LEN_EVENT&#160;</td><td class="fielddoc"><p>Event to notify Maximum Advertising data length supported Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#ab2046bc045d7cfcf87f98ae14bc30acd">wiced_bt_management_evt_data_t::max_adv_data_len</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65a1148b096b8ec66e12acf7532e3495133"></a>BTM_BR_ACL_FLOW_SPEC_COMPLETE_EVENT&#160;</td><td class="fielddoc"><p>Event to notify Setup QoS Complete or Flow Specication complete Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#a5c917a3a903e260906b2f22a464c0b36">wiced_bt_management_evt_data_t::br_flow_spec_event</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4a427fc37161f2041016d7936399be65ada07bef74df7e0417c3580a07ea9b89b"></a>BTM_BLE_CONNECTION_PARAM_REQUEST_EVENT&#160;</td><td class="fielddoc"><p>Event to allow application to allow/deny the incoming connection parameter update request. </p>
+<p>To allow the request set <a class="el" href="structwiced__bt__ble__connection__param__request__t.html#ab7881abcbc241f21b7de7df3e7ad7520">wiced_bt_ble_connection_param_request_t::deny</a> to 0. To deny the request set wiced_bt_ble_connection_param_update_t.deny 1 Event data: <a class="el" href="unionwiced__bt__management__evt__data__t.html#ae1b14040e9e21d7a2340bdcd16865389">wiced_bt_management_evt_data_t::ble_connection_param_request</a> </p>
 </td></tr>
 </table>
 

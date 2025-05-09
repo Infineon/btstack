@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/z8Lz_MEPo/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1552" column="1" bodyfile="D:/glb/z8Lz_MEPo/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1552" bodyend="-1"/>
+        <location file="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1552" column="1" bodyfile="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1552" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -37,7 +37,7 @@
         <link refid="structwiced__bt__mesh__light__xyl__data__t"/>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/z8Lz_MEPo/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1551" column="1" bodyfile="D:/glb/z8Lz_MEPo/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1550" bodyend="1553"/>
+    <location file="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1551" column="1" bodyfile="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1550" bodyend="1553"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__light__xyl__default__data__t_1a3941cbbec0cee13508a6122762851ca7" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_xyl_default_data_t</scope><name>default_status</name></member>
     </listofallmembers>
