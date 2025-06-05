@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"structwiced__ble__cs__config__complete__t.html#ae5bf2b560ca6f9eb28b463714c298003":[1,7,5,0],
+"structwiced__ble__cs__config__complete__t.html#af5414d284780ccc03ef7d746addbbddf":[1,7,5,5],
+"structwiced__ble__cs__config__complete__t.html#afa75d4f13fd6f32971f2ea9227ebd6c7":[1,7,5,15],
+"structwiced__ble__cs__config__complete__t.html#afad56c7528d5fa5e9fb86145a7b6017d":[1,7,5,16],
 "structwiced__ble__cs__config__t.html":[1,7,3],
 "structwiced__ble__cs__config__t.html#a0082045b11d58a366668796202b12145":[1,7,3,16],
 "structwiced__ble__cs__config__t.html#a105019e4163b88f38e80018926ac61a6":[1,7,3,13],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "structwiced__bt__ble__advert__elem__t.html#a70f91e32698c6fdde84563cd0edf149d":[1,1,1,0],
 "structwiced__bt__ble__advert__elem__t.html#aaa6cf169af0de34e6be4b0be9d7057e2":[1,1,1,1],
 "structwiced__bt__ble__channel__sel__algo__event__data__t.html":[1,8,36],
-"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a0b62665bbf5c518ee37b1b498d06db3d":[1,8,36,1],
-"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a8daf68fc5daf3ef655aefc3d3a137761":[1,8,36,0],
-"structwiced__bt__ble__conn__params__t.html":[1,5,5],
-"structwiced__bt__ble__conn__params__t.html#a0cddeab89b8d4fe08ab2170530e295cb":[1,5,5,0],
-"structwiced__bt__ble__conn__params__t.html#a545ef7b2495e29e8e4812629fb135c44":[1,5,5,1]
+"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a0b62665bbf5c518ee37b1b498d06db3d":[1,8,36,1]
 };

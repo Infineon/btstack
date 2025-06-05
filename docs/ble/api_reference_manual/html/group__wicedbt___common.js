@@ -127,7 +127,8 @@ var group__wicedbt___common =
     [ "wiced_ble_own_address_options_e", "group__wicedbt___common.html#ga351511480455eb7aa774f4952e1b689a", [
       [ "WICED_BLE_OWN_ADDR_PUBLIC", "group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa4def370666ad6d2b7cc24a4619647147", null ],
       [ "WICED_BLE_OWN_ADDR_RANDOM", "group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa9ebbb8a0520175eab02e8b63ccf73ea3", null ],
-      [ "WICED_BLE_OWN_ADDR_GENERATE_RPA_PUBLIC_RANDOM", "group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aafaaa5b4a7038dbd3a28ff2d0b299b01f", null ]
+      [ "WICED_BLE_OWN_ADDR_GENERATE_RPA_OR_USE_PUBLIC_ADDR", "group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa27b6ab8f199acaa384e6b1ab69d1e3c2", null ],
+      [ "WICED_BLE_OWN_ADDR_GENERATE_RPA_OR_USE_RANDOM_ADDR", "group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa68e5489796265da2c2ba6427757c5331", null ]
     ] ],
     [ "wiced_ble_scanning_filter_policy_e", "group__wicedbt___common.html#gad3cb95ad9059ab2ca5690a92d1863a3b", [
       [ "WICED_BLE_SCAN_BASIC_UNFILTERED_SP", "group__wicedbt___common.html#ggad3cb95ad9059ab2ca5690a92d1863a3baf3109a04d06fe8e1f01fb88a5890f164", null ],

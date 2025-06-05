@@ -93,6 +93,7 @@ var group__wiced__bt__platform__group =
     [ "wiced_bt_stack_indicate_lower_tx_complete", "group__wiced__bt__platform__group.html#gaa98ea87121fed670412f976b3f0b252c", null ],
     [ "wiced_bt_continue_reset", "group__wiced__bt__platform__group.html#gade7b4741a97ade2e02e044078bf46bc2", null ],
     [ "wiced_bt_set_stack_config", "group__wiced__bt__platform__group.html#gaedb4a439d3f91abba89b33c1e0947991", null ],
+    [ "wiced_bt_get_stack_config", "group__wiced__bt__platform__group.html#ga689ab04553ee3f89d77981c45192ea57", null ],
     [ "wiced_bt_stack_init_internal", "group__wiced__bt__platform__group.html#gac40dc0f89a01ca8b864c49a9a740786f", null ],
     [ "wiced_bt_stack_shutdown", "group__wiced__bt__platform__group.html#ga8a424e7de59385dc69b3189987c3fae2", null ],
     [ "wiced_bt_set_stack_initial_setup_data", "group__wiced__bt__platform__group.html#gafc1b5d34eef77e8e432e3f070ce92709", null ],
@@ -102,5 +103,7 @@ var group__wiced__bt__platform__group =
     [ "wiced_ble_read_local_identity_keys_from_app", "group__wiced__bt__platform__group.html#gaf059de81cbbe4c5ce5872eed1cc6e32c", null ],
     [ "wiced_ble_create_local_identity_keys", "group__wiced__bt__platform__group.html#gafbef049d9e806795cc708d94db01c8dc", null ],
     [ "wiced_ble_init_host_private_addr_generation", "group__wiced__bt__platform__group.html#gaf3b4675291634b72041597e29d93904e", null ],
-    [ "wiced_ble_init_ctlr_private_addr_generation", "group__wiced__bt__platform__group.html#ga8260ebc21406a676e29a7081a7382494", null ]
+    [ "wiced_ble_init_ctlr_private_addr_generation", "group__wiced__bt__platform__group.html#ga8260ebc21406a676e29a7081a7382494", null ],
+    [ "wiced_bt_issue_btm_enabled_evt", "group__wiced__bt__platform__group.html#ga06ed01c337bcb03e8007710ae9b625fe", null ],
+    [ "wiced_bt_get_btm_startup_flags", "group__wiced__bt__platform__group.html#ga1be12efe2fb24bf0575f5c1b04e298a7", null ]
 ];

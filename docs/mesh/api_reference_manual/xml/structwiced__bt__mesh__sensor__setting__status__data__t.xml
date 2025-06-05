@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="357" column="1" bodyfile="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="357" bodyend="-1"/>
+        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="357" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="357" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__setting__status__data__t_1a3aee8f91663562e1f129dba182bbdd39" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__sensor__setting__t" kindref="compound">wiced_bt_mesh_sensor_setting_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="358" column="1" bodyfile="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="358" bodyend="-1"/>
+        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="358" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="358" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -51,7 +51,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="356" column="1" bodyfile="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="355" bodyend="359"/>
+    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="356" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="355" bodyend="359"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__sensor__setting__status__data__t_1a29fee6988dc379fd97829f8bd3b0a012" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_setting_status_data_t</scope><name>property_id</name></member>
       <member refid="structwiced__bt__mesh__sensor__setting__status__data__t_1a3aee8f91663562e1f129dba182bbdd39" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_setting_status_data_t</scope><name>setting</name></member>

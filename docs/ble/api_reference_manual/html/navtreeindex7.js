@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a8daf68fc5daf3ef655aefc3d3a137761":[1,8,36,0],
+"structwiced__bt__ble__conn__params__t.html":[1,5,5],
+"structwiced__bt__ble__conn__params__t.html#a0cddeab89b8d4fe08ab2170530e295cb":[1,5,5,0],
+"structwiced__bt__ble__conn__params__t.html#a545ef7b2495e29e8e4812629fb135c44":[1,5,5,1],
 "structwiced__bt__ble__conn__params__t.html#a9cca6008241e70f7882704bc6d9deb65":[1,5,5,2],
 "structwiced__bt__ble__conn__params__t.html#ab7c6cee604c76191bd70926d8b40562e":[1,5,5,3],
 "structwiced__bt__ble__conn__subrate__t.html":[1,8,19],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "structwiced__bt__dev__edr__packet__types__t.html#ab7365016f19601270fbe06f39f4d0531":[1,9,6,0],
 "structwiced__bt__dev__edr__packet__types__t.html#acf02186fb3ce345e815a218866cf615e":[1,9,6,2],
 "structwiced__bt__dev__edr__packet__types__t.html#ad40542e2f1284efdd30e1a106afd29f7":[1,9,6,3],
-"structwiced__bt__dev__edr__packet__types__t.html#aeffe4afe832e142357ca4fd3579f4d36":[1,9,6,7],
-"structwiced__bt__dev__edr__packet__types__t.html#afd080ddada4adbc1e834b15b61ec7683":[1,9,6,1],
-"structwiced__bt__dev__enabled__t.html":[1,8,23],
-"structwiced__bt__dev__enabled__t.html#a53ed6f3e10938676c9e891210a16af65":[1,8,23,0],
-"structwiced__bt__dev__encryption__status__t.html":[1,8,27]
+"structwiced__bt__dev__edr__packet__types__t.html#aeffe4afe832e142357ca4fd3579f4d36":[1,9,6,7]
 };

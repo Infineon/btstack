@@ -511,6 +511,14 @@ extern void wiced_bt_continue_reset(void);
 extern uint32_t wiced_bt_set_stack_config(const wiced_bt_cfg_settings_t* p_bt_new_cfg_settings);
 
 /**
+* Get the stack config set by the application
+*
+* @return pointer to application config settings
+*
+*/
+extern const wiced_bt_cfg_settings_t *wiced_bt_get_stack_config(void);
+
+/**
 * Function prototype for the post Stack Init Callback.
 */
 typedef void (*wiced_bt_internal_post_stack_init_cb)(void);
@@ -641,6 +649,18 @@ wiced_result_t wiced_ble_init_host_private_addr_generation(wiced_bt_local_identi
  *
  */
 wiced_result_t wiced_ble_init_ctlr_private_addr_generation(wiced_bt_local_identity_keys_t *p_local_keys);
+
+/**
+* Helper API to issue BTM_ENABLED_EVT
+* @param p_app_management_callback Management callback set by the application
+*/
+wiced_bool_t wiced_bt_issue_btm_enabled_evt(wiced_bt_management_cback_t p_app_management_callback);
+
+/**
+* Helper API to get the startup flags
+* @return uint32_t value
+*/
+uint32_t wiced_bt_get_btm_startup_flags(void);
 
 /**@} wiced_bt_platform_group */
 

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="246" column="1" bodyfile="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="246" bodyend="-1"/>
+        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="246" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="246" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -24,7 +24,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="245" column="1" bodyfile="D:/glb/t1_x_2fMs/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="244" bodyend="247"/>
+    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="245" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="244" bodyend="247"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__sensor__get__t_1a851ccbb97ed3517282643dc596a700f3" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_get_t</scope><name>property_id</name></member>
     </listofallmembers>

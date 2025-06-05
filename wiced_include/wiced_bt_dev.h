@@ -1079,7 +1079,7 @@ enum wiced_bt_management_evt_e {
      * Event to allow application to allow/deny the incoming connection parameter update
      * request.
      * To allow the request set \ref wiced_bt_ble_connection_param_request_t.deny to 0.
-     * To deny the request set \ref wiced_bt_ble_connection_param_update_t.deny 1
+     * To deny the request set \ref wiced_bt_ble_connection_param_request_t.deny 1
      * Event data: \ref wiced_bt_management_evt_data_t.ble_connection_param_request
      */
     BTM_BLE_CONNECTION_PARAM_REQUEST_EVENT,        /* 42, 0x3A */
@@ -1768,7 +1768,7 @@ wiced_result_t  wiced_bt_dev_get_remote_name (wiced_bt_device_address_t bd_addr,
 *
 *  Retrieves the Class of Device of a peer BT device.
 *
-* @param[in]       bd_addr  : Peer bd address
+* @param[in]       bdaddr  : Peer bd address
 * @param[out]      p_cod    : Class of Device of a peer BT device
 *
 * @return          wiced_result_t

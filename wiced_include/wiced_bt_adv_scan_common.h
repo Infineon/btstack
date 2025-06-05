@@ -254,19 +254,19 @@ enum wiced_ble_own_address_options_e
 {
     /** Use public address, see \ref wiced_bt_set_local_bdaddr */
     WICED_BLE_OWN_ADDR_PUBLIC = 0,
-    /**< Use random address, see \ref wiced_bt_set_local_bdaddr.
+    /** Use random address, see \ref wiced_bt_set_local_bdaddr.
     * For advertising with extended APIs, random address set on the adv handle is used
     */
     WICED_BLE_OWN_ADDR_RANDOM = 1,
-    /**< Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type.
+    /** Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type.
     * If no entry found, use public address see \ref wiced_bt_set_local_bdaddr
     */
-    WICED_BLE_OWN_ADDR_GENERATE_RPA_PUBLIC_RANDOM = 2,
-    /**< Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type.
+    WICED_BLE_OWN_ADDR_GENERATE_RPA_OR_USE_PUBLIC_ADDR = 2,
+    /** Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type.
     * If no entry found, use random address see \ref wiced_bt_set_local_bdaddr
     * For advertising with extended APIs, random address set on the adv handle is used
     */
-    WICED_BLE_OWN_ADDR_GENERATE_RPA_STATIC_RANDOM = 3
+    WICED_BLE_OWN_ADDR_GENERATE_RPA_OR_USE_RANDOM_ADDR = 3
 };
 /** Own address options for adv, scan, create connection, see \ref wiced_ble_own_address_options_e*/
 typedef uint8_t wiced_ble_own_address_options_t;

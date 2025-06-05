@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"structwiced__bt__voice__path__setup__t.html#af18be965863f6115aa0b889ab4965531":[1,16,1,0],
+"structwiced__gattdb__entry__t.html":[1,14,32],
+"structwiced__gattdb__entry__t.html#a3946e61f2efaae0c1c69c6c17744e146":[1,14,32,2],
+"structwiced__gattdb__entry__t.html#a9bf8e84fd587d48e8dcb353f8043433a":[1,14,32,1],
 "structwiced__gattdb__entry__t.html#abd0ad6cd9ae13e4118cbac81ca75e869":[1,14,32,0],
 "structwiced__timer__t.html":[1,22,0],
 "structwiced__timer__t.html#a03a612a6aba418b3083114aa27a2ee01":[1,22,0,3],

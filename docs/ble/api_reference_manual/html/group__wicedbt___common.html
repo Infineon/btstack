@@ -441,9 +441,9 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa9ebbb8a0520175eab02e8b63ccf73ea3">WICED_BLE_OWN_ADDR_RANDOM</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aafaaa5b4a7038dbd3a28ff2d0b299b01f">WICED_BLE_OWN_ADDR_GENERATE_RPA_PUBLIC_RANDOM</a> = 2, 
+&#160;&#160;<a class="el" href="group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa27b6ab8f199acaa384e6b1ab69d1e3c2">WICED_BLE_OWN_ADDR_GENERATE_RPA_OR_USE_PUBLIC_ADDR</a> = 2, 
 <br />
-&#160;&#160;<b>WICED_BLE_OWN_ADDR_GENERATE_RPA_STATIC_RANDOM</b> = 3
+&#160;&#160;<a class="el" href="group__wicedbt___common.html#gga351511480455eb7aa774f4952e1b689aa68e5489796265da2c2ba6427757c5331">WICED_BLE_OWN_ADDR_GENERATE_RPA_OR_USE_RANDOM_ADDR</a> = 3
 <br />
  }</td></tr>
 <tr class="memdesc:ga351511480455eb7aa774f4952e1b689a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Own address options for adv, scan, create connection.  <a href="group__wicedbt___common.html#ga351511480455eb7aa774f4952e1b689a">More...</a><br /></td></tr>
@@ -805,12 +805,14 @@ Functions</h2></td></tr>
 <p>Own address options for adv, scan, create connection. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga351511480455eb7aa774f4952e1b689aa4def370666ad6d2b7cc24a4619647147"></a>WICED_BLE_OWN_ADDR_PUBLIC&#160;</td><td class="fielddoc"><p>Use public address, see <a class="el" href="group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2">wiced_bt_set_local_bdaddr</a>. </p>
-<p>Use random address, see <a class="el" href="group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2">wiced_bt_set_local_bdaddr</a>. For advertising with extended APIs, random address set on the adv handle is used </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga351511480455eb7aa774f4952e1b689aa9ebbb8a0520175eab02e8b63ccf73ea3"></a>WICED_BLE_OWN_ADDR_RANDOM&#160;</td><td class="fielddoc"><p>Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type. </p>
+<tr><td class="fieldname"><a id="gga351511480455eb7aa774f4952e1b689aa9ebbb8a0520175eab02e8b63ccf73ea3"></a>WICED_BLE_OWN_ADDR_RANDOM&#160;</td><td class="fielddoc"><p>Use random address, see <a class="el" href="group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2">wiced_bt_set_local_bdaddr</a>. </p>
+<p>For advertising with extended APIs, random address set on the adv handle is used </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga351511480455eb7aa774f4952e1b689aa27b6ab8f199acaa384e6b1ab69d1e3c2"></a>WICED_BLE_OWN_ADDR_GENERATE_RPA_OR_USE_PUBLIC_ADDR&#160;</td><td class="fielddoc"><p>Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type. </p>
 <p>If no entry found, use public address see <a class="el" href="group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2">wiced_bt_set_local_bdaddr</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga351511480455eb7aa774f4952e1b689aafaaa5b4a7038dbd3a28ff2d0b299b01f"></a>WICED_BLE_OWN_ADDR_GENERATE_RPA_PUBLIC_RANDOM&#160;</td><td class="fielddoc"><p>Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type. </p>
+<tr><td class="fieldname"><a id="gga351511480455eb7aa774f4952e1b689aa68e5489796265da2c2ba6427757c5331"></a>WICED_BLE_OWN_ADDR_GENERATE_RPA_OR_USE_RANDOM_ADDR&#160;</td><td class="fielddoc"><p>Controller generates RPA with local IRK entry in resolving list pointed by peer address and peer address type. </p>
 <p>If no entry found, use random address see <a class="el" href="group__wicedbt__utility.html#ga48386d791ced8eaae6bd6cd8f7e3afc2">wiced_bt_set_local_bdaddr</a> For advertising with extended APIs, random address set on the adv handle is used </p>
 </td></tr>
 </table>

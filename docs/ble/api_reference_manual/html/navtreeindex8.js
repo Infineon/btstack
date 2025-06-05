@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"structwiced__bt__dev__edr__packet__types__t.html#afd080ddada4adbc1e834b15b61ec7683":[1,9,6,1],
+"structwiced__bt__dev__enabled__t.html":[1,8,23],
+"structwiced__bt__dev__enabled__t.html#a53ed6f3e10938676c9e891210a16af65":[1,8,23,0],
+"structwiced__bt__dev__encryption__status__t.html":[1,8,27],
 "structwiced__bt__dev__encryption__status__t.html#a4a6e96558fa84c99c09860da4751da6f":[1,8,27,1],
 "structwiced__bt__dev__encryption__status__t.html#a6c33df0a26312b20bedd5a0ecaa980ca":[1,8,27,3],
 "structwiced__bt__dev__encryption__status__t.html#aa344cdcd4e32fa661cf947b3ec49416b":[1,8,27,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "structwiced__bt__l2cap__appl__information__t.html#a2e00007ae56cb020366fbfd7dfe336ab":[1,0,2,0],
 "structwiced__bt__l2cap__appl__information__t.html#a3bbfb619575069c2289c9e91b58b78c2":[1,0,2,2],
 "structwiced__bt__l2cap__appl__information__t.html#a3f46fe30b21b2b6477f543f00ba6448f":[1,0,2,6],
-"structwiced__bt__l2cap__appl__information__t.html#a7694f9263de05fd026d4b2802d98fa0c":[1,0,2,10],
-"structwiced__bt__l2cap__appl__information__t.html#a81ba0bc1e4f501fd00c666c42fd1814e":[1,0,2,13],
-"structwiced__bt__l2cap__appl__information__t.html#a92697e17aa1667a6ecd613544ba2e777":[1,0,2,5],
-"structwiced__bt__l2cap__appl__information__t.html#ab2c471279290449ff25b881a3be5c8ef":[1,0,2,11],
-"structwiced__bt__l2cap__appl__information__t.html#ac0767976a7feb6692e0973992c04bbbb":[1,0,2,12]
+"structwiced__bt__l2cap__appl__information__t.html#a7694f9263de05fd026d4b2802d98fa0c":[1,0,2,10]
 };

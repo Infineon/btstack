@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"structwiced__ble__padv__report__event__data__t.html#a336b25ce51c8d6348f9afb3e603e4cb2":[1,5,8,5],
+"structwiced__ble__padv__report__event__data__t.html#a3d88b0d84f79db5daee584e05b5b9cac":[1,5,8,4],
+"structwiced__ble__padv__report__event__data__t.html#a8e3214562051ec21cb6a82364748b165":[1,5,8,3],
+"structwiced__ble__padv__report__event__data__t.html#aaee78d4ad1b4def2e620e57dda0ec9ed":[1,5,8,6],
 "structwiced__ble__padv__report__event__data__t.html#ab295bddc8137d76994c1a138e68a017c":[1,5,8,7],
 "structwiced__ble__padv__report__event__data__t.html#ac7f82d39e592ae7a7b84a5e54859afc5":[1,5,8,0],
 "structwiced__ble__padv__report__event__data__t.html#ad2af94b153963d1c53c3a653bb67ae08":[1,5,8,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "structwiced__bt__avrc__cmd__t.html#a080f19ce24b97378dc7c2867f1ab74e1":[1,7,59,4],
 "structwiced__bt__avrc__cmd__t.html#a08f86132d1ef597d9001498652464276":[1,7,59,6],
 "structwiced__bt__avrc__cmd__t.html#a68f70312280d436a18a290d96c6ea1e8":[1,7,59,5],
-"structwiced__bt__avrc__cmd__t.html#ab05dff975dea3fc414289b2f942025be":[1,7,59,3],
-"structwiced__bt__avrc__cmd__t.html#acd56057f6b8022acec5a684e7a1da56f":[1,7,59,2],
-"structwiced__bt__avrc__cmd__t.html#ad6da795f43a185df385807746a0025b1":[1,7,59,0],
-"structwiced__bt__avrc__cmd__t.html#aec979973c4db98919d34f4551796c1a9":[1,7,59,1],
-"structwiced__bt__avrc__config__t.html":[1,7,1]
+"structwiced__bt__avrc__cmd__t.html#ab05dff975dea3fc414289b2f942025be":[1,7,59,3]
 };

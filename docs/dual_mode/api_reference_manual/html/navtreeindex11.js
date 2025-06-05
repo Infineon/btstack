@@ -1,8 +1,12 @@
 var NAVTREEINDEX11 =
 {
+"group__wicedbt__utility.html#gac583c58d75ba49a87d93d597b5929d70":[1,11,1,10],
+"group__wicedbt__utility.html#gac69677337b7352c0e3cc34d1af85ba01":[1,11,1,1],
+"group__wicedbt__utility.html#gae3115ce3e502177c0486fd6782810c7e":[1,11,1,2],
+"group__wicedbt__utility.html#gae3954c261d4a338d418de224ddd6a5d5":[1,11,1,12],
 "group__wicedbt__utility.html#gae95344797140c44aa120d34957a576b3":[1,11,1,5],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "modules.html":[1],
 "pages.html":[],
 "structt_d_r_b.html":[1,21,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX11 =
 "structwiced__ble__padv__params__t.html#af437588b88b89bf07a55a47351921722":[1,5,4,6],
 "structwiced__ble__padv__params__t.html#aff9b55b62dd7a974ef8f8e3d1b73f5f3":[1,5,4,7],
 "structwiced__ble__padv__report__event__data__t.html":[1,5,8],
-"structwiced__ble__padv__report__event__data__t.html#a20247ccf145739107bf2c87a40d5e6b6":[1,5,8,1],
-"structwiced__ble__padv__report__event__data__t.html#a336b25ce51c8d6348f9afb3e603e4cb2":[1,5,8,5],
-"structwiced__ble__padv__report__event__data__t.html#a3d88b0d84f79db5daee584e05b5b9cac":[1,5,8,4],
-"structwiced__ble__padv__report__event__data__t.html#a8e3214562051ec21cb6a82364748b165":[1,5,8,3],
-"structwiced__ble__padv__report__event__data__t.html#aaee78d4ad1b4def2e620e57dda0ec9ed":[1,5,8,6]
+"structwiced__ble__padv__report__event__data__t.html#a20247ccf145739107bf2c87a40d5e6b6":[1,5,8,1]
 };

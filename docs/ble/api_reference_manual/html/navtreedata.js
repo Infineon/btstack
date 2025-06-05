@@ -33,14 +33,15 @@ var NAVTREEINDEX =
 [
 "group___result.html",
 "group__gattsr__api__functions.html",
-"group__wiced__mem.html#ga3142e3e24bbbf661867d9abd49bf94cd",
-"group__wicedbt___device_management.html#ga48c13c0c67f2759e54f0ac215832ad16",
-"group__wicedbt___extended.html#gga0546f088ab9cda8feb5b29595cbd4fdca1af20bcc3f8fdd59bcc208d2aefc16ce",
-"group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68ba9370cd9ede463ad254d241672384612c",
-"structwiced__ble__cs__config__t.html",
-"structwiced__bt__ble__conn__params__t.html#a9cca6008241e70f7882704bc6d9deb65",
-"structwiced__bt__dev__encryption__status__t.html#a4a6e96558fa84c99c09860da4751da6f",
-"structwiced__bt__l2cap__appl__information__t.html#ac63cd89496eee5f981eec222303ac922"
+"group__wiced__mem.html#ga1b0787e7f01a5eabf0fda49461d4a0fa",
+"group__wicedbt___device_management.html#ga3932c56539d0a57d9679e1217d4180bf",
+"group__wicedbt___extended.html#gga0483a0344a8bc72119c84e6ab95111eaa517c5757cdc0f3e7b93f7525c6a5f118",
+"group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68ba547ffb76da36272d1d9a60ad5eb89320",
+"structwiced__ble__cs__config__complete__t.html#ae5bf2b560ca6f9eb28b463714c298003",
+"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a8daf68fc5daf3ef655aefc3d3a137761",
+"structwiced__bt__dev__edr__packet__types__t.html#afd080ddada4adbc1e834b15b61ec7683",
+"structwiced__bt__l2cap__appl__information__t.html#a81ba0bc1e4f501fd00c666c42fd1814e",
+"unionwiced__bt__management__evt__data__t.html#afd3bb47a6fa2ecf1a7e5d2d56cec5d13"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"structwiced__bt__gatt__read__multiple__rsp__t.html#a3a2e641962ba28e82f2af985fd6babe5":[1,14,6,0],
+"structwiced__bt__gatt__read__multiple__rsp__t.html#a3b7590ac541efbff959ce9acceda332a":[1,14,6,2],
+"structwiced__bt__gatt__read__multiple__rsp__t.html#af8f2414c5b7b0c03eabece3cdc4b6ea4":[1,14,6,1],
+"structwiced__bt__gatt__read__t.html":[1,14,4],
 "structwiced__bt__gatt__read__t.html#a0b2fe98ed9c1bf9d78c387ff2fab01d4":[1,14,4,1],
 "structwiced__bt__gatt__read__t.html#a1964e4eeda2df368a9f8a1146dce3969":[1,14,4,0],
 "structwiced__bt__gatt__req__conf__t.html":[1,14,10],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "structwiced__bt__uuid__t.html#ad3abeb8521bdc58f3f91bc1ac579100e":[1,21,0,0,4],
 "structwiced__bt__uuid__t.html#aeecb37fde2935fb7e2900da67a380be7":[1,21,0,0,1],
 "structwiced__bt__voice__path__setup__t.html":[1,16,1],
-"structwiced__bt__voice__path__setup__t.html#a8d87d052a0e6dc4bc60b2c0d8447114a":[1,16,1,1],
-"structwiced__bt__voice__path__setup__t.html#af18be965863f6115aa0b889ab4965531":[1,16,1,0],
-"structwiced__gattdb__entry__t.html":[1,14,32],
-"structwiced__gattdb__entry__t.html#a3946e61f2efaae0c1c69c6c17744e146":[1,14,32,2],
-"structwiced__gattdb__entry__t.html#a9bf8e84fd587d48e8dcb353f8043433a":[1,14,32,1]
+"structwiced__bt__voice__path__setup__t.html#a8d87d052a0e6dc4bc60b2c0d8447114a":[1,16,1,1]
 };

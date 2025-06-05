@@ -7,6 +7,14 @@ Following are the limitations when using host based address resolution (only app
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
 ## Changelog
+## V4.1.3
+### Fixes in BTSTACK4.1.3
+ - Fix to not update the random address if rpa_refresh_timeout is set to 0
+
+## V4.1.2
+### Fixes in BTSTACK4.1.2
+ - Fix for PSOC + BLESS controller not responding to scan request from a private device
+
 ## V4.1.0
 ### BTSTACK4.1 contains following enhancements and fixes -
  - Creation of stack libraries using LLVM toolchain
