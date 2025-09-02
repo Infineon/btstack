@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__wiced__bt__mesh__default__transition__time__server" kind="group">
     <compoundname>wiced_bt_mesh_default_transition_time_server</compoundname>
     <title>Mesh Default Transition Time Server</title>
@@ -10,41 +10,35 @@
         <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *wiced_bt_mesh_default_transition_time_data_t)</argsstring>
         <name>wiced_bt_mesh_default_transition_time_server_callback_t</name>
         <briefdescription>
-<para>Generic Default Transition Time Server callback is called by the Mesh Models library on receiving a message from the peer. </para>
-        </briefdescription>
+<para>Generic Default Transition Time Server callback is called by the Mesh Models library on receiving a message from the peer. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1DEFAULT_TRANSITION_TIME_EVENT" kindref="member">Default Transition Time Events</ref>) </para>
-</parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1DEFAULT_TRANSITION_TIME_EVENT" kindref="member">Default Transition Time Events</ref>) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>information about the message received. The same pointer should be used in the reply if required. </para>
-</parameterdescription>
+<para>information about the message received. The same pointer should be used in the reply if required. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the on/off state data</para>
-</parameterdescription>
+<para>Pointer to the on/off state data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2571" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2571" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2571" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2571" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -66,42 +60,35 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Generic Default Transition Time Module initialization. </para>
-        </briefdescription>
+<para>Generic Default Transition Time Module initialization. </para>        </briefdescription>
         <detaileddescription>
-<para>An application should initialize default transition time model for each element which supports any of the server models that have transitions. The callback that is passed as a parameter will be executed if the provisioner changes the value of the default transition time.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>An application should initialize default transition time model for each element which supports any of the server models that have transitions. The callback that is passed as a parameter will be executed if the provisioner changes the value of the default transition time.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Device element to where model is used </para>
-</parameterdescription>
+<para>Device element to where model is used </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para>
-</parameterdescription>
+<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2584" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2584" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__default__transition__time__server_1gaadbba5b7363b2afda149d73b56d0959d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -121,42 +108,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Default Transition Time Server Message Handler. </para>
-        </briefdescription>
+<para>Default Transition Time Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2598" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2598" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -164,22 +144,17 @@
         <name>WICED_BT_MESH_MODEL_DEFAULT_TRANSITION_TIME_SERVER</name>
         <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_DEFTT_SRV, <ref refid="group__wiced__bt__mesh__default__transition__time__server_1gaadbba5b7363b2afda149d73b56d0959d" kindref="member">wiced_bt_mesh_model_default_transition_time_server_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Default Transition Time Server Module. </para>
-        </briefdescription>
+<para>Mesh Default Transition Time Server Module. </para>        </briefdescription>
         <detaileddescription>
-<para>The model is used as a base for multiple other models. It is typically not used standalone. </para>
-        </detaileddescription>
+<para>The model is used as a base for multiple other models. It is typically not used standalone. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2559" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2559" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2559" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2559" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The AIROC Mesh Default Transition Time Server module of the Mesh Models library provides implementation of the Default Transition Time model. </para>
-    </briefdescription>
+<para>The AIROC Mesh Default Transition Time Server module of the Mesh Models library provides implementation of the Default Transition Time model. </para>    </briefdescription>
     <detaileddescription>
-<para>The module cannot be used as a standalone device. But it is required to be included in the definition of various other devices.</para>
-<para>All functions of the module are implemented internally in the Mesh Models library and do not need to be replicated in the application, unless application needs to replace the functionality of the server. </para>
-    </detaileddescription>
+<para>The module cannot be used as a standalone device. But it is required to be included in the definition of various other devices.</para><para>All functions of the module are implemented internally in the Mesh Models library and do not need to be replicated in the application, unless application needs to replace the functionality of the server. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

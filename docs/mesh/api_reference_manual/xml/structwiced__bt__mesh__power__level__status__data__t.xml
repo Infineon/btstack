@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__power__level__status__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_power_level_status_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>present_power</name>
         <briefdescription>
-<para>The present value of the Generic Power Actual state. </para>
-        </briefdescription>
+<para>The present value of the Generic Power Actual state. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1077" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1077" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1077" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1077" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__power__level__status__data__t_1a38a876245c51b593b89b32122c674887" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>target_power</name>
         <briefdescription>
-<para>The target value of the Generic Power Actual state. </para>
-        </briefdescription>
+<para>The target value of the Generic Power Actual state. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1078" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1078" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1078" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1078" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__power__level__status__data__t_1aba21beba1b532393f5756cb38672878e" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -38,21 +36,19 @@
         <argsstring></argsstring>
         <name>remaining_time</name>
         <briefdescription>
-<para>Remaining time for transition. </para>
-        </briefdescription>
+<para>Remaining time for transition. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1079" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1079" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1079" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1079" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Power Level Status Data structure exchanged between the application and Generic Power Level Model. </para>
-    </briefdescription>
+<para>Power Level Status Data structure exchanged between the application and Generic Power Level Model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1076" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1075" bodyend="1080"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1076" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1075" bodyend="1080"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__power__level__status__data__t_1ac1d1046376913f9c310e0e8863821a6f" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_power_level_status_data_t</scope><name>present_power</name></member>
       <member refid="structwiced__bt__mesh__power__level__status__data__t_1aba21beba1b532393f5756cb38672878e" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_power_level_status_data_t</scope><name>remaining_time</name></member>

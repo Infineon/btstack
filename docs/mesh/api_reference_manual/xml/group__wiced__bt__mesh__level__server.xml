@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__wiced__bt__mesh__level__server" kind="group">
     <compoundname>wiced_bt_mesh_level_server</compoundname>
     <title>Mesh Level Server</title>
@@ -10,42 +10,35 @@
         <argsstring>(uint8_t element_idx, uint16_t event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_level_server_callback_t</name>
         <briefdescription>
-<para>Generic Level Server callback is called by the Mesh Models library when the level needs to be changed. </para>
-        </briefdescription>
+<para>Generic Level Server callback is called by the Mesh Models library when the level needs to be changed. </para>        </briefdescription>
         <detaileddescription>
-<para>If peer device sends Set Level, Delta Level or Move Level command specifying not zero transition interval, the callback will be called periodically. The only event that the application needs to process is WICED_BT_MESH_LEVEL_STATUS.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>If peer device sends Set Level, Delta Level or Move Level command specifying not zero transition interval, the callback will be called periodically. The only event that the application needs to process is WICED_BT_MESH_LEVEL_STATUS.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element Index of the model </para>
-</parameterdescription>
+<para>Element Index of the model </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1LEVEL_EVENT" kindref="member">Level Events</ref>) </para>
-</parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1LEVEL_EVENT" kindref="member">Level Events</ref>) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the level state data</para>
-</parameterdescription>
+<para>Pointer to the level state data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2345" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2345" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2345" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2345" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -67,42 +60,35 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Level Server Module initialization. </para>
-        </briefdescription>
+<para>Level Server Module initialization. </para>        </briefdescription>
         <detaileddescription>
-<para>The function shall be called to initialize the Level Module of the Mesh Models library. For multi element applications, the initialization shall be done for each element that supports level get, level set, level delta, or level move functionality.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The function shall be called to initialize the Level Module of the Mesh Models library. For multi element applications, the initialization shall be done for each element that supports level get, level set, level delta, or level move functionality.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Device element to where model is used </para>
-</parameterdescription>
+<para>Device element to where model is used </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Application or Parent model callback that will be executed on receiving a message </para>
-</parameterdescription>
+<para>Application or Parent model callback that will be executed on receiving a message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2359" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2359" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__level__server_1ga54956fe15bf384bcd2cc9da8435c25e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -122,42 +108,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Level Server Message Handler. </para>
-        </briefdescription>
+<para>Level Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2371" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2371" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__level__server_1gad39b8a61c8da1036850c8bd67bd69368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -177,42 +156,35 @@
           <declname>buffer_len</declname>
         </param>
         <briefdescription>
-<para>Level Server Scene Store Handler. </para>
-        </briefdescription>
+<para>Level Server Scene Store Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The mesh Scene Server calls this function so that the module can store required data for the scene.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The mesh Scene Server calls this function so that the module can store required data for the scene.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which scene information is being stored </para>
-</parameterdescription>
+<para>Element index for which scene information is being stored </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to a buffer where data should be stored </para>
-</parameterdescription>
+<para>Pointer to a buffer where data should be stored </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buf_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Maximum amount of data a model can store</para>
-</parameterdescription>
+<para>Maximum amount of data a model can store</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2383" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2383" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__level__server_1ga81857d857bc6c3a765832336b567ff62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -240,58 +212,49 @@
           <declname>delay</declname>
         </param>
         <briefdescription>
-<para>Level Server Scene Store Handler. </para>
-        </briefdescription>
+<para>Level Server Scene Store Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>When Scene Server receives Scene Recall message it calls this function with data previously stored in the NVRAM.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>When Scene Server receives Scene Recall message it calls this function with data previously stored in the NVRAM.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which scene information is being recalled </para>
-</parameterdescription>
+<para>Element index for which scene information is being recalled </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to a buffer where model&apos;s data is located </para>
-</parameterdescription>
+<para>Pointer to a buffer where model&apos;s data is located </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buf_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Maximum amount of data a model can get from the buffer </para>
-</parameterdescription>
+<para>Maximum amount of data a model can get from the buffer </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>transition_time</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Specified time in milliseconds to transition to the target state </para>
-</parameterdescription>
+<para>Specified time in milliseconds to transition to the target state </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>delay</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Specifies time in milliseconds before starting to transition to the target state</para>
-</parameterdescription>
+<para>Specifies time in milliseconds before starting to transition to the target state</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2397" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2397" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__level__server_1ga45b6e18640ccf69649018979016c6fdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -307,33 +270,28 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>An application can call this function to notify Generic Level library that the value has been changed locally. </para>
-        </briefdescription>
+<para>An application can call this function to notify Generic Level library that the value has been changed locally. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which level state has changed </para>
-</parameterdescription>
+<para>Element index for which level state has changed </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>New value of level</para>
-</parameterdescription>
+<para>New value of level</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2407" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2407" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -344,24 +302,17 @@
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_SCENE_SETUP_SRV, <ref refid="group__wiced__bt__mesh__scene__server_1ga1e69d93cd77b795bd811c1ae913a39e9" kindref="member">wiced_bt_mesh_model_scene_setup_server_message_handler</ref>, NULL, NULL }, \
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_LEVEL_SRV, <ref refid="group__wiced__bt__mesh__level__server_1ga54956fe15bf384bcd2cc9da8435c25e2" kindref="member">wiced_bt_mesh_model_level_server_message_handler</ref>, <ref refid="group__wiced__bt__mesh__level__server_1gad39b8a61c8da1036850c8bd67bd69368" kindref="member">wiced_bt_mesh_model_level_server_scene_store_handler</ref>, <ref refid="group__wiced__bt__mesh__level__server_1ga81857d857bc6c3a765832336b567ff62" kindref="member">wiced_bt_mesh_model_level_server_scene_recall_handler</ref> }</initializer>
         <briefdescription>
-<para>Mesh Level Server Device. </para>
-        </briefdescription>
+<para>Mesh Level Server Device. </para>        </briefdescription>
         <detaileddescription>
-<para>The model is used as a base for multiple other models. It is typically not used standalone. The closest is Power Level Device which adds on power up behavior to the device and then can be used standalone. </para>
-        </detaileddescription>
+<para>The model is used as a base for multiple other models. It is typically not used standalone. The closest is Power Level Device which adds on power up behavior to the device and then can be used standalone. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2326" column="10" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2326" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2326" column="10" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2326" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The AIROC Mesh Level Server module of the Mesh Models library provides a way to implement functionality for the devices that can be controlled using a simple level slider, aka Level client. </para>
-    </briefdescription>
+<para>The AIROC Mesh Level Server module of the Mesh Models library provides a way to implement functionality for the devices that can be controlled using a simple level slider, aka Level client. </para>    </briefdescription>
     <detaileddescription>
-<para>The Level Server module is typically not used by a target applications. It is used by other modules that extend Level functionality. For example a power adapter with controllable power level uses a Power Level module which in addition to Level provides Power On/Off and On Power Up control. Similarly, an application for a dimmable light uses Light Lightness module. While the client sends Level command, the application receives callback from the Light Lightness module that the lightness is changed appropriately.</para>
-<para>To use the Level Server, on startup an application or a module that extends the Level functionality should call <ref refid="group__wiced__bt__mesh__level__server_1ga682987a03ed06f9426480e8dbed52d8a" kindref="member">wiced_bt_mesh_model_level_server_init</ref> function providing the callback that will be executed when the change of the level is requested.</para>
-<para>Note, that the Mesh Models library implements the transition state machine. For example, when the change in the level is requested over some transition time, the application will be called periodically while transition is in progress.</para>
-<para>If the application initializes the Level server directly it should call the wiced_bt_mesh_model_level_changed function when the Level state of the device is changed locally. </para>
-    </detaileddescription>
+<para>The Level Server module is typically not used by a target applications. It is used by other modules that extend Level functionality. For example a power adapter with controllable power level uses a Power Level module which in addition to Level provides Power On/Off and On Power Up control. Similarly, an application for a dimmable light uses Light Lightness module. While the client sends Level command, the application receives callback from the Light Lightness module that the lightness is changed appropriately.</para><para>To use the Level Server, on startup an application or a module that extends the Level functionality should call <ref refid="group__wiced__bt__mesh__level__server_1ga682987a03ed06f9426480e8dbed52d8a" kindref="member">wiced_bt_mesh_model_level_server_init</ref> function providing the callback that will be executed when the change of the level is requested.</para><para>Note, that the Mesh Models library implements the transition state machine. For example, when the change in the level is requested over some transition time, the application will be called periodically while transition is in progress.</para><para>If the application initializes the Level server directly it should call the wiced_bt_mesh_model_level_changed function when the Level state of the device is changed locally. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

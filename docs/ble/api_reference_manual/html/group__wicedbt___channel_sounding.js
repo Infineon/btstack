@@ -170,6 +170,6 @@ var group__wicedbt___channel_sounding =
     [ "wiced_ble_cs_set_procedure_params", "group__wicedbt___channel_sounding.html#gae903324548894269a3ae65184ac70f1e", null ],
     [ "wiced_ble_cs_set_procedure_enable", "group__wicedbt___channel_sounding.html#ga8b1aa038c80902e9ec7b707194efd2ff", null ],
     [ "wiced_ble_cs_get_event_str", "group__wicedbt___channel_sounding.html#gad7d1851073ba363f5d5329030b168314", null ],
-    [ "wiced_ble_cs_read_subevent_result_event_hdr_from_stream", "group__wicedbt___channel_sounding.html#ga06d4972e92906074866edf9aaa245f39", null ],
-    [ "wiced_ble_cs_read_subevent_cont_result_event_hdr_from_stream", "group__wicedbt___channel_sounding.html#ga8ec46c0c0dd23bd59a467b5b792b3683", null ]
+    [ "wiced_ble_cs_read_subevent_result_event_hdr_from_stream", "group__wicedbt___channel_sounding.html#ga72083723b42be440f9da4266cc3e3b17", null ],
+    [ "wiced_ble_cs_read_subevent_cont_result_event_hdr_from_stream", "group__wicedbt___channel_sounding.html#ga335acaca4bea733d8e110702d144e070", null ]
 ];

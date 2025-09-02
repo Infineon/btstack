@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__time__tai__utc__delta__status__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_time_tai_utc_delta_status_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>tai_utc_delta_current</name>
         <briefdescription>
-<para>Current difference between TAI and UTC in seconds. </para>
-        </briefdescription>
+<para>Current difference between TAI and UTC in seconds. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="534" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="534" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="534" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="534" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__time__tai__utc__delta__status__t_1aa28ba107f862d4232eec2ce79bcdcb87" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>tai_utc_delta_new</name>
         <briefdescription>
-<para>Upcoming difference between TAI and UTC in seconds. </para>
-        </briefdescription>
+<para>Upcoming difference between TAI and UTC in seconds. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="535" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="535" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="535" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="535" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__time__tai__utc__delta__status__t_1a70f344a538498ba0f7aadc3b2fccac81" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -38,21 +36,19 @@
         <argsstring></argsstring>
         <name>tai_of_delta_change</name>
         <briefdescription>
-<para>Absolute TAI time when the TAI-UTC Delta will change from Current to New. </para>
-        </briefdescription>
+<para>Absolute TAI time when the TAI-UTC Delta will change from Current to New. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="536" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="536" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="536" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="536" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Time TAI UTC delta status structure exchanged between the Application and Time model. </para>
-    </briefdescription>
+<para>Time TAI UTC delta status structure exchanged between the Application and Time model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="533" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="532" bodyend="537"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="533" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="532" bodyend="537"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__time__tai__utc__delta__status__t_1a70f344a538498ba0f7aadc3b2fccac81" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_tai_utc_delta_status_t</scope><name>tai_of_delta_change</name></member>
       <member refid="structwiced__bt__mesh__time__tai__utc__delta__status__t_1ac430e09096d0b2610f3f3e2ba0ad8be2" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_time_tai_utc_delta_status_t</scope><name>tai_utc_delta_current</name></member>

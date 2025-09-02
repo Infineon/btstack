@@ -21,6 +21,7 @@ var group__wiced__bredr__api =
     [ "wiced_bt_dev_set_link_policy", "group__wiced__bredr__api.html#gafa20b1e8c312d27e8ea2824f68ccb374", null ],
     [ "wiced_bt_coex_enable", "group__wiced__bredr__api.html#gaa34891858f4af31cf59a8e9d34228ac1", null ],
     [ "wiced_bt_coex_disable", "group__wiced__bredr__api.html#ga2a25f2513f319465608e68a02ab2c714", null ],
+    [ "wiced_bt_btm_set_device_name", "group__wiced__bredr__api.html#ga664dbb86895d139f47a34572ed2740c8", null ],
     [ "wiced_bt_dev_set_afh_channel_assessment", "group__wiced__bredr__api.html#ga3bd10a7bfd5904cb41bc4d89bb594c37", null ],
     [ "wiced_bt_sco_setPacketTypes", "group__wiced__bredr__api.html#gaf157c7a41e1ae2dba755578d47ceefe0", null ],
     [ "wiced_bt_dev_setAclPacketTypes", "group__wiced__bredr__api.html#gaea228aa913683be07f8cdfe3f37d3d30", null ]

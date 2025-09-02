@@ -5,7 +5,8 @@ var group__wicedbt__a2dp__mpeg__2__4 =
       [ "samp_freq", "structwiced__bt__a2d__m24__cie__t.html#addc65fc5e892515edf8d271cdb629db1", null ],
       [ "chnl", "structwiced__bt__a2d__m24__cie__t.html#a9468c9af18fdc7c16cffa0e872c7178d", null ],
       [ "vbr", "structwiced__bt__a2d__m24__cie__t.html#a8d0297f2e6b2e56fd58c696bb57fd7fb", null ],
-      [ "bitrate", "structwiced__bt__a2d__m24__cie__t.html#ac1c7596f1c7504be639c0bf2d4876552", null ]
+      [ "bitrate", "structwiced__bt__a2d__m24__cie__t.html#ac1c7596f1c7504be639c0bf2d4876552", null ],
+      [ "drc", "structwiced__bt__a2d__m24__cie__t.html#adbf47f531f90668601d3ecd43314fbdd", null ]
     ] ],
     [ "A2D_M24_INFO_LEN", "group__wicedbt__a2dp__mpeg__2__4.html#ga90bbc5fd7bcba9fe73b526672d5a4a89", null ],
     [ "A2D_M24_IE_OBJ_MSK", "group__wicedbt__a2dp__mpeg__2__4.html#ga0f70ba5c8d428700d2ed525fcc6a7836", null ],
@@ -13,6 +14,9 @@ var group__wicedbt__a2dp__mpeg__2__4 =
     [ "A2D_M24_IE_OBJ_4LC", "group__wicedbt__a2dp__mpeg__2__4.html#gaab61880c8f63deb584fa506fe56deb5c", null ],
     [ "A2D_M24_IE_OBJ_4LTP", "group__wicedbt__a2dp__mpeg__2__4.html#gac42775205cbb2c27745e445ec24f5762", null ],
     [ "A2D_M24_IE_OBJ_4S", "group__wicedbt__a2dp__mpeg__2__4.html#ga3565522ae8b5188a0ca97a33677a43f6", null ],
+    [ "A2D_M24_IE_OBJ_4HE", "group__wicedbt__a2dp__mpeg__2__4.html#gae10476e43a4f6708c979c215cc5091dd", null ],
+    [ "A2D_M24_IE_OBJ_4HE2", "group__wicedbt__a2dp__mpeg__2__4.html#ga479180f080f52d95876c18cf4ea9d0de", null ],
+    [ "A2D_M24_IE_OBJ_4ELD2", "group__wicedbt__a2dp__mpeg__2__4.html#gac316b5022fbb4cb32cfc859d1bb31344", null ],
     [ "A2D_M24_IE_SAMP_FREQ_MSK", "group__wicedbt__a2dp__mpeg__2__4.html#ga4adc4f7a0c82f036361ddbab06745ba5", null ],
     [ "A2D_M24_IE_SAMP_FREQ_8", "group__wicedbt__a2dp__mpeg__2__4.html#gab10369f6b984750d924c0baadcc3bf07", null ],
     [ "A2D_M24_IE_SAMP_FREQ_11", "group__wicedbt__a2dp__mpeg__2__4.html#gad607b26cc63d8c0bf70e27b8bf09e0ae", null ],
@@ -29,6 +33,8 @@ var group__wicedbt__a2dp__mpeg__2__4 =
     [ "A2D_M24_IE_CHNL_MSK", "group__wicedbt__a2dp__mpeg__2__4.html#gae4d8e6c85aa156cd97a00ecee18dcdd7", null ],
     [ "A2D_M24_IE_CHNL_1", "group__wicedbt__a2dp__mpeg__2__4.html#ga93074fc213d2bab831a158c7e11a861f", null ],
     [ "A2D_M24_IE_CHNL_2", "group__wicedbt__a2dp__mpeg__2__4.html#ga5c87fde4827af18c91db4aa3c26e1f4f", null ],
+    [ "A2D_M24_IE_CHNL_6", "group__wicedbt__a2dp__mpeg__2__4.html#ga73b33606973bbd39c698477dd544fd37", null ],
+    [ "A2D_M24_IE_CHNL_8", "group__wicedbt__a2dp__mpeg__2__4.html#gaa7756d67b32c32307373d9189436c033", null ],
     [ "A2D_M24_IE_VBR_MSK", "group__wicedbt__a2dp__mpeg__2__4.html#ga9d0758c82fb5b4511b67d6e96690baa9", null ],
     [ "A2D_M24_IE_BITRATE3_MSK", "group__wicedbt__a2dp__mpeg__2__4.html#ga9a50ae77f45b44523795c58f483b01cc", null ],
     [ "A2D_M24_IE_BITRATE45_MSK", "group__wicedbt__a2dp__mpeg__2__4.html#gac125cb17ca8029ca7dfc0bb35d89e483", null ],

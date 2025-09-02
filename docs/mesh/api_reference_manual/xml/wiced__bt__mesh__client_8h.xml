@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="wiced__bt__mesh__client_8h" kind="file" language="C++">
     <compoundname>wiced_bt_mesh_client.h</compoundname>
     <includes refid="wiced__bt__mesh__event_8h" local="yes">wiced_bt_mesh_event.h</includes>
@@ -14,26 +14,21 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>Checking GATT connection. </para>
-        </briefdescription>
+<para>Checking GATT connection. </para>        </briefdescription>
         <detaileddescription>
-<para>This function returns TRUE if remote provisioning started GATT connection</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>This function returns TRUE if remote provisioning started GATT connection</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>none</parametername>
 </parameternamelist>
 <parameterdescription>
-<para></para>
-</parameterdescription>
+<para></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="43" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="43" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga6846d2264854032cc1be924f6e5a9f19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -49,34 +44,28 @@
           <declname>reason</declname>
         </param>
         <briefdescription>
-<para>Connection State Changed. </para>
-        </briefdescription>
+<para>Connection State Changed. </para>        </briefdescription>
         <detaileddescription>
-<para>The application shall call this function when connection is established or dropped.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The application shall call this function when connection is established or dropped.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>conn_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>GATT connection ID, or 0 if connection is lost. </para>
-</parameterdescription>
+<para>GATT connection ID, or 0 if connection is lost. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>reason</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Disconnection reason</para>
-</parameterdescription>
+<para>Disconnection reason</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="54" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="54" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga9c70ecd8be9dd7681a7ee00191f49cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -88,26 +77,21 @@
           <declname>start</declname>
         </param>
         <briefdescription>
-<para>Search for Proxy device. </para>
-        </briefdescription>
+<para>Search for Proxy device. </para>        </briefdescription>
         <detaileddescription>
-<para>Process command from the MCU to start or stop scanning for GATT Proxy devices.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Process command from the MCU to start or stop scanning for GATT Proxy devices.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data structure with start/stop information.</para>
-</parameterdescription>
+<para>Pointer to the data structure with start/stop information.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="66" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="66" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga1b9f2c0b16806208c1434cbd19ae094d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -119,26 +103,21 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>Proxy Connect. </para>
-        </briefdescription>
+<para>Proxy Connect. </para>        </briefdescription>
         <detaileddescription>
-<para>The application can call this function to establish GATT Proxy connection. Depending on the parameters the connection should be establishing either to a device advertising it&apos;s identity, or a device advertising a mesh network</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The application can call this function to establish GATT Proxy connection. Depending on the parameters the connection should be establishing either to a device advertising it&apos;s identity, or a device advertising a mesh network</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data structure with the node identity or network.</para>
-</parameterdescription>
+<para>Pointer to the data structure with the node identity or network.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="78" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="78" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga498c876da4517a9ad622c9d6b400b85f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -149,26 +128,21 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>Proxy Disonnect. </para>
-        </briefdescription>
+<para>Proxy Disonnect. </para>        </briefdescription>
         <detaileddescription>
-<para>The application can call this function to terminat GATT Proxy connection.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The application can call this function to terminat GATT Proxy connection.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>none</parametername>
 </parameternamelist>
 <parameterdescription>
-<para></para>
-</parameterdescription>
+<para></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="88" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="88" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga149dd367c0e623c9cb6127506059c00c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -193,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="102" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="102" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga06c7244e2e167ae29995e8ff6da58c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -205,26 +179,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>Provisioner Disconnect. </para>
-        </briefdescription>
+<para>Provisioner Disconnect. </para>        </briefdescription>
         <detaileddescription>
-<para>The application can call this function to terminate GATT Provisioning connection.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The application can call this function to terminate GATT Provisioning connection.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the event structure which identified the remote provisioning server.</para>
-</parameterdescription>
+<para>Pointer to the event structure which identified the remote provisioning server.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="112" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="112" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1gabc49027b1a5076322f9924133dcfa2c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -236,26 +205,21 @@
           <declname>is_active</declname>
         </param>
         <briefdescription>
-<para>Set Scan Mode. </para>
-        </briefdescription>
+<para>Set Scan Mode. </para>        </briefdescription>
         <detaileddescription>
-<para>The application can call this function to switch between passive and active scan.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The application can call this function to switch between passive and active scan.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>is_active</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If set to 1, the stack will perform the active scan</para>
-</parameterdescription>
+<para>If set to 1, the stack will perform the active scan</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>none </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>none </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="123" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="123" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__client_1ga29b4dab0957dabe3478ad3aa7c207e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -275,50 +239,41 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Send Vendor Data message. </para>
-        </briefdescription>
+<para>Send Vendor Data message. </para>        </briefdescription>
         <detaileddescription>
-<para>The application can call this function to send Vendor Data message to the Client</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The application can call this function to send Vendor Data message to the Client</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the event structure which identified the remote provisioning server. </para>
-</parameterdescription>
+<para>Pointer to the event structure which identified the remote provisioning server. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the vendor data </para>
-</parameterdescription>
+<para>Pointer to the vendor data </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the vendor data</para>
-</parameterdescription>
+<para>Length of the vendor data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>none </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>none </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="135" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h" line="135" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>&gt; </para>
-    </briefdescription>
+<para>&gt; </para>    </briefdescription>
     <detaileddescription>
-<para>Mesh Provisioning definitions. </para>
-    </detaileddescription>
+<para>Mesh Provisioning definitions. </para>    </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>2016-YEAR<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
@@ -387,6 +342,6 @@
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__WICED_BT_MESH_PROVISION_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_client.h"/>
   </compounddef>
 </doxygen>

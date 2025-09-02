@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__sensor__config__descriptor__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_sensor_config_descriptor_t</compoundname>
     <includes local="no">wiced_bt_mesh_cfg.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>positive_tolerance</name>
         <briefdescription>
-<para>value representing the magnitude of a possible positive tolerance with sensor measurement </para>
-        </briefdescription>
+<para>value representing the magnitude of a possible positive tolerance with sensor measurement </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="80" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="80" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="80" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__descriptor__t_1a96e896f016d49b7ead45d329bc01dcb7" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>negative_tolerance</name>
         <briefdescription>
-<para>value representing the magnitude of a possible negative tolerance with sensor measurement </para>
-        </briefdescription>
+<para>value representing the magnitude of a possible negative tolerance with sensor measurement </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="81" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="81" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="81" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__descriptor__t_1a6a063931be4397583dd5fd00efd416fa" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -38,13 +36,12 @@
         <argsstring></argsstring>
         <name>sampling_function</name>
         <briefdescription>
-<para>averaging operation or type of sampling function applied to the measured value </para>
-        </briefdescription>
+<para>averaging operation or type of sampling function applied to the measured value </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="82" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="82" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="82" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__descriptor__t_1a6a99d6dc39d110210913107edfe61503" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -52,13 +49,12 @@
         <argsstring></argsstring>
         <name>measurement_period</name>
         <briefdescription>
-<para>uint8 value n that represents the averaging time span, accumulation time, or measurement period in seconds </para>
-        </briefdescription>
+<para>uint8 value n that represents the averaging time span, accumulation time, or measurement period in seconds </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="83" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="83" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="83" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__descriptor__t_1abb3303f38bf5198d5c1c2c3c85de8578" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -66,21 +62,19 @@
         <argsstring></argsstring>
         <name>update_interval</name>
         <briefdescription>
-<para>measurement reported by a sensor is internally refreshed at the frequency indicated in the Sensor Update Interval field </para>
-        </briefdescription>
+<para>measurement reported by a sensor is internally refreshed at the frequency indicated in the Sensor Update Interval field </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="84" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="84" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="84" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Sensor descriptor structure exchanged between the application and the Sensor Model. </para>
-    </briefdescription>
+<para>Sensor descriptor structure exchanged between the application and the Sensor Model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="79" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="78" bodyend="85"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="79" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="78" bodyend="85"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__sensor__config__descriptor__t_1a6a99d6dc39d110210913107edfe61503" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_config_descriptor_t</scope><name>measurement_period</name></member>
       <member refid="structwiced__bt__mesh__sensor__config__descriptor__t_1a96e896f016d49b7ead45d329bc01dcb7" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_config_descriptor_t</scope><name>negative_tolerance</name></member>

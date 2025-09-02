@@ -12,6 +12,7 @@
 #define __WICED_BT_SERIALIZE__
 
 #include "wiced_bt_dev.h"
+#include "wiced_data_types.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -24,13 +25,8 @@ extern "C" {
 */
 
 /**
-* Serialized function prototype
-*
-*/
-typedef void (*wiced_bt_serialized_app_func_t)(void *param);
-
-/**
-* Called by applications to serialize the execution of an application function in the BT stack context
+* Called by applications to serialize the execution of an application function in the BT stack context.
+* This function should not be called from ISR context.
 *
 * @param[in] p_func   Function to be called in the BT stack context
 * @param[in] param:   Parameter to be passed

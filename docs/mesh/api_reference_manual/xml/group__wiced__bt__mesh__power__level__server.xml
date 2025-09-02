@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__wiced__bt__mesh__power__level__server" kind="group">
     <compoundname>wiced_bt_mesh_power_level_server</compoundname>
     <title>Mesh Power Level Server</title>
@@ -10,43 +10,35 @@
         <argsstring>(uint8_t element_idx, uint16_t event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_power_level_server_callback_t</name>
         <briefdescription>
-<para>Generic Power Level Server callback. </para>
-        </briefdescription>
+<para>Generic Power Level Server callback. </para>        </briefdescription>
         <detaileddescription>
-<para>Generic Power Level Server callback is executed by the Mesh Models library to change the power level of the device. The p_data parameter points to the <ref refid="structwiced__bt__mesh__power__level__status__data__t" kindref="compound">wiced_bt_mesh_power_level_status_data_t</ref> structure. Typically the application will only need to use the value of the present_power field which specify the power level of the device which shall be set at this particular moment. If the remaining_time field is not zero, the Mesh Library will execute the callback at least once more before the transition is completed.</para>
-<para>If peer device requested to transition to the power level over a period of time, the callback will be executed repeatedly. Mesh Library calculates the present power level and submits to the application to update the hardware.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Generic Power Level Server callback is executed by the Mesh Models library to change the power level of the device. The p_data parameter points to the <ref refid="structwiced__bt__mesh__power__level__status__data__t" kindref="compound">wiced_bt_mesh_power_level_status_data_t</ref> structure. Typically the application will only need to use the value of the present_power field which specify the power level of the device which shall be set at this particular moment. If the remaining_time field is not zero, the Mesh Library will execute the callback at least once more before the transition is completed.</para><para>If peer device requested to transition to the power level over a period of time, the callback will be executed repeatedly. Mesh Library calculates the present power level and submits to the application to update the hardware.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element Index of the model </para>
-</parameterdescription>
+<para>Element Index of the model </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1POWER_LEVEL_EVENT" kindref="member">Power Level Events</ref>) </para>
-</parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1POWER_LEVEL_EVENT" kindref="member">Power Level Events</ref>) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the power level data</para>
-</parameterdescription>
+<para>Pointer to the power level data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2961" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2961" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2961" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2961" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -68,43 +60,35 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Power Level Module initialization. </para>
-        </briefdescription>
+<para>Power Level Module initialization. </para>        </briefdescription>
         <detaileddescription>
-<para>A Mesh application which contains Power Level Server should call this function for each element where the Power Level Server is present. If application needs to support multiple Power Level servers, the initialization shall be called multiple times, once for each element of the device.</para>
-<para>The application callback will be executed by the Model Library when it is required to set hardware to the desired power level to a certain level.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>A Mesh application which contains Power Level Server should call this function for each element where the Power Level Server is present. If application needs to support multiple Power Level servers, the initialization shall be called multiple times, once for each element of the device.</para><para>The application callback will be executed by the Model Library when it is required to set hardware to the desired power level to a certain level.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Device element to where model is used </para>
-</parameterdescription>
+<para>Device element to where model is used </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Application callback that will be executed to set the hardware to the specified level. </para>
-</parameterdescription>
+<para>Application callback that will be executed to set the hardware to the specified level. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the Mesh Models Library deletes this module&apos;s configuration data stored in the NVRAM.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the Mesh Models Library deletes this module&apos;s configuration data stored in the NVRAM.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if initialization was successful </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2977" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2977" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__level__server_1gaedcbfec81f7f7b3af31ecd2c9cfc3d2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -120,34 +104,28 @@
           <declname>level</declname>
         </param>
         <briefdescription>
-<para>Power Level Changed. </para>
-        </briefdescription>
+<para>Power Level Changed. </para>        </briefdescription>
         <detaileddescription>
-<para>The application shall call this function if the power level of the device has been changed locally. The Power Level module stores new state information and publishes the status change if appropriate.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The application shall call this function if the power level of the device has been changed locally. The Power Level module stores new state information and publishes the status change if appropriate.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which onoff state has changed </para>
-</parameterdescription>
+<para>Element index for which onoff state has changed </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>level</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>New value of the power level</para>
-</parameterdescription>
+<para>New value of the power level</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2989" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2989" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__level__server_1ga2fc9792afd476737b331b4e4d3f28dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -167,42 +145,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Power Level Server Message Handler. </para>
-        </briefdescription>
+<para>Power Level Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. This function is implemented by Mesh Models library and does not need to be replicated by the application or any other module. The function returns WICED_TRUE if the message is destined for this specific model, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. This function is implemented by Mesh Models library and does not need to be replicated by the application or any other module. The function returns WICED_TRUE if the message is destined for this specific model, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3003" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3003" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__level__server_1ga2a7638d0918f694804b4acfd8a4b69ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -222,42 +193,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Power Level Setup Server Message Handler. </para>
-        </briefdescription>
+<para>Power Level Setup Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. This function is implemented by Mesh Models library and does not need to be replicated by the application or any other module. The function returns WICED_TRUE if the message is destined for this specific model, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. This function is implemented by Mesh Models library and does not need to be replicated by the application or any other module. The function returns WICED_TRUE if the message is destined for this specific model, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3017" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3017" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__level__server_1ga02612c425d9164a6d59b8e4236a94ceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -277,42 +241,35 @@
           <declname>buffer_len</declname>
         </param>
         <briefdescription>
-<para>Power Level Server Scene Store Handler. </para>
-        </briefdescription>
+<para>Power Level Server Scene Store Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The mesh Scene Server calls this function so that the module can store required data for the scene. This function is implemented by Mesh Models library and does not need to be replicated by the application or any other module.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The mesh Scene Server calls this function so that the module can store required data for the scene. This function is implemented by Mesh Models library and does not need to be replicated by the application or any other module.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which scene information is being stored </para>
-</parameterdescription>
+<para>Element index for which scene information is being stored </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to a buffer where data should be stored </para>
-</parameterdescription>
+<para>Pointer to a buffer where data should be stored </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buf_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Maximum amount of data a model can store</para>
-</parameterdescription>
+<para>Maximum amount of data a model can store</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3030" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3030" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__level__server_1gacc865d632fd932907aafefede5522ed9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -340,58 +297,49 @@
           <declname>delay</declname>
         </param>
         <briefdescription>
-<para>Power Level Server Scene Store Handler. </para>
-        </briefdescription>
+<para>Power Level Server Scene Store Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>When Scene Server receives Scene Recall message it calls this function with data previously stored in the NVRAM. This function is implemented by Mesh Models library and does not need to be replicated by the application or any other module.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>When Scene Server receives Scene Recall message it calls this function with data previously stored in the NVRAM. This function is implemented by Mesh Models library and does not need to be replicated by the application or any other module.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which scene information is being recalled </para>
-</parameterdescription>
+<para>Element index for which scene information is being recalled </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to a buffer where model&apos;s data is located </para>
-</parameterdescription>
+<para>Pointer to a buffer where model&apos;s data is located </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buf_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Maximum amount of data a model can get from the buffer </para>
-</parameterdescription>
+<para>Maximum amount of data a model can get from the buffer </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>transition_time</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Specified time in milliseconds to transition to the target state </para>
-</parameterdescription>
+<para>Specified time in milliseconds to transition to the target state </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>delay</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Specifies time in milliseconds before starting to transition to the target state</para>
-</parameterdescription>
+<para>Specifies time in milliseconds before starting to transition to the target state</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3045" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3045" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -407,27 +355,17 @@
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_LEVEL_SRV, <ref refid="group__wiced__bt__mesh__power__level__server_1ga2fc9792afd476737b331b4e4d3f28dbd" kindref="member">wiced_bt_mesh_model_power_level_server_message_handler</ref>, <ref refid="group__wiced__bt__mesh__power__level__server_1ga02612c425d9164a6d59b8e4236a94ceb" kindref="member">wiced_bt_mesh_model_power_level_server_scene_store_handler</ref>, <ref refid="group__wiced__bt__mesh__power__level__server_1gacc865d632fd932907aafefede5522ed9" kindref="member">wiced_bt_mesh_model_power_level_server_scene_recall_handler</ref> }, \
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_POWER_LEVEL_SETUP_SRV, <ref refid="group__wiced__bt__mesh__power__level__server_1ga2a7638d0918f694804b4acfd8a4b69ab" kindref="member">wiced_bt_mesh_model_power_level_setup_server_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Power Level Server Device Composition Data. </para>
-        </briefdescription>
+<para>Mesh Power Level Server Device Composition Data. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Power Level Server device combines power level and power onoff server functionality with default transition time and on power up behavior. The model can be used standalone, for example, to implement a power plug with adjustible level. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>
-        </detaileddescription>
+<para>The Mesh Power Level Server device combines power level and power onoff server functionality with default transition time and on power up behavior. The model can be used standalone, for example, to implement a power plug with adjustible level. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2931" column="10" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2931" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2931" column="10" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2931" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The AIROC Mesh Power Level Server module of the Mesh Models library provides a way to implement functionality of a power plug type of a device that can be controlled using a Level slider (Generic Level client) and On/Off switch (Generic On/Off client). </para>
-    </briefdescription>
+<para>The AIROC Mesh Power Level Server module of the Mesh Models library provides a way to implement functionality of a power plug type of a device that can be controlled using a Level slider (Generic Level client) and On/Off switch (Generic On/Off client). </para>    </briefdescription>
     <detaileddescription>
-<para>In addition to that the device supports a default transition time server functionality and the application can specify on power up behavior.</para>
-<para>To instantiate the Power Level Server module, that application includes the <ref refid="group__wiced__bt__mesh__power__level__server_1gaffe3cb3dbf98e48826c58dceb86f25cf" kindref="member">WICED_BT_MESH_MODEL_POWER_LEVEL_SERVER</ref> in the device definition. In addition to that, the application shall call <ref refid="group__wiced__bt__mesh__power__level__server_1gac58e658d3d557b1c50b530477a329375" kindref="member">wiced_bt_mesh_model_power_level_server_init</ref> function providing the <ref refid="group__wiced__bt__mesh__power__level__server_1ga58610260dbbb87bb7921af540ef45d33" kindref="member">wiced_bt_mesh_power_level_server_callback_t</ref> callback that will be executed when power level of the device needs to be changed.</para>
-<para>If the device supports several elements with the Power Level Server, for example a power strip with several power plugs, the <ref refid="group__wiced__bt__mesh__power__level__server_1gaffe3cb3dbf98e48826c58dceb86f25cf" kindref="member">WICED_BT_MESH_MODEL_POWER_LEVEL_SERVER</ref> shall be included for each element.</para>
-<para>The Mesh Power Level Server module in the Mesh Models library maintains the On/Off and Level states and notifies the application on the state changes. The application shall call the <ref refid="group__wiced__bt__mesh__power__level__server_1gaedcbfec81f7f7b3af31ecd2c9cfc3d2a" kindref="member">wiced_bt_mesh_model_power_level_server_level_changed</ref> function when the power level of the device is changed locally.</para>
-<para>Most of the functionality of the Mesh Power Level server device is implemented in the Mesh Models Library. The application only needs to set hardware appropriately on receiving WICED_BT_MESH_POWER_LEVEL_STATUS event. If client requests to change power to the target value over a period of time, the library will maintain the timer and will periodically call the application with appropriate power level.</para>
-<para>The default transition time is managed by the Mesh Models library. The application provides factory default in the default_transition_time element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client.</para>
-<para>The on power up behavior is managed by the Mesh Models library. The application provides factory default in the onpowerup_state element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client. </para>
-    </detaileddescription>
+<para>In addition to that the device supports a default transition time server functionality and the application can specify on power up behavior.</para><para>To instantiate the Power Level Server module, that application includes the <ref refid="group__wiced__bt__mesh__power__level__server_1gaffe3cb3dbf98e48826c58dceb86f25cf" kindref="member">WICED_BT_MESH_MODEL_POWER_LEVEL_SERVER</ref> in the device definition. In addition to that, the application shall call <ref refid="group__wiced__bt__mesh__power__level__server_1gac58e658d3d557b1c50b530477a329375" kindref="member">wiced_bt_mesh_model_power_level_server_init</ref> function providing the <ref refid="group__wiced__bt__mesh__power__level__server_1ga58610260dbbb87bb7921af540ef45d33" kindref="member">wiced_bt_mesh_power_level_server_callback_t</ref> callback that will be executed when power level of the device needs to be changed.</para><para>If the device supports several elements with the Power Level Server, for example a power strip with several power plugs, the <ref refid="group__wiced__bt__mesh__power__level__server_1gaffe3cb3dbf98e48826c58dceb86f25cf" kindref="member">WICED_BT_MESH_MODEL_POWER_LEVEL_SERVER</ref> shall be included for each element.</para><para>The Mesh Power Level Server module in the Mesh Models library maintains the On/Off and Level states and notifies the application on the state changes. The application shall call the <ref refid="group__wiced__bt__mesh__power__level__server_1gaedcbfec81f7f7b3af31ecd2c9cfc3d2a" kindref="member">wiced_bt_mesh_model_power_level_server_level_changed</ref> function when the power level of the device is changed locally.</para><para>Most of the functionality of the Mesh Power Level server device is implemented in the Mesh Models Library. The application only needs to set hardware appropriately on receiving WICED_BT_MESH_POWER_LEVEL_STATUS event. If client requests to change power to the target value over a period of time, the library will maintain the timer and will periodically call the application with appropriate power level.</para><para>The default transition time is managed by the Mesh Models library. The application provides factory default in the default_transition_time element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client.</para><para>The on power up behavior is managed by the Mesh Models library. The application provides factory default in the onpowerup_state element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

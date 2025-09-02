@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="dir_4e6935c92f50a57c71fc19646a166fc4" kind="dir">
     <compoundname>include</compoundname>
     <innerfile refid="wiced__bt__mesh__agg_8h">wiced_bt_mesh_agg.h</innerfile>
@@ -21,6 +21,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/"/>
   </compounddef>
 </doxygen>

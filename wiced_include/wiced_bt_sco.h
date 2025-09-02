@@ -71,9 +71,9 @@
 #define WICED_SCO_PKT_TYPES_MASK_NO_3_EV5 0x0200    /**< SCO packet type 3-EV5 */
 #endif
 
-#define WICED_BT_SCO_NUM_CODECS 2     /**< Number of SCO codecs */
-#define WICED_BT_SCO_IDX_CVSD     0   /**< eSCO setting for CVSD */
-#define WICED_BT_SCO_IDX_MSBC     1   /**< eSCO setting for mSBC T2 */
+#define WICED_BT_SCO_NUM_CODECS     2       /**< Number of SCO codecs. This is only used as size of default SCO params array.*/
+#define WICED_BT_SCO_IDX_CVSD       0       /**< eSCO setting for CVSD (S4)*/
+#define WICED_BT_SCO_IDX_MSBC       1       /**< eSCO setting for mSBC/LC3 (T2) */
 #define WICED_BT_SCO_IDX_NONE WICED_BT_SCO_NUM_CODECS /**< Limit index */
 
 typedef uint8_t wiced_bt_sco_idx_t;   /**< SCO codec index */
@@ -94,20 +94,29 @@ typedef enum
 typedef void (wiced_bt_sco_data_cb_t) (uint16_t sco_channel, uint16_t length, uint8_t *p_data);
 
 
-/** Subset for the enhanced setup/accept synchronous connection paramters
+/** Subset for the enhanced setup/accept synchronous connection parameters
  * See BT 4.1 or later HCI spec for details */
 typedef struct
 {
-    uint16_t max_latency;                   /**< Maximum latency (0x4-0xFFFE in msecs) */
-    uint16_t packet_types;                  /**< Packet Types */
-    uint8_t retrans_effort;                 /**< 0x00-0x02, 0xFF don't care */
-    wiced_bool_t use_wbs;                   /**< True to use wide band, False to use narrow band */
+#define CODEC_NARROW_BAND       0               /* to signify use of narrow band eg. CVSD */
+#define CODEC_WIDE_BAND         1               /* to signify use of wide band eg. mSBC */
+#define CODEC_SUPER_WIDE_BAND   2               /* to signify use of super wide band eg. LC3 */
+#define CODEC_IS_NARROW_BAND(use_wbs)       (CODEC_NARROW_BAND == use_wbs)          /* wbs_used to indicate narrow band*/
+#define CODEC_IS_WIDE_BAND(use_wbs)         (CODEC_WIDE_BAND == use_wbs)            /* wbs_used to indicate wide band*/
+#define CODEC_IS_SUPER_WIDE_BAND(use_wbs)   (CODEC_SUPER_WIDE_BAND == use_wbs)      /* wbs_used to indicate super wide band*/
+
+
+    uint16_t    max_latency;                   /**< Maximum latency (0x4-0xFFFE in msecs) */
+    uint16_t    packet_types;                  /**< Packet Types */
+    uint8_t     retrans_effort;                /**< 0x00-0x02, 0xFF don't care */
+    uint8_t     use_wbs;                       /**< CODEC_WIDE_BAND to signify wide band, CODEC_SUPER_WIDE_BAND for super wide band, CODEC_NARROW_BAND for narrow band */
 } wiced_bt_sco_params_t;
 
 /** SCO path config */
 typedef struct
 {
     wiced_bt_sco_route_path_t    path;           /**< sco routing path see #wiced_bt_sco_route_path_t*/
+    uint8_t                      vsc_route;      /**< Vendor Specific Route */
     wiced_bt_sco_data_cb_t       *p_sco_data_cb; /**< If not NULL and route is APP_CB, callback function called for incoming pcm data */
 }wiced_bt_voice_path_setup_t;
 

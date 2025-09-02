@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__light__lc__occupancy__mode__set__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_light_lc_occupancy_mode_set_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,21 +10,19 @@
         <argsstring></argsstring>
         <name>mode</name>
         <briefdescription>
-<para>The target value of the Light LC Mode state. </para>
-        </briefdescription>
+<para>The target value of the Light LC Mode state. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1599" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1599" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1599" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1599" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Light LC Occupancy Mode Set data structure exchanged between the application and Light LC library. </para>
-    </briefdescription>
+<para>Light LC Occupancy Mode Set data structure exchanged between the application and Light LC library. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1598" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1597" bodyend="1600"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1598" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1597" bodyend="1600"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__light__lc__occupancy__mode__set__data__t_1a770b268c61308a2ec427ebb9a77fae61" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lc_occupancy_mode_set_data_t</scope><name>mode</name></member>
     </listofallmembers>

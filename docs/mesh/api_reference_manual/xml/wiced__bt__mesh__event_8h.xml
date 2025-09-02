@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="wiced__bt__mesh__event_8h" kind="file" language="C++">
     <compoundname>wiced_bt_mesh_event.h</compoundname>
     <includes local="yes">wiced_timer.h</includes>
@@ -22,59 +22,50 @@
     <innerclass refid="structwiced__bt__mesh__event__t" prot="public">wiced_bt_mesh_event_t</innerclass>
       <sectiondef kind="user-defined">
       <header>Bits of the wiced_bt_mesh_event_t::app_key_idx</header>
-      <description><para><anchor id="wiced__bt__mesh__event_8h_1WICED_BT_MESH_EVENT_KEY_IDX"/></para>
-<para>The following is the bits meaning of the field app_key_idx in the structure <ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref>. </para>
-</description>
+      <description><para><anchor id="wiced__bt__mesh__event_8h_1WICED_BT_MESH_EVENT_KEY_IDX"/></para><para>The following is the bits meaning of the field app_key_idx in the structure <ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref>. </para></description>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aa6efc0f6bab0b5a0b20918f1e1d28b1b" prot="public" static="no">
         <name>WICED_BT_MESH_EVENT_KEY_IDX_DEFAULT_NETKEYIDX</name>
         <initializer>0xffff</initializer>
         <briefdescription>
-<para>Bits meaning. </para>
-        </briefdescription>
+<para>Bits meaning. </para>        </briefdescription>
         <detaileddescription>
-<para>Use device key with default (first) net key idx. </para>
-        </detaileddescription>
+<para>Use device key with default (first) net key idx. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="32" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="32" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="32" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a0a5502c4082c8354132761bca51a29cb" prot="public" static="no">
         <name>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY</name>
         <initializer>0x8000</initializer>
         <briefdescription>
-<para>1 means it is protected by device key and remaining part contains net_key_idx. </para>
-        </briefdescription>
+<para>1 means it is protected by device key and remaining part contains net_key_idx. </para>        </briefdescription>
         <detaileddescription>
-<para>0 means it is protected by application key and remaining part contains app_key_idx. </para>
-        </detaileddescription>
+<para>0 means it is protected by application key and remaining part contains app_key_idx. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="33" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="33" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="33" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ab39000c7f3940b7903be4a2485f0f68a" prot="public" static="no">
         <name>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_INT_IDX</name>
         <initializer>0x4000</initializer>
         <briefdescription>
-<para>1 means it is internal key index in the same order as added. </para>
-        </briefdescription>
+<para>1 means it is internal key index in the same order as added. </para>        </briefdescription>
         <detaileddescription>
-<para>0 means it is global key index. </para>
-        </detaileddescription>
+<para>0 means it is global key index. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="34" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="34" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="34" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ad458d5bfc758fb4d737d919ecb6f2019" prot="public" static="no">
         <name>WICED_BT_MESH_EVENT_KEY_IDX_MSK_KEYIDX</name>
         <initializer>0x0fff</initializer>
         <briefdescription>
-<para>Mask of the app_key_index/net_key_index depending on value 0/1 of the bit WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY. </para>
-        </briefdescription>
+<para>Mask of the app_key_index/net_key_index depending on value 0/1 of the bit WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="35" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="35" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="35" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -87,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="65" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="65" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="65" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ac5a7aa705cc4be1b676c9c70d1d7403b" prot="public" static="no">
         <name>CREDENTIAL_FLAG_FRENDSHIP</name>
@@ -98,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="66" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="66" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="66" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a4610e9e139c824b77c81e24ed83f5203" prot="public" static="no">
         <name>CREDENTIAL_FLAG_DIRECTED</name>
@@ -109,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="67" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="67" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="67" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1abe46201a835b3b2e98cf0cbe981b59be" prot="public" static="no">
         <name>RETRANSMIT_TIMER_TICK</name>
@@ -120,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="72" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="72" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="72" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a539b0066c6b2d2fe46c845b2e32ad93b" prot="public" static="no">
         <name>RETRANSMIT_TIMER2_TICK</name>
@@ -131,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="73" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="73" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="73" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aaab7e3aa3012530273e898ce1573f17c" prot="public" static="no">
         <name>REPLY_TIMER_TICK</name>
@@ -142,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="76" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="76" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="76" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1abdf9aa4b3b81f170071376607f870006" prot="public" static="no">
         <name>TX_STATUS_COMPLETED</name>
@@ -153,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="80" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="80" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="80" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1af800d1ab3c27c3acddc0016aead1922a" prot="public" static="no">
         <name>TX_STATUS_FAILED</name>
@@ -164,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="81" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="81" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="81" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a974ff50cf7f2e723add959f384429cee" prot="public" static="no">
         <name>TX_STATUS_ACK_RECEIVED</name>
@@ -175,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="82" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="82" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="82" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1af53ef804bc2279ea0446390ea50f471f" prot="public" static="no">
         <name>RPL_DELAY_DONT_SAVE</name>
@@ -186,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="84" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="84" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="84" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aa1e9cfcf45b509a85c8f6dbf1da02af7" prot="public" static="no">
         <name>TAG_USE_DIRECTED</name>
@@ -197,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="88" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="88" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="88" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a9ec051fd153b183097019f24d51156b2" prot="public" static="no">
         <name>TAG_IMMUTABLE_CREDENTIALS</name>
@@ -208,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="89" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="89" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="89" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -222,26 +213,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>Create message reply mesh event from the received mesh event. </para>
-        </briefdescription>
+<para>Create message reply mesh event from the received mesh event. </para>        </briefdescription>
         <detaileddescription>
-<para>This function doesn&apos;t create but just updates received mesh event to be used to send message back to the originator. After application or a models library calls Mesh Models Library or Mesh Core library passing the pointer to the mesh event, it loses the ownership of the event and should not use it again.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>This function doesn&apos;t create but just updates received mesh event to be used to send message back to the originator. After application or a models library calls Mesh Models Library or Mesh Core library passing the pointer to the mesh event, it loses the ownership of the event and should not use it again.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>information about the message received.</para>
-</parameterdescription>
+<para>information about the message received.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Pointer to the input p_event updated for response </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Pointer to the input p_event updated for response </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="107" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="107" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__core_1gad429c40f45f13693d7e64894a7402f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
@@ -253,26 +239,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>Create the copy of the existing mesh event. </para>
-        </briefdescription>
+<para>Create the copy of the existing mesh event. </para>        </briefdescription>
         <detaileddescription>
-<para>This function creates new mesh event with same content as input mesh event.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>This function creates new mesh event with same content as input mesh event.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>mesh event to copy.</para>
-</parameterdescription>
+<para>mesh event to copy.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Pointer to the created mesh event </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Pointer to the created mesh event </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="117" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="117" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__core_1ga3b31ef1c2c2249006531d402f13c1fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
@@ -300,58 +281,49 @@
           <declname>app_key_idx</declname>
         </param>
         <briefdescription>
-<para>Create mesh event for an unsolicited message. </para>
-        </briefdescription>
+<para>Create mesh event for an unsolicited message. </para>        </briefdescription>
         <detaileddescription>
-<para>In case dst is 0 the function takes all information from the model&apos;s publication or fails if publication is not configured for the specified model. In case non-0 dst the function uses specified dst and app_key_idx and fills all other fields with default values. In special case with company_id equals to 0xffff the function creates a message event with default ttl.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>In case dst is 0 the function takes all information from the model&apos;s publication or fails if publication is not configured for the specified model. In case non-0 dst the function uses specified dst and app_key_idx and fills all other fields with default values. In special case with company_id equals to 0xffff the function creates a message event with default ttl.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index. </para>
-</parameterdescription>
+<para>Element index. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>company_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Company ID. </para>
-</parameterdescription>
+<para>Company ID. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>model_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Model ID. </para>
-</parameterdescription>
+<para>Model ID. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>dst</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Destination address. If parameter is 0, the function finds publication and take uses its fields for the mesh event. </para>
-</parameterdescription>
+<para>Destination address. If parameter is 0, the function finds publication and take uses its fields for the mesh event. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>app_key_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Application key index used to decrypt when message was received or which should be used to encrypt to send the message. Or it can be net key index - see <ref refid="wiced__bt__mesh__event_8h_1WICED_BT_MESH_EVENT_KEY_IDX" kindref="member">Bits of the wiced_bt_mesh_event_t::app_key_idx</ref>)</para>
-</parameterdescription>
+<para>Application key index used to decrypt when message was received or which should be used to encrypt to send the message. Or it can be net key index - see <ref refid="wiced__bt__mesh__event_8h_1WICED_BT_MESH_EVENT_KEY_IDX" kindref="member">Bits of the wiced_bt_mesh_event_t::app_key_idx</ref>)</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>p_event Pointer to a newly allocated mesh event. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>p_event Pointer to a newly allocated mesh event. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="133" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="133" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__core_1gab53118d6d25849be44f82d3af7eeb0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -363,34 +335,27 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>Release mesh event. </para>
-        </briefdescription>
+<para>Release mesh event. </para>        </briefdescription>
         <detaileddescription>
-<para>The application should call this function when it receives the mesh event in the callback and the reply value is set to 0.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The application should call this function when it receives the mesh event in the callback and the reply value is set to 0.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>information for the message.</para>
-</parameterdescription>
+<para>information for the message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="143" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="143" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>&gt; </para>
-    </briefdescription>
+<para>&gt; </para>    </briefdescription>
     <detaileddescription>
-<para>Mesh Model definitions </para>
-    </detaileddescription>
+<para>Mesh Model definitions </para>    </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>2016-YEAR<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
@@ -473,6 +438,6 @@
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MESH_EVENT_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h"/>
   </compounddef>
 </doxygen>

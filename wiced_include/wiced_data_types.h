@@ -124,4 +124,18 @@ typedef struct {
   */
 typedef void (*pf_wiced_exception)(uint16_t code, void* ptr, uint32_t length);
 /**@} gentypes */
+
+/**
+ *  @ingroup     app_utils
+ *
+ *  @{
+ */
+
+/**
+* Serialized function prototype
+*
+*/
+typedef void (*wiced_bt_serialized_app_func_t)(void *param);
+/**@} app_utils */
+
 #endif

@@ -121,6 +121,7 @@ var searchData=
   ['wiced_5fbt_5fgatt_5fgap_5fble_5fattr_5fvalue_5ft',['wiced_bt_gatt_gap_ble_attr_value_t',['../unionwiced__bt__gatt__gap__ble__attr__value__t.html',1,'']]],
   ['wiced_5fbt_5fgatt_5fgroup_5fvalue_5ft',['wiced_bt_gatt_group_value_t',['../structwiced__bt__gatt__group__value__t.html',1,'']]],
   ['wiced_5fbt_5fgatt_5fincluded_5fservice_5ft',['wiced_bt_gatt_included_service_t',['../structwiced__bt__gatt__included__service__t.html',1,'']]],
+  ['wiced_5fbt_5fgatt_5fmsg_5fcount_5ft',['wiced_bt_gatt_msg_count_t',['../structwiced__bt__gatt__msg__count__t.html',1,'']]],
   ['wiced_5fbt_5fgatt_5foperation_5fcomplete_5frsp_5ft',['wiced_bt_gatt_operation_complete_rsp_t',['../unionwiced__bt__gatt__operation__complete__rsp__t.html',1,'']]],
   ['wiced_5fbt_5fgatt_5foperation_5fcomplete_5ft',['wiced_bt_gatt_operation_complete_t',['../structwiced__bt__gatt__operation__complete__t.html',1,'']]],
   ['wiced_5fbt_5fgatt_5fread_5fby_5ftype_5ft',['wiced_bt_gatt_read_by_type_t',['../structwiced__bt__gatt__read__by__type__t.html',1,'']]],

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__wiced__bt__mesh__models" kind="group">
     <compoundname>wiced_bt_mesh_models</compoundname>
     <title>Mesh Models Library API</title>
@@ -108,16 +108,9 @@
     <innergroup refid="group__wiced__bt__mesh__scheduler__client">Mesh Scheduler Client</innergroup>
       <sectiondef kind="user-defined">
       <header>Following macros can be used instantiate the mesh models</header>
-      <description><para><anchor id="group__wiced__bt__mesh__models_1WICED_BT_MESH_MODEL_DEFINITIONS"/></para>
-<para>Following macros instantiate the mesh models on a given element.</para>
-<para>Based on the device definition the mesh core creates a device composition data that can be read by the the provisioner.</para>
-<para>There certain rules that application shall follow when building device composition data.<orderedlist>
-<listitem><para>The first element of the device shall always contain WICED_BT_MESH_DEVICE which instantiates models that shall be present on every device, including the Configuration Server Model and the Health Server Model.</para>
-</listitem><listitem><para>Each model consists of the model definition itself (company ID and model ID) and callback function which is executed by the Mesh Core library on receiving a mesh message. Application can use Mesh Library&apos;s callback. In that case all validation of the messages, sending responses, and other protocol requirements are executed by the model. Alternatively application can implement callback itself. In that case, customer will be required to perform certification.</para>
-</listitem><listitem><para>A model cannot be repeated twice in the same element. </para>
-</listitem></orderedlist>
-</para>
-</description>
+      <description><para><anchor id="group__wiced__bt__mesh__models_1WICED_BT_MESH_MODEL_DEFINITIONS"/></para><para>Following macros instantiate the mesh models on a given element.</para><para>Based on the device definition the mesh core creates a device composition data that can be read by the the provisioner.</para><para>There certain rules that application shall follow when building device composition data.<orderedlist>
+<listitem><para>The first element of the device shall always contain WICED_BT_MESH_DEVICE which instantiates models that shall be present on every device, including the Configuration Server Model and the Health Server Model.</para></listitem><listitem><para>Each model consists of the model definition itself (company ID and model ID) and callback function which is executed by the Mesh Core library on receiving a mesh message. Application can use Mesh Library&apos;s callback. In that case all validation of the messages, sending responses, and other protocol requirements are executed by the model. Alternatively application can implement callback itself. In that case, customer will be required to perform certification.</para></listitem><listitem><para>A model cannot be repeated twice in the same element. </para></listitem></orderedlist>
+</para></description>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga64a7c82065e02064aeef92d752d57acd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
         <definition>wiced_bool_t wiced_bt_mesh_remote_provisioning_server_message_handler</definition>
@@ -141,84 +134,75 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="677" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="677" column="1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gaa61971d04929109acdf238ede55f895b" prot="public" static="no">
         <name>WICED_BT_MESH_DEVICE</name>
         <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_CONFIG_SRV, <ref refid="group__wiced__bt__mesh__models_1gabf8b966c4acdd4d8035acb264852c951" kindref="member">wiced_bt_mesh_config_server_message_handler</ref>, NULL, NULL }, \
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_HEALTH_SRV, NULL, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Device includes Configuration Server and Health Server models. </para>
-        </briefdescription>
+<para>Mesh Device includes Configuration Server and Health Server models. </para>        </briefdescription>
         <detaileddescription>
-<para>This need to be included in the first element of the device. </para>
-        </detaileddescription>
+<para>This need to be included in the first element of the device. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="683" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="683" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="683" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="683" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga50358b2472e062950e03db3eccd200e0" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_CONFIG_CLIENT</name>
         <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_CONFIG_CLNT, <ref refid="group__wiced__bt__mesh__provisioning_1ga3b3ca9d63273eced236e9f2ecb8766e6" kindref="member">wiced_bt_mesh_config_client_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Configuration Client Model. </para>
-        </briefdescription>
+<para>Mesh Configuration Client Model. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="690" column="10" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="690" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="690" column="10" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="690" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga7e20343f48dffd0904d872eb5c9cb5ac" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_HEALTH_CLIENT</name>
         <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_HEALTH_CLNT, <ref refid="group__wiced__bt__mesh__provisioning_1gafd6670efbd6064efbb9688c76601c95f" kindref="member">wiced_bt_mesh_model_health_client_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Health Client Model. </para>
-        </briefdescription>
+<para>Mesh Health Client Model. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="696" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="696" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="696" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="696" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga4cdf5b70dab7c3181ac169286c8d016e" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_REMOTE_PROVISION_CLIENT</name>
         <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_REMOTE_PROVISION_CLNT, <ref refid="group__wiced__bt__mesh__provisioning_1ga3b3ca9d63273eced236e9f2ecb8766e6" kindref="member">wiced_bt_mesh_config_client_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Remote Provisioning Model. </para>
-        </briefdescription>
+<para>Mesh Remote Provisioning Model. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="702" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="702" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="702" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="702" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga7ca8e52e6a11753c79eefdf8dae959b8" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_REMOTE_PROVISION_SERVER</name>
         <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_REMOTE_PROVISION_SRV, <ref refid="group__wiced__bt__mesh__provisioning_1ga64a7c82065e02064aeef92d752d57acd" kindref="member">wiced_bt_mesh_remote_provisioning_server_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Remote Provisioning Server Model. </para>
-        </briefdescription>
+<para>Mesh Remote Provisioning Server Model. </para>        </briefdescription>
         <detaileddescription>
-<para>The model is used by a Provisioner to provision new devices not in the immediate radio range, i.e. provision over mesh. This is an optional feature, but will provide additional flexibility for a mesh network. It is recommended to include in the first element space permitted. </para>
-        </detaileddescription>
+<para>The model is used by a Provisioner to provision new devices not in the immediate radio range, i.e. provision over mesh. This is an optional feature, but will provide additional flexibility for a mesh network. It is recommended to include in the first element space permitted. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="711" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="711" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="711" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="711" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gae7ee9d791394ed2c2c2d5d7a9342743e" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_LOCATION_SERVER</name>
         <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_LOCATION_SRV, <ref refid="group__wiced__bt__mesh__location__server_1gaf501d5b111e4100c464f2a1c6b99a1f7" kindref="member">wiced_bt_mesh_model_location_server_message_handler</ref>, NULL, NULL }, \
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_LOCATION_SETUP_SRV, <ref refid="group__wiced__bt__mesh__location__server_1ga0549c6bcb0387593085c789248ba5969" kindref="member">wiced_bt_mesh_model_location_setup_server_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Location Server Device. </para>
-        </briefdescription>
+<para>Mesh Location Server Device. </para>        </briefdescription>
         <detaileddescription>
-<para>The device provides global and/or local location. The device can exist standalone and can be combined with other devices. </para>
-        </detaileddescription>
+<para>The device provides global and/or local location. The device can exist standalone and can be combined with other devices. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="718" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="718" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="718" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="718" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga24d6a4883675c1e5687d638eedd9f942" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_USER_PROPERTY_SERVER</name>
@@ -229,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="722" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="722" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="722" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="722" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gaedbabbd2e5911fbe2bbcf9cb0084b0b5" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_ADMIN_PROPERTY_SERVER</name>
@@ -240,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="725" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="725" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="725" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="725" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga9e2cba57dd11c239eeb00b49379ac53b" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_MANUFACTURER_PROPERTY_SERVER</name>
@@ -251,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="728" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="728" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="728" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="728" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga43927914b36242d16e22ebb2d8e7a8f0" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_CLIENT_PROPERTY_SERVER</name>
@@ -262,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="731" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="731" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="731" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="731" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga4bd85b8a34fb41a9ab358aa38edff8cc" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_LIGHT_HSL_CTL_SERVER</name>
@@ -280,14 +264,12 @@
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_CTL_SRV, <ref refid="group__wiced__bt__mesh__light__ctl__server_1gaa07a3542b22992e82fc92c23a0b98f16" kindref="member">wiced_bt_mesh_model_light_ctl_server_message_handler</ref>, <ref refid="group__wiced__bt__mesh__light__ctl__server_1ga7c86ca7a890ae4fe7f1a97305dfe9b2a" kindref="member">wiced_bt_mesh_model_light_ctl_server_scene_store_handler</ref>, <ref refid="group__wiced__bt__mesh__light__ctl__server_1ga8437891fae790177dffdcbe22b0e0224" kindref="member">wiced_bt_mesh_model_light_ctl_server_scene_recall_handler</ref> }, \
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_CTL_SETUP_SRV, <ref refid="group__wiced__bt__mesh__light__ctl__server_1gaf2924e0c30122408e3bab73c57c9fb4d" kindref="member">wiced_bt_mesh_model_light_ctl_setup_server_message_handler</ref>, NULL, NULL  }</initializer>
         <briefdescription>
-<para>Mesh Light HSL/CTL Server Device. </para>
-        </briefdescription>
+<para>Mesh Light HSL/CTL Server Device. </para>        </briefdescription>
         <detaileddescription>
-<para>The device implements all required models for the main element of a color bulb that supports brightness, hue and saturation but also a color temperature controls. Note that for the full color bulb implementation this device needs to be combined with hue server (WICED_BT_MESH_MODEL_LIGHT_HSL_HUE_SERVER), saturation server (WICED_BT_MESH_MODEL_LIGHT_HSL_SATURATION_SERVER) and color temperature server (WICED_BT_MESH_MODEL_LIGHT_CTL_TEMPERATURE_SERVER) on the consecutive elements. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>
-        </detaileddescription>
+<para>The device implements all required models for the main element of a color bulb that supports brightness, hue and saturation but also a color temperature controls. Note that for the full color bulb implementation this device needs to be combined with hue server (WICED_BT_MESH_MODEL_LIGHT_HSL_HUE_SERVER), saturation server (WICED_BT_MESH_MODEL_LIGHT_HSL_SATURATION_SERVER) and color temperature server (WICED_BT_MESH_MODEL_LIGHT_CTL_TEMPERATURE_SERVER) on the consecutive elements. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="764" column="10" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="764" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="764" column="10" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="764" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gaa7ad14639ead10568dfa086f576329f4" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_LIGHT_HSL_CTL_XYL_SERVER</name>
@@ -307,14 +289,12 @@
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_XYL_SRV, <ref refid="group__wiced__bt__mesh__light__xyl__server_1ga6a5a2028cf7ffcfad1f3a673738d836a" kindref="member">wiced_bt_mesh_model_light_xyl_server_message_handler</ref>, <ref refid="group__wiced__bt__mesh__light__xyl__server_1gadb27714f02fd077b341bafba8213f352" kindref="member">wiced_bt_mesh_model_light_xyl_server_scene_store_handler</ref>, <ref refid="group__wiced__bt__mesh__light__xyl__server_1ga4227ecba6c6acee6950adef5c42c920e" kindref="member">wiced_bt_mesh_model_light_xyl_server_scene_recall_handler</ref> }, \
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_XYL_SETUP_SRV, <ref refid="group__wiced__bt__mesh__light__xyl__server_1ga52ff9cab20dde5c927933a2c9e24a195" kindref="member">wiced_bt_mesh_model_light_xyl_setup_server_message_handler</ref>, NULL, NULL  }</initializer>
         <briefdescription>
-<para>Mesh Light HSL/CTL/XYL Server Device. </para>
-        </briefdescription>
+<para>Mesh Light HSL/CTL/XYL Server Device. </para>        </briefdescription>
         <detaileddescription>
-<para>The device implements all required models for the main element of a color bulb that supports brightness, hue and saturation but also a color temperature controls and xyL controls. Note that for the full color bulb implementation this device needs to be combined with hue server (WICED_BT_MESH_MODEL_LIGHT_HSL_HUE_SERVER), saturation server (WICED_BT_MESH_MODEL_LIGHT_HSL_SATURATION_SERVER) and color temperature server (WICED_BT_MESH_MODEL_LIGHT_CTL_TEMPERATURE_SERVER) on the consecutive elements. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>
-        </detaileddescription>
+<para>The device implements all required models for the main element of a color bulb that supports brightness, hue and saturation but also a color temperature controls and xyL controls. Note that for the full color bulb implementation this device needs to be combined with hue server (WICED_BT_MESH_MODEL_LIGHT_HSL_HUE_SERVER), saturation server (WICED_BT_MESH_MODEL_LIGHT_HSL_SATURATION_SERVER) and color temperature server (WICED_BT_MESH_MODEL_LIGHT_CTL_TEMPERATURE_SERVER) on the consecutive elements. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="812" column="10" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="812" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="812" column="10" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="812" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga5fa6789c93b62195dfb8da4fad55d02e" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_LIGHT_LC_SERVER</name>
@@ -322,14 +302,12 @@
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_LC_SRV, <ref refid="group__wiced__bt__mesh__model__light__lc__server_1gae96df3aa549096d5dc38493783f1b7fc" kindref="member">wiced_bt_mesh_model_light_lc_server_message_handler</ref>, <ref refid="group__wiced__bt__mesh__model__light__lc__server_1ga77530a80ee364b3719464b764a2ec5a6" kindref="member">wiced_bt_mesh_model_light_lc_server_scene_store_handler</ref>, <ref refid="group__wiced__bt__mesh__model__light__lc__server_1gabba87e7cad75e2485cd6d0854f89e28e" kindref="member">wiced_bt_mesh_model_light_lc_server_scene_recall_handler</ref> }, \
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_LC_SETUP_SRV, <ref refid="group__wiced__bt__mesh__model__light__lc__server_1gab17ba324d6882bb65068b3ffa05e4ace" kindref="member">wiced_bt_mesh_model_light_lc_setup_server_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Light Controller Device. </para>
-        </briefdescription>
+<para>Mesh Light Controller Device. </para>        </briefdescription>
         <detaileddescription>
-<para>This is an additional part of the light controller. The main part will contain one or more elements required to implement a dimmable or a colored bulb. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>
-        </detaileddescription>
+<para>This is an additional part of the light controller. The main part will contain one or more elements required to implement a dimmable or a colored bulb. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="836" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="836" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="836" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="836" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga7b96ec175da6ad7a5750a371e0736aeb" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_SENSOR_SERVER</name>
@@ -341,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="841" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="841" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="841" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="841" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga86fddab90d1232eb838c6a63a45e579c" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_TIME_SERVER</name>
@@ -353,20 +331,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="845" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="845" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="845" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="845" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga4665d11891c8413d0722fbbf4de91927" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_LEVEL_CLIENT</name>
         <initializer>{ MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_LEVEL_CLNT, <ref refid="group__wiced__bt__mesh__level__client_1gad4d3d3fa26e25ba2a43c461040bfcd3c" kindref="member">wiced_bt_mesh_model_level_client_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Level Client Device. </para>
-        </briefdescription>
+<para>Mesh Level Client Device. </para>        </briefdescription>
         <detaileddescription>
-<para>The device implements a Generic Level device. The device can be configured to control any device that supports Generic Level Server model (WICED_BT_MESH_CORE_MODEL_ID_GENERIC_LEVEL_SRV). For example, <ref refid="group__wiced__bt__mesh__light__lightness__server_1ga1fffbf21e1b920895a4718a3a207a1a9" kindref="member">WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_SERVER</ref>, <ref refid="group__wiced__bt__mesh__light__ctl__server_1ga31d00ceb59ef7db4fc28879b20509808" kindref="member">WICED_BT_MESH_MODEL_LIGHT_CTL_SERVER</ref>, <ref refid="group__wiced__bt__mesh__light__hsl__server_1gab330cac44df7024819bff2f0d94b72e8" kindref="member">WICED_BT_MESH_MODEL_LIGHT_HSL_SERVER</ref>,... </para>
-        </detaileddescription>
+<para>The device implements a Generic Level device. The device can be configured to control any device that supports Generic Level Server model (WICED_BT_MESH_CORE_MODEL_ID_GENERIC_LEVEL_SRV). For example, <ref refid="group__wiced__bt__mesh__light__lightness__server_1ga1fffbf21e1b920895a4718a3a207a1a9" kindref="member">WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_SERVER</ref>, <ref refid="group__wiced__bt__mesh__light__ctl__server_1ga31d00ceb59ef7db4fc28879b20509808" kindref="member">WICED_BT_MESH_MODEL_LIGHT_CTL_SERVER</ref>, <ref refid="group__wiced__bt__mesh__light__hsl__server_1gab330cac44df7024819bff2f0d94b72e8" kindref="member">WICED_BT_MESH_MODEL_LIGHT_HSL_SERVER</ref>,... </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="855" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="855" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="855" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="855" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga5598f3721dbb580b71a61ca223dc209d" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_DEFAULT_TRANSITION_TIME_CLIENT</name>
@@ -377,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="858" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="858" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="858" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="858" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga610ee34685a0db4c994d9356893d2b98" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_POWER_ONOFF_CLIENT</name>
@@ -388,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="861" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="861" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="861" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="861" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga5d534d0fd669ae43098ffa32545ce71e" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_BATTERY_CLIENT</name>
@@ -399,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="864" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="864" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="864" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="864" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga0a77b9672840683b518fe1e1eb59fa94" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_LOCATION_CLIENT</name>
@@ -410,7 +386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="867" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="867" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="867" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="867" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gad213b90a6a0bd0a6523937de4ba21fa1" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_PROPERTY_CLIENT</name>
@@ -421,7 +397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="870" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="870" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="870" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="870" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gac81bdfa0f7f50361b703d96eb7332e15" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_SENSOR_CLIENT</name>
@@ -432,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="873" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="873" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="873" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="873" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gade625db49075267786f8c6fbbcf46d81" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_SCENE_CLIENT</name>
@@ -443,7 +419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="876" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="876" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="876" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="876" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga7a3553826b2f58faa14d33654cbc4a6a" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_SCHEDULER_CLIENT</name>
@@ -454,7 +430,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="879" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="879" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="879" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="879" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gadce501e044b922fb4a26bdf329ddf716" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_TIME_CLIENT</name>
@@ -465,7 +441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="882" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="882" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="882" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="882" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gac9acfdfee09acb7b0931dc56190c09c9" prot="public" static="no">
         <name>WICED_BT_MESH_MODEL_LIGHT_LC_CLIENT</name>
@@ -476,207 +452,188 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="885" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="885" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="885" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="885" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Battery Presence Flags</header>
-      <description><para><anchor id="group__wiced__bt__mesh__models_1BATTERY_PRESENCE_FLAGS"/></para>
-</description>
+      <description><para><anchor id="group__wiced__bt__mesh__models_1BATTERY_PRESENCE_FLAGS"/></para></description>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga002171e5549f1b9a78712220855aa1cb" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_NOT_PRESENT</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>The battery is not present. </para>
-        </briefdescription>
+<para>The battery is not present. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="895" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="895" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="895" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="895" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga7015703a57e889f92762469949f249ae" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_PRESENT_REMOVABLE</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>The battery is present and is removable. </para>
-        </briefdescription>
+<para>The battery is present and is removable. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="896" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="896" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="896" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="896" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga1aa887025e1b911749c316b2849d6b29" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_PRESENT_NON_REMOVABLE</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>The battery is present and is non-removable. </para>
-        </briefdescription>
+<para>The battery is present and is non-removable. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="897" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="897" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="897" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="897" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga6f24c71bb630240b88f18d4850660611" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_PRESENCE_UNKNOWN</name>
         <initializer>0x03</initializer>
         <briefdescription>
-<para>The battery presence is unknown. </para>
-        </briefdescription>
+<para>The battery presence is unknown. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="898" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="898" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="898" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="898" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Battery Indicator Flags</header>
-      <description><para><anchor id="group__wiced__bt__mesh__models_1BATTERY_INDICATOR_FLAGS"/></para>
-</description>
+      <description><para><anchor id="group__wiced__bt__mesh__models_1BATTERY_INDICATOR_FLAGS"/></para></description>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga4bbe21fefcaf82fd1f25f10a41e961bd" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_LEVEL_CRITICALLY_LOW</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>The battery charge is Critically Low Level. </para>
-        </briefdescription>
+<para>The battery charge is Critically Low Level. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="907" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="907" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="907" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="907" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gaa265c8c08f849f33c5f6dd4a8cf7e713" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_LEVEL_LOW</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>The battery charge is Low Level. </para>
-        </briefdescription>
+<para>The battery charge is Low Level. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="908" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="908" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="908" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="908" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gaa4c2f2786c0317866dea430fdd5f0a44" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_LEVEL_GOOD</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>The battery charge is Good Level. </para>
-        </briefdescription>
+<para>The battery charge is Good Level. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="909" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="909" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="909" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="909" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga7f1c5c83f780b62c0ca3f3cae8b971d3" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_LEVEL_UNKNOWN</name>
         <initializer>0x03</initializer>
         <briefdescription>
-<para>The battery charge is unknown. </para>
-        </briefdescription>
+<para>The battery charge is unknown. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="910" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="910" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="910" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="910" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Battery Charging State Flags</header>
-      <description><para><anchor id="group__wiced__bt__mesh__models_1BATTERY_CHARGING_FLAGS"/></para>
-</description>
+      <description><para><anchor id="group__wiced__bt__mesh__models_1BATTERY_CHARGING_FLAGS"/></para></description>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gae202cddf29465ddbc705bd7b0427f68e" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_NOT_CHARGABLE</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>The battery is not chargeable. </para>
-        </briefdescription>
+<para>The battery is not chargeable. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="919" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="919" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="919" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="919" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gaf5a568abe6992a2e8011d6abc11a9684" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_NOT_CHARGING</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>The battery is chargeable and is not charging. </para>
-        </briefdescription>
+<para>The battery is chargeable and is not charging. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="920" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="920" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="920" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="920" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gad1f64d6cb990d50e97aeef2018da01b9" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_CHARGING</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>The battery is chargeable and is charging. </para>
-        </briefdescription>
+<para>The battery is chargeable and is charging. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="921" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="921" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="921" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="921" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gaace0a7540b5776e02ea61416ae216806" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_CHARGING_UNKNOWN</name>
         <initializer>0x03</initializer>
         <briefdescription>
-<para>The battery charging state is unknown. </para>
-        </briefdescription>
+<para>The battery charging state is unknown. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="922" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="922" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="922" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="922" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Battery Service Required State Flags</header>
-      <description><para><anchor id="group__wiced__bt__mesh__models_1BATTERY_SERVICABLITY_FLAGS"/></para>
-</description>
+      <description><para><anchor id="group__wiced__bt__mesh__models_1BATTERY_SERVICABLITY_FLAGS"/></para></description>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga52c5e46f53da270dcf8cfe96a92cad91" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_SERVICE_NOT_REQUIRED</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>The battery does not require service. </para>
-        </briefdescription>
+<para>The battery does not require service. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="931" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="931" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="931" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="931" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga27d3431a5f79f54141ad3b086343c1bb" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_SERVICE_REQUIRED</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>The battery requires service. </para>
-        </briefdescription>
+<para>The battery requires service. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="932" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="932" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="932" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="932" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gaf980d755e93121f51b3608c08a799e60" prot="public" static="no">
         <name>WICED_BT_MESH_BATTERY_FLAG_SERVICABILITY_UNKNOWN</name>
         <initializer>0x03</initializer>
         <briefdescription>
-<para>The battery serviceability is unknown. </para>
-        </briefdescription>
+<para>The battery serviceability is unknown. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="933" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="933" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="933" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="933" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -686,13 +643,12 @@
         <argsstring></argsstring>
         <name>wiced_bt_mesh_battery_presence_t</name>
         <briefdescription>
-<para>Generic Battery Flags Presence State (see <ref refid="group__wiced__bt__mesh__models_1BATTERY_PRESENCE_FLAGS" kindref="member">Battery Presence Flags</ref>) </para>
-        </briefdescription>
+<para>Generic Battery Flags Presence State (see <ref refid="group__wiced__bt__mesh__models_1BATTERY_PRESENCE_FLAGS" kindref="member">Battery Presence Flags</ref>) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="901" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="901" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="901" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="901" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__models_1gac290185d2284f327e37042878522094c" prot="public" static="no">
         <type>uint8_t</type>
@@ -700,13 +656,12 @@
         <argsstring></argsstring>
         <name>wiced_bt_mesh_battery_indicator_t</name>
         <briefdescription>
-<para>Generic Battery Flags Indicator States (see <ref refid="group__wiced__bt__mesh__models_1BATTERY_INDICATOR_FLAGS" kindref="member">Battery Indicator Flags</ref>) </para>
-        </briefdescription>
+<para>Generic Battery Flags Indicator States (see <ref refid="group__wiced__bt__mesh__models_1BATTERY_INDICATOR_FLAGS" kindref="member">Battery Indicator Flags</ref>) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="913" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="913" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="913" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="913" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__models_1gae191641b773db5b28a85cb2aec02981e" prot="public" static="no">
         <type>uint8_t</type>
@@ -714,13 +669,12 @@
         <argsstring></argsstring>
         <name>wiced_bt_mesh_battery_charging_t</name>
         <briefdescription>
-<para>Generic Battery Flags Charging States (see <ref refid="group__wiced__bt__mesh__models_1BATTERY_CHARGING_FLAGS" kindref="member">Battery Charging Flags</ref>) </para>
-        </briefdescription>
+<para>Generic Battery Flags Charging States (see <ref refid="group__wiced__bt__mesh__models_1BATTERY_CHARGING_FLAGS" kindref="member">Battery Charging Flags</ref>) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="925" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="925" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="925" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="925" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__models_1ga55746a04db5ebfea32b24bd837e9dc5f" prot="public" static="no">
         <type>uint8_t</type>
@@ -728,13 +682,12 @@
         <argsstring></argsstring>
         <name>wiced_bt_mesh_battery_servicibility_t</name>
         <briefdescription>
-<para>Generic Battery Flags Serviceability States (see <ref refid="group__wiced__bt__mesh__models_1BATTERY_SERVICABLITY_FLAGS" kindref="member">Battery Service Required Flags</ref>) </para>
-        </briefdescription>
+<para>Generic Battery Flags Serviceability States (see <ref refid="group__wiced__bt__mesh__models_1BATTERY_SERVICABLITY_FLAGS" kindref="member">Battery Service Required Flags</ref>) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="936" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="936" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="936" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="936" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__models_1ga994e4426228772c5557df59833fcd212" prot="public" static="no">
         <type>uint16_t(*</type>
@@ -742,42 +695,35 @@
         <argsstring>)(uint8_t element_idx, uint8_t *p_buffer, uint16_t buf_size)</argsstring>
         <name>wiced_model_scene_store_handler_t</name>
         <briefdescription>
-<para>Scene store message handler. </para>
-        </briefdescription>
+<para>Scene store message handler. </para>        </briefdescription>
         <detaileddescription>
-<para>Each model may define a message handler if it needs to store data per scene in the NVRAM. When Scene Server receives Scene Store message it calls each model&apos;s handler.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Each model may define a message handler if it needs to store data per scene in the NVRAM. When Scene Server receives Scene Store message it calls each model&apos;s handler.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which scene information is being stored </para>
-</parameterdescription>
+<para>Element index for which scene information is being stored </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to a buffer where data should be stored </para>
-</parameterdescription>
+<para>Pointer to a buffer where data should be stored </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buf_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Maximum amount of data a model can store</para>
-</parameterdescription>
+<para>Maximum amount of data a model can store</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1672" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1672" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1672" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1672" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__models_1ga12600391b31eb42978eb8959670103b4" prot="public" static="no">
         <type>uint16_t(*</type>
@@ -785,42 +731,35 @@
         <argsstring>)(uint8_t element_idx, uint8_t *p_buffer, uint16_t buf_size, uint32_t transition_time, uint32_t delay)</argsstring>
         <name>wiced_model_scene_recall_handler_t</name>
         <briefdescription>
-<para>Scene retrieve message handler. </para>
-        </briefdescription>
+<para>Scene retrieve message handler. </para>        </briefdescription>
         <detaileddescription>
-<para>Each model may define a message handler if it stores data per scene in the NVRAM. When Scene Server receives Scene Recall message it calls each model&apos;s handler.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Each model may define a message handler if it stores data per scene in the NVRAM. When Scene Server receives Scene Recall message it calls each model&apos;s handler.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which scene information is being recalled </para>
-</parameterdescription>
+<para>Element index for which scene information is being recalled </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to a buffer where model&apos;s data is located </para>
-</parameterdescription>
+<para>Pointer to a buffer where model&apos;s data is located </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buf_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Maximum amount of data a model can get from the buffer</para>
-</parameterdescription>
+<para>Maximum amount of data a model can get from the buffer</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1685" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1685" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1685" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1685" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__models_1gad1b4239d6eca000b4ecdef62324eb62a" prot="public" static="no">
         <type>void()</type>
@@ -828,41 +767,35 @@
         <argsstring>(uint8_t element_idx, uint16_t event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_property_server_callback_t</name>
         <briefdescription>
-<para>Generic User Property Server callback is called by the Mesh Models library on receiving a message from the peer. </para>
-        </briefdescription>
+<para>Generic User Property Server callback is called by the Mesh Models library on receiving a message from the peer. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element Index of the model </para>
-</parameterdescription>
+<para>Element Index of the model </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see User Property Events) </para>
-</parameterdescription>
+<para>The event that the application should process (see User Property Events) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the property data</para>
-</parameterdescription>
+<para>Pointer to the property data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3176" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3176" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3176" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__models_1gaa103cdb2024d9f967d050daa3d5fffb7" prot="public" static="no">
         <type>void()</type>
@@ -870,41 +803,35 @@
         <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_property_client_callback_t</name>
         <briefdescription>
-<para>Property Client callback is called by the Mesh Models library on receiving a message from the peer. </para>
-        </briefdescription>
+<para>Property Client callback is called by the Mesh Models library on receiving a message from the peer. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1PROPERTY_EVENT" kindref="member">Mesh Property Events</ref>) </para>
-</parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1PROPERTY_EVENT" kindref="member">Mesh Property Events</ref>) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>information about the message received. The same pointer should be used in the reply if required. </para>
-</parameterdescription>
+<para>information about the message received. The same pointer should be used in the reply if required. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3270" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3270" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3270" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3270" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__models_1ga3ef37baa5075fe575437352754e0768a" prot="public" static="no">
         <type>void(*</type>
@@ -917,7 +844,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5868" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5868" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5868" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5868" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -927,14 +854,12 @@
         <argsstring></argsstring>
         <name>wiced_bt_mesh_model_timer_server_get_interval</name>
         <briefdescription>
-<para>Interval in seconds to send time get message while the time isn&apos;t set yet. </para>
-        </briefdescription>
+<para>Interval in seconds to send time get message while the time isn&apos;t set yet. </para>        </briefdescription>
         <detaileddescription>
-<para>The value can be changed by the application. 0 means don&apos;t send time get message if time isn&apos;t initialized. Default value is 0. </para>
-        </detaileddescription>
+<para>The value can be changed by the application. 0 means don&apos;t send time get message if time isn&apos;t initialized. Default value is 0. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5931" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5931" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -956,41 +881,35 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Property Module initialization. </para>
-        </briefdescription>
+<para>Property Module initialization. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Device element to where model is used </para>
-</parameterdescription>
+<para>Device element to where model is used </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Application or Parent model callback that will be executed on receiving a message </para>
-</parameterdescription>
+<para>Application or Parent model callback that will be executed on receiving a message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3187" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3187" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga1df6c7ca36c15004c84a759c6a8728ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1010,42 +929,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>User Property Server Message Handler. </para>
-        </briefdescription>
+<para>User Property Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3199" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3199" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1gadadea936ad14f7ecdef0e8419eda2934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1065,42 +977,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Admin Property Server Message Handler. </para>
-        </briefdescription>
+<para>Admin Property Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3211" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3211" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1gab74a3871693811ae897a7d80d8e3f93a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1120,42 +1025,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Manufacturer Property Server Message Handler. </para>
-        </briefdescription>
+<para>Manufacturer Property Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3223" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3223" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1gab4ab2ce6eb5e4bf979c11e352d206e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1175,42 +1073,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Client Property Server Message Handler. </para>
-        </briefdescription>
+<para>Client Property Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3235" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3235" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga798ad50af19a5a0054056fd0d4214dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1231,7 +1122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3246" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3246" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga19c0423a1cb8874ad10ae1a6c044410a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1256,7 +1147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3259" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3259" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga09b33cd37abb8712637cfec3223d2005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1276,41 +1167,35 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Property Client Module initialization. </para>
-        </briefdescription>
+<para>Property Client Module initialization. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Device element to where model is used </para>
-</parameterdescription>
+<para>Device element to where model is used </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para>
-</parameterdescription>
+<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3281" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3281" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1gaf590eae376dce25f148d12efa96a181d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1330,42 +1215,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Property Client Message Handler. </para>
-        </briefdescription>
+<para>Property Client Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3293" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3293" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga2fe54cc14247ed6865e87eec750c6720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1381,25 +1259,21 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Properties Get client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Properties Get client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3302" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3302" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1gab1549592c2417d10fc21a1258dd7d538" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1415,25 +1289,21 @@
           <declname>p_get</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Property Get client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Property Get client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3311" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3311" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga4d7fd5e0cd05572355099d207dfbb944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1449,33 +1319,28 @@
           <declname>p_sata</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Property Set client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Property Set client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3321" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3321" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1gab8c8aef8d2255030ba1b5b430da95d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1486,25 +1351,21 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>Remote Provisioning Server initialization. </para>
-        </briefdescription>
+<para>Remote Provisioning Server initialization. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>None</parametername>
 </parameternamelist>
 <parameterdescription>
-<para></para>
-</parameterdescription>
+<para></para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5877" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5877" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga58171fb0b81158e89d751c49222a765b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1520,33 +1381,28 @@
           <declname>p_adv_data</declname>
         </param>
         <briefdescription>
-<para>Process Scan Response Packets to check if the packet is for remote provisioning server. </para>
-        </briefdescription>
+<para>Process Scan Response Packets to check if the packet is for remote provisioning server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_adv_report</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Advertising report paremeters </para>
-</parameterdescription>
+<para>Advertising report paremeters </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_adv_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Advertising data</para>
-</parameterdescription>
+<para>Advertising data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5887" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5887" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1gaca85d3e843373ba038d444bf75349cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1562,33 +1418,28 @@
           <declname>p_adv_data</declname>
         </param>
         <briefdescription>
-<para>Process Connectable Advertising Packets to check if the packet is for remote provisioning server. </para>
-        </briefdescription>
+<para>Process Connectable Advertising Packets to check if the packet is for remote provisioning server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_adv_report</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Advertising report paremeters </para>
-</parameterdescription>
+<para>Advertising report paremeters </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_adv_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Advertising data</para>
-</parameterdescription>
+<para>Advertising data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5897" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5897" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga645656708d9462cca755b56f5b43ac43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1604,33 +1455,28 @@
           <declname>p_adv_data</declname>
         </param>
         <briefdescription>
-<para>Process None Connectable Advertising Packets to check if the packet is for remote provisioning server. </para>
-        </briefdescription>
+<para>Process None Connectable Advertising Packets to check if the packet is for remote provisioning server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_adv_report</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Advertising report paremeters </para>
-</parameterdescription>
+<para>Advertising report paremeters </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_adv_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Advertising data</para>
-</parameterdescription>
+<para>Advertising data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE/WICED_FALSE - success/failed. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5907" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5907" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1gad1d333fbc179417919390f7d2608c7d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1642,24 +1488,20 @@
           <declname>level</declname>
         </param>
         <briefdescription>
-<para>Sets trace level for mesh_models_lib and mesh_provisioner_lib. </para>
-        </briefdescription>
+<para>Sets trace level for mesh_models_lib and mesh_provisioner_lib. </para>        </briefdescription>
         <detaileddescription>
-<para>Application may call this function to set trace level for mesh_models_lib and mesh_provisioner_lib. By default trace level is 0(no trace).</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Application may call this function to set trace level for mesh_models_lib and mesh_provisioner_lib. By default trace level is 0(no trace).</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">level</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Trace level to set. It can be any of WICED_BT_MESH_CORE_TRACE_XXX. </para>
-</parameterdescription>
+<para>Trace level to set. It can be any of WICED_BT_MESH_CORE_TRACE_XXX. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5915" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5915" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga8a49a7e773deb5fc3400b0fc363263a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1679,39 +1521,34 @@
           <declname>start_idx</declname>
         </param>
         <briefdescription>
-<para>Find model in the node configuration starting with specified element index. </para>
-        </briefdescription>
+<para>Find model in the node configuration starting with specified element index. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">company_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Company ID of the model </para>
-</parameterdescription>
+<para>Company ID of the model </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">model_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Model ID of the model </para>
-</parameterdescription>
+<para>Model ID of the model </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">start_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Starting element index </para>
-</parameterdescription>
+<para>Starting element index </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5924" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5924" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1gabf8b966c4acdd4d8035acb264852c951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1731,42 +1568,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Config Server Model Message Handler. </para>
-        </briefdescription>
+<para>Config Server Model Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>Application Library typically calls this function when function to process a message received from the Config Client. The function parses the message and if appropriate calls the application back to perform functionality.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Application Library typically calls this function when function to process a message received from the Config Client. The function parses the message and if appropriate calls the application back to perform functionality.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5944" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5944" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga040739f9972262688c78c945f631af8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1790,48 +1620,41 @@
           <declname>len</declname>
         </param>
         <briefdescription>
-<para>This function can be called to send message through the core. </para>
-        </briefdescription>
+<para>This function can be called to send message through the core. </para>        </briefdescription>
         <detaileddescription>
-<para>The function keeps track of the output event .</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The function keeps track of the output event .</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Fully prepared <ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> structure with information on where and how event should be sent </para>
-</parameterdescription>
+<para>Fully prepared <ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> structure with information on where and how event should be sent </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>opcode</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>opcode to send </para>
-</parameterdescription>
+<para>opcode to send </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>params</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the parameters data to be sent out. </para>
-</parameterdescription>
+<para>Pointer to the parameters data to be sent out. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Size of the parameters data to be sent out. The maximum length is about 377 bytes (depends on the size of the opcode). </para>
-</parameterdescription>
+<para>Size of the parameters data to be sent out. The maximum length is about 377 bytes (depends on the size of the opcode). </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5954" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5954" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -1839,37 +1662,34 @@
         <name>WICED_BT_BATTERY_LEVEL_UNKNOWN</name>
         <initializer>0xff</initializer>
         <briefdescription>
-<para>Current battery level unknown. </para>
-        </briefdescription>
+<para>Current battery level unknown. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="938" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="938" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="938" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="938" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gac795a2a9ea8f003c58113c23d12e7ceb" prot="public" static="no">
         <name>WICED_BT_BATTERY_TIME_TO_DISCHARGE_UNKNOWN</name>
         <initializer>0xffffff</initializer>
         <briefdescription>
-<para>Time to full discharge unknown. </para>
-        </briefdescription>
+<para>Time to full discharge unknown. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="939" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="939" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="939" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="939" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga2b4c1569fc411dc57d64a5f84b41b8f5" prot="public" static="no">
         <name>WICED_BT_BATTERY_TIME_TO_CHARGE_UNKNOWN</name>
         <initializer>0xffffff</initializer>
         <briefdescription>
-<para>Time to full charge unknown. </para>
-        </briefdescription>
+<para>Time to full charge unknown. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="940" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="940" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="940" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="940" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga77cbddfc78f7bf1ff67deb250aa91c0b" prot="public" static="no">
         <name>CONVERT_TOLERANCE_PERCENTAGE_TO_MESH</name>
@@ -1881,110 +1701,99 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="942" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="942" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="942" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="942" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gafbdf505bc971ee9057220c4eade174f1" prot="public" static="no">
         <name>WICED_BT_MESH_ONOFF_MAX_RETRANSMIT_TIME</name>
         <initializer>6</initializer>
         <briefdescription>
-<para>Max retransmit duration for on/off set command in seconds. </para>
-        </briefdescription>
+<para>Max retransmit duration for on/off set command in seconds. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="982" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="982" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="982" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="982" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gabbefa81d7ef47be9593ed93c80221946" prot="public" static="no">
         <name>WICED_BT_MESH_TRANSITION_TIME_DEFAULT</name>
         <initializer>0xFFFFFFFF</initializer>
         <briefdescription>
-<para>Application or parent model should use default setting for transition time. </para>
-        </briefdescription>
+<para>Application or parent model should use default setting for transition time. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="984" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="984" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="984" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="984" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga92a3d92c21fdea3daa5d84bdfff882fa" prot="public" static="no">
         <name>WICED_BT_MESH_LEVEL_MAX_RETRANSMIT_TIME</name>
         <initializer>6</initializer>
         <briefdescription>
-<para>Max retransmit duration for level set command in seconds. </para>
-        </briefdescription>
+<para>Max retransmit duration for level set command in seconds. </para>        </briefdescription>
         <detaileddescription>
-<para>This time is also indicates max duration of the delta command. </para>
-        </detaileddescription>
+<para>This time is also indicates max duration of the delta command. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1006" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1006" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1006" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1006" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gacc2cbd21b1c211887afc09ac3f03b3aa" prot="public" static="no">
         <name>WICED_BT_MESH_LEVEL_MOVE_MAX_TRANSITION_TIME</name>
         <initializer>0x3E</initializer>
         <briefdescription>
-<para>Max transition time for Move command. </para>
-        </briefdescription>
+<para>Max transition time for Move command. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1007" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1007" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1007" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1007" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gab613e5685223dd2d96186543743ec29b" prot="public" static="no">
         <name>WICED_BT_MESH_PROPERTY_TYPE_CLIENT</name>
         <initializer>0</initializer>
         <briefdescription>
-<para>Property types defined in the Mesh Models specifications wiced_bt_mesh_property_type enumeration. </para>
-        </briefdescription>
+<para>Property types defined in the Mesh Models specifications wiced_bt_mesh_property_type enumeration. </para>        </briefdescription>
         <detaileddescription>
-<para>Property type client </para>
-        </detaileddescription>
+<para>Property type client </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1216" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1216" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1216" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1216" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga056143bc1c99837f0824f39d94dcd244" prot="public" static="no">
         <name>WICED_BT_MESH_PROPERTY_TYPE_ADMIN</name>
         <initializer>1</initializer>
         <briefdescription>
-<para>Property type admin. </para>
-        </briefdescription>
+<para>Property type admin. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1217" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1217" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1217" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1217" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1gaf781844af8b171b5effb874f6da62b60" prot="public" static="no">
         <name>WICED_BT_MESH_PROPERTY_TYPE_MANUFACTURER</name>
         <initializer>2</initializer>
         <briefdescription>
-<para>Property type manufacturer. </para>
-        </briefdescription>
+<para>Property type manufacturer. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1218" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1218" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1218" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1218" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__mesh__models_1ga6ac62a1689189ad1ee2f7407acdefc7a" prot="public" static="no">
         <name>WICED_BT_MESH_PROPERTY_TYPE_USER</name>
         <initializer>3</initializer>
         <briefdescription>
-<para>Property type user. </para>
-        </briefdescription>
+<para>Property type user. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1219" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1219" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1219" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1219" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Mesh Models library of the AIROC BTSDK provide a simple method for an application to use various Mesh models defined in the Bluetooth Mesh Model specification. </para>
-    </briefdescription>
+<para>Mesh Models library of the AIROC BTSDK provide a simple method for an application to use various Mesh models defined in the Bluetooth Mesh Model specification. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
   </compounddef>

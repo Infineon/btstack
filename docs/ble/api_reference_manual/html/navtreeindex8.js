@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"structwiced__bt__dev__edr__packet__types__t.html#aeffe4afe832e142357ca4fd3579f4d36":[1,9,6,7],
 "structwiced__bt__dev__edr__packet__types__t.html#afd080ddada4adbc1e834b15b61ec7683":[1,9,6,1],
 "structwiced__bt__dev__enabled__t.html":[1,8,23],
 "structwiced__bt__dev__enabled__t.html#a53ed6f3e10938676c9e891210a16af65":[1,8,23,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structwiced__bt__l2cap__appl__information__t.html#a2da9196c24ab6e6d225d94dc1ac795d4":[1,0,2,1],
 "structwiced__bt__l2cap__appl__information__t.html#a2e00007ae56cb020366fbfd7dfe336ab":[1,0,2,0],
 "structwiced__bt__l2cap__appl__information__t.html#a3bbfb619575069c2289c9e91b58b78c2":[1,0,2,2],
-"structwiced__bt__l2cap__appl__information__t.html#a3f46fe30b21b2b6477f543f00ba6448f":[1,0,2,6],
-"structwiced__bt__l2cap__appl__information__t.html#a7694f9263de05fd026d4b2802d98fa0c":[1,0,2,10]
+"structwiced__bt__l2cap__appl__information__t.html#a3f46fe30b21b2b6477f543f00ba6448f":[1,0,2,6]
 };

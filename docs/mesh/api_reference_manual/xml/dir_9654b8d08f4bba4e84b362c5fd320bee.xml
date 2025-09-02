@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="dir_9654b8d08f4bba4e84b362c5fd320bee" kind="dir">
     <compoundname>apps</compoundname>
     <innerdir refid="dir_f58819bea495607253bd44dc541f20cc">libraries</innerdir>
@@ -7,6 +7,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/"/>
+    <location file="/builds/repo/btstack/apps/"/>
   </compounddef>
 </doxygen>

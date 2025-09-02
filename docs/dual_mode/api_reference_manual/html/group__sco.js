@@ -4,10 +4,11 @@ var group__sco =
       [ "max_latency", "structwiced__bt__sco__params__t.html#ae761b995c88341d20c5354ea8ebb94d0", null ],
       [ "packet_types", "structwiced__bt__sco__params__t.html#a64df45c1566603ff1c135d0276142a5a", null ],
       [ "retrans_effort", "structwiced__bt__sco__params__t.html#a93dfc01ece32939d166f439a2b311ad2", null ],
-      [ "use_wbs", "structwiced__bt__sco__params__t.html#aa10df2dcae64049e582aa292325df3fd", null ]
+      [ "use_wbs", "structwiced__bt__sco__params__t.html#aabd05934c0bc2652cb96440d5a111c80", null ]
     ] ],
     [ "wiced_bt_voice_path_setup_t", "structwiced__bt__voice__path__setup__t.html", [
       [ "path", "structwiced__bt__voice__path__setup__t.html#af18be965863f6115aa0b889ab4965531", null ],
+      [ "vsc_route", "structwiced__bt__voice__path__setup__t.html#acd1ecdcc4cf4ef08ec188dd1186aa0ee", null ],
       [ "p_sco_data_cb", "structwiced__bt__voice__path__setup__t.html#a8d87d052a0e6dc4bc60b2c0d8447114a", null ]
     ] ],
     [ "wiced_bt_coding_format", "structwiced__bt__coding__format.html", [

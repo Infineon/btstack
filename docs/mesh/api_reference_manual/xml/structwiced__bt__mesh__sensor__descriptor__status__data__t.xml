@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__sensor__descriptor__status__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_sensor_descriptor_status_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>num_descriptors</name>
         <briefdescription>
-<para>Total number of descriptors present in status structure. </para>
-        </briefdescription>
+<para>Total number of descriptors present in status structure. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="268" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="268" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="268" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="268" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__descriptor__status__data__t_1ab46a0d2463504f6ce26bf9c3e01dd2e9" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__sensor__descriptor__data__t" kindref="compound">wiced_bt_mesh_sensor_descriptor_data_t</ref></type>
@@ -24,18 +23,16 @@
         <argsstring>[1]</argsstring>
         <name>descriptor_list</name>
         <briefdescription>
-<para>Start of the descriptor data list. </para>
-        </briefdescription>
+<para>Start of the descriptor data list. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="269" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="269" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="269" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="269" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Sensor Descriptor status structure exchanged between the application and the Sensor Model. </para>
-    </briefdescription>
+<para>Sensor Descriptor status structure exchanged between the application and the Sensor Model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
@@ -51,7 +48,7 @@
         <link refid="structwiced__bt__mesh__sensor__descriptor__data__t"/>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="267" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="266" bodyend="270"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="267" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="266" bodyend="270"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__sensor__descriptor__status__data__t_1ab46a0d2463504f6ce26bf9c3e01dd2e9" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_descriptor_status_data_t</scope><name>descriptor_list</name></member>
       <member refid="structwiced__bt__mesh__sensor__descriptor__status__data__t_1a2edebc3f8225b483ba52f66b81184127" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_descriptor_status_data_t</scope><name>num_descriptors</name></member>

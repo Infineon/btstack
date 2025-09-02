@@ -2,6 +2,7 @@ var group__wicedbt__av__a2d__helper =
 [
     [ "MPEG-1,2 Support", "group__wicedbt__a2dp__mpeg__1__2.html", "group__wicedbt__a2dp__mpeg__1__2" ],
     [ "MPEG-2,4 AAC Support", "group__wicedbt__a2dp__mpeg__2__4.html", "group__wicedbt__a2dp__mpeg__2__4" ],
+    [ "MPEG-D,USAC Support", "group__wicedbt__a2dp__mpeg__d__usac.html", "group__wicedbt__a2dp__mpeg__d__usac" ],
     [ "A2DP SBC Support", "group__wicedbt__a2dp__sbc.html", "group__wicedbt__a2dp__sbc" ],
     [ "wiced_bt_a2d_sdp_db_params_t", "structwiced__bt__a2d__sdp__db__params__t.html", [
       [ "db_len", "structwiced__bt__a2d__sdp__db__params__t.html#a20a6152b6e7c8c6e065e70d3acb04c15", null ],
@@ -17,6 +18,7 @@ var group__wicedbt__av__a2d__helper =
       [ "features", "structwiced__bt__a2d__service__t.html#a6ae2817c32d73d7d9a96ec594948814b", null ],
       [ "avdt_version", "structwiced__bt__a2d__service__t.html#a6d7256499309c1c2b633080654d94737", null ]
     ] ],
+    [ "A2DP_VERSION_1_4", "group__wicedbt__av__a2d__helper.html#gae8cf86aef6725361cf1abf0db55b3a2e", null ],
     [ "A2D_SUPF_PLAYER", "group__wicedbt__av__a2d__helper.html#gaa8c72f0c985ad4f55e2a722a25603cac", null ],
     [ "A2D_SUPF_MIC", "group__wicedbt__av__a2d__helper.html#ga5de55223a2f8df2b7bee437090c40539", null ],
     [ "A2D_SUPF_TUNER", "group__wicedbt__av__a2d__helper.html#gafd17e94ec2d3ef0df44c4f52acd8f3fe", null ],
@@ -31,6 +33,7 @@ var group__wicedbt__av__a2d__helper =
     [ "A2D_MEDIA_CT_SBC", "group__wicedbt__av__a2d__helper.html#ga213f7cfc3fdffb044e4560e8241257de", null ],
     [ "A2D_MEDIA_CT_M12", "group__wicedbt__av__a2d__helper.html#gaf2a32e2e44ba63210a20d2f992f73450", null ],
     [ "A2D_MEDIA_CT_M24", "group__wicedbt__av__a2d__helper.html#gac1fcd3563b12680e39dc49a4f1ccfca6", null ],
+    [ "A2D_MEDIA_CT_MDU", "group__wicedbt__av__a2d__helper.html#gacf47bdda4e2f59b44eacde0b091147ed", null ],
     [ "A2D_MEDIA_CT_ATRAC", "group__wicedbt__av__a2d__helper.html#gaef3e34ccdc47a45ef0c7f443379c016f", null ],
     [ "A2D_MEDIA_CT_VEND", "group__wicedbt__av__a2d__helper.html#ga030e0a104074e9deeac610afd7945406", null ],
     [ "A2D_MEDIA_CT_APTX", "group__wicedbt__av__a2d__helper.html#ga2120413881a5bf229edc873bfab34dfb", null ],
@@ -67,6 +70,10 @@ var group__wicedbt__av__a2d__helper =
     [ "A2D_BAD_BLOCK_LEN", "group__wicedbt__av__a2d__helper.html#gab32a5584267f6873c2c5440985b501c4", null ],
     [ "A2D_BAD_CP_TYPE", "group__wicedbt__av__a2d__helper.html#gadc53a25f1e62cdf7c52f9785383d5f5f", null ],
     [ "A2D_BAD_CP_FORMAT", "group__wicedbt__av__a2d__helper.html#ga19a0537dd304b8302061d7ab0e616618", null ],
+    [ "A2D_INVALID_CODEC_PARAM", "group__wicedbt__av__a2d__helper.html#ga4919548c012453aca269ece1e891c6f7", null ],
+    [ "A2D_NS_CODEC_PARAM", "group__wicedbt__av__a2d__helper.html#gadf200eaf29a936aba68a74425c07318c", null ],
+    [ "A2D_INVALID_DRC", "group__wicedbt__av__a2d__helper.html#ga24e3a8ed52d75e3a951d48d3d1881aea", null ],
+    [ "A2D_NS_DRC", "group__wicedbt__av__a2d__helper.html#gaf95aa52466f2d92c4a9efe675d7c6e39", null ],
     [ "A2D_SET_ONE_BIT", "group__wicedbt__av__a2d__helper.html#ga26c4da0ca1302d277062ffe019691516", null ],
     [ "A2D_SET_ZERO_BIT", "group__wicedbt__av__a2d__helper.html#ga85ac5b10048aea1745446013aa929957", null ],
     [ "A2D_SET_MULTL_BIT", "group__wicedbt__av__a2d__helper.html#ga918081db9789f2672ff97f3bf19b64d8", null ],

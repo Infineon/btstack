@@ -44,6 +44,7 @@ var searchData=
   ['drb_5fdata_5flen',['drb_data_len',['../structt_d_r_b.html#a03b3684a053c6fec95b16c395b528214',1,'tDRB']]],
   ['drb_5fdata_5foffset',['drb_data_offset',['../structt_d_r_b.html#aedefe32ab5c4e9cc53410180d276ab45',1,'tDRB']]],
   ['drb_5foverhead_5fsize',['DRB_OVERHEAD_SIZE',['../group__bt__types.html#ga76cc4e51e261caae3879751a959b97d6',1,'wiced_bt_types.h']]],
+  ['drc',['drc',['../structwiced__bt__a2d__m24__cie__t.html#adbf47f531f90668601d3ecd43314fbdd',1,'wiced_bt_a2d_m24_cie_t']]],
   ['duration',['duration',['../structwiced__bt__dev__inq__parms__t.html#afbe46eb07f41a0a2288212fdecc00c5d',1,'wiced_bt_dev_inq_parms_t']]],
   ['dv',['dv',['../structwiced__bt__dev__br__sco__packet__types__t.html#a0dcf60b995f5865cf0c22027af125492',1,'wiced_bt_dev_br_sco_packet_types_t']]],
   ['dv_5fcount',['dv_count',['../structwiced__bt__dev__br__packet__types__t.html#ab111d90a99298ea5d6fa45a828cb61a8',1,'wiced_bt_dev_br_packet_types_t']]],

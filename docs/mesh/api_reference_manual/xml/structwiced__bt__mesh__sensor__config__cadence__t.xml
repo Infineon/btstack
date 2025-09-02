@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__sensor__config__cadence__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_sensor_config_cadence_t</compoundname>
     <includes local="no">wiced_bt_mesh_cfg.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>fast_cadence_period_divisor</name>
         <briefdescription>
-<para>Divisor for the Publish Period. </para>
-        </briefdescription>
+<para>Divisor for the Publish Period. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="115" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="115" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="115" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a07441afe04c45a42bc8d357c650af8ff" prot="public" static="no" mutable="no">
         <type>wiced_bool_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>trigger_type_percentage</name>
         <briefdescription>
-<para>If true, the delta down/up are percentage, otherwise native values. </para>
-        </briefdescription>
+<para>If true, the delta down/up are percentage, otherwise native values. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="116" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="116" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="116" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a79214ad4a26ebbeedc2a417c614dd3d6" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -38,13 +36,12 @@
         <argsstring></argsstring>
         <name>trigger_delta_down</name>
         <briefdescription>
-<para>Delta down value that triggers a status message. </para>
-        </briefdescription>
+<para>Delta down value that triggers a status message. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="117" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="117" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="117" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a6677ccc45cb2b5d4ce5d698ca203fb3b" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -52,13 +49,12 @@
         <argsstring></argsstring>
         <name>trigger_delta_up</name>
         <briefdescription>
-<para>Delta up value that triggers a status message. </para>
-        </briefdescription>
+<para>Delta up value that triggers a status message. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="118" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="118" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="118" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a3e0806ccfa1fe185ea61d3b26650d697" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -66,13 +62,12 @@
         <argsstring></argsstring>
         <name>min_interval</name>
         <briefdescription>
-<para>Minimum interval between two consecutive Status messages. </para>
-        </briefdescription>
+<para>Minimum interval between two consecutive Status messages. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="119" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="119" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="119" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a12657f33570baf845c59c0a2562ab220" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -80,13 +75,12 @@
         <argsstring></argsstring>
         <name>fast_cadence_low</name>
         <briefdescription>
-<para>Low value for the fast cadence range. </para>
-        </briefdescription>
+<para>Low value for the fast cadence range. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="120" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="120" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="120" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__config__cadence__t_1a47a487dd8bbc424d005cc3cc5387f95d" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -94,21 +88,19 @@
         <argsstring></argsstring>
         <name>fast_cadence_high</name>
         <briefdescription>
-<para>High value for the fast cadence range. </para>
-        </briefdescription>
+<para>High value for the fast cadence range. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="121" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="121" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="121" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Defines Configuration of Sensor Cadence in the structure between the application and the Sensor Model. </para>
-    </briefdescription>
+<para>Defines Configuration of Sensor Cadence in the structure between the application and the Sensor Model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="114" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="113" bodyend="122"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" line="114" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_cfg.h" bodystart="113" bodyend="122"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__sensor__config__cadence__t_1a47a487dd8bbc424d005cc3cc5387f95d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_config_cadence_t</scope><name>fast_cadence_high</name></member>
       <member refid="structwiced__bt__mesh__sensor__config__cadence__t_1a12657f33570baf845c59c0a2562ab220" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_config_cadence_t</scope><name>fast_cadence_low</name></member>

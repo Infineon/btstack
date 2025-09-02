@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmesh__battery__event__t" kind="struct" language="C++" prot="public">
     <compoundname>mesh_battery_event_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>battery_level</name>
         <briefdescription>
-<para>The Generic Battery Level state is a value ranging from 0 percent through 100 percent. </para>
-        </briefdescription>
+<para>The Generic Battery Level state is a value ranging from 0 percent through 100 percent. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="949" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="949" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="949" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="949" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmesh__battery__event__t_1aa41590794f556a8021817b94279fec1f" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>time_to_discharge</name>
         <briefdescription>
-<para>The remaining time (in minutes) of the discharging process. </para>
-        </briefdescription>
+<para>The remaining time (in minutes) of the discharging process. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="950" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="950" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="950" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="950" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmesh__battery__event__t_1a65675c13531a2b1aecc4e1e8f0d69e18" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -38,13 +36,12 @@
         <argsstring></argsstring>
         <name>time_to_charge</name>
         <briefdescription>
-<para>The remaining time of the charging process is not known. </para>
-        </briefdescription>
+<para>The remaining time of the charging process is not known. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="951" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="951" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="951" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="951" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmesh__battery__event__t_1a9079faf3ea8eada1c200fb089e801146" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__mesh__models_1gaa67243af9f7a0d1ee2413f0a60ee66a8" kindref="member">wiced_bt_mesh_battery_presence_t</ref></type>
@@ -52,13 +49,12 @@
         <argsstring></argsstring>
         <name>presence</name>
         <briefdescription>
-<para>Generic Battery Flags Presence. </para>
-        </briefdescription>
+<para>Generic Battery Flags Presence. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="952" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="952" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="952" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="952" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmesh__battery__event__t_1aca5f404f9aea7bee49f320b3e23680d8" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__mesh__models_1gac290185d2284f327e37042878522094c" kindref="member">wiced_bt_mesh_battery_indicator_t</ref></type>
@@ -66,13 +62,12 @@
         <argsstring></argsstring>
         <name>level_inidicator</name>
         <briefdescription>
-<para>Generic Battery Flags Indicator. </para>
-        </briefdescription>
+<para>Generic Battery Flags Indicator. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="953" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="953" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="953" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="953" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmesh__battery__event__t_1a055c599c379e018d897c1c5c312494b6" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__mesh__models_1gae191641b773db5b28a85cb2aec02981e" kindref="member">wiced_bt_mesh_battery_charging_t</ref></type>
@@ -80,13 +75,12 @@
         <argsstring></argsstring>
         <name>charging</name>
         <briefdescription>
-<para>Generic Battery Flags Charging. </para>
-        </briefdescription>
+<para>Generic Battery Flags Charging. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="954" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="954" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="954" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="954" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmesh__battery__event__t_1afebaea7a25290aea4dca6f28448a57ae" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__mesh__models_1ga55746a04db5ebfea32b24bd837e9dc5f" kindref="member">wiced_bt_mesh_battery_servicibility_t</ref></type>
@@ -94,21 +88,19 @@
         <argsstring></argsstring>
         <name>servicability</name>
         <briefdescription>
-<para>Generic Battery Flags Serviceability. </para>
-        </briefdescription>
+<para>Generic Battery Flags Serviceability. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="955" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="955" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="955" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="955" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Mesh Battery Status Event used to report battery state to the client device. </para>
-    </briefdescription>
+<para>Mesh Battery Status Event used to report battery state to the client device. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="948" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="947" bodyend="956"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="948" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="947" bodyend="956"/>
     <listofallmembers>
       <member refid="structmesh__battery__event__t_1a320cc9afdf7ba85fb92f20121b6ab1aa" prot="public" virt="non-virtual"><scope>mesh_battery_event_t</scope><name>battery_level</name></member>
       <member refid="structmesh__battery__event__t_1a055c599c379e018d897c1c5c312494b6" prot="public" virt="non-virtual"><scope>mesh_battery_event_t</scope><name>charging</name></member>

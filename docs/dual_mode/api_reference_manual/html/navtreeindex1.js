@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__gatt__common__api.html#ga99e29340b77c9335e40e7443b8582124":[1,14,3,10],
 "group__gatt__common__api.html#gabbfa959b34a129b52f94acb52f8a643c":[1,14,3,7],
 "group__gatt__common__api.html#gac384524f7e61172da9eb0beb764ed46d":[1,14,3,4],
 "group__gatt__common__api.html#gad8044837c2bda2ff0515d86bd160d45e":[1,14,3,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a38c69fe7247db39a37872c4042c4f006":[1,15,6,4],
 "group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a499053e3abba3673768df96e99ed7fbb":[1,15,6,13],
 "group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a6294fef1d832b05fbc2241822e633646":[1,15,6,5],
-"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a7805af0b242dcd9e383a484820e35851":[1,15,6,11],
-"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a92e6dbc56674c8ea67ba56b622e5bb1e":[1,15,6,10]
+"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a7805af0b242dcd9e383a484820e35851":[1,15,6,11]
 };

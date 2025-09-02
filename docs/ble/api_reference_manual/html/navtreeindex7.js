@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a0b62665bbf5c518ee37b1b498d06db3d":[1,8,36,1],
 "structwiced__bt__ble__channel__sel__algo__event__data__t.html#a8daf68fc5daf3ef655aefc3d3a137761":[1,8,36,0],
 "structwiced__bt__ble__conn__params__t.html":[1,5,5],
 "structwiced__bt__ble__conn__params__t.html#a0cddeab89b8d4fe08ab2170530e295cb":[1,5,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "structwiced__bt__dev__edr__packet__types__t.html#aa35837b0f9aa9ca0eebfe40e6b50adc7":[1,9,6,6],
 "structwiced__bt__dev__edr__packet__types__t.html#ab7365016f19601270fbe06f39f4d0531":[1,9,6,0],
 "structwiced__bt__dev__edr__packet__types__t.html#acf02186fb3ce345e815a218866cf615e":[1,9,6,2],
-"structwiced__bt__dev__edr__packet__types__t.html#ad40542e2f1284efdd30e1a106afd29f7":[1,9,6,3],
-"structwiced__bt__dev__edr__packet__types__t.html#aeffe4afe832e142357ca4fd3579f4d36":[1,9,6,7]
+"structwiced__bt__dev__edr__packet__types__t.html#ad40542e2f1284efdd30e1a106afd29f7":[1,9,6,3]
 };

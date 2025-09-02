@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__light__hsl__status__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_light_hsl_status_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>present</name>
         <briefdescription>
-<para>Present value of HSL state. </para>
-        </briefdescription>
+<para>Present value of HSL state. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1393" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1393" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1393" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1393" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__status__data__t_1ad2e70cfdd41aeaf64958d641a4740eba" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -24,18 +23,16 @@
         <argsstring></argsstring>
         <name>remaining_time</name>
         <briefdescription>
-<para>Remaining time for transition. </para>
-        </briefdescription>
+<para>Remaining time for transition. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1394" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1394" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1394" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1394" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Light HSL Status Data structure exchanged between the application and the models library. </para>
-    </briefdescription>
+<para>Light HSL Status Data structure exchanged between the application and the models library. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
@@ -51,7 +48,7 @@
         <link refid="structwiced__bt__mesh__light__hsl__data__t"/>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1392" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1391" bodyend="1395"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1392" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1391" bodyend="1395"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__light__hsl__status__data__t_1a582fef34886cd3c3e09137d1994d8ddd" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_status_data_t</scope><name>present</name></member>
       <member refid="structwiced__bt__mesh__light__hsl__status__data__t_1ad2e70cfdd41aeaf64958d641a4740eba" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_status_data_t</scope><name>remaining_time</name></member>

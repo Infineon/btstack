@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__sensor__series__status__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_sensor_series_status_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>property_id</name>
         <briefdescription>
-<para>Property identifying a sensor. </para>
-        </briefdescription>
+<para>Property identifying a sensor. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="333" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="333" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="333" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="333" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__series__status__data__t_1adffcad65feb51326dcbd9af42c40a101" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>prop_value_len</name>
         <briefdescription>
-<para>Length of the raw_value corresponding to property_id. </para>
-        </briefdescription>
+<para>Length of the raw_value corresponding to property_id. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="334" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="334" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="334" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="334" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__series__status__data__t_1ad78009cd0180e11346acfb86c74a5bcd" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -38,13 +36,12 @@
         <argsstring></argsstring>
         <name>no_of_columns</name>
         <briefdescription>
-<para>Total number of columns. </para>
-        </briefdescription>
+<para>Total number of columns. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="335" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="335" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="335" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="335" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__series__status__data__t_1ac0cb523239479ed02aeeb70edca60eba" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__sensor__column__data__t" kindref="compound">wiced_bt_mesh_sensor_column_data_t</ref></type>
@@ -52,18 +49,16 @@
         <argsstring>[WICED_BT_MESH_SENSOR_MAX_SERIES_COLUMN]</argsstring>
         <name>column_list</name>
         <briefdescription>
-<para>Series of column states. </para>
-        </briefdescription>
+<para>Series of column states. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="336" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="336" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="336" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="336" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Sensor series status data structure exchanged between the application and the Sensor Model. </para>
-    </briefdescription>
+<para>Sensor series status data structure exchanged between the application and the Sensor Model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
@@ -79,7 +74,7 @@
         <link refid="structwiced__bt__mesh__sensor__column__data__t"/>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="332" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="331" bodyend="337"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="332" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="331" bodyend="337"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__sensor__series__status__data__t_1ac0cb523239479ed02aeeb70edca60eba" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_series_status_data_t</scope><name>column_list</name></member>
       <member refid="structwiced__bt__mesh__sensor__series__status__data__t_1ad78009cd0180e11346acfb86c74a5bcd" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_series_status_data_t</scope><name>no_of_columns</name></member>

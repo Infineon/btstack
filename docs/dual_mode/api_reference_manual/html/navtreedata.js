@@ -1,26 +1,3 @@
-/*
-@ @licstart  The following is the entire license notice for the
-JavaScript code in this file.
-
-Copyright (C) 1997-2017 by Dimitri van Heesch
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
-@licend  The above is the entire license notice
-for the JavaScript code in this file
-*/
 var NAVTREE =
 [
   [ "Bluetooth Host Stack Library", "index.html", [
@@ -32,23 +9,23 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "group___result.html",
-"group__gatt__common__api.html#gabbfa959b34a129b52f94acb52f8a643c",
-"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a93ddd638f2a1037efc1bf9829efbb216",
-"group__wiced__bt__platform__group.html#ga36383c153b6f484c1abf7cc759b8a62f",
-"group__wicedbt___conn.html#ga795beb1024b87fe34c272e7d20311c1e",
-"group__wicedbt___device_management.html#ggab94d20733e23c6a87c030964a9215bcba15d7b0ff405e8478cd1584c9de0dcdee",
-"group__wicedbt__a2dp__mpeg__1__2.html#ga34575dd585fde70f534cba73cf9ffa10",
-"group__wicedbt__avdt.html#gaa4ef5ad64dfe43db9a24414e0a06d671",
-"group__wicedbt__avrc.html#ga51d08703dafd5c4bb820f0c033360476",
-"group__wicedbt__avrc.html#gabf3c56d5a592721c2132cc808931ed12",
-"group__wicedbt__gatt.html#ga6c73fb6be1e3c4b8ece5f79d633ba08d",
-"group__wicedbt__utility.html#gac583c58d75ba49a87d93d597b5929d70",
-"structwiced__ble__padv__report__event__data__t.html#a336b25ce51c8d6348f9afb3e603e4cb2",
-"structwiced__bt__avrc__cmd__t.html#acd56057f6b8022acec5a684e7a1da56f",
-"structwiced__bt__ble__init__data__t.html#ac5fdd27f2e5024c6933bff55e2cd067a",
-"structwiced__bt__dev__inquiry__scan__result__t.html",
-"structwiced__bt__gatt__read__multiple__rsp__t.html#a3a2e641962ba28e82f2af985fd6babe5",
-"structwiced__bt__voice__path__setup__t.html#af18be965863f6115aa0b889ab4965531"
+"group__gatt__common__api.html#ga99e29340b77c9335e40e7443b8582124",
+"group__rfcomm__api__functions.html#ggaa0e1b18abc58d3ad24eb35eea2fa75c6a92e6dbc56674c8ea67ba56b622e5bb1e",
+"group__wiced__bt__platform__group.html#ga1be12efe2fb24bf0575f5c1b04e298a7",
+"group__wicedbt___conn.html#ga649e36b7823dc944550a5a2341d27878",
+"group__wicedbt___device_management.html#ggab2179004dac20c28116a07931fdf62a6a4fb5713eaccd55f525d683b222abe6a4",
+"group__wicedbt__a2dp__mpeg__1__2.html#ga2b30143f473887f6e16fc761ced5a695",
+"group__wicedbt__avdt.html#ga4c797d002617066ebe21accfb94d0339",
+"group__wicedbt__avrc.html#ga3e5652919ae822c07729ba4e845c9e7b",
+"group__wicedbt__avrc.html#gaa62f05a5105b9d9ec5f1270a9428bd85",
+"group__wicedbt__avrc.html#ggafe764cb02abe95c03a74f6117ea13b3cabf454db5bdfd28b6a7a8f1d888389bb7",
+"group__wicedbt__gatt.html#gga972f2437538363989cee28019cb06652a701363fd24b108ff99e705984ed91de8",
+"structwiced__ble__ext__scan__enable__params__t.html#a4e133bdec5378cb23ea980529cf5ff9c",
+"structwiced__bt__avrc__browse__chg__path__rsp__t.html#a17140cc6b5d77a50d02bef5c7be41522",
+"structwiced__bt__avrc__sub__unit__info__rsp__t.html#a7a871d4a01ea4a506af27a814240a959",
+"structwiced__bt__dev__br__sco__packet__types__t.html",
+"structwiced__bt__gatt__data__t.html#a54791cb90a9ca585e7b23f80223a6d21",
+"structwiced__bt__smp__adapter__t.html#aa59d753b4864101d3ffe3793fefbd50b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

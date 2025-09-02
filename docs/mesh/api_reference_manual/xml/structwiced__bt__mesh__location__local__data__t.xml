@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__location__local__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_location_local_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>local_north</name>
         <briefdescription>
-<para>North coordinate of the device using a local coordinate system. </para>
-        </briefdescription>
+<para>North coordinate of the device using a local coordinate system. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="973" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="973" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="973" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="973" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__location__local__data__t_1aad6cd59fcb0cd1ac66f8b3f24767701e" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>local_east</name>
         <briefdescription>
-<para>East coordinate of the device using a local coordinate system. </para>
-        </briefdescription>
+<para>East coordinate of the device using a local coordinate system. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="974" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="974" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="974" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="974" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__location__local__data__t_1ab320fa7fd16dbd4b811e47401ab1f0c2" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -38,13 +36,12 @@
         <argsstring></argsstring>
         <name>local_altitude</name>
         <briefdescription>
-<para>Altitude of the device relative to the Generic Location Global Altitude. </para>
-        </briefdescription>
+<para>Altitude of the device relative to the Generic Location Global Altitude. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="975" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="975" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="975" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="975" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__location__local__data__t_1ad89a5e6a4d5ddeb0a427f764f6b4d709" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -52,13 +49,12 @@
         <argsstring></argsstring>
         <name>floor_number</name>
         <briefdescription>
-<para>Floor number where the element is installed. </para>
-        </briefdescription>
+<para>Floor number where the element is installed. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="976" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="976" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="976" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="976" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__location__local__data__t_1aaaeec42714b945c11801f1c7bbb0380d" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -66,13 +62,12 @@
         <argsstring></argsstring>
         <name>is_mobile</name>
         <briefdescription>
-<para>0 if device is stationary, 1 if mobile </para>
-        </briefdescription>
+<para>0 if device is stationary, 1 if mobile </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="977" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="977" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="977" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="977" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__location__local__data__t_1a08a19a3439bea5742c2559f06e2a027c" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -80,13 +75,12 @@
         <argsstring></argsstring>
         <name>update_time</name>
         <briefdescription>
-<para>time in seconds elapsed since the last update of the device&apos;s position (t = 2 ^ (update_time - 3)) </para>
-        </briefdescription>
+<para>time in seconds elapsed since the last update of the device&apos;s position (t = 2 ^ (update_time - 3)) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="978" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="978" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="978" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="978" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__location__local__data__t_1a1ab02acb6d898159723d4b06628391b2" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -94,21 +88,19 @@
         <argsstring></argsstring>
         <name>precision</name>
         <briefdescription>
-<para>location precision in meters position (m = 2 ^ (precision - 3)) </para>
-        </briefdescription>
+<para>location precision in meters position (m = 2 ^ (precision - 3)) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="979" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="979" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="979" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="979" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Local Location Data structure exchanged between the application Generic Location Model. </para>
-    </briefdescription>
+<para>Local Location Data structure exchanged between the application Generic Location Model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="972" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="971" bodyend="980"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="972" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="971" bodyend="980"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__location__local__data__t_1ad89a5e6a4d5ddeb0a427f764f6b4d709" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_location_local_data_t</scope><name>floor_number</name></member>
       <member refid="structwiced__bt__mesh__location__local__data__t_1aaaeec42714b945c11801f1c7bbb0380d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_location_local_data_t</scope><name>is_mobile</name></member>

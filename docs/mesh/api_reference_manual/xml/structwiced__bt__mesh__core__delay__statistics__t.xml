@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__core__delay__statistics__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_core_delay_statistics_t</compoundname>
     <includes local="no">wiced_bt_mesh_core.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>rx_cnt</name>
         <briefdescription>
-<para>Number of successfuly received and decrypted messages. </para>
-        </briefdescription>
+<para>Number of successfuly received and decrypted messages. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1744" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1744" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1744" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1744" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__core__delay__statistics__t_1adb8cebb02ba1fb25404b7ea09ddc8e7b" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>rx_delay</name>
         <briefdescription>
-<para>Overage delay of successfuly received and decrypted messages. </para>
-        </briefdescription>
+<para>Overage delay of successfuly received and decrypted messages. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1745" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1745" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1745" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1745" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__core__delay__statistics__t_1a72fc6cf3f39d185f363ab44f5d1036d4" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -38,13 +36,12 @@
         <argsstring></argsstring>
         <name>tx_cnt</name>
         <briefdescription>
-<para>Number of successfuly encrypted and transmitted messages. </para>
-        </briefdescription>
+<para>Number of successfuly encrypted and transmitted messages. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1746" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1746" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1746" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1746" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__core__delay__statistics__t_1aeaafa6c77e3950ca2d1aef884aafc36b" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -52,21 +49,19 @@
         <argsstring></argsstring>
         <name>tx_delay</name>
         <briefdescription>
-<para>Overage delay of successfuly encrypted and transmitted messages. </para>
-        </briefdescription>
+<para>Overage delay of successfuly encrypted and transmitted messages. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1747" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1747" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1747" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1747" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Represents delay statistics. </para>
-    </briefdescription>
+<para>Represents delay statistics. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1743" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1742" bodyend="1748"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1743" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1742" bodyend="1748"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__core__delay__statistics__t_1a33dca8a35f954beff37c98898f2c84b4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_delay_statistics_t</scope><name>rx_cnt</name></member>
       <member refid="structwiced__bt__mesh__core__delay__statistics__t_1adb8cebb02ba1fb25404b7ea09ddc8e7b" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_delay_statistics_t</scope><name>rx_delay</name></member>

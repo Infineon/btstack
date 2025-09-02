@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__light__hsl__range__status__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_light_hsl_range_status_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>status</name>
         <briefdescription>
-<para>Status Code for the requesting message. </para>
-        </briefdescription>
+<para>Status Code for the requesting message. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1480" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1480" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1480" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1480" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__range__status__data__t_1af45f819647c5d04fbbedae4a24d889f8" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>hue_min</name>
         <briefdescription>
-<para>The value of the Hue Min. </para>
-        </briefdescription>
+<para>The value of the Hue Min. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1481" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1481" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1481" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1481" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__range__status__data__t_1ab32ea51cf5c09d2ffadceaf1862a1423" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -38,13 +36,12 @@
         <argsstring></argsstring>
         <name>hue_max</name>
         <briefdescription>
-<para>The value of the Hue Max. </para>
-        </briefdescription>
+<para>The value of the Hue Max. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1482" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1482" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1482" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1482" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__range__status__data__t_1a9088308b2643313dd46044e626d3382a" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -52,13 +49,12 @@
         <argsstring></argsstring>
         <name>saturation_min</name>
         <briefdescription>
-<para>The value of the Saturation Min. </para>
-        </briefdescription>
+<para>The value of the Saturation Min. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1483" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1483" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1483" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1483" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__range__status__data__t_1a0bd1a000304f4c065c3595cc0220f409" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -66,21 +62,19 @@
         <argsstring></argsstring>
         <name>saturation_max</name>
         <briefdescription>
-<para>The value of the Saturation Max. </para>
-        </briefdescription>
+<para>The value of the Saturation Max. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1484" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1484" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1484" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1484" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Light HSL Range Set Data structure exchanged between the application and Light HSL Level Model. </para>
-    </briefdescription>
+<para>Light HSL Range Set Data structure exchanged between the application and Light HSL Level Model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1479" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1478" bodyend="1485"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1479" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1478" bodyend="1485"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__light__hsl__range__status__data__t_1ab32ea51cf5c09d2ffadceaf1862a1423" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_range_status_data_t</scope><name>hue_max</name></member>
       <member refid="structwiced__bt__mesh__light__hsl__range__status__data__t_1af45f819647c5d04fbbedae4a24d889f8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_range_status_data_t</scope><name>hue_min</name></member>

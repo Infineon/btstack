@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__wiced__bt__mesh__sensor__server" kind="group">
     <compoundname>wiced_bt_mesh_sensor_server</compoundname>
     <title>Mesh Sensor Server</title>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5114" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5114" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5114" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__mesh__sensor__server_1ga7e492b218ea08c997f9b5f06f4f1eb3d" prot="public" static="no">
         <type>void()</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5126" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5126" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5126" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5126" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -54,49 +54,42 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Sensor Senosr Module initialization. </para>
-        </briefdescription>
+<para>Sensor Senosr Module initialization. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Device element to where model is used </para>
-</parameterdescription>
+<para>Device element to where model is used </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_report_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The application callback that will be executed on receiving a sensor get messages. </para>
-</parameterdescription>
+<para>The application callback that will be executed on receiving a sensor get messages. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_config_change_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The application callback that will be executed to notify cadenence and setting changes. </para>
-</parameterdescription>
+<para>The application callback that will be executed to notify cadenence and setting changes. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5138" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5138" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__sensor__server_1ga278b01024426e46048140d22fbc478fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -116,42 +109,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Sensor Server Message Handler. </para>
-        </briefdescription>
+<para>Sensor Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>An application or a parent model can call this models library function to process a message received from the Sensor Client device. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>An application or a parent model can call this models library function to process a message received from the Sensor Client device. The function parses the message and if appropriate calls the parent back to perform functionality.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5152" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5152" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__sensor__server_1gaa878df1a615babe42c88075d626f53d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -171,42 +157,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Sensor Setup Server Message Handler. </para>
-        </briefdescription>
+<para>Sensor Setup Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>An application or a parent model can call this models library function to process a message received from the Sensor Client device. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>An application or a parent model can call this models library function to process a message received from the Sensor Client device. The function parses the message and if appropriate calls the parent back to perform functionality.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5166" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5166" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__sensor__server_1ga88ff291568574d6d5be2af1dd5da0994" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -222,33 +201,28 @@
           <declname>series_status_data</declname>
         </param>
         <briefdescription>
-<para>Sensor Series Status send status. </para>
-        </briefdescription>
+<para>Sensor Series Status send status. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>series_status_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>pointer to the series data</para>
-</parameterdescription>
+<para>pointer to the series data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5176" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5176" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__sensor__server_1gae23dc22a4ea8e68cdaa5ca643c52169b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -264,33 +238,28 @@
           <declname>column_status_data</declname>
         </param>
         <briefdescription>
-<para>Sensor Column Status send status. </para>
-        </briefdescription>
+<para>Sensor Column Status send status. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>column_status_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>pointer to the column data</para>
-</parameterdescription>
+<para>pointer to the column data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5186" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5186" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__sensor__server_1gafb08fbefebd1974a849dc9e928ce2bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -314,50 +283,42 @@
           <declname>buffer_len</declname>
         </param>
         <briefdescription>
-<para>Format Sensor Data. </para>
-        </briefdescription>
+<para>Format Sensor Data. </para>        </briefdescription>
         <detaileddescription>
-<para>An Application can call this function to format sensor data to be sent out. Function returns length of the data filled in the buffer. Property_id 0 means that we need to send data for all sensors of the element.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>An Application can call this function to format sensor data to be sent out. Function returns length of the data filled in the buffer. Property_id 0 means that we need to send data for all sensors of the element.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element Index where the sensor is located </para>
-</parameterdescription>
+<para>Element Index where the sensor is located </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>property_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Property ID of the sensor for which sensor data shall be used. If Property ID is zero, the data will include all sensors of the element. </para>
-</parameterdescription>
+<para>Property ID of the sensor for which sensor data shall be used. If Property ID is zero, the data will include all sensors of the element. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Buffer to be filled with information </para>
-</parameterdescription>
+<para>Buffer to be filled with information </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buffer_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>size of the buffer</para>
-</parameterdescription>
+<para>size of the buffer</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>number of bytess filled in the buffer. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>number of bytess filled in the buffer. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5200" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5200" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__sensor__server_1ga1ddaea44b65372c7cabadf2a7637a502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -377,41 +338,35 @@
           <declname>p_ref_data</declname>
         </param>
         <briefdescription>
-<para>Sensor Status send. </para>
-        </briefdescription>
+<para>Sensor Status send. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element Index where the sensor is located </para>
-</parameterdescription>
+<para>Element Index where the sensor is located </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>property_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Property ID of the sensor for which sensor data shall be reported. If Property ID is zero, the Status will include all sensors of the element. </para>
-</parameterdescription>
+<para>Property ID of the sensor for which sensor data shall be reported. If Property ID is zero, the Status will include all sensors of the element. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_ref_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If application is sending data based on the Get request from the library, the parameter should contain the values passed in the GET request. Should be zero otherwise.</para>
-</parameterdescription>
+<para>If application is sending data based on the Get request from the library, the parameter should contain the values passed in the GET request. Should be zero otherwise.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5211" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5211" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__sensor__server_1ga5ea857d449567618ce7f299fc57ad227" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -431,49 +386,40 @@
           <declname>setting_property_id</declname>
         </param>
         <briefdescription>
-<para>Sensor Setting status. </para>
-        </briefdescription>
+<para>Sensor Setting status. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been received in the request, or created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>property_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Property ID of the sensor for which Sensor Setting status shall be reported </para>
-</parameterdescription>
+<para>Property ID of the sensor for which Sensor Setting status shall be reported </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>setting_property_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Property ID of the Sensor Setting, that the Sensor Setting status shall be reported</para>
-</parameterdescription>
+<para>Property ID of the Sensor Setting, that the Sensor Setting status shall be reported</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5223" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5223" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The AIROC Mesh Sensor Server module provides a way for an application to implement a functionality for the devices that can be controlled using sensor. </para>
-    </briefdescription>
+<para>The AIROC Mesh Sensor Server module provides a way for an application to implement a functionality for the devices that can be controlled using sensor. </para>    </briefdescription>
     <detaileddescription>
-<para>To include the Mesh Models support for the Sensor Server module the application shall contain the WICED_BT_MESH_MODEL_SENSOR_SERVER</para>
-<para>TBD </para>
-    </detaileddescription>
+<para>To include the Mesh Models support for the Sensor Server module the application shall contain the WICED_BT_MESH_MODEL_SENSOR_SERVER</para><para>TBD </para>    </detaileddescription>
   </compounddef>
 </doxygen>

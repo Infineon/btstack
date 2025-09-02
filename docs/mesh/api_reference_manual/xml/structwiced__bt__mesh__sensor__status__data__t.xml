@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__sensor__status__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_sensor_status_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>property_id</name>
         <briefdescription>
-<para>Property identifying a sensor. </para>
-        </briefdescription>
+<para>Property identifying a sensor. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="278" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="278" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="278" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="278" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__status__data__t_1af3a99ff83172a06df531e11e4a756cdc" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>prop_value_len</name>
         <briefdescription>
-<para>Length of the raw_value corresponding to property_id. </para>
-        </briefdescription>
+<para>Length of the raw_value corresponding to property_id. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="279" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="279" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="279" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="279" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__status__data__t_1a6a5316b89577da8fa385df7b27ad4295" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -38,21 +36,19 @@
         <argsstring>[WICED_BT_MESH_MAX_PROP_VAL_LEN]</argsstring>
         <name>raw_value</name>
         <briefdescription>
-<para>Value of the Property. </para>
-        </briefdescription>
+<para>Value of the Property. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="280" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="280" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="280" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="280" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Sensor status data structure exchanged between the application and the Sensor Model. </para>
-    </briefdescription>
+<para>Sensor status data structure exchanged between the application and the Sensor Model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="277" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="276" bodyend="281"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="277" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="276" bodyend="281"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__sensor__status__data__t_1af3a99ff83172a06df531e11e4a756cdc" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_data_t</scope><name>prop_value_len</name></member>
       <member refid="structwiced__bt__mesh__sensor__status__data__t_1a6417baf84ec36d50b365968b358323b2" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_status_data_t</scope><name>property_id</name></member>

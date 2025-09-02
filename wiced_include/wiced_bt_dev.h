@@ -1772,6 +1772,8 @@ wiced_result_t  wiced_bt_dev_get_remote_name (wiced_bt_device_address_t bd_addr,
 * @param[out]      p_cod    : Class of Device of a peer BT device
 *
 * @return          wiced_result_t
+*
+* @Note : Below API applicable only for acceptor role. For Initiator role, please use EIR data to get the peer class of device.
 **/
 wiced_result_t wiced_bt_dev_get_device_class(wiced_bt_device_address_t bdaddr, wiced_bt_dev_class_t* p_cod);
 
@@ -1807,6 +1809,15 @@ wiced_result_t wiced_bt_coex_enable( uint32_t seci_baud_rate );
  *
  */
 void wiced_bt_coex_disable( void );
+
+/**
+ *
+ * Application can invoke this function to change the device name in Controller.
+ *
+ * @return         void
+ *
+ */
+wiced_result_t wiced_bt_btm_set_device_name(char* p_name);
 
 /**
 *

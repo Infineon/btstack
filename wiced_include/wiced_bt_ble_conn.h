@@ -534,17 +534,20 @@ wiced_bt_dev_status_t wiced_bt_ble_set_host_features(wiced_bt_ble_feature_bit_t 
 *    This API is called to encrypt advertising data. Encrypts data at \p p_plaintext of length \p payload_len into
 *    \p p_encrypted of length \p payload_len
 *
-* @param[in] p_key         session key
-* @param[in] p_iv          initialization vector
-* @param[in] p_randomizer  randomizer
-* @param[in] p_plaintext   plaintext to be encoded
-* @param[in] p_encrypted   encrypted output
-* @param[in] payload_len   plaintext/encrypted data len
-* @param[out] p_mic        pointer to MIC, Message Integrity Check, derived from the data
+* @param[in]  p_key         session key (16 bytes, little endian)
+* @param[in]  p_iv          initialization vector (8 bytes, little endian)
+* @param[in]  p_randomizer  randomizer (5 bytes, little endian)
+* @param[in]  p_plaintext   plaintext to be encoded
+* @param[out] p_encrypted   encrypted output
+* @param[in/out]  payload_len   plaintext/encrypted data len
+* @param[out] p_mic         pointer to MIC, Message Integrity Check, derived from the data
+*
+* @note the value returned in \p p_mic has to be appended to the end of the encrypted data
 *
 * @return          wiced_result_t
 *                  WICED_BT_SUCCESS If adv_packet is encrypted successfully
 *                  WICED_BT_ERROR   otherwise
+*
 */
 wiced_result_t wiced_bt_ble_encrypt_adv_packet(uint8_t *p_key,
                                                uint8_t *p_iv,
@@ -560,13 +563,15 @@ wiced_result_t wiced_bt_ble_encrypt_adv_packet(uint8_t *p_key,
 *    This API is called to decrypt advertising data. Decrypts data at \p p_encrypted of length \p coded_len into
 *    \p p_plaintext of length \p coded_len
 *
-* @param[in] p_key        session key
-* @param[in] p_iv         initialization vector
-* @param[in] p_randomizer randomizer
-* @param[in] p_encrypted  encrypted data input
-* @param[in] p_plaintext  plaintext output
-* @param[in] coded_len    encrypted data len
-* @param[in] p_mic        pointer to MIC, Message Integrity Check, derived from the data
+* @param[in]  p_key        session key (16 bytes, little endian)
+* @param[in]  p_iv         initialization vector (8 bytes, little endian)
+* @param[in]  p_randomizer randomizer (5 bytes, little endian)
+* @param[in]  p_encrypted  encrypted data input
+* @param[out] p_plaintext  plaintext output
+* @param[in/out]  coded_len    encrypted data len
+* @param[out] p_mic        pointer to MIC, Message Integrity Check, derived from the data
+*
+* @note the value returned in \p p_mic can be used to check against the value in the received encrypted data
 *
 * @return          wiced_result_t
 *                  WICED_BT_SUCCESS If adv_packet is decrypted successfully

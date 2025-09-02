@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__wiced__bt__mesh__light__xyl__client" kind="group">
     <compoundname>wiced_bt_mesh_light_xyl_client</compoundname>
     <title>Mesh Light xyL Client</title>
@@ -10,41 +10,35 @@
         <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_light_xyl_client_callback_t</name>
         <briefdescription>
-<para>Light xyL Client callback is called by the Mesh Models library on receiving a message from the peer. </para>
-        </briefdescription>
+<para>Light xyL Client callback is called by the Mesh Models library on receiving a message from the peer. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see <ref refid="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h_1LIGHT_XYL_EVENT" kindref="member">Light xyL Events</ref>) </para>
-</parameterdescription>
+<para>The event that the application should process (see <ref refid="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h_1LIGHT_XYL_EVENT" kindref="member">Light xyL Events</ref>) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>information about the message received. The same pointer should be used in the reply if required. </para>
-</parameterdescription>
+<para>information about the message received. The same pointer should be used in the reply if required. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the level data</para>
-</parameterdescription>
+<para>Pointer to the level data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4719" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="4719" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4719" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="4719" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -66,42 +60,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Light xyL Client Message Handler. </para>
-        </briefdescription>
+<para>Light xyL Client Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4732" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4732" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__client_1ga2775b4a14de345fb43363ea4321d61ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -121,41 +108,35 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Light xyL Client Module initialization. </para>
-        </briefdescription>
+<para>Light xyL Client Module initialization. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Device element to where model is used </para>
-</parameterdescription>
+<para>Device element to where model is used </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para>
-</parameterdescription>
+<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4743" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4743" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__client_1gaf2d32ad0403fab041943e3ff630ba094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -167,25 +148,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light xyL Get message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light xyL Get message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4752" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4752" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__client_1ga68a8e6db251777f69e19fc5045939935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -201,25 +178,21 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light xyL Set message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light xyL Set message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4761" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4761" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__client_1gab500630eb5b907a6b5d6e72cbc67de22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -231,25 +204,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light xyL Target Get message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light xyL Target Get message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4770" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4770" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__client_1ga71983afaf9c407de53ac5332393d3356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -261,33 +230,28 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light xyL Get Default client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light xyL Get Default client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4780" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4780" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__client_1ga8ba4b64e0466d0b453621c03ab8db371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -303,33 +267,28 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light xyL Set Default client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light xyL Set Default client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4790" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4790" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__client_1ga23c99eda097e5a3ae1d4c3ae2379d51e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -341,33 +300,28 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light xyL Range Get client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light xyL Range Get client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4800" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4800" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__client_1gae7004f31f89fd8e51d7e8b45002e11ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -383,33 +337,28 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light xyL Range Set client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light xyL Range Set client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4810" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4810" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -422,14 +371,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4707" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="4707" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4707" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="4707" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The AIROC Mesh Light XYL Client module of the Mesh Models library provides a way for an application to configure and control color lights that support xyL control. </para>
-    </briefdescription>
+<para>The AIROC Mesh Light XYL Client module of the Mesh Models library provides a way for an application to configure and control color lights that support xyL control. </para>    </briefdescription>
     <detaileddescription>
-<para>To include Light XYL Client functionality, the device description shall contain WICED_BT_MESH_MODEL_LIGHT_XYL_CLIENT. </para>
-    </detaileddescription>
+<para>To include Light XYL Client functionality, the device description shall contain WICED_BT_MESH_MODEL_LIGHT_XYL_CLIENT. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

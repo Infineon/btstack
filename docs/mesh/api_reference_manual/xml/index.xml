@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
   <compound refid="structmesh__battery__event__t" kind="struct"><name>mesh_battery_event_t</name>
     <member refid="structmesh__battery__event__t_1a320cc9afdf7ba85fb92f20121b6ab1aa" kind="variable"><name>battery_level</name></member>
     <member refid="structmesh__battery__event__t_1aa41590794f556a8021817b94279fec1f" kind="variable"><name>time_to_discharge</name></member>
@@ -4088,8 +4088,6 @@
   <compound refid="group__wiced__bt__mesh_wiced_bt_mesh_application_structure" kind="page"><name>wiced_bt_mesh_application_structure</name>
   </compound>
   <compound refid="dir_9654b8d08f4bba4e84b362c5fd320bee" kind="dir"><name>apps</name>
-  </compound>
-  <compound refid="dir_49e56c817e5e54854c35e136979f97ca" kind="dir"><name>docs</name>
   </compound>
   <compound refid="dir_4e6935c92f50a57c71fc19646a166fc4" kind="dir"><name>include</name>
   </compound>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__wiced__bt__mesh__power__onoff__client" kind="group">
     <compoundname>wiced_bt_mesh_power_onoff_client</compoundname>
     <title>Mesh Power OnOff Client</title>
@@ -10,42 +10,35 @@
         <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_power_onoff_client_callback_t</name>
         <briefdescription>
-<para>Power On/Off Client callback is called by the Mesh Models library on receiving WICED_BT_MESH_POWER_ONOFF_ONPOWERUP_STATUS message from the peer. </para>
-        </briefdescription>
+<para>Power On/Off Client callback is called by the Mesh Models library on receiving WICED_BT_MESH_POWER_ONOFF_ONPOWERUP_STATUS message from the peer. </para>        </briefdescription>
         <detaileddescription>
-<para>The function is also called when transmission of the request has been completed <ref refid="group__wiced__bt__mesh__provisioning_1ga31c4c354e12fd933b285fe399a6559bf" kindref="member">WICED_BT_MESH_TX_COMPLETE</ref> with tx_failed field of the p_event parameter indicating if the request has been sent out successfully.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The function is also called when transmission of the request has been completed <ref refid="group__wiced__bt__mesh__provisioning_1ga31c4c354e12fd933b285fe399a6559bf" kindref="member">WICED_BT_MESH_TX_COMPLETE</ref> with tx_failed field of the p_event parameter indicating if the request has been sent out successfully.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1POWER_ONOFF_EVENT" kindref="member">Mesh Power On/Off Events</ref>) </para>
-</parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1POWER_ONOFF_EVENT" kindref="member">Mesh Power On/Off Events</ref>) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>information about the message received. </para>
-</parameterdescription>
+<para>information about the message received. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data with the status information</para>
-</parameterdescription>
+<para>Pointer to the data with the status information</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2822" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2822" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2822" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2822" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -67,41 +60,35 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Power On/Off Client Module initialization. </para>
-        </briefdescription>
+<para>Power On/Off Client Module initialization. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Device element to where model is used </para>
-</parameterdescription>
+<para>Device element to where model is used </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The application callback function that will be executed by the Mesh Models library when a request has been sent out, or failed, or when a reply for the application request has been received. </para>
-</parameterdescription>
+<para>The application callback function that will be executed by the Mesh Models library when a request has been sent out, or failed, or when a reply for the application request has been received. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2833" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2833" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__onoff__client_1ga1a8051787824f2f8c30718a2871cd7f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -121,42 +108,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Generic Power OnOff Client Message Handler. </para>
-        </briefdescription>
+<para>Generic Power OnOff Client Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>This is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The Mesh Core library calls this function for each message received. The function shall return WICED_TRUE if the message is destined for this specific model, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>This is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The Mesh Core library calls this function for each message received. The function shall return WICED_TRUE if the message is destined for this specific model, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2847" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2847" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__onoff__client_1ga0e675596ea9b81df95f2bf81c886a168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -168,25 +148,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send the Get Power On/Off state client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send the Get Power On/Off state client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the application.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the application.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2856" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2856" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__power__onoff__client_1ga30456c1896ae6fc5d8259e70a6218b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -202,42 +178,33 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Set OnOff client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Set OnOff client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the application. The p_event-&gt;reply specifies if application wants to receive Status from the peer. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the application. The p_event-&gt;reply specifies if application wants to receive Status from the peer. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2867" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2867" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The AIROC Mesh Power On/Off Client module of the Mesh Models library provides a way for an application to manage the On Power Up behavior of other mesh devices. </para>
-    </briefdescription>
+<para>The AIROC Mesh Power On/Off Client module of the Mesh Models library provides a way for an application to manage the On Power Up behavior of other mesh devices. </para>    </briefdescription>
     <detaileddescription>
-<para>It is typicallly used by the applications running on devices which performs mesh network configuration.</para>
-<para>To include Power On/Off functionality, the device description shall contain WICED_BT_MESH_MODEL_POWER_ONOFF_CLIENT. The application shall also initialize the Power On/Off Client calling the <ref refid="group__wiced__bt__mesh__power__onoff__client_1ga4d60833328cbf560c43ba130f56f69c7" kindref="member">wiced_bt_mesh_model_power_onoff_client_init</ref> registering a callback to receive Power OnOff status messages</para>
-<para>To find out the current On Power Up state set on a particular device and to modify the behavior the application shall use <ref refid="group__wiced__bt__mesh__power__onoff__client_1ga0e675596ea9b81df95f2bf81c886a168" kindref="member">wiced_bt_mesh_model_power_onoff_client_send_onpowerup_get</ref>. and <ref refid="group__wiced__bt__mesh__power__onoff__client_1ga30456c1896ae6fc5d8259e70a6218b4c" kindref="member">wiced_bt_mesh_model_power_onoff_client_send_onpowerup_set</ref> methods respectively. These functions require to use the p_event parameter which include among others the address of the desgination device, the application key index, the retrnansmission parameters, the TTL, and various others. </para>
-    </detaileddescription>
+<para>It is typicallly used by the applications running on devices which performs mesh network configuration.</para><para>To include Power On/Off functionality, the device description shall contain WICED_BT_MESH_MODEL_POWER_ONOFF_CLIENT. The application shall also initialize the Power On/Off Client calling the <ref refid="group__wiced__bt__mesh__power__onoff__client_1ga4d60833328cbf560c43ba130f56f69c7" kindref="member">wiced_bt_mesh_model_power_onoff_client_init</ref> registering a callback to receive Power OnOff status messages</para><para>To find out the current On Power Up state set on a particular device and to modify the behavior the application shall use <ref refid="group__wiced__bt__mesh__power__onoff__client_1ga0e675596ea9b81df95f2bf81c886a168" kindref="member">wiced_bt_mesh_model_power_onoff_client_send_onpowerup_get</ref>. and <ref refid="group__wiced__bt__mesh__power__onoff__client_1ga30456c1896ae6fc5d8259e70a6218b4c" kindref="member">wiced_bt_mesh_model_power_onoff_client_send_onpowerup_set</ref> methods respectively. These functions require to use the p_event parameter which include among others the address of the desgination device, the application key index, the retrnansmission parameters, the TTL, and various others. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

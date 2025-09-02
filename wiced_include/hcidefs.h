@@ -1438,7 +1438,9 @@
 #define HCI_CODING_FORMAT_CVSD      ((uint8_t) 0x02)  /* CVSD         */
 #define HCI_CODING_FORMAT_TRANSPNT  ((uint8_t) 0x03)  /* Transparent  */
 #define HCI_CODING_FORMAT_LINEAR    ((uint8_t) 0x04)  /* Linear PCM   */
-#define HCI_CODING_FORMAT_MSBC      ((uint8_t) 0x05)  /* MSBC PCM   */
+#define HCI_CODING_FORMAT_MSBC      ((uint8_t) 0x05)  /* MSBC PCM     */
+#define HCI_CODING_FORMAT_LC3       ((uint8_t) 0x06)  /* LC3          */
+#define HCI_CODING_FORMAT_G729A     ((uint8_t) 0x07)  /* G.729A       */
 #define HCI_CODING_FORMAT_VS        ((uint8_t) 0xFF)  /* Specifies VSC used */
 
 /* PCM Data Formats (Bluetooth 4.1 or later Assigned numbers) */

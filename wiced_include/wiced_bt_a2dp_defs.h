@@ -47,6 +47,7 @@ extern "C"
 #include "wiced_bt_a2d_sbc.h"
 #include "wiced_bt_a2d_m12.h"
 #include "wiced_bt_a2d_m24.h"
+#include "wiced_bt_a2d_mdu.h"
 
 /** @file:   wiced_bt_a2dp_defs.h */
 
@@ -61,6 +62,7 @@ typedef enum
     WICED_BT_A2DP_CODEC_SBC             = 0x00, /**< SBC Codec */
     WICED_BT_A2DP_CODEC_M12             = 0x01, /**< MPEG-1, 2 Codecs */
     WICED_BT_A2DP_CODEC_M24             = 0x02, /**< MPEG-2, 4 Codecs */
+    WICED_BT_A2DP_CODEC_MDU             = 0x03, /**< MPEG-D, USAC Codecs */
     WICED_BT_A2DP_CODEC_VENDOR_SPECIFIC = 0xFF, /**< Vendor specific codec */
 } wiced_bt_a2dp_codec_t;
 
@@ -100,6 +102,7 @@ typedef struct
         wiced_bt_a2d_sbc_cie_t    sbc; /**< SBC information element */
         wiced_bt_a2d_m12_cie_t    m12; /**< MPEG-1, 2 information element */
         wiced_bt_a2d_m24_cie_t    m24; /**< MPEG-2, 4 information element */
+        wiced_bt_a2d_mdu_cie_t    mdu; /**< MPEG-D, USAC information element */
         wiced_bt_a2d_vendor_cie_t vsp; /**< Vendor Specific codec information element */
     } cie;/**< Codec information element */
 } wiced_bt_a2dp_codec_info_t;

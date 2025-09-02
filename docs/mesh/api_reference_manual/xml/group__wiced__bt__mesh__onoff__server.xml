@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__wiced__bt__mesh__onoff__server" kind="group">
     <compoundname>wiced_bt_mesh_onoff_server</compoundname>
     <title>Mesh OnOff Server</title>
@@ -10,42 +10,35 @@
         <argsstring>(uint8_t element_idx, uint16_t event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_onoff_server_callback_t</name>
         <briefdescription>
-<para>Generic On/Off Server callback. </para>
-        </briefdescription>
+<para>Generic On/Off Server callback. </para>        </briefdescription>
         <detaileddescription>
-<para>The Generic On/Off Server callback is executed by the Mesh Models library on receiving a SET message from the peer. The callback is provided by the application or by the mesh model which extends the Generic On/Off server during the initialization.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Generic On/Off Server callback is executed by the Mesh Models library on receiving a SET message from the peer. The callback is provided by the application or by the mesh model which extends the Generic On/Off server during the initialization.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element Index of the model </para>
-</parameterdescription>
+<para>Element Index of the model </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1ONOFF_EVENT" kindref="member">On/Off Events</ref>) </para>
-</parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1ONOFF_EVENT" kindref="member">On/Off Events</ref>) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the on/off state data</para>
-</parameterdescription>
+<para>Pointer to the on/off state data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2073" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2073" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2073" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2073" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -71,50 +64,42 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>On/Off Server Module initialization. </para>
-        </briefdescription>
+<para>On/Off Server Module initialization. </para>        </briefdescription>
         <detaileddescription>
-<para>The function shall be called to initialize the On/Off Server Module of the Mesh Models library. For multi element applications, the initialization shall be done for each element that supports on/off get, on/off set functionality.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The function shall be called to initialize the On/Off Server Module of the Mesh Models library. For multi element applications, the initialization shall be done for each element that supports on/off get, on/off set functionality.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Device element where OnOff model is used </para>
-</parameterdescription>
+<para>Device element where OnOff model is used </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Application or Parent model callback that will be executed on receiving a message </para>
-</parameterdescription>
+<para>Application or Parent model callback that will be executed on receiving a message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>transition_interval</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Interval in milliseconds to update application during transition change with STATUS messages. If 0, library will send a single SET message when the transition should start. </para>
-</parameterdescription>
+<para>Interval in milliseconds to update application during transition change with STATUS messages. If 0, library will send a single SET message when the transition should start. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE, the device is unprovisioned.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE, the device is unprovisioned.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2088" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2088" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__onoff__server_1gae8407b3533ba16b322606715ecc95421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -134,42 +119,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>On/Off Server Message Handler. </para>
-        </briefdescription>
+<para>On/Off Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. This function is implemented by Mesh Models library and does not need to be replicated by the application or any other module. The function returns WICED_TRUE if the message is destined for this specific model, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent to perform functionality.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. This function is implemented by Mesh Models library and does not need to be replicated by the application or any other module. The function returns WICED_TRUE if the message is destined for this specific model, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent to perform functionality.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2103" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2103" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__onoff__server_1ga183decc30f376b4a051c5a5a1752aa8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -189,42 +167,35 @@
           <declname>buffer_len</declname>
         </param>
         <briefdescription>
-<para>On/Off Server Scene Store Handler. </para>
-        </briefdescription>
+<para>On/Off Server Scene Store Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The mesh Scene Server calls this function so that the module can store required data for the scene. The function is implemented in the Mesh Models library and does not need to be replicated by the application. To extend library functionality, the application can replace the function in the <ref refid="group__wiced__bt__mesh__onoff__server_1ga9edfe8c8fd00ec622586f851f1735c18" kindref="member">WICED_BT_MESH_MODEL_ONOFF_SERVER</ref>, performs its functionality and then call this function directly.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The mesh Scene Server calls this function so that the module can store required data for the scene. The function is implemented in the Mesh Models library and does not need to be replicated by the application. To extend library functionality, the application can replace the function in the <ref refid="group__wiced__bt__mesh__onoff__server_1ga9edfe8c8fd00ec622586f851f1735c18" kindref="member">WICED_BT_MESH_MODEL_ONOFF_SERVER</ref>, performs its functionality and then call this function directly.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which scene information is being stored </para>
-</parameterdescription>
+<para>Element index for which scene information is being stored </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to a buffer where data should be stored </para>
-</parameterdescription>
+<para>Pointer to a buffer where data should be stored </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buf_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Maximum amount of data a model can store</para>
-</parameterdescription>
+<para>Maximum amount of data a model can store</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2118" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2118" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__onoff__server_1ga695d902ada448311745f293913bdfa2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -252,58 +223,49 @@
           <declname>delay</declname>
         </param>
         <briefdescription>
-<para>On/Off Server Scene Recall Handler. </para>
-        </briefdescription>
+<para>On/Off Server Scene Recall Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>When the Scene Server receives the Scene Recall message it calls this function with data previously stored in the NVRAM. The function is implemented in the Mesh Models library and does not need to be replicated by the application. To extend library functionality, the application can replace the function in the <ref refid="group__wiced__bt__mesh__onoff__server_1ga9edfe8c8fd00ec622586f851f1735c18" kindref="member">WICED_BT_MESH_MODEL_ONOFF_SERVER</ref>, performs its functionality and then call this function directly.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>When the Scene Server receives the Scene Recall message it calls this function with data previously stored in the NVRAM. The function is implemented in the Mesh Models library and does not need to be replicated by the application. To extend library functionality, the application can replace the function in the <ref refid="group__wiced__bt__mesh__onoff__server_1ga9edfe8c8fd00ec622586f851f1735c18" kindref="member">WICED_BT_MESH_MODEL_ONOFF_SERVER</ref>, performs its functionality and then call this function directly.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which scene information is being recalled </para>
-</parameterdescription>
+<para>Element index for which scene information is being recalled </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to a buffer where model&apos;s data is located </para>
-</parameterdescription>
+<para>Pointer to a buffer where model&apos;s data is located </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buf_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Maximum amount of data a model can get from the buffer </para>
-</parameterdescription>
+<para>Maximum amount of data a model can get from the buffer </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>transition_time</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Specified time in milliseconds to transition to the target state </para>
-</parameterdescription>
+<para>Specified time in milliseconds to transition to the target state </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>delay</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Specifies time in milliseconds before starting to transition to the target state</para>
-</parameterdescription>
+<para>Specifies time in milliseconds before starting to transition to the target state</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2135" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2135" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__onoff__server_1gaac632b3bcb0f941d86d1f4d0b9d92b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -319,33 +281,28 @@
           <declname>onoff</declname>
         </param>
         <briefdescription>
-<para>If On/Off state of the device can be changed locally, the application shall call this function to notify OnOff library that the value has been changed. </para>
-        </briefdescription>
+<para>If On/Off state of the device can be changed locally, the application shall call this function to notify OnOff library that the value has been changed. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which onoff state has changed </para>
-</parameterdescription>
+<para>Element index for which onoff state has changed </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>onoff</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>New value of onoff</para>
-</parameterdescription>
+<para>New value of onoff</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2146" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2146" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -356,23 +313,17 @@
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_SCENE_SETUP_SRV, <ref refid="group__wiced__bt__mesh__scene__server_1ga1e69d93cd77b795bd811c1ae913a39e9" kindref="member">wiced_bt_mesh_model_scene_setup_server_message_handler</ref>, NULL, NULL }, \
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_GENERIC_ONOFF_SRV, <ref refid="group__wiced__bt__mesh__onoff__server_1gae8407b3533ba16b322606715ecc95421" kindref="member">wiced_bt_mesh_model_onoff_server_message_handler</ref>, <ref refid="group__wiced__bt__mesh__onoff__server_1ga183decc30f376b4a051c5a5a1752aa8d" kindref="member">wiced_bt_mesh_model_onoff_server_scene_store_handler</ref>, <ref refid="group__wiced__bt__mesh__onoff__server_1ga695d902ada448311745f293913bdfa2d" kindref="member">wiced_bt_mesh_model_onoff_server_scene_recall_handler</ref> }</initializer>
         <briefdescription>
-<para>Mesh OnOff Server Device. </para>
-        </briefdescription>
+<para>Mesh OnOff Server Device. </para>        </briefdescription>
         <detaileddescription>
-<para>The model is used as a base for multiple other models. This device is typically not used standalone. The closest is Power OnOff Device which adds on power up behavior to the device and then can be used standalone. With the TIME_AND_SCHEDULER_SUPPORT the model TIME_CLNT is needed just to send TIME_GET message. Therefore message_handler is NULL. </para>
-        </detaileddescription>
+<para>The model is used as a base for multiple other models. This device is typically not used standalone. The closest is Power OnOff Device which adds on power up behavior to the device and then can be used standalone. With the TIME_AND_SCHEDULER_SUPPORT the model TIME_CLNT is needed just to send TIME_GET message. Therefore message_handler is NULL. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2054" column="10" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2054" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="2054" column="10" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="2054" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The AIROC Mesh OnOff Server module of the Mesh Models library provides a way to implement functionality for the devices that can be controlled using a simple On/Off switch, aka On/Off client. </para>
-    </briefdescription>
+<para>The AIROC Mesh OnOff Server module of the Mesh Models library provides a way to implement functionality for the devices that can be controlled using a simple On/Off switch, aka On/Off client. </para>    </briefdescription>
     <detaileddescription>
-<para>The OnOff Server module is typically not used by a target applications. It is used by other modules that extend OnOff functionality. A simple example is a Power Plug application. Instead of using OnOff module, the application uses Power On/Off, which in addition to OnOff provides On Power Up behavior, i.e. the library saves in the NVRAM configuration of the state required when device is powered up and controls application accordingly. Similarly, an application for dimmable light uses Light Lightness module. If peer sends OnOff command, the application receives a callback from the Light Lightness module that the lightness is set to zero.</para>
-<para>To use the OnOff Server, on startup an application or a module that extends the OnOff functionality should call wiced_bt_mesh_model_onoff_server_init function providing the callback that will be executed when an OnOff request is received to turn the device on or off.</para>
-<para>The module which extends OnOff server should call the wiced_bt_mesh_model_onoff_changed function when the OnOff state of the device is changed locally. </para>
-    </detaileddescription>
+<para>The OnOff Server module is typically not used by a target applications. It is used by other modules that extend OnOff functionality. A simple example is a Power Plug application. Instead of using OnOff module, the application uses Power On/Off, which in addition to OnOff provides On Power Up behavior, i.e. the library saves in the NVRAM configuration of the state required when device is powered up and controls application accordingly. Similarly, an application for dimmable light uses Light Lightness module. If peer sends OnOff command, the application receives a callback from the Light Lightness module that the lightness is set to zero.</para><para>To use the OnOff Server, on startup an application or a module that extends the OnOff functionality should call wiced_bt_mesh_model_onoff_server_init function providing the callback that will be executed when an OnOff request is received to turn the device on or off.</para><para>The module which extends OnOff server should call the wiced_bt_mesh_model_onoff_changed function when the OnOff state of the device is changed locally. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

@@ -775,10 +775,10 @@ const char *wiced_ble_cs_get_event_str(wiced_ble_cs_events_t evt);
  * @param[in] p_data : Received subevent data
  * @param[in] len : length of the data pointed to by \p p_data
  *
- * @return wiced_result_t
+ * @return number of bytes read from the stream
  */
 
-wiced_result_t wiced_ble_cs_read_subevent_result_event_hdr_from_stream(
+int wiced_ble_cs_read_subevent_result_event_hdr_from_stream(
     wiced_ble_cs_subevent_result_hdr_t *p_hdr, uint8_t *p_data, int len);
 
 /**
@@ -787,9 +787,9 @@ wiced_result_t wiced_ble_cs_read_subevent_result_event_hdr_from_stream(
  * @param[in] p_data : Received subevent data
  * @param[in] len : length of the data pointed to by \p p_data
  *
- * @return wiced_result_t
+ * @return number of bytes read from the stream
  */
-wiced_result_t wiced_ble_cs_read_subevent_cont_result_event_hdr_from_stream(
+int wiced_ble_cs_read_subevent_cont_result_event_hdr_from_stream(
     wiced_ble_cs_subevent_continue_result_hdr_t *p_hdr, uint8_t *p_data, int len);
 
 /**@} wicedbt */

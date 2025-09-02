@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"structwiced__ble__cs__config__complete__t.html#add44164e4e69e8578b4a22fcae9b60fa":[1,7,5,10],
 "structwiced__ble__cs__config__complete__t.html#ae5bf2b560ca6f9eb28b463714c298003":[1,7,5,0],
 "structwiced__ble__cs__config__complete__t.html#af5414d284780ccc03ef7d746addbbddf":[1,7,5,5],
 "structwiced__ble__cs__config__complete__t.html#afa75d4f13fd6f32971f2ea9227ebd6c7":[1,7,5,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "structwiced__bt__ble__advert__elem__t.html#a1f047c04b8b36a6db70d04eda2168b0b":[1,1,1,2],
 "structwiced__bt__ble__advert__elem__t.html#a70f91e32698c6fdde84563cd0edf149d":[1,1,1,0],
 "structwiced__bt__ble__advert__elem__t.html#aaa6cf169af0de34e6be4b0be9d7057e2":[1,1,1,1],
-"structwiced__bt__ble__channel__sel__algo__event__data__t.html":[1,8,36],
-"structwiced__bt__ble__channel__sel__algo__event__data__t.html#a0b62665bbf5c518ee37b1b498d06db3d":[1,8,36,1]
+"structwiced__bt__ble__channel__sel__algo__event__data__t.html":[1,8,36]
 };

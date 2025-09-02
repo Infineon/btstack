@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__scheduler__action__get__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_scheduler_action_get_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,21 +10,19 @@
         <argsstring></argsstring>
         <name>action_number</name>
         <briefdescription>
-<para>Index of the Schedule Register entry to get. </para>
-        </briefdescription>
+<para>Index of the Schedule Register entry to get. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="560" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="560" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="560" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="560" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Scheduler Status Data structure exchanged between the application Scheduler Models. </para>
-    </briefdescription>
+<para>Scheduler Status Data structure exchanged between the application Scheduler Models. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="559" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="558" bodyend="561"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="559" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="558" bodyend="561"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__scheduler__action__get__t_1ab77f33d2cfce458c1c62e20840033561" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scheduler_action_get_t</scope><name>action_number</name></member>
     </listofallmembers>

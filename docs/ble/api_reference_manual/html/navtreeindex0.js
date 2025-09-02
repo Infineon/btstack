@@ -228,6 +228,7 @@ var NAVTREEINDEX0 =
 "group__gatt__common__api.html#ga15d5aff42e22c934fbbde1a7a2680ff6":[1,10,3,4],
 "group__gatt__common__api.html#ga2bfd5052c63d135f8df4078a61d0938b":[1,10,3,7],
 "group__gatt__common__api.html#ga4957d5c9ddc93abbcaac2c3bded135c9":[1,10,3,2],
+"group__gatt__common__api.html#ga99e29340b77c9335e40e7443b8582124":[1,10,3,9],
 "group__gatt__common__api.html#gab44b8568a7e3d887d034e4e4d0277bc0":[1,10,3,1],
 "group__gatt__common__api.html#gabbfa959b34a129b52f94acb52f8a643c":[1,10,3,6],
 "group__gatt__common__api.html#gac384524f7e61172da9eb0beb764ed46d":[1,10,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__gatt__server__api__functions.html":[1,10,1],
 "group__gattdb__api__functions.html":[1,10,1,1],
 "group__gattdb__api__functions.html#ga29fd2f86442a2fdadf9c4a05094e5c7f":[1,10,1,1,0],
-"group__gattdb__api__functions.html#ga6183e7711927516a6dc3dcaee3d85241":[1,10,1,1,2],
-"group__gattdb__api__functions.html#ga677cb480a1affb01d8f2c7f4c35dff2e":[1,10,1,1,1]
+"group__gattdb__api__functions.html#ga6183e7711927516a6dc3dcaee3d85241":[1,10,1,1,2]
 };

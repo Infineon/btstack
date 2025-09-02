@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__scene__request__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_scene_request_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>type</name>
         <briefdescription>
-<para>Scene Request Type. </para>
-        </briefdescription>
+<para>Scene Request Type. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="450" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="450" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="450" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="450" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__scene__request__t_1a9c5810179079cf0bf0f5a7764c4d3abd" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -24,21 +23,19 @@
         <argsstring></argsstring>
         <name>scene_number</name>
         <briefdescription>
-<para>The number of the scene to be recalled. </para>
-        </briefdescription>
+<para>The number of the scene to be recalled. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="451" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="451" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="451" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="451" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Scene Data structure exchanged between the application and the Scene Models. </para>
-    </briefdescription>
+<para>Scene Data structure exchanged between the application and the Scene Models. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="446" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="445" bodyend="452"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="446" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="445" bodyend="452"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__scene__request__t_1a9c5810179079cf0bf0f5a7764c4d3abd" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scene_request_t</scope><name>scene_number</name></member>
       <member refid="structwiced__bt__mesh__scene__request__t_1aaf552dffd2a3e73b45475e1b53b39c06" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_scene_request_t</scope><name>type</name></member>

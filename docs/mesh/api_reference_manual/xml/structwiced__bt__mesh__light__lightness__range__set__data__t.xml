@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__light__lightness__range__set__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_light_lightness_range_set_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>min_level</name>
         <briefdescription>
-<para>The value of the Light Lightness Min field of the Light Lightness Range state. </para>
-        </briefdescription>
+<para>The value of the Light Lightness Min field of the Light Lightness Range state. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1198" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1198" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1198" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1198" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__lightness__range__set__data__t_1a4768fa45beba4ff9a3d7833e982449f3" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -24,21 +23,19 @@
         <argsstring></argsstring>
         <name>max_level</name>
         <briefdescription>
-<para>The value of the Light Lightness Max field of the Light Lightness Range state. </para>
-        </briefdescription>
+<para>The value of the Light Lightness Max field of the Light Lightness Range state. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1199" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1199" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1199" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1199" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Lightness Range Status Data structure exchanged between the application and Generic Power Level Model. </para>
-    </briefdescription>
+<para>Lightness Range Status Data structure exchanged between the application and Generic Power Level Model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1197" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1196" bodyend="1200"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1197" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1196" bodyend="1200"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__light__lightness__range__set__data__t_1a4768fa45beba4ff9a3d7833e982449f3" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lightness_range_set_data_t</scope><name>max_level</name></member>
       <member refid="structwiced__bt__mesh__light__lightness__range__set__data__t_1a6c90adda577ed564ddb2e45899fcfde4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lightness_range_set_data_t</scope><name>min_level</name></member>

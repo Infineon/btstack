@@ -7,6 +7,20 @@ Following are the limitations when using host based address resolution (only app
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
 ## Changelog
+## V4.1.4
+### BTSTACK4.1.4 contains following updates and fixes -
+ - Bug fix to restart ATT indication and request queues on GATT TX complete
+ - Synchronize updating controller generated RPA with changes in the advertisement data
+ - Documentation update of wiced_bt_ble_encrypt_adv_packet and wiced_bt_ble_decrypt_adv_packet APIs
+ - Added Support for SWB (LC3) in SCO
+    - In  wiced_bt_sco_params_t, use_wbs field changed from bool to uint8. This allows SCO to now support Narrow band, wide band as well as super wide band
+    - For newly added LC3, the coding format is set as transparent
+ - A2DP 1.4 support
+    - MPEG 2,4 parser updated
+        - DRC is optional feature in MPEG 2,4. Current we do not support DRC
+    - Added parser for MPEG-D USAC
+    - Added mdu to wiced_bt_a2dp_codec_info_t
+
 ## V4.1.3
 ### Fixes in BTSTACK4.1.3
  - Fix to not update the random address if rpa_refresh_timeout is set to 0
@@ -55,6 +69,8 @@ Following are the limitations when using host based address resolution (only app
 
 
 ## V4.0.0
+BTSTACK4.0 is BT6.0 certified. DN: [Q359398](https://qualification.bluetooth.com/ListingDetails/291872)
+
 BTSTACK4.0 contains the following enhancements -
  - Major update for Extended/Periodic/PAWR advertising and scanning APIs
  - Major update for ISOC APIs

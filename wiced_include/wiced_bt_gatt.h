@@ -2033,6 +2033,25 @@ uint8_t *wiced_bt_gattdb_getAttrValue(const wiced_gattdb_entry_t *p_db_entry);
  */
 wiced_result_t wiced_bt_gatt_set_tx_packets_queue_size(uint8_t count);
 
+/**
+* Structure to hold the outstanding message counts
+*/
+typedef struct
+{
+    uint16_t msg_no_rsp; /**< total number of queued notifications/write cmd packets in queue */
+} wiced_bt_gatt_msg_count_t;
+
+/**
+ * API to get the current outstanding queued number of packets which are held by the GATT layer
+ *
+ *  @param[in] conn_id :  GATT Connection ID
+ *  @param[out] p_count : Pointer to return the oustanding/queued messages
+ *  @returns total number of queued packets for \p conn_id
+ *
+ *  @ingroup gatt_common_api
+ */
+uint16_t wiced_bt_gatt_get_outstanding_msg_count(uint16_t conn_id, wiced_bt_gatt_msg_count_t *p_count);
+
 #ifdef __cplusplus
 }
 #endif

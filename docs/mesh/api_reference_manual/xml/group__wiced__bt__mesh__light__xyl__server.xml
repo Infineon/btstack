@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__wiced__bt__mesh__light__xyl__server" kind="group">
     <compoundname>wiced_bt_mesh_light_xyl_server</compoundname>
     <title>Mesh Light xyL Server</title>
@@ -10,44 +10,35 @@
         <argsstring>(uint8_t element_idx, uint16_t event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_light_xyl_server_callback_t</name>
         <briefdescription>
-<para>Light XYL Server callback. </para>
-        </briefdescription>
+<para>Light XYL Server callback. </para>        </briefdescription>
         <detaileddescription>
-<para>Light XYL Server callback is executed by the Mesh Models library when the application is required to adjust the amount of light emitted by the device or its color. The application is responsible for setting the hardware (for example, by controlling PWM) to comply with the values requested by the library.</para>
-<para>If peer device requested to transition to the new brightness, x or y states over a period of time, the callback will be executed repeatedly. The Mesh Models Library calculates the present levels and submits to the application to setup the hardware.</para>
-<para>The p_data parameter points to the <ref refid="structwiced__bt__mesh__light__xyl__status__data__t" kindref="compound">wiced_bt_mesh_light_xyl_status_data_t</ref> structure. Typically the application will only need to use the value of the present lightness, x and y fields which specify the target values that the device shall be set at present time. If the remaining_time field is not zero, the transition to the new target levels is in progress and the Mesh Models Library will execute the callback at least once more before the transition is completed.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Light XYL Server callback is executed by the Mesh Models library when the application is required to adjust the amount of light emitted by the device or its color. The application is responsible for setting the hardware (for example, by controlling PWM) to comply with the values requested by the library.</para><para>If peer device requested to transition to the new brightness, x or y states over a period of time, the callback will be executed repeatedly. The Mesh Models Library calculates the present levels and submits to the application to setup the hardware.</para><para>The p_data parameter points to the <ref refid="structwiced__bt__mesh__light__xyl__status__data__t" kindref="compound">wiced_bt_mesh_light_xyl_status_data_t</ref> structure. Typically the application will only need to use the value of the present lightness, x and y fields which specify the target values that the device shall be set at present time. If the remaining_time field is not zero, the transition to the new target levels is in progress and the Mesh Models Library will execute the callback at least once more before the transition is completed.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index of the element </para>
-</parameterdescription>
+<para>Element index of the element </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The only event that the application should process is WICED_BT_MESH_LIGHT_XYL_STATUS </para>
-</parameterdescription>
+<para>The only event that the application should process is WICED_BT_MESH_LIGHT_XYL_STATUS </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the <ref refid="structwiced__bt__mesh__light__xyl__status__data__t" kindref="compound">wiced_bt_mesh_light_xyl_status_data_t</ref> structure</para>
-</parameterdescription>
+<para>Pointer to the <ref refid="structwiced__bt__mesh__light__xyl__status__data__t" kindref="compound">wiced_bt_mesh_light_xyl_status_data_t</ref> structure</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4589" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="4589" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4589" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="4589" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -73,42 +64,35 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Light XYL Module initialization. </para>
-        </briefdescription>
+<para>Light XYL Module initialization. </para>        </briefdescription>
         <detaileddescription>
-<para>A Mesh application which contains Light XYL Server (for example, a dimmable color bulb) should call this function during application initialization passing element index of the element. If the application needs to support multiple XYL lights (for example, a light fixture or a chandelier), the function shall be called multiple times, once per each primary element.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>A Mesh application which contains Light XYL Server (for example, a dimmable color bulb) should call this function during application initialization passing element index of the element. If the application needs to support multiple XYL lights (for example, a light fixture or a chandelier), the function shall be called multiple times, once per each primary element.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index corresponding to XYL device </para>
-</parameterdescription>
+<para>Element index corresponding to XYL device </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Application callback that will be executed to set device hardware to required brightness, x and y values. </para>
-</parameterdescription>
+<para>Application callback that will be executed to set device hardware to required brightness, x and y values. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the device is not provision and NVRAM is erased.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the device is not provision and NVRAM is erased.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if initialization was successful </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if initialization was successful </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4604" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4604" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__server_1ga37cd5447c939a4d3afb306fb22a75675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -124,34 +108,28 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>Light XYL state changed. </para>
-        </briefdescription>
+<para>Light XYL state changed. </para>        </briefdescription>
         <detaileddescription>
-<para>The application shall call the Light XYL state changed function to notify the Mesh Models library when values of brightness, x or y are changed internally.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The application shall call the Light XYL state changed function to notify the Mesh Models library when values of brightness, x or y are changed internally.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index corresponding to the XYL device </para>
-</parameterdescription>
+<para>Element index corresponding to the XYL device </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the <ref refid="structwiced__bt__mesh__light__xyl__status__data__t" kindref="compound">wiced_bt_mesh_light_xyl_status_data_t</ref> status data</para>
-</parameterdescription>
+<para>Pointer to the <ref refid="structwiced__bt__mesh__light__xyl__status__data__t" kindref="compound">wiced_bt_mesh_light_xyl_status_data_t</ref> status data</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4616" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4616" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__server_1ga6a5a2028cf7ffcfad1f3a673738d836a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -171,42 +149,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Light XYL Server Message Handler. </para>
-        </briefdescription>
+<para>Light XYL Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Light XYL Server Message Handler is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The Mesh Core library calls this function for each message received. The function shall return WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Light XYL Server Message Handler is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The Mesh Core library calls this function for each message received. The function shall return WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4631" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4631" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__server_1ga52ff9cab20dde5c927933a2c9e24a195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -226,42 +197,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Light XYL Setup Server Message Handler. </para>
-        </briefdescription>
+<para>Light XYL Setup Server Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Light XYL Server Setup Message Handler is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The Mesh Core library calls this function for each message received. The function shall return WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Light XYL Server Setup Message Handler is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The Mesh Core library calls this function for each message received. The function shall return WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4646" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4646" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__server_1gadb27714f02fd077b341bafba8213f352" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -281,42 +245,35 @@
           <declname>buffer_len</declname>
         </param>
         <briefdescription>
-<para>Light xyL Server Scene Store Handler. </para>
-        </briefdescription>
+<para>Light xyL Server Scene Store Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Light HSL Saturation Server Message Handler is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The mesh Scene Server calls this function so that the module can store required data for the scene.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Light HSL Saturation Server Message Handler is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. The mesh Scene Server calls this function so that the module can store required data for the scene.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which scene information is being stored </para>
-</parameterdescription>
+<para>Element index for which scene information is being stored </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to a buffer where data should be stored </para>
-</parameterdescription>
+<para>Pointer to a buffer where data should be stored </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buf_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Maximum amount of data a model can store</para>
-</parameterdescription>
+<para>Maximum amount of data a model can store</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Number of bytes the model wrote into the provided buffer </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4660" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4660" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__server_1ga4227ecba6c6acee6950adef5c42c920e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -344,58 +301,49 @@
           <declname>delay</declname>
         </param>
         <briefdescription>
-<para>Light xyL Server Scene Store Handler. </para>
-        </briefdescription>
+<para>Light xyL Server Scene Store Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Light HSL Saturation Server Message Handler is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. When Scene Server receives Scene Store message it calls this function with data previously stored in the NVRAM.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Light HSL Saturation Server Message Handler is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. When Scene Server receives Scene Store message it calls this function with data previously stored in the NVRAM.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index for which scene information is being recalled </para>
-</parameterdescription>
+<para>Element index for which scene information is being recalled </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to a buffer where model&apos;s data is located </para>
-</parameterdescription>
+<para>Pointer to a buffer where model&apos;s data is located </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>buf_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Maximum amount of data a model can get from the buffer </para>
-</parameterdescription>
+<para>Maximum amount of data a model can get from the buffer </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>transition_time</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Specified time in milliseconds to transition to the target state </para>
-</parameterdescription>
+<para>Specified time in milliseconds to transition to the target state </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>delay</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Specifies time in milliseconds before starting to transition to the target state</para>
-</parameterdescription>
+<para>Specifies time in milliseconds before starting to transition to the target state</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Number of bytes the model read from the provided buffer </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4676" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4676" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__xyl__server_1ga38ed3faffd2792da339f6b949735cf77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -411,34 +359,28 @@
           <declname>startup_controller</declname>
         </param>
         <briefdescription>
-<para>Set Light XYL Model as a startup controller. </para>
-        </briefdescription>
+<para>Set Light XYL Model as a startup controller. </para>        </briefdescription>
         <detaileddescription>
-<para>This is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. For multi-model applications, for example the ones that support HSL, CTL and XYL controls, only one can be setup as a startup controller. If the controller mode is set, the library will execute the power on requirements, for example it can set the lightness/hue/saturation based on the last state before the power off. If the model is not set as a controller, it will not execute on power up state.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>This is an internal Mesh Models library function and does not need to be implemented or called by the application, unless application wants to replace the library functionality. For multi-model applications, for example the ones that support HSL, CTL and XYL controls, only one can be setup as a startup controller. If the controller mode is set, the library will execute the power on requirements, for example it can set the lightness/hue/saturation based on the last state before the power off. If the model is not set as a controller, it will not execute on power up state.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The element index of the top level model </para>
-</parameterdescription>
+<para>The element index of the top level model </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>startup_controller</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If set to WICED_TRUE, the model will execute on power up operation</para>
-</parameterdescription>
+<para>If set to WICED_TRUE, the model will execute on power up operation</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4691" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4691" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -456,27 +398,17 @@
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_XYL_SRV, <ref refid="group__wiced__bt__mesh__light__xyl__server_1ga6a5a2028cf7ffcfad1f3a673738d836a" kindref="member">wiced_bt_mesh_model_light_xyl_server_message_handler</ref>, <ref refid="group__wiced__bt__mesh__light__xyl__server_1gadb27714f02fd077b341bafba8213f352" kindref="member">wiced_bt_mesh_model_light_xyl_server_scene_store_handler</ref>, <ref refid="group__wiced__bt__mesh__light__xyl__server_1ga4227ecba6c6acee6950adef5c42c920e" kindref="member">wiced_bt_mesh_model_light_xyl_server_scene_recall_handler</ref> }, \
     { MESH_COMPANY_ID_BT_SIG, WICED_BT_MESH_CORE_MODEL_ID_LIGHT_XYL_SETUP_SRV, <ref refid="group__wiced__bt__mesh__light__xyl__server_1ga52ff9cab20dde5c927933a2c9e24a195" kindref="member">wiced_bt_mesh_model_light_xyl_setup_server_message_handler</ref>, NULL, NULL }</initializer>
         <briefdescription>
-<para>Mesh Light XYL Server Device. </para>
-        </briefdescription>
+<para>Mesh Light XYL Server Device. </para>        </briefdescription>
         <detaileddescription>
-<para>The device implements all required models for the main element of a color bulb that supports brightness and xyL color control. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>
-        </detaileddescription>
+<para>The device implements all required models for the main element of a color bulb that supports brightness and xyL color control. The time and scheduler models are optional and can be commented out to reduce memory footprint. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4553" column="10" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="4553" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="4553" column="10" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="4553" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The AIROC Mesh Light xyL Server module provides a way for an application to implement a dimmable light device with x and y chromaticity coordinates support. </para>
-    </briefdescription>
+<para>The AIROC Mesh Light xyL Server module provides a way for an application to implement a dimmable light device with x and y chromaticity coordinates support. </para>    </briefdescription>
     <detaileddescription>
-<para>The device can be controlled by a device with rich UI which can control the brightness, x and y states, but also the device can be can be controlled using a Level sliders (Generic Level client) applied to the brightness and by a On/Off switch (Generic On/Off client). The device also supports a default transition time server functionality and the application can specify on power up behavior.</para>
-<para>To include the Mesh Models support for the XYL Server module the application includes the <ref refid="group__wiced__bt__mesh__light__xyl__server_1gae28a54ae411ae75d8d2c09cdbf8634fb" kindref="member">WICED_BT_MESH_MODEL_LIGHT_XYL_SERVER</ref> in the device definition. If the device supports several lights with XYL Server support, for example, a light fixture or a chandelier with several color lights, the <ref refid="group__wiced__bt__mesh__light__xyl__server_1gae28a54ae411ae75d8d2c09cdbf8634fb" kindref="member">WICED_BT_MESH_MODEL_LIGHT_XYL_SERVER</ref>, shall be repeated for each physical device.</para>
-<para>In addition to the definition, the application shall initialize the XYL Server module by calling <ref refid="group__wiced__bt__mesh__light__xyl__server_1ga7e7b580549e073406b13835b17fe47bf" kindref="member">wiced_bt_mesh_model_light_xyl_server_init</ref> function for each primary element where the XYL functionality is required providing the <ref refid="group__wiced__bt__mesh__light__xyl__server_1ga9fd39eda4ba26988c13e852a6af9654e" kindref="member">wiced_bt_mesh_light_xyl_server_callback_t</ref> callback that will be executed when the brightness level, the hue or the saturation of the device needs to be changed.</para>
-<para>If device supports local control, for example, when the brightness of the device can be changed locally, the application should call the wiced_bt_mesh_model_light_xyl_status_changed function so that the library can maintain correct state and send an appropriate status message if it is configured to do so.</para>
-<para>Most of the functionality of the Light XYL server device is implemented in the Mesh Models Library. The application only needs to set hardware appropriately on receiving WICED_BT_MESH_LIGHT_XYL_STATUS event. If a client requests to change the brightness or the color to the target values over a period of time, the library will maintain the timer and will periodically call the application with appropriate values.</para>
-<para>The default transition time is managed by the Mesh Models library. The application provides factory default in the default_transition_time element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client.</para>
-<para>The on power up behavior is managed by the Mesh Models library. The application provides factory default in the onpowerup_state element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client. </para>
-    </detaileddescription>
+<para>The device can be controlled by a device with rich UI which can control the brightness, x and y states, but also the device can be can be controlled using a Level sliders (Generic Level client) applied to the brightness and by a On/Off switch (Generic On/Off client). The device also supports a default transition time server functionality and the application can specify on power up behavior.</para><para>To include the Mesh Models support for the XYL Server module the application includes the <ref refid="group__wiced__bt__mesh__light__xyl__server_1gae28a54ae411ae75d8d2c09cdbf8634fb" kindref="member">WICED_BT_MESH_MODEL_LIGHT_XYL_SERVER</ref> in the device definition. If the device supports several lights with XYL Server support, for example, a light fixture or a chandelier with several color lights, the <ref refid="group__wiced__bt__mesh__light__xyl__server_1gae28a54ae411ae75d8d2c09cdbf8634fb" kindref="member">WICED_BT_MESH_MODEL_LIGHT_XYL_SERVER</ref>, shall be repeated for each physical device.</para><para>In addition to the definition, the application shall initialize the XYL Server module by calling <ref refid="group__wiced__bt__mesh__light__xyl__server_1ga7e7b580549e073406b13835b17fe47bf" kindref="member">wiced_bt_mesh_model_light_xyl_server_init</ref> function for each primary element where the XYL functionality is required providing the <ref refid="group__wiced__bt__mesh__light__xyl__server_1ga9fd39eda4ba26988c13e852a6af9654e" kindref="member">wiced_bt_mesh_light_xyl_server_callback_t</ref> callback that will be executed when the brightness level, the hue or the saturation of the device needs to be changed.</para><para>If device supports local control, for example, when the brightness of the device can be changed locally, the application should call the wiced_bt_mesh_model_light_xyl_status_changed function so that the library can maintain correct state and send an appropriate status message if it is configured to do so.</para><para>Most of the functionality of the Light XYL server device is implemented in the Mesh Models Library. The application only needs to set hardware appropriately on receiving WICED_BT_MESH_LIGHT_XYL_STATUS event. If a client requests to change the brightness or the color to the target values over a period of time, the library will maintain the timer and will periodically call the application with appropriate values.</para><para>The default transition time is managed by the Mesh Models library. The application provides factory default in the default_transition_time element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client.</para><para>The on power up behavior is managed by the Mesh Models library. The application provides factory default in the onpowerup_state element of the <ref refid="group__wiced__bt__mesh__core_1ga347805955f2e047fa5a05b5dc6ec939f" kindref="member">wiced_bt_mesh_core_config_t</ref> configuration structure. The default value is used unless overwritten by the default transition time client. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

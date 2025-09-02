@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__wiced__bt__mesh__light__lightness__client" kind="group">
     <compoundname>wiced_bt_mesh_light_lightness_client</compoundname>
     <title>Mesh Light Lightness Client</title>
@@ -10,41 +10,35 @@
         <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_light_lightness_client_callback_t</name>
         <briefdescription>
-<para>Light Lightness Client callback is called by the Mesh Models library on receiving a message from the peer. </para>
-        </briefdescription>
+<para>Light Lightness Client callback is called by the Mesh Models library on receiving a message from the peer. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1LIGHT_LIGHTNESS_EVENT" kindref="member">Mesh Light Lightness Events</ref>) </para>
-</parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1LIGHT_LIGHTNESS_EVENT" kindref="member">Mesh Light Lightness Events</ref>) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>information about the message received. The same pointer should be used in the reply if required. </para>
-</parameterdescription>
+<para>information about the message received. The same pointer should be used in the reply if required. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3571" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3571" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3571" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3571" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -66,41 +60,35 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Light Lightness Client Module initialization. </para>
-        </briefdescription>
+<para>Light Lightness Client Module initialization. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Device element to where model is used </para>
-</parameterdescription>
+<para>Device element to where model is used </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para>
-</parameterdescription>
+<para>The application callback function that will be executed by the mesh models library when application action is required, or when a reply for the application request has been received. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
-</parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3582" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3582" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__client_1ga315c6d385a47f14b9c0bce70d59bf766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -120,42 +108,35 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Light Lightness Client Message Handler. </para>
-        </briefdescription>
+<para>Light Lightness Client Message Handler. </para>        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para>
-</parameterdescription>
+<para>Mesh event with information about received message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para>
-</parameterdescription>
+<para>Pointer to the data portion of the message </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para>
-</parameterdescription>
+<para>Length of the data in the message</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3594" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3594" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__client_1gad110283c46a3425c4a97530752975890" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -167,25 +148,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send the Light Lightness Get client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send the Light Lightness Get client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3603" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3603" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__client_1ga6bca43f4126446ea408968a1cd534650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -201,33 +178,28 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light Lightness Set client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light Lightness Set client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3613" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3613" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__client_1ga4d8a5829aec0a7826bb1a5c3fc6736b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -239,25 +211,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send the Light Lightness Linear Get client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send the Light Lightness Linear Get client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3622" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3622" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__client_1gae2a2cf924b44ac9cff3e149d8da01e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -273,33 +241,28 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light Lightness Linear Set client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light Lightness Linear Set client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3632" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3632" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__client_1gad9e93708306904c4820b37392c519596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -311,25 +274,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send the Light Lightness Last Get client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send the Light Lightness Last Get client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3641" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3641" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__client_1gaf7aa40c36da932b6c0fd12b9fb3e6a79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -341,25 +300,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send the Light Lightness Default Get client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send the Light Lightness Default Get client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3650" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3650" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__client_1ga6171eaf2f01acec4d2f1e6a06559b716" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -375,33 +330,28 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light Lightness Default Set client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light Lightness Default Set client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3660" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3660" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__client_1ga39bbe94a242cba1b451d88f21b0684b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -413,25 +363,21 @@
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send the Light Lightness Range Get client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send the Light Lightness Range Get client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3669" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3669" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__light__lightness__client_1gab7f2a8d86e555860e41ed604df895f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -447,33 +393,28 @@
           <declname>p_data</declname>
         </param>
         <briefdescription>
-<para>The application can call this function to send Light Lightness Default Set client message to the server. </para>
-        </briefdescription>
+<para>The application can call this function to send Light Lightness Default Set client message to the server. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para>
-</parameterdescription>
+<para>Mesh event with the information about the message that has been created by the app for unsolicited message. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data to send</para>
-</parameterdescription>
+<para>Pointer to the data to send</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>WICED_BT_SUCCESS if message has been queued for transmission. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3679" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3679" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -486,14 +427,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3559" column="9" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3559" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="3559" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="3559" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The AIROC Mesh Light Lightness Client module of the Mesh Models library provides a way for an application to control brightness level of the Light Lightness Servers in the mesh network optionally receive status information. </para>
-    </briefdescription>
+<para>The AIROC Mesh Light Lightness Client module of the Mesh Models library provides a way for an application to control brightness level of the Light Lightness Servers in the mesh network optionally receive status information. </para>    </briefdescription>
     <detaileddescription>
-<para>To include Light Lightness Client functionality, the device description shall contain WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_CLIENT. </para>
-    </detaileddescription>
+<para>To include Light Lightness Client functionality, the device description shall contain WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_CLIENT. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

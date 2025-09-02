@@ -13,7 +13,7 @@ var searchData=
   ['unit_5finfo',['unit_info',['../structwiced__bt__avrc__unit__info__cmd__t.html#a4966af3b9d71242481b58e2f8e44b41f',1,'wiced_bt_avrc_unit_info_cmd_t']]],
   ['unit_5ftype',['unit_type',['../structwiced__bt__avrc__unit__info__rsp__t.html#a4a4d3f6175c43eb74bc11f26bd91efa5',1,'wiced_bt_avrc_unit_info_rsp_t']]],
   ['unused',['unused',['../structwiced__bt__flow__spec__cmpl__evt__t.html#ae69aab9d87aafa70c0c495cbe3f40d02',1,'wiced_bt_flow_spec_cmpl_evt_t']]],
-  ['use_5fwbs',['use_wbs',['../structwiced__bt__sco__params__t.html#aa10df2dcae64049e582aa292325df3fd',1,'wiced_bt_sco_params_t']]],
+  ['use_5fwbs',['use_wbs',['../structwiced__bt__sco__params__t.html#aabd05934c0bc2652cb96440d5a111c80',1,'wiced_bt_sco_params_t']]],
   ['user_5fconfirmation_5frequest',['user_confirmation_request',['../unionwiced__bt__management__evt__data__t.html#a6b6ff34db31ba663399c697725a6b7dc',1,'wiced_bt_management_evt_data_t']]],
   ['user_5fkeypress_5fnotification',['user_keypress_notification',['../unionwiced__bt__management__evt__data__t.html#aef3757148e0dd747f04536edb14f4393',1,'wiced_bt_management_evt_data_t']]],
   ['user_5fpasskey_5fnotification',['user_passkey_notification',['../unionwiced__bt__management__evt__data__t.html#a646a994016c6bd883c38bfc4d0255c5c',1,'wiced_bt_management_evt_data_t']]],

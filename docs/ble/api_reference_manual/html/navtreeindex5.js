@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68ba504d23402d512d2910a89c3c1c8a1d4d":[1,10,106,27],
 "group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68ba547ffb76da36272d1d9a60ad5eb89320":[1,10,106,5],
 "group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68ba5eb1dc7717102415663e5b5c4e4d6857":[1,10,106,21],
 "group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68ba6aa4af1546aea92d4b3d931b1898b78c":[1,10,106,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "structwiced__ble__cs__config__complete__t.html#aa79507c0c36d4f4162d3fbdb58718287":[1,7,5,2],
 "structwiced__ble__cs__config__complete__t.html#aaa670bbb2c1b726103bad77f6ede6b79":[1,7,5,12],
 "structwiced__ble__cs__config__complete__t.html#aab575e62afb5218291e1e88b81d6a408":[1,7,5,18],
-"structwiced__ble__cs__config__complete__t.html#ac3881bf12dd5033d89ce26ed8ad26266":[1,7,5,21],
-"structwiced__ble__cs__config__complete__t.html#add44164e4e69e8578b4a22fcae9b60fa":[1,7,5,10]
+"structwiced__ble__cs__config__complete__t.html#ac3881bf12dd5033d89ce26ed8ad26266":[1,7,5,21]
 };

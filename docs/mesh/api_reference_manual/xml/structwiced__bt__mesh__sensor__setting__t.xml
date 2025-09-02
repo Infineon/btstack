@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__sensor__setting__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_sensor_setting_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>setting_property_id</name>
         <briefdescription>
-<para>Setting ID identifying a setting within a sensor. </para>
-        </briefdescription>
+<para>Setting ID identifying a setting within a sensor. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="346" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="346" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="346" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="346" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__setting__t_1aa1448214d2b60ce86275411bd4b82a0b" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>access</name>
         <briefdescription>
-<para>Read / Write access rights for the setting. </para>
-        </briefdescription>
+<para>Read / Write access rights for the setting. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="347" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="347" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="347" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="347" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__setting__t_1a7430fceece512fc122a62d7129b3e87c" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -38,13 +36,12 @@
         <argsstring></argsstring>
         <name>value_len</name>
         <briefdescription>
-<para>Length of the raw_value corresponding to property_id. </para>
-        </briefdescription>
+<para>Length of the raw_value corresponding to property_id. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="348" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="348" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="348" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="348" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__sensor__setting__t_1adcbfa4728a811c5d90a66bcf46fa7a95" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -52,21 +49,19 @@
         <argsstring>[WICED_BT_MESH_MAX_PROP_VAL_LEN]</argsstring>
         <name>val</name>
         <briefdescription>
-<para>Raw value for the setting. </para>
-        </briefdescription>
+<para>Raw value for the setting. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="349" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="349" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="349" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="349" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Sensor setting exchanged between the application and the Sensor Model. </para>
-    </briefdescription>
+<para>Sensor setting exchanged between the application and the Sensor Model. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="343" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="342" bodyend="350"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="343" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="342" bodyend="350"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__sensor__setting__t_1aa1448214d2b60ce86275411bd4b82a0b" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_setting_t</scope><name>access</name></member>
       <member refid="structwiced__bt__mesh__sensor__setting__t_1a2607ca949eda3bd93742fce4302db83d" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_sensor_setting_t</scope><name>setting_property_id</name></member>

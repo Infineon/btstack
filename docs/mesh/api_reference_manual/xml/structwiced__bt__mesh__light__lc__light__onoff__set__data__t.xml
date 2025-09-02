@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structwiced__bt__mesh__light__lc__light__onoff__set__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_light_lc_light_onoff_set_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>light_onoff</name>
         <briefdescription>
-<para>The target value of the Light LC Light OnOff state. </para>
-        </briefdescription>
+<para>The target value of the Light LC Light OnOff state. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1607" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1607" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1607" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1607" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__lc__light__onoff__set__data__t_1a227a0ae7d9301990aa8c7830d70a2034" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>transition_time</name>
         <briefdescription>
-<para>Transition time to the target state. </para>
-        </briefdescription>
+<para>Transition time to the target state. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1608" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1608" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1608" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1608" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__mesh__light__lc__light__onoff__set__data__t_1aeb270952e0740bda7dc7da291ea0fb2a" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -38,21 +36,19 @@
         <argsstring></argsstring>
         <name>delay</name>
         <briefdescription>
-<para>Delay before starting the transition. </para>
-        </briefdescription>
+<para>Delay before starting the transition. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1609" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1609" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1609" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1609" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Light LC Light OnOff Set data structure exchanged between the application and Light LC library. </para>
-    </briefdescription>
+<para>Light LC Light OnOff Set data structure exchanged between the application and Light LC library. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1606" column="1" bodyfile="D:/glb/t1_g_RJo6/0/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1605" bodyend="1610"/>
+    <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1606" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1605" bodyend="1610"/>
     <listofallmembers>
       <member refid="structwiced__bt__mesh__light__lc__light__onoff__set__data__t_1aeb270952e0740bda7dc7da291ea0fb2a" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lc_light_onoff_set_data_t</scope><name>delay</name></member>
       <member refid="structwiced__bt__mesh__light__lc__light__onoff__set__data__t_1a89df00c4cbbde282d270b8e2ba57a026" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_lc_light_onoff_set_data_t</scope><name>light_onoff</name></member>
