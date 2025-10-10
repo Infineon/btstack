@@ -7,6 +7,10 @@ Following are the limitations when using host based address resolution (only app
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
 ## Changelog
+## V4.1.5
+### BTSTACK4.1.5 contains following update -
+ - Modified LLVM toolchain compiler flags
+
 ## V4.1.4
 ### BTSTACK4.1.4 contains following updates and fixes -
  - Bug fix to restart ATT indication and request queues on GATT TX complete
