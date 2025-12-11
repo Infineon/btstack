@@ -17,6 +17,7 @@ var group__wicedbt__a2dp__mpeg__2__4 =
     [ "A2D_M24_IE_OBJ_4HE", "group__wicedbt__a2dp__mpeg__2__4.html#gae10476e43a4f6708c979c215cc5091dd", null ],
     [ "A2D_M24_IE_OBJ_4HE2", "group__wicedbt__a2dp__mpeg__2__4.html#ga479180f080f52d95876c18cf4ea9d0de", null ],
     [ "A2D_M24_IE_OBJ_4ELD2", "group__wicedbt__a2dp__mpeg__2__4.html#gac316b5022fbb4cb32cfc859d1bb31344", null ],
+    [ "A2D_M24_IE_DRC_MSK", "group__wicedbt__a2dp__mpeg__2__4.html#ga828fe2c396ef70470cbed5c3a95cd977", null ],
     [ "A2D_M24_IE_SAMP_FREQ_MSK", "group__wicedbt__a2dp__mpeg__2__4.html#ga4adc4f7a0c82f036361ddbab06745ba5", null ],
     [ "A2D_M24_IE_SAMP_FREQ_8", "group__wicedbt__a2dp__mpeg__2__4.html#gab10369f6b984750d924c0baadcc3bf07", null ],
     [ "A2D_M24_IE_SAMP_FREQ_11", "group__wicedbt__a2dp__mpeg__2__4.html#gad607b26cc63d8c0bf70e27b8bf09e0ae", null ],

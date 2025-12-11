@@ -217,11 +217,15 @@ enum wiced_ble_ext_conn_initiator_filter_policy_e
     /** Filter Accept List is not used to determine which advertiser to connect to.
      * Peer_Address_Type and Peer_Address shall be used
      * */
-    WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS = 0,
+    WICED_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS = 0,
+    /** \deprecated use #WICED_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS */
+    WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS = WICED_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS,
     /** Filter Accept List is used to determine which advertiser to connect to.
      * Peer_Address_Type and Peer_Address shall be ignored.
      * */
-    WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS = 1,
+    WICED_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS = 1,
+    /** \deprecated use #WICED_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS */
+    WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS = WICED_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS,
 };
 /** Initiator filter policy used. (see #wiced_ble_ext_conn_initiator_filter_policy_e) */
 typedef uint8_t wiced_ble_ext_conn_initiator_filter_policy_t;
@@ -462,6 +466,15 @@ typedef struct
     uint8_t cmd_status;  /**< Command status */
 } wiced_ble_cmd_cmplt_event_data_t;
 
+/** Set Periodic Adv Sync Transfer Param Event Data */
+typedef struct
+{
+    /** HCI status */
+    uint8_t status;
+    /** connection handle */
+    wiced_bt_ble_connection_handle_t conn_handle;
+} wiced_ble_set_padv_sync_transfer_param_event_data_t;
+
 /** union of events data */
 typedef union
 {
@@ -471,12 +484,14 @@ typedef union
     wiced_ble_padv_report_event_data_t periodic_adv_report;
     /** Data for WICED_BLE_PERIODIC_ADV_SYNC_LOST_EVENT*/
     wiced_ble_padv_sync_handle_t sync_handle;
-    /** Data for WICED_BT_BLE_ADV_SET_TERMINATED_EVENT*/
+    /** Data for WICED_BLE_ADV_SET_TERMINATED_EVENT*/
     wiced_ble_ext_adv_set_terminated_event_data_t adv_set_terminated;
-    /** Data for WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT*/
+    /** Data for WICED_BLE_SCAN_REQUEST_RECEIVED_EVENT*/
     wiced_ble_ext_scan_req_received_event_data_t scan_req_received;
-    /** Data for WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT*/
+    /** Data for WICED_BLE_BIGINFO_ADV_REPORT_EVENT*/
     wiced_ble_biginfo_adv_report_t biginfo_adv_report;
+    /** Data for WICED_BLE_SET_PERIODIC_ADV_SYNC_TRANSFER_PARAM_EVENT */
+    wiced_ble_set_padv_sync_transfer_param_event_data_t sync_transfer_param;
     /** Data for WICED_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT */
     wiced_ble_padv_sync_transfer_event_data_t sync_transfer;
     /** Data for WICED_BLE_EXT_COMMAND_CMPLT_EVENT*/
@@ -484,9 +499,9 @@ typedef union
 
     /* @cond PAWR_API APIs for Periodic Advertising with Response*/
 
-    /** Data for WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT*/
+    /** Data for WICED_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT*/
     wiced_ble_padv_subevent_data_req_event_data_t pawr_data_req;
-    /** Data for WICED_BT_BLE_PAWR_RSP_REPORT_EVENT*/
+    /** Data for WICED_BLE_PAWR_RSP_REPORT_EVENT*/
     wiced_ble_padv_rsp_report_event_data_t pawr_rsp_report;
     /* @endcond */
 } wiced_ble_ext_adv_event_data_t;
@@ -494,13 +509,19 @@ typedef union
 /** ADV extension events to the application */
 typedef enum
 {
-    /** Advertising set terminated becaue either connection being created or adv timeout.
+    /** Advertising set terminated because either connection being created or adv timeout.
      * \ref wiced_ble_ext_adv_set_terminated_event_data_t */
-    WICED_BT_BLE_ADV_SET_TERMINATED_EVENT,
+    WICED_BLE_ADV_SET_TERMINATED_EVENT,
+    /** \deprecated use #WICED_BLE_ADV_SET_TERMINATED_EVENT */
+    WICED_BT_BLE_ADV_SET_TERMINATED_EVENT = WICED_BLE_ADV_SET_TERMINATED_EVENT,
     /** scan request received event.  \ref wiced_ble_ext_scan_req_received_event_data_t */
-    WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT,
+    WICED_BLE_SCAN_REQUEST_RECEIVED_EVENT,
+    /** \deprecated use #WICED_BLE_SCAN_REQUEST_RECEIVED_EVENT*/
+    WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT = WICED_BLE_SCAN_REQUEST_RECEIVED_EVENT,
     /** BIGInfo adv report event.  \ref wiced_ble_biginfo_adv_report_t */
-    WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT,
+    WICED_BLE_BIGINFO_ADV_REPORT_EVENT,
+    /** \deprecated use #WICED_BLE_BIGINFO_ADV_REPORT_EVENT*/
+    WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT = WICED_BLE_BIGINFO_ADV_REPORT_EVENT,
     /** command complete Event.  \ref wiced_ble_cmd_cmplt_event_data_t */
     WICED_BLE_EXT_COMMAND_CMPLT_EVENT,
 
@@ -517,10 +538,17 @@ typedef enum
     /* @cond PAWR_API APIs for Periodic Advertising with Response*/
     /** PAWR event on advertiser to request for subevent data
      * \ref wiced_ble_padv_subevent_data_req_event_data_t */
-    WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT,
+    WICED_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT,
+    /** \deprecated use #WICED_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT*/
+    WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT = WICED_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT,
     /** PAWR event on advertiser to report the subevent response data
      * \ref wiced_ble_padv_rsp_report_event_data_t */
-    WICED_BT_BLE_PAWR_RSP_REPORT_EVENT,
+    WICED_BLE_PAWR_RSP_REPORT_EVENT,
+    /** \deprecated use #WICED_BLE_PAWR_RSP_REPORT_EVENT */
+    WICED_BT_BLE_PAWR_RSP_REPORT_EVENT = WICED_BLE_PAWR_RSP_REPORT_EVENT,
+
+    /** Set Periodic Adv Sync Transfer param Event.  \ref wiced_ble_set_padv_sync_transfer_param_event_data_t */
+    WICED_BLE_SET_PERIODIC_ADV_SYNC_TRANSFER_PARAM_EVENT,
     /* @endcond */
 } wiced_ble_ext_adv_event_t;
 
@@ -529,16 +557,24 @@ extern "C"
 {
 #endif
 
-
 /**
  * Check if the local Bluetooth controller supports extended advertising
  * @return wiced_bool_t
  *
  */
-    wiced_bool_t wiced_ble_ext_adv_support(void);
+ wiced_bool_t wiced_ble_ext_adv_support(void);
 
-    /**
- * Sends the HCI command to set the parameters for extended advetisement
+/**
+  * Create extended adv sets.
+  * @note By default max adv sets supported is set to 1. Applications using multiple adv extended sets/handles need
+  * to invoke this API prior to invoking \ref wiced_ble_ext_adv_set_random_address, \ref wiced_ble_ext_adv_set_params
+  *
+  * @return Number of extended adv sets created. A successful invocation of this API returns \p num_adv_sets
+  */
+  uint8_t wiced_ble_ext_adv_set_max_adv_handles(uint8_t num_adv_sets);
+
+ /**
+ * Sends the HCI command to set the parameters for extended advertisement
  *
  * @param[in]  adv_handle: Advertisement set handle
  * @param[in]  p_params:   Extended adv parameters
@@ -551,10 +587,10 @@ extern "C"
  * <b> WICED_BT_NO_RESOURCES </b>  : If no memory to issue the command \n
  * <b> WICED_BT_PENDING </b>       : If command queued to send down \n
  */
-    wiced_bt_dev_status_t wiced_ble_ext_adv_set_params(wiced_ble_ext_adv_handle_t adv_handle,
-                                                       const wiced_ble_ext_adv_params_t *p_params);
+wiced_bt_dev_status_t wiced_ble_ext_adv_set_params(wiced_ble_ext_adv_handle_t adv_handle,
+                                                    const wiced_ble_ext_adv_params_t *p_params);
 
-    /**
+/**
  * Sends HCI command to set the random address for an adv set
  *
  * @param[in] adv_handle  - handle of the advertising set
@@ -571,7 +607,6 @@ extern "C"
  */
     wiced_bt_dev_status_t wiced_ble_ext_adv_set_random_address(wiced_ble_ext_adv_handle_t adv_handle,
                                                                wiced_bt_device_address_t random_addr);
-
 
     /**
  * Sends HCI command to write the extended adv data
@@ -615,7 +650,7 @@ extern "C"
                                                               uint16_t data_len,
                                                               uint8_t *p_data);
 
-/**
+    /**
  * Sends the HCI command to enable/disable extended advertisements
  *
  * @param[in]       enable    - true to enable, false to disable
@@ -675,7 +710,7 @@ extern "C"
  */
     wiced_bt_dev_status_t wiced_ble_ext_scan_register_cb(wiced_ble_ext_scan_result_cback_t *p_ext_scan_cback);
 
-        /**
+    /**
  * Application may enable reassembly of incoming partial advertisement data segments with this API.
  * The stack will reassemble the incoming chained ADV segments upto \p max_ext_adv_len.
  * @note Inorder to use the reassembly feature for extended adv reports, the application is required to create a default
@@ -726,7 +761,8 @@ extern "C"
  * <b> WICED_BT_SUCCESS </b>       : If successful\n
  *
  */
-    wiced_bt_dev_status_t wiced_ble_ext_scan_enable(wiced_bool_t enable, const wiced_ble_ext_scan_enable_params_t *p_sce);
+    wiced_bt_dev_status_t wiced_ble_ext_scan_enable(wiced_bool_t enable,
+                                                    const wiced_ble_ext_scan_enable_params_t *p_sce);
 
     /**
  * Creates a connection using extended HCI commands
@@ -745,7 +781,7 @@ extern "C"
  */
     wiced_bt_dev_status_t wiced_ble_ext_create_connection(wiced_ble_ext_conn_cfg_t *p_ext_conn_cfg);
 
-   /**
+    /**
 * Cancel a ble connection
 *
 * @return          wiced_bt_dev_status_t
@@ -755,7 +791,7 @@ extern "C"
 * <b> WICED_BT_SUCCESS </b>       : If successful\n
 *
 */
-   wiced_bt_dev_status_t wiced_ble_cancel_connection (void);
+    wiced_bt_dev_status_t wiced_ble_cancel_connection(void);
 
     /**
  * Callback wiced_ble_ext_adv_event_cback_t
@@ -783,6 +819,20 @@ extern "C"
  *
  */
     void wiced_ble_ext_adv_register_cback(wiced_ble_ext_adv_event_cback_t p_app_adv_ext_event_cb);
+
+    /**
+    * Read the maximum length of data supported by the Controller for use as advertisement data or
+    * scan response data in an advertising event or as periodic advertisement data.
+    *
+    *@note Application receives #BTM_BLE_READ_MAX_ADV_DATA_LEN_EVENT to notify Maximum Advertising data length
+    *
+    * @return          wiced_bt_dev_status_t
+    * <b> WICED_BT_NO_RESOURCES </b>  : If no memory to issue the command \n
+    * <b> WICED_BT_SUCCESS </b>       : If successful\n
+    *
+    */
+
+    wiced_bt_dev_status_t wiced_ble_ext_read_adv_data_len(void);
 
 #ifdef __cplusplus
 } // extern "C"

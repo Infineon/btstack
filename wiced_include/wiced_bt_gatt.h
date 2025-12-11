@@ -1229,7 +1229,10 @@ wiced_bt_gatt_status_t wiced_bt_gatt_db_init (const uint8_t *p_gatt_db, uint16_t
  * @param[out]  hash            : The calculated database hash value. The hash pointer passed
  *                                to this function can be NULL incase the application does not
  *                                support dynamic databases and does not support database caching
- *
+ * @note GATT server apps which support Robust Caching need to invoke \sa wiced_bt_gatt_server_enable_caching
+ * prior to invoking wiced_bt_gatt_db_init
+ * @note In case \sa wiced_bt_gatt_server_enable_caching is not invoked, \p hash has to be set to NULL
+
  * @return @link wiced_bt_gatt_status_e wiced_bt_gatt_status_t @endlink
  *  @ingroup gattdb_api_functions
  */
@@ -1244,7 +1247,9 @@ wiced_bt_gatt_status_t wiced_bt_gatt_add_services_to_db(const uint8_t* p_gatt_db
  * @param[out]  hash            : The calculated database hash value. The hash pointer passed
  *                                to this function can be NULL incase the application does not
  *                                support dynamic databases and does not support database caching
- *
+ * @note GATT server apps which support Robust Caching need to invoke \sa wiced_bt_gatt_server_enable_caching
+ * prior to invoking wiced_bt_gatt_db_init
+ * @note In case \sa wiced_bt_gatt_server_enable_caching is not invoked, \p hash has to be set to NULL
  * @return @link wiced_bt_gatt_status_e wiced_bt_gatt_status_t @endlink
  *  @ingroup gattdb_api_functions
  */
@@ -1677,15 +1682,11 @@ wiced_bt_gatt_status_t wiced_bt_gatt_client_send_indication_confirm (uint16_t co
  *  @param[in]  bd_addr     : Remote device address
  *  @param[in]  bd_addr_type: Public or random address
  *  @param[in]  conn_mode   : connection scan mode
- *  @param[in]  is_direct   : Is direct connection or not
+ *  @param[in]  is_direct   : set this parameter to WICED_TRUE
  *
  *  @return <b> TRUE </b>            : If connection started
  *          <b> FALSE </b>           : If connection start failure
  *
- * NOTE :  If is_direct = WICED_FALSE, it will create background connection.
- *         Default Background connection type is BTM_BLE_CONN_NONE.
- *         Before calling wiced_bt_gatt_le_connect please set background connection type (AUTO)
- *         using wiced_bt_ble_set_background_connection_type API
  *
  * @if DUAL_MODE
  * @ingroup gatt_le

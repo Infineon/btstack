@@ -105,6 +105,10 @@ var group__wicedbt___extended =
       [ "cmd_opcode", "structwiced__ble__cmd__cmplt__event__data__t.html#ae621ddda55955df5025cc3ddafe6c72b", null ],
       [ "cmd_status", "structwiced__ble__cmd__cmplt__event__data__t.html#aaac7918c6af0540417f16d4840c23bc3", null ]
     ] ],
+    [ "wiced_ble_set_padv_sync_transfer_param_event_data_t", "structwiced__ble__set__padv__sync__transfer__param__event__data__t.html", [
+      [ "status", "structwiced__ble__set__padv__sync__transfer__param__event__data__t.html#abcbb7dda3989a4dfb524940726469f01", null ],
+      [ "conn_handle", "structwiced__ble__set__padv__sync__transfer__param__event__data__t.html#a39f5f4bda78406aac9a72fa8be0e46b8", null ]
+    ] ],
     [ "wiced_ble_ext_adv_event_data_t", "unionwiced__ble__ext__adv__event__data__t.html", [
       [ "sync_establish", "unionwiced__ble__ext__adv__event__data__t.html#a3203c08d5530f6c5537d22dd6153b26c", null ],
       [ "periodic_adv_report", "unionwiced__ble__ext__adv__event__data__t.html#a6a9711cc4c806febb7267ef8cd791632", null ],
@@ -112,6 +116,7 @@ var group__wicedbt___extended =
       [ "adv_set_terminated", "unionwiced__ble__ext__adv__event__data__t.html#a7d7183cbf27f2a0c76059c8427fa3481", null ],
       [ "scan_req_received", "unionwiced__ble__ext__adv__event__data__t.html#ae6a950ff72458374a2dd4e50166fea6e", null ],
       [ "biginfo_adv_report", "unionwiced__ble__ext__adv__event__data__t.html#a18c76e9eb363ad6aedd743c22e05af41", null ],
+      [ "sync_transfer_param", "unionwiced__ble__ext__adv__event__data__t.html#a180dc9ff858c8bb49fed994f23083b2a", null ],
       [ "sync_transfer", "unionwiced__ble__ext__adv__event__data__t.html#a59e00f711f93512fb5f88800792e6a24", null ],
       [ "cmd_cmplt", "unionwiced__ble__ext__adv__event__data__t.html#abe27cbfda9f8d5ccfd34fc2767df9c7a", null ],
       [ "pawr_data_req", "unionwiced__ble__ext__adv__event__data__t.html#ae28cab26b3774a708b3997103e463c23", null ],
@@ -167,7 +172,9 @@ var group__wicedbt___extended =
       [ "WICED_BLE_EXT_SCAN_FILTER_DUPLICATE_ENABLE_RESET_ON_SCAN_PERIOD", "group__wicedbt___extended.html#gga0546f088ab9cda8feb5b29595cbd4fdca96df9c783f01fdbfe01b90b190b9a5de", null ]
     ] ],
     [ "wiced_ble_ext_conn_initiator_filter_policy_e", "group__wicedbt___extended.html#ga122edf4d5a453b329774c4cbdad6b4a5", [
+      [ "WICED_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS", "group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a2cd4545162b84a43e56a374d5f5fc485", null ],
       [ "WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS", "group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a06234ca144f35338f6bc4120362b5001", null ],
+      [ "WICED_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS", "group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a367e373f0fe2b61b214554f4a1ae2dc8", null ],
       [ "WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS", "group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a3125d3696ae08c0771f9d4de26679179", null ]
     ] ],
     [ "wiced_ble_ext_scanning_filter_policy_e", "group__wicedbt___extended.html#ga0483a0344a8bc72119c84e6ab95111ea", [
@@ -188,18 +195,25 @@ var group__wicedbt___extended =
       [ "ADV_REP_EVT_COUNT_MAX", "group__wicedbt___extended.html#ggabb770fe3c0774bf761f9b1b2951cb519a7e93b8fb79eb54fffb0ef7aae25a3bbc", null ]
     ] ],
     [ "wiced_ble_ext_adv_event_t", "group__wicedbt___extended.html#ga5e2629b369ca80c881cce7bf34e54e55", [
+      [ "WICED_BLE_ADV_SET_TERMINATED_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a8191387885935575adb6ef598106144e", null ],
       [ "WICED_BT_BLE_ADV_SET_TERMINATED_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a7c965ceaa4c4c40f6ac8c8da92361fde", null ],
+      [ "WICED_BLE_SCAN_REQUEST_RECEIVED_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55ae7e8c5318b08cffe6146b1840c3851bd", null ],
       [ "WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a9c8f066bee4af20cde89bffa2f0a5be0", null ],
+      [ "WICED_BLE_BIGINFO_ADV_REPORT_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a019e5b1c91dd01ac5dd3a1670f2e56de", null ],
       [ "WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55addd59b434c4315dcdfee99c1a211a9cd", null ],
       [ "WICED_BLE_EXT_COMMAND_CMPLT_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a46d1d291790adce9379e0e0e486f2028", null ],
       [ "WICED_BLE_PERIODIC_ADV_SYNC_ESTABLISHED_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55afdb8cb6f8c487e347766c856d027f323", null ],
       [ "WICED_BLE_PERIODIC_ADV_REPORT_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55acbd704475027a9c264cadb12c5b19c9e", null ],
       [ "WICED_BLE_PERIODIC_ADV_SYNC_LOST_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55ae18199b1f1c1ecc84c526a5ad73184c5", null ],
       [ "WICED_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a658ce59f813218135a54bb4c2fde1dda", null ],
+      [ "WICED_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55ab9609b2775074072513a9a18d71b129c", null ],
       [ "WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a3330036ce07f7f874651ead39c37e32e", null ],
-      [ "WICED_BT_BLE_PAWR_RSP_REPORT_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a24e43dcfac6a68faebf40b853d49b3d0", null ]
+      [ "WICED_BLE_PAWR_RSP_REPORT_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55acee28eee37e9cf9abe3c961ab6c1c190", null ],
+      [ "WICED_BT_BLE_PAWR_RSP_REPORT_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a24e43dcfac6a68faebf40b853d49b3d0", null ],
+      [ "WICED_BLE_SET_PERIODIC_ADV_SYNC_TRANSFER_PARAM_EVENT", "group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a34cc1f6687e0bbc1bcb83b35c3ac6cce", null ]
     ] ],
     [ "wiced_ble_ext_adv_support", "group__wicedbt___extended.html#gafff39f931702fc08abbe784b257e6721", null ],
+    [ "wiced_ble_ext_adv_set_max_adv_handles", "group__wicedbt___extended.html#gae1f214d921d108dc13287f67a8ceab7d", null ],
     [ "wiced_ble_ext_adv_set_params", "group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8", null ],
     [ "wiced_ble_ext_adv_set_random_address", "group__wicedbt___extended.html#gaac358c7b28754fee22dfe57ce2703203", null ],
     [ "wiced_ble_ext_adv_set_adv_data", "group__wicedbt___extended.html#gaf92c9952375af49cae673d481ceb7ce2", null ],
@@ -213,5 +227,6 @@ var group__wicedbt___extended =
     [ "wiced_ble_ext_scan_enable", "group__wicedbt___extended.html#gaef53c12c6d1bc8631e199ec6fa2f0fb4", null ],
     [ "wiced_ble_ext_create_connection", "group__wicedbt___extended.html#ga6b3ce17fe53ce2670dc00a2c0facffe3", null ],
     [ "wiced_ble_cancel_connection", "group__wicedbt___extended.html#ga17d3a85eb558ee853bbeac1ddc94d1e8", null ],
-    [ "wiced_ble_ext_adv_register_cback", "group__wicedbt___extended.html#gab81b607c21afc5fc637ad6dea217963d", null ]
+    [ "wiced_ble_ext_adv_register_cback", "group__wicedbt___extended.html#gab81b607c21afc5fc637ad6dea217963d", null ],
+    [ "wiced_ble_ext_read_adv_data_len", "group__wicedbt___extended.html#ga84a1170fa9092aa5792965f8b8467f6d", null ]
 ];

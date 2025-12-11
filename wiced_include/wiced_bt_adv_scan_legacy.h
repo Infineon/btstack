@@ -65,8 +65,6 @@
  * @{
  */
 
-#define BTM_BLE_LEGACY_AD_DATA_LEN 31                 /**< Max legacy advertisement data len*/
-
 /** Scanner filter policy */
 enum wiced_bt_ble_scanner_filter_policy_e
 {

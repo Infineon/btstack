@@ -21,7 +21,6 @@ var group__wicedbt___legacy =
       [ "own_bd_addr", "structwiced__bt__ble__multi__adv__params__t.html#a670fabbd2fc224d4d7b8408f4e60aa87", null ],
       [ "own_addr_type", "structwiced__bt__ble__multi__adv__params__t.html#a984df1d6500488f5daeffa08984633b8", null ]
     ] ],
-    [ "BTM_BLE_LEGACY_AD_DATA_LEN", "group__wicedbt___legacy.html#gae3ba16e014add5799d4b298344cb5984", null ],
     [ "MULTI_ADV_TX_POWER_MIN_INDEX", "group__wicedbt___legacy.html#ga9367f8902700749fba1acce4f379ebf7", null ],
     [ "MULTI_ADV_TX_POWER_MAX_INDEX", "group__wicedbt___legacy.html#ga2bdd613b7804ef9942e691f74d9e8b6f", null ],
     [ "wiced_bt_ble_scanner_filter_policy_t", "group__wicedbt___legacy.html#ga6d09736846bcb960a4fd36934d24bfef", null ],

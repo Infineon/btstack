@@ -35,6 +35,10 @@ var group__wicedbt___conn =
       [ "session_key", "structwiced__bt__ble__key__material__t.html#a2da6579072ec24611077b154ec328423", null ],
       [ "iv", "structwiced__bt__ble__key__material__t.html#ad412c598ac240009457301635e53434b", null ]
     ] ],
+    [ "wiced_ble_rpa_timeout_t", "structwiced__ble__rpa__timeout__t.html", [
+      [ "rpa_tout_min", "structwiced__ble__rpa__timeout__t.html#a77bcc8b9d7b002ee2060c89b03161316", null ],
+      [ "rpa_tout_max", "structwiced__ble__rpa__timeout__t.html#a72f25cd170edef612f8d81f42cf2c81c", null ]
+    ] ],
     [ "BTM_BLE_CONN_INTERVAL_MIN_DEF", "group__wicedbt___conn.html#gad810fbb1805c0f676bcc135c09adaa52", null ],
     [ "BTM_BLE_CONN_INTERVAL_MAX_DEF", "group__wicedbt___conn.html#gaea1a6b8149b4944c13b9dc9817a087f5", null ],
     [ "BTM_BLE_CONN_PERIPHERAL_LATENCY_DEF", "group__wicedbt___conn.html#ga01724e6a7493c8ea5fd268cf9a3e5de1", null ],
@@ -83,10 +87,13 @@ var group__wicedbt___conn =
     [ "wiced_bt_ble_set_privacy_mode", "group__btm__ble__sec__api__functions.html#ga2780ef822665cbfd72ba2b2eeefbc35e", null ],
     [ "wiced_ble_private_device_address_resolution", "group__btm__ble__sec__api__functions.html#gaa1a08bf54c9c06015c1bbafbaab433c1", null ],
     [ "wiced_bt_ble_address_resolution_list_clear_and_disable", "group__btm__ble__sec__api__functions.html#gafadf1111bda74127bcd449cf16ad5c06", null ],
+    [ "wiced_bt_ble_resolving_list_auto_enable_set", "group__btm__ble__sec__api__functions.html#ga3698a5b0b3e15f23ce18c813e4984706", null ],
+    [ "wiced_bt_ble_resolving_list_enable", "group__btm__ble__sec__api__functions.html#ga9a1f3d2a48a9bd1e2a9457d18d68a581", null ],
     [ "wiced_bt_ble_read_le_features", "group__wicedbt___conn.html#ga5bc1e0f5151f2b2e550bbd8c96035a82", null ],
     [ "wiced_bt_ble_set_host_features", "group__wicedbt___conn.html#gae3bb5b03e161b641202178ffe672705c", null ],
     [ "wiced_bt_ble_encrypt_adv_packet", "group__wicedbt___conn.html#gacf77554a3def6256b1dc10203721cbfb", null ],
     [ "wiced_bt_ble_decrypt_adv_packet", "group__wicedbt___conn.html#gae9ba25d2fc4f4c9f4c3d4b2b48079b61", null ],
     [ "wiced_bt_ble_set_data_packet_length", "group__wicedbt___conn.html#gaa08c87a6bb5303c94ad71460496b5420", null ],
-    [ "wiced_bt_smp_create_local_sc_oob_data", "group__wicedbt___conn.html#gafce580b6606202828f9dfb1893cc30f4", null ]
+    [ "wiced_bt_smp_create_local_sc_oob_data", "group__wicedbt___conn.html#gafce580b6606202828f9dfb1893cc30f4", null ],
+    [ "wiced_ble_set_rpa_timeout", "group__wicedbt___conn.html#gabb8bad2049a52b99c4d9950827711c7b", null ]
 ];

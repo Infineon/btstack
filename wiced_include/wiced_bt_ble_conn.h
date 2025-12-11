@@ -204,6 +204,14 @@ typedef struct
     wiced_bt_iv_t iv;                /**< Initialization Vector */
 } wiced_bt_ble_key_material_t;
 
+/** Structure to setup min and max randomised RPA timeouts */
+typedef struct
+{
+    uint16_t rpa_tout_min; /**< stores the RPA_Timeout_Min  in seconds */
+    uint16_t rpa_tout_max; /**< stores the RPA_Timeout_Max  in seconds */
+} wiced_ble_rpa_timeout_t;
+
+
 #define BTM_AFH_CHNL_MAP_SIZE HCI_AFH_CHANNEL_MAP_LEN /**< AFH channel map size */
 #define BLE_CHANNEL_MAP_LEN 5                         /**< AFH Channel Map len */
 /** LE Channel Map */
@@ -402,17 +410,17 @@ wiced_result_t wiced_bt_ble_set_channel_classification(const wiced_bt_ble_chnl_m
  * Grant or deny access.  Used in response to an BTM_SECURITY_REQUEST_EVT event.
  *
  * @param[in]       bd_addr     : peer device bd address.
- * @param[in]       res         : WICED_BT_SUCCESS to grant access;
-                                  WICED_BT_UNSUPPORTED , if local device does not allow pairing;
-                                  WICED_BT_REPEATED_ATTEMPTS otherwise
+ * @param[in]       res         : To allow pairing set to SMP_SUCCESS,
+ *                                To disallow pairing check \ref wiced_bt_smp_status_t to set specific SMP error code
+ *
  *
  * @return          <b> None </b>
  *
  */
-void wiced_bt_ble_security_grant(wiced_bt_device_address_t bd_addr, wiced_bt_dev_status_t res);
+void wiced_bt_ble_security_grant(wiced_bt_device_address_t bd_addr, wiced_bt_smp_status_t  res);
 
 /**
- * Sign the data using AES128 CMAC algorith.
+ * Sign the data using AES128 CMAC algorithm.
  *
  * @param[in]       bd_addr: target device the data to be signed for.
  * @param[in]       p_text: signing data
@@ -499,6 +507,43 @@ wiced_result_t wiced_ble_private_device_address_resolution(wiced_bt_device_addre
  *                  WICED_BT_ERROR   otherwise.
  */
 wiced_result_t wiced_bt_ble_address_resolution_list_clear_and_disable(void);
+
+/**
+ * Function wiced_bt_ble_resolving_list_auto_enable_set
+ *
+ * This API allows applications to enable/disable auto enablement of address resolution feature on
+ * update of the resolving list viz,
+ *       \ref wiced_bt_dev_add_device_to_address_resolution_db
+ *       \ref wiced_bt_dev_remove_device_from_address_resolution_db
+ *
+ * @param[in] enable : Set to 1 to enable auto enabling address resolution
+ *
+ * @return
+ */
+void wiced_bt_ble_resolving_list_auto_enable_set(wiced_bool_t enable);
+
+/**
+ * Function wiced_bt_ble_resolving_list_enable
+ *
+ * This API allows applications to enable/disable address resolution feature
+ *
+ * @param[in] enable : Set to 1 to enable address resolution, 0 to disable
+ *
+ * @note: In order to add multiple devices to the address resolution db, invoke address resolution
+ * APIs in the following order
+ *      wiced_bt_ble_address_resolution_list_clear_and_disable // to clear and disable the db
+ *      wiced_bt_ble_resolving_list_auto_enable_set(0)   // to disable auto enabling the db
+ *
+ *      wiced_bt_dev_add_device_to_address_resolution_db(..)
+ *      ..
+ *      wiced_bt_dev_add_device_to_address_resolution_db(..)
+ *      wiced_bt_ble_resolving_list_enable(1)
+ *      wiced_bt_ble_resolving_list_auto_enable_set(1)
+ *
+ * @return
+ */
+wiced_result_t wiced_bt_ble_resolving_list_enable(wiced_bool_t enable);
+
 /**@} btm_ble_sec_api_functions */
 
 /**
@@ -539,7 +584,7 @@ wiced_bt_dev_status_t wiced_bt_ble_set_host_features(wiced_bt_ble_feature_bit_t 
 * @param[in]  p_randomizer  randomizer (5 bytes, little endian)
 * @param[in]  p_plaintext   plaintext to be encoded
 * @param[out] p_encrypted   encrypted output
-* @param[in/out]  payload_len   plaintext/encrypted data len
+* @param[in] payload_len  plaintext/encrypted data len
 * @param[out] p_mic         pointer to MIC, Message Integrity Check, derived from the data
 *
 * @note the value returned in \p p_mic has to be appended to the end of the encrypted data
@@ -568,7 +613,7 @@ wiced_result_t wiced_bt_ble_encrypt_adv_packet(uint8_t *p_key,
 * @param[in]  p_randomizer randomizer (5 bytes, little endian)
 * @param[in]  p_encrypted  encrypted data input
 * @param[out] p_plaintext  plaintext output
-* @param[in/out]  coded_len    encrypted data len
+* @param[in] coded_len    encrypted data len
 * @param[out] p_mic        pointer to MIC, Message Integrity Check, derived from the data
 *
 * @note the value returned in \p p_mic can be used to check against the value in the received encrypted data
@@ -621,6 +666,26 @@ wiced_bt_dev_status_t wiced_bt_ble_set_data_packet_length(wiced_bt_device_addres
  */
 wiced_bool_t wiced_bt_smp_create_local_sc_oob_data(wiced_bt_device_address_t bd_addr,
                                                    wiced_bt_ble_address_type_t bd_addr_type);
+
+/**
+ *
+ * Set the time range to be used by the controller after which a new Resolvable Private
+ * Address shall start being used in the controller.
+ * The new timeout shall be random value between the provided time range.
+ *
+ *
+ * @param[in]       rpa_timeout         :Minimum/Maximum RPA timeout, in seconds
+ *
+ *
+ * @return          wiced_result_t
+ * <b> WICED_BT_SUCCESS </b>       : If command sent successfully\n
+ * <b> WICED_BT_BADARG </b>        : If an invalid argument\n
+ * <b> WICED_BT_ERROR </b>         : otherwise \n
+ *
+ */
+
+wiced_result_t wiced_ble_set_rpa_timeout(wiced_ble_rpa_timeout_t* rpa_timeout);
+
 #ifdef __cplusplus
 } // extern "C"
 #endif

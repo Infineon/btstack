@@ -72,7 +72,7 @@
 #define A2D_M24_IE_OBJ_4ELD2        0x02    /**< b1: MPEG-4 AAC ELDv2 */
 /** @} A2D_M24_OBJ */
 
-#define A2D_M24_IE_DRC_MSK          0x01    /* b0: DRC */
+#define A2D_M24_IE_DRC_MSK          0x01    /**< b0: DRC */
 
 /**
  * @anchor A2D_M24_SF
@@ -113,9 +113,9 @@
  * @name MPEG-2,4 AAC Bitrate
  * @{
  */
-#define A2D_M24_IE_BITRATE3_MSK     0x7F0000    /**< octet 3 */
-#define A2D_M24_IE_BITRATE45_MSK    0x00FFFF    /**< octet 4, 5 */
-#define A2D_M24_IE_BITRATE_MSK      0x7FFFFF    /**< b7-b0 of octet 3, all of octet 4, 5 */
+#define A2D_M24_IE_BITRATE3_MSK     0x7F0000    /**< octet 3*/
+#define A2D_M24_IE_BITRATE45_MSK    0x00FFFF    /**< octet 4, 5*/
+#define A2D_M24_IE_BITRATE_MSK      0x7FFFFF    /**< b7-b0 of octet 3, all of octet 4, 5*/
 /** @} A2D_M24_BITRATE */
 
 

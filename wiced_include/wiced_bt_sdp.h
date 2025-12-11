@@ -236,6 +236,8 @@ typedef struct
 
 /** SDP attribute 16 bit UUID */
 #define SDP_ATTR_UUID16(uuid)           ((UUID_DESC_TYPE << 3) | SIZE_TWO_BYTES), SDP_UINT2(uuid)
+/** SDP attribute 128 bit UUID */
+#define SDP_ATTR_UUID128(uuid)          ((UUID_DESC_TYPE << 3) | SIZE_SIXTEEN_BYTES), uuid
 
 /** SDP attribute id with text */
 #define SDP_ATTR_TEXT(id, len)          SDP_ATTR_ID(id), SDP_ATTR_VALUE_TEXT, (len)

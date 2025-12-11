@@ -35,9 +35,9 @@
 #ifndef __WICED_BT_VERSION_H__
 #define __WICED_BT_VERSION_H__
 
-#define WICED_BTSTACK_VERSION_MAJOR    4      /**< Stack Major version */
-#define WICED_BTSTACK_VERSION_MINOR    1      /**< Stack Minor version */
-#define WICED_BTSTACK_VERSION_PATCH    5      /**< Stack Patch version */
+#define WICED_BTSTACK_VERSION_MAJOR    5      /**< Stack Major version */
+#define WICED_BTSTACK_VERSION_MINOR    0      /**< Stack Minor version */
+#define WICED_BTSTACK_VERSION_PATCH    0      /**< Stack Patch version */
 
 /** Building the btstack version */
 #define BTSTACK_VERSION_BUILD(major, minor, patch) ((((major)&0xff) << 24) | (((minor)&0xff) << 16) | ((patch)&0xffff))

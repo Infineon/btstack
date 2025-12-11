@@ -628,11 +628,9 @@ wiced_result_t wiced_ble_create_local_identity_keys(void);
  * Private Address). The RPA generated is required to be refreshed periodically by the host based on the
  * suggested \ref wiced_bt_cfg_ble_t.rpa_refresh_timeout member of wiced_bt_cfg_settings_t.p_ble_cfg
  *
- * @param[in] p_local_keys : device local keys generated from a previous call to
- *  \ref wiced_ble_create_local_identity_keys
+ * @param[in] p_local_keys : device local keys generated from a previous call to \ref wiced_ble_create_local_identity_keys
  *
  * @return  wiced_result_t
- *
  */
 wiced_result_t wiced_ble_init_host_private_addr_generation(wiced_bt_local_identity_keys_t *p_local_keys);
 
@@ -642,13 +640,25 @@ wiced_result_t wiced_ble_init_host_private_addr_generation(wiced_bt_local_identi
  * Private Address). The RPA generated is required to be refreshed periodically by the controller based on the
  * suggested \ref wiced_bt_cfg_ble_t.rpa_refresh_timeout member of wiced_bt_cfg_settings_t.p_ble_cfg
  *
- * @param[in] p_local_keys : device local keys generated from a previous call to
- * \ref wiced_ble_create_local_identity_keys
+ * @param[in] p_local_keys : device local keys from a previous call to \ref wiced_ble_create_local_identity_keys
  *
  * @return  wiced_result_t
  *
  */
 wiced_result_t wiced_ble_init_ctlr_private_addr_generation(wiced_bt_local_identity_keys_t *p_local_keys);
+
+/**
+* API to write saved local keys to the stack/controller.
+* The local keys sent down in this call are used to generate the local RPA (Resolvable
+* Private Address). The RPA generated is required to be refreshed periodically by the controller based on the
+* suggested \ref wiced_bt_cfg_ble_t.rpa_refresh_timeout member of wiced_bt_cfg_settings_t.p_ble_cfg
+*
+* @param[in] p_local_keys : device local keys from a previous call to \ref wiced_ble_create_local_identity_keys
+*
+* @return  wiced_result_t
+*
+*/
+wiced_result_t wiced_ble_write_local_keys_to_stack(wiced_bt_local_identity_keys_t *p_local_keys);
 
 /**
 * Helper API to issue BTM_ENABLED_EVT
@@ -661,6 +671,35 @@ wiced_bool_t wiced_bt_issue_btm_enabled_evt(wiced_bt_management_cback_t p_app_ma
 * @return uint32_t value
 */
 uint32_t wiced_bt_get_btm_startup_flags(void);
+
+/**
+* Helper API to set the default stack heap size. Stack heap size cannot be less than 2000.
+* @note: This API has to be invoked prior to calling #wiced_bt_stack_init_internal
+* @return wiced_result_t
+*/
+wiced_result_t wiced_bt_stack_set_default_heap_size(uint16_t heap_size);
+
+/**
+* Helper API to set the max number of application DTCB buffers.
+* @return wiced_result_t
+*/
+wiced_result_t wiced_bt_stack_set_max_num_app_dtcb(uint8_t dtcb_count);
+
+/** SMP connection parameter update control */
+typedef enum
+{
+    WICED_BLE_SMP_UPDATE_ENABLE,  /**< Enable SMP connection parameter update */
+    WICED_BLE_SMP_UPDATE_DISABLE, /**< Disable SMP connection parameter update */
+} wiced_ble_smp_update_control_t;
+
+/**
+* Helper API to control enabling/disabling sending a connection parameter update request during SMP
+* During the SMP process, the stack by default updates the connection parameters of the link to set a connection
+* interval of 6 (7.5ms). This API can be used to disable the update by setting the \p control to #WICED_BLE_SMP_UPDATE_DISABLE
+* @param[in] control: see #wiced_ble_smp_update_control_t
+*
+*/
+void wiced_ble_smp_control_conn_parameter_update(wiced_ble_smp_update_control_t control);
 
 /**@} wiced_bt_platform_group */
 

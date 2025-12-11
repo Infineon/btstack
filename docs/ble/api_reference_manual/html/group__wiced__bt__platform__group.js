@@ -84,6 +84,10 @@ var group__wiced__bt__platform__group =
     [ "aes_context", "group__wiced__bt__platform__group.html#ga7f85f07f930fed2fc50e855a69e7abcd", null ],
     [ "wiced_bt_internal_post_stack_init_cb", "group__wiced__bt__platform__group.html#gaaee366da383e708d1dea13b16cbba1e5", null ],
     [ "wiced_bt_internal_stack_evt_handler_cb", "group__wiced__bt__platform__group.html#ga1b2ab26fed7589a50fad5ecc0cc6f1d3", null ],
+    [ "wiced_ble_smp_update_control_t", "group__wiced__bt__platform__group.html#gabd057515e59c73348e247e155fcfffb8", [
+      [ "WICED_BLE_SMP_UPDATE_ENABLE", "group__wiced__bt__platform__group.html#ggabd057515e59c73348e247e155fcfffb8a232b572dbf8574ccc759f341f577f0d3", null ],
+      [ "WICED_BLE_SMP_UPDATE_DISABLE", "group__wiced__bt__platform__group.html#ggabd057515e59c73348e247e155fcfffb8a58a9331269a9f0308949d14b2011b178", null ]
+    ] ],
     [ "wiced_bt_stack_platform_initialize", "group__wiced__bt__platform__group.html#ga91ec048a4f0938e38123ccd86b267b49", null ],
     [ "wiced_bt_process_acl_data", "group__wiced__bt__platform__group.html#ga98a0933baa000767bc3ad60d0a7890e3", null ],
     [ "wiced_bt_process_hci_events", "group__wiced__bt__platform__group.html#ga4e569527f83bc2d6f443ef3ae0f83ece", null ],
@@ -104,6 +108,10 @@ var group__wiced__bt__platform__group =
     [ "wiced_ble_create_local_identity_keys", "group__wiced__bt__platform__group.html#gafbef049d9e806795cc708d94db01c8dc", null ],
     [ "wiced_ble_init_host_private_addr_generation", "group__wiced__bt__platform__group.html#gaf3b4675291634b72041597e29d93904e", null ],
     [ "wiced_ble_init_ctlr_private_addr_generation", "group__wiced__bt__platform__group.html#ga8260ebc21406a676e29a7081a7382494", null ],
+    [ "wiced_ble_write_local_keys_to_stack", "group__wiced__bt__platform__group.html#ga3846eb6813bb2f26aa9663985b8b5011", null ],
     [ "wiced_bt_issue_btm_enabled_evt", "group__wiced__bt__platform__group.html#ga06ed01c337bcb03e8007710ae9b625fe", null ],
-    [ "wiced_bt_get_btm_startup_flags", "group__wiced__bt__platform__group.html#ga1be12efe2fb24bf0575f5c1b04e298a7", null ]
+    [ "wiced_bt_get_btm_startup_flags", "group__wiced__bt__platform__group.html#ga1be12efe2fb24bf0575f5c1b04e298a7", null ],
+    [ "wiced_bt_stack_set_default_heap_size", "group__wiced__bt__platform__group.html#ga69be085afa023c73560e51b60a7a261f", null ],
+    [ "wiced_bt_stack_set_max_num_app_dtcb", "group__wiced__bt__platform__group.html#gaa3665f363624cc4c837f4e6a20c9d9b8", null ],
+    [ "wiced_ble_smp_control_conn_parameter_update", "group__wiced__bt__platform__group.html#gaa55950b42b238f78208f42ba36b6d8ea", null ]
 ];

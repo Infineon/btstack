@@ -18,6 +18,7 @@ var searchData=
   ['hcit_5fble_5fiso_5fdata_5fsize',['hcit_ble_iso_data_size',['../structwiced__bt__ble__init__data__t.html#a88077720d8a6d6b4b7504253080a1742',1,'wiced_bt_ble_init_data_t']]],
   ['hcit_5fbr_5facl_5fbuf_5fnum',['hcit_br_acl_buf_num',['../structwiced__bt__dev__init__data__t.html#a76803c764a019e075689fb959373ce4d',1,'wiced_bt_dev_init_data_t']]],
   ['hcit_5fbr_5facl_5fdata_5fsize',['hcit_br_acl_data_size',['../structwiced__bt__dev__init__data__t.html#a98cbf6afdad47783d4b583d1afc0f856',1,'wiced_bt_dev_init_data_t']]],
+  ['hdr',['hdr',['../structwiced__ble__cs__subevent__result__to__app__t.html#ab48082973f18960e41b351fbf7f77c44',1,'wiced_ble_cs_subevent_result_to_app_t']]],
   ['heap_5fsize',['heap_size',['../structwiced__bt__heap__statistics__t.html#ad8b427af61dbaca2ba89b57dab4cdc2d',1,'wiced_bt_heap_statistics_t']]],
   ['hec_5ferrs',['hec_errs',['../structwiced__bt__dev__lq__br__edr__stats.html#aa90c3be49ed5ae2493153b4d14b694fd',1,'wiced_bt_dev_lq_br_edr_stats']]],
   ['high_5fduty_5fconn_5fduration',['high_duty_conn_duration',['../structwiced__bt__cfg__ble__scan__settings__t.html#a5eebac51331f6c7ae358c11e7cab492d',1,'wiced_bt_cfg_ble_scan_settings_t']]],

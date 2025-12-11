@@ -1155,28 +1155,35 @@ wiced_bool_t wiced_bt_l2cap_le_deregister (uint16_t le_psm);
 
 
 /**
- *  @brief          Higher layers call this function to create an L2CAP connection
- *                  for LE_PSM.
- *                  Note that the connection is not established at this time, but
- *                  connection establishment gets started. The callback function
- *                  will be invoked when connection establishes or fails.
+ * @brief Initiate an L2CAP connection for LE_PSM.
  *
- *  @param[in]      le_psm              : LE PSM value
- *  @param[in]      p_bd_addr           : BD Address
- *  @param[in]      bd_addr_type        : BLE_ADDR_PUBLIC or BLE_ADDR_RANDOM
- *  @param[in]      conn_mode           : BLE_CONN_MODE_HIGH_DUTY or BLE_CONN_MODE_LOW_DUTY
- *  @param[in]      rx_mtu              : Rx MTU value
- * @note \p rx_mtu must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size
- *  @param[in]      req_security        : Security required
- *  @param[in]      req_encr_key_size   : key size
- *  @param[in]      p_rx_drb            : DRB to receive peer's data. MUST be large enough to
- *                                        hold RX MTU data, check \ref tDRB
+ * This function is called by higher layers to initiate an L2CAP connection for LE_PSM.
+ * The connection is not established immediately; instead, the connection establishment
+ * process begins. The provided callback function will be invoked when the connection
+ * is established or if it fails.
  *
- * @note \p p_rx_drb can be released by the application on receiving a callback with the
- * \ref wiced_bt_l2cap_le_appl_information_t.le_release_drb_cb of the \p p_cb_information member of
- * \ref wiced_bt_l2cap_le_register
+ * @param[in] le_psm              LE Protocol/Service Multiplexer (PSM) value.
+ * @param[in] p_bd_addr           Pointer to the Bluetooth device address of the remote device.
+ * @param[in] bd_addr_type        Type of Bluetooth address. Must be either BLE_ADDR_PUBLIC or BLE_ADDR_RANDOM.
+ * @param[in] conn_mode           Connection mode. Must be either BLE_CONN_MODE_HIGH_DUTY or BLE_CONN_MODE_LOW_DUTY.
+ * @param[in] rx_mtu              Receive Maximum Transmission Unit (MTU) value.
+ *                                Must be appropriately sized based on available memory.
+ *                                @note Each received packet can be up to @p rx_mtu bytes in length.
+ * @param[in] req_security        Required security level for the connection.
+ * @param[in] req_encr_key_size   Required encryption key size.
+ * @param[in] p_rx_drb            Pointer to the Data Reception Buffer (DRB) to receive peer's data.
+ *                                MUST be large enough to hold RX MTU data. See @ref tDRB for details.
  *
- *  @return         the CID of the connection, or 0 if it failed to start
+ * @note The @p p_rx_drb can be released by the application upon receiving a callback with the
+ *       @ref wiced_bt_l2cap_le_appl_information_t.le_release_drb_cb of the @p p_cb_information
+ *       member of @ref wiced_bt_l2cap_le_register.
+ *
+ * @return The Channel Identifier (CID) of the connection if successful, or 0 if the connection initiation failed.
+ *
+ * @warning Ensure that the @p p_rx_drb is properly allocated and sized to prevent buffer overflows.
+ *
+ * @see wiced_bt_l2cap_le_register
+ * @see tDRB
  */
 uint16_t wiced_bt_l2cap_le_connect_req (uint16_t le_psm, wiced_bt_device_address_t p_bd_addr,
                                         wiced_bt_ble_address_type_t bd_addr_type,
@@ -1185,23 +1192,33 @@ uint16_t wiced_bt_l2cap_le_connect_req (uint16_t le_psm, wiced_bt_device_address
 
 
 /**
- *  @brief          Higher layers call this function to accept an incoming
- *                  LE L2CAP connection, for which they had gotten an connect
- *                  indication callback.
+ * @brief Accept an incoming LE L2CAP connection.
  *
- *  @param[in]      p_bd_addr   : BD Address
- *  @param[in]      id          : ID received from wiced_bt_l2cap_le_connect_indication_cback_t callback.
- *  @param[in]      lcid        : Local CID
- *  @param[in]      result      : L2CAP result codes (\ref L2CAP_CONN_RESULT)
- *  @param[in]      rx_mtu      : Rx MTU value (must be <= ACL_POOL_SIZE)
- *  @param[in]      p_rx_drb    : DRB to receive peer's data. MUST be large enough to
- *                                hold RX MTU data, check \ref tDRB
+ * This function is called by higher layers to accept an incoming LE L2CAP connection
+ * after receiving a connect indication callback.
  *
- * @note \p p_rx_drb can be released by the application on receiving a callback with the
- * \ref wiced_bt_l2cap_le_appl_information_t.le_release_drb_cb of the \p p_cb_information member of
- * \ref wiced_bt_l2cap_le_register
+ * @param[in] p_bd_addr Pointer to the Bluetooth device address of the remote device.
+ * @param[in] id        Connection identifier received from the wiced_bt_l2cap_le_connect_indication_cback_t callback.
+ * @param[in] lcid      Local Channel Identifier (CID) for this connection.
+ * @param[in] result    L2CAP connection result code. See @ref L2CAP_CONN_RESULT for possible values.
+ * @param[in] rx_mtu    Receive Maximum Transmission Unit (MTU) value.
+ *                      Must be appropriately sized based on available memory.
+ *                      @note Each received packet can be up to @p rx_mtu bytes in length, preferably set to \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size
+ * @param[in] p_rx_drb  Pointer to the Data Reception Buffer (DRB) to receive peer's data.
+ *                      MUST be large enough to hold RX MTU data. See @ref tDRB for details.
  *
- *  @return         TRUE for success, FALSE for failure
+ * @note The @p p_rx_drb can be released by the application upon receiving a callback with the
+ *       @ref wiced_bt_l2cap_le_appl_information_t.le_release_drb_cb of the @p p_cb_information
+ *       member of @ref wiced_bt_l2cap_le_register.
+ *
+ * @return TRUE if the connection is successfully accepted, FALSE otherwise.
+ *
+ * @warning Ensure that the @p p_rx_drb is properly allocated and sized to prevent buffer overflows.
+ *
+ * @see wiced_bt_l2cap_le_connect_indication_cback_t
+ * @see wiced_bt_l2cap_le_register
+ * @see L2CAP_CONN_RESULT
+ * @see tDRB
  */
 wiced_bool_t  wiced_bt_l2cap_le_connect_rsp (wiced_bt_device_address_t p_bd_addr, uint8_t id, uint16_t lcid,
                                              uint16_t result, uint16_t rx_mtu, tDRB *p_rx_drb);

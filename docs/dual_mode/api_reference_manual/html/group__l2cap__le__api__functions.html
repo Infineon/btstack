@@ -110,10 +110,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga9166cfd9f8619d2ecb2414d6ba3df7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Other layers call this function to deregister L2CAP services for LE_PSM.  <a href="#ga9166cfd9f8619d2ecb2414d6ba3df7b7">More...</a><br /></td></tr>
 <tr class="separator:ga9166cfd9f8619d2ecb2414d6ba3df7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf1842a34af4edc5e83e6506bc33da982"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__le__api__functions.html#gaf1842a34af4edc5e83e6506bc33da982">wiced_bt_l2cap_le_connect_req</a> (uint16_t le_psm, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> p_bd_addr, <a class="el" href="group__bt__types.html#ga97897f7408c23723933e9d21815c7294">wiced_bt_ble_address_type_t</a> bd_addr_type, <a class="el" href="group__wicedbt___device_management.html#ga4309edd4a7a1c7f30bdc57d8107e84ab">wiced_bt_ble_conn_mode_t</a> conn_mode, uint16_t rx_mtu, uint8_t req_security, uint8_t req_encr_key_size, <a class="el" href="structt_d_r_b.html">tDRB</a> *p_rx_drb)</td></tr>
-<tr class="memdesc:gaf1842a34af4edc5e83e6506bc33da982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher layers call this function to create an L2CAP connection for LE_PSM.  <a href="#gaf1842a34af4edc5e83e6506bc33da982">More...</a><br /></td></tr>
+<tr class="memdesc:gaf1842a34af4edc5e83e6506bc33da982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate an L2CAP connection for LE_PSM.  <a href="#gaf1842a34af4edc5e83e6506bc33da982">More...</a><br /></td></tr>
 <tr class="separator:gaf1842a34af4edc5e83e6506bc33da982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52799083a3026d9b6ff86416e105444c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__le__api__functions.html#ga52799083a3026d9b6ff86416e105444c">wiced_bt_l2cap_le_connect_rsp</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> p_bd_addr, uint8_t id, uint16_t lcid, uint16_t result, uint16_t rx_mtu, <a class="el" href="structt_d_r_b.html">tDRB</a> *p_rx_drb)</td></tr>
-<tr class="memdesc:ga52799083a3026d9b6ff86416e105444c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher layers call this function to accept an incoming LE L2CAP connection, for which they had gotten an connect indication callback.  <a href="#ga52799083a3026d9b6ff86416e105444c">More...</a><br /></td></tr>
+<tr class="memdesc:ga52799083a3026d9b6ff86416e105444c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept an incoming LE L2CAP connection.  <a href="#ga52799083a3026d9b6ff86416e105444c">More...</a><br /></td></tr>
 <tr class="separator:ga52799083a3026d9b6ff86416e105444c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6cc529f5a1a6359daf1c0da80b5dc0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap__le__api__functions.html#gad6cc529f5a1a6359daf1c0da80b5dc0a">wiced_bt_l2cap_le_disconnect_req</a> (uint16_t lcid)</td></tr>
 <tr class="memdesc:gad6cc529f5a1a6359daf1c0da80b5dc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher layers call this function to disconnect a LE COC channel.  <a href="#gad6cc529f5a1a6359daf1c0da80b5dc0a">More...</a><br /></td></tr>
@@ -300,7 +300,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>LE_PSM to use or zero if error. Typically the LE_PSM returned is the same as was passed in, but for an outgoing-only connection a "virtual" LE_PSM is returned and should be used in the calls to <a class="el" href="group__l2cap__le__api__functions.html#gaf1842a34af4edc5e83e6506bc33da982" title="Higher layers call this function to create an L2CAP connection for LE_PSM. ">wiced_bt_l2cap_le_connect_req()</a> and <a class="el" href="group__l2cap__le__api__functions.html#ga9166cfd9f8619d2ecb2414d6ba3df7b7" title="Other layers call this function to deregister L2CAP services for LE_PSM. ">wiced_bt_l2cap_le_deregister()</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>LE_PSM to use or zero if error. Typically the LE_PSM returned is the same as was passed in, but for an outgoing-only connection a "virtual" LE_PSM is returned and should be used in the calls to <a class="el" href="group__l2cap__le__api__functions.html#gaf1842a34af4edc5e83e6506bc33da982" title="Initiate an L2CAP connection for LE_PSM. ">wiced_bt_l2cap_le_connect_req()</a> and <a class="el" href="group__l2cap__le__api__functions.html#ga9166cfd9f8619d2ecb2414d6ba3df7b7" title="Other layers call this function to deregister L2CAP services for LE_PSM. ">wiced_bt_l2cap_le_deregister()</a>. </dd></dl>
 
 </div>
 </div>
@@ -393,29 +393,33 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Higher layers call this function to create an L2CAP connection for LE_PSM. </p>
-<p>Note that the connection is not established at this time, but connection establishment gets started. The callback function will be invoked when connection establishes or fails.</p>
+<p>Initiate an L2CAP connection for LE_PSM. </p>
+<p>This function is called by higher layers to initiate an L2CAP connection for LE_PSM. The connection is not established immediately; instead, the connection establishment process begins. The provided callback function will be invoked when the connection is established or if it fails.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">le_psm</td><td>: LE PSM value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_bd_addr</td><td>: BD Address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr_type</td><td>: BLE_ADDR_PUBLIC or BLE_ADDR_RANDOM </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_mode</td><td>: BLE_CONN_MODE_HIGH_DUTY or BLE_CONN_MODE_LOW_DUTY </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rx_mtu</td><td>: Rx MTU value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">le_psm</td><td>LE Protocol/Service Multiplexer (PSM) value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_bd_addr</td><td>Pointer to the Bluetooth device address of the remote device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr_type</td><td>Type of Bluetooth address. Must be either BLE_ADDR_PUBLIC or BLE_ADDR_RANDOM. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn_mode</td><td>Connection mode. Must be either BLE_CONN_MODE_HIGH_DUTY or BLE_CONN_MODE_LOW_DUTY. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_mtu</td><td>Receive Maximum Transmission Unit (MTU) value. Must be appropriately sized based on available memory. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><code>rx_mtu</code> must be less then <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Each received packet can be up to <code>rx_mtu</code> bytes in length. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">req_security</td><td>: Security required </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">req_encr_key_size</td><td>: key size </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_rx_drb</td><td>: DRB to receive peer's data. MUST be large enough to hold RX MTU data, check <a class="el" href="structt_d_r_b.html">tDRB</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">req_security</td><td>Required security level for the connection. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">req_encr_key_size</td><td>Required encryption key size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_rx_drb</td><td>Pointer to the Data Reception Buffer (DRB) to receive peer's data. MUST be large enough to hold RX MTU data. See <a class="el" href="structt_d_r_b.html">tDRB</a> for details.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><code>p_rx_drb</code> can be released by the application on receiving a callback with the <a class="el" href="structwiced__bt__l2cap__le__appl__information__t.html#a061ad1d94e881cd659b8d31218c689ad">wiced_bt_l2cap_le_appl_information_t::le_release_drb_cb</a> of the <code>p_cb_information</code> member of <a class="el" href="group__l2cap__le__api__functions.html#ga44312ab4c397243d0b40b55851d34a62">wiced_bt_l2cap_le_register</a></dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>the CID of the connection, or 0 if it failed to start </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The <code>p_rx_drb</code> can be released by the application upon receiving a callback with the <a class="el" href="structwiced__bt__l2cap__le__appl__information__t.html#a061ad1d94e881cd659b8d31218c689ad">wiced_bt_l2cap_le_appl_information_t::le_release_drb_cb</a> of the <code>p_cb_information</code> member of <a class="el" href="group__l2cap__le__api__functions.html#ga44312ab4c397243d0b40b55851d34a62">wiced_bt_l2cap_le_register</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The Channel Identifier (CID) of the connection if successful, or 0 if the connection initiation failed.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Ensure that the <code>p_rx_drb</code> is properly allocated and sized to prevent buffer overflows.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__l2cap__le__api__functions.html#ga44312ab4c397243d0b40b55851d34a62" title="Other layers call this function to register L2CAP services for LE_PSM. ">wiced_bt_l2cap_le_register</a> </dd>
+<dd>
+<a class="el" href="structt_d_r_b.html" title="Data Received Buffer (DRB) used to receive data from the peer. ">tDRB</a> </dd></dl>
 
 </div>
 </div>
@@ -469,20 +473,35 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Higher layers call this function to accept an incoming LE L2CAP connection, for which they had gotten an connect indication callback. </p>
+<p>Accept an incoming LE L2CAP connection. </p>
+<p>This function is called by higher layers to accept an incoming LE L2CAP connection after receiving a connect indication callback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_bd_addr</td><td>: BD Address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>: ID received from wiced_bt_l2cap_le_connect_indication_cback_t callback. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">lcid</td><td>: Local CID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>: L2CAP result codes (<a class="el" href="group__l2cap.html#L2CAP_CONN_RESULT">L2CAP_CONN_RESULT</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rx_mtu</td><td>: Rx MTU value (must be &lt;= ACL_POOL_SIZE) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_rx_drb</td><td>: DRB to receive peer's data. MUST be large enough to hold RX MTU data, check <a class="el" href="structt_d_r_b.html">tDRB</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_bd_addr</td><td>Pointer to the Bluetooth device address of the remote device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Connection identifier received from the wiced_bt_l2cap_le_connect_indication_cback_t callback. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lcid</td><td>Local Channel Identifier (CID) for this connection. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>L2CAP connection result code. See <a class="el" href="group__l2cap.html#L2CAP_CONN_RESULT">L2CAP_CONN_RESULT</a> for possible values. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_mtu</td><td>Receive Maximum Transmission Unit (MTU) value. Must be appropriately sized based on available memory. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><code>p_rx_drb</code> can be released by the application on receiving a callback with the <a class="el" href="structwiced__bt__l2cap__le__appl__information__t.html#a061ad1d94e881cd659b8d31218c689ad">wiced_bt_l2cap_le_appl_information_t::le_release_drb_cb</a> of the <code>p_cb_information</code> member of <a class="el" href="group__l2cap__le__api__functions.html#ga44312ab4c397243d0b40b55851d34a62">wiced_bt_l2cap_le_register</a></dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE for success, FALSE for failure </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Each received packet can be up to <code>rx_mtu</code> bytes in length, preferably set to <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_rx_drb</td><td>Pointer to the Data Reception Buffer (DRB) to receive peer's data. MUST be large enough to hold RX MTU data. See <a class="el" href="structt_d_r_b.html">tDRB</a> for details.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The <code>p_rx_drb</code> can be released by the application upon receiving a callback with the <a class="el" href="structwiced__bt__l2cap__le__appl__information__t.html#a061ad1d94e881cd659b8d31218c689ad">wiced_bt_l2cap_le_appl_information_t::le_release_drb_cb</a> of the <code>p_cb_information</code> member of <a class="el" href="group__l2cap__le__api__functions.html#ga44312ab4c397243d0b40b55851d34a62">wiced_bt_l2cap_le_register</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if the connection is successfully accepted, FALSE otherwise.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Ensure that the <code>p_rx_drb</code> is properly allocated and sized to prevent buffer overflows.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__l2cap.html#gaad82cf3146183d8eab241071358169b6" title="LE Connection indication callback prototype. ">wiced_bt_l2cap_le_connect_indication_cback_t</a> </dd>
+<dd>
+<a class="el" href="group__l2cap__le__api__functions.html#ga44312ab4c397243d0b40b55851d34a62" title="Other layers call this function to register L2CAP services for LE_PSM. ">wiced_bt_l2cap_le_register</a> </dd>
+<dd>
+L2CAP_CONN_RESULT </dd>
+<dd>
+<a class="el" href="structt_d_r_b.html" title="Data Received Buffer (DRB) used to receive data from the peer. ">tDRB</a> </dd></dl>
 
 </div>
 </div>

@@ -7,6 +7,16 @@ Following are the limitations when using host based address resolution (only app
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
 ## Changelog
+## V5.0.0
+### Updates in BTSTACK5.0.0
+ - Control adding a device to the device resolving db. By default on update of device link keys after a SMP pairing session, the stack writes the new generated key to the device resolving list. To disable this set ``-DADD_TO_RESOLVING_LIST_ON_SMP_KEY_UPDATE=0``
+ - Added BT6.1 Randomized RPA Update feature
+    - Randomized RPA update feature is used to generate a Resolvable Private Address (RPA) at a random timeout between RPA_Timeout_Min and RPA_Timeout_Max.
+    - The stack configures the controller with the default value for RPA_Timeout_Min (0x01E0), while RPA_Timeout_Max is derived from wiced_bt_cfg_settings_t.p_ble_cfg->rpa_refresh_timeout.
+    - Use API **wiced_ble_set_rpa_timeout** to update RPA_Timeout_Min/RPA_Timeout_Max in the controller.
+ - Modified LLVM toolchain compiler flags for CM55 core
+ - Parameter list updated for **wiced_ble_isoc_remove_data_path** API
+
 ## V4.1.5
 ### BTSTACK4.1.5 contains following update -
  - Modified LLVM toolchain compiler flags

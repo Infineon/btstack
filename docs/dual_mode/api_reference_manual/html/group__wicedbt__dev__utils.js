@@ -116,7 +116,7 @@ var group__wicedbt__dev__utils =
       [ "conn_type", "structwiced__bt__lq__stats__result__t.html#a77396456d19967844036fd456ac381f1", null ],
       [ "br_edr_stats", "structwiced__bt__lq__stats__result__t.html#ab64acb81dbe658e3b29875fa3ee3b739", null ],
       [ "lq_le_acl_stats", "structwiced__bt__lq__stats__result__t.html#a1d55cc5e4e03c7c924d3b0e62bca635f", null ],
-      [ "wiced_bt_lq_stats", "structwiced__bt__lq__stats__result__t.html#a7335beb81481bb31d0b45642531a7cac", null ]
+      [ "wiced_bt_lq_stats", "structwiced__bt__lq__stats__result__t.html#a39f41b876256b920a3ae8d9a919f4b66", null ]
     ] ],
     [ "wiced_bt_dev_cmpl_cback_t", "group__wicedbt__dev__utils.html#ga2ebace7053dc297ea21b0e97cd0b1ce3", null ],
     [ "wiced_bt_dev_vendor_specific_command_complete_cback_t", "group__wicedbt__dev__utils.html#ga5efde2f4a4954a99dc729af308ce90bf", null ],

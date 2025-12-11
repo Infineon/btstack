@@ -171,12 +171,11 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr</td><td>: Remote device address </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr_type</td><td>Public or random address </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">conn_mode</td><td>: connection scan mode </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">is_direct</td><td>: Is direct connection or not</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_direct</td><td>: set this parameter to WICED_TRUE</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><b> TRUE </b> : If connection started <b> FALSE </b> : If connection start failure</dd></dl>
-<p>NOTE : If is_direct = WICED_FALSE, it will create background connection. Default Background connection type is BTM_BLE_CONN_NONE. Before calling wiced_bt_gatt_le_connect please set background connection type (AUTO) using wiced_bt_ble_set_background_connection_type API </p>
+<dl class="section return"><dt>Returns</dt><dd><b> TRUE </b> : If connection started <b> FALSE </b> : If connection start failure </dd></dl>
 
 </div>
 </div>

@@ -124,6 +124,7 @@ enum wiced_ble_isoc_event_e
     WICED_BLE_ISOC_BIG_SYNC_ESTABLISHED_EVT,  /**< BIG Sync Established, \ref wiced_ble_isoc_big_sync_established_evt_t */
     WICED_BLE_ISOC_BIG_TERMINATED_EVT,        /**< BIG Terminated, \ref wiced_ble_isoc_terminated_evt_t */
     WICED_BLE_ISOC_BIG_SYNC_LOST_EVT,         /**< BIG Sync Lost, \ref wiced_ble_isoc_terminated_evt_t */
+    WICED_BLE_ISOC_BIG_TERMINATED_SYNC_EVT,   /**< BIG Sync Terminated, \ref wiced_ble_isoc_big_terminated_sync_evt_t */
 };
 typedef uint8_t wiced_ble_isoc_event_t; /**< ISOC Events (see #wiced_ble_isoc_event_e) */
 
@@ -261,6 +262,15 @@ typedef struct
     uint8_t reason;     /**< Reason for termination. Refer Core Spec v5.2 [Vol 1] Part F, Controller Error Codes */
 } wiced_ble_isoc_terminated_evt_t;
 
+/** ISOC BIG Terminate Sync event data
+* Returned with \ref WICED_BLE_ISOC_BIG_TERMINATED_SYNC_EVT events
+*/
+typedef struct
+{
+    uint8_t status;     /**< BIG Terminate Sync Status (0 = Success). Refer Core Spec v5.2 [Vol 1] Part F, Controller Error Codes */
+    uint8_t big_handle; /**< BIG Handle */
+} wiced_ble_isoc_big_terminated_sync_evt_t;
+
 
 /** ISOC event data */
 typedef union
@@ -275,6 +285,7 @@ typedef union
     wiced_ble_isoc_terminated_evt_t terminate_big;                  /**< Terminate BIG Command Status */
     wiced_ble_isoc_big_sync_established_evt_t big_sync_established; /**< BIG Sync Established data */
     wiced_ble_isoc_terminated_evt_t big_sync_lost;                  /**< BIG Sync Lost Data */
+    wiced_ble_isoc_big_terminated_sync_evt_t big_sync_terminated;   /**< BIG Terminate Sync */
 } wiced_ble_isoc_event_data_t;
 
 /** ISOC CIS Configuration */
@@ -623,8 +634,8 @@ wiced_result_t wiced_ble_isoc_peripheral_accept_cis(wiced_ble_isoc_cis_t *p_req)
 wiced_result_t wiced_ble_isoc_peripheral_reject_cis(wiced_ble_isoc_cis_t *p_req, uint8_t reason);
 
 /**
- * @brief Disconnect CIS (Connected Isochronous Stream) connection. The \ref WICED_BLE_ISOC_CIS_DISCONNECTED_EVT event will be
- *  received by the application on completion of the disconnection procedure
+ * @brief Disconnect CIS (Connected Isochronous Stream) connection or cancel ongoing CIS connection.
+ * The \ref WICED_BLE_ISOC_CIS_DISCONNECTED_EVT event will be received by the application on completion of the disconnection procedure
  *
  * @param[in] cis_conn_handle : CIS connection handle received in the \ref WICED_BLE_ISOC_CIS_ESTABLISHED_EVT event
  * @return    status
@@ -634,8 +645,8 @@ wiced_result_t wiced_ble_isoc_disconnect_cis(uint16_t cis_conn_handle);
 /**
  * @brief Invoked by the Central host to remove the CIG (Connected Isochronous Group) and associated
  * CISs (Connected Isochronous Stream). The call is not allowed to be invoked of any of the associated CIS are in the
- * connected (established) state.
- * @note: It is recommended to invoke this command after disconnecting the last connected CIS inorder to clean up the
+ * connected (established)/ connecting (connection in progress) state.
+ * @note: It is recommended to invoke this command after disconnecting the last connected CIS in order to clean up the
  * state variables in the Controller
  *
  * @param[in] cig_id  : CIG ID
@@ -755,9 +766,10 @@ wiced_result_t wiced_ble_isoc_setup_data_path(wiced_ble_isoc_setup_data_path_inf
  * @param data_path_dir_bitfield see #wiced_ble_isoc_data_path_bit_t
  *                               bit 0: Remove Input data path
  *                               bit 1: Remove output data path
- * @return wiced_bool_t TRUE if successful in sending the command
+ * @param p_app_ctx Application provided context, returned to the application
+ * @return wiced_result_t WICED_SUCCESS if successful in sending the command
  */
-wiced_bool_t wiced_ble_isoc_remove_data_path(uint16_t isoc_conn_hdl, wiced_ble_isoc_data_path_bit_t data_path_dir_bitfield);
+wiced_result_t wiced_ble_isoc_remove_data_path(uint16_t isoc_conn_hdl, wiced_ble_isoc_data_path_bit_t data_path_dir_bitfield, void *p_app_ctx);
 
 /**
  * @brief Get status of the ISO CIS/BIS data path

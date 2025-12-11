@@ -53,6 +53,7 @@
  * @{
  */
 
+#define BTM_BLE_LEGACY_AD_DATA_LEN 31 /**< Max legacy advertisement data len*/
 
 /** default advertising channel map */
 #ifndef BTM_BLE_DEFAULT_ADVERT_CHNL_MAP

@@ -210,7 +210,7 @@ var searchData=
   ['btm_5fble_5fgeneral_5fdiscoverable_5fflag',['BTM_BLE_GENERAL_DISCOVERABLE_FLAG',['../group__wicedbt___common.html#ga4f81edfc3b5c8c09a6763ad0ea208d5b',1,'wiced_bt_adv_scan_common.h']]],
   ['btm_5fble_5fkey_5ftype_5fer',['BTM_BLE_KEY_TYPE_ER',['../group__wicedbt___device_management.html#gab678a6f6a58d58330ecc4d6c40c350b4',1,'wiced_bt_dev.h']]],
   ['btm_5fble_5fkey_5ftype_5fid',['BTM_BLE_KEY_TYPE_ID',['../group__wicedbt___device_management.html#ga815234b7d0e7c2973a647fe424a18b52',1,'wiced_bt_dev.h']]],
-  ['btm_5fble_5flegacy_5fad_5fdata_5flen',['BTM_BLE_LEGACY_AD_DATA_LEN',['../group__wicedbt___legacy.html#gae3ba16e014add5799d4b298344cb5984',1,'wiced_bt_adv_scan_legacy.h']]],
+  ['btm_5fble_5flegacy_5fad_5fdata_5flen',['BTM_BLE_LEGACY_AD_DATA_LEN',['../group__wicedbt___common.html#gae3ba16e014add5799d4b298344cb5984',1,'wiced_bt_adv_scan_common.h']]],
   ['btm_5fble_5flimited_5fdiscoverable_5fflag',['BTM_BLE_LIMITED_DISCOVERABLE_FLAG',['../group__wicedbt___common.html#gab20d056f3428f5778449830c448fb342',1,'wiced_bt_adv_scan_common.h']]],
   ['btm_5fble_5flimited_5fdiscoverable_5fmask',['BTM_BLE_LIMITED_DISCOVERABLE_MASK',['../group__wicedbt___common.html#gab0cd1e19edb5ca7afac36773db1d747f',1,'wiced_bt_adv_scan_common.h']]],
   ['btm_5fble_5fnon_5flimited_5fdiscoverable_5fflag',['BTM_BLE_NON_LIMITED_DISCOVERABLE_FLAG',['../group__wicedbt___common.html#ga701fee231d79e37bfc459434fc980228',1,'wiced_bt_adv_scan_common.h']]],

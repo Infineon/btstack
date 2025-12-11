@@ -94,7 +94,7 @@
 #define WICED_MEMCMP(a, b, c)       memcmp((void*)(a), (const void*)(b), c)     /**< AIROC Memory compare*/
 
 /** MACRO to convert an address into a 4 byte buffer*/
-#define ADDRESS_TO_BUFFER(b,a)  uintptr_t addr=(uintptr_t)a; for(int i = 0; i < 4; i++) {b[3-i] = (addr >> (i * 8)) & 0xFF;}
+#define ADDRESS_TO_BUFFER(b,a)  uintptr_t addr=(uintptr_t)a; for(int x = 0; x < 4; x++) {b[3-x] = (addr >> (x * 8)) & 0xFF;}
 
 /** AIROC Boolean */
 typedef unsigned int   wiced_bool_t;

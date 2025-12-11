@@ -18,6 +18,7 @@ var searchData=
   ['wiced_5fble_5fpadv_5fsync_5foptions_5fe',['wiced_ble_padv_sync_options_e',['../group__wicedbt___periodic.html#gaaef504a9894783228034b8ad6922af16',1,'wiced_bt_adv_scan_periodic.h']]],
   ['wiced_5fble_5fpadv_5fsync_5ftransfer_5fmode_5fe',['wiced_ble_padv_sync_transfer_mode_e',['../group__wicedbt___periodic.html#gad57cbef2891082f8d47d7e69c0e5624f',1,'wiced_bt_adv_scan_periodic.h']]],
   ['wiced_5fble_5fscanning_5ffilter_5fpolicy_5fe',['wiced_ble_scanning_filter_policy_e',['../group__wicedbt___common.html#gad3cb95ad9059ab2ca5690a92d1863a3b',1,'wiced_bt_adv_scan_common.h']]],
+  ['wiced_5fble_5fsmp_5fupdate_5fcontrol_5ft',['wiced_ble_smp_update_control_t',['../group__wiced__bt__platform__group.html#gabd057515e59c73348e247e155fcfffb8',1,'wiced_bt_stack_platform.h']]],
   ['wiced_5fbt_5favrc_5fctrl_5fevt_5fe',['wiced_bt_avrc_ctrl_evt_e',['../group__wicedbt__avrc.html#gafe764cb02abe95c03a74f6117ea13b3c',1,'wiced_bt_avrc.h']]],
   ['wiced_5fbt_5favrc_5fctype_5fe',['wiced_bt_avrc_ctype_e',['../group__wicedbt__avrc.html#ga5966b6261b97dcd1e0c44679dd7ac268',1,'wiced_bt_avrc.h']]],
   ['wiced_5fbt_5fble_5fadvert_5fchnl_5fmap_5fe',['wiced_bt_ble_advert_chnl_map_e',['../group__wiced__bt__cfg.html#ga59d79284e51421afdfc5e9c472adb49b',1,'wiced_bt_cfg.h']]],

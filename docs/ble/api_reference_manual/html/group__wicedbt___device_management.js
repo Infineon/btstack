@@ -62,7 +62,10 @@ var group__wicedbt___device_management =
       [ "hci_status", "structwiced__bt__dev__security__failed__t.html#afacca8d8d7e9539de71d9cfc768455f8", null ]
     ] ],
     [ "wiced_bt_dev_security_request_t", "structwiced__bt__dev__security__request__t.html", [
-      [ "bd_addr", "structwiced__bt__dev__security__request__t.html#a28190fb203f12ffcd383531786a2a8de", null ]
+      [ "bd_addr", "structwiced__bt__dev__security__request__t.html#a28190fb203f12ffcd383531786a2a8de", null ],
+      [ "auth_req", "structwiced__bt__dev__security__request__t.html#ac3317ee82f98f2c5bd05821c73c4a30e", null ],
+      [ "peer_io_cap_valid", "structwiced__bt__dev__security__request__t.html#a3ced2b1bf35bda15b2978f6af5e65e57", null ],
+      [ "peer_io_cap", "structwiced__bt__dev__security__request__t.html#a90c2bad844cc7a4d99b67e1b2edfe7cf", null ]
     ] ],
     [ "wiced_bt_local_id_keys", "structwiced__bt__local__id__keys.html", [
       [ "ir", "structwiced__bt__local__id__keys.html#a656358b2f6ae702a75cc5f155dd90ac2", null ],

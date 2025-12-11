@@ -1,27 +1,26 @@
 var group__wicedbt___channel_sounding =
 [
-    [ "wiced_ble_cs_capabilites_t", "structwiced__ble__cs__capabilites__t.html", [
-      [ "acl_conn_handle", "structwiced__ble__cs__capabilites__t.html#a2f45a04618660fc89ba44ee93d74ea59", null ],
-      [ "num_config_supported", "structwiced__ble__cs__capabilites__t.html#ab4ffbbc9ca03e5de4aae2e0f0b1cc578", null ],
-      [ "max_consecutive_procedures_supported", "structwiced__ble__cs__capabilites__t.html#a361486a438c6ff85885f39338e3a0c9e", null ],
-      [ "num_antennas_supported", "structwiced__ble__cs__capabilites__t.html#abe2d4de1180b462f31991fbbdddcc4c1", null ],
-      [ "max_antenna_paths_supported", "structwiced__ble__cs__capabilites__t.html#a5d308b9558cac9764c83a31fc4281509", null ],
-      [ "roles_supported", "structwiced__ble__cs__capabilites__t.html#ab3b4950eff210c10948823461edb5389", null ],
-      [ "modes_supported", "structwiced__ble__cs__capabilites__t.html#a1902d991946ba753b5366cfeec30a5cc", null ],
-      [ "rtt_capability", "structwiced__ble__cs__capabilites__t.html#a1bf0b6ebdd8d6929e575e06fb54587ef", null ],
-      [ "rtt_aa_only_n", "structwiced__ble__cs__capabilites__t.html#a8f593e39e285927e2232a103ca290344", null ],
-      [ "rtt_sounding_n", "structwiced__ble__cs__capabilites__t.html#a7ca2fe65ed1dfe85662aea8a91669857", null ],
-      [ "rtt_random_payload_n", "structwiced__ble__cs__capabilites__t.html#a5d5623dde8fa2b05bc1df190a8af1499", null ],
-      [ "nadm_sounding_capability", "structwiced__ble__cs__capabilites__t.html#a10403f952885001886cee71bbba1531e", null ],
-      [ "nadm_random_capability", "structwiced__ble__cs__capabilites__t.html#addec54d38d500efd5a9e005b4d1e33fa", null ],
-      [ "cs_sync_phys_supported", "structwiced__ble__cs__capabilites__t.html#a143e1cd07b51fe509775bcb45064772a", null ],
-      [ "subfeatures_supported", "structwiced__ble__cs__capabilites__t.html#a02aaee7077a1322e31bc78d9ea61a203", null ],
-      [ "t_ip1_times_supported", "structwiced__ble__cs__capabilites__t.html#ac8cf24e04728cd9a2304b8ae3aae2d42", null ],
-      [ "t_ip2_times_supported", "structwiced__ble__cs__capabilites__t.html#aa2d39edcd446aeecc01090487f200af2", null ],
-      [ "t_fcs_times_supported", "structwiced__ble__cs__capabilites__t.html#ae35446dc4a89748d38adb944d7a1a6d8", null ],
-      [ "t_pm_times_supported", "structwiced__ble__cs__capabilites__t.html#abceeeed6834629ed6a3133ea62f6f40e", null ],
-      [ "t_sw_time_supported", "structwiced__ble__cs__capabilites__t.html#a4ef61ac193db7dd310321cf72b77dfd3", null ],
-      [ "tx_snr_capability", "structwiced__ble__cs__capabilites__t.html#a22aa2258bcb678d38da9721b8a13b73d", null ]
+    [ "wiced_ble_cs_capabilities_t", "structwiced__ble__cs__capabilities__t.html", [
+      [ "num_config_supported", "structwiced__ble__cs__capabilities__t.html#a07ea0c3479001d369fe8e97a03b3953e", null ],
+      [ "max_consecutive_procedures_supported", "structwiced__ble__cs__capabilities__t.html#a9914f56c393a5088b27425659c604218", null ],
+      [ "num_antennas_supported", "structwiced__ble__cs__capabilities__t.html#a0ba78a59425b3a5b01840c2a33978dc9", null ],
+      [ "max_antenna_paths_supported", "structwiced__ble__cs__capabilities__t.html#a69c2f8613629c82e2403b628ead7f6a2", null ],
+      [ "roles_supported", "structwiced__ble__cs__capabilities__t.html#a2a1da5d8f4fb6e928246da5ba2ecf4ca", null ],
+      [ "modes_supported", "structwiced__ble__cs__capabilities__t.html#aa677eab1fbcd4b2a63b54f3bfcf1c1a2", null ],
+      [ "rtt_capability", "structwiced__ble__cs__capabilities__t.html#a831ad3653e7fc62358f1c7d0b84af059", null ],
+      [ "rtt_aa_only_n", "structwiced__ble__cs__capabilities__t.html#af751641c1f44bf19c060078e85eac757", null ],
+      [ "rtt_sounding_n", "structwiced__ble__cs__capabilities__t.html#a5d32f59d18f30250f907ac510cb5cb9f", null ],
+      [ "rtt_random_payload_n", "structwiced__ble__cs__capabilities__t.html#ad76f0fabe0d003be507eb0f3a2a4e7e2", null ],
+      [ "nadm_sounding_capability", "structwiced__ble__cs__capabilities__t.html#a146076222a89e2e78259a4522febe55e", null ],
+      [ "nadm_random_capability", "structwiced__ble__cs__capabilities__t.html#ade717d89da367b9cf093439ccc11b13c", null ],
+      [ "cs_sync_phys_supported", "structwiced__ble__cs__capabilities__t.html#a9f8e78bcea286eabcbf2904871ff45fa", null ],
+      [ "subfeatures_supported", "structwiced__ble__cs__capabilities__t.html#ae8f003b3120e2048acb35bdc8e2f88cb", null ],
+      [ "t_ip1_times_supported", "structwiced__ble__cs__capabilities__t.html#aa3796ea2ab3f92d379474e9a50f133ce", null ],
+      [ "t_ip2_times_supported", "structwiced__ble__cs__capabilities__t.html#a40717f9f696b313267361a20c89af6d9", null ],
+      [ "t_fcs_times_supported", "structwiced__ble__cs__capabilities__t.html#a7bc9532df4a44f8f44dde008496f2ef6", null ],
+      [ "t_pm_times_supported", "structwiced__ble__cs__capabilities__t.html#a9c929a427d5652f92ed36d1db0cb5313", null ],
+      [ "t_sw_time_supported", "structwiced__ble__cs__capabilities__t.html#a48d687225c83a5c6438dbf500c3d0fb6", null ],
+      [ "tx_snr_capability", "structwiced__ble__cs__capabilities__t.html#a23a8fe4e3a75f42b45bf1b5aacaadd45", null ]
     ] ],
     [ "wiced_ble_cs_default_settings_t", "structwiced__ble__cs__default__settings__t.html", [
       [ "acl_conn_handle", "structwiced__ble__cs__default__settings__t.html#a6f4debc0cdd19d6e46b3f997d69f7325", null ],
@@ -30,7 +29,6 @@ var group__wicedbt___channel_sounding =
       [ "max_tx_power", "structwiced__ble__cs__default__settings__t.html#a7bebffc4435f329b82db55960d0d350a", null ]
     ] ],
     [ "wiced_ble_cs_fae_table_data_t", "structwiced__ble__cs__fae__table__data__t.html", [
-      [ "acl_conn_handle", "structwiced__ble__cs__fae__table__data__t.html#aab043855fbe2634216a0755ce6f89ffb", null ],
       [ "table", "structwiced__ble__cs__fae__table__data__t.html#ad976a3b3f0bc13c82830ba71ad599ede", null ]
     ] ],
     [ "wiced_ble_cs_config_t", "structwiced__ble__cs__config__t.html", [
@@ -70,7 +68,6 @@ var group__wicedbt___channel_sounding =
       [ "snr_control_reflector", "structwiced__ble__cs__procedure__params__t.html#ad30fd2855de1a3de74c23f48988d2bf8", null ]
     ] ],
     [ "wiced_ble_cs_config_complete_t", "structwiced__ble__cs__config__complete__t.html", [
-      [ "acl_conn_handle", "structwiced__ble__cs__config__complete__t.html#ae5bf2b560ca6f9eb28b463714c298003", null ],
       [ "config_id", "structwiced__ble__cs__config__complete__t.html#a075e4270b713c802fe44b71928b30610", null ],
       [ "action", "structwiced__ble__cs__config__complete__t.html#aa79507c0c36d4f4162d3fbdb58718287", null ],
       [ "main_mode_type", "structwiced__ble__cs__config__complete__t.html#a865c0092680e30dbebfa1514d7512a87", null ],
@@ -94,7 +91,6 @@ var group__wicedbt___channel_sounding =
       [ "t_pm_time", "structwiced__ble__cs__config__complete__t.html#ac3881bf12dd5033d89ce26ed8ad26266", null ]
     ] ],
     [ "wiced_ble_cs_procedure_enable_complete_t", "structwiced__ble__cs__procedure__enable__complete__t.html", [
-      [ "acl_conn_handle", "structwiced__ble__cs__procedure__enable__complete__t.html#ade8ae6d2690e21ba982f5613dd6c132a", null ],
       [ "config_id", "structwiced__ble__cs__procedure__enable__complete__t.html#a4cdc260b608df4d1b8d0d339aa73ef62", null ],
       [ "state", "structwiced__ble__cs__procedure__enable__complete__t.html#a39cf5d1ac0a6ed617c6398e14ea75015", null ],
       [ "tone_antenna_config_selection", "structwiced__ble__cs__procedure__enable__complete__t.html#a4b2081a414e7fdaba9d53db17751ce38", null ],
@@ -107,33 +103,38 @@ var group__wicedbt___channel_sounding =
       [ "procedure_count", "structwiced__ble__cs__procedure__enable__complete__t.html#a1971baaf9d7fff381b9154fbb73649fd", null ],
       [ "max_procedure_len", "structwiced__ble__cs__procedure__enable__complete__t.html#a7ee14ef3ed30d17bcb94dd12ae500cd6", null ]
     ] ],
-    [ "wiced_ble_cs_subevent_result_to_app_t", "structwiced__ble__cs__subevent__result__to__app__t.html", [
-      [ "p_data", "structwiced__ble__cs__subevent__result__to__app__t.html#aa3c88d604f5f32b6a649267968ea61c5", null ],
-      [ "len", "structwiced__ble__cs__subevent__result__to__app__t.html#abcf1769c1f1af1a99d047cdc8cef3fa7", null ]
+    [ "wiced_ble_cs_subevent_result_status_t", "structwiced__ble__cs__subevent__result__status__t.html", [
+      [ "procedure_done_status", "structwiced__ble__cs__subevent__result__status__t.html#a81a68a3928271ff7009807342cfdeb95", null ],
+      [ "subevent_done_status", "structwiced__ble__cs__subevent__result__status__t.html#a935da91ca96133169e9d62a1c2528715", null ],
+      [ "abort_reason", "structwiced__ble__cs__subevent__result__status__t.html#ad1475fa37a97e88bd5b708c35e764910", null ],
+      [ "num_antenna_paths", "structwiced__ble__cs__subevent__result__status__t.html#adc5a31e89c797861eb09c7c8d9faa0f4", null ],
+      [ "num_steps_reported", "structwiced__ble__cs__subevent__result__status__t.html#aa88d91bd073a84f65ff5dda051addcc7", null ]
     ] ],
-    [ "wiced_ble_cs_subevent_continue_result_hdr_t", "structwiced__ble__cs__subevent__continue__result__hdr__t.html", [
-      [ "acl_conn_handle", "structwiced__ble__cs__subevent__continue__result__hdr__t.html#a6d1c25ec921454ff1d60a54f1fe2a49c", null ],
-      [ "config_id", "structwiced__ble__cs__subevent__continue__result__hdr__t.html#abc69bf25c91bbd8e67e6153366564644", null ],
-      [ "procedure_done_status", "structwiced__ble__cs__subevent__continue__result__hdr__t.html#a741552141095acd7f701d637d0a7b9a4", null ],
-      [ "subevent_done_status", "structwiced__ble__cs__subevent__continue__result__hdr__t.html#accff0d02489c116fa4bc31c10fdbb9d1", null ],
-      [ "abort_reason", "structwiced__ble__cs__subevent__continue__result__hdr__t.html#af76d7536e7e92d69eaa00314436867bf", null ],
-      [ "num_antenna_paths", "structwiced__ble__cs__subevent__continue__result__hdr__t.html#a038e1cd64092140d6cf23d313f1c9df9", null ],
-      [ "num_steps_reported", "structwiced__ble__cs__subevent__continue__result__hdr__t.html#a035fc36a64c3bb43760ba0bdb1a5456c", null ]
+    [ "wiced_ble_cs_subevent_procedure_t", "structwiced__ble__cs__subevent__procedure__t.html", [
+      [ "start_acl_conn_event_counter", "structwiced__ble__cs__subevent__procedure__t.html#a28458dd65803548252610709f3eb22c2", null ],
+      [ "frequency_compensation", "structwiced__ble__cs__subevent__procedure__t.html#a512b89e92a9098e7ec102f43e8241ddf", null ],
+      [ "reference_power_level", "structwiced__ble__cs__subevent__procedure__t.html#a8ccc5a604c29719ef62433b83076f184", null ]
     ] ],
     [ "wiced_ble_cs_subevent_result_hdr_t", "structwiced__ble__cs__subevent__result__hdr__t.html", [
-      [ "cntn", "structwiced__ble__cs__subevent__result__hdr__t.html#a44db62047e1c38d60c947015d91e2650", null ],
-      [ "start_acl_conn_event_counter", "structwiced__ble__cs__subevent__result__hdr__t.html#ab23073873f1057c938bcb15d296b0f3b", null ],
+      [ "config_id", "structwiced__ble__cs__subevent__result__hdr__t.html#a2c87a0b4c93caa6ccc2b7e872ab0d526", null ],
       [ "procedure_counter", "structwiced__ble__cs__subevent__result__hdr__t.html#add0a646c6990bfe78b18f1ccfbdad511", null ],
-      [ "frequency_compensation", "structwiced__ble__cs__subevent__result__hdr__t.html#a1e5a64da784f6baa7d570a516c550228", null ],
-      [ "reference_power_level", "structwiced__ble__cs__subevent__result__hdr__t.html#a134786331aea80dfc821d881086bf538", null ]
+      [ "sts", "structwiced__ble__cs__subevent__result__hdr__t.html#a4700aeb976f890c3c3c036df1d96791e", null ],
+      [ "start_hdr", "structwiced__ble__cs__subevent__result__hdr__t.html#aff8e4b19235aaec4923e7a3a531fe356", null ]
     ] ],
-    [ "wiced_ble_cs_event_data_t", "unionwiced__ble__cs__event__data__t.html", [
-      [ "cs_capabilities", "unionwiced__ble__cs__event__data__t.html#ac82862ad023ef41c08c2b0c4f8a5f596", null ],
-      [ "fae_table", "unionwiced__ble__cs__event__data__t.html#a311fb24a388183280e3f19353051fcb0", null ],
-      [ "acl_conn_handle", "unionwiced__ble__cs__event__data__t.html#acfe86148eb27b820a0def0463e1bba47", null ],
-      [ "config_cmplt", "unionwiced__ble__cs__event__data__t.html#aac44b2c0aa5f7d0610aafb033d73fd55", null ],
-      [ "proc_enable", "unionwiced__ble__cs__event__data__t.html#a730452de8a269433c75249e2e7ba4581", null ],
-      [ "cs_subevent_data", "unionwiced__ble__cs__event__data__t.html#a5eaf3c6f0e54b597a04832d95059be24", null ]
+    [ "wiced_ble_cs_subevent_result_to_app_t", "structwiced__ble__cs__subevent__result__to__app__t.html", [
+      [ "acl_conn_handle", "structwiced__ble__cs__subevent__result__to__app__t.html#a01d1dd5c457fbb4465a6dab8624fe0d1", null ],
+      [ "hdr", "structwiced__ble__cs__subevent__result__to__app__t.html#ab48082973f18960e41b351fbf7f77c44", null ],
+      [ "p_step_data", "structwiced__ble__cs__subevent__result__to__app__t.html#a117b634c68c83c7559a3e07e97836bbf", null ],
+      [ "step_data_len", "structwiced__ble__cs__subevent__result__to__app__t.html#af4ab0ea35c2ba9f3f2f9a0455a0e6e48", null ]
+    ] ],
+    [ "wiced_ble_cs_event_data_t", "structwiced__ble__cs__event__data__t.html", [
+      [ "acl_conn_handle", "structwiced__ble__cs__event__data__t.html#acfe86148eb27b820a0def0463e1bba47", null ],
+      [ "cs_capabilities", "structwiced__ble__cs__event__data__t.html#a2708ea568186d33d6e3e5b576dbf5a79", null ],
+      [ "fae_table", "structwiced__ble__cs__event__data__t.html#a311fb24a388183280e3f19353051fcb0", null ],
+      [ "config_cmplt", "structwiced__ble__cs__event__data__t.html#aac44b2c0aa5f7d0610aafb033d73fd55", null ],
+      [ "proc_enable", "structwiced__ble__cs__event__data__t.html#a730452de8a269433c75249e2e7ba4581", null ],
+      [ "cs_subevent_data", "structwiced__ble__cs__event__data__t.html#a5eaf3c6f0e54b597a04832d95059be24", null ],
+      [ "u", "structwiced__ble__cs__event__data__t.html#abe28299d83ffef5670ada9cf5bb54286", null ]
     ] ],
     [ "WICED_BLE_CS_FAE_TABLE_SIZE", "group__wicedbt___channel_sounding.html#gaf113bf7f3b56b53c9b1dca83e9642913", null ],
     [ "WICED_BLE_CS_CHANNEL_MAP_SIZE", "group__wicedbt___channel_sounding.html#gab0268ef345c918adc4e27e86416c6723", null ],
@@ -151,25 +152,26 @@ var group__wicedbt___channel_sounding =
       [ "WICED_BLE_CS_SET_SECURITY_ENABLE_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a9c3860f94309bd3c2b54d06d312c9733", null ],
       [ "WICED_BLE_CS_CONFIG_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606ae5dbd4dd9c0e76432cf242ba2c66c9eb", null ],
       [ "WICED_BLE_CS_SET_CHANNEL_CLASSIFICATION_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a46ecc42c9761c8c4d644b9aacf82dc06", null ],
-      [ "WICED_BLE_CS_PROCEDURE_ENABLE_CMD_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a89aca94ada22f8c09d66e75dc3e47815", null ],
-      [ "WICED_BLE_CS_PROCEDURE_ENABLE_COMPLETE_EVT", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606ac409fba7992da00ad0cac8a21b3312b0", null ],
+      [ "WICED_BLE_CS_SET_PROCEDURE_PARAMS_CMD_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a74423013eacb98ac80ea424b2f2c40d6", null ],
+      [ "WICED_BLE_CS_SET_PROCEDURE_ENABLE_CMD_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a88b5633abc46e9ef672f5c3e0bd69523", null ],
+      [ "WICED_BLE_CS_PROCEDURE_ENABLE_EVT", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606ae918e665a7ea8cab9aacc988cfa9fca2", null ],
       [ "WICED_BLE_CS_SUBEVENT_RESULT_EVT", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606aee6689c2858bece894b03f8b3fd6b731", null ],
       [ "WICED_BLE_CS_SUBEVENT_RESULT_CONTINUE_EVT", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606aeb34a3d0d0d19341efdacd9b559add3e", null ]
     ] ],
     [ "wiced_ble_cs_register", "group__wicedbt___channel_sounding.html#ga1a98846d8ef2e9afe62b7b70bc48f7b4", null ],
     [ "wiced_ble_cs_read_local_supported_capabilities", "group__wicedbt___channel_sounding.html#gaa769c2308abe9cf96915fd59afcf9ef7", null ],
     [ "wiced_ble_cs_read_remote_supported_capabilities", "group__wicedbt___channel_sounding.html#gaddacff9639d13b2fa86ca3593213ab7a", null ],
-    [ "wiced_ble_cs_write_cached_remote_capabilities", "group__wicedbt___channel_sounding.html#gab9105ca71cf8d314c7a0f1eaa5ac4767", null ],
+    [ "wiced_ble_cs_write_cached_remote_capabilities", "group__wicedbt___channel_sounding.html#ga9b9c7812434fab48727a3978f1cd92df", null ],
     [ "wiced_ble_cs_security_enable", "group__wicedbt___channel_sounding.html#ga7793e2930aba39fb1a80e59b8dbaa58e", null ],
     [ "wiced_ble_cs_set_default_settings", "group__wicedbt___channel_sounding.html#ga53013ffc680f6bf37390c65bbeec621b", null ],
     [ "wiced_ble_cs_read_remote_fae_table", "group__wicedbt___channel_sounding.html#ga6e7cca740ed2f8a5ef4ea59904977e9a", null ],
-    [ "wiced_ble_cs_write_cached_remote_fae_table", "group__wicedbt___channel_sounding.html#gac666f22263d9af7200a10f25038b8a9c", null ],
+    [ "wiced_ble_cs_write_cached_remote_fae_table", "group__wicedbt___channel_sounding.html#ga75c78a796120b8fc7372bfb7518168fc", null ],
     [ "wiced_ble_cs_create_config", "group__wicedbt___channel_sounding.html#ga15f9f72a6564d11b00e0815d0fed0aab", null ],
     [ "wiced_ble_cs_remove_config", "group__wicedbt___channel_sounding.html#gaf62ff64c96fcfd1ce4a947ffc9f93270", null ],
     [ "wiced_ble_cs_set_channel_classification", "group__wicedbt___channel_sounding.html#gaf4cdce8483a88a7ab494e32c470303f5", null ],
     [ "wiced_ble_cs_set_procedure_params", "group__wicedbt___channel_sounding.html#gae903324548894269a3ae65184ac70f1e", null ],
     [ "wiced_ble_cs_set_procedure_enable", "group__wicedbt___channel_sounding.html#ga8b1aa038c80902e9ec7b707194efd2ff", null ],
     [ "wiced_ble_cs_get_event_str", "group__wicedbt___channel_sounding.html#gad7d1851073ba363f5d5329030b168314", null ],
-    [ "wiced_ble_cs_read_subevent_result_event_hdr_from_stream", "group__wicedbt___channel_sounding.html#ga72083723b42be440f9da4266cc3e3b17", null ],
-    [ "wiced_ble_cs_read_subevent_cont_result_event_hdr_from_stream", "group__wicedbt___channel_sounding.html#ga335acaca4bea733d8e110702d144e070", null ]
+    [ "wiced_ble_cs_read_subevent_result_event_hdr_from_stream", "group__wicedbt___channel_sounding.html#ga2cb99778ce3d4bc70c5b542eb5f817d2", null ],
+    [ "wiced_ble_cs_read_subevent_cont_result_event_hdr_from_stream", "group__wicedbt___channel_sounding.html#gae16d8639e63a051730482ad001c68c2f", null ]
 ];

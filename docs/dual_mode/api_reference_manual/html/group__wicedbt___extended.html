@@ -132,6 +132,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__ble__cmd__cmplt__event__data__t.html">wiced_ble_cmd_cmplt_event_data_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data for the command complete event.  <a href="structwiced__ble__cmd__cmplt__event__data__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__ble__set__padv__sync__transfer__param__event__data__t.html">wiced_ble_set_padv_sync_transfer_param_event_data_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Periodic Adv Sync Transfer Param Event Data.  <a href="structwiced__ble__set__padv__sync__transfer__param__event__data__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionwiced__ble__ext__adv__event__data__t.html">wiced_ble_ext_adv_event_data_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">union of events data  <a href="unionwiced__ble__ext__adv__event__data__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,7 +211,7 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <tr class="memdesc:ga0032c35cacd9e9f9b6d59ed74c619cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiator filter policy used.  <a href="#ga0032c35cacd9e9f9b6d59ed74c619cd2">More...</a><br /></td></tr>
 <tr class="separator:ga0032c35cacd9e9f9b6d59ed74c619cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf9e70a8066f58dd3a32e59bfe891bfa0"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#gaf9e70a8066f58dd3a32e59bfe891bfa0">wiced_ble_ext_adv_phy_options_t</a></td></tr>
-<tr class="memdesc:gaf9e70a8066f58dd3a32e59bfe891bfa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Phy adv options to be set in <a class="el" href="group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8" title="Sends the HCI command to set the parameters for extended advetisement. ">wiced_ble_ext_adv_set_params</a>.  <a href="#gaf9e70a8066f58dd3a32e59bfe891bfa0">More...</a><br /></td></tr>
+<tr class="memdesc:gaf9e70a8066f58dd3a32e59bfe891bfa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Phy adv options to be set in <a class="el" href="group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8" title="Sends the HCI command to set the parameters for extended advertisement. ">wiced_ble_ext_adv_set_params</a>.  <a href="#gaf9e70a8066f58dd3a32e59bfe891bfa0">More...</a><br /></td></tr>
 <tr class="separator:gaf9e70a8066f58dd3a32e59bfe891bfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf8cec191938e2298d2fd1e9ea9c0f151"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#gaf8cec191938e2298d2fd1e9ea9c0f151">wiced_ble_ext_adv_report_event_mask_t</a></td></tr>
 <tr class="memdesc:gaf8cec191938e2298d2fd1e9ea9c0f151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit mask to identify the type of the adv received in extended adv report.  <a href="#gaf8cec191938e2298d2fd1e9ea9c0f151">More...</a><br /></td></tr>
@@ -294,9 +297,13 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr class="separator:ga0546f088ab9cda8feb5b29595cbd4fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga122edf4d5a453b329774c4cbdad6b4a5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#ga122edf4d5a453b329774c4cbdad6b4a5">wiced_ble_ext_conn_initiator_filter_policy_e</a> { <br />
-&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a06234ca144f35338f6bc4120362b5001">WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS</a> = 0, 
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a2cd4545162b84a43e56a374d5f5fc485">WICED_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a3125d3696ae08c0771f9d4de26679179">WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS</a> = 1
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a06234ca144f35338f6bc4120362b5001">WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS</a> = WICED_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a367e373f0fe2b61b214554f4a1ae2dc8">WICED_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a3125d3696ae08c0771f9d4de26679179">WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS</a> = WICED_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS
 <br />
  }<tr class="memdesc:ga122edf4d5a453b329774c4cbdad6b4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiator filter policy enums used in extended create connection command.  <a href="group__wicedbt___extended.html#ga122edf4d5a453b329774c4cbdad6b4a5">More...</a><br /></td></tr>
 </td></tr>
@@ -324,7 +331,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___extended.html#ggace6120835d8b9dbb1bea9b4dd18e3ceba081f94075a0f4e453023f4ef69d8c281">WICED_BLE_EXT_ADV_PHY_OPTIONS_REQUIRE_S8</a> = 4
 <br />
- }<tr class="memdesc:gace6120835d8b9dbb1bea9b4dd18e3ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Phy adv options to be set in <a class="el" href="group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8" title="Sends the HCI command to set the parameters for extended advetisement. ">wiced_ble_ext_adv_set_params</a>.  <a href="group__wicedbt___extended.html#gace6120835d8b9dbb1bea9b4dd18e3ceb">More...</a><br /></td></tr>
+ }<tr class="memdesc:gace6120835d8b9dbb1bea9b4dd18e3ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Phy adv options to be set in <a class="el" href="group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8" title="Sends the HCI command to set the parameters for extended advertisement. ">wiced_ble_ext_adv_set_params</a>.  <a href="group__wicedbt___extended.html#gace6120835d8b9dbb1bea9b4dd18e3ceb">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:gace6120835d8b9dbb1bea9b4dd18e3ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb770fe3c0774bf761f9b1b2951cb519"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#gabb770fe3c0774bf761f9b1b2951cb519">wiced_ble_ext_adv_report_count_e</a> { <br />
@@ -336,11 +343,17 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr class="separator:gabb770fe3c0774bf761f9b1b2951cb519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e2629b369ca80c881cce7bf34e54e55"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#ga5e2629b369ca80c881cce7bf34e54e55">wiced_ble_ext_adv_event_t</a> { <br />
-&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a7c965ceaa4c4c40f6ac8c8da92361fde">WICED_BT_BLE_ADV_SET_TERMINATED_EVENT</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a8191387885935575adb6ef598106144e">WICED_BLE_ADV_SET_TERMINATED_EVENT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a9c8f066bee4af20cde89bffa2f0a5be0">WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a7c965ceaa4c4c40f6ac8c8da92361fde">WICED_BT_BLE_ADV_SET_TERMINATED_EVENT</a> = WICED_BLE_ADV_SET_TERMINATED_EVENT, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55addd59b434c4315dcdfee99c1a211a9cd">WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55ae7e8c5318b08cffe6146b1840c3851bd">WICED_BLE_SCAN_REQUEST_RECEIVED_EVENT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a9c8f066bee4af20cde89bffa2f0a5be0">WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT</a> = WICED_BLE_SCAN_REQUEST_RECEIVED_EVENT, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a019e5b1c91dd01ac5dd3a1670f2e56de">WICED_BLE_BIGINFO_ADV_REPORT_EVENT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55addd59b434c4315dcdfee99c1a211a9cd">WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT</a> = WICED_BLE_BIGINFO_ADV_REPORT_EVENT, 
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a46d1d291790adce9379e0e0e486f2028">WICED_BLE_EXT_COMMAND_CMPLT_EVENT</a>, 
 <br />
@@ -352,9 +365,15 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a658ce59f813218135a54bb4c2fde1dda">WICED_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a3330036ce07f7f874651ead39c37e32e">WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT</a>, 
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55ab9609b2775074072513a9a18d71b129c">WICED_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a24e43dcfac6a68faebf40b853d49b3d0">WICED_BT_BLE_PAWR_RSP_REPORT_EVENT</a>
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a3330036ce07f7f874651ead39c37e32e">WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT</a> = WICED_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55acee28eee37e9cf9abe3c961ab6c1c190">WICED_BLE_PAWR_RSP_REPORT_EVENT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a24e43dcfac6a68faebf40b853d49b3d0">WICED_BT_BLE_PAWR_RSP_REPORT_EVENT</a> = WICED_BLE_PAWR_RSP_REPORT_EVENT, 
+<br />
+&#160;&#160;<a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a34cc1f6687e0bbc1bcb83b35c3ac6cce">WICED_BLE_SET_PERIODIC_ADV_SYNC_TRANSFER_PARAM_EVENT</a>
 <br />
  }<tr class="memdesc:ga5e2629b369ca80c881cce7bf34e54e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADV extension events to the application.  <a href="group__wicedbt___extended.html#ga5e2629b369ca80c881cce7bf34e54e55">More...</a><br /></td></tr>
 </td></tr>
@@ -365,8 +384,11 @@ Functions</h2></td></tr>
 <tr class="memitem:gafff39f931702fc08abbe784b257e6721"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gentypes.html#ga2bc92bd117cfd3f6ec4ae452e6ced064">wiced_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#gafff39f931702fc08abbe784b257e6721">wiced_ble_ext_adv_support</a> (void)</td></tr>
 <tr class="memdesc:gafff39f931702fc08abbe784b257e6721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the local Bluetooth controller supports extended advertising.  <a href="#gafff39f931702fc08abbe784b257e6721">More...</a><br /></td></tr>
 <tr class="separator:gafff39f931702fc08abbe784b257e6721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1f214d921d108dc13287f67a8ceab7d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#gae1f214d921d108dc13287f67a8ceab7d">wiced_ble_ext_adv_set_max_adv_handles</a> (uint8_t num_adv_sets)</td></tr>
+<tr class="memdesc:gae1f214d921d108dc13287f67a8ceab7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create extended adv sets.  <a href="#gae1f214d921d108dc13287f67a8ceab7d">More...</a><br /></td></tr>
+<tr class="separator:gae1f214d921d108dc13287f67a8ceab7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga332aac600805302058c46a00fba371c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8">wiced_ble_ext_adv_set_params</a> (<a class="el" href="group__wicedbt___common.html#gaf9732afdd017c5dfd54294d3fc006ff8">wiced_ble_ext_adv_handle_t</a> adv_handle, const <a class="el" href="structwiced__ble__ext__adv__params__t.html">wiced_ble_ext_adv_params_t</a> *p_params)</td></tr>
-<tr class="memdesc:ga332aac600805302058c46a00fba371c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the HCI command to set the parameters for extended advetisement.  <a href="#ga332aac600805302058c46a00fba371c8">More...</a><br /></td></tr>
+<tr class="memdesc:ga332aac600805302058c46a00fba371c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the HCI command to set the parameters for extended advertisement.  <a href="#ga332aac600805302058c46a00fba371c8">More...</a><br /></td></tr>
 <tr class="separator:ga332aac600805302058c46a00fba371c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac358c7b28754fee22dfe57ce2703203"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#gaac358c7b28754fee22dfe57ce2703203">wiced_ble_ext_adv_set_random_address</a> (<a class="el" href="group__wicedbt___common.html#gaf9732afdd017c5dfd54294d3fc006ff8">wiced_ble_ext_adv_handle_t</a> adv_handle, <a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> random_addr)</td></tr>
 <tr class="memdesc:gaac358c7b28754fee22dfe57ce2703203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends HCI command to set the random address for an adv set.  <a href="#gaac358c7b28754fee22dfe57ce2703203">More...</a><br /></td></tr>
@@ -407,6 +429,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab81b607c21afc5fc637ad6dea217963d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#gab81b607c21afc5fc637ad6dea217963d">wiced_ble_ext_adv_register_cback</a> (<a class="el" href="group__wicedbt___extended.html#gaac86605e68c96a00acae4bccbc562e46">wiced_ble_ext_adv_event_cback_t</a> p_app_adv_ext_event_cb)</td></tr>
 <tr class="memdesc:gab81b607c21afc5fc637ad6dea217963d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an application callback function to receive extended, periodic advertising events and PAWR command failed status event.  <a href="#gab81b607c21afc5fc637ad6dea217963d">More...</a><br /></td></tr>
 <tr class="separator:gab81b607c21afc5fc637ad6dea217963d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84a1170fa9092aa5792965f8b8467f6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt___extended.html#ga84a1170fa9092aa5792965f8b8467f6d">wiced_ble_ext_read_adv_data_len</a> (void)</td></tr>
+<tr class="memdesc:ga84a1170fa9092aa5792965f8b8467f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the maximum length of data supported by the Controller for use as advertisement data or scan response data in an advertising event or as periodic advertisement data.  <a href="#ga84a1170fa9092aa5792965f8b8467f6d">More...</a><br /></td></tr>
+<tr class="separator:ga84a1170fa9092aa5792965f8b8467f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga5a122fd4c1d3220e926a755f59361784"></a>
@@ -464,7 +489,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Phy adv options to be set in <a class="el" href="group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8" title="Sends the HCI command to set the parameters for extended advetisement. ">wiced_ble_ext_adv_set_params</a>. </p>
+<p>Phy adv options to be set in <a class="el" href="group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8" title="Sends the HCI command to set the parameters for extended advertisement. ">wiced_ble_ext_adv_set_params</a>. </p>
 <p>(see <a class="el" href="group__wicedbt___extended.html#gace6120835d8b9dbb1bea9b4dd18e3ceb" title="Phy adv options to be set in wiced_ble_ext_adv_set_params. ">wiced_ble_ext_adv_phy_options_e</a>) </p>
 
 </div>
@@ -682,11 +707,15 @@ Functions</h2></td></tr>
 
 <p>Initiator filter policy enums used in extended create connection command. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga122edf4d5a453b329774c4cbdad6b4a5a06234ca144f35338f6bc4120362b5001"></a>WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS&#160;</td><td class="fielddoc"><p>Filter Accept List is not used to determine which advertiser to connect to. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga122edf4d5a453b329774c4cbdad6b4a5a2cd4545162b84a43e56a374d5f5fc485"></a>WICED_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS&#160;</td><td class="fielddoc"><p>Filter Accept List is not used to determine which advertiser to connect to. </p>
 <p>Peer_Address_Type and Peer_Address shall be used </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga122edf4d5a453b329774c4cbdad6b4a5a3125d3696ae08c0771f9d4de26679179"></a>WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS&#160;</td><td class="fielddoc"><p>Filter Accept List is used to determine which advertiser to connect to. </p>
+<tr><td class="fieldname"><a id="gga122edf4d5a453b329774c4cbdad6b4a5a06234ca144f35338f6bc4120362b5001"></a>WICED_BT_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS&#160;</td><td class="fielddoc"><dl class="section attention"><dt>Attention</dt><dd>use <a class="el" href="group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a2cd4545162b84a43e56a374d5f5fc485" title="Filter Accept List is not used to determine which advertiser to connect to. ">WICED_BLE_IGNORE_FILTER_ACCEPT_LIST_FOR_CONNS</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga122edf4d5a453b329774c4cbdad6b4a5a367e373f0fe2b61b214554f4a1ae2dc8"></a>WICED_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS&#160;</td><td class="fielddoc"><p>Filter Accept List is used to determine which advertiser to connect to. </p>
 <p>Peer_Address_Type and Peer_Address shall be ignored. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga122edf4d5a453b329774c4cbdad6b4a5a3125d3696ae08c0771f9d4de26679179"></a>WICED_BT_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS&#160;</td><td class="fielddoc"><dl class="section attention"><dt>Attention</dt><dd>use <a class="el" href="group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a367e373f0fe2b61b214554f4a1ae2dc8" title="Filter Accept List is used to determine which advertiser to connect to. ">WICED_BLE_USE_FILTER_ACCEPT_LIST_FOR_CONNS</a> </dd></dl>
 </td></tr>
 </table>
 
@@ -730,7 +759,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Phy adv options to be set in <a class="el" href="group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8" title="Sends the HCI command to set the parameters for extended advetisement. ">wiced_ble_ext_adv_set_params</a>. </p>
+<p>Phy adv options to be set in <a class="el" href="group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8" title="Sends the HCI command to set the parameters for extended advertisement. ">wiced_ble_ext_adv_set_params</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggace6120835d8b9dbb1bea9b4dd18e3ceba76d1e81913c9550612207b7040e81a83"></a>WICED_BLE_EXT_ADV_PHY_OPTIONS_NO_PREFERENCE&#160;</td><td class="fielddoc"><p>The Host has no preferred or required coding when transmitting on the LE Coded PHY. </p>
 </td></tr>
@@ -782,14 +811,20 @@ Functions</h2></td></tr>
 
 <p>ADV extension events to the application. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a7c965ceaa4c4c40f6ac8c8da92361fde"></a>WICED_BT_BLE_ADV_SET_TERMINATED_EVENT&#160;</td><td class="fielddoc"><p>Advertising set terminated becaue either connection being created or adv timeout. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a8191387885935575adb6ef598106144e"></a>WICED_BLE_ADV_SET_TERMINATED_EVENT&#160;</td><td class="fielddoc"><p>Advertising set terminated because either connection being created or adv timeout. </p>
 <p><a class="el" href="structwiced__ble__ext__adv__set__terminated__event__data__t.html">wiced_ble_ext_adv_set_terminated_event_data_t</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a9c8f066bee4af20cde89bffa2f0a5be0"></a>WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT&#160;</td><td class="fielddoc"><p>scan request received event. </p>
+<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a7c965ceaa4c4c40f6ac8c8da92361fde"></a>WICED_BT_BLE_ADV_SET_TERMINATED_EVENT&#160;</td><td class="fielddoc"><dl class="section attention"><dt>Attention</dt><dd>use <a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a8191387885935575adb6ef598106144e" title="Advertising set terminated because either connection being created or adv timeout. ">WICED_BLE_ADV_SET_TERMINATED_EVENT</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55ae7e8c5318b08cffe6146b1840c3851bd"></a>WICED_BLE_SCAN_REQUEST_RECEIVED_EVENT&#160;</td><td class="fielddoc"><p>scan request received event. </p>
 <p><a class="el" href="structwiced__ble__ext__scan__req__received__event__data__t.html">wiced_ble_ext_scan_req_received_event_data_t</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55addd59b434c4315dcdfee99c1a211a9cd"></a>WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT&#160;</td><td class="fielddoc"><p>BIGInfo adv report event. </p>
+<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a9c8f066bee4af20cde89bffa2f0a5be0"></a>WICED_BT_BLE_SCAN_REQUEST_RECEIVED_EVENT&#160;</td><td class="fielddoc"><dl class="section attention"><dt>Attention</dt><dd>use <a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55ae7e8c5318b08cffe6146b1840c3851bd" title="scan request received event. ">WICED_BLE_SCAN_REQUEST_RECEIVED_EVENT</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a019e5b1c91dd01ac5dd3a1670f2e56de"></a>WICED_BLE_BIGINFO_ADV_REPORT_EVENT&#160;</td><td class="fielddoc"><p>BIGInfo adv report event. </p>
 <p><a class="el" href="structwiced__ble__biginfo__adv__report__t.html">wiced_ble_biginfo_adv_report_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55addd59b434c4315dcdfee99c1a211a9cd"></a>WICED_BT_BLE_BIGINFO_ADV_REPORT_EVENT&#160;</td><td class="fielddoc"><dl class="section attention"><dt>Attention</dt><dd>use <a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55a019e5b1c91dd01ac5dd3a1670f2e56de" title="BIGInfo adv report event. ">WICED_BLE_BIGINFO_ADV_REPORT_EVENT</a> </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a46d1d291790adce9379e0e0e486f2028"></a>WICED_BLE_EXT_COMMAND_CMPLT_EVENT&#160;</td><td class="fielddoc"><p>command complete Event. </p>
 <p><a class="el" href="structwiced__ble__cmd__cmplt__event__data__t.html">wiced_ble_cmd_cmplt_event_data_t</a> </p>
@@ -806,9 +841,16 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a658ce59f813218135a54bb4c2fde1dda"></a>WICED_BLE_PERIODIC_ADV_SYNC_TRANSFER_EVENT&#160;</td><td class="fielddoc"><p>Periodic Adv Sync Transfer Event. </p>
 <p><a class="el" href="structwiced__ble__padv__sync__transfer__event__data__t.html">wiced_ble_padv_sync_transfer_event_data_t</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a3330036ce07f7f874651ead39c37e32e"></a>WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT&#160;</td><td class="fielddoc"><p>PAWR event on advertiser to request for subevent data <a class="el" href="structwiced__ble__padv__subevent__data__req__event__data__t.html">wiced_ble_padv_subevent_data_req_event_data_t</a>. </p>
+<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55ab9609b2775074072513a9a18d71b129c"></a>WICED_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT&#160;</td><td class="fielddoc"><p>PAWR event on advertiser to request for subevent data <a class="el" href="structwiced__ble__padv__subevent__data__req__event__data__t.html">wiced_ble_padv_subevent_data_req_event_data_t</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a24e43dcfac6a68faebf40b853d49b3d0"></a>WICED_BT_BLE_PAWR_RSP_REPORT_EVENT&#160;</td><td class="fielddoc"><p>PAWR event on advertiser to report the subevent response data <a class="el" href="structwiced__ble__padv__rsp__report__event__data__t.html">wiced_ble_padv_rsp_report_event_data_t</a>. </p>
+<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a3330036ce07f7f874651ead39c37e32e"></a>WICED_BT_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT&#160;</td><td class="fielddoc"><dl class="section attention"><dt>Attention</dt><dd>use <a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55ab9609b2775074072513a9a18d71b129c" title="PAWR event on advertiser to request for subevent data wiced_ble_padv_subevent_data_req_event_data_t. ">WICED_BLE_PAWR_SUBEVENT_DATA_REQ_EVENT</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55acee28eee37e9cf9abe3c961ab6c1c190"></a>WICED_BLE_PAWR_RSP_REPORT_EVENT&#160;</td><td class="fielddoc"><p>PAWR event on advertiser to report the subevent response data <a class="el" href="structwiced__ble__padv__rsp__report__event__data__t.html">wiced_ble_padv_rsp_report_event_data_t</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a24e43dcfac6a68faebf40b853d49b3d0"></a>WICED_BT_BLE_PAWR_RSP_REPORT_EVENT&#160;</td><td class="fielddoc"><dl class="section attention"><dt>Attention</dt><dd>use <a class="el" href="group__wicedbt___extended.html#gga5e2629b369ca80c881cce7bf34e54e55acee28eee37e9cf9abe3c961ab6c1c190" title="PAWR event on advertiser to report the subevent response data wiced_ble_padv_rsp_report_event_data_t...">WICED_BLE_PAWR_RSP_REPORT_EVENT</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5e2629b369ca80c881cce7bf34e54e55a34cc1f6687e0bbc1bcb83b35c3ac6cce"></a>WICED_BLE_SET_PERIODIC_ADV_SYNC_TRANSFER_PARAM_EVENT&#160;</td><td class="fielddoc"><p>Set Periodic Adv Sync Transfer param Event. </p>
+<p><a class="el" href="structwiced__ble__set__padv__sync__transfer__param__event__data__t.html">wiced_ble_set_padv_sync_transfer_param_event_data_t</a> </p>
 </td></tr>
 </table>
 
@@ -833,6 +875,28 @@ Functions</h2></td></tr>
 
 <p>Check if the local Bluetooth controller supports extended advertising. </p>
 <dl class="section return"><dt>Returns</dt><dd>wiced_bool_t </dd></dl>
+
+</div>
+</div>
+<a id="gae1f214d921d108dc13287f67a8ceab7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1f214d921d108dc13287f67a8ceab7d">&#9670;&nbsp;</a></span>wiced_ble_ext_adv_set_max_adv_handles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t wiced_ble_ext_adv_set_max_adv_handles </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>num_adv_sets</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create extended adv sets. </p>
+<dl class="section note"><dt>Note</dt><dd>By default max adv sets supported is set to 1. Applications using multiple adv extended sets/handles need to invoke this API prior to invoking <a class="el" href="group__wicedbt___extended.html#gaac358c7b28754fee22dfe57ce2703203">wiced_ble_ext_adv_set_random_address</a>, <a class="el" href="group__wicedbt___extended.html#ga332aac600805302058c46a00fba371c8">wiced_ble_ext_adv_set_params</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of extended adv sets created. A successful invocation of this API returns <code>num_adv_sets</code> </dd></dl>
 
 </div>
 </div>
@@ -862,7 +926,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sends the HCI command to set the parameters for extended advetisement. </p>
+<p>Sends the HCI command to set the parameters for extended advertisement. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">adv_handle</td><td>Advertisement set handle </td></tr>
@@ -1368,6 +1432,30 @@ This API cannot be used for advertising sets with event_properties that do not s
 <b> WICED_BT_NO_RESOURCES </b> : If no memory to issue the command <br />
 <b> WICED_BT_PENDING </b> : If command queued to send down <br />
 <b> WICED_BT_SUCCESS </b> : If successful<br />
+</dd></dl>
+
+</div>
+</div>
+<a id="ga84a1170fa9092aa5792965f8b8467f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga84a1170fa9092aa5792965f8b8467f6d">&#9670;&nbsp;</a></span>wiced_ble_ext_read_adv_data_len()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a> wiced_ble_ext_read_adv_data_len </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the maximum length of data supported by the Controller for use as advertisement data or scan response data in an advertising event or as periodic advertisement data. </p>
+<dl class="section note"><dt>Note</dt><dd>Application receives <a class="el" href="group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65abd036d090b923b16b710141dc6147bce" title="Event to notify Maximum Advertising data length supported when application invokes wiced_ble_ext_read...">BTM_BLE_READ_MAX_ADV_DATA_LEN_EVENT</a> to notify Maximum Advertising data length</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>wiced_bt_dev_status_t <b> WICED_BT_NO_RESOURCES </b> : If no memory to issue the command <br />
+ <b> WICED_BT_SUCCESS </b> : If successful<br />
 </dd></dl>
 
 </div>

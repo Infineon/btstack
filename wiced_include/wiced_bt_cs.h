@@ -57,8 +57,6 @@
 /** Structure for channel sounding capabilities */
 typedef struct
 {
-    /** ACL connection handle */
-    uint16_t acl_conn_handle;
     /** Number of CS configurations supported per connection, range 0x1 to 0x4 */
     uint8_t num_config_supported;
     /** If value set to
@@ -124,7 +122,7 @@ typedef struct
     /** Bit 0: 18 dB supported, Bit 1: 21 dB supported, Bit 2: 24 dB supported, Bit 3: 27 dB supported,
      * Bit 4: 30 dB supported */
     uint8_t tx_snr_capability;
-} wiced_ble_cs_capabilites_t;
+} wiced_ble_cs_capabilities_t;
 
 /** Structure for setting channel sounding default settings */
 typedef struct
@@ -165,7 +163,6 @@ typedef uint8_t wiced_ble_cs_channel_map_t[WICED_BLE_CS_CHANNEL_MAP_SIZE];
 /** Structure for the FAE table */
 typedef struct
 {
-    uint16_t acl_conn_handle; /**< ACL connection handle */
     wiced_ble_cs_fae_table_t table; /**< FAE table data */
 } wiced_ble_cs_fae_table_data_t;
 
@@ -331,10 +328,6 @@ typedef struct
 typedef struct
 {
     /**
-     * ACL connection handle
-     */
-    uint16_t acl_conn_handle;
-    /**
      * CS Config Id identifying CS procedure
      */
     uint8_t config_id;
@@ -436,8 +429,6 @@ typedef struct
 /** Structure to return the CS Procedure enable complete event */
 typedef struct
 {
-    /** ACL connection handle */
-    uint16_t acl_conn_handle;
     /**
      * CS Config Id identifying CS procedure
      */
@@ -492,52 +483,64 @@ typedef struct
 
 /** CS events to the application */
 
-/** CS step data results */
+/** CS Subevent continue result header */
 typedef struct
 {
-    uint8_t *p_data; /**< step data sets*/
-    uint8_t len;     /**< length of \p p_data */
-} wiced_ble_cs_subevent_result_to_app_t;
-
-/** CS Subevent continue result hdr */
-typedef struct
-{
-    uint16_t acl_conn_handle; /**< ACL connection handle */
-    uint8_t config_id;        /**< CS config identifier */
     uint8_t procedure_done_status; /**< procedure status*/
     uint8_t subevent_done_status;  /**< subevent status */
     uint8_t abort_reason;          /**< abort reason */
     uint8_t num_antenna_paths;     /**< number of antenna paths used */
     uint8_t num_steps_reported;    /**< num steps reported */
-} wiced_ble_cs_subevent_continue_result_hdr_t;
+} wiced_ble_cs_subevent_result_status_t;
+
+/** CS Subevent result subevent start header */
+typedef struct
+{
+    uint16_t start_acl_conn_event_counter; /**< start of the acl conn event counter */
+    uint16_t frequency_compensation;       /**< frequency compensation */
+    uint8_t reference_power_level;         /**< reference power level */
+} wiced_ble_cs_subevent_procedure_t;
 
 /** CS Subevent result hdr */
 typedef struct
 {
-    wiced_ble_cs_subevent_continue_result_hdr_t cntn; /**< subevent hdr */
-    uint16_t start_acl_conn_event_counter;               /**< start of the acl conn event counter */
-    uint16_t procedure_counter;                          /**< procedure counter */
-    uint16_t frequency_compensation;                     /**< frequence compensation */
-    uint8_t reference_power_level;                       /**< reference power level */
+    uint8_t config_id;                           /**< CS config identifier */
+    uint16_t procedure_counter;                  /**< procedure counter */
+    wiced_ble_cs_subevent_result_status_t sts;   /**< subevent result status */
+    wiced_ble_cs_subevent_procedure_t start_hdr; /**< subevent start hdr,
+                                                      @note Ignore for #WICED_BLE_CS_SUBEVENT_RESULT_CONTINUE_EVT
+                                                      */
 } wiced_ble_cs_subevent_result_hdr_t;
 
-/** union of data for CS events */
-typedef union
+/** CS step data results */
+typedef struct
 {
-    /** Data for #WICED_BLE_CS_READ_LOCAL_CAPABILITIES_COMPLETE and
+    uint16_t acl_conn_handle;               /**< acl connection handle */
+    wiced_ble_cs_subevent_result_hdr_t hdr; /**<  cs subevent data hdr */
+    uint8_t *p_step_data;                   /**< step data sets*/
+    uint8_t step_data_len;                  /**< length of \p p_step_data */
+} wiced_ble_cs_subevent_result_to_app_t;
+
+
+/** union of data for CS events */
+typedef struct
+{
+    uint16_t acl_conn_handle; /**< ACL connection handle, set to 0 for local controller events */
+    /** union of structures to return CS results */
+    union
+    {
+        /** Data for #WICED_BLE_CS_READ_LOCAL_CAPABILITIES_COMPLETE and
      * #WICED_BLE_CS_READ_REMOTE_CAPABILITIES_COMPLETE */
-    wiced_ble_cs_capabilites_t cs_capabilities;
-    /** Data for #WICED_BLE_CS_READ_REMOTE_FAE_TABLE_COMPLETE*/
-    wiced_ble_cs_fae_table_data_t fae_table;
-    /** Data for #WICED_BLE_CS_SET_SECURITY_ENABLE_COMPLETE and
-     * #WICED_BLE_CS_WRITE_CACHED_CAPABILITIES_CMD_COMPLETE*/
-    uint16_t acl_conn_handle;
-    /** Data for #WICED_BLE_CS_CONFIG_COMPLETE*/
-    wiced_ble_cs_config_complete_t config_cmplt;
-    /** Data for #WICED_BLE_CS_PROCEDURE_ENABLE_COMPLETE_EVT*/
-    wiced_ble_cs_procedure_enable_complete_t proc_enable;
-    /** Data for #WICED_BLE_CS_SUBEVENT_RESULT_EVT and #WICED_BLE_CS_SUBEVENT_RESULT_CONTINUE_EVT*/
-    wiced_ble_cs_subevent_result_to_app_t cs_subevent_data;
+        wiced_ble_cs_capabilities_t cs_capabilities;
+        /** Data for #WICED_BLE_CS_READ_REMOTE_FAE_TABLE_COMPLETE*/
+        wiced_ble_cs_fae_table_data_t fae_table;
+        /** Data for #WICED_BLE_CS_CONFIG_COMPLETE*/
+        wiced_ble_cs_config_complete_t config_cmplt;
+        /** Data for #WICED_BLE_CS_PROCEDURE_ENABLE_EVT*/
+        wiced_ble_cs_procedure_enable_complete_t proc_enable;
+        /** Data for #WICED_BLE_CS_SUBEVENT_RESULT_EVT and #WICED_BLE_CS_SUBEVENT_RESULT_CONTINUE_EVT*/
+        wiced_ble_cs_subevent_result_to_app_t cs_subevent_data;
+    }u;
 } wiced_ble_cs_event_data_t;
 
 /** CS Events enumeration */
@@ -589,15 +592,20 @@ enum wiced_ble_cs_events_e
      */
     WICED_BLE_CS_SET_CHANNEL_CLASSIFICATION_COMPLETE,
     /**
+     * CS Procedure set procedure params command complete event,
+     * Event data in #wiced_ble_cs_event_data_t.acl_conn_handle
+     */
+    WICED_BLE_CS_SET_PROCEDURE_PARAMS_CMD_COMPLETE,
+    /**
      * CS Procedure enable command complete event,
      * Event data in #wiced_ble_cs_event_data_t.acl_conn_handle
      */
-    WICED_BLE_CS_PROCEDURE_ENABLE_CMD_COMPLETE,
+    WICED_BLE_CS_SET_PROCEDURE_ENABLE_CMD_COMPLETE,
     /**
      * CS Procedure enable complete evt.
      * Event Data: #wiced_ble_cs_event_data_t.proc_enable
      */
-    WICED_BLE_CS_PROCEDURE_ENABLE_COMPLETE_EVT,
+    WICED_BLE_CS_PROCEDURE_ENABLE_EVT,
     /**
      * CS Subevent result event.
      * Event Data: #wiced_ble_cs_event_data_t.cs_subevent_data
@@ -657,11 +665,12 @@ wiced_result_t wiced_ble_cs_read_remote_supported_capabilities(uint16_t acl_conn
  * Write cached remote supported CS capabilities
  * #WICED_BLE_CS_WRITE_CACHED_CAPABILITIES_CMD_COMPLETE is generated on completion of this API.
  *
+ * @param acl_conn_handle : ACL connection handle for the link
  * @param p_cap : Cached remote capabilities, previously received from the remote device
  *
  * @return wiced_result_t
  */
-wiced_result_t wiced_ble_cs_write_cached_remote_capabilities(wiced_ble_cs_capabilites_t *p_cap);
+wiced_result_t wiced_ble_cs_write_cached_remote_capabilities(uint16_t acl_conn_handle, wiced_ble_cs_capabilities_t *p_cap);
 
 /**
  * Enable CS security for the connection
@@ -698,11 +707,13 @@ wiced_result_t wiced_ble_cs_read_remote_fae_table(uint16_t acl_conn_handle);
  * Write cached remote FAE table
  * #WICED_BLE_CS_WRITE_CACHED_REMOTE_FAE_TABLE_COMPLETE is generated on completion of this API.
  *
+ * @param acl_conn_handle : ACL connection handle
  * @param p_tab : Cached FAE table, previously received from the remote device
  *
  * @return wiced_result_t
  */
-wiced_result_t wiced_ble_cs_write_cached_remote_fae_table(wiced_ble_cs_fae_table_data_t *p_tab);
+wiced_result_t wiced_ble_cs_write_cached_remote_fae_table(uint16_t acl_conn_handle,
+                                                          wiced_ble_cs_fae_table_data_t *p_tab);
 
 /**
  * Create/Update CS Config for config id
@@ -737,7 +748,7 @@ wiced_result_t wiced_ble_cs_set_channel_classification(wiced_ble_cs_channel_map_
 
 /**
  * Set the CS procedure parameters
- * #WICED_BLE_CS_PROCEDURE_ENABLE_CMD_COMPLETE is generated on completion of this API.
+ * #WICED_BLE_CS_SET_PROCEDURE_ENABLE_CMD_COMPLETE is generated on completion of this API.
  * @note This API can be invoked only if the host has created a configuration using the
  * \ref wiced_ble_cs_create_config API
  *
@@ -749,7 +760,7 @@ wiced_result_t wiced_ble_cs_set_procedure_params(wiced_ble_cs_procedure_params_t
 
 /**
  * Enable/Disable CS procedure
- * #WICED_BLE_CS_PROCEDURE_ENABLE_COMPLETE_EVT is generated on completion of this API.
+ * #WICED_BLE_CS_PROCEDURE_ENABLE_EVT is generated on completion of this API.
  * @note This API can be invoked only if the host has created a configuration using the
  * \ref wiced_ble_cs_create_config API
  *
@@ -771,26 +782,28 @@ const char *wiced_ble_cs_get_event_str(wiced_ble_cs_events_t evt);
 
 /**
  * Utility function to read the subevent result
- * @param[out] p_hdr: On return this contains the parsed data from the event
+ * @param[out] p_res_to_app: On return this contains the parsed data from the event
  * @param[in] p_data : Received subevent data
  * @param[in] len : length of the data pointed to by \p p_data
  *
  * @return number of bytes read from the stream
  */
 
-int wiced_ble_cs_read_subevent_result_event_hdr_from_stream(
-    wiced_ble_cs_subevent_result_hdr_t *p_hdr, uint8_t *p_data, int len);
+int wiced_ble_cs_read_subevent_result_event_hdr_from_stream(wiced_ble_cs_subevent_result_to_app_t *p_res_to_app,
+                                                            uint8_t *p_data,
+                                                            int len);
 
 /**
  * Utility function to read the subevent continue result
- * @param[out] p_hdr: On return this contains the parsed data from the event
+ * @param[out] p_res_to_app: On return this contains the parsed data from the event
  * @param[in] p_data : Received subevent data
  * @param[in] len : length of the data pointed to by \p p_data
  *
  * @return number of bytes read from the stream
  */
-int wiced_ble_cs_read_subevent_cont_result_event_hdr_from_stream(
-    wiced_ble_cs_subevent_continue_result_hdr_t *p_hdr, uint8_t *p_data, int len);
+int wiced_ble_cs_read_subevent_cont_result_event_hdr_from_stream(wiced_ble_cs_subevent_result_to_app_t *p_res_to_app,
+                                                                 uint8_t *p_data,
+                                                                 int len);
 
 /**@} wicedbt */
 #endif
