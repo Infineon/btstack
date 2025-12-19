@@ -44,8 +44,6 @@ var searchData=
   ['peer_5faddress',['peer_address',['../structwiced__ble__legacy__create__conn__t.html#a87426eae3ea77caa3b89b97a405674d1',1,'wiced_ble_legacy_create_conn_t']]],
   ['peer_5faddress_5ftype',['peer_address_type',['../structwiced__ble__legacy__create__conn__t.html#a8e4f79bbe60b9f566eebb940275203e0',1,'wiced_ble_legacy_create_conn_t']]],
   ['peer_5fbd_5faddr',['peer_bd_addr',['../structwiced__bt__ble__multi__adv__params__t.html#afce21fc6885a7da0b01bac3b97954836',1,'wiced_bt_ble_multi_adv_params_t']]],
-  ['peer_5fio_5fcap',['peer_io_cap',['../structwiced__bt__dev__security__request__t.html#a90c2bad844cc7a4d99b67e1b2edfe7cf',1,'wiced_bt_dev_security_request_t']]],
-  ['peer_5fio_5fcap_5fvalid',['peer_io_cap_valid',['../structwiced__bt__dev__security__request__t.html#a3ced2b1bf35bda15b2978f6af5e65e57',1,'wiced_bt_dev_security_request_t']]],
   ['pending_5fevents',['pending_events',['../structwiced__bt__gatt__operation__complete__t.html#abeaabd24870bbe8bb1caf266beea1d97',1,'wiced_bt_gatt_operation_complete_t']]],
   ['periodic_5fadv_5fint',['periodic_adv_int',['../structwiced__ble__padv__sync__established__event__data__t.html#af88f86bf1380a8792f6b18c28e79eaaf',1,'wiced_ble_padv_sync_established_event_data_t']]],
   ['periodic_5fadv_5finterval',['periodic_adv_interval',['../structwiced__ble__ext__scan__results__t.html#a06e6636e816da42a281cd93e3eea6538',1,'wiced_ble_ext_scan_results_t']]],

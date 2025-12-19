@@ -556,8 +556,6 @@ typedef struct
 {
     wiced_bt_device_address_t      bd_addr;             /**< peer address           */
     wiced_bt_dev_le_auth_req_t auth_req;                /**< Peer authentication requirements */
-    wiced_bool_t  peer_io_cap_valid;                    /**< TRUE if peer_io_cap is valid (peripheral role receiving Pairing Request), FALSE otherwise (central role receiving Security Request) */
-    wiced_bt_dev_io_cap_t peer_io_cap;                  /**< Peer IO capabilities (valid only when peer_io_cap_valid is TRUE) */
 } wiced_bt_dev_security_request_t;
 
 /** SMP key distribution mask */
@@ -674,6 +672,17 @@ typedef struct
     uint16_t max_ce_len;               /**< max connection event length preferred */
 } wiced_bt_ble_connection_param_request_t;
 
+typedef struct
+{
+    uint8_t err_code;                  /**< see #wiced_bt_smp_status_t, set 0 for success, otherwise error code */
+    wiced_bt_device_address_t bd_addr; /**< peer bd address */
+    uint8_t io_cap;                    /**< remote device IO capability */
+    uint8_t oob_data;                  /**< remote device OOB data flag */
+    uint8_t auth_req;                  /**< remote device authentication requirement */
+    uint8_t max_enc_key_size;          /**< remote device maximum encryption key size */
+    uint8_t init_keys;                 /**< keys to be distributed by initiator */
+    uint8_t resp_keys;                 /**< keys to be distributed by responder */
+} wiced_bt_ble_remote_pairing_request_t;
 
 /** LE Physical link update event related data */
 typedef struct
@@ -1112,6 +1121,12 @@ enum wiced_bt_management_evt_e
      */
     BTM_BLE_CONNECTION_PARAM_REQUEST_EVENT,        /* 42, 0x2A */
 
+    /**
+     * Event to notify remote pairing request for LE SMP pairing
+     * Event data: \ref wiced_bt_management_evt_data_t.remote_pairing_request
+     */
+    BTM_BLE_REMOTE_PAIRING_REQUEST_EVENT, /* 43, 0x2B */
+
 #if SMP_CATB_CONFORMANCE_TESTER == TRUE
     /**
      * The Secure Connections support information of the peer device.
@@ -1395,6 +1410,7 @@ typedef union
     uint16_t                                max_adv_data_len;                   /**< Data for #BTM_BLE_READ_MAX_ADV_DATA_LEN_EVENT*/
     wiced_bt_flow_spec_cmpl_evt_t           br_flow_spec_event;                 /**< Data for #BTM_BR_ACL_FLOW_SPEC_COMPLETE_EVENT*/
     wiced_bt_ble_connection_param_request_t ble_connection_param_request;       /**< Data for #BTM_BLE_CONNECTION_PARAM_REQUEST_EVENT  */
+    wiced_bt_ble_remote_pairing_request_t   remote_pairing_request;             /**< Data for #BTM_BLE_REMOTE_PAIRING_REQUEST_EVENT */
 #if SMP_CATB_CONFORMANCE_TESTER == TRUE
     wiced_bt_ble_sc_peer_info               smp_sc_peer_info;                   /* Data for #BTM_SMP_SC_PEER_INFO_EVT */
 #endif

@@ -13,6 +13,7 @@ var searchData=
   ['encryption',['encryption',['../structwiced__ble__biginfo__adv__report__t.html#a0af2c42fb326f072c7701e939ae253a3',1,'wiced_ble_biginfo_adv_report_t']]],
   ['encryption_5fstatus',['encryption_status',['../unionwiced__bt__management__evt__data__t.html#a9d21953e55a1a582f0ff357a625b5797',1,'wiced_bt_management_evt_data_t']]],
   ['er',['er',['../structwiced__bt__local__identity__keys__t.html#ac6e3ff909692540005f590411e7d14dc',1,'wiced_bt_local_identity_keys_t']]],
+  ['err_5fcode',['err_code',['../structwiced__bt__ble__remote__pairing__request__t.html#a90f4cb9e39e0787abdc1315fbc28e5cd',1,'wiced_bt_ble_remote_pairing_request_t']]],
   ['ev3',['ev3',['../structwiced__bt__dev__br__sco__packet__types__t.html#a5fac1d196c12455230ad7cf4669a83e5',1,'wiced_bt_dev_br_sco_packet_types_t']]],
   ['ev4',['ev4',['../structwiced__bt__dev__br__sco__packet__types__t.html#a83d60c7ea8c04545564334089a6b74c4',1,'wiced_bt_dev_br_sco_packet_types_t']]],
   ['ev5',['ev5',['../structwiced__bt__dev__br__sco__packet__types__t.html#a1158ad04be39c4e4a5db7631ee3a54c7',1,'wiced_bt_dev_br_sco_packet_types_t']]],

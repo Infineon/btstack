@@ -41,7 +41,7 @@ var group__wicedbt___channel_sounding =
       [ "max_main_mode_steps", "structwiced__ble__cs__config__t.html#a725dac82b87b8279bb95db28f06ad76b", null ],
       [ "main_mode_repetition", "structwiced__ble__cs__config__t.html#a1b5b44f5264e1420f426922cc568700f", null ],
       [ "mode_0_steps", "structwiced__ble__cs__config__t.html#a7b3665ef1a74356a4d798b7d95f8e7b6", null ],
-      [ "role", "structwiced__ble__cs__config__t.html#a5040846fc731ecab5b02569ca323b769", null ],
+      [ "role", "structwiced__ble__cs__config__t.html#a2956d292f70d3dbe9a72239cf5a9067a", null ],
       [ "rtt_type", "structwiced__ble__cs__config__t.html#a2caa2ecce7634e0748ebea6a2548ebeb", null ],
       [ "cs_sync_phy", "structwiced__ble__cs__config__t.html#aafc73b8f2fc35d8c51bfcc8d68d52376", null ],
       [ "channel_map", "structwiced__ble__cs__config__t.html#a57e609f1faf87f79e081dc3231292b40", null ],
@@ -76,7 +76,7 @@ var group__wicedbt___channel_sounding =
       [ "max_main_mode_steps", "structwiced__ble__cs__config__complete__t.html#a363c567536826a137197cf3020b04a59", null ],
       [ "main_mode_repetition", "structwiced__ble__cs__config__complete__t.html#a3da96bdfe01a331f4efac3773bd9bcb7", null ],
       [ "mode_0_steps", "structwiced__ble__cs__config__complete__t.html#a2031c1b3eb2e79df7b63df737bc1ebb5", null ],
-      [ "role", "structwiced__ble__cs__config__complete__t.html#a40f5d11519b1d202375f316c51a09a0e", null ],
+      [ "role", "structwiced__ble__cs__config__complete__t.html#a7c4b09d384bfbb11a8da06b0fb6c062f", null ],
       [ "rtt_type", "structwiced__ble__cs__config__complete__t.html#add44164e4e69e8578b4a22fcae9b60fa", null ],
       [ "cs_sync_phy", "structwiced__ble__cs__config__complete__t.html#a04e5a9ff5d09b43111a93e06ec451ab3", null ],
       [ "channel_map", "structwiced__ble__cs__config__complete__t.html#aaa670bbb2c1b726103bad77f6ede6b79", null ],
@@ -138,10 +138,15 @@ var group__wicedbt___channel_sounding =
     ] ],
     [ "WICED_BLE_CS_FAE_TABLE_SIZE", "group__wicedbt___channel_sounding.html#gaf113bf7f3b56b53c9b1dca83e9642913", null ],
     [ "WICED_BLE_CS_CHANNEL_MAP_SIZE", "group__wicedbt___channel_sounding.html#gab0268ef345c918adc4e27e86416c6723", null ],
+    [ "wiced_ble_cs_role_t", "group__wicedbt___channel_sounding.html#gae69c22118ea25ee753ef3e08b63b182e", null ],
     [ "wiced_ble_cs_fae_table_t", "group__wicedbt___channel_sounding.html#ga584a44054f58f0e9439fcc9e7d2dacbf", null ],
     [ "wiced_ble_cs_channel_map_t", "group__wicedbt___channel_sounding.html#gad91f105900373c133572b529f952d7c9", null ],
     [ "wiced_ble_cs_events_t", "group__wicedbt___channel_sounding.html#ga799ad3fb1671f4dfbbe83161175f93fe", null ],
     [ "wiced_ble_cs_events_cb_t", "group__wicedbt___channel_sounding.html#gad43348f75307986af6c6cfb1275f99d6", null ],
+    [ "wiced_ble_cs_role_e", "group__wicedbt___channel_sounding.html#ga732374cb7d4bf1d0f47eb0e9c4039ea7", [
+      [ "WICED_BLE_CS_ROLE_INITIATOR", "group__wicedbt___channel_sounding.html#gga732374cb7d4bf1d0f47eb0e9c4039ea7acb2781266902b250fbf3b78e3d26522e", null ],
+      [ "WICED_BLE_CS_ROLE_REFLECTOR", "group__wicedbt___channel_sounding.html#gga732374cb7d4bf1d0f47eb0e9c4039ea7ad3bfa5a4ddd4360da37a602a0ef1df79", null ]
+    ] ],
     [ "wiced_ble_cs_events_e", "group__wicedbt___channel_sounding.html#gae51b2cf135ccad014c56b4797eb2b606", [
       [ "WICED_BLE_CS_READ_LOCAL_CAPABILITIES_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a237d93729df7513b8f2c62b4320dc3a4", null ],
       [ "WICED_BLE_CS_READ_REMOTE_CAPABILITIES_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a65d3e013549c62512d639382ebec2c60", null ],

@@ -90,6 +90,7 @@ var searchData=
   ['btm_5fble_5fprivacy_5fmode_5fdevice',['BTM_BLE_PRIVACY_MODE_DEVICE',['../group__wicedbt___conn.html#gga209665fd7342f0f47610c5fec55910c1a698c582d2a341f8c28091de030d8ec92',1,'wiced_bt_ble_conn.h']]],
   ['btm_5fble_5fprivacy_5fmode_5fnetwork',['BTM_BLE_PRIVACY_MODE_NETWORK',['../group__wicedbt___conn.html#gga209665fd7342f0f47610c5fec55910c1a3e9b2b0718aefc1d10cb800c82bb2fdf',1,'wiced_bt_ble_conn.h']]],
   ['btm_5fble_5fread_5fmax_5fadv_5fdata_5flen_5fevent',['BTM_BLE_READ_MAX_ADV_DATA_LEN_EVENT',['../group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65abd036d090b923b16b710141dc6147bce',1,'wiced_bt_dev.h']]],
+  ['btm_5fble_5fremote_5fpairing_5frequest_5fevent',['BTM_BLE_REMOTE_PAIRING_REQUEST_EVENT',['../group__wicedbt___device_management.html#gga4a427fc37161f2041016d7936399be65a3bd1f4ec1bab0ab654a13b690a2ecf58',1,'wiced_bt_dev.h']]],
   ['btm_5fble_5fscan_5fmode_5factive',['BTM_BLE_SCAN_MODE_ACTIVE',['../group__wiced__bt__cfg.html#gga363c245dbaa273d5d2a3df18f7f24c64a11e13ff43acd03c0ef9d869e17b6bf86',1,'wiced_bt_cfg.h']]],
   ['btm_5fble_5fscan_5fmode_5fnone',['BTM_BLE_SCAN_MODE_NONE',['../group__wiced__bt__cfg.html#gga363c245dbaa273d5d2a3df18f7f24c64a985d759e30d319e92097e77dacc7d4fb',1,'wiced_bt_cfg.h']]],
   ['btm_5fble_5fscan_5fmode_5fpassive',['BTM_BLE_SCAN_MODE_PASSIVE',['../group__wiced__bt__cfg.html#gga363c245dbaa273d5d2a3df18f7f24c64a0283e0cf20a227a00c28896416382fb3',1,'wiced_bt_cfg.h']]],

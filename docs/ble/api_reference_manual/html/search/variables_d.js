@@ -23,6 +23,7 @@ var searchData=
   ['max_5fconsecutive_5fprocedures_5fsupported',['max_consecutive_procedures_supported',['../structwiced__ble__cs__capabilities__t.html#a9914f56c393a5088b27425659c604218',1,'wiced_ble_cs_capabilities_t']]],
   ['max_5fdb_5fservice_5fmodules',['max_db_service_modules',['../structwiced__bt__cfg__gatt__t.html#a21cfdfa5210bb9e6b976752169c69571',1,'wiced_bt_cfg_gatt_t']]],
   ['max_5featt_5fbearers',['max_eatt_bearers',['../structwiced__bt__cfg__gatt__t.html#adfc3d83edd6129ea480eaa147a521992',1,'wiced_bt_cfg_gatt_t']]],
+  ['max_5fenc_5fkey_5fsize',['max_enc_key_size',['../structwiced__bt__ble__remote__pairing__request__t.html#aae970c443d50a864dabbe2482b55ff63',1,'wiced_bt_ble_remote_pairing_request_t']]],
   ['max_5fext_5fadv_5fevents',['max_ext_adv_events',['../structwiced__ble__ext__adv__duration__config__t.html#a67646f08cc037d93c7923893889d430d',1,'wiced_ble_ext_adv_duration_config_t']]],
   ['max_5fheap_5fsize_5fused',['max_heap_size_used',['../structwiced__bt__heap__statistics__t.html#a7593dec8c12709cbd19068f3afb2a2dc',1,'wiced_bt_heap_statistics_t']]],
   ['max_5finterval',['max_interval',['../structwiced__bt__ble__connection__param__request__t.html#a2231f05510f391be77b0fc14a4d0f2ed',1,'wiced_bt_ble_connection_param_request_t']]],

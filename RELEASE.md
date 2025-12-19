@@ -7,6 +7,10 @@ Following are the limitations when using host based address resolution (only app
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
 ## Changelog
+## V5.0.1
+### Updates in BTSTACK5.0.1
+ - Minor changes in HCI tracing mechanism
+
 ## V5.0.0
 ### Updates in BTSTACK5.0.0
  - Control adding a device to the device resolving db. By default on update of device link keys after a SMP pairing session, the stack writes the new generated key to the device resolving list. To disable this set ``-DADD_TO_RESOLVING_LIST_ON_SMP_KEY_UPDATE=0``

@@ -16,7 +16,7 @@ var searchData=
   ['encryption_5fstatus',['encryption_status',['../unionwiced__bt__management__evt__data__t.html#a9d21953e55a1a582f0ff357a625b5797',1,'wiced_bt_management_evt_data_t']]],
   ['end_5fitem',['end_item',['../structwiced__bt__avrc__browse__get__items__cmd__t.html#a029aba5236ece02e043ffd80fe619a32',1,'wiced_bt_avrc_browse_get_items_cmd_t']]],
   ['er',['er',['../structwiced__bt__local__identity__keys__t.html#ac6e3ff909692540005f590411e7d14dc',1,'wiced_bt_local_identity_keys_t']]],
-  ['err_5fcode',['err_code',['../structwiced__bt__avdt__evt__hdr__t.html#afb076cd63c1e6c2dad74bf6413ac3037',1,'wiced_bt_avdt_evt_hdr_t']]],
+  ['err_5fcode',['err_code',['../structwiced__bt__avdt__evt__hdr__t.html#afb076cd63c1e6c2dad74bf6413ac3037',1,'wiced_bt_avdt_evt_hdr_t::err_code()'],['../structwiced__bt__ble__remote__pairing__request__t.html#a90f4cb9e39e0787abdc1315fbc28e5cd',1,'wiced_bt_ble_remote_pairing_request_t::err_code()']]],
   ['err_5fparam',['err_param',['../structwiced__bt__avdt__evt__hdr__t.html#a65ae64360b9d30cdcfe959f880bf20b8',1,'wiced_bt_avdt_evt_hdr_t']]],
   ['ev3',['ev3',['../structwiced__bt__dev__br__sco__packet__types__t.html#a5fac1d196c12455230ad7cf4669a83e5',1,'wiced_bt_dev_br_sco_packet_types_t']]],
   ['ev4',['ev4',['../structwiced__bt__dev__br__sco__packet__types__t.html#a83d60c7ea8c04545564334089a6b74c4',1,'wiced_bt_dev_br_sco_packet_types_t']]],

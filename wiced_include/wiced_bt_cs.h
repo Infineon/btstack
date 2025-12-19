@@ -54,6 +54,14 @@
  * @{
  */
 
+/** CS device role */
+enum wiced_ble_cs_role_e
+{
+    WICED_BLE_CS_ROLE_INITIATOR = 0, /**< CS Role Initiator */
+    WICED_BLE_CS_ROLE_REFLECTOR = 1  /**< CS Role Reflector */
+};
+typedef uint8_t wiced_ble_cs_role_t; /**< CS device role, see \ref wiced_ble_cs_role_e*/
+
 /** Structure for channel sounding capabilities */
 typedef struct
 {
@@ -208,9 +216,9 @@ typedef struct
      */
     uint8_t mode_0_steps;
     /**
-     * Set 0 - Initiator, 1 - Reflector
+     * CS role
      */
-    uint8_t role;
+    wiced_ble_cs_role_t role;
     /**
      * 0x00 RTT AA-only, 0x01 RTT with 32-bit sounding sequence, 0x02 RTT with 96-bit sounding sequence,
      * 0x03 RTT with 32-bit random sequence, 0x04 RTT with 64-bit random sequence,
@@ -363,9 +371,9 @@ typedef struct
      */
     uint8_t mode_0_steps;
     /**
-     * Set Value 0 - Initiator, Value 1 - Reflector
+     * CS role
      */
-    uint8_t role;
+    wiced_ble_cs_role_t role;
     /**
      * 0x00 RTT AA-only, 0x01 RTT with 32-bit sounding sequence, 0x02 RTT with 96-bit sounding sequence,
      * 0x03 RTT with 32-bit random sequence, 0x04 RTT with 64-bit random sequence,

@@ -86,8 +86,6 @@ var searchData=
   ['peer_5faddress',['peer_address',['../structwiced__ble__legacy__create__conn__t.html#a87426eae3ea77caa3b89b97a405674d1',1,'wiced_ble_legacy_create_conn_t']]],
   ['peer_5faddress_5ftype',['peer_address_type',['../structwiced__ble__legacy__create__conn__t.html#a8e4f79bbe60b9f566eebb940275203e0',1,'wiced_ble_legacy_create_conn_t']]],
   ['peer_5fbd_5faddr',['peer_bd_addr',['../structwiced__bt__ble__multi__adv__params__t.html#afce21fc6885a7da0b01bac3b97954836',1,'wiced_bt_ble_multi_adv_params_t']]],
-  ['peer_5fio_5fcap',['peer_io_cap',['../structwiced__bt__dev__security__request__t.html#a90c2bad844cc7a4d99b67e1b2edfe7cf',1,'wiced_bt_dev_security_request_t']]],
-  ['peer_5fio_5fcap_5fvalid',['peer_io_cap_valid',['../structwiced__bt__dev__security__request__t.html#a3ced2b1bf35bda15b2978f6af5e65e57',1,'wiced_bt_dev_security_request_t']]],
   ['peer_5fmtu',['peer_mtu',['../structwiced__bt__avdt__open__t.html#a7c781076961c6a5cb61f82ed56cfcae3',1,'wiced_bt_avdt_open_t']]],
   ['peer_5foob_5fdata',['peer_oob_data',['../structwiced__bt__smp__sc__oob__data__t.html#a3f97cda0c87662b25aecbf7a674fe64f',1,'wiced_bt_smp_sc_oob_data_t']]],
   ['pending_5fevents',['pending_events',['../structwiced__bt__gatt__operation__complete__t.html#abeaabd24870bbe8bb1caf266beea1d97',1,'wiced_bt_gatt_operation_complete_t']]],
