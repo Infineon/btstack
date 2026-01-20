@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2025, Cypress Semiconductor Corporation or
+ * Copyright 2016-2026, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -613,7 +613,9 @@ int avrc_read_name_from_stream(uint8_t *p_name_stream, uint16_t stream_len, wice
  * This function set the data receive buffer in stack.
  *
  * @param[in]       handle              : AVRC  connection handle
- * @param[in]       p_drb               : pointer to the buffer
+ * @param[in]       p_drb               : Pointer to the Data Reception Buffer (DRB) to receive peer's data.
+ *   @note It is the application's responsibility to ensure that the DRB of size >= (@payload_len + #DRB_OVERHEAD_SIZE) is properly allocated. See @ref tDRB for details.
+ *   @note The DRB will be used to store incoming data from the peer device and can be released by the application upon receiving @p_unreg_cb callback registered with this API
  * @param[out]      payload_len         :  valid length of buffer pointed by \p p_drb
  * @param[out]      p_unreg_cb          :  Callback function to release the  DRB pointed by \p p_drb
  *

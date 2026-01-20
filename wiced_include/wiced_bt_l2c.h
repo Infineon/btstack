@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2025, Cypress Semiconductor Corporation or
+ * Copyright 2016-2026, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -674,7 +674,9 @@ wiced_bool_t wiced_bt_l2cap_ecrb_deregister(uint16_t psm);
  *  \ref wiced_bt_cfg_br_t.br_max_rx_pdu_size for LE and BR/EDR transports respectively
  * @param[in] num_channels : Number of channels to be created
  * @param[in] p_rx_drb_list: list of the allocated \ref tDRB 's, one for each \p num_channels
- * @note: the size of DRB allocated must be >= \p our_rx_mtu
+ *      @note The application is expected to allocate each DRB in the list of size >= ( \p our_rx_mtu bytes + #DRB_OVERHEAD_SIZE)
+ *      @note Upon connection termination or when the buffer is no longer needed, the stack will invoke the registered release callback (\ref wiced_bt_l2cap_ecrb_cb_ptrs_t.pL2CA_ReleaseDRB_Cb) for each DRB.
+ *      @note Ensure that the DRB pointers correspond to the non-zero CIDs in \p lcid_list
  * @param[out] lcid_list: list of cids (channel ids) which will be started
  *
  * @return number of channels which will be started
@@ -1166,13 +1168,15 @@ wiced_bool_t wiced_bt_l2cap_le_deregister (uint16_t le_psm);
  * @param[in] p_bd_addr           Pointer to the Bluetooth device address of the remote device.
  * @param[in] bd_addr_type        Type of Bluetooth address. Must be either BLE_ADDR_PUBLIC or BLE_ADDR_RANDOM.
  * @param[in] conn_mode           Connection mode. Must be either BLE_CONN_MODE_HIGH_DUTY or BLE_CONN_MODE_LOW_DUTY.
- * @param[in] rx_mtu              Receive Maximum Transmission Unit (MTU) value.
- *                                Must be appropriately sized based on available memory.
+ * @param[in] rx_mtu              Receive Maximum Transmission Unit (MTU) value, the size of the memory block pointed by p_rx_drb
  *                                @note Each received packet can be up to @p rx_mtu bytes in length.
  * @param[in] req_security        Required security level for the connection.
  * @param[in] req_encr_key_size   Required encryption key size.
  * @param[in] p_rx_drb            Pointer to the Data Reception Buffer (DRB) to receive peer's data.
- *                                MUST be large enough to hold RX MTU data. See @ref tDRB for details.
+ *                                @note It is the application's responsibility to ensure that the DRB of size >= (@p rx_mtu + #DRB_OVERHEAD_SIZE) is properly allocated. See @ref tDRB for details.
+ *                                @note The DRB will be used to store incoming data from the peer device and can be released by
+ *                                      the application upon receiving \ref wiced_bt_l2cap_le_appl_information_t.le_release_drb_cb registered
+ *                                      with the call to \ref wiced_bt_l2cap_le_register.
  *
  * @note The @p p_rx_drb can be released by the application upon receiving a callback with the
  *       @ref wiced_bt_l2cap_le_appl_information_t.le_release_drb_cb of the @p p_cb_information

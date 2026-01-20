@@ -7,6 +7,11 @@ Following are the limitations when using host based address resolution (only app
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
 ## Changelog
+## V5.0.2
+### Updates in BTSTACK5.0.2
+ - Fixed issue when sending consecutive GATT_CMD_WRITE's
+ - Fixed setting the preferred payload octets that the GATT server local controller should include in a single LL Data PDU for the connection based on the negotiated MTU
+
 ## V5.0.1
 ### Updates in BTSTACK5.0.1
  - Minor changes in HCI tracing mechanism

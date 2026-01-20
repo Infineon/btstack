@@ -1,5 +1,5 @@
 /*
- * Copyright 2021-2025, Cypress Semiconductor Corporation or
+ * Copyright 2021-2026, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related

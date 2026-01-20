@@ -565,7 +565,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>: the size of DRB allocated must be &gt;= <code>our_rx_mtu</code> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The application is expected to allocate each DRB in the list of size &gt;= ( <code>our_rx_mtu</code> bytes + <a class="el" href="group__bt__types.html#ga76cc4e51e261caae3879751a959b97d6" title="length and offset ">DRB_OVERHEAD_SIZE</a>) </dd>
+<dd>
+Upon connection termination or when the buffer is no longer needed, the stack will invoke the registered release callback (<a class="el" href="structwiced__bt__l2cap__ecrb__cb__ptrs__t.html#a0c2c9eab2e2f788a668a00368dfa80e5">wiced_bt_l2cap_ecrb_cb_ptrs_t::pL2CA_ReleaseDRB_Cb</a>) for each DRB. </dd>
+<dd>
+Ensure that the DRB pointers correspond to the non-zero CIDs in <code>lcid_list</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">lcid_list</td><td>list of cids (channel ids) which will be started</td></tr>

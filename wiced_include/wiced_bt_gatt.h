@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2025, Cypress Semiconductor Corporation or
+ * Copyright 2016-2026, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -719,12 +719,12 @@ enum t_gatt_csf_assignments {
 typedef uint8_t wiced_bt_gatt_csf_bits_t;
 
 /**< Data Receive Buffer
- *  Data Receive Buffer or DRB is a memory area of type #tDRB and size(channel MTU size + #DRB_OVERHEAD_SIZE).
+ * Data Receive Buffer or DRB is a memory area of type #tDRB and size(channel MTU size + #DRB_OVERHEAD_SIZE).
  * The DRB buffer is allocated by the application during channel creation.
  * The allocated DRBs are passed to the GATT layer when establishing an EATT connection.
  *       a) As a connection initiator with \ref wiced_bt_gatt_eatt_connect
  *       b) As a connection responder with \ref wiced_bt_gatt_eatt_connection_response_t
- * Application has to allocate one DRB per GATT bearer of size equal to that of desired local MTU.
+ * The application can free the allocated DRB after receiving the callback \ref wiced_bt_gatt_eatt_callbacks_t.eatt_release_drb
 */
 typedef tDRB * wiced_bt_eatt_drbs[EATT_CHANNELS_PER_TRANSACTION];                /**< list of Data Receive Blocks */
 
@@ -1027,7 +1027,6 @@ typedef struct
     wiced_bt_gatt_eatt_on_reconfigure_ind_t  eatt_reconfigure_ind_cb; /**< callback upon GATT EATT reconnection complete */
     wiced_bt_gatt_eatt_release_drb_t         eatt_release_drb;        /**< callback upon releasing the DRB */
 } wiced_bt_gatt_eatt_callbacks_t;
-
 
 /**
  * @}

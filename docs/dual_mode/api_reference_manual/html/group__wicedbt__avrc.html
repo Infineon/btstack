@@ -4618,7 +4618,15 @@ Events that can be registered for notifications</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>: AVRC connection handle </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_drb</td><td>: pointer to the buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_drb</td><td>: Pointer to the Data Reception Buffer (DRB) to receive peer's data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>It is the application's responsibility to ensure that the DRB of size &gt;= ( + <a class="el" href="group__bt__types.html#ga76cc4e51e261caae3879751a959b97d6" title="length and offset ">DRB_OVERHEAD_SIZE</a>) is properly allocated. See <a class="el" href="structt_d_r_b.html">tDRB</a> for details. </dd>
+<dd>
+The DRB will be used to store incoming data from the peer device and can be released by the application upon receiving  callback registered with this API </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">payload_len</td><td>: valid length of buffer pointed by <code>p_drb</code> </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">p_unreg_cb</td><td>: Callback function to release the DRB pointed by <code>p_drb</code> </td></tr>
   </table>

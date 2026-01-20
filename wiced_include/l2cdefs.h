@@ -1,5 +1,5 @@
 /*
- * Copyright 2019-2025, Cypress Semiconductor Corporation or
+ * Copyright 2019-2026, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -412,9 +412,9 @@
 #define L2CAP_CONN_NO_RESOURCES      4     /**< Connection NO Resource */
 #define L2CAP_CONN_BAD_CTLR_ID       5     /**< Bad Controller ID */
 
-/**  @note AMP related */
+/**  @note LE COC related */
 #define L2CAP_BLE_CONN_BAD_AUTHENT      5     /**< LE Connection Bad Authentication */
-#define L2CAP_BLE_CONN_BAD_AUTHORIZ     6     /**< LE Connection Bad Autherization */
+#define L2CAP_BLE_CONN_BAD_AUTHORIZ     6     /**< LE Connection Bad Authorization */
 #define L2CAP_BLE_CONN_BAD_KEY_SIZE     7     /**< LE Connection Bad key size */
 #define L2CAP_BLE_CONN_BAD_ENCRYPT      8     /**< LE Connection Bad Encryption */
 #define L2CAP_BLE_CONN_INVALID_CID      9     /**< Invalid Source CID */
@@ -445,7 +445,7 @@
 #define     L2CAP_ECRB_ALL_CONNS_REFUSED        0x0002      /**< All Connections Refused */
 #define     L2CAP_ECRB_SOME_CONNS_REFUSED       0x0004      /**< Some Connections Refused */
 #define     L2CAP_ECRB_INSUFF_AUTHENTICATION    0x0005      /**< Insufficient Authentication */
-#define     L2CAP_ECRB_INSUFF_AUTHORIZATION     0x0006      /**< Insufficient Autherization */
+#define     L2CAP_ECRB_INSUFF_AUTHORIZATION     0x0006      /**< Insufficient Authorization */
 #define     L2CAP_ECRB_INSUFF_KEY_SIZE          0x0007      /**< Insufficient Key size */
 #define     L2CAP_ECRB_INSUFF_ENCRYPTION        0x0008      /**< Insufficient Encryption */
 #define     L2CAP_ECRB_INVALID_SOURCE_CID       0x0009      /**< Invalid Source CID */

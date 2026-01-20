@@ -16855,7 +16855,7 @@ uint16_t
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'msg_no_rsp';
       sec-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      sec-mem-desc-line = '2018';
+      sec-mem-desc-line = '2017';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 total number of queued notifications/write cmd packets in queue
 _EnD_oF_dEf_TeXt_;
@@ -16865,7 +16865,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-  cp-fileline  = '2017';
+  cp-fileline  = '2016';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Structure to hold the outstanding message counts.
 _EnD_oF_dEf_TeXt_;
@@ -77358,12 +77358,12 @@ GATT Client Support features.
 _EnD_oF_dEf_TeXt_;
       typedef-mem-documentation = <<_EnD_oF_dEf_TeXt_
   Data Receive Buffer
- Data Receive Buffer or DRB is a memory area of type #tDRB and size(channel MTU size + #DRB_OVERHEAD_SIZE).
+Data Receive Buffer or DRB is a memory area of type #tDRB and size(channel MTU size + #DRB_OVERHEAD_SIZE).
 The DRB buffer is allocated by the application during channel creation.
 The allocated DRBs are passed to the GATT layer when establishing an EATT connection.
       a) As a connection initiator with \ref wiced_bt_gatt_eatt_connect
       b) As a connection responder with \ref wiced_bt_gatt_eatt_connection_response_t
-Application has to allocate one DRB per GATT bearer of size equal to that of desired local MTU.
+The application can free the allocated DRB after receiving the callback \ref wiced_bt_gatt_eatt_callbacks_t.eatt_release_drb
 _EnD_oF_dEf_TeXt_;
     }; /* typedef-member */
     typedef-member = {
@@ -77906,7 +77906,7 @@ void
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1067';
+      func-mem-desc-line = '1066';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Enables GATT database hashing calculations on the server.
 _EnD_oF_dEf_TeXt_;
@@ -77933,7 +77933,7 @@ void
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1075';
+      func-mem-desc-line = '1074';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Enables code for enabling and checking data signing on the server and client.
 _EnD_oF_dEf_TeXt_;
@@ -77981,7 +77981,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_app_ctxt';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1114';
+      func-mem-desc-line = '1113';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This API will send a long (1 upto (MTU -3) bytes) indication to the client for the specified
  handle with a persistent buffer in \p p_app_buffer.
@@ -78044,7 +78044,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_app_ctxt';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1138';
+      func-mem-desc-line = '1137';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This API will send a long (1 upto (MTU -3) bytes) notification to the client for the
 specified handle with a persistent buffer in \p p_app_buffer.
@@ -78101,7 +78101,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_app_ctxt';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1163';
+      func-mem-desc-line = '1162';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This API will send a long (1 upto (MTU -1) bytes) multiple variable length notification to
 the client with a persistent buffer in \p p_app_buffer.
@@ -78154,7 +78154,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'hash';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1192';
+      func-mem-desc-line = '1191';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Initialize the GATT database
 (Please refer @ref GATT_DB_MACROS "Service and Characteristic macros" for
@@ -78202,7 +78202,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'hash';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1216';
+      func-mem-desc-line = '1215';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Add a service module to the database.
 _EnD_oF_dEf_TeXt_;
@@ -78248,7 +78248,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'hash';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1232';
+      func-mem-desc-line = '1231';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Remove the service module from the database.
 _EnD_oF_dEf_TeXt_;
@@ -78291,7 +78291,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'my_mtu';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1245';
+      func-mem-desc-line = '1244';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Server API to respond to a MTU request from the client.
 _EnD_oF_dEf_TeXt_;
@@ -78344,7 +78344,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_app_ctxt';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1268';
+      func-mem-desc-line = '1267';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Server API to respond to a read request from the client
 This API can be used to respond to \ref GATT_REQ_READ and \ref GATT_REQ_READ_BLOB request.
@@ -78415,7 +78415,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_app_ctxt';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1294';
+      func-mem-desc-line = '1293';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Server API to respond to a read by type request from the client
 This API can be used to respond to \ref GATT_REQ_READ_BY_TYPE
@@ -78478,7 +78478,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_app_ctxt';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1319';
+      func-mem-desc-line = '1318';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Server API to respond to read multiple request from the client
 This API can be used to respond to \ref GATT_REQ_READ_MULTI or \ref GATT_REQ_READ_MULTI_VAR_LENGTH
@@ -78529,7 +78529,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'handle';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1337';
+      func-mem-desc-line = '1336';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Server API to respond to a write request from the client
 This API can be used to respond to \ref GATT_REQ_WRITE
@@ -78598,7 +78598,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_app_ctxt';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1368';
+      func-mem-desc-line = '1367';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Server API to respond to a prepare write request from the client
 This API can be used to respond to \ref GATT_REQ_PREPARE_WRITE
@@ -78651,7 +78651,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'opcode';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1386';
+      func-mem-desc-line = '1385';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Server API to respond to an execute write request from the client
 The application receives a callback on the registered \ref wiced_bt_gatt_cback_t with the
@@ -78701,7 +78701,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'status';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1400';
+      func-mem-desc-line = '1399';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Server API to send an error response to any of the received requests on
 encountering an error in the command.
@@ -78743,7 +78743,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_uuid';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1414';
+      func-mem-desc-line = '1413';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function on the server to find a handle matching a uuid in a range.
 _EnD_oF_dEf_TeXt_;
@@ -78777,7 +78777,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'csfs';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1435';
+      func-mem-desc-line = '1434';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Set the remote client supported features upon write and for bonded device after
  reconnect as read from NVRAM.
@@ -78811,7 +78811,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'csfs';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1448';
+      func-mem-desc-line = '1447';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Get the remote client supported features.
 _EnD_oF_dEf_TeXt_;
@@ -78844,7 +78844,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'caching_status';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1462';
+      func-mem-desc-line = '1461';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function     wiced_bt_gatt_get_peer_caching_status
 Can be used by the server application to read the robust caching status of the peer.
@@ -78878,7 +78878,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'status';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1478';
+      func-mem-desc-line = '1477';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This function is used by the application to set peer's caching state.
 _EnD_oF_dEf_TeXt_;
@@ -78916,7 +78916,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mtu';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1500';
+      func-mem-desc-line = '1499';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Configure the ATT MTU size for a connection on an LE transport.
 _EnD_oF_dEf_TeXt_;
@@ -78959,7 +78959,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_discovery_param';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1514';
+      func-mem-desc-line = '1513';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Start an attribute discovery on an ATT server.
 _EnD_oF_dEf_TeXt_;
@@ -79020,7 +79020,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'auth_req';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1537';
+      func-mem-desc-line = '1536';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Read from remote ATT server.
 _EnD_oF_dEf_TeXt_;
@@ -79093,7 +79093,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'auth_req';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1568';
+      func-mem-desc-line = '1567';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Read by type from remote ATT server.
 _EnD_oF_dEf_TeXt_;
@@ -79160,7 +79160,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'auth_req';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1590';
+      func-mem-desc-line = '1589';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Read multiple from remote ATT server.
 _EnD_oF_dEf_TeXt_;
@@ -79219,7 +79219,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_app_ctxt';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1615';
+      func-mem-desc-line = '1614';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Write to remote ATT server.
 _EnD_oF_dEf_TeXt_;
@@ -79265,7 +79265,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'is_execute';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1631';
+      func-mem-desc-line = '1630';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Send Execute Write request to remote ATT server.
 _EnD_oF_dEf_TeXt_;
@@ -79298,7 +79298,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'handle';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1643';
+      func-mem-desc-line = '1642';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Send a handle value confirmation to remote ATT server.
 _EnD_oF_dEf_TeXt_;
@@ -79345,7 +79345,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'is_direct';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1673';
+      func-mem-desc-line = '1672';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Open GATT over LE connection to a remote device
 Result is notified using <b> GATT_CONNECTION_STATUS_EVT </b> of #wiced_bt_gatt_cback_t.
@@ -79376,7 +79376,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'bd_addr';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1690';
+      func-mem-desc-line = '1689';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Open GATT over BR/EDR connection to a remote device
 Result is notified using <b> GATT_CONNECTION_STATUS_EVT </b> of #wiced_bt_gatt_cback_t.
@@ -79404,7 +79404,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_gatt_cback';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1701';
+      func-mem-desc-line = '1700';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Register an application callback for GATT.
 _EnD_oF_dEf_TeXt_;
@@ -79436,7 +79436,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'is_direct';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1714';
+      func-mem-desc-line = '1713';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Cancel initiating GATT connection.
 _EnD_oF_dEf_TeXt_;
@@ -79464,7 +79464,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'conn_id';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1726';
+      func-mem-desc-line = '1725';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Close the specified GATT connection.
 _EnD_oF_dEf_TeXt_;
@@ -79498,7 +79498,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'max_eatt_bearers';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1745';
+      func-mem-desc-line = '1744';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Register an application callback for GATT.
 _EnD_oF_dEf_TeXt_;
@@ -79555,7 +79555,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'conn_id_list_out';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1762';
+      func-mem-desc-line = '1761';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 API to create the enhanced gatt channels, using the legacy/unenhanced connection id.
 _EnD_oF_dEf_TeXt_;
@@ -79599,7 +79599,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'conn_id_list_out';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1779';
+      func-mem-desc-line = '1778';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 API to create the respond to the enhanced gatt channels connection indication.
 _EnD_oF_dEf_TeXt_;
@@ -79653,7 +79653,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'ppDRBs';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1797';
+      func-mem-desc-line = '1796';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 API the reconfigure the enhanced gatt channels.
 _EnD_oF_dEf_TeXt_;
@@ -79702,7 +79702,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_addr_type';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1815';
+      func-mem-desc-line = '1814';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 API to get the bluetooth device address of the connected gatt conn_id.
 _EnD_oF_dEf_TeXt_;
@@ -79735,7 +79735,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'conn_id';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1830';
+      func-mem-desc-line = '1829';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 API to get the ACL handle of the connected gatt conn_id.
 _EnD_oF_dEf_TeXt_;
@@ -79764,7 +79764,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'conn_id';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1841';
+      func-mem-desc-line = '1840';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 API to validate connected gatt conn_id.
 _EnD_oF_dEf_TeXt_;
@@ -79796,7 +79796,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_right';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1849';
+      func-mem-desc-line = '1848';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to compare UUIDs.
 _EnD_oF_dEf_TeXt_;
@@ -79822,7 +79822,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'conn_id';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1857';
+      func-mem-desc-line = '1856';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to get the configured ATT bearer mtu.
 _EnD_oF_dEf_TeXt_;
@@ -79859,7 +79859,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'opcode';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1871';
+      func-mem-desc-line = '1870';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to check whether the attribute referred to by \p handle
 has the permission to perform actions required by \p opcode received in the
@@ -79920,7 +79920,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_attr';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1888';
+      func-mem-desc-line = '1887';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to copy a partial read by type response to the buffer.
 _EnD_oF_dEf_TeXt_;
@@ -79982,7 +79982,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_attr';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1905';
+      func-mem-desc-line = '1904';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to put the handle, data into the multi handle response stream.
 _EnD_oF_dEf_TeXt_;
@@ -80037,7 +80037,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_data_in_rsp';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1920';
+      func-mem-desc-line = '1919';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to get the variable length handle data from the read multi var length response stream.
 _EnD_oF_dEf_TeXt_;
@@ -80073,7 +80073,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'handle_index';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1931';
+      func-mem-desc-line = '1930';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to get the handle at index from the handle stream.
 _EnD_oF_dEf_TeXt_;
@@ -80112,7 +80112,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'handle';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1942';
+      func-mem-desc-line = '1941';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to put the handle into the handle stream.
 _EnD_oF_dEf_TeXt_;
@@ -80146,7 +80146,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_len';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1952';
+      func-mem-desc-line = '1951';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to get the handle value and handle value len of internal DB handles.
 _EnD_oF_dEf_TeXt_;
@@ -80179,7 +80179,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_fragments_with_controller';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1962';
+      func-mem-desc-line = '1961';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to get the number of packets queued to tx.
 _EnD_oF_dEf_TeXt_;
@@ -80218,7 +80218,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_disc_data';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1979';
+      func-mem-desc-line = '1978';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to read local registered db by type, by iterating to the next in a loop
 database entry.
@@ -80254,7 +80254,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_db_entry';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '1991';
+      func-mem-desc-line = '1990';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to return the 16 bit UUID of the database entry in the local database
  This will return a attribute UUID in the entry.
@@ -80283,7 +80283,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_db_entry';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '2000';
+      func-mem-desc-line = '1999';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to return the data of the database entry in the local database.
 _EnD_oF_dEf_TeXt_;
@@ -80309,7 +80309,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'count';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '2011';
+      func-mem-desc-line = '2010';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 API to set the maximum queue size for GATT packets.
 _EnD_oF_dEf_TeXt_;
@@ -80341,7 +80341,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_count';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_gatt.h';
-      func-mem-desc-line = '2030';
+      func-mem-desc-line = '2029';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 API to get the current outstanding queued number of packets which are held by the GATT layer.
 _EnD_oF_dEf_TeXt_;
@@ -80800,7 +80800,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_fragments_with_controller';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_l2c.h';
-      func-mem-desc-line = '1293';
+      func-mem-desc-line = '1297';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Utility function to get the number of packets queued to tx.
 _EnD_oF_dEf_TeXt_;
@@ -80828,7 +80828,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'p_subrate';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_l2c.h';
-      func-mem-desc-line = '1302';
+      func-mem-desc-line = '1306';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function to request a change in the link subrate parameters.
 _EnD_oF_dEf_TeXt_;
@@ -90367,20 +90367,21 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = WICED_BT_UUID_VOLUME_OFFSET_CONTROL; enum-value = '= 0x1845'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_COORDINATE_SET_IDENTIFICATION; enum-value = '= 0x1846'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_MEDIA_CONTROL; enum-value = '= 0x1848'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_GENERIC_MEDIA_CONTROL; enum-value = '= 0X1849'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_GENERIC_MEDIA_CONTROL; enum-value = '= 0x1849'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_TELEPHONE_BEARER; enum-value = '= 0x184B'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_GENERIC_TELEPHONE_BEARER; enum-value = '= 0X184C'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_GENERIC_TELEPHONE_BEARER; enum-value = '= 0x184C'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_MICROPHONE_CONTROL; enum-value = '= 0x184D'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_AUDIO_STREAM_CONTROL; enum-value = '= 0x184E'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_BROADCAST_AUDIO_SCAN; enum-value = '= 0X184F'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_BROADCAST_AUDIO_SCAN; enum-value = '= 0x184F'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_PUBLISHED_AUDIO_CAPABILITY; enum-value = '= 0x1850'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_BASIC_AUDIO_ANNOUNCEMENT; enum-value = '= 0X1851'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_BASIC_AUDIO_ANNOUNCEMENT; enum-value = '= 0x1851'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_BROADCAST_AUDIO_ANNOUNCEMENT; enum-value = '= 0x1852'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_COMMON_AUDIO; enum-value = '= 0X1853'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_HEARING_ACCESS; enum-value = '= 0X1854'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_TMAS; enum-value = '= 0X1855'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_PUBLIC_BROADCAST_ANNOUNCEMENT; enum-value = '= 0X1856'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_TELEPHPONE_AND_MEDIA_AUDIO; enum-value = '= 0X1857'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_COMMON_AUDIO; enum-value = '= 0x1853'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_HEARING_ACCESS; enum-value = '= 0x1854'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_TMAS; enum-value = '= 0x1855'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_PUBLIC_BROADCAST_ANNOUNCEMENT; enum-value = '= 0x1856'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_TELEPHONE_AND_MEDIA_AUDIO; enum-value = '= 0x1857'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_GAMING_AUDIO_SERVICE; enum-value = '= 0x1858'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_RANGING_SERVICE; enum-value = '= 0x185B'; };
       enum-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_uuid.h';
       enum-mem-desc-line = '22';
@@ -90401,7 +90402,7 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = UUID_ATTRIBUTE_SECONDARY_SERVICE; enum-value = '= 0x2801'; };
       enum-mem-enum = { enum-name = UUID_ATTRIBUTE_INCLUDE; enum-value = '= 0x2802'; };
       enum-mem-enum = { enum-name = UUID_ATTRIBUTE_CHARACTERISTIC; enum-value = '= 0x2803'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_TMAP_ROLE; enum-value = '= 0X2B51'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_TMAP_ROLE; enum-value = '= 0x2B51'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_INPUT_STATE; enum-value = '= 0x2B77'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_GAIN_SETTING_ATTRIBUTE; enum-value = '= 0x2B78'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_INPUT_TYPE; enum-value = '= 0x2B79'; };
@@ -90459,31 +90460,36 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = WICED_BT_UUID_TBS_CALL_FRIENDLY_NAME; enum-value = '= 0x2BC2'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_MICS_MUTE_STATE; enum-value = '= 0x2BC3'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_ASCS_SINK_ASE; enum-value = '= 0x2BC4'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_ASCS_SOURCE_ASE; enum-value = '= 0X2BC5'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_ASCS_ASE_CONTROL_POINT; enum-value = '= 0X2BC6'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_BASS_CONTROL_POINT; enum-value = '= 0X2BC7'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_BASS_BROADCAST_RECEIVE_STATE; enum-value = '= 0X2BC8'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_SINK_PAC; enum-value = '= 0X2BC9'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_SINK_AUDIO_LOCATIONS; enum-value = '= 0X2BCA'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_SOURCE_PAC; enum-value = '= 0X2BCB'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_SOURCE_AUDIO_LOCATIONS; enum-value = '= 0X2BCC'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_AUDIO_CONTEXT_AVAILABILITY; enum-value = '= 0X2BCD'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_SUPPORTED_AUDIO_CONTEXT; enum-value = '= 0X2BCE'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_ASCS_SOURCE_ASE; enum-value = '= 0x2BC5'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_ASCS_ASE_CONTROL_POINT; enum-value = '= 0x2BC6'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_BASS_CONTROL_POINT; enum-value = '= 0x2BC7'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_BASS_BROADCAST_RECEIVE_STATE; enum-value = '= 0x2BC8'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_SINK_PAC; enum-value = '= 0x2BC9'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_SINK_AUDIO_LOCATIONS; enum-value = '= 0x2BCA'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_SOURCE_PAC; enum-value = '= 0x2BCB'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_SOURCE_AUDIO_LOCATIONS; enum-value = '= 0x2BCC'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_AUDIO_CONTEXT_AVAILABILITY; enum-value = '= 0x2BCD'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_PACS_SUPPORTED_AUDIO_CONTEXT; enum-value = '= 0x2BCE'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_HAS_HEARING_AID_FEATURES; enum-value = '= 0x2BDA'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_HAS_HEARING_AID_PRESET_CONTROL_POINT; enum-value = '= 0x2BDB'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_HAS_HEARING_AID_ACTIVE_PRESET_INDEX; enum-value = '= 0x2BDC'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_RAAS_SELECTABLE_AREP; enum-value = '= 0X8FC0'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_RAAS_CFG_AUDIO_ROUTE_LIST; enum-value = '= 0X8FC1'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_RAAS_CFG_AUDIO_ROUTE_CONTENT_TYPE; enum-value = '= 0X8FC2'; };
-      enum-mem-enum = { enum-name = WICED_BT_UUID_RAAS_MODIFY_AUDIO_ROUTE_CONTROL_POINT; enum-value = '= 0X8FC3'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_GMAP_ROLE; enum-value = '= 0x2C00'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_GMAP_UGG_FEATURES; enum-value = '= 0x2C01'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_GMAP_UGT_FEATURES; enum-value = '= 0x2C02'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_GMAP_BGS_FEATURES; enum-value = '= 0x2C03'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_GMAP_BGR_FEATURES; enum-value = '= 0x2C04'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_RAS_FEATURES; enum-value = '= 0x2C14'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_RAS_REAL_TIME_RANGING_DATA; enum-value = '= 0x2C15'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_RAS_ON_DEMAND_RANGING_DATA; enum-value = '= 0x2C16'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_RAS_CONTROL_POINT; enum-value = '= 0x2C17'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_RAS_RANGING_DATA_READY; enum-value = '= 0x2C18'; };
       enum-mem-enum = { enum-name = WICED_BT_UUID_RAS_RANGING_DATA_OVERWRITTEN; enum-value = '= 0x2C19'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_RAAS_SELECTABLE_AREP; enum-value = '= 0x8FC0'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_RAAS_CFG_AUDIO_ROUTE_LIST; enum-value = '= 0x8FC1'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_RAAS_CFG_AUDIO_ROUTE_CONTENT_TYPE; enum-value = '= 0x8FC2'; };
+      enum-mem-enum = { enum-name = WICED_BT_UUID_RAAS_MODIFY_AUDIO_ROUTE_CONTROL_POINT; enum-value = '= 0x8FC3'; };
       enum-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_uuid.h';
-      enum-mem-desc-line = '86';
+      enum-mem-desc-line = '87';
       enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 UUID per Bluetooth Assigned numbers.
 _EnD_oF_dEf_TeXt_;
@@ -90513,7 +90519,7 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = UUID_DESCRIPTOR_ENVIRONMENT_SENSING_TRIGGER_SETTING; enum-value = '= 0x290D'; };
       enum-mem-enum = { enum-name = UUID_DESCRIPTOR_TIME_TRIGGER_SETTING; enum-value = '= 0x290E'; };
       enum-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_uuid.h';
-      enum-mem-desc-line = '190';
+      enum-mem-desc-line = '198';
       enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Descriptor UUID per Bluetooth Assigned numbers.
 _EnD_oF_dEf_TeXt_;
@@ -90729,7 +90735,7 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = UUID_CHARACTERISTIC_ENCRYPTED_DATA_KEY_MATERIAL; enum-value = '= 0x2B88'; };
       enum-mem-enum = { enum-name = UUID_CHARACTERISTIC_LE_GATT_SECURITY_LEVELS; enum-value = '= 0x2BF5'; };
       enum-mem-desc-file = '/builds/repo/btstack/wiced_include/wiced_bt_uuid.h';
-      enum-mem-desc-line = '211';
+      enum-mem-desc-line = '219';
       enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Characteristic UUID per Bluetooth Assigned numbers.
 _EnD_oF_dEf_TeXt_;

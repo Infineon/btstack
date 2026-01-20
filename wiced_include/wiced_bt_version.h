@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Cypress Semiconductor Corporation or
+ * Copyright 2026, Cypress Semiconductor Corporation or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -37,7 +37,7 @@
 
 #define WICED_BTSTACK_VERSION_MAJOR    5      /**< Stack Major version */
 #define WICED_BTSTACK_VERSION_MINOR    0      /**< Stack Minor version */
-#define WICED_BTSTACK_VERSION_PATCH    1      /**< Stack Patch version */
+#define WICED_BTSTACK_VERSION_PATCH    2      /**< Stack Patch version */
 
 /** Building the btstack version */
 #define BTSTACK_VERSION_BUILD(major, minor, patch) ((((major)&0xff) << 24) | (((minor)&0xff) << 16) | ((patch)&0xffff))

@@ -223,7 +223,7 @@ L2CAP connection result codes</h2></td></tr>
 <tr class="separator:ga87beab594369ecec827a5b118d07c344"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54c8b0caa348bca488bc7f8d5e2f9c8c"><td class="memItemLeft" align="right" valign="top"><a id="ga54c8b0caa348bca488bc7f8d5e2f9c8c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga54c8b0caa348bca488bc7f8d5e2f9c8c">L2CAP_BLE_CONN_BAD_AUTHORIZ</a>&#160;&#160;&#160;6</td></tr>
-<tr class="memdesc:ga54c8b0caa348bca488bc7f8d5e2f9c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE Connection Bad Autherization. <br /></td></tr>
+<tr class="memdesc:ga54c8b0caa348bca488bc7f8d5e2f9c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">LE Connection Bad Authorization. <br /></td></tr>
 <tr class="separator:ga54c8b0caa348bca488bc7f8d5e2f9c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaea4d2ca81108c8bcfc45de7a98a52ade"><td class="memItemLeft" align="right" valign="top"><a id="gaea4d2ca81108c8bcfc45de7a98a52ade"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#gaea4d2ca81108c8bcfc45de7a98a52ade">L2CAP_BLE_CONN_BAD_KEY_SIZE</a>&#160;&#160;&#160;7</td></tr>
@@ -269,7 +269,7 @@ L2CAP ECRB Result Code</h2></td></tr>
 <tr class="separator:ga9ed539b0c0deb62f09488bbad46345d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b11589d5ad59844387e4fe1e1e80a7f"><td class="memItemLeft" align="right" valign="top"><a id="ga1b11589d5ad59844387e4fe1e1e80a7f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga1b11589d5ad59844387e4fe1e1e80a7f">L2CAP_ECRB_INSUFF_AUTHORIZATION</a>&#160;&#160;&#160;0x0006</td></tr>
-<tr class="memdesc:ga1b11589d5ad59844387e4fe1e1e80a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insufficient Autherization. <br /></td></tr>
+<tr class="memdesc:ga1b11589d5ad59844387e4fe1e1e80a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insufficient Authorization. <br /></td></tr>
 <tr class="separator:ga1b11589d5ad59844387e4fe1e1e80a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b6a7f9061fc74bf9ad44e3e039d2d87"><td class="memItemLeft" align="right" valign="top"><a id="ga2b6a7f9061fc74bf9ad44e3e039d2d87"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__l2cap.html#ga2b6a7f9061fc74bf9ad44e3e039d2d87">L2CAP_ECRB_INSUFF_KEY_SIZE</a>&#160;&#160;&#160;0x0007</td></tr>
@@ -559,7 +559,7 @@ L2CAP LE PSM</h2></td></tr>
 </div><div class="memdoc">
 
 <p>LE Connection Bad Authentication. </p>
-<dl class="section note"><dt>Note</dt><dd>AMP related </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>LE COC related </dd></dl>
 
 </div>
 </div>
@@ -1275,7 +1275,11 @@ L2CAP LE PSM</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>: the size of DRB allocated must be &gt;= <code>our_rx_mtu</code> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The application is expected to allocate each DRB in the list of size &gt;= ( <code>our_rx_mtu</code> bytes + <a class="el" href="group__bt__types.html#ga76cc4e51e261caae3879751a959b97d6" title="length and offset ">DRB_OVERHEAD_SIZE</a>) </dd>
+<dd>
+Upon connection termination or when the buffer is no longer needed, the stack will invoke the registered release callback (<a class="el" href="structwiced__bt__l2cap__ecrb__cb__ptrs__t.html#a0c2c9eab2e2f788a668a00368dfa80e5">wiced_bt_l2cap_ecrb_cb_ptrs_t::pL2CA_ReleaseDRB_Cb</a>) for each DRB. </dd>
+<dd>
+Ensure that the DRB pointers correspond to the non-zero CIDs in <code>lcid_list</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">lcid_list</td><td>list of cids (channel ids) which will be started</td></tr>
@@ -2087,7 +2091,7 @@ L2CAP LE PSM</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_bd_addr</td><td>Pointer to the Bluetooth device address of the remote device. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bd_addr_type</td><td>Type of Bluetooth address. Must be either BLE_ADDR_PUBLIC or BLE_ADDR_RANDOM. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">conn_mode</td><td>Connection mode. Must be either BLE_CONN_MODE_HIGH_DUTY or BLE_CONN_MODE_LOW_DUTY. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rx_mtu</td><td>Receive Maximum Transmission Unit (MTU) value. Must be appropriately sized based on available memory. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_mtu</td><td>Receive Maximum Transmission Unit (MTU) value, the size of the memory block pointed by p_rx_drb </td></tr>
   </table>
   </dd>
 </dl>
@@ -2096,11 +2100,15 @@ L2CAP LE PSM</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">req_security</td><td>Required security level for the connection. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">req_encr_key_size</td><td>Required encryption key size. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_rx_drb</td><td>Pointer to the Data Reception Buffer (DRB) to receive peer's data. MUST be large enough to hold RX MTU data. See <a class="el" href="structt_d_r_b.html">tDRB</a> for details.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_rx_drb</td><td>Pointer to the Data Reception Buffer (DRB) to receive peer's data. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The <code>p_rx_drb</code> can be released by the application upon receiving a callback with the <a class="el" href="structwiced__bt__l2cap__le__appl__information__t.html#a061ad1d94e881cd659b8d31218c689ad">wiced_bt_l2cap_le_appl_information_t::le_release_drb_cb</a> of the <code>p_cb_information</code> member of <a class="el" href="group__l2cap.html#ga44312ab4c397243d0b40b55851d34a62">wiced_bt_l2cap_le_register</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>It is the application's responsibility to ensure that the DRB of size &gt;= (<code>rx_mtu</code> + <a class="el" href="group__bt__types.html#ga76cc4e51e261caae3879751a959b97d6" title="length and offset ">DRB_OVERHEAD_SIZE</a>) is properly allocated. See <a class="el" href="structt_d_r_b.html">tDRB</a> for details. </dd>
+<dd>
+The DRB will be used to store incoming data from the peer device and can be released by the application upon receiving <a class="el" href="structwiced__bt__l2cap__le__appl__information__t.html#a061ad1d94e881cd659b8d31218c689ad">wiced_bt_l2cap_le_appl_information_t::le_release_drb_cb</a> registered with the call to <a class="el" href="group__l2cap.html#ga44312ab4c397243d0b40b55851d34a62">wiced_bt_l2cap_le_register</a>.</dd>
+<dd>
+The <code>p_rx_drb</code> can be released by the application upon receiving a callback with the <a class="el" href="structwiced__bt__l2cap__le__appl__information__t.html#a061ad1d94e881cd659b8d31218c689ad">wiced_bt_l2cap_le_appl_information_t::le_release_drb_cb</a> of the <code>p_cb_information</code> member of <a class="el" href="group__l2cap.html#ga44312ab4c397243d0b40b55851d34a62">wiced_bt_l2cap_le_register</a>.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The Channel Identifier (CID) of the connection if successful, or 0 if the connection initiation failed.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Ensure that the <code>p_rx_drb</code> is properly allocated and sized to prevent buffer overflows.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__l2cap.html#ga44312ab4c397243d0b40b55851d34a62" title="Other layers call this function to register L2CAP services for LE_PSM. ">wiced_bt_l2cap_le_register</a> </dd>
