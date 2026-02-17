@@ -7,6 +7,10 @@ Following are the limitations when using host based address resolution (only app
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
 ## Changelog
+## V5.0.4
+### Updates in BTSTACK5.0.4
+ - Fixed an issue where scanning was disabled after host-based RPA change, even if it was initially enabled.
+
 ## V5.0.3
 ### Updates in BTSTACK5.0.3
  - Creation of stack library for armv7 architecture using GCC_ARM toolchain
