@@ -1,23 +1,8 @@
 var group__wicedbt__av__a2d__helper =
 [
-    [ "MPEG-1,2 Support", "group__wicedbt__a2dp__mpeg__1__2.html", "group__wicedbt__a2dp__mpeg__1__2" ],
     [ "MPEG-2,4 AAC Support", "group__wicedbt__a2dp__mpeg__2__4.html", "group__wicedbt__a2dp__mpeg__2__4" ],
     [ "MPEG-D,USAC Support", "group__wicedbt__a2dp__mpeg__d__usac.html", "group__wicedbt__a2dp__mpeg__d__usac" ],
     [ "A2DP SBC Support", "group__wicedbt__a2dp__sbc.html", "group__wicedbt__a2dp__sbc" ],
-    [ "wiced_bt_a2d_sdp_db_params_t", "structwiced__bt__a2d__sdp__db__params__t.html", [
-      [ "db_len", "structwiced__bt__a2d__sdp__db__params__t.html#a20a6152b6e7c8c6e065e70d3acb04c15", null ],
-      [ "num_attr", "structwiced__bt__a2d__sdp__db__params__t.html#a24cc271eaf6597d0286c3d85b5d09a87", null ],
-      [ "p_db", "structwiced__bt__a2d__sdp__db__params__t.html#a290aa6588ac81ff8223279ff85800f0e", null ],
-      [ "p_attrs", "structwiced__bt__a2d__sdp__db__params__t.html#ae46eb781dc4dfc4b5307115fe60c8b3f", null ]
-    ] ],
-    [ "wiced_bt_a2d_service_t", "structwiced__bt__a2d__service__t.html", [
-      [ "service_len", "structwiced__bt__a2d__service__t.html#a765dcedfbd70351e2d5aba650e42d4db", null ],
-      [ "provider_len", "structwiced__bt__a2d__service__t.html#a4b24cadd1749e0427a9d8b4c69d90fb3", null ],
-      [ "p_service_name", "structwiced__bt__a2d__service__t.html#a273e6c7a91d43b9f34eee17fa27b9785", null ],
-      [ "p_provider_name", "structwiced__bt__a2d__service__t.html#a32e8d72ce22f98599de051fbfeab57dd", null ],
-      [ "features", "structwiced__bt__a2d__service__t.html#a6ae2817c32d73d7d9a96ec594948814b", null ],
-      [ "avdt_version", "structwiced__bt__a2d__service__t.html#a6d7256499309c1c2b633080654d94737", null ]
-    ] ],
     [ "A2DP_VERSION_1_4", "group__wicedbt__av__a2d__helper.html#gae8cf86aef6725361cf1abf0db55b3a2e", null ],
     [ "A2D_SUPF_PLAYER", "group__wicedbt__av__a2d__helper.html#gaa8c72f0c985ad4f55e2a722a25603cac", null ],
     [ "A2D_SUPF_MIC", "group__wicedbt__av__a2d__helper.html#ga5de55223a2f8df2b7bee437090c40539", null ],

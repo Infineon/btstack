@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="wiced__bt__mesh__model__defs_8h" kind="file" language="C++">
     <compoundname>wiced_bt_mesh_model_defs.h</compoundname>
     <includedby refid="wiced__bt__mesh__app_8h" local="yes">wiced_bt_mesh_app.h</includedby>
@@ -8,7 +8,9 @@
     <includedby refid="wiced__bt__mesh__models_8h" local="yes">wiced_bt_mesh_models.h</includedby>
       <sectiondef kind="user-defined">
       <header>Company identifiers</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_CORE_COMPANY_ID"/></para><para>The following is the list of mesh company id </para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_CORE_COMPANY_ID"/></para>
+<para>The following is the list of mesh company id </para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1af586fc3d85c824c28945d9485739ff93" prot="public" static="no">
         <name>MESH_COMPANY_ID_UNUSED</name>
         <initializer>0xFFFE</initializer>
@@ -45,7 +47,9 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>UUIDs for services and characteristics</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1BT_MESH_GATT_UUID"/></para><para>The following is the list of service and characteristic UUIDs that a mesh node can support. </para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1BT_MESH_GATT_UUID"/></para>
+<para>The following is the list of service and characteristic UUIDs that a mesh node can support. </para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1a1730254e119c27084f2b5ee7c50a06c5" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_UUID_SERVICE_PROVISIONING</name>
         <initializer>0x1827</initializer>
@@ -115,7 +119,9 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Element location</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_ELEM_LOC"/></para><para>Element location (defined in GATT Bluetooth Namespace Descriptors section of the Bluetooth SIG Assigned Numbers) </para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_ELEM_LOC"/></para>
+<para>Element location (defined in GATT Bluetooth Namespace Descriptors section of the Bluetooth SIG Assigned Numbers) </para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1abd0b2f8b54688a267bd8e8882ce4350b" prot="public" static="no">
         <name>MESH_ELEM_LOC_UNKNOWN</name>
         <initializer>0x0000</initializer>
@@ -339,7 +345,9 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Model identifiers</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_MODEL_ID"/></para><para>The following is the list of Blueoth SIG defined Model IDs that a mesh node can support. </para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_MODEL_ID"/></para>
+<para>The following is the list of Blueoth SIG defined Model IDs that a mesh node can support. </para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1affd5b2193ab7e0998c5bf6f42430ee23" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_MODEL_ID_CONFIG_SRV</name>
         <initializer>0x0000</initializer>
@@ -981,7 +989,9 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Mesh model opcodes</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_MODEL_OPCODE"/></para><para>The following is the list of the Mesh model opcodes. </para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_MODEL_OPCODE"/></para>
+<para>The following is the list of the Mesh model opcodes. </para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1a914aaea2d89980ad339baf58c59c55ee" prot="public" static="no">
         <name>WICED_BT_MESH_CORE_CMD_APPKEY_ADD</name>
         <initializer>0x00</initializer>
@@ -4307,14 +4317,17 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>On Power Up State definitions</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_ON_POWER_UP_STATE"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_ON_POWER_UP_STATE"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1ad56567bdd6f84e4312d60c9194efd2f5" prot="public" static="no">
         <name>WICED_BT_MESH_ON_POWER_UP_STATE_OFF</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>Off. </para>        </briefdescription>
+<para>Off. </para>
+        </briefdescription>
         <detaileddescription>
-<para>After being powered up, the element is in an off state. </para>        </detaileddescription>
+<para>After being powered up, the element is in an off state. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" line="565" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" bodystart="565" bodyend="-1"/>
@@ -4323,9 +4336,11 @@
         <name>WICED_BT_MESH_ON_POWER_UP_STATE_DEFAULT</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>Default. </para>        </briefdescription>
+<para>Default. </para>
+        </briefdescription>
         <detaileddescription>
-<para>After being powered up, the element is in an On state and uses default state values. </para>        </detaileddescription>
+<para>After being powered up, the element is in an On state and uses default state values. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" line="566" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" bodystart="566" bodyend="-1"/>
@@ -4334,9 +4349,11 @@
         <name>WICED_BT_MESH_ON_POWER_UP_STATE_RESTORE</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>Restore. </para>        </briefdescription>
+<para>Restore. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If a transition was in progress when powered down, the element restores the target state when powered up. Otherwise the element restores the state it was in when powered down. </para>        </detaileddescription>
+<para>If a transition was in progress when powered down, the element restores the target state when powered up. Otherwise the element restores the state it was in when powered down. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" line="567" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" bodystart="567" bodyend="-1"/>
@@ -4344,12 +4361,14 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Status code definitions</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_STATUS_CODE"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_STATUS_CODE"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1a1d6252774807606050326004645d9cbd" prot="public" static="no">
         <name>WICED_BT_MESH_STATUS_SUCCESS</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>Command successfully processed. </para>        </briefdescription>
+<para>Command successfully processed. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -4360,7 +4379,8 @@
         <name>WICED_BT_MESH_STATUS_CANNOT_SET_RANGE_MIN</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>The provided value for Range Min cannot be set. </para>        </briefdescription>
+<para>The provided value for Range Min cannot be set. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -4371,7 +4391,8 @@
         <name>WICED_BT_MESH_STATUS_CANNOT_SET_RANGE_MAX</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>The provided value for Range Max cannot be set. </para>        </briefdescription>
+<para>The provided value for Range Max cannot be set. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -4381,12 +4402,14 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Scene operation Status code definitions</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_SCENE_STATUS_CODE"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_SCENE_STATUS_CODE"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1ae1103868f714d1e2223d1bb33085ea37" prot="public" static="no">
         <name>WICED_BT_MESH_SCENE_STATUS_SUCCESS</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>Command successfully processed. </para>        </briefdescription>
+<para>Command successfully processed. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -4397,7 +4420,8 @@
         <name>WICED_BT_MESH_SCENE_STATUS_REGISTER_FULL</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>Scene register full. </para>        </briefdescription>
+<para>Scene register full. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -4408,7 +4432,8 @@
         <name>WICED_BT_MESH_SCENE_STATUS_NOT_FOUND</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>Scene not found. </para>        </briefdescription>
+<para>Scene not found. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -4418,7 +4443,8 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>While device is unprovisioned, it advertises Unprovisioned beacons. After provisioning switches to Secure Network Beacons</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_BEACON_TYPE"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_BEACON_TYPE"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1a3a87c722b83aee5ac7eebd9af6bf22a5" prot="public" static="no">
         <name>WICED_BT_MESH_BEACON_TYPE_UNPROVISIONED</name>
         <initializer>0x00</initializer>
@@ -4455,7 +4481,8 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Unprovisioned beacon fields</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_UNPROVISIONED_BEACON_FIELDS"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_UNPROVISIONED_BEACON_FIELDS"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1abe20f32959f75d8d4f4ce2b1250089a3" prot="public" static="no">
         <name>WICED_BT_MESH_PROVISION_ADV_OOB_LEN</name>
         <initializer>2</initializer>
@@ -4481,7 +4508,8 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Mesh Device Properties as defined in the Mesh Device Property sepcification</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_PROPERTY"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1WICED_BT_MESH_PROPERTY"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1a34833665008ffbe63a0530fd244cbb19" prot="public" static="no">
         <name>WICED_BT_MESH_PROPERTY_UNKNOWN</name>
         <initializer>0x0000</initializer>
@@ -8412,12 +8440,14 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Mesh Beacon States</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_BEACON_STATES"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_BEACON_STATES"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1ae13a19c0a488fcaea0ae6f46c2729331" prot="public" static="no">
         <name>WICED_BT_MESH_BEACON_NOT_BROADCASTING</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>The node is not broadcasting a Secure Network beacon. </para>        </briefdescription>
+<para>The node is not broadcasting a Secure Network beacon. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8428,7 +8458,8 @@
         <name>WICED_BT_MESH_BEACON_BROADCASTING</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>The node is broadcasting a Secure Network beacon. </para>        </briefdescription>
+<para>The node is broadcasting a Secure Network beacon. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8438,12 +8469,14 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Mesh GATT Proxy States</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_GATT_PROXY_STATES"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_GATT_PROXY_STATES"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1af99c27b55d3e0a2a3de680a1a26c248b" prot="public" static="no">
         <name>WICED_BT_MESH_GATT_PROXY_SERVICE_DISABLED</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>The Mesh Proxy Service is running, Proxy feature is disabled. </para>        </briefdescription>
+<para>The Mesh Proxy Service is running, Proxy feature is disabled. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8454,7 +8487,8 @@
         <name>WICED_BT_MESH_GATT_PROXY_SERVICE_ENABLED</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>The Mesh Proxy Service is running, Proxy feature is enabled. </para>        </briefdescription>
+<para>The Mesh Proxy Service is running, Proxy feature is enabled. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8465,7 +8499,8 @@
         <name>WICED_BT_MESH_GATT_PROXY_SERVICE_NOT_SUPPORTED</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>The Mesh Proxy Service is not supported, Proxy feature is not supported. </para>        </briefdescription>
+<para>The Mesh Proxy Service is not supported, Proxy feature is not supported. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8475,12 +8510,14 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Mesh Friend States</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_KEY_REFRESH_PHASES"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_KEY_REFRESH_PHASES"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1ada58dc06fca33cc4999d9554ee2bc2bb" prot="public" static="no">
         <name>WICED_BT_MESH_FRIEND_FEATURE_DISABLED</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>The node supports Friend feature that is disabled. </para>        </briefdescription>
+<para>The node supports Friend feature that is disabled. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8491,7 +8528,8 @@
         <name>WICED_BT_MESH_FRIEND_FEATURE_ENABLED</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>The node supports Friend feature that is enabled. </para>        </briefdescription>
+<para>The node supports Friend feature that is enabled. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8502,7 +8540,8 @@
         <name>WICED_BT_MESH_FRIEND_FEATURE_NOT_SUPPORTED</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>The Friend feature is not supported. </para>        </briefdescription>
+<para>The Friend feature is not supported. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8513,7 +8552,8 @@
         <name>WICED_BT_MESH_KEY_REFRESH_PHASE_NORMAL</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>Normal operation; Key Refresh procedure is not active. </para>        </briefdescription>
+<para>Normal operation; Key Refresh procedure is not active. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8524,7 +8564,8 @@
         <name>WICED_BT_MESH_KEY_REFRESH_PHASE_FIRST</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>First phase of Key Refresh procedure. </para>        </briefdescription>
+<para>First phase of Key Refresh procedure. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8535,7 +8576,8 @@
         <name>WICED_BT_MESH_KEY_REFRESH_PHASE_SECOND</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>Second phase of Key Refresh procedure. </para>        </briefdescription>
+<para>Second phase of Key Refresh procedure. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8546,7 +8588,8 @@
         <name>WICED_BT_MESH_KEY_REFRESH_PHASE_THIRD</name>
         <initializer>0x03</initializer>
         <briefdescription>
-<para>Third phase of Key Refresh procedure. </para>        </briefdescription>
+<para>Third phase of Key Refresh procedure. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8556,12 +8599,14 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Mesh Friend Transitions</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_KEY_REFRESH_TRANSITIONS"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_KEY_REFRESH_TRANSITIONS"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1a036e34b3be6ed7436aab9fd51209d062" prot="public" static="no">
         <name>WICED_BT_MESH_KEY_REFRESH_TRANSITION_PHASE2</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>Transition to key refresh phase 2. </para>        </briefdescription>
+<para>Transition to key refresh phase 2. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8572,7 +8617,8 @@
         <name>WICED_BT_MESH_KEY_REFRESH_TRANSITION_PHASE3</name>
         <initializer>0x03</initializer>
         <briefdescription>
-<para>Transition to key refresh phase 3. </para>        </briefdescription>
+<para>Transition to key refresh phase 3. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8582,12 +8628,14 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Mesh Node Identity For a Subnet States</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_IDENTITY_STATES"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_IDENTITY_STATES"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1a56b4861a7fcd8533472a844077e8c851" prot="public" static="no">
         <name>WICED_BT_MESH_GATT_NODE_IDENTITY_STOPPED</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>Node Identity for a subnet is stopped. </para>        </briefdescription>
+<para>Node Identity for a subnet is stopped. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8598,7 +8646,8 @@
         <name>WICED_BT_MESH_GATT_NODE_IDENTITY_RUNNING</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>Node Identity for a subnet is running. </para>        </briefdescription>
+<para>Node Identity for a subnet is running. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8609,7 +8658,8 @@
         <name>WICED_BT_MESH_GATT_NODE_IDENTITY_NOT_SUPPORTED</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>Node Identity is not supported. </para>        </briefdescription>
+<para>Node Identity is not supported. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -8619,7 +8669,8 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Mesh Device Key Refresh Procedures</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_PROVISIONING_DEVICE_KEY_REFRESH_PROCEDURES"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_PROVISIONING_DEVICE_KEY_REFRESH_PROCEDURES"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1ab9c29330df0ca4cc0cfc57e6fba3ff9a" prot="public" static="no">
         <name>WICED_BT_MESH_PROVISION_PROCEDURE_DEV_KEY_REFRESH</name>
         <initializer>0x00</initializer>
@@ -8678,7 +8729,8 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Mesh Mesh Provisioning PDU Types</header>
-      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_PROVISIONING_PDUS"/></para></description>
+      <description><para><anchor id="wiced__bt__mesh__model__defs_8h_1MESH_PROVISIONING_PDUS"/></para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__model__defs_8h_1ae954a3bd4feb1e032ed4af6478cfd077" prot="public" static="no">
         <name>WICED_BT_MESH_PROVISION_PDU_TYPE_INVITE</name>
         <initializer>0x00</initializer>
@@ -8872,7 +8924,8 @@
         <name>MESH_DEFAULT_TRANSITION_TIME_IN_MS</name>
         <initializer>0</initializer>
         <briefdescription>
-<para>Default transition time. </para>        </briefdescription>
+<para>Default transition time. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9084,7 +9137,8 @@
         <name>WICED_BT_MESH_TIME_ROLE_NONE</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>The element does not participate in propagation of time information. </para>        </briefdescription>
+<para>The element does not participate in propagation of time information. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9095,7 +9149,8 @@
         <name>WICED_BT_MESH_TIME_ROLE_MESH_TIME_AUTHORITY</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>The element publishes Time Status messages but does not process received Time Status messages. </para>        </briefdescription>
+<para>The element publishes Time Status messages but does not process received Time Status messages. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9106,7 +9161,8 @@
         <name>WICED_BT_MESH_TIME_ROLE_MESH_TIME_RELAY</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>The element processes received and publishes Time Status messages. </para>        </briefdescription>
+<para>The element processes received and publishes Time Status messages. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9117,7 +9173,8 @@
         <name>WICED_BT_MESH_TIME_ROLE_MESH_TIME_CLIENT</name>
         <initializer>0x03</initializer>
         <briefdescription>
-<para>The element does not publish but processes received Time Status messages. </para>        </briefdescription>
+<para>The element does not publish but processes received Time Status messages. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9128,9 +9185,11 @@
         <name>MESH_AUTH_VALUE_MAX_LEN</name>
         <initializer>16</initializer>
         <briefdescription>
-<para>static OOB max length is 128bits. </para>        </briefdescription>
+<para>static OOB max length is 128bits. </para>
+        </briefdescription>
         <detaileddescription>
-<para>For HMAC_SHA256_AES_CCM it two times longer(256 bits). input and output OOB max length is 8 bytes </para>        </detaileddescription>
+<para>For HMAC_SHA256_AES_CCM it two times longer(256 bits). input and output OOB max length is 8 bytes </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" line="1111" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" bodystart="1111" bodyend="-1"/>
@@ -9194,7 +9253,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATE_IDLE</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>Idle. </para>        </briefdescription>
+<para>Idle. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9205,7 +9265,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATE_LINK_OPENING</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>Link Opening. </para>        </briefdescription>
+<para>Link Opening. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9216,7 +9277,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATE_LINK_ACTIVE</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>Link Active. </para>        </briefdescription>
+<para>Link Active. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9227,7 +9289,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATE_OUTBOUND_PDU_TRANSFER</name>
         <initializer>0x03</initializer>
         <briefdescription>
-<para>Link Outbound PDU transfer. </para>        </briefdescription>
+<para>Link Outbound PDU transfer. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9238,7 +9301,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATE_LINK_CLOSING</name>
         <initializer>0x04</initializer>
         <briefdescription>
-<para>Link Closing. </para>        </briefdescription>
+<para>Link Closing. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9249,7 +9313,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_SUCCESS</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>success </para>        </briefdescription>
+<para>success </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9260,7 +9325,9 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_SCAN_CANNOT_START</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>Scanning Cannot Start. </para>        </briefdescription>
+<para>Scanning Cannot Start <linebreak/>
+ </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9271,7 +9338,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_INVALID_STATE</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>Invalid State. </para>        </briefdescription>
+<para>Invalid State. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9282,7 +9350,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_LIMITED_RESOURCES</name>
         <initializer>0x03</initializer>
         <briefdescription>
-<para>Limited Resources. </para>        </briefdescription>
+<para>Limited Resources. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9293,7 +9362,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_CANNOT_OPEN</name>
         <initializer>0x04</initializer>
         <briefdescription>
-<para>Link Cannot Open. </para>        </briefdescription>
+<para>Link Cannot Open. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9304,7 +9374,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_OPEN_FAILED</name>
         <initializer>0x05</initializer>
         <briefdescription>
-<para>Link Open Failed. </para>        </briefdescription>
+<para>Link Open Failed. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9315,7 +9386,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_CLOSED_BY_DEVICE</name>
         <initializer>0x06</initializer>
         <briefdescription>
-<para>Link Closed by device. </para>        </briefdescription>
+<para>Link Closed by device. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9326,7 +9398,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_CLOSED_BY_SERVER</name>
         <initializer>0x07</initializer>
         <briefdescription>
-<para>Link Closed by server. </para>        </briefdescription>
+<para>Link Closed by server. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9337,7 +9410,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_CLOSED_BY_CLIENT</name>
         <initializer>0x08</initializer>
         <briefdescription>
-<para>Link Closed by client. </para>        </briefdescription>
+<para>Link Closed by client. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9348,7 +9422,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_CLOSED_CANNOT_RX_PDU</name>
         <initializer>0x09</initializer>
         <briefdescription>
-<para>Link Closed as Cannot Receive PDU. </para>        </briefdescription>
+<para>Link Closed as Cannot Receive PDU. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9359,7 +9434,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_CLOSED_CANNOT_TX_PDU</name>
         <initializer>0x0A</initializer>
         <briefdescription>
-<para>Link Closed as Cannot Send PDU. </para>        </briefdescription>
+<para>Link Closed as Cannot Send PDU. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9370,7 +9446,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_CLOSED_FAIL_SEND_PDU_REPORT</name>
         <initializer>0x0B</initializer>
         <briefdescription>
-<para>Link Closed as Cannot Deliver PDU Report. </para>        </briefdescription>
+<para>Link Closed as Cannot Deliver PDU Report. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9381,7 +9458,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_STATUS_CLOSED_FAIL_SEND_PDU_OUT_REPORT</name>
         <initializer>0x0C</initializer>
         <briefdescription>
-<para>Link Closed as Cannot Deliver PDU Outbound Report. </para>        </briefdescription>
+<para>Link Closed as Cannot Deliver PDU Outbound Report. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9392,7 +9470,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISIONING_CLOSE_REASON_SUCCESS</name>
         <initializer>0x00</initializer>
         <briefdescription>
-<para>The operation completed successfully. </para>        </briefdescription>
+<para>The operation completed successfully. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9403,7 +9482,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISIONING_CLOSE_REASON_PROHIBITED</name>
         <initializer>0x01</initializer>
         <briefdescription>
-<para>Prohibited. </para>        </briefdescription>
+<para>Prohibited. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9414,7 +9494,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISIONING_CLOSE_REASON_FAIL</name>
         <initializer>0x02</initializer>
         <briefdescription>
-<para>Provisioning Failed. </para>        </briefdescription>
+<para>Provisioning Failed. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9425,7 +9506,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_EXT_SCAN_DURATION_MIN</name>
         <initializer>1</initializer>
         <briefdescription>
-<para>Min length of time (in seconds) to collect information about the unprovisioned device. </para>        </briefdescription>
+<para>Min length of time (in seconds) to collect information about the unprovisioned device. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9436,7 +9518,8 @@
         <name>WICED_BT_MESH_REMOTE_PROVISION_EXT_SCAN_DURATION_MAX</name>
         <initializer>10</initializer>
         <briefdescription>
-<para>Max length of time (in seconds) to collect information about the unprovisioned device. </para>        </briefdescription>
+<para>Max length of time (in seconds) to collect information about the unprovisioned device. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9469,9 +9552,11 @@
         <name>WICED_BT_MESH_PROVISION_CONFIRMATION_LEN</name>
         <initializer>16</initializer>
         <briefdescription>
-<para>Mesh Confirmation length for algorithm CMAC_AES128_AES_CCM. </para>        </briefdescription>
+<para>Mesh Confirmation length for algorithm CMAC_AES128_AES_CCM. </para>
+        </briefdescription>
         <detaileddescription>
-<para>algorithm HMAC_SHA256_AES_CCM uses two times bigger conformation </para>        </detaileddescription>
+<para>algorithm HMAC_SHA256_AES_CCM uses two times bigger conformation </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" line="1151" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" bodystart="1151" bodyend="-1"/>
@@ -9480,9 +9565,11 @@
         <name>WICED_BT_MESH_PROVISION_RANDOM_LEN</name>
         <initializer>16</initializer>
         <briefdescription>
-<para>Mesh Provisioning Random length for algorithm CMAC_AES128_AES_CCM. </para>        </briefdescription>
+<para>Mesh Provisioning Random length for algorithm CMAC_AES128_AES_CCM. </para>
+        </briefdescription>
         <detaileddescription>
-<para>algorithm HMAC_SHA256_AES_CCM uses two times bigger random </para>        </detaileddescription>
+<para>algorithm HMAC_SHA256_AES_CCM uses two times bigger random </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" line="1152" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_model_defs.h" bodystart="1152" bodyend="-1"/>
@@ -9491,7 +9578,8 @@
         <name>WICED_BT_MESH_IV_INDEX_LEN</name>
         <initializer>4</initializer>
         <briefdescription>
-<para>mesh IV (Initialization Vector) index length </para>        </briefdescription>
+<para>mesh IV (Initialization Vector) index length </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9502,7 +9590,8 @@
         <name>WICED_BT_MESH_ADDR_LEN</name>
         <initializer>2</initializer>
         <briefdescription>
-<para>mesh device ID (address) length </para>        </briefdescription>
+<para>mesh device ID (address) length </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9570,7 +9659,8 @@
         <name>WICED_BT_MESH_CONFIG_PERIOD_LOG_MAX</name>
         <initializer>0x11</initializer>
         <briefdescription>
-<para>Max value of period log. </para>        </briefdescription>
+<para>Max value of period log. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9581,7 +9671,8 @@
         <name>WICED_BT_MESH_CONFIG_SUB_COUNT_LOG_MAX</name>
         <initializer>0x10</initializer>
         <briefdescription>
-<para>Max value of subscription count log. </para>        </briefdescription>
+<para>Max value of subscription count log. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9592,7 +9683,8 @@
         <name>WICED_BT_MESH_CONFIG_PUB_COUNT_LOG_MAX</name>
         <initializer>0x11</initializer>
         <briefdescription>
-<para>Max value of publication count log. </para>        </briefdescription>
+<para>Max value of publication count log. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9603,7 +9695,8 @@
         <name>WICED_BT_MESH_CONFIG_COUNT_LOG_NO_LIMIT</name>
         <initializer>0xFF</initializer>
         <briefdescription>
-<para>Value of count log representing unlimited count. </para>        </briefdescription>
+<para>Value of count log representing unlimited count. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9614,7 +9707,8 @@
         <name>WICED_BT_MESH_CONFIG_HOPS_MAX</name>
         <initializer>0x7f</initializer>
         <briefdescription>
-<para>Max value of min hops or max hops. </para>        </briefdescription>
+<para>Max value of min hops or max hops. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9625,7 +9719,8 @@
         <name>WICED_BT_MESH_CONFIG_TTL_MAX</name>
         <initializer>0x7F</initializer>
         <briefdescription>
-<para>Max value of the TTL. </para>        </briefdescription>
+<para>Max value of the TTL. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -9634,9 +9729,11 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>&gt; </para>    </briefdescription>
+    </briefdescription>
     <detaileddescription>
-<para>Mesh Model definitions </para>    </detaileddescription>
+<para>&gt;</para>
+<para>Mesh Model definitions </para>
+    </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>2016-YEAR<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>

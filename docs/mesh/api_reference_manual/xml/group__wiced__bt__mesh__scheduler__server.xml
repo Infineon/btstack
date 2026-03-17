@@ -1,54 +1,62 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="group__wiced__bt__mesh__scheduler__server" kind="group">
     <compoundname>wiced_bt_mesh_scheduler_server</compoundname>
     <title>Mesh Scheduler Server</title>
-      <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="group__wiced__bt__mesh__scheduler__server_1ga56c5860b8283150f81ae958815273f03" prot="public" static="no">
+    <innergroup refid="group__wiced__bt__mesh__scheduler__client">Mesh Scheduler Client</innergroup>
+      <sectiondef kind="user-defined">
+      <header>Battery Service Required State Flags</header>
+      <description><para><anchor id="group__wiced__bt__mesh__scheduler__client_1BATTERY_SERVICABLITY_FLAGS"/></para>
+</description>
+      <memberdef kind="typedef" id="group__wiced__bt__mesh__models_1ga56c5860b8283150f81ae958815273f03" prot="public" static="no">
         <type>void()</type>
         <definition>typedef void() wiced_bt_mesh_scheduler_server_callback_t(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</definition>
         <argsstring>(uint16_t event, wiced_bt_mesh_event_t *p_event, void *p_data)</argsstring>
         <name>wiced_bt_mesh_scheduler_server_callback_t</name>
         <briefdescription>
-<para>Scheduler Server callback is called by the Mesh Models library on receiving a message from the peer. </para>        </briefdescription>
+<para>Scheduler Server callback is called by the Mesh Models library on receiving a message from the peer. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1SCHEDULER_EVENT" kindref="member">Scheduler Events</ref>) </para></parameterdescription>
+<para>The event that the application should process (see <ref refid="wiced__bt__mesh__models_8h_1SCHEDULER_EVENT" kindref="member">Scheduler Events</ref>) </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>information about the message received. The same pointer should be used in the reply if required. </para></parameterdescription>
+<para>information about the message received. The same pointer should be used in the reply if required. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data structure</para></parameterdescription>
+<para>Pointer to the data structure</para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5745" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5745" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5745" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="5745" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="func">
-      <memberdef kind="function" id="group__wiced__bt__mesh__scheduler__server_1ga40bdccccb4085f1f3ac197f11c93d192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga40bdccccb4085f1f3ac197f11c93d192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void wiced_bt_mesh_model_scheduler_server_init</definition>
         <argsstring>(wiced_bt_mesh_scheduler_server_callback_t *p_callback, wiced_bool_t is_provisioned)</argsstring>
         <name>wiced_bt_mesh_model_scheduler_server_init</name>
         <param>
-          <type><ref refid="group__wiced__bt__mesh__scheduler__server_1ga56c5860b8283150f81ae958815273f03" kindref="member">wiced_bt_mesh_scheduler_server_callback_t</ref> *</type>
+          <type><ref refid="group__wiced__bt__mesh__models_1ga56c5860b8283150f81ae958815273f03" kindref="member">wiced_bt_mesh_scheduler_server_callback_t</ref> *</type>
           <declname>p_callback</declname>
         </param>
         <param>
@@ -56,36 +64,41 @@
           <declname>is_provisioned</declname>
         </param>
         <briefdescription>
-<para>Scheduler Server Module initialization. </para>        </briefdescription>
+<para>Scheduler Server Module initialization. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_callback</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Application or Parent model callback that will be executed on receiving a message </para></parameterdescription>
+<para>Application or Parent model callback that will be executed on receiving a message </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>is_provisioned</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para></parameterdescription>
+<para>If TRUE, the application is being restarted after being provisioned or after a power loss. If FALSE the model cleans up NVRAM on startup.</para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5755" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5755" column="6" declfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" declline="5755" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="group__wiced__bt__mesh__scheduler__server_1gaae73c916c065ec43b7da7653730b09e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__wiced__bt__mesh__models_1gaae73c916c065ec43b7da7653730b09e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
         <definition>wiced_bool_t wiced_bt_mesh_model_scheduler_server_message_handler</definition>
         <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
         <name>wiced_bt_mesh_model_scheduler_server_message_handler</name>
         <param>
-          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <type>wiced_bt_mesh_event_t *</type>
           <declname>p_event</declname>
         </param>
         <param>
@@ -97,43 +110,50 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Scheduler Server Message Handler. </para>        </briefdescription>
+<para>Scheduler Server Message Handler. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para><para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para></parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para></parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para></parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5768" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5768" column="14" declfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" declline="5768" declcolumn="14"/>
       </memberdef>
-      <memberdef kind="function" id="group__wiced__bt__mesh__scheduler__server_1ga56a9af47a1bce8df95ffab177bcc0e36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__wiced__bt__mesh__models_1ga56a9af47a1bce8df95ffab177bcc0e36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
         <definition>wiced_bool_t wiced_bt_mesh_model_scheduler_setup_server_message_handler</definition>
         <argsstring>(wiced_bt_mesh_event_t *p_event, uint8_t *p_data, uint16_t data_len)</argsstring>
         <name>wiced_bt_mesh_model_scheduler_setup_server_message_handler</name>
         <param>
-          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <type>wiced_bt_mesh_event_t *</type>
           <declname>p_event</declname>
         </param>
         <param>
@@ -145,40 +165,49 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>Scheduler Setup Server Message Handler. </para>        </briefdescription>
+<para>Scheduler Setup Server Message Handler. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para><para><parameterlist kind="param"><parameteritem>
+<para>The Mesh Core library calls this function for each message received. The function returns WICED_TRUE if the message is destined for this specific model and successfully processed, and returns WICED_FALSE otherwise. The function parses the message and if appropriate calls the parent back to perform functionality.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Mesh event with information about received message. </para></parameterdescription>
+<para>Mesh event with information about received message. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>p_data</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the data portion of the message </para></parameterdescription>
+<para>Pointer to the data portion of the message </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>data_len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Length of the data in the message</para></parameterdescription>
+<para>Length of the data in the message</para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>WICED_TRUE if the message is for this company ID/Model/Element Index combination, WICED_FALSE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5781" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="5781" column="14" declfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" declline="5781" declcolumn="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The AIROC Mesh Scheduler Server module provides a way for an application to implement a functionality for the devices that support Scheduler. </para>    </briefdescription>
+    </briefdescription>
     <detaileddescription>
-<para>TBD </para>    </detaileddescription>
+<para>The AIROC Mesh Scheduler Server module provides a way for an application to implement a functionality for the devices that support Scheduler.</para>
+<para>TBD </para>
+    </detaileddescription>
   </compounddef>
 </doxygen>

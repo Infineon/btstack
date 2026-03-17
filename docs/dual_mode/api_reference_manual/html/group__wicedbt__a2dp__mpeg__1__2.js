@@ -1,15 +1,5 @@
 var group__wicedbt__a2dp__mpeg__1__2 =
 [
-    [ "wiced_bt_a2d_m12_cie_t", "structwiced__bt__a2d__m12__cie__t.html", [
-      [ "layer", "structwiced__bt__a2d__m12__cie__t.html#a8254c2564a848956ef730984024782f1", null ],
-      [ "crc", "structwiced__bt__a2d__m12__cie__t.html#ac8b2fc63722283e0339577bb292c0dc3", null ],
-      [ "ch_mode", "structwiced__bt__a2d__m12__cie__t.html#a9d92fb32305d57073bea75dae402fa67", null ],
-      [ "mpf", "structwiced__bt__a2d__m12__cie__t.html#a5bb1cc4b431ef0c67dc445f52a73be1e", null ],
-      [ "samp_freq", "structwiced__bt__a2d__m12__cie__t.html#ad568d7f773565a6534402f7382dd1846", null ],
-      [ "vbr", "structwiced__bt__a2d__m12__cie__t.html#ac158324716c30517171fb60bb24aa352", null ],
-      [ "bitrate", "structwiced__bt__a2d__m12__cie__t.html#a9944080004e31f83acecd3e9a512c694", null ]
-    ] ],
-    [ "A2D_M12_MPL_HDR_LEN", "group__wicedbt__a2dp__mpeg__1__2.html#gaf2eb79f617514437d250edfeb9fa3bfc", null ],
     [ "A2D_M12_INFO_LEN", "group__wicedbt__a2dp__mpeg__1__2.html#gac5d0a705f73d658af33de9b0bb40bebf", null ],
     [ "A2D_M12_IE_LAYER_MSK", "group__wicedbt__a2dp__mpeg__1__2.html#ga34575dd585fde70f534cba73cf9ffa10", null ],
     [ "A2D_M12_IE_LAYER1", "group__wicedbt__a2dp__mpeg__1__2.html#ga77924b0d3be0cf3b14e5bf408397ea55", null ],
@@ -48,6 +38,5 @@ var group__wicedbt__a2dp__mpeg__1__2 =
     [ "A2D_M12_IE_BITRATE_14", "group__wicedbt__a2dp__mpeg__1__2.html#ga2cfacbde6c1316dbae1b7cd8d215e5c2", null ],
     [ "A2D_BLD_M12_PML_HDR", "group__wicedbt__a2dp__mpeg__1__2.html#gacef301927c6112b13b6092ed96924351", null ],
     [ "A2D_PARS_M12_PML_HDR", "group__wicedbt__a2dp__mpeg__1__2.html#gade8cab0a6990c8c4cbec70f32cd13443", null ],
-    [ "wiced_bt_a2d_bld_m12info", "group__wicedbt__a2dp__mpeg__1__2.html#gaf06d7fa0bf9303bcaedfb2ca0647eb64", null ],
     [ "wiced_bt_a2d_pars_m12info", "group__wicedbt__a2dp__mpeg__1__2.html#ga7ec65c0c1d390a419c96fa3b937797db", null ]
 ];

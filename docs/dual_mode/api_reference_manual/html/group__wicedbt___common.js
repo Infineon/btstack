@@ -1,15 +1,5 @@
 var group__wicedbt___common =
 [
-    [ "wiced_bt_adv_ctx_t", "structwiced__bt__adv__ctx__t.html", [
-      [ "p_adv", "structwiced__bt__adv__ctx__t.html#acf697d82a678e84bb5ea9b8d66ab68f8", null ],
-      [ "adv_len", "structwiced__bt__adv__ctx__t.html#aeb0b8969158144a5cf57bc153b18b529", null ],
-      [ "offset", "structwiced__bt__adv__ctx__t.html#ae6d926feb28142ef1ec80ff4bf13f787", null ]
-    ] ],
-    [ "wiced_bt_ble_advert_elem_t", "structwiced__bt__ble__advert__elem__t.html", [
-      [ "p_data", "structwiced__bt__ble__advert__elem__t.html#a70f91e32698c6fdde84563cd0edf149d", null ],
-      [ "len", "structwiced__bt__ble__advert__elem__t.html#aaa6cf169af0de34e6be4b0be9d7057e2", null ],
-      [ "advert_type", "structwiced__bt__ble__advert__elem__t.html#a1f047c04b8b36a6db70d04eda2168b0b", null ]
-    ] ],
     [ "BTM_BLE_LEGACY_AD_DATA_LEN", "group__wicedbt___common.html#gae3ba16e014add5799d4b298344cb5984", null ],
     [ "BTM_BLE_DEFAULT_ADVERT_CHNL_MAP", "group__wicedbt___common.html#ga502320b4a85ebeee1cd6d37d6b6d1048", null ],
     [ "BTM_BLE_ADVERT_FILTER_DEFAULT", "group__wicedbt___common.html#ga04092369c221d51efca136b1e5fcaa54", null ],

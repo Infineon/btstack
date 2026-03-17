@@ -2,43 +2,6 @@ var group__wicedbt___conn =
 [
     [ "Connection and Filter Accept List", "group__btm__ble__conn__filter__accept__list__functions.html", "group__btm__ble__conn__filter__accept__list__functions" ],
     [ "Phy", "group__btm__ble__phy__functions.html", "group__btm__ble__phy__functions" ],
-    [ "wiced_bt_ble_pref_conn_params_t", "structwiced__bt__ble__pref__conn__params__t.html", [
-      [ "conn_interval_min", "structwiced__bt__ble__pref__conn__params__t.html#aa44c68f25e83a976e17afb7a36e02994", null ],
-      [ "conn_interval_max", "structwiced__bt__ble__pref__conn__params__t.html#aa466a15e327576bc21b6c9d54cdbbf8d", null ],
-      [ "conn_latency", "structwiced__bt__ble__pref__conn__params__t.html#a19d2c544851df20ead4466ae86034a59", null ],
-      [ "conn_supervision_timeout", "structwiced__bt__ble__pref__conn__params__t.html#a7dde00723afa618605a08eabcca67d26", null ],
-      [ "min_ce_length", "structwiced__bt__ble__pref__conn__params__t.html#a6124218aace2fffd574f4928b9d76d42", null ],
-      [ "max_ce_length", "structwiced__bt__ble__pref__conn__params__t.html#a911c9695001d7428390403e146943f11", null ]
-    ] ],
-    [ "wiced_ble_legacy_create_conn_t", "structwiced__ble__legacy__create__conn__t.html", [
-      [ "le_scan_interval", "structwiced__ble__legacy__create__conn__t.html#a0b644aeda61ba8e3b41369c70c834a38", null ],
-      [ "le_scan_window", "structwiced__ble__legacy__create__conn__t.html#a8a1a04234f52a6bafb67ef4fa8eaf726", null ],
-      [ "initiator_filter_policy", "structwiced__ble__legacy__create__conn__t.html#a054c49f8caf17cbffc66591bcdd8f6ea", null ],
-      [ "peer_address_type", "structwiced__ble__legacy__create__conn__t.html#a8e4f79bbe60b9f566eebb940275203e0", null ],
-      [ "peer_address", "structwiced__ble__legacy__create__conn__t.html#a87426eae3ea77caa3b89b97a405674d1", null ],
-      [ "own_address_type", "structwiced__ble__legacy__create__conn__t.html#ad91a970230a4c4cbdc0bec2609848668", null ],
-      [ "conn_params", "structwiced__ble__legacy__create__conn__t.html#a86e5e2f8f6e0bce7317667b7ae0e185f", null ]
-    ] ],
-    [ "wiced_bt_ble_phy_preferences_t", "structwiced__bt__ble__phy__preferences__t.html", [
-      [ "remote_bd_addr", "structwiced__bt__ble__phy__preferences__t.html#acdc0097a9a3045b3daea5975107afb7f", null ],
-      [ "tx_phys", "structwiced__bt__ble__phy__preferences__t.html#aeb5aa9d74c8dfea87b3ef6fdc1f68a85", null ],
-      [ "rx_phys", "structwiced__bt__ble__phy__preferences__t.html#a85cc54308c27259f6ce486f06e21ef57", null ],
-      [ "phy_opts", "structwiced__bt__ble__phy__preferences__t.html#a82442a587d6c18386382487c3deacd42", null ]
-    ] ],
-    [ "wiced_bt_ble_conn_params_t", "structwiced__bt__ble__conn__params__t.html", [
-      [ "role", "structwiced__bt__ble__conn__params__t.html#a0cddeab89b8d4fe08ab2170530e295cb", null ],
-      [ "conn_interval", "structwiced__bt__ble__conn__params__t.html#a545ef7b2495e29e8e4812629fb135c44", null ],
-      [ "conn_latency", "structwiced__bt__ble__conn__params__t.html#a9cca6008241e70f7882704bc6d9deb65", null ],
-      [ "supervision_timeout", "structwiced__bt__ble__conn__params__t.html#ab7c6cee604c76191bd70926d8b40562e", null ]
-    ] ],
-    [ "wiced_bt_ble_key_material_t", "structwiced__bt__ble__key__material__t.html", [
-      [ "session_key", "structwiced__bt__ble__key__material__t.html#a2da6579072ec24611077b154ec328423", null ],
-      [ "iv", "structwiced__bt__ble__key__material__t.html#ad412c598ac240009457301635e53434b", null ]
-    ] ],
-    [ "wiced_ble_rpa_timeout_t", "structwiced__ble__rpa__timeout__t.html", [
-      [ "rpa_tout_min", "structwiced__ble__rpa__timeout__t.html#a77bcc8b9d7b002ee2060c89b03161316", null ],
-      [ "rpa_tout_max", "structwiced__ble__rpa__timeout__t.html#a72f25cd170edef612f8d81f42cf2c81c", null ]
-    ] ],
     [ "BTM_BLE_CONN_INTERVAL_MIN_DEF", "group__wicedbt___conn.html#gad810fbb1805c0f676bcc135c09adaa52", null ],
     [ "BTM_BLE_CONN_INTERVAL_MAX_DEF", "group__wicedbt___conn.html#gaea1a6b8149b4944c13b9dc9817a087f5", null ],
     [ "BTM_BLE_CONN_PERIPHERAL_LATENCY_DEF", "group__wicedbt___conn.html#ga01724e6a7493c8ea5fd268cf9a3e5de1", null ],

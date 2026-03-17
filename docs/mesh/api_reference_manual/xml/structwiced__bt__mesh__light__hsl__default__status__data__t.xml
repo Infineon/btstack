@@ -1,43 +1,45 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="structwiced__bt__mesh__light__hsl__default__status__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_light_hsl_default_status_data_t</compoundname>
     <includes local="no">wiced_bt_mesh_models.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structwiced__bt__mesh__light__hsl__default__status__data__t_1aae2d9004c5a43a92c8acfbc3f982e44a" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="group__wiced__bt__mesh__scheduler__client_1gaae2d9004c5a43a92c8acfbc3f982e44a" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__mesh__light__hsl__data__t" kindref="compound">wiced_bt_mesh_light_hsl_data_t</ref></type>
         <definition>wiced_bt_mesh_light_hsl_data_t wiced_bt_mesh_light_hsl_default_status_data_t::default_status</definition>
         <argsstring></argsstring>
         <name>default_status</name>
         <briefdescription>
-<para>HSL status data. </para>        </briefdescription>
+<para>HSL status data. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1492" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1492" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1492" column="36" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1492" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Light HSL Range Default Status structure exchanged between the application and Light HSL Level Model. </para>    </briefdescription>
+<para>Light HSL Range Default Status structure exchanged between the application and Light HSL Level Model. </para>
+    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="117">
+      <node id="1">
         <label>wiced_bt_mesh_light_hsl_default_status_data_t</label>
         <link refid="structwiced__bt__mesh__light__hsl__default__status__data__t"/>
-        <childnode refid="118" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>default_status</edgelabel>
         </childnode>
       </node>
-      <node id="118">
+      <node id="2">
         <label>wiced_bt_mesh_light_hsl_data_t</label>
         <link refid="structwiced__bt__mesh__light__hsl__data__t"/>
       </node>
     </collaborationgraph>
     <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" line="1491" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_models.h" bodystart="1490" bodyend="1493"/>
     <listofallmembers>
-      <member refid="structwiced__bt__mesh__light__hsl__default__status__data__t_1aae2d9004c5a43a92c8acfbc3f982e44a" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_default_status_data_t</scope><name>default_status</name></member>
+      <member refid="group__wiced__bt__mesh__scheduler__client_1gaae2d9004c5a43a92c8acfbc3f982e44a" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_light_hsl_default_status_data_t</scope><name>default_status</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

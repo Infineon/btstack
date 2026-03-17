@@ -1,30 +1,5 @@
 var group__bt__types =
 [
-    [ "wiced_bt_uuid_t", "structwiced__bt__uuid__t.html", [
-      [ "len", "structwiced__bt__uuid__t.html#a1552a6f9f8d8ec3d0fbb5bed78a1cdd7", null ],
-      [ "uuid16", "structwiced__bt__uuid__t.html#aeecb37fde2935fb7e2900da67a380be7", null ],
-      [ "uuid32", "structwiced__bt__uuid__t.html#a4ab339dc4a43df2dc88f2acd787e7493", null ],
-      [ "uuid128", "structwiced__bt__uuid__t.html#a0043e23b06269285293d4cab5555ca0f", null ],
-      [ "uu", "structwiced__bt__uuid__t.html#ad085f86ef8ac3141f2cb65a2689ea169", null ]
-    ] ],
-    [ "wiced_bt_flow_spec_t", "structwiced__bt__flow__spec__t.html", [
-      [ "qos_flags", "structwiced__bt__flow__spec__t.html#afe795b08b556ade0405dc3ed8f9a53ab", null ],
-      [ "service_type", "structwiced__bt__flow__spec__t.html#a9c3356ff7f5cde79de835eccc0aa0ef8", null ],
-      [ "token_rate", "structwiced__bt__flow__spec__t.html#aab51a7692589e5bb14821ded70745708", null ],
-      [ "token_bucket_size", "structwiced__bt__flow__spec__t.html#af4eb9b1a97b8dc3f732bf2124d43e1a0", null ],
-      [ "peak_bandwidth", "structwiced__bt__flow__spec__t.html#ad711c78a4e64edcd6d8dbbc037638c57", null ],
-      [ "latency", "structwiced__bt__flow__spec__t.html#a218ecc67c47b3ca9a223f093dd86e91f", null ],
-      [ "delay_variation", "structwiced__bt__flow__spec__t.html#a6e6a9b6233b29a7dcab88b5acbd156a2", null ]
-    ] ],
-    [ "wiced_bt_ble_address_t", "structwiced__bt__ble__address__t.html", [
-      [ "type", "structwiced__bt__ble__address__t.html#af61e36eecfbe8bb2814d61fa1d99a102", null ],
-      [ "bda", "structwiced__bt__ble__address__t.html#a716ccf91b7a7048b73c1e836e7782afe", null ]
-    ] ],
-    [ "tDRB", "structt_d_r_b.html", [
-      [ "drb_data_len", "structt_d_r_b.html#a03b3684a053c6fec95b16c395b528214", null ],
-      [ "drb_data_offset", "structt_d_r_b.html#aedefe32ab5c4e9cc53410180d276ab45", null ],
-      [ "drb_data", "structt_d_r_b.html#a669fac4ab39139f0e03587357530dddc", null ]
-    ] ],
     [ "BT_PSM_SDP", "group__bt__types.html#ga7933bddfcd12e2be4c48713e344bd908", null ],
     [ "BT_PSM_RFCOMM", "group__bt__types.html#ga78dabc90e44bb1898b2123401ee15475", null ],
     [ "BT_PSM_TCS", "group__bt__types.html#ga4eb1fc20075341aea518c23a3b1074c3", null ],
@@ -93,7 +68,6 @@ var group__bt__types =
     [ "DRB_OVERHEAD_SIZE", "group__bt__types.html#ga76cc4e51e261caae3879751a959b97d6", null ],
     [ "L2CAP_ECRB_MAX_CHANNELS_PER_CMD", "group__bt__types.html#ga5397015950b4d07f743943d5a4566e1b", null ],
     [ "EATT_CHANNELS_PER_TRANSACTION", "group__bt__types.html#ga2c8591481949a685b796c1ca6f0b4daa", null ],
-    [ "UINT128_TO_STREAM", "group__bt__types.html#ga491d180a0b74de948f9ae4dd4dcdd29f", null ],
     [ "UINT64_TO_STREAM", "group__bt__types.html#ga9d81be010945d34e4e62255d5713904a", null ],
     [ "UINT48_TO_STREAM", "group__bt__types.html#gaf8eeaf767787bc7b74d6f66e610fb3ef", null ],
     [ "UINT40_TO_STREAM", "group__bt__types.html#gae40819e2d46c96b60ca9f80cad803303", null ],
@@ -125,11 +99,9 @@ var group__bt__types =
     [ "STREAM_TO_UINT16", "group__bt__types.html#ga670ed0fdcc98bb8602542d045fce12eb", null ],
     [ "BDADDR_TO_STREAM", "group__bt__types.html#ga91ec9c9ea053d90efffcaa3db2674e93", null ],
     [ "STREAM_TO_BDADDR", "group__bt__types.html#ga35346763e3ee5924c77efc44ea0e8742", null ],
-    [ "UINT32_TO_FIELD", "group__bt__types.html#ga1692c4716ada7880f01eea87cc24789b", null ],
     [ "UINT24_TO_FIELD", "group__bt__types.html#ga306776371385d555d3ad4da08dd291dd", null ],
     [ "UINT16_TO_FIELD", "group__bt__types.html#ga88160d8900d68fe47dc5dffd74dcac43", null ],
     [ "UINT8_TO_FIELD", "group__bt__types.html#ga4834055be2a1acfd60b171e0bb0ef138", null ],
-    [ "UINT128_TO_BE_STREAM", "group__bt__types.html#gaa90d84042dc6969f73b4c95fb66df69d", null ],
     [ "UINT64_TO_BE_STREAM", "group__bt__types.html#ga7cd81d83607dee93425a400cdd206534", null ],
     [ "UINT32_TO_BE_STREAM", "group__bt__types.html#ga5ea4453c0e23535bcd1fa289ef1cf0d8", null ],
     [ "UINT24_TO_BE_STREAM", "group__bt__types.html#ga1900995f495b52fb6c96e2d805e33d37", null ],
@@ -142,7 +114,6 @@ var group__bt__types =
     [ "BE_STREAM_TO_UINT32", "group__bt__types.html#gab62c86f752c1cd90b5e95760ec6ee6d2", null ],
     [ "BE_STREAM_TO_UINT64", "group__bt__types.html#ga4af9adb72d2ec435804009e3a42faf95", null ],
     [ "BE_STREAM_TO_ARRAY", "group__bt__types.html#gaf3f1b6f6fb034587395bef5a390e8d9a", null ],
-    [ "UINT32_TO_BE_FIELD", "group__bt__types.html#ga595ab5116e0add8d070b729c2a265093", null ],
     [ "UINT24_TO_BE_FIELD", "group__bt__types.html#ga2c6c30ec9ffc3f96da053bb45923d09e", null ],
     [ "UINT16_TO_BE_FIELD", "group__bt__types.html#gaa1018eb08a799320612e706ca43a6e97", null ],
     [ "UINT8_TO_BE_FIELD", "group__bt__types.html#ga102a82c8e8d4e2e144860ecf33d60dee", null ],

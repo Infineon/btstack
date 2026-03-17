@@ -1,3 +1,25 @@
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2019 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of version 2 of the GNU General Public License as published by
+the Free Software Foundation
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "Bluetooth Host Stack Library", "index.html", [
@@ -9,16 +31,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "group___result.html",
-"group__gatt__server__api__functions.html",
-"group__wiced__bt__platform__group.html#gaf059de81cbbe4c5ce5872eed1cc6e32c",
-"group__wicedbt___conn.html#ggaee9fcae42ad155c155022526287bd015a34e5ad50e465fa4163a7161be701efd2",
-"group__wicedbt___extended.html#ga6be4323c15db619053705d229081d867",
-"group__wicedbt__gatt.html#gaf4144a9998c20a04feba6a3de1714f70",
-"structwiced__ble__cs__capabilities__t.html#a9914f56c393a5088b27425659c604218",
-"structwiced__ble__padv__subevent__rsp__data__t.html#aea7203890b282ca5bf87f7aef8f83483",
-"structwiced__bt__dev__ble__io__caps__req__t.html#aab853e73ba0a1c0654cacb4ebc35812d",
-"structwiced__bt__gatt__read__by__type__t.html",
-"unionwiced__bt__gatt__request__params__t.html#a434d2a9442cdacf7355f905123f10d64"
+"group__gattdb__api__functions.html#ga677cb480a1affb01d8f2c7f4c35dff2e",
+"group__wiced__mem.html#ga8eb99f9920449033af7323ed0eb8f69c",
+"group__wicedbt___device_management.html#ga5b389d0200be0a871a4258d88a8ae79c",
+"group__wicedbt___extended.html#gga122edf4d5a453b329774c4cbdad6b4a5a06234ca144f35338f6bc4120362b5001",
+"group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68ba5eb1dc7717102415663e5b5c4e4d6857"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

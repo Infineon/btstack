@@ -1,35 +1,37 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="structwiced__bt__mesh__provision__connect__data__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_provision_connect_data_t</compoundname>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structwiced__bt__mesh__provision__connect__data__t_1a289289a060e214761793a8b6afe97dc8" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="group__wiced__bt__mesh__provisioning_1ga289289a060e214761793a8b6afe97dc8" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
         <definition>uint8_t wiced_bt_mesh_provision_connect_data_t::uuid[16]</definition>
         <argsstring>[16]</argsstring>
         <name>uuid</name>
         <briefdescription>
-<para>UUID of the device to provision. </para>        </briefdescription>
+<para>UUID of the device to provision. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="305" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="305" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="305" column="14" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="305" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structwiced__bt__mesh__provision__connect__data__t_1a93be51525841eddfe87c2a820aec35f4" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="group__wiced__bt__mesh__provisioning_1ga93be51525841eddfe87c2a820aec35f4" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
         <definition>uint8_t wiced_bt_mesh_provision_connect_data_t::identify_duration</definition>
         <argsstring></argsstring>
         <name>identify_duration</name>
         <briefdescription>
-<para>Duration of the identify state. </para>        </briefdescription>
+<para>Duration of the identify state. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="306" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="306" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="306" column="14" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="306" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structwiced__bt__mesh__provision__connect__data__t_1af1ce89b2aa6265f82f239e0b8f83db88" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="group__wiced__bt__mesh__provisioning_1gaf1ce89b2aa6265f82f239e0b8f83db88" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
         <definition>uint8_t wiced_bt_mesh_provision_connect_data_t::procedure</definition>
         <argsstring></argsstring>
@@ -40,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="307" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="307" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="307" column="14" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="307" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -49,9 +51,9 @@
     </detaileddescription>
     <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" line="304" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_provision.h" bodystart="303" bodyend="308"/>
     <listofallmembers>
-      <member refid="structwiced__bt__mesh__provision__connect__data__t_1a93be51525841eddfe87c2a820aec35f4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_connect_data_t</scope><name>identify_duration</name></member>
-      <member refid="structwiced__bt__mesh__provision__connect__data__t_1af1ce89b2aa6265f82f239e0b8f83db88" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_connect_data_t</scope><name>procedure</name></member>
-      <member refid="structwiced__bt__mesh__provision__connect__data__t_1a289289a060e214761793a8b6afe97dc8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_connect_data_t</scope><name>uuid</name></member>
+      <member refid="group__wiced__bt__mesh__provisioning_1ga93be51525841eddfe87c2a820aec35f4" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_connect_data_t</scope><name>identify_duration</name></member>
+      <member refid="group__wiced__bt__mesh__provisioning_1gaf1ce89b2aa6265f82f239e0b8f83db88" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_connect_data_t</scope><name>procedure</name></member>
+      <member refid="group__wiced__bt__mesh__provisioning_1ga289289a060e214761793a8b6afe97dc8" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_provision_connect_data_t</scope><name>uuid</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

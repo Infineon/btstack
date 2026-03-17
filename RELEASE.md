@@ -7,6 +7,11 @@ Following are the limitations when using host based address resolution (only app
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
 ## Changelog
+## V5.0.5
+### Updates in BTSTACK5.0.5
+ - Changes to reduce start up time
+ - Added new API, wiced_bt_dev_read_afh_channel_map, to read the AFH mode and channel map
+
 ## V5.0.4
 ### Updates in BTSTACK5.0.4
  - Fixed an issue where scanning was disabled after host-based RPA change, even if it was initially enabled.

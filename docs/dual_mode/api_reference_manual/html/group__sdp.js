@@ -1,39 +1,5 @@
 var group__sdp =
 [
-    [ "wiced_bt_sdp_discovery_attribute_value_t", "structwiced__bt__sdp__discovery__attribute__value__t.html", [
-      [ "u8", "structwiced__bt__sdp__discovery__attribute__value__t.html#ace0e0a04c815d89277cccf143c01b77c", null ],
-      [ "u16", "structwiced__bt__sdp__discovery__attribute__value__t.html#a4d57e1798e153600454a77872401f3d0", null ],
-      [ "u32", "structwiced__bt__sdp__discovery__attribute__value__t.html#a4539a63e674db9a7f8679e96899c8ff6", null ],
-      [ "array", "structwiced__bt__sdp__discovery__attribute__value__t.html#af6a3f4b4c91e082726806b53552a07ab", null ],
-      [ "p_sub_attr", "structwiced__bt__sdp__discovery__attribute__value__t.html#a2f227b7c2507e15f733a6b84c2538e0e", null ],
-      [ "v", "structwiced__bt__sdp__discovery__attribute__value__t.html#a8e2e1b393a354f04518cb735855d26ac", null ]
-    ] ],
-    [ "wiced_bt_sdp_discovery_attribute_t", "structwiced__bt__sdp__discovery__attribute__t.html", [
-      [ "p_next_attr", "structwiced__bt__sdp__discovery__attribute__t.html#a8928cd1e5271eea889abcf0d56b99e56", null ],
-      [ "attr_id", "structwiced__bt__sdp__discovery__attribute__t.html#a7607974079edbe8c3b3eca493422cf75", null ],
-      [ "attr_len_type", "structwiced__bt__sdp__discovery__attribute__t.html#a1e5c9ec8233d82311ec3263cb6b0754f", null ],
-      [ "attr_value", "structwiced__bt__sdp__discovery__attribute__t.html#ac8ab2352d0698804982a3ee84a110f21", null ]
-    ] ],
-    [ "wiced_bt_sdp_discovery_record_t", "structwiced__bt__sdp__discovery__record__t.html", [
-      [ "p_first_attr", "structwiced__bt__sdp__discovery__record__t.html#a2c03131b6854412677af9229105e21fc", null ],
-      [ "p_next_rec", "structwiced__bt__sdp__discovery__record__t.html#a9092f93ec78136b00a77a7d4427a7ce8", null ],
-      [ "time_read", "structwiced__bt__sdp__discovery__record__t.html#acf2163c1a64b9119939ac9df95067641", null ]
-    ] ],
-    [ "wiced_bt_sdp_discovery_db_t", "structwiced__bt__sdp__discovery__db__t.html", [
-      [ "mem_size", "structwiced__bt__sdp__discovery__db__t.html#a81d7ef3616ec429b4a18e5b9d36ac48f", null ],
-      [ "mem_free", "structwiced__bt__sdp__discovery__db__t.html#a46b1feac5e72fb9e386b9df692339b06", null ],
-      [ "p_first_rec", "structwiced__bt__sdp__discovery__db__t.html#a5756e0f4a5aa37bed48af0338f12512b", null ],
-      [ "num_uuid_filters", "structwiced__bt__sdp__discovery__db__t.html#afe0c35dff37a42c46bd796009c2f6c74", null ],
-      [ "uid_filters", "structwiced__bt__sdp__discovery__db__t.html#a466ec3bda86940a09c907ff4ca172c66", null ],
-      [ "num_attr_filters", "structwiced__bt__sdp__discovery__db__t.html#a9f8b2a803f1a273cbbcd7ed70b4101bc", null ],
-      [ "attr_filters", "structwiced__bt__sdp__discovery__db__t.html#a4ad626b969526631976a640932ec5bab", null ],
-      [ "p_free_mem", "structwiced__bt__sdp__discovery__db__t.html#aae66b88fe1874d2c12ea4f8dc7cfacfc", null ]
-    ] ],
-    [ "wiced_bt_sdp_protocol_elem_t", "structwiced__bt__sdp__protocol__elem__t.html", [
-      [ "protocol_uuid", "structwiced__bt__sdp__protocol__elem__t.html#ab2b2c3d1b12467aeb8e082218b584d8f", null ],
-      [ "num_params", "structwiced__bt__sdp__protocol__elem__t.html#ab3aff73ba15eece3f9555b52b08a8742", null ],
-      [ "params", "structwiced__bt__sdp__protocol__elem__t.html#ae2b1eeddf4a8e35b349a6ce2530fddb1", null ]
-    ] ],
     [ "SDP_PSM", "group__sdp.html#ga25ce859d7ee2730e1d22d11c051ed60d", null ],
     [ "SDP_DISC_ATTR_LEN_MASK", "group__sdp.html#gae9c1f263040cd7e41e0264d8a5b53762", null ],
     [ "SDP_DISC_ATTR_TYPE", "group__sdp.html#ga742db20fb380a3c2e071662a29c6f805", null ],
@@ -42,7 +8,6 @@ var group__sdp =
     [ "SDP_MAX_UUID_FILTERS", "group__sdp.html#gace2c19cbabc75941514ba0eec6bf3afa", null ],
     [ "SDP_MAX_ATTR_FILTERS", "group__sdp.html#ga0f5032f09fcdbbd0524365bccd356599", null ],
     [ "SDP_MAX_PROTOCOL_PARAMS", "group__sdp.html#gabb2a95938d2ec26d1c235135fb84f52d", null ],
-    [ "SDP_UINT1", "group__sdp.html#ga9f3bd656aec0e3cb7212f3dc8f9fd0bb", null ],
     [ "SDP_UINT2", "group__sdp.html#ga5432d671fd042863a1eb5743a6711dc8", null ],
     [ "SDP_UINT4", "group__sdp.html#ga3c65fa1747f1256acffa08f61b2d571c", null ],
     [ "SDP_UINT8", "group__sdp.html#ga04d384ca9c15b9100901eecc50ed61d6", null ],
@@ -93,7 +58,6 @@ var group__sdp =
     [ "SDP_ATTR_GROUP_ID", "group__sdp.html#gaf405057b65f7ae08b46ce919707d18d7", null ],
     [ "SDP_ATTR_VERSION_NUMBER_LIST", "group__sdp.html#ga230ae41ba76250c3a705a9516878321a", null ],
     [ "SDP_ATTR_SERVICE_DATABASE_STATE", "group__sdp.html#gacf2d7283d2a046a74127793457aab54f", null ],
-    [ "wiced_bt_sdp_discovery_complete_cback_t", "group__sdp.html#ga67cbc8e056216dc0f23717a556437565", null ],
     [ "wiced_bt_sdp_result_t", "group__sdp.html#ga93c6f8c9d0b76ab42e67a9f2d0dec328", [
       [ "WICED_BT_SDP_SUCCESS", "group__sdp.html#gga93c6f8c9d0b76ab42e67a9f2d0dec328a8977101f17e1245da9a2704c32ad53a4", null ],
       [ "WICED_BT_SDP_INVALID_VERSION", "group__sdp.html#gga93c6f8c9d0b76ab42e67a9f2d0dec328af6a1304636c94964b376a41ef8e45f4b", null ],
@@ -117,7 +81,6 @@ var group__sdp =
       [ "WICED_BT_SDP_CONN_REJECTED", "group__sdp.html#gga93c6f8c9d0b76ab42e67a9f2d0dec328a88fa3c55a0f7b6888a51dba22ac31ad6", null ],
       [ "WICED_BT_SDP_CANCEL", "group__sdp.html#gga93c6f8c9d0b76ab42e67a9f2d0dec328ad9deb32630ad1d082962cd4a3684e9a0", null ]
     ] ],
-    [ "wiced_bt_sdp_db_init", "group__sdp.html#ga747759ade8e5f409f6474bc739b5a0c8", null ],
     [ "wiced_bt_sdp_init_discovery_db", "group__sdp.html#gade46d3c05e78c3a80fa4c4ec914ca1b9", null ],
     [ "wiced_bt_sdp_cancel_service_search", "group__sdp.html#ga38a40844fb093f62e15b575fc2ee9d79", null ],
     [ "wiced_bt_sdp_service_search_request", "group__sdp.html#ga094936fae3882434d5904be599843e54", null ],

@@ -1,377 +1,6 @@
 var group__wiced__bt__mesh__models =
 [
     [ "Mesh Battery Server", "group__wiced__bt__mesh__battery__server.html", "group__wiced__bt__mesh__battery__server" ],
-    [ "Mesh Battery Client", "group__wiced__bt__mesh__battery__client.html", "group__wiced__bt__mesh__battery__client" ],
-    [ "Mesh Location Server", "group__wiced__bt__mesh__location__server.html", "group__wiced__bt__mesh__location__server" ],
-    [ "Mesh Location Client", "group__wiced__bt__mesh__location__client.html", "group__wiced__bt__mesh__location__client" ],
-    [ "Mesh OnOff Server", "group__wiced__bt__mesh__onoff__server.html", "group__wiced__bt__mesh__onoff__server" ],
-    [ "Mesh OnOff Client", "group__wiced__bt__mesh__onoff__client.html", "group__wiced__bt__mesh__onoff__client" ],
-    [ "Mesh Level Server", "group__wiced__bt__mesh__level__server.html", "group__wiced__bt__mesh__level__server" ],
-    [ "Mesh Level Client", "group__wiced__bt__mesh__level__client.html", "group__wiced__bt__mesh__level__client" ],
-    [ "Mesh Default Transition Time Server", "group__wiced__bt__mesh__default__transition__time__server.html", "group__wiced__bt__mesh__default__transition__time__server" ],
-    [ "Mesh Default Transition Time Client", "group__wiced__bt__mesh__default__transition__time__client.html", "group__wiced__bt__mesh__default__transition__time__client" ],
-    [ "Mesh Power OnOff Server", "group__wiced__bt__mesh__power__onoff__server.html", "group__wiced__bt__mesh__power__onoff__server" ],
-    [ "Mesh Power OnOff Client", "group__wiced__bt__mesh__power__onoff__client.html", "group__wiced__bt__mesh__power__onoff__client" ],
-    [ "Mesh Power Level Server", "group__wiced__bt__mesh__power__level__server.html", "group__wiced__bt__mesh__power__level__server" ],
-    [ "Mesh Power Level Client", "group__wiced__bt__mesh__power__level__client.html", "group__wiced__bt__mesh__power__level__client" ],
-    [ "Mesh Light Lightness Server", "group__wiced__bt__mesh__light__lightness__server.html", "group__wiced__bt__mesh__light__lightness__server" ],
-    [ "Mesh Light Lightness Client", "group__wiced__bt__mesh__light__lightness__client.html", "group__wiced__bt__mesh__light__lightness__client" ],
-    [ "Mesh Light CTL Server", "group__wiced__bt__mesh__light__ctl__server.html", "group__wiced__bt__mesh__light__ctl__server" ],
-    [ "Mesh Light CTL Client", "group__wiced__bt__mesh__light__ctl__client.html", "group__wiced__bt__mesh__light__ctl__client" ],
-    [ "Mesh Light HSL Server", "group__wiced__bt__mesh__light__hsl__server.html", "group__wiced__bt__mesh__light__hsl__server" ],
-    [ "Mesh Light HSL Client", "group__wiced__bt__mesh__light__hsl__client.html", "group__wiced__bt__mesh__light__hsl__client" ],
-    [ "Mesh Light xyL Server", "group__wiced__bt__mesh__light__xyl__server.html", "group__wiced__bt__mesh__light__xyl__server" ],
-    [ "Mesh Light xyL Client", "group__wiced__bt__mesh__light__xyl__client.html", "group__wiced__bt__mesh__light__xyl__client" ],
-    [ "Mesh Light LC Server", "group__wiced__bt__mesh__model__light__lc__server.html", "group__wiced__bt__mesh__model__light__lc__server" ],
-    [ "Mesh Light LC Client", "group__wiced__bt__mesh__light__lc__client.html", "group__wiced__bt__mesh__light__lc__client" ],
-    [ "Mesh Sensor Server", "group__wiced__bt__mesh__sensor__server.html", "group__wiced__bt__mesh__sensor__server" ],
-    [ "Mesh Sensor Client", "group__wiced__bt__mesh__sensor__client.html", "group__wiced__bt__mesh__sensor__client" ],
-    [ "Mesh Scene Server", "group__wiced__bt__mesh__scene__server.html", "group__wiced__bt__mesh__scene__server" ],
-    [ "Mesh Scene Client", "group__wiced__bt__mesh__scene__client.html", "group__wiced__bt__mesh__scene__client" ],
-    [ "Mesh Time Server", "group__wiced__bt__mesh__time__server.html", "group__wiced__bt__mesh__time__server" ],
-    [ "Mesh Time Client", "group__wiced__bt__mesh__time__client.html", "group__wiced__bt__mesh__time__client" ],
-    [ "Mesh Scheduler Server", "group__wiced__bt__mesh__scheduler__server.html", "group__wiced__bt__mesh__scheduler__server" ],
-    [ "Mesh Scheduler Client", "group__wiced__bt__mesh__scheduler__client.html", "group__wiced__bt__mesh__scheduler__client" ],
-    [ "mesh_battery_event_t", "structmesh__battery__event__t.html", [
-      [ "battery_level", "structmesh__battery__event__t.html#a320cc9afdf7ba85fb92f20121b6ab1aa", null ],
-      [ "time_to_discharge", "structmesh__battery__event__t.html#aa41590794f556a8021817b94279fec1f", null ],
-      [ "time_to_charge", "structmesh__battery__event__t.html#a65675c13531a2b1aecc4e1e8f0d69e18", null ],
-      [ "presence", "structmesh__battery__event__t.html#a9079faf3ea8eada1c200fb089e801146", null ],
-      [ "level_inidicator", "structmesh__battery__event__t.html#aca5f404f9aea7bee49f320b3e23680d8", null ],
-      [ "charging", "structmesh__battery__event__t.html#a055c599c379e018d897c1c5c312494b6", null ],
-      [ "servicability", "structmesh__battery__event__t.html#afebaea7a25290aea4dca6f28448a57ae", null ]
-    ] ],
-    [ "wiced_bt_mesh_location_global_data_t", "structwiced__bt__mesh__location__global__data__t.html", [
-      [ "global_latitude", "structwiced__bt__mesh__location__global__data__t.html#afce33da6c6b58402a1a75f9f2615d783", null ],
-      [ "global_longitude", "structwiced__bt__mesh__location__global__data__t.html#a591c84aaf56239ddddf9b862281b5134", null ],
-      [ "global_altitude", "structwiced__bt__mesh__location__global__data__t.html#a01c6ea9c26b56e0208795c8d8af355e3", null ]
-    ] ],
-    [ "wiced_bt_mesh_location_local_data_t", "structwiced__bt__mesh__location__local__data__t.html", [
-      [ "local_north", "structwiced__bt__mesh__location__local__data__t.html#a18f8f28eb6157c5768a16771f6d2f2a7", null ],
-      [ "local_east", "structwiced__bt__mesh__location__local__data__t.html#aad6cd59fcb0cd1ac66f8b3f24767701e", null ],
-      [ "local_altitude", "structwiced__bt__mesh__location__local__data__t.html#ab320fa7fd16dbd4b811e47401ab1f0c2", null ],
-      [ "floor_number", "structwiced__bt__mesh__location__local__data__t.html#ad89a5e6a4d5ddeb0a427f764f6b4d709", null ],
-      [ "is_mobile", "structwiced__bt__mesh__location__local__data__t.html#aaaeec42714b945c11801f1c7bbb0380d", null ],
-      [ "update_time", "structwiced__bt__mesh__location__local__data__t.html#a08a19a3439bea5742c2559f06e2a027c", null ],
-      [ "precision", "structwiced__bt__mesh__location__local__data__t.html#a1ab02acb6d898159723d4b06628391b2", null ]
-    ] ],
-    [ "wiced_bt_mesh_onoff_set_data_t", "structwiced__bt__mesh__onoff__set__data__t.html", [
-      [ "onoff", "structwiced__bt__mesh__onoff__set__data__t.html#ad0bb581a797735a5bedf8967cceebc7a", null ],
-      [ "transition_time", "structwiced__bt__mesh__onoff__set__data__t.html#a24aee22b8c856abc8f96fe2858a51303", null ],
-      [ "delay", "structwiced__bt__mesh__onoff__set__data__t.html#aa6c6473803b7d76d16c565f3dcb16c56", null ]
-    ] ],
-    [ "wiced_bt_mesh_onoff_status_data_t", "structwiced__bt__mesh__onoff__status__data__t.html", [
-      [ "present_onoff", "structwiced__bt__mesh__onoff__status__data__t.html#a65b05e8f6dd6b72903ed695546724caf", null ],
-      [ "target_onoff", "structwiced__bt__mesh__onoff__status__data__t.html#a8b87d7ad2b088544a326283211e9266f", null ],
-      [ "remaining_time", "structwiced__bt__mesh__onoff__status__data__t.html#a81872e1d3e1579433a87fcb351162b68", null ]
-    ] ],
-    [ "wiced_bt_mesh_level_set_level_t", "structwiced__bt__mesh__level__set__level__t.html", [
-      [ "level", "structwiced__bt__mesh__level__set__level__t.html#aac71381a242b2c28e633cc007e3b817c", null ],
-      [ "transition_time", "structwiced__bt__mesh__level__set__level__t.html#ac3f4bf4d0c4e5bd2174828a333e1ce20", null ],
-      [ "delay", "structwiced__bt__mesh__level__set__level__t.html#a58e543b1d67dcf27e91101c588fbae6e", null ]
-    ] ],
-    [ "wiced_bt_mesh_level_set_delta_t", "structwiced__bt__mesh__level__set__delta__t.html", [
-      [ "delta", "structwiced__bt__mesh__level__set__delta__t.html#af3eb02870c15bebb71e3fab2306517ed", null ],
-      [ "transition_time", "structwiced__bt__mesh__level__set__delta__t.html#a099585e84fecefd6021224a9ed792b20", null ],
-      [ "delay", "structwiced__bt__mesh__level__set__delta__t.html#ae90225fc1f169a9bf8c9229e97675e70", null ],
-      [ "continuation", "structwiced__bt__mesh__level__set__delta__t.html#a8cb5b5c3cb81d467e44e4ba6c13e93e0", null ]
-    ] ],
-    [ "wiced_bt_mesh_level_set_move_t", "structwiced__bt__mesh__level__set__move__t.html", [
-      [ "delta", "structwiced__bt__mesh__level__set__move__t.html#ac24bb3e8f8cb838b535def0000d1c431", null ],
-      [ "transition_time", "structwiced__bt__mesh__level__set__move__t.html#a638f8d6f03af16f2dd2e23f47975381d", null ],
-      [ "delay", "structwiced__bt__mesh__level__set__move__t.html#a93dd69289628983dcd8bf6c5d30125f8", null ],
-      [ "continuation", "structwiced__bt__mesh__level__set__move__t.html#a3f82e3241fca9c1a264a0fd9b8cb9ee7", null ]
-    ] ],
-    [ "wiced_bt_mesh_level_status_data_t", "structwiced__bt__mesh__level__status__data__t.html", [
-      [ "present_level", "structwiced__bt__mesh__level__status__data__t.html#aa8a2f34dfc8c19d9974e12669a6a3997", null ],
-      [ "target_level", "structwiced__bt__mesh__level__status__data__t.html#af978f171f545454294c1420c3c24e1e2", null ],
-      [ "remaining_time", "structwiced__bt__mesh__level__status__data__t.html#af89a054b59a8ecc1f7f79e3e71985188", null ]
-    ] ],
-    [ "wiced_bt_mesh_default_transition_time_data_t", "structwiced__bt__mesh__default__transition__time__data__t.html", [
-      [ "time", "structwiced__bt__mesh__default__transition__time__data__t.html#a73738b12a3a47a936ab6edf2186b0c71", null ]
-    ] ],
-    [ "wiced_bt_mesh_power_onoff_data_t", "structwiced__bt__mesh__power__onoff__data__t.html", [
-      [ "on_power_up", "structwiced__bt__mesh__power__onoff__data__t.html#ae6865dd7e8f2a1c7942c30ce37495d61", null ]
-    ] ],
-    [ "wiced_bt_mesh_power_level_status_data_t", "structwiced__bt__mesh__power__level__status__data__t.html", [
-      [ "present_power", "structwiced__bt__mesh__power__level__status__data__t.html#ac1d1046376913f9c310e0e8863821a6f", null ],
-      [ "target_power", "structwiced__bt__mesh__power__level__status__data__t.html#a38a876245c51b593b89b32122c674887", null ],
-      [ "remaining_time", "structwiced__bt__mesh__power__level__status__data__t.html#aba21beba1b532393f5756cb38672878e", null ]
-    ] ],
-    [ "wiced_bt_mesh_power_level_last_data_t", "structwiced__bt__mesh__power__level__last__data__t.html", [
-      [ "power", "structwiced__bt__mesh__power__level__last__data__t.html#a51f821a72e4c6474e7b73434dd0d38f3", null ]
-    ] ],
-    [ "wiced_bt_mesh_power_default_data_t", "structwiced__bt__mesh__power__default__data__t.html", [
-      [ "power", "structwiced__bt__mesh__power__default__data__t.html#a27b1f68eca92d86f84a235b2770031ad", null ]
-    ] ],
-    [ "wiced_bt_mesh_power_level_range_set_data_t", "structwiced__bt__mesh__power__level__range__set__data__t.html", [
-      [ "power_min", "structwiced__bt__mesh__power__level__range__set__data__t.html#aaa668b78d11b6fd84a9d84495f5e014d", null ],
-      [ "power_max", "structwiced__bt__mesh__power__level__range__set__data__t.html#a1c91af28d807a62d6fd6bceaa7dd9c61", null ]
-    ] ],
-    [ "wiced_bt_mesh_power_range_status_data_t", "structwiced__bt__mesh__power__range__status__data__t.html", [
-      [ "status", "structwiced__bt__mesh__power__range__status__data__t.html#a5561169c20e9263ab7fda5939145dc2b", null ],
-      [ "power_min", "structwiced__bt__mesh__power__range__status__data__t.html#a7605a77489d418a6c1d230f261a2e38b", null ],
-      [ "power_max", "structwiced__bt__mesh__power__range__status__data__t.html#aada3bda59f9754ebb6a6ff73f651f7ff", null ]
-    ] ],
-    [ "wiced_bt_mesh_power_level_set_level_t", "structwiced__bt__mesh__power__level__set__level__t.html", [
-      [ "level", "structwiced__bt__mesh__power__level__set__level__t.html#a1cd3c1f7fd9d5b991eaecf71068f6d27", null ],
-      [ "transition_time", "structwiced__bt__mesh__power__level__set__level__t.html#abc3ee5908c2a8ddf7b86cdc2279745f1", null ],
-      [ "delay", "structwiced__bt__mesh__power__level__set__level__t.html#ac4952a7db452e37f418ead4ee2edc8ce", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lightness_status_data_t", "structwiced__bt__mesh__light__lightness__status__data__t.html", [
-      [ "present", "structwiced__bt__mesh__light__lightness__status__data__t.html#a309e4e377860b4704e65b158efbe6777", null ],
-      [ "target", "structwiced__bt__mesh__light__lightness__status__data__t.html#a5f0f098b7f3c35a7759353bed2c80b88", null ],
-      [ "remaining_time", "structwiced__bt__mesh__light__lightness__status__data__t.html#a4c6fdd21d239eb9caeee6c654aa720a9", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lightness_status_t", "structwiced__bt__mesh__light__lightness__status__t.html", [
-      [ "lightness_actual_present", "structwiced__bt__mesh__light__lightness__status__t.html#a75c86f946881dfea8702306b49fa746f", null ],
-      [ "lightness_linear_present", "structwiced__bt__mesh__light__lightness__status__t.html#ac2a45cc50f99ce77271dffbb8570cd15", null ],
-      [ "lightness_actual_target", "structwiced__bt__mesh__light__lightness__status__t.html#a81e515cedd96aa996728f191f1a47fb3", null ],
-      [ "lightness_linear_target", "structwiced__bt__mesh__light__lightness__status__t.html#ac87813ae70c8d60be8dcf5b1e6fd8dbf", null ],
-      [ "remaining_time", "structwiced__bt__mesh__light__lightness__status__t.html#a8f63f7b5c56630c34a756b9f1d6e96af", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lightness_set_t", "structwiced__bt__mesh__light__lightness__set__t.html", [
-      [ "lightness_actual", "structwiced__bt__mesh__light__lightness__set__t.html#a530f2cd7f4d9a377a46d4162cc998be6", null ],
-      [ "lightness_linear", "structwiced__bt__mesh__light__lightness__set__t.html#a7290dd354a58e9c141fa29f05e8b9a50", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__lightness__set__t.html#aeda299fe0214e80bc5ea60e15a26d0c6", null ],
-      [ "delay", "structwiced__bt__mesh__light__lightness__set__t.html#a26aadca2000ec74a5a12ef1e0d48ec65", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lightness_actual_set_t", "structwiced__bt__mesh__light__lightness__actual__set__t.html", [
-      [ "lightness_actual", "structwiced__bt__mesh__light__lightness__actual__set__t.html#a677fed03bcb1d716f9bebf0037b0a92e", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__lightness__actual__set__t.html#a893cc2e2f531b71ffb96857892a0dfe5", null ],
-      [ "delay", "structwiced__bt__mesh__light__lightness__actual__set__t.html#aff31d56cb9bf404278149e0e0731031d", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lightness_linear_set_t", "structwiced__bt__mesh__light__lightness__linear__set__t.html", [
-      [ "lightness_linear", "structwiced__bt__mesh__light__lightness__linear__set__t.html#aebed19958c3f5bd64a96cec72e8f6d72", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__lightness__linear__set__t.html#af50556b0c7f75c05d8f6d9d25509e6ba", null ],
-      [ "delay", "structwiced__bt__mesh__light__lightness__linear__set__t.html#afc1112d2ffae5a50efc34431aeffd865", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lightness_last_data_t", "structwiced__bt__mesh__light__lightness__last__data__t.html", [
-      [ "last_level", "structwiced__bt__mesh__light__lightness__last__data__t.html#a1ecaeeafdbf2c8a152a00db6eb153261", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lightness_default_data_t", "structwiced__bt__mesh__light__lightness__default__data__t.html", [
-      [ "default_level", "structwiced__bt__mesh__light__lightness__default__data__t.html#abab1393ac17b32ae82c6bd839b12f27a", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lightness_range_set_data_t", "structwiced__bt__mesh__light__lightness__range__set__data__t.html", [
-      [ "min_level", "structwiced__bt__mesh__light__lightness__range__set__data__t.html#a6c90adda577ed564ddb2e45899fcfde4", null ],
-      [ "max_level", "structwiced__bt__mesh__light__lightness__range__set__data__t.html#a4768fa45beba4ff9a3d7833e982449f3", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lightness_range_status_data_t", "structwiced__bt__mesh__light__lightness__range__status__data__t.html", [
-      [ "status", "structwiced__bt__mesh__light__lightness__range__status__data__t.html#a773a83723f3de3587b924300c93eceab", null ],
-      [ "min_level", "structwiced__bt__mesh__light__lightness__range__status__data__t.html#aeb1c89db03740e3a08177325887c0f68", null ],
-      [ "max_level", "structwiced__bt__mesh__light__lightness__range__status__data__t.html#a16d89a8912182a2c4a2a168f305cd3d7", null ]
-    ] ],
-    [ "wiced_bt_mesh_properties_get_data_t", "structwiced__bt__mesh__properties__get__data__t.html", [
-      [ "type", "structwiced__bt__mesh__properties__get__data__t.html#a2e1c4e14ac9d4ab1dddacc6e1faf9977", null ],
-      [ "starting_id", "structwiced__bt__mesh__properties__get__data__t.html#a70efe312d60ba8127086330e690b495e", null ]
-    ] ],
-    [ "wiced_bt_mesh_property_get_data_t", "structwiced__bt__mesh__property__get__data__t.html", [
-      [ "type", "structwiced__bt__mesh__property__get__data__t.html#a62c4e92066b7d6a8e18c1d04c8a406fd", null ],
-      [ "id", "structwiced__bt__mesh__property__get__data__t.html#a5971cbeeeace1627136eb9df038c3643", null ]
-    ] ],
-    [ "wiced_bt_mesh_properties_status_data_t", "structwiced__bt__mesh__properties__status__data__t.html", [
-      [ "type", "structwiced__bt__mesh__properties__status__data__t.html#a2e0dd803e8c63038510d598266739857", null ],
-      [ "properties_num", "structwiced__bt__mesh__properties__status__data__t.html#a130e234297c9a1031d3606cc144022a2", null ],
-      [ "id", "structwiced__bt__mesh__properties__status__data__t.html#ad8c05d8f9294309d60a93a3bad43f5a1", null ]
-    ] ],
-    [ "wiced_bt_mesh_property_set_data_t", "structwiced__bt__mesh__property__set__data__t.html", [
-      [ "type", "structwiced__bt__mesh__property__set__data__t.html#a339f26f6ee20f4b46fe3c5b5179963d5", null ],
-      [ "id", "structwiced__bt__mesh__property__set__data__t.html#a837ff34a3f0988f2bfaa9c2aea85ac54", null ],
-      [ "access", "structwiced__bt__mesh__property__set__data__t.html#a405626f9d74551dd8fc397d1264e4352", null ],
-      [ "len", "structwiced__bt__mesh__property__set__data__t.html#a531420e9e93e1ae4c40e716ac6a5da6b", null ],
-      [ "value", "structwiced__bt__mesh__property__set__data__t.html#ac8dea15e2ef62651002dec81aa4bc36a", null ]
-    ] ],
-    [ "wiced_bt_mesh_property_status_data_t", "structwiced__bt__mesh__property__status__data__t.html", [
-      [ "type", "structwiced__bt__mesh__property__status__data__t.html#a4b63b353f5f48fbbc519b26a5f5cd599", null ],
-      [ "id", "structwiced__bt__mesh__property__status__data__t.html#ad940a5b9d182700df66dda03f8463467", null ],
-      [ "access", "structwiced__bt__mesh__property__status__data__t.html#a2038ec2757e15c860d6b646924c7f522", null ],
-      [ "len", "structwiced__bt__mesh__property__status__data__t.html#ae30a2ae41f017e1969a2eded3cc66f37", null ],
-      [ "value", "structwiced__bt__mesh__property__status__data__t.html#a81eb9b2ded72e25b85815dd9ad013b36", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_ctl_data_t", "structwiced__bt__mesh__light__ctl__data__t.html", [
-      [ "lightness", "structwiced__bt__mesh__light__ctl__data__t.html#aa4fb13b2567592bd3fb3e9800e8e0020", null ],
-      [ "temperature", "structwiced__bt__mesh__light__ctl__data__t.html#a189f26ba167e6fcd841b79d4408eff9a", null ],
-      [ "delta_uv", "structwiced__bt__mesh__light__ctl__data__t.html#ad3de324e3ff284443cdeea41eab0428e", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_ctl_status_data_t", "structwiced__bt__mesh__light__ctl__status__data__t.html", [
-      [ "present", "structwiced__bt__mesh__light__ctl__status__data__t.html#a8eb723bfdb0e3c8c26a557ebceda82b4", null ],
-      [ "target", "structwiced__bt__mesh__light__ctl__status__data__t.html#aceab6d0d13b07372e42211651d8f0c0c", null ],
-      [ "remaining_time", "structwiced__bt__mesh__light__ctl__status__data__t.html#a84023703d5b5f6d418bf2f40616eda3c", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_ctl_set_t", "structwiced__bt__mesh__light__ctl__set__t.html", [
-      [ "target", "structwiced__bt__mesh__light__ctl__set__t.html#a8ac015ec996517f05749a5892f2173d2", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__ctl__set__t.html#aafdc24dca127213d968dd95660a23b28", null ],
-      [ "delay", "structwiced__bt__mesh__light__ctl__set__t.html#af30466baef1143ab3a295fea12cad55d", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_ctl_temperature_set_t", "structwiced__bt__mesh__light__ctl__temperature__set__t.html", [
-      [ "target_temperature", "structwiced__bt__mesh__light__ctl__temperature__set__t.html#a0b6a1d60170e66a3c5a5ef9b19cb079e", null ],
-      [ "target_delta_uv", "structwiced__bt__mesh__light__ctl__temperature__set__t.html#a714f9c68c267b55773acddd7ffc000ee", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__ctl__temperature__set__t.html#a835c21616932dfbf1f1e37c4ec4b53da", null ],
-      [ "delay", "structwiced__bt__mesh__light__ctl__temperature__set__t.html#a4c423dd52028302e180a73cb37641546", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_ctl_default_data_t", "structwiced__bt__mesh__light__ctl__default__data__t.html", [
-      [ "default_status", "structwiced__bt__mesh__light__ctl__default__data__t.html#ab742b686dd0fee81ac8820742d074410", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_ctl_temperature_range_status_data_t", "structwiced__bt__mesh__light__ctl__temperature__range__status__data__t.html", [
-      [ "status", "structwiced__bt__mesh__light__ctl__temperature__range__status__data__t.html#ae9c7b71dc710f002bc99e1a6c69322e8", null ],
-      [ "min_level", "structwiced__bt__mesh__light__ctl__temperature__range__status__data__t.html#a6bd21e0ab63b94ec251424eab803ae78", null ],
-      [ "max_level", "structwiced__bt__mesh__light__ctl__temperature__range__status__data__t.html#a061d6bd6b4b24d025674276c718474cf", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_ctl_temperature_range_data_t", "structwiced__bt__mesh__light__ctl__temperature__range__data__t.html", [
-      [ "min_level", "structwiced__bt__mesh__light__ctl__temperature__range__data__t.html#a54a9740df3a832ca8d9b45309de231d3", null ],
-      [ "max_level", "structwiced__bt__mesh__light__ctl__temperature__range__data__t.html#ad4448825cae26f59e21efcabf00e83fa", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_delta_uv_set_level_t", "structwiced__bt__mesh__light__delta__uv__set__level__t.html", [
-      [ "level", "structwiced__bt__mesh__light__delta__uv__set__level__t.html#a8a05c13773313bdbce22dea7455bb322", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__delta__uv__set__level__t.html#a14b0b59c262b9add1f2b09b9b8c0c453", null ],
-      [ "delay", "structwiced__bt__mesh__light__delta__uv__set__level__t.html#aa4030dabc9c3d0a957f680341709c803", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_delta_uv_last_data_t", "structwiced__bt__mesh__light__delta__uv__last__data__t.html", [
-      [ "last_level", "structwiced__bt__mesh__light__delta__uv__last__data__t.html#a36c118df6bd83fdb5236bd464405cfdd", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_delta_uv_default_data_t", "structwiced__bt__mesh__light__delta__uv__default__data__t.html", [
-      [ "default_level", "structwiced__bt__mesh__light__delta__uv__default__data__t.html#a1cbd6f98d76a6e2563d50753a1f36be7", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_delta_uv_range_data_t", "structwiced__bt__mesh__light__delta__uv__range__data__t.html", [
-      [ "min_level", "structwiced__bt__mesh__light__delta__uv__range__data__t.html#a7a4f0878b3fbe67d54949593ab7e5e4c", null ],
-      [ "max_level", "structwiced__bt__mesh__light__delta__uv__range__data__t.html#a964dc952e2974c3db38d5b6ba2e06ec0", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_data_t", "structwiced__bt__mesh__light__hsl__data__t.html", [
-      [ "lightness", "structwiced__bt__mesh__light__hsl__data__t.html#a197052455ff70fc3f3d35c5964b3a1d3", null ],
-      [ "hue", "structwiced__bt__mesh__light__hsl__data__t.html#a76d4b22fcfd8c2fe0ad838ebfce39a3e", null ],
-      [ "saturation", "structwiced__bt__mesh__light__hsl__data__t.html#a82d4433a660a742d0403b8e141546bd7", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_status_data_t", "structwiced__bt__mesh__light__hsl__status__data__t.html", [
-      [ "present", "structwiced__bt__mesh__light__hsl__status__data__t.html#a582fef34886cd3c3e09137d1994d8ddd", null ],
-      [ "remaining_time", "structwiced__bt__mesh__light__hsl__status__data__t.html#ad2e70cfdd41aeaf64958d641a4740eba", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_target_status_data_t", "structwiced__bt__mesh__light__hsl__target__status__data__t.html", [
-      [ "target", "structwiced__bt__mesh__light__hsl__target__status__data__t.html#a162e3e98a28945157847ae2cfe990076", null ],
-      [ "remaining_time", "structwiced__bt__mesh__light__hsl__target__status__data__t.html#a4517054ffcba3dea84e41a1b85a6cf6b", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_set_t", "structwiced__bt__mesh__light__hsl__set__t.html", [
-      [ "target", "structwiced__bt__mesh__light__hsl__set__t.html#a59a078e1fa2d53c65a753bf4fa3dd3e5", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__hsl__set__t.html#a635d27de08785dab0e01bf832a3ed80c", null ],
-      [ "delay", "structwiced__bt__mesh__light__hsl__set__t.html#aadde0d8c69ed9e23ea53adbff3d01281", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_hue_set_t", "structwiced__bt__mesh__light__hsl__hue__set__t.html", [
-      [ "level", "structwiced__bt__mesh__light__hsl__hue__set__t.html#a4f606b653a1f8907c33d6ede6a0b13be", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__hsl__hue__set__t.html#a2df402527768f7a4d12ffab77f932068", null ],
-      [ "delay", "structwiced__bt__mesh__light__hsl__hue__set__t.html#a432fc61399bef7e944b919b873d82cb7", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_saturation_set_t", "structwiced__bt__mesh__light__hsl__saturation__set__t.html", [
-      [ "level", "structwiced__bt__mesh__light__hsl__saturation__set__t.html#aa0d87d03a8989c272bb6c79109fc4e19", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__hsl__saturation__set__t.html#a40a6da9f38aa49c4039e349db9c6b32b", null ],
-      [ "delay", "structwiced__bt__mesh__light__hsl__saturation__set__t.html#a517a0747b97c7706b25dfd323eed2b33", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_default_data_t", "structwiced__bt__mesh__light__hsl__default__data__t.html", [
-      [ "default_status", "structwiced__bt__mesh__light__hsl__default__data__t.html#afcf9aebf2e1829c640228c703e196033", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_hue_status_data_t", "structwiced__bt__mesh__light__hsl__hue__status__data__t.html", [
-      [ "present_hue", "structwiced__bt__mesh__light__hsl__hue__status__data__t.html#a41912d29e9e7583955af0b6ff0167c4d", null ],
-      [ "target_hue", "structwiced__bt__mesh__light__hsl__hue__status__data__t.html#aedad4966d33a4a0040b6eed658a6d8f9", null ],
-      [ "remaining_time", "structwiced__bt__mesh__light__hsl__hue__status__data__t.html#a174e8d29bf98b2d64e8f61662e2abaf3", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_saturation_status_data_t", "structwiced__bt__mesh__light__hsl__saturation__status__data__t.html", [
-      [ "present_saturation", "structwiced__bt__mesh__light__hsl__saturation__status__data__t.html#add8889901a72db95cda4473fdac93a7b", null ],
-      [ "target_saturation", "structwiced__bt__mesh__light__hsl__saturation__status__data__t.html#a3858f077788646d82344f32897673111", null ],
-      [ "remaining_time", "structwiced__bt__mesh__light__hsl__saturation__status__data__t.html#a34fd2bb6983ebfe4b3a82afd7790e053", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_range_set_data_t", "structwiced__bt__mesh__light__hsl__range__set__data__t.html", [
-      [ "hue_min", "structwiced__bt__mesh__light__hsl__range__set__data__t.html#ae8dc24c9319036a1b8c774ce10a65e9c", null ],
-      [ "hue_max", "structwiced__bt__mesh__light__hsl__range__set__data__t.html#a1224a4c72755b28ea700cef58c2d52da", null ],
-      [ "saturation_min", "structwiced__bt__mesh__light__hsl__range__set__data__t.html#aadefe3ad955ac565ee05f173c777eff3", null ],
-      [ "saturation_max", "structwiced__bt__mesh__light__hsl__range__set__data__t.html#ad1b11c55410152fd76069ec53da1d9d7", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_range_status_data_t", "structwiced__bt__mesh__light__hsl__range__status__data__t.html", [
-      [ "status", "structwiced__bt__mesh__light__hsl__range__status__data__t.html#ae06750b3ace27368563196932d16f2c8", null ],
-      [ "hue_min", "structwiced__bt__mesh__light__hsl__range__status__data__t.html#af45f819647c5d04fbbedae4a24d889f8", null ],
-      [ "hue_max", "structwiced__bt__mesh__light__hsl__range__status__data__t.html#ab32ea51cf5c09d2ffadceaf1862a1423", null ],
-      [ "saturation_min", "structwiced__bt__mesh__light__hsl__range__status__data__t.html#a9088308b2643313dd46044e626d3382a", null ],
-      [ "saturation_max", "structwiced__bt__mesh__light__hsl__range__status__data__t.html#a0bd1a000304f4c065c3595cc0220f409", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_hsl_default_status_data_t", "structwiced__bt__mesh__light__hsl__default__status__data__t.html", [
-      [ "default_status", "structwiced__bt__mesh__light__hsl__default__status__data__t.html#aae2d9004c5a43a92c8acfbc3f982e44a", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_xyl_data_t", "structwiced__bt__mesh__light__xyl__data__t.html", [
-      [ "lightness", "structwiced__bt__mesh__light__xyl__data__t.html#af01381fcc01f1340be1fcb73b299db32", null ],
-      [ "x", "structwiced__bt__mesh__light__xyl__data__t.html#a23e7fe8dca2d9e33e6bd1135e7d2f167", null ],
-      [ "y", "structwiced__bt__mesh__light__xyl__data__t.html#aae02a4daaea6aa7f91123d112085461a", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_xyl_xy_settings_t", "structwiced__bt__mesh__light__xyl__xy__settings__t.html", [
-      [ "x_default", "structwiced__bt__mesh__light__xyl__xy__settings__t.html#a36db5e94218bdcd9435ab08bbdf72268", null ],
-      [ "x_min", "structwiced__bt__mesh__light__xyl__xy__settings__t.html#a6c02d576390dff08903851750a03886f", null ],
-      [ "x_max", "structwiced__bt__mesh__light__xyl__xy__settings__t.html#a7eea5806a06d8dbe89d1ee59462849d6", null ],
-      [ "y_default", "structwiced__bt__mesh__light__xyl__xy__settings__t.html#a5af99e9375990e8a9c156b76673fe428", null ],
-      [ "y_min", "structwiced__bt__mesh__light__xyl__xy__settings__t.html#a6f4a504a892c2f91d1255b831b19d4f7", null ],
-      [ "y_max", "structwiced__bt__mesh__light__xyl__xy__settings__t.html#a334af3dfa26d11207c44830c9655ef5f", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_xyl_status_data_t", "structwiced__bt__mesh__light__xyl__status__data__t.html", [
-      [ "present", "structwiced__bt__mesh__light__xyl__status__data__t.html#a0822f566d7719ab696a25543dff994b2", null ],
-      [ "remaining_time", "structwiced__bt__mesh__light__xyl__status__data__t.html#a931619d1c36593457c4bf2974c81e89c", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_xyl_target_status_data_t", "structwiced__bt__mesh__light__xyl__target__status__data__t.html", [
-      [ "target", "structwiced__bt__mesh__light__xyl__target__status__data__t.html#a604161088814231838bb2e609280e882", null ],
-      [ "remaining_time", "structwiced__bt__mesh__light__xyl__target__status__data__t.html#a151cdab645cf54f2e766d835e110451d", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_xyl_set_t", "structwiced__bt__mesh__light__xyl__set__t.html", [
-      [ "target", "structwiced__bt__mesh__light__xyl__set__t.html#a400486549ec496f75a5d82b49d2f3b57", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__xyl__set__t.html#ac93b8697f18d6f6a9f25698a56f061f0", null ],
-      [ "delay", "structwiced__bt__mesh__light__xyl__set__t.html#a1696810dc9f7780b4dd5399679ff0fb9", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_xyl_default_data_t", "structwiced__bt__mesh__light__xyl__default__data__t.html", [
-      [ "default_status", "structwiced__bt__mesh__light__xyl__default__data__t.html#a3941cbbec0cee13508a6122762851ca7", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_xyl_range_set_data_t", "structwiced__bt__mesh__light__xyl__range__set__data__t.html", [
-      [ "x_min", "structwiced__bt__mesh__light__xyl__range__set__data__t.html#af1ea020223a7b13aa06705d1328999bb", null ],
-      [ "x_max", "structwiced__bt__mesh__light__xyl__range__set__data__t.html#aeeb4919056bc3e77bbc5783e13e9a6d7", null ],
-      [ "y_min", "structwiced__bt__mesh__light__xyl__range__set__data__t.html#ab1122bdaaacaa57709a109cab47cca15", null ],
-      [ "y_max", "structwiced__bt__mesh__light__xyl__range__set__data__t.html#a99dd111257ded71a056b65bd05de0ecb", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_xyl_range_status_data_t", "structwiced__bt__mesh__light__xyl__range__status__data__t.html", [
-      [ "status", "structwiced__bt__mesh__light__xyl__range__status__data__t.html#a921f36b49f2e01bd058b23a0ffef08d2", null ],
-      [ "x_min", "structwiced__bt__mesh__light__xyl__range__status__data__t.html#a8054c8a3dcd13ea4de2f3409e1fcfe99", null ],
-      [ "x_max", "structwiced__bt__mesh__light__xyl__range__status__data__t.html#ad640ad6319e495ef551cbb625f9adb8a", null ],
-      [ "y_min", "structwiced__bt__mesh__light__xyl__range__status__data__t.html#a390e94615c78fbd9b174237698ed42a7", null ],
-      [ "y_max", "structwiced__bt__mesh__light__xyl__range__status__data__t.html#aa9d200e2b1585732fc9a1c9246935388", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_xyl_default_status_data_t", "structwiced__bt__mesh__light__xyl__default__status__data__t.html", [
-      [ "default_status", "structwiced__bt__mesh__light__xyl__default__status__data__t.html#ad11c5d57bdee2cd232b15bd3953f3996", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lc_mode_set_data_t", "structwiced__bt__mesh__light__lc__mode__set__data__t.html", [
-      [ "mode", "structwiced__bt__mesh__light__lc__mode__set__data__t.html#a19de64e66b24eb8eb93a6ba2aead7163", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lc_occupancy_mode_set_data_t", "structwiced__bt__mesh__light__lc__occupancy__mode__set__data__t.html", [
-      [ "mode", "structwiced__bt__mesh__light__lc__occupancy__mode__set__data__t.html#a770b268c61308a2ec427ebb9a77fae61", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lc_light_onoff_set_data_t", "structwiced__bt__mesh__light__lc__light__onoff__set__data__t.html", [
-      [ "light_onoff", "structwiced__bt__mesh__light__lc__light__onoff__set__data__t.html#a89df00c4cbbde282d270b8e2ba57a026", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__lc__light__onoff__set__data__t.html#a227a0ae7d9301990aa8c7830d70a2034", null ],
-      [ "delay", "structwiced__bt__mesh__light__lc__light__onoff__set__data__t.html#aeb270952e0740bda7dc7da291ea0fb2a", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lc_light_onoff_status_data_t", "structwiced__bt__mesh__light__lc__light__onoff__status__data__t.html", [
-      [ "present_onoff", "structwiced__bt__mesh__light__lc__light__onoff__status__data__t.html#a62cc72c3f863a78d875a954479612196", null ],
-      [ "target_onoff", "structwiced__bt__mesh__light__lc__light__onoff__status__data__t.html#a82d20e05294ecb36b9457abe45801194", null ],
-      [ "remaining_time", "structwiced__bt__mesh__light__lc__light__onoff__status__data__t.html#afb4acb5f61649ff9ca35b24b924f63b4", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lc_linear_out_set_data_t", "structwiced__bt__mesh__light__lc__linear__out__set__data__t.html", [
-      [ "linear_out", "structwiced__bt__mesh__light__lc__linear__out__set__data__t.html#a156632f04cc534d03478c79623e63cf8", null ],
-      [ "transition_time", "structwiced__bt__mesh__light__lc__linear__out__set__data__t.html#a80efe56a201e1d74cdb8707fc5e8d8c8", null ],
-      [ "delay", "structwiced__bt__mesh__light__lc__linear__out__set__data__t.html#a575132b6556c7e57a44d4ff2b4a44a3d", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lc_property_get_data_t", "structwiced__bt__mesh__light__lc__property__get__data__t.html", [
-      [ "id", "structwiced__bt__mesh__light__lc__property__get__data__t.html#a883dd9b380643e8d0deb90109b7c1306", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lc_property_set_data_t", "structwiced__bt__mesh__light__lc__property__set__data__t.html", [
-      [ "id", "structwiced__bt__mesh__light__lc__property__set__data__t.html#a32d39e606fc68a25ab15b7abe5743e07", null ],
-      [ "len", "structwiced__bt__mesh__light__lc__property__set__data__t.html#afd81e693914d19837095243352a9eee8", null ],
-      [ "value", "structwiced__bt__mesh__light__lc__property__set__data__t.html#a433737a600e476773c3091b55e064f6c", null ]
-    ] ],
-    [ "wiced_bt_mesh_light_lc_property_status_data_t", "structwiced__bt__mesh__light__lc__property__status__data__t.html", [
-      [ "id", "structwiced__bt__mesh__light__lc__property__status__data__t.html#aa3b398f7387619437ecde859b8344ace", null ],
-      [ "len", "structwiced__bt__mesh__light__lc__property__status__data__t.html#ad6bfbde047926cea50cf7b950a940ca6", null ],
-      [ "value", "structwiced__bt__mesh__light__lc__property__status__data__t.html#a0005d555d026ec33b72aa81d937db9cc", null ]
-    ] ],
     [ "WICED_BT_MESH_DEVICE", "group__wiced__bt__mesh__models.html#gaa61971d04929109acdf238ede55f895b", null ],
     [ "WICED_BT_MESH_MODEL_CONFIG_CLIENT", "group__wiced__bt__mesh__models.html#ga50358b2472e062950e03db3eccd200e0", null ],
     [ "WICED_BT_MESH_MODEL_HEALTH_CLIENT", "group__wiced__bt__mesh__models.html#ga7e20343f48dffd0904d872eb5c9cb5ac", null ],
@@ -408,14 +37,124 @@ var group__wiced__bt__mesh__models =
     [ "WICED_BT_MESH_PROPERTY_TYPE_ADMIN", "group__wiced__bt__mesh__models.html#ga056143bc1c99837f0824f39d94dcd244", null ],
     [ "WICED_BT_MESH_PROPERTY_TYPE_MANUFACTURER", "group__wiced__bt__mesh__models.html#gaf781844af8b171b5effb874f6da62b60", null ],
     [ "WICED_BT_MESH_PROPERTY_TYPE_USER", "group__wiced__bt__mesh__models.html#ga6ac62a1689189ad1ee2f7407acdefc7a", null ],
+    [ "WICED_BT_MESH_MODEL_BATTERY_SERVER", "group__wiced__bt__mesh__models.html#gae0cd5376996e39e0bb67a93955fef9e3", null ],
+    [ "WICED_BT_MESH_MODEL_ONOFF_SERVER", "group__wiced__bt__mesh__models.html#ga9edfe8c8fd00ec622586f851f1735c18", null ],
+    [ "WICED_BT_MESH_MODEL_ONOFF_CLIENT", "group__wiced__bt__mesh__models.html#ga891ae2d88c30f0ebd1ba36fc327ffec4", null ],
+    [ "WICED_BT_MESH_MODEL_LEVEL_SERVER", "group__wiced__bt__mesh__models.html#gad207befcb62cd7360cfb4871062ef982", null ],
+    [ "WICED_BT_MESH_MODEL_DEFAULT_TRANSITION_TIME_SERVER", "group__wiced__bt__mesh__models.html#gabe4c67d0391e096c8f7b362b8a60adc1", null ],
+    [ "WICED_BT_MESH_MODEL_POWER_ONOFF_SERVER", "group__wiced__bt__mesh__models.html#ga705b7e97399405ef469cf04d6ccac61e", null ],
+    [ "WICED_BT_MESH_MODEL_POWER_LEVEL_SERVER", "group__wiced__bt__mesh__models.html#gaffe3cb3dbf98e48826c58dceb86f25cf", null ],
+    [ "WICED_BT_MESH_MODEL_LIGHT_LIGHTNESS_SERVER", "group__wiced__bt__mesh__models.html#ga1fffbf21e1b920895a4718a3a207a1a9", null ],
+    [ "WICED_BT_MESH_MODEL_LIGHT_CTL_SERVER", "group__wiced__bt__mesh__models.html#ga31d00ceb59ef7db4fc28879b20509808", null ],
+    [ "WICED_BT_MESH_MODEL_LIGHT_HSL_SERVER", "group__wiced__bt__mesh__models.html#gab330cac44df7024819bff2f0d94b72e8", null ],
+    [ "WICED_BT_MESH_MODEL_LIGHT_XYL_SERVER", "group__wiced__bt__mesh__models.html#gae28a54ae411ae75d8d2c09cdbf8634fb", null ],
     [ "wiced_bt_mesh_battery_presence_t", "group__wiced__bt__mesh__models.html#gaa67243af9f7a0d1ee2413f0a60ee66a8", null ],
     [ "wiced_bt_mesh_battery_indicator_t", "group__wiced__bt__mesh__models.html#gac290185d2284f327e37042878522094c", null ],
     [ "wiced_bt_mesh_battery_charging_t", "group__wiced__bt__mesh__models.html#gae191641b773db5b28a85cb2aec02981e", null ],
     [ "wiced_bt_mesh_battery_servicibility_t", "group__wiced__bt__mesh__models.html#ga55746a04db5ebfea32b24bd837e9dc5f", null ],
     [ "wiced_model_scene_store_handler_t", "group__wiced__bt__mesh__models.html#ga994e4426228772c5557df59833fcd212", null ],
     [ "wiced_model_scene_recall_handler_t", "group__wiced__bt__mesh__models.html#ga12600391b31eb42978eb8959670103b4", null ],
+    [ "wiced_bt_mesh_battery_server_callback_t", "group__wiced__bt__mesh__models.html#ga04a23954ca02382adc8547bfc6e95985", null ],
+    [ "wiced_bt_mesh_battery_client_callback_t", "group__wiced__bt__mesh__models.html#ga2a4913b233aa084085a604cac4967929", null ],
+    [ "wiced_bt_mesh_location_server_callback_t", "group__wiced__bt__mesh__models.html#gade3fffd05bffd374336e26a780594062", null ],
+    [ "wiced_bt_mesh_location_client_callback_t", "group__wiced__bt__mesh__models.html#gafeae0994c14a795c89f2fb4974bca2ae", null ],
+    [ "wiced_bt_mesh_onoff_server_callback_t", "group__wiced__bt__mesh__models.html#ga2258b6d7a8870b9d5e45cb31aad8ab9b", null ],
+    [ "wiced_bt_mesh_onoff_client_callback_t", "group__wiced__bt__mesh__models.html#ga225edd7412e2ba02d4f1614ebdddef55", null ],
+    [ "wiced_bt_mesh_level_server_callback_t", "group__wiced__bt__mesh__models.html#ga987d61cb34d31bb654f0c1528dde6feb", null ],
+    [ "wiced_bt_mesh_level_client_callback_t", "group__wiced__bt__mesh__models.html#gae5ff1146bb2d231b3e10f105d811004b", null ],
+    [ "wiced_bt_mesh_default_transition_time_server_callback_t", "group__wiced__bt__mesh__models.html#ga6c3c4acbe9510ae9d0d88369dc23a000", null ],
+    [ "wiced_bt_mesh_default_transition_time_client_callback_t", "group__wiced__bt__mesh__models.html#ga7862b5732c321b32b2de9b4e85c4e1db", null ],
+    [ "wiced_bt_mesh_power_onoff_server_callback_t", "group__wiced__bt__mesh__models.html#gaf2a500452289882a5e964b1a5c1c9bdb", null ],
+    [ "wiced_bt_mesh_power_onoff_client_callback_t", "group__wiced__bt__mesh__models.html#ga2c0d0dd298d58d00d96fb4b8a9b3bf43", null ],
+    [ "wiced_bt_mesh_power_level_server_callback_t", "group__wiced__bt__mesh__models.html#ga58610260dbbb87bb7921af540ef45d33", null ],
+    [ "wiced_bt_mesh_power_level_client_callback_t", "group__wiced__bt__mesh__models.html#gac9467199738604dff57976dc8006c64b", null ],
     [ "wiced_bt_mesh_property_server_callback_t", "group__wiced__bt__mesh__models.html#gad1b4239d6eca000b4ecdef62324eb62a", null ],
     [ "wiced_bt_mesh_property_client_callback_t", "group__wiced__bt__mesh__models.html#gaa103cdb2024d9f967d050daa3d5fffb7", null ],
+    [ "wiced_bt_mesh_light_lightness_server_callback_t", "group__wiced__bt__mesh__models.html#gaabcb1d96daa26aa395a17dcc1b98241f", null ],
+    [ "wiced_bt_mesh_light_lightness_client_callback_t", "group__wiced__bt__mesh__models.html#ga7d461c489cee0f0af593dd2fdf51bea6", null ],
+    [ "wiced_bt_mesh_light_ctl_server_callback_t", "group__wiced__bt__mesh__models.html#ga4a9b2818fca0e0ca075045a4905d0eac", null ],
+    [ "wiced_bt_mesh_light_ctl_client_callback_t", "group__wiced__bt__mesh__models.html#ga374e8cb4beef0a26903533d0ca329e82", null ],
+    [ "wiced_bt_mesh_light_hsl_server_callback_t", "group__wiced__bt__mesh__models.html#gacc82595771fcb00fe4e0398bebcbbbe5", null ],
+    [ "wiced_bt_mesh_light_hsl_client_callback_t", "group__wiced__bt__mesh__models.html#ga58dcde3c9036bb3f05a32cff0c3824b8", null ],
+    [ "wiced_bt_mesh_light_xyl_server_callback_t", "group__wiced__bt__mesh__models.html#ga9fd39eda4ba26988c13e852a6af9654e", null ],
+    [ "wiced_bt_mesh_light_xyl_client_callback_t", "group__wiced__bt__mesh__models.html#ga577770980091fd6d02eac7c3bbe20626", null ],
+    [ "wiced_bt_mesh_light_lc_server_callback_t", "group__wiced__bt__mesh__models.html#gaf857fcb55bb6493c1520ff9d7416928a", null ],
+    [ "wiced_bt_mesh_light_lc_client_callback_t", "group__wiced__bt__mesh__models.html#gab7ae689e813e1347a9bba9220d844acb", null ],
+    [ "wiced_bt_mesh_sensor_client_callback_t", "group__wiced__bt__mesh__models.html#ga5e797fed2de3f19fd5615d4a5fe28ac4", null ],
+    [ "wiced_bt_mesh_scene_server_callback_t", "group__wiced__bt__mesh__models.html#ga6bc81bfebc813fd66471917ad15680ce", null ],
+    [ "wiced_bt_mesh_scene_client_callback_t", "group__wiced__bt__mesh__models.html#ga36e6a46593b1274659abc67dbd4ecccf", null ],
+    [ "wiced_bt_mesh_time_server_callback_t", "group__wiced__bt__mesh__models.html#ga2dc4bc6e1a8f8906dcca2cca45d6484a", null ],
+    [ "wiced_bt_mesh_time_client_callback_t", "group__wiced__bt__mesh__models.html#gadd80a41d16060a6c496f65ef249c8882", null ],
+    [ "wiced_bt_mesh_scheduler_server_callback_t", "group__wiced__bt__mesh__models.html#ga56c5860b8283150f81ae958815273f03", null ],
+    [ "wiced_bt_mesh_scheduler_client_callback_t", "group__wiced__bt__mesh__models.html#gaff09f32ab11716c305fe2ddcb68ba55e", null ],
+    [ "wiced_bt_mesh_model_battery_server_init", "group__wiced__bt__mesh__models.html#ga72e2d728400284190cf28756e5b952f4", null ],
+    [ "wiced_bt_mesh_model_battery_server_message_handler", "group__wiced__bt__mesh__models.html#gad2e1906984d49ae51d8c4dd50f6f9ac4", null ],
+    [ "wiced_bt_mesh_battery_server_send_status", "group__wiced__bt__mesh__models.html#gaf8305491af7a945d77439e1e4cfd1a33", null ],
+    [ "wiced_bt_mesh_model_battery_client_init", "group__wiced__bt__mesh__models.html#gafb463c5826c849d1d354bd9400744bf0", null ],
+    [ "wiced_bt_mesh_model_battery_client_message_handler", "group__wiced__bt__mesh__models.html#gaa0515e868daea1bafa72491319aceef9", null ],
+    [ "wiced_bt_mesh_battery_client_send_get", "group__wiced__bt__mesh__models.html#ga6b7e1bcc36f0ebad5745743445a34758", null ],
+    [ "wiced_bt_mesh_model_location_server_init", "group__wiced__bt__mesh__models.html#ga182e6633f09b22e33def5c3b343227b1", null ],
+    [ "wiced_bt_mesh_model_location_server_message_handler", "group__wiced__bt__mesh__models.html#gaf501d5b111e4100c464f2a1c6b99a1f7", null ],
+    [ "wiced_bt_mesh_model_location_setup_server_message_handler", "group__wiced__bt__mesh__models.html#ga0549c6bcb0387593085c789248ba5969", null ],
+    [ "wiced_bt_mesh_model_location_server_send", "group__wiced__bt__mesh__models.html#ga4e80009e6350f38795e567d86f2736b0", null ],
+    [ "wiced_bt_mesh_model_location_client_init", "group__wiced__bt__mesh__models.html#gaa010b446ab2b4c0b83bf8a15c5266111", null ],
+    [ "wiced_bt_mesh_model_location_client_message_handler", "group__wiced__bt__mesh__models.html#gaadf4255b6ade28b4f994af0190f1df38", null ],
+    [ "wiced_bt_mesh_model_location_client_send_global_get", "group__wiced__bt__mesh__models.html#gaf25e81b85240440895e917e3300469b9", null ],
+    [ "wiced_bt_mesh_model_location_client_send_global_set", "group__wiced__bt__mesh__models.html#ga3970f20f7a7f996ac783ca82e822623d", null ],
+    [ "wiced_bt_mesh_model_location_client_send_local_get", "group__wiced__bt__mesh__models.html#ga58aabc8b4484f061cc5107b5da9229bf", null ],
+    [ "wiced_bt_mesh_model_location_client_send_local_set", "group__wiced__bt__mesh__models.html#gadca8a5931ad41ffc75bf5dbbe4c6ff14", null ],
+    [ "wiced_bt_mesh_model_onoff_server_init", "group__wiced__bt__mesh__models.html#ga43dd054acb66e75d3c82cca92034a6cf", null ],
+    [ "wiced_bt_mesh_model_onoff_server_message_handler", "group__wiced__bt__mesh__models.html#gae8407b3533ba16b322606715ecc95421", null ],
+    [ "wiced_bt_mesh_model_onoff_server_scene_store_handler", "group__wiced__bt__mesh__models.html#ga183decc30f376b4a051c5a5a1752aa8d", null ],
+    [ "wiced_bt_mesh_model_onoff_server_scene_recall_handler", "group__wiced__bt__mesh__models.html#ga695d902ada448311745f293913bdfa2d", null ],
+    [ "wiced_bt_mesh_model_onoff_changed", "group__wiced__bt__mesh__models.html#gaac632b3bcb0f941d86d1f4d0b9d92b2e", null ],
+    [ "wiced_bt_mesh_model_onoff_client_init", "group__wiced__bt__mesh__models.html#ga05dc5ec90d2ad8a1e9ce1d64c4fc85fa", null ],
+    [ "wiced_bt_mesh_model_onoff_client_message_handler", "group__wiced__bt__mesh__models.html#ga673750835549336e8128e8c6d630441f", null ],
+    [ "wiced_bt_mesh_model_onoff_client_get", "group__wiced__bt__mesh__models.html#ga48f7caf8978568cec1f508ca4934ccf0", null ],
+    [ "wiced_bt_mesh_model_onoff_client_send_get", "group__wiced__bt__mesh__models.html#ga4ce52a7d57bd8cba120ad2925962b60d", null ],
+    [ "wiced_bt_mesh_model_onoff_client_set", "group__wiced__bt__mesh__models.html#ga3d456b1f9a9c0b2ff58361ecc99520ad", null ],
+    [ "wiced_bt_mesh_model_onoff_client_send_set", "group__wiced__bt__mesh__models.html#ga1e7739e0b5f369e9f5c236be43a7e71e", null ],
+    [ "wiced_bt_mesh_model_level_server_init", "group__wiced__bt__mesh__models.html#ga682987a03ed06f9426480e8dbed52d8a", null ],
+    [ "wiced_bt_mesh_model_level_server_message_handler", "group__wiced__bt__mesh__models.html#ga54956fe15bf384bcd2cc9da8435c25e2", null ],
+    [ "wiced_bt_mesh_model_level_server_scene_store_handler", "group__wiced__bt__mesh__models.html#gad39b8a61c8da1036850c8bd67bd69368", null ],
+    [ "wiced_bt_mesh_model_level_server_scene_recall_handler", "group__wiced__bt__mesh__models.html#ga81857d857bc6c3a765832336b567ff62", null ],
+    [ "wiced_bt_mesh_model_level_changed", "group__wiced__bt__mesh__models.html#ga45b6e18640ccf69649018979016c6fdd", null ],
+    [ "wiced_bt_mesh_model_level_client_message_handler", "group__wiced__bt__mesh__models.html#gad4d3d3fa26e25ba2a43c461040bfcd3c", null ],
+    [ "wiced_bt_mesh_model_level_client_init", "group__wiced__bt__mesh__models.html#ga202b05c28e789e5cb83ec9b6b1b5d52d", null ],
+    [ "wiced_bt_mesh_model_level_client_set", "group__wiced__bt__mesh__models.html#ga71166a8215f8e903c54006b71b4990f1", null ],
+    [ "wiced_bt_mesh_model_level_client_send_get", "group__wiced__bt__mesh__models.html#gac7c99d650afe50d56c08ec544011f04a", null ],
+    [ "wiced_bt_mesh_model_level_client_send_set", "group__wiced__bt__mesh__models.html#gaa68a8153fc9dc8b9218451274b6673c9", null ],
+    [ "wiced_bt_mesh_model_level_client_send_delta_set", "group__wiced__bt__mesh__models.html#ga9eab92d6d9616239997e79d0d7fb7c73", null ],
+    [ "wiced_bt_mesh_model_level_client_send_move_set", "group__wiced__bt__mesh__models.html#gae8339c0cec60a17c26326e7bba7f32a2", null ],
+    [ "wiced_bt_mesh_model_default_transition_time_server_init", "group__wiced__bt__mesh__models.html#ga989a9568ae8d235eff6e214895c40b42", null ],
+    [ "wiced_bt_mesh_model_default_transition_time_server_message_handler", "group__wiced__bt__mesh__models.html#gaadbba5b7363b2afda149d73b56d0959d", null ],
+    [ "wiced_bt_mesh_model_default_transition_time_client_init", "group__wiced__bt__mesh__models.html#ga47309a45c058cfb7042f6d1dbc861cf2", null ],
+    [ "wiced_bt_mesh_model_default_transition_time_client_message_handler", "group__wiced__bt__mesh__models.html#gaad9d968f38864e6adf54f065d09b14c7", null ],
+    [ "wiced_bt_mesh_model_default_transition_time_client_send_get", "group__wiced__bt__mesh__models.html#gaaaac94d4dc46111408d439757d840c0a", null ],
+    [ "wiced_bt_mesh_model_default_transition_time_client_send_set", "group__wiced__bt__mesh__models.html#ga917793e5f120e58e9ae1d1343e17169b", null ],
+    [ "wiced_bt_mesh_model_power_onoff_server_init", "group__wiced__bt__mesh__models.html#ga33d6d3848a29f85f2c33c29f3d0382c4", null ],
+    [ "wiced_bt_mesh_model_power_onoff_server_message_handler", "group__wiced__bt__mesh__models.html#gaff7b2624880843f3d34cdf348db91348", null ],
+    [ "wiced_bt_mesh_model_power_onoff_setup_server_message_handler", "group__wiced__bt__mesh__models.html#ga6c4dd5a8835747d24d55e38a1b630bfd", null ],
+    [ "wiced_bt_mesh_model_power_onoff_server_onoff_changed", "group__wiced__bt__mesh__models.html#gad2d93f44c4787441548fbabc440dde36", null ],
+    [ "wiced_bt_mesh_model_power_onoff_client_init", "group__wiced__bt__mesh__models.html#ga4d60833328cbf560c43ba130f56f69c7", null ],
+    [ "wiced_bt_mesh_model_power_onoff_client_message_handler", "group__wiced__bt__mesh__models.html#ga1a8051787824f2f8c30718a2871cd7f1", null ],
+    [ "wiced_bt_mesh_model_power_onoff_client_send_onpowerup_get", "group__wiced__bt__mesh__models.html#ga0e675596ea9b81df95f2bf81c886a168", null ],
+    [ "wiced_bt_mesh_model_power_onoff_client_send_onpowerup_set", "group__wiced__bt__mesh__models.html#ga30456c1896ae6fc5d8259e70a6218b4c", null ],
+    [ "wiced_bt_mesh_model_power_level_server_init", "group__wiced__bt__mesh__models.html#gac58e658d3d557b1c50b530477a329375", null ],
+    [ "wiced_bt_mesh_model_power_level_server_level_changed", "group__wiced__bt__mesh__models.html#gaedcbfec81f7f7b3af31ecd2c9cfc3d2a", null ],
+    [ "wiced_bt_mesh_model_power_level_server_message_handler", "group__wiced__bt__mesh__models.html#ga2fc9792afd476737b331b4e4d3f28dbd", null ],
+    [ "wiced_bt_mesh_model_power_level_setup_server_message_handler", "group__wiced__bt__mesh__models.html#ga2a7638d0918f694804b4acfd8a4b69ab", null ],
+    [ "wiced_bt_mesh_model_power_level_server_scene_store_handler", "group__wiced__bt__mesh__models.html#ga02612c425d9164a6d59b8e4236a94ceb", null ],
+    [ "wiced_bt_mesh_model_power_level_server_scene_recall_handler", "group__wiced__bt__mesh__models.html#gacc865d632fd932907aafefede5522ed9", null ],
+    [ "wiced_bt_mesh_model_power_level_client_message_handler", "group__wiced__bt__mesh__models.html#ga2fd3b64827092ecb3b13f7286b006c26", null ],
+    [ "wiced_bt_mesh_model_power_level_client_init", "group__wiced__bt__mesh__models.html#gaf3be4a4eb48fb42212f3f45e73cf92e2", null ],
+    [ "wiced_bt_mesh_model_power_level_client_send_get", "group__wiced__bt__mesh__models.html#ga17e4cac8b2ea406f87e998f4a9a992ba", null ],
+    [ "wiced_bt_mesh_model_power_level_client_send_set", "group__wiced__bt__mesh__models.html#ga7cbe0e55ca2c30761faf84aef5a70913", null ],
+    [ "wiced_bt_mesh_model_power_level_client_send_last_get", "group__wiced__bt__mesh__models.html#gae5922d8b064c2a98382bb8456e3ae41a", null ],
+    [ "wiced_bt_mesh_model_power_level_client_send_default_get", "group__wiced__bt__mesh__models.html#ga35da0172265b12824dcf8b1c7d39976d", null ],
+    [ "wiced_bt_mesh_model_power_level_client_send_default_set", "group__wiced__bt__mesh__models.html#gaa4b0eab90d384e219042596f949efcaa", null ],
+    [ "wiced_bt_mesh_model_power_level_client_send_range_get", "group__wiced__bt__mesh__models.html#gae974a818514d39241f47c59c6b5e8dbf", null ],
+    [ "wiced_bt_mesh_model_power_level_client_send_range_set", "group__wiced__bt__mesh__models.html#ga9c4878d624dea57f7b646c475d748ad0", null ],
     [ "wiced_bt_mesh_model_property_server_init", "group__wiced__bt__mesh__models.html#ga8aaa53929ec2aa4ca6a3d40597841985", null ],
     [ "wiced_bt_mesh_model_user_property_server_message_handler", "group__wiced__bt__mesh__models.html#ga1df6c7ca36c15004c84a759c6a8728ad", null ],
     [ "wiced_bt_mesh_model_admin_property_server_message_handler", "group__wiced__bt__mesh__models.html#gadadea936ad14f7ecdef0e8419eda2934", null ],
@@ -426,6 +165,156 @@ var group__wiced__bt__mesh__models =
     [ "wiced_bt_mesh_model_property_client_send_properties_get", "group__wiced__bt__mesh__models.html#ga2fe54cc14247ed6865e87eec750c6720", null ],
     [ "wiced_bt_mesh_model_property_client_send_property_get", "group__wiced__bt__mesh__models.html#gab1549592c2417d10fc21a1258dd7d538", null ],
     [ "wiced_bt_mesh_model_property_client_send_property_set", "group__wiced__bt__mesh__models.html#ga4d7fd5e0cd05572355099d207dfbb944", null ],
+    [ "wiced_bt_mesh_model_light_lightness_server_init", "group__wiced__bt__mesh__models.html#gaae4681ec20a9d843b07ee8807e68241c", null ],
+    [ "wiced_bt_mesh_model_light_lightness_actual_changed", "group__wiced__bt__mesh__models.html#ga730594b6d325c881e88df4fb3ff3dd3c", null ],
+    [ "wiced_bt_mesh_model_light_lightness_linear_changed", "group__wiced__bt__mesh__models.html#ga814516f38364c0cf37c710bca3754d42", null ],
+    [ "wiced_bt_mesh_model_light_lightness_server_message_handler", "group__wiced__bt__mesh__models.html#ga4239007109ce36d64ff99bd73f5e37f0", null ],
+    [ "wiced_bt_mesh_model_light_lightness_setup_server_message_handler", "group__wiced__bt__mesh__models.html#ga457be8e99b3df7a5da4c37e2217e7f9f", null ],
+    [ "wiced_bt_mesh_model_light_lightness_set_parent", "group__wiced__bt__mesh__models.html#gaabcd35c812f4ea1010db7f803a7e1bd3", null ],
+    [ "wiced_bt_mesh_model_light_lightness_server_scene_store_handler", "group__wiced__bt__mesh__models.html#gad58caa585f22114fb28ec2f7dd4ab380", null ],
+    [ "wiced_bt_mesh_model_light_lightness_server_scene_recall_handler", "group__wiced__bt__mesh__models.html#gadcc26283abf845ba27559f4069b68578", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_init", "group__wiced__bt__mesh__models.html#ga27c00f773f5ca6f1b705b1d1ad25d350", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_message_handler", "group__wiced__bt__mesh__models.html#ga315c6d385a47f14b9c0bce70d59bf766", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_send_get", "group__wiced__bt__mesh__models.html#gad110283c46a3425c4a97530752975890", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_send_set", "group__wiced__bt__mesh__models.html#ga6bca43f4126446ea408968a1cd534650", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_send_linear_get", "group__wiced__bt__mesh__models.html#ga4d8a5829aec0a7826bb1a5c3fc6736b6", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_send_linear_set", "group__wiced__bt__mesh__models.html#gae2a2cf924b44ac9cff3e149d8da01e27", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_send_last_get", "group__wiced__bt__mesh__models.html#gad9e93708306904c4820b37392c519596", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_send_default_get", "group__wiced__bt__mesh__models.html#gaf7aa40c36da932b6c0fd12b9fb3e6a79", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_send_default_set", "group__wiced__bt__mesh__models.html#ga6171eaf2f01acec4d2f1e6a06559b716", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_send_range_get", "group__wiced__bt__mesh__models.html#ga39bbe94a242cba1b451d88f21b0684b4", null ],
+    [ "wiced_bt_mesh_model_light_lightness_client_send_range_set", "group__wiced__bt__mesh__models.html#gab7f2a8d86e555860e41ed604df895f5a", null ],
+    [ "wiced_bt_mesh_model_light_ctl_server_init", "group__wiced__bt__mesh__models.html#gaf97da5c28f67d67cb59febbbc09e5798", null ],
+    [ "wiced_bt_mesh_model_light_ctl_server_state_changed", "group__wiced__bt__mesh__models.html#ga794cb5d5a4e341379bb70536b8ce41a3", null ],
+    [ "wiced_bt_mesh_model_light_ctl_server_message_handler", "group__wiced__bt__mesh__models.html#gaa07a3542b22992e82fc92c23a0b98f16", null ],
+    [ "wiced_bt_mesh_model_light_ctl_setup_server_message_handler", "group__wiced__bt__mesh__models.html#gaf2924e0c30122408e3bab73c57c9fb4d", null ],
+    [ "wiced_bt_mesh_model_light_ctl_temperature_server_message_handler", "group__wiced__bt__mesh__models.html#ga6a3c44332d8149a9ee922d8007ea8f94", null ],
+    [ "wiced_bt_mesh_model_light_ctl_server_scene_store_handler", "group__wiced__bt__mesh__models.html#ga7c86ca7a890ae4fe7f1a97305dfe9b2a", null ],
+    [ "wiced_bt_mesh_model_light_ctl_temperature_server_scene_store_handler", "group__wiced__bt__mesh__models.html#ga9367e89a9e8f85413d8c51c24befe048", null ],
+    [ "wiced_bt_mesh_model_light_ctl_server_scene_recall_handler", "group__wiced__bt__mesh__models.html#ga8437891fae790177dffdcbe22b0e0224", null ],
+    [ "wiced_bt_mesh_model_light_ctl_temperature_server_scene_recall_handler", "group__wiced__bt__mesh__models.html#ga032070dcfc3da3ffbd03ab8eda0aae7e", null ],
+    [ "wiced_bt_mesh_model_light_ctl_server_set_startup_controller", "group__wiced__bt__mesh__models.html#gaaf07b7c8c6fc6a7298fe5a24e0a59516", null ],
+    [ "wiced_bt_mesh_model_light_ctl_client_message_handler", "group__wiced__bt__mesh__models.html#gaf57992c14438c5142018c9d170471dbd", null ],
+    [ "wiced_bt_mesh_model_light_ctl_client_init", "group__wiced__bt__mesh__models.html#ga85f95cda591ad444665dc03f8660531c", null ],
+    [ "wiced_bt_mesh_model_light_ctl_client_send_get", "group__wiced__bt__mesh__models.html#gaeb219cef5b353dc7578bb3666d2c4602", null ],
+    [ "wiced_bt_mesh_model_light_ctl_client_send_set", "group__wiced__bt__mesh__models.html#ga77fcfdad659ca7d66bd22b107fa79a3b", null ],
+    [ "wiced_bt_mesh_model_light_ctl_client_send_temperature_get", "group__wiced__bt__mesh__models.html#gac086a0f995cf61506c63b503d987657c", null ],
+    [ "wiced_bt_mesh_model_light_ctl_client_send_temperature_set", "group__wiced__bt__mesh__models.html#ga1ad33bce8aa9da4eb9b26fad95f697d0", null ],
+    [ "wiced_bt_mesh_model_light_ctl_client_send_default_get", "group__wiced__bt__mesh__models.html#ga40a2c9aa9bcbc96342b203438b1794df", null ],
+    [ "wiced_bt_mesh_model_light_ctl_client_send_default_set", "group__wiced__bt__mesh__models.html#gab4f874e27b43852931eda1dbf98dc932", null ],
+    [ "wiced_bt_mesh_model_light_ctl_client_send_temperature_range_get", "group__wiced__bt__mesh__models.html#ga8bff760779ac2cb673e4508a9fea1131", null ],
+    [ "wiced_bt_mesh_model_light_ctl_client_send_temperature_range_set", "group__wiced__bt__mesh__models.html#ga248addf8f4f397b3b0f28670c2abde3f", null ],
+    [ "wiced_bt_mesh_model_light_hsl_server_init", "group__wiced__bt__mesh__models.html#ga3bc33dafd57f3d1f0f907e0234374dc5", null ],
+    [ "wiced_bt_mesh_model_light_hsl_server_state_changed", "group__wiced__bt__mesh__models.html#ga06d138ec4545f36a901e4ab57e0363a1", null ],
+    [ "wiced_bt_mesh_model_light_hsl_server_message_handler", "group__wiced__bt__mesh__models.html#ga19db1c617fb306d53924f58356b8a993", null ],
+    [ "wiced_bt_mesh_model_light_hsl_setup_server_message_handler", "group__wiced__bt__mesh__models.html#ga2b70faf51861e68075fdb528270c90aa", null ],
+    [ "wiced_bt_mesh_model_light_hsl_hue_server_message_handler", "group__wiced__bt__mesh__models.html#ga2f4c5745d19afdadbf0dcb1486d7e78c", null ],
+    [ "wiced_bt_mesh_model_light_hsl_saturation_server_message_handler", "group__wiced__bt__mesh__models.html#ga07e19cc3b97dd0c0c2fc8e7f0209aab1", null ],
+    [ "wiced_bt_mesh_model_light_hsl_server_scene_store_handler", "group__wiced__bt__mesh__models.html#ga71257c7ff7e767d04e6e6566aca39153", null ],
+    [ "wiced_bt_mesh_model_light_hsl_server_scene_recall_handler", "group__wiced__bt__mesh__models.html#ga6eeb45f539f1673ed8aee1acc8a62f12", null ],
+    [ "wiced_bt_mesh_model_light_hsl_server_set_startup_controller", "group__wiced__bt__mesh__models.html#ga5861bbeb29fa4fb2985d60baab45dbe2", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_message_handler", "group__wiced__bt__mesh__models.html#ga4a5ba6e61d99c16a9a200d78b606f628", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_init", "group__wiced__bt__mesh__models.html#gada398fc9c96265929f4b8aa8fc1c8438", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_get", "group__wiced__bt__mesh__models.html#ga2fd72a5f93177dca37b4e97d1e51143d", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_set", "group__wiced__bt__mesh__models.html#gafa53e42d9df52bbc3a2802d05c1a1629", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_hue_get", "group__wiced__bt__mesh__models.html#gaf37c8b5422fa52260005ffaf75df8327", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_hue_set", "group__wiced__bt__mesh__models.html#ga591aa733ed43e54866b9d89c3f53e36b", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_saturation_get", "group__wiced__bt__mesh__models.html#ga771fbc828b62810aa822ce279d556e8b", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_saturation_set", "group__wiced__bt__mesh__models.html#gab9871a0e3021f547ca0e69287758b33e", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_target_get", "group__wiced__bt__mesh__models.html#ga626c6b8c6e122bbe954797c5d528adbc", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_default_get", "group__wiced__bt__mesh__models.html#gaf1b84617666c4fe73cd18aa3a382578e", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_default_set", "group__wiced__bt__mesh__models.html#gada984140a7f7738e42ec711a127f3e62", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_range_get", "group__wiced__bt__mesh__models.html#ga9987313a4b4ca8106e4ccd44b998604f", null ],
+    [ "wiced_bt_mesh_model_light_hsl_client_send_range_set", "group__wiced__bt__mesh__models.html#ga8b2e47b2526e78065b913186033ee2dd", null ],
+    [ "wiced_bt_mesh_model_light_xyl_server_init", "group__wiced__bt__mesh__models.html#ga7e7b580549e073406b13835b17fe47bf", null ],
+    [ "wiced_bt_mesh_model_light_xyl_server_state_changed", "group__wiced__bt__mesh__models.html#ga37cd5447c939a4d3afb306fb22a75675", null ],
+    [ "wiced_bt_mesh_model_light_xyl_server_message_handler", "group__wiced__bt__mesh__models.html#ga6a5a2028cf7ffcfad1f3a673738d836a", null ],
+    [ "wiced_bt_mesh_model_light_xyl_setup_server_message_handler", "group__wiced__bt__mesh__models.html#ga52ff9cab20dde5c927933a2c9e24a195", null ],
+    [ "wiced_bt_mesh_model_light_xyl_server_scene_store_handler", "group__wiced__bt__mesh__models.html#gadb27714f02fd077b341bafba8213f352", null ],
+    [ "wiced_bt_mesh_model_light_xyl_server_scene_recall_handler", "group__wiced__bt__mesh__models.html#ga4227ecba6c6acee6950adef5c42c920e", null ],
+    [ "wiced_bt_mesh_model_light_xyl_server_set_startup_controller", "group__wiced__bt__mesh__models.html#ga38ed3faffd2792da339f6b949735cf77", null ],
+    [ "wiced_bt_mesh_model_light_xyl_client_message_handler", "group__wiced__bt__mesh__models.html#gacb2f82d0881540a5e2a65264bf1a645e", null ],
+    [ "wiced_bt_mesh_model_light_xyl_client_init", "group__wiced__bt__mesh__models.html#ga2775b4a14de345fb43363ea4321d61ff", null ],
+    [ "wiced_bt_mesh_model_light_xyl_client_send_get", "group__wiced__bt__mesh__models.html#gaf2d32ad0403fab041943e3ff630ba094", null ],
+    [ "wiced_bt_mesh_model_light_xyl_client_send_set", "group__wiced__bt__mesh__models.html#ga68a8e6db251777f69e19fc5045939935", null ],
+    [ "wiced_bt_mesh_model_light_xyl_client_send_target_get", "group__wiced__bt__mesh__models.html#gab500630eb5b907a6b5d6e72cbc67de22", null ],
+    [ "wiced_bt_mesh_model_light_xyl_client_send_default_get", "group__wiced__bt__mesh__models.html#ga71983afaf9c407de53ac5332393d3356", null ],
+    [ "wiced_bt_mesh_model_light_xyl_client_send_default_set", "group__wiced__bt__mesh__models.html#ga8ba4b64e0466d0b453621c03ab8db371", null ],
+    [ "wiced_bt_mesh_model_light_xyl_client_send_range_get", "group__wiced__bt__mesh__models.html#ga23c99eda097e5a3ae1d4c3ae2379d51e", null ],
+    [ "wiced_bt_mesh_model_light_xyl_client_send_range_set", "group__wiced__bt__mesh__models.html#gae7004f31f89fd8e51d7e8b45002e11ac", null ],
+    [ "wiced_bt_mesh_model_light_lc_server_message_handler", "group__wiced__bt__mesh__models.html#gae96df3aa549096d5dc38493783f1b7fc", null ],
+    [ "wiced_bt_mesh_model_light_lc_setup_server_message_handler", "group__wiced__bt__mesh__models.html#gab17ba324d6882bb65068b3ffa05e4ace", null ],
+    [ "wiced_bt_mesh_model_light_lc_server_send_status", "group__wiced__bt__mesh__models.html#ga0ecb1a55277a6bba951042bbcfb86411", null ],
+    [ "wiced_bt_mesh_model_light_lc_mode_changed", "group__wiced__bt__mesh__models.html#gac160a32da93a99adee53b89bbdb0047f", null ],
+    [ "wiced_bt_mesh_model_light_lc_occupancy_mode_changed", "group__wiced__bt__mesh__models.html#ga185c05b8ed0345dfe829ec8862fb7ced", null ],
+    [ "wiced_bt_mesh_model_light_lc_occupancy_detected", "group__wiced__bt__mesh__models.html#gac8c14c7073bfa507d604fe3b97ec530e", null ],
+    [ "wiced_bt_mesh_model_light_lc_onoff_changed", "group__wiced__bt__mesh__models.html#gaf16079160105348390e16e691fbdd021", null ],
+    [ "wiced_bt_mesh_model_light_lc_property_changed", "group__wiced__bt__mesh__models.html#gacd115a125b843a2cc22ee3f003568349", null ],
+    [ "wiced_bt_mesh_model_light_lc_server_scene_store_handler", "group__wiced__bt__mesh__models.html#ga77530a80ee364b3719464b764a2ec5a6", null ],
+    [ "wiced_bt_mesh_model_light_lc_server_scene_recall_handler", "group__wiced__bt__mesh__models.html#gabba87e7cad75e2485cd6d0854f89e28e", null ],
+    [ "wiced_bt_mesh_model_light_lc_server_init", "group__wiced__bt__mesh__models.html#ga9fce8802d823d39f1e21e7df007702f8", null ],
+    [ "wiced_bt_mesh_model_light_lc_client_init", "group__wiced__bt__mesh__models.html#ga03759ad7f3847e32f6037b3efcba3195", null ],
+    [ "wiced_bt_mesh_model_light_lc_client_message_handler", "group__wiced__bt__mesh__models.html#ga3b768fe9b2dc159bf7d28a2d2dd62969", null ],
+    [ "wiced_bt_mesh_model_light_lc_client_send_mode_get", "group__wiced__bt__mesh__models.html#gae7327bac0865f4529dd3789d243b09be", null ],
+    [ "wiced_bt_mesh_model_light_lc_client_send_mode_set", "group__wiced__bt__mesh__models.html#gad760d9732d868e761305901d2528dafd", null ],
+    [ "wiced_bt_mesh_model_light_lc_client_send_occupancy_mode_get", "group__wiced__bt__mesh__models.html#gaca4cf755babab2f85975b2fbcd463ec7", null ],
+    [ "wiced_bt_mesh_model_light_lc_client_send_occupancy_mode_set", "group__wiced__bt__mesh__models.html#ga9ac5e217833de3e543b120fcc8454ec4", null ],
+    [ "wiced_bt_mesh_model_light_lc_client_send_light_onoff_get", "group__wiced__bt__mesh__models.html#ga3ab94ad7030bedead08a281030911442", null ],
+    [ "wiced_bt_mesh_model_light_lc_client_send_light_onoff_set", "group__wiced__bt__mesh__models.html#gaeaddebc8fbe3f620b33cd19431d63faa", null ],
+    [ "wiced_bt_mesh_model_light_lc_client_send_property_get", "group__wiced__bt__mesh__models.html#ga219a542e6cb3935fdb882a57bdf9eb0c", null ],
+    [ "wiced_bt_mesh_model_light_lc_client_send_property_set", "group__wiced__bt__mesh__models.html#gac7f50dd584a54ab5b0bfd806ede06080", null ],
+    [ "wiced_bt_mesh_model_sensor_server_init", "group__wiced__bt__mesh__models.html#gadc856e45a2e98c17342907e40393ea91", null ],
+    [ "wiced_bt_mesh_model_sensor_server_message_handler", "group__wiced__bt__mesh__models.html#ga278b01024426e46048140d22fbc478fa", null ],
+    [ "wiced_bt_mesh_model_sensor_setup_server_message_handler", "group__wiced__bt__mesh__models.html#gaa878df1a615babe42c88075d626f53d6", null ],
+    [ "wiced_bt_mesh_model_sensor_server_series_status_send", "group__wiced__bt__mesh__models.html#ga88ff291568574d6d5be2af1dd5da0994", null ],
+    [ "wiced_bt_mesh_model_sensor_server_column_status_send", "group__wiced__bt__mesh__models.html#gae23dc22a4ea8e68cdaa5ca643c52169b", null ],
+    [ "wiced_bt_mesh_model_format_sensor_server_data", "group__wiced__bt__mesh__models.html#gafb08fbefebd1974a849dc9e928ce2bc2", null ],
+    [ "wiced_bt_mesh_model_sensor_server_data", "group__wiced__bt__mesh__models.html#ga1ddaea44b65372c7cabadf2a7637a502", null ],
+    [ "wiced_bt_mesh_model_sensor_server_setting_status_send", "group__wiced__bt__mesh__models.html#ga5ea857d449567618ce7f299fc57ad227", null ],
+    [ "wiced_bt_mesh_model_sensor_client_init", "group__wiced__bt__mesh__models.html#ga10e988bdc5e8088ea23a34cfaa003aa7", null ],
+    [ "wiced_bt_mesh_model_sensor_client_message_handler", "group__wiced__bt__mesh__models.html#gaa852f7ae0062598ff7d8b6343bb0e9d2", null ],
+    [ "wiced_bt_mesh_model_sensor_client_descriptor_send_get", "group__wiced__bt__mesh__models.html#gae9a142956b40e22829b2d19c02f019e3", null ],
+    [ "wiced_bt_mesh_model_sensor_client_sensor_send_get", "group__wiced__bt__mesh__models.html#gab7de2001d55667daddfcc8d8f04b62a1", null ],
+    [ "wiced_bt_mesh_model_sensor_client_sensor_column_send_get", "group__wiced__bt__mesh__models.html#ga5a99ba5c0531c36ffba9f00b4cf99e5c", null ],
+    [ "wiced_bt_mesh_model_sensor_client_sensor_series_send_get", "group__wiced__bt__mesh__models.html#ga3d2c13f59d6a8402722accec791d6fe8", null ],
+    [ "wiced_bt_mesh_model_sensor_client_sensor_setting_send_get", "group__wiced__bt__mesh__models.html#gae3553b957ce5c7eaca2c298e5576b192", null ],
+    [ "wiced_bt_mesh_model_sensor_client_sensor_settings_send_get", "group__wiced__bt__mesh__models.html#ga87880b44ff3a5d2957748ac0fdf9733c", null ],
+    [ "wiced_bt_mesh_model_sensor_client_sensor_setting_send_set", "group__wiced__bt__mesh__models.html#gac3a4035e505416db2ce7d5db5077f0a8", null ],
+    [ "wiced_bt_mesh_model_sensor_client_sensor_cadence_send_get", "group__wiced__bt__mesh__models.html#ga52a24d45ec6d3012aa059b15d8955698", null ],
+    [ "wiced_bt_mesh_model_sensor_client_sensor_cadence_send_set", "group__wiced__bt__mesh__models.html#ga99a9bdecedc85f3aa787d9f4e0798c55", null ],
+    [ "wiced_bt_mesh_model_scene_server_init", "group__wiced__bt__mesh__models.html#ga57c347957938182da3fdd501d9a72bb2", null ],
+    [ "wiced_bt_mesh_model_scene_server_message_handler", "group__wiced__bt__mesh__models.html#gad02139dbd5de33dbfa4574f1b7524817", null ],
+    [ "wiced_bt_mesh_model_scene_setup_server_message_handler", "group__wiced__bt__mesh__models.html#ga1e69d93cd77b795bd811c1ae913a39e9", null ],
+    [ "wiced_bt_mesh_model_scene_data_changed", "group__wiced__bt__mesh__models.html#ga747d06b09d82c7ddb25585393215b9bc", null ],
+    [ "wiced_bt_mesh_model_scene_client_init", "group__wiced__bt__mesh__models.html#ga6bc5e806ce3b1fba6aad69808a4bc7f6", null ],
+    [ "wiced_bt_mesh_model_scene_client_message_handler", "group__wiced__bt__mesh__models.html#ga59b0b27a3a744d5a3c6e3d90094c1053", null ],
+    [ "wiced_bt_mesh_model_scene_client_send_request", "group__wiced__bt__mesh__models.html#gae7d775e6242219c46ef46bc7ce0b29aa", null ],
+    [ "wiced_bt_mesh_model_scene_client_send_recall", "group__wiced__bt__mesh__models.html#ga161e9c990de9c9e37718685727d27130", null ],
+    [ "wiced_bt_mesh_model_scene_client_send_register_get", "group__wiced__bt__mesh__models.html#gac29bd88635c2fe67f5bd2ed055fc939a", null ],
+    [ "wiced_bt_mesh_model_time_server_init", "group__wiced__bt__mesh__models.html#ga3117772aede901882a01c00f53702498", null ],
+    [ "wiced_bt_mesh_model_time_server_message_handler", "group__wiced__bt__mesh__models.html#ga3a8a503141d4226ce1a763a9673beed3", null ],
+    [ "wiced_bt_mesh_model_time_setup_server_message_handler", "group__wiced__bt__mesh__models.html#ga2b6a069963f62619d773756836d56ab1", null ],
+    [ "wiced_bt_mesh_model_time_server_status_send", "group__wiced__bt__mesh__models.html#gae8f8ae85d110535c3d0b5278fca8df45", null ],
+    [ "wiced_bt_mesh_model_time_server_zone_status_send", "group__wiced__bt__mesh__models.html#gad29bdd5693a04943116e28289d0b8f6f", null ],
+    [ "wiced_bt_mesh_model_time_server_tai_utc_delta_status_send", "group__wiced__bt__mesh__models.html#ga2ed80c7456a651933b1e46bad7a29a9b", null ],
+    [ "wiced_bt_mesh_model_time_client_init", "group__wiced__bt__mesh__models.html#ga915ad2315147b4a60408eeee89d281ee", null ],
+    [ "wiced_bt_mesh_model_time_client_message_handler", "group__wiced__bt__mesh__models.html#ga662c823f204ba19f2aed787a910343cd", null ],
+    [ "wiced_bt_mesh_model_time_client_time_get_send", "group__wiced__bt__mesh__models.html#gaf1fe46876cffbe1989672b13d659923a", null ],
+    [ "wiced_bt_mesh_model_time_client_time_set_send", "group__wiced__bt__mesh__models.html#ga53ea4b2b6e24e13b505e5f13396d2860", null ],
+    [ "wiced_bt_mesh_model_time_client_time_zone_get_send", "group__wiced__bt__mesh__models.html#gad57b2a6f9bcaeddf7c23416f5b9a8a3d", null ],
+    [ "wiced_bt_mesh_model_time_client_time_zone_set_send", "group__wiced__bt__mesh__models.html#ga81b8ff07ee0e255e9ebbe28b67df13da", null ],
+    [ "wiced_bt_mesh_model_time_client_tai_utc_delta_get_send", "group__wiced__bt__mesh__models.html#ga4590e817e49e940c26f4f4f2bbb7a474", null ],
+    [ "wiced_bt_mesh_model_time_client_tai_utc_delta_set_send", "group__wiced__bt__mesh__models.html#ga7a1d43b4008c9fa9dac9fb5ce91e5b43", null ],
+    [ "wiced_bt_mesh_model_time_client_time_role_get_send", "group__wiced__bt__mesh__models.html#gaa307574cf2dba5cfad6814e67001e90b", null ],
+    [ "wiced_bt_mesh_model_time_client_time_role_set_send", "group__wiced__bt__mesh__models.html#ga5b4f42a2d56b99101c25f9420a8be0af", null ],
+    [ "wiced_bt_mesh_model_scheduler_server_init", "group__wiced__bt__mesh__models.html#ga40bdccccb4085f1f3ac197f11c93d192", null ],
+    [ "wiced_bt_mesh_model_scheduler_server_message_handler", "group__wiced__bt__mesh__models.html#gaae73c916c065ec43b7da7653730b09e4", null ],
+    [ "wiced_bt_mesh_model_scheduler_setup_server_message_handler", "group__wiced__bt__mesh__models.html#ga56a9af47a1bce8df95ffab177bcc0e36", null ],
+    [ "wiced_bt_mesh_model_scheduler_client_init", "group__wiced__bt__mesh__models.html#gae021005cc977f8398625b6761c3c0c59", null ],
+    [ "wiced_bt_mesh_model_scheduler_client_message_handler", "group__wiced__bt__mesh__models.html#ga376e8ac053469571e2f7e9425413dcfe", null ],
+    [ "wiced_bt_mesh_model_scheduler_client_send_get", "group__wiced__bt__mesh__models.html#ga10bd3a0dcbe3208cfbf36a042463ffc8", null ],
+    [ "wiced_bt_mesh_model_scheduler_client_send_action_get", "group__wiced__bt__mesh__models.html#gad27ba6975c4ab60afb69ce9d3ab56396", null ],
+    [ "wiced_bt_mesh_model_scheduler_client_send_action_set", "group__wiced__bt__mesh__models.html#ga80b6ec38f49a3ffa2547c16848e267df", null ],
     [ "wiced_bt_mesh_remote_provisioning_server_init", "group__wiced__bt__mesh__models.html#gab8c8aef8d2255030ba1b5b430da95d3d", null ],
     [ "wiced_bt_mesh_remote_provisioning_scan_rsp", "group__wiced__bt__mesh__models.html#ga58171fb0b81158e89d751c49222a765b", null ],
     [ "wiced_bt_mesh_remote_provisioning_connectable_adv_packet", "group__wiced__bt__mesh__models.html#gaca85d3e843373ba038d444bf75349cc0", null ],

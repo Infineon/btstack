@@ -1,74 +1,7 @@
 var group__l2cap =
 [
-    [ "Common", "group__l2cap__common__api__functions.html", "group__l2cap__common__api__functions" ],
     [ "BR/EDR", "group__l2cap__br__edr__api__functions.html", "group__l2cap__br__edr__api__functions" ],
     [ "LE", "group__l2cap__le__api__functions.html", "group__l2cap__le__api__functions" ],
-    [ "wiced_bt_l2cap_fcr_options_t", "structwiced__bt__l2cap__fcr__options__t.html", [
-      [ "mode", "structwiced__bt__l2cap__fcr__options__t.html#afe0306ffb830b08231439dfbdbae604f", null ],
-      [ "tx_window_size", "structwiced__bt__l2cap__fcr__options__t.html#adf212aeb4309ab5a175db0c10e14b34e", null ],
-      [ "max_transmit", "structwiced__bt__l2cap__fcr__options__t.html#afe2018f3e77aac76d74b934b9a003a81", null ],
-      [ "rtrans_timeout_ms", "structwiced__bt__l2cap__fcr__options__t.html#a2bf326f2715649a9bad849bb3071f675", null ],
-      [ "monitor_timeout_ms", "structwiced__bt__l2cap__fcr__options__t.html#a156d53134028dc6c86b6c512eef57826", null ],
-      [ "max_rx_pdu_size", "structwiced__bt__l2cap__fcr__options__t.html#aacb8ba17080061b88e03504fc4ea5643", null ]
-    ] ],
-    [ "wiced_bt_l2cap_cfg_information_t", "structwiced__bt__l2cap__cfg__information__t.html", [
-      [ "result", "structwiced__bt__l2cap__cfg__information__t.html#a14d7acfffa5a30489df9946b721fdbf4", null ],
-      [ "mtu_present", "structwiced__bt__l2cap__cfg__information__t.html#a02c533f5b961c30e86f47c82ddeb0afb", null ],
-      [ "mtu", "structwiced__bt__l2cap__cfg__information__t.html#aa1fa6092e613837e80ab278a956647c7", null ],
-      [ "qos_present", "structwiced__bt__l2cap__cfg__information__t.html#a1d2c893de731a828f45f761ebcd549db", null ],
-      [ "qos", "structwiced__bt__l2cap__cfg__information__t.html#a4908ef593e7ee9a7c0f12c1fdb5c9e73", null ],
-      [ "flush_timeout_present", "structwiced__bt__l2cap__cfg__information__t.html#a02fac97e495a16dedb41d26b58822389", null ],
-      [ "flush_timeout", "structwiced__bt__l2cap__cfg__information__t.html#a1d7849e9c6ddf49a2fb4992a5e686e5e", null ],
-      [ "fcr_present", "structwiced__bt__l2cap__cfg__information__t.html#a8944919f00473bd84f6e8a5897a7dd26", null ],
-      [ "fcr", "structwiced__bt__l2cap__cfg__information__t.html#afd9f7f32ecd27114d03ab7d2b1e04b28", null ],
-      [ "fcs_present", "structwiced__bt__l2cap__cfg__information__t.html#a37121d4e493efff8598eda6eba463bf1", null ],
-      [ "fcs", "structwiced__bt__l2cap__cfg__information__t.html#a6c24d4a8a3e14d9442a4f4950f6f0b74", null ],
-      [ "flags", "structwiced__bt__l2cap__cfg__information__t.html#af744cf7eea18a1e0faf24bb95ec8c3cd", null ]
-    ] ],
-    [ "wiced_bt_l2cap_ertm_information_t", "structwiced__bt__l2cap__ertm__information__t.html", [
-      [ "preferred_mode", "structwiced__bt__l2cap__ertm__information__t.html#a313a3b25f88c12e08021d58b06543ad4", null ],
-      [ "allowed_modes", "structwiced__bt__l2cap__ertm__information__t.html#a40e51b20992772dc05219dfa381fc088", null ]
-    ] ],
-    [ "wiced_bt_l2cap_appl_information_t", "structwiced__bt__l2cap__appl__information__t.html", [
-      [ "connected_cback", "structwiced__bt__l2cap__appl__information__t.html#a2e00007ae56cb020366fbfd7dfe336ab", null ],
-      [ "disconnect_indication_cback", "structwiced__bt__l2cap__appl__information__t.html#a2da9196c24ab6e6d225d94dc1ac795d4", null ],
-      [ "disconnect_confirm_cback", "structwiced__bt__l2cap__appl__information__t.html#a3bbfb619575069c2289c9e91b58b78c2", null ],
-      [ "data_indication_cback", "structwiced__bt__l2cap__appl__information__t.html#aca561436a003734a64e4b1b2d3806d83", null ],
-      [ "tx_complete_cback", "structwiced__bt__l2cap__appl__information__t.html#ac63cd89496eee5f981eec222303ac922", null ],
-      [ "mtu", "structwiced__bt__l2cap__appl__information__t.html#a92697e17aa1667a6ecd613544ba2e777", null ],
-      [ "security_required", "structwiced__bt__l2cap__appl__information__t.html#a3f46fe30b21b2b6477f543f00ba6448f", null ],
-      [ "qos_present", "structwiced__bt__l2cap__appl__information__t.html#af1bf7cfc279aba76b1af338febba8f99", null ],
-      [ "flush_timeout_present", "structwiced__bt__l2cap__appl__information__t.html#a116f61fdbf56574de545a18611e345bf", null ],
-      [ "fcs_present", "structwiced__bt__l2cap__appl__information__t.html#a201f156f265c18d387a77ae949d4a60b", null ],
-      [ "is_ob_only", "structwiced__bt__l2cap__appl__information__t.html#a7694f9263de05fd026d4b2802d98fa0c", null ],
-      [ "qos", "structwiced__bt__l2cap__appl__information__t.html#ab2c471279290449ff25b881a3be5c8ef", null ],
-      [ "flush_timeout", "structwiced__bt__l2cap__appl__information__t.html#ac0767976a7feb6692e0973992c04bbbb", null ],
-      [ "fcr_allowed_modes", "structwiced__bt__l2cap__appl__information__t.html#a81ba0bc1e4f501fd00c666c42fd1814e", null ],
-      [ "fcr", "structwiced__bt__l2cap__appl__information__t.html#ac96502487bcb1fc059e7aa3f3b63ce9a", null ],
-      [ "fcs", "structwiced__bt__l2cap__appl__information__t.html#afbbeaabe0401b4597f34b94362123962", null ]
-    ] ],
-    [ "wiced_bt_l2cap_le_appl_information_t", "structwiced__bt__l2cap__le__appl__information__t.html", [
-      [ "le_connect_indication_cback", "structwiced__bt__l2cap__le__appl__information__t.html#a40cd1fd3b4662ee4ef0ec57f1567d2be", null ],
-      [ "le_connect_confirm_cback", "structwiced__bt__l2cap__le__appl__information__t.html#afe24ed45b7ef47ceb3ee2738d9b82166", null ],
-      [ "disconnect_indication_cback", "structwiced__bt__l2cap__le__appl__information__t.html#a3303273b965d612cd3fb614e3dcff760", null ],
-      [ "disconnect_confirm_cback", "structwiced__bt__l2cap__le__appl__information__t.html#ac0dd5ba3683c4dd34b7d0c82348ac275", null ],
-      [ "data_indication_cback", "structwiced__bt__l2cap__le__appl__information__t.html#afa30934bbf2f817264cc6a68b5b4590a", null ],
-      [ "le_tx_complete_cback", "structwiced__bt__l2cap__le__appl__information__t.html#af1d5d4af4f8f57c41b96bbb991491a87", null ],
-      [ "le_release_drb_cb", "structwiced__bt__l2cap__le__appl__information__t.html#a061ad1d94e881cd659b8d31218c689ad", null ]
-    ] ],
-    [ "wiced_bt_l2cap_fixed_chnl_reg_t", "structwiced__bt__l2cap__fixed__chnl__reg__t.html", [
-      [ "channel_id", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#a7869b865e083528a9bb76f9ec4393cdf", null ],
-      [ "default_idle_timeout", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#ad05e7fe3f98693f1ff4b4601fab804fe", null ],
-      [ "fixed_conn_cback", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#a52b805007d9b827a848aa711308b1e1d", null ],
-      [ "fixed_data_cback", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#aa8e1572e7a8103d7df41daa1e7f11a04", null ],
-      [ "fixed_tx_complete_cback", "structwiced__bt__l2cap__fixed__chnl__reg__t.html#a30bcfc2d596276f4cbc67317a6c574b5", null ]
-    ] ],
-    [ "wiced_bt_l2cap_ecrb_cb_ptrs_t", "structwiced__bt__l2cap__ecrb__cb__ptrs__t.html", [
-      [ "pL2CA_ECRB_ConnectInd_Cb", "structwiced__bt__l2cap__ecrb__cb__ptrs__t.html#ad422d1cd285bde3411a74eeec10fe85f", null ],
-      [ "pL2CA_ECRB_ConnectCfm_Cb", "structwiced__bt__l2cap__ecrb__cb__ptrs__t.html#ab6a77948ff0aaeced5710ab9bbfecdd1", null ],
-      [ "pL2CA_ECRB_MtuChanged_Cb", "structwiced__bt__l2cap__ecrb__cb__ptrs__t.html#a6a1f9e052967e903b2bac0f675b5315d", null ],
-      [ "pL2CA_ReleaseDRB_Cb", "structwiced__bt__l2cap__ecrb__cb__ptrs__t.html#a0c2c9eab2e2f788a668a00368dfa80e5", null ]
-    ] ],
     [ "L2CAP_CONN_OK", "group__l2cap.html#ga1c3124459bc093d9ee974c024a08dd80", null ],
     [ "L2CAP_CONN_PENDING", "group__l2cap.html#gaf7a6a61438d32cd8a86aded6630fbd8e", null ],
     [ "L2CAP_CONN_NO_PSM", "group__l2cap.html#ga24bdc2415febb2c406ae66fc741c47f4", null ],
@@ -82,7 +15,6 @@ var group__l2cap =
     [ "L2CAP_BLE_CONN_INVALID_CID", "group__l2cap.html#ga5d5d4cf8ac03e15edd8186ea202cf00c", null ],
     [ "L2CAP_BLE_CONN_CID_ALREADY_USED", "group__l2cap.html#gab2f3a5adb96ddd9b73b6dae10626d642", null ],
     [ "L2CAP_BLE_CONN_BAD_PARAMS", "group__l2cap.html#ga98e67e66f886f6427f273c458a5c9301", null ],
-    [ "L2CAP_ECRB_MIN_MTU", "group__l2cap.html#ga467e2353f863be840bd5faa90eccae6c", null ],
     [ "L2CAP_ECRB_MIN_MPS", "group__l2cap.html#ga1d68514711d5b2dcda828eabed7fbe00", null ],
     [ "L2CAP_ECRB_ALL_CONNS_SUCCESSFUL", "group__l2cap.html#gaf31a4728521eb4b930914f56c5d5685b", null ],
     [ "L2CAP_ECRB_ALL_CONNS_REFUSED", "group__l2cap.html#ga0e6fd0fc68ab23165f6d24686549745a", null ],
@@ -101,7 +33,6 @@ var group__l2cap =
     [ "L2CAP_ECRB_RECONFIG_FAIL_BAD_DCID", "group__l2cap.html#gafe610f3bc3ae138c01aa1e4429ac1697", null ],
     [ "L2CAP_ECRB_RECONFIG_FAIL_OTHER", "group__l2cap.html#gad192f458fb8fccd5491fdc5f4356bdaa", null ],
     [ "L2CAP_ECRB_NOT_SUPPORTED_BY_PEER", "group__l2cap.html#ga0766e27d59d49ec8baf74df6b9bfe4ee", null ],
-    [ "L2CAP_MINIMUM_OFFSET", "group__l2cap.html#ga393b58267d11d569c394b326b3350412", null ],
     [ "L2CAP_BLE_CONN_MIN_OFFSET", "group__l2cap.html#gaab983f0794fe13006d98d29538aa1307", null ],
     [ "L2CAP_DEFAULT_BLE_CB_POOL_ID", "group__l2cap.html#ga6d778e008613bbc073549e6cb1ce8e47", null ],
     [ "L2CAP_BLE_COC_SDU_OFFSET", "group__l2cap.html#ga2dbbfb547c0c6bdf80988cb14f716982", null ],
@@ -153,7 +84,6 @@ var group__l2cap =
     [ "wiced_bt_l2cap_ch_cfg_bits_t", "group__l2cap.html#ga6827dfd644f1172740f9e69c0df06bc9", null ],
     [ "wiced_bt_l2cap_chnl_priority_t", "group__l2cap.html#gae159cf0a184ef83a6b33727f05747b69", null ],
     [ "wiced_bt_l2cap_fixed_channel_mask_t", "group__l2cap.html#ga0a4a747ef09577a8dfdb31de1ddca88d", null ],
-    [ "wiced_bt_l2cap_connected_cback_t", "group__l2cap.html#ga8eb954ec0a272b02c6fc69bd07ea7602", null ],
     [ "wiced_bt_l2cap_disconnect_indication_cback_t", "group__l2cap.html#ga8e06cc2cf38b4956b5bf6f521de8b3c7", null ],
     [ "wiced_bt_l2cap_disconnect_confirm_cback_t", "group__l2cap.html#ga0a296b1bb20b46ebc680a7bec99a740a", null ],
     [ "wiced_bt_l2cap_data_indication_cback_t", "group__l2cap.html#ga5f1ea722e6d857d614fbc68192fcad37", null ],
@@ -163,7 +93,6 @@ var group__l2cap =
     [ "wiced_bt_l2cap_le_connect_indication_cback_t", "group__l2cap.html#gaad82cf3146183d8eab241071358169b6", null ],
     [ "wiced_bt_l2cap_drb_release_cb", "group__l2cap.html#ga3708e90651b47861800452aa90044a7f", null ],
     [ "wiced_bt_l2cap_le_connect_confirm_cback_t", "group__l2cap.html#gaa04b89594d9c3dc7d39a3066c02794cf", null ],
-    [ "wiced_bt_l2cap_ecrb_connect_ind", "group__l2cap.html#gaf52b6b2c8b5f0b7e29b9152e786c14b8", null ],
     [ "wiced_bt_l2cap_ecrb_confirm_cb", "group__l2cap.html#gaf993046174899c65ebee5456a12e3be3", null ],
     [ "wiced_bt_l2cap_ecrb_mtu_changed_cb", "group__l2cap.html#ga78a9fe09013d325da3ad898e0e185d84", null ]
 ];

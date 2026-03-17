@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="wiced__bt__mesh__sar_8h" kind="file" language="C++">
     <compoundname>wiced_bt_mesh_sar.h</compoundname>
     <briefdescription>
@@ -94,21 +94,21 @@
 <codeline lineno="112"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_MODEL_SAR_CONFIG_SERVER<sp/>\</highlight></codeline>
 <codeline lineno="113"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/>MESH_COMPANY_ID_BT_SIG,<sp/>WICED_BT_MESH_CORE_MODEL_ID_SAR_CONFIG_SRV,<sp/>wiced_bt_mesh_sar_config_server_message_handler,<sp/>NULL,<sp/>NULL<sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_sar_config_client_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_sar_config_client_message_handler(wiced_bt_mesh_event_t<sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/><ref refid="group__wiced__bt__mesh__provisioning_1gad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>);</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_sar_config_server_message_handler(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/>data_len);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_sar_config_server_message_handler(wiced_bt_mesh_event_t<sp/>*p_event,<sp/>uint8_t<sp/>*p_data,<sp/>uint16_t<sp/><ref refid="group__wiced__bt__mesh__provisioning_1gad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>);</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wiced_bt_mesh_provision.h<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">/*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_config_sar_transmitter_get(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_config_sar_transmitter_get(wiced_bt_mesh_event_t<sp/>*p_event);</highlight></codeline>
 <codeline lineno="155"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_config_sar_transmitter_set(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>wiced_bt_mesh_sar_xmtr_t<sp/>*p_set);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_config_sar_transmitter_set(wiced_bt_mesh_event_t<sp/>*p_event,<sp/>wiced_bt_mesh_sar_xmtr_t<sp/>*p_set);</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"></highlight></codeline>
-<codeline lineno="177"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_config_sar_receiver_get(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_config_sar_receiver_get(wiced_bt_mesh_event_t<sp/>*p_event);</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight></codeline>
-<codeline lineno="189"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_config_sar_receiver_set(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event,<sp/>wiced_bt_mesh_sar_rcvr_t<sp/>*p_set);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">wiced_bool_t<sp/>wiced_bt_mesh_config_sar_receiver_set(wiced_bt_mesh_event_t<sp/>*p_event,<sp/>wiced_bt_mesh_sar_rcvr_t<sp/>*p_set);</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
 <codeline lineno="193"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="194"><highlight class="normal">}</highlight></codeline>

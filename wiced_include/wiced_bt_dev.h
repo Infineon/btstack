@@ -1127,11 +1127,17 @@ enum wiced_bt_management_evt_e
      */
     BTM_BLE_REMOTE_PAIRING_REQUEST_EVENT, /* 43, 0x2B */
 
+    /**
+     * Event to notify the channel map read for BR/EDR ACL link
+     * Event data: \ref wiced_bt_management_evt_data_t.br_acl_read_channel_map_event
+     */
+    BTM_BR_ACL_READ_CHANNEL_MAP_EVENT,    /* 44, 0x2C */
+
 #if SMP_CATB_CONFORMANCE_TESTER == TRUE
     /**
      * The Secure Connections support information of the peer device.
      */
-    BTM_SMP_SC_PEER_INFO_EVT,                        /* 43, 0x2B */
+    BTM_SMP_SC_PEER_INFO_EVT,                        /* 45, 0x2D */
 #endif
 };
 #endif
@@ -1357,6 +1363,14 @@ typedef struct
     /* remaining RFU */
 } wiced_bt_ble_channel_sel_algo_event_data_t;
 
+/** Channel selection algorithm event data format */
+typedef struct
+{
+    uint8_t hci_status; /**< status */
+    wiced_bt_device_address_t remote_addr;  /**< peer address */
+    uint8_t afh_mode;   /**< AFH Mode */
+    wiced_bt_br_chnl_map_t channel_map;   /**< channel map used for this connection (only 0-78 bits are valid. MSB bit 79 is RFU)*/
+} wiced_bt_read_channel_map_event_data_t;
 
 /** Structure definitions for Bluetooth Management (#wiced_bt_management_cback_t) event notifications */
 typedef union
@@ -1411,6 +1425,7 @@ typedef union
     wiced_bt_flow_spec_cmpl_evt_t           br_flow_spec_event;                 /**< Data for #BTM_BR_ACL_FLOW_SPEC_COMPLETE_EVENT*/
     wiced_bt_ble_connection_param_request_t ble_connection_param_request;       /**< Data for #BTM_BLE_CONNECTION_PARAM_REQUEST_EVENT  */
     wiced_bt_ble_remote_pairing_request_t   remote_pairing_request;             /**< Data for #BTM_BLE_REMOTE_PAIRING_REQUEST_EVENT */
+    wiced_bt_read_channel_map_event_data_t  br_read_channel_map_event;   /**< Data for #BTM_BR_ACL_READ_CHANNEL_MAP_EVENT */
 #if SMP_CATB_CONFORMANCE_TESTER == TRUE
     wiced_bt_ble_sc_peer_info               smp_sc_peer_info;                   /* Data for #BTM_SMP_SC_PEER_INFO_EVT */
 #endif
@@ -1873,6 +1888,21 @@ wiced_result_t wiced_bt_btm_set_device_name(char* p_name);
 *
 **/
 wiced_result_t wiced_bt_dev_set_afh_channel_assessment(wiced_bool_t enable_or_disable);
+
+/**
+*
+* This function is called to read the current AFH Channel Map for a specific ACL connection
+*
+* @param[in]       remote_bda :  Remote device address
+*
+* @return          wiced_result_t
+*
+* <b> WICED_BT_SUCCESS </b>      : Command sent successfully \n
+* <b> WICED_BT_WRONG_MODE </b>   : Device is not up or no ACL connection \n
+* <b> WICED_BT_NO_RESOURCES </b> : No resources to send the command
+*
+**/
+wiced_result_t wiced_bt_dev_read_afh_channel_map(wiced_bt_device_address_t remote_bda);
 
 /**
  *
@@ -2453,6 +2483,7 @@ wiced_result_t wiced_bt_dev_qos_setup_by_bda(wiced_bt_device_address_t remote_bd
 wiced_result_t wiced_bt_dev_qos_setup_by_handle(uint16_t connection_handle,
                                                 wiced_bt_flow_spec_t *p_flow,
                                                 wiced_bt_dev_cmpl_cback_t *p_cb);
+
 /**
  * @endcond // DUAL_MODE
 */

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="wiced__bt__mesh__event_8h" kind="file" language="C++">
     <compoundname>wiced_bt_mesh_event.h</compoundname>
     <includes local="yes">wiced_timer.h</includes>
@@ -9,27 +9,31 @@
     <includedby refid="wiced__bt__mesh__models_8h" local="yes">wiced_bt_mesh_models.h</includedby>
     <includedby refid="wiced__bt__mesh__core_8h" local="yes">wiced_bt_mesh_core.h</includedby>
     <incdepgraph>
-      <node id="17">
+      <node id="2">
         <label>wiced_timer.h</label>
       </node>
-      <node id="16">
+      <node id="1">
         <label>wiced_bt_mesh_event.h</label>
         <link refid="wiced__bt__mesh__event_8h"/>
-        <childnode refid="17" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
     </incdepgraph>
-    <innerclass refid="structwiced__bt__mesh__event__t" prot="public">wiced_bt_mesh_event_t</innerclass>
+    <innerclass refid="structwiced__bt__mesh__event____t" prot="public">wiced_bt_mesh_event__t</innerclass>
       <sectiondef kind="user-defined">
       <header>Bits of the wiced_bt_mesh_event_t::app_key_idx</header>
-      <description><para><anchor id="wiced__bt__mesh__event_8h_1WICED_BT_MESH_EVENT_KEY_IDX"/></para><para>The following is the bits meaning of the field app_key_idx in the structure <ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref>. </para></description>
+      <description><para><anchor id="wiced__bt__mesh__event_8h_1WICED_BT_MESH_EVENT_KEY_IDX"/></para>
+<para>The following is the bits meaning of the field app_key_idx in the structure wiced_bt_mesh_event_t. </para>
+</description>
       <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aa6efc0f6bab0b5a0b20918f1e1d28b1b" prot="public" static="no">
         <name>WICED_BT_MESH_EVENT_KEY_IDX_DEFAULT_NETKEYIDX</name>
         <initializer>0xffff</initializer>
         <briefdescription>
-<para>Bits meaning. </para>        </briefdescription>
+<para>Bits meaning. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Use device key with default (first) net key idx. </para>        </detaileddescription>
+<para>Use device key with default (first) net key idx. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="32" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="32" bodyend="-1"/>
@@ -38,9 +42,11 @@
         <name>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY</name>
         <initializer>0x8000</initializer>
         <briefdescription>
-<para>1 means it is protected by device key and remaining part contains net_key_idx. </para>        </briefdescription>
+<para>1 means it is protected by device key and remaining part contains net_key_idx. </para>
+        </briefdescription>
         <detaileddescription>
-<para>0 means it is protected by application key and remaining part contains app_key_idx. </para>        </detaileddescription>
+<para>0 means it is protected by application key and remaining part contains app_key_idx. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="33" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="33" bodyend="-1"/>
@@ -49,9 +55,11 @@
         <name>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_INT_IDX</name>
         <initializer>0x4000</initializer>
         <briefdescription>
-<para>1 means it is internal key index in the same order as added. </para>        </briefdescription>
+<para>1 means it is internal key index in the same order as added. </para>
+        </briefdescription>
         <detaileddescription>
-<para>0 means it is global key index. </para>        </detaileddescription>
+<para>0 means it is global key index. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="34" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="34" bodyend="-1"/>
@@ -60,7 +68,8 @@
         <name>WICED_BT_MESH_EVENT_KEY_IDX_MSK_KEYIDX</name>
         <initializer>0x0fff</initializer>
         <briefdescription>
-<para>Mask of the app_key_index/net_key_index depending on value 0/1 of the bit WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY. </para>        </briefdescription>
+<para>Mask of the app_key_index/net_key_index depending on value 0/1 of the bit WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -69,7 +78,7 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ac72ed29e9d61b250316f3b6870ca2745" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1gac72ed29e9d61b250316f3b6870ca2745" prot="public" static="no">
         <name>CREDENTIAL_FLAG_FLOODING</name>
         <initializer>0x00    /*&lt; Flooding Credentials  */</initializer>
         <briefdescription>
@@ -80,7 +89,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="65" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="65" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1ac5a7aa705cc4be1b676c9c70d1d7403b" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1gac5a7aa705cc4be1b676c9c70d1d7403b" prot="public" static="no">
         <name>CREDENTIAL_FLAG_FRENDSHIP</name>
         <initializer>0x01    /*&lt; Friendship Credentials  */</initializer>
         <briefdescription>
@@ -91,7 +100,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="66" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="66" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a4610e9e139c824b77c81e24ed83f5203" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga4610e9e139c824b77c81e24ed83f5203" prot="public" static="no">
         <name>CREDENTIAL_FLAG_DIRECTED</name>
         <initializer>0x02    /*&lt; Directed Forwarding Credentials  */</initializer>
         <briefdescription>
@@ -102,7 +111,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="67" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="67" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1abe46201a835b3b2e98cf0cbe981b59be" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1gabe46201a835b3b2e98cf0cbe981b59be" prot="public" static="no">
         <name>RETRANSMIT_TIMER_TICK</name>
         <initializer>50</initializer>
         <briefdescription>
@@ -113,7 +122,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="72" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="72" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a539b0066c6b2d2fe46c845b2e32ad93b" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga539b0066c6b2d2fe46c845b2e32ad93b" prot="public" static="no">
         <name>RETRANSMIT_TIMER2_TICK</name>
         <initializer>10</initializer>
         <briefdescription>
@@ -124,7 +133,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="73" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="73" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aaab7e3aa3012530273e898ce1573f17c" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1gaaab7e3aa3012530273e898ce1573f17c" prot="public" static="no">
         <name>REPLY_TIMER_TICK</name>
         <initializer>50</initializer>
         <briefdescription>
@@ -135,7 +144,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="76" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="76" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1abdf9aa4b3b81f170071376607f870006" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1gabdf9aa4b3b81f170071376607f870006" prot="public" static="no">
         <name>TX_STATUS_COMPLETED</name>
         <initializer>0</initializer>
         <briefdescription>
@@ -146,7 +155,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="80" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="80" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1af800d1ab3c27c3acddc0016aead1922a" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1gaf800d1ab3c27c3acddc0016aead1922a" prot="public" static="no">
         <name>TX_STATUS_FAILED</name>
         <initializer>1</initializer>
         <briefdescription>
@@ -157,7 +166,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="81" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="81" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a974ff50cf7f2e723add959f384429cee" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga974ff50cf7f2e723add959f384429cee" prot="public" static="no">
         <name>TX_STATUS_ACK_RECEIVED</name>
         <initializer>2</initializer>
         <briefdescription>
@@ -168,7 +177,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="82" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="82" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1af53ef804bc2279ea0446390ea50f471f" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1gaf53ef804bc2279ea0446390ea50f471f" prot="public" static="no">
         <name>RPL_DELAY_DONT_SAVE</name>
         <initializer>0xff</initializer>
         <briefdescription>
@@ -179,7 +188,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="84" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="84" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1aa1e9cfcf45b509a85c8f6dbf1da02af7" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1gaa1e9cfcf45b509a85c8f6dbf1da02af7" prot="public" static="no">
         <name>TAG_USE_DIRECTED</name>
         <initializer>0x01</initializer>
         <briefdescription>
@@ -190,7 +199,7 @@
         </inbodydescription>
         <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="88" column="9" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" bodystart="88" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wiced__bt__mesh__event_8h_1a9ec051fd153b183097019f24d51156b2" prot="public" static="no">
+      <memberdef kind="define" id="group__wiced__bt__mesh__core_1ga9ec051fd153b183097019f24d51156b2" prot="public" static="no">
         <name>TAG_IMMUTABLE_CREDENTIALS</name>
         <initializer>0x02</initializer>
         <briefdescription>
@@ -204,59 +213,69 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="group__wiced__bt__mesh__core_1gaccd6185e2edfb1a91692727fef0da12a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+        <type>wiced_bt_mesh_event_t *</type>
         <definition>wiced_bt_mesh_event_t* wiced_bt_mesh_create_reply_event</definition>
         <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
         <name>wiced_bt_mesh_create_reply_event</name>
         <param>
-          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <type>wiced_bt_mesh_event_t *</type>
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>Create message reply mesh event from the received mesh event. </para>        </briefdescription>
+<para>Create message reply mesh event from the received mesh event. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This function doesn&apos;t create but just updates received mesh event to be used to send message back to the originator. After application or a models library calls Mesh Models Library or Mesh Core library passing the pointer to the mesh event, it loses the ownership of the event and should not use it again.</para><para><parameterlist kind="param"><parameteritem>
+<para>This function doesn&apos;t create but just updates received mesh event to be used to send message back to the originator. After application or a models library calls Mesh Models Library or Mesh Core library passing the pointer to the mesh event, it loses the ownership of the event and should not use it again.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>information about the message received.</para></parameterdescription>
+<para>information about the message received.</para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Pointer to the input p_event updated for response </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Pointer to the input p_event updated for response </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="107" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="107" column="23" declfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" declline="107" declcolumn="23"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__core_1gad429c40f45f13693d7e64894a7402f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+        <type>wiced_bt_mesh_event_t *</type>
         <definition>wiced_bt_mesh_event_t* wiced_bt_mesh_copy_event</definition>
         <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
         <name>wiced_bt_mesh_copy_event</name>
         <param>
-          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <type>wiced_bt_mesh_event_t *</type>
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>Create the copy of the existing mesh event. </para>        </briefdescription>
+<para>Create the copy of the existing mesh event. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This function creates new mesh event with same content as input mesh event.</para><para><parameterlist kind="param"><parameteritem>
+<para>This function creates new mesh event with same content as input mesh event.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>mesh event to copy.</para></parameterdescription>
+<para>mesh event to copy.</para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Pointer to the created mesh event </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Pointer to the created mesh event </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="117" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="117" column="23" declfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" declline="117" declcolumn="23"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__core_1ga3b31ef1c2c2249006531d402f13c1fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+        <type>wiced_bt_mesh_event_t *</type>
         <definition>wiced_bt_mesh_event_t* wiced_bt_mesh_create_event</definition>
         <argsstring>(uint8_t element_index, uint16_t company_id, uint16_t model_id, uint16_t dst, uint16_t app_key_idx)</argsstring>
         <name>wiced_bt_mesh_create_event</name>
@@ -281,49 +300,58 @@
           <declname>app_key_idx</declname>
         </param>
         <briefdescription>
-<para>Create mesh event for an unsolicited message. </para>        </briefdescription>
+<para>Create mesh event for an unsolicited message. </para>
+        </briefdescription>
         <detaileddescription>
-<para>In case dst is 0 the function takes all information from the model&apos;s publication or fails if publication is not configured for the specified model. In case non-0 dst the function uses specified dst and app_key_idx and fills all other fields with default values. In special case with company_id equals to 0xffff the function creates a message event with default ttl.</para><para><parameterlist kind="param"><parameteritem>
+<para>In case dst is 0 the function takes all information from the model&apos;s publication or fails if publication is not configured for the specified model. In case non-0 dst the function uses specified dst and app_key_idx and fills all other fields with default values. In special case with company_id equals to 0xffff the function creates a message event with default ttl.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element_index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Element index. </para></parameterdescription>
+<para>Element index. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>company_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Company ID. </para></parameterdescription>
+<para>Company ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>model_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Model ID. </para></parameterdescription>
+<para>Model ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>dst</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Destination address. If parameter is 0, the function finds publication and take uses its fields for the mesh event. </para></parameterdescription>
+<para>Destination address. If parameter is 0, the function finds publication and take uses its fields for the mesh event. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>app_key_idx</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Application key index used to decrypt when message was received or which should be used to encrypt to send the message. Or it can be net key index - see <ref refid="wiced__bt__mesh__event_8h_1WICED_BT_MESH_EVENT_KEY_IDX" kindref="member">Bits of the wiced_bt_mesh_event_t::app_key_idx</ref>)</para></parameterdescription>
+<para>Application key index used to decrypt when message was received or which should be used to encrypt to send the message. Or it can be net key index - see <ref refid="wiced__bt__mesh__event_8h_1WICED_BT_MESH_EVENT_KEY_IDX" kindref="member">Bits of the wiced_bt_mesh_event_t::app_key_idx</ref>)</para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>p_event Pointer to a newly allocated mesh event. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>p_event Pointer to a newly allocated mesh event. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="133" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="133" column="23" declfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" declline="133" declcolumn="23"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__mesh__core_1gab53118d6d25849be44f82d3af7eeb0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -331,31 +359,38 @@
         <argsstring>(wiced_bt_mesh_event_t *p_event)</argsstring>
         <name>wiced_bt_mesh_release_event</name>
         <param>
-          <type><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref> *</type>
+          <type>wiced_bt_mesh_event_t *</type>
           <declname>p_event</declname>
         </param>
         <briefdescription>
-<para>Release mesh event. </para>        </briefdescription>
+<para>Release mesh event. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The application should call this function when it receives the mesh event in the callback and the reply value is set to 0.</para><para><parameterlist kind="param"><parameteritem>
+<para>The application should call this function when it receives the mesh event in the callback and the reply value is set to 0.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>p_event</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>information for the message.</para></parameterdescription>
+<para>information for the message.</para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>None </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="143" column="1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" line="143" column="6" declfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_event.h" declline="143" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>&gt; </para>    </briefdescription>
+    </briefdescription>
     <detaileddescription>
-<para>Mesh Model definitions </para>    </detaileddescription>
+<para>&gt;</para>
+<para>Mesh Model definitions </para>
+    </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>2016-YEAR<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
@@ -378,57 +413,57 @@
 <codeline lineno="33"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_DEVKEY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8000<sp/><sp/></highlight></codeline>
 <codeline lineno="34"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_EVENT_KEY_IDX_FLAG_INT_IDX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4000<sp/><sp/></highlight></codeline>
 <codeline lineno="35"><highlight class="preprocessor">#define<sp/>WICED_BT_MESH_EVENT_KEY_IDX_MSK_KEYIDX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0fff<sp/><sp/></highlight></codeline>
-<codeline lineno="51" refid="structwiced__bt__mesh__event__t" refkind="compound"><highlight class="preprocessor">typedef<sp/>struct<sp/>wiced_bt_mesh_event__t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structwiced__bt__mesh__event____t" refkind="compound"><highlight class="preprocessor">typedef<sp/>struct<sp/>wiced_bt_mesh_event__t</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">wiced_bt_mesh_event__t<sp/>*p_next;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*complete_callback;<sp/></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>company_id;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>opcode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hci_opcode;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element_idx;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ttl;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>src;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>app_key_idx;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_len;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structwiced__bt__mesh__event____t" kindref="compound">wiced_bt_mesh_event__t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1gaa07f6b78e9e25486b43f1fa680fbfbd2" kindref="member">p_next</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="group__wiced__bt__mesh__core_1ga753e7d573fe67016bf8392199ca50ed8" kindref="member">complete_callback</ref>;<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga685ae33c442d30cc507fa5415f536e74" kindref="member">company_id</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga345b5a533872a471f810a988b331f60c" kindref="member">model_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga200c0a8d8fb1c708f557694429d50eed" kindref="member">opcode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga6b5e2984897d0125683864b1a7fa6abe" kindref="member">hci_opcode</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga43ae1be57fe7bac0e260bcf967cafa25" kindref="member">element_idx</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga4d402503271315376ddf4e47674d4965" kindref="member">ttl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1gaff5d329ae4dc3bd89178a32ebe70b79c" kindref="member">src</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga454dccdfbcb2ec9e494ad11e8551cbe1" kindref="member">dst</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga709569ba11b9bd6bc11e56cbbe268588" kindref="member">app_key_idx</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__provisioning_1gad1a572736a10ff6b282c5f43c4ea1ccf" kindref="member">data_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="65"><highlight class="preprocessor">#define<sp/>CREDENTIAL_FLAG_FLOODING<sp/><sp/><sp/><sp/>0x00<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Flooding<sp/>Credentials<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CREDENTIAL_FLAG_FRENDSHIP<sp/><sp/><sp/>0x01<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Friendship<sp/>Credentials<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CREDENTIAL_FLAG_DIRECTED<sp/><sp/><sp/><sp/>0x02<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Directed<sp/>Forwarding<sp/>Credentials<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>credential_flag;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retrans_cnt;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__provisioning_1gae4118fec267d4ea4f8fe035cd8e02d88" kindref="member">credential_flag</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga49e55d05fb7599a7c3c77b88d8329ce2" kindref="member">retrans_cnt</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="72"><highlight class="preprocessor">#define<sp/>RETRANSMIT_TIMER_TICK<sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RETRANSMIT_TIMER2_TICK<sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retrans_time;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reply;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1gaf855fdb53b198ded672c3c2c22b03de0" kindref="member">retrans_time</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga07a4c47fcfcbc29930b888cb596ebbb9" kindref="member">reply</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="76"><highlight class="preprocessor">#define<sp/>REPLY_TIMER_TICK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reply_timeout;<sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga1c4ecdaf1722efbf682f031231b82239" kindref="member">reply_timeout</ref>;<sp/><sp/></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_STATUS_COMPLETED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_STATUS_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_STATUS_ACK_RECEIVED<sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tx_flag;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1gaa6a70bb0e0384d29e62ad0fd97f7512b" kindref="member">tx_flag</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="84"><highlight class="preprocessor">#define<sp/>RPL_DELAY_DONT_SAVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xff</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rpl_delay;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tx_delay;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>status;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1gaa1710dc7e1ffca4221477c82f11a882f" kindref="member">rpl_delay</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga97e7a792cbf061deec090c1faf7f7bd6" kindref="member">tx_delay</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="group__wiced__bt__mesh__core_1gade818037fd6c985038ff29656089758d" kindref="member">status</ref>;</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAG_USE_DIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAG_IMMUTABLE_CREDENTIALS<sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flags;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>friend_addr;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>send_segmented;<sp/></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rssi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_timer_t<sp/><sp/><sp/>timer;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal">}<sp/><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga649ac1d94e767b8389bac1c4bf03013c" kindref="member">friend_addr</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1gab508763025201954d4dc1fb5b94af2f3" kindref="member">send_segmented</ref>;<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__core_1ga8eb262dee82399976958613271b7099e" kindref="member">rssi</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_timer_t<sp/><sp/><sp/><ref refid="group__wiced__bt__mesh__provisioning_1ga0ff73b1428e9cd11a4f7a6cf46b7b550" kindref="member">timer</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/>wiced_bt_mesh_event_t;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1gaccd6185e2edfb1a91692727fef0da12a" kindref="member">wiced_bt_mesh_create_reply_event</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">wiced_bt_mesh_event_t<sp/>*<ref refid="group__wiced__bt__mesh__core_1gaccd6185e2edfb1a91692727fef0da12a" kindref="member">wiced_bt_mesh_create_reply_event</ref>(wiced_bt_mesh_event_t<sp/>*p_event);</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1gad429c40f45f13693d7e64894a7402f69" kindref="member">wiced_bt_mesh_copy_event</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">wiced_bt_mesh_event_t<sp/>*<ref refid="group__wiced__bt__mesh__core_1gad429c40f45f13693d7e64894a7402f69" kindref="member">wiced_bt_mesh_copy_event</ref>(wiced_bt_mesh_event_t<sp/>*p_event);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*<ref refid="group__wiced__bt__mesh__core_1ga3b31ef1c2c2249006531d402f13c1fb6" kindref="member">wiced_bt_mesh_create_event</ref>(uint8_t<sp/>element_index,<sp/>uint16_t<sp/>company_id,<sp/>uint16_t<sp/>model_id,<sp/>uint16_t<sp/>dst,<sp/>uint16_t<sp/>app_key_idx);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">wiced_bt_mesh_event_t<sp/>*<ref refid="group__wiced__bt__mesh__core_1ga3b31ef1c2c2249006531d402f13c1fb6" kindref="member">wiced_bt_mesh_create_event</ref>(uint8_t<sp/>element_index,<sp/>uint16_t<sp/><ref refid="group__wiced__bt__mesh__core_1ga685ae33c442d30cc507fa5415f536e74" kindref="member">company_id</ref>,<sp/>uint16_t<sp/><ref refid="group__wiced__bt__mesh__core_1ga345b5a533872a471f810a988b331f60c" kindref="member">model_id</ref>,<sp/>uint16_t<sp/><ref refid="group__wiced__bt__mesh__core_1ga454dccdfbcb2ec9e494ad11e8551cbe1" kindref="member">dst</ref>,<sp/>uint16_t<sp/><ref refid="group__wiced__bt__mesh__core_1ga709569ba11b9bd6bc11e56cbbe268588" kindref="member">app_key_idx</ref>);</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1gab53118d6d25849be44f82d3af7eeb0db" kindref="member">wiced_bt_mesh_release_event</ref>(<ref refid="structwiced__bt__mesh__event__t" kindref="compound">wiced_bt_mesh_event_t</ref><sp/>*p_event);</highlight></codeline>
+<codeline lineno="143"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__mesh__core_1gab53118d6d25849be44f82d3af7eeb0db" kindref="member">wiced_bt_mesh_release_event</ref>(wiced_bt_mesh_event_t<sp/>*p_event);</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@}<sp/>wiced_bt_mesh_core<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight></codeline>

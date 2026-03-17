@@ -1600,10 +1600,16 @@ wiced_bt_gatt_status_t wiced_bt_gatt_client_send_read_by_type(uint16_t conn_id,
  * a) set to GATTC_OPTYPE_READ_MULTIPLE for \p opcode = GATT_REQ_READ_MULTI and
  * b) set to GATTC_OPTYPE_READ_HANDLE for \p opcode = GATT_REQ_READ_MULTI_VAR_LENGTH
  *
- *  @param[in] conn_id     : Connection id
+ *  @param[in] conn_id  : Connection id
  *  @param[in] opcode : Can be set to \ref GATT_REQ_READ_MULTI or \ref GATT_REQ_READ_MULTI_VAR_LENGTH
  *  @param[in] num_handles : Number of handles pointed to by \p p_handle_stream
- *  @param[in] p_handle_stream : The list of 16 bit handles arranged in Little Endian format
+ *  @param[in] p_handle_stream : The list of 16-bit handles arranged in Little Endian format.
+ *      @note \p p_handle_stream must be allocated on the heap or be persistent in memory when this
+ *      API returns WICED_BT_GATT_SUCCESS. The memory pointer is returned to the application via
+ *      \ref wiced_bt_gatt_operation_complete_rsp_t.multi_rsp.req.p_handle_stream
+ *      in the #GATTC_OPTYPE_READ_MULTIPLE response of #GATT_OPERATION_CPLT_EVT. The application is
+ *      expected to free/release/deallocate the \p p_handle_stream pointer on receiving
+ *      the #GATTC_OPTYPE_READ_MULTIPLE response of #GATT_OPERATION_CPLT_EVT.
  *  @param[in] auth_req   : Authentication requirements
  *
  *  @return @link wiced_bt_gatt_status_e wiced_bt_gatt_status_t @endlink

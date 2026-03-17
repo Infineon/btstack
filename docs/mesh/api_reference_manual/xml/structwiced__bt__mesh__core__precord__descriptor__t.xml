@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="structwiced__bt__mesh__core__precord__descriptor__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_mesh_core_precord_descriptor_t</compoundname>
     <includes local="no">wiced_bt_mesh_core.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structwiced__bt__mesh__core__precord__descriptor__t_1a35e6fed2f1bbc9713d6616d136e21dfb" prot="public" static="no" mutable="no">
-        <type><ref refid="group__wiced__bt__mesh__core_1ga34b96a5d8887dc3b1003625ac91a1420" kindref="member">wiced_bt_mesh_core_provisioning_record_t</ref></type>
+      <memberdef kind="variable" id="group__wiced__bt__mesh__core_1ga35e6fed2f1bbc9713d6616d136e21dfb" prot="public" static="no" mutable="no">
+        <type><ref refid="group__wiced__bt__mesh__core_1gabfd8b4d4492535a25bff46b8300ed52e" kindref="member">wiced_bt_mesh_core_provisioning_record_t</ref></type>
         <definition>wiced_bt_mesh_core_provisioning_record_t wiced_bt_mesh_core_precord_descriptor_t::record</definition>
         <argsstring></argsstring>
         <name>record</name>
@@ -15,9 +15,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1041" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1041" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1041" column="49" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1041" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structwiced__bt__mesh__core__precord__descriptor__t_1aafea6a43c1b6fe2ad882836b45eb9bc1" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="group__wiced__bt__mesh__core_1gaafea6a43c1b6fe2ad882836b45eb9bc1" prot="public" static="no" mutable="no">
         <type>wiced_bt_mesh_core_provisioning_list_t</type>
         <definition>wiced_bt_mesh_core_provisioning_list_t wiced_bt_mesh_core_precord_descriptor_t::list</definition>
         <argsstring></argsstring>
@@ -28,17 +28,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1042" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1042" bodyend="-1"/>
+        <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1042" column="49" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1042" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Provisioning Records Handler Descriptor. </para>    </briefdescription>
+<para>Provisioning Records Handler Descriptor. </para>
+    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <location file="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" line="1040" column="1" bodyfile="/builds/repo/btstack/apps/libraries/mesh_libs/include/wiced_bt_mesh_core.h" bodystart="1039" bodyend="1043"/>
     <listofallmembers>
-      <member refid="structwiced__bt__mesh__core__precord__descriptor__t_1aafea6a43c1b6fe2ad882836b45eb9bc1" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_precord_descriptor_t</scope><name>list</name></member>
-      <member refid="structwiced__bt__mesh__core__precord__descriptor__t_1a35e6fed2f1bbc9713d6616d136e21dfb" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_precord_descriptor_t</scope><name>record</name></member>
+      <member refid="group__wiced__bt__mesh__core_1gaafea6a43c1b6fe2ad882836b45eb9bc1" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_precord_descriptor_t</scope><name>list</name></member>
+      <member refid="group__wiced__bt__mesh__core_1ga35e6fed2f1bbc9713d6616d136e21dfb" prot="public" virt="non-virtual"><scope>wiced_bt_mesh_core_precord_descriptor_t</scope><name>record</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

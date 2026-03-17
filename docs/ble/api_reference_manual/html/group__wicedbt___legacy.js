@@ -2,25 +2,6 @@ var group__wicedbt___legacy =
 [
     [ "Advertisement & Scan", "group__btm__ble__adv__scan__functions.html", "group__btm__ble__adv__scan__functions" ],
     [ "MultiAdv", "group__btm__ble__multi__adv__functions.html", "group__btm__ble__multi__adv__functions" ],
-    [ "wiced_bt_ble_scan_results_t", "structwiced__bt__ble__scan__results__t.html", [
-      [ "ble_addr_type", "structwiced__bt__ble__scan__results__t.html#ac40d8a76f432cee5f3fe074a23e9521d", null ],
-      [ "remote_bd_addr", "structwiced__bt__ble__scan__results__t.html#af12c105e6fa2388e8b61ecb4649d66da", null ],
-      [ "rssi", "structwiced__bt__ble__scan__results__t.html#af4133a5dd55c297a8d21712f30f0acc6", null ],
-      [ "ble_evt_type", "structwiced__bt__ble__scan__results__t.html#a80db1a4adc1a2c6814d4c2c5450debc5", null ],
-      [ "flag", "structwiced__bt__ble__scan__results__t.html#a61b930573ead970e6b806fb264d25af1", null ]
-    ] ],
-    [ "wiced_bt_ble_multi_adv_params_t", "structwiced__bt__ble__multi__adv__params__t.html", [
-      [ "adv_int_min", "structwiced__bt__ble__multi__adv__params__t.html#a7f75e376dc2b3dfd530773829d9993be", null ],
-      [ "adv_int_max", "structwiced__bt__ble__multi__adv__params__t.html#a831863d686ff8dcce219d3783571c22e", null ],
-      [ "adv_type", "structwiced__bt__ble__multi__adv__params__t.html#a7cce84bb9e3419295fbc1d7161b3363c", null ],
-      [ "channel_map", "structwiced__bt__ble__multi__adv__params__t.html#aecca987b1351639016aa85764b1672f4", null ],
-      [ "adv_filter_policy", "structwiced__bt__ble__multi__adv__params__t.html#a9d16264ddaf50b7ea54232171235ed4b", null ],
-      [ "adv_tx_power", "structwiced__bt__ble__multi__adv__params__t.html#a73cd14a2cf4b44e6cdde7e7dd20fa302", null ],
-      [ "peer_bd_addr", "structwiced__bt__ble__multi__adv__params__t.html#afce21fc6885a7da0b01bac3b97954836", null ],
-      [ "peer_addr_type", "structwiced__bt__ble__multi__adv__params__t.html#a130a1499d30093d9c947a44c214d7937", null ],
-      [ "own_bd_addr", "structwiced__bt__ble__multi__adv__params__t.html#a670fabbd2fc224d4d7b8408f4e60aa87", null ],
-      [ "own_addr_type", "structwiced__bt__ble__multi__adv__params__t.html#a984df1d6500488f5daeffa08984633b8", null ]
-    ] ],
     [ "MULTI_ADV_TX_POWER_MIN_INDEX", "group__wicedbt___legacy.html#ga9367f8902700749fba1acce4f379ebf7", null ],
     [ "MULTI_ADV_TX_POWER_MAX_INDEX", "group__wicedbt___legacy.html#ga2bdd613b7804ef9942e691f74d9e8b6f", null ],
     [ "wiced_bt_ble_scanner_filter_policy_t", "group__wicedbt___legacy.html#ga6d09736846bcb960a4fd36934d24bfef", null ],

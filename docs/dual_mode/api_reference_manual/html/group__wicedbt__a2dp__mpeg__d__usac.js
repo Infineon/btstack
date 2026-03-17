@@ -1,13 +1,5 @@
 var group__wicedbt__a2dp__mpeg__d__usac =
 [
-    [ "wiced_bt_a2d_mdu_cie_t", "structwiced__bt__a2d__mdu__cie__t.html", [
-      [ "samp_freq", "structwiced__bt__a2d__mdu__cie__t.html#a554dc80c6b78a282dbe78fcc3c4ab01c", null ],
-      [ "bitrate", "structwiced__bt__a2d__mdu__cie__t.html#a48fcf5db14be1cd8719e83ef7a5787c2", null ],
-      [ "obj_type", "structwiced__bt__a2d__mdu__cie__t.html#a44c9823738fe1a8ace8d916442e7e025", null ],
-      [ "chnl", "structwiced__bt__a2d__mdu__cie__t.html#aa37c69bfd09eda30799ebbd7db1dabb4", null ],
-      [ "vbr", "structwiced__bt__a2d__mdu__cie__t.html#a420eda7bbd8bf2b4f40ee2723fc3569e", null ]
-    ] ],
-    [ "A2D_MDU_INFO_LEN", "group__wicedbt__a2dp__mpeg__d__usac.html#ga0f6cb2607727a82aa6d99599da410c71", null ],
     [ "A2D_MDU_IE_OBJ_MSK", "group__wicedbt__a2dp__mpeg__d__usac.html#gaab4b8ba474f9a0338b3d4f3da93eae0a", null ],
     [ "A2D_MDU_IE_OBJ_USAC", "group__wicedbt__a2dp__mpeg__d__usac.html#ga75e4ca52abe5d0fea787980cc4fd6f97", null ],
     [ "A2D_MDU_IE_SAMP_FREQ_MSK", "group__wicedbt__a2dp__mpeg__d__usac.html#ga39deb25180c3e25a5a159ec99ad966ea", null ],
@@ -47,6 +39,5 @@ var group__wicedbt__a2dp__mpeg__d__usac =
     [ "A2D_MDU_IE_BITRATE4_MSK", "group__wicedbt__a2dp__mpeg__d__usac.html#gae7dd01f774e6d1a9af325d99f735680a", null ],
     [ "A2D_MDU_IE_BITRATE56_MSK", "group__wicedbt__a2dp__mpeg__d__usac.html#gad40b8240d65aee7b8228472fbc6d218d", null ],
     [ "A2D_MDU_IE_BITRATE_MSK", "group__wicedbt__a2dp__mpeg__d__usac.html#ga502d1077e67074baf4f8e6a9fcfdc401", null ],
-    [ "wiced_bt_a2d_bld_mdu_info", "group__wicedbt__a2dp__mpeg__d__usac.html#ga273c77b41937ae976350de94b6234860", null ],
     [ "wiced_bt_a2d_pars_mdu_info", "group__wicedbt__a2dp__mpeg__d__usac.html#ga1ff5cfa91e1f786df5efc203b2939757", null ]
 ];

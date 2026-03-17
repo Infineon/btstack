@@ -1,47 +1,5 @@
 var group__sco =
 [
-    [ "wiced_bt_sco_params_t", "structwiced__bt__sco__params__t.html", [
-      [ "max_latency", "structwiced__bt__sco__params__t.html#ae761b995c88341d20c5354ea8ebb94d0", null ],
-      [ "packet_types", "structwiced__bt__sco__params__t.html#a64df45c1566603ff1c135d0276142a5a", null ],
-      [ "retrans_effort", "structwiced__bt__sco__params__t.html#a93dfc01ece32939d166f439a2b311ad2", null ],
-      [ "use_wbs", "structwiced__bt__sco__params__t.html#aabd05934c0bc2652cb96440d5a111c80", null ]
-    ] ],
-    [ "wiced_bt_voice_path_setup_t", "structwiced__bt__voice__path__setup__t.html", [
-      [ "path", "structwiced__bt__voice__path__setup__t.html#af18be965863f6115aa0b889ab4965531", null ],
-      [ "vsc_route", "structwiced__bt__voice__path__setup__t.html#acd1ecdcc4cf4ef08ec188dd1186aa0ee", null ],
-      [ "p_sco_data_cb", "structwiced__bt__voice__path__setup__t.html#a8d87d052a0e6dc4bc60b2c0d8447114a", null ]
-    ] ],
-    [ "wiced_bt_coding_format", "structwiced__bt__coding__format.html", [
-      [ "coding_format", "structwiced__bt__coding__format.html#af5d152f08c46f24d3ae6690458be9faf", null ],
-      [ "company_id", "structwiced__bt__coding__format.html#a94a27f0c1e246a156ac6bc28ced5e194", null ],
-      [ "vs_codec_id", "structwiced__bt__coding__format.html#a7c2494a607f1745394ce7e555bcd7938", null ]
-    ] ],
-    [ "wiced_bt_enh_esco_params_t", "structwiced__bt__enh__esco__params__t.html", [
-      [ "tx_bw", "structwiced__bt__enh__esco__params__t.html#a51e84bb7868e8e75242743a7c3762696", null ],
-      [ "rx_bw", "structwiced__bt__enh__esco__params__t.html#a56f2aa11c1be5861c5ee3d5257564306", null ],
-      [ "tx_cf", "structwiced__bt__enh__esco__params__t.html#aea241be92b358c32b283ce7d69ec31ce", null ],
-      [ "rx_cf", "structwiced__bt__enh__esco__params__t.html#a21c139d035203116e565d43c6e8ebbde", null ],
-      [ "tx_codec_frame_size", "structwiced__bt__enh__esco__params__t.html#a8275b849d5726b3aab06ccb7fcc88ba4", null ],
-      [ "rx_codec_frame_size", "structwiced__bt__enh__esco__params__t.html#ae91553c8ccc49fd4a653ed54571a5d51", null ],
-      [ "input_bandwidth", "structwiced__bt__enh__esco__params__t.html#abc93d7b80a0673fa47ed566789e83074", null ],
-      [ "output_bandwidth", "structwiced__bt__enh__esco__params__t.html#a1ffa994bf27f3a6fde9bf14a8a2cdffa", null ],
-      [ "input_cf", "structwiced__bt__enh__esco__params__t.html#a8d32f008a4d7c98becfa4ed756a05b6d", null ],
-      [ "output_cf", "structwiced__bt__enh__esco__params__t.html#a087ae831b2736fc5b2a4f2a30d2420e6", null ],
-      [ "input_coded_data_size", "structwiced__bt__enh__esco__params__t.html#a3c5969caecc4d0b657d01e854e1d91b7", null ],
-      [ "output_coded_data_size", "structwiced__bt__enh__esco__params__t.html#a690f574cfd8bc9be24d0d76121785d42", null ],
-      [ "input_pcm_data_format", "structwiced__bt__enh__esco__params__t.html#a4e2c8b4950fb7709aa22d30ef65a5fd4", null ],
-      [ "output_pcm_data_format", "structwiced__bt__enh__esco__params__t.html#a070584679338290dc7bea6c68759747f", null ],
-      [ "input_pcm_payload_msb_position", "structwiced__bt__enh__esco__params__t.html#a07b9e673331f28dc32dadf2d6823132f", null ],
-      [ "output_pcm_payload_msb_position", "structwiced__bt__enh__esco__params__t.html#a9f7e87eb2bf48248ed85573b44c50120", null ],
-      [ "input_data_path", "structwiced__bt__enh__esco__params__t.html#a847c1e215c901d25fe7cb34a8ed74ff6", null ],
-      [ "output_data_path", "structwiced__bt__enh__esco__params__t.html#ad378064eee7fa94028af3d3d8c4e5f44", null ],
-      [ "input_transport_unit_size", "structwiced__bt__enh__esco__params__t.html#a74444d9adb7ef3f5e108d43358a3364c", null ],
-      [ "output_transport_unit_size", "structwiced__bt__enh__esco__params__t.html#ac536d399d59b8e6d6873ca67b2abd9a7", null ],
-      [ "max_latency", "structwiced__bt__enh__esco__params__t.html#ac0cd2304aafcbf9307e3ea3acb322394", null ],
-      [ "packet_types", "structwiced__bt__enh__esco__params__t.html#a508f4e977397526d2bad4489dbee145d", null ],
-      [ "retrans_effort", "structwiced__bt__enh__esco__params__t.html#a2654672e08ecdba2409f382a8e954463", null ]
-    ] ],
-    [ "WICED_BT_SCO_CONNECTION_ACCEPT", "group__sco.html#ga49d734e161b737d295da9de4fa72a727", null ],
     [ "WICED_BT_SCO_CONNECTION_REJECT_RESOURCES", "group__sco.html#ga02079c0bf5602a19c6d2c05c4f1626b2", null ],
     [ "WICED_BT_SCO_CONNECTION_REJECT_SECURITY", "group__sco.html#ga961d131fe75c05d30b53b74078cd2dba", null ],
     [ "WICED_BT_SCO_CONNECTION_REJECT_DEVICE", "group__sco.html#ga2e375ab538464fd21b95caa3890056a6", null ],
@@ -59,7 +17,6 @@ var group__sco =
     [ "WICED_BT_SCO_IDX_CVSD", "group__sco.html#ga632f8a7f3e2def6fc14cbc0572580d7e", null ],
     [ "WICED_BT_SCO_IDX_MSBC", "group__sco.html#ga0c67caf3e5135f2ff19bc21ca09e9e1d", null ],
     [ "WICED_BT_SCO_IDX_NONE", "group__sco.html#ga0037c6bff6fc412a8f46998e02f3b9b9", null ],
-    [ "WICED_BT_SCO_DATA_CB_GET_LENGTH", "group__sco.html#ga790bb3988e26ca2335c728a350c63736", null ],
     [ "wiced_bt_sco_create_as_acceptor", "group__sco.html#ga710aef2dfe643f8e121777d9e74e9bdc", null ],
     [ "wiced_bt_sco_idx_t", "group__sco.html#ga94ae563f30b6b2bd4835125e673f6d7a", null ],
     [ "wiced_bt_sco_data_cb_t", "group__sco.html#ga433b5e0db003b8b72321db4556af7a85", null ],
@@ -67,7 +24,6 @@ var group__sco =
       [ "WICED_BT_SCO_OVER_HCI", "group__sco.html#gga4548402097137688617e39d9377fc8a2a1743bae050dc932671cc4a2ada6b9032", null ],
       [ "WICED_BT_SCO_OVER_PCM", "group__sco.html#gga4548402097137688617e39d9377fc8a2a0424732db6badc408fdb0510540a0368", null ]
     ] ],
-    [ "wiced_bt_sco_create_as_initiator", "group__sco.html#gad3c0ea63212a9cca3b0b668d7e392288", null ],
     [ "wiced_bt_sco_create_as_acceptor_ex", "group__sco.html#gaca6b3a3088a38d0718b83f0c7dc21576", null ],
     [ "wiced_bt_sco_remove", "group__sco.html#ga0fba642e9f6ed365e385457be01e4e15", null ],
     [ "wiced_bt_sco_accept_connection", "group__sco.html#ga7c8ecc9a1333c1c5b4da60f1dd07d990", null ],

@@ -1,15 +1,5 @@
 var group__wicedbt__a2dp__sbc =
 [
-    [ "wiced_bt_a2d_sbc_cie_t", "structwiced__bt__a2d__sbc__cie__t.html", [
-      [ "samp_freq", "structwiced__bt__a2d__sbc__cie__t.html#a101dc999888f9a5f6cd08928ae216329", null ],
-      [ "ch_mode", "structwiced__bt__a2d__sbc__cie__t.html#ac538ce9d796d8f8f5bca65eda01426e0", null ],
-      [ "block_len", "structwiced__bt__a2d__sbc__cie__t.html#aba5b4219809d0c86a6c9bd7030994215", null ],
-      [ "num_subbands", "structwiced__bt__a2d__sbc__cie__t.html#afde57c73de24168c479920aa1376161a", null ],
-      [ "alloc_mthd", "structwiced__bt__a2d__sbc__cie__t.html#ad835f41888abf44001ba9a2df79de0ce", null ],
-      [ "max_bitpool", "structwiced__bt__a2d__sbc__cie__t.html#a8b123f2b810373350cf06e55c02eddfd", null ],
-      [ "min_bitpool", "structwiced__bt__a2d__sbc__cie__t.html#af0b55b9c9592be3b9f654cc1a01fbffb", null ]
-    ] ],
-    [ "A2D_SBC_MPL_HDR_LEN", "group__wicedbt__a2dp__sbc.html#ga75bed851feb764f8eb465accf8e26b42", null ],
     [ "A2D_SBC_INFO_LEN", "group__wicedbt__a2dp__sbc.html#gacfd3a028be805f5ac88d0539f66b65f8", null ],
     [ "A2D_SBC_IE_SAMP_FREQ_MSK", "group__wicedbt__a2dp__sbc.html#ga0875a34d7bcd56e970ceced936fde5b9", null ],
     [ "A2D_SBC_IE_SAMP_FREQ_16", "group__wicedbt__a2dp__sbc.html#gaaafd890bd0488411c2fd4843c3c933b8", null ],
