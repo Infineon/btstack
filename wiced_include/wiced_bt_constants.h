@@ -35,8 +35,8 @@
  *  Defines common constants and types for the AIROC Bluetooth Framework
  */
 
-#ifndef  __WICED_BT_CONSTANTS_H__
-#define  __WICED_BT_CONSTANTS_H__
+#ifndef  WICED_BT_CONSTANTS_H
+#define  WICED_BT_CONSTANTS_H
 
 
 #include "wiced_bt_version.h"
@@ -146,4 +146,4 @@ extern "C" {
 } /* extern "C" */
 #endif
 
-#endif //__WICED_BT_CONSTANTS_H__
+#endif /* WICED_BT_CONSTANTS_H */

@@ -108,9 +108,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaab8ab36f338fdadd7405f28fe6d03d7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#gaab8ab36f338fdadd7405f28fe6d03d7c">wiced_bt_dev_set_advanced_connection_params</a> (<a class="el" href="structwiced__bt__dev__inquiry__scan__result__t.html">wiced_bt_dev_inquiry_scan_result_t</a> *p_inquiry_scan_result)</td></tr>
 <tr class="memdesc:gaab8ab36f338fdadd7405f28fe6d03d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set advanced connection parameters for subsequent BR/EDR connections (remote clock offset, page scan mode, and other information obtained during inquiry)  <a href="group__wiced__bredr__api.html#gaab8ab36f338fdadd7405f28fe6d03d7c">More...</a><br /></td></tr>
 <tr class="separator:gaab8ab36f338fdadd7405f28fe6d03d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff614aad7be8ad5bde22d36351fac720"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#gaff614aad7be8ad5bde22d36351fac720">wiced_bt_dev_vendor_specific_command</a> (uint16_t opcode, uint8_t param_len, uint8_t *p_param_buf, <a class="el" href="group__wicedbt__dev__utils.html#ga5efde2f4a4954a99dc729af308ce90bf">wiced_bt_dev_vendor_specific_command_complete_cback_t</a> *p_cback)</td></tr>
-<tr class="memdesc:gaff614aad7be8ad5bde22d36351fac720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a vendor specific HCI command to the controller.  <a href="group__wiced__bredr__api.html#gaff614aad7be8ad5bde22d36351fac720">More...</a><br /></td></tr>
-<tr class="separator:gaff614aad7be8ad5bde22d36351fac720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad45123b0afcf700f2f268352d6991cce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#gad45123b0afcf700f2f268352d6991cce">wiced_bt_dev_vendor_specific_command</a> (uint16_t opcode, uint8_t param_len, const uint8_t *p_param_buf, <a class="el" href="group__wicedbt__dev__utils.html#ga5efde2f4a4954a99dc729af308ce90bf">wiced_bt_dev_vendor_specific_command_complete_cback_t</a> *p_cback)</td></tr>
+<tr class="memdesc:gad45123b0afcf700f2f268352d6991cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a vendor specific HCI command to the controller.  <a href="group__wiced__bredr__api.html#gad45123b0afcf700f2f268352d6991cce">More...</a><br /></td></tr>
+<tr class="separator:gad45123b0afcf700f2f268352d6991cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga20d55a9ce0486637305e5cb09eb86765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bredr__api.html#ga20d55a9ce0486637305e5cb09eb86765">wiced_bt_dev_set_discoverability</a> (uint8_t inq_mode, uint16_t duration, uint16_t interval)</td></tr>
 <tr class="memdesc:ga20d55a9ce0486637305e5cb09eb86765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set discoverability for BR/EDR devices.  <a href="group__wiced__bredr__api.html#ga20d55a9ce0486637305e5cb09eb86765">More...</a><br /></td></tr>
 <tr class="separator:ga20d55a9ce0486637305e5cb09eb86765"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,8 +324,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaff614aad7be8ad5bde22d36351fac720"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaff614aad7be8ad5bde22d36351fac720">&#9670;&nbsp;</a></span>wiced_bt_dev_vendor_specific_command()</h2>
+<a id="gad45123b0afcf700f2f268352d6991cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad45123b0afcf700f2f268352d6991cce">&#9670;&nbsp;</a></span>wiced_bt_dev_vendor_specific_command()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -345,7 +345,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>p_param_buf</em>, </td>
         </tr>
         <tr>

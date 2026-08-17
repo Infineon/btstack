@@ -45,19 +45,13 @@
 
 #include <stdint.h>
 #include <string.h>
+#include <stdbool.h>
 
 /**
  *  @ingroup     gentypes
  *
  *  @{
  */
-
-#ifndef WICED_FALSE
-#define WICED_FALSE 0   /**< AIROC false */
-#endif // !WICED_FALSE
-#ifndef WICED_TRUE
-#define WICED_TRUE  1   /**< AIROC true */
-#endif // !WICED_TRUE
 
 #ifndef FALSE
 #define FALSE 0         /**< false */
@@ -66,6 +60,13 @@
 #ifndef TRUE
 #define TRUE  1         /**< true */
 #endif
+
+#ifndef WICED_FALSE
+#define WICED_FALSE   FALSE /**< AIROC false */
+#endif // !WICED_FALSE
+#ifndef WICED_TRUE
+#define WICED_TRUE  TRUE   /**< AIROC true */
+#endif // !WICED_TRUE
 
 #ifdef __ARM__
 #define WICED_BT_STRUCT_PACKED  __packed() struct               /**< packed structure */
@@ -94,10 +95,10 @@
 #define WICED_MEMCMP(a, b, c)       memcmp((void*)(a), (const void*)(b), c)     /**< AIROC Memory compare*/
 
 /** MACRO to convert an address into a 4 byte buffer*/
-#define ADDRESS_TO_BUFFER(b,a)  uintptr_t addr=(uintptr_t)a; for(int x = 0; x < 4; x++) {b[3-x] = (addr >> (x * 8)) & 0xFF;}
+#define ADDRESS_TO_BUFFER(b,a)  {uintptr_t addr=(uintptr_t)a; for(int x = 0; x < 4; x++) {b[3-x] = (addr >> (x * 8)) & 0xFF;}}
 
 /** AIROC Boolean */
-typedef unsigned int   wiced_bool_t;
+typedef bool wiced_bool_t;
 
 /** Function prototypes to lock and unlock (typically using a mutex). The context
 ** pointer may be NULL, depending on implementation.
@@ -138,4 +139,4 @@ typedef void (*pf_wiced_exception)(uint16_t code, void* ptr, uint32_t length);
 typedef void (*wiced_bt_serialized_app_func_t)(void *param);
 /**@} app_utils */
 
-#endif
+#endif /* WICED_BT_DATA_TYPES_H */

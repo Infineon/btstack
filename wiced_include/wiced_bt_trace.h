@@ -32,8 +32,8 @@
 */
 // Trace definitions for script application.
 //
-#ifndef __WICED_BT_TRACE__
-#define __WICED_BT_TRACE__
+#ifndef WICED_BT_TRACE_H
+#define WICED_BT_TRACE_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -58,4 +58,5 @@ extern "C" {
 #define WICED_BT_TRACE_ARRAY(ptr,len,string)     WICED_BT_TRACE("%s %A",string,ptr,len);
 /** Error trace array macro */
 #define WICED_BT_TRACE_CRIT     BTU_trace_crit_error
-#endif
+
+#endif /* WICED_BT_TRACE_H */

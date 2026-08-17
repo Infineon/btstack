@@ -36,8 +36,8 @@
  * MPEG-D, USAC A2DP Application Programming Interface
  *
  */
-#ifndef __WICED_BT_A2D_MDU_H__
-#define __WICED_BT_A2D_MDU_H__
+#ifndef WICED_BT_A2D_MDU_H
+#define WICED_BT_A2D_MDU_H
 
 /**
  * @cond DUAL_MODE
@@ -188,4 +188,4 @@ wiced_bt_a2d_status_t wiced_bt_a2d_pars_mdu_info(wiced_bt_a2d_mdu_cie_t *p_ie,
 }
 #endif
 
-#endif //__WICED_BT_A2D_M24_H__
+#endif /* WICED_BT_A2D_MDU_H */

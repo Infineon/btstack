@@ -36,8 +36,8 @@
  * AIROC Bluetooth Low Energy (LE) Functions for legacy advertisement and scanning
  *
  */
-#ifndef __WICED_BT_ADV_SCAN_LEGACY_H__
-#define __WICED_BT_ADV_SCAN_LEGACY_H__
+#ifndef WICED_BT_ADV_SCAN_LEGACY_H
+#define WICED_BT_ADV_SCAN_LEGACY_H
 
 #include "wiced_bt_cfg.h"
 #include "wiced_bt_dev.h"
@@ -47,7 +47,7 @@
 #endif
 
 #if (WICED_BLE_ENABLE_LEGACY_ADV_API == 1)
-#if (WICED_BLE_ENABLE_LEGACY_EXTENDED_API_ERROR_CHECK)
+#if defined(WICED_BLE_ENABLE_LEGACY_EXTENDED_API_ERROR_CHECK)
 #if (WICED_BLE_ENABLE_EXTENDED_ADV_API == 1)
 #error "Cannot enable legacy and extended adv together"
 #endif
@@ -514,5 +514,5 @@ extern "C"
 #endif
 
 /**@} wicedbt */
-#endif // WICED_BLE_ENABLE_LEGACY_ADV_API
-#endif // __WICED_BT_ADV_SCAN_LEGACY_H__
+#endif /* WICED_BLE_ENABLE_LEGACY_ADV_API */
+#endif /* WICED_BT_ADV_SCAN_LEGACY_H */

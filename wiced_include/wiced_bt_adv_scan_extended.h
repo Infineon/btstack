@@ -36,16 +36,15 @@
  * AIROC Bluetooth Low Energy (LE) Functions for Extended Advertisement and Scan
  *
  */
-#ifndef __WICED_BT_ADV_SCAN_EXTENDED_H__
-#define __WICED_BT_ADV_SCAN_EXTENDED_H__
+#ifndef WICED_BT_ADV_SCAN_EXTENDED_H
+#define WICED_BT_ADV_SCAN_EXTENDED_H
 
 #ifndef WICED_BLE_ENABLE_EXTENDED_ADV_API
 #define WICED_BLE_ENABLE_EXTENDED_ADV_API 1
 #endif
 
 #if (WICED_BLE_ENABLE_EXTENDED_ADV_API == 1)
-
-#if (WICED_BLE_ENABLE_LEGACY_EXTENDED_API_ERROR_CHECK)
+#if defined(WICED_BLE_ENABLE_LEGACY_EXTENDED_API_ERROR_CHECK)
 #if (WICED_BLE_ENABLE_LEGACY_ADV_API == 1)
 #error "Cannot enable legacy and extended adv together"
 #endif
@@ -95,24 +94,22 @@ enum
 typedef uint8_t wiced_ble_ext_adv_phy_mask_t;
 
 /** Advertising event properties: Describes the type of advertising event that is being configured and its basic properties */
-enum
-{
-    /** Connectable ADV */
-    WICED_BLE_EXT_ADV_EVENT_PROPERTY_CONNECTABLE_ADV = (1 << 0),
-    /** Scannable ADV */
-    WICED_BLE_EXT_ADV_EVENT_PROPERTY_SCANNABLE_ADV = (1 << 1),
-    /** Low duty cycle directed advertisement */
-    WICED_BLE_EXT_ADV_EVENT_PROPERTY_DIRECTED_ADV = (1 << 2),
-    /** 3.75 ms Adv Interval, only valid in legacy ADV */
-    WICED_BLE_EXT_ADV_EVENT_PROPERTY_HIGH_DUTY_DIRECTED_CONNECTABLE_ADV = (1 << 3),
-    /** Legacy Advertisement. Adv data cannot be more than 31 bytes.*/
-    WICED_BLE_EXT_ADV_EVENT_PROPERTY_LEGACY_ADV = (1 << 4),
-    /** Omits advertisers address from all PDUs */
-    WICED_BLE_EXT_ADV_EVENT_PROPERTY_ANONYMOUS_ADV = (1 << 5),
-    /** Include Tx power in ext ADV pdus */
-    WICED_BLE_EXT_ADV_EVENT_PROPERTY_INCLUDE_TX_POWER = (1 << 6),
-    /** Other bits RFU */
-};
+/** Connectable ADV */
+#define    WICED_BLE_EXT_ADV_EVENT_PROPERTY_CONNECTABLE_ADV  (1U << 0)
+/** Scannable ADV */
+#define    WICED_BLE_EXT_ADV_EVENT_PROPERTY_SCANNABLE_ADV                       (1U << 1)
+/** Low duty cycle directed advertisement */
+#define    WICED_BLE_EXT_ADV_EVENT_PROPERTY_DIRECTED_ADV                        (1U << 2)
+/** 3.75 ms Adv Interval, only valid in legacy ADV */
+#define    WICED_BLE_EXT_ADV_EVENT_PROPERTY_HIGH_DUTY_DIRECTED_CONNECTABLE_ADV  (1U << 3)
+/** Legacy Advertisement. Adv data cannot be more than 31 bytes.*/
+#define    WICED_BLE_EXT_ADV_EVENT_PROPERTY_LEGACY_ADV                          (1U << 4)
+/** Omits advertisers address from all PDUs */
+#define    WICED_BLE_EXT_ADV_EVENT_PROPERTY_ANONYMOUS_ADV                       (1U << 5)
+/** Include Tx power in ext ADV pdus */
+#define    WICED_BLE_EXT_ADV_EVENT_PROPERTY_INCLUDE_TX_POWER                    (1U << 6)
+/** Other bits RFU */
+
 /** LE extended advertisement event property for setting extended adv params*/
 typedef uint16_t wiced_ble_ext_adv_event_property_t;
 
@@ -125,11 +122,8 @@ enum
 
 
 /** Value to configure to receive scan request recived notification */
-enum wiced_ble_ext_adv_scan_req_notification_setting_e
-{
-    WICED_BLE_EXT_ADV_SCAN_REQ_NOTIFY_DISABLE = 0x00, /**< Do not send Notification on scan request */
-    WICED_BLE_EXT_ADV_SCAN_REQ_NOTIFY_ENABLE = 0x01,  /**< Send Notification on scan request */
-};
+#define    WICED_BLE_EXT_ADV_SCAN_REQ_NOTIFY_DISABLE 0x00U /**< Do not send Notification on scan request */
+#define    WICED_BLE_EXT_ADV_SCAN_REQ_NOTIFY_ENABLE  0x01U /**< Send Notification on scan request */
 /** Enable or disable notification value (see #wiced_ble_ext_adv_scan_req_notification_setting_e) */
 typedef uint8_t wiced_ble_ext_adv_scan_req_notification_setting_t;
 
@@ -841,4 +835,4 @@ wiced_bt_dev_status_t wiced_ble_ext_adv_set_params(wiced_ble_ext_adv_handle_t ad
 /**@} wicedbt */
 
 #endif // WICED_BLE_ENABLE_EXTENDED_ADV_API
-#endif // __WICED_BT_ADV_SCAN_EXTENDED_H__
+#endif /* WICED_BT_ADV_SCAN_EXTENDED_H */

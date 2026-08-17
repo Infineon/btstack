@@ -36,8 +36,8 @@
  * Bluetooth RFCOMM Application Programming Interface
  *
  */
-#ifndef __WICED_BT_RFCOMM_H__
-#define __WICED_BT_RFCOMM_H__
+#ifndef WICED_BT_RFCOMM_H
+#define WICED_BT_RFCOMM_H
 
  /**
   * @cond DUAL_MODE
@@ -346,4 +346,4 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_check_connection (uint16_t handle, wice
 /**@}rfcomm_api_functions */
 /**  @endcond */
 
-#endif //__WICED_BT_RFCOMM_H__
+#endif /* WICED_BT_RFCOMM_H */

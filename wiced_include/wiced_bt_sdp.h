@@ -36,8 +36,8 @@
  * Bluetooth SDP Application Programming Interface
  *
  */
-#ifndef __WICED_BT_SDP_H__
-#define __WICED_BT_SDP_H__
+#ifndef WICED_BT_SDP_H
+#define WICED_BT_SDP_H
 
 
 #include "wiced_bt_dev.h"
@@ -605,4 +605,4 @@ wiced_bool_t wiced_bt_sdp_find_service_uuid_in_rec(wiced_bt_sdp_discovery_record
 /**@} sdp */
 /* @endcond*/
 
-#endif //__WICED_BT_SDP_H__
+#endif /* WICED_BT_SDP_H */

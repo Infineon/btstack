@@ -153,7 +153,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">wiced_bt_gatt_status_t </a></dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Allowed mtu range is 23 upto <a class="el" href="structwiced__bt__cfg__ble__t.html#aff4b2166af3a3a1c01b4a1a01950139d">wiced_bt_cfg_ble_t::ble_max_rx_pdu_size</a> for LE links as configured in #wiced_bt_cfg_settings_t </dd></dl>
 
 </div>
@@ -200,7 +200,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
@@ -273,7 +273,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read by type from remote ATT server. </p>
-<p>The handle information for the read by type request is received via <b> GATT_OPERATION_CPLT_EVT </b> of <a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a> with <a class="el" href="structwiced__bt__gatt__operation__complete__t.html#a388e4fc3c7ee01d7cab9e7e040dc3ee6">wiced_bt_gatt_operation_complete_t::op</a> set to <a class="el" href="group__wicedbt__gatt.html#gga20bd3f2b04d68644e09d61a327857f5ba9394724415a2691ce8c39c89225718dc">GATTC_OPTYPE_READ_HANDLE</a> A non-zero <a class="el" href="structwiced__bt__gatt__operation__complete__t.html#abeaabd24870bbe8bb1caf266beea1d97">wiced_bt_gatt_operation_complete_t::pending_events</a> indicates multiple handle responses which may be returned from the server for some UUIDs</p>
+<p>The handle information for the read by type request is received via <b> GATT_OPERATION_CPLT_EVT </b> of <a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a> with <a class="el" href="structwiced__bt__gatt__operation__complete__t.html#a388e4fc3c7ee01d7cab9e7e040dc3ee6">wiced_bt_gatt_operation_complete_t::op</a> set to <a class="el" href="group__wicedbt__gatt.html#gaf9ff021233466899ecc90b6e679aec05">GATTC_OPTYPE_READ_HANDLE</a> A non-zero <a class="el" href="structwiced__bt__gatt__operation__complete__t.html#abeaabd24870bbe8bb1caf266beea1d97">wiced_bt_gatt_operation_complete_t::pending_events</a> indicates multiple handle responses which may be returned from the server for some UUIDs</p>
 <p>The end of the read by type transaction is notified with result via <b> GATT_OPERATION_CPLT_EVT </b> of <a class="el" href="group__wicedbt__gatt.html#ga826a5f3ef4bd8587ee6af52ed9b4a4f2" title="GATT event notification callback.">wiced_bt_gatt_cback_t</a> with <a class="el" href="structwiced__bt__gatt__operation__complete__t.html#a388e4fc3c7ee01d7cab9e7e040dc3ee6">wiced_bt_gatt_operation_complete_t::op</a> set to GATTC_OPTYPE_READ_BY_TYPE</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -348,7 +348,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
@@ -401,20 +401,20 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: Connection id </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: Can be set to <a class="el" href="group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68bada432729197e6189c196a01d65597293">GATT_REQ_READ_MULTI</a> or <a class="el" href="group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68baeafa2b04ebdf14895feec3338b37252b">GATT_REQ_READ_MULTI_VAR_LENGTH</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: Can be set to <a class="el" href="group__wicedbt__gatt.html#gab98ea49fe1b284a25152a3a749bfb12c">GATT_REQ_READ_MULTI</a> or <a class="el" href="group__wicedbt__gatt.html#ga1818ffd3f7d6e1b410b136b67be6a7b4">GATT_REQ_READ_MULTI_VAR_LENGTH</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_handles</td><td>: Number of handles pointed to by <code>p_handle_stream</code> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_handle_stream</td><td>: The list of 16-bit handles arranged in Little Endian format. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><code>p_handle_stream</code> must be allocated on the heap or be persistent in memory when this API returns WICED_BT_GATT_SUCCESS. The memory pointer is returned to the application via wiced_bt_gatt_operation_complete_rsp_t.multi_rsp.req.p_handle_stream in the <a class="el" href="group__wicedbt__gatt.html#gga20bd3f2b04d68644e09d61a327857f5babf9a58f662a4a80b843c0def43c0eba8" title="Read multiple, or read multiple var length.">GATTC_OPTYPE_READ_MULTIPLE</a> response of <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631adf101f3e076dc63ca400446bac43a463" title="GATT client events, indication completion of app initiated client operations Check specific client AP...">GATT_OPERATION_CPLT_EVT</a>. The application is expected to free/release/deallocate the <code>p_handle_stream</code> pointer on receiving the <a class="el" href="group__wicedbt__gatt.html#gga20bd3f2b04d68644e09d61a327857f5babf9a58f662a4a80b843c0def43c0eba8" title="Read multiple, or read multiple var length.">GATTC_OPTYPE_READ_MULTIPLE</a> response of <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631adf101f3e076dc63ca400446bac43a463" title="GATT client events, indication completion of app initiated client operations Check specific client AP...">GATT_OPERATION_CPLT_EVT</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><code>p_handle_stream</code> must be allocated on the heap or be persistent in memory when this API returns WICED_BT_GATT_SUCCESS. The memory pointer is returned to the application via wiced_bt_gatt_operation_complete_rsp_t.multi_rsp.req.p_handle_stream in the <a class="el" href="group__wicedbt__gatt.html#gad574426833e3d6afd28baa80d818775a" title="Read multiple, or read multiple var length.">GATTC_OPTYPE_READ_MULTIPLE</a> response of <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631adf101f3e076dc63ca400446bac43a463" title="GATT client events, indication completion of app initiated client operations Check specific client AP...">GATT_OPERATION_CPLT_EVT</a>. The application is expected to free/release/deallocate the <code>p_handle_stream</code> pointer on receiving the <a class="el" href="group__wicedbt__gatt.html#gad574426833e3d6afd28baa80d818775a" title="Read multiple, or read multiple var length.">GATTC_OPTYPE_READ_MULTIPLE</a> response of <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631adf101f3e076dc63ca400446bac43a463" title="GATT client events, indication completion of app initiated client operations Check specific client AP...">GATT_OPERATION_CPLT_EVT</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">auth_req</td><td>: Authentication requirements</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
@@ -467,11 +467,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: Connection handle </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: Can be <a class="el" href="group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68baeaf87c53ee0b114a68df4c4e2d7705e8">GATT_REQ_WRITE</a>, <a class="el" href="group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68bae9076bb7b96ed9e0541b756436068f32">GATT_CMD_WRITE</a>, <a class="el" href="group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68baf95ac38b63a8c986f291ac2bda6a2399">GATT_REQ_PREPARE_WRITE</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>: Can be <a class="el" href="group__wicedbt__gatt.html#gab4d256137f39b549d1f2d5bcfac8e4ea">GATT_REQ_WRITE</a>, <a class="el" href="group__wicedbt__gatt.html#ga0758d59b519894b1e8eb2b305034d9bc">GATT_CMD_WRITE</a>, <a class="el" href="group__wicedbt__gatt.html#gae53fd00fdc5010515963b63f2c1951f5">GATT_REQ_PREPARE_WRITE</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>: When opcode is set to <a class="el" href="group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68baeaf87c53ee0b114a68df4c4e2d7705e8">GATT_REQ_WRITE</a> and the length to be written is greater than MTU - 3, then the stack splits the write into a series of <a class="el" href="group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68baf95ac38b63a8c986f291ac2bda6a2399">GATT_REQ_PREPARE_WRITE</a> and finally sends a <a class="el" href="group__wicedbt__gatt.html#gga1bec0037cd2837dc90a967458b3cc68ba5eb1dc7717102415663e5b5c4e4d6857">GATT_REQ_EXECUTE_WRITE</a> to complete the write. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>: When opcode is set to <a class="el" href="group__wicedbt__gatt.html#gab4d256137f39b549d1f2d5bcfac8e4ea">GATT_REQ_WRITE</a> and the length to be written is greater than MTU - 3, then the stack splits the write into a series of <a class="el" href="group__wicedbt__gatt.html#gae53fd00fdc5010515963b63f2c1951f5">GATT_REQ_PREPARE_WRITE</a> and finally sends a <a class="el" href="group__wicedbt__gatt.html#gab7b5169ecdc2291b6d6ff110518a35ed">GATT_REQ_EXECUTE_WRITE</a> to complete the write. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p_hdr</td><td>: Pointer to the write parameters, with application data in <code>p_app_write_buffer</code> </td></tr>
@@ -481,7 +481,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The application may free/release/deallocate the <code>p_app_write_buffer</code> pointer on receiving a <a class="el" href="group__wicedbt__gatt.html#gga1a4943c0f32914d5d939b05e84c99631a68a87f3f6a4f7c061b50872522f507a4">GATT_APP_BUFFER_TRANSMITTED_EVT</a> with <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#a9dc2ce0fcd9d8fdce23345249c36a42e">wiced_bt_gatt_buffer_transmitted_t::p_app_data</a> set to <code>p_app_write_buffer</code> and <a class="el" href="structwiced__bt__gatt__buffer__transmitted__t.html#aee4534bcf5ed42ab50f7c80a46278a1a">wiced_bt_gatt_buffer_transmitted_t::p_app_ctxt</a> set to <code>p_app_ctxt</code> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>
@@ -558,7 +558,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__wicedbt__gatt.html#ga972f2437538363989cee28019cb06652">wiced_bt_gatt_status_t </a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">wiced_bt_gatt_status_t </a> </dd></dl>
 
 </div>
 </div>

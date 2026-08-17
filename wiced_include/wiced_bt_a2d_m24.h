@@ -36,8 +36,8 @@
  * MPEG-2, 4 AAC A2DP Application Programming Interface
  *
  */
-#ifndef __WICED_BT_A2D_M24_H__
-#define __WICED_BT_A2D_M24_H__
+#ifndef WICED_BT_A2D_M24_H
+#define WICED_BT_A2D_M24_H
 
 
 /**
@@ -180,4 +180,4 @@ wiced_bt_a2d_status_t wiced_bt_a2d_pars_m24info(wiced_bt_a2d_m24_cie_t *p_ie, ui
 }
 #endif
 
-#endif //__WICED_BT_A2D_M24_H__
+#endif /* WICED_BT_A2D_M24_H */

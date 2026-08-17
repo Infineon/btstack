@@ -36,8 +36,8 @@
  * Bluetooth Synchronous Connection Oriented Channel Application Programming Interface
  *
  */
-#ifndef __WICED_BT_SCO_H__
-#define __WICED_BT_SCO_H__
+#ifndef WICED_BT_SCO_H
+#define WICED_BT_SCO_H
 
 
 
@@ -174,7 +174,7 @@ extern "C"
  *
  *  @return     <b> WICED_BT_UNKNOWN_ADDR </b>      : Create connection failed, ACL connection is not up
  *              <b> WICED_BT_BUSY </b>              : Create connection failed, another SCO is being
- *                                                    conncted to the same BD address
+ *                                                    connected to the same BD address
  *              <b> WICED_BT_WRONG_MODE </b>        : Create connection failed, wrong mode
  *              <b> WICED_BT_NO_RESOURCES </b>      : Create connection failed, max SCO limit has been
  *                                                    reached
@@ -193,7 +193,7 @@ wiced_bt_dev_status_t wiced_bt_sco_create_as_initiator (wiced_bt_device_address_
  *  @return     <b> WICED_BT_UNKNOWN_ADDR </b>      : Create connection failed, ACL connection is not up or
  *                                                    address is invalid
  *              <b> WICED_BT_BUSY </b>              : Create connection failed, a SCO connection is already
- *                                                    conncted to the same BD address
+ *                                                    connected to the same BD address
  *              <b> WICED_BT_WRONG_MODE </b>        : Create connection failed, link in park mode or
  *                                                    automatic un-park is not supported
  *              <b> WICED_BT_NO_RESOURCES </b>      : Create connection failed, max SCO limit has been
@@ -282,7 +282,7 @@ wiced_bt_dev_status_t wiced_bt_sco_write_buffer (uint16_t sco_inx, uint8_t *p_da
  *  @param[in]  p_pcmsrc        : Audio stream source.
  *  @param[in]  len             : Length of stream.
  *
- *  @return                     : Return the legth of non transmited stream.
+ *  @return                     : Return the length of non transmited stream.
  */
 uint16_t wiced_bt_sco_output_stream( uint16_t sco_index, uint8_t* p_pcmsrc,uint16_t len );
 
@@ -325,4 +325,4 @@ void wiced_bt_config_esco_parameters(wiced_bt_sco_idx_t index, wiced_bt_enh_esco
 /** @} sco */
 /* @endcond*/
 
-#endif //__WICED_BT_SCO_H__
+#endif /* WICED_BT_SCO_H */

@@ -36,8 +36,8 @@
  * Bluetooth AVRCP Application Programming Interface
  *
  */
-#ifndef __WICED_BT_AVRC_H__
-#define __WICED_BT_AVRC_H__
+#ifndef WICED_BT_AVRC_H
+#define WICED_BT_AVRC_H
 
 
 #include "wiced_bt_sdp.h"
@@ -633,4 +633,4 @@ wiced_bool_t wiced_bt_avrc_set_browse_drb(uint8_t handle, tDRB *p_drb, uint16_t 
 }
 #endif
 
-#endif //__WICED_BT_AVRC_H__
+#endif /* WICED_BT_AVRC_H */

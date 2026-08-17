@@ -36,8 +36,8 @@
  * Bluetooth AVRCP Definition and Data Types
  *
  */
-#ifndef __WICED_BT_AVRC_DEFS_H__
-#define __WICED_BT_AVRC_DEFS_H__
+#ifndef WICED_BT_AVRC_DEFS_H
+#define WICED_BT_AVRC_DEFS_H
 
 
 #ifdef __cplusplus
@@ -1475,4 +1475,4 @@ typedef struct {
 }
 #endif
 
-#endif //__WICED_BT_AVRC_DEFS_H__
+#endif /* WICED_BT_AVRC_DEFS_H */

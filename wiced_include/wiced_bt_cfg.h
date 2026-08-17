@@ -35,8 +35,8 @@
  * Runtime Bluetooth configuration parameters
  *
  */
-#ifndef __WICED_BT_CFG_H__
-#define __WICED_BT_CFG_H__
+#ifndef WICED_BT_CFG_H
+#define WICED_BT_CFG_H
 
 #include "wiced_data_types.h"
 #include "wiced_bt_types.h"
@@ -67,34 +67,34 @@ extern "C" {
  *
  * @note These are typical values for config parameters used for some common LE, BR/EDR use cases.
  */
-#define WICED_BT_CFG_DEFAULT_INQUIRY_SCAN_INTERVAL                  0x0800      /**< Inquiry scan interval (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_INQUIRY_SCAN_WINDOW                    0x0012      /**< Inquiry scan window (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_PAGE_SCAN_INTERVAL                     0x0800      /**< Page scan interval (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_PAGE_SCAN_WINDOW                       0x0012      /**< Page scan window (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_SCAN_INTERVAL                96          /**< High duty scan interval (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_SCAN_WINDOW                  48          /**< High duty scan window (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_LOW_DUTY_SCAN_INTERVAL                 2048        /**< Low duty scan interval (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_LOW_DUTY_SCAN_WINDOW                   18          /**< Low duty scan window (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_CONN_SCAN_INTERVAL           96          /**< High duty cycle connection scan interval (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_CONN_SCAN_WINDOW             48          /**< High duty cycle connection scan window (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_LOW_DUTY_CONN_SCAN_INTERVAL            2048        /**< Low duty cycle connection scan interval (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_LOW_DUTY_CONN_SCAN_WINDOW              18          /**< Low duty cycle connection scan window (in slots (1 slot = 0.625 ms)) */
-#define WICED_BT_CFG_DEFAULT_CONN_MIN_INTERVAL                      80          /**< Minimum connection event interval ( in 1.25 msec) */
-#define WICED_BT_CFG_DEFAULT_CONN_MAX_INTERVAL                      80          /**< Maximum connection event interval ( in 1.25 msec) */
-#define WICED_BT_CFG_DEFAULT_CONN_LATENCY                           0           /**< Connection latency (in number of LL connection events) */
-#define WICED_BT_CFG_DEFAULT_CONN_SUPERVISION_TIMEOUT               700         /**< Connection link supervision timeout (in 10 msec) */
+#define WICED_BT_CFG_DEFAULT_INQUIRY_SCAN_INTERVAL                  0x0800U      /**< Inquiry scan interval (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_INQUIRY_SCAN_WINDOW                    0x0012U      /**< Inquiry scan window (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_PAGE_SCAN_INTERVAL                     0x0800U      /**< Page scan interval (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_PAGE_SCAN_WINDOW                       0x0012U      /**< Page scan window (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_SCAN_INTERVAL                96U          /**< High duty scan interval (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_SCAN_WINDOW                  48U          /**< High duty scan window (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_LOW_DUTY_SCAN_INTERVAL                 2048U        /**< Low duty scan interval (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_LOW_DUTY_SCAN_WINDOW                   18U          /**< Low duty scan window (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_CONN_SCAN_INTERVAL           96U          /**< High duty cycle connection scan interval (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_CONN_SCAN_WINDOW             48U          /**< High duty cycle connection scan window (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_LOW_DUTY_CONN_SCAN_INTERVAL            2048U        /**< Low duty cycle connection scan interval (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_LOW_DUTY_CONN_SCAN_WINDOW              18U          /**< Low duty cycle connection scan window (in slots (1 slot = 0.625 ms)) */
+#define WICED_BT_CFG_DEFAULT_CONN_MIN_INTERVAL                      80U          /**< Minimum connection event interval ( in 1.25 msec) */
+#define WICED_BT_CFG_DEFAULT_CONN_MAX_INTERVAL                      80U          /**< Maximum connection event interval ( in 1.25 msec) */
+#define WICED_BT_CFG_DEFAULT_CONN_LATENCY                           0U           /**< Connection latency (in number of LL connection events) */
+#define WICED_BT_CFG_DEFAULT_CONN_SUPERVISION_TIMEOUT               700U         /**< Connection link supervision timeout (in 10 msec) */
 
 /* undirected connectable advertisement high/low duty cycle interval default */
-#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_ADV_MIN_INTERVAL             48          /**< Tgap(adv_fast_interval1) = 48 *0.625  = 30ms*/
-#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_ADV_MAX_INTERVAL             48          /**< Tgap(adv_fast_interval1) = 48 *0.625  = 30ms*/
-#define WICED_BT_CFG_DEFAULT_LOW_DUTY_ADV_MIN_INTERVAL              2048        /**< Tgap(adv_slow_interval) = 2048 * 0.625 = 1.28s */
-#define WICED_BT_CFG_DEFAULT_LOW_DUTY_ADV_MAX_INTERVAL              2048        /**< Tgap(adv_slow_interval) = 2048 * 0.625 = 1.28s */
+#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_ADV_MIN_INTERVAL             48U          /**< Tgap(adv_fast_interval1) = 48 *0.625  = 30ms*/
+#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_ADV_MAX_INTERVAL             48U          /**< Tgap(adv_fast_interval1) = 48 *0.625  = 30ms*/
+#define WICED_BT_CFG_DEFAULT_LOW_DUTY_ADV_MIN_INTERVAL              2048U        /**< Tgap(adv_slow_interval) = 2048 * 0.625 = 1.28s */
+#define WICED_BT_CFG_DEFAULT_LOW_DUTY_ADV_MAX_INTERVAL              2048U        /**< Tgap(adv_slow_interval) = 2048 * 0.625 = 1.28s */
 
 /* non-connectable advertisement high/low duty cycle advertisement interval default */
-#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_NONCONN_ADV_MIN_INTERVAL     160         /**< Tgap(adv_fast_interval2) = 160 * 0.625 = 100 ms */
-#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_NONCONN_ADV_MAX_INTERVAL     160         /**< Tgap(adv_fast_interval2) = 160 * 0.625 = 100 ms */
-#define WICED_BT_CFG_DEFAULT_LOW_DUTY_NONCONN_ADV_MIN_INTERVAL      2048        /**< Tgap(adv_slow_interval) = 2048 * 0.625 = 1.28s */
-#define WICED_BT_CFG_DEFAULT_LOW_DUTY_NONCONN_ADV_MAX_INTERVAL      2048        /**< Tgap(adv_slow_interval) = 2048 * 0.625 = 1.28s */
+#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_NONCONN_ADV_MIN_INTERVAL     160U         /**< Tgap(adv_fast_interval2) = 160 * 0.625 = 100 ms */
+#define WICED_BT_CFG_DEFAULT_HIGH_DUTY_NONCONN_ADV_MAX_INTERVAL     160U         /**< Tgap(adv_fast_interval2) = 160 * 0.625 = 100 ms */
+#define WICED_BT_CFG_DEFAULT_LOW_DUTY_NONCONN_ADV_MIN_INTERVAL      2048U        /**< Tgap(adv_slow_interval) = 2048 * 0.625 = 1.28s */
+#define WICED_BT_CFG_DEFAULT_LOW_DUTY_NONCONN_ADV_MAX_INTERVAL      2048U        /**< Tgap(adv_slow_interval) = 2048 * 0.625 = 1.28s */
 
 /* directed connectable advertisement high/low duty cycle interval default */
 #define WICED_BT_CFG_DEFAULT_HIGH_DUTY_DIRECTED_ADV_MIN_INTERVAL    400        /**< Tgap(dir_conn_adv_int_max) = 400 * 0.625 = 250 ms */
@@ -113,32 +113,29 @@ extern "C" {
  * Wiced_bt core stack configuration
  ****************************************************************************/
 /** Scan modes */
-enum wiced_bt_ble_scan_mode_e
-{
-    BTM_BLE_SCAN_MODE_PASSIVE = 0,  /**< Passive scan mode */
-    BTM_BLE_SCAN_MODE_ACTIVE = 1,   /**< Active scan mode */
-    BTM_BLE_SCAN_MODE_NONE = 0xff   /**< None */
-};
-typedef uint8_t wiced_bt_ble_scan_mode_t;   /**< scan mode (see #wiced_bt_ble_scan_mode_e) */
+#define    BTM_BLE_SCAN_MODE_PASSIVE 0U      /**< Passive scan mode */
+#define    BTM_BLE_SCAN_MODE_ACTIVE  1U      /**< Active scan mode */
+#define    BTM_BLE_SCAN_MODE_NONE    0xffU   /**< None */
+typedef uint8_t wiced_bt_ble_scan_mode_t;    /**< scan mode (see #wiced_bt_ble_scan_mode_e) */
 
 /** Security Service Levels (bit fields) */
 enum wiced_bt_sec_level_e
 {
     /** BTM_SEC_BEST_EFFORT : Recommended choice for most applications, to connect to the widest range of devices.
       * Allows stack to choose the highest level of security possible between the two devices */
-    BTM_SEC_BEST_EFFORT = 1,
+    BTM_SEC_BEST_EFFORT = 1U,
 
     /** BTM_SEC_SC_REQUIRED : Can be set by applications which need to enforce secure connections.
       * Note: If this bit is set, the stack will only allow connections to devices paired using Secure Connections */
-    BTM_SEC_SC_REQUIRED = 2,
+    BTM_SEC_SC_REQUIRED = 2U,
 
     /** BTM_SEC_AUTH_REQUIRED - Can be set by applications which need to enforce Authentication
       * Note: If this bit is set, the stack will only allow connections to devices paired using authentication */
-    BTM_SEC_AUTH_REQUIRED = 4,
+    BTM_SEC_AUTH_REQUIRED = 4U,
 
     /** BTM_SEC_SC_AUTH_REQUIRED : Can be set by applications which need to enforce secure connections with MITM protection.
      * Note: If this bit is set, the stack will only allow connections to devices paired using Secure Connections with Man In The Middle (MITM) protection */
-    BTM_SEC_SC_AUTH_REQUIRED = (BTM_SEC_SC_REQUIRED | 4),
+    BTM_SEC_SC_AUTH_REQUIRED = (uint8_t)(BTM_SEC_SC_REQUIRED | 4),
 };
 typedef uint8_t wiced_bt_sec_level_t; /**< Required security level */
 
@@ -179,12 +176,9 @@ typedef struct
 } wiced_bt_cfg_ble_scan_settings_t;
 
 /** advertising channel map */
-enum wiced_bt_ble_advert_chnl_map_e
-{
-    BTM_BLE_ADVERT_CHNL_37 = (0x01 << 0),  /**< ADV channel */
-    BTM_BLE_ADVERT_CHNL_38 = (0x01 << 1),  /**< ADV channel */
-    BTM_BLE_ADVERT_CHNL_39 = (0x01 << 2)   /**< ADV channel */
-};
+#define    BTM_BLE_ADVERT_CHNL_37 0x01U  /**< ADV channel */
+#define    BTM_BLE_ADVERT_CHNL_38 0x02U  /**< ADV channel */
+#define    BTM_BLE_ADVERT_CHNL_39 0x04U  /**< ADV channel */
 typedef uint8_t wiced_bt_ble_advert_chnl_map_t;  /**< LE advertisement channel map (see #wiced_bt_ble_advert_chnl_map_e) */
 
 /** Advertising settings */
@@ -364,4 +358,4 @@ int32_t wiced_bt_stack_get_dynamic_memory_size_for_config(const wiced_bt_cfg_set
 
 /**@} wiced_bt_cfg */
 
-#endif //__WICED_BT_CFG_H__
+#endif /* WICED_BT_CFG_H */

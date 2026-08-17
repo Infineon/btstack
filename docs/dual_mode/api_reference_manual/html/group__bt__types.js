@@ -40,7 +40,6 @@ var group__bt__types =
     [ "BT_OOB_HASH_C_256_SIZE", "group__bt__types.html#ga5aaeb7a2738c011316eb8097c7760f89", null ],
     [ "BT_OOB_RAND_R_256_SIZE", "group__bt__types.html#ga2c6d738f0361da12bcda4d9bdcc8540e", null ],
     [ "WICED_BT_DEVICE_ADDRESS", "group__bt__types.html#gab552d606b71d2f662c02aa89e69eaff4", null ],
-    [ "BD_ADDR_LEN", "group__bt__types.html#gadc5356a86213ced2eebbc50b6251f6fe", null ],
     [ "BD_NAME_LEN", "group__bt__types.html#ga82508b3bd9ba496fd0edcc0a9df685ea", null ],
     [ "DEV_CLASS_LEN", "group__bt__types.html#ga15729af135b17a98385b763caf90d7a2", null ],
     [ "BD_FEATURES_LEN", "group__bt__types.html#gabfe1eac107c33a26a78571b87d634fe3", null ],
@@ -147,5 +146,5 @@ var group__bt__types =
     [ "wiced_bt_gatt_eatt_conn_id_list", "group__bt__types.html#gabd4bfdaba72729ec61cde921be081daf", null ],
     [ "wiced_bt_trace_type_t", "group__bt__types.html#ga07d710014e873107ed8772dc40f03bef", null ],
     [ "BTU_copyBdaToStream", "group__bt__types.html#ga8c6e51c9a4a1d728812814dd1c0f87b8", null ],
-    [ "BTU_copyStreamToBda", "group__bt__types.html#gaefe26277d4890d0c1a8e7c396f455799", null ]
+    [ "BTU_copyStreamToBda", "group__bt__types.html#ga133f676fd127acf010c6da9ab6638d48", null ]
 ];

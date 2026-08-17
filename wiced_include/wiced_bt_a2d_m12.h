@@ -44,8 +44,8 @@
 **
 **
 *****************************************************************************/
-#ifndef __WICED_BT_A2D_M12_H__
-#define __WICED_BT_A2D_M12_H__
+#ifndef WICED_BT_A2D_M12_H
+#define WICED_BT_A2D_M12_H
 
 /**
  * @cond DUAL_MODE
@@ -202,4 +202,4 @@ wiced_bt_a2d_status_t wiced_bt_a2d_pars_m12info(wiced_bt_a2d_m12_cie_t *p_ie, ui
 /** @} wicedbt_a2dp_mpeg_1_2 */
 /* @endcond*/
 
-#endif //__WICED_BT_A2D_M12_H__
+#endif /* WICED_BT_A2D_M12_H */

@@ -36,8 +36,8 @@
  * Generic types
  *
  */
-#ifndef __WICED_BT_TYPES_H__
-#define __WICED_BT_TYPES_H__
+#ifndef WICED_BT_TYPES_H
+#define WICED_BT_TYPES_H
 
 
 #include "wiced_data_types.h"
@@ -74,35 +74,34 @@ extern "C" {
 #define BT_LE_PSM_EATT                  0x0027 /**< Enhanced Attribute protocol */
 
 
-#define BT_EIR_FLAGS_TYPE                   0x01    /**< EIR Flag Type */
-#define BT_EIR_MORE_16BITS_UUID_TYPE        0x02    /**< EIR 16 bits UUID Type */
-#define BT_EIR_COMPLETE_16BITS_UUID_TYPE    0x03    /**< EIR Complete 16 bits UUID Type */
-#define BT_EIR_MORE_32BITS_UUID_TYPE        0x04    /**< EIR 32 bits UUID Type */
-#define BT_EIR_COMPLETE_32BITS_UUID_TYPE    0x05    /**< EIR Complete 32 bits UUID Type */
-#define BT_EIR_MORE_128BITS_UUID_TYPE       0x06    /**< EIR 128 bits UUID Type */
-#define BT_EIR_COMPLETE_128BITS_UUID_TYPE   0x07    /**< EIR 128 bits UUID Type */
-#define BT_EIR_SHORTENED_LOCAL_NAME_TYPE    0x08    /**< EIR Shorthand Local Name Type */
-#define BT_EIR_COMPLETE_LOCAL_NAME_TYPE     0x09    /**< EIR Complete Local Name Type */
-#define BT_EIR_TX_POWER_LEVEL_TYPE          0x0A    /**< EIR TX Power Level Type */
-#define BT_EIR_OOB_BD_ADDR_TYPE             0x0C    /**< EIR OOB BDA Type */
-#define BT_EIR_OOB_COD_TYPE                 0x0D    /**< EIR OOB COD Type */
-#define BT_EIR_OOB_SSP_HASH_C_TYPE          0x0E    /**< EIR OOB SSP HASH C Type */
-#define BT_EIR_OOB_SSP_RAND_R_TYPE          0x0F    /**< EIR OOB SSP RAND R Type */
-#define BT_EIR_OOB_SSP_HASH_C_256_TYPE      0x1D    /**< EIR OOB SSP HASH C256 Type */
-#define BT_EIR_OOB_SSP_RAND_R_256_TYPE      0x1E    /**< EIR OOB SSP RAND R256 Type */
-#define BT_EIR_3D_SYNC_TYPE                 0x3D    /**< EIR 3D SYNC Type */
-#define BT_EIR_MANUFACTURER_SPECIFIC_TYPE   0xFF    /**< EIR Manufacturer Specific Type*/
+#define BT_EIR_FLAGS_TYPE                   0x01U    /**< EIR Flag Type */
+#define BT_EIR_MORE_16BITS_UUID_TYPE        0x02U    /**< EIR 16 bits UUID Type */
+#define BT_EIR_COMPLETE_16BITS_UUID_TYPE    0x03U    /**< EIR Complete 16 bits UUID Type */
+#define BT_EIR_MORE_32BITS_UUID_TYPE        0x04U    /**< EIR 32 bits UUID Type */
+#define BT_EIR_COMPLETE_32BITS_UUID_TYPE    0x05U    /**< EIR Complete 32 bits UUID Type */
+#define BT_EIR_MORE_128BITS_UUID_TYPE       0x06U    /**< EIR 128 bits UUID Type */
+#define BT_EIR_COMPLETE_128BITS_UUID_TYPE   0x07U    /**< EIR 128 bits UUID Type */
+#define BT_EIR_SHORTENED_LOCAL_NAME_TYPE    0x08U    /**< EIR Shorthand Local Name Type */
+#define BT_EIR_COMPLETE_LOCAL_NAME_TYPE     0x09U    /**< EIR Complete Local Name Type */
+#define BT_EIR_TX_POWER_LEVEL_TYPE          0x0AU    /**< EIR TX Power Level Type */
+#define BT_EIR_OOB_BD_ADDR_TYPE             0x0CU    /**< EIR OOB BDA Type */
+#define BT_EIR_OOB_COD_TYPE                 0x0DU    /**< EIR OOB COD Type */
+#define BT_EIR_OOB_SSP_HASH_C_TYPE          0x0EU    /**< EIR OOB SSP HASH C Type */
+#define BT_EIR_OOB_SSP_RAND_R_TYPE          0x0FU    /**< EIR OOB SSP RAND R Type */
+#define BT_EIR_OOB_SSP_HASH_C_256_TYPE      0x1DU    /**< EIR OOB SSP HASH C256 Type */
+#define BT_EIR_OOB_SSP_RAND_R_256_TYPE      0x1EU    /**< EIR OOB SSP RAND R256 Type */
+#define BT_EIR_3D_SYNC_TYPE                 0x3DU    /**< EIR 3D SYNC Type */
+#define BT_EIR_MANUFACTURER_SPECIFIC_TYPE   0xFFU    /**< EIR Manufacturer Specific Type*/
 
-#define BT_OOB_COD_SIZE            3    /**< OOB Class of Device Size */
-#define BT_OOB_HASH_C_SIZE         16   /**< OOB Hash C size */
-#define BT_OOB_RAND_R_SIZE         16   /**< OOB Rand R size */
-#define BT_OOB_HASH_C_256_SIZE     16   /**< OOB Hash C-256 Size */
-#define BT_OOB_RAND_R_256_SIZE     16   /**< OOB Rand R-256 Size */
+#define BT_OOB_COD_SIZE            3U    /**< OOB Class of Device Size */
+#define BT_OOB_HASH_C_SIZE         16U   /**< OOB Hash C size */
+#define BT_OOB_RAND_R_SIZE         16U   /**< OOB Rand R size */
+#define BT_OOB_HASH_C_256_SIZE     16U   /**< OOB Hash C-256 Size */
+#define BT_OOB_RAND_R_256_SIZE     16U   /**< OOB Rand R-256 Size */
 
 #ifndef WICED_BT_DEVICE_ADDRESS
 #define WICED_BT_DEVICE_ADDRESS /**< Device Bluetooth Address */
-#define BD_ADDR_LEN     6       /**< Device Bluetooth Address Length */
-/** */
+#define BD_ADDR_LEN     6U
 typedef uint8_t         wiced_bt_device_address_t[BD_ADDR_LEN]; /**< Device address length */
 #endif
 
@@ -114,19 +113,19 @@ typedef wiced_result_t  wiced_bt_dev_status_t;
 /** Pointer to Device Address */
 typedef uint8_t *BD_ADDR_PTR;
 
-#define BD_NAME_LEN     248     /**< Local Name Length */
+#define BD_NAME_LEN     248U     /**< Local Name Length */
 
 typedef uint8_t wiced_bt_remote_name_t[BD_NAME_LEN + 1];        /**< Device name */
 
 typedef uint8_t *wiced_bt_device_address_ptr_t;                 /**< Device address Pointer */
 
-#define DEV_CLASS_LEN   3  /**< Device class Length */
+#define DEV_CLASS_LEN   3U  /**< Device class Length */
 typedef uint8_t         wiced_bt_dev_class_t[DEV_CLASS_LEN];    /**< Device class */
 
-#define BD_FEATURES_LEN 8                                /**< Features length */
+#define BD_FEATURES_LEN 10                                /**< Features length */
 typedef uint8_t wiced_bt_features_t[BD_FEATURES_LEN]; /**< Features supported data structure */
 
-#define MAX_UUID_SIZE              16  /**< Maximum UUID size - 16 bytes, and structure to hold any type of UUID. */
+#define MAX_UUID_SIZE              16U  /**< Maximum UUID size - 16 bytes, and structure to hold any type of UUID. */
 
 #define BT_DB_HASH_LEN 16   /**< Database Hash length  */
 typedef uint8_t wiced_bt_db_hash_t[BT_DB_HASH_LEN]; /**< LE database hash */
@@ -158,19 +157,19 @@ typedef struct
 
 } wiced_bt_uuid_t;
 
-#define BT_OCTET8_LEN    8      /**< octet length: 8 */
+#define BT_OCTET8_LEN    8U                 /**< octet length: 8 */
 typedef uint8_t BT_OCTET8[BT_OCTET8_LEN];   /**< octet array: size 8 */
 
-#define BT_OCTET16_LEN    16                /**< octet length: 16 */
+#define BT_OCTET16_LEN    16U               /**< octet length: 16 */
 typedef uint8_t BT_OCTET16[BT_OCTET16_LEN]; /**< octet array: size 16 */
 
-#define BT_OCTET32_LEN    32    /**< octet length: 32 */
-typedef uint8_t BT_OCTET32[BT_OCTET32_LEN];   /**< octet array: size 32 */
+#define BT_OCTET32_LEN    32U               /**< octet length: 32 */
+typedef uint8_t BT_OCTET32[BT_OCTET32_LEN]; /**< octet array: size 32 */
 
 /* Values for wiced_bt_flow_spec_t service_type */
-#define NO_TRAFFIC 0  /**< No Traffic */
-#define BEST_EFFORT 1 /**< Best Effort */
-#define GUARANTEED 2  /**< Guaranteed */
+#define NO_TRAFFIC  0U  /**< No Traffic */
+#define BEST_EFFORT 1U  /**< Best Effort */
+#define GUARANTEED  2U  /**< Guaranteed */
 
 /** Bluetooth QoS defintions */
 typedef struct {
@@ -198,9 +197,9 @@ typedef uint8_t wiced_bt_transport_t;       /**< Transport type (see @ref WICED_
  * @name Device Types
  * @{
  */
-#define BT_DEVICE_TYPE_BREDR        0x01    /**< BR/EDR device */
-#define BT_DEVICE_TYPE_BLE          0x02    /**< LE device */
-#define BT_DEVICE_TYPE_BREDR_BLE    0x03    /**< Dual Mode device */
+#define BT_DEVICE_TYPE_BREDR        0x01U    /**< BR/EDR device */
+#define BT_DEVICE_TYPE_BLE          0x02U    /**< LE device */
+#define BT_DEVICE_TYPE_BREDR_BLE    0x03U    /**< Dual Mode device */
 typedef uint8_t wiced_bt_device_type_t;     /**< Bluetooth device type (see @ref WICED_BT_DEVICE_TYPE "Bluetooth Device Types") */
 /** @} WICED_BT_DEVICE_TYPE */
 
@@ -209,10 +208,10 @@ typedef uint8_t wiced_bt_device_type_t;     /**< Bluetooth device type (see @ref
  * @name Address Types
  * @{
  */
-#define BLE_ADDR_PUBLIC             0x00        /**< Public address */
-#define BLE_ADDR_RANDOM             0x01        /**< Random address */
-#define BLE_ADDR_PUBLIC_ID          0x02        /**< Public ID      */
-#define BLE_ADDR_RANDOM_ID          0x03        /**< Random ID      */
+#define BLE_ADDR_PUBLIC             0x00U        /**< Public address */
+#define BLE_ADDR_RANDOM             0x01U        /**< Random address */
+#define BLE_ADDR_PUBLIC_ID          0x02U        /**< Public ID      */
+#define BLE_ADDR_RANDOM_ID          0x03U        /**< Random ID      */
 
 /** LE device address type (see @ref WICED_BT_ADDR_TYPE "Bluetooth Address Types") */
 typedef uint8_t wiced_bt_ble_address_type_t;
@@ -226,7 +225,7 @@ typedef struct
     wiced_bt_device_address_t   bda;    /**< LE Address */
 } wiced_bt_ble_address_t;
 
-#define LINK_KEY_LEN    16      /**< Link Key Len */
+#define LINK_KEY_LEN    16U      /**< Link Key Len */
 typedef uint8_t wiced_bt_link_key_t[LINK_KEY_LEN];  /**< Link Key */
 
 #define IV_LEN 8 /**< Initialization Vector len */
@@ -296,10 +295,10 @@ typedef uint16_t wiced_bt_gatt_eatt_conn_id_list[L2CAP_ECRB_MAX_CHANNELS_PER_CMD
 #define DEVCLASS_TO_STREAM(p, a) {register unsigned int ijk; for (ijk = 0; ijk < DEV_CLASS_LEN;ijk++) *(p)++ = (uint8_t) a[DEV_CLASS_LEN - 1 - ijk];}
 /** Covert array to Stream array */
 #ifndef ARRAY_TO_STREAM
-#define ARRAY_TO_STREAM(p, a, len) {register unsigned int ijk; for (ijk = 0; ijk < len;        ijk++) *(p)++ = (uint8_t) ((uint8_t *)a)[ijk];}
+#define ARRAY_TO_STREAM(p, a, len)          {register unsigned int ijk; for(ijk = 0; ijk < len; ijk++) {*(p)++ = (uint8_t) ((uint8_t *)a)[ijk];}}
 #endif
 /** Reverse Array */
-#define REVERSE_ARRAY_TO_STREAM(p, a, len)  {register unsigned int ijk; for (ijk = 0; ijk < len; ijk++) *(p)++ = (uint8_t) a[len - 1 - ijk];}
+#define REVERSE_ARRAY_TO_STREAM(p, a, len)  {register unsigned int ijk; for(ijk = 0; ijk < len; ijk++) {*(p)++ = (uint8_t) ((uint8_t *)a)[len - 1 - ijk];}}
 /** Convert byte stream to UINT24 */
 #define STREAM_TO_UINT24(u32, p) {u32 = (((uint32_t)(*(p))) + ((((uint32_t)(*((p) + 1)))) << 8) + ((((uint32_t)(*((p) + 2)))) << 16) ); (p) += 3;}
 /** Convert byte stream to UINT40 */
@@ -315,14 +314,14 @@ typedef uint16_t wiced_bt_gatt_eatt_conn_id_list[L2CAP_ECRB_MAX_CHANNELS_PER_CMD
 /** Convert byte stream to LAP */
 #define STREAM_TO_LAP(a, p)      {register unsigned int ijk; register uint8_t *plap = (uint8_t *)a + LAP_LEN - 1; for (ijk = 0; ijk < LAP_LEN; ijk++) *plap-- = *p++;}
 /** Convert byte stream to Array */
-#define STREAM_TO_ARRAY(a, p, len) {register unsigned int ijk; for (ijk = 0; ijk < len; ijk++) ((uint8_t *) a)[ijk] = *p++;}
+#define STREAM_TO_ARRAY(a, p, len) {register unsigned int ijk; for (ijk = 0; ijk < len; ijk++) {((uint8_t *) a)[ijk] = *p++;}}
 /** Reverse Stream to Array */
 #define REVERSE_STREAM_TO_ARRAY(a, p, len) {register unsigned int ijk; register uint8_t *_pa = (uint8_t *)a + len - 1; for (ijk = 0; ijk < len; ijk++) *_pa-- = *p++;}
 
 /** Convert byte stream to uint8_t */
-#define STREAM_TO_UINT8(u8, p)   {u8 = (uint8_t)(*(p)); (p) += 1;}
+#define STREAM_TO_UINT8(u8, p)   {(u8) = (uint8_t)(*(p)); (p) += 1;}
 /** Convert byte stream to int8_t */
-#define STREAM_TO_INT8(i8, p)   {i8 = (int8_t)(*(p)); (p) += 1;}
+#define STREAM_TO_INT8(i8, p)   {(i8) = (int8_t)(*(p)); (p) += 1;}
 /** String copy */
 #define BCM_STRNCPY_S(x1,x2,x3,x4)  strncpy((x1),(x3),(x4))
 
@@ -342,19 +341,19 @@ typedef uint16_t wiced_bt_gatt_eatt_conn_id_list[L2CAP_ECRB_MAX_CHANNELS_PER_CMD
 /** Covert uint16_t to Stream */
 #define UINT16_TO_STREAM(p, u16) {*(p)++ = (uint8_t)(u16); *(p)++ = (uint8_t)((u16) >> 8);}
 /** Covert Stream to uint32_t */
-#define STREAM_TO_UINT32(u32, p) {u32 = (((uint32_t)(*(p))) + ((((uint32_t)(*((p) + 1)))) << 8) + ((((uint32_t)(*((p) + 2)))) << 16) + ((((uint32_t)(*((p) + 3)))) << 24)); (p) += 4;}
+#define STREAM_TO_UINT32(u32, p) {(u32) = (((uint32_t)(*(p))) + ((((uint32_t)(*((p) + 1)))) << 8) + ((((uint32_t)(*((p) + 2)))) << 16) + ((((uint32_t)(*((p) + 3)))) << 24)); (p) += 4;}
 /** Covert Stream to uint16_t */
-#define STREAM_TO_UINT16(u16, p) {u16 = ((uint16_t)(*(p)) + (((uint16_t)(*((p) + 1))) << 8)); (p) += 2;}
+#define STREAM_TO_UINT16(u16, p) {(u16) = ((uint16_t)(*(p)) + (((uint16_t)(*((p) + 1))) << 8)); (p) += 2;}
 #endif
 /** Copy BDA to stream */
 extern uint8_t *BTU_copyBdaToStream(uint8_t *pStream, uint8_t *pBDA);
 /** Copy Stream to BDA */
-extern uint8_t *BTU_copyStreamToBda(uint8_t *pBDA, uint8_t *pStream);
+extern uint8_t *BTU_copyStreamToBda(uint8_t *pBDA, const uint8_t *pStream);
 
 /** Convert BDA to stream */
-#define BDADDR_TO_STREAM(p, a)   { p = BTU_copyBdaToStream(p, (uint8_t *)(a)); }
+#define BDADDR_TO_STREAM(p, a)   { (p) = BTU_copyBdaToStream((p), (uint8_t *)(a)); }
 /** Convert stream to BDA */
-#define STREAM_TO_BDADDR(a, p)   { p = BTU_copyStreamToBda((uint8_t *)(a), p);}
+#define STREAM_TO_BDADDR(a, p)   { (p) = BTU_copyStreamToBda((uint8_t *)(a), (p));}
 
 
 /********************************************************************************
@@ -469,4 +468,4 @@ typedef enum {
 }
 #endif
 
-#endif //__WICED_BT_TYPES_H__
+#endif /* WICED_BT_TYPES_H */

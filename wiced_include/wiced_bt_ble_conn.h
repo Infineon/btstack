@@ -36,8 +36,8 @@
  * AIROC Bluetooth Low Energy (LE) Functions for LE link management
  *
  */
-#ifndef __WICED_BT_BLE_CONN_API_H__
-#define __WICED_BT_BLE_CONN_API_H__
+#ifndef WICED_BT_BLE_CONN_API_H
+#define WICED_BT_BLE_CONN_API_H
 
 /**
  * This section contains the connection related defines and structures used in LE link management.
@@ -531,8 +531,8 @@ void wiced_bt_ble_resolving_list_auto_enable_set(wiced_bool_t enable);
  *
  * @note: In order to add multiple devices to the address resolution db, invoke address resolution
  * APIs in the following order
- *      wiced_bt_ble_address_resolution_list_clear_and_disable // to clear and disable the db
- *      wiced_bt_ble_resolving_list_auto_enable_set(0)   // to disable auto enabling the db
+ *      wiced_bt_ble_address_resolution_list_clear_and_disable - to clear and disable the db
+ *      wiced_bt_ble_resolving_list_auto_enable_set(0) - to disable auto enabling the db
  *
  *      wiced_bt_dev_add_device_to_address_resolution_db(..)
  *      ..
@@ -691,4 +691,4 @@ wiced_result_t wiced_ble_set_rpa_timeout(wiced_ble_rpa_timeout_t* rpa_timeout);
 #endif
 
 /**@} wicedbt */
-#endif // __WICED_BT_BLE_CONN_API_H__
+#endif /* WICED_BT_BLE_CONN_API_H */

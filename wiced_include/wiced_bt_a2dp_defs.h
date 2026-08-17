@@ -31,8 +31,8 @@
  * so agrees to indemnify Cypress against all liability.
  */
 
-#ifndef __WICED_BT_A2DP_DEFS_H__
-#define __WICED_BT_A2DP_DEFS_H__
+#ifndef WICED_BT_A2DP_DEFS_H
+#define WICED_BT_A2DP_DEFS_H
 
 
 #ifdef __cplusplus
@@ -113,4 +113,4 @@ typedef struct
 } /*extern "C" */
 #endif
 
-#endif //__WICED_BT_A2DP_DEFS_H__
+#endif /* WICED_BT_A2DP_DEFS_H */

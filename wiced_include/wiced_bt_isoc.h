@@ -43,8 +43,8 @@
  *      ISO   -  Isochronous
  *      ISOAL -  Isochronous Adaption Layer
  */
-#ifndef __WICED_BT_ISOC_H__
-#define __WICED_BT_ISOC_H__
+#ifndef WICED_BT_ISOC_H
+#define WICED_BT_ISOC_H
 
 
 #include "wiced_bt_types.h"
@@ -125,6 +125,7 @@ enum wiced_ble_isoc_event_e
     WICED_BLE_ISOC_BIG_TERMINATED_EVT,        /**< BIG Terminated, \ref wiced_ble_isoc_terminated_evt_t */
     WICED_BLE_ISOC_BIG_SYNC_LOST_EVT,         /**< BIG Sync Lost, \ref wiced_ble_isoc_terminated_evt_t */
     WICED_BLE_ISOC_BIG_TERMINATED_SYNC_EVT,   /**< BIG Sync Terminated, \ref wiced_ble_isoc_big_terminated_sync_evt_t */
+    WICED_BLE_ISOC_READ_ISO_LINK_QUALITY_EVT, /**< Read ISO Link Quality, \ref wiced_ble_isoc_read_iso_link_quality_evt_t */
 };
 typedef uint8_t wiced_ble_isoc_event_t; /**< ISOC Events (see #wiced_ble_isoc_event_e) */
 
@@ -167,22 +168,62 @@ typedef struct
 */
 typedef struct
 {
-    uint8_t              status;           /**< CIG Establishment Status  (0 = Success). Refer Core Spec v5.2 [Vol 1] Part F, Controller Error Codes */
-    wiced_ble_isoc_cis_t  cis;               /**< CIS information */
-    uint32_t             cig_sync_delay;   /**< CIG Sync Delay in microseconds */
-    uint32_t             cis_sync_delay;   /**< CIS Sync Delay in microseconds */
-    uint32_t             latency_c_to_p;   /**< Maximum time, in microseconds, for an SDU to be transported from the central Controller to peripheral Controller */
-    uint32_t             latency_p_to_c;   /**< Maximum time, in microseconds, for an SDU to be transported from the peripheral Controller to central Controller */
-    wiced_ble_isoc_phy_t  phy_c_to_p;       /**< The transmitter PHY of packets from the central */
-    wiced_ble_isoc_phy_t  phy_p_to_c;       /**< The transmitter PHY of packets from the peripheral */
-    uint8_t              nse;              /**< Maximum Number of Subevent in each isochronous event */
-    uint8_t              bn_c_to_p;        /**< Burst number for central to peripheral transmission */
-    uint8_t              bn_p_to_c;        /**< Burst number for peripheral to central transmission */
-    uint8_t              ft_c_to_p;        /**< Flush timeout, in multiples of the ISO_Interval for central to peripheral transmission */
-    uint8_t              ft_p_to_c;        /**< Flush timeout, in multiples of the ISO_Interval for peripheral to central transmission */
-    uint16_t             max_pdu_c_to_p;   /**< Maximum size, in bytes, of an SDU from the central’s Host */
-    uint16_t             max_pdu_p_to_c;   /**< Maximum size, in octets, of an SDU from the peripheral’s Host */
-    uint16_t             iso_interval;     /**< Time between two consecutive CIS anchor points */
+    /** CIG Establishment Status  (0 = Success). Refer Core Spec v5.2 [Vol 1] Part F, Controller Error Codes */
+    uint8_t status;
+    /** CIS information */
+    wiced_ble_isoc_cis_t cis;
+    /** CIG Sync Delay in microseconds */
+    uint32_t cig_sync_delay;
+    /** CIS Sync Delay in microseconds */
+    uint32_t cis_sync_delay;
+    /** Max time, in microseconds, for an SDU to be transported from the central Controller to peripheral Controller */
+    uint32_t latency_c_to_p;
+    /** Max time, in microseconds, for an SDU to be transported from the peripheral Controller to central Controller */
+    uint32_t latency_p_to_c;
+    /** The transmitter PHY of packets from the central */
+    wiced_ble_isoc_phy_t phy_c_to_p;
+    /** The transmitter PHY of packets from the peripheral */
+    wiced_ble_isoc_phy_t phy_p_to_c;
+    /** Maximum Number of Subevent in each isochronous event */
+    uint8_t nse;
+    /** Burst number for central to peripheral transmission */
+    uint8_t bn_c_to_p;
+    /** Burst number for peripheral to central transmission */
+    uint8_t bn_p_to_c;
+    /** Flush timeout, in multiples of the ISO_Interval for central to peripheral transmission */
+    uint8_t ft_c_to_p;
+    /** Flush timeout, in multiples of the ISO_Interval for peripheral to central transmission */
+    uint8_t ft_p_to_c;
+    /** Maximum size, in bytes, of an SDU from the central’s Host */
+    uint16_t max_pdu_c_to_p;
+    /** Maximum size, in octets, of an SDU from the peripheral’s Host */
+    uint16_t max_pdu_p_to_c;
+    /** Time between two consecutive CIS anchor points */
+    uint16_t iso_interval;
+    /** set to 1 if cis_established_v2 evt */
+    uint8_t cis_established_v2_evt;
+    /** Time, in microseconds, between the start of consecutive subevents in a CIS event
+     * Range: 0x000190 to ISO_Interval×1250 –1
+     */
+    uint32_t sub_interval;
+    /** Maximum size, in octets, of the payload from the Central’s Host Range: 0 to 0x0FFF */
+    uint16_t max_sdu_c_to_p;
+    /** Maximum size, in octets, of the payload from the Peripheral’s Host Range: 0 to 0x0FFF */
+    uint16_t max_sdu_p_to_c;
+    /** Time, in microseconds, between the start of consecutive SDUs sent by the Central
+     * Range: 0x0000FF to 0x0FFFFF
+     */
+    uint32_t sdu_interval_c_to_p;
+    /** Time, in microseconds, between the start of consecutive SDUs sent by the Peripheral
+     * Range: 0x0000FF to 0x0FFFFF
+     */
+    uint32_t sdu_interval_p_to_c;
+    /**
+    * 0x00 Unframed PDUs
+    * 0x01 Framed PDUs, Segmentable mode
+    * 0x02 Framed PDUs, Unsegmented mode
+    */
+    uint8_t framing;
 } wiced_ble_isoc_cis_established_evt_t;
 
 
@@ -270,8 +311,19 @@ typedef struct
     uint8_t status;     /**< BIG Terminate Sync Status (0 = Success). Refer Core Spec v5.2 [Vol 1] Part F, Controller Error Codes */
     uint8_t big_handle; /**< BIG Handle */
 } wiced_ble_isoc_big_terminated_sync_evt_t;
-
-
+typedef struct
+{
+    uint8_t status;     /**< HCI_LE_Read_ISO_Link_Quality command succeeded (0 = Success)*/
+    uint16_t conn_hdl;  /**< CIS/BIS Connection Handle  */
+    uint32_t tx_unacked_packets; /**< Number of unacknowledged packets */
+    uint32_t tx_flushed_packets; /**< Number of flushed packets */
+    uint32_t tx_last_subevent_packets; /**< Number of packets in last subevent(CIS in Peripheral
+role)) */
+    uint32_t retransmitted_packets; /**< Number of retransmitted packets */
+    uint32_t crc_error_packets; /**< Number of CRC error packets */
+    uint32_t rx_unreceived_packets; /**< Number of unreceived packets */
+    uint32_t duplicate_packets; /**< Number of duplicate packets */
+}  wiced_ble_isoc_read_iso_link_quality_evt_t;
 /** ISOC event data */
 typedef union
 {
@@ -286,6 +338,7 @@ typedef union
     wiced_ble_isoc_big_sync_established_evt_t big_sync_established; /**< BIG Sync Established data */
     wiced_ble_isoc_terminated_evt_t big_sync_lost;                  /**< BIG Sync Lost Data */
     wiced_ble_isoc_big_terminated_sync_evt_t big_sync_terminated;   /**< BIG Terminate Sync */
+    wiced_ble_isoc_read_iso_link_quality_evt_t read_iso_link_quality; /**< Read ISO Link Quality */
 } wiced_ble_isoc_event_data_t;
 
 /** ISOC CIS Configuration */
@@ -812,12 +865,18 @@ wiced_bool_t wiced_ble_isoc_is_data_path_active(uint8_t cig_id,
   */
  wiced_result_t wiced_ble_isoc_read_tx_sync(uint16_t isoc_conn_hdl,
                                            wiced_ble_isoc_read_tx_sync_complete_cback_t *p_cback);
-
-
+ /**
+    * @brief This function is used to read the link quality of a CIS/BIS connection handle.
+    *
+    * @param conn_hdl: CIS/BIS Connection handle
+    *
+    * @return             : WICED_SUCCESS if successful
+    */
+ wiced_result_t wiced_ble_read_iso_link_quality(uint16_t conn_hdl);
 /**@} wicedbt_isoc_functions */
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif //__WICED_BT_ISOC_H__
+#endif /* WICED_BT_ISOC_H */

@@ -144,7 +144,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <tr class="separator:a9f8e78bcea286eabcbf2904871ff45fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8f003b3120e2048acb35bdc8e2f88cb"><td class="memItemLeft" align="right" valign="top"><a id="ae8f003b3120e2048acb35bdc8e2f88cb"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__ble__cs__capabilities__t.html#ae8f003b3120e2048acb35bdc8e2f88cb">subfeatures_supported</a></td></tr>
-<tr class="memdesc:ae8f003b3120e2048acb35bdc8e2f88cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit 1: CS with no transmitter Frequency Actuation Error Bit 2: CS Channel Selection Algorithm #3c Bit 3: CS phase-based ranging from RTT sounding sequence. <br /></td></tr>
+<tr class="memdesc:ae8f003b3120e2048acb35bdc8e2f88cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit 1: CS with no transmitter Frequency Actuation Error Bit 2: CS Channel Selection Algorithm #3c Bit 3: CS phase-based ranging from RTT sounding sequence Bit 4: IPT in CS Reflector Bit 5: CS RTT accuracy specified on a per PHY basis. <br /></td></tr>
 <tr class="separator:ae8f003b3120e2048acb35bdc8e2f88cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3796ea2ab3f92d379474e9a50f133ce"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__ble__cs__capabilities__t.html#aa3796ea2ab3f92d379474e9a50f133ce">t_ip1_times_supported</a></td></tr>
 <tr class="memdesc:aa3796ea2ab3f92d379474e9a50f133ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The t_ip1_times_supported, t_ip2_times_supported, t_fcs_times_supported, t_pm_times_supported, and t_sw_time_supported parameters indicate the supported optional time durations used in CS steps as described in BT Core Specification ver 6.0, [Vol 6] Part H, Section 4.3.  <a href="structwiced__ble__cs__capabilities__t.html#aa3796ea2ab3f92d379474e9a50f133ce">More...</a><br /></td></tr>
@@ -169,6 +169,26 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__ble__cs__capabilities__t.html#a23a8fe4e3a75f42b45bf1b5aacaadd45">tx_snr_capability</a></td></tr>
 <tr class="memdesc:a23a8fe4e3a75f42b45bf1b5aacaadd45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit 0: 18 dB supported, Bit 1: 21 dB supported, Bit 2: 24 dB supported, Bit 3: 27 dB supported, Bit 4: 30 dB supported. <br /></td></tr>
 <tr class="separator:a23a8fe4e3a75f42b45bf1b5aacaadd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f12fde41eab40a1670b5c243c3f886"><td class="memItemLeft" align="right" valign="top"><a id="af5f12fde41eab40a1670b5c243c3f886"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__ble__cs__capabilities__t.html#af5f12fde41eab40a1670b5c243c3f886">t_ip2_ipt_times_supported</a></td></tr>
+<tr class="memdesc:af5f12fde41eab40a1670b5c243c3f886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit 0: 10 us supported, Bit 1: 20 us supported, Bit 2: 30 us supported, Bit 3: 40 us supported, Bit 4: 50 us supported, Bit 5: 60 us supported, Bit 6: 80 us supported. <br /></td></tr>
+<tr class="separator:af5f12fde41eab40a1670b5c243c3f886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a934d68ab3d1da7bc40bf11b7e9d43678"><td class="memItemLeft" align="right" valign="top"><a id="a934d68ab3d1da7bc40bf11b7e9d43678"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__ble__cs__capabilities__t.html#a934d68ab3d1da7bc40bf11b7e9d43678">t_sw_ipt_times_supported</a></td></tr>
+<tr class="memdesc:a934d68ab3d1da7bc40bf11b7e9d43678"><td class="mdescLeft">&#160;</td><td class="mdescRight">If value set to (0x00,0x00, 0x01, 0x02,0x04, or 0x0A) : Time in microseconds for the antenna switch period of the CS tones. <br /></td></tr>
+<tr class="separator:a934d68ab3d1da7bc40bf11b7e9d43678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1632886bfd1d88b9fba5363e0789e3"><td class="memItemLeft" align="right" valign="top"><a id="a9d1632886bfd1d88b9fba5363e0789e3"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__ble__cs__capabilities__t.html#a9d1632886bfd1d88b9fba5363e0789e3">rtt_2m_aa_only_n</a></td></tr>
+<tr class="memdesc:a9d1632886bfd1d88b9fba5363e0789e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If value set to 0x00 : RTT AA Only not supported on either the LE 2M or LE 2M 2BT PHY 0x01 to 0xFF: Number of CS_SYNC exchanges needed to satisfy the accuracy require-ments on the LE 2M or the LE 2M 2BT PHY. <br /></td></tr>
+<tr class="separator:a9d1632886bfd1d88b9fba5363e0789e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc66107ab5548425e9789b1464bc2e55"><td class="memItemLeft" align="right" valign="top"><a id="abc66107ab5548425e9789b1464bc2e55"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__ble__cs__capabilities__t.html#abc66107ab5548425e9789b1464bc2e55">rtt_2m_sounding_n</a></td></tr>
+<tr class="memdesc:abc66107ab5548425e9789b1464bc2e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">If value set to 0x00 : RTT Sounding not supported on either the LE 2M or LE 2M 2BT PHY 0x01 to 0xFF: Number of CS_SYNC exchanges needed to satisfy the precision accuracy on the LE 2M or the LE 2 M 2BT PH. <br /></td></tr>
+<tr class="separator:abc66107ab5548425e9789b1464bc2e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073b03406dab48b108864b23b45c113d"><td class="memItemLeft" align="right" valign="top"><a id="a073b03406dab48b108864b23b45c113d"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__ble__cs__capabilities__t.html#a073b03406dab48b108864b23b45c113d">rtt_2m_random_sequence_n</a></td></tr>
+<tr class="memdesc:a073b03406dab48b108864b23b45c113d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If value set to 0x00 : RTT Random Sequence not supported on either the LE 2M or LE 2M 2BT PHY 0x01 to 0xFF: Number of CS_SYNC exchanges needed to satisfy the accuracy requirements on the LE 2M or the LE 2M 2BT PHY. <br /></td></tr>
+<tr class="separator:a073b03406dab48b108864b23b45c113d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a2a1da5d8f4fb6e928246da5ba2ecf4ca"></a>

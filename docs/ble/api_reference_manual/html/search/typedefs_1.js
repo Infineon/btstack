@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['bd_5faddr_5fptr_3440',['BD_ADDR_PTR',['../group__bt__types.html#ga6ec901f500ca7516eb976ef46155627d',1,'wiced_bt_types.h']]],
-  ['bt_5foctet16_3441',['BT_OCTET16',['../group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8',1,'wiced_bt_types.h']]],
-  ['bt_5foctet32_3442',['BT_OCTET32',['../group__bt__types.html#gaba2488b09b25fdc24ea75828d1dbf73d',1,'wiced_bt_types.h']]],
-  ['bt_5foctet8_3443',['BT_OCTET8',['../group__bt__types.html#ga0e431488061406df282f0bf6d1c983a7',1,'wiced_bt_types.h']]]
+  ['bd_5faddr_5fptr_3437',['BD_ADDR_PTR',['../group__bt__types.html#ga6ec901f500ca7516eb976ef46155627d',1,'wiced_bt_types.h']]],
+  ['bt_5foctet16_3438',['BT_OCTET16',['../group__bt__types.html#ga3081047eede654f70f0bf771e34e47a8',1,'wiced_bt_types.h']]],
+  ['bt_5foctet32_3439',['BT_OCTET32',['../group__bt__types.html#gaba2488b09b25fdc24ea75828d1dbf73d',1,'wiced_bt_types.h']]],
+  ['bt_5foctet8_3440',['BT_OCTET8',['../group__bt__types.html#ga0e431488061406df282f0bf6d1c983a7',1,'wiced_bt_types.h']]]
 ];

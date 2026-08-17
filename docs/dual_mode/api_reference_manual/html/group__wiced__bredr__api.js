@@ -5,7 +5,7 @@ var group__wiced__bredr__api =
     [ "wiced_bt_dev_read_local_addr", "group__wiced__bredr__api.html#gab6a09117d2fa6f4b31d8bfb9aa4d382c", null ],
     [ "wiced_bt_dev_read_local_addr_ext", "group__wiced__bredr__api.html#ga833d7b0635297f1c74580b33e198ca41", null ],
     [ "wiced_bt_dev_set_advanced_connection_params", "group__wiced__bredr__api.html#gaab8ab36f338fdadd7405f28fe6d03d7c", null ],
-    [ "wiced_bt_dev_vendor_specific_command", "group__wiced__bredr__api.html#gaff614aad7be8ad5bde22d36351fac720", null ],
+    [ "wiced_bt_dev_vendor_specific_command", "group__wiced__bredr__api.html#gad45123b0afcf700f2f268352d6991cce", null ],
     [ "wiced_bt_dev_set_discoverability", "group__wiced__bredr__api.html#ga20d55a9ce0486637305e5cb09eb86765", null ],
     [ "wiced_bt_dev_set_connectability", "group__wiced__bredr__api.html#gaf555928b7af1c2ed27adf10289f3999c", null ],
     [ "wiced_bt_dev_register_connection_status_change", "group__wiced__bredr__api.html#ga06312613214e2e1b01da2e837f4f6d05", null ],

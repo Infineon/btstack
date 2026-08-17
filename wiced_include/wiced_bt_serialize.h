@@ -8,8 +8,8 @@
  *
  */
 
-#ifndef __WICED_BT_SERIALIZE__
-#define __WICED_BT_SERIALIZE__
+#ifndef WICED_BT_SERIALIZE_H
+#define WICED_BT_SERIALIZE_H
 
 #include "wiced_bt_dev.h"
 #include "wiced_data_types.h"
@@ -39,6 +39,6 @@ wiced_result_t wiced_bt_serialize_function (wiced_bt_serialized_app_func_t p_fun
 } /* extern "C" */
 #endif
 
-#endif /* __WICED_BT_SERIALIZE__ */
+#endif /* WICED_BT_SERIALIZE_H */
 
 /**@} */

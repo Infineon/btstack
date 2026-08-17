@@ -31,8 +31,8 @@
  * so agrees to indemnify Cypress against all liability.
  */
 
-#ifndef __WICED_BT_DEV_UTILS_H__
-#define __WICED_BT_DEV_UTILS_H__
+#ifndef WICED_BT_DEV_UTILS_H
+#define WICED_BT_DEV_UTILS_H
 
 /**
  * @addtogroup wicedbt_dev_utils Wiced Dev Utils
@@ -105,7 +105,7 @@ typedef struct
 } wiced_bt_set_adv_tx_power_result_t;
 
 /**
- * @endcond // DUAL_MODE
+ * @endcond  DUAL_MODE
 */
 
 /** BR packets statistics details */
@@ -255,6 +255,15 @@ typedef struct
     }wiced_bt_lq_stats;
 } wiced_bt_lq_stats_result_t;
 
+typedef struct
+{
+    uint8_t status;   /**< event status */
+    uint8_t chip_id;    /**< Controller chip id */
+    uint8_t target_id;   /**< Controller target id */
+    uint16_t baseline;  /**< Controller baseline version/ FW patch version */
+    uint16_t build_number;  /**< Controller build number */
+} wiced_bt_controller_config_ver_info_t;
+
 /**
  * @}
  */
@@ -387,4 +396,4 @@ wiced_result_t wiced_bt_dev_read_tx_power (wiced_bt_device_address_t remote_bda,
 #endif
 
 
-#endif //__WICED_BT_DEV_UTILS_H__
+#endif /* WICED_BT_DEV_UTILS_H */

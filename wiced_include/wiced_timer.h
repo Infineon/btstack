@@ -41,8 +41,8 @@
  * Defines the interfaces for Timer Management Services
  */
 
-#ifndef _WICED_TIMER_H_
-#define _WICED_TIMER_H_
+#ifndef WICED_TIMER_H
+#define WICED_TIMER_H
 
 #include "wiced_result.h"
 
@@ -145,4 +145,4 @@ wiced_result_t wiced_deinit_timer (wiced_timer_t* p_timer);
 }
 #endif
 
-#endif // _WICED_TIMER_H_
+#endif /* _WICED_TIMER_H_ */

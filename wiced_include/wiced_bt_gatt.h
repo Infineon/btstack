@@ -35,8 +35,8 @@
  *
  *  AIROC Generic Attribute (GATT) Application Programming Interface
  */
-#ifndef __WICED_BT_GATT_H__
-#define __WICED_BT_GATT_H__
+#ifndef WICED_BT_GATT_H
+#define WICED_BT_GATT_H
 
 
 #include "wiced_result.h"
@@ -70,66 +70,61 @@
   */
 #define WICED_GATT_HDR_SIZE  3
 
-/** GATT Status Codes*/
-enum wiced_bt_gatt_status_e
-{
-    WICED_BT_GATT_SUCCESS                    = 0x00,         /**< Success */
-    WICED_BT_GATT_INVALID_HANDLE             = 0x01,         /**< Invalid Handle */
-    WICED_BT_GATT_READ_NOT_PERMIT            = 0x02,         /**< Read Not Permitted */
-    WICED_BT_GATT_WRITE_NOT_PERMIT           = 0x03,         /**< Write Not permitted */
-    WICED_BT_GATT_INVALID_PDU                = 0x04,         /**< Invalid PDU */
-    WICED_BT_GATT_INSUF_AUTHENTICATION       = 0x05,         /**< Insufficient Authentication */
-    WICED_BT_GATT_REQ_NOT_SUPPORTED          = 0x06,         /**< Request Not Supported */
-    WICED_BT_GATT_INVALID_OFFSET             = 0x07,         /**< Invalid Offset */
-    WICED_BT_GATT_INSUF_AUTHORIZATION        = 0x08,         /**< Insufficient Authorization */
-    WICED_BT_GATT_PREPARE_Q_FULL             = 0x09,         /**< Prepare Queue Full */
-    WICED_BT_GATT_ATTRIBUTE_NOT_FOUND        = 0x0a,         /**< Attribute Not Found */
-    WICED_BT_GATT_NOT_LONG                   = 0x0b,         /**< Not Long Size */
-    WICED_BT_GATT_INSUF_KEY_SIZE             = 0x0c,         /**< Insufficient Key Size */
-    WICED_BT_GATT_INVALID_ATTR_LEN           = 0x0d,         /**< Invalid Attribute Length */
-    WICED_BT_GATT_ERR_UNLIKELY               = 0x0e,         /**< Error Unlikely */
-    WICED_BT_GATT_INSUF_ENCRYPTION           = 0x0f,         /**< Insufficient Encryption */
-    WICED_BT_GATT_UNSUPPORT_GRP_TYPE         = 0x10,         /**< Unsupported Group Type */
-    WICED_BT_GATT_INSUF_RESOURCE             = 0x11,         /**< Insufficient Resource */
-    WICED_BT_GATT_DATABASE_OUT_OF_SYNC       = 0x12,         /**< GATT Database Out of Sync */
-	WICED_BT_GATT_VALUE_NOT_ALLOWED          = 0x13,         /**< Value Not allowed */
-                                                             /* 0xE0 ~ 0xFB reserved for future use */
-    WICED_BT_GATT_WRITE_REQ_REJECTED         = 0xFC,         /**< Client Write operation rejected */
-    WICED_BT_GATT_CCCD_IMPROPER_CONFIGURED   = 0xFD,         /**< Client Characteristic Configuration Descriptor Improperly Configured */
-    WICED_BT_GATT_BUSY                       = 0xFE,         /**< Busy or Procedure already in progress */
-    WICED_BT_GATT_OUT_OF_RANGE               = 0xFF,         /**< Value Out of Range */
+#define    WICED_BT_GATT_SUCCESS                    0x00U         /**< Success */
+#define    WICED_BT_GATT_INVALID_HANDLE             0x01U         /**< Invalid Handle */
+#define    WICED_BT_GATT_READ_NOT_PERMIT            0x02U         /**< Read Not Permitted */
+#define    WICED_BT_GATT_WRITE_NOT_PERMIT           0x03U         /**< Write Not permitted */
+#define    WICED_BT_GATT_INVALID_PDU                0x04U         /**< Invalid PDU */
+#define    WICED_BT_GATT_INSUF_AUTHENTICATION       0x05U         /**< Insufficient Authentication */
+#define    WICED_BT_GATT_REQ_NOT_SUPPORTED          0x06U         /**< Request Not Supported */
+#define    WICED_BT_GATT_INVALID_OFFSET             0x07U         /**< Invalid Offset */
+#define    WICED_BT_GATT_INSUF_AUTHORIZATION        0x08U         /**< Insufficient Authorization */
+#define    WICED_BT_GATT_PREPARE_Q_FULL             0x09U         /**< Prepare Queue Full */
+#define    WICED_BT_GATT_ATTRIBUTE_NOT_FOUND        0x0aU         /**< Attribute Not Found */
+#define    WICED_BT_GATT_NOT_LONG                   0x0bU         /**< Not Long Size */
+#define    WICED_BT_GATT_INSUF_KEY_SIZE             0x0cU         /**< Insufficient Key Size */
+#define    WICED_BT_GATT_INVALID_ATTR_LEN           0x0dU         /**< Invalid Attribute Length */
+#define    WICED_BT_GATT_ERR_UNLIKELY               0x0eU         /**< Error Unlikely */
+#define    WICED_BT_GATT_INSUF_ENCRYPTION           0x0fU         /**< Insufficient Encryption */
+#define    WICED_BT_GATT_UNSUPPORT_GRP_TYPE         0x10U         /**< Unsupported Group Type */
+#define    WICED_BT_GATT_INSUF_RESOURCE             0x11U         /**< Insufficient Resource */
+#define    WICED_BT_GATT_DATABASE_OUT_OF_SYNC       0x12U         /**< GATT Database Out of Sync */
+#define    WICED_BT_GATT_VALUE_NOT_ALLOWED          0x13U         /**< Value Not allowed */
+                                                                  /* 0xE0 ~ 0xFB reserved for future use */
+#define    WICED_BT_GATT_WRITE_REQ_REJECTED         0xFCU         /**< Client Write operation rejected */
+#define    WICED_BT_GATT_CCCD_IMPROPER_CONFIGURED   0xFDU         /**< Client Characteristic Configuration Descriptor Improperly Configured */
+#define    WICED_BT_GATT_BUSY                       0xFEU         /**< Busy or Procedure already in progress */
+#define    WICED_BT_GATT_OUT_OF_RANGE               0xFFU         /**< Value Out of Range */
                                                               /* AIROC defined status  */
-    WICED_BT_GATT_ILLEGAL_PARAMETER          = 0x8780,         /**< Illegal Parameter */
-    WICED_BT_GATT_NO_RESOURCES               = 0x8781,         /**< No Resources */
-    WICED_BT_GATT_INTERNAL_ERROR             = 0x8783,         /**< Internal Error */
-    WICED_BT_GATT_WRONG_STATE                = 0x8784,         /**< Wrong State */
-    WICED_BT_GATT_DB_FULL                    = 0x8785,         /**< DB Full */
-    WICED_BT_GATT_UNUSED1                    = 0x8786,         /**< Unused */
-    WICED_BT_GATT_ERROR                      = 0x8787,         /**< Error */
-    WICED_BT_GATT_CMD_STARTED                = 0x8788,         /**< Command Started */
-    WICED_BT_GATT_PENDING                    = 0x8789,         /**< Pending */
-    WICED_BT_GATT_AUTH_FAIL                  = 0x878A,         /**< Authentication Fail */
-    WICED_BT_GATT_MORE                       = 0x878B,         /**< More */
-    WICED_BT_GATT_INVALID_CFG                = 0x878C,         /**< Invalid Configuration */
-    WICED_BT_GATT_SERVICE_STARTED            = 0x878D,         /**< Service Started */
-    WICED_BT_GATT_ENCRYPTED_MITM             = WICED_BT_GATT_SUCCESS, /**< Encrypted MITM */
-    WICED_BT_GATT_ENCRYPTED_NO_MITM          = 0x878E,         /**< Encrypted No MITM */
-    WICED_BT_GATT_NOT_ENCRYPTED              = 0x878F,         /**< Not Encrypted */
-    WICED_BT_GATT_CONGESTED                  = 0x8791,         /**< Congested */
-    WICED_BT_GATT_NOT_ALLOWED                = 0x8792,         /**< Operation not allowed */
-    WICED_BT_GATT_HANDLED                    = 0x8793,         /**< Set by application to indicate it has responded to the message */
-    WICED_BT_GATT_NO_PENDING_OPERATION       = 0x8794,         /**< No pending client operation for the response sent by app */
-    WICED_BT_GATT_INDICATION_RESPONSE_PENDING= 0x8795,         /**< Indication response pending */
-    WICED_BT_GATT_UNUSED2                    = 0x8796,         /**< Unused */
-    WICED_BT_GATT_CCC_CFG_ERR                = 0x8797,         /**< Improper Client Char Configuration */
-    WICED_BT_GATT_PRC_IN_PROGRESS            = 0x8798,         /**< Procedure Already in Progress */
-    WICED_BT_GATT_UNUSED3                    = 0x8799,         /**< Unused */
-    WICED_BT_GATT_BAD_OPCODE                 = 0x879A,         /**< Bad opcode */
-    WICED_BT_GATT_NOT_IMPLEMENTED            = 0x879B,         /**< Not implemented */
+#define    WICED_BT_GATT_ILLEGAL_PARAMETER          0x8780U         /**< Illegal Parameter */
+#define    WICED_BT_GATT_NO_RESOURCES               0x8781U         /**< No Resources */
+#define    WICED_BT_GATT_INTERNAL_ERROR             0x8783U         /**< Internal Error */
+#define    WICED_BT_GATT_WRONG_STATE                0x8784U         /**< Wrong State */
+#define    WICED_BT_GATT_DB_FULL                    0x8785U         /**< DB Full */
+#define    WICED_BT_GATT_UNUSED1                    0x8786U         /**< Unused */
+#define    WICED_BT_GATT_ERROR                      0x8787U         /**< Error */
+#define    WICED_BT_GATT_CMD_STARTED                0x8788U         /**< Command Started */
+#define    WICED_BT_GATT_PENDING                    0x8789U         /**< Pending */
+#define    WICED_BT_GATT_AUTH_FAIL                  0x878AU         /**< Authentication Fail */
+#define    WICED_BT_GATT_MORE                       0x878BU         /**< More */
+#define    WICED_BT_GATT_INVALID_CFG                0x878CU         /**< Invalid Configuration */
+#define    WICED_BT_GATT_SERVICE_STARTED            0x878DU         /**< Service Started */
+#define    WICED_BT_GATT_ENCRYPTED_MITM             WICED_BT_GATT_SUCCESS /**< Encrypted MITM */
+#define    WICED_BT_GATT_ENCRYPTED_NO_MITM          0x878EU         /**< Encrypted No MITM */
+#define    WICED_BT_GATT_NOT_ENCRYPTED              0x878FU         /**< Not Encrypted */
+#define    WICED_BT_GATT_CONGESTED                  0x8791U         /**< Congested */
+#define    WICED_BT_GATT_NOT_ALLOWED                0x8792U         /**< Operation not allowed */
+#define    WICED_BT_GATT_HANDLED                    0x8793U         /**< Set by application to indicate it has responded to the message */
+#define    WICED_BT_GATT_NO_PENDING_OPERATION       0x8794U         /**< No pending client operation for the response sent by app */
+#define    WICED_BT_GATT_INDICATION_RESPONSE_PENDING 0x8795U        /**< Indication response pending */
+#define    WICED_BT_GATT_UNUSED2                    0x8796U         /**< Unused */
+#define    WICED_BT_GATT_CCC_CFG_ERR                0x8797U         /**< Improper Client Char Configuration */
+#define    WICED_BT_GATT_PRC_IN_PROGRESS            0x8798U         /**< Procedure Already in Progress */
+#define    WICED_BT_GATT_UNUSED3                    0x8799U         /**< Unused */
+#define    WICED_BT_GATT_BAD_OPCODE                 0x879AU         /**< Bad opcode */
+#define    WICED_BT_GATT_NOT_IMPLEMENTED            0x879BU         /**< Not implemented */
+#define    WICED_BT_GATT_INVALID_CONNECTION_ID      0xFFFFU         /**< Invalid connection id */
 
-
-    WICED_BT_GATT_INVALID_CONNECTION_ID      = 0xFFFF,         /**< Invalid connection id */
-};
 typedef uint16_t wiced_bt_gatt_status_t;     /**< GATT status (see #wiced_bt_gatt_status_e) */
 
 
@@ -144,103 +139,87 @@ typedef uint16_t wiced_bt_gatt_status_t;     /**< GATT status (see #wiced_bt_gat
  * \p GATT_HANDLE_VALUE_CONF is sent by the client in response to \p GATT_HANDLE_VALUE_IND
  *
  */
-enum wiced_bt_gatt_opcode_e
-{
-    GATT_RSP_ERROR                  = 0x01,       /**< Error Response */
-    GATT_REQ_MTU                    = 0x02,       /**< Exchange MTU Request */
-    GATT_RSP_MTU                    = 0x03,       /**< Exchange MTU Response */
-    GATT_REQ_FIND_INFO              = 0x04,       /**< Find Information Request */
-    GATT_RSP_FIND_INFO              = 0x05,       /**< Find Information Response */
-    GATT_REQ_FIND_TYPE_VALUE        = 0x06,       /**< Find By Type Value Request */
-    GATT_RSP_FIND_TYPE_VALUE        = 0x07,       /**< Find By Type Value Response */
-    GATT_REQ_READ_BY_TYPE           = 0x08,       /**< Read By Type Request */
-    GATT_RSP_READ_BY_TYPE           = 0x09,       /**< Read By Type Response */
-    GATT_REQ_READ                   = 0x0A,       /**< Read Request */
-    GATT_RSP_READ                   = 0x0B,       /**< Read Response */
-    GATT_REQ_READ_BLOB              = 0x0C,       /**< Read Blob Request */
-    GATT_RSP_READ_BLOB              = 0x0D,       /**< Read Blob Response */
-    GATT_REQ_READ_MULTI             = 0x0E,       /**< Read Multiple Request */
-    GATT_RSP_READ_MULTI             = 0x0F,       /**< Read Multiple Response */
-    GATT_REQ_READ_BY_GRP_TYPE       = 0x10,       /**< Read By Group Type Request */
-    GATT_RSP_READ_BY_GRP_TYPE       = 0x11,       /**< Read By Group Type Response */
-    GATT_REQ_WRITE                  = 0x12,       /**< Write Request */
-    GATT_RSP_WRITE                  = 0x13,       /**< Write Response */
-    GATT_REQ_PREPARE_WRITE          = 0x16,       /**< Prepare Write Request */
-    GATT_RSP_PREPARE_WRITE          = 0x17,       /**< Prepare Write Response */
-    GATT_REQ_EXECUTE_WRITE          = 0x18,       /**< Execute Write Request */
-    GATT_RSP_EXECUTE_WRITE          = 0x19,       /**< Execute Write Response */
-    GATT_HANDLE_VALUE_NOTIF         = 0x1B,       /**< Handle Value Notification */
-    GATT_HANDLE_VALUE_IND           = 0x1D,       /**< Handle Value Indication */
-    GATT_HANDLE_VALUE_CONF          = 0x1E,       /**< Handle Value Confirmation */
-    GATT_REQ_READ_MULTI_VAR_LENGTH  = 0x20,       /**< Read Multiple Variable Length Request */
-    GATT_RSP_READ_MULTI_VAR_LENGTH  = 0x21,       /**< Read Multiple Variable Length Response */
-    GATT_HANDLE_VALUE_MULTI_NOTIF   = 0x23,       /**< Handle Value Multiple Notifications */
+#define    GATT_RSP_ERROR                  0x01U       /**< Error Response */
+#define    GATT_REQ_MTU                    0x02U       /**< Exchange MTU Request */
+#define    GATT_RSP_MTU                    0x03U       /**< Exchange MTU Response */
+#define    GATT_REQ_FIND_INFO              0x04U       /**< Find Information Request */
+#define    GATT_RSP_FIND_INFO              0x05U       /**< Find Information Response */
+#define    GATT_REQ_FIND_TYPE_VALUE        0x06U       /**< Find By Type Value Request */
+#define    GATT_RSP_FIND_TYPE_VALUE        0x07U       /**< Find By Type Value Response */
+#define    GATT_REQ_READ_BY_TYPE           0x08U       /**< Read By Type Request */
+#define    GATT_RSP_READ_BY_TYPE           0x09U       /**< Read By Type Response */
+#define    GATT_REQ_READ                   0x0AU       /**< Read Request */
+#define    GATT_RSP_READ                   0x0BU       /**< Read Response */
+#define    GATT_REQ_READ_BLOB              0x0CU       /**< Read Blob Request */
+#define    GATT_RSP_READ_BLOB              0x0DU       /**< Read Blob Response */
+#define    GATT_REQ_READ_MULTI             0x0EU       /**< Read Multiple Request */
+#define    GATT_RSP_READ_MULTI             0x0FU       /**< Read Multiple Response */
+#define    GATT_REQ_READ_BY_GRP_TYPE       0x10U       /**< Read By Group Type Request */
+#define    GATT_RSP_READ_BY_GRP_TYPE       0x11U       /**< Read By Group Type Response */
+#define    GATT_REQ_WRITE                  0x12U       /**< Write Request */
+#define    GATT_RSP_WRITE                  0x13U       /**< Write Response */
+#define    GATT_REQ_PREPARE_WRITE          0x16U       /**< Prepare Write Request */
+#define    GATT_RSP_PREPARE_WRITE          0x17U       /**< Prepare Write Response */
+#define    GATT_REQ_EXECUTE_WRITE          0x18U       /**< Execute Write Request */
+#define    GATT_RSP_EXECUTE_WRITE          0x19U       /**< Execute Write Response */
+#define    GATT_HANDLE_VALUE_NOTIF         0x1BU       /**< Handle Value Notification */
+#define    GATT_HANDLE_VALUE_IND           0x1DU       /**< Handle Value Indication */
+#define    GATT_HANDLE_VALUE_CONF          0x1EU       /**< Handle Value Confirmation */
+#define    GATT_REQ_READ_MULTI_VAR_LENGTH  0x20U       /**< Read Multiple Variable Length Request */
+#define    GATT_RSP_READ_MULTI_VAR_LENGTH  0x21U       /**< Read Multiple Variable Length Response */
+#define    GATT_HANDLE_VALUE_MULTI_NOTIF   0x23U       /**< Handle Value Multiple Notifications */
 
-    GATT_CMD_WRITE                  = 0x52,       /**< Write Command */
-    GATT_CMD_SIGNED_WRITE           = 0xD2,       /**< changed in V4.0 1101-0010 (signed write)  see write cmd above*/
-};
+#define    GATT_CMD_WRITE                  0x52U       /**< Write Command */
+#define    GATT_CMD_SIGNED_WRITE           0xD2U       /**< changed in V4.0 1101-0010 (signed write)  see write cmd above */
 
 typedef uint8_t wiced_bt_gatt_opcode_t;           /**< GATT Opcodes */
 
 /**  GATT Disconnection reason */
-enum wiced_bt_gatt_disconn_reason_e {
-    GATT_CONN_UNKNOWN                       = 0,                                    /**< Unknown reason */
-    GATT_CONN_L2C_FAILURE                   = 1,                                    /**< General L2cap failure  */
-    GATT_CONN_TIMEOUT                       = HCI_ERR_CONNECTION_TOUT,              /**< Connection timeout  */
-    GATT_CONN_TERMINATE_PEER_USER           = HCI_ERR_PEER_USER,                    /**< Connection terminated by peer user  */
-    GATT_CONN_TERMINATE_LOCAL_HOST          = HCI_ERR_CONN_CAUSE_LOCAL_HOST,        /**< Connection terminated by local host  */
-    GATT_CONN_FAIL_ESTABLISH                = HCI_ERR_CONN_FAILED_ESTABLISHMENT,    /**< Connection fail to establish  */
-    GATT_CONN_LMP_TIMEOUT                   = HCI_ERR_LMP_RESPONSE_TIMEOUT,         /**< Connection fail due to LMP response tout */
-    GATT_CONN_CANCEL                        = L2CAP_CONN_CANCEL                     /**< L2CAP connection cancelled  */
-};
+#define GATT_CONN_UNKNOWN                       0U                                   /**< Unknown reason */
+#define GATT_CONN_L2C_FAILURE                   1U                                   /**< General L2cap failure  */
+#define GATT_CONN_TIMEOUT                       HCI_ERR_CONNECTION_TOUT              /**< Connection timeout  */
+#define GATT_CONN_TERMINATE_PEER_USER           HCI_ERR_PEER_USER                    /**< Connection terminated by peer user  */
+#define GATT_CONN_TERMINATE_LOCAL_HOST          HCI_ERR_CONN_CAUSE_LOCAL_HOST        /**< Connection terminated by local host  */
+#define GATT_CONN_FAIL_ESTABLISH                HCI_ERR_CONN_FAILED_ESTABLISHMENT    /**< Connection fail to establish  */
+#define GATT_CONN_LMP_TIMEOUT                   HCI_ERR_LMP_RESPONSE_TIMEOUT         /**< Connection fail due to LMP response tout */
+#define GATT_CONN_CANCEL                        L2CAP_CONN_CANCEL                    /**< L2CAP connection cancelled  */
 typedef uint16_t wiced_bt_gatt_disconn_reason_t;    /**< GATT disconnection reason (see #wiced_bt_gatt_disconn_reason_e) */
 
 /** characteristic descriptor: client configuration value */
-enum wiced_bt_gatt_client_char_config_e
-{
-    GATT_CLIENT_CONFIG_NONE          = 0x0000,      /**< Does not allow both notifications and indications */
-    GATT_CLIENT_CONFIG_NOTIFICATION  = 0x0001,      /**< Allows notifications  */
-    GATT_CLIENT_CONFIG_INDICATION    = 0x0002       /**< Allows indications  */
-};
-typedef uint16_t wiced_bt_gatt_client_char_config_t;     /**< GATT client config (see #wiced_bt_gatt_client_char_config_e) */
+#define GATT_CLIENT_CONFIG_NONE          0x0000U      /**< Does not allow both notifications and indications */
+#define GATT_CLIENT_CONFIG_NOTIFICATION  0x0001U      /**< Allows notifications  */
+#define GATT_CLIENT_CONFIG_INDICATION    0x0002U      /**< Allows indications  */
+typedef uint16_t wiced_bt_gatt_client_char_config_t;  /**< GATT client config (see #wiced_bt_gatt_client_char_config_e) */
 
 /** characteristic descriptor: server configuration value */
-enum wiced_bt_gatt_server_char_config_e
-{
-    GATT_SERVER_CONFIG_NONE = 0x0000,     /**< No broadcast   */
-    GATT_SERVER_CONFIG_BROADCAST = 0x0001 /**< Broadcast      */
-};
+#define GATT_SERVER_CONFIG_NONE          0x0000U     /**< No broadcast */
+#define GATT_SERVER_CONFIG_BROADCAST     0x0001U     /**< Broadcast */
 typedef uint16_t wiced_bt_gatt_server_char_config_t; /**< GATT server config (see #wiced_bt_gatt_server_char_config_e) */
 
 /**  GATT Characteristic Properties Mask */
-enum wiced_bt_gatt_char_properties_e {
-    GATT_CHAR_PROPERTIES_BIT_BROADCAST      = (1 << 0),     /**< bit 0: Broadcast */
-    GATT_CHAR_PROPERTIES_BIT_READ           = (1 << 1),     /**< bit 1: Read */
-    GATT_CHAR_PROPERTIES_BIT_WRITE_NR       = (1 << 2),     /**< bit 2: Write (No Response) */
-    GATT_CHAR_PROPERTIES_BIT_WRITE          = (1 << 3),     /**< bit 3: Write */
-    GATT_CHAR_PROPERTIES_BIT_NOTIFY         = (1 << 4),     /**< bit 4: Notify */
-    GATT_CHAR_PROPERTIES_BIT_INDICATE       = (1 << 5),     /**< bit 5: Indicate */
-    GATT_CHAR_PROPERTIES_BIT_AUTH           = (1 << 6),     /**< bit 6: Authenticate */
-    GATT_CHAR_PROPERTIES_BIT_EXT_PROP       = (1 << 7)      /**< bit 7: Extended Properties */
-};
-typedef uint8_t wiced_bt_gatt_char_properties_t;            /**< GATT characteristic properties mask (see #wiced_bt_gatt_char_properties_e) */
+#define GATT_CHAR_PROPERTIES_BIT_BROADCAST      (1U)     /**< bit 0: Broadcast */
+#define GATT_CHAR_PROPERTIES_BIT_READ           (2U)     /**< bit 1: Read */
+#define GATT_CHAR_PROPERTIES_BIT_WRITE_NR       (4U)     /**< bit 2: Write (No Response) */
+#define GATT_CHAR_PROPERTIES_BIT_WRITE          (8U)     /**< bit 3: Write */
+#define GATT_CHAR_PROPERTIES_BIT_NOTIFY         (16U)    /**< bit 4: Notify */
+#define GATT_CHAR_PROPERTIES_BIT_INDICATE       (32U)    /**< bit 5: Indicate */
+#define GATT_CHAR_PROPERTIES_BIT_AUTH           (128U)   /**< bit 6: Authenticate */
+#define GATT_CHAR_PROPERTIES_BIT_EXT_PROP       (256U)   /**< bit 7: Extended Properties */
+typedef uint8_t wiced_bt_gatt_char_properties_t;         /**< GATT characteristic properties mask (see #wiced_bt_gatt_char_properties_e) */
 
 /** Authentication requirement */
-enum wiced_bt_gatt_auth_req_e {
-    GATT_AUTH_REQ_NONE                  = 0,    /**< No Authentication Required */
-    GATT_AUTH_REQ_NO_MITM               = 1,    /**< Unauthenticated encryption (No MITM) */
-    GATT_AUTH_REQ_MITM                  = 2,    /**< Authenticated encryption (MITM) */
-    GATT_AUTH_REQ_SIGNED_NO_MITM        = 3,    /**< Signed Data (No MITM) */
-    GATT_AUTH_REQ_SIGNED_MITM           = 4     /**< Signed Data (MITM) */
-};
+#define    GATT_AUTH_REQ_NONE                  0U    /**< No Authentication Required */
+#define    GATT_AUTH_REQ_NO_MITM               1U    /**< Unauthenticated encryption (No MITM) */
+#define    GATT_AUTH_REQ_MITM                  2U    /**< Authenticated encryption (MITM) */
+#define    GATT_AUTH_REQ_SIGNED_NO_MITM        3U    /**< Signed Data (No MITM) */
+#define    GATT_AUTH_REQ_SIGNED_MITM           4U    /**< Signed Data (MITM) */
+
 typedef uint8_t wiced_bt_gatt_auth_req_t;   /**< GATT authentication requirement (see #wiced_bt_gatt_auth_req_e)*/
 
 
 /** GATT Write Execute request flags */
-enum wiced_bt_gatt_exec_flag_e {
-    GATT_PREPARE_WRITE_CANCEL      = 0x00,         /**< GATT_PREP_WRITE_CANCEL */
-    GATT_PREPARE_WRITE_EXEC        = 0x01          /**< GATT_PREP_WRITE_EXEC */
-};
+#define GATT_PREPARE_WRITE_CANCEL      0x00U         /**< GATT_PREP_WRITE_CANCEL */
+#define GATT_PREPARE_WRITE_EXEC        0x01U         /**< GATT_PREP_WRITE_EXEC */
 
 #define GATT_PREP_WRITE_CANCEL GATT_PREPARE_WRITE_CANCEL  /**< See #GATT_PREPARE_WRITE_CANCEL */
 #define GATT_PREP_WRITE_EXEC   GATT_PREPARE_WRITE_EXEC    /**< See #GATT_PREPARE_WRITE_EXEC */
@@ -338,15 +317,13 @@ typedef union
 } wiced_bt_gatt_request_params_t;
 
 /** Discovery types */
-enum wiced_bt_gatt_discovery_type_e
-{
-    GATT_DISCOVER_SERVICES_ALL = 1,             /**< discover all services */
-    GATT_DISCOVER_SERVICES_BY_UUID,             /**< discover service by UUID */
-    GATT_DISCOVER_INCLUDED_SERVICES,            /**< discover an included service within a service */
-    GATT_DISCOVER_CHARACTERISTICS,              /**< discover characteristics of a service with/without type requirement */
-    GATT_DISCOVER_CHARACTERISTIC_DESCRIPTORS,   /**< discover characteristic descriptors of a character */
-    GATT_DISCOVER_MAX                           /**< maximum discovery types */
-};
+#define GATT_DISCOVER_SERVICES_ALL               1U       /**< discover all services */
+#define GATT_DISCOVER_SERVICES_BY_UUID           2U       /**< discover service by UUID */
+#define GATT_DISCOVER_INCLUDED_SERVICES          3U       /**< discover an included service within a service */
+#define GATT_DISCOVER_CHARACTERISTICS            4U       /**< discover characteristics of a service with/without type requirement */
+#define GATT_DISCOVER_CHARACTERISTIC_DESCRIPTORS 5U       /**< discover characteristic descriptors of a character */
+#define GATT_DISCOVER_MAX                        6U       /**< maximum discovery types */
+
 typedef uint8_t wiced_bt_gatt_discovery_type_t;    /**< GATT Discovery type (see #wiced_bt_gatt_discovery_type_e) */
 
 /** Parameters used in a GATT Discovery */
@@ -385,32 +362,26 @@ typedef union
 
 /** GATT client operation type, used in client callback function
 */
-enum wiced_bt_gatt_optype_e
-{
-    GATTC_OPTYPE_NONE  = 0,               /**< None      */
-    GATTC_OPTYPE_DISCOVERY,               /**< Discovery */
-    GATTC_OPTYPE_READ_HANDLE,             /**< Read handle or Read blob */
-    GATTC_OPTYPE_READ_BY_TYPE,            /**< Read by type operation   */
-    GATTC_OPTYPE_READ_MULTIPLE,           /**< Read multiple, or read multiple var length */
-    GATTC_OPTYPE_WRITE_WITH_RSP,          /**< Write with response */
-    GATTC_OPTYPE_WRITE_NO_RSP,            /**< Write no response   */
-    GATTC_OPTYPE_PREPARE_WRITE,           /**< Prepare Write */
-    GATTC_OPTYPE_EXECUTE_WRITE,           /**< Execute Write */
-    GATTC_OPTYPE_CONFIG_MTU,              /**< Configure MTU */
-    GATTC_OPTYPE_NOTIFICATION,            /**< Notification */
-    GATTC_OPTYPE_INDICATION,              /**< Indication */
-};
+#define GATTC_OPTYPE_NONE           0U    /**< None      */
+#define GATTC_OPTYPE_DISCOVERY      1U    /**< Discovery */
+#define GATTC_OPTYPE_READ_HANDLE    2U    /**< Read handle or Read blob */
+#define GATTC_OPTYPE_READ_BY_TYPE   3U    /**< Read by type operation   */
+#define GATTC_OPTYPE_READ_MULTIPLE  4U    /**< Read multiple, or read multiple var length */
+#define GATTC_OPTYPE_WRITE_WITH_RSP 5U    /**< Write with response */
+#define GATTC_OPTYPE_WRITE_NO_RSP   6U    /**< Write no response   */
+#define GATTC_OPTYPE_PREPARE_WRITE  7U    /**< Prepare Write */
+#define GATTC_OPTYPE_EXECUTE_WRITE  8U    /**< Execute Write */
+#define GATTC_OPTYPE_CONFIG_MTU     9U    /**< Configure MTU */
+#define GATTC_OPTYPE_NOTIFICATION   10U   /**< Notification */
+#define GATTC_OPTYPE_INDICATION     11U   /**< Indication */
 
 /** GATT Client Operation Codes */
 typedef uint8_t wiced_bt_gatt_optype_t; /**< GATT client operation type (see #wiced_bt_gatt_optype_e) */
 
 /** GATT caching status of the peer(client) */
-enum wiced_bt_gatt_caching_status_e
-{
-    GATT_PEER_CLIENT_CACHE_CHANGE_AWARE   = 0,     /**< Peer client is cache aware   */
-    GATT_PEER_CLIENT_CACHE_CHANGE_UNAWARE = 1,     /**< Peer client is cache unaware */
-    GATT_PEER_CLIENT_CACHE_READY_TO_BE_AWARE = 2   /**< Peer client is reading the database hash */
-};
+#define GATT_PEER_CLIENT_CACHE_CHANGE_AWARE      0U  /**< Peer client is cache aware   */
+#define GATT_PEER_CLIENT_CACHE_CHANGE_UNAWARE    1U  /**< Peer client is cache unaware */
+#define GATT_PEER_CLIENT_CACHE_READY_TO_BE_AWARE 2U  /**< Peer client is reading the database hash */
 
 typedef uint8_t wiced_bt_gatt_caching_status_t; /**< GATT peer caching status (see #wiced_bt_gatt_caching_status_e) */
 
@@ -667,50 +638,46 @@ typedef uint8_t wiced_bt_gatt_permission_t;
 
 /**
 * Format of the value of a characteristic.
-* Enumeration types for the \sa UUID_DESCRIPTOR_CHARACTERISTIC_PRESENTATION_FORMAT descriptor
+* Definitions for the \sa UUID_DESCRIPTOR_CHARACTERISTIC_PRESENTATION_FORMAT descriptor
 */
-enum wiced_bt_gatt_format_e
-{
-    GATT_CHAR_PRESENTATION_FORMAT_RES,            /* rfu */
-    GATT_CHAR_PRESENTATION_FORMAT_BOOL,           /* 0x01 BOOL32 */
-    GATT_CHAR_PRESENTATION_FORMAT_2BITS,          /* 0x02 2 bit */
-    GATT_CHAR_PRESENTATION_FORMAT_NIBBLE,         /* 0x03 nibble */
-    GATT_CHAR_PRESENTATION_FORMAT_UINT8,          /* 0x04 uint8 */
-    GATT_CHAR_PRESENTATION_FORMAT_UINT12,         /* 0x05 uint12 */
-    GATT_CHAR_PRESENTATION_FORMAT_UINT16,         /* 0x06 uint16 */
-    GATT_CHAR_PRESENTATION_FORMAT_UINT24,         /* 0x07 uint24 */
-    GATT_CHAR_PRESENTATION_FORMAT_UINT32,         /* 0x08 uint32 */
-    GATT_CHAR_PRESENTATION_FORMAT_UINT48,         /* 0x09 uint48 */
-    GATT_CHAR_PRESENTATION_FORMAT_UINT64,         /* 0x0a uint64 */
-    GATT_CHAR_PRESENTATION_FORMAT_UINT128,        /* 0x0B uint128 */
-    GATT_CHAR_PRESENTATION_FORMAT_SINT8,          /* 0x0C signed 8 bit integer */
-    GATT_CHAR_PRESENTATION_FORMAT_SINT12,         /* 0x0D signed 12 bit integer */
-    GATT_CHAR_PRESENTATION_FORMAT_SINT16,         /* 0x0E signed 16 bit integer */
-    GATT_CHAR_PRESENTATION_FORMAT_SINT24,         /* 0x0F signed 24 bit integer */
-    GATT_CHAR_PRESENTATION_FORMAT_SINT32,         /* 0x10 signed 32 bit integer */
-    GATT_CHAR_PRESENTATION_FORMAT_SINT48,         /* 0x11 signed 48 bit integer */
-    GATT_CHAR_PRESENTATION_FORMAT_SINT64,         /* 0x12 signed 64 bit integer */
-    GATT_CHAR_PRESENTATION_FORMAT_SINT128,        /* 0x13 signed 128 bit integer */
-    GATT_CHAR_PRESENTATION_FORMAT_FLOAT32,        /* 0x14 float 32 */
-    GATT_CHAR_PRESENTATION_FORMAT_FLOAT64,        /* 0x15 float 64*/
-    GATT_CHAR_PRESENTATION_FORMAT_SFLOAT,         /* 0x16 IEEE-11073 16 bit SFLOAT */
-    GATT_CHAR_PRESENTATION_FORMAT_FLOAT,          /* 0x17 IEEE-11073 32 bit SFLOAT */
-    GATT_CHAR_PRESENTATION_FORMAT_DUINT16,        /* 0x18 IEEE-20601 format */
-    GATT_CHAR_PRESENTATION_FORMAT_UTF8S,          /* 0x19 UTF-8 string */
-    GATT_CHAR_PRESENTATION_FORMAT_UTF16S,         /* 0x1a UTF-16 string */
-    GATT_CHAR_PRESENTATION_FORMAT_STRUCT,         /* 0x1b Opaque structure*/
-    GATT_CHAR_PRESENTATION_FORMAT_MAX             /* 0x1c or above reserved */
-};
+#define GATT_CHAR_PRESENTATION_FORMAT_RES     0U   /* rfu */
+#define GATT_CHAR_PRESENTATION_FORMAT_BOOL    1U   /* 0x01 BOOL32 */
+#define GATT_CHAR_PRESENTATION_FORMAT_2BITS   2U   /* 0x02 2 bit */
+#define GATT_CHAR_PRESENTATION_FORMAT_NIBBLE  3U   /* 0x03 nibble */
+#define GATT_CHAR_PRESENTATION_FORMAT_UINT8   4U   /* 0x04 uint8 */
+#define GATT_CHAR_PRESENTATION_FORMAT_UINT12  5U   /* 0x05 uint12 */
+#define GATT_CHAR_PRESENTATION_FORMAT_UINT16  6U   /* 0x06 uint16 */
+#define GATT_CHAR_PRESENTATION_FORMAT_UINT24  7U   /* 0x07 uint24 */
+#define GATT_CHAR_PRESENTATION_FORMAT_UINT32  8U   /* 0x08 uint32 */
+#define GATT_CHAR_PRESENTATION_FORMAT_UINT48  9U   /* 0x09 uint48 */
+#define GATT_CHAR_PRESENTATION_FORMAT_UINT64  10U  /* 0x0a uint64 */
+#define GATT_CHAR_PRESENTATION_FORMAT_UINT128 11U  /* 0x0B uint128 */
+#define GATT_CHAR_PRESENTATION_FORMAT_SINT8   12U  /* 0x0C signed 8 bit integer */
+#define GATT_CHAR_PRESENTATION_FORMAT_SINT12  13U  /* 0x0D signed 12 bit integer */
+#define GATT_CHAR_PRESENTATION_FORMAT_SINT16  14U  /* 0x0E signed 16 bit integer */
+#define GATT_CHAR_PRESENTATION_FORMAT_SINT24  15U  /* 0x0F signed 24 bit integer */
+#define GATT_CHAR_PRESENTATION_FORMAT_SINT32  16U  /* 0x10 signed 32 bit integer */
+#define GATT_CHAR_PRESENTATION_FORMAT_SINT48  17U  /* 0x11 signed 48 bit integer */
+#define GATT_CHAR_PRESENTATION_FORMAT_SINT64  18U  /* 0x12 signed 64 bit integer */
+#define GATT_CHAR_PRESENTATION_FORMAT_SINT128 19U  /* 0x13 signed 128 bit integer */
+#define GATT_CHAR_PRESENTATION_FORMAT_FLOAT32 20U  /* 0x14 float 32 */
+#define GATT_CHAR_PRESENTATION_FORMAT_FLOAT64 21U  /* 0x15 float 64*/
+#define GATT_CHAR_PRESENTATION_FORMAT_SFLOAT  22U  /* 0x16 IEEE-11073 16 bit SFLOAT */
+#define GATT_CHAR_PRESENTATION_FORMAT_FLOAT   23U  /* 0x17 IEEE-11073 32 bit SFLOAT */
+#define GATT_CHAR_PRESENTATION_FORMAT_DUINT16 24U  /* 0x18 IEEE-20601 format */
+#define GATT_CHAR_PRESENTATION_FORMAT_UTF8S   25U  /* 0x19 UTF-8 string */
+#define GATT_CHAR_PRESENTATION_FORMAT_UTF16S  26U  /* 0x1a UTF-16 string */
+#define GATT_CHAR_PRESENTATION_FORMAT_STRUCT  27U  /* 0x1b Opaque structure*/
+#define GATT_CHAR_PRESENTATION_FORMAT_MAX     28U  /* 0x1c or above reserved */
+
 typedef uint8_t wiced_bt_gatt_format_t;/**< characteristic format specifiers (see #wiced_bt_gatt_format_e) */
 
 /**
- * .Enumeration of known Client Supported Feature Bit assignments of the \ref wiced_bt_gatt_client_supported_features_t
+ * Known Client Supported Feature Bit assignments of the \ref wiced_bt_gatt_client_supported_features_t
  */
-enum t_gatt_csf_assignments {
-    GATT_CSF_ROBUST_CACHING = 0, /**< Client supports Robust Caching */
-    GATT_CSF_EATT = 1,           /**< Client supports Enhanaced ATT bearers */
-    GATT_CSF_MULTIPLE_HANDLE_VALUE_NOTIFICATIONS = 2 /**< Client supports receiving multiple handle value notifications */
-};
+#define GATT_CSF_ROBUST_CACHING                      0U /**< Client supports Robust Caching */
+#define GATT_CSF_EATT                                1U /**< Client supports Enhanaced ATT bearers */
+#define GATT_CSF_MULTIPLE_HANDLE_VALUE_NOTIFICATIONS 2U /**< Client supports receiving multiple handle value notifications */
 
 /** macro to determine GATT Client Support features */
 #define GATT_IS_CSF_FEATURE_SUPPORTED(csf, m) (csf[(m)/8] & (1 << (m)%8))
@@ -1914,7 +1881,7 @@ wiced_bt_gatt_status_t wiced_bt_gatt_server_check_attribute_permission(uint16_t 
  * \return length of data filled, 0 on error.
  */
 
-int wiced_bt_gatt_put_read_by_type_rsp_in_stream(uint8_t *p_stream, int stream_len,
+int wiced_bt_gatt_put_read_by_type_rsp_in_stream(uint8_t *p_stream, int32_t stream_len,
     uint8_t *p_pair_len, uint16_t attr_handle, uint16_t attr_len, const uint8_t *p_attr);
 
 
@@ -2062,4 +2029,4 @@ uint16_t wiced_bt_gatt_get_outstanding_msg_count(uint16_t conn_id, wiced_bt_gatt
 }
 #endif
 
-#endif //__WICED_BT_GATT_H__
+#endif /* WICED_BT_GATT_H */

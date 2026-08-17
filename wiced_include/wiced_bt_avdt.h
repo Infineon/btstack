@@ -37,8 +37,8 @@
  * Programming Interface
  *
  */
-#ifndef __WICED_BT_AVDT_H__
-#define __WICED_BT_AVDT_H__
+#ifndef WICED_BT_AVDT_H
+#define WICED_BT_AVDT_H
 
 
 #include "wiced_result.h"
@@ -1104,4 +1104,4 @@ uint16_t wiced_bt_avdt_send_report(uint8_t handle, AVDT_REPORT_TYPE type,
  */
  /* @endcond*/
 
-#endif //__WICED_BT_AVDT_H__
+#endif /* WICED_BT_AVDT_H */

@@ -43,8 +43,8 @@
  * @{
  */
 
-#ifndef __WICED_BT_STACK_PLATFORM_H__
-#define __WICED_BT_STACK_PLATFORM_H__
+#ifndef WICED_BT_STACK_PLATFORM_H
+#define WICED_BT_STACK_PLATFORM_H
 
 
 #include <stdarg.h>
@@ -320,7 +320,7 @@ typedef struct
 	 *
 	 * @return : pointer to aes_context
 	 */
-	aes_context* (*pf_smp_aes_get_context)();
+	aes_context* (*pf_smp_aes_get_context)(void);
 
 	/**
 	 * Callback function to set key for encryption
@@ -703,4 +703,4 @@ void wiced_ble_smp_control_conn_parameter_update(wiced_ble_smp_update_control_t 
 
 /**@} wiced_bt_platform_group */
 
-#endif //__WICED_BT_STACK_PLATFORM_H__
+#endif /* WICED_BT_STACK_PLATFORM_H */

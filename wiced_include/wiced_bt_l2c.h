@@ -35,8 +35,8 @@
  * Bluetooth L2CAP Application Programming Interface
  */
 
-#ifndef __WICED_BT_L2C_H__
-#define __WICED_BT_L2C_H__
+#ifndef WICED_BT_L2C_H
+#define WICED_BT_L2C_H
 
 #include "l2cdefs.h"
 #include "hcidefs.h"
@@ -1336,4 +1336,4 @@ wiced_result_t wiced_bt_l2cap_subrate_request(wiced_bt_ble_conn_subrate_t *p_sub
 }
 #endif
 
-#endif //__WICED_BT_L2C_H__
+#endif /* WICED_BT_L2C_H */

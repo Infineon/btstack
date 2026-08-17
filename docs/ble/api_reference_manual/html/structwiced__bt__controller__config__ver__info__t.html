@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bluetooth Host Stack Library: wiced_bt_dev_remote_oob_t Struct Reference</title>
+<title>Bluetooth Host Stack Library: wiced_bt_controller_config_ver_info_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structwiced__bt__dev__remote__oob__t.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structwiced__bt__controller__config__ver__info__t.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,22 +85,32 @@ $(document).ready(function(){initNavTree('structwiced__bt__dev__remote__oob__t.h
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">wiced_bt_dev_remote_oob_t Struct Reference</div>  </div>
+<div class="title">wiced_bt_controller_config_ver_info_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>Data for <a class="el" href="group__wicedbt___device_management.html#gga548989f336f39f5a242c27e7b3b7cca5acf3aca6c8fd4e53a7659df498546a103" title="Event requests OOB data of the remote device from app Event data: wiced_bt_management_evt_data_t::rem...">BTM_REMOTE_OOB_DATA_REQUEST_EVT</a>. </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a4ce9ec19c227ade2f1e241ecfb1a204f"><td class="memItemLeft" align="right" valign="top"><a id="a4ce9ec19c227ade2f1e241ecfb1a204f"></a>
-<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__dev__remote__oob__t.html#a4ce9ec19c227ade2f1e241ecfb1a204f">bd_addr</a></td></tr>
-<tr class="memdesc:a4ce9ec19c227ade2f1e241ecfb1a204f"><td class="mdescLeft">&#160;</td><td class="mdescRight">BD Address of remote. <br /></td></tr>
-<tr class="separator:a4ce9ec19c227ade2f1e241ecfb1a204f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bb9c2b95c932fa85c2380f3474a5cc1"><td class="memItemLeft" align="right" valign="top"><a id="a0bb9c2b95c932fa85c2380f3474a5cc1"></a>
-wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__dev__remote__oob__t.html#a0bb9c2b95c932fa85c2380f3474a5cc1">extended_oob_data</a></td></tr>
-<tr class="memdesc:a0bb9c2b95c932fa85c2380f3474a5cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRUE if requesting extended OOB (P-256) <br /></td></tr>
-<tr class="separator:a0bb9c2b95c932fa85c2380f3474a5cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad304e3a4a95295b1cfede1a47db3e6c8"><td class="memItemLeft" align="right" valign="top"><a id="ad304e3a4a95295b1cfede1a47db3e6c8"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__controller__config__ver__info__t.html#ad304e3a4a95295b1cfede1a47db3e6c8">status</a></td></tr>
+<tr class="memdesc:ad304e3a4a95295b1cfede1a47db3e6c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">event status <br /></td></tr>
+<tr class="separator:ad304e3a4a95295b1cfede1a47db3e6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d158aa06a35ebffec8c74de03b0f452"><td class="memItemLeft" align="right" valign="top"><a id="a2d158aa06a35ebffec8c74de03b0f452"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__controller__config__ver__info__t.html#a2d158aa06a35ebffec8c74de03b0f452">chip_id</a></td></tr>
+<tr class="memdesc:a2d158aa06a35ebffec8c74de03b0f452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controller chip id. <br /></td></tr>
+<tr class="separator:a2d158aa06a35ebffec8c74de03b0f452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5203e7df1cd0641358b335ba0c2638d6"><td class="memItemLeft" align="right" valign="top"><a id="a5203e7df1cd0641358b335ba0c2638d6"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__controller__config__ver__info__t.html#a5203e7df1cd0641358b335ba0c2638d6">target_id</a></td></tr>
+<tr class="memdesc:a5203e7df1cd0641358b335ba0c2638d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controller target id. <br /></td></tr>
+<tr class="separator:a5203e7df1cd0641358b335ba0c2638d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8bcfb831ec5a4d86a8780bb76b1059"><td class="memItemLeft" align="right" valign="top"><a id="a6c8bcfb831ec5a4d86a8780bb76b1059"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__controller__config__ver__info__t.html#a6c8bcfb831ec5a4d86a8780bb76b1059">baseline</a></td></tr>
+<tr class="memdesc:a6c8bcfb831ec5a4d86a8780bb76b1059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controller baseline version/ FW patch version. <br /></td></tr>
+<tr class="separator:a6c8bcfb831ec5a4d86a8780bb76b1059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5ee9e8361d70312035dd93c9412080"><td class="memItemLeft" align="right" valign="top"><a id="a3c5ee9e8361d70312035dd93c9412080"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwiced__bt__controller__config__ver__info__t.html#a3c5ee9e8361d70312035dd93c9412080">build_number</a></td></tr>
+<tr class="memdesc:a3c5ee9e8361d70312035dd93c9412080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controller build number. <br /></td></tr>
+<tr class="separator:a3c5ee9e8361d70312035dd93c9412080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

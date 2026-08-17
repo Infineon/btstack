@@ -40,8 +40,8 @@
  * When a heap or a pool is created, this utility allocates required chunk of memory from the system and manages it for the creator.
  */
 
-#ifndef __WICED_MEMORY_H__
-#define __WICED_MEMORY_H__
+#ifndef WICED_MEMORY_H
+#define WICED_MEMORY_H
 
 
 #include "wiced_data_types.h"
@@ -421,4 +421,4 @@ const char* wiced_get_exception_message(uint16_t code);
 #endif
 /** @} */
 
-#endif //__WICED_MEMORY_H__
+#endif /* WICED_MEMORY_H */

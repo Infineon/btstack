@@ -121,6 +121,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4ab6381d133e991f9e7472c54e0be605"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_bt_dev_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__utility.html#ga4ab6381d133e991f9e7472c54e0be605">wiced_bt_dev_link_quality_stats</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bda, <a class="el" href="group__bt__types.html#gae0d25ec063a889c537f3a77010cf5ef0">wiced_bt_transport_t</a> transport, uint8_t action, <a class="el" href="group__wicedbt__dev__utils.html#ga2ebace7053dc297ea21b0e97cd0b1ce3">wiced_bt_dev_cmpl_cback_t</a> *p_cback)</td></tr>
 <tr class="memdesc:ga4ab6381d133e991f9e7472c54e0be605"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is called to get the statistics for an ACL link.  <a href="group__wicedbt__utility.html#ga4ab6381d133e991f9e7472c54e0be605">More...</a><br /></td></tr>
 <tr class="separator:ga4ab6381d133e991f9e7472c54e0be605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc304a2a8a58607e42722ce951b7526b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__utility.html#gacc304a2a8a58607e42722ce951b7526b">wiced_bt_dev_read_controller_config_ver_info</a> (<a class="el" href="group__wicedbt__dev__utils.html#ga2ebace7053dc297ea21b0e97cd0b1ce3">wiced_bt_dev_cmpl_cback_t</a> *p_cback)</td></tr>
+<tr class="memdesc:gacc304a2a8a58607e42722ce951b7526b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is called to read the controller's config version information, which includes Baseline / FW patch version.  <a href="group__wicedbt__utility.html#gacc304a2a8a58607e42722ce951b7526b">More...</a><br /></td></tr>
+<tr class="separator:gacc304a2a8a58607e42722ce951b7526b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga64dfd240a1692bda95b165debe50e75a"><td class="memItemLeft" align="right" valign="top">wiced_bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wicedbt__utility.html#ga64dfd240a1692bda95b165debe50e75a">wiced_bt_dev_bdaddr_is_local</a> (<a class="el" href="group__bt__types.html#gacf9a377aceca799be625c0dfe554902e">wiced_bt_device_address_t</a> bd_addr)</td></tr>
 <tr class="memdesc:ga64dfd240a1692bda95b165debe50e75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify if the given bd_addr matches with the local bd_addr.  <a href="group__wicedbt__utility.html#ga64dfd240a1692bda95b165debe50e75a">More...</a><br /></td></tr>
 <tr class="separator:ga64dfd240a1692bda95b165debe50e75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -474,6 +477,37 @@ WICED_BT_SUCCESS : if local bdaddr is set successfully <br  />
 <b> WICED_BT_NO_RESORCES </b> : If no memory/buffers available to sent down to controller <br  />
 <b> WICED_BT_UNKNOWN_ADDR </b> : If given BD_ADDRESS is invalid <br  />
  </p><dl class="section note"><dt>Note</dt><dd>Callback function argument is a pointer of type <a class="el" href="structwiced__bt__lq__stats__result__t.html" title="LQ Quality Result (in response to wiced_bt_dev_lq_stats)">wiced_bt_lq_stats_result_t</a> </dd></dl>
+
+</div>
+</div>
+<a id="gacc304a2a8a58607e42722ce951b7526b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc304a2a8a58607e42722ce951b7526b">&#9670;&nbsp;</a></span>wiced_bt_dev_read_controller_config_ver_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___result.html#gacfc32ead8a827d53416f01b19eb58310">wiced_result_t</a> wiced_bt_dev_read_controller_config_ver_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__wicedbt__dev__utils.html#ga2ebace7053dc297ea21b0e97cd0b1ce3">wiced_bt_dev_cmpl_cback_t</a> *&#160;</td>
+          <td class="paramname"><em>p_cback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is called to read the controller's config version information, which includes Baseline / FW patch version. </p>
+<p>This API internally sends a Vendor Specific Command (0xFC79) to the controller and the result is returned via callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_cback</td><td>: Result callback (<a class="el" href="group__wicedbt__dev__utils.html#ga2ebace7053dc297ea21b0e97cd0b1ce3" title="Asynchronous operation complete callback.">wiced_bt_dev_cmpl_cback_t</a> will be passed to the callback) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b> WICED_BT_PENDING </b> : If command succesfully sent down <br  />
+<b> WICED_BT_BUSY </b> : If already in progress \ <b> WICED_BT_NO_RESORCES </b> : If no memory/buffers available to sent down to controller <br  />
+ </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Callback function argument is a pointer of type <a class="el" href="structwiced__bt__controller__config__ver__info__t.html">wiced_bt_controller_config_ver_info_t</a> </dd></dl>
 
 </div>
 </div>

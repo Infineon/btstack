@@ -9,6 +9,7 @@ var group__wicedbt__utility =
     [ "wiced_bt_dev_register_vse_callback", "group__wicedbt__utility.html#ga47d967c6345178460a13cbcb9bebebd0", null ],
     [ "wiced_bt_dev_deregister_vse_callback", "group__wicedbt__utility.html#ga10e6d57bbd051aaf42815071f6631d6f", null ],
     [ "wiced_bt_dev_link_quality_stats", "group__wicedbt__utility.html#ga4ab6381d133e991f9e7472c54e0be605", null ],
+    [ "wiced_bt_dev_read_controller_config_ver_info", "group__wicedbt__utility.html#gacc304a2a8a58607e42722ce951b7526b", null ],
     [ "wiced_bt_dev_bdaddr_is_local", "group__wicedbt__utility.html#ga64dfd240a1692bda95b165debe50e75a", null ],
     [ "wiced_bt_dev_bdaddr_is_same", "group__wicedbt__utility.html#gac583c58d75ba49a87d93d597b5929d70", null ],
     [ "wiced_bt_dev_is_address_resolution_enabled", "group__wicedbt__utility.html#gabbd5bdae426ef64bcf1c95a7104cb168", null ],

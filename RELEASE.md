@@ -7,6 +7,16 @@ Following are the limitations when using host based address resolution (only app
     If the device is acting as a central it should not enable privacy since if a peripheral sends a directed connectable ADV, the controller would not be able to match the RPA and the connection will fail.
 
 ## Changelog
+## V5.0.6
+### Updates in BTSTACK5.0.6
+ - Minor fixes for MISRA in header files
+ - Fixes for LE COC robustness
+ - Added support for the Channel Sounding Enhancement feature.
+ - The following APIs are newly added
+    - wiced_ble_read_iso_link_quality to read the link quality of a CIS/BIS connection handle.
+    - wiced_bt_dev_read_controller_config_ver_info to read the Infineon controller's config version information, which includes Baseline / FW patch version.
+
+
 ## V5.0.5
 ### Updates in BTSTACK5.0.5
  - Changes to reduce start up time

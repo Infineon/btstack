@@ -36,8 +36,8 @@
  * AIROC Bluetooth Low Energy (LE) Functions
  *
  */
-#ifndef __WICED_BT_BLE_H__
-#define __WICED_BT_BLE_H__
+#ifndef WICED_BT_BLE_H
+#define WICED_BT_BLE_H
 
 #include "wiced_bt_cfg.h"
 #include "wiced_bt_dev.h"
@@ -49,4 +49,5 @@
 #include "wiced_bt_adv_scan_extended.h"
 #include "wiced_bt_isoc.h"
 #include "wiced_bt_cs.h"
-#endif
+
+#endif /* WICED_BT_BLE_H */

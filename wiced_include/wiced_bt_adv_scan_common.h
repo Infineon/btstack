@@ -36,8 +36,8 @@
  * AIROC Bluetooth Low Energy (LE) Functions for extended adv and scan
  *
  */
-#ifndef __WICED_BT_ADV_SCAN_COMMON_H__
-#define __WICED_BT_ADV_SCAN_COMMON_H__
+#ifndef WICED_BT_ADV_SCAN_COMMON_H
+#define WICED_BT_ADV_SCAN_COMMON_H
 
 #include "wiced_bt_cfg.h"
 #include "wiced_bt_dev.h"
@@ -61,19 +61,17 @@
 #endif
 
 /** Advertising filter policy */
-enum wiced_bt_ble_advert_filter_policy_e
-{
-    /**< Process scan and connection requests from all devices (i.e., the Filter Accept List is not in use) (default) */
-    BTM_BLE_ADV_POLICY_ACCEPT_CONN_AND_SCAN = 0x00,
-    /**< Process connection requests from all devices and only scan requests from devices that are in the Filter Accept List. */
-    BTM_BLE_ADV_POLICY_ACCEPT_CONN_FILTER_SCAN = 0x01,
-    /**< Process scan requests from all devices and only connection requests from devices that are in the Filter Accept List */
-    BTM_BLE_ADV_POLICY_FILTER_CONN_ACCEPT_SCAN = 0x02,
-    /**< Process scan and connection requests only from devices in the Filter Accept List. */
-    BTM_BLE_ADV_POLICY_FILTER_CONN_FILTER_SCAN = 0x03,
-    /**< Max Adv filter value */
-    BTM_BLE_ADV_POLICY_MAX
-};
+/**< Process scan and connection requests from all devices (i.e., the Filter Accept List is not in use) (default) */
+#define BTM_BLE_ADV_POLICY_ACCEPT_CONN_AND_SCAN 0x00U
+/**< Process connection requests from all devices and only scan requests from devices that are in the Filter Accept List. */
+#define BTM_BLE_ADV_POLICY_ACCEPT_CONN_FILTER_SCAN 0x01U
+/**< Process scan requests from all devices and only connection requests from devices that are in the Filter Accept List */
+#define BTM_BLE_ADV_POLICY_FILTER_CONN_ACCEPT_SCAN 0x02U
+/**< Process scan and connection requests only from devices in the Filter Accept List. */
+#define BTM_BLE_ADV_POLICY_FILTER_CONN_FILTER_SCAN 0x03U
+/**< Max Adv filter value */
+#define BTM_BLE_ADV_POLICY_MAX 0x04U
+
 /** Advertising filter policy (see wiced_bt_ble_advert_filter_policy_e) */
 typedef uint8_t wiced_bt_ble_advert_filter_policy_t;
 
@@ -132,15 +130,14 @@ typedef uint8_t wiced_bt_ble_advert_filter_policy_t;
 #define BTM_BLE_POLICY_ALLOW_ALL 0x03  /**< relevant to both */
 
 /* ADV data flag bit definition used for BTM_BLE_ADVERT_TYPE_FLAG */
-#define BTM_BLE_LIMITED_DISCOVERABLE_FLAG (0x01 << 0) /**< Limited Discoverable */
-#define BTM_BLE_GENERAL_DISCOVERABLE_FLAG (0x01 << 1) /**< General Discoverable */
-#define BTM_BLE_BREDR_NOT_SUPPORTED (0x01 << 2)       /**< BR/EDR Not Supported */
+#define BTM_BLE_LIMITED_DISCOVERABLE_FLAG                                   0x01U   /**< Limited Discoverable */
+#define BTM_BLE_GENERAL_DISCOVERABLE_FLAG                                   0x02U   /**< General Discoverable */
+#define BTM_BLE_BREDR_NOT_SUPPORTED                                         0x04U   /**< BR/EDR Not Supported */
 /* 4.1 spec adv flag for simultaneous BR/EDR+LE connection support (see) */
-#define BTM_BLE_SIMULTANEOUS_DUAL_MODE_TO_SAME_DEVICE_CONTROLLER_SUPPORTED                                             \
-    (0x01 << 3) /**< Simultaneous LE and BR/EDR to Same Device Capable (Controller). */
-#define BTM_BLE_SIMULTANEOUS_DUAL_MODE_TO_SAME_DEVICE_HOST_SUPPORTED                                                   \
-    (0x01 << 4)                                      /**< Simultaneous LE and BR/EDR to Same Device Capable (Host). */
-#define BTM_BLE_NON_LIMITED_DISCOVERABLE_FLAG (0x00) /**< Non Discoverable */
+#define BTM_BLE_SIMULTANEOUS_DUAL_MODE_TO_SAME_DEVICE_CONTROLLER_SUPPORTED  0x08U   /**< Simultaneous LE and BR/EDR to Same Device Capable (Controller). */
+#define BTM_BLE_SIMULTANEOUS_DUAL_MODE_TO_SAME_DEVICE_HOST_SUPPORTED        0x10U   /**< Simultaneous LE and BR/EDR to Same Device Capable (Host). */
+
+#define BTM_BLE_NON_LIMITED_DISCOVERABLE_FLAG 0x00U /**< Non Discoverable */
 #define BTM_BLE_ADVERT_FLAG_MASK                                                                                       \
     (BTM_BLE_LIMITED_DISCOVERABLE_FLAG | BTM_BLE_BREDR_NOT_SUPPORTED |                                                 \
      BTM_BLE_GENERAL_DISCOVERABLE_FLAG)                                       /**< LE adverisement mask */
@@ -152,50 +149,50 @@ typedef uint8_t wiced_bt_ble_advert_filter_policy_t;
  * */
 enum wiced_bt_ble_advert_type_e
 {
-    BTM_BLE_ADVERT_TYPE_FLAG = 0x01,                     /**< Advertisement flags */
-    BTM_BLE_ADVERT_TYPE_16SRV_PARTIAL = 0x02,            /**< List of supported services - 16 bit UUIDs (partial) */
-    BTM_BLE_ADVERT_TYPE_16SRV_COMPLETE = 0x03,           /**< List of supported services - 16 bit UUIDs (complete) */
-    BTM_BLE_ADVERT_TYPE_32SRV_PARTIAL = 0x04,            /**< List of supported services - 32 bit UUIDs (partial) */
-    BTM_BLE_ADVERT_TYPE_32SRV_COMPLETE = 0x05,           /**< List of supported services - 32 bit UUIDs (complete) */
-    BTM_BLE_ADVERT_TYPE_128SRV_PARTIAL = 0x06,           /**< List of supported services - 128 bit UUIDs (partial) */
-    BTM_BLE_ADVERT_TYPE_128SRV_COMPLETE = 0x07,          /**< List of supported services - 128 bit UUIDs (complete) */
-    BTM_BLE_ADVERT_TYPE_NAME_SHORT = 0x08,               /**< Short name */
-    BTM_BLE_ADVERT_TYPE_NAME_COMPLETE = 0x09,            /**< Complete name */
-    BTM_BLE_ADVERT_TYPE_TX_POWER = 0x0A,                 /**< TX Power level  */
-    BTM_BLE_ADVERT_TYPE_DEV_CLASS = 0x0D,                /**< Device Class */
-    BTM_BLE_ADVERT_TYPE_SIMPLE_PAIRING_HASH_C = 0x0E,    /**< Simple Pairing Hash C */
-    BTM_BLE_ADVERT_TYPE_SIMPLE_PAIRING_RAND_C = 0x0F,    /**< Simple Pairing Randomizer R */
-    BTM_BLE_ADVERT_TYPE_SM_TK = 0x10,                    /**< Security manager TK value */
-    BTM_BLE_ADVERT_TYPE_SM_OOB_FLAG = 0x11,              /**< Security manager Out-of-Band data */
-    BTM_BLE_ADVERT_TYPE_INTERVAL_RANGE = 0x12,           /**< Peripheral connection interval range */
-    BTM_BLE_ADVERT_TYPE_SOLICITATION_SRV_UUID = 0x14,    /**< List of solicitated services - 16 bit UUIDs */
-    BTM_BLE_ADVERT_TYPE_128SOLICITATION_SRV_UUID = 0x15, /**< List of solicitated services - 128 bit UUIDs */
-    BTM_BLE_ADVERT_TYPE_SERVICE_DATA = 0x16,             /**< Service data - 16 bit UUID */
-    BTM_BLE_ADVERT_TYPE_PUBLIC_TARGET = 0x17,            /**< Public target address */
-    BTM_BLE_ADVERT_TYPE_RANDOM_TARGET = 0x18,            /**< Random target address */
-    BTM_BLE_ADVERT_TYPE_APPEARANCE = 0x19,               /**< Appearance */
-    BTM_BLE_ADVERT_TYPE_ADVERT_INTERVAL = 0x1a,          /**< Advertising interval */
-    BTM_BLE_ADVERT_TYPE_LE_BD_ADDR = 0x1b,               /**< LE device bluetooth address */
-    BTM_BLE_ADVERT_TYPE_LE_ROLE = 0x1c,                  /**< LE role */
-    BTM_BLE_ADVERT_TYPE_256SIMPLE_PAIRING_HASH = 0x1d,   /**< Simple Pairing Hash C-256 */
-    BTM_BLE_ADVERT_TYPE_256SIMPLE_PAIRING_RAND = 0x1e,   /**< Simple Pairing Randomizer R-256 */
-    BTM_BLE_ADVERT_TYPE_32SOLICITATION_SRV_UUID = 0x1f,  /**< List of solicitated services - 32 bit UUIDs */
-    BTM_BLE_ADVERT_TYPE_32SERVICE_DATA = 0x20,           /**< Service data - 32 bit UUID */
-    BTM_BLE_ADVERT_TYPE_128SERVICE_DATA = 0x21,          /**< Service data - 128 bit UUID */
-    BTM_BLE_ADVERT_TYPE_CONN_CONFIRM_VAL = 0x22,         /**< LE Secure Connections Confirmation Value */
-    BTM_BLE_ADVERT_TYPE_CONN_RAND_VAL = 0x23,            /**< LE Secure Connections Random Value */
-    BTM_BLE_ADVERT_TYPE_URI = 0x24,                      /**< URI */
-    BTM_BLE_ADVERT_TYPE_INDOOR_POS = 0x25,               /**< Indoor Positioning */
-    BTM_BLE_ADVERT_TYPE_TRANS_DISCOVER_DATA = 0x26,      /**< Transport Discovery Data */
-    BTM_BLE_ADVERT_TYPE_SUPPORTED_FEATURES = 0x27,       /**< LE Supported Features */
-    BTM_BLE_ADVERT_TYPE_UPDATE_CH_MAP_IND = 0x28,        /**< Channel Map Update Indication */
-    BTM_BLE_ADVERT_TYPE_PB_ADV = 0x29,                   /**< PB-ADV */
-    BTM_BLE_ADVERT_TYPE_MESH_MSG = 0x2A,                 /**< Mesh Message */
-    BTM_BLE_ADVERT_TYPE_MESH_BEACON = 0x2B,              /**< Mesh Beacon */
-    BTM_BLE_ADVERT_TYPE_PSRI = 0x2E,                     /**< Generic Audio Provate Set Random Identifier */
-    BTM_BLE_ADVERT_TYPE_EAD = 0x31,                      /**< Encrypted Advertising Data */
-    BTM_BLE_ADVERT_TYPE_3D_INFO_DATA = 0x3D,             /**< 3D Information Data */
-    BTM_BLE_ADVERT_TYPE_MANUFACTURER = 0xFF              /**< Manufacturer data */
+    BTM_BLE_ADVERT_TYPE_FLAG = 0x01U,                     /**< Advertisement flags */
+    BTM_BLE_ADVERT_TYPE_16SRV_PARTIAL = 0x02U,            /**< List of supported services - 16 bit UUIDs (partial) */
+    BTM_BLE_ADVERT_TYPE_16SRV_COMPLETE = 0x03U,           /**< List of supported services - 16 bit UUIDs (complete) */
+    BTM_BLE_ADVERT_TYPE_32SRV_PARTIAL = 0x04U,            /**< List of supported services - 32 bit UUIDs (partial) */
+    BTM_BLE_ADVERT_TYPE_32SRV_COMPLETE = 0x05U,           /**< List of supported services - 32 bit UUIDs (complete) */
+    BTM_BLE_ADVERT_TYPE_128SRV_PARTIAL = 0x06U,           /**< List of supported services - 128 bit UUIDs (partial) */
+    BTM_BLE_ADVERT_TYPE_128SRV_COMPLETE = 0x07U,          /**< List of supported services - 128 bit UUIDs (complete) */
+    BTM_BLE_ADVERT_TYPE_NAME_SHORT = 0x08U,               /**< Short name */
+    BTM_BLE_ADVERT_TYPE_NAME_COMPLETE = 0x09U,            /**< Complete name */
+    BTM_BLE_ADVERT_TYPE_TX_POWER = 0x0AU,                 /**< TX Power level  */
+    BTM_BLE_ADVERT_TYPE_DEV_CLASS = 0x0DU,                /**< Device Class */
+    BTM_BLE_ADVERT_TYPE_SIMPLE_PAIRING_HASH_C = 0x0EU,    /**< Simple Pairing Hash C */
+    BTM_BLE_ADVERT_TYPE_SIMPLE_PAIRING_RAND_C = 0x0FU,    /**< Simple Pairing Randomizer R */
+    BTM_BLE_ADVERT_TYPE_SM_TK = 0x10U,                    /**< Security manager TK value */
+    BTM_BLE_ADVERT_TYPE_SM_OOB_FLAG = 0x11U,              /**< Security manager Out-of-Band data */
+    BTM_BLE_ADVERT_TYPE_INTERVAL_RANGE = 0x12U,           /**< Peripheral connection interval range */
+    BTM_BLE_ADVERT_TYPE_SOLICITATION_SRV_UUID = 0x14U,    /**< List of solicitated services - 16 bit UUIDs */
+    BTM_BLE_ADVERT_TYPE_128SOLICITATION_SRV_UUID = 0x15U, /**< List of solicitated services - 128 bit UUIDs */
+    BTM_BLE_ADVERT_TYPE_SERVICE_DATA = 0x16U,             /**< Service data - 16 bit UUID */
+    BTM_BLE_ADVERT_TYPE_PUBLIC_TARGET = 0x17U,            /**< Public target address */
+    BTM_BLE_ADVERT_TYPE_RANDOM_TARGET = 0x18U,            /**< Random target address */
+    BTM_BLE_ADVERT_TYPE_APPEARANCE = 0x19U,               /**< Appearance */
+    BTM_BLE_ADVERT_TYPE_ADVERT_INTERVAL = 0x1aU,          /**< Advertising interval */
+    BTM_BLE_ADVERT_TYPE_LE_BD_ADDR = 0x1bU,               /**< LE device bluetooth address */
+    BTM_BLE_ADVERT_TYPE_LE_ROLE = 0x1cU,                  /**< LE role */
+    BTM_BLE_ADVERT_TYPE_256SIMPLE_PAIRING_HASH = 0x1dU,   /**< Simple Pairing Hash C-256 */
+    BTM_BLE_ADVERT_TYPE_256SIMPLE_PAIRING_RAND = 0x1eU,   /**< Simple Pairing Randomizer R-256 */
+    BTM_BLE_ADVERT_TYPE_32SOLICITATION_SRV_UUID = 0x1fU,  /**< List of solicitated services - 32 bit UUIDs */
+    BTM_BLE_ADVERT_TYPE_32SERVICE_DATA = 0x20U,           /**< Service data - 32 bit UUID */
+    BTM_BLE_ADVERT_TYPE_128SERVICE_DATA = 0x21U,          /**< Service data - 128 bit UUID */
+    BTM_BLE_ADVERT_TYPE_CONN_CONFIRM_VAL = 0x22U,         /**< LE Secure Connections Confirmation Value */
+    BTM_BLE_ADVERT_TYPE_CONN_RAND_VAL = 0x23U,            /**< LE Secure Connections Random Value */
+    BTM_BLE_ADVERT_TYPE_URI = 0x24U,                      /**< URI */
+    BTM_BLE_ADVERT_TYPE_INDOOR_POS = 0x25U,               /**< Indoor Positioning */
+    BTM_BLE_ADVERT_TYPE_TRANS_DISCOVER_DATA = 0x26U,      /**< Transport Discovery Data */
+    BTM_BLE_ADVERT_TYPE_SUPPORTED_FEATURES = 0x27U,       /**< LE Supported Features */
+    BTM_BLE_ADVERT_TYPE_UPDATE_CH_MAP_IND = 0x28U,        /**< Channel Map Update Indication */
+    BTM_BLE_ADVERT_TYPE_PB_ADV = 0x29U,                   /**< PB-ADV */
+    BTM_BLE_ADVERT_TYPE_MESH_MSG = 0x2AU,                 /**< Mesh Message */
+    BTM_BLE_ADVERT_TYPE_MESH_BEACON = 0x2BU,              /**< Mesh Beacon */
+    BTM_BLE_ADVERT_TYPE_PSRI = 0x2EU,                     /**< Generic Audio Private Set Random Identifier */
+    BTM_BLE_ADVERT_TYPE_EAD = 0x31U,                      /**< Encrypted Advertising Data */
+    BTM_BLE_ADVERT_TYPE_3D_INFO_DATA = 0x3DU,             /**< 3D Information Data */
+    BTM_BLE_ADVERT_TYPE_MANUFACTURER = 0xFFU              /**< Manufacturer data */
 };
 /** LE advertisement data type (see #wiced_bt_ble_advert_type_e) */
 typedef uint8_t wiced_bt_ble_advert_type_t;
@@ -208,8 +205,8 @@ typedef uint8_t wiced_ble_ext_adv_handle_t;
     SID the value to be transmitted in the advertising SID subfield of the ADI field of the Extended ADV PDUs */
 enum
 {
-    WICED_BLE_EXT_ADV_SID_MIN = 0x00, /**< min SID value */
-    WICED_BLE_EXT_ADV_SID_MAX = 0x0f, /**< max SID value */
+    WICED_BLE_EXT_ADV_SID_MIN = 0x00U, /**< min SID value */
+    WICED_BLE_EXT_ADV_SID_MAX = 0x0fU, /**< max SID value */
 };
 /** SID value */
 typedef uint8_t wiced_ble_ext_adv_sid_t;
@@ -217,10 +214,10 @@ typedef uint8_t wiced_ble_ext_adv_sid_t;
 /** LE Phy to be used for extended advertisement */
 enum
 {
-    WICED_BLE_EXT_ADV_PHY_1M = 0x1,       /**< advetiser advertisement PHY is LE 1M */
-    WICED_BLE_EXT_ADV_PHY_2M = 0x2,       /**< advetiser advertisement PHY is LE 2M */
-    WICED_BLE_EXT_ADV_PHY_LE_CODED = 0x3, /**< advetiser advertisement PHY is LE Coded (for long range) */
-    WICED_BLE_EXT_ADV_NUM_PHYS = 0x3      /**< 3 PHYs are defined */
+    WICED_BLE_EXT_ADV_PHY_1M = 0x1U,       /**< advertiser advertisement PHY is LE 1M */
+    WICED_BLE_EXT_ADV_PHY_2M = 0x2U,       /**< advertiser advertisement PHY is LE 2M */
+    WICED_BLE_EXT_ADV_PHY_LE_CODED = 0x3U, /**< advertiser advertisement PHY is LE Coded (for long range) */
+    WICED_BLE_EXT_ADV_NUM_PHYS = 0x3U      /**< 3 PHYs are defined */
 };
 /** LE Phy type for extended advertisement */
 typedef uint8_t wiced_ble_ext_adv_phy_t;
@@ -273,13 +270,11 @@ enum wiced_ble_own_address_options_e
 typedef uint8_t wiced_ble_own_address_options_t;
 
 /** Scanning filter policy enums used in set scan parameters command */
-enum wiced_ble_scanning_filter_policy_e
-{
-    WICED_BLE_SCAN_BASIC_UNFILTERED_SP = 0,    /**< Basic unfiltered scanning policy */
-    WICED_BLE_SCAN_BASIC_FILTERED_SP = 1,      /**< Basic filtered scanning policy  */
-    WICED_BLE_SCAN_EXTENDED_UNFILTERED_SP = 2, /**< Extended unfiltered scanning policy */
-    WICED_BLE_SCAN_EXTENDED_FILTERED_SP = 3,   /**< Extended filtered scanning policy  */
-};
+#define    WICED_BLE_SCAN_BASIC_UNFILTERED_SP    0U   /**< Basic unfiltered scanning policy */
+#define    WICED_BLE_SCAN_BASIC_FILTERED_SP      1U   /**< Basic filtered scanning policy  */
+#define    WICED_BLE_SCAN_EXTENDED_UNFILTERED_SP 2U   /**< Extended unfiltered scanning policy */
+#define    WICED_BLE_SCAN_EXTENDED_FILTERED_SP   3U   /**< Extended filtered scanning policy  */
+
 /** Scanning filter policy used. (see #wiced_ble_scanning_filter_policy_e) */
 typedef uint8_t wiced_ble_scanning_filter_policy_t;
 
@@ -335,4 +330,4 @@ uint8_t *wiced_ble_adv_data_search(wiced_bt_adv_ctx_t *p_ctx,
 uint16_t wiced_ble_adv_data_build(wiced_bt_adv_ctx_t *p_ctxt, wiced_bt_ble_advert_elem_t *p_elem);
 
 /**@} wicedbt */
-#endif // __WICED_BT_ADV_SCAN_COMMON_H__
+#endif /* WICED_BT_ADV_SCAN_COMMON_H */

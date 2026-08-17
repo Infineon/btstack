@@ -36,8 +36,8 @@
  *  AIROC Generic Attribute (GATT) Application Programming Interface definitions
  */
 
-#ifndef  _GATTDEFS_H
-#define  _GATTDEFS_H
+#ifndef  GATTDEFS_H
+#define  GATTDEFS_H
 
 #define GATT_ILLEGAL_UUID            0
 
@@ -259,4 +259,4 @@ enum gatt_appearance_e
 #define IS_CHAR_DECLARATION_UUID(type)    ((type.len == 2) && (type.uu.uuid16 == GATT_UUID_CHAR_DECLARE))
 #define IS_CHAR_CLIENT_CONFIG_UUID(type)  ((type.len == 2) && (type.uu.uuid16 == GATT_UUID_CHAR_CLIENT_CONFIG))
 
-#endif
+#endif /* GATTDEFS_H */

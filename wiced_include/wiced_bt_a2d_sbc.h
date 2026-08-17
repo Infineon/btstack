@@ -35,8 +35,8 @@
  * Low complexity subband codec (SBC) A2DP Application Programming Interface
  *
  */
-#ifndef __WICED_BT_A2D_SBC_H__
-#define __WICED_BT_A2D_SBC_H__
+#ifndef WICED_BT_A2D_SBC_H
+#define WICED_BT_A2D_SBC_H
 
 
 /**
@@ -232,4 +232,4 @@ void wiced_bt_a2d_pars_sbc_mpl_hdr(uint8_t *p_src, wiced_bool_t *p_frag,
 /** @} wicedbt_a2dp_sbc */
 /* @endcond*/
 
-#endif //__WICED_BT_A2D_SBC_H__
+#endif /* WICED_BT_A2D_SBC_H */

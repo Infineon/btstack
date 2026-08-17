@@ -36,8 +36,8 @@
  * AIROC Bluetooth Low Energy (LE) Functions for extended adv and scan
  *
  */
-#ifndef __WICED_BT_ADV_SCAN_PERIODIC_H__
-#define __WICED_BT_ADV_SCAN_PERIODIC_H__
+#ifndef WICED_BT_ADV_SCAN_PERIODIC_H
+#define WICED_BT_ADV_SCAN_PERIODIC_H
 
 #ifndef WICED_BLE_ENABLE_EXTENDED_ADV_API
 #define WICED_BLE_ENABLE_EXTENDED_ADV_API 1
@@ -152,7 +152,7 @@ typedef struct
 {
     uint16_t req_event;    /**< Request Event */
     uint8_t req_subevent;  /**< Request Subevent */
-    int8_t rsp_subevent;   /**< Response Subevent */
+    uint8_t rsp_subevent;   /**< Response Subevent */
     uint8_t rsp_slot;      /**< Response Slot */
     uint16_t rsp_data_len; /**< Response data length */
     uint8_t *p_data;       /**< Response data  */
@@ -428,7 +428,7 @@ wiced_bt_dev_status_t wiced_ble_padv_terminate_sync(uint16_t sync_handle);
  *       Shall not attempt to call this API, while create to periodic sync command is pending.
  *
  * @param[in]      advertiser_addr_type : Periodic advertiser addr type
- * @param[in]      advetiser_addr       : Periodic advertiser addr
+ * @param[in]      advertiser_addr       : Periodic advertiser addr
  * @param[in]      adv_sid              : Periodic advertiser sid
  *
  * @return          wiced_bt_dev_status_t
@@ -440,7 +440,7 @@ wiced_bt_dev_status_t wiced_ble_padv_terminate_sync(uint16_t sync_handle);
  *
  */
 wiced_bt_dev_status_t wiced_ble_padv_add_device_to_list(wiced_bt_ble_address_type_t advertiser_addr_type,
-                                                        wiced_bt_device_address_t advetiser_addr,
+                                                        wiced_bt_device_address_t advertiser_addr,
                                                         wiced_ble_ext_adv_sid_t adv_sid);
 
 /**
@@ -449,7 +449,7 @@ wiced_bt_dev_status_t wiced_ble_padv_add_device_to_list(wiced_bt_ble_address_typ
  * Note : Shall not attempt to call this API, while create to periodic sync command is pending.
  *
  * @param[in]      advertiser_addr_type : Periodic advertiser addr type
- * @param[in]      advetiser_addr       : Periodic advertiser addr
+ * @param[in]      advertiser_addr       : Periodic advertiser addr
  * @param[in]      adv_sid              : Periodic advertiser sid
  *
  * @return          wiced_bt_dev_status_t
@@ -460,7 +460,7 @@ wiced_bt_dev_status_t wiced_ble_padv_add_device_to_list(wiced_bt_ble_address_typ
  *
  */
 wiced_bt_dev_status_t wiced_ble_padv_remove_device_from_list(wiced_bt_ble_address_type_t advertiser_addr_type,
-                                                             wiced_bt_device_address_t advetiser_addr,
+                                                             wiced_bt_device_address_t advertiser_addr,
                                                              wiced_ble_ext_adv_sid_t adv_sid);
 
 /**
@@ -651,5 +651,5 @@ wiced_bt_dev_status_t wiced_ble_padv_set_sync_subevent(uint16_t sync_handle,
 wiced_result_t wiced_ble_padv_alloc_segment_assembler(wiced_ble_padv_sync_handle_t sync_handle, uint16_t max_adv_len);
 
 /**@} wicedbt */
-#endif // WICED_BLE_ENABLE_EXTENDED_ADV_API
-#endif // __WICED_BT_ADV_SCAN_PERIODIC_H__
+#endif /* WICED_BLE_ENABLE_EXTENDED_ADV_API */
+#endif /* WICED_BT_ADV_SCAN_PERIODIC_H */

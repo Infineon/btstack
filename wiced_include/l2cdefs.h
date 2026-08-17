@@ -277,17 +277,17 @@
 
 /* Default values for configuration
 */
-#define L2CAP_NO_AUTOMATIC_FLUSH        0xFFFF      /**< No Automatic Flush */
-#define L2CAP_NO_RETRANSMISSION         0x0001      /**< No Retranmission */
+#define L2CAP_NO_AUTOMATIC_FLUSH        0xFFFFU      /**< No Automatic Flush */
+#define L2CAP_NO_RETRANSMISSION         0x0001U      /**< No Retranmission */
 
-#define L2CAP_DEFAULT_MTU               (672)                       /**< Default MTU */
+#define L2CAP_DEFAULT_MTU               (672U)                      /**< Default MTU */
 #define L2CAP_DEFAULT_FLUSH_TO          L2CAP_NO_AUTOMATIC_FLUSH    /**< Default Flush settings */
-#define L2CAP_DEFAULT_SERV_TYPE         1                           /**< Default service type */
-#define L2CAP_DEFAULT_TOKEN_RATE        0                           /**< Default Token rate */
-#define L2CAP_DEFAULT_BUCKET_SIZE       0                           /**< Default Bucket size */
-#define L2CAP_DEFAULT_PEAK_BANDWIDTH    0                           /**< Default Peak bandwidth */
-#define L2CAP_DEFAULT_LATENCY           0xFFFFFFFF                  /**< Default Letency */
-#define L2CAP_DEFAULT_DELAY             0xFFFFFFFF                  /**< Default Delay */
+#define L2CAP_DEFAULT_SERV_TYPE         1U                          /**< Default service type */
+#define L2CAP_DEFAULT_TOKEN_RATE        0U                          /**< Default Token rate */
+#define L2CAP_DEFAULT_BUCKET_SIZE       0U                          /**< Default Bucket size */
+#define L2CAP_DEFAULT_PEAK_BANDWIDTH    0U                          /**< Default Peak bandwidth */
+#define L2CAP_DEFAULT_LATENCY           0xFFFFFFFFU                 /**< Default Letency */
+#define L2CAP_DEFAULT_DELAY             0xFFFFFFFFU                 /**< Default Delay */
 #define L2CAP_DEFAULT_FCS               L2CAP_CFG_FCS_USE           /**< Default FCS settings */
 
 
@@ -405,12 +405,14 @@
  *
  * L2CAP connection result codes.
  */
-#define L2CAP_CONN_OK                0     /**< Connection OK */
-#define L2CAP_CONN_PENDING           1     /**< Connection Pending */
-#define L2CAP_CONN_NO_PSM            2     /**< Connection NO PSM */
-#define L2CAP_CONN_SECURITY_BLOCK    3     /**< Connection Security Block */
-#define L2CAP_CONN_NO_RESOURCES      4     /**< Connection NO Resource */
-#define L2CAP_CONN_BAD_CTLR_ID       5     /**< Bad Controller ID */
+#define L2CAP_CONN_OK                 0     /**< Connection OK */
+#define L2CAP_CONN_PENDING            1     /**< Connection Pending */
+#define L2CAP_CONN_NO_PSM             2     /**< Connection NO PSM */
+#define L2CAP_CONN_SECURITY_BLOCK     3     /**< Connection Security Block */
+#define L2CAP_CONN_NO_RESOURCES       4     /**< Connection NO Resource */
+#define L2CAP_CONN_BAD_CTLR_ID        5     /**< Bad Controller ID */
+#define L2CAP_CONN_INVALID_SOURCE_CID 6     /**< Invalid Source CID */
+#define L2CAP_CONN_SOURCE_CID_ALREADY_ALLOCATED  7     /**< Source CID already allocated */
 
 /**  @note LE COC related */
 #define L2CAP_BLE_CONN_BAD_AUTHENT      5     /**< LE Connection Bad Authentication */

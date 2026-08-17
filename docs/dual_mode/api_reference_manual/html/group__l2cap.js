@@ -8,6 +8,8 @@ var group__l2cap =
     [ "L2CAP_CONN_SECURITY_BLOCK", "group__l2cap.html#ga3698261ebe22cb870474e9a9d4c2995c", null ],
     [ "L2CAP_CONN_NO_RESOURCES", "group__l2cap.html#gad1de1d0109789e661f1d7d4173c96369", null ],
     [ "L2CAP_CONN_BAD_CTLR_ID", "group__l2cap.html#ga307cec0f897a0faf5f154309726c656f", null ],
+    [ "L2CAP_CONN_INVALID_SOURCE_CID", "group__l2cap.html#ga33b57575aeff7c55fb3f37492f964631", null ],
+    [ "L2CAP_CONN_SOURCE_CID_ALREADY_ALLOCATED", "group__l2cap.html#ga59ede2b2b574b0f0913364d9cdb3c415", null ],
     [ "L2CAP_BLE_CONN_BAD_AUTHENT", "group__l2cap.html#ga87beab594369ecec827a5b118d07c344", null ],
     [ "L2CAP_BLE_CONN_BAD_AUTHORIZ", "group__l2cap.html#ga54c8b0caa348bca488bc7f8d5e2f9c8c", null ],
     [ "L2CAP_BLE_CONN_BAD_KEY_SIZE", "group__l2cap.html#gaea4d2ca81108c8bcfc45de7a98a52ade", null ],

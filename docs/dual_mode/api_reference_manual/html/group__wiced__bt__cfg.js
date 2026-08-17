@@ -31,25 +31,20 @@ var group__wiced__bt__cfg =
     [ "WICED_BT_CFG_DEFAULT_RANDOM_ADDRESS_CHANGE_TIMEOUT", "group__wiced__bt__cfg.html#ga21a32d17d2059b14fd51ee79fddeb378", null ],
     [ "WICED_BT_CFG_DEFAULT_RANDOM_ADDRESS_NEVER_CHANGE", "group__wiced__bt__cfg.html#gaea1fbfd9165ebb7730bccec15d8a1226", null ],
     [ "WICED_BT_CFG_MAX_RANDOM_ADDRESS_CHANGE_TIMEOUT", "group__wiced__bt__cfg.html#ga45cf2d72ef9a6ebab8ce79e0a5b334ff", null ],
+    [ "BTM_BLE_SCAN_MODE_ACTIVE", "group__wiced__bt__cfg.html#gaf5859133ac14f1ddb7689aec745c58a3", null ],
+    [ "BTM_BLE_SCAN_MODE_NONE", "group__wiced__bt__cfg.html#gad21012f84fcfd4f4a177f8bc119f6527", null ],
+    [ "BTM_BLE_ADVERT_CHNL_37", "group__wiced__bt__cfg.html#gaea01071ea16baf23ee311975f597f823", null ],
+    [ "BTM_BLE_ADVERT_CHNL_38", "group__wiced__bt__cfg.html#ga59dc55714cdbf4958bd484cf06aafc5e", null ],
+    [ "BTM_BLE_ADVERT_CHNL_39", "group__wiced__bt__cfg.html#ga24e0ce70aa087d9e7f1c152820e9735c", null ],
     [ "wiced_bt_ble_scan_mode_t", "group__wiced__bt__cfg.html#ga9d259affd5bd1fad387ba32682faf346", null ],
     [ "wiced_bt_sec_level_t", "group__wiced__bt__cfg.html#gac87ddd863edac8d1cb50edd12662c340", null ],
     [ "wiced_bt_ble_advert_chnl_map_t", "group__wiced__bt__cfg.html#ga9d58795bb527ae681bfa8135cc4b67e3", null ],
     [ "wiced_bt_gatt_appearance_t", "group__wiced__bt__cfg.html#ga7a06e57f611b61b8ffdb245b23638b38", null ],
-    [ "wiced_bt_ble_scan_mode_e", "group__wiced__bt__cfg.html#ga363c245dbaa273d5d2a3df18f7f24c64", [
-      [ "BTM_BLE_SCAN_MODE_PASSIVE", "group__wiced__bt__cfg.html#gga363c245dbaa273d5d2a3df18f7f24c64a0283e0cf20a227a00c28896416382fb3", null ],
-      [ "BTM_BLE_SCAN_MODE_ACTIVE", "group__wiced__bt__cfg.html#gga363c245dbaa273d5d2a3df18f7f24c64a11e13ff43acd03c0ef9d869e17b6bf86", null ],
-      [ "BTM_BLE_SCAN_MODE_NONE", "group__wiced__bt__cfg.html#gga363c245dbaa273d5d2a3df18f7f24c64a985d759e30d319e92097e77dacc7d4fb", null ]
-    ] ],
     [ "wiced_bt_sec_level_e", "group__wiced__bt__cfg.html#gabc9b4dbc8e43ce6442971e2804d1aca5", [
       [ "BTM_SEC_BEST_EFFORT", "group__wiced__bt__cfg.html#ggabc9b4dbc8e43ce6442971e2804d1aca5ac37a6789b7228dc28f64813c23490274", null ],
       [ "BTM_SEC_SC_REQUIRED", "group__wiced__bt__cfg.html#ggabc9b4dbc8e43ce6442971e2804d1aca5a2c53a18f1e26ea3811f691e73a29c6e5", null ],
       [ "BTM_SEC_AUTH_REQUIRED", "group__wiced__bt__cfg.html#ggabc9b4dbc8e43ce6442971e2804d1aca5ae8cab0f77281baf7605cfc4355a2b695", null ],
       [ "BTM_SEC_SC_AUTH_REQUIRED", "group__wiced__bt__cfg.html#ggabc9b4dbc8e43ce6442971e2804d1aca5a87822ed17a9b4b5d8296fc47c0b5c994", null ]
-    ] ],
-    [ "wiced_bt_ble_advert_chnl_map_e", "group__wiced__bt__cfg.html#ga59d79284e51421afdfc5e9c472adb49b", [
-      [ "BTM_BLE_ADVERT_CHNL_37", "group__wiced__bt__cfg.html#gga59d79284e51421afdfc5e9c472adb49baf0b671f9a97f2bc6b7f29c2ddf923241", null ],
-      [ "BTM_BLE_ADVERT_CHNL_38", "group__wiced__bt__cfg.html#gga59d79284e51421afdfc5e9c472adb49ba1dbf5bed2da5097c1336d2ace2613d82", null ],
-      [ "BTM_BLE_ADVERT_CHNL_39", "group__wiced__bt__cfg.html#gga59d79284e51421afdfc5e9c472adb49ba10bc047ce18009fdbfa65af43646757e", null ]
     ] ],
     [ "wiced_bt_stack_get_dynamic_memory_size_for_config", "group__wiced__bt__cfg.html#gabdaddf0ee44203cafd1d65953768eef1", null ]
 ];

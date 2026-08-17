@@ -45,8 +45,8 @@
  *
  */
 
-#ifndef  __WICED_BT_DEV_H__
-#define  __WICED_BT_DEV_H__
+#ifndef WICED_BT_DEV_H
+#define WICED_BT_DEV_H
 
 #include "wiced_bt_types.h"
 #include "hcidefs.h"
@@ -184,9 +184,9 @@ enum
 };
 
 /** HCI role definitions */
-#define HCI_ROLE_CENTRAL 0x00 /**< device role central */
-#define HCI_ROLE_PERIPHERAL 0x01 /**< device role peripheral */
-#define HCI_ROLE_UNKNOWN    0xff  /**< device role unknown */
+#define HCI_ROLE_CENTRAL    0x00U /**< device role central */
+#define HCI_ROLE_PERIPHERAL 0x01U /**< device role peripheral */
+#define HCI_ROLE_UNKNOWN    0xFFU /**< device role unknown */
 typedef uint8_t wiced_bt_dev_role_t; /**< device role for the connection */
 
 /***************************
@@ -299,14 +299,12 @@ enum wiced_bt_sec_flags_e
 #endif
 
 /** Pairing IO Capabilities */
-enum wiced_bt_dev_io_cap_e {
-    BTM_IO_CAPABILITIES_DISPLAY_ONLY                   = 0,  /**< Display Only        */
-    BTM_IO_CAPABILITIES_DISPLAY_AND_YES_NO_INPUT       = 1,  /**< Display Yes/No      */
-    BTM_IO_CAPABILITIES_KEYBOARD_ONLY                  = 2,  /**< Keyboard Only       */
-    BTM_IO_CAPABILITIES_NONE                           = 3,  /**< No Input, No Output */
-    BTM_IO_CAPABILITIES_BLE_DISPLAY_AND_KEYBOARD_INPUT = 4,  /**< Keyboard display (For LE SMP) */
-    BTM_IO_CAPABILITIES_MAX                            = 5,  /**< Max value for IO capability */
-};
+#define    BTM_IO_CAPABILITIES_DISPLAY_ONLY                   0U  /**< Display Only        */
+#define    BTM_IO_CAPABILITIES_DISPLAY_AND_YES_NO_INPUT       1U  /**< Display Yes/No      */
+#define    BTM_IO_CAPABILITIES_KEYBOARD_ONLY                  2U  /**< Keyboard Only       */
+#define    BTM_IO_CAPABILITIES_NONE                           3U  /**< No Input, No Output */
+#define    BTM_IO_CAPABILITIES_BLE_DISPLAY_AND_KEYBOARD_INPUT 4U  /**< Keyboard display (For LE SMP) */
+#define    BTM_IO_CAPABILITIES_MAX                            5U  /**< Max value for IO capability */
 
 typedef uint8_t wiced_bt_dev_io_cap_t;          /**< IO capabilities */
 
@@ -322,18 +320,17 @@ enum wiced_bt_dev_auth_req_e {
 typedef uint8_t wiced_bt_dev_auth_req_t;                /**< BR/EDR authentication requirement (see #wiced_bt_dev_auth_req_e) */
 
 /** LE Authentication requirement */
-enum wiced_bt_dev_le_auth_req_e {
-    BTM_LE_AUTH_REQ_NO_BOND =       0x00,                                               /**< Not required - No Bond */
-    BTM_LE_AUTH_REQ_BOND =          0x01,                                               /**< Required - General Bond */
-    BTM_LE_AUTH_REQ_MITM =          0x04,                                               /**< MITM required - Auth Y/N */
-    BTM_LE_AUTH_REQ_SC =            0x08,                                               /**< LE Secure Connection or legacy, no MITM, no Bonding */
-    BTM_LE_AUTH_REQ_KP =            0x10,                                               /**< Keypress supported Y/N */
-    BTM_LE_AUTH_REQ_H7 =            0x20,                                               /**< Key derivation function H7 supported Y/N */
-    BTM_LE_AUTH_REQ_SC_BOND =       (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_BOND),          /**< LE Secure Connection or legacy, no MITM, Bonding */
-    BTM_LE_AUTH_REQ_SC_MITM =       (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_MITM),          /**< LE Secure Connection or legacy, MITM, no Bonding */
-    BTM_LE_AUTH_REQ_SC_MITM_BOND =  (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_MITM|BTM_LE_AUTH_REQ_BOND),    /**< LE Secure Connection or legacy , MITM, Bonding */
-    BTM_LE_AUTH_REQ_MASK =          0x3D                                                /**< Auth Request Mask */
-};
+#define    BTM_LE_AUTH_REQ_NO_BOND        0x00U                                               /**< Not required - No Bond */
+#define    BTM_LE_AUTH_REQ_BOND           0x01U                                               /**< Required - General Bond */
+#define    BTM_LE_AUTH_REQ_MITM           0x04U                                               /**< MITM required - Auth Y/N */
+#define    BTM_LE_AUTH_REQ_SC             0x08U                                               /**< LE Secure Connection or legacy, no MITM, no Bonding */
+#define    BTM_LE_AUTH_REQ_KP             0x10U                                               /**< Keypress supported Y/N */
+#define    BTM_LE_AUTH_REQ_H7             0x20U                                               /**< Key derivation function H7 supported Y/N */
+#define    BTM_LE_AUTH_REQ_SC_BOND        (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_BOND)          /**< LE Secure Connection or legacy, no MITM, Bonding */
+#define    BTM_LE_AUTH_REQ_SC_MITM        (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_MITM)          /**< LE Secure Connection or legacy, MITM, no Bonding */
+#define    BTM_LE_AUTH_REQ_SC_MITM_BOND   (BTM_LE_AUTH_REQ_SC|BTM_LE_AUTH_REQ_MITM|BTM_LE_AUTH_REQ_BOND)    /**< LE Secure Connection or legacy , MITM, Bonding */
+#define    BTM_LE_AUTH_REQ_MASK           0x3DU                                               /**< Auth Request Mask */
+
 typedef uint8_t wiced_bt_dev_le_auth_req_t;             /**< LE authentication requirement (see #wiced_bt_dev_le_auth_req_e) */
 
 /** LE Security key level */
@@ -353,14 +350,11 @@ typedef struct
 #ifndef BTM_OOB_STATE
 #define BTM_OOB_STATE
 /** OOB Data status */
-enum wiced_bt_dev_oob_data_e
-{
-    BTM_OOB_NONE,                                       /**< No OOB data */
-    BTM_OOB_PRESENT_192,                                /**< OOB data present (from the P-192 public key) */
-    BTM_OOB_PRESENT_256,                                /**< OOB data present (from the P-256 public key) */
-    BTM_OOB_PRESENT_192_256,                            /**< OOB data present (from the P-192 and P-256 public keys) */
-    BTM_OOB_UNKNOWN                                     /**< OOB data unknown */
-};
+#define BTM_OOB_NONE            0U                 /**< No OOB data */
+#define BTM_OOB_PRESENT_192     1U                 /**< OOB data present (from the P-192 public key) */
+#define BTM_OOB_PRESENT_256     2U                 /**< OOB data present (from the P-256 public key) */
+#define BTM_OOB_PRESENT_192_256 3U                 /**< OOB data present (from the P-192 and P-256 public keys) */
+#define BTM_OOB_UNKNOWN         4U                 /**< OOB data unknown */
 #endif
 typedef uint8_t wiced_bt_dev_oob_data_t;                /**< OOB data (see #wiced_bt_dev_oob_data_e) */
 
@@ -394,14 +388,12 @@ typedef struct
 } wiced_bt_dev_user_key_req_t;
 
 /** Pairing keypress types */
-enum wiced_bt_dev_passkey_entry_type_e
-{
-    BTM_PASSKEY_ENTRY_STARTED,          /**< passkey entry started */
-    BTM_PASSKEY_DIGIT_ENTERED,          /**< passkey digit entered */
-    BTM_PASSKEY_DIGIT_ERASED,           /**< passkey digit erased */
-    BTM_PASSKEY_DIGIT_CLEARED,          /**< passkey cleared */
-    BTM_PASSKEY_ENTRY_COMPLETED         /**< passkey entry completed */
-};
+#define BTM_PASSKEY_ENTRY_STARTED   0x00U          /**< passkey entry started */
+#define BTM_PASSKEY_DIGIT_ENTERED   0x01U          /**< passkey digit entered */
+#define BTM_PASSKEY_DIGIT_ERASED    0x02U          /**< passkey digit erased */
+#define BTM_PASSKEY_DIGIT_CLEARED   0x03U          /**< passkey cleared */
+#define BTM_PASSKEY_ENTRY_COMPLETED 0x04U         /**< passkey entry completed */
+
 typedef uint8_t wiced_bt_dev_passkey_entry_type_t;  /**< Bluetooth pairing keypress value (see #wiced_bt_dev_passkey_entry_type_e)  */
 
 /** Data associated with the information received from the peer via OOB interface */
@@ -461,13 +453,10 @@ typedef struct {
 #ifndef BTM_OOB_REQ_TYPE
 #define BTM_OOB_REQ_TYPE
 /** Type of OOB data required  */
-enum wiced_bt_dev_oob_data_req_type_e
-{
-    BTM_OOB_INVALID_TYPE,                               /**< Invalid OOB Type */
-    BTM_OOB_PEER,                                       /**< Peer OOB data requested */
-    BTM_OOB_LOCAL,                                      /**< Local OOB data requested */
-    BTM_OOB_BOTH                                        /**< Both local and peer OOB data requested */
-};
+#define BTM_OOB_INVALID_TYPE 0x00U                  /**< Invalid OOB Type */
+#define BTM_OOB_PEER         0x01U                  /**< Peer OOB data requested */
+#define BTM_OOB_LOCAL        0x02U                  /**< Local OOB data requested */
+#define BTM_OOB_BOTH         0x03U                  /**< Both local and peer OOB data requested */
 #endif
 typedef uint8_t wiced_bt_dev_oob_data_req_type_t;         /**< OOB data type requested (see #wiced_bt_dev_oob_data_req_type_t) */
 
@@ -559,14 +548,12 @@ typedef struct
 } wiced_bt_dev_security_request_t;
 
 /** SMP key distribution mask */
-enum wiced_bt_dev_le_key_type_e
-{
-    SMP_SEC_KEY_TYPE_ENC = (1 << 0),  /**< encryption key */
-    SMP_SEC_KEY_TYPE_ID = (1 << 1),   /**< identity key */
-    SMP_SEC_KEY_TYPE_CSRK = (1 << 2), /**< Peripheral CSRK */
-    SMP_SEC_KEY_TYPE_LK = (1 << 3),   /**< BR/EDR link key */
-};
-typedef uint8_t wiced_bt_dev_le_key_type_t; /**< SMP key distribution mask, see #wiced_bt_dev_le_key_type_e*/
+#define SMP_SEC_KEY_TYPE_ENC    (1U << 0)      /**< encryption key */
+#define SMP_SEC_KEY_TYPE_ID     (1U << 1)      /**< identity key */
+#define SMP_SEC_KEY_TYPE_CSRK   (1U << 2)      /**< Peripheral CSRK */
+#define SMP_SEC_KEY_TYPE_LK     (1U << 3)      /**< BR/EDR link key */
+
+typedef uint8_t wiced_bt_dev_le_key_type_t;    /**< SMP key distribution mask, see #wiced_bt_dev_le_key_type_e*/
 
 #define BTM_LE_KEY_PENC  SMP_SEC_KEY_TYPE_ENC  /**< @deprecated, encryption information of peer device */
 #define BTM_LE_KEY_PID  SMP_SEC_KEY_TYPE_ID    /**< @deprecated identity key of the peer device */
@@ -578,52 +565,46 @@ typedef uint8_t wiced_bt_dev_le_key_type_t; /**< SMP key distribution mask, see 
 #ifndef BTM_BLE_SCAN_TYPE
 #define BTM_BLE_SCAN_TYPE
 /** Scan duty cycle (used for #BTM_BLE_SCAN_STATE_CHANGED_EVT ) */
-enum wiced_bt_ble_scan_type_e
-{
-    BTM_BLE_SCAN_TYPE_NONE,                 /**< Stop scanning */
-    BTM_BLE_SCAN_TYPE_HIGH_DUTY,            /**< General inquiry high duty cycle scan */
-    BTM_BLE_SCAN_TYPE_LOW_DUTY,             /**< General inquiry low duty cycle scan */
-    BTM_BLE_SCAN_TYPE_LIMITED_HIGH_DUTY,    /**< Limited inquiry high duty cycle scan */
-    BTM_BLE_SCAN_TYPE_LIMITED_LOW_DUTY      /**< Limited inquiry low duty cycle scan */
-};
+#define BTM_BLE_SCAN_TYPE_NONE                 0x00U /**< Stop scanning */
+#define BTM_BLE_SCAN_TYPE_HIGH_DUTY            0x01U /**< General inquiry high duty cycle scan */
+#define BTM_BLE_SCAN_TYPE_LOW_DUTY             0x02U /**< General inquiry low duty cycle scan */
+#define BTM_BLE_SCAN_TYPE_LIMITED_HIGH_DUTY    0x03U /**< Limited inquiry high duty cycle scan */
+#define BTM_BLE_SCAN_TYPE_LIMITED_LOW_DUTY     0x04U /**< Limited inquiry low duty cycle scan */
 #endif
 typedef uint8_t wiced_bt_ble_scan_type_t;   /**< scan type (see #wiced_bt_ble_scan_type_e) */
 
 
 /** SMP Pairing status codes */
-enum wiced_bt_smp_status_e
-{
-    SMP_SUCCESS                 = 0,    /**< Success */
-    SMP_PASSKEY_ENTRY_FAIL      = 0x01, /**< Passkey entry failed */
-    SMP_OOB_FAIL                = 0x02, /**< OOB failed */
-    SMP_PAIR_AUTH_FAIL          = 0x03, /**< Authentication failed */
-    SMP_CONFIRM_VALUE_ERR       = 0x04, /**< Value confirmation failed */
-    SMP_PAIR_NOT_SUPPORT        = 0x05, /**< Not supported */
-    SMP_ENC_KEY_SIZE            = 0x06, /**< Encryption key size failure */
-    SMP_INVALID_CMD             = 0x07, /**< Invalid command */
-    SMP_PAIR_FAIL_UNKNOWN       = 0x08, /**< Unknown failure */
-    SMP_REPEATED_ATTEMPTS       = 0x09, /**< Repeated attempts */
-    SMP_INVALID_PARAMETERS      = 0x0A, /**< Invalid parameters  */
-    SMP_DHKEY_CHK_FAIL          = 0x0B, /**< DH Key check failed */
-    SMP_NUMERIC_COMPAR_FAIL     = 0x0C, /**< Numeric comparison failed */
-    SMP_BR_PAIRING_IN_PROGR     = 0x0D, /**< BR paIring in progress */
-    SMP_XTRANS_DERIVE_NOT_ALLOW = 0x0E, /**< Cross transport key derivation not allowed */
-    SMP_ERR_CODE_KEY_REJECTED   = 0x0F, /**< Device chose not to accept a distributed key*/
-    SMP_ERR_CODE_BUSY           = 0x10, /**< Device is not ready to perform a pairing procedure*/
-    SMP_MAX_FAIL_RSN_PER_SPEC = SMP_ERR_CODE_BUSY, /**< SMP Max Fail Reason as per spec */
+#define SMP_SUCCESS                 0x00U /**< Success */
+#define SMP_PASSKEY_ENTRY_FAIL      0x01U /**< Passkey entry failed */
+#define SMP_OOB_FAIL                0x02U /**< OOB failed */
+#define SMP_PAIR_AUTH_FAIL          0x03U /**< Authentication failed */
+#define SMP_CONFIRM_VALUE_ERR       0x04U /**< Value confirmation failed */
+#define SMP_PAIR_NOT_SUPPORT        0x05U /**< Not supported */
+#define SMP_ENC_KEY_SIZE            0x06U /**< Encryption key size failure */
+#define SMP_INVALID_CMD             0x07U /**< Invalid command */
+#define SMP_PAIR_FAIL_UNKNOWN       0x08U /**< Unknown failure */
+#define SMP_REPEATED_ATTEMPTS       0x09U /**< Repeated attempts */
+#define SMP_INVALID_PARAMETERS      0x0AU /**< Invalid parameters  */
+#define SMP_DHKEY_CHK_FAIL          0x0BU /**< DH Key check failed */
+#define SMP_NUMERIC_COMPAR_FAIL     0x0CU /**< Numeric comparison failed */
+#define SMP_BR_PAIRING_IN_PROGR     0x0DU /**< BR paIring in progress */
+#define SMP_XTRANS_DERIVE_NOT_ALLOW 0x0EU /**< Cross transport key derivation not allowed */
+#define SMP_ERR_CODE_KEY_REJECTED   0x0FU /**< Device chose not to accept a distributed key*/
+#define SMP_ERR_CODE_BUSY           0x10U /**< Device is not ready to perform a pairing procedure*/
+#define SMP_MAX_FAIL_RSN_PER_SPEC SMP_ERR_CODE_BUSY /**< SMP Max Fail Reason as per spec */
 
-    /* bte smp status codes */
-    SMP_PAIR_INTERNAL_ERR       = (SMP_MAX_FAIL_RSN_PER_SPEC + 0x01), /**< Internal error */
-    SMP_UNKNOWN_IO_CAP          = (SMP_MAX_FAIL_RSN_PER_SPEC + 0x02), /**< unknown IO capability, unable to decide associatino model */
-    SMP_INIT_FAIL               = (SMP_MAX_FAIL_RSN_PER_SPEC + 0x03), /**< Initialization failed */
-    SMP_CONFIRM_FAIL            = (SMP_MAX_FAIL_RSN_PER_SPEC + 0x04), /**< Confirmation failed */
-    SMP_BUSY                    = (SMP_MAX_FAIL_RSN_PER_SPEC + 0x05), /**< Busy */
-    SMP_ENC_FAIL                = (SMP_MAX_FAIL_RSN_PER_SPEC + 0x06), /**< Encryption failed */
-    SMP_STARTED                 = (SMP_MAX_FAIL_RSN_PER_SPEC + 0x07), /**< Started */
-    SMP_RSP_TIMEOUT             = (SMP_MAX_FAIL_RSN_PER_SPEC + 0x08), /**< Response timeout */
-    SMP_FAIL                    = (SMP_MAX_FAIL_RSN_PER_SPEC + 0x09), /**< Generic failure */
-    SMP_CONN_TOUT               = (SMP_MAX_FAIL_RSN_PER_SPEC + 0x0A), /**< Connection timeout */
-};
+/* bte smp status codes */
+#define SMP_PAIR_INTERNAL_ERR       (SMP_MAX_FAIL_RSN_PER_SPEC + 0x01U) /**< Internal error */
+#define SMP_UNKNOWN_IO_CAP          (SMP_MAX_FAIL_RSN_PER_SPEC + 0x02U) /**< unknown IO capability, unable to decide associatino model */
+#define SMP_INIT_FAIL               (SMP_MAX_FAIL_RSN_PER_SPEC + 0x03U) /**< Initialization failed */
+#define SMP_CONFIRM_FAIL            (SMP_MAX_FAIL_RSN_PER_SPEC + 0x04U) /**< Confirmation failed */
+#define SMP_BUSY                    (SMP_MAX_FAIL_RSN_PER_SPEC + 0x05U) /**< Busy */
+#define SMP_ENC_FAIL                (SMP_MAX_FAIL_RSN_PER_SPEC + 0x06U) /**< Encryption failed */
+#define SMP_STARTED                 (SMP_MAX_FAIL_RSN_PER_SPEC + 0x07U) /**< Started */
+#define SMP_RSP_TIMEOUT             (SMP_MAX_FAIL_RSN_PER_SPEC + 0x08U) /**< Response timeout */
+#define SMP_FAIL                    (SMP_MAX_FAIL_RSN_PER_SPEC + 0x09U) /**< Generic failure */
+#define SMP_CONN_TOUT               (SMP_MAX_FAIL_RSN_PER_SPEC + 0x0AU) /**< Connection timeout */
 /** SMP Pairing status (see #wiced_bt_smp_status_e) */
 typedef uint8_t wiced_bt_smp_status_t;
 
@@ -795,7 +776,7 @@ typedef uint8_t wiced_bt_br_chnl_map_t[BTM_AFH_CHNL_MAP_SIZE];  /**< Array of Ch
   * as per the specific requirements of the event as documented below.
   *
   */
-enum wiced_bt_management_evt_e
+typedef enum
 {
     /* Bluetooth status events */
 
@@ -1026,7 +1007,6 @@ enum wiced_bt_management_evt_e
      */
     BTM_SCO_CONNECTION_CHANGE_EVT,                  /* 31, 0x1F */
 
-
     /**
      * Event notifies LE connection parameter update to app
      * Event data: \ref wiced_bt_management_evt_data_t.ble_connection_param_update
@@ -1133,15 +1113,14 @@ enum wiced_bt_management_evt_e
      */
     BTM_BR_ACL_READ_CHANNEL_MAP_EVENT,    /* 44, 0x2C */
 
-#if SMP_CATB_CONFORMANCE_TESTER == TRUE
+#if defined (SMP_CATB_CONFORMANCE_TESTER) && (SMP_CATB_CONFORMANCE_TESTER == TRUE)
     /**
      * The Secure Connections support information of the peer device.
      */
     BTM_SMP_SC_PEER_INFO_EVT,                        /* 45, 0x2D */
 #endif
-};
+} wiced_bt_management_evt_t;
 #endif
-typedef uint8_t wiced_bt_management_evt_t;          /**< Bluetooth management events (see #wiced_bt_management_evt_e) */
 
 /** Device enabled (used by #BTM_ENABLED_EVT) */
 typedef struct {
@@ -1287,18 +1266,15 @@ typedef uint16_t wiced_bt_link_policy_settings_t[1];
 #ifndef BTM_BLE_ADVERT_MODE
 #define BTM_BLE_ADVERT_MODE
 /** advertisement type (used when calling #wiced_bt_start_advertisements) */
-enum wiced_bt_ble_advert_mode_e
-{
-    BTM_BLE_ADVERT_OFF,                 /**< Stop advertising */
-    BTM_BLE_ADVERT_DIRECTED_HIGH,       /**< Directed advertisement (high duty cycle) */
-    BTM_BLE_ADVERT_DIRECTED_LOW,        /**< Directed advertisement (low duty cycle) */
-    BTM_BLE_ADVERT_UNDIRECTED_HIGH,     /**< Undirected advertisement (high duty cycle) */
-    BTM_BLE_ADVERT_UNDIRECTED_LOW,      /**< Undirected advertisement (low duty cycle) */
-    BTM_BLE_ADVERT_NONCONN_HIGH,        /**< Non-connectable advertisement (high duty cycle) */
-    BTM_BLE_ADVERT_NONCONN_LOW,         /**< Non-connectable advertisement (low duty cycle) */
-    BTM_BLE_ADVERT_DISCOVERABLE_HIGH,   /**< discoverable advertisement (high duty cycle) */
-    BTM_BLE_ADVERT_DISCOVERABLE_LOW     /**< discoverable advertisement (low duty cycle) */
-};
+#define     BTM_BLE_ADVERT_OFF                0U   /**< Stop advertising */
+#define     BTM_BLE_ADVERT_DIRECTED_HIGH      1U   /**< Directed advertisement (high duty cycle) */
+#define     BTM_BLE_ADVERT_DIRECTED_LOW       2U   /**< Directed advertisement (low duty cycle) */
+#define     BTM_BLE_ADVERT_UNDIRECTED_HIGH    3U   /**< Undirected advertisement (high duty cycle) */
+#define     BTM_BLE_ADVERT_UNDIRECTED_LOW     4U   /**< Undirected advertisement (low duty cycle) */
+#define     BTM_BLE_ADVERT_NONCONN_HIGH       5U   /**< Non-connectable advertisement (high duty cycle) */
+#define     BTM_BLE_ADVERT_NONCONN_LOW        6U   /**< Non-connectable advertisement (low duty cycle) */
+#define     BTM_BLE_ADVERT_DISCOVERABLE_HIGH  7U   /**< discoverable advertisement (high duty cycle) */
+#define     BTM_BLE_ADVERT_DISCOVERABLE_LOW   8U   /**< discoverable advertisement (low duty cycle) */
 #endif
 typedef uint8_t wiced_bt_ble_advert_mode_t;   /**< Advertisement type (see #wiced_bt_ble_advert_mode_e) */
 
@@ -1306,16 +1282,13 @@ typedef uint8_t wiced_bt_ble_advert_mode_t;   /**< Advertisement type (see #wice
 #ifndef BTM_BLE_CONN_MODE
 #define BTM_BLE_CONN_MODE
 /** scan mode used in initiating */
-enum wiced_bt_ble_conn_mode_e
-{
-    BLE_CONN_MODE_OFF,                  /**< Stop initiating */
-    BLE_CONN_MODE_LOW_DUTY,             /**< slow connection scan parameter */
-    BLE_CONN_MODE_HIGH_DUTY             /**< fast connection scan parameter */
-};
+#define     BLE_CONN_MODE_OFF  0U                  /**< Stop initiating */
+#define     BLE_CONN_MODE_LOW_DUTY  1U             /**< slow connection scan parameter */
+#define     BLE_CONN_MODE_HIGH_DUTY  2U            /**< fast connection scan parameter */
 #endif
 typedef uint8_t wiced_bt_ble_conn_mode_t;       /**< Conn mode (see #wiced_bt_ble_conn_mode_e) */
 
-#if SMP_CATB_CONFORMANCE_TESTER == TRUE
+#if defined (SMP_CATB_CONFORMANCE_TESTER) && (SMP_CATB_CONFORMANCE_TESTER == TRUE)
 typedef struct
 {
     wiced_bool_t             peer_sc_is_set;     /* Secure Connection    */
@@ -1426,7 +1399,7 @@ typedef union
     wiced_bt_ble_connection_param_request_t ble_connection_param_request;       /**< Data for #BTM_BLE_CONNECTION_PARAM_REQUEST_EVENT  */
     wiced_bt_ble_remote_pairing_request_t   remote_pairing_request;             /**< Data for #BTM_BLE_REMOTE_PAIRING_REQUEST_EVENT */
     wiced_bt_read_channel_map_event_data_t  br_read_channel_map_event;   /**< Data for #BTM_BR_ACL_READ_CHANNEL_MAP_EVENT */
-#if SMP_CATB_CONFORMANCE_TESTER == TRUE
+#if defined (SMP_CATB_CONFORMANCE_TESTER) && (SMP_CATB_CONFORMANCE_TESTER == TRUE)
     wiced_bt_ble_sc_peer_info               smp_sc_peer_info;                   /* Data for #BTM_SMP_SC_PEER_INFO_EVT */
 #endif
 
@@ -1630,7 +1603,7 @@ wiced_result_t wiced_bt_dev_set_advanced_connection_params (wiced_bt_dev_inquiry
  * <b> WICED_BT_BUSY    </b>   : Command not sent. Waiting for command complete event for prior command.
  *
  */
-wiced_result_t wiced_bt_dev_vendor_specific_command (uint16_t opcode, uint8_t param_len, uint8_t *p_param_buf,
+wiced_result_t wiced_bt_dev_vendor_specific_command (uint16_t opcode, uint8_t param_len, const uint8_t *p_param_buf,
                                 wiced_bt_dev_vendor_specific_command_complete_cback_t *p_cback);
 
 /**
@@ -2254,6 +2227,22 @@ wiced_result_t wiced_bt_dev_deregister_vse_callback(wiced_bt_dev_vse_callback_t 
 wiced_bt_dev_status_t wiced_bt_dev_link_quality_stats(wiced_bt_device_address_t bda, wiced_bt_transport_t transport,
                 uint8_t action, wiced_bt_dev_cmpl_cback_t *p_cback);
 
+
+/**
+ * This API is called to read the controller's config version information, which includes Baseline / FW patch version.
+ * This API internally sends a Vendor Specific Command (0xFC79) to the controller and the result is returned via callback function.
+ *
+ * @param[in]       p_cback         : Result callback (#wiced_bt_dev_cmpl_cback_t will be passed to the callback)
+ * @return
+ * <b> WICED_BT_PENDING </b>      : If command succesfully sent down \n
+ * <b> WICED_BT_BUSY </b>         : If already in progress \
+ * <b> WICED_BT_NO_RESORCES </b>  : If no memory/buffers available to sent down to controller \n
+ *
+ * @note   Callback function argument is a pointer of type \ref wiced_bt_controller_config_ver_info_t
+ *
+ */
+wiced_result_t wiced_bt_dev_read_controller_config_ver_info(wiced_bt_dev_cmpl_cback_t *p_cback);
+
 #ifdef USE_WICED_HCI
 /**
  * MCU host push all the saved NVRAM informatoin mainly paired device Info
@@ -2483,13 +2472,12 @@ wiced_result_t wiced_bt_dev_qos_setup_by_bda(wiced_bt_device_address_t remote_bd
 wiced_result_t wiced_bt_dev_qos_setup_by_handle(uint16_t connection_handle,
                                                 wiced_bt_flow_spec_t *p_flow,
                                                 wiced_bt_dev_cmpl_cback_t *p_cb);
-
 /**
- * @endcond // DUAL_MODE
+ * @endcond  DUAL_MODE
 */
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif //__WICED_BT_DEV_H__
+#endif /* WICED_BT_DEV_H */

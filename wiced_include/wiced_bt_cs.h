@@ -36,8 +36,8 @@
  * AIROC Bluetooth Low Energy (LE) Channel Sounding Functions
  *
  */
-#ifndef __WICED_BLE_CS_H__
-#define __WICED_BLE_CS_H__
+#ifndef WICED_BT_CS_H
+#define WICED_BT_CS_H
 
 #include "wiced_bt_types.h"
 #include "wiced_result.h"
@@ -107,7 +107,10 @@ typedef struct
     uint8_t cs_sync_phys_supported;
     /** Bit 1: CS with no transmitter Frequency Actuation Error
      * Bit 2: CS Channel Selection Algorithm #3c
-     * Bit 3: CS phase-based ranging from RTT sounding sequence */
+     * Bit 3: CS phase-based ranging from RTT sounding sequence
+     * Bit 4: IPT in CS Reflector
+     * Bit 5: CS RTT accuracy specified on a per PHY basis
+     */
     uint16_t subfeatures_supported;
     /** The t_ip1_times_supported, t_ip2_times_supported, t_fcs_times_supported, t_pm_times_supported, and
          t_sw_time_supported parameters indicate the supported optional time durations used in CS steps as
@@ -130,6 +133,29 @@ typedef struct
     /** Bit 0: 18 dB supported, Bit 1: 21 dB supported, Bit 2: 24 dB supported, Bit 3: 27 dB supported,
      * Bit 4: 30 dB supported */
     uint8_t tx_snr_capability;
+    /** Bit 0: 10 us supported, Bit 1: 20 us supported, Bit 2: 30 us supported, Bit 3: 40 us supported,
+     * Bit 4: 50 us supported, Bit 5: 60 us supported, Bit 6: 80 us supported */
+    uint16_t t_ip2_ipt_times_supported;
+    /** If value set to
+        (0x00,0x00, 0x01, 0x02,0x04, or 0x0A) : Time in microseconds for the antenna switch period of the CS tones
+    */
+    uint8_t t_sw_ipt_times_supported;
+    /** If value set to
+        0x00 : RTT AA Only not supported on either the LE 2M or LE 2M 2BT PHY
+     *  0x01 to 0xFF: Number of CS_SYNC exchanges needed to satisfy the accuracy require-ments on the LE 2M or the LE 2M 2BT PHY
+    */
+    uint8_t rtt_2m_aa_only_n;
+    /** If value set to
+        0x00 : RTT Sounding not supported on either the LE 2M or LE 2M 2BT PHY
+     *  0x01 to 0xFF: Number of CS_SYNC exchanges needed to satisfy the precision accuracy on the LE 2M or the LE 2 M 2BT PH
+    */
+    uint8_t rtt_2m_sounding_n;
+    /** If value set to
+        0x00 : RTT Random Sequence not supported on either the LE 2M or LE 2M 2BT PHY
+     *  0x01 to 0xFF: Number of CS_SYNC exchanges needed to satisfy the accuracy requirements on the LE 2M or the LE 2M 2BT PHY
+    */
+    uint8_t rtt_2m_random_sequence_n;
+
 } wiced_ble_cs_capabilities_t;
 
 /** Structure for setting channel sounding default settings */
@@ -254,7 +280,14 @@ typedef struct
      */
     uint8_t ch3c_jump;
     /**
+     * CS Enhancements
+     * Bit 0: IPT enabled in the CS reflector
+     * All other bits reserved
+     */
+    uint8_t cs_enhancements;
+    /**
      * Reserved, shall be set to 0
+     * This field would be deprecated in future
      */
     uint8_t reserved;
 } wiced_ble_cs_config_t;
@@ -411,8 +444,15 @@ typedef struct
     uint8_t ch3c_jump;
     /**
      * Reserved, shall be set to 0
+     * This field would be deprecated in future
      */
     uint8_t reserved;
+    /**
+     * CS Enhancements
+     * Bit 0: IPT enabled in the CS reflector
+     * All other bits reserved
+     */
+    uint8_t cs_enhancements;
     /**
      * Interlude time in microseconds between the RTT packets,
      * Values : 0x0A, 0x14, 0x1E, 0x28, 0x32, 0x3C, 0x50, or 0x91
@@ -814,4 +854,4 @@ int wiced_ble_cs_read_subevent_cont_result_event_hdr_from_stream(wiced_ble_cs_su
                                                                  int len);
 
 /**@} wicedbt */
-#endif
+#endif /* WICED_BT_CS_H */

@@ -38,8 +38,8 @@
  *
  */
 
-#ifndef __WICED_RESULT_H__
-#define __WICED_RESULT_H__
+#ifndef WICED_RESULT_H
+#define WICED_RESULT_H
 
 #include "wiced_bt_constants.h"
 #ifdef __cplusplus
@@ -96,7 +96,7 @@ extern "C" {
     RESULT_ENUM( prefix, WAIT_ABORTED                  ,0x1A ),   /**< Wait Aborted */                  \
     RESULT_ENUM( prefix, WAIT_ABORT_ERROR              ,0x1B ),   /**< Wait Abort Error */              \
     RESULT_ENUM( prefix, MUTEX_ERROR                   ,0x1C ),   /**< Mutex Error */                   \
-    RESULT_ENUM( prefix, NOT_AVAILABLE                 ,0x1D ),   /**< Not Avilable */                  \
+    RESULT_ENUM( prefix, NOT_AVAILABLE                 ,0x1D ),   /**< Not Available */                  \
     RESULT_ENUM( prefix, NOT_OWNED                     ,0x1E ),   /**< Not Owned */                     \
     RESULT_ENUM( prefix, INHERIT_ERROR                 ,0x1F ),   /**< Inherit Error */                 \
     RESULT_ENUM( prefix, NOT_DONE                      ,0x20 ),   /**< Not Done */                      \
@@ -196,4 +196,4 @@ typedef enum
 } /*extern "C" */
 #endif
 
-#endif //__WICED_RESULT_H__
+#endif /* WICED_RESULT_H */
